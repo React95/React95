@@ -1,6 +1,6 @@
 {
   "name": "react-95",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:allyssonsantos/React95.git",
@@ -22,7 +22,7 @@
     "babel-core": "^6.26.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook"
   }
 }
