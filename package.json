@@ -23,6 +23,6 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ./assets",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o public"
   }
 }
