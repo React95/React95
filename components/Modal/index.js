@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styled, { css } from 'styled-components';
+import Draggable from 'react-draggable';
 import Button from '../Button';
 
 const ModalWrapper = styled.div`
@@ -16,6 +17,10 @@ const ModalWrapper = styled.div`
   box-shadow: inset 1px 1px 0px 1px #ffffff,
               inset 0 0 0 1px #868a8e,
               1px 1px 0 1px #000;
+
+  & * {
+    cursor: default;
+  }
 `;
 
 const TitleBar = styled.div`
@@ -70,19 +75,21 @@ class Modal extends React.Component {
     return (
       <React.Fragment>
 
-      { opened && (
-        <ModalWrapper>
+        {opened && (
+          <Draggable handle=".draggable">
+            <ModalWrapper>
 
-          <TitleBar>
-            <Title>{ title }</Title>
-            <OptionsBox>
-              <Option>?</Option>
-              <Option onClick={closeModal}>x</Option>
-            </OptionsBox>
-          </TitleBar>
+              <TitleBar className="draggable">
+                <Title>{title}</Title>
+                <OptionsBox>
+                  <Option>?</Option>
+                  <Option onClick={closeModal}>x</Option>
+                </OptionsBox>
+              </TitleBar>
 
-        </ModalWrapper>
-      ) }
+            </ModalWrapper>
+          </Draggable>
+        )}
 
       </React.Fragment>
     );
