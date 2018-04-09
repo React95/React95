@@ -5,8 +5,11 @@ import Draggable from 'react-draggable';
 import Button from '../Button';
 
 const ModalWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
   position: fixed;
-  padding: 3px 2px 0 3px;
+  padding: 2px 3px;
   min-width: 300px;
   min-height: 200px;
 
@@ -24,6 +27,8 @@ const ModalWrapper = styled.div`
 `;
 
 const TitleBar = styled.div`
+  margin-bottom: 2px;
+
   background-color: #0000aa;
   color: white;
   padding: 2px 4px;
@@ -64,13 +69,18 @@ const Option = Button.extend`
     box-shadow: inset 0 0 0 1px #868a8e,
                 0 0 0 1px #000;
   }
-
 `;
+
+const Content = styled.div`
+  flex-grow: 1;
+  width: 100%;
+  height: 100$;
+`
 class Modal extends React.Component {
 
   render() {
 
-    const { opened, closeModal, title } = this.props;
+    const { opened, closeModal, title, children } = this.props;
 
     return (
       <React.Fragment>
@@ -86,6 +96,10 @@ class Modal extends React.Component {
                   <Option onClick={closeModal}>x</Option>
                 </OptionsBox>
               </TitleBar>
+
+              <Content>
+                {children}
+              </Content>
 
             </ModalWrapper>
           </Draggable>

@@ -9,7 +9,7 @@ class ModalStory extends React.Component {
     super(props);
 
     this.state = {
-      showModal: false
+      showModal: true
     };
   }
 
