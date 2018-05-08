@@ -4,8 +4,8 @@ import styled, { injectGlobal } from 'styled-components';
 injectGlobal`
   @font-face {
     font-family: 'Pixelade';
-    src: url('/Pixelade.woff2') format('woff2'),
-        url('/Pixelade.woff') format('woff');
+    src: url('./Pixelade.woff2') format('woff2'),
+        url('./Pixelade.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
