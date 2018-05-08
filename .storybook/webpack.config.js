@@ -6,7 +6,7 @@ module.exports = {
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         loaders: ['file-loader'],
-        include: path.resolve(__dirname, '../')
+        include: path.resolve(__dirname, '../assets')
       }
     ]
   }
