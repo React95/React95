@@ -84,6 +84,7 @@ class Modal extends React.Component {
 
     return (
       <React.Fragment>
+        <img src="./btn-windows-active.png" />
 
         {opened && (
           <Draggable handle=".draggable">
