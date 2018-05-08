@@ -1,11 +1,14 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 
+import woff2 from '../../assets/Pixelade.woff2';
+import woff from '../../assets/Pixelade.woff';
+
 injectGlobal`
   @font-face {
     font-family: 'Pixelade';
-    src: url('./Pixelade.woff2') format('woff2'),
-        url('./Pixelade.woff') format('woff');
+    src: url('${woff2}') format('woff2'),
+        url('${woff}') format('woff');
     font-weight: normal;
     font-style: normal;
   }
