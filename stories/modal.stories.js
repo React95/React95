@@ -9,13 +9,15 @@ class ModalStory extends React.Component {
     super(props);
 
     this.state = {
-      showModal: true
+      showModal: true,
     };
   }
 
   handleOpenModal = () => this.setState({ showModal: true });
 
   handleCloseModal = () => this.setState({ showModal: false });
+
+  handleButtonClick = e => alert(e.target.value);
 
   render() {
     return (
@@ -25,11 +27,15 @@ class ModalStory extends React.Component {
         <Modal
           title="Browse"
           opened={this.state.showModal}
-          closeModal={this.handleCloseModal} />
+          closeModal={this.handleCloseModal}
+          buttons={[
+            { value: 'Cancel', onClick: this.handleButtonClick },
+            { value: 'Ok', onClick: this.handleButtonClick },
+          ]}
+        />
       </div>
-    )
+    );
   }
 }
-
 
 storiesOf('Modal', module).add('default', () => <ModalStory />);

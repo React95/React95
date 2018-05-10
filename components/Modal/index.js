@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Draggable from 'react-draggable';
+import Btn from '../shared-style/Btn';
 import Button from '../Button';
 
 const ModalWrapper = styled.div`
@@ -47,7 +48,7 @@ const OptionsBox = styled.ul`
   display: flex;
 `;
 
-const Option = Button.extend`
+const Option = Btn.extend`
   margin-right: 3px;
   padding: 0 0 0 1px;
 
@@ -71,11 +72,27 @@ const Option = Button.extend`
 
 const Content = styled.div`
   flex-grow: 1;
-  width: 100%;
-  height: 100$;
+  display: flex;
+  flex-direction: column;
+
+  padding: 6px;
 `;
 
-const ButtonWrapper = styled.div``;
+const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding: 0 6px 6px 6px;
+
+  & ${Btn} {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+`;
 
 class Modal extends React.Component {
   render() {
@@ -97,8 +114,12 @@ class Modal extends React.Component {
               <Content>{children}</Content>
               {buttons && (
                 <ButtonWrapper>
-                  {buttons.map(button => (
-                    <Button onChange={button.onChange}>{button.value}</Button>
+                  {buttons.map((button, index) => (
+                    <Button
+                      key={index}
+                      onClick={button.onClick}
+                      value={button.value}
+                    />
                   ))}
                 </ButtonWrapper>
               )}
@@ -123,7 +144,7 @@ Modal.propTypes = {
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
-      onChange: PropTypes.func,
+      onClick: PropTypes.func,
     }),
   ),
 };
