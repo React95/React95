@@ -5,6 +5,7 @@ export default styled.button`
   padding: 5px 20px 6px;
   border: none;
   font-size: 20px;
+  min-width: 80px;
 
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
     1px 1px 0 1px #000;
