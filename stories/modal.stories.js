@@ -29,8 +29,8 @@ class ModalStory extends React.Component {
           opened={this.state.showModal}
           closeModal={this.handleCloseModal}
           buttons={[
-            { value: 'Cancel', onClick: this.handleButtonClick },
             { value: 'Ok', onClick: this.handleButtonClick },
+            { value: 'Cancel', onClick: this.handleButtonClick },
           ]}
         />
       </div>
