@@ -54,6 +54,7 @@ const Option = Btn.extend`
 
   width: 15px;
   height: 15px;
+  min-width: 0;
 
   font-size: 15px;
 
