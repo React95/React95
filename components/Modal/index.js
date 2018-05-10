@@ -1,5 +1,5 @@
-
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Draggable from 'react-draggable';
 import Button from '../Button';
@@ -17,9 +17,8 @@ const ModalWrapper = styled.div`
 
   background-color: #c3c7cb;
 
-  box-shadow: inset 1px 1px 0px 1px #ffffff,
-              inset 0 0 0 1px #868a8e,
-              1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
+    1px 1px 0 1px #000;
 
   & * {
     cursor: default;
@@ -46,7 +45,7 @@ const OptionsBox = styled.ul`
   margin: 0;
 
   display: flex;
-`
+`;
 
 const Option = Button.extend`
   margin-right: 3px;
@@ -66,8 +65,7 @@ const Option = Button.extend`
 
     outline: none;
 
-    box-shadow: inset 0 0 0 1px #868a8e,
-                0 0 0 1px #000;
+    box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000;
   }
 `;
 
@@ -75,20 +73,19 @@ const Content = styled.div`
   flex-grow: 1;
   width: 100%;
   height: 100$;
-`
+`;
+
+const ButtonWrapper = styled.div``;
+
 class Modal extends React.Component {
-
   render() {
-
-    const { opened, closeModal, title, children } = this.props;
+    const { opened, closeModal, title, children, buttons } = this.props;
 
     return (
       <React.Fragment>
-
         {opened && (
           <Draggable handle=".draggable">
             <ModalWrapper>
-
               <TitleBar className="draggable">
                 <Title>{title}</Title>
                 <OptionsBox>
@@ -97,17 +94,46 @@ class Modal extends React.Component {
                 </OptionsBox>
               </TitleBar>
 
-              <Content>
-                {children}
-              </Content>
-
+              <Content>{children}</Content>
+              {buttons && (
+                <ButtonWrapper>
+                  {buttons.map(button => (
+                    <Button onChange={button.onChange}>{button.value}</Button>
+                  ))}
+                </ButtonWrapper>
+              )}
             </ModalWrapper>
           </Draggable>
         )}
-
       </React.Fragment>
     );
   }
+}
+
+Modal.displayName = 'Modal';
+
+Modal.propTypes = {
+  opened: PropTypes.boolean,
+  closeModal: PropTypes.func,
+  title: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.string.isRequired,
+      onChange: PropTypes.func,
+    }),
+  ),
+};
+
+Modal.defaultProps = {
+  opened: false,
+  closeModal: () => {},
+  title: 'Modal',
+  chidren: null,
+  buttons: [],
 };
 
 export default Modal;

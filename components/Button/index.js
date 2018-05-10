@@ -20,7 +20,7 @@ injectGlobal`
   * {
     font-family: 'Pixelade';
   }
-`
+`;
 
 const Button = styled.button`
   background-color: #c3c7cb;
@@ -28,9 +28,8 @@ const Button = styled.button`
   border: none;
   font-size: 20px;
 
-  box-shadow:  inset 1px 1px 0px 1px #ffffff,
-               inset 0 0 0 1px #868a8e,
-               1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
+    1px 1px 0 1px #000;
 
   &:disabled {
     color: #868a8e;
@@ -38,9 +37,8 @@ const Button = styled.button`
 
   &:focus {
     outline: none;
-    box-shadow: inset 1px 1px 0px 1px #ffffff,
-                inset -1px -1px 0px 1px #868a8e,
-                1px 1px 0 2px #000;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e,
+      1px 1px 0 2px #000;
   }
 
   &:active {
@@ -50,8 +48,7 @@ const Button = styled.button`
     outline-offset: -5px;
     outline-width: 2px;
 
-    box-shadow: inset 0 0 0 1px #868a8e,
-                0 0 0 1px #000;
+    box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000;
   }
 `;
 
