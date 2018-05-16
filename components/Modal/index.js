@@ -88,6 +88,7 @@ const ButtonWrapper = styled.div`
 
   & ${Btn} {
     margin-right: 6px;
+    min-width: 80px;
 
     &:last-child {
       margin-right: 0;
