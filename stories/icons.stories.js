@@ -10,7 +10,7 @@ const IconList = styled.ul`
   padding: 0;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
 `;
 
 const IconBox = styled.li`
