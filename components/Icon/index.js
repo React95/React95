@@ -13,14 +13,7 @@ const I = styled.i`
   background-position: center;
 `;
 
-class Icon extends React.Component {
-  render() {
-    const { name } = this.props;
-    console.log(icons[name]);
-
-    return <I name={name} />;
-  }
-}
+const Icon = ({ name }) => <I name={name} />;
 
 Icon.propTypes = {
   name: PropTypes.string,
