@@ -28,11 +28,22 @@ injectGlobal`
   ::-webkit-scrollbar {
     width: 15px;
     background: url('${pattern}');
-  }
-  /* Track */
-  ::-webkit-scrollbar-track-piece {
-    background: url('${pattern}');
     background-size: 3px 3px;
+  }
+
+  ::-webkit-scrollbar-button:vertical:increment {
+    background-color: #c3c7cb;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
+      1px 1px 0 1px #000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c3c7cb;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
+      1px 1px 0 1px #000;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: transparent;
   }
 `;
 
