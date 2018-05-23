@@ -4,6 +4,7 @@ import styled, { injectGlobal } from 'styled-components';
 
 import woff2 from '../../assets/Pixelade.woff2';
 import woff from '../../assets/Pixelade.woff';
+import pattern from '../../assets/pattern/dropdown.png';
 
 import Btn from '../shared-style/Btn';
 
@@ -22,6 +23,16 @@ injectGlobal`
 
   * {
     font-family: 'Pixelade';
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+    background: url('${pattern}');
+  }
+  /* Track */
+  ::-webkit-scrollbar-track-piece {
+    background: url('${pattern}');
+    background-size: 3px 3px;
   }
 `;
 

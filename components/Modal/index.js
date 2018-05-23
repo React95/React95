@@ -72,11 +72,14 @@ const Option = Btn.extend`
 `;
 
 const Content = styled.div`
-  flex-grow: 1;
+  // flex-grow: 1;
   display: flex;
   flex-direction: column;
 
+  height: 100px;
   padding: 6px;
+
+  overflow: scroll;
 `;
 
 const ButtonWrapper = styled.div`

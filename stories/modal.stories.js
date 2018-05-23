@@ -32,7 +32,11 @@ class ModalStory extends React.Component {
             { value: 'Ok', onClick: this.handleButtonClick },
             { value: 'Cancel', onClick: this.handleButtonClick },
           ]}
-        />
+        >
+          <div style={{ backgroundColor: 'tomato', minHeight: '200px' }}>
+            Content
+          </div>
+        </Modal>
       </div>
     );
   }
