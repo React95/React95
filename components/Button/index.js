@@ -31,24 +31,25 @@ injectGlobal`
     background-size: 3px 3px;
   }
 
-  ::-webkit-scrollbar-button:vertical:increment {
+  ::-webkit-scrollbar-button:end:vertical:increment {
     background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-      1px 1px 0 1px #000;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
   }
-  ::-webkit-scrollbar-button:vertical:decrement {
+
+  ::-webkit-scrollbar-button:start:vertical:decrement {
     background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-      1px 1px 0 1px #000;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
   }
 
   ::-webkit-scrollbar-thumb {
     background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-      1px 1px 0 1px #000;
-  }
-  ::-webkit-scrollbar-track-piece {
-    background: transparent;
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
   }
 `;
 
