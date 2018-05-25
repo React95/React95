@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { injectGlobal } from 'styled-components';
 
 import Btn from '../shared-style/Btn';
 
