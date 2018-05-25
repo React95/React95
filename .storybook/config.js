@@ -4,6 +4,7 @@ import { setOptions } from '@storybook/addon-options';
 setOptions({
   name: 'React95',
   url: 'https://github.com/React95/React95',
+  showAddonPanel: false,
 });
 
 // automatically import all files ending in *.stories.js
