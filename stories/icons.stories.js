@@ -27,8 +27,8 @@ storiesOf('Icon', module).add('default', () => (
   <React.Fragment>
     <IconList>
       {Object.keys(icons).map(icon => (
-        <IconBox>
-          <Icon key={icon} name={icon} />
+        <IconBox key={icon} >
+          <Icon name={icon} />
           {icon}
         </IconBox>
       ))}
