@@ -27,18 +27,19 @@ injectGlobal`
 
   ::-webkit-scrollbar {
     width: 15px;
+    height: 15px;
     background: url('${pattern}');
     background-size: 3px 3px;
   }
 
-  ::-webkit-scrollbar-button:end:vertical:increment {
+  ::-webkit-scrollbar-button:end:increment {
     background-color: #c3c7cb;
     box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
   }
 
-  ::-webkit-scrollbar-button:start:vertical:decrement {
+  ::-webkit-scrollbar-button:start:decrement {
     background-color: #c3c7cb;
     box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
     border-right: 2px solid black;
