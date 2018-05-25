@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@storybook/addon-actions@3.4.5", "@storybook/addon-actions@^3.3.15":
+"@storybook/addon-actions@3.4.5":
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.4.5.tgz#ba0d0c0c74357c0852e0b890b404214975df40a8"
   dependencies:
