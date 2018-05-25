@@ -35,7 +35,6 @@ class ModalStory extends React.Component {
         >
           <div
             style={{
-              backgroundColor: 'tomato',
               minHeight: '200px',
               minWidth: '500px',
             }}

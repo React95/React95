@@ -58,6 +58,7 @@ injectGlobal`
       linear-gradient(to bottom, #ccc, #000);
       background-position: center -1px;
   }
+
   ::-webkit-scrollbar-button:vertical:end:increment {
     background-image: linear-gradient(130deg, transparent 45%, #c3c7cb 45%),
 			linear-gradient(-130deg, transparent 45%, #c3c7cb 45%),
@@ -70,6 +71,13 @@ injectGlobal`
 			linear-gradient(-150deg, transparent 45%, #c3c7cb 45%),
       linear-gradient(to right, #ccc, #000);
       background-position: -1px 2px;
+  }
+
+  ::-webkit-scrollbar-button:horizontal:end:increment {
+    background-image: linear-gradient(-30deg, #c3c7cb 45%, transparent 45%),
+			linear-gradient(30deg, transparent 45%, #c3c7cb 45%),
+      linear-gradient(to left, #ccc, #000);
+      background-position: 4px 1px;
   }
 
   ::-webkit-scrollbar-thumb {
