@@ -65,6 +65,13 @@ injectGlobal`
       background-position: center 6px;
   }
 
+  ::-webkit-scrollbar-button:horizontal:start:decrement {
+    background-image: linear-gradient(150deg, #c3c7cb 45%, transparent 45%),
+			linear-gradient(-150deg, transparent 45%, #c3c7cb 45%),
+      linear-gradient(to right, #ccc, #000);
+      background-position: -1px 2px;
+  }
+
   ::-webkit-scrollbar-thumb {
     background-color: #c3c7cb;
     box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
