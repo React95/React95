@@ -32,6 +32,10 @@ injectGlobal`
     background-size: 3px 3px;
   }
 
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
   ::-webkit-scrollbar-button {
     width: 15px;
     height: 15px;
@@ -42,9 +46,6 @@ injectGlobal`
 
     background-size: 10px 10px;
     background-repeat: no-repeat;
-  }
-
-  ::-webkit-scrollbar-button:end:increment {
   }
 
   ::-webkit-scrollbar-button:end:decrement,
@@ -78,6 +79,10 @@ injectGlobal`
 			linear-gradient(30deg, transparent 45%, #c3c7cb 45%),
       linear-gradient(to left, #ccc, #000);
       background-position: 4px 1px;
+  }
+
+  ::-webkit-resizer {
+    /* TODO? */
   }
 
   ::-webkit-scrollbar-thumb {
