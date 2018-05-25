@@ -32,18 +32,37 @@ injectGlobal`
     background-size: 3px 3px;
   }
 
-  ::-webkit-scrollbar-button:end:increment {
+  ::-webkit-scrollbar-button {
+    width: 15px;
+    height: 15px;
     background-color: #c3c7cb;
     box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
   }
 
-  ::-webkit-scrollbar-button:start:decrement {
-    background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+  ::-webkit-scrollbar-button:end:increment {
+  }
+
+  ::-webkit-scrollbar-button:end:decrement,
+  ::-webkit-scrollbar-button:start:increment {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: linear-gradient(50deg, transparent 45%, #c3c7cb 45%),
+			linear-gradient(-50deg, transparent 45%, #c3c7cb 45%),
+      linear-gradient(to bottom, #ccc, #000);
+      background-position: center -1px;
+  }
+  ::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: linear-gradient(130deg, transparent 45%, #c3c7cb 45%),
+			linear-gradient(-130deg, transparent 45%, #c3c7cb 45%),
+      linear-gradient(to top, #ccc, #000);
+      background-position: center 6px;
   }
 
   ::-webkit-scrollbar-thumb {
