@@ -21,8 +21,8 @@ import noDrop from '../../assets/cursors/Circle.png';
 import notAllowed from '../../assets/cursors/NO.png';
 import grab from '../../assets/cursors/Hand.png';
 import grabbing from '../../assets/cursors/Handsqueezed.png';
-// import colResize from '../../assets/cursors/';
-// import rowResize from '../../assets/cursors/';
+import colResize from '../../assets/cursors/ColRezise.png';
+import rowResize from '../../assets/cursors/RowResize.png';
 // import nResize from '../../assets/cursors/';
 // import eResize from '../../assets/cursors/';
 // import sResize from '../../assets/cursors/';
@@ -141,8 +141,8 @@ injectGlobal`
   .not-allowed     { cursor: url('${notAllowed}'), not-allowed; }
   .grab            { cursor: url('${grab}'), grab; }
   .grabbing        { cursor: url('${grabbing}'), grabbing; }
-  .col-resize      { cursor: col-resize; }
-  .row-resize      { cursor: row-resize; }
+  .col-resize      { cursor: url('${colResize}'), col-resize; }
+  .row-resize      { cursor: url('${rowResize}'), row-resize; }
   .n-resize        { cursor: n-resize; }
   .e-resize        { cursor: e-resize; }
   .s-resize        { cursor: s-resize; }
