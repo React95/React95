@@ -27,14 +27,14 @@ import nResize from '../../assets/cursors/UpArrow.png';
 import eResize from '../../assets/cursors/RightArrow.png';
 import sResize from '../../assets/cursors/DownArrow.png';
 import wResize from '../../assets/cursors/LeftArrow.png';
-// import nsResize from '../../assets/cursors/';
-// import ewResize from '../../assets/cursors/';
-// import neResize from '../../assets/cursors/';
-// import nwResize from '../../assets/cursors/';
-// import seResize from '../../assets/cursors/';
-// import swResize from '../../assets/cursors/';
-// import neswResize from '../../assets/cursors/';
-// import nwseResize from '../../assets/cursors/';
+import nsResize from '../../assets/cursors/UpDownArrow.png';
+import ewResize from '../../assets/cursors/LeftRight.png';
+import neResize from '../../assets/cursors/UpRightArrow.png';
+import nwResize from '../../assets/cursors/UpLeftArrow.png';
+import seResize from '../../assets/cursors/DownRightArrow.png';
+import swResize from '../../assets/cursors/DownLeftArrow.png';
+import neswResize from '../../assets/cursors/AngleUpRight.png';
+import nwseResize from '../../assets/cursors/AngleUpLeft.png';
 
 injectGlobal`
   @font-face {
@@ -147,14 +147,14 @@ injectGlobal`
   .e-resize        { cursor: url('${eResize}'), e-resize; }
   .s-resize        { cursor: url('${sResize}'), s-resize; }
   .w-resize        { cursor: url('${wResize}'), w-resize; }
-  .ns-resize       { cursor: ns-resize; }
-  .ew-resize       { cursor: ew-resize; }
-  .ne-resize       { cursor: ne-resize; }
-  .nw-resize       { cursor: nw-resize; }
-  .se-resize       { cursor: se-resize; }
-  .sw-resize       { cursor: sw-resize; }
-  .nesw-resize     { cursor: nesw-resize; }
-  .nwse-resize     { cursor: nwse-resize; }
+  .ns-resize       { cursor: url('${nsResize}'), ns-resize; }
+  .ew-resize       { cursor: url('${ewResize}'), ew-resize; }
+  .ne-resize       { cursor: url('${neResize}'), ne-resize; }
+  .nw-resize       { cursor: url('${nwResize}'), nw-resize; }
+  .se-resize       { cursor: url('${seResize}'), se-resize; }
+  .sw-resize       { cursor: url('${swResize}'), sw-resize; }
+  .nesw-resize     { cursor: url('${neswResize}'), nesw-resize; }
+  .nwse-resize     { cursor: url('${nwseResize}'), nwse-resize; }
 `;
 
 const Frame = storyFn => <React.Fragment>{storyFn()}</React.Fragment>;
