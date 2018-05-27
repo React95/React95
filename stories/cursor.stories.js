@@ -36,6 +36,8 @@ const types = [
   'sw-resize',
   'nesw-resize',
   'nwse-resize',
+  'zoom-in',
+  'zoom-out',
 ];
 
 const CursorList = styled.ul`

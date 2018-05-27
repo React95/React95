@@ -35,6 +35,8 @@ import seResize from '../../assets/cursors/DownRightArrow.png';
 import swResize from '../../assets/cursors/DownLeftArrow.png';
 import neswResize from '../../assets/cursors/AngleUpRight.png';
 import nwseResize from '../../assets/cursors/AngleUpLeft.png';
+import zoomIn from '../../assets/cursors/ZoomIn.png';
+import zoomOut from '../../assets/cursors/ZoomOut.png';
 
 injectGlobal`
   @font-face {
@@ -124,7 +126,7 @@ injectGlobal`
     border-bottom: 2px solid black;
   }
 
-  html, .auto      { cursor: url('${auto}'), auto; }
+  html, .auto, *   { cursor: url('${auto}'), auto; }
   .default         { cursor: url('${auto}'), default; }
   .none            { cursor: none; }
   .help            { cursor: url('${help}'), help; }
@@ -155,6 +157,8 @@ injectGlobal`
   .sw-resize       { cursor: url('${swResize}'), sw-resize; }
   .nesw-resize     { cursor: url('${neswResize}'), nesw-resize; }
   .nwse-resize     { cursor: url('${nwseResize}'), nwse-resize; }
+  .zoom-in         { cursor: url('${zoomIn}'), zoom-in; }
+  .zoom-out        { cursor: url('${zoomOut}'), zoom-out; }
 `;
 
 const Frame = storyFn => <React.Fragment>{storyFn()}</React.Fragment>;
