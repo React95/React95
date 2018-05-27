@@ -6,6 +6,35 @@ import woff2 from '../../assets/Pixelade.woff2';
 import woff from '../../assets/Pixelade.woff';
 import pattern from '../../assets/pattern/dropdown.png';
 
+import auto from '../../assets/cursors/Arrow.png';
+import text from '../../assets/cursors/Text.png';
+import verticalText from '../../assets/cursors/VText.png';
+import help from '../../assets/cursors/Help.png';
+import crosshair from '../../assets/cursors/Cross.png';
+import pointer from '../../assets/cursors/HandPointer.png';
+import progress from '../../assets/cursors/AppStarting.png';
+import wait from '../../assets/cursors/Wait.png';
+import alias from '../../assets/cursors/Link.png';
+import copy from '../../assets/cursors/Copy.png';
+import move from '../../assets/cursors/Move.png';
+// import noDrop from '../../assets/cursors/';
+// import notAllowed from '../../assets/cursors/';
+// import allScroll from '../../assets/cursors/';
+// import colResize from '../../assets/cursors/';
+// import rowResize from '../../assets/cursors/';
+// import nResize from '../../assets/cursors/';
+// import eResize from '../../assets/cursors/';
+// import sResize from '../../assets/cursors/';
+// import wResize from '../../assets/cursors/';
+// import nsResize from '../../assets/cursors/';
+// import ewResize from '../../assets/cursors/';
+// import neResize from '../../assets/cursors/';
+// import nwResize from '../../assets/cursors/';
+// import seResize from '../../assets/cursors/';
+// import swResize from '../../assets/cursors/';
+// import neswResize from '../../assets/cursors/';
+// import nwseResize from '../../assets/cursors/';
+
 injectGlobal`
   @font-face {
     font-family: 'Pixelade';
@@ -93,12 +122,39 @@ injectGlobal`
     border-right: 2px solid black;
     border-bottom: 2px solid black;
   }
+
+  html, .auto      { cursor: url('${auto}'), auto; }
+  .default         { cursor: url('${auto}'), default; }
+  .none            { cursor: none; }
+  .help            { cursor: url('${help}'), help; }
+  .pointer         { cursor: url('${pointer}'), pointer; }
+  .progress        { cursor: url('${progress}'), progress; }
+  .wait            { cursor: url('${wait}'), wait; }
+  .crosshair       { cursor: url('${crosshair}'), crosshair; }
+  .text            { cursor: url('${text}'), text; }
+  .vertical-text   { cursor: url('${verticalText}'), vertical-text; }
+  .alias           { cursor: url('${alias}'), alias; }
+  .copy            { cursor: url('${copy}'), copy; }
+  .move            { cursor: url('${move}'), move; }
+  .no-drop         { cursor: no-drop; }
+  .not-allowed     { cursor: not-allowed; }
+  .all-scroll      { cursor: all-scroll; }
+  .col-resize      { cursor: col-resize; }
+  .row-resize      { cursor: row-resize; }
+  .n-resize        { cursor: n-resize; }
+  .e-resize        { cursor: e-resize; }
+  .s-resize        { cursor: s-resize; }
+  .w-resize        { cursor: w-resize; }
+  .ns-resize       { cursor: ns-resize; }
+  .ew-resize       { cursor: ew-resize; }
+  .ne-resize       { cursor: ne-resize; }
+  .nw-resize       { cursor: nw-resize; }
+  .se-resize       { cursor: se-resize; }
+  .sw-resize       { cursor: sw-resize; }
+  .nesw-resize     { cursor: nesw-resize; }
+  .nwse-resize     { cursor: nwse-resize; }
 `;
 
-const Frame = storyFn => (
-  <React.Fragment>
-    { storyFn() }
-  </React.Fragment>
-);
+const Frame = storyFn => <React.Fragment>{storyFn()}</React.Fragment>;
 
 export default Frame;
