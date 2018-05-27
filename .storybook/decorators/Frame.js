@@ -18,7 +18,7 @@ import alias from '../../assets/cursors/Link.png';
 import copy from '../../assets/cursors/Copy.png';
 import move from '../../assets/cursors/Move.png';
 import noDrop from '../../assets/cursors/Circle.png';
-// import notAllowed from '../../assets/cursors/';
+import notAllowed from '../../assets/cursors/NO.png';
 // import allScroll from '../../assets/cursors/';
 // import colResize from '../../assets/cursors/';
 // import rowResize from '../../assets/cursors/';
@@ -137,7 +137,7 @@ injectGlobal`
   .copy            { cursor: url('${copy}'), copy; }
   .move            { cursor: url('${move}'), move; }
   .no-drop         { cursor: url('${noDrop}'), no-drop; }
-  .not-allowed     { cursor: not-allowed; }
+  .not-allowed     { cursor: url('${notAllowed}'), not-allowed; }
   .all-scroll      { cursor: all-scroll; }
   .col-resize      { cursor: col-resize; }
   .row-resize      { cursor: row-resize; }
