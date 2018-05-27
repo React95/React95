@@ -22,7 +22,6 @@ const types = [
   'not-allowed',
   'grab',
   'grabbing',
-  'all-scroll',
   'col-resize',
   'row-resize',
   'n-resize',
