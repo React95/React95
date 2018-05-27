@@ -23,10 +23,10 @@ import grab from '../../assets/cursors/Hand.png';
 import grabbing from '../../assets/cursors/Handsqueezed.png';
 import colResize from '../../assets/cursors/ColRezise.png';
 import rowResize from '../../assets/cursors/RowResize.png';
-// import nResize from '../../assets/cursors/';
-// import eResize from '../../assets/cursors/';
-// import sResize from '../../assets/cursors/';
-// import wResize from '../../assets/cursors/';
+import nResize from '../../assets/cursors/UpArrow.png';
+import eResize from '../../assets/cursors/RightArrow.png';
+import sResize from '../../assets/cursors/DownArrow.png';
+import wResize from '../../assets/cursors/LeftArrow.png';
 // import nsResize from '../../assets/cursors/';
 // import ewResize from '../../assets/cursors/';
 // import neResize from '../../assets/cursors/';
@@ -143,10 +143,10 @@ injectGlobal`
   .grabbing        { cursor: url('${grabbing}'), grabbing; }
   .col-resize      { cursor: url('${colResize}'), col-resize; }
   .row-resize      { cursor: url('${rowResize}'), row-resize; }
-  .n-resize        { cursor: n-resize; }
-  .e-resize        { cursor: e-resize; }
-  .s-resize        { cursor: s-resize; }
-  .w-resize        { cursor: w-resize; }
+  .n-resize        { cursor: url('${nResize}'), n-resize; }
+  .e-resize        { cursor: url('${eResize}'), e-resize; }
+  .s-resize        { cursor: url('${sResize}'), s-resize; }
+  .w-resize        { cursor: url('${wResize}'), w-resize; }
   .ns-resize       { cursor: ns-resize; }
   .ew-resize       { cursor: ew-resize; }
   .ne-resize       { cursor: ne-resize; }
