@@ -6,9 +6,11 @@ const Text = styled.textarea`
   outline: none;
   border: none;
   resize: none;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
 
-  box-shadow: inset 1px 1px 0 0 #000000, inset 0 0 0 1px #868a8e,
-    0 0 0 1px #ffffff;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
+    0.5px 0.5px 0 0.5px #ffffff;
 `;
 
 class TextArea extends React.Component {
@@ -16,7 +18,7 @@ class TextArea extends React.Component {
     const { children, value, rows, cols } = this.props;
 
     return (
-      <Text className="text" row={rows} cols={cols} value={value || children}>
+      <Text className="text" rows={rows} cols={cols} value={value || children}>
         {children || value}
       </Text>
     );
@@ -25,7 +27,7 @@ class TextArea extends React.Component {
 
 TextArea.propTypes = {
   value: PropTypes.string,
-  row: PropTypes.number,
+  rows: PropTypes.number,
   cols: PropTypes.number,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -35,8 +37,8 @@ TextArea.propTypes = {
 
 TextArea.defaultProps = {
   value: '',
-  rows: 50,
-  cols: 10,
+  rows: 10,
+  cols: 50,
   children: null,
 };
 
