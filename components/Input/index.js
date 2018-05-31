@@ -6,7 +6,7 @@ const Field = styled.input`
   outline: none;
   border: none;
 
-  padding: 3px;
+  padding: 3px 3px 5px 3px;
 
   border-left: 1px solid #868a8e;
   border-top: 1px solid #868a8e;

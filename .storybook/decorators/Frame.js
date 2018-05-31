@@ -2,8 +2,12 @@ import React from 'react';
 
 import styled, { injectGlobal } from 'styled-components';
 
-import woff2 from '../../assets/Pixelade.woff2';
-import woff from '../../assets/Pixelade.woff';
+import woff2 from '../../assets/font/px_sans_nouveaux.woff2';
+import woff from '../../assets/font/px_sans_nouveaux.woff';
+import ttf from '../../assets/font/px_sans_nouveaux.ttf';
+import svg from '../../assets/font/px_sans_nouveaux.svg';
+import eot from '../../assets/font/px_sans_nouveaux.eot';
+
 import pattern from '../../assets/pattern/dropdown.png';
 
 import auto from '../../assets/cursors/Arrow.png';
@@ -40,9 +44,13 @@ import zoomOut from '../../assets/cursors/ZoomOut.png';
 
 injectGlobal`
   @font-face {
-    font-family: 'Pixelade';
+    font-family: 'Px Sans Nouveaux';
+    src: url('${eot}');
     src: url('${woff2}') format('woff2'),
-        url('${woff}') format('woff');
+         url('${woff}') format('woff'),
+         url('${ttf}') format('truetype'),
+         url('${svg}#px_sans_nouveaux') format('svg'),
+         url('${eot}.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -52,7 +60,8 @@ injectGlobal`
   }
 
   * {
-    font-family: 'Pixelade';
+    font-family: 'Px Sans Nouveaux';
+    font-size: 10px;
   }
 
   ::-webkit-scrollbar {

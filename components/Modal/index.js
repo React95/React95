@@ -52,11 +52,11 @@ const Option = Btn.extend`
   margin-right: 3px;
   padding: 0 0 0 1px;
 
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   min-width: 0;
 
-  font-size: 15px;
+  font-size: 10px;
 
   &:last-child {
     margin-right: 0;
