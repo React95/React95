@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Colors from '../Colors';
-import { skins, placement } from './options';
+import styled, { css } from 'styled-components';
 
-const tipSkin = ({ skin }) => skins[skin] || skins.info;
+const show = ({ show }) =>
+  show &&
+  css`
+    opacity: 1;
+  `;
 
 const Tip = styled.div`
-  background: radial-gradient(#ff0 15%, transparent 15%) 0 0,
-    radial-gradient(#ff0 15%, transparent 15%) 16px 16px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 16px 17px;
+  background: radial-gradient(#ff0 20%, transparent 20%) 0 0,
+    radial-gradient(#ff0 20%, transparent 20%) 4px 4px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 3px 4px;
+  background-size: 7px 7px;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 14px;
   font-weight: bold;
-  opacity: ${props => (props.show ? '1' : '0')};
-  padding: 5px 20px;
+  padding-right: 5px;
+  padding-left: 5px;
   position: absolute;
+  top: -18px;
   text-align: center;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-  visibility: ${props => (props.show ? 'visible' : 'hidden')};
   z-index: 100;
+  opacity: 0;
+
+  ${show};
 `;
 
 const Wrapper = styled.div`
@@ -35,30 +39,7 @@ class Tooltip extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { show: false, width: null, height: null };
-  }
-
-  componentDidMount() {
-    this.measure();
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    return (
-      this.props.text !== nextProps.text ||
-      this.state.show !== nextState.show ||
-      this.state.width !== nextState.width ||
-      this.state.height !== nextState.height
-    );
-  }
-
-  componentDidUpdate() {
-    this.measure();
-  }
-
-  measure() {
-    const { clientWidth, clientHeight } = this.tip;
-
-    this.setState({ width: clientWidth, height: clientHeight });
+    this.state = { show: false };
   }
 
   handleEnter = () => {
@@ -72,25 +53,38 @@ class Tooltip extends Component {
   render() {
     const { children, text } = this.props;
 
-    const { width, height, show } = this.state;
+    const { show } = this.state;
 
     return (
       <Wrapper onMouseEnter={this.handleEnter} onMouseLeave={this.handleLeave}>
-        <Tip
-          skin={skin}
-          innerRef={tip => {
-            this.tip = tip;
-          }}
-          width={width}
-          height={height}
-          show={show}
-        >
-          {text}
-        </Tip>
+        <Tip show={show}>{text}</Tip>
         {children}
       </Wrapper>
     );
   }
+}
+
+function formatDate(date) {
+  var monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  var day = date.getDate();
+  var monthIndex = date.getMonth();
+  var year = date.getFullYear();
+
+  return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
 
 Tooltip.propTypes = {
@@ -99,7 +93,7 @@ Tooltip.propTypes = {
 };
 
 Tooltip.defaultProps = {
-  text: 'Tooltip',
+  text: formatDate(new Date()),
 };
 
 export default Tooltip;
