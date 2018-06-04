@@ -84,7 +84,9 @@ function formatDate(date) {
   var monthIndex = date.getMonth();
   var year = date.getFullYear();
 
-  return day + ' ' + monthNames[monthIndex] + ' ' + year;
+  return (
+    day.toString().padStart(2, '0') + ' ' + monthNames[monthIndex] + ' ' + year
+  );
 }
 
 Tooltip.propTypes = {
