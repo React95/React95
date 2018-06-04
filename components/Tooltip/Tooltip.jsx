@@ -16,7 +16,6 @@ const Tip = styled.div`
   background-size: 7px 7px;
   background-color: #fff;
   border: 1px solid #000;
-  font-weight: bold;
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
