@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-const show = ({ show }) =>
-  show &&
-  css`
-    opacity: 1;
-  `;
-
 const Tip = styled.div`
   background: radial-gradient(#ff0 20%, transparent 20%) 0 0,
     radial-gradient(#ff0 20%, transparent 20%) 4px 4px,
@@ -22,9 +16,7 @@ const Tip = styled.div`
   top: -18px;
   text-align: center;
   z-index: 100;
-  opacity: 0;
-
-  ${show};
+  opacity: ${({ show }) => (show ? '1' : '0')};
 `;
 
 const Wrapper = styled.div`
@@ -38,15 +30,22 @@ class Tooltip extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { show: false };
+    this.state = { show: false, delay: null };
   }
 
   handleEnter = () => {
-    this.setState({ show: true });
+    const delay = setTimeout(() => {
+      this.setState({ show: true });
+    }, this.props.delay);
+
+    this.setState({ delay });
   };
 
   handleLeave = () => {
-    this.setState({ show: false });
+    const { delay } = this.state;
+    clearTimeout(delay);
+
+    this.setState({ delay, show: false });
   };
 
   render() {
@@ -91,9 +90,11 @@ function formatDate(date) {
 Tooltip.propTypes = {
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
+  delay: PropTypes.number,
 };
 
 Tooltip.defaultProps = {
+  delay: 1000,
   text: formatDate(new Date()),
 };
 
