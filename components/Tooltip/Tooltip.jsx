@@ -16,7 +16,7 @@ const Tip = styled.div`
   top: -18px;
   text-align: center;
   z-index: 100;
-  opacity: ${({ show }) => (show ? '1' : '0')};
+  display: ${({ show }) => (show ? 'block' : 'none')};
 `;
 
 const Wrapper = styled.div`
