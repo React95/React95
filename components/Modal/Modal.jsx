@@ -136,7 +136,7 @@ class Modal extends React.Component {
 Modal.displayName = 'Modal';
 
 Modal.propTypes = {
-  opened: PropTypes.boolean,
+  opened: PropTypes.bool,
   closeModal: PropTypes.func,
   title: PropTypes.string,
   children: PropTypes.oneOfType([
