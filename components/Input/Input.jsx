@@ -25,7 +25,7 @@ class Input extends React.Component {
 
 Input.propTypes = {
   value: PropTypes.string,
-  type: PropTypes.oneOf('text', 'password'),
+  type: PropTypes.oneOf(['text', 'password']),
 };
 
 Input.defaultProps = {
