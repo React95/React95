@@ -2,9 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Field = styled.select`
+const Wrapper = styled.div`
+  position: relative;
+  min-width: 200px;
+
+  &:after {
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    font-size: 14px;
+    line-height: 1;
+    height: 83%;
+    content: '⏷';
+    position: absolute;
+    right: 1px;
+    top: 2px;
+
+    background-color: #c3c7cb;
+    box-shadow: inset 0px 0px 0px 1px #c3c7cb, inset 1px 1px 0px 1px #ffffff,
+      inset -1px -1px 0 1px #868a8e;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+  }
+`;
+
+const Select = styled.select`
+  position: relative;
   outline: none;
   border: none;
+  width: 100%;
 
   padding: 3px 3px 5px 3px;
 
@@ -13,25 +39,33 @@ const Field = styled.select`
 
   box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
     0.5px 0.5px 0 0.5px #ffffff;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 `;
 
-class Input extends React.Component {
+class Dropdown extends React.Component {
   render() {
-    const { value, style, type, ...rest } = this.props;
+    const { options } = this.props;
 
-    return <Field {...rest} className="text" type={type} />;
+    return (
+      <Wrapper>
+        <Select>
+          {options.length &&
+            options.map(option => <option value={option}>{option}</option>)}
+        </Select>
+      </Wrapper>
+    );
   }
 }
 
-Input.propTypes = {
-  value: PropTypes.string,
-  type: PropTypes.oneOf(['text', 'password']),
+Dropdown.propTypes = {
+  options: PropTypes.arrayOf([PropTypes.string, PropTypes.number]),
 };
 
-Input.defaultProps = {
-  value: '',
-  type: 'text',
-  children: null,
+Dropdown.defaultProps = {
+  options: ['foo', 'bar'],
 };
 
-export default Input;
+export default Dropdown;
