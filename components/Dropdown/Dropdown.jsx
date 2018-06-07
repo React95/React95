@@ -19,8 +19,8 @@ const Wrapper = styled.div`
     top: 2px;
 
     background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #c3c7cb, inset -1px 0px 0 1px #868a8e,
-      inset 2px 2px 0px 1px #ffffff;
+    box-shadow: inset 0.8px 0.7px 0px 0.7px #c3c7cb,
+      inset -1px 0px 0 1px #868a8e, inset 1.2px 1.2px 0px 1.5px #ffffff;
 
     border-right: 1px solid black;
     border-bottom: 2px solid black;
@@ -66,7 +66,12 @@ Dropdown.propTypes = {
 };
 
 Dropdown.defaultProps = {
-  options: ['foo', 'bar'],
+  options: [
+    '',
+    'C:\\Documents and Settings',
+    'C:\\Documents and Settings\\Documents',
+    'iexplorer.exe',
+  ],
 };
 
 export default Dropdown;
