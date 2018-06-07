@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: relative;
-  min-width: 200px;
+  width: 200px;
 
   &:after {
     display: flex;
     justify-content: center;
     width: 24px;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.1;
     height: 83%;
     content: '⏷';
     position: absolute;
@@ -19,8 +19,9 @@ const Wrapper = styled.div`
     top: 2px;
 
     background-color: #c3c7cb;
-    box-shadow: inset 0px 0px 0px 1px #c3c7cb, inset 1px 1px 0px 1px #ffffff,
-      inset -1px -1px 0 1px #868a8e;
+    box-shadow: inset 1px 1px 0px 1px #c3c7cb, inset -1px 0px 0 1px #868a8e,
+      inset 2px 2px 0px 1px #ffffff;
+
     border-right: 1px solid black;
     border-bottom: 2px solid black;
   }
