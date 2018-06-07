@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import caret from '../../assets/pattern/downcaret.svg';
+
 const Wrapper = styled.div`
   position: relative;
   width: 200px;
@@ -13,7 +15,7 @@ const Wrapper = styled.div`
     font-size: 14px;
     line-height: 1.1;
     height: 83%;
-    content: '⏷';
+    content: '';
     position: absolute;
     right: 1px;
     top: 2px;
@@ -24,6 +26,11 @@ const Wrapper = styled.div`
 
     border-right: 1px solid black;
     border-bottom: 2px solid black;
+
+    background-image: url('${caret}');
+    background-size: 12px 6px;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 `;
 
