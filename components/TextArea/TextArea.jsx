@@ -13,15 +13,9 @@ const Text = styled.textarea`
     0.5px 0.5px 0 0.5px #ffffff;
 `;
 
-class TextArea extends React.Component {
-  render() {
-    const { children, rows, cols, value, ...rest } = this.props;
-
-    return (
-      <Text {...rest} className="text" rows={rows} cols={cols} value={value} />
-    );
-  }
-}
+const TextArea = ({ rows, cols, value, ...rest }) => (
+  <Text {...rest} className="text" rows={rows} cols={cols} value={value} />
+);
 
 TextArea.propTypes = {
   value: PropTypes.string,
