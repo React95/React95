@@ -20,6 +20,7 @@ const Wrapper = styled.div`
     right: 1px;
     top: 2px;
 
+    background-color: #c3c7cb;
     box-shadow: inset 0.8px 0.7px 0px 0.7px #c3c7cb,
       inset -1px 0px 0 1px #868a8e, inset 1.2px 1.2px 0px 1.5px #ffffff;
 
