@@ -9,6 +9,8 @@ import svg from '../../assets/font/px_sans_nouveaux.svg';
 import eot from '../../assets/font/px_sans_nouveaux.eot';
 
 import pattern from '../../assets/pattern/dropdown.png';
+import downcaret from '../../assets/pattern/downcaret.svg';
+import rightcaret from '../../assets/pattern/rightcaret.svg';
 
 import auto from '../../assets/cursors/Arrow.png';
 import text from '../../assets/cursors/Text.png';
@@ -117,11 +119,9 @@ injectGlobal`
   }
 
   ::-webkit-scrollbar-button:horizontal:end:increment {
-    background-image:
-      linear-gradient(-30deg, #c3c7cb 45%, transparent 45%),
-			linear-gradient(30deg, transparent 45%, #c3c7cb 45%),
-      linear-gradient(to left, #ccc, #000);
-      background-position: 4px 1px;
+    background-image: url('${rightcaret}');
+      background-position: center center;
+      background-size: 3px 6px;
   }
 
   ::-webkit-resizer {
