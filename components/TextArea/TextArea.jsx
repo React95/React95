@@ -15,18 +15,10 @@ const Text = styled.textarea`
 
 class TextArea extends React.Component {
   render() {
-    const { children, value, rows, cols, ...rest } = this.props;
+    const { children, rows, cols, value, ...rest } = this.props;
 
     return (
-      <Text
-        {...rest}
-        className="text"
-        rows={rows}
-        cols={cols}
-        value={value || children || ''}
-      >
-        {children || value}
-      </Text>
+      <Text {...rest} className="text" rows={rows} cols={cols} value={value} />
     );
   }
 }
