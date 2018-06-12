@@ -48,11 +48,11 @@ const Label = styled.label`
 
 class Checkbox extends React.Component {
   render() {
-    const { value, style, label, checked } = this.props;
+    const { value, style, label, checked, onChange } = this.props;
 
     return (
       <Label {...style} checked={checked}>
-        <Field type="checkbox" value={value} />
+        <Field type="checkbox" value={value} onChange={onChange} />
         {label}
       </Label>
     );
@@ -63,12 +63,14 @@ Checkbox.propTypes = {
   value: PropTypes.string,
   label: PropTypes.string,
   checked: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 
 Checkbox.defaultProps = {
   value: 'checked',
   label: 'Checkbox',
   checked: false,
+  onChange: () => {},
 };
 
 export default Checkbox;
