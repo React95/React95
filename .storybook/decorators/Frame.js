@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled, { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components';
 
 import woff2 from '../../assets/font/px_sans_nouveaux.woff2';
 import woff from '../../assets/font/px_sans_nouveaux.woff';
@@ -9,7 +9,9 @@ import svg from '../../assets/font/px_sans_nouveaux.svg';
 import eot from '../../assets/font/px_sans_nouveaux.eot';
 
 import pattern from '../../assets/pattern/dropdown.png';
+import upcaret from '../../assets/pattern/upcaret.svg';
 import downcaret from '../../assets/pattern/downcaret.svg';
+import leftcaret from '../../assets/pattern/leftcaret.svg';
 import rightcaret from '../../assets/pattern/rightcaret.svg';
 
 import auto from '../../assets/cursors/Arrow.png';
@@ -87,6 +89,7 @@ injectGlobal`
 
     background-size: 10px 10px;
     background-repeat: no-repeat;
+    background-position: center center;
   }
 
   ::-webkit-scrollbar-button:end:decrement,
@@ -94,34 +97,28 @@ injectGlobal`
     display: none;
   }
 
+  ::-webkit-scrollbar-button:vertical {
+    background-size: 6px 3px;
+  }
+
+  ::-webkit-scrollbar-button:horizontal {
+    background-size: 3px 6px;
+  }
+
   ::-webkit-scrollbar-button:vertical:start:decrement {
-    background-image:
-      linear-gradient(50deg, transparent 45%, #c3c7cb 45%),
-      linear-gradient(-50deg, transparent 45%, #c3c7cb 45%),
-      linear-gradient(to bottom, #ccc, #000);
-    background-position: center -1px;
+    background-image: url('${upcaret}');
   }
 
   ::-webkit-scrollbar-button:vertical:end:increment {
-    background-image:
-      linear-gradient(130deg, transparent 45%, #c3c7cb 45%),
-			linear-gradient(-130deg, transparent 45%, #c3c7cb 45%),
-      linear-gradient(to top, #ccc, #000);
-      background-position: center 6px;
+    background-image: url('${downcaret}');
   }
 
   ::-webkit-scrollbar-button:horizontal:start:decrement {
-    background-image:
-      linear-gradient(150deg, #c3c7cb 45%, transparent 45%),
-			linear-gradient(-150deg, transparent 45%, #c3c7cb 45%),
-      linear-gradient(to right, #ccc, #000);
-      background-position: -1px 2px;
+    background-image: url('${leftcaret}');
   }
 
   ::-webkit-scrollbar-button:horizontal:end:increment {
-    background-image: url('${rightcaret}');
-      background-position: center center;
-      background-size: 3px 6px;
+      background-image: url('${rightcaret}');
   }
 
   ::-webkit-resizer {
