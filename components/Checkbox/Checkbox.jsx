@@ -5,22 +5,12 @@ import styled from 'styled-components';
 import check from '../../assets/pattern/check.svg';
 
 const Field = styled.input`
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-
-  &:checked {
-    background-image: url('${check}');
-  }
+  display: none;
 `;
 
 const Label = styled.label`
-  padding-left: 20px;
+  position: relative;
+  padding-left: 26px;
   height: 15px;
   display: inline-block;
   line-height: 15px;
@@ -28,31 +18,57 @@ const Label = styled.label`
   background-position: 0 0;
   font-size: 15px;
   vertical-align: middle;
-  cursor: pointer;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+
+    border-left: 1px solid #868a8e;
+    border-top: 1px solid #868a8e;
+
+    box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
+      0.5px 0.5px 0 0.5px #ffffff;
+    background-color: white;
+  }
+
+  ${({ checked }) =>
+    checked &&
+    `
+  &:before {
+    background-image: url('${check}');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 10px;
+  }`};
 `;
 
 class Checkbox extends React.Component {
   render() {
-    const { value, style, type, ...rest } = this.props;
+    const { value, style, label, checked } = this.props;
 
-    return <Field {...rest} className="text" type="checkbox" />;
+    return (
+      <Label {...style} checked={checked}>
+        <Field type="checkbox" value={value} />
+        {label}
+      </Label>
+    );
   }
 }
 
 Checkbox.propTypes = {
   value: PropTypes.string,
+  label: PropTypes.string,
+  checked: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
-  value: '',
-  children: null,
+  value: 'checked',
+  label: 'Checkbox',
+  checked: false,
 };
 
 export default Checkbox;
