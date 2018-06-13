@@ -3,6 +3,34 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import check from '../../assets/pattern/check.svg';
+import checkDisabled from '../../assets/pattern/check-disabled.svg';
+import bgpattern from '../../assets/pattern/dropdown.png';
+
+const checked = ({ checked, disabled }) =>
+  checked &&
+  `
+  &:before {
+    ${
+      disabled
+        ? `
+      background-image:  url('${checkDisabled}'), url('${bgpattern}');
+      background-repeat: no-repeat, repeat;
+      background-position: center center;
+      background-size: 7px 7px, 1.9px 1.9px;
+      `
+        : `background-image: url('${check}');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 7px 7px;`
+    }
+  }`;
+
+const disabled = ({ disabled }) =>
+  disabled &&
+  `
+  color: #868686;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+`;
 
 const Field = styled.input`
   display: none;
@@ -31,23 +59,15 @@ const Label = styled.label`
     background-color: white;
   }
 
-  ${({ checked }) =>
-    checked &&
-    `
-  &:before {
-    background-image: url('${check}');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 7px 7px;
-  }`};
+  ${checked} ${disabled};
 `;
 
 class Checkbox extends React.Component {
   render() {
-    const { value, style, label, checked, onChange } = this.props;
+    const { value, style, label, checked, disabled, onChange } = this.props;
 
     return (
-      <Label {...style} checked={checked}>
+      <Label {...style} checked={checked} disabled={disabled}>
         <Field type="checkbox" value={value} onChange={onChange} />
         {label}
       </Label>
@@ -59,6 +79,7 @@ Checkbox.propTypes = {
   value: PropTypes.string,
   label: PropTypes.string,
   checked: PropTypes.bool,
+  disabled: PropTypes.bool,
   onChange: PropTypes.func,
 };
 
@@ -66,6 +87,7 @@ Checkbox.defaultProps = {
   value: 'checked',
   label: 'Checkbox',
   checked: false,
+  disabled: false,
   onChange: () => {},
 };
 
