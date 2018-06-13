@@ -30,6 +30,10 @@ const disabled = ({ disabled }) =>
   `
   color: #868686;
   text-shadow: 0.5px 0.5px #d2d2d2;
+
+  &:before {
+    background-color: #c0c0c0;
+  }
 `;
 
 const Field = styled.input`
@@ -41,6 +45,7 @@ const Label = styled.label`
   padding-left: 22px;
   height: 15px;
   display: inline-block;
+  margin: 4px 0;
 
   &:before {
     content: '';
@@ -64,12 +69,20 @@ const Label = styled.label`
 
 class Checkbox extends React.Component {
   render() {
-    const { value, style, label, checked, disabled, onChange } = this.props;
+    const {
+      children,
+      label,
+      value,
+      style,
+      checked,
+      disabled,
+      onChange,
+    } = this.props;
 
     return (
       <Label {...style} checked={checked} disabled={disabled}>
         <Field type="checkbox" value={value} onChange={onChange} />
-        {label}
+        {children || label}
       </Label>
     );
   }
@@ -78,6 +91,7 @@ class Checkbox extends React.Component {
 Checkbox.propTypes = {
   value: PropTypes.string,
   label: PropTypes.string,
+  children: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
@@ -86,6 +100,7 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   value: 'checked',
   label: 'Checkbox',
+  children: '',
   checked: false,
   disabled: false,
   onChange: () => {},
