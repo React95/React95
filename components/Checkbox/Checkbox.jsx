@@ -10,22 +10,18 @@ const Field = styled.input`
 
 const Label = styled.label`
   position: relative;
-  padding-left: 26px;
+  padding-left: 22px;
   height: 15px;
   display: inline-block;
-  line-height: 15px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 15px;
-  vertical-align: middle;
 
   &:before {
     content: '';
     position: absolute;
+    top: 3px;
     left: 0;
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
 
     border-left: 1px solid #868a8e;
     border-top: 1px solid #868a8e;
@@ -42,7 +38,7 @@ const Label = styled.label`
     background-image: url('${check}');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 10px 10px;
+    background-size: 7px 7px;
   }`};
 `;
 
