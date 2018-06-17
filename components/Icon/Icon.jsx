@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import icons from './icons.js';
 
 const size = ({ width, height }) =>
-  `
+  css`
     width: ${width}px;
     height: ${height}px;
   `;
