@@ -22,9 +22,14 @@ const Field = styled.fieldset`
   box-shadow: 1px 1px 0 0 #e6e6e6 /* inset 1px 1px 0 0 #e6e6e6 */;
 `;
 
+const Legend = styled.legend`
+  padding-left: 4px;
+  padding-right: 1px;
+`;
+
 const Fieldset = ({ legend, children, ...rest }) => (
   <Field {...rest}>
-    {legend && <legend>{legend}</legend>}
+    {legend && <Legend>{legend}</Legend>}
     {children}
   </Field>
 );
