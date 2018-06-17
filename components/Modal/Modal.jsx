@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 import Draggable from 'react-draggable';
 import Btn from '../shared-style/Btn';
 import Button from '../Button';
+import Icon from '../Icon';
 
 const ModalWrapper = styled.div`
   display: flex;
@@ -98,7 +99,15 @@ const ButtonWrapper = styled.div`
 
 class Modal extends React.Component {
   render() {
-    const { opened, closeModal, title, children, buttons } = this.props;
+    const { opened, closeModal, title, children, buttons, icon } = this.props;
+
+    const iconStyle = {
+      width: 16,
+      height: 19,
+      style: {
+        marginRight: '4px',
+      },
+    };
 
     return (
       <React.Fragment>
@@ -106,6 +115,7 @@ class Modal extends React.Component {
           <Draggable handle=".draggable">
             <ModalWrapper>
               <TitleBar className="draggable">
+                {icon && <Icon name={icon} {...iconStyle} />}
                 <Title>{title}</Title>
                 <OptionsBox>
                   <Option>?</Option>
@@ -136,6 +146,7 @@ class Modal extends React.Component {
 Modal.displayName = 'Modal';
 
 Modal.propTypes = {
+  icon: PropTypes.string,
   opened: PropTypes.bool,
   closeModal: PropTypes.func,
   title: PropTypes.string,
@@ -147,16 +158,17 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    }),
+    })
   ),
 };
 
 Modal.defaultProps = {
+  icon: '',
   opened: false,
-  closeModal: () => {},
   title: 'Modal',
   chidren: null,
   buttons: [],
+  closeModal: () => {},
 };
 
 export default Modal;

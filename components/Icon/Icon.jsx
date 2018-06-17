@@ -1,26 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { injectGlobal } from 'styled-components';
+import styled, { css } from 'styled-components';
 import icons from './icons.js';
+
+const size = ({ width, height }) =>
+  `
+    width: ${width}px;
+    height: ${height}px;
+  `;
 
 const I = styled.i`
   display: block;
-  width: 30px;
-  height: 32px;
+  ${size}
 
   background-image: url('${({ name }) => icons[name] || 'none'}');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 `;
 
-const Icon = ({ name }) => <I name={name} />;
+const Icon = ({ name, width, height, ...rest }) => (
+  <I name={name} width={width} height={height} {...rest} />
+);
 
 Icon.propTypes = {
   name: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
 };
 
 Icon.defaultProps = {
   name: null,
+  width: 32,
+  height: 32,
 };
 
 export default Icon;
