@@ -1,17 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import ListItem from './ListItem';
+import Divider from './ListDivider';
+import Icon from '../Icon';
 
-const Field = styled.ul``;
+import Btn from '../shared-style/Btn';
 
-class List extends React.Component {
-  render() {
-    return <Field />;
+const List = Btn.withComponent('ul').extend`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  ${({ width }) => `
+    width: ${width}px;
+  `}
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
-}
 
-List.propTypes = {};
+  &:active {
+    box-shadow: none;
+  }
+`;
 
-List.defaultProps = {};
+List.defaultProps = {
+  width: 200,
+};
+
+List.Icon = Icon;
+List.Item = ListItem;
+List.Divider = Divider;
 
 export default List;
