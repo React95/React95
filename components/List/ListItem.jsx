@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Icon from '../Icon';
 
 const Item = styled.li`
+  position: relative;
+
   display: flex;
   align-items: center;
   margin: 0;
@@ -11,6 +13,11 @@ const Item = styled.li`
 
   i {
     margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #00a;
+    color: white;
   }
 `;
 
