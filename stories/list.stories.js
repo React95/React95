@@ -27,7 +27,7 @@ storiesOf('List', module).add('default', () => (
     </List.Item>
     <List.Item>
       <List.Icon name="loader_bat" />
-      Run ...
+      Run...
     </List.Item>
     <List.Divider />
     <List.Item>
