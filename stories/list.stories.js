@@ -19,7 +19,12 @@ storiesOf('List', module).add('default', () => (
     <br />
 
     <List>
-      <List.Item>View</List.Item>
+      <List.Item>
+        <List>
+          <List.Item>New</List.Item>
+        </List>
+        View
+      </List.Item>
       <List.Divider />
       <List.Item>Customize this Folder...</List.Item>
       <List.Divider />

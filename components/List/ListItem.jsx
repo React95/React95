@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../Icon';
+import List from './List';
+
+import rightcaret from '../../assets/pattern/rightcaret.svg';
 
 const Item = styled.li`
   position: relative;
@@ -20,11 +23,48 @@ const Item = styled.li`
     color: white;
   }
 
+  ul {
+    display: none;
+  }
+
+  svg {
+    fill: white;
+  }
+
   ${({ icon }) => !icon && `padding-left: 26px;`};
+
+  ${({ hasList }) =>
+    hasList &&
+    `
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: #000;
+      mask-image: url('${rightcaret}');
+      mask-position: center center;
+      mask-size: 5px 8px;
+      mask-repeat: no-repeat;
+      width: 5px;
+      height: 8px;
+      right: 8px;
+    }
+    &:hover {
+      &:after {
+        background-color: #FFF;
+      }
+    }
+    `};
 `;
 
 const ListItem = ({ icon, children, rest }) => (
-  <Item {...rest} icon={icon}>
+  <Item
+    {...rest}
+    icon={icon}
+    hasList={React.Children.map(
+      children,
+      children => children.type === List,
+    ).some(child => child)}
+  >
     {icon && <Icon name={icon} />}
     {children}
   </Item>
