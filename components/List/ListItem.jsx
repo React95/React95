@@ -21,4 +21,10 @@ const Item = styled.li`
   }
 `;
 
-export default Item;
+const ListItem = ({ icon, children, rest }) => (
+  <Item {...rest}>
+    {icon && <Icon name={icon} />}
+    {children}
+  </Item>
+);
+export default ListItem;

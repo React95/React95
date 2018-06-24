@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ListItem from './ListItem';
 import Divider from './ListDivider';
-import Icon from '../Icon';
 
 const List = styled.ul`
   background-color: #c3c7cb;
@@ -29,7 +28,6 @@ List.defaultProps = {
   width: 200,
 };
 
-List.Icon = Icon;
 List.Item = ListItem;
 List.Divider = Divider;
 
