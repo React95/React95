@@ -19,10 +19,12 @@ const Item = styled.li`
     background-color: #00a;
     color: white;
   }
+
+  ${({ icon }) => !icon && `padding-left: 26px;`};
 `;
 
 const ListItem = ({ icon, children, rest }) => (
-  <Item {...rest}>
+  <Item {...rest} icon={icon}>
     {icon && <Icon name={icon} />}
     {children}
   </Item>
