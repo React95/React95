@@ -25,6 +25,9 @@ const Item = styled.li`
 
   ul {
     display: none;
+    position: absolute;
+    left: 97%;
+    color: #000;
   }
 
   svg {
@@ -48,9 +51,14 @@ const Item = styled.li`
       height: 8px;
       right: 8px;
     }
+
     &:hover {
       &:after {
         background-color: #FFF;
+      }
+
+      ul {
+        display: block;
       }
     }
     `};
