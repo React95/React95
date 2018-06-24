@@ -65,6 +65,10 @@ import shortcut from '../../assets/icons/shortcut.ico';
 import shortcut2 from '../../assets/icons/shortcut2.ico';
 import tree from '../../assets/icons/tree.ico';
 import wordpad from '../../assets/icons/wordpad.ico';
+import windows_explorer from '../../assets/icons/windows_explorer.ico';
+import ms_dos from '../../assets/icons/ms_dos.ico';
+import microsoft_network from '../../assets/icons/microsoft_network.ico';
+import microsoft_exchange from '../../assets/icons/microsoft_exchange.ico';
 
 const path = {
   bat,
@@ -134,6 +138,10 @@ const path = {
   shortcut2,
   tree,
   wordpad,
+  windows_explorer,
+  ms_dos,
+  microsoft_network,
+  microsoft_exchange,
 };
 
 export default path;
