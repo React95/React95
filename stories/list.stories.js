@@ -6,9 +6,25 @@ import { storiesOf } from '@storybook/react';
 storiesOf('List', module).add('default', () => (
   <React.Fragment>
     <List>
-      <List.Item icon="folder_exe2">Programs</List.Item>
+      <List.Item icon="folder_exe2">
+        <List>
+          <List.Item icon="folder_exe">Accessories</List.Item>
+          <List.Item icon="folder_exe">StartUp</List.Item>
+          <List.Item icon="microsoft_exchange">Microsoft Exchange</List.Item>
+          <List.Item icon="ms_dos">MS-DOS Prompt</List.Item>
+          <List.Item icon="microsoft_network">The Microsoft Network</List.Item>
+          <List.Item icon="windows_explorer">Windows Explorer</List.Item>
+        </List>
+        Programs
+      </List.Item>
       <List.Item icon="folder_file">Documents</List.Item>
-      <List.Item icon="settings">Settings</List.Item>
+      <List.Item icon="settings">
+        <List>
+          <List.Item icon="folder_settings">Control Panel</List.Item>
+          <List.Item icon="folder_print">Printers</List.Item>
+        </List>
+        Settings
+      </List.Item>
       <List.Item icon="file_find">Find</List.Item>
       <List.Item icon="help_book">Help</List.Item>
       <List.Item icon="loader_bat">Run...</List.Item>
@@ -19,12 +35,7 @@ storiesOf('List', module).add('default', () => (
     <br />
 
     <List>
-      <List.Item>
-        <List>
-          <List.Item>New</List.Item>
-        </List>
-        View
-      </List.Item>
+      <List.Item>View</List.Item>
       <List.Divider />
       <List.Item>Customize this Folder...</List.Item>
       <List.Divider />

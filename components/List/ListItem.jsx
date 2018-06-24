@@ -26,8 +26,15 @@ const Item = styled.li`
   ul {
     display: none;
     position: absolute;
+    top: -2px;
     left: 97%;
     color: #000;
+
+    i {
+      width: 18px;
+      height: 20px;
+      margin-right: 6px;
+    }
   }
 
   svg {
