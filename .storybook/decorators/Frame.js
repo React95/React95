@@ -118,7 +118,7 @@ injectGlobal`
   }
 
   ::-webkit-scrollbar-button:horizontal:end:increment {
-      background-image: url('${rightcaret}');
+    background-image: url('${rightcaret}');
   }
 
   ::-webkit-resizer {
