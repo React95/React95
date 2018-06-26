@@ -11,7 +11,7 @@ const CheckboxList = styled.div`
 `;
 
 storiesOf('Fieldset', module).add('default', () => (
-  <Fieldset legend="Connection Settings" style={{ width: '250px' }}>
+  <Fieldset legend="Connection Settings" style={{ width: '300px' }}>
     <CheckboxList>
       <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
       <Checkbox checked={false}>Disable Local Keyboard & Pointer</Checkbox>
