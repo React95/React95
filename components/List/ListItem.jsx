@@ -19,7 +19,7 @@ const Item = styled.li`
   }
 
   &:hover {
-    background-color: #00a;
+    background-color: #00007f;
     color: white;
   }
 
@@ -71,9 +71,10 @@ const Item = styled.li`
     `};
 `;
 
-const ListItem = ({ icon, children, rest }) => (
+const ListItem = ({ icon, children, onClick, rest }) => (
   <Item
     {...rest}
+    onClick={onClick}
     icon={icon}
     hasList={React.Children.map(
       children,
