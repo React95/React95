@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from '../components/Modal';
 import Button from '../components/Button';
+import List from '../components/List';
 
 import { storiesOf } from '@storybook/react';
 
@@ -23,7 +24,6 @@ class ModalStory extends React.Component {
     return (
       <div>
         <Button onClick={this.handleOpenModal}>Trigger Modal</Button>
-
         <Modal
           icon="computer"
           title="Browse"
@@ -32,6 +32,24 @@ class ModalStory extends React.Component {
           buttons={[
             { value: 'Ok', onClick: this.handleButtonClick },
             { value: 'Cancel', onClick: this.handleButtonClick },
+          ]}
+          menu={[
+            {
+              name: 'File',
+              list: (
+                <List>
+                  <List.Item onClick={this.handleCloseModal}>Exit</List.Item>
+                </List>
+              ),
+            },
+            {
+              name: 'Edit',
+              list: (
+                <List>
+                  <List.Item>Copy</List.Item>
+                </List>
+              ),
+            },
           ]}
         >
           {this.props.children}

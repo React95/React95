@@ -30,7 +30,7 @@ const ModalWrapper = styled.div`
 const TitleBar = styled.div`
   margin-bottom: 2px;
 
-  background-color: #0000aa;
+  background-color: #00007f;
   color: white;
   padding: 2px 4px;
 
@@ -97,9 +97,70 @@ const ButtonWrapper = styled.div`
   }
 `;
 
+const MenuWrapper = styled.ul`
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 3px;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #848284;
+
+  box-shadow: 0 1px 0 0 #e6e6e6;
+`;
+
+const MenuItem = styled.li`
+  position: relative;
+  padding-left: 6px;
+  padding-right: 6px;
+
+  user-select: none;
+
+  ul {
+    position: absolute;
+    left: 0;
+    color: #000;
+  }
+
+  ${({ active }) =>
+    active &&
+    `
+      background-color: #00007f;
+      color: #FFF;
+    `};
+`;
+
 class Modal extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      menuOpened: '',
+    };
+  }
+
+  _menuClick = menuOpened => {
+    this.setState({ menuOpened });
+  };
+
+  _resetState = () => {
+    this.setState({ menuOpened: '' });
+  };
+
   render() {
-    const { opened, closeModal, title, children, buttons, icon } = this.props;
+    const {
+      opened,
+      closeModal,
+      title,
+      children,
+      buttons,
+      icon,
+      menu,
+    } = this.props;
 
     const iconStyle = {
       width: 16,
@@ -123,7 +184,24 @@ class Modal extends React.Component {
                 </OptionsBox>
               </TitleBar>
 
-              <Content>{children}</Content>
+              {menu && (
+                <MenuWrapper>
+                  {menu.map(({ name, list }) => {
+                    const active = this.state.menuOpened === name;
+                    return (
+                      <MenuItem
+                        onMouseDown={() => this._menuClick(name)}
+                        active={active}
+                      >
+                        {name}
+                        {active && list}
+                      </MenuItem>
+                    );
+                  })}
+                </MenuWrapper>
+              )}
+
+              <Content onClick={this._resetState}>{children}</Content>
               {buttons && (
                 <ButtonWrapper>
                   {buttons.map((button, index) => (
@@ -158,8 +236,9 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    })
+    }),
   ),
+  menu: PropTypes.arrayOf(PropTypes.string),
 };
 
 Modal.defaultProps = {
@@ -168,6 +247,7 @@ Modal.defaultProps = {
   title: 'Modal',
   chidren: null,
   buttons: [],
+  menu: [],
   closeModal: () => {},
 };
 
