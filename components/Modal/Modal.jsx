@@ -190,6 +190,7 @@ class Modal extends React.Component {
                     const active = this.state.menuOpened === name;
                     return (
                       <MenuItem
+                        key={name}
                         onMouseDown={() => this._menuClick(name)}
                         active={active}
                       >
@@ -238,7 +239,15 @@ Modal.propTypes = {
       onClick: PropTypes.func,
     }),
   ),
-  menu: PropTypes.arrayOf(PropTypes.string),
+  menu: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      list: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+      ]).isRequired,
+    }),
+  ),
 };
 
 Modal.defaultProps = {
