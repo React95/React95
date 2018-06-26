@@ -66,6 +66,7 @@ injectGlobal`
   * {
     font-family: 'Px Sans Nouveaux';
     font-size: 10px;
+    box-sizing: border-box;
   }
 
   ::-webkit-scrollbar {
