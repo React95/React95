@@ -21,40 +21,42 @@ class ModalStory extends React.Component {
   handleButtonClick = e => alert(e.target.value);
 
   render() {
+    const { showModal } = this.state;
     return (
-      <div>
+      <React.Fragment>
         <Button onClick={this.handleOpenModal}>Trigger Modal</Button>
-        <Modal
-          icon="computer"
-          title="Browse"
-          opened={this.state.showModal}
-          closeModal={this.handleCloseModal}
-          buttons={[
-            { value: 'Ok', onClick: this.handleButtonClick },
-            { value: 'Cancel', onClick: this.handleButtonClick },
-          ]}
-          menu={[
-            {
-              name: 'File',
-              list: (
-                <List>
-                  <List.Item onClick={this.handleCloseModal}>Exit</List.Item>
-                </List>
-              ),
-            },
-            {
-              name: 'Edit',
-              list: (
-                <List>
-                  <List.Item>Copy</List.Item>
-                </List>
-              ),
-            },
-          ]}
-        >
-          {this.props.children}
-        </Modal>
-      </div>
+        {showModal && (
+          <Modal
+            icon="computer"
+            title="Browse"
+            closeModal={this.handleCloseModal}
+            buttons={[
+              { value: 'Ok', onClick: this.handleButtonClick },
+              { value: 'Cancel', onClick: this.handleButtonClick },
+            ]}
+            menu={[
+              {
+                name: 'File',
+                list: (
+                  <List>
+                    <List.Item onClick={this.handleCloseModal}>Exit</List.Item>
+                  </List>
+                ),
+              },
+              {
+                name: 'Edit',
+                list: (
+                  <List>
+                    <List.Item>Copy</List.Item>
+                  </List>
+                ),
+              },
+            ]}
+          >
+            {this.props.children}
+          </Modal>
+        )}
+      </React.Fragment>
     );
   }
 }
