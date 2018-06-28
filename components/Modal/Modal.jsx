@@ -172,51 +172,49 @@ class Modal extends React.Component {
 
     return (
       <React.Fragment>
-        {opened && (
-          <Draggable handle=".draggable">
-            <ModalWrapper>
-              <TitleBar className="draggable">
-                {icon && <Icon name={icon} {...iconStyle} />}
-                <Title>{title}</Title>
-                <OptionsBox>
-                  <Option>?</Option>
-                  <Option onClick={closeModal}>x</Option>
-                </OptionsBox>
-              </TitleBar>
+        <Draggable handle=".draggable">
+          <ModalWrapper>
+            <TitleBar className="draggable">
+              {icon && <Icon name={icon} {...iconStyle} />}
+              <Title>{title}</Title>
+              <OptionsBox>
+                <Option>?</Option>
+                <Option onClick={closeModal}>x</Option>
+              </OptionsBox>
+            </TitleBar>
 
-              {menu && (
-                <MenuWrapper>
-                  {menu.map(({ name, list }) => {
-                    const active = this.state.menuOpened === name;
-                    return (
-                      <MenuItem
-                        key={name}
-                        onMouseDown={() => this._menuClick(name)}
-                        active={active}
-                      >
-                        {name}
-                        {active && list}
-                      </MenuItem>
-                    );
-                  })}
-                </MenuWrapper>
-              )}
+            {menu && (
+              <MenuWrapper>
+                {menu.map(({ name, list }) => {
+                  const active = this.state.menuOpened === name;
+                  return (
+                    <MenuItem
+                      key={name}
+                      onMouseDown={() => this._menuClick(name)}
+                      active={active}
+                    >
+                      {name}
+                      {active && list}
+                    </MenuItem>
+                  );
+                })}
+              </MenuWrapper>
+            )}
 
-              <Content onClick={this._resetState}>{children}</Content>
-              {buttons && (
-                <ButtonWrapper>
-                  {buttons.map((button, index) => (
-                    <Button
-                      key={index}
-                      onClick={button.onClick}
-                      value={button.value}
-                    />
-                  ))}
-                </ButtonWrapper>
-              )}
-            </ModalWrapper>
-          </Draggable>
-        )}
+            <Content onClick={this._resetState}>{children}</Content>
+            {buttons && (
+              <ButtonWrapper>
+                {buttons.map((button, index) => (
+                  <Button
+                    key={index}
+                    onClick={button.onClick}
+                    value={button.value}
+                  />
+                ))}
+              </ButtonWrapper>
+            )}
+          </ModalWrapper>
+        </Draggable>
       </React.Fragment>
     );
   }
@@ -226,7 +224,6 @@ Modal.displayName = 'Modal';
 
 Modal.propTypes = {
   icon: PropTypes.string,
-  opened: PropTypes.bool,
   closeModal: PropTypes.func,
   title: PropTypes.string,
   children: PropTypes.oneOfType([
@@ -252,7 +249,6 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   icon: '',
-  opened: false,
   title: 'Modal',
   chidren: null,
   buttons: [],
