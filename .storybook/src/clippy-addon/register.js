@@ -96,12 +96,15 @@ class Clippy extends React.Component {
   }
 
   componentDidMount() {
-    console.count('Clippy');
     const { channel, api } = this.props;
 
     channel.on('kadira/clippy/set_component', this.setComponent);
 
-    clippy.load('Clippy', agent => {
+    const agentName = this.availableAgents[
+      Math.floor(Math.random() * talks.length)
+    ];
+
+    clippy.load(agentName, agent => {
       this.agent = agent;
 
       this.agent.show();
@@ -128,7 +131,7 @@ class Clippy extends React.Component {
   setComponent = component => this.setState({ component });
 
   _speak = () => {
-    const msg = talks[~~(Math.random() * talks.length)];
+    const msg = talks[Math.floor(Math.random() * talks.length)];
 
     this.agent.speak(msg);
     this.agent.animate();
