@@ -75,10 +75,9 @@ class Clippy extends React.Component {
 
     this.talks = [
       'PRs are always welcome!',
-      'Nice day!',
       'What are you think about this component?',
       'You can star this repo if you want',
-      'Helloo !!!',
+      'What are you think about this project?',
     ];
 
     this.availableAgents = [
@@ -101,7 +100,7 @@ class Clippy extends React.Component {
     channel.on('kadira/clippy/set_component', this.setComponent);
 
     const agentName = this.availableAgents[
-      Math.floor(Math.random() * talks.length)
+      Math.floor(Math.random() * this.availableAgents.length)
     ];
 
     clippy.load(agentName, agent => {
@@ -131,7 +130,7 @@ class Clippy extends React.Component {
   setComponent = component => this.setState({ component });
 
   _speak = () => {
-    const msg = talks[Math.floor(Math.random() * talks.length)];
+    const msg = this.talks[Math.floor(Math.random() * this.talks.length)];
 
     this.agent.speak(msg);
     this.agent.animate();
