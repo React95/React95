@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../components/Button';
-import Clippy from '../components/Clippy';
 
 import { storiesOf } from '@storybook/react';
 import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
