@@ -21,7 +21,7 @@ injectGlobal`
   .clippy-content {
     max-width: 200px;
     min-width: 120px;
-    font-family: "Microsoft Sans", sans-serif;
+    font-family: 'Px Sans Nouveaux';
     font-size: 10pt;
   }
 
@@ -72,6 +72,27 @@ class Clippy extends React.Component {
     };
 
     this.agent;
+
+    this.talks = [
+      'PRs are always welcome!',
+      'Nice day!',
+      'What are you think about this component?',
+      'You can star this repo if you want',
+      'Helloo !!!',
+    ];
+
+    this.availableAgents = [
+      'Bonzi',
+      'Clippy',
+      'F1',
+      'Genie',
+      'Genius',
+      'Links',
+      'Merlin',
+      'Peedy',
+      'Rocky',
+      'Rover',
+    ];
   }
 
   componentDidMount() {
@@ -100,15 +121,14 @@ class Clippy extends React.Component {
     }
 
     this.unmounted = true;
-    const { channel, api } = this.props;
+    const { channel } = this.props;
     channel.removeListener('kadira/clippy/set_component', this.setComponent);
   }
 
   setComponent = component => this.setState({ component });
 
   _speak = () => {
-    const { component } = this.state;
-    const msg = `You choose the ${component} Component!`;
+    const msg = talks[~~(Math.random() * talks.length)];
 
     this.agent.speak(msg);
     this.agent.animate();
