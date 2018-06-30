@@ -9,6 +9,7 @@
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "clippyjs": "^0.0.3",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
