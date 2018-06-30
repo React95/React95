@@ -75,9 +75,9 @@ class Clippy extends React.Component {
 
     this.talks = [
       'PRs are always welcome!',
-      'What are you think about this component?',
+      'What do you think about this component?',
       'You can star this repo if you want',
-      'What are you think about this project?',
+      'What do you think about this project?',
     ];
 
     this.availableAgents = [
