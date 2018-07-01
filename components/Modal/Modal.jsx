@@ -153,13 +153,14 @@ class Modal extends React.Component {
 
   render() {
     const {
-      opened,
       closeModal,
       title,
       children,
       buttons,
       icon,
       menu,
+      top,
+      left,
     } = this.props;
 
     const iconStyle = {
@@ -170,10 +171,15 @@ class Modal extends React.Component {
       },
     };
 
+    const position = {
+      top,
+      left,
+    };
+
     return (
       <React.Fragment>
         <Draggable handle=".draggable">
-          <ModalWrapper>
+          <ModalWrapper style={position}>
             <TitleBar className="draggable">
               {icon && <Icon name={icon} {...iconStyle} />}
               <Title>{title}</Title>

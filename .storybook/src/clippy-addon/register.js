@@ -1,8 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import addons from '@storybook/addons';
 import clippy from 'clippyjs';
 import { injectGlobal } from 'styled-components';
+
+import Modal from '../../../components/Modal';
+import List from '../../../components/List';
 
 injectGlobal`
   .clippy, .clippy-balloon {
@@ -79,6 +81,7 @@ class Clippy extends React.Component {
     this.state = {
       component: '',
       clippyButton: false,
+      showModal: false,
     };
 
     this.agent;
@@ -142,8 +145,7 @@ class Clippy extends React.Component {
 
   setComponent = component => this.setState({ component });
 
-  _showMeTheCode = () =>
-    console.log(`SHOW THE ${this.state.component} CODEEEEEE`);
+  _showMeTheCode = () => this._openModal();
 
   _speak = () => {
     if (!this.state.clippyButton) {
@@ -168,7 +170,52 @@ class Clippy extends React.Component {
     this.setState({ clippyButton: true });
   };
 
-  render = () => null;
+  _openModal = () => this.setState({ showModal: true });
+
+  _closeModal = () => this.setState({ showModal: false });
+
+  render() {
+    const { showModal } = this.state;
+    return (
+      <React.Fragment>
+        {showModal && (
+          <Modal
+            icon="computer"
+            title="Browse"
+            left="40%"
+            top="15%"
+            closeModal={this._closeModal}
+            buttons={
+              [
+                // { value: 'Ok', onClick: this.handleButtonClick },
+                // { value: 'Cancel', onClick: this.handleButtonClick },
+              ]
+            }
+            menu={[
+              {
+                name: 'File',
+                list: (
+                  <List>
+                    {/* <List.Item onClick={this.handleCloseModal}>Exit</List.Item> */}
+                  </List>
+                ),
+              },
+              {
+                name: 'Edit',
+                list: (
+                  <List>
+                    <List.Item>Copy</List.Item>
+                  </List>
+                ),
+              },
+            ]}
+          >
+            {this.props.children}
+          </Modal>
+        )}
+      </React.Fragment>
+    );
+  }
 }
 
 addons.register('kadira/clippy', api => {
