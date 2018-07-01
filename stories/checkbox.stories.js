@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Checkbox from '../components/Checkbox';
-
 import { storiesOf } from '@storybook/react';
+import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+
+import Checkbox from '../components/Checkbox';
 
 const CheckboxList = styled.div`
   display: flex;
@@ -23,7 +24,14 @@ class CheckBoxStory extends React.Component {
   render() {
     const { checked } = this.state;
     return (
-      <React.Fragment>
+      <WithClippy
+        component="Checkbox"
+        code={[
+          '<Checkbox checked={true}>Checked</Checkbox>',
+          '<Checkbox checked={false}>Unchecked</Checkbox>',
+          '<Checkbox disabled={true}>Disabled</Checkbox>',
+        ].join('\n')}
+      >
         <CheckboxList>
           <Checkbox checked={checked} onChange={this.handleChange}>
             Working
@@ -37,7 +45,7 @@ class CheckBoxStory extends React.Component {
             Checked and Disabled
           </Checkbox>
         </CheckboxList>
-      </React.Fragment>
+      </WithClippy>
     );
   }
 }

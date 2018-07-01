@@ -5,6 +5,7 @@ import { injectGlobal } from 'styled-components';
 
 import Modal from '../../../components/Modal';
 import List from '../../../components/List';
+import TextArea from '../../../components/TextArea';
 
 injectGlobal`
   .clippy, .clippy-balloon {
@@ -80,6 +81,7 @@ class Clippy extends React.Component {
     super(...args);
     this.state = {
       component: '',
+      code: '',
       clippyButton: false,
       showModal: false,
     };
@@ -143,7 +145,7 @@ class Clippy extends React.Component {
     channel.removeListener('kadira/clippy/set_component', this._speak);
   }
 
-  setComponent = component => this.setState({ component });
+  setComponent = ({ component, code }) => this.setState({ component, code });
 
   _showMeTheCode = () => this._openModal();
 
@@ -175,28 +177,25 @@ class Clippy extends React.Component {
   _closeModal = () => this.setState({ showModal: false });
 
   render() {
-    const { showModal } = this.state;
+    const { showModal, code, component } = this.state;
+
+    const formattedCode = [`import { ${component} } from 'react95';`, '', code];
+
     return (
       <React.Fragment>
         {showModal && (
           <Modal
-            icon="computer"
-            title="Browse"
+            icon="file_text"
+            title={component}
             left="40%"
             top="15%"
             closeModal={this._closeModal}
-            buttons={
-              [
-                // { value: 'Ok', onClick: this.handleButtonClick },
-                // { value: 'Cancel', onClick: this.handleButtonClick },
-              ]
-            }
             menu={[
               {
                 name: 'File',
                 list: (
                   <List>
-                    {/* <List.Item onClick={this.handleCloseModal}>Exit</List.Item> */}
+                    <List.Item onClick={this._closeModal}>Exit</List.Item>
                   </List>
                 ),
               },
@@ -210,7 +209,7 @@ class Clippy extends React.Component {
               },
             ]}
           >
-            {this.props.children}
+            <TextArea defaultValue={formattedCode.join('\n')} />
           </Modal>
         )}
       </React.Fragment>
