@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
 
 storiesOf('Button', module).add('default', () => (
-  <WithClippy component="Button">
+  <WithClippy component="Button" code="<Button>Open</Button>">
     <Button>Open</Button>
   </WithClippy>
 ));

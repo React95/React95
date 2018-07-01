@@ -13,12 +13,11 @@ const Text = styled.textarea`
     0.5px 0.5px 0 0.5px #ffffff;
 `;
 
-const TextArea = ({ rows, cols, value, ...rest }) => (
-  <Text {...rest} className="text" rows={rows} cols={cols} value={value} />
+const TextArea = ({ rows, cols, ...rest }) => (
+  <Text {...rest} className="text" rows={rows} cols={cols} />
 );
 
 TextArea.propTypes = {
-  value: PropTypes.string,
   rows: PropTypes.number,
   cols: PropTypes.number,
   children: PropTypes.oneOfType([
@@ -28,7 +27,6 @@ TextArea.propTypes = {
 };
 
 TextArea.defaultProps = {
-  value: '',
   rows: 10,
   cols: 50,
   children: null,

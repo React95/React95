@@ -1,7 +1,8 @@
 import React from 'react';
-import TextArea from '../components/TextArea';
-
 import { storiesOf } from '@storybook/react';
+import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+
+import TextArea from '../components/TextArea';
 
 class TextStory extends React.Component {
   constructor(props) {
@@ -19,4 +20,8 @@ class TextStory extends React.Component {
   }
 }
 
-storiesOf('TextArea', module).add('default', () => <TextStory />);
+storiesOf('TextArea', module).add('default', () => (
+  <WithClippy component="TextArea" code="<TextArea rows={10} cols={50} />">
+    <TextStory />
+  </WithClippy>
+));

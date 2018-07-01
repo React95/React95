@@ -3,6 +3,10 @@ import addons from '@storybook/addons';
 import clippy from 'clippyjs';
 import { injectGlobal } from 'styled-components';
 
+import Modal from '../../../components/Modal';
+import List from '../../../components/List';
+import TextArea from '../../../components/TextArea';
+
 injectGlobal`
   .clippy, .clippy-balloon {
     position: fixed;
@@ -23,6 +27,14 @@ injectGlobal`
     min-width: 120px;
     font-family: 'Px Sans Nouveaux';
     font-size: 10pt;
+  }
+
+  .clippy-button {
+    background-color: transparent;
+    border: 1px solid #d5d1b5;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 14px;
   }
 
   .clippy-tip {
@@ -69,6 +81,9 @@ class Clippy extends React.Component {
     super(...args);
     this.state = {
       component: '',
+      code: '',
+      clippyButton: false,
+      showModal: false,
     };
 
     this.agent;
@@ -109,6 +124,9 @@ class Clippy extends React.Component {
       this.agent.show();
       this.agent.play('Wave');
 
+      const msg = this.talks[Math.floor(Math.random() * this.talks.length)];
+      this.agent.speak(msg);
+
       this.agent._el[0].addEventListener('click', this._speak);
     });
 
@@ -124,19 +142,96 @@ class Clippy extends React.Component {
 
     this.unmounted = true;
     const { channel } = this.props;
-    channel.removeListener('kadira/clippy/set_component', this.setComponent);
+    channel.removeListener('kadira/clippy/set_component', this._speak);
   }
 
-  setComponent = component => this.setState({ component });
+  setComponent = ({ component, code }) => {
+    this._closeModal();
+    this.setState({ component, code });
+  };
+
+  _showMeTheCode = () => this._openModal();
 
   _speak = () => {
-    const msg = this.talks[Math.floor(Math.random() * this.talks.length)];
+    if (!this.state.clippyButton) {
+      this._addClippyButton();
+    }
 
-    this.agent.speak(msg);
+    const { component, code } = this.state;
+
+    if (component && code) {
+      this.agent.speak('Do you wanna see the code?');
+    }
+
     this.agent.animate();
   };
 
-  render = () => null;
+  _addClippyButton = () => {
+    const btn = document.createElement('button');
+    btn.setAttribute('class', 'clippy-button');
+    const btnText = document.createTextNode('Show me!');
+    btn.appendChild(btnText);
+
+    btn.addEventListener('click', this._showMeTheCode);
+
+    const clippyContent = this.agent._balloon._balloon[0];
+    clippyContent.appendChild(btn);
+
+    this.setState({ clippyButton: true });
+  };
+
+  _openModal = () => this.setState({ showModal: true });
+
+  _closeModal = () => this.setState({ showModal: false });
+
+  render() {
+    const { showModal, code, component } = this.state;
+
+    const formattedCode = [
+      `import { ${component} } from 'react95';`,
+      '',
+      code,
+    ].join('\n');
+
+    const rows = formattedCode.split('\n').length;
+
+    return (
+      <React.Fragment>
+        {showModal && (
+          <Modal
+            icon="file_text"
+            title={component}
+            left="40%"
+            top="15%"
+            closeModal={this._closeModal}
+            menu={[
+              {
+                name: 'File',
+                list: (
+                  <List>
+                    <List.Item onClick={this._closeModal}>Exit</List.Item>
+                  </List>
+                ),
+              },
+              {
+                name: 'Edit',
+                list: (
+                  <List>
+                    <List.Item>Copy</List.Item>
+                  </List>
+                ),
+              },
+            ]}
+          >
+            <TextArea
+              defaultValue={formattedCode}
+              rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
+            />
+          </Modal>
+        )}
+      </React.Fragment>
+    );
+  }
 }
 
 addons.register('kadira/clippy', api => {

@@ -1,9 +1,10 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+
 import Modal from '../components/Modal';
 import Button from '../components/Button';
 import List from '../components/List';
-
-import { storiesOf } from '@storybook/react';
 
 class ModalStory extends React.Component {
   constructor(props) {
@@ -61,4 +62,39 @@ class ModalStory extends React.Component {
   }
 }
 
-storiesOf('Modal', module).add('default', () => <ModalStory />);
+const code = `<Modal
+  icon="computer"
+  title="Browse"
+  closeModal={() => {}}
+  buttons={[
+    { value: 'Ok', onClick: () => {}) },
+    { value: 'Cancel', onClick: () => {} },
+  ]}
+  menu={[
+    {
+      name: 'File',
+      list: (
+        <List>
+          <List.Item onClick={() => {}}>Exit</List.Item>
+        </List>
+      ),
+    },
+    {
+      name: 'Edit',
+      list: (
+        <List>
+          <List.Item>Copy</List.Item>
+        </List>
+      ),
+    },
+  ]}
+  >
+  {this.props.children}
+</Modal>
+`;
+
+storiesOf('Modal', module).add('default', () => (
+  <WithClippy component="Modal" code={code}>
+    <ModalStory />
+  </WithClippy>
+));
