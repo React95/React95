@@ -13,10 +13,9 @@ const Text = styled.textarea`
     0.5px 0.5px 0 0.5px #ffffff;
 `;
 
-const TextArea = ({ rows, cols, ...rest }) => {
-  console.log(rest);
-  return <Text {...rest} className="text" rows={rows} cols={cols} />;
-};
+const TextArea = ({ rows, cols, ...rest }) => (
+  <Text {...rest} className="text" rows={rows} cols={cols} />
+);
 
 TextArea.propTypes = {
   rows: PropTypes.number,

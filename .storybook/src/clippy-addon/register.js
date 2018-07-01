@@ -145,7 +145,10 @@ class Clippy extends React.Component {
     channel.removeListener('kadira/clippy/set_component', this._speak);
   }
 
-  setComponent = ({ component, code }) => this.setState({ component, code });
+  setComponent = ({ component, code }) => {
+    this._closeModal();
+    this.setState({ component, code });
+  };
 
   _showMeTheCode = () => this._openModal();
 
@@ -179,7 +182,11 @@ class Clippy extends React.Component {
   render() {
     const { showModal, code, component } = this.state;
 
-    const formattedCode = [`import { ${component} } from 'react95';`, '', code];
+    const formattedCode = [
+      `import { ${component} } from 'react95';`,
+      '',
+      code,
+    ].join('\n');
 
     return (
       <React.Fragment>
@@ -209,7 +216,10 @@ class Clippy extends React.Component {
               },
             ]}
           >
-            <TextArea defaultValue={formattedCode.join('\n')} />
+            <TextArea
+              defaultValue={formattedCode}
+              rows={formattedCode.split('\n').length}
+            />
           </Modal>
         )}
       </React.Fragment>
