@@ -225,7 +225,7 @@ class Clippy extends React.Component {
           >
             <TextArea
               defaultValue={formattedCode}
-              rows={rows > 10 ? rows : 10}
+              rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
             />
           </Modal>
         )}
