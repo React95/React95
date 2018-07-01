@@ -157,7 +157,12 @@ class Clippy extends React.Component {
       this._addClippyButton();
     }
 
-    this.agent.speak('Do you wanna see the code?');
+    const { component, code } = this.state;
+
+    if (component && code) {
+      this.agent.speak('Do you wanna see the code?');
+    }
+
     this.agent.animate();
   };
 
