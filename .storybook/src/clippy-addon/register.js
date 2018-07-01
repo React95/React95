@@ -188,6 +188,8 @@ class Clippy extends React.Component {
       code,
     ].join('\n');
 
+    const rows = formattedCode.split('\n').length;
+
     return (
       <React.Fragment>
         {showModal && (
@@ -218,7 +220,7 @@ class Clippy extends React.Component {
           >
             <TextArea
               defaultValue={formattedCode}
-              rows={formattedCode.split('\n').length}
+              rows={rows > 10 ? rows : 10}
             />
           </Modal>
         )}

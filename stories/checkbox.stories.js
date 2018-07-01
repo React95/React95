@@ -10,6 +10,17 @@ const CheckboxList = styled.div`
   flex-direction: column;
 `;
 
+const code = `<Checkbox checked={true}>
+  Checked
+</Checkbox>
+<Checkbox checked={false}>
+  Unchecked
+</Checkbox>
+<Checkbox disabled={true}>
+  Disabled
+</Checkbox>
+`;
+
 class CheckBoxStory extends React.Component {
   constructor(props) {
     super(props);
@@ -24,14 +35,7 @@ class CheckBoxStory extends React.Component {
   render() {
     const { checked } = this.state;
     return (
-      <WithClippy
-        component="Checkbox"
-        code={[
-          '<Checkbox checked={true}>Checked</Checkbox>',
-          '<Checkbox checked={false}>Unchecked</Checkbox>',
-          '<Checkbox disabled={true}>Disabled</Checkbox>',
-        ].join('\n')}
-      >
+      <WithClippy component="Checkbox" code={code}>
         <CheckboxList>
           <Checkbox checked={checked} onChange={this.handleChange}>
             Working
