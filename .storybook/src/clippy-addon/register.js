@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import addons from '@storybook/addons';
 import clippy from 'clippyjs';
 import { injectGlobal } from 'styled-components';
@@ -23,6 +24,14 @@ injectGlobal`
     min-width: 120px;
     font-family: 'Px Sans Nouveaux';
     font-size: 10pt;
+  }
+
+  .clippy-button {
+    background-color: transparent;
+    border: 1px solid #d5d1b5;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 14px;
   }
 
   .clippy-tip {
@@ -69,6 +78,7 @@ class Clippy extends React.Component {
     super(...args);
     this.state = {
       component: '',
+      clippyButton: false,
     };
 
     this.agent;
@@ -109,6 +119,9 @@ class Clippy extends React.Component {
       this.agent.show();
       this.agent.play('Wave');
 
+      const msg = this.talks[Math.floor(Math.random() * this.talks.length)];
+      this.agent.speak(msg);
+
       this.agent._el[0].addEventListener('click', this._speak);
     });
 
@@ -124,16 +137,35 @@ class Clippy extends React.Component {
 
     this.unmounted = true;
     const { channel } = this.props;
-    channel.removeListener('kadira/clippy/set_component', this.setComponent);
+    channel.removeListener('kadira/clippy/set_component', this._speak);
   }
 
   setComponent = component => this.setState({ component });
 
-  _speak = () => {
-    const msg = this.talks[Math.floor(Math.random() * this.talks.length)];
+  _showMeTheCode = () =>
+    console.log(`SHOW THE ${this.state.component} CODEEEEEE`);
 
-    this.agent.speak(msg);
+  _speak = () => {
+    if (!this.state.clippyButton) {
+      this._addClippyButton();
+    }
+
+    this.agent.speak('Do you wanna see the code?');
     this.agent.animate();
+  };
+
+  _addClippyButton = () => {
+    const btn = document.createElement('button');
+    btn.setAttribute('class', 'clippy-button');
+    const btnText = document.createTextNode('Show me!');
+    btn.appendChild(btnText);
+
+    btn.addEventListener('click', this._showMeTheCode);
+
+    const clippyContent = this.agent._balloon._balloon[0];
+    clippyContent.appendChild(btn);
+
+    this.setState({ clippyButton: true });
   };
 
   render = () => null;
