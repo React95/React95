@@ -189,9 +189,7 @@ class Clippy extends React.Component {
 
   _selectAllText = () => this.textArea.select();
 
-  _copySelectedText = () => {
-    console.log('Copeia agora');
-  }
+  _copySelectedText = () => document.execCommand('copy');
 
   render() {
     const { showModal, code, component } = this.state;
