@@ -1,6 +1,7 @@
 import React from 'react';
 import addons from '@storybook/addons';
 import clippy from 'clippyjs';
+
 import { injectGlobal } from 'styled-components';
 
 import Modal from '../../../components/Modal';
@@ -107,6 +108,8 @@ class Clippy extends React.Component {
       'Rocky',
       'Rover',
     ];
+
+    this.textArea = React.createRef();
   }
 
   componentDidMount() {
@@ -184,6 +187,12 @@ class Clippy extends React.Component {
 
   _closeModal = () => this.setState({ showModal: false });
 
+  _selectAllText = () => this.textArea.select();
+
+  _copySelectedText = () => {
+    console.log('Copeia agora');
+  }
+
   render() {
     const { showModal, code, component } = this.state;
 
@@ -217,13 +226,25 @@ class Clippy extends React.Component {
                 name: 'Edit',
                 list: (
                   <List>
-                    <List.Item>Copy</List.Item>
+                    <List.Item onClick={this._copySelectedText}>Copy</List.Item>
+                    <List.Divider />
+                    <List.Item onClick={this._selectAllText}>Select All</List.Item>
                   </List>
                 ),
               },
             ]}
           >
-            <TextArea
+            <textarea
+              style={{
+                outline: 'none',
+                border: 'none',
+                resize: 'none',
+                borderLeft: '1px solid #868a8e',
+                borderTop: '1px solid #868a8e',
+                boxShadow: 'inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff',
+              }}
+              readOnly
+              ref={textArea => this.textArea = textArea}
               defaultValue={formattedCode}
               rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
             />
