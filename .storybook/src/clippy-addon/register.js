@@ -110,6 +110,7 @@ class Clippy extends React.Component {
     ];
 
     this.textArea = React.createRef();
+    this.modal = React.createRef();
   }
 
   componentDidMount() {
@@ -187,6 +188,8 @@ class Clippy extends React.Component {
 
   _closeModal = () => this.setState({ showModal: false });
 
+  _closeModalMenu = () => this.modal._resetState();
+
   _selectAllText = () => this.textArea.select();
 
   _copySelectedText = () => document.execCommand('copy');
@@ -211,6 +214,7 @@ class Clippy extends React.Component {
             left="40%"
             top="15%"
             closeModal={this._closeModal}
+            ref={modal => this.modal = modal}
             menu={[
               {
                 name: 'File',
@@ -224,9 +228,15 @@ class Clippy extends React.Component {
                 name: 'Edit',
                 list: (
                   <List>
-                    <List.Item onClick={this._copySelectedText}>Copy</List.Item>
+                    <List.Item onClick={() => {
+                      this._copySelectedText();
+                      this._closeModalMenu();
+                    }}>Copy</List.Item>
                     <List.Divider />
-                    <List.Item onClick={this._selectAllText}>Select All</List.Item>
+                    <List.Item onClick={() => {
+                      this._selectAllText();
+                      this._closeModalMenu();
+                    }}>Select All</List.Item>
                   </List>
                 ),
               },
