@@ -232,17 +232,9 @@ class Clippy extends React.Component {
               },
             ]}
           >
-            <textarea
-              style={{
-                outline: 'none',
-                border: 'none',
-                resize: 'none',
-                borderLeft: '1px solid #868a8e',
-                borderTop: '1px solid #868a8e',
-                boxShadow: 'inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff',
-              }}
+            <TextArea
               readOnly
-              ref={textArea => this.textArea = textArea}
+              innerRef={textArea => this.textArea = textArea}
               defaultValue={formattedCode}
               rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
             />
