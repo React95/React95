@@ -22,7 +22,7 @@ const WhiteBar = styled.div`
   color: #000;
 
   box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
-  0.5px 0.5px 0 0.5px #ffffff;
+    0.5px 0.5px 0 0.5px #ffffff;
 `;
 
 const Container = styled.div`
@@ -37,10 +37,13 @@ const Container = styled.div`
 
 const BlueBar = styled.div`
   width: ${props => props.width}px;
-  height: 20px;
+  height: 17px;
 
+  margin-left: 2px;
+  margin-top: 2px;
+
+  background: #000e7a;
   color: #fff;
-  background: #000E7A;
 `;
 
 const ProgressBar = ({ width, percent }) => (
