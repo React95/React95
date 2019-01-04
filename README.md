@@ -15,7 +15,7 @@ OBS: this isn't published on npm yet.
 
 ## Usage
 
-After installation you can use any react95 components on your react application:
+After installation you can use any react95 components in your react application:
 
 ```js
 import { Button } from 'react95';
@@ -31,11 +31,11 @@ render() {
 }
 ```
 
-You can find a list of all available components on our [Storybook](https://react95.github.io/React95/)
+You can find a list of all available components at our [Storybook](https://react95.github.io/React95/)
 
 ## Roadmap
 
-You can see what we have in mind to put on React95 project in our [waffle](https://waffle.io/React95/React95) page.
+You can see what we have in mind to put on React95 project at our [waffle](https://waffle.io/React95/React95) page.
 
 ## Development
 
