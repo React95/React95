@@ -21,10 +21,6 @@ const ModalWrapper = styled.div`
 
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
     1px 1px 0 1px #000;
-
-  & * {
-    cursor: default;
-  }
 `;
 
 const TitleBar = styled.div`
