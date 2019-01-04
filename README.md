@@ -1,4 +1,7 @@
 ![React95 Logo](https://github.com/React95/React95/blob/master/assets/React95-clouds.png)
+
+# React95
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 React95 is a component library inspired on **Windows 95** UI.
