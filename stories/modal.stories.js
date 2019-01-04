@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import Modal from '../components/Modal';
 import Button from '../components/Button';
@@ -93,8 +93,7 @@ const code = `<Modal
 </Modal>
 `;
 
-storiesOf('Modal', module).add('default', () => (
-  <WithClippy component="Modal" code={code}>
-    <ModalStory />
-  </WithClippy>
-));
+storiesOf('Modal', module)
+  .addDecorator(withClippy)
+  .addParameters({ code })
+  .add('default', () => <ModalStory />);

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import Checkbox from '../components/Checkbox';
 
@@ -35,23 +35,24 @@ class CheckBoxStory extends React.Component {
   render() {
     const { checked } = this.state;
     return (
-      <WithClippy component="Checkbox" code={code}>
-        <CheckboxList>
-          <Checkbox checked={checked} onChange={this.handleChange}>
-            Working
-          </Checkbox>
+      <CheckboxList>
+        <Checkbox checked={checked} onChange={this.handleChange}>
+          Working
+        </Checkbox>
 
-          <Checkbox checked={true}>Checked</Checkbox>
-          <Checkbox checked={false}>Unchecked</Checkbox>
-          <Checkbox disabled={true}>Disabled</Checkbox>
+        <Checkbox checked={true}>Checked</Checkbox>
+        <Checkbox checked={false}>Unchecked</Checkbox>
+        <Checkbox disabled={true}>Disabled</Checkbox>
 
-          <Checkbox disabled={true} checked={true}>
-            Checked and Disabled
-          </Checkbox>
-        </CheckboxList>
-      </WithClippy>
+        <Checkbox disabled={true} checked={true}>
+          Checked and Disabled
+        </Checkbox>
+      </CheckboxList>
     );
   }
 }
 
-storiesOf('Checkbox', module).add('default', () => <CheckBoxStory />);
+storiesOf('Checkbox', module)
+  .addDecorator(withClippy)
+  .addParameters({ code })
+  .add('default', () => <CheckBoxStory />);

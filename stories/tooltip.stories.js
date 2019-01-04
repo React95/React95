@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import Tooltip from '../components/Tooltip';
 
@@ -34,13 +34,16 @@ const code = `<Tooltip text={${formatDate(new Date())}} delay={1000}>
 </Tooltip>
 `;
 
-storiesOf('Tooltip', module).add('default', () => (
-  <WithClippy component="Tooltip" code={code}>
-    <br />
-    <br />
-    <br />
-    <Tooltip>
-      <span>Hover me</span>
-    </Tooltip>
-  </WithClippy>
-));
+storiesOf('Tooltip', module)
+  .addDecorator(withClippy)
+  .addParameters({ code })
+  .add('default', () => (
+    <React.Fragment>
+      <br />
+      <br />
+      <br />
+      <Tooltip>
+        <span>Hover me</span>
+      </Tooltip>
+    </React.Fragment>
+  ));

@@ -2,13 +2,13 @@ import React from 'react';
 import addons from '@storybook/addons';
 import clippy from 'clippyjs';
 
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 import Modal from '../../../components/Modal';
 import List from '../../../components/List';
 import TextArea from '../../../components/TextArea';
 
-injectGlobal`
+const ClippyStyle = createGlobalStyle`
   .clippy, .clippy-balloon {
     position: fixed;
     z-index: 1000;
@@ -116,7 +116,7 @@ class Clippy extends React.Component {
   componentDidMount() {
     const { channel, api } = this.props;
 
-    channel.on('kadira/clippy/set_component', this.setComponent);
+    channel.on('clippy/set_component', this.setComponent);
 
     const agentName = this.availableAgents[
       Math.floor(Math.random() * this.availableAgents.length)
@@ -146,7 +146,7 @@ class Clippy extends React.Component {
 
     this.unmounted = true;
     const { channel } = this.props;
-    channel.removeListener('kadira/clippy/set_component', this._speak);
+    channel.removeListener('clippy/set_component', this._speak);
   }
 
   setComponent = ({ component, code }) => {
@@ -206,7 +206,7 @@ class Clippy extends React.Component {
     const rows = formattedCode.split('\n').length;
 
     return (
-      <React.Fragment>
+      <ClippyStyle>
         {showModal && (
           <Modal
             icon="file_text"
@@ -214,7 +214,7 @@ class Clippy extends React.Component {
             left="40%"
             top="15%"
             closeModal={this._closeModal}
-            ref={modal => this.modal = modal}
+            ref={modal => (this.modal = modal)}
             menu={[
               {
                 name: 'File',
@@ -228,15 +228,23 @@ class Clippy extends React.Component {
                 name: 'Edit',
                 list: (
                   <List>
-                    <List.Item onClick={() => {
-                      this._copySelectedText();
-                      this._closeModalMenu();
-                    }}>Copy</List.Item>
+                    <List.Item
+                      onClick={() => {
+                        this._copySelectedText();
+                        this._closeModalMenu();
+                      }}
+                    >
+                      Copy
+                    </List.Item>
                     <List.Divider />
-                    <List.Item onClick={() => {
-                      this._selectAllText();
-                      this._closeModalMenu();
-                    }}>Select All</List.Item>
+                    <List.Item
+                      onClick={() => {
+                        this._selectAllText();
+                        this._closeModalMenu();
+                      }}
+                    >
+                      Select All
+                    </List.Item>
                   </List>
                 ),
               },
@@ -244,20 +252,22 @@ class Clippy extends React.Component {
           >
             <TextArea
               readOnly
-              innerRef={textArea => this.textArea = textArea}
+              innerRef={textArea => (this.textArea = textArea)}
               defaultValue={formattedCode}
               rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
             />
           </Modal>
         )}
-      </React.Fragment>
+      </ClippyStyle>
     );
   }
 }
 
-addons.register('kadira/clippy', api => {
-  addons.addPanel('kadira/clippy/panel', {
+addons.register('clippy', api => {
+  addons.addPanel('clippy/panel', {
     title: 'Clippy',
-    render: () => <Clippy channel={addons.getChannel()} api={api} />,
+    render: ({ active }) => (
+      <Clippy channel={addons.getChannel()} api={api} active={active} />
+    ),
   });
 });
