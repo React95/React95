@@ -1,12 +1,14 @@
 import { configure, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { withOptions } from '@storybook/addon-options';
 import Frame from './decorators/Frame';
 
-setOptions({
-  name: 'React95',
-  url: 'https://github.com/React95/React95',
-  showAddonPanel: true,
-});
+addDecorator(
+  withOptions({
+    name: 'React95',
+    url: 'https://github.com/React95/React95',
+    showAddonPanel: true,
+  }),
+);
 
 addDecorator(Frame);
 

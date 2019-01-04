@@ -3,29 +3,31 @@
   "version": "0.0.1",
   "description": "Windows 95 styleguide",
   "main": "index.js",
-  "repository": "git@github.com:allyssonsantos/React95.git",
-  "author": "Allysson dos Santos <aallysson0@gmail.com>",
+  "repository": "git@github.com:React95/React95.git",
+  "contributors": [
+    "Allysson dos Santos <aallysson0@gmail.com>",
+    "Gabriel Daltoso <ggdaltoso@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "clippyjs": "^0.0.3",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-draggable": "^3.0.5",
-    "styled-components": "^3.2.5"
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-draggable": "^3.1.1",
+    "styled-components": "^4.1.3"
   },
   "devDependencies": {
-    "@storybook/addon-links": "^3.3.15",
-    "@storybook/addon-options": "^3.3.15",
-    "@storybook/addons": "^3.3.15",
-    "@storybook/react": "^3.3.15",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0"
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-links": "^4.1.4",
+    "@storybook/addon-options": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
+    "@storybook/react": "^4.1.4",
+    "babel-loader": "^8.0.4",
+    "@storybook/addon-actions": "^4.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./assets",
-    "build-storybook": "rm -rf docs && build-storybook -c .storybook -s assets -o docs"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }
