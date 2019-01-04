@@ -47,24 +47,28 @@ const Range = styled.input.attrs({
   -webkit-appearance: none;
   width: 100%;
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover, &:focus, &:active {
     outline: none;
   }
 
-  &::-webkit-slider-runnable-track,
-  &::-moz-range-track {
+  &::-webkit-slider-runnable-track {
     ${trackStyle}
   }
 
-  &::-webkit-slider-thumb,
-  &::-moz-range-thumb {
+  &::-webkit-slider-thumb {
     ${thumbStyle}
   }
 
   &:focus::-webkit-slider-runnable-track {
     background: #000;
+  }
+
+  &::-moz-range-track {
+    ${trackStyle}
+  }
+
+  &::-moz-range-thumb {
+    ${thumbStyle}
   }
 `;
 
