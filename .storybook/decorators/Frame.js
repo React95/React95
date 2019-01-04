@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 import woff2 from '../../assets/font/px_sans_nouveaux.woff2';
 import woff from '../../assets/font/px_sans_nouveaux.woff';
@@ -46,7 +46,7 @@ import nwseResize from '../../assets/cursors/AngleUpLeft.png';
 import zoomIn from '../../assets/cursors/ZoomIn.png';
 import zoomOut from '../../assets/cursors/ZoomOut.png';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Px Sans Nouveaux';
     src: url('${eot}');
@@ -168,6 +168,11 @@ injectGlobal`
   .zoom-out        { cursor: url('${zoomOut}'), zoom-out; }
 `;
 
-const Frame = storyFn => <React.Fragment>{storyFn()}</React.Fragment>;
+const Frame = storyFn => (
+  <React.Fragment>
+    <GlobalStyle />
+    {storyFn()}
+  </React.Fragment>
+);
 
 export default Frame;
