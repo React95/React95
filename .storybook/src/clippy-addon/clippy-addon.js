@@ -1,19 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import addons from '@storybook/addons';
+import addons, { makeDecorator } from '@storybook/addons';
 
-export class WithClippy extends React.Component {
-  static propTypes = {
-    component: PropTypes.string.isRequired,
-    code: PropTypes.string.isRequired,
-  };
-
-  render() {
-    const { children, component, code } = this.props;
+export default makeDecorator({
+  name: 'withClippy',
+  parameterName: 'code',
+  skipIfNoParametersOrOptions: true,
+  wrapper: (getStory, context, parameters) => {
     const channel = addons.getChannel();
 
-    channel.emit('kadira/clippy/set_component', { component, code });
+    // Our simple API above simply sets the notes parameter to a string,
+    // which we send to the channel
+    channel.emit('clippy/set_component', {
+      code: parameters,
+      component: context.kind,
+    });
 
-    return children;
-  }
-}
+    return getStory(context);
+  },
+});
