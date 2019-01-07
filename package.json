@@ -28,6 +28,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ./assets",
-    "build-storybook": "rm -rf docs && build-storybook -c .storybook -s assets -o docs"
+    "build-storybook": "rm -rf docs && build-storybook -c .storybook -s assets -o docs",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   }
 }
