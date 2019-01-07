@@ -206,7 +206,8 @@ class Clippy extends React.Component {
     const rows = formattedCode.split('\n').length;
 
     return (
-      <ClippyStyle>
+      <React.Fragment>
+        <ClippyStyle />
         {showModal && (
           <Modal
             icon="file_text"
@@ -258,7 +259,7 @@ class Clippy extends React.Component {
             />
           </Modal>
         )}
-      </ClippyStyle>
+      </React.Fragment>
     );
   }
 }
