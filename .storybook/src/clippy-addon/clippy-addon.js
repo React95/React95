@@ -6,9 +6,6 @@ export default makeDecorator({
   skipIfNoParametersOrOptions: true,
   wrapper: (getStory, context, { parameters: code }) => {
     const channel = addons.getChannel();
-
-    // Our simple API above simply sets the notes parameter to a string,
-    // which we send to the channel
     channel.emit('clippy/set_component', {
       code,
       component: context.kind,
