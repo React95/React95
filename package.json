@@ -27,7 +27,7 @@
     "@storybook/addon-actions": "4.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006 -s ./assets",
+    "build-storybook": "rm -rf docs && build-storybook -c .storybook -s assets -o docs"
   }
 }
