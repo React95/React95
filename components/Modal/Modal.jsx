@@ -45,7 +45,7 @@ const OptionsBox = styled.ul`
   display: flex;
 `;
 
-const Option = Btn.extend`
+const Option = styled(Btn)`
   margin-right: 3px;
   padding: 0 0 0 1px;
 

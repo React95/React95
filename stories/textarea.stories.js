@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import TextArea from '../components/TextArea';
 
@@ -20,8 +20,9 @@ class TextStory extends React.Component {
   }
 }
 
-storiesOf('TextArea', module).add('default', () => (
-  <WithClippy component="TextArea" code="<TextArea rows={10} cols={50} />">
-    <TextStory />
-  </WithClippy>
-));
+const code = '<TextArea rows={10} cols={50} />';
+
+storiesOf('TextArea', module)
+  .addDecorator(withClippy)
+  .addParameters({ code })
+  .add('default', () => <TextStory />);

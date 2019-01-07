@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '../components/Button';
 
 import { storiesOf } from '@storybook/react';
-import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
-storiesOf('Button', module).add('default', () => (
-  <WithClippy component="Button" code="<Button>Open</Button>">
-    <Button>Open</Button>
-  </WithClippy>
-));
+storiesOf('Button', module)
+  .addDecorator(withClippy)
+  .add('default', () => <Button>Open</Button>, {
+    code: '<Button>Open</Button>',
+  });

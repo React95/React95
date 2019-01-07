@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { WithClippy } from '../.storybook/src/clippy-addon/clippy-addon';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import Fieldset from '../components/Fieldset';
 import Checkbox from '../components/Checkbox';
@@ -24,8 +24,10 @@ const code = `<Fieldset legend="Connection Settings">
 </Fieldset>
 `;
 
-storiesOf('Fieldset', module).add('default', () => (
-  <WithClippy component="Fieldset" code={code}>
+storiesOf('Fieldset', module)
+  .addDecorator(withClippy)
+  .addParameters({ code })
+  .add('default', () => (
     <Fieldset legend="Connection Settings" style={{ width: '300px' }}>
       <CheckboxList>
         <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
@@ -33,5 +35,4 @@ storiesOf('Fieldset', module).add('default', () => (
         <Checkbox checked={true}>Remove Desktop Wallpaper</Checkbox>
       </CheckboxList>
     </Fieldset>
-  </WithClippy>
-));
+  ));
