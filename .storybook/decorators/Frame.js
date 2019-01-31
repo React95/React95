@@ -2,11 +2,10 @@ import React from 'react';
 
 import { createGlobalStyle } from 'styled-components';
 
-import woff2 from '../../assets/font/px_sans_nouveaux.woff2';
-import woff from '../../assets/font/px_sans_nouveaux.woff';
-import ttf from '../../assets/font/px_sans_nouveaux.ttf';
-import svg from '../../assets/font/px_sans_nouveaux.svg';
-import eot from '../../assets/font/px_sans_nouveaux.eot';
+import woff2 from '../../assets/font/MS-Sans-Serif.woff2';
+import woff from '../../assets/font/MS-Sans-Serif.woff';
+import ttf from '../../assets/font/MS-Sans-Serif.ttf';
+import eot from '../../assets/font/MS-Sans-Serif.eot';
 
 import pattern from '../../assets/pattern/dropdown.png';
 import upcaret from '../../assets/pattern/upcaret.svg';
@@ -48,12 +47,11 @@ import zoomOut from '../../assets/cursors/ZoomOut.png';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Px Sans Nouveaux';
+    font-family: 'MS Sans Serif';
     src: url('${eot}');
     src: url('${woff2}') format('woff2'),
          url('${woff}') format('woff'),
          url('${ttf}') format('truetype'),
-         url('${svg}#px_sans_nouveaux') format('svg'),
          url('${eot}.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
@@ -64,8 +62,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    font-family: 'Px Sans Nouveaux';
-    font-size: 10px;
+    font-family: 'MS Sans Serif';
+    font-size: 12px;
     box-sizing: border-box;
   }
 
