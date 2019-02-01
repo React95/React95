@@ -44,13 +44,13 @@ const Label = styled.label`
   position: relative;
   padding-left: 22px;
   height: 15px;
+  line-height: 1.5;
   display: inline-block;
   margin: 4px 0;
 
   &:before {
     content: '';
     position: absolute;
-    top: 3px;
     left: 0;
     display: inline-block;
     height: 12px;

@@ -3,11 +3,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Text = styled.textarea`
-  outline: none;
   border: none;
-  resize: none;
   border-left: 1px solid #868a8e;
   border-top: 1px solid #868a8e;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  outline: none;
+  resize: none;
 
   box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
     0.5px 0.5px 0 0.5px #ffffff;

@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 const WhiteBar = styled.div`
   width: ${props => props.width}px;
   height: 20px;
+  line-height: 20px;
 
   border-left: 1px solid #868a8e;
   border-top: 1px solid #868a8e;
@@ -38,6 +39,7 @@ const Container = styled.div`
 const BlueBar = styled.div`
   width: ${props => props.width}px;
   height: 17px;
+  line-height: 18px;
 
   margin-left: 2px;
   margin-top: 2px;
