@@ -24,11 +24,12 @@ const ModalWrapper = styled.div`
 `;
 
 const TitleBar = styled.div`
+  height: 18px;
   margin-bottom: 2px;
 
   background-color: #00007f;
   color: white;
-  padding: 2px 4px;
+  padding: 2px 2px 0;
 
   display: flex;
 `;
@@ -46,11 +47,11 @@ const OptionsBox = styled.ul`
 `;
 
 const Option = styled(Btn)`
-  margin-right: 3px;
-  padding: 0 0 0 1px;
+  margin-right: 2px;
+  padding: 0;
 
   width: 17px;
-  height: 17px;
+  height: 14px;
   min-width: 0;
 
   font-size: 10px;
@@ -63,8 +64,10 @@ const Option = styled(Btn)`
     padding: 1px 0 0 1px;
 
     outline: none;
+  }
 
-    box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000;
+  &:focus {
+    box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
   }
 `;
 
@@ -160,8 +163,8 @@ class Modal extends React.Component {
     } = this.props;
 
     const iconStyle = {
-      width: 16,
-      height: 19,
+      width: 15,
+      height: 13,
       style: {
         marginRight: '4px',
       },
@@ -236,7 +239,7 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    }),
+    })
   ),
   menu: PropTypes.arrayOf(
     PropTypes.shape({
@@ -245,7 +248,7 @@ Modal.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
       ]).isRequired,
-    }),
+    })
   ),
 };
 
