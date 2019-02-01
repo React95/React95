@@ -10,10 +10,9 @@ const Tip = styled.div`
   background-size: 7px 7px;
   background-color: #fff;
   border: 1px solid #000;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 2px 2px 2px 4px;
   position: absolute;
-  top: -18px;
+  top: -20px;
   text-align: center;
   z-index: 100;
   display: ${({ show }) => (show ? 'block' : 'none')};
