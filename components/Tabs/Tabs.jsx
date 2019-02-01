@@ -12,6 +12,8 @@ class Tabs extends Component {
   constructor(props) {
     super(props);
 
+    const { children } = props;
+
     const firstTab = React.Children.toArray(children)[0];
 
     this.state = {
@@ -19,16 +21,18 @@ class Tabs extends Component {
     };
   }
 
-  onTabClick = ({ props: title }) => {
+  onTabClick = ({ props: { title } }) => {
     this.setState({ activeTab: title });
   };
 
   render() {
     const { children } = this.props;
+    const { activeTab } = this.state;
 
     return (
       <React.Fragment>
         <Navbar>
+          {activeTab}
           <ol>
             {React.Children.map(children, child => {
               const { title } = child.props;
@@ -46,10 +50,7 @@ class Tabs extends Component {
         </Navbar>
 
         {React.Children.map(children, child =>
-          renderIf(
-            children.indexOf(child).props.title === activeTab,
-            () => child,
-          ),
+          renderIf(child.props.title === activeTab, () => child),
         )}
       </React.Fragment>
     );
