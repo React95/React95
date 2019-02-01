@@ -7,10 +7,7 @@ addDecorator(
     name: 'React95',
     url: 'https://github.com/React95/React95',
     showAddonPanel: true,
-    theme: {
-      mainTextFace: 'MS Sans Serif'
-    }
-  }),
+  })
 );
 
 addDecorator(Frame);
