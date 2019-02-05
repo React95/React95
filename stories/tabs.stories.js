@@ -6,9 +6,9 @@ import { Tabs, Tab } from '../components/Tabs';
 
 storiesOf('Tabs', module).add('default', () => (
   <Tabs>
-    <Tab title="Tab 1">1</Tab>
-    <Tab title="Tab 2">2</Tab>
-    <Tab title="Tab 3">3</Tab>
-    <Tab title="Tab 4">4</Tab>
+    <Tab title="Background">1</Tab>
+    <Tab title="Screen Saver">2</Tab>
+    <Tab title="Appearance">3</Tab>
+    <Tab title="Settings">4</Tab>
   </Tabs>
 ));
