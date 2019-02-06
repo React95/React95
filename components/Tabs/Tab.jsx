@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 const NavItem = styled.li`
   list-style: none;
-  padding: 2px 8px;
+  padding: 3px 6px;
   background-color: #c3c7cb;
   box-shadow: inset 0px 1px 0px 0px #ffffff, -2px 1px 0 -1px #c3c7cb,
     -3px 1px 0px -1px #ffffff, -2px 0px 0px -1px #ffffff, 2px 1px 0 -1px #868a8e,
@@ -18,6 +18,7 @@ const NavItem = styled.li`
       margin-top: -2px;
       margin-left: -2px;
       margin-bottom: 1px;
+
       &:first-child {
         margin-left: 2px;
       }

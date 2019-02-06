@@ -11,7 +11,7 @@ const Navbar = styled.ol`
 `;
 
 const NavContainer = styled.div`
-  padding: 2px 8px;
+  padding: 12px;
   margin-left: 1px;
   background-color: #c3c7cb;
   box-shadow: inset 0px 1px 0px 0px #ffffff, 2px 1px 0 -1px #868a8e,
@@ -30,8 +30,10 @@ class Tabs extends Component {
 
     const firstTab = React.Children.toArray(children)[0];
 
+    const { activeTab = firstTab.props.title } = props;
+
     this.state = {
-      activeTab: firstTab.props.title,
+      activeTab,
     };
   }
 
@@ -40,27 +42,27 @@ class Tabs extends Component {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, style } = this.props;
     const { activeTab } = this.state;
 
     return (
       <React.Fragment>
-        <Navbar>
+        <Navbar style={style}>
           {React.Children.map(children, child => {
-            const { title } = child.props;
+            const { title, disabled } = child.props;
 
             return (
               <Tab
                 key={title}
                 title={title}
                 activeTab={activeTab}
-                onClick={this.onTabClick}
+                onClick={!disabled && this.onTabClick}
               />
             );
           })}
         </Navbar>
 
-        <NavContainer>
+        <NavContainer style={style}>
           {React.Children.map(children, child =>
             renderIf(
               child.props.title === activeTab,
