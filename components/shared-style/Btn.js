@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export default styled.button`
   background-color: #c3c7cb;
-  padding: 5px 20px 6px;
+  padding: 6px 20px 6px;
   border: none;
+
+  font-size: 12px;
 
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
     1px 1px 0 1px #000;
@@ -19,7 +21,7 @@ export default styled.button`
   }
 
   &:active {
-    padding: 6px 20px 5px;
+    padding: 7px 20px 6px;
 
     outline: 1px dotted #000;
     outline-offset: -5px;

@@ -9,4 +9,4 @@ const code = '<Range />';
 storiesOf('Range', module)
   .addDecorator(withClippy)
   .addParameters({ code })
-  .add('default', () => <Range />);
+  .add('default', () => <Range style={{ width: 100 }} />);
