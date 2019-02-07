@@ -12,6 +12,10 @@ const NavItem = styled.li`
   margin-right: 2px;
   margin-left: 2px;
 
+  &:first-child {
+    margin-left: 4px;
+  }
+
   ${props =>
     props.active &&
     css`
