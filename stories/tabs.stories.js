@@ -26,7 +26,7 @@ storiesOf('Tabs, Tab', module)
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
           <Checkbox checked={true}>Log on to Windows NT domain</Checkbox>
           <br />
-          <p style={{ marginLeft: 22 }}>
+          <p style={{ marginLeft: 22, marginTop: 4 }}>
             When you log on, your password will be verified in a Windows NT
             domain.
           </p>
@@ -36,12 +36,12 @@ storiesOf('Tabs, Tab', module)
 
         <Fieldset legend="Network logon options">
           <Checkbox>Quick logon</Checkbox>
-          <p style={{ marginBottom: 4, marginLeft: 22 }}>
+          <p style={{ marginBottom: 4, marginLeft: 22, marginTop: 4 }}>
             Windows logs you onto the network, but network drives are not
             reconnected until you use them.
           </p>
           <Checkbox>Logon and restore network connections</Checkbox>
-          <p style={{ marginBottom: 4, marginLeft: 22 }}>
+          <p style={{ marginBottom: 4, marginLeft: 22, marginTop: 4 }}>
             When you log onto the network, Windows verifies that each network
             drive is ready to use.
           </p>
