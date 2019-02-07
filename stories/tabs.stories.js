@@ -8,13 +8,13 @@ import Checkbox from '../components/Checkbox';
 import Dropdown from '../components/Dropdown';
 
 const code = `<Tabs activeTab="Compatibility">
-<Tab title="General" disabled />
+  <Tab title="General" disabled />
   <Tab title="Compatibility">
     . . .
   </Tab>
 </Tabs>`;
 
-storiesOf('Tabs', module)
+storiesOf('Tabs, Tab', module)
   .addDecorator(withClippy)
   .addParameters({ code })
   .add('default', () => (
