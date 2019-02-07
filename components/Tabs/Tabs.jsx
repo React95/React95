@@ -20,7 +20,7 @@ const NavContainer = styled.div`
     2px 0px 0 0px #000;
 `;
 
-const renderIf = (conditional, renderFn) => conditional && renderFn();
+const If = ({ condition, children }) => condition && children;
 
 class Tabs extends Component {
   constructor(props) {
@@ -63,12 +63,11 @@ class Tabs extends Component {
         </Navbar>
 
         <NavContainer style={style}>
-          {React.Children.map(children, child =>
-            renderIf(
-              child.props.title === activeTab,
-              () => child.props.children,
-            ),
-          )}
+          {React.Children.map(children, child => (
+            <If condition={child.props.title === activeTab}>
+              {child.props.children}
+            </If>
+          ))}
         </NavContainer>
       </React.Fragment>
     );

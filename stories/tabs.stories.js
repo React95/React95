@@ -6,9 +6,12 @@ import { Tabs, Tab } from '../components/Tabs';
 import Fieldset from '../components/Fieldset';
 import Checkbox from '../components/Checkbox';
 import Dropdown from '../components/Dropdown';
+import Input from '../components/Input';
 
-const code = `<Tabs activeTab="Compatibility">
-  <Tab title="General" disabled />
+const code = `<Tabs activeTab="General">
+  <Tab title="General">
+    . . .
+  </Tab>
   <Tab title="Compatibility">
     . . .
   </Tab>
@@ -18,8 +21,32 @@ storiesOf('Tabs, Tab', module)
   .addDecorator(withClippy)
   .addParameters({ code })
   .add('default', () => (
-    <Tabs style={{ width: 350 }} activeTab="Compatibility">
-      <Tab title="General" disabled />
+    <Tabs style={{ width: 350 }}>
+      <Tab title="General">
+        <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
+          <Checkbox checked={true}>Log on to Windows NT domain</Checkbox>
+          <br />
+          <p style={{ marginLeft: 22 }}>
+            When you log on, your password will be verified in a Windows NT
+            domain.
+          </p>
+          <p style={{ marginBottom: 4, marginLeft: 22 }}>Windows NT domain:</p>
+          <Input style={{ width: 180, marginLeft: 22 }} />
+        </Fieldset>
+
+        <Fieldset legend="Network logon options">
+          <Checkbox>Quick logon</Checkbox>
+          <p style={{ marginBottom: 4, marginLeft: 22 }}>
+            Windows logs you onto the network, but network drives are not
+            reconnected until you use them.
+          </p>
+          <Checkbox>Logon and restore network connections</Checkbox>
+          <p style={{ marginBottom: 4, marginLeft: 22 }}>
+            When you log onto the network, Windows verifies that each network
+            drive is ready to use.
+          </p>
+        </Fieldset>
+      </Tab>
       <Tab title="Compatibility">
         <p style={{ marginTop: 0, marginBottom: '1.6em' }}>
           If you have problem with this program and it worked correctly on an
