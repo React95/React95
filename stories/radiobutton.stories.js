@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import { Tab, Tabs } from '../components/Tabs';
-
 import RadioButton from '../components/RadioButton';
 
 const code = '<RadioButton />';
