@@ -1,43 +1,65 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+  radioChecked,
+  radioCheckedDisabled,
+  radioUnchecked,
+  radioUncheckedDisabled,
+} from './radioButton';
 
-const RadioButton = styled.input.attrs({
-  type: 'radio'
+const Field = styled.input.attrs({
+  type: 'radio',
 })`
-  position: relative;
+  margin: 0 5px 0 0;
   visibility: hidden;
-
-  &:checked {
-    &:after {
-      width: 6px;
-      height: 6px;
-
-      position: absolute;
-      top: 3px;
-      left: 3px;
-
-      content: '';
-      display: inline-block;
-
-      background-color: #000;
-      border-radius: 50%;
-      visibility: visible;
-    }
-  }
 
   &:before {
     width: 12px;
     height: 12px;
 
-    position: absolute;
-
     content: '';
     display: inline-block;
 
-    background-color: #fff;
-    border-radius: 50%;
+    background-image: url(${radioUnchecked});
+
     visibility: visible;
   }
+
+  &:checked {
+    &:before {
+      background-image: url(${radioChecked});
+    }
+  }
+
+  &:disabled {
+    &:before {
+      background-image: url(${radioUncheckedDisabled});
+    }
+
+    &:checked {
+      &:before {
+        background-image: url(${radioCheckedDisabled});
+      }
+    }
+  }
 `;
+
+const Label = styled.label`
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+`;
+
+const RadioButton = ({ children, ...props }) => (
+  <Label>
+    <Field {...props} />
+    {children}
+  </Label>
+);
+
+RadioButton.propTypes = {
+  children: PropTypes.string,
+};
 
 export default RadioButton;
