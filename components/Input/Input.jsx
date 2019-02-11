@@ -17,7 +17,7 @@ const Field = styled.input`
 
 class Input extends React.Component {
   render() {
-    const { value, style, type, ...rest } = this.props;
+    const { value, type, ...rest } = this.props;
 
     return <Field {...rest} className="text" type={type} />;
   }

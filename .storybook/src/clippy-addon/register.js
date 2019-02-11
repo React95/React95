@@ -253,7 +253,7 @@ class Clippy extends React.Component {
           >
             <TextArea
               readOnly
-              innerRef={textArea => (this.textArea = textArea)}
+              ref={textArea => (this.textArea = textArea)}
               defaultValue={formattedCode}
               rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
             />
