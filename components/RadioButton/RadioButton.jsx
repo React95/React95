@@ -50,17 +50,32 @@ const Label = styled.label`
   align-items: center;
 
   margin-bottom: 10px;
+
+  ${props =>
+    props.disabled &&
+    `
+    color: #868686;
+    text-shadow: 0.5px 0.5px #d2d2d2;
+  `}
 `;
 
-const RadioButton = ({ children, ...props }) => (
-  <Label>
-    <Field {...props} />
+const RadioButton = ({ children, onChange, disabled, ...props }) => (
+  <Label disabled={disabled}>
+    <Field onChange={onChange} disabled={disabled} {...props} />
     {children}
   </Label>
 );
 
 RadioButton.propTypes = {
   children: PropTypes.string,
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool,
+};
+
+RadioButton.defaultProps = {
+  children: '',
+  onChange: () => {},
+  disabled: false,
 };
 
 export default RadioButton;
