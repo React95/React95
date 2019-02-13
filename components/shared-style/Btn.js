@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.button`
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 4px 20px 4px;
   border: none;
 
   font-size: 12px;
@@ -21,7 +21,7 @@ export default styled.button`
   }
 
   &:active {
-    padding: 7px 20px 6px;
+    padding: 5px 20px 4px;
 
     outline: 1px dotted #000;
     outline-offset: -5px;
