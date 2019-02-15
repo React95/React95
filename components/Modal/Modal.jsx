@@ -11,9 +11,9 @@ const ModalWrapper = styled.div`
   flex-direction: column;
 
   position: fixed;
-  padding: 2px 3px;
-  min-width: 300px;
-  min-height: 200px;
+
+  padding: 2px 2px 8px;
+  ${({ width, height }) => `width: ${width}px; height: ${height}px;`}
 
   top: 50px;
 
@@ -82,13 +82,13 @@ const Content = styled.div`
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: ${props => props.buttonsAlignment};
 
   padding: 0 6px 6px 6px;
 
   & ${Btn} {
     margin-right: 6px;
-    min-width: 80px;
+    min-width: 70px;
 
     &:last-child {
       margin-right: 0;
@@ -160,6 +160,10 @@ class Modal extends React.Component {
       menu,
       top,
       left,
+      buttonsAlignment,
+      defaultPosition,
+      width,
+      height,
     } = this.props;
 
     const iconStyle = {
@@ -177,8 +181,8 @@ class Modal extends React.Component {
 
     return (
       <React.Fragment>
-        <Draggable handle=".draggable">
-          <ModalWrapper style={position}>
+        <Draggable handle=".draggable" defaultPosition={defaultPosition}>
+          <ModalWrapper style={position} width={width} height={height}>
             <TitleBar className="draggable">
               {icon && <Icon name={icon} {...iconStyle} />}
               <Title>{title}</Title>
@@ -188,7 +192,7 @@ class Modal extends React.Component {
               </OptionsBox>
             </TitleBar>
 
-            {menu && (
+            {menu.length > 0 && (
               <MenuWrapper>
                 {menu.map(({ name, list }) => {
                   const active = this.state.menuOpened === name;
@@ -207,8 +211,8 @@ class Modal extends React.Component {
             )}
 
             <Content onClick={this._resetState}>{children}</Content>
-            {buttons && (
-              <ButtonWrapper>
+            {buttons.length > 0 && (
+              <ButtonWrapper buttonsAlignment={buttonsAlignment}>
                 {buttons.map((button, index) => (
                   <Button
                     key={index}
@@ -239,7 +243,7 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    })
+    }),
   ),
   menu: PropTypes.arrayOf(
     PropTypes.shape({
@@ -248,16 +252,27 @@ Modal.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
       ]).isRequired,
-    })
+    }),
   ),
+  buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
+  defaultPosition: PropTypes.shape({
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+  }),
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 Modal.defaultProps = {
   icon: '',
   title: 'Modal',
+  buttonsAlignment: 'flex-end',
   chidren: null,
+  defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],
+  width: 300,
+  height: 200,
   closeModal: () => {},
 };
 

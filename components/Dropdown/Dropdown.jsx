@@ -59,11 +59,11 @@ const Select = styled.select`
 
 class Dropdown extends React.Component {
   render() {
-    const { options } = this.props;
+    const { options, ...rest } = this.props;
 
     return (
       <Wrapper>
-        <Select>
+        <Select {...rest}>
           {options.length &&
             options.map(option => <option value={option}>{option}</option>)}
         </Select>
