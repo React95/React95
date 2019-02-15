@@ -4,14 +4,15 @@ import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
 import Alert from '../components/Alert';
 import Button from '../components/Button';
-import List from '../components/List';
+import Dropdown from '../components/Dropdown';
 
 class AlertStory extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      showAlert: true,
+      showAlert: false,
+      type: 'error',
     };
   }
 
@@ -21,15 +22,24 @@ class AlertStory extends React.Component {
 
   handleButtonClick = e => alert(e.target.value);
 
+  onImageChange = e => this.setState({ type: e.target.value });
+
   render() {
     const { showAlert } = this.state;
     return (
       <React.Fragment>
+        <p>
+          Alert Type:{' '}
+          <Dropdown
+            options={['error', 'info', 'warning']}
+            onChange={this.onImageChange}
+          />
+        </p>
         <Button onClick={this.handleOpenAlert}>Trigger Alert</Button>
         {showAlert && (
           <Alert
             title="Windows Networking"
-            type="error"
+            type={this.state.type}
             message="The Windows password you typed is incorrect."
             closeAlert={this.handleCloseAlert}
           />
@@ -40,35 +50,11 @@ class AlertStory extends React.Component {
 }
 
 const code = `<Alert
-  icon="computer"
-  title="Browse"
-  closeAlert={() => {}}
-  buttons={[
-    { value: 'Ok', onClick: () => {}) },
-    { value: 'Cancel', onClick: () => {} },
-  ]}
-  menu={[
-    {
-      name: 'File',
-      list: (
-        <List>
-          <List.Item onClick={() => {}}>Exit</List.Item>
-        </List>
-      ),
-    },
-    {
-      name: 'Edit',
-      list: (
-        <List>
-          <List.Item>Copy</List.Item>
-        </List>
-      ),
-    },
-  ]}
-  >
-  {this.props.children}
-</Alert>
-`;
+  title="Windows Networking"
+  type="error"
+  message="The Windows password you typed is incorrect."
+  closeAlert={this.handleCloseAlert}
+/>`;
 
 storiesOf('Alert', module)
   .addDecorator(withClippy)

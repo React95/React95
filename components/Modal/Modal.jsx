@@ -13,7 +13,7 @@ const ModalWrapper = styled.div`
   position: fixed;
 
   padding: 2px 2px 8px;
-  min-height: 120px;
+  ${({ width, height }) => `width: ${width}px; height: ${height}px;`}
 
   top: 50px;
 
@@ -161,6 +161,9 @@ class Modal extends React.Component {
       top,
       left,
       buttonsAlignment,
+      defaultPosition,
+      width,
+      height,
     } = this.props;
 
     const iconStyle = {
@@ -178,8 +181,8 @@ class Modal extends React.Component {
 
     return (
       <React.Fragment>
-        <Draggable handle=".draggable">
-          <ModalWrapper style={position}>
+        <Draggable handle=".draggable" defaultPosition={defaultPosition}>
+          <ModalWrapper style={position} width={width} height={height}>
             <TitleBar className="draggable">
               {icon && <Icon name={icon} {...iconStyle} />}
               <Title>{title}</Title>
@@ -252,6 +255,12 @@ Modal.propTypes = {
     }),
   ),
   buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
+  defaultPosition: PropTypes.shape({
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+  }),
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 Modal.defaultProps = {
@@ -259,8 +268,11 @@ Modal.defaultProps = {
   title: 'Modal',
   buttonsAlignment: 'flex-end',
   chidren: null,
+  defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],
+  width: 300,
+  height: 200,
   closeModal: () => {},
 };
 
