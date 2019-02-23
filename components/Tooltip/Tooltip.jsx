@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -25,40 +25,29 @@ const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-class Tooltip extends Component {
-  constructor(props) {
-    super(props);
+const Tooltip = ({ children, text, delay }) => {
+  const [show, setShow] = useState(false);
+  const [delayTimer, setDelayTimer] = useState(null);
 
-    this.state = { show: false, delay: null };
-  }
+  const handleEnter = () => {
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, delay);
 
-  handleEnter = () => {
-    const delay = setTimeout(() => {
-      this.setState({ show: true });
-    }, this.props.delay);
-
-    this.setState({ delay });
+    setDelayTimer(timer);
   };
 
-  handleLeave = () => {
-    const { delay } = this.state;
-    clearTimeout(delay);
-
-    this.setState({ delay, show: false });
+  const handleLeave = () => {
+    clearTimeout(delayTimer);
+    setShow(false);
   };
 
-  render() {
-    const { children, text } = this.props;
-
-    const { show } = this.state;
-
-    return (
-      <Wrapper onMouseEnter={this.handleEnter} onMouseLeave={this.handleLeave}>
-        <Tip show={show}>{text}</Tip>
-        {children}
-      </Wrapper>
-    );
-  }
+  return (
+    <Wrapper onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+      <Tip show={show}>{text}</Tip>
+      {children}
+    </Wrapper>
+  );
 }
 
 function formatDate(date) {

@@ -133,23 +133,21 @@ const MenuItem = styled.li`
     `};
 `;
 
-const Modal = (props) => {
+const Modal = ({
+  closeModal,
+  title,
+  children,
+  buttons,
+  icon,
+  menu,
+  top,
+  left,
+  buttonsAlignment,
+  defaultPosition,
+  width,
+  height,
+}) => {
   const [menuOpened, setMenuOpened] = useState('');
-
-  const {
-    closeModal,
-    title,
-    children,
-    buttons,
-    icon,
-    menu,
-    top,
-    left,
-    buttonsAlignment,
-    defaultPosition,
-    width,
-    height,
-  } = props;
 
   const iconStyle = {
     width: 15,
