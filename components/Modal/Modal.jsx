@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Draggable from 'react-draggable';
@@ -133,100 +133,84 @@ const MenuItem = styled.li`
     `};
 `;
 
-class Modal extends React.Component {
-  constructor(props) {
-    super(props);
+const Modal = (props) => {
+  const [menuOpened, setMenuOpened] = useState('');
 
-    this.state = {
-      menuOpened: '',
-    };
-  }
+  const {
+    closeModal,
+    title,
+    children,
+    buttons,
+    icon,
+    menu,
+    top,
+    left,
+    buttonsAlignment,
+    defaultPosition,
+    width,
+    height,
+  } = props;
 
-  _menuClick = menuOpened => {
-    this.setState({ menuOpened });
+  const iconStyle = {
+    width: 15,
+    height: 13,
+    style: {
+      marginRight: '4px',
+    },
   };
 
-  _resetState = () => {
-    this.setState({ menuOpened: '' });
+  const position = {
+    top,
+    left,
   };
 
-  render() {
-    const {
-      closeModal,
-      title,
-      children,
-      buttons,
-      icon,
-      menu,
-      top,
-      left,
-      buttonsAlignment,
-      defaultPosition,
-      width,
-      height,
-    } = this.props;
+  return (
+    <React.Fragment>
+      <Draggable handle=".draggable" defaultPosition={defaultPosition}>
+        <ModalWrapper style={position} width={width} height={height}>
+          <TitleBar className="draggable">
+            {icon && <Icon name={icon} {...iconStyle} />}
+            <Title>{title}</Title>
+            <OptionsBox>
+              <Option>?</Option>
+              <Option onClick={closeModal}>x</Option>
+            </OptionsBox>
+          </TitleBar>
 
-    const iconStyle = {
-      width: 15,
-      height: 13,
-      style: {
-        marginRight: '4px',
-      },
-    };
+          {menu.length > 0 && (
+            <MenuWrapper>
+              {menu.map(({ name, list }) => {
+                const active = menuOpened === name;
+                return (
+                  <MenuItem
+                    key={name}
+                    onMouseDown={() => setMenuOpened(name)}
+                    active={active}
+                  >
+                    {name}
+                    {active && list}
+                  </MenuItem>
+                );
+              })}
+            </MenuWrapper>
+          )}
 
-    const position = {
-      top,
-      left,
-    };
-
-    return (
-      <React.Fragment>
-        <Draggable handle=".draggable" defaultPosition={defaultPosition}>
-          <ModalWrapper style={position} width={width} height={height}>
-            <TitleBar className="draggable">
-              {icon && <Icon name={icon} {...iconStyle} />}
-              <Title>{title}</Title>
-              <OptionsBox>
-                <Option>?</Option>
-                <Option onClick={closeModal}>x</Option>
-              </OptionsBox>
-            </TitleBar>
-
-            {menu.length > 0 && (
-              <MenuWrapper>
-                {menu.map(({ name, list }) => {
-                  const active = this.state.menuOpened === name;
-                  return (
-                    <MenuItem
-                      key={name}
-                      onMouseDown={() => this._menuClick(name)}
-                      active={active}
-                    >
-                      {name}
-                      {active && list}
-                    </MenuItem>
-                  );
-                })}
-              </MenuWrapper>
-            )}
-
-            <Content onClick={this._resetState}>{children}</Content>
-            {buttons.length > 0 && (
-              <ButtonWrapper buttonsAlignment={buttonsAlignment}>
-                {buttons.map((button, index) => (
-                  <Button
-                    key={index}
-                    onClick={button.onClick}
-                    value={button.value}
-                  />
-                ))}
-              </ButtonWrapper>
-            )}
-          </ModalWrapper>
-        </Draggable>
-      </React.Fragment>
-    );
-  }
+          <Content onClick={() => setMenuOpened('')}>{children}</Content>
+          {buttons.length > 0 && (
+            <ButtonWrapper buttonsAlignment={buttonsAlignment}>
+              {buttons.map((button, index) => (
+                <Button
+                  key={index}
+                  onClick={button.onClick}
+                  value={button.value}
+                />
+              ))}
+            </ButtonWrapper>
+          )}
+        </ModalWrapper>
+      </Draggable>
+    </React.Fragment>
+  );
 }
 
 Modal.displayName = 'Modal';
