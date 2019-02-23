@@ -36,41 +36,29 @@ Dialog.Message = styled.div`
   justify-content: center;
 `;
 
-class Alert extends React.Component {
-  constructor(props) {
-    super(props);
+const Alert = (props) => {
+  const { type, title, message, onCloseModal, closeAlert } = props;
+  const defaultPosition = {
+    x: Math.floor(window.innerWidth / 2) - 150,
+    y: Math.floor(window.innerHeight / 2) - 80,
+  };
 
-    this.state = {
-      menuOpened: '',
-    };
-  }
-  handleButtonClick = e => alert(e.target.value);
-
-  render() {
-    const { type, title, message, onCloseModal, closeAlert } = this.props;
-
-    const defaultPosition = {
-      x: Math.floor(window.innerWidth / 2) - 150,
-      y: Math.floor(window.innerHeight / 2) - 80,
-    };
-
-    return (
-      <Modal
-        title={title}
-        closeModal={onCloseModal}
-        buttonsAlignment="center"
-        buttons={[{ value: 'Ok', onClick: closeAlert }]}
-        defaultPosition={defaultPosition}
-        width="auto"
-        height={120}
-      >
-        <Dialog>
-          <Dialog.Image type={type} />
-          <Dialog.Message>{message}</Dialog.Message>
-        </Dialog>
-      </Modal>
-    );
-  }
+  return (
+    <Modal
+      title={title}
+      closeModal={onCloseModal}
+      buttonsAlignment="center"
+      buttons={[{ value: 'Ok', onClick: closeAlert }]}
+      defaultPosition={defaultPosition}
+      width="auto"
+      height={120}
+    >
+      <Dialog>
+        <Dialog.Image type={type} />
+        <Dialog.Message>{message}</Dialog.Message>
+      </Dialog>
+    </Modal>
+  );
 }
 
 Alert.displayName = 'Alert';
