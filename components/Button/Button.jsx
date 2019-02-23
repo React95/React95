@@ -3,17 +3,11 @@ import PropTypes from 'prop-types';
 
 import Btn from '../shared-style/Btn';
 
-class Button extends React.Component {
-  render() {
-    const { children, value, onClick } = this.props;
-
-    return (
-      <Btn value={value || children} onClick={onClick}>
-        {children || value}
-      </Btn>
-    );
-  }
-}
+const Button = ({ children, value, onClick }) =>  (
+  <Btn value={value || children} onClick={onClick}>
+    {children || value}
+  </Btn>
+);
 
 Button.propTypes = {
   value: PropTypes.string,

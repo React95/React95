@@ -36,8 +36,7 @@ Dialog.Message = styled.div`
   justify-content: center;
 `;
 
-const Alert = (props) => {
-  const { type, title, message, onCloseModal, closeAlert } = props;
+const Alert = ({ type, title, message, onCloseModal, closeAlert }) => {
   const defaultPosition = {
     x: Math.floor(window.innerWidth / 2) - 150,
     y: Math.floor(window.innerHeight / 2) - 80,

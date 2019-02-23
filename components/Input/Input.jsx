@@ -15,13 +15,9 @@ const Field = styled.input`
     0.5px 0.5px 0 0.5px #ffffff;
 `;
 
-class Input extends React.Component {
-  render() {
-    const { value, type, ...rest } = this.props;
-
-    return <Field {...rest} className="text" type={type} />;
-  }
-}
+const Input = ({ value, type, ...rest }) => (
+  <Field {...rest} className="text" type={type} />
+);
 
 Input.propTypes = {
   value: PropTypes.string,
