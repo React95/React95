@@ -57,20 +57,14 @@ const Select = styled.select`
   appearance: none;
 `;
 
-class Dropdown extends React.Component {
-  render() {
-    const { options, ...rest } = this.props;
-
-    return (
-      <Wrapper>
-        <Select {...rest}>
-          {options.length &&
-            options.map(option => <option value={option}>{option}</option>)}
-        </Select>
-      </Wrapper>
-    );
-  }
-}
+const Dropdown = ({ options, ...rest }) =>  (
+  <Wrapper>
+    <Select {...rest}>
+      {options.length &&
+        options.map(option => <option value={option}>{option}</option>)}
+    </Select>
+  </Wrapper>
+);
 
 Dropdown.propTypes = {
   options: PropTypes.arrayOf([PropTypes.string, PropTypes.number]),

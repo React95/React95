@@ -67,26 +67,20 @@ const Label = styled.label`
   ${checked} ${disabled};
 `;
 
-class Checkbox extends React.Component {
-  render() {
-    const {
-      children,
-      label,
-      value,
-      style,
-      checked,
-      disabled,
-      onChange,
-    } = this.props;
-
-    return (
-      <Label {...style} checked={checked} disabled={disabled}>
-        <Field type="checkbox" value={value} onChange={onChange} />
-        {children || label}
-      </Label>
-    );
-  }
-}
+const Checkbox = ({
+  children,
+  label,
+  value,
+  style,
+  checked,
+  disabled,
+  onChange,
+}) =>  (
+  <Label {...style} checked={checked} disabled={disabled}>
+    <Field type="checkbox" value={value} onChange={onChange} />
+    {children || label}
+  </Label>
+);
 
 Checkbox.propTypes = {
   value: PropTypes.string,

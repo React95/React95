@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -22,56 +22,36 @@ const NavContainer = styled.div`
 
 const If = ({ condition, children }) => condition && children;
 
-class Tabs extends Component {
-  constructor(props) {
-    super(props);
+const Tabs = ({ children, style }) => {
+  const firstTab = React.Children.toArray(children)[0];
+  const [activeTab, setActiveTab] = useState(firstTab.props.title);
 
-    const { children } = props;
+  return (
+    <React.Fragment>
+      <Navbar style={style}>
+        {React.Children.map(children, child => {
+          const { title, disabled } = child.props;
 
-    const firstTab = React.Children.toArray(children)[0];
+          return (
+            <Tab
+              key={title}
+              title={title}
+              activeTab={activeTab}
+              onClick={!disabled && (() => setActiveTab(title))}
+            />
+          );
+        })}
+      </Navbar>
 
-    const { activeTab = firstTab.props.title } = props;
-
-    this.state = {
-      activeTab,
-    };
-  }
-
-  onTabClick = ({ props: { title } }) => {
-    this.setState({ activeTab: title });
-  };
-
-  render() {
-    const { children, style } = this.props;
-    const { activeTab } = this.state;
-
-    return (
-      <React.Fragment>
-        <Navbar style={style}>
-          {React.Children.map(children, child => {
-            const { title, disabled } = child.props;
-
-            return (
-              <Tab
-                key={title}
-                title={title}
-                activeTab={activeTab}
-                onClick={!disabled && this.onTabClick}
-              />
-            );
-          })}
-        </Navbar>
-
-        <NavContainer style={style}>
-          {React.Children.map(children, child => (
-            <If condition={child.props.title === activeTab}>
-              {child.props.children}
-            </If>
-          ))}
-        </NavContainer>
-      </React.Fragment>
-    );
-  }
+      <NavContainer style={style}>
+        {React.Children.map(children, child => (
+          <If condition={child.props.title === activeTab}>
+            {child.props.children}
+          </If>
+        ))}
+      </NavContainer>
+    </React.Fragment>
+  );
 }
 
 Tabs.propTypes = {
