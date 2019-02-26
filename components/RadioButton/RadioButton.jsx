@@ -6,7 +6,7 @@ import {
   radioCheckedDisabled,
   radioUnchecked,
   radioUncheckedDisabled,
-} from './radioButton';
+} from './radioButtonStates';
 
 const Field = styled.input.attrs({
   type: 'radio',
