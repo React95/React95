@@ -19,17 +19,25 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "4.1.4",
     "@storybook/addon-links": "4.1.4",
     "@storybook/addon-options": "4.1.4",
     "@storybook/addons": "4.0.9",
     "@storybook/react": "4.0.9",
     "babel-loader": "^8.0.4",
-    "@storybook/addon-actions": "4.1.4"
+    "commitizen": "^3.0.7",
+    "cz-conventional-changelog": "^2.1.0"
   },
   "scripts": {
+    "commit": "git-cz",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-storybook": "rm -rf docs && build-storybook -c .storybook -s assets -o docs",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
