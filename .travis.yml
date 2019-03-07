@@ -1,18 +1,17 @@
+sudo: false
 language: node_js
 
-node_js:
-  - 8
-  - 6
+cache:
+  directories:
+    - node_modules
 
-jobs:
-  include:
-    # Define the release stage that runs semantic-release
-    - stage: release
-      node_js: lts/*
-      # Advanced: optionally overwrite your default `script` step to skip the tests
-      # script: skip
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
+branches:
+  only:
+    - master
+
+script:
+  # - npm run test
+  - npm run build
+
+after_success:
+  - npm run semantic-release
