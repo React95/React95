@@ -1,5 +1,5 @@
 {
-  "name": "react95",
+  "name": "@react95/core",
   "version": "0.0.0-development",
   "description": "Windows 95 styleguide",
   "main": "index.js",
@@ -28,6 +28,7 @@
     "@storybook/addon-options": "4.1.4",
     "@storybook/addons": "4.0.9",
     "@storybook/react": "4.0.9",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -36,13 +37,14 @@
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
     "rimraf": "^2.6.3",
-    "semantic-release-cli": "^4.1.0",
-    "semantic-release": "^15.13.3"
+    "semantic-release": "^15.13.3",
+    "semantic-release-cli": "^4.1.0"
   },
   "scripts": {
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 -s ./assets",
-    "build-storybook": "rimraf docs && build-storybook -c .storybook -s assets -o docs",
+    "build-storybook": "build-storybook -c .storybook -s assets -o docs",
+    "deploy-storybook": "storybook-to-ghpages",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",

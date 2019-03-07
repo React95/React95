@@ -11,3 +11,4 @@ script:
 
 after_success:
   - npm run semantic-release
+  - npm run deploy-storybook -- --out=docs
