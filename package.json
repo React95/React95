@@ -1,6 +1,6 @@
 {
-  "name": "react-95",
-  "version": "0.0.1",
+  "name": "react95",
+  "version": "0.0.0-development",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -35,7 +35,9 @@
     "commitizen": "^3.0.7",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "semantic-release-cli": "^4.1.0",
+    "semantic-release": "^15.13.3"
   },
   "scripts": {
     "commit": "git-cz",
@@ -49,7 +51,8 @@
     "clean:build": "rimraf ./dist",
     "postbuild": "npm run clean:directories:build && npm run clean:files:build && npm run copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
-    "prebuild": "npm run clean:build"
+    "prebuild": "npm run clean:build",
+    "semantic-release": "semantic-release"
   },
   "config": {
     "commitizen": {
