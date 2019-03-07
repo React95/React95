@@ -1,0 +1,14 @@
+sudo: false
+language: node_js
+
+branches:
+  only:
+    - master
+
+script:
+  # - npm run test
+  - npm run build
+
+after_success:
+  - npm run semantic-release
+  - npm run deploy-storybook -- --out=docs --ci
