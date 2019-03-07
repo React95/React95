@@ -54,6 +54,10 @@
     "prebuild": "npm run clean:build",
     "semantic-release": "semantic-release pre && npm publish dist"
   },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
