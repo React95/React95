@@ -1,10 +1,6 @@
 sudo: false
 language: node_js
 
-cache:
-  directories:
-    - node_modules
-
 branches:
   only:
     - master
