@@ -54,7 +54,7 @@
     "postbuild": "npm run clean:directories:build && npm run clean:files:build && npm run copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "npm run clean:build",
-    "semantic-release": "semantic-release && npm publish dist"
+    "semantic-release": "semantic-release && npm publish dist --access=public"
   },
   "engines": {
     "node": "8.4",
