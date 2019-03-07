@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "transform-class-properties",
+    "transform-modern-regexp",
+    "babel-plugin-styled-components"
+  ],
+  "env": {
+    "production": {
+      "ignore": [
+        "./components/**/*.test.jsx",
+        "./components/**/*/__snapshots__"
+      ]
+    }
+  }
+}
