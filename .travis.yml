@@ -11,4 +11,4 @@ script:
 
 after_success:
   - npm run semantic-release
-  - npm run deploy-storybook -- --out=docs
+  - npm run deploy-storybook -- --out=docs --ci --host-token-env-variable=GITHUB_TOKEN
