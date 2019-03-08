@@ -4,25 +4,25 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
-React95 is a component library inspired on **Windows 95** UI.
+React95 is a component library inspired on the **Windows 95** UI design.
 
 ## Installation
 
 React95 will be available via either npm and yarn.
 ```shell
-npm install react95
+npm install @react95/core
 # or
-yarn add react95
+yarn add @react95/core
 ```
 
-OBS: this isn't published on npm yet.
+*Warning:* React95 isn't production ready yet, use it at your own risk!
 
 ## Usage
 
-After installation you can use any react95 components in your react application:
+After installation, you can use any React95 component in your React application:
 
 ```js
-import { Button } from 'react95';
+import { Button } from '@react95/core';
 
 // ...
 
@@ -39,7 +39,7 @@ You can find a list of all available components at our [Storybook](https://react
 
 ## Roadmap
 
-You can see what we have in mind to put on React95 project at our [waffle](https://waffle.io/React95/React95) page.
+You can see what we have in mind to put on React95 at our [waffle](https://waffle.io/React95/React95) page.
 
 ## Development
 
