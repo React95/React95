@@ -34,6 +34,7 @@
     "@storybook/addons": "4.0.9",
     "@storybook/react": "4.0.9",
     "@storybook/storybook-deployer": "^2.8.1",
+    "babel-jest": "^24.3.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -41,6 +42,7 @@
     "commitizen": "^3.0.7",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
+    "jest": "^24.3.1",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.3",
     "semantic-release-cli": "^4.1.0",
@@ -60,7 +62,8 @@
     "postbuild": "npm run clean:directories:build && npm run clean:files:build && npm run copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "npm run clean:build",
-    "semantic-release": "semantic-release && npm publish dist --access=public"
+    "semantic-release": "semantic-release && npm publish dist --access=public",
+    "test": "jest"
   },
   "engines": {
     "node": "8.4",
