@@ -2,7 +2,7 @@
   "name": "@react95/core",
   "version": "0.0.0-development",
   "description": "Windows 95 styleguide",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "files": [
     "components"
   ],
