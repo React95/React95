@@ -15,12 +15,12 @@
   "dependencies": {
     "clippyjs": "^0.0.3",
     "prop-types": "^15.7.2",
-    "react-draggable": "^3.1.1",
-    "styled-components": "^4.1.3"
+    "react-draggable": "^3.1.1"
   },
   "peerDependencies": {
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "styled-components": "^4.1.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -43,7 +43,8 @@
     "cz-conventional-changelog": "^2.1.0",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.3",
-    "semantic-release-cli": "^4.1.0"
+    "semantic-release-cli": "^4.1.0",
+    "styled-components": "^4.1.3"
   },
   "scripts": {
     "commit": "git-cz",
