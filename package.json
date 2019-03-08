@@ -2,7 +2,10 @@
   "name": "@react95/core",
   "version": "0.0.0-development",
   "description": "Windows 95 styleguide",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "files": [
+    "components"
+  ],
   "repository": "git@github.com:React95/React95.git",
   "contributors": [
     "Allysson dos Santos <aallysson0@gmail.com>",
