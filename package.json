@@ -34,6 +34,7 @@
     "@storybook/addons": "4.0.9",
     "@storybook/react": "4.0.9",
     "@storybook/storybook-deployer": "^2.8.1",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -41,6 +42,12 @@
     "commitizen": "^3.0.7",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.3",
     "semantic-release-cli": "^4.1.0",
@@ -60,7 +67,8 @@
     "postbuild": "npm run clean:directories:build && npm run clean:files:build && npm run copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "npm run clean:build",
-    "semantic-release": "semantic-release && npm publish dist --access=public"
+    "semantic-release": "semantic-release && npm publish dist --access=public",
+    "lint": "eslint  --ignore-path .eslintignore . --ext .js,.jsx"
   },
   "engines": {
     "node": "8.4",
