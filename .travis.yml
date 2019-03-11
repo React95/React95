@@ -11,4 +11,5 @@ script:
 
 after_success:
   - npm run semantic-release
-  - npm run deploy-storybook -- --out=docs --ci
+  - test $TRAVIS_BRANCH = "master" &&
+    npm run deploy-storybook -- --out=docs --ci
