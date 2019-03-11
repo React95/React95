@@ -76,11 +76,13 @@
     }
   },
   "release": {
-    "publish": [
-      {
-        "path": "@semantic-release/npm",
-        "pkgRoot": "dist"
-      }
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "dist"
+        }
+      ]
     ]
   }
 }
