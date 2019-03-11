@@ -32,6 +32,15 @@
         "ideas",
         "review"
       ]
+    },
+    {
+      "login": "gennymcdonagh",
+      "name": "Genny McDonagh",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/25296442?v=4",
+      "profile": "https://github.com/gennymcdonagh",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
