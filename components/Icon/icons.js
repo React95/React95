@@ -1,3 +1,4 @@
+/* eslint camelcase: 0 */
 import bat from '../../assets/icons/bat.ico';
 import bat_exec from '../../assets/icons/bat_exec.ico';
 import bat_exec_2 from '../../assets/icons/bat_exec_2.ico';
