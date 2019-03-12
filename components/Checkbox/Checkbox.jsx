@@ -6,28 +6,26 @@ import check from '../../assets/pattern/check.svg';
 import checkDisabled from '../../assets/pattern/check-disabled.svg';
 import bgpattern from '../../assets/pattern/dropdown.png';
 
-const checked = ({ checked, disabled }) =>
-  checked &&
-  `
+const checked = ({ checked, disabled }) => checked
+  && `
   &:before {
     ${
-      disabled
-        ? `
+  disabled
+    ? `
       background-image:  url('${checkDisabled}'), url('${bgpattern}');
       background-repeat: no-repeat, repeat;
       background-position: center center;
       background-size: 7px 7px, 1.9px 1.9px;
       `
-        : `background-image: url('${check}');
+    : `background-image: url('${check}');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 7px 7px;`
-    }
+}
   }`;
 
-const disabled = ({ disabled }) =>
-  disabled &&
-  `
+const disabled = ({ disabled }) => disabled
+  && `
   color: #868686;
   text-shadow: 0.5px 0.5px #d2d2d2;
 
@@ -75,7 +73,7 @@ const Checkbox = ({
   checked,
   disabled,
   onChange,
-}) =>  (
+}) => (
   <Label {...style} checked={checked} disabled={disabled}>
     <Field type="checkbox" value={value} onChange={onChange} />
     {children || label}

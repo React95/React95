@@ -57,11 +57,11 @@ const Select = styled.select`
   appearance: none;
 `;
 
-const Dropdown = ({ options, ...rest }) =>  (
+const Dropdown = ({ options, ...rest }) => (
   <Wrapper>
     <Select {...rest}>
-      {options.length &&
-        options.map(option => <option value={option}>{option}</option>)}
+      {options.length
+        && options.map(option => <option value={option}>{option}</option>)}
     </Select>
   </Wrapper>
 );

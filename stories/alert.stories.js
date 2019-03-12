@@ -29,7 +29,9 @@ class AlertStory extends React.Component {
     return (
       <React.Fragment>
         <p>
-          Alert Type:{' '}
+
+          Alert Type:
+          {' '}
           <Dropdown
             options={['error', 'info', 'warning']}
             onChange={this.onImageChange}

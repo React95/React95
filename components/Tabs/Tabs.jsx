@@ -29,7 +29,7 @@ const Tabs = ({ children, style }) => {
   return (
     <React.Fragment>
       <Navbar style={style}>
-        {React.Children.map(children, child => {
+        {React.Children.map(children, (child) => {
           const { title, disabled } = child.props;
 
           return (
@@ -52,7 +52,7 @@ const Tabs = ({ children, style }) => {
       </NavContainer>
     </React.Fragment>
   );
-}
+};
 
 Tabs.propTypes = {
   children: PropTypes.oneOfType([

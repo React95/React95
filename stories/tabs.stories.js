@@ -24,9 +24,10 @@ storiesOf('Tabs, Tab', module)
     <Tabs style={{ width: 350 }}>
       <Tab title="General">
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
-          <Checkbox checked={true}>Log on to Windows NT domain</Checkbox>
+          <Checkbox checked>Log on to Windows NT domain</Checkbox>
           <br />
           <p style={{ marginLeft: 22, marginTop: 4 }}>
+
             When you log on, your password will be verified in a Windows NT
             domain.
           </p>
@@ -37,11 +38,13 @@ storiesOf('Tabs, Tab', module)
         <Fieldset legend="Network logon options">
           <Checkbox>Quick logon</Checkbox>
           <p style={{ marginBottom: 4, marginLeft: 22, marginTop: 4 }}>
+
             Windows logs you onto the network, but network drives are not
             reconnected until you use them.
           </p>
           <Checkbox>Logon and restore network connections</Checkbox>
           <p style={{ marginBottom: 4, marginLeft: 22, marginTop: 4 }}>
+
             When you log onto the network, Windows verifies that each network
             drive is ready to use.
           </p>
@@ -49,13 +52,15 @@ storiesOf('Tabs, Tab', module)
       </Tab>
       <Tab title="Compatibility">
         <p style={{ marginTop: 0, marginBottom: '1.6em' }}>
+
           If you have problem with this program and it worked correctly on an
           earlier version of Windows, select the compatibility m ode that mathes
           that earlier version.
         </p>
 
         <Fieldset legend="Compatibility mode" style={{ marginBottom: '1.6em' }}>
-          <Checkbox checked={true}>
+          <Checkbox checked>
+
             Run this program in compatibility mode for:
           </Checkbox>
           <Dropdown style={{ width: 200 }} options={['Windows 95']} />
@@ -76,7 +81,9 @@ storiesOf('Tabs, Tab', module)
         <br />
         <br />
         <p>
-          Learn more about <a href="#">program compatibility.</a>
+
+          Learn more about
+          <a href="#">program compatibility.</a>
         </p>
       </Tab>
     </Tabs>

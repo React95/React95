@@ -66,10 +66,12 @@ storiesOf('List', module)
             <List.Item icon="microsoft_exchange">Microsoft Exchange</List.Item>
             <List.Item icon="ms_dos">MS-DOS Prompt</List.Item>
             <List.Item icon="microsoft_network">
+
               The Microsoft Network
             </List.Item>
             <List.Item icon="windows_explorer">Windows Explorer</List.Item>
           </List>
+
           Programs
         </List.Item>
         <List.Item icon="folder_file">Documents</List.Item>
@@ -78,6 +80,7 @@ storiesOf('List', module)
             <List.Item icon="folder_settings">Control Panel</List.Item>
             <List.Item icon="folder_print">Printers</List.Item>
           </List>
+
           Settings
         </List.Item>
         <List.Item icon="file_find">Find</List.Item>

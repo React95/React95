@@ -125,9 +125,8 @@ const MenuItem = styled.li`
     color: #000;
   }
 
-  ${({ active }) =>
-    active &&
-    `
+  ${({ active }) => active
+    && `
       background-color: #00007f;
       color: #FFF;
     `};
@@ -209,7 +208,7 @@ const Modal = ({
       </Draggable>
     </React.Fragment>
   );
-}
+};
 
 Modal.displayName = 'Modal';
 

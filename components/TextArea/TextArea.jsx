@@ -19,7 +19,7 @@ const Text = styled.textarea`
 
 const TextArea = ({ rows, cols, ...rest }) => (
   <Text {...rest} className="text" rows={rows} cols={cols} />
-)
+);
 
 TextArea.propTypes = {
   rows: PropTypes.number,

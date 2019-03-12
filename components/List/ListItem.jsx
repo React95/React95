@@ -41,11 +41,10 @@ const Item = styled.li`
     fill: white;
   }
 
-  ${({ icon }) => !icon && `padding-left: 26px;`};
+  ${({ icon }) => !icon && 'padding-left: 26px;'};
 
-  ${({ hasList }) =>
-    hasList &&
-    `
+  ${({ hasList }) => hasList
+    && `
     &:after {
       position: absolute;
       content: '';
@@ -71,7 +70,9 @@ const Item = styled.li`
     `};
 `;
 
-const ListItem = ({ icon, children, onClick, rest }) => (
+const ListItem = ({
+  icon, children, onClick, rest,
+}) => (
   <Item
     {...rest}
     onClick={onClick}

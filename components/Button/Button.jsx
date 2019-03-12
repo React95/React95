@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Btn from '../shared-style/Btn';
 
-const Button = ({ children, value, onClick }) =>  (
+const Button = ({ children, value, onClick }) => (
   <Btn value={value || children} onClick={onClick}>
     {children || value}
   </Btn>
