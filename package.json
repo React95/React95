@@ -67,16 +67,22 @@
     "postbuild": "npm run clean:directories:build && npm run clean:files:build && npm run copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "npm run clean:build",
-    "semantic-release": "semantic-release && npm publish dist --access=public",
+    "semantic-release": "semantic-release",
     "lint": "eslint  --ignore-path .eslintignore . --ext .js,.jsx"
-  },
-  "engines": {
-    "node": "8.4",
-    "npm": "3.x"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "dist"
+        }
+      ]
+    ]
   }
 }
