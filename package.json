@@ -65,7 +65,10 @@
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "npm run clean:build",
     "semantic-release": "semantic-release",
-    "lint": "eslint  --ignore-path .eslintignore . --ext .js,.jsx"
+    "lint:components": "npm run lint ./components",
+    "lint:stories": "npm run lint ./stories",
+    "lint:all": "npm run lint:components && npm run lint:stories",
+    "lint": "eslint --ext js,jsx --quiet"
   },
   "config": {
     "commitizen": {
