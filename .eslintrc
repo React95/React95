@@ -6,5 +6,8 @@
   "rules": {
     "linebreak-style": 0
   },
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  }
 }

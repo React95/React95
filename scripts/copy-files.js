@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 import path from 'path';
 import fs from 'fs';
 import pkg from '../package.json';
