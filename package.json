@@ -3,9 +3,6 @@
   "version": "0.0.0-development",
   "description": "Windows 95 styleguide",
   "main": "index.js",
-  "files": [
-    "components"
-  ],
   "repository": "git@github.com:React95/React95.git",
   "contributors": [
     "Allysson dos Santos <aallysson0@gmail.com>",
@@ -77,19 +74,10 @@
   },
   "release": {
     "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
       [
         "@semantic-release/npm",
         {
-          "pkgRoot": "./dist",
-          "tarballDir": "dist"
-        }
-      ],
-      [
-        "@semantic-release/github",
-        {
-          "assets": "dist/*.tgz"
+          "pkgRoot": "./dist"
         }
       ]
     ]
