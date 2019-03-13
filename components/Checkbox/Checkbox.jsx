@@ -6,83 +6,83 @@ import check from '../../assets/pattern/check.svg';
 import checkDisabled from '../../assets/pattern/check-disabled.svg';
 import bgpattern from '../../assets/pattern/dropdown.png';
 
-const checked = ({ checked, disabled }) =>
-  checked &&
-  `
-  &:before {
-    ${
-      disabled
-        ? `
-      background-image:  url('${checkDisabled}'), url('${bgpattern}');
-      background-repeat: no-repeat, repeat;
-      background-position: center center;
-      background-size: 7px 7px, 1.9px 1.9px;
-      `
-        : `background-image: url('${check}');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 7px 7px;`
-    }
-  }`;
+const Icon = styled.span`
+  width: 12px;
+  height: 12px;
 
-const disabled = ({ disabled }) =>
-  disabled &&
-  `
-  color: #868686;
-  text-shadow: 0.5px 0.5px #d2d2d2;
+  content: '';
+  display: inline-block;
 
-  &:before {
-    background-color: #c0c0c0;
-  }
+  position: absolute;
+  left: 0;
+
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
+    0.5px 0.5px 0 0.5px #ffffff;
+
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7px 7px;
 `;
 
 const Text = styled.span`
-  box-sizing: border-box;
   padding: 1px;
+  user-select: none;
 `;
 
 const Field = styled.input`
-  height: 12px;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
   width: 12px;
+  height: 12px;
+
   margin: 0;
 
-  &:focus + ${Text}, &:active + ${Text} {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+
+  &:focus ~ ${Text}, &:active ~ ${Text} {
     border: 1px dotted;
     padding: 0;
+  }
+
+  &:checked + ${Icon} {
+    background-image: url('${check}');
+  }
+
+  &:checked &:disabled + ${Icon} {
+    background-image:  url('${checkDisabled}'), url('${bgpattern}');
+    background-size: 7px 7px, 1.9px 1.9px;
+  }
+
+  &:disabled + ${Icon} {
+    background-color: #c0c0c0;
   }
 `;
 
 Field.displayName = 'Field';
 
 const Label = styled.label`
-  position: relative;
-  padding-left: 20px;
-  height: 15px;
-  line-height: 1.5;
   display: inline-block;
+  height: 15px;
+
+  line-height: 1.5;
+
+  position: relative;
+
   margin: 4px 0;
+  padding-left: 20px;
 
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-
-    border-left: 1px solid #868a8e;
-    border-top: 1px solid #868a8e;
-
-    box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
-      0.5px 0.5px 0 0.5px #ffffff;
-    background-color: white;
-  }
-
-  ${checked} ${disabled};
+  ${({ disabled }) =>
+    disabled &&
+    `
+    color: #868686;
+    text-shadow: 0.5px 0.5px #d2d2d2;
+  `};
 `;
 
 const Checkbox = ({
@@ -102,6 +102,7 @@ const Checkbox = ({
       checked={checked}
       disabled={disabled}
     />
+    <Icon />
     <Text>{children || label}</Text>
   </Label>
 );
@@ -116,11 +117,11 @@ Checkbox.propTypes = {
 };
 
 Checkbox.defaultProps = {
-  value: 'checked',
+  value: undefined,
   label: 'Checkbox',
   children: '',
-  checked: false,
-  disabled: false,
+  checked: null,
+  disabled: null,
   onChange: () => {},
 };
 
