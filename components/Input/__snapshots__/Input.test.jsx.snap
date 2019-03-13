@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> Snapshots should match snapshot 1`] = `
+.c0 {
+  outline: none;
+  border: none;
+  padding: 3px 3px 5px 3px;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+}
+
+<input
+  className="c0"
+/>
+`;
