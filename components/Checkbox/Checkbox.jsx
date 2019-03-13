@@ -36,13 +36,31 @@ const disabled = ({ disabled }) =>
   }
 `;
 
-const Field = styled.input`
-  display: none;
+const Text = styled.span`
+  box-sizing: border-box;
+  padding: 1px;
 `;
+
+const Field = styled.input`
+  height: 12px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  margin: 0;
+
+  &:focus + ${Text}, &:active + ${Text} {
+    border: 1px dotted;
+    padding: 0;
+  }
+`;
+
+Field.displayName = 'Field';
 
 const Label = styled.label`
   position: relative;
-  padding-left: 22px;
+  padding-left: 20px;
   height: 15px;
   line-height: 1.5;
   display: inline-block;
@@ -75,10 +93,16 @@ const Checkbox = ({
   checked,
   disabled,
   onChange,
-}) =>  (
+}) => (
   <Label {...style} checked={checked} disabled={disabled}>
-    <Field type="checkbox" value={value} onChange={onChange} />
-    {children || label}
+    <Field
+      type="checkbox"
+      value={value}
+      onChange={onChange}
+      checked={checked}
+      disabled={disabled}
+    />
+    <Text>{children || label}</Text>
   </Label>
 );
 
