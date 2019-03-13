@@ -1,8 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Field = styled.input`
+const Input = styled.input`
   outline: none;
   border: none;
 
@@ -14,20 +12,5 @@ const Field = styled.input`
   box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
     0.5px 0.5px 0 0.5px #ffffff;
 `;
-
-const Input = ({ value, type, ...rest }) => (
-  <Field {...rest} className="text" type={type} />
-);
-
-Input.propTypes = {
-  value: PropTypes.string,
-  type: PropTypes.oneOf(['text', 'password']),
-};
-
-Input.defaultProps = {
-  value: '',
-  type: 'text',
-  children: null,
-};
 
 export default Input;
