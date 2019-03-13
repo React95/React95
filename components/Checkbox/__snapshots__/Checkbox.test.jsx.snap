@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> Snapshots should match snapshot with checked and disabled props 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.c1 {
+  height: 12px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  margin: 0;
+}
+
+.c1:focus + .c2,
+.c1:active + .c2 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c0 {
+  position: relative;
+  padding-left: 20px;
+  height: 15px;
+  line-height: 1.5;
+  display: inline-block;
+  margin: 4px 0;
+  color: #868686;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  background-color: white;
+}
+
+.c0:before {
+  background-image: url('test-file-stub'),url('test-file-stub');
+  background-repeat: no-repeat,repeat;
+  background-position: center center;
+  background-size: 7px 7px,1.9px 1.9px;
+}
+
+.c0:before {
+  background-color: #c0c0c0;
+}
+
+<label
+  checked={true}
+  className="c0"
+  disabled={true}
+>
+  <input
+    checked={true}
+    className="c1"
+    disabled={true}
+    onChange={[Function]}
+    type="checkbox"
+    value="checked"
+  />
+  <span
+    className="c2 c3"
+  >
+    Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with checked prop 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.c1 {
+  height: 12px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  margin: 0;
+}
+
+.c1:focus + .c2,
+.c1:active + .c2 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c0 {
+  position: relative;
+  padding-left: 20px;
+  height: 15px;
+  line-height: 1.5;
+  display: inline-block;
+  margin: 4px 0;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  background-color: white;
+}
+
+.c0:before {
+  background-image: url('test-file-stub');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7px 7px;
+}
+
+<label
+  checked={true}
+  className="c0"
+  disabled={false}
+>
+  <input
+    checked={true}
+    className="c1"
+    disabled={false}
+    onChange={[Function]}
+    type="checkbox"
+    value="checked"
+  />
+  <span
+    className="c2 c3"
+  >
+    Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.c1 {
+  height: 12px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  margin: 0;
+}
+
+.c1:focus + .c2,
+.c1:active + .c2 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c0 {
+  position: relative;
+  padding-left: 20px;
+  height: 15px;
+  line-height: 1.5;
+  display: inline-block;
+  margin: 4px 0;
+  color: #868686;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  background-color: white;
+}
+
+.c0:before {
+  background-color: #c0c0c0;
+}
+
+<label
+  checked={false}
+  className="c0"
+  disabled={true}
+>
+  <input
+    checked={false}
+    className="c1"
+    disabled={true}
+    onChange={[Function]}
+    type="checkbox"
+    value="checked"
+  />
+  <span
+    className="c2 c3"
+  >
+    Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.c1 {
+  height: 12px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  margin: 0;
+}
+
+.c1:focus + .c2,
+.c1:active + .c2 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c0 {
+  position: relative;
+  padding-left: 20px;
+  height: 15px;
+  line-height: 1.5;
+  display: inline-block;
+  margin: 4px 0;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  background-color: white;
+}
+
+<label
+  checked={false}
+  className="c0"
+  disabled={false}
+>
+  <input
+    checked={false}
+    className="c1"
+    disabled={false}
+    onChange={[Function]}
+    type="checkbox"
+    value="checked"
+  />
+  <span
+    className="c2 c3"
+  >
+    Checkbox
+  </span>
+</label>
+`;
