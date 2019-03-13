@@ -47,7 +47,7 @@ const Alert = ({ type, title, message, onCloseModal, closeAlert }) => {
       title={title}
       closeModal={onCloseModal}
       buttonsAlignment="center"
-      buttons={[{ value: 'Ok', onClick: closeAlert }]}
+      buttons={[{ value: 'OK', onClick: closeAlert }]}
       defaultPosition={defaultPosition}
       width="auto"
       height={120}
@@ -58,7 +58,7 @@ const Alert = ({ type, title, message, onCloseModal, closeAlert }) => {
       </Dialog>
     </Modal>
   );
-}
+};
 
 Alert.displayName = 'Alert';
 
