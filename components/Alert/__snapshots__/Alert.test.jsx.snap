@@ -3,10 +3,10 @@
 exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 .c11 {
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
 }
 
 .c11:disabled {
@@ -21,7 +21,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 }
 
 .c11:active {
-  padding: 7px 20px 6px;
+  padding: 8px 20px 5px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -75,10 +75,10 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 
 .c5 {
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
   margin-right: 2px;
   padding: 0;
   width: 17px;
@@ -99,7 +99,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 }
 
 .c5:active {
-  padding: 7px 20px 6px;
+  padding: 8px 20px 5px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -259,9 +259,9 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
     <button
       className="c4 c11"
       onClick={[Function]}
-      value="Ok"
+      value="OK"
     >
-      Ok
+      OK
     </button>
   </div>
 </div>
@@ -270,10 +270,10 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 .c11 {
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
 }
 
 .c11:disabled {
@@ -288,7 +288,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 }
 
 .c11:active {
-  padding: 7px 20px 6px;
+  padding: 8px 20px 5px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -342,10 +342,10 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 
 .c5 {
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
   margin-right: 2px;
   padding: 0;
   width: 17px;
@@ -366,7 +366,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 }
 
 .c5:active {
-  padding: 7px 20px 6px;
+  padding: 8px 20px 5px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -526,9 +526,9 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
     <button
       className="c4 c11"
       onClick={[Function]}
-      value="Ok"
+      value="OK"
     >
-      Ok
+      OK
     </button>
   </div>
 </div>
@@ -537,10 +537,10 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 .c11 {
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
 }
 
 .c11:disabled {
@@ -555,7 +555,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 }
 
 .c11:active {
-  padding: 7px 20px 6px;
+  padding: 8px 20px 5px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -609,10 +609,10 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 
 .c5 {
   background-color: #c3c7cb;
-  padding: 6px 20px 6px;
+  padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
   margin-right: 2px;
   padding: 0;
   width: 17px;
@@ -633,7 +633,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 }
 
 .c5:active {
-  padding: 7px 20px 6px;
+  padding: 8px 20px 5px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -793,9 +793,9 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
     <button
       className="c4 c11"
       onClick={[Function]}
-      value="Ok"
+      value="OK"
     >
-      Ok
+      OK
     </button>
   </div>
 </div>
