@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] = `
+.c4 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(test-file-stub);
+}
+
+.c6 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.c2 {
+  margin: 0;
+  opacity: 0;
+}
+
+.c2:focus ~ .c5,
+.c2:active + .c5 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c2:checked + .c3 {
+  background-image: url(test-file-stub);
+}
+
+.c2:disabled + .c3 {
+  background-image: url(test-file-stub);
+}
+
+.c2:checked .c1:disabled + .c3 {
+  background-image: url(test-file-stub);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 10px;
+  color: #868686;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+}
+
+<label
+  className="c0"
+  disabled={true}
+>
+  <input
+    className="c1 c2"
+    disabled={true}
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="c3 c4"
+  />
+  <span
+    className="c5 c6"
+  >
+    
+  </span>
+</label>
+`;
+
+exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
+.c4 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(test-file-stub);
+}
+
+.c6 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.c2 {
+  margin: 0;
+  opacity: 0;
+}
+
+.c2:focus ~ .c5,
+.c2:active + .c5 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c2:checked + .c3 {
+  background-image: url(test-file-stub);
+}
+
+.c2:disabled + .c3 {
+  background-image: url(test-file-stub);
+}
+
+.c2:checked .c1:disabled + .c3 {
+  background-image: url(test-file-stub);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+<label
+  className="c0"
+  disabled={false}
+>
+  <input
+    className="c1 c2"
+    disabled={false}
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="c3 c4"
+  />
+  <span
+    className="c5 c6"
+  >
+    
+  </span>
+</label>
+`;
