@@ -71,6 +71,8 @@ const Option = styled(Btn)`
   }
 `;
 
+Option.displayName = 'Option';
+
 const Content = styled.div`
   flex-grow: 1;
   display: flex;
@@ -133,6 +135,8 @@ const MenuItem = styled.li`
     `};
 `;
 
+MenuItem.displayName = 'MenuItem';
+
 const Modal = ({
   closeModal,
   title,
@@ -140,8 +144,6 @@ const Modal = ({
   buttons,
   icon,
   menu,
-  top,
-  left,
   buttonsAlignment,
   defaultPosition,
   width,
@@ -157,15 +159,10 @@ const Modal = ({
     },
   };
 
-  const position = {
-    top,
-    left,
-  };
-
   return (
     <React.Fragment>
       <Draggable handle=".draggable" defaultPosition={defaultPosition}>
-        <ModalWrapper style={position} width={width} height={height}>
+        <ModalWrapper width={width} height={height}>
           <TitleBar className="draggable">
             {icon && <Icon name={icon} {...iconStyle} />}
             <Title>{title}</Title>
@@ -209,7 +206,7 @@ const Modal = ({
       </Draggable>
     </React.Fragment>
   );
-}
+};
 
 Modal.displayName = 'Modal';
 
@@ -225,7 +222,7 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    }),
+    })
   ),
   menu: PropTypes.arrayOf(
     PropTypes.shape({
@@ -234,7 +231,7 @@ Modal.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
       ]).isRequired,
-    }),
+    })
   ),
   buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
   defaultPosition: PropTypes.shape({
