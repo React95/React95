@@ -1,0 +1,813 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> Snapshots should match snapshot 1`] = `
+.c11 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+}
+
+.c11:disabled {
+  color: #868a8e;
+}
+
+.c11:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+.c11:active {
+  padding: 8px 20px 5px;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+}
+
+.c2 {
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url('test-file-stub');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  padding: 2px 2px 8px;
+  width: 300px;
+  height: 200px;
+  top: 50px;
+  background-color: #c3c7cb;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+}
+
+.c1 {
+  height: 18px;
+  margin-bottom: 2px;
+  background-color: #00007f;
+  color: white;
+  padding: 2px 2px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  margin-right: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-size: 10px;
+}
+
+.c6:disabled {
+  color: #868a8e;
+}
+
+.c6:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+.c6:active {
+  padding: 8px 20px 5px;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+}
+
+.c6:last-child {
+  margin-right: 0;
+}
+
+.c6:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c6:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -1px -1px 0px 1px #868a8e;
+}
+
+.c9 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 6px 6px 6px;
+}
+
+.c10 .c5 {
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+.c10 .c5:last-child {
+  margin-right: 0;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #848284;
+  box-shadow: 0 1px 0 0 #e6e6e6;
+}
+
+.c8 {
+  position: relative;
+  padding-left: 6px;
+  padding-right: 6px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c8 ul {
+  position: absolute;
+  left: 0;
+  color: #000;
+}
+
+<div
+  className="react-draggable c0"
+  height={200}
+  onMouseDown={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  style={
+    Object {
+      "touchAction": "none",
+      "transform": "translate(0px,0px)",
+    }
+  }
+  transform={null}
+  width={300}
+>
+  <div
+    className="draggable c1"
+  >
+    <i
+      className="c2"
+      height={13}
+      name="bat"
+      style={
+        Object {
+          "marginRight": "4px",
+        }
+      }
+      width={15}
+    />
+    <div
+      className="c3"
+    >
+      file.bat
+    </div>
+    <ul
+      className="c4"
+    >
+      <button
+        className="c5 c6"
+      >
+        ?
+      </button>
+      <button
+        className="c5 c6"
+        onClick={[Function]}
+      >
+        x
+      </button>
+    </ul>
+  </div>
+  <ul
+    className="c7"
+  >
+    <li
+      className="c8"
+      onMouseDown={[Function]}
+    >
+      File
+    </li>
+    <li
+      className="c8"
+      onMouseDown={[Function]}
+    >
+      Edit
+    </li>
+  </ul>
+  <div
+    className="c9"
+    onClick={[Function]}
+  >
+    Hello
+  </div>
+  <div
+    className="c10"
+  >
+    <button
+      className="c5 c11"
+      onClick={[Function]}
+      value="Ok"
+    >
+      Ok
+    </button>
+    <button
+      className="c5 c11"
+      onClick={[Function]}
+      value="Cancel"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equals center 1`] = `
+.c9 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+}
+
+.c9:disabled {
+  color: #868a8e;
+}
+
+.c9:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+.c9:active {
+  padding: 8px 20px 5px;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+}
+
+.c2 {
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url('test-file-stub');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  padding: 2px 2px 8px;
+  width: 300px;
+  height: 200px;
+  top: 50px;
+  background-color: #c3c7cb;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+}
+
+.c1 {
+  height: 18px;
+  margin-bottom: 2px;
+  background-color: #00007f;
+  color: white;
+  padding: 2px 2px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  margin-right: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-size: 10px;
+}
+
+.c6:disabled {
+  color: #868a8e;
+}
+
+.c6:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+.c6:active {
+  padding: 8px 20px 5px;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+}
+
+.c6:last-child {
+  margin-right: 0;
+}
+
+.c6:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c6:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -1px -1px 0px 1px #868a8e;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.c10 .c5 {
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+.c10 .c5:last-child {
+  margin-right: 0;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 6px 6px 6px;
+}
+
+.c8 .c5 {
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+.c8 .c5:last-child {
+  margin-right: 0;
+}
+
+<div
+  className="react-draggable c0"
+  height={200}
+  onMouseDown={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  style={
+    Object {
+      "touchAction": "none",
+      "transform": "translate(0px,0px)",
+    }
+  }
+  transform={null}
+  width={300}
+>
+  <div
+    className="draggable c1"
+  >
+    <i
+      className="c2"
+      height={13}
+      name="bat"
+      style={
+        Object {
+          "marginRight": "4px",
+        }
+      }
+      width={15}
+    />
+    <div
+      className="c3"
+    >
+      file.bat
+    </div>
+    <ul
+      className="c4"
+    >
+      <button
+        className="c5 c6"
+      >
+        ?
+      </button>
+      <button
+        className="c5 c6"
+        onClick={[Function]}
+      >
+        x
+      </button>
+    </ul>
+  </div>
+  <div
+    className="c7"
+    onClick={[Function]}
+  >
+    Hello
+  </div>
+  <div
+    className="c8"
+  >
+    <button
+      className="c5 c9"
+      onClick={[Function]}
+      value="Ok"
+    >
+      Ok
+    </button>
+    <button
+      className="c5 c9"
+      onClick={[Function]}
+      value="Cancel"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equals flex-start 1`] = `
+.c9 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+}
+
+.c9:disabled {
+  color: #868a8e;
+}
+
+.c9:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+.c9:active {
+  padding: 8px 20px 5px;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+}
+
+.c2 {
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url('test-file-stub');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  padding: 2px 2px 8px;
+  width: 300px;
+  height: 200px;
+  top: 50px;
+  background-color: #c3c7cb;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+}
+
+.c1 {
+  height: 18px;
+  margin-bottom: 2px;
+  background-color: #00007f;
+  color: white;
+  padding: 2px 2px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  margin-right: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-size: 10px;
+}
+
+.c6:disabled {
+  color: #868a8e;
+}
+
+.c6:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+.c6:active {
+  padding: 8px 20px 5px;
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+}
+
+.c6:last-child {
+  margin-right: 0;
+}
+
+.c6:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c6:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -1px -1px 0px 1px #868a8e;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.c10 .c5 {
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+.c10 .c5:last-child {
+  margin-right: 0;
+}
+
+.c11 .c5 {
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+.c11 .c5:last-child {
+  margin-right: 0;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 0 6px 6px 6px;
+}
+
+.c8 .c5 {
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+.c8 .c5:last-child {
+  margin-right: 0;
+}
+
+<div
+  className="react-draggable c0"
+  height={200}
+  onMouseDown={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  style={
+    Object {
+      "touchAction": "none",
+      "transform": "translate(0px,0px)",
+    }
+  }
+  transform={null}
+  width={300}
+>
+  <div
+    className="draggable c1"
+  >
+    <i
+      className="c2"
+      height={13}
+      name="bat"
+      style={
+        Object {
+          "marginRight": "4px",
+        }
+      }
+      width={15}
+    />
+    <div
+      className="c3"
+    >
+      file.bat
+    </div>
+    <ul
+      className="c4"
+    >
+      <button
+        className="c5 c6"
+      >
+        ?
+      </button>
+      <button
+        className="c5 c6"
+        onClick={[Function]}
+      >
+        x
+      </button>
+    </ul>
+  </div>
+  <div
+    className="c7"
+    onClick={[Function]}
+  >
+    Hello
+  </div>
+  <div
+    className="c8"
+  >
+    <button
+      className="c5 c9"
+      onClick={[Function]}
+      value="Ok"
+    >
+      Ok
+    </button>
+    <button
+      className="c5 c9"
+      onClick={[Function]}
+      value="Cancel"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
+`;
