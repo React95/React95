@@ -86,7 +86,7 @@ const ListItem = ({ icon, children, onClick, ...rest }) => (
   </Item>
 );
 
-ListItem.PropTypes = {
+ListItem.propTypes = {
   icon: PropTypes.string,
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,

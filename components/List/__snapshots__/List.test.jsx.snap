@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> Snapshots should match snapshot 1`] = `
+.c2 {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('test-file-stub');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 2px 6px;
+}
+
+.c1 i {
+  margin-right: 10px;
+}
+
+.c1:hover {
+  background-color: #00007f;
+  color: white;
+}
+
+.c1 ul {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 97%;
+  color: #000;
+}
+
+.c1 ul i {
+  width: 18px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.c1 svg {
+  fill: white;
+}
+
+.c1:after {
+  position: absolute;
+  content: '';
+  background-color: #000;
+  -webkit-mask-image: url('test-file-stub');
+  mask-image: url('test-file-stub');
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-size: 5px 8px;
+  mask-size: 5px 8px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 5px;
+  height: 8px;
+  right: 8px;
+}
+
+.c1:hover:after {
+  background-color: #FFF;
+}
+
+.c1:hover ul {
+  display: block;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 2px 6px;
+}
+
+.c3 i {
+  margin-right: 10px;
+}
+
+.c3:hover {
+  background-color: #00007f;
+  color: white;
+}
+
+.c3 ul {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 97%;
+  color: #000;
+}
+
+.c3 ul i {
+  width: 18px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.c3 svg {
+  fill: white;
+}
+
+.c4 {
+  background-color: #a2a5a8;
+  height: 1px;
+  border-top: 1px solid #868a8e;
+  border-bottom: 1px solid white;
+  width: 98%;
+  margin-left: 2px;
+}
+
+.c0 {
+  background-color: #c3c7cb;
+  padding: 5px 20px 6px;
+  border: none;
+  margin: 0;
+  padding: 2px;
+  list-style: none;
+  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  width: 200px;
+}
+
+<ul
+  className="c0"
+  width={200}
+>
+  <li
+    className="c1"
+    onClick={[Function]}
+  >
+    <i
+      className="c2"
+      height={32}
+      name="folder_exe2"
+      width={32}
+    />
+    <ul
+      className="c0"
+      width={200}
+    >
+      <li
+        className="c3"
+        onClick={[Function]}
+      >
+        <i
+          className="c2"
+          height={32}
+          name="microsoft_exchange"
+          width={32}
+        />
+        Microsoft Exchange
+      </li>
+      <li
+        className="c4"
+      />
+      <li
+        className="c3"
+        onClick={[Function]}
+      >
+        <i
+          className="c2"
+          height={32}
+          name="windows_explorer"
+          width={32}
+        />
+        Windows Explorer
+      </li>
+    </ul>
+    Programs
+  </li>
+</ul>
+`;
