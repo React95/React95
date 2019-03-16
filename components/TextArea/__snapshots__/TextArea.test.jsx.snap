@@ -12,9 +12,11 @@ exports[`<TextArea /> Snapshot should match snapshot 1`] = `
   box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
 }
 
-<textarea
-  className="c0"
-  cols={50}
-  rows={10}
-/>
+<div>
+  <textarea
+    class="c0"
+    cols="50"
+    rows="10"
+  />
+</div>
 `;

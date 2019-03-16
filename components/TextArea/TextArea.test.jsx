@@ -1,11 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from 'react-testing-library';
 import TextArea from './TextArea';
 
 describe('<TextArea />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      expect(renderer.create(<TextArea />).toJSON()).toMatchSnapshot();
+      const { container } = render(<TextArea />);
+      expect(container).toMatchSnapshot();
     });
   });
 });
