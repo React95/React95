@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
+.c1 {
+  background: radial-gradient(#ff0 20%,transparent 20%) 0 0,radial-gradient(#ff0 20%,transparent 20%) 4px 4px,radial-gradient(rgba(255,255,255,0.1) 20%,transparent 25%) 0 1px,radial-gradient(rgba(255,255,255,0.1) 20%,transparent 25%) 3px 4px;
+  background-size: 7px 7px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 2px 2px 2px 4px;
+  position: absolute;
+  top: -20px;
+  text-align: center;
+  z-index: 100;
+  display: none;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+  cursor: default;
+  white-space: nowrap;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      Tooltip text
+    </div>
+    <span>
+      hover
+    </span>
+  </div>
+</div>
+`;
