@@ -1,11 +1,12 @@
 import React from 'react';
 import Range from './Range';
-import renderer from 'react-test-renderer';
+import { render } from 'react-testing-library';
 
 describe('<Range />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      expect(renderer.create(<Range />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Range />);
+      expect(container).toMatchSnapshot();
     });
   });
 });

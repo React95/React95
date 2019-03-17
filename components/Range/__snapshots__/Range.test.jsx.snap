@@ -68,8 +68,10 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-<input
-  className="c0"
-  type="range"
-/>
+<div>
+  <input
+    class="c0"
+    type="range"
+  />
+</div>
 `;
