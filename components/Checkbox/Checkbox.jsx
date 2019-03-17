@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import check from '../../assets/pattern/check.svg';
 import checkDisabled from '../../assets/pattern/check-disabled.svg';
 import bgpattern from '../../assets/pattern/dropdown.png';
+import { restElement } from '@babel/types';
 
 const Icon = styled.span`
   width: 12px;
@@ -93,6 +94,7 @@ const Checkbox = ({
   checked,
   disabled,
   onChange,
+  ...rest
 }) => (
   <Label {...style} checked={checked} disabled={disabled}>
     <Field
@@ -101,6 +103,7 @@ const Checkbox = ({
       onChange={onChange}
       checked={checked}
       disabled={disabled}
+      {...rest}
     />
     <Icon />
     <Text>{children || label}</Text>
