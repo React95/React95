@@ -12,9 +12,9 @@ describe('<Button />', () => {
 
   describe('value prop', () => {
     it('should display value as Button children', () => {
-      const { getByText } = render(<Button value="Cancel" />);
+      const { container } = render(<Button value="Cancel" />);
 
-      expect(getByText('Cancel')).toBeInTheDocument();
+      expect(container.querySelector('button').textContent).toBe('Cancel');
     });
   });
 

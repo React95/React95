@@ -19,15 +19,15 @@ describe('<Checkbox />', () => {
     const label = 'label text';
 
     it('should display label prop as Checkbox label', () => {
-      const { getByText } = render(<Checkbox label={label} />);
+      const { container } = render(<Checkbox label={label} />);
 
-      expect(getByText(label)).toBeInTheDocument();
+      expect(container.querySelector('label').textContent).toBe(label);
     });
 
     it('should display children as Checkbox label', () => {
-      const { getByText } = render(<Checkbox>{label}</Checkbox>);
+      const { container } = render(<Checkbox>{label}</Checkbox>);
 
-      expect(getByText(label)).toBeInTheDocument();
+      expect(container.querySelector('label').textContent).toBe(label);
     });
   });
 

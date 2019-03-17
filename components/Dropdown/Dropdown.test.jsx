@@ -21,11 +21,12 @@ describe('<Dropdown />', () => {
     });
 
     it('should display correct option text', () => {
-      const { getByText } = render(<Dropdown options={options} />);
+      const { container } = render(<Dropdown options={options} />);
+      const renderedOptions = container.querySelectorAll('option');
 
-      expect(getByText(options[0])).toBeInTheDocument();
-      expect(getByText(options[1])).toBeInTheDocument();
-      expect(getByText(options[2])).toBeInTheDocument();
+      expect(renderedOptions[0].textContent).toBe(options[0]);
+      expect(renderedOptions[1].textContent).toBe(options[1]);
+      expect(renderedOptions[2].textContent).toBe(options[2]);
     });
   });
 });

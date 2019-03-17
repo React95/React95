@@ -83,13 +83,15 @@ describe('<Modal />', () => {
   describe('Modal action buttons', () => {
     it('should display button text correctly', () => {
       const buttonText = 'button text';
-      const { getByText } = render(
+      const { container } = render(
         <Modal icon="bat" title="file.bat" buttons={[{ value: buttonText }]}>
           Hello
         </Modal>
       );
 
-      expect(getByText(buttonText)).toBeInTheDocument();
+      expect(
+        container.querySelector(`button[value='${buttonText}']`).textContent
+      ).toBe(buttonText);
     });
 
     it('should display more than one button', () => {
@@ -124,7 +126,7 @@ describe('<Modal />', () => {
 
   describe('Menus', () => {
     it('should display menu name correctly', () => {
-      const { getByText } = render(
+      const { container } = render(
         <Modal
           menu={[
             {
@@ -141,11 +143,11 @@ describe('<Modal />', () => {
         </Modal>
       );
 
-      expect(getByText('Menu Text')).toBeInTheDocument();
+      expect(container.querySelector('li').textContent).toBe('Menu Text');
     });
 
     it('should display menu list correctly', () => {
-      const { getByText } = render(
+      const { container, getByText } = render(
         <Modal
           menu={[
             {
@@ -164,7 +166,7 @@ describe('<Modal />', () => {
 
       fireEvent.mouseDown(getByText('Edit'));
 
-      expect(getByText('Exit')).toBeInTheDocument();
+      expect(getByText('Edit').querySelector('li').textContent).toBe('Exit');
     });
   });
 });
