@@ -25,6 +25,8 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "@semantic-release/exec": "^3.3.2",
+    "@semantic-release/npm": "^5.1.4",
     "@storybook/addon-actions": "4.1.4",
     "@storybook/addon-links": "4.1.4",
     "@storybook/addon-options": "4.1.4",
