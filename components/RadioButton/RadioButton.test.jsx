@@ -1,29 +1,32 @@
 import React from 'react';
 import RadioButton from './RadioButton';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, fireEvent, cleanup } from 'react-testing-library';
+
+afterEach(cleanup);
 
 describe('<RadioButton />', () => {
   describe('Snapshots', () => {
     it('should match snapshot without props', () => {
-      expect(renderer.create(<RadioButton />).toJSON()).toMatchSnapshot();
+      const { container } = render(<RadioButton />);
+      expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with disabled prop', () => {
-      expect(
-        renderer.create(<RadioButton disabled />).toJSON()
-      ).toMatchSnapshot();
+      const { container } = render(<RadioButton disabled />);
+      expect(container).toMatchSnapshot();
     });
   });
 
   describe('onChange prop', () => {
-    it('should call onChange when RadioButton is changed', () => {
+    it('should call onChange callback when RadioButton is changed', () => {
       const onChangeMock = jest.fn();
-      const MountedRadio = mount(
-        <RadioButton onChange={onChangeMock}>Radio</RadioButton>
+      const { getByTestId } = render(
+        <RadioButton onChange={onChangeMock} data-testid="radio">
+          Radio
+        </RadioButton>
       );
 
-      MountedRadio.find('input').simulate('change');
+      fireEvent.click(getByTestId('radio'));
 
       expect(onChangeMock).toHaveBeenCalled();
     });

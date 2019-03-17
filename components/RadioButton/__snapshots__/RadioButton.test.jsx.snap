@@ -53,25 +53,24 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
   text-shadow: 0.5px 0.5px #d2d2d2;
 }
 
-<label
-  className="c0"
-  disabled={true}
->
-  <input
-    className="c1 c2"
-    disabled={true}
-    onChange={[Function]}
-    type="radio"
-  />
-  <span
-    className="c3 c4"
-  />
-  <span
-    className="c5 c6"
+<div>
+  <label
+    class="c0"
+    disabled=""
   >
-    
-  </span>
-</label>
+    <input
+      class="c1 c2"
+      disabled=""
+      type="radio"
+    />
+    <span
+      class="c3 c4"
+    />
+    <span
+      class="c5 c6"
+    />
+  </label>
+</div>
 `;
 
 exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
@@ -125,23 +124,20 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
   margin-bottom: 10px;
 }
 
-<label
-  className="c0"
-  disabled={false}
->
-  <input
-    className="c1 c2"
-    disabled={false}
-    onChange={[Function]}
-    type="radio"
-  />
-  <span
-    className="c3 c4"
-  />
-  <span
-    className="c5 c6"
+<div>
+  <label
+    class="c0"
   >
-    
-  </span>
-</label>
+    <input
+      class="c1 c2"
+      type="radio"
+    />
+    <span
+      class="c3 c4"
+    />
+    <span
+      class="c5 c6"
+    />
+  </label>
+</div>
 `;
