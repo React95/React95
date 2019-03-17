@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tabs /> Snapshot should match snapshot 1`] = `
-Array [
-  .c1 {
+.c1 {
   list-style: none;
   padding: 3px 6px;
   background-color: #c3c7cb;
@@ -37,29 +36,29 @@ Array [
   margin: 0;
 }
 
-<ol
-    className="c0"
-  >
-    <li
-      className="c1"
-      onClick={[Function]}
-    >
-      example
-    </li>
-  </ol>,
-  .c0 {
+.c2 {
   padding: 12px;
   margin-left: 1px;
   background-color: #c3c7cb;
   box-shadow: inset 0px 1px 0px 0px #ffffff,2px 1px 0 -1px #868a8e,1px 1px 0 0px #868a8e,0px 1px 0 0px #868a8e,2px 0px 0 -1px #000,2px 2px 0 0px #000,0px 2px 0 0px #000,0px 1px 0px 1px #ffffff,2px 0px 0 0px #000;
 }
 
-<div
-    className="c0"
+<div>
+  <ol
+    class="c0"
+  >
+    <li
+      class="c1"
+    >
+      example
+    </li>
+  </ol>
+  <div
+    class="c2"
   >
     <p>
       Example text
     </p>
-  </div>,
-]
+  </div>
+</div>
 `;

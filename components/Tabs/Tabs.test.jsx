@@ -1,52 +1,45 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, fireEvent } from 'react-testing-library';
 import Tab from './Tabs';
 import Tabs from './Tabs';
 
 describe('<Tabs />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      expect(
-        renderer
-          .create(
-            <Tabs>
-              <Tab title="example">
-                <p>Example text</p>
-              </Tab>
-            </Tabs>
-          )
-          .toJSON()
-      ).toMatchSnapshot();
+      const { container } = render(
+        <Tabs>
+          <Tab title="example">
+            <p>Example text</p>
+          </Tab>
+        </Tabs>
+      );
+      expect(container).toMatchSnapshot();
     });
   });
 
   describe('Active Tab', () => {
-    const firstText = 'First text';
-    const secondText = 'Second text';
-    const MountedTab = mount(
+    const { queryByText } = render(
       <Tabs>
         <Tab title="first">
-          <p>{firstText}</p>
+          <p>first text</p>
         </Tab>
-        <Tab title="Second">
-          <p>{secondText}</p>
+        <Tab title="second">
+          <p>second text</p>
         </Tab>
       </Tabs>
     );
 
     it('should have first Tab active', () => {
-      expect(MountedTab.find('NavContainer').text()).toBe(firstText);
+      expect(queryByText('first text')).toBeInTheDocument();
     });
 
     it('should active second Tab when Tab is clicked', () => {
-      expect(MountedTab.find('NavContainer').text()).toBe(firstText);
+      expect(queryByText('first text')).toBeInTheDocument();
 
-      MountedTab.find('Tab')
-        .at(1)
-        .simulate('click');
+      fireEvent.click(queryByText('second'));
 
-      expect(MountedTab.find('NavContainer').text()).toBe(secondText);
+      expect(queryByText('first text')).not.toBeInTheDocument();
+      expect(queryByText('second text')).toBeInTheDocument();
     });
   });
 });
