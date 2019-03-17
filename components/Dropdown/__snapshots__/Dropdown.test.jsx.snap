@@ -52,27 +52,27 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   appearance: none;
 }
 
-<div
-  className="c0"
->
-  <select
-    className="c1"
+<div>
+  <div
+    class="c0"
   >
-    <option
-      value=""
+    <select
+      class="c1"
     >
-      
-    </option>
-    <option
-      value="C:\\\\Windows"
-    >
-      C:\\Windows
-    </option>
-    <option
-      value="C:\\\\Windows/System32"
-    >
-      C:\\Windows/System32
-    </option>
-  </select>
+      <option
+        value=""
+      />
+      <option
+        value="C:\\\\Windows"
+      >
+        C:\\Windows
+      </option>
+      <option
+        value="C:\\\\Windows/System32"
+      >
+        C:\\Windows/System32
+      </option>
+    </select>
+  </div>
 </div>
 `;
