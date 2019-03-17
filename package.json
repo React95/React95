@@ -3,9 +3,6 @@
   "version": "0.0.0-development",
   "description": "Windows 95 styleguide",
   "main": "index.js",
-  "files": [
-    "components"
-  ],
   "repository": "git@github.com:React95/React95.git",
   "contributors": [
     "Allysson dos Santos <aallysson0@gmail.com>",
@@ -83,7 +80,10 @@
     "node": "8.4",
     "npm": "3.x",
     "semantic-release": "semantic-release",
-    "lint": "eslint  --ignore-path .eslintignore . --ext .js,.jsx"
+    "lint:components": "npm run lint ./components",
+    "lint:stories": "npm run lint ./stories",
+    "lint:all": "npm run lint:components && npm run lint:stories",
+    "lint": "eslint --ext js,jsx --quiet"
   },
   "config": {
     "commitizen": {
@@ -95,7 +95,7 @@
       [
         "@semantic-release/npm",
         {
-          "pkgRoot": "dist"
+          "pkgRoot": "./dist"
         }
       ]
     ]
