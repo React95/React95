@@ -10,7 +10,9 @@ exports[`<Input /> Snapshots should match snapshot 1`] = `
   box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;

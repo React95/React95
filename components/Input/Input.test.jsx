@@ -1,11 +1,12 @@
 import React from 'react';
 import Input from './Input';
-import renderer from 'react-test-renderer';
+import { render } from 'react-testing-library';
 
 describe('<Input />', () => {
   describe('Snapshots', () => {
     it('should match snapshot', () => {
-      expect(renderer.create(<Input />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Input />);
+      expect(container).toMatchSnapshot();
     });
   });
 });
