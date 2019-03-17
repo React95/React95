@@ -37,26 +37,28 @@ exports[`<ProgressBar /> Snapshots should match snapshot 1`] = `
   color: #fff;
 }
 
-<div
-  className="c0"
-  width={300}
->
+<div>
   <div
-    className="c1"
-    width={300}
-  >
-    50
-    %
-  </div>
-  <div
-    className="c2"
+    class="c0"
+    width="300"
   >
     <div
-      className="c3"
-      width={300}
+      class="c1"
+      width="300"
     >
       50
       %
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        width="300"
+      >
+        50
+        %
+      </div>
     </div>
   </div>
 </div>
