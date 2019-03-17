@@ -201,96 +201,78 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   color: #000;
 }
 
-<div
-  className="react-draggable c0"
-  height={200}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchStart={[Function]}
-  style={
-    Object {
-      "touchAction": "none",
-      "transform": "translate(0px,0px)",
-    }
-  }
-  transform={null}
-  width={300}
->
+<div>
   <div
-    className="draggable c1"
+    class="react-draggable c0"
+    height="200"
+    style="transform: translate(0px,0px);"
+    width="300"
   >
-    <i
-      className="c2"
-      height={13}
-      name="bat"
-      style={
-        Object {
-          "marginRight": "4px",
-        }
-      }
-      width={15}
-    />
     <div
-      className="c3"
+      class="draggable c1"
     >
-      file.bat
+      <i
+        class="c2"
+        height="13"
+        name="bat"
+        style="margin-right: 4px;"
+        width="15"
+      />
+      <div
+        class="c3"
+      >
+        file.bat
+      </div>
+      <ul
+        class="c4"
+      >
+        <button
+          class="c5 c6"
+        >
+          ?
+        </button>
+        <button
+          class="c5 c6"
+        >
+          x
+        </button>
+      </ul>
     </div>
     <ul
-      className="c4"
+      class="c7"
     >
-      <button
-        className="c5 c6"
+      <li
+        class="c8"
       >
-        ?
-      </button>
-      <button
-        className="c5 c6"
-        onClick={[Function]}
+        File
+      </li>
+      <li
+        class="c8"
       >
-        x
-      </button>
+        Edit
+      </li>
     </ul>
-  </div>
-  <ul
-    className="c7"
-  >
-    <li
-      className="c8"
-      onMouseDown={[Function]}
+    <div
+      class="c9"
     >
-      File
-    </li>
-    <li
-      className="c8"
-      onMouseDown={[Function]}
+      Hello
+    </div>
+    <div
+      class="c10"
     >
-      Edit
-    </li>
-  </ul>
-  <div
-    className="c9"
-    onClick={[Function]}
-  >
-    Hello
-  </div>
-  <div
-    className="c10"
-  >
-    <button
-      className="c5 c11"
-      onClick={[Function]}
-      value="Ok"
-    >
-      Ok
-    </button>
-    <button
-      className="c5 c11"
-      onClick={[Function]}
-      value="Cancel"
-    >
-      Cancel
-    </button>
+      <button
+        class="c5 c11"
+        value="Ok"
+      >
+        Ok
+      </button>
+      <button
+        class="c5 c11"
+        value="Cancel"
+      >
+        Cancel
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -471,80 +453,64 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   margin-right: 0;
 }
 
-<div
-  className="react-draggable c0"
-  height={200}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchStart={[Function]}
-  style={
-    Object {
-      "touchAction": "none",
-      "transform": "translate(0px,0px)",
-    }
-  }
-  transform={null}
-  width={300}
->
+<div>
   <div
-    className="draggable c1"
+    class="react-draggable c0"
+    height="200"
+    style="transform: translate(0px,0px);"
+    width="300"
   >
-    <i
-      className="c2"
-      height={13}
-      name="bat"
-      style={
-        Object {
-          "marginRight": "4px",
-        }
-      }
-      width={15}
-    />
     <div
-      className="c3"
+      class="draggable c1"
     >
-      file.bat
+      <i
+        class="c2"
+        height="13"
+        name="bat"
+        style="margin-right: 4px;"
+        width="15"
+      />
+      <div
+        class="c3"
+      >
+        file.bat
+      </div>
+      <ul
+        class="c4"
+      >
+        <button
+          class="c5 c6"
+        >
+          ?
+        </button>
+        <button
+          class="c5 c6"
+        >
+          x
+        </button>
+      </ul>
     </div>
-    <ul
-      className="c4"
+    <div
+      class="c7"
+    >
+      Hello
+    </div>
+    <div
+      class="c8"
     >
       <button
-        className="c5 c6"
+        class="c5 c9"
+        value="Ok"
       >
-        ?
+        Ok
       </button>
       <button
-        className="c5 c6"
-        onClick={[Function]}
+        class="c5 c9"
+        value="Cancel"
       >
-        x
+        Cancel
       </button>
-    </ul>
-  </div>
-  <div
-    className="c7"
-    onClick={[Function]}
-  >
-    Hello
-  </div>
-  <div
-    className="c8"
-  >
-    <button
-      className="c5 c9"
-      onClick={[Function]}
-      value="Ok"
-    >
-      Ok
-    </button>
-    <button
-      className="c5 c9"
-      onClick={[Function]}
-      value="Cancel"
-    >
-      Cancel
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -734,80 +700,64 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   margin-right: 0;
 }
 
-<div
-  className="react-draggable c0"
-  height={200}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchStart={[Function]}
-  style={
-    Object {
-      "touchAction": "none",
-      "transform": "translate(0px,0px)",
-    }
-  }
-  transform={null}
-  width={300}
->
+<div>
   <div
-    className="draggable c1"
+    class="react-draggable c0"
+    height="200"
+    style="transform: translate(0px,0px);"
+    width="300"
   >
-    <i
-      className="c2"
-      height={13}
-      name="bat"
-      style={
-        Object {
-          "marginRight": "4px",
-        }
-      }
-      width={15}
-    />
     <div
-      className="c3"
+      class="draggable c1"
     >
-      file.bat
+      <i
+        class="c2"
+        height="13"
+        name="bat"
+        style="margin-right: 4px;"
+        width="15"
+      />
+      <div
+        class="c3"
+      >
+        file.bat
+      </div>
+      <ul
+        class="c4"
+      >
+        <button
+          class="c5 c6"
+        >
+          ?
+        </button>
+        <button
+          class="c5 c6"
+        >
+          x
+        </button>
+      </ul>
     </div>
-    <ul
-      className="c4"
+    <div
+      class="c7"
+    >
+      Hello
+    </div>
+    <div
+      class="c8"
     >
       <button
-        className="c5 c6"
+        class="c5 c9"
+        value="Ok"
       >
-        ?
+        Ok
       </button>
       <button
-        className="c5 c6"
-        onClick={[Function]}
+        class="c5 c9"
+        value="Cancel"
       >
-        x
+        Cancel
       </button>
-    </ul>
-  </div>
-  <div
-    className="c7"
-    onClick={[Function]}
-  >
-    Hello
-  </div>
-  <div
-    className="c8"
-  >
-    <button
-      className="c5 c9"
-      onClick={[Function]}
-      value="Ok"
-    >
-      Ok
-    </button>
-    <button
-      className="c5 c9"
-      onClick={[Function]}
-      value="Cancel"
-    >
-      Cancel
-    </button>
+    </div>
   </div>
 </div>
 `;
