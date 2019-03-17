@@ -94,6 +94,12 @@
         {
           "pkgRoot": "./dist"
         }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "successCmd": "npm run deploy-storybook -- --ci"
+        }
       ]
     ]
   }
