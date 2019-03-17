@@ -1,29 +1,31 @@
 import React from 'react';
 import Button from './Button';
-import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { render, fireEvent, cleanup } from 'react-testing-library';
+
+afterEach(cleanup);
 
 describe('<Button />', () => {
   describe('Snapshots', () => {
     it('should match snapshot', () => {
-      expect(renderer.create(<Button />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Button />);
+      expect(container).toMatchSnapshot();
     });
   });
 
   describe('value prop', () => {
     it('should display value as Button children', () => {
-      const ShallowButton = shallow(<Button value="Cancel" />);
+      const { getByText } = render(<Button value="Cancel" />);
 
-      expect(ShallowButton.text()).toBe('Cancel');
+      expect(getByText('Cancel')).toBeInTheDocument();
     });
   });
 
   describe('onClick prop', () => {
     it('should call onClick function when Button is clicked', () => {
       const onClickMock = jest.fn();
-      const ShallowButton = shallow(<Button onClick={onClickMock} />);
+      const { getByText } = render(<Button onClick={onClickMock} value="ok" />);
 
-      ShallowButton.simulate('click');
+      fireEvent.click(getByText('ok'));
 
       expect(onClickMock).toHaveBeenCalled();
     });

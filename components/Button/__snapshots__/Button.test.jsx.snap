@@ -27,11 +27,12 @@ exports[`<Button /> Snapshots should match snapshot 1`] = `
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
 }
 
-<button
-  className="c0"
-  onClick={[Function]}
-  value="Ok"
->
-  Ok
-</button>
+<div>
+  <button
+    class="c0"
+    value="Ok"
+  >
+    Ok
+  </button>
+</div>
 `;
