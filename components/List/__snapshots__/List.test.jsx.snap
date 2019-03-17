@@ -138,53 +138,52 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   width: 200px;
 }
 
-<ul
-  className="c0"
-  width={200}
->
-  <li
-    className="c1"
-    onClick={[Function]}
+<div>
+  <ul
+    class="c0"
+    width="200"
   >
-    <i
-      className="c2"
-      height={32}
-      name="folder_exe2"
-      width={32}
-    />
-    <ul
-      className="c0"
-      width={200}
+    <li
+      class="c1"
     >
-      <li
-        className="c3"
-        onClick={[Function]}
-      >
-        <i
-          className="c2"
-          height={32}
-          name="microsoft_exchange"
-          width={32}
-        />
-        Microsoft Exchange
-      </li>
-      <li
-        className="c4"
+      <i
+        class="c2"
+        height="32"
+        name="folder_exe2"
+        width="32"
       />
-      <li
-        className="c3"
-        onClick={[Function]}
+      <ul
+        class="c0"
+        width="200"
       >
-        <i
-          className="c2"
-          height={32}
-          name="windows_explorer"
-          width={32}
+        <li
+          class="c3"
+        >
+          <i
+            class="c2"
+            height="32"
+            name="microsoft_exchange"
+            width="32"
+          />
+          Microsoft Exchange
+        </li>
+        <li
+          class="c4"
         />
-        Windows Explorer
-      </li>
-    </ul>
-    Programs
-  </li>
-</ul>
+        <li
+          class="c3"
+        >
+          <i
+            class="c2"
+            height="32"
+            name="windows_explorer"
+            width="32"
+          />
+          Windows Explorer
+        </li>
+      </ul>
+      Programs
+    </li>
+  </ul>
+</div>
 `;
