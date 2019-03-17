@@ -1,19 +1,16 @@
 import React from 'react';
 import Fieldset from './Fieldset';
-import renderer from 'react-test-renderer';
+import { render } from 'react-testing-library';
 
 describe('<Fieldset />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with legend prop and children element', () => {
-      expect(
-        renderer
-          .create(
-            <Fieldset legend="example">
-              <p>something</p>
-            </Fieldset>
-          )
-          .toJSON()
-      ).toMatchSnapshot();
+      const { container } = render(
+        <Fieldset legend="example">
+          <p>something</p>
+        </Fieldset>
+      );
+      expect(container).toMatchSnapshot();
     });
   });
 });

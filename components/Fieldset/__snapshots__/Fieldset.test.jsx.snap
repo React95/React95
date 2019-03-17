@@ -22,16 +22,18 @@ exports[`<Fieldset /> Snapshots should match snapshot with legend prop and child
   padding-right: 1px;
 }
 
-<fieldset
-  className="c0"
->
-  <legend
-    className="c1"
+<div>
+  <fieldset
+    class="c0"
   >
-    example
-  </legend>
-  <p>
-    something
-  </p>
-</fieldset>
+    <legend
+      class="c1"
+    >
+      example
+    </legend>
+    <p>
+      something
+    </p>
+  </fieldset>
+</div>
 `;
