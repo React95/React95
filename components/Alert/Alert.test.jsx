@@ -1,39 +1,37 @@
 import React from 'react';
 import Alert from './Alert';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, fireEvent, cleanup } from 'react-testing-library';
+
+afterEach(cleanup);
 
 describe('<Alert />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with error type', () => {
-      expect(
-        renderer
-          .create(<Alert title="Error" type="error" message="Error" />)
-          .toJSON()
-      ).toMatchSnapshot();
+      const { container } = render(
+        <Alert title="Error" type="error" message="Error" />
+      );
+      expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with warning type', () => {
-      expect(
-        renderer
-          .create(<Alert title="Warning" type="warning" message="Warning" />)
-          .toJSON()
-      ).toMatchSnapshot();
+      const { container } = render(
+        <Alert title="Warning" type="warning" message="Warning" />
+      );
+      expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with info type', () => {
-      expect(
-        renderer
-          .create(<Alert title="Info" type="info" message="Info" />)
-          .toJSON()
-      ).toMatchSnapshot();
+      const { container } = render(
+        <Alert title="Info" type="info" message="Info" />
+      );
+      expect(container).toMatchSnapshot();
     });
   });
 
   describe('closeAlert prop', () => {
     it('should call closeAlert when modal "OK" button is pressed', () => {
       const closeAlertMock = jest.fn();
-      const ShallowAlert = mount(
+      const { getByText } = render(
         <Alert
           title="closeAlert"
           message="closeAlert"
@@ -41,7 +39,7 @@ describe('<Alert />', () => {
         />
       );
 
-      ShallowAlert.find('Button').simulate('click');
+      fireEvent.click(getByText('OK'));
 
       expect(closeAlertMock).toHaveBeenCalled();
     });

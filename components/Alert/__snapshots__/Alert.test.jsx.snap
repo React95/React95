@@ -192,75 +192,64 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   justify-content: center;
 }
 
-<div
-  className="react-draggable c0"
-  height={120}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchStart={[Function]}
-  style={
-    Object {
-      "touchAction": "none",
-      "transform": "translate(362px,304px)",
-    }
-  }
-  transform={null}
-  width="auto"
->
+<div>
   <div
-    className="draggable c1"
-  >
-    
-    <div
-      className="c2"
-    >
-      Error
-    </div>
-    <ul
-      className="c3"
-    >
-      <button
-        className="c4 c5"
-      >
-        ?
-      </button>
-      <button
-        className="c4 c5"
-        onClick={[Function]}
-      >
-        x
-      </button>
-    </ul>
-  </div>
-  <div
-    className="c6"
-    onClick={[Function]}
+    class="react-draggable c0"
+    height="120"
+    style="transform: translate(362px,304px);"
+    width="auto"
   >
     <div
-      className="c7"
+      class="draggable c1"
     >
+      
       <div
-        className="c8"
-        type="error"
-      />
-      <div
-        className="c9"
+        class="c2"
       >
         Error
       </div>
+      <ul
+        class="c3"
+      >
+        <button
+          class="c4 c5"
+        >
+          ?
+        </button>
+        <button
+          class="c4 c5"
+        >
+          x
+        </button>
+      </ul>
     </div>
-  </div>
-  <div
-    className="c10"
-  >
-    <button
-      className="c4 c11"
-      onClick={[Function]}
-      value="OK"
+    <div
+      class="c6"
     >
-      OK
-    </button>
+      <div
+        class="c7"
+      >
+        <div
+          class="c8"
+          type="error"
+        />
+        <div
+          class="c9"
+        >
+          Error
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <button
+        class="c4 c11"
+        value="OK"
+      >
+        OK
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -457,75 +446,64 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   justify-content: center;
 }
 
-<div
-  className="react-draggable c0"
-  height={120}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchStart={[Function]}
-  style={
-    Object {
-      "touchAction": "none",
-      "transform": "translate(362px,304px)",
-    }
-  }
-  transform={null}
-  width="auto"
->
+<div>
   <div
-    className="draggable c1"
-  >
-    
-    <div
-      className="c2"
-    >
-      Info
-    </div>
-    <ul
-      className="c3"
-    >
-      <button
-        className="c4 c5"
-      >
-        ?
-      </button>
-      <button
-        className="c4 c5"
-        onClick={[Function]}
-      >
-        x
-      </button>
-    </ul>
-  </div>
-  <div
-    className="c6"
-    onClick={[Function]}
+    class="react-draggable c0"
+    height="120"
+    style="transform: translate(362px,304px);"
+    width="auto"
   >
     <div
-      className="c7"
+      class="draggable c1"
     >
+      
       <div
-        className="c8"
-        type="info"
-      />
-      <div
-        className="c9"
+        class="c2"
       >
         Info
       </div>
+      <ul
+        class="c3"
+      >
+        <button
+          class="c4 c5"
+        >
+          ?
+        </button>
+        <button
+          class="c4 c5"
+        >
+          x
+        </button>
+      </ul>
     </div>
-  </div>
-  <div
-    className="c10"
-  >
-    <button
-      className="c4 c11"
-      onClick={[Function]}
-      value="OK"
+    <div
+      class="c6"
     >
-      OK
-    </button>
+      <div
+        class="c7"
+      >
+        <div
+          class="c8"
+          type="info"
+        />
+        <div
+          class="c9"
+        >
+          Info
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <button
+        class="c4 c11"
+        value="OK"
+      >
+        OK
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -722,75 +700,64 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   justify-content: center;
 }
 
-<div
-  className="react-draggable c0"
-  height={120}
-  onMouseDown={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchStart={[Function]}
-  style={
-    Object {
-      "touchAction": "none",
-      "transform": "translate(362px,304px)",
-    }
-  }
-  transform={null}
-  width="auto"
->
+<div>
   <div
-    className="draggable c1"
-  >
-    
-    <div
-      className="c2"
-    >
-      Warning
-    </div>
-    <ul
-      className="c3"
-    >
-      <button
-        className="c4 c5"
-      >
-        ?
-      </button>
-      <button
-        className="c4 c5"
-        onClick={[Function]}
-      >
-        x
-      </button>
-    </ul>
-  </div>
-  <div
-    className="c6"
-    onClick={[Function]}
+    class="react-draggable c0"
+    height="120"
+    style="transform: translate(362px,304px);"
+    width="auto"
   >
     <div
-      className="c7"
+      class="draggable c1"
     >
+      
       <div
-        className="c8"
-        type="warning"
-      />
-      <div
-        className="c9"
+        class="c2"
       >
         Warning
       </div>
+      <ul
+        class="c3"
+      >
+        <button
+          class="c4 c5"
+        >
+          ?
+        </button>
+        <button
+          class="c4 c5"
+        >
+          x
+        </button>
+      </ul>
     </div>
-  </div>
-  <div
-    className="c10"
-  >
-    <button
-      className="c4 c11"
-      onClick={[Function]}
-      value="OK"
+    <div
+      class="c6"
     >
-      OK
-    </button>
+      <div
+        class="c7"
+      >
+        <div
+          class="c8"
+          type="warning"
+        />
+        <div
+          class="c9"
+        >
+          Warning
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <button
+        class="c4 c11"
+        value="OK"
+      >
+        OK
+      </button>
+    </div>
   </div>
 </div>
 `;
