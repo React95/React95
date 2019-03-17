@@ -1,8 +1,6 @@
 import React from 'react';
 import Checkbox from './Checkbox';
-import { render, fireEvent, cleanup } from 'react-testing-library';
-
-afterEach(cleanup);
+import { render, fireEvent } from 'react-testing-library';
 
 describe('<Checkbox />', () => {
   describe('Snapshots', () => {

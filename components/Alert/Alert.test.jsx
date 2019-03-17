@@ -1,8 +1,6 @@
 import React from 'react';
 import Alert from './Alert';
-import { render, fireEvent, cleanup } from 'react-testing-library';
-
-afterEach(cleanup);
+import { render, fireEvent } from 'react-testing-library';
 
 describe('<Alert />', () => {
   describe('Snapshots', () => {

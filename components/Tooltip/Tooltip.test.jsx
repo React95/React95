@@ -1,5 +1,4 @@
 import React from 'react';
-import 'react-testing-library/cleanup-after-each';
 import { render, fireEvent, act } from 'react-testing-library';
 import Tooltip from './Tooltip';
 

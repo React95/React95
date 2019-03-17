@@ -1,9 +1,7 @@
 import React from 'react';
 import Modal from './Modal';
 import List from '../List';
-import { render, cleanup, fireEvent } from 'react-testing-library';
-
-afterEach(cleanup);
+import { render, fireEvent } from 'react-testing-library';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {

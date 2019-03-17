@@ -18,22 +18,25 @@ describe('<Tabs />', () => {
   });
 
   describe('Active Tab', () => {
-    const { queryByText } = render(
-      <Tabs>
-        <Tab title="first">
-          <p>first text</p>
-        </Tab>
-        <Tab title="second">
-          <p>second text</p>
-        </Tab>
-      </Tabs>
-    );
+    const TabComponent = () =>
+      render(
+        <Tabs>
+          <Tab title="first">
+            <p>first text</p>
+          </Tab>
+          <Tab title="second">
+            <p>second text</p>
+          </Tab>
+        </Tabs>
+      );
 
     it('should have first Tab active', () => {
+      const { queryByText } = TabComponent();
       expect(queryByText('first text')).toBeInTheDocument();
     });
 
     it('should active second Tab when Tab is clicked', () => {
+      const { queryByText } = TabComponent();
       expect(queryByText('first text')).toBeInTheDocument();
 
       fireEvent.click(queryByText('second'));

@@ -1,8 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import { render, fireEvent, cleanup } from 'react-testing-library';
-
-afterEach(cleanup);
+import { render, fireEvent } from 'react-testing-library';
 
 describe('<Button />', () => {
   describe('Snapshots', () => {

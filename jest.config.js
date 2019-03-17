@@ -4,5 +4,8 @@ module.exports = {
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest-config.js'],
+  setupFilesAfterEnv: [
+    'react-testing-library/cleanup-after-each',
+    '<rootDir>/jest-config.js',
+  ],
 };
