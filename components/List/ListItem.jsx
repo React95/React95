@@ -71,18 +71,30 @@ const Item = styled.li`
     `};
 `;
 
-const ListItem = ({ icon, children, onClick, rest }) => (
+const ListItem = ({ icon, children, onClick, ...rest }) => (
   <Item
     {...rest}
     onClick={onClick}
     icon={icon}
     hasList={React.Children.map(
       children,
-      children => children.type === List,
+      children => children.type === List
     ).some(child => child)}
   >
     {icon && <Icon name={icon} />}
     {children}
   </Item>
 );
+
+ListItem.propTypes = {
+  icon: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+};
+
+ListItem.defaultProps = {
+  icon: '',
+  onClick: () => {},
+};
+
 export default ListItem;

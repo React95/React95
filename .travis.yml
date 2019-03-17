@@ -6,10 +6,8 @@ branches:
     - master
 
 script:
-  # - npm run test
+  - npm run test
   - npm run build
 
 after_success:
   - npm run semantic-release
-  - test $TRAVIS_BRANCH = "master" &&
-    npm run deploy-storybook -- --out=docs --ci
