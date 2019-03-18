@@ -80,10 +80,6 @@
     "prebuild": "npm run clean:build",
     "semantic-release": "semantic-release"
   },
-  "engines": {
-    "node": "8.4",
-    "npm": "3.x"
-  },
   "publishConfig": {
     "access": "public"
   },
