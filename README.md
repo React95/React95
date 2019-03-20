@@ -3,6 +3,8 @@
 # React95
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![Build Status](https://travis-ci.org/React95/React95.svg?branch=master)](https://travis-ci.org/React95/React95)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 React95 is a component library inspired on the **Windows 95** UI design.
 
