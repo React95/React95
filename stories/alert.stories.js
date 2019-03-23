@@ -29,16 +29,13 @@ class AlertStory extends React.Component {
     const { showAlert } = this.state;
     return (
       <React.Fragment>
-        <p>
-
-
-          Alert Type:
-          {' '}
+        <div style={{ marginBottom: 10 }}>
+          Alert Type:{' '}
           <Dropdown
             options={['error', 'info', 'warning']}
             onChange={this.onImageChange}
           />
-        </p>
+        </div>
         <Button onClick={this.handleOpenAlert}>Trigger Alert</Button>
         {showAlert && (
           <Alert

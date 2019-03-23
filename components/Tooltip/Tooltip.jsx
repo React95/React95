@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Tip = styled.div`
   background: radial-gradient(#ff0 20%, transparent 20%) 0 0,

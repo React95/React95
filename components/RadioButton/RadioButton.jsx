@@ -8,47 +8,55 @@ import {
   radioUncheckedDisabled,
 } from './radioButtonStates';
 
+const Icon = styled.span`
+  width: 12px;
+  height: 12px;
+
+  content: '';
+  display: inline-block;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-image: url(${radioUnchecked});
+`;
+
+const Text = styled.span`
+  padding: 1px;
+  user-select: none;
+
+  position: absolute;
+  top: 0;
+  left: 18px;
+`;
+
 const Field = styled.input.attrs({
   type: 'radio',
 })`
-  margin: 0 5px 0 0;
-  visibility: hidden;
+  margin: 0;
+  opacity: 0;
 
-  &:before {
-    width: 12px;
-    height: 12px;
-
-    content: '';
-    display: inline-block;
-
-    background-image: url(${radioUnchecked});
-
-    visibility: visible;
+  &:focus ~ ${Text}, &:active + ${Text} {
+    border: 1px dotted;
+    padding: 0;
   }
 
-  &:checked {
-    &:before {
-      background-image: url(${radioChecked});
-    }
+  &:checked + ${Icon} {
+    background-image: url(${radioChecked});
   }
 
-  &:disabled {
-    &:before {
-      background-image: url(${radioUncheckedDisabled});
-    }
+  &:disabled + ${Icon} {
+    background-image: url(${radioUncheckedDisabled});
+  }
 
-    &:checked {
-      &:before {
-        background-image: url(${radioCheckedDisabled});
-      }
-    }
+  &:checked &:disabled + ${Icon} {
+    background-image: url(${radioCheckedDisabled});
   }
 `;
 
 const Label = styled.label`
-  display: flex;
-  align-items: center;
-
+  position: relative;
   margin-bottom: 10px;
 
   ${props => props.disabled
@@ -63,7 +71,8 @@ const RadioButton = ({
 }) => (
   <Label disabled={disabled}>
     <Field onChange={onChange} disabled={disabled} {...props} />
-    {children}
+    <Icon />
+    <Text>{children}</Text>
   </Label>
 );
 

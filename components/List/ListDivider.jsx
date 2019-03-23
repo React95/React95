@@ -1,7 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Icon from '../Icon';
 
 const Divider = styled.li`
   background-color: #a2a5a8;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs /> Snapshot should match snapshot 1`] = `
+.c1 {
+  list-style: none;
+  padding: 3px 6px;
+  background-color: #c3c7cb;
+  box-shadow: inset 0px 1px 0px 0px #ffffff,-2px 1px 0 -1px #c3c7cb,-3px 1px 0px -1px #ffffff,-2px 0px 0px -1px #ffffff,2px 1px 0 -1px #868a8e,2px 0px 0 -1px #000,3px 1px 0 -1px #000;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-bottom: 1px;
+  box-shadow: inset 0px 1px 0px 0px #ffffff,-2px 1px 0 -1px #c3c7cb,-0.5px 3px 0 0.5px #c3c7cb,-2px 2px 0px 0px #fff,-2px 0px 0px -1px #ffffff,1px 2px 0 0px #868a8e,2px 0px 0 -1px #000,2px 2px 0 0px #000;
+}
+
+.c1:first-child {
+  margin-left: 4px;
+}
+
+.c1:first-child {
+  margin-left: 2px;
+}
+
+.c1 + li {
+  margin-left: 0;
+  box-shadow: inset 0px 1px 0px 0px #ffffff,2px 1px 0 -1px #868a8e,2px 0px 0 -1px #000,3px 1px 0 -1px #000;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.c2 {
+  padding: 12px;
+  margin-left: 1px;
+  background-color: #c3c7cb;
+  box-shadow: inset 0px 1px 0px 0px #ffffff,2px 1px 0 -1px #868a8e,1px 1px 0 0px #868a8e,0px 1px 0 0px #868a8e,2px 0px 0 -1px #000,2px 2px 0 0px #000,0px 2px 0 0px #000,0px 1px 0px 1px #ffffff,2px 0px 0 0px #000;
+}
+
+<div>
+  <ol
+    class="c0"
+  >
+    <li
+      class="c1"
+    >
+      example
+    </li>
+  </ol>
+  <div
+    class="c2"
+  >
+    <p>
+      Example text
+    </p>
+  </div>
+</div>
+`;

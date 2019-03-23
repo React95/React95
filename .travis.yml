@@ -5,10 +5,17 @@ branches:
   only:
     - master
 
-script:
-  # - npm run test
-  - npm run build
+jobs:
+  include:
+    - stage: release
+      node_js: lts/*
 
-after_success:
-  - npm run semantic-release
-  - npm run deploy-storybook -- --out=docs --ci
+      script:
+        - npm run test
+        - npm run build
+
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run semantic-release

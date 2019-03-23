@@ -20,6 +20,8 @@ const NavContainer = styled.div`
     2px 0px 0 0px #000;
 `;
 
+NavContainer.displayName = 'NavContainer';
+
 const If = ({ condition, children }) => condition && children;
 
 const Tabs = ({ children, style }) => {

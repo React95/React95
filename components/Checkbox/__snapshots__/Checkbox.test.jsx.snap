@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
+.c4 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7px 7px;
+}
+
+.c6 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c2:focus ~ .c5,
+.c2:active ~ .c5 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c2:checked + .c3 {
+  background-image: url('test-file-stub');
+}
+
+.c2:checked .c1:disabled + .c3 {
+  background-image: url('test-file-stub'),url('test-file-stub');
+  background-size: 7px 7px,1.9px 1.9px;
+}
+
+.c2:disabled + .c3 {
+  background-color: #c0c0c0;
+}
+
+.c0 {
+  display: inline-block;
+  height: 15px;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px 0;
+  padding-left: 20px;
+  color: #868686;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+}
+
+<div>
+  <label
+    class="c0"
+    disabled=""
+  >
+    <input
+      class="c1 c2"
+      disabled=""
+      type="checkbox"
+      value=""
+    />
+    <span
+      class="c3 c4"
+    />
+    <span
+      class="c5 c6"
+    >
+      Checkbox
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
+.c4 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  border-left: 1px solid #868a8e;
+  border-top: 1px solid #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7px 7px;
+}
+
+.c6 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c2:focus ~ .c5,
+.c2:active ~ .c5 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c2:checked + .c3 {
+  background-image: url('test-file-stub');
+}
+
+.c2:checked .c1:disabled + .c3 {
+  background-image: url('test-file-stub'),url('test-file-stub');
+  background-size: 7px 7px,1.9px 1.9px;
+}
+
+.c2:disabled + .c3 {
+  background-color: #c0c0c0;
+}
+
+.c0 {
+  display: inline-block;
+  height: 15px;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px 0;
+  padding-left: 20px;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1 c2"
+      type="checkbox"
+      value=""
+    />
+    <span
+      class="c3 c4"
+    />
+    <span
+      class="c5 c6"
+    >
+      Checkbox
+    </span>
+  </label>
+</div>
+`;
