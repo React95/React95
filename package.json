@@ -39,6 +39,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.3.1",
     "babel-loader": "^8.0.4",
+    "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "0.0.6",

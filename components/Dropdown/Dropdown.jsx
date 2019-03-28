@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import caret from '../../assets/pattern/downcaret.png';
+import caret from 'assets/pattern/downcaret.png';
 
 const Wrapper = styled.div`
   position: relative;

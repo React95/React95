@@ -3,13 +3,25 @@
   "plugins": [
     "transform-class-properties",
     "transform-modern-regexp",
-    "babel-plugin-styled-components"
+    "babel-plugin-styled-components",
+    ["module-resolver", {
+      "alias": {
+        "^assets(.+)": "../../assets/\\1"
+      }
+    }]
   ],
   "env": {
     "production": {
       "ignore": [
         "./components/**/*.test.jsx",
         "./components/**/*/__snapshots__"
+      ],
+      "plugins": [
+        ["module-resolver", {
+          "alias": {
+            "^assets(.+)": "../assets/\\1"
+          }
+        }]
       ]
     }
   }
