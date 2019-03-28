@@ -30,13 +30,14 @@ Access http://localhost:6006 to see the storybook running
 ```sh
 .
 ├── .storybook: Storybook configuration files
-├── assets:
 ├── docs: Storybook build files
 ├── components: Component files
-    ├── index.js: Export all components
-    └── Component: Component folder
-        ├── Component.jsx: Component itself
-        └── index.js: Component export file
+|   ├── index.js: Export all components
+|   └── Component: Component folder
+|   |   ├── Component.jsx: Component itself
+|   |   └── index.js: Component export file
+|   └── shared: common files that are used across components
+|       └── assets: assets files
 └── stories: Component stories folder
     └── *.stories.js: Component story file
 ```
