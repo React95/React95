@@ -4,6 +4,7 @@ import pkg from '../package.json';
 
 const copyFile = file => {
   const buildPath = path.resolve(__dirname, '../dist/', path.basename(file));
+
   fs.copy(file, buildPath, () => console.log(`Copied ${file} to ${buildPath}`));
 };
 
@@ -33,9 +34,7 @@ const createPackageJson = () => {
 };
 
 const run = () => {
-  ['CONTRIBUTING.md', 'README.md', 'CODE_OF_CONDUCT.md', 'assets'].map(
-    copyFile
-  );
+  ['CONTRIBUTING.md', 'README.md', 'CODE_OF_CONDUCT.md'].map(copyFile);
   createPackageJson();
 };
 
