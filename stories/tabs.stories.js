@@ -49,8 +49,8 @@ storiesOf('Tabs, Tab', module)
       </Tab>
       <Tab title="Compatibility">
         <p style={{ marginTop: 0, marginBottom: '1.6em' }}>
-          If you have problem with this program and it worked correctly on an
-          earlier version of Windows, select the compatibility m ode that mathes
+          If you have problems with this program and it worked correctly on an
+          earlier version of Windows, select the compatibility mode that matches
           that earlier version.
         </p>
 
