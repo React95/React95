@@ -198,7 +198,7 @@ class Clippy extends React.Component {
     const { showModal, code, component } = this.state;
 
     const formattedCode = [
-      `import { ${component} } from 'react95';`,
+      `import { ${component} } from '@react95/core';`,
       '',
       code,
     ].join('\n');
