@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icon from '../Icon';
 import List from './List';
 
-import rightcaret from '../../assets/pattern/rightcaret.svg';
+import rightcaret from '../shared/assets/pattern/rightcaret.svg';
 
 const Item = styled.li`
   position: relative;
