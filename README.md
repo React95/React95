@@ -1,4 +1,4 @@
-![React95 Logo](assets/React95-clouds.png)
+![React95 Logo](components/shared/assets/React95-clouds.png)
 
 # React95
 
