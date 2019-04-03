@@ -67,7 +67,7 @@ const code = `<Modal
   title="Browse"
   closeModal={() => {}}
   buttons={[
-    { value: 'Ok', onClick: () => {}) },
+    { value: 'Ok', onClick: () => {} },
     { value: 'Cancel', onClick: () => {} },
   ]}
   menu={[
