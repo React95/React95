@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tree /> Snapshot should match snapshot 1`] = `
+.c4 {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url('test-file-stub');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.c1 {
+  list-style-type: none;
+  background-repeat: no-repeat;
+  background-image: url(test-file-stub);
+}
+
+.c1:last-child {
+  background-image: url(test-file-stub);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  margin-left: 18px;
+}
+
+.c0 {
+  padding: 0px;
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <i
+            class="c4"
+            height="14"
+            name="bat"
+            width="14"
+          />
+        </div>
+        <span>
+          foo
+        </span>
+      </div>
+    </div>
+  </ul>
+</div>
+`;
