@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Draggable from 'react-draggable';
 import Btn from '../shared-style/Btn';
 import Button from '../Button';
@@ -127,9 +127,8 @@ const MenuItem = styled.li`
     color: #000;
   }
 
-  ${({ active }) =>
-    active &&
-    `
+  ${({ active }) => active
+    && `
       background-color: #00007f;
       color: #FFF;
     `};
@@ -195,6 +194,7 @@ const Modal = ({
             <ButtonWrapper buttonsAlignment={buttonsAlignment}>
               {buttons.map((button, index) => (
                 <Button
+                  // eslint-disable-next-line react/no-array-index-key
                   key={index}
                   onClick={button.onClick}
                   value={button.value}
@@ -222,7 +222,7 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    })
+    }),
   ),
   menu: PropTypes.arrayOf(
     PropTypes.shape({
@@ -231,7 +231,7 @@ Modal.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
       ]).isRequired,
-    })
+    }),
   ),
   buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
   defaultPosition: PropTypes.shape({
@@ -246,7 +246,7 @@ Modal.defaultProps = {
   icon: '',
   title: 'Modal',
   buttonsAlignment: 'flex-end',
-  chidren: null,
+  children: null,
   defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],

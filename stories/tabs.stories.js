@@ -21,10 +21,13 @@ storiesOf('Tabs, Tab', module)
   .addDecorator(withClippy)
   .addParameters({ code })
   .add('default', () => (
-    <Tabs style={{ width: 350 }}>
+    <Tabs
+      style={{ width: 350 }}
+      defaultActiveTab="Compatibility"
+    >
       <Tab title="General">
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
-          <Checkbox checked={true}>Log on to Windows NT domain</Checkbox>
+          <Checkbox checked>Log on to Windows NT domain</Checkbox>
           <br />
           <p style={{ marginLeft: 22, marginTop: 4 }}>
             When you log on, your password will be verified in a Windows NT
@@ -55,7 +58,7 @@ storiesOf('Tabs, Tab', module)
         </p>
 
         <Fieldset legend="Compatibility mode" style={{ marginBottom: '1.6em' }}>
-          <Checkbox checked={true}>
+          <Checkbox checked>
             Run this program in compatibility mode for:
           </Checkbox>
           <Dropdown style={{ width: 200 }} options={['Windows 95']} />
@@ -76,7 +79,9 @@ storiesOf('Tabs, Tab', module)
         <br />
         <br />
         <p>
-          Learn more about <a href="#">program compatibility.</a>
+          Learn more about
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a href="#">program compatibility.</a>
         </p>
       </Tab>
     </Tabs>
