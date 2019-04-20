@@ -4,11 +4,16 @@ import Tab from './Tab';
 import Tabs from './Tabs';
 
 describe('<Tabs />', () => {
+  function onClick() { }
   describe('Snapshot', () => {
     it('should match snapshot', () => {
       const { container } = render(
         <Tabs>
-          <Tab title="example">
+          <Tab
+            title="example"
+            activeTab="example"
+            onClick={onClick}
+          >
             <p>Example text</p>
           </Tab>
         </Tabs>,
@@ -20,10 +25,18 @@ describe('<Tabs />', () => {
   describe('Active Tab', () => {
     const TabComponent = () => render(
       <Tabs>
-        <Tab title="first">
+        <Tab
+          title="first"
+          activeTab="first"
+          onClick={onClick}
+        >
           <p>first text</p>
         </Tab>
-        <Tab title="second">
+        <Tab
+          title="second"
+          activeTab="first"
+          onClick={onClick}
+        >
           <p>second text</p>
         </Tab>
       </Tabs>,

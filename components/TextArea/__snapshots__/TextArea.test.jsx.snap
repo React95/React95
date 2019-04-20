@@ -3,6 +3,7 @@
 exports[`<TextArea /> Snapshot should match snapshot 1`] = `
 .c0 {
   border: none;
+  max-height: 100%;
   border-left: 1px solid #868a8e;
   border-top: 1px solid #868a8e;
   font-size: 14px;
