@@ -3,8 +3,14 @@
   "plugins": [
     "react"
   ],
-  "rules": {
-    "linebreak-style": 0
+  "extends": "airbnb",
+  "env": {
+    "jest": true,
+    "browser": true
   },
-  "extends": "airbnb"
+  "rules": {
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0
+  }
 }

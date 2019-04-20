@@ -24,14 +24,16 @@ NavContainer.displayName = 'NavContainer';
 
 const If = ({ condition, children }) => condition && children;
 
-const Tabs = ({ children, style }) => {
+const Tabs = ({
+  children, style, defaultActiveTab, onChange,
+}) => {
   const firstTab = React.Children.toArray(children)[0];
-  const [activeTab, setActiveTab] = useState(firstTab.props.title);
+  const [activeTab, setActiveTab] = useState(defaultActiveTab || firstTab.props.title);
 
   return (
     <React.Fragment>
       <Navbar style={style}>
-        {React.Children.map(children, child => {
+        {React.Children.map(children, (child) => {
           const { title, disabled } = child.props;
 
           return (
@@ -39,7 +41,12 @@ const Tabs = ({ children, style }) => {
               key={title}
               title={title}
               activeTab={activeTab}
-              onClick={!disabled && (() => setActiveTab(title))}
+              onClick={!disabled && (() => {
+                if (onChange) {
+                  onChange(title);
+                }
+                setActiveTab(title);
+              })}
             />
           );
         })}
@@ -61,6 +68,17 @@ Tabs.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  // eslint-disable-next-line react/forbid-prop-types
+  style: PropTypes.object,
+  defaultActiveTab: PropTypes.string,
+  onChange: PropTypes.func,
+};
+
+Tabs.defaultProps = {
+  children: [],
+  style: {},
+  defaultActiveTab: undefined,
+  onChange: undefined,
 };
 
 export default Tabs;
