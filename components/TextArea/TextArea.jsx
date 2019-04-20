@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Text = styled.textarea`
   border: none;
+  max-height: 100%;
   border-left: 1px solid #868a8e;
   border-top: 1px solid #868a8e;
 
