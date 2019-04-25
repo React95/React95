@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
-import Tree from '../components/Tree';
+import { Tree } from '../components';
 
 const { icons } = Tree;
 

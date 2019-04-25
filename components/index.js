@@ -13,6 +13,7 @@ import Range from './Range';
 import { Tab, Tabs } from './Tabs';
 import TextArea from './TextArea';
 import Tooltip from './Tooltip';
+import Tree from './Tree';
 
 export {
   Alert,
@@ -31,4 +32,5 @@ export {
   Tabs,
   TextArea,
   Tooltip,
+  Tree
 };
