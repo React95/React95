@@ -3,11 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Icon from '../Icon';
 import treeMidLines from '../shared/assets/tree-mid.png';
-import treeFirstLines from '../shared/assets/tree-first.png';
 import treeLastLines from '../shared/assets/tree-last.png';
 import treeNodeChildrenLine from '../shared/assets/tree-node-children.png';
-import treeFolderOpened from '../shared/assets/tree-folder-opened.png';
-import treeFolderClosed from '../shared/assets/tree-folder-closed.png';
 
 const FOLDER_CLOSED = 'folder';
 const FOLDER_OPENED = 'folder_open';
@@ -116,7 +113,8 @@ const Node = ({ children, id, iconName, label, onClick }) => {
 Node.defaultProps = {
   label: '',
   iconName: null,
-  children: []
+  children: [],
+  onClick: () => {}
 };
 
 Node.propTypes = {
