@@ -1,6 +1,6 @@
 import React from 'react';
-import Range from './Range';
 import { render } from 'react-testing-library';
+import Range from './Range';
 
 describe('<Range />', () => {
   describe('Snapshot', () => {

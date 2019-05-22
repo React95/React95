@@ -77,9 +77,8 @@ const Label = styled.label`
   margin: 4px 0;
   padding-left: 20px;
 
-  ${({ disabled }) =>
-    disabled &&
-    `
+  ${({ disabled }) => disabled
+    && `
     color: #868686;
     text-shadow: 0.5px 0.5px #d2d2d2;
   `};

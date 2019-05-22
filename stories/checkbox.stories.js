@@ -40,11 +40,11 @@ class CheckBoxStory extends React.Component {
           Working
         </Checkbox>
 
-        <Checkbox checked={true}>Checked</Checkbox>
+        <Checkbox checked>Checked</Checkbox>
         <Checkbox checked={false}>Unchecked</Checkbox>
-        <Checkbox disabled={true}>Disabled</Checkbox>
+        <Checkbox disabled>Disabled</Checkbox>
 
-        <Checkbox disabled={true} checked={true}>
+        <Checkbox disabled checked>
           Checked and Disabled
         </Checkbox>
       </CheckboxList>

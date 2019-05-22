@@ -1,6 +1,6 @@
 import React from 'react';
-import ProgressBar from './ProgressBar';
 import { render } from 'react-testing-library';
+import ProgressBar from './ProgressBar';
 
 describe('<ProgressBar />', () => {
   describe('Snapshots', () => {

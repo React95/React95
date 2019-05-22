@@ -16,9 +16,8 @@ const NavItem = styled.li`
     margin-left: 4px;
   }
 
-  ${props =>
-    props.active &&
-    css`
+  ${props => props.active
+    && css`
       margin-top: -2px;
       margin-left: -2px;
       margin-bottom: 1px;

@@ -1,6 +1,6 @@
 import React from 'react';
-import Input from './Input';
 import { render } from 'react-testing-library';
+import Input from './Input';
 
 describe('<Input />', () => {
   describe('Snapshots', () => {

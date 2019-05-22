@@ -1,6 +1,6 @@
 import React from 'react';
-import Fieldset from './Fieldset';
 import { render } from 'react-testing-library';
+import Fieldset from './Fieldset';
 
 describe('<Fieldset />', () => {
   describe('Snapshots', () => {
@@ -8,7 +8,7 @@ describe('<Fieldset />', () => {
       const { container } = render(
         <Fieldset legend="example">
           <p>something</p>
-        </Fieldset>
+        </Fieldset>,
       );
       expect(container).toMatchSnapshot();
     });

@@ -1,6 +1,6 @@
 import React from 'react';
-import RadioButton from './RadioButton';
 import { render, fireEvent } from 'react-testing-library';
+import RadioButton from './RadioButton';
 
 describe('<RadioButton />', () => {
   describe('Snapshots', () => {
@@ -21,7 +21,7 @@ describe('<RadioButton />', () => {
       const { getByTestId } = render(
         <RadioButton onChange={onChangeMock} data-testid="radio">
           Radio
-        </RadioButton>
+        </RadioButton>,
       );
 
       fireEvent.click(getByTestId('radio'));

@@ -32,5 +32,5 @@ export {
   Tabs,
   TextArea,
   Tooltip,
-  Tree
+  Tree,
 };

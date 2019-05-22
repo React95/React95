@@ -41,11 +41,10 @@ const Item = styled.li`
     fill: white;
   }
 
-  ${({ icon }) => !icon && `padding-left: 26px;`};
+  ${({ icon }) => !icon && 'padding-left: 26px;'};
 
-  ${({ hasList }) =>
-    hasList &&
-    `
+  ${({ hasList }) => hasList
+    && `
     &:after {
       position: absolute;
       content: '';
@@ -71,14 +70,16 @@ const Item = styled.li`
     `};
 `;
 
-const ListItem = ({ icon, children, onClick, ...rest }) => (
+const ListItem = ({
+  icon, children, onClick, ...rest
+}) => (
   <Item
     {...rest}
     onClick={onClick}
     icon={icon}
     hasList={React.Children.map(
       children,
-      children => children.type === List
+      children => children.type === List,
     ).some(child => child)}
   >
     {icon && <Icon name={icon} />}

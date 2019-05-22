@@ -17,8 +17,7 @@ export const icons = {
   FILE_PEN: 'file_pen',
   FILE_SETTINGS: 'file_settings',
   FILE_TEXT_SETTINGS: 'file_text_settings',
-  FILE_TEXT: 'file_text',
-  FILE_EXECUTABLE: 'bat_exec'
+  FILE_EXECUTABLE: 'bat_exec',
 };
 
 const NodeItem = styled.div`
@@ -27,7 +26,8 @@ const NodeItem = styled.div`
   background-image: url(${treeMidLines});
 
   &:last-child {
-    background-image: url(${props => props.isOpen ? treeMidLines : treeLastLines});
+    background-image: url(${({ isOpen }) =>
+      isOpen ? treeMidLines : treeLastLines});
   }
 `;
 
@@ -59,7 +59,7 @@ const IconContainer = styled.div`
   width: 20px;
   height: 20px;
   margin-right: 6px;
-  margin-left: ${props => props.hasChildren ? 8 : 18}px;
+  margin-left: ${props => (props.hasChildren ? 8 : 18)}px;
 `;
 
 const NodeChildren = styled.ul`
@@ -69,13 +69,15 @@ const NodeChildren = styled.ul`
 `;
 
 const Node = ({ children, id, iconName, label, onClick }) => {
-  const [ isOpen, setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const hasChildren = children.length > 0;
 
   function getIconName() {
     return !hasChildren
       ? iconName || icons.FILE_UNKNOWN
-      : isOpen ? FOLDER_OPENED : FOLDER_CLOSED;
+      : isOpen
+      ? FOLDER_OPENED
+      : FOLDER_CLOSED;
   }
 
   return (
@@ -87,21 +89,25 @@ const Node = ({ children, id, iconName, label, onClick }) => {
           </FolderStatus>
         )}
         <IconContainer hasChildren={hasChildren}>
-          <Icon
-            name={getIconName()}
-            width={14}
-            height={14}
-          />
+          <Icon name={getIconName()} width={14} height={14} />
         </IconContainer>
         <span
           onDoubleClick={() => setIsOpen(!isOpen)}
-          onClick={(event) => onClick(event, { id, iconName, label, children })}>
+          onClick={event =>
+            onClick(event, {
+              id,
+              iconName,
+              label,
+              children,
+            })
+          }
+        >
           {label}
         </span>
       </NodeInfo>
       {hasChildren && isOpen && (
         <NodeChildren>
-          {children.map(dataNode => (
+          {React.Children.map(children, dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
         </NodeChildren>
@@ -114,14 +120,19 @@ Node.defaultProps = {
   label: '',
   iconName: null,
   children: [],
-  onClick: () => {}
+  id: null,
+  onClick: () => {},
 };
 
 Node.propTypes = {
   label: PropTypes.string,
   iconName: PropTypes.string,
-  children: PropTypes.array,
-  onClick: PropTypes.func
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  id: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default Node;
