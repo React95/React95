@@ -1,7 +1,7 @@
 ![React95 Logo](components/shared/assets/React95-clouds.png)
 
 # React95
-
+[![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 [![Build Status](https://travis-ci.org/React95/React95.svg?branch=master)](https://travis-ci.org/React95/React95)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
