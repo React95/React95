@@ -105,28 +105,66 @@ import windows_explorer from '../shared/assets/icons/windows_explorer.ico';
 import ms_dos from '../shared/assets/icons/ms_dos.ico';
 import microsoft_network from '../shared/assets/icons/microsoft_network.ico';
 import microsoft_exchange from '../shared/assets/icons/microsoft_exchange.ico';
+import timer_font from '../shared/assets/icons/timer_font.ico';
+import media_video from '../shared/assets/icons/media_video.ico';
+import media_audio from '../shared/assets/icons/media_audio.ico';
+import font from '../shared/assets/icons/font.ico';
+import window_graph from '../shared/assets/icons/window_graph.ico';
+import window_accessibility from '../shared/assets/icons/window_accessibility.ico';
+import window_abc from '../shared/assets/icons/window_abc.ico';
+import notepad_2 from '../shared/assets/icons/notepad_2.ico';
+import keyboard_mouse from '../shared/assets/icons/keyboard_mouse.ico';
+import cd_music from '../shared/assets/icons/cd_music.ico';
+import bill from '../shared/assets/icons/bill_add.ico';
+import accessibility from '../shared/assets/icons/accessibility.ico';
+import file_icons from '../shared/assets/icons/file_icons.ico';
+import computer_5 from '../shared/assets/icons/computer_5.ico';
+import mspaint from '../shared/assets/icons/mspaint.ico';
+import signup from '../shared/assets/icons/signup.ico';
+import phone_2 from '../shared/assets/icons/phone_2.ico';
+import file_pick from '../shared/assets/icons/file_pick.ico';
+import fax from '../shared/assets/icons/fax.ico';
+import dial from '../shared/assets/icons/dial.ico';
+import sys_package from '../shared/assets/icons/sys_package.ico';
+import log_view from '../shared/assets/icons/log_view.ico';
+import hardware from '../shared/assets/icons/hardware_diag.ico';
+import uninstall from '../shared/assets/icons/uninstall.ico';
+import info_bubble from '../shared/assets/icons/info_bubble.ico';
+import fax_warning from '../shared/assets/icons/fax_warning.ico';
+import cd_search from '../shared/assets/icons/cd_search.ico';
+import cd_exe from '../shared/assets/icons/cd_exe.ico';
+
 
 const path = {
+  accessibility,
   arrow_left,
   arrow_right,
   bat,
   bat_exec,
   bat_exec_2,
   bat_wait,
+  bill,
   bookmark,
   brush,
   bulb,
   calculator,
   camera,
+  cd_exe,
+  cd_music,
+  cd_search,
   computer,
   computer_2,
   computer_3,
   computer_4,
+  computer_5,
   computer_find,
   defrag,
   desktop,
+  dial,
   earth,
   explore,
+  fax,
+  fax_warning,
   file_delete,
   file_find,
   file_find2,
@@ -134,8 +172,10 @@ const path = {
   file_corrupted,
   file_font,
   file_font_2,
+  file_icons,
   file_pen,
   file_pencil,
+  file_pick,
   file_pin,
   file_settings,
   file_text,
@@ -153,28 +193,38 @@ const path = {
   folder_settings,
   folder_settings_2,
   folder_shared,
+  font,
   forbidden,
   globe,
   hand,
+  hardware,
   help_book,
+  info_bubble,
   install,
   issue,
   key,
+  keyboard_mouse,
   keys,
   loader_bat,
   lock,
   logo,
+  log_view,
   mail,
+  media_audio,
   media_cd,
+  media_video,
   memory,
   mic,
+  mspaint,
   mute,
   network,
   network_2,
   network_3,
   notepad,
+  notepad_2,
   packager,
   phone,
+  phone_2,
   plugin,
   power_off,
   power_on,
@@ -199,17 +249,24 @@ const path = {
   recycle_full,
   regedit,
   settings,
+  signup,
   star,
   shortcut,
   shortcut2,
+  sys_package,
   textchat,
   textchat_2,
   timedate,
+  timer_font,
   tree,
+  uninstall,
   unmute,
   user,
   wordpad,
   warning,
+  window_abc,
+  window_accessibility,
+  window_graph,
   windows_explorer,
   ms_dos,
   microsoft_network,
