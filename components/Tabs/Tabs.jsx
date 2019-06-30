@@ -25,14 +25,14 @@ NavContainer.displayName = 'NavContainer';
 const If = ({ condition, children }) => condition && children;
 
 const Tabs = ({
-  children, style, defaultActiveTab, onChange,
+  children, style, defaultActiveTab, onChange, ...rest
 }) => {
   const firstTab = React.Children.toArray(children)[0];
   const [activeTab, setActiveTab] = useState(defaultActiveTab || firstTab.props.title);
 
   return (
     <React.Fragment>
-      <Navbar style={style}>
+      <Navbar style={style} {...rest}>
         {React.Children.map(children, (child) => {
           const { title, disabled } = child.props;
 

@@ -147,6 +147,7 @@ const Modal = ({
   defaultPosition,
   width,
   height,
+  ...rest
 }) => {
   const [menuOpened, setMenuOpened] = useState('');
 
@@ -161,7 +162,7 @@ const Modal = ({
   return (
     <React.Fragment>
       <Draggable handle=".draggable" defaultPosition={defaultPosition}>
-        <ModalWrapper width={width} height={height}>
+        <ModalWrapper width={width} height={height} {...rest}>
           <TitleBar className="draggable">
             {icon && <Icon name={icon} {...iconStyle} />}
             <Title>{title}</Title>

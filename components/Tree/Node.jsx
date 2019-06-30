@@ -68,7 +68,7 @@ const NodeChildren = styled.ul`
   background-repeat: repeat-y;
 `;
 
-const Node = ({ children, id, iconName, label, onClick }) => {
+const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
   const [ isOpen, setIsOpen ] = useState(false);
   const hasChildren = children.length > 0;
 
@@ -79,7 +79,7 @@ const Node = ({ children, id, iconName, label, onClick }) => {
   }
 
   return (
-    <NodeItem isOpen={isOpen}>
+    <NodeItem isOpen={isOpen} {...rest}>
       <NodeInfo>
         {hasChildren && (
           <FolderStatus onClick={() => setIsOpen(!isOpen)}>
