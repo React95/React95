@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-const Tooltip = ({ children, text, delay }) => {
+const Tooltip = ({ children, text, delay, ...rest }) => {
   const [show, setShow] = useState(false);
   const [delayTimer, setDelayTimer] = useState(null);
 
@@ -43,7 +43,7 @@ const Tooltip = ({ children, text, delay }) => {
   };
 
   return (
-    <Wrapper onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+    <Wrapper onMouseEnter={handleEnter} onMouseLeave={handleLeave} {...rest}>
       <Tip show={show}>{text}</Tip>
       {children}
     </Wrapper>
