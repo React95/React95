@@ -36,9 +36,7 @@ Dialog.Message = styled.div`
   justify-content: center;
 `;
 
-const Alert = ({
-  type, title, message, onCloseModal, closeAlert,
-}) => {
+const Alert = ({ type, title, message, onCloseModal, closeAlert, ...rest }) => {
   const defaultPosition = {
     x: Math.floor(window.innerWidth / 2) - 150,
     y: Math.floor(window.innerHeight / 2) - 80,
@@ -53,6 +51,7 @@ const Alert = ({
       defaultPosition={defaultPosition}
       width="auto"
       height={120}
+      {...rest}
     >
       <Dialog>
         <Dialog.Image type={type} />

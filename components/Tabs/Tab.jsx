@@ -50,10 +50,10 @@ class Tab extends Component {
   };
 
   render() {
-    const { activeTab, title } = this.props;
+    const { activeTab, title, ...rest } = this.props;
 
     return (
-      <NavItem active={activeTab === title} onClick={this.onClick}>
+      <NavItem active={activeTab === title} onClick={this.onClick} {...rest}>
         {title}
       </NavItem>
     );

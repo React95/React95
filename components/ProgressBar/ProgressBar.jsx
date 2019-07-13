@@ -48,17 +48,11 @@ const BlueBar = styled.div`
   color: #fff;
 `;
 
-const ProgressBar = ({ width, percent }) => (
-  <Wrapper width={width}>
-    <WhiteBar width={width}>
-      {percent}
-%
-    </WhiteBar>
+const ProgressBar = ({ width, percent, ...rest }) => (
+  <Wrapper width={width} {...rest}>
+    <WhiteBar width={width}>{percent}%</WhiteBar>
     <Container percent={percent}>
-      <BlueBar width={width}>
-        {percent}
-%
-      </BlueBar>
+      <BlueBar width={width}>{percent}%</BlueBar>
     </Container>
   </Wrapper>
 );

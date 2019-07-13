@@ -68,7 +68,7 @@ const NodeChildren = styled.ul`
   background-repeat: repeat-y;
 `;
 
-const Node = ({ children, id, iconName, label, onClick }) => {
+const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
   const [isOpen, setIsOpen] = useState(false);
   const hasChildren = children.length > 0;
 
@@ -81,7 +81,7 @@ const Node = ({ children, id, iconName, label, onClick }) => {
   }
 
   return (
-    <NodeItem isOpen={isOpen}>
+    <NodeItem isOpen={isOpen} {...rest}>
       <NodeInfo>
         {hasChildren && (
           <FolderStatus onClick={() => setIsOpen(!isOpen)}>
@@ -107,7 +107,7 @@ const Node = ({ children, id, iconName, label, onClick }) => {
       </NodeInfo>
       {hasChildren && isOpen && (
         <NodeChildren>
-          {React.Children.map(children, dataNode => (
+          {children.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
         </NodeChildren>
@@ -127,11 +127,15 @@ Node.defaultProps = {
 Node.propTypes = {
   label: PropTypes.string,
   iconName: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-  id: PropTypes.string,
+  children: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string,
+      iconName: PropTypes.string,
+      id: PropTypes.number,
+      onClick: PropTypes.func,
+    })
+  ),
+  id: PropTypes.number,
   onClick: PropTypes.func,
 };
 

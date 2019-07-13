@@ -7,8 +7,8 @@ const TreeParent = styled.ul`
   padding: 0px;
 `;
 
-const Tree = ({ data }) => (
-  <TreeParent>
+const Tree = ({ data, ...rest }) => (
+  <TreeParent {...rest}>
     {data.map(dataNode => (
       <Node key={dataNode.id} {...dataNode} />
     ))}

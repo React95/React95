@@ -14,6 +14,7 @@ import { Tab, Tabs } from './Tabs';
 import TextArea from './TextArea';
 import Tooltip from './Tooltip';
 import Tree from './Tree';
+import GlobalStyle from './GlobalStyle';
 
 export {
   Alert,
@@ -32,5 +33,6 @@ export {
   Tabs,
   TextArea,
   Tooltip,
+  GlobalStyle,
   Tree,
 };
