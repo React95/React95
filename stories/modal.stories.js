@@ -96,7 +96,11 @@ const code = `<Modal
 `;
 
 ModalStory.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+};
+
+ModalStory.defaultProps = {
+  children: undefined,
 };
 
 storiesOf('Modal', module)
