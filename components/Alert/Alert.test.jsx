@@ -24,6 +24,13 @@ describe('<Alert />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with question type', () => {
+      const { container } = render(
+        <Alert title="question" type="question" message="question" />
+      );
+      expect(container).toMatchSnapshot();
+    });
   });
 
   describe('closeAlert prop', () => {
