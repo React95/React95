@@ -55,6 +55,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
     "fs-extra": "^7.0.1",
+    "husky": "^3.0.0",
     "jest": "^24.3.1",
     "jest-dom": "^3.1.3",
     "jest-styled-components": "^6.3.1",
@@ -117,5 +118,11 @@
         }
       ]
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   }
 }
