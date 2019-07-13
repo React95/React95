@@ -82,8 +82,7 @@
     "postbuild": "npm run clean:directories:build && npm run clean:files:build && npm run copy-files",
     "copy-files": "babel-node ./scripts/copy-files.js",
     "prebuild": "npm run clean:build",
-    "semantic-release": "semantic-release",
-    "lint": "eslint --ext js,jsx ./"
+    "semantic-release": "semantic-release"
   },
   "publishConfig": {
     "access": "public",
