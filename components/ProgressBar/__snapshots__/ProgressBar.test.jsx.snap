@@ -46,8 +46,7 @@ exports[`<ProgressBar /> Snapshots should match snapshot 1`] = `
       class="c1"
       width="300"
     >
-      50
-      %
+      50%
     </div>
     <div
       class="c2"
@@ -56,8 +55,7 @@ exports[`<ProgressBar /> Snapshots should match snapshot 1`] = `
         class="c3"
         width="300"
       >
-        50
-        %
+        50%
       </div>
     </div>
   </div>

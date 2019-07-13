@@ -30,7 +30,10 @@ class CheckBoxStory extends React.Component {
     };
   }
 
-  handleChange = () => this.setState({ checked: !this.state.checked });
+  handleChange = () => {
+    const { checked } = this.state;
+    this.setState({ checked: !checked });
+  };
 
   render() {
     const { checked } = this.state;

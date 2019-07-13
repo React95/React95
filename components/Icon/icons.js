@@ -1,3 +1,4 @@
+/* eslint camelcase: "off" */
 import arrow_left from '../shared/assets/icons/arrow_left.ico';
 import arrow_right from '../shared/assets/icons/arrow_right.ico';
 import bat from '../shared/assets/icons/bat.ico';
@@ -133,7 +134,6 @@ import info_bubble from '../shared/assets/icons/info_bubble.ico';
 import fax_warning from '../shared/assets/icons/fax_warning.ico';
 import cd_search from '../shared/assets/icons/cd_search.ico';
 import cd_exe from '../shared/assets/icons/cd_exe.ico';
-
 
 const path = {
   accessibility,

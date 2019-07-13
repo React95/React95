@@ -31,7 +31,7 @@ describe('<Modal />', () => {
           ]}
         >
           Hello
-        </Modal>,
+        </Modal>
       );
       expect(container).toMatchSnapshot();
     });
@@ -45,7 +45,7 @@ describe('<Modal />', () => {
           buttonsAlignment="center"
         >
           Hello
-        </Modal>,
+        </Modal>
       );
       expect(container).toMatchSnapshot();
     });
@@ -59,7 +59,7 @@ describe('<Modal />', () => {
           buttonsAlignment="flex-start"
         >
           Hello
-        </Modal>,
+        </Modal>
       );
       expect(container).toMatchSnapshot();
     });
@@ -71,7 +71,7 @@ describe('<Modal />', () => {
       const { getByText } = render(
         <Modal icon="bat" title="file.bat" closeModal={closeModalMock}>
           Hello
-        </Modal>,
+        </Modal>
       );
 
       fireEvent.click(getByText('x'));
@@ -86,11 +86,11 @@ describe('<Modal />', () => {
       const { container } = render(
         <Modal icon="bat" title="file.bat" buttons={[{ value: buttonText }]}>
           Hello
-        </Modal>,
+        </Modal>
       );
 
       expect(
-        container.querySelector(`button[value='${buttonText}']`).textContent,
+        container.querySelector(`button[value='${buttonText}']`).textContent
       ).toBe(buttonText);
     });
 
@@ -106,7 +106,7 @@ describe('<Modal />', () => {
           ]}
         >
           Hello
-        </Modal>,
+        </Modal>
       );
 
       expect(getAllByText('button').length).toBe(3);
@@ -115,7 +115,7 @@ describe('<Modal />', () => {
     it('should call onClick function when Modal action button is clicked', () => {
       const onClickMock = jest.fn();
       const { getByText } = render(
-        <Modal buttons={[{ value: 'Ok', onClick: onClickMock }]}>Hello</Modal>,
+        <Modal buttons={[{ value: 'Ok', onClick: onClickMock }]}>Hello</Modal>
       );
 
       fireEvent.click(getByText('Ok'));
@@ -140,14 +140,14 @@ describe('<Modal />', () => {
           ]}
         >
           Hello
-        </Modal>,
+        </Modal>
       );
 
       expect(container.querySelector('li').textContent).toBe('Menu Text');
     });
 
     it('should display menu list correctly', () => {
-      const { container, getByText } = render(
+      const { getByText } = render(
         <Modal
           menu={[
             {
@@ -161,7 +161,7 @@ describe('<Modal />', () => {
           ]}
         >
           Hello
-        </Modal>,
+        </Modal>
       );
 
       fireEvent.mouseDown(getByText('Edit'));

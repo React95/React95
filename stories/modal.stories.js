@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
@@ -22,6 +23,7 @@ class ModalStory extends React.Component {
   handleButtonClick = e => alert(e.target.value);
 
   render() {
+    const { children } = this.props;
     const { showModal } = this.state;
     return (
       <React.Fragment>
@@ -54,7 +56,7 @@ class ModalStory extends React.Component {
               },
             ]}
           >
-            {this.props.children}
+            {children}
           </Modal>
         )}
       </React.Fragment>
@@ -92,6 +94,10 @@ const code = `<Modal
   {this.props.children}
 </Modal>
 `;
+
+ModalStory.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 storiesOf('Modal', module)
   .addDecorator(withClippy)

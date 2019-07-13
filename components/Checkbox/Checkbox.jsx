@@ -77,8 +77,9 @@ const Label = styled.label`
   margin: 4px 0;
   padding-left: 20px;
 
-  ${({ disabled }) => disabled
-    && `
+  ${({ disabled }) =>
+    disabled &&
+    `
     color: #868686;
     text-shadow: 0.5px 0.5px #d2d2d2;
   `};
@@ -115,6 +116,7 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 Checkbox.defaultProps = {
@@ -124,6 +126,7 @@ Checkbox.defaultProps = {
   checked: null,
   disabled: null,
   onChange: () => {},
+  style: undefined,
 };
 
 export default Checkbox;

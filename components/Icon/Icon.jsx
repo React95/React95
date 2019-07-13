@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import icons from './icons.js';
+import icons from './icons';
 
 const size = ({ width, height }) => css`
-    width: ${width}px;
-    height: ${height}px;
-  `;
+  width: ${width}px;
+  height: ${height}px;
+`;
 
 const I = styled.i`
   display: block;
@@ -18,9 +18,7 @@ const I = styled.i`
   background-size: contain;
 `;
 
-const Icon = ({
-  name, width, height, ...rest
-}) => (
+const Icon = ({ name, width, height, ...rest }) => (
   <I name={name} width={width} height={height} {...rest} />
 );
 
