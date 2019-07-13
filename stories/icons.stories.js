@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import Icon from '../components/Icon';
-import icons from '../components/Icon/icons';
-
+import icons from '../components/Icon/iconImages';
 
 const IconList = styled.ul`
   width: 50%;
