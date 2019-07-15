@@ -74,6 +74,7 @@ import printer from '../shared/assets/icons/printer.ico';
 import printer_calendar from '../shared/assets/icons/printer_calendar.ico';
 import printer_drive from '../shared/assets/icons/printer_drive.ico';
 import printer_shared from '../shared/assets/icons/printer_shared.ico';
+import question_bubble from '../shared/assets/icons/question_bubble.ico';
 import reader_cd from '../shared/assets/icons/reader_cd.ico';
 import reader_cd_2 from '../shared/assets/icons/reader_cd_2.ico';
 import reader_closed from '../shared/assets/icons/reader_closed.ico';
@@ -232,6 +233,7 @@ const path = {
   printer_calendar,
   printer_drive,
   printer_shared,
+  question_bubble,
   reader_cd,
   reader_cd_2,
   reader_closed,

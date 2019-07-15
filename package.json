@@ -92,8 +92,7 @@
     "semantic-release": "semantic-release"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "next"
+    "access": "public"
   },
   "config": {
     "commitizen": {

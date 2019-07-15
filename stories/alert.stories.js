@@ -31,7 +31,7 @@ class AlertStory extends React.Component {
         <div style={{ marginBottom: 10 }}>
           Alert Type:
           <Dropdown
-            options={['error', 'info', 'warning']}
+            options={['error', 'info', 'question', 'warning']}
             onChange={this.onImageChange}
           />
         </div>
