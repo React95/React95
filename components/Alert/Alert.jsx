@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Modal from '../Modal';
 
-import { dialogError, dialogInfo, dialogWarning } from './alertImages';
+import {
+  dialogError,
+  dialogInfo,
+  dialogQuestion,
+  dialogWarning,
+} from './alertImages';
 
 const Dialog = styled.div`
   display: flex;
@@ -14,6 +19,7 @@ function imageDialog({ type }) {
   const images = {
     error: dialogError,
     info: dialogInfo,
+    question: dialogQuestion,
     warning: dialogWarning,
   };
 
@@ -66,7 +72,7 @@ Alert.displayName = 'Alert';
 Alert.propTypes = {
   title: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['info', 'error', 'warning']),
+  type: PropTypes.oneOf(['info', 'error', 'question', 'warning']),
   closeAlert: PropTypes.func,
 };
 
