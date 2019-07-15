@@ -21,10 +21,7 @@ storiesOf('Tabs, Tab', module)
   .addDecorator(withClippy)
   .addParameters({ code })
   .add('default', () => (
-    <Tabs
-      style={{ width: 350 }}
-      defaultActiveTab="Compatibility"
-    >
+    <Tabs style={{ width: 350 }} defaultActiveTab="Compatibility">
       <Tab title="General">
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
           <Checkbox checked>Log on to Windows NT domain</Checkbox>

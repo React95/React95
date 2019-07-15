@@ -60,8 +60,8 @@ const Select = styled.select`
 const Dropdown = ({ options, ...rest }) => (
   <Wrapper>
     <Select {...rest}>
-      {options.length &&
-        options.map(option => (
+      {options.length
+        && options.map(option => (
           <option key={option} value={option}>
             {option}
           </option>
@@ -72,7 +72,7 @@ const Dropdown = ({ options, ...rest }) => (
 
 Dropdown.propTypes = {
   options: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   ),
 };
 

@@ -1,9 +1,7 @@
 {
   "parser": "babel-eslint",
-  "plugins": [
-    "react"
-  ],
-  "extends": "airbnb",
+  "plugins": ["react"],
+  "extends": ["airbnb", "prettier"],
   "env": {
     "jest": true,
     "browser": true
@@ -11,6 +9,7 @@
   "rules": {
     "linebreak-style": 0,
     "import/no-extraneous-dependencies": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "no-confusing-arrow": 0
   }
 }

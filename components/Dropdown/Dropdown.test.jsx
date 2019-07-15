@@ -1,6 +1,6 @@
 import React from 'react';
-import Dropdown from './Dropdown';
 import { render } from 'react-testing-library';
+import Dropdown from './Dropdown';
 
 describe('<Dropdown />', () => {
   const options = ['', 'C:\\Windows', 'C:\\Windows/System32'];

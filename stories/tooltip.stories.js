@@ -5,7 +5,7 @@ import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 import Tooltip from '../components/Tooltip';
 
 function formatDate(date) {
-  var monthNames = [
+  const monthNames = [
     'January',
     'February',
     'March',
@@ -20,12 +20,12 @@ function formatDate(date) {
     'December',
   ];
 
-  var day = date.getDate();
-  var monthIndex = date.getMonth();
-  var year = date.getFullYear();
+  const day = date.getDate();
+  const monthIndex = date.getMonth();
+  const year = date.getFullYear();
 
   return (
-    day.toString().padStart(2, '0') + ' ' + monthNames[monthIndex] + ' ' + year
+    `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`
   );
 }
 

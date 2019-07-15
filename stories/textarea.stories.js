@@ -13,10 +13,11 @@ class TextStory extends React.Component {
     };
   }
 
-  _handleChange = ({ target }) => this.setState({ value: target.value });
+  handleChange = ({ target: { value } }) => this.setState({ value });
 
   render() {
-    return <TextArea value={this.state.value} onChange={this._handleChange} />;
+    const { value } = this.state;
+    return <TextArea value={value} onChange={this.handleChange} />;
   }
 }
 

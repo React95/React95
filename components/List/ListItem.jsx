@@ -41,7 +41,7 @@ const Item = styled.li`
     fill: white;
   }
 
-  ${({ icon }) => !icon && `padding-left: 26px;`};
+  ${({ icon }) => !icon && 'padding-left: 26px;'};
 
   ${({ hasList }) =>
     hasList &&
@@ -76,10 +76,9 @@ const ListItem = ({ icon, children, onClick, ...rest }) => (
     {...rest}
     onClick={onClick}
     icon={icon}
-    hasList={React.Children.map(
-      children,
-      children => children.type === List
-    ).some(child => child)}
+    hasList={React.Children.map(children, child => child.type === List).some(
+      child => child
+    )}
   >
     {icon && <Icon name={icon} />}
     {children}

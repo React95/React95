@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -40,31 +40,19 @@ const NavItem = styled.li`
     `}
 `;
 
-class Tab extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  onClick = () => {
-    const { onClick } = this.props;
-    onClick(this);
-  };
-
-  render() {
-    const { activeTab, title, ...rest } = this.props;
-
-    return (
-      <NavItem active={activeTab === title} onClick={this.onClick} {...rest}>
-        {title}
-      </NavItem>
-    );
-  }
-}
+const Tab = ({ activeTab, title, ...rest }) => (
+  <NavItem {...rest} active={activeTab === title}>
+    {title}
+  </NavItem>
+);
 
 Tab.propTypes = {
-  activeTab: PropTypes.string.isRequired,
+  activeTab: PropTypes.string,
   title: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+};
+
+Tab.defaultProps = {
+  activeTab: undefined,
 };
 
 export default Tab;

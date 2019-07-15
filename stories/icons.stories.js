@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from '../components/Icon';
-import icons from '../components/Icon/icons';
-
 import { storiesOf } from '@storybook/react';
+import Icon from '../components/Icon';
+import icons from '../components/Icon/iconImages';
 
 const IconList = styled.ul`
   width: 50%;
@@ -27,7 +26,7 @@ storiesOf('Icon', module).add('default', () => (
   <React.Fragment>
     <IconList>
       {Object.keys(icons).map(icon => (
-        <IconBox key={icon} >
+        <IconBox key={icon}>
           <Icon name={icon} />
           {icon}
         </IconBox>

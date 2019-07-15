@@ -1,6 +1,6 @@
 import React from 'react';
-import List from './List';
 import { render } from 'react-testing-library';
+import List from './List';
 
 describe('<List />', () => {
   describe('Snapshots', () => {
@@ -17,7 +17,7 @@ describe('<List />', () => {
             </List>
             Programs
           </List.Item>
-        </List>
+        </List>,
       );
       expect(container).toMatchSnapshot();
     });

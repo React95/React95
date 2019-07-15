@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
 import { render, fireEvent } from 'react-testing-library';
+import Button from './Button';
 
 describe('<Button />', () => {
   describe('Snapshots', () => {
