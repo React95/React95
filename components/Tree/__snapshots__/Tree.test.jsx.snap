@@ -59,6 +59,16 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
   margin-left: 18px;
 }
 
+.c5 {
+  outline: none;
+  padding: 1px;
+}
+
+.c5:focus {
+  border: 1px dotted;
+  padding: 0;
+}
+
 .c0 {
   padding: 0px;
 }
@@ -83,7 +93,10 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
             width="14"
           />
         </div>
-        <span>
+        <span
+          class="c5"
+          tabindex="0"
+        >
           foo
         </span>
       </div>

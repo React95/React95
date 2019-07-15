@@ -1,6 +1,6 @@
 import React from 'react';
-import Checkbox from './Checkbox';
 import { render, fireEvent } from 'react-testing-library';
+import Checkbox from './Checkbox';
 
 describe('<Checkbox />', () => {
   describe('Snapshots', () => {
@@ -35,7 +35,7 @@ describe('<Checkbox />', () => {
     it('should call onChange function when Checkbox is changed', () => {
       const onChangeMock = jest.fn();
       const { getByTestId } = render(
-        <Checkbox onChange={onChangeMock} label="text" data-testid="checkbox" />
+        <Checkbox onChange={onChangeMock} label="text" data-testid="checkbox" />,
       );
 
       fireEvent.click(getByTestId('checkbox'));

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Node, { icons } from './Node';
@@ -16,13 +16,11 @@ const Tree = ({ data, ...rest }) => (
 );
 
 Tree.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape(Node.propTypes)
-  )
+  data: PropTypes.arrayOf(PropTypes.shape(Node.propTypes)),
 };
 
 Tree.defaultProps = {
-  data: []
+  data: [],
 };
 
 Tree.icons = icons;

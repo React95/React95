@@ -25,13 +25,13 @@ class AlertStory extends React.Component {
   onImageChange = e => this.setState({ type: e.target.value });
 
   render() {
-    const { showAlert } = this.state;
+    const { showAlert, type } = this.state;
     return (
       <React.Fragment>
         <div style={{ marginBottom: 10 }}>
-          Alert Type:{' '}
+          Alert Type:
           <Dropdown
-            options={['error', 'info', 'warning']}
+            options={['error', 'info', 'question', 'warning']}
             onChange={this.onImageChange}
           />
         </div>
@@ -39,7 +39,7 @@ class AlertStory extends React.Component {
         {showAlert && (
           <Alert
             title="Windows Networking"
-            type={this.state.type}
+            type={type}
             message="The Windows password you typed is incorrect."
             closeAlert={this.handleCloseAlert}
           />

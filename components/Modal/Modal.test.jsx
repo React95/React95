@@ -1,7 +1,7 @@
 import React from 'react';
+import { render, fireEvent } from 'react-testing-library';
 import Modal from './Modal';
 import List from '../List';
-import { render, fireEvent } from 'react-testing-library';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {
@@ -147,7 +147,7 @@ describe('<Modal />', () => {
     });
 
     it('should display menu list correctly', () => {
-      const { container, getByText } = render(
+      const { getByText } = render(
         <Modal
           menu={[
             {

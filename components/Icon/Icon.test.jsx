@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from './Icon';
 import { render } from 'react-testing-library';
+import Icon from './Icon';
 
 describe('<Icon />', () => {
   describe('Snapshots', () => {

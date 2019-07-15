@@ -1,3 +1,4 @@
+/* eslint camelcase: "off" */
 import arrow_left from '../shared/assets/icons/arrow_left.ico';
 import arrow_right from '../shared/assets/icons/arrow_right.ico';
 import bat from '../shared/assets/icons/bat.ico';
@@ -73,6 +74,7 @@ import printer from '../shared/assets/icons/printer.ico';
 import printer_calendar from '../shared/assets/icons/printer_calendar.ico';
 import printer_drive from '../shared/assets/icons/printer_drive.ico';
 import printer_shared from '../shared/assets/icons/printer_shared.ico';
+import question_bubble from '../shared/assets/icons/question_bubble.ico';
 import reader_cd from '../shared/assets/icons/reader_cd.ico';
 import reader_cd_2 from '../shared/assets/icons/reader_cd_2.ico';
 import reader_closed from '../shared/assets/icons/reader_closed.ico';
@@ -133,7 +135,6 @@ import info_bubble from '../shared/assets/icons/info_bubble.ico';
 import fax_warning from '../shared/assets/icons/fax_warning.ico';
 import cd_search from '../shared/assets/icons/cd_search.ico';
 import cd_exe from '../shared/assets/icons/cd_exe.ico';
-
 
 const path = {
   accessibility,
@@ -232,6 +233,7 @@ const path = {
   printer_calendar,
   printer_drive,
   printer_shared,
+  question_bubble,
   reader_cd,
   reader_cd_2,
   reader_closed,

@@ -17,8 +17,7 @@ export const icons = {
   FILE_PEN: 'file_pen',
   FILE_SETTINGS: 'file_settings',
   FILE_TEXT_SETTINGS: 'file_text_settings',
-  FILE_TEXT: 'file_text',
-  FILE_EXECUTABLE: 'bat_exec'
+  FILE_EXECUTABLE: 'bat_exec',
 };
 
 const NodeItem = styled.div`
@@ -27,7 +26,8 @@ const NodeItem = styled.div`
   background-image: url(${treeMidLines});
 
   &:last-child {
-    background-image: url(${props => props.isOpen ? treeMidLines : treeLastLines});
+    background-image: url(${({ isOpen }) =>
+      isOpen ? treeMidLines : treeLastLines});
   }
 `;
 
@@ -59,7 +59,7 @@ const IconContainer = styled.div`
   width: 20px;
   height: 20px;
   margin-right: 6px;
-  margin-left: ${props => props.hasChildren ? 8 : 18}px;
+  margin-left: ${props => (props.hasChildren ? 8 : 18)}px;
 `;
 
 const NodeChildren = styled.ul`
@@ -68,15 +68,47 @@ const NodeChildren = styled.ul`
   background-repeat: repeat-y;
 `;
 
+const Label = styled.span`
+  outline: none;
+  padding: 1px;
+
+  :focus {
+    border: 1px dotted;
+    padding: 0;
+  }
+`;
+
 const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
-  const [ isOpen, setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const hasChildren = children.length > 0;
 
   function getIconName() {
-    return !hasChildren
-      ? iconName || icons.FILE_UNKNOWN
-      : isOpen ? FOLDER_OPENED : FOLDER_CLOSED;
+    if (!hasChildren) {
+      return iconName || icons.FILE_UNKNOWN;
+    }
+
+    if (isOpen) {
+      return FOLDER_OPENED;
+    }
+
+    return FOLDER_CLOSED;
   }
+
+  const onClickHandler = event => {
+    onClick(event, {
+      id,
+      iconName,
+      label,
+      children,
+    });
+  };
+
+  const onKeyDownHandler = event => {
+    if (event.key === ' ') {
+      setIsOpen(!isOpen);
+      onClickHandler(event);
+    }
+  };
 
   return (
     <NodeItem isOpen={isOpen} {...rest}>
@@ -87,17 +119,16 @@ const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
           </FolderStatus>
         )}
         <IconContainer hasChildren={hasChildren}>
-          <Icon
-            name={getIconName()}
-            width={14}
-            height={14}
-          />
+          <Icon name={getIconName()} width={14} height={14} />
         </IconContainer>
-        <span
+        <Label
+          tabIndex={0}
           onDoubleClick={() => setIsOpen(!isOpen)}
-          onClick={(event) => onClick(event, { id, iconName, label, children })}>
+          onClick={onClickHandler}
+          onKeyDown={onKeyDownHandler}
+        >
           {label}
-        </span>
+        </Label>
       </NodeInfo>
       {hasChildren && isOpen && (
         <NodeChildren>
@@ -114,14 +145,23 @@ Node.defaultProps = {
   label: '',
   iconName: null,
   children: [],
-  onClick: () => {}
+  id: null,
+  onClick: () => {},
 };
 
 Node.propTypes = {
   label: PropTypes.string,
   iconName: PropTypes.string,
-  children: PropTypes.array,
-  onClick: PropTypes.func
+  children: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string,
+      iconName: PropTypes.string,
+      id: PropTypes.number,
+      onClick: PropTypes.func,
+    })
+  ),
+  id: PropTypes.number,
+  onClick: PropTypes.func,
 };
 
 export default Node;

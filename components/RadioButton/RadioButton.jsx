@@ -59,15 +59,16 @@ const Label = styled.label`
   position: relative;
   margin-bottom: 10px;
 
-  ${props =>
-    props.disabled &&
-    `
+  ${props => props.disabled
+    && `
     color: #868686;
     text-shadow: 0.5px 0.5px #d2d2d2;
   `}
 `;
 
-const RadioButton = ({ children, onChange, disabled, ...props }) => (
+const RadioButton = ({
+  children, onChange, disabled, ...props
+}) => (
   <Label disabled={disabled}>
     <Field onChange={onChange} disabled={disabled} {...props} />
     <Icon />

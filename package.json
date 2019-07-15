@@ -47,13 +47,15 @@
     "commitizen": "^3.1.1",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^6.0.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
     "fs-extra": "^8.1.0",
+    "husky": "^3.0.0",
     "jest": "^24.3.1",
     "jest-dom": "^4.0.0",
     "jest-styled-components": "^6.3.1",
@@ -66,6 +68,11 @@
   },
   "scripts": {
     "commit": "git-cz",
+    "lint:components": "npm run lint ./components",
+    "lint:stories": "npm run lint ./stories",
+    "lint:js": "npm run lint ./*.js",
+    "lint:all": "npm run lint:components && npm run lint:stories && npm run lint:js",
+    "lint": "eslint --ext js,jsx --quiet",
     "test": "jest",
     "test:components": "npm run test ./components",
     "test:coverage": "npm run test:components --coverage",
@@ -84,8 +91,7 @@
     "semantic-release": "semantic-release"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "next"
+    "access": "public"
   },
   "config": {
     "commitizen": {
@@ -110,5 +116,11 @@
         }
       ]
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:all",
+      "pre-push": "npm test"
+    }
   }
 }

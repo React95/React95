@@ -8,7 +8,7 @@ describe('<Tooltip />', () => {
       const { container } = render(
         <Tooltip delay={0} text="Tooltip text">
           <span>hover</span>
-        </Tooltip>
+        </Tooltip>,
       );
 
       expect(container).toMatchSnapshot();
@@ -23,7 +23,7 @@ describe('<Tooltip />', () => {
       const { container, getByText } = render(
         <Tooltip delay={0} text={tooltipText}>
           <span>hover</span>
-        </Tooltip>
+        </Tooltip>,
       );
 
       expect(getByText(tooltipText)).toHaveStyleRule('display', 'none');

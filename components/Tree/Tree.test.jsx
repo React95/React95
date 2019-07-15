@@ -7,9 +7,7 @@ const { icons } = Tree;
 describe('<Tree />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      const { container } = render(
-        <Tree data={[{ id: 0, label: 'foo' }]} />
-      );
+      const { container } = render(<Tree data={[{ id: 0, label: 'foo' }]} />);
       expect(container).toMatchSnapshot();
     });
   });
@@ -17,27 +15,29 @@ describe('<Tree />', () => {
   describe('Rendering', () => {
     const onClickMock = jest.fn();
 
-    const data = [{
-      id: 0,
-      label: 'foo',
-      children: [{
+    const data = [
+      {
         id: 0,
-        label: 'bar',
-        onClick: onClickMock
-      }, {
-        id: 1,
-        label: 'baz',
-        iconName: icons.FILE_MEDIA
-      }]
-    }];
+        label: 'foo',
+        children: [
+          {
+            id: 0,
+            label: 'bar',
+            onClick: onClickMock,
+          },
+          {
+            id: 1,
+            label: 'baz',
+            iconName: icons.FILE_MEDIA,
+          },
+        ],
+      },
+    ];
 
-    const TreeComponent = () =>
-      render(
-        <Tree data={data} />
-      );
+    const TreeComponent = () => render(<Tree data={data} />);
 
     it('should render multiple levels of files if given', () => {
-      const { queryByText, query } = TreeComponent();
+      const { queryByText } = TreeComponent();
 
       const parentNode = queryByText('foo');
       expect(parentNode).toBeInTheDocument();
@@ -49,7 +49,7 @@ describe('<Tree />', () => {
       expect(queryByText('baz')).toBeInTheDocument();
     });
 
-    it('should render the default icon if the `iconName` prop isn\'t defined', () => {
+    it("should render the default icon if the `iconName` prop isn't defined", () => {
       const { container, queryByText } = TreeComponent();
 
       fireEvent.doubleClick(queryByText('foo'));
@@ -67,5 +67,5 @@ describe('<Tree />', () => {
 
       expect(onClickMock).toHaveBeenCalled();
     });
-  })
+  });
 });

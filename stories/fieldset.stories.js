@@ -32,7 +32,7 @@ storiesOf('Fieldset', module)
       <CheckboxList>
         <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
         <Checkbox checked={false}>Disable Local Keyboard & Pointer</Checkbox>
-        <Checkbox checked={true}>Remove Desktop Wallpaper</Checkbox>
+        <Checkbox checked>Remove Desktop Wallpaper</Checkbox>
       </CheckboxList>
     </Fieldset>
   ));

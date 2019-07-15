@@ -116,6 +116,7 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 Checkbox.defaultProps = {
@@ -125,6 +126,7 @@ Checkbox.defaultProps = {
   checked: null,
   disabled: null,
   onChange: () => {},
+  style: undefined,
 };
 
 export default Checkbox;
