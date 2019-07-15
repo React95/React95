@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import pkg from '../package.json';
 
-const copyFile = (file) => {
+const copyFile = file => {
   const buildPath = path.resolve(__dirname, '../dist/', path.basename(file));
 
   fs.copy(file, buildPath, () => console.log(`Copied ${file} to ${buildPath}`));
