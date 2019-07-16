@@ -6,8 +6,8 @@ module.exports = {
   },
   setupFilesAfterEnv: [
     'babel-polyfill',
-    'jest-dom/extend-expect',
+    '@testing-library/jest-dom/extend-expect',
     'jest-styled-components',
-    'react-testing-library/cleanup-after-each',
+    '@testing-library/react/cleanup-after-each',
   ],
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, act } from 'react-testing-library';
+import { render, fireEvent, act } from '@testing-library/react';
 import Tooltip from './Tooltip';
 
 describe('<Tooltip />', () => {
