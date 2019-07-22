@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] = `
-.c4 {
+exports[`<RadioButton /> Snapshots should match snapshot with checked and disabled prop 1`] = `
+.c3 {
   width: 12px;
   height: 12px;
   content: '';
@@ -12,7 +12,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
   background-image: url(test-file-stub);
 }
 
-.c6 {
+.c5 {
   padding: 1px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -23,26 +23,26 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
   left: 18px;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   opacity: 0;
 }
 
-.c2:focus ~ .c5,
-.c2:active + .c5 {
+.c1:focus ~ .c4,
+.c1:active + .c4 {
   border: 1px dotted;
   padding: 0;
 }
 
-.c2:checked + .c3 {
+.c1:checked + .c2 {
   background-image: url(test-file-stub);
 }
 
-.c2:disabled + .c3 {
+.c1:disabled + .c2 {
   background-image: url(test-file-stub);
 }
 
-.c2:checked .c1:disabled + .c3 {
+.c1:checked:disabled + .c2 {
   background-image: url(test-file-stub);
 }
 
@@ -59,22 +59,23 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
     disabled=""
   >
     <input
-      class="c1 c2"
+      checked=""
+      class="c1"
       disabled=""
       type="radio"
     />
     <span
-      class="c3 c4"
+      class="c2 c3"
     />
     <span
-      class="c5 c6"
+      class="c4 c5"
     />
   </label>
 </div>
 `;
 
-exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
-.c4 {
+exports[`<RadioButton /> Snapshots should match snapshot with checked prop 1`] = `
+.c3 {
   width: 12px;
   height: 12px;
   content: '';
@@ -85,7 +86,7 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c6 {
+.c5 {
   padding: 1px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -96,26 +97,26 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
   left: 18px;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   opacity: 0;
 }
 
-.c2:focus ~ .c5,
-.c2:active + .c5 {
+.c1:focus ~ .c4,
+.c1:active + .c4 {
   border: 1px dotted;
   padding: 0;
 }
 
-.c2:checked + .c3 {
+.c1:checked + .c2 {
   background-image: url(test-file-stub);
 }
 
-.c2:disabled + .c3 {
+.c1:disabled + .c2 {
   background-image: url(test-file-stub);
 }
 
-.c2:checked .c1:disabled + .c3 {
+.c1:checked:disabled + .c2 {
   background-image: url(test-file-stub);
 }
 
@@ -129,14 +130,157 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
     class="c0"
   >
     <input
-      class="c1 c2"
+      checked=""
+      class="c1"
       type="radio"
     />
     <span
-      class="c3 c4"
+      class="c2 c3"
     />
     <span
-      class="c5 c6"
+      class="c4 c5"
+    />
+  </label>
+</div>
+`;
+
+exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] = `
+.c3 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(test-file-stub);
+}
+
+.c5 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.c1 {
+  margin: 0;
+  opacity: 0;
+}
+
+.c1:focus ~ .c4,
+.c1:active + .c4 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c1:checked + .c2 {
+  background-image: url(test-file-stub);
+}
+
+.c1:disabled + .c2 {
+  background-image: url(test-file-stub);
+}
+
+.c1:checked:disabled + .c2 {
+  background-image: url(test-file-stub);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 10px;
+  color: #868686;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+}
+
+<div>
+  <label
+    class="c0"
+    disabled=""
+  >
+    <input
+      class="c1"
+      disabled=""
+      type="radio"
+    />
+    <span
+      class="c2 c3"
+    />
+    <span
+      class="c4 c5"
+    />
+  </label>
+</div>
+`;
+
+exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
+.c3 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(test-file-stub);
+}
+
+.c5 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.c1 {
+  margin: 0;
+  opacity: 0;
+}
+
+.c1:focus ~ .c4,
+.c1:active + .c4 {
+  border: 1px dotted;
+  padding: 0;
+}
+
+.c1:checked + .c2 {
+  background-image: url(test-file-stub);
+}
+
+.c1:disabled + .c2 {
+  background-image: url(test-file-stub);
+}
+
+.c1:checked:disabled + .c2 {
+  background-image: url(test-file-stub);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1"
+      type="radio"
+    />
+    <span
+      class="c2 c3"
+    />
+    <span
+      class="c4 c5"
     />
   </label>
 </div>
