@@ -13,6 +13,16 @@ describe('<RadioButton />', () => {
       const { container } = render(<RadioButton disabled />);
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with checked prop', () => {
+      const { container } = render(<RadioButton checked />);
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with checked and disabled prop', () => {
+      const { container } = render(<RadioButton checked disabled />);
+      expect(container).toMatchSnapshot();
+    });
   });
 
   describe('onChange prop', () => {

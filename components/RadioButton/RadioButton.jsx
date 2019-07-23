@@ -50,7 +50,7 @@ const Field = styled.input.attrs({
     background-image: url(${radioUncheckedDisabled});
   }
 
-  &:checked &:disabled + ${Icon} {
+  &:checked:disabled + ${Icon} {
     background-image: url(${radioCheckedDisabled});
   }
 `;
