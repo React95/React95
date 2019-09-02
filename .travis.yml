@@ -6,6 +6,10 @@ branches:
     - master
 
 jobs:
+  after_success:
+    - git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+    - git checkout master
+
   include:
     - stage: release
       node_js: lts/*
@@ -18,5 +22,4 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - git checkout master
           - lerna publish --conventional-commits -y
