@@ -6,10 +6,6 @@ branches:
     - master
 
 jobs:
-  after_success:
-    - git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
-    - git checkout master
-
   include:
     - stage: release
       node_js: lts/*
@@ -17,6 +13,10 @@ jobs:
       script:
         - lerna run lint:all
         - lerna run test
+
+      after_success:
+        - git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+        - git checkout master
 
       deploy:
         provider: script
