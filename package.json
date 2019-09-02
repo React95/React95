@@ -9,7 +9,8 @@
     "packages/*"
   ],
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "dev": "yarn workspace @react95/core storybook"
   },
   "config": {
     "commitizen": {

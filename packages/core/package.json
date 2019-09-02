@@ -30,12 +30,10 @@
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.14",
     "@semantic-release/release-notes-generator": "^7.1.4",
-    "@storybook/addon-actions": "4.1.4",
-    "@storybook/addon-links": "4.1.4",
-    "@storybook/addon-options": "4.1.4",
-    "@storybook/addons": "4.0.9",
-    "@storybook/react": "4.0.9",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
     "@storybook/storybook-deployer": "^2.8.1",
+    "@storybook/theming": "^5.1.11",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.5",
     "all-contributors-cli": "^6.3.1",
@@ -91,6 +89,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "release": {
     "plugins": [

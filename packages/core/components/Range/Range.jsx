@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const trackStyle = css`
   width: 100%;
@@ -38,7 +38,7 @@ const thumbStyle = css`
 `;
 
 const Range = styled.input.attrs({
-  type: 'range',
+  type: "range"
 })`
   -webkit-appearance: none;
   width: 100%;
