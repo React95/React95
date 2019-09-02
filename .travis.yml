@@ -18,4 +18,5 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
+          - git checkout master
           - lerna publish --conventional-commits -y
