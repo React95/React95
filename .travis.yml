@@ -11,12 +11,11 @@ jobs:
       node_js: lts/*
 
       script:
-        - npm run lint:all
-        - npm run test
-        - npm run build
+        - lerna run lint:all
+        - lerna run test
 
       deploy:
         provider: script
         skip_cleanup: true
         script:
-          - npm run semantic-release
+          - lerna publish --conventional-commits -y
