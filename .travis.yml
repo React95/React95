@@ -15,6 +15,7 @@ jobs:
         - lerna run test
 
       after_success:
+        - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
         - git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
         - git checkout master
 
