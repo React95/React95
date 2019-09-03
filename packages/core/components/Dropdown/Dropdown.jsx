@@ -39,6 +39,7 @@ const Select = styled.select`
   position: relative;
   outline: none;
   border: none;
+  border-radius: 0;
   width: 100%;
   height: 20px;
 
