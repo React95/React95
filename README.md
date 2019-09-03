@@ -1,4 +1,4 @@
-![React95 Logo](components/shared/assets/React95-clouds.png)
+![React95 Logo](packages/core/components/shared/assets/React95-clouds.png)
 
 # React95
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
