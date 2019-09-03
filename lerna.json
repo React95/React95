@@ -4,7 +4,8 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "message": "release: %s :tada: :rocket:"
     },
     "version": {
       "conventionalCommits": true,
