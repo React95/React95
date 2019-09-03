@@ -1,5 +1,14 @@
 {
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    },
+    "version": {
+      "conventionalCommits": true,
+      "createRelease": "github"
+    }
+  }
 }
