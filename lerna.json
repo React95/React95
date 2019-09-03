@@ -4,12 +4,12 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "conventionalCommits": true,
-      "message": "release: %s :tada: :rocket:"
+      "conventionalCommits": true
     },
     "version": {
       "conventionalCommits": true,
-      "createRelease": "github"
+      "createRelease": "github",
+      "message": "chore(release): %s :floppy_disk: :tada:"
     }
   }
 }
