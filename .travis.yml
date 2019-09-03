@@ -22,5 +22,6 @@ jobs:
       deploy:
         provider: script
         skip_cleanup: true
+        keep_history: true
         script:
-          - lerna publish --conventional-commits -y
+          - lerna publish -y
