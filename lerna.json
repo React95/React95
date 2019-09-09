@@ -4,12 +4,13 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "ignoreChanges": ["**/*.unit.test.jsx", "**/*.md"]
     },
     "version": {
       "conventionalCommits": true,
       "createRelease": "github",
-      "message": "chore(release): %s :floppy_disk: :tada:"
+      "message": "chore(release): publish :floppy_disk: :tada:"
     }
   }
 }
