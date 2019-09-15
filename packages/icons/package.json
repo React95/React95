@@ -25,9 +25,6 @@
     "type": "git",
     "url": "git+https://github.com/React95/React95.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/React95/React95/issues"
   }
