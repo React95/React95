@@ -28,6 +28,7 @@ storiesOf('Icon', module).add('default', () => (
     <IconList>
       {Object.keys(icons).map(icon => (
         <IconBox key={icon}>
+          {console.log(`![${icon}](src/icons/${icon})`)}
           <Icon name={icon} />
           {icon}
         </IconBox>
