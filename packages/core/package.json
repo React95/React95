@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -10,7 +10,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@react95/icons": "*",
+    "@react95/icons": "^0.1.0",
     "clippyjs": "^0.0.3",
     "prop-types": "^15.7.2",
     "react-draggable": "^3.1.1"
