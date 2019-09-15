@@ -1,0 +1,34 @@
+{
+  "name": "@react95/icons",
+  "version": "0.0.0",
+  "description": "React95 icons gallery",
+  "keywords": [
+    "React95",
+    "icons",
+    "windows95",
+    "w95"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://react95.github.io/React95/",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/React95/React95/issues"
+  }
+}
