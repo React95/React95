@@ -16,6 +16,7 @@ import TextArea from './TextArea';
 import Tooltip from './Tooltip';
 import Tree from './Tree';
 import GlobalStyle from './GlobalStyle';
+import React95ThemeProvider from './React95ThemeProvider';
 
 export {
   Alert,
@@ -37,4 +38,5 @@ export {
   Tooltip,
   GlobalStyle,
   Tree,
+  React95ThemeProvider,
 };
