@@ -36,6 +36,7 @@ const TitleBar = styled.div`
 
 const Title = styled.div`
   flex-grow: 1;
+  font-weight: bold;
 `;
 
 const OptionsBox = styled.ul`
@@ -127,8 +128,9 @@ const MenuItem = styled.li`
     color: #000;
   }
 
-  ${({ active }) => active
-    && `
+  ${({ active }) =>
+    active &&
+    `
       background-color: #00007f;
       color: #FFF;
     `};
@@ -223,7 +225,7 @@ Modal.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       onClick: PropTypes.func,
-    }),
+    })
   ),
   menu: PropTypes.arrayOf(
     PropTypes.shape({
@@ -232,7 +234,7 @@ Modal.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
       ]).isRequired,
-    }),
+    })
   ),
   buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
   defaultPosition: PropTypes.shape({

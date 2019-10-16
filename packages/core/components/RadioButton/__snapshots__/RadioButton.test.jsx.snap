@@ -49,6 +49,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked and disabl
 .c0 {
   position: relative;
   margin-bottom: 10px;
+  display: block;
   color: #868686;
   text-shadow: 0.5px 0.5px #d2d2d2;
 }
@@ -123,6 +124,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked prop 1`] =
 .c0 {
   position: relative;
   margin-bottom: 10px;
+  display: block;
 }
 
 <div>
@@ -193,6 +195,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
 .c0 {
   position: relative;
   margin-bottom: 10px;
+  display: block;
   color: #868686;
   text-shadow: 0.5px 0.5px #d2d2d2;
 }
@@ -266,6 +269,7 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
 .c0 {
   position: relative;
   margin-bottom: 10px;
+  display: block;
 }
 
 <div>

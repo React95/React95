@@ -23,7 +23,7 @@ export default styled.button`
   }
 
   &:active {
-    padding: 8px 20px 5px;
+    padding: 8px 20px 4px;
 
     outline: 1px dotted #000;
     outline-offset: -5px;

@@ -21,7 +21,7 @@ exports[`<Button /> Snapshots should match snapshot 1`] = `
 }
 
 .c0:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;

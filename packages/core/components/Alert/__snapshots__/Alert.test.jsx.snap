@@ -21,7 +21,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 }
 
 .c11:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -61,6 +61,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .c3 {
@@ -99,7 +100,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 }
 
 .c5:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -194,13 +195,13 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       
       <div
@@ -275,7 +276,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 }
 
 .c11:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -315,6 +316,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .c3 {
@@ -353,7 +355,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 }
 
 .c5:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -448,13 +450,13 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       
       <div
@@ -529,7 +531,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 }
 
 .c11:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -569,6 +571,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .c3 {
@@ -607,7 +610,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 }
 
 .c5:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -702,13 +705,13 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       
       <div
@@ -783,7 +786,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 }
 
 .c11:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -823,6 +826,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .c3 {
@@ -861,7 +865,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 }
 
 .c5:active {
-  padding: 8px 20px 5px;
+  padding: 8px 20px 4px;
   outline: 1px dotted #000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
@@ -956,13 +960,13 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       
       <div
