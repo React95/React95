@@ -4,10 +4,19 @@ exports[`<Input /> Snapshots should match snapshot 1`] = `
 .c0 {
   outline: none;
   border: none;
-  padding: 3px 3px 5px 3px;
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 64px;
+  padding-left: 16px;
+  border-bottom: 0;
+  border-right: 0;
+  border-top-width: 1px;
+  border-top-style: 1px;
+  border-top-color: grays.3;
+  border-left-width: 1px;
+  border-left-style: 1px;
+  border-left-color: grays.3;
+  box-shadow: input;
 }
 
 <div>

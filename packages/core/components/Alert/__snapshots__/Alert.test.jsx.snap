@@ -195,13 +195,13 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 
 <div>
   <div
-    class="c0 react-draggable"
+    class="react-draggable c0"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="c1 draggable"
+      class="draggable c1"
     >
       
       <div
@@ -450,13 +450,13 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 
 <div>
   <div
-    class="c0 react-draggable"
+    class="react-draggable c0"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="c1 draggable"
+      class="draggable c1"
     >
       
       <div
@@ -705,13 +705,13 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 
 <div>
   <div
-    class="c0 react-draggable"
+    class="react-draggable c0"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="c1 draggable"
+      class="draggable c1"
     >
       
       <div
@@ -960,13 +960,13 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 
 <div>
   <div
-    class="c0 react-draggable"
+    class="react-draggable c0"
     height="120"
     style="transform: translate(362px,304px);"
     width="auto"
   >
     <div
-      class="c1 draggable"
+      class="draggable c1"
     >
       
       <div
