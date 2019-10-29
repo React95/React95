@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 import caret from '../shared/assets/pattern/downcaret.png';
 
@@ -22,12 +23,14 @@ const Wrapper = styled.div`
     right: 1px;
     top: 2px;
 
-    background-color: #c3c7cb;
-    box-shadow: inset 0.5px 0.7px 0px 0.7px #c3c7cb,
-      inset -1px 0px 0 1px #868a8e, inset 1.5px 1.5px 0px 1.5px #ffffff;
+    background-color: grays.2;
+    box-shadow: inset 0.5px 0.7px 0px 0.7px ${th('colors.grays.2')},
+      inset -1px 0px 0 1px ${th(
+        'colors.grays.3',
+      )}, inset 1.5px 1.5px 0px 1.5px ${th('colors.white')};
 
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: 1;
+    border-bottom: 1;
 
     background-image: url('${caret}');
     background-position: center center;
@@ -43,15 +46,18 @@ const Select = styled.select`
   width: 100%;
   height: 20px;
 
-  padding: 3px 3px 5px 3px;
+  padding: 3 3 5;
 
-  background-color: #fff;
+  background-color: white;
 
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
+  border-left: 1;
+  border-left-color: grays.3;
+  border-top: 1;
+  border-top-color: grays.3;
 
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
-    0.5px 0.5px 0 0.5px #ffffff;
+  box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
+    inset 1px 1px 0 0 ${th('colors.black')},
+    0.5px 0.5px 0 0.5px ${th('colors.white')};
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -61,8 +67,8 @@ const Select = styled.select`
 const Dropdown = ({ options, ...rest }) => (
   <Wrapper>
     <Select {...rest}>
-      {options.length
-        && options.map(option => (
+      {options.length &&
+        options.map(option => (
           <option key={option} value={option}>
             {option}
           </option>
