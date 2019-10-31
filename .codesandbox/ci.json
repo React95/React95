@@ -1,5 +1,5 @@
 {
   "buildCommand": "build",
   "packages": ["./packages/core"],
-  "sandboxes": ["vanilla"]
+  "sandboxes": ["react"]
 }
