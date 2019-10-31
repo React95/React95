@@ -1,0 +1,5 @@
+{
+  "buildCommand": "build",
+  "packages": ["./packages/core", "packages/icons"],
+  "sandboxes": ["vanilla"]
+}
