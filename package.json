@@ -18,7 +18,7 @@
     "commitizen": "^4.0.3",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-loader": "^2.1.2",
