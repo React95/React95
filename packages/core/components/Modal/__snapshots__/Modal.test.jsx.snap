@@ -204,13 +204,13 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="200"
     style="transform: translate(0px,0px);"
     width="300"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       <i
         class="c2"
@@ -457,13 +457,13 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="200"
     style="transform: translate(0px,0px);"
     width="300"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       <i
         class="c2"
@@ -705,13 +705,13 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 <div>
   <div
-    class="react-draggable c0"
+    class="c0 react-draggable"
     height="200"
     style="transform: translate(0px,0px);"
     width="300"
   >
     <div
-      class="draggable c1"
+      class="c1 draggable"
     >
       <i
         class="c2"
