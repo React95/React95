@@ -1,5 +1,7 @@
 {
   "buildCommand": "build",
   "packages": ["./packages/core"],
-  "sandboxes": ["react"]
+  "sandboxes": [
+    "github.com/styled-components/styled-components/tree/master/packages/sandbox"
+  ]
 }
