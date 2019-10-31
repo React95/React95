@@ -2,6 +2,6 @@
   "buildCommand": "build",
   "packages": ["./packages/core"],
   "sandboxes": [
-    "github.com/React95/React95/blob/101-themification/examples/create-react-app"
+    "https://github.com/React95/React95/tree/101-themification/examples/create-react-app"
   ]
 }
