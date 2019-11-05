@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Draggable from 'react-draggable';
-import Btn from '../shared-style/Btn';
-import Button from '../Button';
-import Icon from '../Icon';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Draggable from "react-draggable";
+import Btn from "../shared-style/Btn";
+import Button from "../Button";
+import Icon from "../Icon";
 
 const ModalWrapper = styled.div`
   display: flex;
@@ -72,7 +72,7 @@ const Option = styled(Btn)`
   }
 `;
 
-Option.displayName = 'Option';
+Option.displayName = "Option";
 
 const Content = styled.div`
   flex-grow: 1;
@@ -136,7 +136,7 @@ const MenuItem = styled.li`
     `};
 `;
 
-MenuItem.displayName = 'MenuItem';
+MenuItem.displayName = "MenuItem";
 
 const Modal = ({
   closeModal,
@@ -151,18 +151,18 @@ const Modal = ({
   height,
   ...rest
 }) => {
-  const [menuOpened, setMenuOpened] = useState('');
+  const [menuOpened, setMenuOpened] = useState("");
 
   const iconStyle = {
     width: 15,
     height: 13,
     style: {
-      marginRight: '4px',
-    },
+      marginRight: "4px"
+    }
   };
 
   return (
-    <React.Fragment>
+    <>
       <Draggable handle=".draggable" defaultPosition={defaultPosition}>
         <ModalWrapper width={width} height={height} {...rest}>
           <TitleBar className="draggable">
@@ -192,7 +192,7 @@ const Modal = ({
             </MenuWrapper>
           )}
 
-          <Content onClick={() => setMenuOpened('')}>{children}</Content>
+          <Content onClick={() => setMenuOpened("")}>{children}</Content>
           {buttons.length > 0 && (
             <ButtonWrapper buttonsAlignment={buttonsAlignment}>
               {buttons.map((button, index) => (
@@ -207,11 +207,11 @@ const Modal = ({
           )}
         </ModalWrapper>
       </Draggable>
-    </React.Fragment>
+    </>
   );
 };
 
-Modal.displayName = 'Modal';
+Modal.displayName = "Modal";
 
 Modal.propTypes = {
   icon: PropTypes.string,
@@ -219,12 +219,12 @@ Modal.propTypes = {
   title: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.node
   ]),
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
-      onClick: PropTypes.func,
+      onClick: PropTypes.func
     })
   ),
   menu: PropTypes.arrayOf(
@@ -232,30 +232,30 @@ Modal.propTypes = {
       name: PropTypes.string.isRequired,
       list: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node,
-      ]).isRequired,
+        PropTypes.node
+      ]).isRequired
     })
   ),
-  buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
+  buttonsAlignment: PropTypes.oneOf(["center", "flex-start", "flex-end"]),
   defaultPosition: PropTypes.shape({
     x: PropTypes.number.isRequired,
-    y: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired
   }),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };
 
 Modal.defaultProps = {
-  icon: '',
-  title: 'Modal',
-  buttonsAlignment: 'flex-end',
+  icon: "",
+  title: "Modal",
+  buttonsAlignment: "flex-end",
   children: null,
   defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],
   width: 300,
   height: 200,
-  closeModal: () => {},
+  closeModal: () => {}
 };
 
 export default Modal;
