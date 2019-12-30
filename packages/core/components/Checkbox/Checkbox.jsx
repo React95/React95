@@ -95,7 +95,7 @@ const Checkbox = ({
   onChange,
   ...rest
 }) => (
-  <Label {...style} checked={checked} disabled={disabled}>
+  <Label style={style} checked={checked} disabled={disabled}>
     <Field
       type="checkbox"
       value={value}
