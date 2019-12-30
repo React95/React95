@@ -29,6 +29,11 @@ describe('<Checkbox />', () => {
 
       expect(container.querySelector('label').textContent).toBe(label);
     });
+    
+    it('should apply given color to the label', () => {
+      const { container } = render(<Checkbox style={{ color: 'red' }} />);
+      expect(container.querySelector('label').style.color).toBe('red');
+    })
   });
 
   describe('onChange prop', () => {
