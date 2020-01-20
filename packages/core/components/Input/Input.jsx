@@ -1,9 +1,10 @@
-import styled from 'styled-components';
-import { padding, borders, shadow } from 'styled-system';
+import styled from "styled-components";
+import { padding, borders, shadow } from "styled-system";
 
 const Input = styled.input`
   outline: none;
   border: none;
+  cursor: text;
 
   ${padding}
   ${borders}
@@ -19,11 +20,11 @@ Input.defaultProps = {
   borderRight: 0,
   borderTopWidth: 1,
   borderTopStyle: 1,
-  borderTopColor: 'grays.3',
+  borderTopColor: "grays.3",
   borderLeftWidth: 1,
   borderLeftStyle: 1,
-  borderLeftColor: 'grays.3',
-  boxShadow: 'input',
+  borderLeftColor: "grays.3",
+  boxShadow: "input"
 };
 
 export default Input;
