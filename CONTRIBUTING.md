@@ -17,16 +17,10 @@ We're really happy you want to contribute to the project! The following steps wi
    $ yarn
    ```
 
-3. Work from within the `packages/core` directory.
+3. Start up the dev server:
 
    ```sh
-   $ cd packages/core
-   ```
-
-4. Start up the dev server:
-
-   ```sh
-   $ yarn run storybook
+   $ yarn run dev
    ```
 
 Access http://localhost:6006 to see the storybook running
