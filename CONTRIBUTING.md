@@ -54,7 +54,7 @@ You need to follow a simple structure pattern:
 - The component folder need the component file itself and an `index.js` file that export that component;
 - You need to import and export that component on `index.js` that are on components folder;
 - Every new component need to have its own story file;
-- When you finish your work, you'll need to commit by running
+- When you finish your work, you'll need to commit with messages following [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) pattern. The easiest way to do this is running
 
   ```sh
   $ yarn run commit
