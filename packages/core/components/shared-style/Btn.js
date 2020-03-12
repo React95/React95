@@ -1,33 +1,36 @@
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 export default styled.button`
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
+  background-color: grays.2;
+  padding: 7 20 5;
   border: none;
 
   font-size: 12px;
 
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-    1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
+    inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 0px ${th('colors.black')};
 
   &:disabled {
-    color: #868a8e;
+    color: grays.3;
   }
 
   &:focus {
-    outline: none;
-    box-shadow: inset 1px 1px 0px 1px #ffffff,
-      inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000;
-    outline: 1px dotted #000;
-    outline-offset: -5px;
+    outline: ${th('space.1')}px dotted ${th('colors.black')};
+    outline-offset: -${th('space.5')}px;
+
+    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
+      inset -0.5px -0.5px 0px 1px ${th('colors.grays.3')},
+      1px 1px 0 1px ${th('colors.black')};
   }
 
   &:active {
-    padding: 8px 20px 4px;
+    padding: 8 20 4;
 
-    outline: 1px dotted #000;
-    outline-offset: -5px;
+    outline: ${th('space.1')}px dotted ${th('colors.black')};
+    outline-offset: -${th('space.5')}px;
 
-    box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000;
+    box-shadow: inset 0 0 0 1px ${th('colors.grays.3')},
+      0 0 0 1px ${th('colors.black')};
   }
 `;
