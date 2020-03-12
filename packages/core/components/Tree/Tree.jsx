@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Node, { icons } from './Node';
 
 const TreeParent = styled.ul`
-  padding: 0px;
+  padding: 0;
 `;
 
 const Tree = ({ data, ...rest }) => (
