@@ -1,44 +1,55 @@
-import styled, { css } from "styled-components";
+import styled, { css } from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 const trackStyle = css`
   width: 100%;
   height: 4px;
 
-  background: #000;
+  background: ${th('colors.black')};
 
   cursor: pointer;
 
-  border-top: 1px solid #ccc;
-  border-right: 2px solid #fff;
-  border-bottom: 1px solid #eee;
-  border-left: 2px solid #fff;
+  border-top: 1;
+  border-top-color: grays.1;
+  border-right: 2;
+  border-right-color: ${th('colors.white')};
+  border-bottom: 1;
+  border-bottom-color: grays.0;
+  border-left: 2;
+  border-left-color: ${th('colors.white')};
 
-  box-shadow: 0px 1px 0px 0px #fff;
+  box-shadow: 0px 1px 0px 0px ${th('colors.white')};
 `;
 
 const thumbStyle = css`
-  width: 12px;
-  height: 20px;
+  width: 12;
+  height: 20;
 
-  background: #c3c7cb;
+  background-color: grays.2;
 
   cursor: pointer;
 
-  margin-top: -8px;
+  margin-top: -${th('space.8')}px;
 
-  border-top: 1px solid #fff;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #fff;
+  border-top: 1;
+  border-top-color: ${th('colors.white')};
+  border-right: 1;
+  border-right-color: ${th('colors.black')};
+  border-bottom: 1;
+  border-bottom-color: ${th('colors.black')};
+  border-left: 1;
+  border-left-color: ${th('colors.white')};
 
-  box-shadow: inset 0px -1px 0px #aaa, inset -1px 0px 0px #aaa,
-    inset 0px 1px 0px #dedede, inset 1px 0px 0px #dedede;
+  box-shadow: inset 0px -1px 0px ${th('colors.grays.3')},
+    inset -1px 0px 0px ${th('colors.grays.3')},
+    inset 0px 1px 0px ${th('colors.grays.0')},
+    inset 1px 0px 0px ${th('colors.grays.0')};
 
   -webkit-appearance: none;
 `;
 
 const Range = styled.input.attrs({
-  type: "range"
+  type: 'range',
 })`
   -webkit-appearance: none;
   width: 100%;
@@ -58,7 +69,7 @@ const Range = styled.input.attrs({
   }
 
   &:focus::-webkit-slider-runnable-track {
-    background: #000;
+    background: ${th('colors.black')};
   }
 
   &::-moz-range-track {
