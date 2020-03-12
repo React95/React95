@@ -1,13 +1,15 @@
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 const Divider = styled.li`
-  background-color: #a2a5a8;
   height: 1px;
-  border-top: 1px solid #868a8e;
-  border-bottom: 1px solid white;
+  border-top: 1;
+  border-top-color: grays.3;
+  border-bottom: 1;
+  border-bottom-color: ${th('colors.white')};
 
   width: 98%;
-  margin-left: 2px;
+  margin-left: 2;
 `;
 
 export default Divider;
