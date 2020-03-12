@@ -43,7 +43,7 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const BlueBar = styled.div`
+const Progress = styled.div`
   width: ${props => props.width}px;
   height: 17;
   line-height: 18px;
@@ -51,7 +51,7 @@ const BlueBar = styled.div`
   margin-left: 2;
   margin-top: 2;
 
-  background: ${th('colors.blue')};
+  background-color: primary;
   color: ${th('colors.white')};
 `;
 
@@ -59,7 +59,7 @@ const ProgressBar = ({ width, percent, ...rest }) => (
   <Wrapper width={width} {...rest}>
     <WhiteBar width={width}>{`${percent}%`}</WhiteBar>
     <Container percent={percent}>
-      <BlueBar width={width}>{`${percent}%`}</BlueBar>
+      <Progress width={width}>{`${percent}%`}</Progress>
     </Container>
   </Wrapper>
 );
