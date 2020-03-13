@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '../shared/test/utils';
 import Button from './Button';
 
 describe('<Button />', () => {

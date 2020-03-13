@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '../shared/test/utils';
 import Alert from './Alert';
 
 describe('<Alert />', () => {
@@ -27,7 +27,7 @@ describe('<Alert />', () => {
 
     it('should match snapshot with question type', () => {
       const { container } = render(
-        <Alert title="question" type="question" message="question" />
+        <Alert title="question" type="question" message="question" />,
       );
       expect(container).toMatchSnapshot();
     });

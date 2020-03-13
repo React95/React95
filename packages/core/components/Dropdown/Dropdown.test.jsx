@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render } from '../shared/test/utils';
 import Dropdown from './Dropdown';
 
 describe('<Dropdown />', () => {
