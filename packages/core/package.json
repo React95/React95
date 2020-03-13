@@ -15,7 +15,7 @@
     "@xstyled/styled-components": "^1.13.1",
     "clippyjs": "^0.0.3",
     "prop-types": "^15.7.2",
-    "react-draggable": "^3.1.1",
+    "react-draggable": "^4.2.0",
     "styled-system": "^5.1.2"
   },
   "peerDependencies": {
