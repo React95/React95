@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Draggable from "react-draggable";
-import Btn from "../shared-style/Btn";
-import Button from "../Button";
-import Icon from "../Icon";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled, { css } from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
+import Draggable from 'react-draggable';
+
+import Btn from '../shared-style/Btn';
+import Button from '../Button';
+import Icon from '../Icon';
 
 const ModalWrapper = styled.div`
   display: flex;
@@ -12,24 +14,24 @@ const ModalWrapper = styled.div`
 
   position: fixed;
 
-  padding: 2px 2px 8px;
+  padding: 2 2 8;
   ${({ width, height }) => `width: ${width}px; height: ${height}px;`}
 
   top: 50px;
 
-  background-color: #c3c7cb;
+  background-color: bg;
 
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-    1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
+    inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 1px ${th('colors.black')};
 `;
 
 const TitleBar = styled.div`
-  height: 18px;
-  margin-bottom: 2px;
+  height: 18;
+  margin-bottom: 2;
 
-  background-color: #00007f;
-  color: white;
-  padding: 2px 2px 0;
+  background-color: primary;
+  color: ${th('colors.white')};
+  padding: 2 2 0;
 
   display: flex;
 `;
@@ -48,38 +50,39 @@ const OptionsBox = styled.ul`
 `;
 
 const Option = styled(Btn)`
-  margin-right: 2px;
+  margin-right: 2;
   padding: 0;
 
-  width: 17px;
-  height: 14px;
+  width: 17;
+  height: 14;
   min-width: 0;
 
-  font-size: 10px;
+  font-size: 10;
 
   &:last-child {
     margin-right: 0;
   }
 
   &:active {
-    padding: 1px 0 0 1px;
+    padding: 1 0 0 1;
 
     outline: none;
   }
 
   &:focus {
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
+    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
+      inset -1px -1px 0px 1px ${th('colors.grays.3')};
   }
 `;
 
-Option.displayName = "Option";
+Option.displayName = 'Option';
 
 const Content = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 
-  padding: 6px;
+  padding: 6;
 `;
 
 const ButtonWrapper = styled.div`
@@ -87,11 +90,11 @@ const ButtonWrapper = styled.div`
   flex-direction: row;
   justify-content: ${props => props.buttonsAlignment};
 
-  padding: 0 6px 6px 6px;
+  padding: 0 6 6 6;
 
   & ${Btn} {
-    margin-right: 6px;
-    min-width: 70px;
+    margin-right: 6;
+    min-width: 70;
 
     &:last-child {
       margin-right: 0;
@@ -106,37 +109,37 @@ const MenuWrapper = styled.ul`
   list-style: none;
   margin: 0;
   padding-left: 0;
-  padding-bottom: 3px;
+  padding-bottom: 3;
 
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #848284;
+  border-width: 1;
+  border-bottom-color: grays.3;
 
-  box-shadow: 0 1px 0 0 #e6e6e6;
+  box-shadow: 0 1px 0 0 ${th('colors.grays.0')};
 `;
 
 const MenuItem = styled.li`
   position: relative;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 6;
+  padding-right: 6;
 
   user-select: none;
 
   ul {
     position: absolute;
     left: 0;
-    color: #000;
+    color: ${th('colors.black')};
   }
 
   ${({ active }) =>
     active &&
-    `
-      background-color: #00007f;
-      color: #FFF;
+    css`
+      background-color: primary;
+      color: ${th('colors.white')};
     `};
 `;
 
-MenuItem.displayName = "MenuItem";
+MenuItem.displayName = 'MenuItem';
 
 const Modal = ({
   closeModal,
@@ -151,14 +154,14 @@ const Modal = ({
   height,
   ...rest
 }) => {
-  const [menuOpened, setMenuOpened] = useState("");
+  const [menuOpened, setMenuOpened] = useState('');
 
   const iconStyle = {
     width: 15,
     height: 13,
     style: {
-      marginRight: "4px"
-    }
+      marginRight: '4px',
+    },
   };
 
   return (
@@ -192,7 +195,7 @@ const Modal = ({
             </MenuWrapper>
           )}
 
-          <Content onClick={() => setMenuOpened("")}>{children}</Content>
+          <Content onClick={() => setMenuOpened('')}>{children}</Content>
           {buttons.length > 0 && (
             <ButtonWrapper buttonsAlignment={buttonsAlignment}>
               {buttons.map((button, index) => (
@@ -211,7 +214,7 @@ const Modal = ({
   );
 };
 
-Modal.displayName = "Modal";
+Modal.displayName = 'Modal';
 
 Modal.propTypes = {
   icon: PropTypes.string,
@@ -219,43 +222,43 @@ Modal.propTypes = {
   title: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]),
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
-      onClick: PropTypes.func
-    })
+      onClick: PropTypes.func,
+    }),
   ),
   menu: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       list: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node
-      ]).isRequired
-    })
+        PropTypes.node,
+      ]).isRequired,
+    }),
   ),
-  buttonsAlignment: PropTypes.oneOf(["center", "flex-start", "flex-end"]),
+  buttonsAlignment: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
   defaultPosition: PropTypes.shape({
     x: PropTypes.number.isRequired,
-    y: PropTypes.number.isRequired
+    y: PropTypes.number.isRequired,
   }),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 Modal.defaultProps = {
-  icon: "",
-  title: "Modal",
-  buttonsAlignment: "flex-end",
+  icon: '',
+  title: 'Modal',
+  buttonsAlignment: 'flex-end',
   children: null,
   defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],
   width: 300,
   height: 200,
-  closeModal: () => {}
+  closeModal: () => {},
 };
 
 export default Modal;
