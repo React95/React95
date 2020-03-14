@@ -2,15 +2,22 @@
 
 exports[`<TextArea /> Snapshot should match snapshot 1`] = `
 .c0 {
-  border: none;
-  max-height: 100%;
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
-  font-size: 14px;
-  line-height: 18px;
   outline: none;
-  resize: none;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  border: none;
+  cursor: text;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  border-bottom: 0;
+  border-right: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #868a8e;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
 }
 
 <div>

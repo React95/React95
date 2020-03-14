@@ -8,10 +8,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
   display: inline-block;
   position: absolute;
   left: 0;
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
-  background-color: white;
+  border-left: 1px solid;
+  border-left-color: #868a8e;
+  border-top: 1px solid;
+  border-top-color: #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
@@ -37,7 +39,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
 
 .c2:focus ~ .c5,
 .c2:active ~ .c5 {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
@@ -51,7 +54,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
 }
 
 .c2:disabled + .c3 {
-  background-color: #c0c0c0;
+  background-color: #d2d2d2;
 }
 
 .c0 {
@@ -61,7 +64,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
   position: relative;
   margin: 4px 0;
   padding-left: 20px;
-  color: #868686;
+  color: #868a8e;
   text-shadow: 0.5px 0.5px #d2d2d2;
 }
 
@@ -96,10 +99,12 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   display: inline-block;
   position: absolute;
   left: 0;
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
-  background-color: white;
+  border-left: 1px solid;
+  border-left-color: #868a8e;
+  border-top: 1px solid;
+  border-top-color: #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
@@ -125,7 +130,8 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
 
 .c2:focus ~ .c5,
 .c2:active ~ .c5 {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
@@ -139,7 +145,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
 }
 
 .c2:disabled + .c3 {
-  background-color: #c0c0c0;
+  background-color: #d2d2d2;
 }
 
 .c0 {

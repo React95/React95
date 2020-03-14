@@ -1,9 +1,9 @@
 const colors = {
   grays: ['#e6e6e6', '#d2d2d2', '#c3c7cb', '#868a8e'],
   black: '#000000',
-  white: '#FFF',
+  white: '#ffffff',
   primary: '#000e7a',
-  secondary: '#5aa',
+  secondary: '#55aaaa',
   get bg() {
     return this.grays[2];
   },

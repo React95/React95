@@ -6,7 +6,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
 .c11:disabled {
@@ -14,17 +14,16 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 }
 
 .c11:focus {
-  outline: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
 .c11:active {
   padding: 8px 20px 4px;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
 .c2 {
@@ -51,14 +50,14 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   height: 200px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #00007f;
-  color: white;
+  background-color: #000e7a;
+  color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -89,7 +88,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
   margin-right: 2px;
   padding: 0;
   width: 17px;
@@ -103,17 +102,16 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 }
 
 .c6:focus {
-  outline: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
 .c6:active {
   padding: 8px 20px 4px;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
 .c6:last-child {
@@ -126,7 +124,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 }
 
 .c6:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -1px -1px 0px 1px #868a8e;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c9 {
@@ -181,8 +179,8 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   padding-left: 0;
   padding-bottom: 3px;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #848284;
+  border-width: 1px;
+  border-bottom-color: #868a8e;
   box-shadow: 0 1px 0 0 #e6e6e6;
 }
 
@@ -199,7 +197,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 .c8 ul {
   position: absolute;
   left: 0;
-  color: #000;
+  color: #000000;
 }
 
 <div>
@@ -284,7 +282,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
 .c9:disabled {
@@ -292,17 +290,16 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c9:focus {
-  outline: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
 .c9:active {
   padding: 8px 20px 4px;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
 .c2 {
@@ -329,14 +326,14 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   height: 200px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #00007f;
-  color: white;
+  background-color: #000e7a;
+  color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -367,7 +364,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
   margin-right: 2px;
   padding: 0;
   width: 17px;
@@ -381,17 +378,16 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c6:focus {
-  outline: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
 .c6:active {
   padding: 8px 20px 4px;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
 .c6:last-child {
@@ -404,7 +400,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c6:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -1px -1px 0px 1px #868a8e;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c7 {
@@ -523,7 +519,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
 .c9:disabled {
@@ -531,17 +527,16 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c9:focus {
-  outline: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
 .c9:active {
   padding: 8px 20px 4px;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
 .c2 {
@@ -568,14 +563,14 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   height: 200px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #00007f;
-  color: white;
+  background-color: #000e7a;
+  color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -606,7 +601,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 0px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
   margin-right: 2px;
   padding: 0;
   width: 17px;
@@ -620,17 +615,16 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c6:focus {
-  outline: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -0.5px -0.5px 0px 1px #868a8e,1px 1px 0 1px #000;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
 .c6:active {
   padding: 8px 20px 4px;
-  outline: 1px dotted #000;
+  outline: 1px dotted #000000;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e,0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
 .c6:last-child {
@@ -643,7 +637,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c6:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset -1px -1px 0px 1px #868a8e;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c7 {

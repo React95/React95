@@ -65,12 +65,13 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
 }
 
 .c5:focus {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
 .c0 {
-  padding: 0px;
+  padding: 0;
 }
 
 <div>
