@@ -4,6 +4,9 @@ const colors = {
   white: '#FFF',
   primary: '#000e7a',
   secondary: '#5aa',
+  get bg() {
+    return this.grays[2];
+  },
 };
 
 const space = [
