@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import ThemeProvider from '../../React95ThemeProvider';
+import ThemeProvider from '../../ThemeProvider';
 
 const customRender = (ui, options) =>
   render(ui, { wrapper: ThemeProvider, ...options });
