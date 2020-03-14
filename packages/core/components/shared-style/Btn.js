@@ -2,7 +2,7 @@ import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
 export default styled.button`
-  background-color: grays.2;
+  background-color: bg;
   padding: 7 20 5;
   border: none;
 

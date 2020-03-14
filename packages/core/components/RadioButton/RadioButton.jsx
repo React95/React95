@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
+
 import {
   radioChecked,
   radioCheckedDisabled,
@@ -9,8 +11,8 @@ import {
 } from './radioButtonStates';
 
 const Icon = styled.span`
-  width: 12px;
-  height: 12px;
+  width: 12;
+  height: 12;
 
   content: '';
   display: inline-block;
@@ -23,12 +25,12 @@ const Icon = styled.span`
 `;
 
 const Text = styled.span`
-  padding: 1px;
+  padding: 1;
   user-select: none;
 
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 18;
 `;
 
 const Field = styled.input.attrs({
@@ -38,7 +40,8 @@ const Field = styled.input.attrs({
   opacity: 0;
 
   &:focus ~ ${Text}, &:active + ${Text} {
-    border: 1px dotted;
+    border-width: 1;
+    border-style: dotted;
     padding: 0;
   }
 
@@ -57,15 +60,15 @@ const Field = styled.input.attrs({
 
 const Label = styled.label`
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 10;
   display: block;
 
   ${props =>
     props.disabled &&
-    `
-    color: #868686;
-    text-shadow: 0.5px 0.5px #d2d2d2;
-  `}
+    css`
+      color: ${th('colors.grays.3')};
+      text-shadow: 0.5px 0.5px ${th('colors.grays.1')};
+    `}
 `;
 
 const RadioButton = ({ children, onChange, disabled, ...props }) => (

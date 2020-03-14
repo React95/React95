@@ -6,7 +6,7 @@ import ListItem from './ListItem';
 import Divider from './ListDivider';
 
 const List = styled.ul`
-  background-color: grays.2;
+  background-color: bg;
   padding: 5 20 6;
   border: none;
 

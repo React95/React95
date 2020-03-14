@@ -23,7 +23,7 @@ const Wrapper = styled.div`
     right: 1px;
     top: 2px;
 
-    background-color: grays.2;
+    background-color: bg;
     box-shadow: inset 0.5px 0.7px 0px 0.7px ${th('colors.grays.2')},
       inset -1px 0px 0 1px ${th(
         'colors.grays.3',

@@ -6,7 +6,7 @@ import { th } from '@xstyled/system';
 const NavItem = styled.li`
   list-style: none;
   padding: 3 6;
-  background-color: grays.2;
+  background-color: bg;
   box-shadow: inset 0 1px 0 0 ${th('colors.white')},
     -2px 1px 0 -1px ${th('colors.grays.2')},
     -3px 1px 0 -1px ${th('colors.white')}, -2px 0 0 -1px ${th('colors.white')},

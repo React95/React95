@@ -22,7 +22,7 @@ Frame.defaultProps = {
   w: 'auto',
   h: 'auto',
   p: 10,
-  bg: 'grays.2',
+  bg: 'bg',
   boxShadow: 'out',
 };
 
