@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.1](https://github.com/React95/React95/compare/@react95/core@2.5.0...@react95/core@2.5.1) (2020-03-19)
+
+
+### Bug Fixes
+
+* **radiobutton:** fix text positioning ([2201e9c](https://github.com/React95/React95/commit/2201e9cc05d53311f955479f8d1436e07967d9af))
+
+
+
+
+
 # [2.5.0](https://github.com/React95/React95/compare/@react95/core@2.4.5...@react95/core@2.5.0) (2020-03-19)
 
 
