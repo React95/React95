@@ -1,43 +1,43 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { storiesOf } from "@storybook/react";
+import { storiesOf } from '@storybook/react';
 
 const types = [
-  "auto",
-  "default",
-  "none",
-  "context-menu",
-  "help",
-  "pointer",
-  "progress",
-  "wait",
-  "crosshair",
-  "text",
-  "vertical-text",
-  "alias",
-  "copy",
-  "move",
-  "no-drop",
-  "not-allowed",
-  "grab",
-  "grabbing",
-  "col-resize",
-  "row-resize",
-  "n-resize",
-  "e-resize",
-  "s-resize",
-  "w-resize",
-  "ns-resize",
-  "ew-resize",
-  "ne-resize",
-  "nw-resize",
-  "se-resize",
-  "sw-resize",
-  "nesw-resize",
-  "nwse-resize",
-  "zoom-in",
-  "zoom-out"
+  'auto',
+  'default',
+  'none',
+  'context-menu',
+  'help',
+  'pointer',
+  'progress',
+  'wait',
+  'crosshair',
+  'text',
+  'vertical-text',
+  'alias',
+  'copy',
+  'move',
+  'no-drop',
+  'not-allowed',
+  'grab',
+  'grabbing',
+  'col-resize',
+  'row-resize',
+  'n-resize',
+  'e-resize',
+  's-resize',
+  'w-resize',
+  'ns-resize',
+  'ew-resize',
+  'ne-resize',
+  'nw-resize',
+  'se-resize',
+  'sw-resize',
+  'nesw-resize',
+  'nwse-resize',
+  'zoom-in',
+  'zoom-out',
 ];
 
 const CursorList = styled.ul`
@@ -66,7 +66,7 @@ const Cursor = styled.li`
     1px 1px 0 1px #000;
 `;
 
-storiesOf("Cursor", module).add("default", () => (
+storiesOf('Cursor', module).add('default', () => (
   <>
     <CursorList>
       {types.map(type => (

@@ -31,8 +31,8 @@ Dialog.Image = styled.div`
   ${imageDialog}
   background-repeat: no-repeat;
   background-size: 70%;
-  height: 45;
-  width: 45;
+  height: 45px;
+  width: 45px;
   background-position: center;
   margin-right: 10;
 `;

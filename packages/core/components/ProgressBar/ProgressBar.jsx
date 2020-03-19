@@ -5,7 +5,7 @@ import { th } from '@xstyled/system';
 
 const Wrapper = styled.div`
   width: ${props => props.width}px;
-  height: 20;
+  height: 20px;
 
   position: relative;
 
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 const WhiteBar = styled.div`
   width: ${props => props.width}px;
-  height: 20;
+  height: 20px;
   line-height: 20px;
 
   border-left: 1;
@@ -45,7 +45,7 @@ const Container = styled.div`
 
 const Progress = styled.div`
   width: ${props => props.width}px;
-  height: 17;
+  height: 17px;
   line-height: 18px;
 
   margin-left: 2;

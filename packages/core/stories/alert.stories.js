@@ -1,10 +1,10 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import withClippy from "../.storybook/src/clippy-addon/clippy-addon";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
-import Alert from "../components/Alert";
-import Button from "../components/Button";
-import Dropdown from "../components/Dropdown";
+import Alert from '../components/Alert';
+import Button from '../components/Button';
+import Dropdown from '../components/Dropdown';
 
 class AlertStory extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class AlertStory extends React.Component {
 
     this.state = {
       showAlert: false,
-      type: "error"
+      type: 'error',
     };
   }
 
@@ -31,7 +31,7 @@ class AlertStory extends React.Component {
         <div style={{ marginBottom: 10 }}>
           Alert Type:
           <Dropdown
-            options={["error", "info", "question", "warning"]}
+            options={['error', 'info', 'question', 'warning']}
             onChange={this.onImageChange}
           />
         </div>
@@ -56,7 +56,7 @@ const code = `<Alert
   closeAlert={this.handleCloseAlert}
 />`;
 
-storiesOf("Alert", module)
+storiesOf('Alert', module)
   .addDecorator(withClippy)
   .addParameters({ code })
-  .add("default", () => <AlertStory />);
+  .add('default', () => <AlertStory />);

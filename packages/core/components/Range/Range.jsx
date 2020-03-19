@@ -3,7 +3,7 @@ import { th } from '@xstyled/system';
 
 const trackStyle = css`
   width: 100%;
-  height: 4;
+  height: 4px;
 
   background: ${th('colors.black')};
 
@@ -22,8 +22,8 @@ const trackStyle = css`
 `;
 
 const thumbStyle = css`
-  width: 12;
-  height: 20;
+  width: 12px;
+  height: 20px;
 
   background-color: bg;
 

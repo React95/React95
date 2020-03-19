@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
-import icons from "@react95/icons";
+import React from 'react';
+import styled from 'styled-components';
+import { storiesOf } from '@storybook/react';
+import icons from '@react95/icons';
 
-import Icon from "../components/Icon";
+import Icon from '../components/Icon';
 
 const IconList = styled.ul`
   width: 50%;
@@ -23,7 +23,7 @@ const IconBox = styled.li`
   align-items: center;
 `;
 
-storiesOf("Icon", module).add("default", () => (
+storiesOf('Icon', module).add('default', () => (
   <>
     <IconList>
       {Object.keys(icons).map(icon => (

@@ -1,8 +1,8 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import withClippy from "../.storybook/src/clippy-addon/clippy-addon";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
-import List from "../components/List";
+import List from '../components/List';
 
 const code = `// First
 <List>
@@ -53,10 +53,10 @@ const code = `// First
 </List>
 `;
 
-storiesOf("List", module)
+storiesOf('List', module)
   .addDecorator(withClippy)
   .addParameters({ code })
-  .add("default", () => (
+  .add('default', () => (
     <>
       <List>
         <List.Item icon="folder_exe2">

@@ -11,8 +11,8 @@ import {
 } from './radioButtonStates';
 
 const Icon = styled.span`
-  width: 12;
-  height: 12;
+  width: 12px;
+  height: 12px;
 
   content: '';
   display: inline-block;

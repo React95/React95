@@ -47,8 +47,8 @@ const FolderStatus = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10;
-  height: 10;
+  width: 10px;
+  height: 10px;
   border: 1;
   border-color: ${th('colors.black')};
   background-color: ${th('colors.white')};
@@ -59,8 +59,8 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20;
-  height: 20;
+  width: 20px;
+  height: 20px;
   margin-right: 6;
   margin-left: ${props => (props.hasChildren ? 8 : 18)}px;
 `;

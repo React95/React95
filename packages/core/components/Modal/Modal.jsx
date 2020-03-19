@@ -26,7 +26,7 @@ const ModalWrapper = styled.div`
 `;
 
 const TitleBar = styled.div`
-  height: 18;
+  height: 18px;
   margin-bottom: 2;
 
   background-color: primary;
@@ -53,9 +53,9 @@ const Option = styled(Btn)`
   margin-right: 2;
   padding: 0;
 
-  width: 17;
-  height: 14;
-  min-width: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0px;
 
   font-size: 10;
 
@@ -94,7 +94,7 @@ const ButtonWrapper = styled.div`
 
   & ${Btn} {
     margin-right: 6;
-    min-width: 70;
+    min-width: 70px;
 
     &:last-child {
       margin-right: 0;

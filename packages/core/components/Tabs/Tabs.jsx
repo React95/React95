@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import styled from "@xstyled/styled-components";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled from '@xstyled/styled-components';
 
-import Tab from "./Tab";
-import Frame from "../Frame";
+import Tab from './Tab';
+import Frame from '../Frame';
 
 const Navbar = styled(Frame)`
   display: flex;
@@ -19,14 +19,14 @@ const NavContainer = styled(Frame)`
   box-shadow: out;
 `;
 
-NavContainer.displayName = "NavContainer";
+NavContainer.displayName = 'NavContainer';
 
 const If = ({ condition, children }) => condition && children;
 
 const Tabs = ({ children, style, defaultActiveTab, onChange, ...rest }) => {
   const firstTab = React.Children.toArray(children)[0];
   const [activeTab, setActiveTab] = useState(
-    defaultActiveTab || firstTab.props.title
+    defaultActiveTab || firstTab.props.title,
   );
 
   return (
@@ -68,19 +68,19 @@ const Tabs = ({ children, style, defaultActiveTab, onChange, ...rest }) => {
 Tabs.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]),
   // eslint-disable-next-line react/forbid-prop-types
   style: PropTypes.object,
   defaultActiveTab: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 Tabs.defaultProps = {
   children: [],
   style: {},
   defaultActiveTab: undefined,
-  onChange: undefined
+  onChange: undefined,
 };
 
 export default Tabs;

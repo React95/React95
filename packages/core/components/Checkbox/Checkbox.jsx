@@ -8,8 +8,8 @@ import checkDisabled from '../shared/assets/pattern/check-disabled.svg';
 import bgpattern from '../shared/assets/pattern/dropdown.png';
 
 const Icon = styled.span`
-  width: 12;
-  height: 12;
+  width: 12px;
+  height: 12px;
 
   content: '';
   display: inline-block;
@@ -38,8 +38,8 @@ const Text = styled.span`
 `;
 
 const Field = styled.input`
-  width: 12;
-  height: 12;
+  width: 12px;
+  height: 12px;
 
   margin: 0;
 
@@ -73,7 +73,7 @@ Field.displayName = 'Field';
 
 const Label = styled.label`
   display: inline-block;
-  height: 15;
+  height: 15px;
 
   line-height: 1.5;
 

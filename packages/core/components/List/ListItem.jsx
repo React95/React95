@@ -33,8 +33,8 @@ const Item = styled.li`
     color: ${th('colors.black')};
 
     i {
-      width: 18;
-      height: 20;
+      width: 18px;
+      height: 20px;
       margin-right: 6;
     }
   }
@@ -50,8 +50,8 @@ const Item = styled.li`
     css`
       &:after {
         position: absolute;
-        width: 5;
-        height: 8;
+        width: 5px;
+        height: 8px;
         right: 8px;
 
         content: '';
