@@ -27,7 +27,7 @@ class AlertStory extends React.Component {
   render() {
     const { showAlert, type } = this.state;
     return (
-      <React.Fragment>
+      <>
         <div style={{ marginBottom: 10 }}>
           Alert Type:
           <Dropdown
@@ -44,7 +44,7 @@ class AlertStory extends React.Component {
             closeAlert={this.handleCloseAlert}
           />
         )}
-      </React.Fragment>
+      </>
     );
   }
 }

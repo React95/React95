@@ -26,7 +26,7 @@ class ModalStory extends React.Component {
     const { children } = this.props;
     const { showModal } = this.state;
     return (
-      <React.Fragment>
+      <>
         <Button onClick={this.handleOpenModal}>Trigger Modal</Button>
         {showModal && (
           <Modal
@@ -59,7 +59,7 @@ class ModalStory extends React.Component {
             {children}
           </Modal>
         )}
-      </React.Fragment>
+      </>
     );
   }
 }

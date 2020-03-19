@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 const Wrapper = styled.div`
   width: ${props => props.width}px;
@@ -16,14 +17,20 @@ const WhiteBar = styled.div`
   height: 20px;
   line-height: 20px;
 
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
+  border-left: 1;
+  border-left-color: grays.3;
 
-  background: #fff;
-  color: #000;
+  border-top: 1;
+  border-top-color: grays.3;
 
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
-    0.5px 0.5px 0 0.5px #ffffff;
+  background: ${th('colors.white')};
+  color: ${th('colors.black')};
+
+  ${css`
+    box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
+      inset 1px 1px 0 0 ${th('colors.black')},
+      0.5px 0.5px 0 0.5px ${th('colors.white')};
+  `}
 `;
 
 const Container = styled.div`
@@ -36,23 +43,23 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const BlueBar = styled.div`
+const Progress = styled.div`
   width: ${props => props.width}px;
   height: 17px;
   line-height: 18px;
 
-  margin-left: 2px;
-  margin-top: 2px;
+  margin-left: 2;
+  margin-top: 2;
 
-  background: #000e7a;
-  color: #fff;
+  background-color: primary;
+  color: ${th('colors.white')};
 `;
 
 const ProgressBar = ({ width, percent, ...rest }) => (
   <Wrapper width={width} {...rest}>
     <WhiteBar width={width}>{`${percent}%`}</WhiteBar>
     <Container percent={percent}>
-      <BlueBar width={width}>{`${percent}%`}</BlueBar>
+      <Progress width={width}>{`${percent}%`}</Progress>
     </Container>
   </Wrapper>
 );

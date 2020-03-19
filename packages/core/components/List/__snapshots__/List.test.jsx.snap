@@ -30,8 +30,8 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c1:hover {
-  background-color: #00007f;
-  color: white;
+  background-color: #000e7a;
+  color: #ffffff;
 }
 
 .c1 ul {
@@ -39,7 +39,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   position: absolute;
   top: -2px;
   left: 97%;
-  color: #000;
+  color: #000000;
 }
 
 .c1 ul i {
@@ -49,13 +49,16 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c1 svg {
-  fill: white;
+  fill: #ffffff;
 }
 
 .c1:after {
   position: absolute;
+  width: 5px;
+  height: 8px;
+  right: 8px;
   content: '';
-  background-color: #000;
+  background-color: #000000;
   -webkit-mask-image: url('test-file-stub');
   mask-image: url('test-file-stub');
   -webkit-mask-position: center center;
@@ -64,13 +67,10 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   mask-size: 5px 8px;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  width: 5px;
-  height: 8px;
-  right: 8px;
 }
 
 .c1:hover:after {
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 .c1:hover ul {
@@ -96,8 +96,8 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c3:hover {
-  background-color: #00007f;
-  color: white;
+  background-color: #000e7a;
+  color: #ffffff;
 }
 
 .c3 ul {
@@ -105,7 +105,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   position: absolute;
   top: -2px;
   left: 97%;
-  color: #000;
+  color: #000000;
 }
 
 .c3 ul i {
@@ -115,14 +115,15 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c3 svg {
-  fill: white;
+  fill: #ffffff;
 }
 
 .c4 {
-  background-color: #a2a5a8;
   height: 1px;
-  border-top: 1px solid #868a8e;
-  border-bottom: 1px solid white;
+  border-top: 1px solid;
+  border-top-color: #868a8e;
+  border-bottom: 1px solid;
+  border-bottom-color: #ffffff;
   width: 98%;
   margin-left: 2px;
 }
@@ -134,7 +135,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   margin: 0;
   padding: 2px;
   list-style: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff,inset 0 0 0 1px #868a8e,1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
   width: 200px;
 }
 

@@ -1,19 +1,15 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '../shared/test/utils';
 import Tab from './Tab';
 import Tabs from './Tabs';
 
 describe('<Tabs />', () => {
-  function onClick() { }
+  function onClick() {}
   describe('Snapshot', () => {
     it('should match snapshot', () => {
       const { container } = render(
         <Tabs>
-          <Tab
-            title="example"
-            activeTab="example"
-            onClick={onClick}
-          >
+          <Tab title="example" activeTab="example" onClick={onClick}>
             <p>Example text</p>
           </Tab>
         </Tabs>,
@@ -23,24 +19,17 @@ describe('<Tabs />', () => {
   });
 
   describe('Active Tab', () => {
-    const TabComponent = () => render(
-      <Tabs>
-        <Tab
-          title="first"
-          activeTab="first"
-          onClick={onClick}
-        >
-          <p>first text</p>
-        </Tab>
-        <Tab
-          title="second"
-          activeTab="first"
-          onClick={onClick}
-        >
-          <p>second text</p>
-        </Tab>
-      </Tabs>,
-    );
+    const TabComponent = () =>
+      render(
+        <Tabs>
+          <Tab title="first" activeTab="first" onClick={onClick}>
+            <p>first text</p>
+          </Tab>
+          <Tab title="second" activeTab="first" onClick={onClick}>
+            <p>second text</p>
+          </Tab>
+        </Tabs>,
+      );
 
     it('should have first Tab active', () => {
       const { queryByText } = TabComponent();

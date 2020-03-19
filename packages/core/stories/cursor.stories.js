@@ -67,7 +67,7 @@ const Cursor = styled.li`
 `;
 
 storiesOf('Cursor', module).add('default', () => (
-  <React.Fragment>
+  <>
     <CursorList>
       {types.map(type => (
         <Cursor className={type} key={type}>
@@ -75,5 +75,5 @@ storiesOf('Cursor', module).add('default', () => (
         </Cursor>
       ))}
     </CursorList>
-  </React.Fragment>
+  </>
 ));

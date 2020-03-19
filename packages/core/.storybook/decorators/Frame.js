@@ -1,11 +1,13 @@
 import React from 'react';
-import GlobalStyle from '../../components/GlobalStyle';
+import { GlobalStyle, ThemeProvider } from '../../components';
 
 const Frame = storyFn => (
-  <React.Fragment>
-    <GlobalStyle />
-    {storyFn()}
-  </React.Fragment>
+  <ThemeProvider>
+    <div style={{ padding: 10 }}>
+      <GlobalStyle />
+      {storyFn()}
+    </div>
+  </ThemeProvider>
 );
 
 export default Frame;

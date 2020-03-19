@@ -24,9 +24,7 @@ function formatDate(date) {
   const monthIndex = date.getMonth();
   const year = date.getFullYear();
 
-  return (
-    `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`
-  );
+  return `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`;
 }
 
 const code = `<Tooltip text={${formatDate(new Date())}} delay={1000}>
@@ -38,12 +36,12 @@ storiesOf('Tooltip', module)
   .addDecorator(withClippy)
   .addParameters({ code })
   .add('default', () => (
-    <React.Fragment>
+    <>
       <br />
       <br />
       <br />
       <Tooltip>
         <span>Hover me</span>
       </Tooltip>
-    </React.Fragment>
+    </>
   ));

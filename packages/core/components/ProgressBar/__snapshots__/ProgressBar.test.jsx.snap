@@ -12,11 +12,13 @@ exports[`<ProgressBar /> Snapshots should match snapshot 1`] = `
   width: 300px;
   height: 20px;
   line-height: 20px;
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
-  background: #fff;
-  color: #000;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb,inset 1px 1px 0 0 #000000,0.5px 0.5px 0 0.5px #ffffff;
+  border-left: 1px solid;
+  border-left-color: #868a8e;
+  border-top: 1px solid;
+  border-top-color: #868a8e;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
 }
 
 .c2 {
@@ -33,8 +35,8 @@ exports[`<ProgressBar /> Snapshots should match snapshot 1`] = `
   line-height: 18px;
   margin-left: 2px;
   margin-top: 2px;
-  background: #000e7a;
-  color: #fff;
+  background-color: #000e7a;
+  color: #ffffff;
 }
 
 <div>

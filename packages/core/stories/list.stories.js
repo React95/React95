@@ -57,7 +57,7 @@ storiesOf('List', module)
   .addDecorator(withClippy)
   .addParameters({ code })
   .add('default', () => (
-    <React.Fragment>
+    <>
       <List>
         <List.Item icon="folder_exe2">
           <List>
@@ -107,5 +107,5 @@ storiesOf('List', module)
         <List.Divider />
         <List.Item>Properties</List.Item>
       </List>
-    </React.Fragment>
+    </>
   ));

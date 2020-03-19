@@ -20,7 +20,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked and disabl
   user-select: none;
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 18;
 }
 
 .c1 {
@@ -30,7 +30,8 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked and disabl
 
 .c1:focus ~ .c4,
 .c1:active + .c4 {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
@@ -49,7 +50,8 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked and disabl
 .c0 {
   position: relative;
   margin-bottom: 10px;
-  color: #868686;
+  display: block;
+  color: #868a8e;
   text-shadow: 0.5px 0.5px #d2d2d2;
 }
 
@@ -94,7 +96,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked prop 1`] =
   user-select: none;
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 18;
 }
 
 .c1 {
@@ -104,7 +106,8 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked prop 1`] =
 
 .c1:focus ~ .c4,
 .c1:active + .c4 {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
@@ -123,6 +126,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked prop 1`] =
 .c0 {
   position: relative;
   margin-bottom: 10px;
+  display: block;
 }
 
 <div>
@@ -164,7 +168,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
   user-select: none;
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 18;
 }
 
 .c1 {
@@ -174,7 +178,8 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
 
 .c1:focus ~ .c4,
 .c1:active + .c4 {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
@@ -193,7 +198,8 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
 .c0 {
   position: relative;
   margin-bottom: 10px;
-  color: #868686;
+  display: block;
+  color: #868a8e;
   text-shadow: 0.5px 0.5px #d2d2d2;
 }
 
@@ -237,7 +243,7 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
   user-select: none;
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 18;
 }
 
 .c1 {
@@ -247,7 +253,8 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
 
 .c1:focus ~ .c4,
 .c1:active + .c4 {
-  border: 1px dotted;
+  border-width: 1px;
+  border-style: dotted;
   padding: 0;
 }
 
@@ -266,6 +273,7 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
 .c0 {
   position: relative;
   margin-bottom: 10px;
+  display: block;
 }
 
 <div>

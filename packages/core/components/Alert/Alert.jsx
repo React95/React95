@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
+
 import Modal from '../Modal';
 
 import {
@@ -33,7 +34,7 @@ Dialog.Image = styled.div`
   height: 45px;
   width: 45px;
   background-position: center;
-  margin-right: 10px;
+  margin-right: 10;
 `;
 
 Dialog.Message = styled.div`

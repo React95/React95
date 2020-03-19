@@ -1,19 +1,21 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
+
 import ListItem from './ListItem';
 import Divider from './ListDivider';
 
 const List = styled.ul`
-  background-color: #c3c7cb;
-  padding: 5px 20px 6px;
+  background-color: bg;
+  padding: 5 20 6;
   border: none;
 
   margin: 0;
-  padding: 2px;
+  padding: 2;
   list-style: none;
 
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-    1px 1px 0 1px #000;
+  box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
+    inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 1px ${th('colors.black')};
 
   ${({ width }) => `
     width: ${width}px;

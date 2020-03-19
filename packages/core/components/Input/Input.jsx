@@ -1,16 +1,30 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { padding, borders, shadow } from "styled-system";
 
 const Input = styled.input`
   outline: none;
   border: none;
+  cursor: text;
 
-  padding: 3px 3px 5px 3px;
-
-  border-left: 1px solid #868a8e;
-  border-top: 1px solid #868a8e;
-
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000,
-    0.5px 0.5px 0 0.5px #ffffff;
+  ${padding}
+  ${borders}
+  ${shadow}
 `;
+
+Input.defaultProps = {
+  pt: 3,
+  pr: 3,
+  pb: 5,
+  pl: 3,
+  borderBottom: 0,
+  borderRight: 0,
+  borderTopWidth: 1,
+  borderTopStyle: 1,
+  borderTopColor: "grays.3",
+  borderLeftWidth: 1,
+  borderLeftStyle: 1,
+  borderLeftColor: "grays.3",
+  boxShadow: "input"
+};
 
 export default Input;

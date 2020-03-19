@@ -19,7 +19,7 @@ const Field = styled.fieldset`
   border-right-width: 1px;
   border-right-color: #848284;
 
-  box-shadow: 1px 1px 0 0 #e6e6e6 /* inset 1px 1px 0 0 #e6e6e6 */;
+  box-shadow: 1px 1px 0 0 #e6e6e6;
 `;
 
 const Legend = styled.legend`

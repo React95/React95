@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
+
 import Icon from '../Icon';
 import treeMidLines from '../shared/assets/tree-mid.png';
 import treeLastLines from '../shared/assets/tree-last.png';
@@ -47,8 +49,9 @@ const FolderStatus = styled.div`
   justify-content: center;
   width: 10px;
   height: 10px;
-  border: 1px solid black;
-  background-color: white;
+  border: 1;
+  border-color: ${th('colors.black')};
+  background-color: ${th('colors.white')};
   font-size: 11px;
 `;
 
@@ -58,22 +61,23 @@ const IconContainer = styled.div`
   justify-content: center;
   width: 20px;
   height: 20px;
-  margin-right: 6px;
+  margin-right: 6;
   margin-left: ${props => (props.hasChildren ? 8 : 18)}px;
 `;
 
 const NodeChildren = styled.ul`
-  padding: 0px 0px 0px 22px;
+  padding: 0 0 0 22;
   background-image: url(${treeNodeChildrenLine});
   background-repeat: repeat-y;
 `;
 
 const Label = styled.span`
   outline: none;
-  padding: 1px;
+  padding: 1;
 
   :focus {
-    border: 1px dotted;
+    border-width: 1;
+    border-style: dotted;
     padding: 0;
   }
 `;
@@ -158,7 +162,7 @@ Node.propTypes = {
       iconName: PropTypes.string,
       id: PropTypes.number,
       onClick: PropTypes.func,
-    })
+    }),
   ),
   id: PropTypes.number,
   onClick: PropTypes.func,

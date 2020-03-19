@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@xstyled/styled-components';
 
-const Tip = styled.div`
+import Frame from '../Frame';
+
+const Tip = styled(Frame)`
   background: radial-gradient(#ff0 20%, transparent 20%) 0 0,
     radial-gradient(#ff0 20%, transparent 20%) 4px 4px,
     radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 0 1px,
     radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 3px 4px;
   background-size: 7px 7px;
-  background-color: #fff;
-  border: 1px solid #000;
-  padding: 2px 2px 2px 4px;
+  background-color: white;
+  border: 1;
+  padding: 2 2 2 4;
+  box-shadow: none;
   position: absolute;
   top: -20px;
   text-align: center;
@@ -25,7 +28,7 @@ const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-const Tooltip = ({ children, text, delay, ...rest }) => {
+const Tooltip = forwardRef(({ children, text, delay, ...rest }, ref) => {
   const [show, setShow] = useState(false);
   const [delayTimer, setDelayTimer] = useState(null);
 
@@ -43,12 +46,17 @@ const Tooltip = ({ children, text, delay, ...rest }) => {
   };
 
   return (
-    <Wrapper onMouseEnter={handleEnter} onMouseLeave={handleLeave} {...rest}>
+    <Wrapper
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      {...rest}
+      ref={ref}
+    >
       <Tip show={show}>{text}</Tip>
       {children}
     </Wrapper>
   );
-};
+});
 
 function formatDate(date) {
   const monthNames = [
@@ -70,9 +78,7 @@ function formatDate(date) {
   const monthIndex = date.getMonth();
   const year = date.getFullYear();
 
-  return (
-    `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`
-  );
+  return `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`;
 }
 
 Tooltip.propTypes = {

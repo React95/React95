@@ -24,7 +24,7 @@ const IconBox = styled.li`
 `;
 
 storiesOf('Icon', module).add('default', () => (
-  <React.Fragment>
+  <>
     <IconList>
       {Object.keys(icons).map(icon => (
         <IconBox key={icon}>
@@ -33,5 +33,5 @@ storiesOf('Icon', module).add('default', () => (
         </IconBox>
       ))}
     </IconList>
-  </React.Fragment>
+  </>
 ));
