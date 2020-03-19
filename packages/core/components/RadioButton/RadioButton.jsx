@@ -30,7 +30,7 @@ const Text = styled.span`
 
   position: absolute;
   top: 0;
-  left: 18;
+  left: 18px;
 `;
 
 const Field = styled.input.attrs({
