@@ -55,7 +55,7 @@ const Option = styled(Btn)`
 
   width: 17px;
   height: 14px;
-  min-width: 0px;
+  min-width: 0;
 
   font-size: 10;
 
