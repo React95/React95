@@ -52,7 +52,7 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
 
 <div>
   <ol
-    class="c0"
+    class="Frame-sc-1eyf5rz-0 c0"
   >
     <li
       class="c1"
@@ -61,7 +61,7 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
     </li>
   </ol>
   <div
-    class="c2"
+    class="Frame-sc-1eyf5rz-0 c2"
   >
     <p>
       Example text
