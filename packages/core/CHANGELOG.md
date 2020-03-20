@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.2](https://github.com/React95/React95/compare/@react95/core@2.5.1...@react95/core@2.5.2) (2020-03-20)
+
+
+### Bug Fixes
+
+* **globalstyle:** remove font-size rule for ANYBODY ([b5787a3](https://github.com/React95/React95/commit/b5787a3b06ed907ae87fbbb8bd98e610a3185cee)), closes [#132](https://github.com/React95/React95/issues/132)
+
+
+
+
+
 ## [2.5.1](https://github.com/React95/React95/compare/@react95/core@2.5.0...@react95/core@2.5.1) (2020-03-19)
 
 
