@@ -64,7 +64,6 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     font-family: 'MS Sans Serif';
-    font-size: 12px;
     box-sizing: border-box;
   }
 

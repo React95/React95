@@ -418,15 +418,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 6px;
 }
 
-.c10 .c5 {
-  margin-right: 6px;
-  min-width: 70px;
-}
-
-.c10 .c5:last-child {
-  margin-right: 0;
-}
-
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -653,24 +644,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 6px;
-}
-
-.c10 .c5 {
-  margin-right: 6px;
-  min-width: 70px;
-}
-
-.c10 .c5:last-child {
-  margin-right: 0;
-}
-
-.c11 .c5 {
-  margin-right: 6px;
-  min-width: 70px;
-}
-
-.c11 .c5:last-child {
-  margin-right: 0;
 }
 
 .c8 {
