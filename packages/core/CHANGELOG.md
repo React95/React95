@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.3](https://github.com/React95/React95/compare/@react95/core@2.5.2...@react95/core@2.5.3) (2020-03-20)
+
+
+### Bug Fixes
+
+* **globalstyle:** add font-size into body ([be6a564](https://github.com/React95/React95/commit/be6a5649a4d93b0c46a494283597817754e65e79))
+
+
+
+
+
 ## [2.5.2](https://github.com/React95/React95/compare/@react95/core@2.5.1...@react95/core@2.5.2) (2020-03-20)
 
 
