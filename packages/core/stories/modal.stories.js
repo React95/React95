@@ -30,6 +30,8 @@ class ModalStory extends React.Component {
         <Button onClick={this.handleOpenModal}>Trigger Modal</Button>
         {showModal && (
           <Modal
+            width={300}
+            height={200}
             icon="computer"
             title="Browse"
             closeModal={this.handleCloseModal}

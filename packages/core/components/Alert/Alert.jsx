@@ -56,7 +56,6 @@ const Alert = ({ type, title, message, onCloseModal, closeAlert, ...rest }) => {
       buttonsAlignment="center"
       buttons={[{ value: 'OK', onClick: closeAlert }]}
       defaultPosition={defaultPosition}
-      width="auto"
       height={120}
       {...rest}
     >
