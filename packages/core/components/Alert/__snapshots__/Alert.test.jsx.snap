@@ -36,7 +36,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: autopx;
+  width: auto;
   height: 120px;
   top: 50px;
   background-color: #c3c7cb;
@@ -196,7 +196,6 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
     class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
-    width="auto"
   >
     <div
       class="c1 draggable"
@@ -289,7 +288,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: autopx;
+  width: auto;
   height: 120px;
   top: 50px;
   background-color: #c3c7cb;
@@ -449,7 +448,6 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
     class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
-    width="auto"
   >
     <div
       class="c1 draggable"
@@ -542,7 +540,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: autopx;
+  width: auto;
   height: 120px;
   top: 50px;
   background-color: #c3c7cb;
@@ -702,7 +700,6 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
     class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
-    width="auto"
   >
     <div
       class="c1 draggable"
@@ -795,7 +792,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: autopx;
+  width: auto;
   height: 120px;
   top: 50px;
   background-color: #c3c7cb;
@@ -955,7 +952,6 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
     class="c0 react-draggable"
     height="120"
     style="transform: translate(362px,304px);"
-    width="auto"
   >
     <div
       class="c1 draggable"
