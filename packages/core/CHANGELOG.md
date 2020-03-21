@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.4](https://github.com/React95/React95/compare/@react95/core@2.5.3...@react95/core@2.5.4) (2020-03-21)
+
+
+### Bug Fixes
+
+* **alert:** fix alert width ([d196f20](https://github.com/React95/React95/commit/d196f20a5d9a650ccd077a99abe578b88fee0448))
+* **modal:** remove hardcoded width and height ([6cc1c1b](https://github.com/React95/React95/commit/6cc1c1b561e016572f20c04f79c68489162ed458)), closes [#105](https://github.com/React95/React95/issues/105)
+
+
+
+
+
 ## [2.5.3](https://github.com/React95/React95/compare/@react95/core@2.5.2...@react95/core@2.5.3) (2020-03-20)
 
 
