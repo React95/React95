@@ -15,7 +15,10 @@ const ModalWrapper = styled.div`
   position: fixed;
 
   padding: 2 2 8;
-  ${({ width, height }) => `width: ${width}px; height: ${height}px;`}
+  ${({ width, height }) => `
+    width: ${width ? `${width}px` : 'auto'};
+    height: ${height ? `${height}px` : 'auto'};
+  `}
 
   top: 50px;
 
@@ -256,8 +259,8 @@ Modal.defaultProps = {
   defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],
-  width: 300,
-  height: 200,
+  width: undefined,
+  height: undefined,
   closeModal: () => {},
 };
 

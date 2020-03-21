@@ -46,8 +46,8 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: auto;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
@@ -203,9 +203,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 <div>
   <div
     class="c0 react-draggable"
-    height="200"
     style="transform: translate(0px,0px);"
-    width="300"
   >
     <div
       class="c1 draggable"
@@ -322,8 +320,8 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: auto;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
@@ -445,9 +443,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 <div>
   <div
     class="c0 react-draggable"
-    height="200"
     style="transform: translate(0px,0px);"
-    width="300"
   >
     <div
       class="c1 draggable"
@@ -550,8 +546,8 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: auto;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
@@ -673,9 +669,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 <div>
   <div
     class="c0 react-draggable"
-    height="200"
     style="transform: translate(0px,0px);"
-    width="300"
   >
     <div
       class="c1 draggable"
