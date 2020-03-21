@@ -63,6 +63,15 @@ describe('<Modal />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with width and height props', () => {
+      const { container } = render(
+        <Modal icon="bat" title="file.bat" width={300} height={200}>
+          Hello
+        </Modal>,
+      );
+      expect(container).toMatchSnapshot();
+    });
   });
 
   describe('closeModal prop', () => {
