@@ -1,3 +1,5 @@
 import Modal from './Modal';
+import ModalContext from './ModalContext';
+import ModalProvider from './ModalProvider';
 
-export default Modal;
+export { Modal, ModalContext, ModalProvider };

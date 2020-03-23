@@ -21,7 +21,6 @@ Frame.propTypes = {
 Frame.defaultProps = {
   w: 'auto',
   h: 'auto',
-  p: 10,
   bg: 'bg',
   boxShadow: 'out',
 };

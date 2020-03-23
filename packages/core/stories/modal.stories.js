@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
-import Modal from '../components/Modal';
+import { Modal } from '../components/Modal';
 import Button from '../components/Button';
 import List from '../components/List';
 

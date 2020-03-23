@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from '@xstyled/styled-components';
+import styled, { css, backgroundColor } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
 import Btn from '../shared-style/Btn';
 import Button from '../Button';
 import Icon from '../Icon';
+import ModalContext from './ModalContext';
 
 const ModalWrapper = styled.div`
   display: flex;
@@ -15,10 +16,6 @@ const ModalWrapper = styled.div`
   position: fixed;
 
   padding: 2 2 8;
-  ${({ width, height }) => `
-    width: ${width ? `${width}px` : 'auto'};
-    height: ${height ? `${height}px` : 'auto'};
-  `}
 
   top: 50px;
 
@@ -26,17 +23,23 @@ const ModalWrapper = styled.div`
 
   box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
     inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 1px ${th('colors.black')};
+
+  ${({ width, height }) => `
+    width: ${width ? `${width}px` : 'auto'};
+    height: ${height ? `${height}px` : 'auto'};
+  `}
+  ${({ active }) => (active ? `z-index: 999;` : '')}
 `;
 
 const TitleBar = styled.div`
   height: 18px;
   margin-bottom: 2;
 
-  background-color: primary;
   color: ${th('colors.white')};
   padding: 2 2 0;
 
   display: flex;
+  ${backgroundColor}
 `;
 
 const Title = styled.div`
@@ -157,7 +160,20 @@ const Modal = ({
   height,
   ...rest
 }) => {
+  const {
+    addWindows,
+    removeWindows,
+    setActiveWindow,
+    activeWindow,
+  } = useContext(ModalContext);
   const [menuOpened, setMenuOpened] = useState('');
+
+  useEffect(() => {
+    addWindows({ icon, title });
+    setActiveWindow(title);
+
+    return () => removeWindows(title);
+  }, []);
 
   const iconStyle = {
     width: 15,
@@ -167,11 +183,19 @@ const Modal = ({
     },
   };
 
+  const isActive = title === activeWindow;
+
   return (
     <>
       <Draggable handle=".draggable" defaultPosition={defaultPosition}>
-        <ModalWrapper width={width} height={height} {...rest}>
-          <TitleBar className="draggable">
+        <ModalWrapper
+          width={width}
+          height={height}
+          {...rest}
+          onClick={() => setActiveWindow(title)}
+          active={isActive}
+        >
+          <TitleBar className="draggable" bg={isActive ? 'primary' : 'grays.3'}>
             {icon && <Icon name={icon} {...iconStyle} />}
             <Title>{title}</Title>
             <OptionsBox>

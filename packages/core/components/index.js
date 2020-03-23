@@ -7,7 +7,7 @@ import Frame from './Frame';
 import Icon from './Icon';
 import Input from './Input';
 import List from './List';
-import Modal from './Modal';
+import { Modal, ModalContext } from './Modal';
 import ProgressBar from './ProgressBar';
 import RadioButton from './RadioButton';
 import Range from './Range';
@@ -28,6 +28,7 @@ export {
   Icon,
   Input,
   List,
+  ModalContext,
   Modal,
   ProgressBar,
   RadioButton,
