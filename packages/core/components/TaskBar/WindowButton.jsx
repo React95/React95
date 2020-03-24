@@ -28,7 +28,7 @@ const WindowButton = ({ children, small, icon, active, ...props }) => (
 );
 
 WindowButton.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.node,
   small: PropTypes.bool,
   icon: PropTypes.string,
   active: PropTypes.bool,
