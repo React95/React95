@@ -1,17 +1,26 @@
-import React from "react";
-import { Button, GlobalStyle } from "@react95/core";
-import logo from "./windows95_logo.png";
-import "./App.css";
+import React from 'react';
+import { Button, GlobalStyle, ThemeProvider } from '@react95/core';
+import styled from 'styled-components';
+
+import logo from './windows95_logo.png';
+
+const Centered = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
 
 function App() {
   return (
-    <div>
+    <ThemeProvider>
       <GlobalStyle></GlobalStyle>
-      <header>
-        <img src={logo} className="logo" alt="logo" />
+      <Centered>
+        <img src={logo} style={{ width: 200 }} />
         <Button>React95 Example</Button>
-      </header>
-    </div>
+      </Centered>
+    </ThemeProvider>
   );
 }
 
