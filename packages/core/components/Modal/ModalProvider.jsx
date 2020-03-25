@@ -7,9 +7,9 @@ const ModalProvider = ({ children }) => {
   const [windows, setWindows] = useState([]);
   const [activeWindow, setActiveWindow] = useState(undefined);
 
-  const addWindows = window => setWindows([...windows, window]);
+  const addWindows = window => setWindows(state => [...state, window]);
   const removeWindows = title =>
-    setWindows(windows.filter(w => w.title !== title));
+    setWindows(state => state.filter(w => w.title !== title));
 
   return (
     <ModalContext.Provider
