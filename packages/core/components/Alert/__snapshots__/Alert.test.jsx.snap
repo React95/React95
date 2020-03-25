@@ -36,23 +36,24 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: auto;
-  height: 120px;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  width: auto;
+  height: 120px;
+  z-index: 999;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #000e7a;
   color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #000e7a;
 }
 
 .c2 {
@@ -288,23 +289,24 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: auto;
-  height: 120px;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  width: auto;
+  height: 120px;
+  z-index: 999;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #000e7a;
   color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #000e7a;
 }
 
 .c2 {
@@ -540,23 +542,24 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: auto;
-  height: 120px;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  width: auto;
+  height: 120px;
+  z-index: 999;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #000e7a;
   color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #000e7a;
 }
 
 .c2 {
@@ -792,23 +795,24 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   flex-direction: column;
   position: fixed;
   padding: 2px 2px 8px;
-  width: auto;
-  height: 120px;
   top: 50px;
   background-color: #c3c7cb;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  width: auto;
+  height: 120px;
+  z-index: 999;
 }
 
 .c1 {
   height: 18px;
   margin-bottom: 2px;
-  background-color: #000e7a;
   color: #ffffff;
   padding: 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #000e7a;
 }
 
 .c2 {
