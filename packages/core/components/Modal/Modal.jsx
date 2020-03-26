@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css, backgroundColor } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { css } from '@xstyled/styled-components';
+import { th, backgroundColor } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
 import Btn from '../shared-style/Btn';
@@ -195,7 +195,10 @@ const Modal = ({
           onClick={() => setActiveWindow(title)}
           active={isActive}
         >
-          <TitleBar className="draggable" bg={isActive ? 'primary' : 'grays.3'}>
+          <TitleBar
+            className="draggable"
+            backgroundColor={isActive ? 'primary' : 'grays.3'}
+          >
             {icon && <Icon name={icon} {...iconStyle} />}
             <Title>{title}</Title>
             <OptionsBox>
