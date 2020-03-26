@@ -28,7 +28,6 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
 }
 
 .c0 {
-  padding: 10px;
   background-color: #c3c7cb;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   display: -webkit-box;
@@ -43,7 +42,6 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
 }
 
 .c2 {
-  padding: 10px;
   background-color: #c3c7cb;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   padding: 12px;
