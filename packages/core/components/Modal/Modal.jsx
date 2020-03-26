@@ -28,7 +28,7 @@ const ModalWrapper = styled.div`
     width: ${width ? `${width}px` : 'auto'};
     height: ${height ? `${height}px` : 'auto'};
   `}
-  ${({ active }) => (active ? `z-index: 999;` : '')}
+  ${({ active }) => (active ? 'z-index: 999;' : '')}
 `;
 
 const TitleBar = styled.div`

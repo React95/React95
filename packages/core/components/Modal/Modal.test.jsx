@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '../shared/test/utils';
 import Modal from './Modal';
+import ModalContext from './ModalContext';
 import List from '../List';
 
 describe('<Modal />', () => {
@@ -69,6 +70,25 @@ describe('<Modal />', () => {
         <Modal icon="bat" title="file.bat" width={300} height={200}>
           Hello
         </Modal>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with different activeWindow', () => {
+      const { container } = render(
+        <ModalContext.Provider
+          value={{
+            windows: [],
+            addWindows: () => {},
+            removeWindows: () => {},
+            setActiveWindow: () => {},
+            activeWindow: '',
+          }}
+        >
+          <Modal icon="bat" title="file.bat" width={300} height={200}>
+            Hello
+          </Modal>
+        </ModalContext.Provider>,
       );
       expect(container).toMatchSnapshot();
     });
