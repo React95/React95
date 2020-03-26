@@ -27,7 +27,7 @@ const ClippyStyle = createGlobalStyle`
   .clippy-content {
     max-width: 200px;
     min-width: 120px;
-    font-family: 'Px Sans Nouveaux';
+    font-family: 'MS Sans Serif';
     font-size: 12px;
   }
 
