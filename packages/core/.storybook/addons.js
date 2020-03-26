@@ -1,1 +1,1 @@
-// import "./src/clippy-addon/register";
+import './src/clippy-addon/register';

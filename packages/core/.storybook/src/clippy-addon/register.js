@@ -4,8 +4,9 @@ import clippy from 'clippyjs';
 
 import { createGlobalStyle } from 'styled-components';
 
-import Modal from '../../../components/Modal';
+import { Modal } from '../../../components/Modal';
 import List from '../../../components/List';
+import ThemeProvider from '../../../components/ThemeProvider';
 import TextArea from '../../../components/TextArea';
 
 const ClippyStyle = createGlobalStyle`
@@ -27,7 +28,7 @@ const ClippyStyle = createGlobalStyle`
     max-width: 200px;
     min-width: 120px;
     font-family: 'Px Sans Nouveaux';
-    font-size: 10pt;
+    font-size: 12px;
   }
 
   .clippy-button {
@@ -36,6 +37,7 @@ const ClippyStyle = createGlobalStyle`
     margin-top: 10px;
     border-radius: 4px;
     padding: 4px 14px;
+    font-size: 12px;
   }
 
   .clippy-tip {
@@ -203,17 +205,19 @@ class Clippy extends React.Component {
       code,
     ].join('\n');
 
-    const rows = formattedCode.split('\n').length;
-
     return (
-      <>
+      <ThemeProvider>
         <ClippyStyle />
         {showModal && (
           <Modal
             icon="file_text"
             title={component}
-            left="40%"
-            top="15%"
+            style={{
+              left: '40%',
+              top: '15%',
+              width: 300,
+              height: 220,
+            }}
             closeModal={this._closeModal}
             ref={modal => (this.modal = modal)}
             menu={[
@@ -255,11 +259,11 @@ class Clippy extends React.Component {
               readOnly
               ref={textArea => (this.textArea = textArea)}
               defaultValue={formattedCode}
-              rows={rows > 10 ? (rows > 30 ? 30 : rows) : 10}
+              rows={10}
             />
           </Modal>
         )}
-      </>
+      </ThemeProvider>
     );
   }
 }
