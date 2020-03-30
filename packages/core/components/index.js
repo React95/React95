@@ -1,22 +1,23 @@
+import { Modal, ModalContext } from './Modal';
+import { Tab, Tabs } from './Tabs';
 import Alert from './Alert';
 import Button from './Button';
 import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
 import Fieldset from './Fieldset';
 import Frame from './Frame';
+import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
 import List from './List';
-import { Modal, ModalContext } from './Modal';
 import ProgressBar from './ProgressBar';
 import RadioButton from './RadioButton';
 import Range from './Range';
-import { Tab, Tabs } from './Tabs';
+import TaskBar from './TaskBar';
 import TextArea from './TextArea';
+import ThemeProvider from './ThemeProvider';
 import Tooltip from './Tooltip';
 import Tree from './Tree';
-import GlobalStyle from './GlobalStyle';
-import ThemeProvider from './ThemeProvider';
 
 export {
   Alert,
@@ -25,19 +26,20 @@ export {
   Dropdown,
   Fieldset,
   Frame,
+  GlobalStyle,
   Icon,
   Input,
   List,
-  ModalContext,
   Modal,
+  ModalContext,
   ProgressBar,
   RadioButton,
   Range,
   Tab,
   Tabs,
+  TaskBar,
   TextArea,
-  Tooltip,
-  GlobalStyle,
-  Tree,
   ThemeProvider,
+  Tooltip,
+  Tree,
 };
