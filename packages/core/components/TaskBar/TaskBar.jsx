@@ -53,9 +53,9 @@ const TaskBar = ({ list }) => {
         display="flex"
       >
         {windows &&
-          windows.map(({ icon, title }) => (
+          windows.map(({ icon, title }, index) => (
             <WindowButton
-              key={title}
+              key={`${title}-${index}`}
               icon={icon}
               active={title === activeWindow}
               onClick={() => setActiveWindow(title)}
