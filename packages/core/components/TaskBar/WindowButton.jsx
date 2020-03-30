@@ -14,11 +14,14 @@ const WindowButton = ({ children, small, icon, active, ...props }) => (
       maxWidth: 150,
       width: small ? undefined : '100%',
     }}
-    {...(active && {
-      boxShadow: 'in',
-      bg: 'grays.0',
-    })}
-    boxShadow={active ? 'in' : 'out'}
+    {...(active
+      ? {
+          boxShadow: 'in',
+          bg: 'grays.0',
+        }
+      : {
+          boxShadow: 'out',
+        })}
     {...props}
     mr={2}
   >
