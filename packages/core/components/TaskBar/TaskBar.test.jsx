@@ -54,5 +54,62 @@ describe('<TaskBar />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with one Modal', () => {
+      act(() => jest.advanceTimersByTime(1000));
+
+      const { container } = render(
+        <>
+          <Modal icon="bat" title="file.bat" />
+          <TaskBar />
+        </>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with two Modals', () => {
+      act(() => jest.advanceTimersByTime(1000));
+
+      const { container } = render(
+        <>
+          <Modal icon="windows_explorer" title="Windows Explorer" />
+          <Modal icon="bat" title="file.bat" />
+          <TaskBar />
+        </>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with list prop', () => {
+      act(() => jest.advanceTimersByTime(1000));
+
+      const { container, getByText } = render(
+        <TaskBar
+          list={
+            <List>
+              <List.Item icon="reader_closed">Local Disk (C:)</List.Item>
+              <List.Item icon="windows_explorer">Windows Explorer</List.Item>
+            </List>
+          }
+        />,
+      );
+
+      // closed
+      expect(container.querySelectorAll('li').length).toBe(0);
+      expect(container).toMatchSnapshot();
+
+      fireEvent.click(getByText('Start'));
+
+      // openned
+      expect(container.querySelectorAll('li').length).toBe(2);
+      expect(container).toMatchSnapshot();
+
+      fireEvent.click(container.querySelectorAll('li')[0]);
+
+      // click on list should close it
+      expect(container.querySelectorAll('li').length).toBe(0);
+    });
   });
 });
