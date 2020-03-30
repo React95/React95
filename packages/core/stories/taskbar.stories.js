@@ -58,7 +58,24 @@ const TaskBarStory = () => {
   );
 };
 
-const code = '<TaskBar />';
+const code = `<TaskBar
+  list={
+    <List>
+      <List.Item 
+        icon="reader_closed" 
+        onClick={() => { . . . }}
+      >
+        Local Disk (C:)
+      </List.Item>
+      <List.Item
+        icon="windows_explorer"
+        onClick={() => { . . . }}
+      >
+        Windows Explorer
+      </List.Item>
+    </List>
+  }
+/>`;
 
 storiesOf('TaskBar', module)
   .addDecorator(withClippy)
