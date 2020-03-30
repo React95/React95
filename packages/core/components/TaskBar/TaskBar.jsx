@@ -72,6 +72,7 @@ const TaskBar = ({ list }) => {
               icon={icon}
               active={title === activeWindow}
               onClick={() => setActiveWindow(title)}
+              small={false}
             >
               <Truncate>{title}</Truncate>
             </WindowButton>

@@ -85,6 +85,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
   padding: 2px 3px;
   margin-right: 2px;
   max-width: 150px;
+  width: 100%;
 }
 
 <div>
@@ -135,7 +136,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 }
 
 .c2 {
-  background-color: #e6e6e6;
+  background-color: #c3c7cb;
   box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -152,6 +153,12 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   padding: 2px 3px;
   margin-right: 2px;
   max-width: 150px;
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+  padding-top: 4px;
+  padding-right: 2px;
+  padding-bottom: 0;
+  padding-left: 4px;
 }
 
 <div>
@@ -211,6 +218,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
   padding: 2px 3px;
   margin-right: 2px;
   max-width: 150px;
+  width: 100%;
 }
 
 <div>
@@ -639,7 +647,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <div
-      class="Frame-sc-1eyf5rz-0 sc-pZnSc broGDj"
+      class="Frame-sc-1eyf5rz-0 sc-pZnSc dxpUGe"
     >
       <i
         class="Icon__I-x4qr3b-0 hVUbSq"
@@ -895,6 +903,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding: 2px 3px;
   margin-right: 2px;
   max-width: 150px;
+  width: 100%;
 }
 
 .c12 {
@@ -1177,7 +1186,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   box-shadow: none;
 }
 
-.c15 {
+.c16 {
   padding-left: 6px;
   padding-right: 6px;
   padding-top: 2px;
@@ -1186,7 +1195,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
 }
 
-.c18 {
+.c19 {
   background-color: #c3c7cb;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   background: radial-gradient(#ff0 20%,transparent 20%) 0 0, radial-gradient(#ff0 20%,transparent 20%) 4px 4px, radial-gradient(rgba(255,255,255,0.1) 20%,transparent 25%) 0 1px, radial-gradient(rgba(255,255,255,0.1) 20%,transparent 25%) 3px 4px;
@@ -1202,14 +1211,14 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   display: none;
 }
 
-.c16 {
+.c17 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c17 div:first-child {
+.c18 div:first-child {
   right: 0;
 }
 
@@ -1233,7 +1242,28 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   max-width: 150px;
 }
 
-.c14 {
+.c13 {
+  background-color: #c3c7cb;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2px 3px;
+  margin-right: 2px;
+  max-width: 150px;
+  width: 100%;
+}
+
+.c15 {
   background-color: #e6e6e6;
   box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
   display: -webkit-box;
@@ -1251,9 +1281,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding: 2px 3px;
   margin-right: 2px;
   max-width: 150px;
+  width: 100%;
 }
 
-.c13 {
+.c14 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1360,7 +1391,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       width="100%"
     >
       <div
-        class="c10"
+        class="c13"
       >
         <i
           class="c11"
@@ -1370,13 +1401,13 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
           width="20"
         />
         <span
-          class="c13"
+          class="c14"
         >
           Windows Explorer
         </span>
       </div>
       <div
-        class="c14"
+        class="c15"
       >
         <i
           class="c11"
@@ -1386,21 +1417,21 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
           width="20"
         />
         <span
-          class="c13"
+          class="c14"
         >
           file.bat
         </span>
       </div>
     </div>
     <div
-      class="c15"
+      class="c16"
       style="display: flex; justify-content: center; align-items: center;"
     >
       <div
-        class="c16 c17"
+        class="c17 c18"
       >
         <div
-          class="c18"
+          class="c19"
         >
           30 March 2020
         </div>
