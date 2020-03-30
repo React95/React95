@@ -18,6 +18,7 @@ const Truncate = styled.span`
 
 const TaskBar = ({ list }) => {
   const [showList, toggleShowList] = useState(false);
+  const [activeStart, toggleActiveStart] = useState(false);
   const { windows, activeWindow, setActiveWindow } = useContext(ModalContext);
 
   return (
@@ -37,12 +38,23 @@ const TaskBar = ({ list }) => {
       {showList && (
         <Frame
           style={{ position: 'absolute', bottom: 28 }}
-          onClick={() => toggleShowList(false)}
+          onClick={() => {
+            toggleActiveStart(false);
+            toggleShowList(false);
+          }}
         >
           {list}
         </Frame>
       )}
-      <WindowButton small icon="logo" onClick={() => toggleShowList(!showList)}>
+      <WindowButton
+        small
+        icon="logo"
+        active={activeStart}
+        onClick={() => {
+          toggleActiveStart(!activeStart);
+          toggleShowList(!showList);
+        }}
+      >
         Start
       </WindowButton>
 
