@@ -1,20 +1,37 @@
 import React from 'react';
+
 import { render, fireEvent, act } from '../shared/test/utils';
 
 import { Modal } from '../Modal';
 import List from '../List';
+import Tooltip from '../Tooltip';
 
 import Clock from './Clock';
 import WindowButton from './WindowButton';
 import TaskBar from './TaskBar';
 
+const WINDOWS95_LAUNCH_DATE = '24 August 1995';
+
+const tooltipDefaultText = Tooltip.defaultProps.text;
+
 describe('<TaskBar />', () => {
-  beforeAll(() => jest.useFakeTimers());
-  afterAll(() => jest.useRealTimers());
+  beforeAll(() => {
+    jest.useFakeTimers();
+
+    Tooltip.defaultProps.text = WINDOWS95_LAUNCH_DATE;
+  });
+
+  afterAll(() => {
+    jest.useRealTimers();
+
+    Tooltip.defaultProps.text = tooltipDefaultText;
+  });
 
   describe('Snapshots', () => {
     describe('<Clock />', () => {
       it('should match snapshot', () => {
+        act(() => jest.advanceTimersByTime(2000));
+
         const { container } = render(<Clock />);
         expect(container).toMatchSnapshot();
       });
