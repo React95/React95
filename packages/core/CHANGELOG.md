@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/React95/React95/compare/@react95/core@2.5.4...@react95/core@2.6.0) (2020-03-31)
+
+
+### Bug Fixes
+
+* **clippy:** add 'MS Sans Serif' font-family to clippy baloon ([811e3ea](https://github.com/React95/React95/commit/811e3eacbe1873349db35dca6417c873d4f03824))
+* **dropdown:** fix paddings on windows ([983be6b](https://github.com/React95/React95/commit/983be6b8e3379c3529e998c6e2e30272eda74c9d))
+* **taskbar:** mock tooltip date on tests ([bea442a](https://github.com/React95/React95/commit/bea442a373b4513428986e01577725523b6a1d44))
+* **windowbutton:** change proptype from string to node ([19bb88f](https://github.com/React95/React95/commit/19bb88f3e2150f7b92af495d5728be34729a8e64))
+
+
+### Features
+
+* **clippy:** lOOK WHO IS BACK!? ([dc0120f](https://github.com/React95/React95/commit/dc0120f7f7522c6a0cf86bdac57821e35dac496d))
+* **modalcontext:** add defaultValues to createContext ([881831b](https://github.com/React95/React95/commit/881831bdf9078a638f24dd3fdf1c8aff2b597292))
+* **taskbar:** add index to windowbutton key to be possible to have modals with the same name ([ffe53a7](https://github.com/React95/React95/commit/ffe53a752972b14d1693a29a12a0883a8683387b))
+* **taskbar:** add taskbar to core index ([168568c](https://github.com/React95/React95/commit/168568c2ddd26d74581c505371d09639974265a4))
+* **taskbar:** new component: TaskBar :tada: ([e065b7c](https://github.com/React95/React95/commit/e065b7cd95933c0ab9fa906502e993d8e26e056a))
+
+
+
+
+
 ## [2.5.4](https://github.com/React95/React95/compare/@react95/core@2.5.3...@react95/core@2.5.4) (2020-03-21)
 
 
