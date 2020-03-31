@@ -46,7 +46,7 @@ const Select = styled.select`
   width: 100%;
   height: 20px;
 
-  padding: 3 3 5;
+  padding: 3;
 
   background-color: white;
 

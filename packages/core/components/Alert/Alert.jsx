@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@xstyled/styled-components';
 
-import Modal from '../Modal';
+import { Modal } from '../Modal';
 
 import {
   dialogError,
