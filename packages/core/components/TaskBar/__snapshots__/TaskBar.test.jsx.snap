@@ -48,7 +48,7 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
       <div
         class="c3"
       >
-        30 March 2020
+        24 August 1995
       </div>
       
     </div>
@@ -403,7 +403,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
         <div
           class="c7"
         >
-          30 March 2020
+          24 August 1995
         </div>
         
       </div>
@@ -531,7 +531,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
         <div
           class="c7"
         >
-          30 March 2020
+          24 August 1995
         </div>
         
       </div>
@@ -673,7 +673,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
         <div
           class="Frame-sc-1eyf5rz-0 sc-pzYib fimPJW"
         >
-          30 March 2020
+          24 August 1995
         </div>
         
       </div>
@@ -1001,7 +1001,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         <div
           class="c16"
         >
-          30 March 2020
+          24 August 1995
         </div>
         
       </div>
@@ -1433,7 +1433,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         <div
           class="c19"
         >
-          30 March 2020
+          24 August 1995
         </div>
         
       </div>
