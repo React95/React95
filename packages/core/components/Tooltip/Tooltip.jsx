@@ -17,7 +17,7 @@ const Tip = styled(Frame)`
   position: absolute;
   top: -20px;
   text-align: center;
-  z-index: 100;
+  z-index: taskbar;
   display: ${({ show }) => (show ? 'block' : 'none')};
 `;
 

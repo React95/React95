@@ -28,7 +28,12 @@ const ModalWrapper = styled.div`
     width: ${width ? `${width}px` : 'auto'};
     height: ${height ? `${height}px` : 'auto'};
   `}
-  ${({ active }) => (active ? 'z-index: 999;' : '')}
+  ${({ active }) =>
+    active
+      ? css`
+          z-index: modal;
+        `
+      : ''}
 `;
 
 const TitleBar = styled.div`
@@ -94,7 +99,7 @@ const Content = styled.div`
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: ${props => props.buttonsAlignment};
+  justify-content: ${(props) => props.buttonsAlignment};
 
   padding: 0 6 6 6;
 

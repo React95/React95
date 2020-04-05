@@ -23,21 +23,21 @@ const TaskBar = ({ list }) => {
 
   return (
     <Frame
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        display: 'flex',
-        justifyContent: 'space-between',
-        height: 28,
-      }}
+      position="fixed"
+      bottom={0}
+      left={0}
+      right={0}
+      display="flex"
+      justifyContent="space-between"
+      height="28"
       width="100%"
-      p={2}
+      padding={2}
+      zIndex="taskbar"
     >
       {showList && (
         <Frame
-          style={{ position: 'absolute', bottom: 28 }}
+          position="absolute"
+          bottom={28}
           onClick={() => {
             toggleActiveStart(false);
             toggleShowList(false);
