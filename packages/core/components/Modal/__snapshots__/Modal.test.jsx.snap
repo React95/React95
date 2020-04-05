@@ -51,7 +51,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
   width: auto;
   height: auto;
-  z-index: 999;
+  z-index: 1;
 }
 
 .c1 {
@@ -326,7 +326,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
   width: auto;
   height: auto;
-  z-index: 999;
+  z-index: 1;
 }
 
 .c1 {
@@ -553,7 +553,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
   width: auto;
   height: auto;
-  z-index: 999;
+  z-index: 1;
 }
 
 .c1 {
@@ -918,7 +918,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
   width: 300px;
   height: 200px;
-  z-index: 999;
+  z-index: 1;
 }
 
 .c1 {

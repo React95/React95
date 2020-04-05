@@ -13,7 +13,7 @@ exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
   position: absolute;
   top: -20px;
   text-align: center;
-  z-index: 100;
+  z-index: 2;
   display: none;
 }
 
