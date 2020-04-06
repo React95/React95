@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { space, layout, color, flexbox, shadow } from 'styled-system';
+import { space, layout, color, flexbox, shadow, position } from 'styled-system';
 import propTypes from '@styled-system/prop-types';
 
 const Frame = styled.div`
@@ -8,6 +8,7 @@ const Frame = styled.div`
   ${color}
   ${flexbox}
   ${shadow}
+  ${position}
 `;
 
 Frame.propTypes = {

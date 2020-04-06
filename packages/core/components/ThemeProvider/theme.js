@@ -50,10 +50,14 @@ const shadows = {
           0.5px 0.5px 0 0.5px ${colors.white}`,
 };
 
+const zIndices = [0, 1, 2];
+[, zIndices.modal, zIndices.taskbar] = zIndices;
+
 export default {
   colors,
   space,
   shadows,
   borderWidths,
   borderStyles,
+  zIndices,
 };
