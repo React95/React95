@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/React95/React95/compare/@react95/core@2.6.0...@react95/core@2.7.0) (2020-04-06)
+
+
+### Features
+
+* **frame:** add position to the Frame component ([9caf128](https://github.com/React95/React95/commit/9caf128316b4f644698987f9e16910eec10ea320))
+* **theme:** add zIndices and its alias: modal and taskbar ([b454a4e](https://github.com/React95/React95/commit/b454a4e652077bf4e52fb10f2abb15738629e3db))
+
+
+
+
+
 # [2.6.0](https://github.com/React95/React95/compare/@react95/core@2.5.4...@react95/core@2.6.0) (2020-03-31)
 
 
