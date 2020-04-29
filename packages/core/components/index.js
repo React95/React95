@@ -18,6 +18,7 @@ import TextArea from './TextArea';
 import ThemeProvider from './ThemeProvider';
 import Tooltip from './Tooltip';
 import Tree from './Tree';
+import Video from './Video';
 
 export {
   Alert,
@@ -42,4 +43,5 @@ export {
   ThemeProvider,
   Tooltip,
   Tree,
+  Video,
 };
