@@ -14,8 +14,10 @@
     "@styled-system/prop-types": "^5.1.5",
     "@xstyled/styled-components": "^1.17.0",
     "clippyjs": "^0.0.3",
+    "icojs": "^0.14.0",
     "prop-types": "^15.7.2",
     "react-draggable": "^4.2.0",
+    "react-virtualized": "^9.21.2",
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
