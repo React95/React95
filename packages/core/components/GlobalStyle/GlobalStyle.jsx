@@ -132,39 +132,39 @@ const GlobalStyle = createGlobalStyle`
     border-bottom: 2px solid black;
   }
 
-  html, .auto, *   { cursor: url('${auto}'), auto; }
-  .default         { cursor: url('${auto}'), default; }
-  .none            { cursor: none; }
-  .help            { cursor: url('${help}'), help; }
-  .pointer         { cursor: url('${pointer}'), pointer; }
-  .progress        { cursor: url('${progress}'), progress; }
-  .wait            { cursor: url('${wait}'), wait; }
-  .crosshair       { cursor: url('${crosshair}'), crosshair; }
-  .text            { cursor: url('${text}'), text; }
-  .vertical-text   { cursor: url('${verticalText}'), vertical-text; }
-  .alias           { cursor: url('${alias}'), alias; }
-  .copy            { cursor: url('${copy}'), copy; }
-  .move            { cursor: url('${move}'), move; }
-  .no-drop         { cursor: url('${noDrop}'), no-drop; }
-  .not-allowed     { cursor: url('${notAllowed}'), not-allowed; }
-  .grab            { cursor: url('${grab}'), grab; }
-  .grabbing        { cursor: url('${grabbing}'), grabbing; }
-  .col-resize      { cursor: url('${colResize}'), col-resize; }
-  .row-resize      { cursor: url('${rowResize}'), row-resize; }
-  .n-resize        { cursor: url('${nResize}'), n-resize; }
-  .e-resize        { cursor: url('${eResize}'), e-resize; }
-  .s-resize        { cursor: url('${sResize}'), s-resize; }
-  .w-resize        { cursor: url('${wResize}'), w-resize; }
-  .ns-resize       { cursor: url('${nsResize}'), ns-resize; }
-  .ew-resize       { cursor: url('${ewResize}'), ew-resize; }
-  .ne-resize       { cursor: url('${neResize}'), ne-resize; }
-  .nw-resize       { cursor: url('${nwResize}'), nw-resize; }
-  .se-resize       { cursor: url('${seResize}'), se-resize; }
-  .sw-resize       { cursor: url('${swResize}'), sw-resize; }
-  .nesw-resize     { cursor: url('${neswResize}'), nesw-resize; }
-  .nwse-resize     { cursor: url('${nwseResize}'), nwse-resize; }
-  .zoom-in         { cursor: url('${zoomIn}'), zoom-in; }
-  .zoom-out        { cursor: url('${zoomOut}'), zoom-out; }
+  html, .auto, *       { cursor: url('${auto}'), auto; }
+  .default             { cursor: url('${auto}'), default; }
+  .none                { cursor: none; }
+  .help                { cursor: url('${help}'), help; }
+  .pointer, :any-link  { cursor: url('${pointer}'), pointer; }
+  .progress            { cursor: url('${progress}'), progress; }
+  .wait                { cursor: url('${wait}'), wait; }
+  .crosshair           { cursor: url('${crosshair}'), crosshair; }
+  .text                { cursor: url('${text}'), text; }
+  .vertical-text       { cursor: url('${verticalText}'), vertical-text; }
+  .alias               { cursor: url('${alias}'), alias; }
+  .copy                { cursor: url('${copy}'), copy; }
+  .move                { cursor: url('${move}'), move; }
+  .no-drop             { cursor: url('${noDrop}'), no-drop; }
+  .not-allowed         { cursor: url('${notAllowed}'), not-allowed; }
+  .grab                { cursor: url('${grab}'), grab; }
+  .grabbing            { cursor: url('${grabbing}'), grabbing; }
+  .col-resize          { cursor: url('${colResize}'), col-resize; }
+  .row-resize          { cursor: url('${rowResize}'), row-resize; }
+  .n-resize            { cursor: url('${nResize}'), n-resize; }
+  .e-resize            { cursor: url('${eResize}'), e-resize; }
+  .s-resize            { cursor: url('${sResize}'), s-resize; }
+  .w-resize            { cursor: url('${wResize}'), w-resize; }
+  .ns-resize           { cursor: url('${nsResize}'), ns-resize; }
+  .ew-resize           { cursor: url('${ewResize}'), ew-resize; }
+  .ne-resize           { cursor: url('${neResize}'), ne-resize; }
+  .nw-resize           { cursor: url('${nwResize}'), nw-resize; }
+  .se-resize           { cursor: url('${seResize}'), se-resize; }
+  .sw-resize           { cursor: url('${swResize}'), sw-resize; }
+  .nesw-resize         { cursor: url('${neswResize}'), nesw-resize; }
+  .nwse-resize         { cursor: url('${nwseResize}'), nwse-resize; }
+  .zoom-in             { cursor: url('${zoomIn}'), zoom-in; }
+  .zoom-out            { cursor: url('${zoomOut}'), zoom-out; }
 `;
 
 export default GlobalStyle;
