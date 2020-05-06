@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import icons from '@react95/icons';
 import { Column, Table } from 'react-virtualized';
 import 'react-virtualized/styles.css';
 
-import icons from '@react95/icons';
-
 import { Icon, Frame } from '../components';
+
+import availableSizes from './icons.stories.data';
 
 const TableWrapper = styled.div`
   .ReactVirtualized__Table__row {
@@ -30,27 +31,36 @@ const TableWrapper = styled.div`
   }
 `;
 
-const list = Object.keys(icons).map((icon) => ({
+const list = Object.keys(icons).map(icon => ({
   name: icon,
 }));
 
 storiesOf('Icon', module).add('default', () => (
   <Frame p={4} width={875}>
     <p>
-      As an{' '}
-      <a href="https://en.wikipedia.org/wiki/ICO_(file_format)" target="_blank">
+      As an
+      <a
+        href="https://en.wikipedia.org/wiki/ICO_(file_format)"
+        target="_blank"
+        without
+        rel="noopener noreferrer"
+      >
         ico file format
-      </a>{' '}
+      </a>
       is, we have some sizes available for some icons. Here are some dimensions.
       There is some icons available in 256x256, like LIGHTS_99, that is not in
       this pretty visualization.
     </p>
-    <p>We have, actually, {Object.keys(icons).length} icons:</p>
+    <p>
+      We have, actually,
+      {Object.keys(icons).length}
+      icons:
+    </p>
     <Frame bg="white" boxShadow="in" mt={4}>
       <TableWrapper>
         <Table
           width={868}
-          height={700}
+          height={600}
           headerHeight={20}
           headerStyle={{ padding: 4 }}
           rowHeight={130}
@@ -61,12 +71,19 @@ storiesOf('Icon', module).add('default', () => (
           <Column
             style={{
               display: 'flex',
+              flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
             }}
             label="Name"
             dataKey="name"
             width={100}
+            cellRenderer={({ cellData }) => (
+              <>
+                <span>{cellData}</span>
+                <p>({availableSizes[cellData].join(', ')})</p>
+              </>
+            )}
           />
           <Column
             style={{
