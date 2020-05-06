@@ -78,12 +78,19 @@ storiesOf('Icon', module).add('default', () => (
             label="Name"
             dataKey="name"
             width={100}
-            cellRenderer={({ cellData }) => (
-              <>
-                <span>{cellData}</span>
-                <p>({availableSizes[cellData].join(', ')})</p>
-              </>
-            )}
+            cellRenderer={({ cellData }) => {
+              console.log(
+                'availableSizes[cellData]',
+                cellData,
+                availableSizes[cellData],
+              );
+              return (
+                <>
+                  <span>{cellData}</span>
+                  <p>({availableSizes[cellData].join(', ')})</p>
+                </>
+              );
+            }}
           />
           <Column
             style={{
