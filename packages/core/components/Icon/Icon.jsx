@@ -6,18 +6,16 @@ import ico from 'icojs';
 
 const MIME_TYPE = 'image/png';
 
-const size = ({ width, height }) => css`
-  width: ${width}px;
-  height: ${height}px;
-`;
-
-const I = styled.i.attrs((props) => ({
+const I = styled.i.attrs(props => ({
   style: {
-    backgroundImage: `url('${props.url}')`,
+    backgroundImage: props.url ? `url('${props.url}')` : undefined,
   },
 }))`
   display: block;
-  ${size}
+  ${({ width, height }) => css`
+    width: ${width}px;
+    height: ${height}px;
+  `}
 
   background-repeat: no-repeat;
   background-position: center;
@@ -43,14 +41,14 @@ const Icon = ({ name, width, height, size, ...rest }) => {
 
       const allIcons = await icoParse(iconBuffer);
 
-      const iconsToRender = allIcons.map((i) => ({
+      const iconsToRender = allIcons.map(i => ({
         size: i.width,
         url: URL.createObjectURL(new Blob([i.buffer], { type: MIME_TYPE })),
         bit: i.bbt,
       }));
 
-      const match = iconsToRender.find((i) => i.size === size);
-      const url = match ? match.url : 'none';
+      const match = iconsToRender.find(i => i.size === size);
+      const url = match ? match.url : undefined;
 
       setIconUrl(url);
       setRIcons(iconsToRender);
@@ -58,9 +56,9 @@ const Icon = ({ name, width, height, size, ...rest }) => {
   }, []);
 
   useEffect(() => {
-    const icon = rIcons.find((i) => i.size === size);
+    const icon = rIcons.find(i => i.size === size);
 
-    setIconUrl(icon ? icon.url : 'none');
+    setIconUrl(icon ? icon.url : undefined);
   }, [size]);
 
   return (
