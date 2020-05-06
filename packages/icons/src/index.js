@@ -155,7 +155,6 @@ import ACCESS_227 from './icons/ACCESS_227.ico';
 import ACCESS_228 from './icons/ACCESS_228.ico';
 import ACCESS_229 from './icons/ACCESS_229.ico';
 import ACCESS_230 from './icons/ACCESS_230.ico';
-import ACCSTAT_123 from './icons/ACCSTAT_123.ico';
 import ACTMOVIE_303 from './icons/ACTMOVIE_303.ico';
 import AMOVIE_2 from './icons/AMOVIE_2.ico';
 import APPWIZ_1500 from './icons/APPWIZ_1500.ico';
@@ -1056,7 +1055,6 @@ const path = {
   ACCESS_228,
   ACCESS_229,
   ACCESS_230,
-  ACCSTAT_123,
   ACTMOVIE_303,
   AMOVIE_2,
   APPWIZ_1500,
