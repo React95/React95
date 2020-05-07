@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import icons from '@react95/icons';
-import ico from 'icojs';
 
-const MIME_TYPE = 'image/png';
+import useIcon from './useIcon';
 
 const I = styled.i.attrs(props => ({
   style: {
@@ -22,41 +20,11 @@ const I = styled.i.attrs(props => ({
   background-size: contain;
 `;
 
-function icoParse(file) {
-  if (ico.isICO(file)) {
-    return ico.parse(file);
-  }
-
-  return [];
-}
-
 const Icon = ({ name, width, height, size, ...rest }) => {
-  const [rIcons, setRIcons] = useState([{}]);
-  const [iconUrl, setIconUrl] = useState('');
+  const { iconUrl, setIconUrl, availableIcons } = useIcon({ name, size });
 
   useEffect(() => {
-    (async function fetchIcon() {
-      const response = await fetch(icons[name]);
-      const iconBuffer = await response.arrayBuffer();
-
-      const allIcons = await icoParse(iconBuffer);
-
-      const iconsToRender = allIcons.map(i => ({
-        size: i.width,
-        url: URL.createObjectURL(new Blob([i.buffer], { type: MIME_TYPE })),
-        bit: i.bbt,
-      }));
-
-      const match = iconsToRender.find(i => i.size === size);
-      const url = match ? match.url : undefined;
-
-      setIconUrl(url);
-      setRIcons(iconsToRender);
-    })();
-  }, []);
-
-  useEffect(() => {
-    const icon = rIcons.find(i => i.size === size);
+    const icon = availableIcons.find(i => i.size === size);
 
     setIconUrl(icon ? icon.url : undefined);
   }, [size]);
