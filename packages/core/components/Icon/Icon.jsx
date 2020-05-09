@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 import useIcon from './useIcon';
 
-const I = styled.i.attrs(props => ({
+const I = styled.i.attrs((props) => ({
   style: {
     backgroundImage: props.url ? `url('${props.url}')` : undefined,
   },
@@ -20,11 +20,15 @@ const I = styled.i.attrs(props => ({
   background-size: contain;
 `;
 
-const Icon = ({ name, width, height, size, ...rest }) => {
-  const { iconUrl, setIconUrl, availableIcons } = useIcon({ name, size });
+const Icon = ({ name, width, height, size, fallback, ...rest }) => {
+  const { iconUrl, setIconUrl, availableIcons } = useIcon({
+    name,
+    size,
+    fallback,
+  });
 
   useEffect(() => {
-    const icon = availableIcons.find(i => i.size === size);
+    const icon = availableIcons.find((i) => i.size === size);
 
     setIconUrl(icon ? icon.url : undefined);
   }, [size]);
@@ -44,6 +48,7 @@ Icon.propTypes = {
   name: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
+  fallback: PropTypes.bool,
   size: PropTypes.oneOf([16, 24, 32, 48, 64, 128]),
 };
 
@@ -51,6 +56,7 @@ Icon.defaultProps = {
   name: null,
   width: undefined,
   height: undefined,
+  fallback: true,
   size: 32,
 };
 

@@ -12,7 +12,7 @@ function icoParse(file) {
   return [];
 }
 
-const useIcon = ({ name, size }) => {
+const useIcon = ({ name, size, fallback }) => {
   const [availableIcons, setAvailableIcons] = useState([{}]);
   const [iconUrl, setIconUrl] = useState('');
 
@@ -23,16 +23,21 @@ const useIcon = ({ name, size }) => {
 
       const allIcons = await icoParse(iconBuffer);
 
-      const iconsToRender = allIcons.map(i => ({
+      const iconsToRender = allIcons.map((i) => ({
         size: i.width,
         url: URL.createObjectURL(new Blob([i.buffer], { type: MIME_TYPE })),
         bit: i.bbt,
       }));
 
-      const match = iconsToRender.find(i => i.size === size);
-      const url = match ? match.url : undefined;
+      if (fallback) {
+        setIconUrl(iconsToRender[0].url);
+      } else {
+        const match = iconsToRender.find((i) => i.size === size);
+        const url = match ? match.url : undefined;
 
-      setIconUrl(url);
+        setIconUrl(url);
+      }
+
       setAvailableIcons(iconsToRender);
     })();
   }, []);
