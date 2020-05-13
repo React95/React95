@@ -13,36 +13,47 @@ function icoParse(file) {
 }
 
 const useIcon = ({ name, size, fallback }) => {
-  const [availableIcons, setAvailableIcons] = useState([{}]);
-  const [iconUrl, setIconUrl] = useState('');
+  const [data, setAvailableIcons] = useState({
+    iconUrl: '',
+    availableIcons: [{}],
+  });
+
+  const changeIconUrl = newUrl => {
+    setAvailableIcons(iconData => ({ ...iconData, iconUrl: newUrl }));
+  };
 
   useEffect(() => {
-    (async function fetchIcon() {
+    async function fetchIcon() {
       const response = await fetch(icons[name]);
       const iconBuffer = await response.arrayBuffer();
 
       const allIcons = await icoParse(iconBuffer);
 
-      const iconsToRender = allIcons.map((i) => ({
+      const iconsToRender = allIcons.map(i => ({
         size: i.width,
         url: URL.createObjectURL(new Blob([i.buffer], { type: MIME_TYPE })),
         bit: i.bbt,
       }));
 
+      let url;
       if (fallback) {
-        setIconUrl(iconsToRender[0].url);
+        url = iconsToRender[0].url;
       } else {
-        const match = iconsToRender.find((i) => i.size === size);
-        const url = match ? match.url : undefined;
-
-        setIconUrl(url);
+        const match = iconsToRender.find(i => i.size === size);
+        url = match ? match.url : undefined;
       }
 
-      setAvailableIcons(iconsToRender);
-    })();
+      setAvailableIcons({ iconUrl: url, availableIcons: iconsToRender });
+    }
+
+    fetchIcon();
   }, []);
 
-  return { iconUrl, setIconUrl, availableIcons };
+  return {
+    changeIconUrl,
+    iconUrl: data.iconUrl,
+    availableIcons: data.availableIcons,
+  };
 };
 
 export default useIcon;

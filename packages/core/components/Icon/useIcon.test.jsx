@@ -42,7 +42,7 @@ beforeAll(() => {
     }
   };
 
-  global.URL.createObjectURL = jest.fn((data) => data.toString());
+  global.URL.createObjectURL = jest.fn(data => data.toString());
 });
 
 describe('<Icon />', () => {
