@@ -18,8 +18,8 @@ const useIcon = ({ name, size, fallback }) => {
     availableIcons: [{}],
   });
 
-  const changeIconUrl = newUrl => {
-    setAvailableIcons(iconData => ({ ...iconData, iconUrl: newUrl }));
+  const changeIconUrl = (newUrl) => {
+    setAvailableIcons((iconData) => ({ ...iconData, iconUrl: newUrl }));
   };
 
   useEffect(() => {
@@ -29,18 +29,19 @@ const useIcon = ({ name, size, fallback }) => {
 
       const allIcons = await icoParse(iconBuffer);
 
-      const iconsToRender = allIcons.map(i => ({
+      const iconsToRender = allIcons.map((i) => ({
         size: i.width,
         url: URL.createObjectURL(new Blob([i.buffer], { type: MIME_TYPE })),
         bit: i.bbt,
       }));
 
       let url;
-      if (fallback) {
+      const match = iconsToRender.find((i) => i.size === size);
+
+      if (match) {
+        url = match.url;
+      } else if (fallback) {
         url = iconsToRender[0].url;
-      } else {
-        const match = iconsToRender.find(i => i.size === size);
-        url = match ? match.url : undefined;
       }
 
       setAvailableIcons({ iconUrl: url, availableIcons: iconsToRender });

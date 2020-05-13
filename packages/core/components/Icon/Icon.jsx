@@ -4,20 +4,18 @@ import styled, { css } from 'styled-components';
 
 import useIcon from './useIcon';
 
-const I = styled.i.attrs(props => ({
-  style: {
-    backgroundImage: props.url ? `url('${props.url}')` : undefined,
-  },
-}))`
+const I = styled.i`
   display: block;
-  ${({ width, height }) => css`
-    width: ${width}px;
-    height: ${height}px;
-  `}
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  ${({ width, height, url }) => css`
+    width: ${width}px;
+    height: ${height}px;
+    background-image: ${url ? `url('${url}')` : 'none'};
+  `}
 `;
 
 const Icon = ({ name, width, height, size, fallback, ...rest }) => {
@@ -28,7 +26,7 @@ const Icon = ({ name, width, height, size, fallback, ...rest }) => {
   });
 
   useEffect(() => {
-    const icon = availableIcons.find(i => i.size === size);
+    const icon = availableIcons.find((i) => i.size === size);
 
     changeIconUrl(icon ? icon.url : undefined);
   }, [size]);
@@ -49,7 +47,7 @@ Icon.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   fallback: PropTypes.bool,
-  size: PropTypes.oneOf([16, 24, 32, 48, 64, 128]),
+  size: PropTypes.number,
 };
 
 Icon.defaultProps = {
