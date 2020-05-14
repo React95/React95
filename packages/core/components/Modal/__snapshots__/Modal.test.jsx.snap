@@ -28,12 +28,12 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -303,12 +303,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -530,12 +530,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -732,12 +732,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1`] = `
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -895,12 +895,12 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 exports[`<Modal /> Snapshots should match snapshot with width and height props 1`] = `
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c0 {
