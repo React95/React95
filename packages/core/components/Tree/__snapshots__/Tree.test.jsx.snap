@@ -3,12 +3,12 @@
 exports[`<Tree /> Snapshot should match snapshot 1`] = `
 .c4 {
   display: block;
-  width: 14px;
-  height: 14px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 14px;
+  height: 14px;
+  background-image: url('buffer32');
 }
 
 .c1 {
