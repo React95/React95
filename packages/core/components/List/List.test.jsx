@@ -1,11 +1,11 @@
 import React from 'react';
-import { render } from '../shared/test/utils';
+import { waitRender } from '../shared/test/utils';
 import List from './List';
 
 describe('<List />', () => {
   describe('Snapshots', () => {
-    it('should match snapshot', () => {
-      const { container } = render(
+    it('should match snapshot', async () => {
+      const { container } = await waitRender(
         <List>
           <List.Item icon="folder_exe2">
             <List>
