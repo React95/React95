@@ -59,12 +59,12 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 .c1 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('none');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -107,12 +107,12 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with active prop 1`] = `
 .c1 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('none');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -192,12 +192,12 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon prop 1`] = `
 .c1 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -240,12 +240,12 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small prop 1`] = `
 .c1 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('none');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -287,12 +287,12 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 .c2 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -430,12 +430,12 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 .c2 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -580,12 +580,12 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   >
     .c3 {
   display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 32px;
+  height: 32px;
+  background-image: url('buffer32');
 }
 
 .c2 {
@@ -682,7 +682,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       class="Frame-sc-1eyf5rz-0 sc-pZnSc cFSFWv"
     >
       <i
-        class="Icon__I-x4qr3b-0 hVUbSq"
+        class="Icon__I-x4qr3b-0 kKixQS"
         height="20"
         name="logo"
         style="margin-right: 4px;"
@@ -717,22 +717,22 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c9 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
@@ -1060,22 +1060,22 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
+  background-image: url('buffer32');
 }
 
 .c11 {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-image: url('buffer32');
 }
 
 .c0 {
