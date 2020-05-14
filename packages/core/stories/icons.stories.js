@@ -38,7 +38,7 @@ const AllIconsName = styled.span`
   margin-right: 4px;
 `;
 
-const list = Object.keys(icons).map((icon) => ({
+const list = Object.keys(icons).map(icon => ({
   name: icon,
 }));
 
@@ -219,7 +219,7 @@ storiesOf('Icon', module).add('default', () => (
         {Object.entries(availableSizes).map(([name, sizes]) => (
           <div key={name} style={{ marginTop: 4 }}>
             <AllIconsName>{name}:</AllIconsName>
-            {sizes.map((size) => (
+            {sizes.map(size => (
               <Icon
                 key={`${name}-${size}`}
                 name={name}

@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import useIcon from './useIcon';
 
-const I = styled.i`
+const I = styled.i.attrs(({ url }) => ({
+  style: {
+    backgroundImage: url ? `url('${url}')` : 'none',
+  },
+}))`
   display: block;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
-  ${({ width, height, url }) => css`
+  ${({ width, height }) => `
     width: ${width}px;
     height: ${height}px;
-    background-image: ${url ? `url('${url}')` : 'none'};
   `}
 `;
 

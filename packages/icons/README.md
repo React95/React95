@@ -10,7 +10,7 @@ All React95 icons in one place!
   <img alt="bat_exec" src="src/icons/bat_exec.ico" width="30" />
   <img alt="bat_exec_2" src="src/icons/bat_exec_2.ico" width="30" />
   <img alt="bat_wait" src="src/icons/bat_wait.ico" width="30" />
-  <img alt="bill" src="src/icons/bill.ico" width="30" />
+  <img alt="bill" src="src/icons/bill_add.ico" width="30" />
   <img alt="bookmark" src="src/icons/bookmark.ico" width="30" />
   <img alt="brush" src="src/icons/brush.ico" width="30" />
   <img alt="bulb" src="src/icons/bulb.ico" width="30" />
@@ -64,7 +64,7 @@ All React95 icons in one place!
   <img alt="forbidden" src="src/icons/forbidden.ico" width="30" />
   <img alt="globe" src="src/icons/globe.ico" width="30" />
   <img alt="hand" src="src/icons/hand.ico" width="30" />
-  <img alt="hardware" src="src/icons/hardware.ico" width="30" />
+  <img alt="hardware" src="src/icons/hardware_diag.ico" width="30" />
   <img alt="help_book" src="src/icons/help_book.ico" width="30" />
   <img alt="info_bubble" src="src/icons/info_bubble.ico" width="30" />
   <img alt="install" src="src/icons/install.ico" width="30" />
