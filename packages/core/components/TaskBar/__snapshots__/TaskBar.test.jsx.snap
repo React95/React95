@@ -64,7 +64,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -96,7 +95,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
       class="c1"
       height="20"
       name=""
-      style="margin-right: 4px;"
+      style="margin-right: 4px; background-image: url(buffer32);"
       width="20"
     />
     
@@ -112,7 +111,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -169,7 +167,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
       class="c1"
       height="20"
       name=""
-      style="margin-right: 4px;"
+      style="margin-right: 4px; background-image: url(buffer32);"
       width="20"
     />
     
@@ -181,7 +179,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
       class="c1"
       height="20"
       name=""
-      style="margin-right: 4px;"
+      style="margin-right: 4px; background-image: url(buffer32);"
       width="20"
     />
     
@@ -197,7 +195,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -229,7 +226,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
       class="c1"
       height="20"
       name="bat"
-      style="margin-right: 4px;"
+      style="margin-right: 4px; background-image: url(buffer32);"
       width="20"
     />
     
@@ -245,7 +242,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -276,7 +272,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
       class="c1"
       height="20"
       name=""
-      style="margin-right: 4px;"
+      style="margin-right: 4px; background-image: url(buffer32);"
       width="20"
     />
     
@@ -292,7 +288,6 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -398,7 +393,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
         class="c2"
         height="20"
         name="logo"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="20"
       />
       Start
@@ -435,7 +430,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -541,7 +535,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
         class="c2"
         height="20"
         name="logo"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="20"
       />
       Start
@@ -585,7 +579,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   background-size: contain;
   width: 32px;
   height: 32px;
-  background-image: url('buffer32');
 }
 
 .c2 {
@@ -661,6 +654,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
             class="c3"
             height="32"
             name="reader_closed"
+            style="background-image: url(buffer32);"
             width="32"
           />
           Local Disk (C:)
@@ -672,6 +666,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
             class="c3"
             height="32"
             name="windows_explorer"
+            style="background-image: url(buffer32);"
             width="32"
           />
           Windows Explorer
@@ -682,10 +677,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       class="Frame-sc-1eyf5rz-0 sc-pZnSc cFSFWv"
     >
       <i
-        class="Icon__I-x4qr3b-0 kKixQS"
+        class="Icon__I-x4qr3b-0 dJGCwO"
         height="20"
         name="logo"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="20"
       />
       Start
@@ -722,7 +717,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c9 {
@@ -732,7 +726,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -971,7 +964,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -1011,7 +1004,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         class="c9"
         height="20"
         name="logo"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="20"
       />
       Start
@@ -1028,7 +1021,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
           class="c9"
           height="20"
           name="bat"
-          style="margin-right: 4px;"
+          style="margin-right: 4px; background-image: url(buffer32);"
           width="20"
         />
         <span
@@ -1065,7 +1058,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c11 {
@@ -1075,7 +1067,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -1364,7 +1355,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         class="c2"
         height="13"
         name="windows_explorer"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -1402,7 +1393,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -1442,7 +1433,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         class="c11"
         height="20"
         name="logo"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="20"
       />
       Start
@@ -1459,7 +1450,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
           class="c11"
           height="20"
           name="windows_explorer"
-          style="margin-right: 4px;"
+          style="margin-right: 4px; background-image: url(buffer32);"
           width="20"
         />
         <span
@@ -1475,7 +1466,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
           class="c11"
           height="20"
           name="bat"
-          style="margin-right: 4px;"
+          style="margin-right: 4px; background-image: url(buffer32);"
           width="20"
         />
         <span

@@ -8,7 +8,6 @@ exports[`<Icon /> should match snapshot 1`] = `
   background-size: contain;
   width: 32px;
   height: 32px;
-  background-image: url('buffer32');
 }
 
 <div>
@@ -16,6 +15,7 @@ exports[`<Icon /> should match snapshot 1`] = `
     class="c0"
     height="32"
     name="bat"
+    style="background-image: url(buffer32);"
     width="32"
   />
 </div>
@@ -29,7 +29,6 @@ exports[`<Icon /> should match snapshot with different size 1`] = `
   background-size: contain;
   width: 16px;
   height: 16px;
-  background-image: url('buffer16');
 }
 
 <div>
@@ -37,6 +36,7 @@ exports[`<Icon /> should match snapshot with different size 1`] = `
     class="c0"
     height="16"
     name="bat"
+    style="background-image: url(buffer16);"
     width="16"
   />
 </div>
@@ -50,7 +50,6 @@ exports[`<Icon /> should match snapshot with different size and without a fallba
   background-size: contain;
   width: 64px;
   height: 64px;
-  background-image: none;
 }
 
 <div>
@@ -58,6 +57,7 @@ exports[`<Icon /> should match snapshot with different size and without a fallba
     class="c0"
     height="64"
     name="bat"
+    style="background-image: none;"
     width="64"
   />
 </div>
@@ -71,7 +71,6 @@ exports[`<Icon /> should match snapshot with different width and height 1`] = `
   background-size: contain;
   width: 10px;
   height: 10px;
-  background-image: url('buffer32');
 }
 
 .c1 {
@@ -81,7 +80,6 @@ exports[`<Icon /> should match snapshot with different width and height 1`] = `
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-image: url('buffer32');
 }
 
 .c2 {
@@ -91,7 +89,6 @@ exports[`<Icon /> should match snapshot with different width and height 1`] = `
   background-size: contain;
   width: 30px;
   height: 30px;
-  background-image: url('buffer32');
 }
 
 <div>
@@ -99,18 +96,21 @@ exports[`<Icon /> should match snapshot with different width and height 1`] = `
     class="c0"
     height="10"
     name="bat"
+    style="background-image: url(buffer32);"
     width="10"
   />
   <i
     class="c1"
     height="20"
     name="bat"
+    style="background-image: url(buffer32);"
     width="20"
   />
   <i
     class="c2"
     height="30"
     name="bat"
+    style="background-image: url(buffer32);"
     width="30"
   />
 </div>

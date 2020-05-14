@@ -33,7 +33,6 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -213,7 +212,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -308,7 +307,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -454,7 +452,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -535,7 +533,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -681,7 +678,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -737,7 +734,6 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -860,7 +856,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -900,7 +896,6 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   background-size: contain;
   width: 15px;
   height: 13px;
-  background-image: url('buffer32');
 }
 
 .c0 {
@@ -1024,7 +1019,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
