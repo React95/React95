@@ -1,66 +1,20 @@
 import React from 'react';
 import { renderHook } from '@testing-library/react-hooks';
-import { render, act } from '../shared/test/utils';
+import { waitRender } from '../shared/test/utils';
 
 import useIcon from './useIcon';
 import Icon from './Icon';
-
-const BUFFER_SIZES = {
-  16: 'buffer16',
-  32: 'buffer32',
-};
-
-jest.mock('icojs', () => ({
-  isICO: jest.fn(() => true),
-  parse: jest.fn(() =>
-    Promise.resolve([
-      {
-        width: 16,
-        buffer: 'buffer16',
-        bbt: 4,
-      },
-      {
-        width: 32,
-        buffer: 'buffer32',
-        bbt: 4,
-      },
-    ]),
-  ),
-}));
-
-beforeAll(() => {
-  global.fetch = jest.fn().mockImplementation(() =>
-    Promise.resolve({
-      arrayBuffer: jest.fn(() => ({})),
-    }),
-  );
-
-  global.Blob = class Blob {
-    constructor(buff) {
-      this.buffer = buff;
-    }
-
-    toString() {
-      return this.buffer.toString();
-    }
-  };
-
-  global.URL.createObjectURL = jest.fn((data) => data.toString());
-});
+import { BUFFER_SIZES } from '../../jest.setup';
 
 describe('<Icon />', () => {
   it('should match snapshot', async () => {
-    const { container } = render(<Icon name="bat" />);
-
-    await act(async () => {
-      await Promise.resolve(container);
-    });
+    const { container } = await waitRender(<Icon name="bat" />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('should match snapshot with different width and height', async () => {
-    const { container } = render(
+    const { container } = await waitRender(
       <>
         <Icon name="bat" width={10} height={10} />
         <Icon name="bat" width={20} height={20} />
@@ -68,31 +22,19 @@ describe('<Icon />', () => {
       </>,
     );
 
-    await act(async () => {
-      await Promise.resolve(container);
-    });
-
     expect(container).toMatchSnapshot();
   });
 
   it('should match snapshot with different size', async () => {
-    const { container } = render(<Icon name="bat" size={16} />);
-
-    await act(async () => {
-      await Promise.resolve(container);
-    });
+    const { container } = await waitRender(<Icon name="bat" size={16} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('should match snapshot with different size and without a fallback', async () => {
-    const { container } = render(
+    const { container } = await waitRender(
       <Icon name="bat" size={64} fallback={false} />,
     );
-
-    await act(async () => {
-      await Promise.resolve(container);
-    });
 
     expect(container).toMatchSnapshot();
   });

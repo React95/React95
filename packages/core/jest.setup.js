@@ -1,3 +1,5 @@
+/* eslint-disable import/prefer-default-export */
+
 export const BUFFER_SIZES = {
   16: 'buffer16',
   32: 'buffer32',
@@ -31,9 +33,11 @@ beforeAll(() => {
     constructor(buff) {
       this.buffer = buff;
     }
+
     toString() {
       return this.buffer.toString();
     }
   };
+
   global.URL.createObjectURL = jest.fn(data => data.toString());
 });

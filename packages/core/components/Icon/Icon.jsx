@@ -26,7 +26,7 @@ const Icon = ({ name, width, height, size, fallback, ...rest }) => {
   });
 
   useEffect(() => {
-    const icon = availableIcons.find((i) => i.size === size);
+    const icon = availableIcons.find(i => i.size === size);
 
     changeIconUrl(icon ? icon.url : undefined);
   }, [size]);
