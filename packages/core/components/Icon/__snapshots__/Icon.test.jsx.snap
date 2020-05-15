@@ -1,14 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Icon /> Snapshots should match snapshot 1`] = `
+exports[`<Icon /> should match snapshot 1`] = `
 .c0 {
   display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 32px;
+  height: 32px;
 }
 
 <div>
@@ -16,7 +15,103 @@ exports[`<Icon /> Snapshots should match snapshot 1`] = `
     class="c0"
     height="32"
     name="bat"
+    style="background-image: url(buffer32);"
     width="32"
+  />
+</div>
+`;
+
+exports[`<Icon /> should match snapshot with different size 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="16"
+    name="bat"
+    style="background-image: url(buffer16);"
+    width="16"
+  />
+</div>
+`;
+
+exports[`<Icon /> should match snapshot with different size and without a fallback 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 64px;
+  height: 64px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="64"
+    name="bat"
+    style="background-image: none;"
+    width="64"
+  />
+</div>
+`;
+
+exports[`<Icon /> should match snapshot with different width and height 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.c2 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="10"
+    name="bat"
+    style="background-image: url(buffer32);"
+    width="10"
+  />
+  <i
+    class="c1"
+    height="20"
+    name="bat"
+    style="background-image: url(buffer32);"
+    width="20"
+  />
+  <i
+    class="c2"
+    height="30"
+    name="bat"
+    style="background-image: url(buffer32);"
+    width="30"
   />
 </div>
 `;

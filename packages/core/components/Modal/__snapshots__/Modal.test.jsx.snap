@@ -28,12 +28,11 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
 }
 
 .c0 {
@@ -213,7 +212,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -303,12 +302,11 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
 }
 
 .c0 {
@@ -454,7 +452,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -530,12 +528,11 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
 }
 
 .c0 {
@@ -681,7 +678,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -732,12 +729,11 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1`] = `
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
 }
 
 .c0 {
@@ -860,7 +856,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div
@@ -895,12 +891,11 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 exports[`<Modal /> Snapshots should match snapshot with width and height props 1`] = `
 .c2 {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 15px;
+  height: 13px;
 }
 
 .c0 {
@@ -1024,7 +1019,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
         class="c2"
         height="13"
         name="bat"
-        style="margin-right: 4px;"
+        style="margin-right: 4px; background-image: url(buffer32);"
         width="15"
       />
       <div

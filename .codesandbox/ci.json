@@ -1,8 +1,7 @@
 {
   "buildCommand": "build",
-  "packages": ["./packages/core"],
+  "packages": ["./packages/core", "./packages/icons"],
   "sandboxes": [
-    "new",
-    "github.com/React95/React95/tree/101-themification/examples/create-react-app"
+    "https://github.com/React95/React95/tree/master/examples/create-react-app"
   ]
 }
