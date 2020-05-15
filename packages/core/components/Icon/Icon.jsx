@@ -1,37 +1,64 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import icons from '@react95/icons';
+import styled from 'styled-components';
 
-const size = ({ width, height }) => css`
-  width: ${width}px;
-  height: ${height}px;
-`;
+import useIcon from './useIcon';
 
-const I = styled.i`
+const I = styled.i.attrs(({ url }) => ({
+  style: {
+    backgroundImage: url ? `url('${url}')` : 'none',
+  },
+}))`
   display: block;
-  ${size}
 
-  background-image: url('${({ name }) => icons[name] || 'none'}');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  ${({ width, height }) => `
+    width: ${width}px;
+    height: ${height}px;
+  `}
 `;
 
-const Icon = ({ name, width, height, ...rest }) => (
-  <I name={name} width={width} height={height} {...rest} />
-);
+const Icon = ({ name, width, height, size, fallback, ...rest }) => {
+  const { iconUrl, changeIconUrl, availableIcons } = useIcon({
+    name,
+    size,
+    fallback,
+  });
+
+  useEffect(() => {
+    const icon = availableIcons.find(i => i.size === size);
+
+    changeIconUrl(icon ? icon.url : undefined);
+  }, [size]);
+
+  return (
+    <I
+      name={name}
+      width={width || size}
+      height={height || size}
+      {...rest}
+      url={iconUrl}
+    />
+  );
+};
 
 Icon.propTypes = {
   name: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
+  fallback: PropTypes.bool,
+  size: PropTypes.number,
 };
 
 Icon.defaultProps = {
   name: null,
-  width: 32,
-  height: 32,
+  width: undefined,
+  height: undefined,
+  fallback: true,
+  size: 32,
 };
 
 export default Icon;

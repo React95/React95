@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/React95/React95/compare/@react95/core@2.7.0...@react95/core@2.8.0) (2020-05-15)
+
+
+### Features
+
+* **globalstyle:** add link hover pointer cursor style ([346c7cf](https://github.com/React95/React95/commit/346c7cf78ddf5d65015237598322a30b5904aa15))
+* **icon:** add icon as an .ico should be ([6343e5d](https://github.com/React95/React95/commit/6343e5d04f616a9b64d82f25baad76441137c1c1))
+* **icon:** default width and height now inherit by size prop ([3abeffb](https://github.com/React95/React95/commit/3abeffb88e313886c4cf10a58a06ef25f5d201c2))
+* **icon:** extract Icon logic to the new useIcon custom hook ([d45b78b](https://github.com/React95/React95/commit/d45b78b05de0835b76ac4e6d49338a634df91cdf))
+* **modal:** export Modal with forwardRef ([a1f850e](https://github.com/React95/React95/commit/a1f850e24d44ffb40e0f03328dd5a9d8b30d7159))
+* **tests:** add waitRender function to our test utils ([9340985](https://github.com/React95/React95/commit/934098569ac21f4b363dc34bbd213d06fb8f0cb9))
+* **textarea:** export TextArea with forwardRef ([d4be3c1](https://github.com/React95/React95/commit/d4be3c1927e7877eec64267c634d5b60f5a21db6))
+
+
+
+
+
 # [2.7.0](https://github.com/React95/React95/compare/@react95/core@2.6.0...@react95/core@2.7.0) (2020-04-06)
 
 

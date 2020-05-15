@@ -9,5 +9,6 @@ module.exports = {
     'babel-polyfill',
     '@testing-library/jest-dom/extend-expect',
     'jest-styled-components',
+    './jest.setup.js',
   ],
 };

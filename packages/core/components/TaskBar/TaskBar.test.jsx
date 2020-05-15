@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { render, fireEvent, act } from '../shared/test/utils';
+import { render, waitRender, fireEvent, act } from '../shared/test/utils';
 
 import { Modal } from '../Modal';
 import List from '../List';
@@ -38,44 +38,48 @@ describe('<TaskBar />', () => {
     });
 
     describe('<WindowButton />', () => {
-      it('should match snapshot', () => {
-        const { container } = render(<WindowButton />);
+      it('should match snapshot', async () => {
+        const { container } = await waitRender(<WindowButton />);
+
         expect(container).toMatchSnapshot();
       });
 
-      it('should match snapshot with small prop', () => {
-        const { container } = render(<WindowButton small />);
+      it('should match snapshot with small prop', async () => {
+        const { container } = await waitRender(<WindowButton small />);
+
         expect(container).toMatchSnapshot();
       });
 
-      it('should match snapshot with active prop', () => {
-        const { container } = render(
+      it('should match snapshot with active prop', async () => {
+        const { container } = await waitRender(
           <>
             <WindowButton small />
             <WindowButton small active />
           </>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
-      it('should match snapshot with icon prop', () => {
-        const { container } = render(<WindowButton icon="bat" />);
+      it('should match snapshot with icon prop', async () => {
+        const { container } = await waitRender(<WindowButton icon="bat" />);
+
         expect(container).toMatchSnapshot();
       });
     });
 
-    it('should match snapshot', () => {
+    it('should match snapshot', async () => {
       act(() => jest.advanceTimersByTime(1000));
 
-      const { container } = render(<TaskBar />);
+      const { container } = await waitRender(<TaskBar />);
 
       expect(container).toMatchSnapshot();
     });
 
-    it('should match snapshot with one Modal', () => {
+    it('should match snapshot with one Modal', async () => {
       act(() => jest.advanceTimersByTime(1000));
 
-      const { container } = render(
+      const { container } = await waitRender(
         <>
           <Modal icon="bat" title="file.bat" />
           <TaskBar />
@@ -85,10 +89,10 @@ describe('<TaskBar />', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('should match snapshot with two Modals', () => {
+    it('should match snapshot with two Modals', async () => {
       act(() => jest.advanceTimersByTime(1000));
 
-      const { container } = render(
+      const { container } = await waitRender(
         <>
           <Modal icon="windows_explorer" title="Windows Explorer" />
           <Modal icon="bat" title="file.bat" />
@@ -99,10 +103,10 @@ describe('<TaskBar />', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('should match snapshot with list prop', () => {
+    it('should match snapshot with list prop', async () => {
       act(() => jest.advanceTimersByTime(1000));
 
-      const { container, getByText } = render(
+      const { container, getByText } = await waitRender(
         <TaskBar
           list={
             <List>
@@ -117,13 +121,17 @@ describe('<TaskBar />', () => {
       expect(container.querySelectorAll('li').length).toBe(0);
       expect(container).toMatchSnapshot();
 
-      fireEvent.click(getByText('Start'));
+      await act(async () => {
+        fireEvent.click(getByText('Start'));
+      });
 
       // openned
       expect(container.querySelectorAll('li').length).toBe(2);
       expect(container).toMatchSnapshot();
 
-      fireEvent.click(container.querySelectorAll('li')[0]);
+      await act(async () => {
+        fireEvent.click(container.querySelectorAll('li')[0]);
+      });
 
       // click on list should close it
       expect(container.querySelectorAll('li').length).toBe(0);

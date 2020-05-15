@@ -14,6 +14,7 @@
     "react/jsx-filename-extension": 0,
     "no-confusing-arrow": 0,
     "react/jsx-props-no-spreading": 0,
-    "react/jsx-wrap-multilines": 0
+    "react/jsx-wrap-multilines": 0,
+    "react/jsx-one-expression-per-line": 0
   }
 }

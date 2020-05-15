@@ -3,12 +3,11 @@
 exports[`<Tree /> Snapshot should match snapshot 1`] = `
 .c4 {
   display: block;
-  width: 14px;
-  height: 14px;
-  background-image: url('test-file-stub');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 14px;
+  height: 14px;
 }
 
 .c1 {
@@ -91,6 +90,7 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
             class="c4"
             height="14"
             name="bat"
+            style="background-image: url(buffer32);"
             width="14"
           />
         </div>

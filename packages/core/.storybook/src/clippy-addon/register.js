@@ -217,6 +217,7 @@ class Clippy extends React.Component {
               top: '15%',
               width: 300,
               height: 220,
+              zIndex: 9,
             }}
             closeModal={this._closeModal}
             ref={modal => (this.modal = modal)}
