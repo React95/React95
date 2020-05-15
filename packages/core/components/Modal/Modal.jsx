@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from '@xstyled/styled-components';
 import { th, backgroundColor } from '@xstyled/system';
@@ -99,7 +99,7 @@ const Content = styled.div`
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: ${(props) => props.buttonsAlignment};
+  justify-content: ${props => props.buttonsAlignment};
 
   padding: 0 6 6 6;
 
@@ -152,102 +152,107 @@ const MenuItem = styled.li`
 
 MenuItem.displayName = 'MenuItem';
 
-const Modal = ({
-  closeModal,
-  title,
-  children,
-  buttons,
-  icon,
-  menu,
-  buttonsAlignment,
-  defaultPosition,
-  width,
-  height,
-  ...rest
-}) => {
-  const {
-    addWindows,
-    removeWindows,
-    setActiveWindow,
-    activeWindow,
-  } = useContext(ModalContext);
-  const [menuOpened, setMenuOpened] = useState('');
-
-  useEffect(() => {
-    addWindows({ icon, title });
-    setActiveWindow(title);
-
-    return () => removeWindows(title);
-  }, []);
-
-  const iconStyle = {
-    width: 15,
-    height: 13,
-    style: {
-      marginRight: '4px',
+const Modal = forwardRef(
+  (
+    {
+      closeModal,
+      title,
+      children,
+      buttons,
+      icon,
+      menu,
+      buttonsAlignment,
+      defaultPosition,
+      width,
+      height,
+      ...rest
     },
-  };
+    ref,
+  ) => {
+    const {
+      addWindows,
+      removeWindows,
+      setActiveWindow,
+      activeWindow,
+    } = useContext(ModalContext);
+    const [menuOpened, setMenuOpened] = useState('');
 
-  const isActive = title === activeWindow;
+    useEffect(() => {
+      addWindows({ icon, title });
+      setActiveWindow(title);
 
-  return (
-    <>
-      <Draggable handle=".draggable" defaultPosition={defaultPosition}>
-        <ModalWrapper
-          width={width}
-          height={height}
-          {...rest}
-          onClick={() => setActiveWindow(title)}
-          active={isActive}
-        >
-          <TitleBar
-            className="draggable"
-            backgroundColor={isActive ? 'primary' : 'grays.3'}
+      return () => removeWindows(title);
+    }, []);
+
+    const iconStyle = {
+      width: 15,
+      height: 13,
+      style: {
+        marginRight: '4px',
+      },
+    };
+
+    const isActive = title === activeWindow;
+
+    return (
+      <>
+        <Draggable handle=".draggable" defaultPosition={defaultPosition}>
+          <ModalWrapper
+            width={width}
+            height={height}
+            {...rest}
+            onClick={() => setActiveWindow(title)}
+            active={isActive}
+            ref={ref}
           >
-            {icon && <Icon name={icon} {...iconStyle} />}
-            <Title>{title}</Title>
-            <OptionsBox>
-              <Option>?</Option>
-              <Option onClick={closeModal}>x</Option>
-            </OptionsBox>
-          </TitleBar>
+            <TitleBar
+              className="draggable"
+              backgroundColor={isActive ? 'primary' : 'grays.3'}
+            >
+              {icon && <Icon name={icon} {...iconStyle} />}
+              <Title>{title}</Title>
+              <OptionsBox>
+                <Option>?</Option>
+                <Option onClick={closeModal}>x</Option>
+              </OptionsBox>
+            </TitleBar>
 
-          {menu.length > 0 && (
-            <MenuWrapper>
-              {menu.map(({ name, list }) => {
-                const active = menuOpened === name;
-                return (
-                  <MenuItem
-                    key={name}
-                    onMouseDown={() => setMenuOpened(name)}
-                    active={active}
-                  >
-                    {name}
-                    {active && list}
-                  </MenuItem>
-                );
-              })}
-            </MenuWrapper>
-          )}
+            {menu.length > 0 && (
+              <MenuWrapper>
+                {menu.map(({ name, list }) => {
+                  const active = menuOpened === name;
+                  return (
+                    <MenuItem
+                      key={name}
+                      onMouseDown={() => setMenuOpened(name)}
+                      active={active}
+                    >
+                      {name}
+                      {active && list}
+                    </MenuItem>
+                  );
+                })}
+              </MenuWrapper>
+            )}
 
-          <Content onClick={() => setMenuOpened('')}>{children}</Content>
-          {buttons.length > 0 && (
-            <ButtonWrapper buttonsAlignment={buttonsAlignment}>
-              {buttons.map((button, index) => (
-                <Button
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={index}
-                  onClick={button.onClick}
-                  value={button.value}
-                />
-              ))}
-            </ButtonWrapper>
-          )}
-        </ModalWrapper>
-      </Draggable>
-    </>
-  );
-};
+            <Content onClick={() => setMenuOpened('')}>{children}</Content>
+            {buttons.length > 0 && (
+              <ButtonWrapper buttonsAlignment={buttonsAlignment}>
+                {buttons.map(button => (
+                  <Button
+                    key={button.value}
+                    onClick={button.onClick}
+                    value={button.value}
+                  />
+                ))}
+              </ButtonWrapper>
+            )}
+          </ModalWrapper>
+        </Draggable>
+      </>
+    );
+  },
+);
 
 Modal.displayName = 'Modal';
 
