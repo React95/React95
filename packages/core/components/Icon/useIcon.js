@@ -12,7 +12,7 @@ function icoParse(file) {
   return [];
 }
 
-const useIcon = ({ name, size, fallback, bpp = 4 }) => {
+const useIcon = ({ name, size, fallback, bpp = 4, variant = 1 }) => {
   const [data, setAvailableIcons] = useState({
     iconUrl: '',
     availableIcons: [{}],
@@ -36,10 +36,11 @@ const useIcon = ({ name, size, fallback, bpp = 4 }) => {
       }));
 
       let url;
-      const match = iconsToRender.find(i => i.size === size && i.bpp === bpp);
+      const match = iconsToRender.filter(i => i.size === size && i.bpp === bpp);
 
-      if (match) {
-        url = match.url;
+      if (match.length > 0) {
+        const finded = match[variant - 1];
+        url = finded.url;
       } else if (fallback) {
         url = iconsToRender[0].url;
       }
