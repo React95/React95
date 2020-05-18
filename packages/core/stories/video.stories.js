@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import EXPLORER_VIDEO from '../components/shared/assets/EXPLORER.mp4';
+import EXPLORER_VIDEO from './EXPLORER.mp4';
 import Video from '../components/Video';
 
 import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
