@@ -4,10 +4,10 @@ import woff2 from '../shared/assets/font/MS-Sans-Serif.woff2';
 import woff from '../shared/assets/font/MS-Sans-Serif.woff';
 import ttf from '../shared/assets/font/MS-Sans-Serif.ttf';
 import eot from '../shared/assets/font/MS-Sans-Serif.eot';
-import videowoff2 from '../shared/assets/font/95video-numbers.woff2';
-import videowoff from '../shared/assets/font/95video-numbers.woff';
-import videottf from '../shared/assets/font/95video-numbers.ttf';
-import videoeot from '../shared/assets/font/95video-numbers.eot';
+import videowoff2 from '../shared/assets/font/React95Video-Numbers.woff2';
+import videowoff from '../shared/assets/font/React95Video-Numbers.woff';
+import videottf from '../shared/assets/font/React95Video-Numbers.ttf';
+import videoeot from '../shared/assets/font/React95Video-Numbers.eot';
 
 import pattern from '../shared/assets/pattern/dropdown.png';
 import upcaret from '../shared/assets/pattern/upcaret.svg';
@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: '95video';
+    font-family: 'React95Video-Numbers';
     src: url('${videoeot}');
     src: url('${videowoff2}') format('woff2'),
          url('${videowoff}') format('woff'),

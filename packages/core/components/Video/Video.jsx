@@ -75,7 +75,7 @@ const CountDownContainer = styled(Frame)`
 `;
 
 const VideoFont = styled.span`
-  font-family: '95Video';
+  font-family: 'React95Video-Numbers';
   text-transform: uppercase;
 `;
 
