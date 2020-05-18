@@ -1,900 +1,9306 @@
 const sizes = {
-  accessibility: [64],
-  awfext32_6049: [32],
-  explorer_101: [16, 32],
-  awfext32_6050: [16, 32],
-  awfext32_6051: [32],
-  awfext32_6052: [32],
-  awfext32_6053: [16, 32],
-  awfxcg32_1301: [16, 32],
-  awsnto32_49: [16, 32],
-  awfxcg32_1302: [16, 32],
-  controls_3000: [16, 32],
-  awfxcg32_1303: [16, 32],
-  awfxcg32_1305: [16, 32],
-  awfxex32_109: [16, 32],
-  awfxex32_113: [32],
-  awfxex32_114: [32],
-  awfxex32_115: [32],
-  awfxex32_116: [32],
-  coreui_3000: [16, 32],
-  awfxex32_117: [32],
-  awfxex32_118: [32],
-  awfxex32_119: [32],
-  awfxex32_120: [32],
-  awfxex32_121: [32],
-  awfxex32_awfxex: [16, 32],
-  awfxex32_info: [32],
-  awschd32_400: [16, 32],
-  awschd32_401: [16, 32],
-  arrow_left: [32],
-  arrow_right: [32],
-  bat: [16, 32],
-  bat_exec: [16, 32],
-  awschd32_402: [16, 32],
-  awsnto32_50: [16, 32],
-  bat_exec_2: [16, 32],
-  d3_maze_100: [32],
-  bat_wait: [16, 32],
-  bill: [32],
-  blank_screen_100: [16, 32],
-  bookmark: [16, 32],
-  brush: [32],
-  bulb: [32],
-  calculator: [16, 32],
-  camera: [16, 32],
-  cd_exe: [32],
-  cd_music: [16, 32],
-  cachevu_100: [16, 32],
-  calc_sc: [16, 32],
-  ccapi_105: [16, 32],
-  cd_search: [32],
-  computer: [16, 32],
-  computer_2: [16, 32],
-  computer_3: [16, 32],
-  computer_4: [16, 32],
-  computer_5: [32],
-  computer_find: [16, 32],
-  defrag: [16, 32],
-  desktop: [16, 32],
-  dial: [16, 32],
-  earth: [32],
-  explore: [32],
-  fax: [16, 32],
-  fax_warning: [16, 32],
-  file_delete: [32],
-  ccapi_106: [16, 32],
-  file_find: [16, 32],
-  file_find2: [16, 32],
-  file_find3: [16, 32],
-  file_corrupted: [32],
-  file_font: [16, 32],
-  file_font_2: [16, 32],
-  file_icons: [32],
-  file_pen: [16, 32],
-  file_pencil: [32],
-  file_pick: [16, 32],
-  file_pin: [16, 32],
-  file_settings: [16, 32],
-  file_text: [16, 32],
-  file_text_settings: [16, 32],
-  file_transfer: [32],
-  files: [16, 32],
-  folder: [16, 32],
-  folder_exe: [16, 32],
-  folder_exe2: [16, 32],
-  folder_file: [16, 32],
-  folder_font: [16, 32],
-  folder_open: [16, 32],
-  folder_print: [16, 32],
-  folder_rename: [16, 32],
-  folder_settings: [16, 32],
-  folder_settings_2: [32],
-  folder_shared: [16, 32],
-  font: [32],
-  forbidden: [16, 32],
-  globe: [16, 32],
-  hand: [16, 32],
-  hardware: [32],
-  help_book: [16, 32],
-  info_bubble: [32],
-  install: [32],
-  issue: [16, 32],
-  key: [32],
-  keyboard_mouse: [16, 32],
-  keys: [32],
-  cdplayer_107: [16, 32],
-  cdplayer_110: [32],
-  charmap_1: [16, 32],
-  cdplayer_114: [32],
-  loader_bat: [16, 32],
-  lock: [16, 32],
-  logo: [16, 32],
-  log_view: [32],
-  mail: [16, 32],
-  media_audio: [16, 32],
-  media_cd: [16, 32],
-  media_video: [16, 32],
-  memory: [16, 32],
-  mic: [16, 32],
-  mspaint: [16, 32],
-  comctl32_150: [32],
-  mute: [16, 32],
-  network: [16, 32],
-  network_2: [16, 32],
-  network_3: [16, 32],
-  notepad: [16, 32],
-  notepad_2: [16, 32],
-  packager: [32],
-  phone: [32],
-  phone_2: [16, 32],
-  plugin: [16, 32],
-  power_off: [16, 32],
-  power_on: [16, 32],
-  printer: [16, 32],
-  printer_calendar: [16, 32],
-  printer_drive: [16, 32],
-  printer_shared: [16, 32],
-  question_bubble: [32],
-  reader_cd: [16, 32],
-  reader_cd_2: [32],
-  reader_closed: [16, 32],
-  reader_disket: [16, 32],
-  reader_disket_casset: [16, 32],
-  reader_disket2: [16, 32],
-  reader_eject: [16, 32],
-  reader_noshared: [16, 32],
-  reader_opened: [16, 32],
-  reader_shared: [16, 32],
-  comdlg32_528: [32],
-  comdlg32_529: [32],
-  comdlg32_530: [32],
-  comdlg32_531: [32],
-  comdlg32_532: [32],
-  comdlg32_533: [32],
-  comdlg32_534: [32],
-  comdlg32_535: [32],
-  comdlg32_536: [91],
-  comdlg32_537: [98],
-  comdlg32_539: [32],
-  comdlg32_538: [32],
-  confcp_102: [16, 32],
-  confcp_107: [16, 32],
-  confcp_108: [16, 32],
-  confcp_109: [16, 32],
-  confcp_1100: [16, 32],
-  recycle_empty: [16, 32],
-  recycle_file: [32],
-  recycle_filefolder: [32],
-  recycle_folder: [32],
-  confcp_116: [16, 32],
-  recycle_full: [16, 32],
-  confcp_120: [16, 32],
-  conflnk_102: [16, 32],
-  regedit: [16, 32],
-  settings: [16, 32],
-  signup: [16, 32],
-  star: [16, 32],
-  shortcut: [16, 32],
-  shortcut2: [32],
-  sys_package: [16, 32],
-  textchat: [16, 32],
-  textchat_2: [16, 32],
-  timedate: [16, 32],
-  timer_font: [32],
-  tree: [16, 32],
-  uninstall: [32],
-  unmute: [16, 32],
-  user: [16, 32],
-  wordpad: [16, 32],
-  warning: [32],
-  window_abc: [16, 32],
-  window_accessibility: [16, 32],
-  window_graph: [16, 32],
-  windows_explorer: [16, 32],
-  ms_dos: [16, 24, 32, 48, 128],
-  microsoft_network: [16, 32],
-  microsoft_exchange: [16, 32],
-  d3_flower_box_100: [32],
-  d3_flying_objects_id_app: [32],
-  access_110: [16, 32],
-  access_218: [16, 32],
-  access_219: [16, 32],
-  access_220: [16, 32],
-  access_221: [16, 32],
-  access_222: [16, 32],
-  access_223: [16, 32],
-  access_224: [16, 32],
-  access_225: [16, 32],
-  access_226: [16, 32],
-  access_227: [16, 32],
-  access_228: [16, 32],
-  conflnk_103: [16, 32],
-  curves_and_colors_100: [16, 32],
-  defrag_1: [16, 32],
-  defrag_2: [16, 32],
-  defrag_3: [16, 32],
-  defrag_4: [16, 32],
-  drvspace_4: [16, 32],
-  drvspace_5: [16, 32],
-  defrag_5: [16, 32],
-  drvspace_6: [16, 32],
-  defrag_6: [16, 32],
-  defrag_7: [16, 32],
-  access_229: [16, 32],
-  access_230: [16, 32],
-  actmovie_303: [16, 32],
-  amovie_2: [16, 32],
-  drvspace_8: [16, 32],
-  defrag_8: [32],
-  defrag_9: [32],
-  desk_100: [16, 32],
-  dialer_1: [16, 32],
-  dialer_2: [32],
-  dialmon_200: [32],
-  directcc_1001: [32],
-  directcc_1002: [32],
-  d3_pipes_id_app: [32],
-  directcc_1003: [32],
-  directcc_1004: [32],
-  directcc_1005: [16, 32],
-  directcc_directcc: [16, 32],
-  diskcopy_1: [16, 32],
-  dpmodemx_701: [16, 32],
-  drvspace_1: [16, 32],
-  drvspace_2: [16, 32],
-  appwiz_1500: [16, 32],
-  appwiz_1501: [16, 32],
-  appwiz_1502: [16, 32],
-  appwiz_1503: [32],
-  awfxcg32_1304: [16, 32],
-  ccapi_104: [16, 32],
-  chatshow_3000: [16, 32],
-  confcp_118: [32],
-  drvspace_3: [16, 32],
-  drvspace_7: [32],
-  explorer_100: [16, 32],
-  explorer_102: [16, 32],
-  explorer_103: [16, 32],
-  explorer_104: [16, 32],
-  explorer_108: [32],
-  explorer_105: [32],
-  explorer_107: [32],
-  expostrt_128: [16, 32],
-  faxcover_108: [16, 32],
-  faxcover_3: [16, 32],
-  faxcover_140: [32],
-  faxcover_2: [16, 32],
-  filexfer_128: [16, 32],
-  filexfer_129: [16, 32],
-  filexfer_130: [16, 32],
-  d3_text_100: [32],
-  flying_through_space_100: [16, 32],
-  flying_windows_100: [16, 32],
-  fm20enu_5: [32],
-  fontext_1: [16, 32],
-  fontext_2: [16, 32],
-  fontview_111: [16, 32],
-  fontext_3: [16, 32],
-  fontext_4: [16, 32],
-  fontview_110: [16, 32],
-  freecell_1: [32],
-  fte_128: [16, 32],
-  gcdef_100: [16, 32, 48],
-  gcdef_10001: [32],
-  gcdef_10002: [32],
-  gcdef_10003: [32],
-  gcdef_10004: [32],
-  gcdef_10005: [32],
-  gcdef_10006: [32],
-  gcdef_10007: [32],
-  gcdef_10008: [32],
-  gcdef_10009: [32],
-  gcdef_10010: [32],
-  gcdef_10011: [32],
-  gcdef_10012: [32],
-  gcdef_10013: [32],
-  gcdef_10014: [32],
-  gcdef_10015: [32],
-  gcdef_10016: [32],
-  gcdef_10017: [32],
-  gcdef_10018: [32],
-  gcdef_10020: [32],
-  main_105: [32],
-  main_106: [32],
-  main_107: [32],
-  main_200: [32],
-  main_300: [16, 32],
-  main_400: [16, 32],
-  main_500: [16, 32],
-  main_600: [16, 32],
-  mapi32_451: [32],
-  mapi32_icon_attach: [32],
-  mapi32_501: [16, 32],
-  mapi32_801: [16, 32, 48],
-  mapisp32_100: [32],
-  mcdpkgtm_3000: [16, 32],
-  mcm_3200: [32],
-  mcm_3201: [32],
-  mcm_3202: [32],
-  mcm_3203: [32],
-  mcm_earth: [32],
-  mcm_401: [32],
-  mcm_502: [32],
-  mcm_phone: [32],
-  mdisp32_1: [32],
-  mkcompat_900: [32],
-  mlcfg32_129: [16, 32],
-  mmsys_100: [16, 32],
-  mmsys_101: [16, 32],
-  mmsys_102: [32],
-  mmsys_103: [16, 32],
-  mmsys_104: [16, 32],
-  mmsys_105: [16, 32],
-  mmsys_115: [16, 32],
-  mmsys_106: [16, 32],
-  gcdef_10021: [32],
-  gcdef_10022: [32],
-  gcdef_10023: [32],
-  gcdef_10024: [32],
-  gcdef_10025: [32],
-  gcdef_10026: [32],
-  gcdef_10027: [32],
-  gcdef_10028: [32],
-  gcdef_10029: [32],
-  gcdef_10030: [32],
-  gcdef_10031: [32],
-  gcdef_10032: [32],
-  gcdef_10033: [32],
-  gcdef_10034: [32],
-  gcdef_10035: [32],
-  gcdef_10036: [32],
-  gcdef_10037: [32],
-  gcdef_10038: [32],
-  gcdef_10039: [32],
-  gcdef_10040: [32],
-  gcdef_10041: [32],
-  gcdef_10042: [32],
-  gcdef_10043: [32],
-  gcdef_10044: [32],
-  gcdef_10045: [32],
-  gcdef_10046: [32],
-  gcdef_10047: [32],
-  gcdef_10048: [32],
-  gcdef_10049: [32],
-  gcdef_10050: [32],
-  gcdef_10051: [32],
-  gcdef_10052: [32],
-  gcdef_10053: [32],
-  gcdef_10054: [32],
-  gcdef_10055: [32],
-  gcdef_10056: [32],
-  gcdef_10057: [32],
-  gcdef_10058: [32],
-  gcdef_10059: [32],
-  gcdef_10060: [32],
-  gcdef_10061: [32],
-  gcdef_10062: [32],
-  gcdef_10063: [32],
-  gcdef_10064: [32],
-  gcdef_101: [32],
-  gcdef_102: [32],
-  mmsys_107: [16, 32],
-  mmsys_108: [16, 32],
-  mmsys_109: [16, 32],
-  mmsys_110: [16, 32],
-  mmsys_111: [16, 32],
-  mmsys_112: [16, 32],
-  mmsys_113: [16, 32],
-  mmsys_114: [32],
-  gcdef_103: [32],
-  gcdef_104: [32],
-  mmsys_116: [16, 32],
-  gcdef_105: [32],
-  gcdef_106: [32],
-  gcdef_107: [32],
-  gcdef_108: [32, 48],
-  gcdef_109: [32, 48],
-  gcdef_110: [32, 48],
-  gcdef_111: [32, 48],
-  gcdef_112: [32, 48],
-  gcdef_113: [32, 48],
-  gcdef_114: [32, 48],
-  gcdef_115: [32, 48],
-  gcdef_116: [32, 48],
-  gcdef_117: [32, 48],
-  gcdef_122: [32, 48],
-  gcdef_124: [32, 64],
-  grpconv_100: [32],
-  grpconv_101: [32],
-  icmui_1200: [16, 32],
-  icmui_1201: [16, 32],
-  icwdial_101: [32],
-  icwdial_102: [32],
-  imgadmin_214: [16, 32],
-  imgedit_10: [32],
-  imgedit_277: [32],
-  imgscan_10: [32],
-  imgthumb_10: [32],
-  inetcfg_2300: [32],
-  inetcfg_2301: [32],
-  inetcfg_2302: [32],
-  mmsys_117: [16, 32],
-  mplayer_1_12: [16, 32],
-  mmsys_118: [16, 32],
-  inetcfg_2303: [32],
-  inetcpl_1301: [16, 32],
-  inetcpl_1302: [32],
-  inetcpl_1303: [32],
-  mmsys_121: [16, 32],
-  inetcpl_1304: [16, 32],
-  inetcpl_1305: [16, 32],
-  inetcpl_1306: [16, 32],
-  inetcpl_1307: [32],
-  inetcpl_1308: [32],
-  inetcpl_1309: [32],
-  inetcpl_1310: [32],
-  inetcpl_1311: [32],
-  inetcpl_1312: [16, 32],
-  inetcpl_1313: [16, 32, 48],
-  inetcpl_1314: [32],
-  inetcpl_1315: [32],
-  inetcpl_1317: [16, 32],
-  inetcpl_1318: [32],
-  inetcpl_1319: [32],
-  inetcpl_1320: [32],
-  inetcpl_1321: [16, 32],
-  inetcpl_4432: [32],
-  internat_151: [16],
-  intl_101: [16, 32],
-  isign32_100: [32],
-  isign32_4001: [32],
-  isign32_ico_app: [16, 32],
-  isuninst_1000: [32],
-  jdbgmgr_100: [32],
-  jgdwmie_101: [16, 32],
-  joy_102: [16, 32, 48],
-  joy_108: [16, 32],
-  joy_110: [32],
-  lights_100: [16, 32],
-  lights_101: [16, 32],
-  lights_102: [16, 32],
-  lights_103: [16, 32],
-  lights_99: [256],
-  mailnews_12: [16, 32],
-  mailnews_13: [16, 32],
-  mailnews_14: [16, 32],
-  mailnews_15: [16, 32],
-  mailnews_16: [32],
-  mailnews_17: [16, 32],
-  mailnews_18: [16, 32],
-  mailnews_19: [16, 32],
-  mailnews_2: [16, 32],
-  mailnews_20: [16, 32],
-  mailnews_21: [32],
-  mailnews_22: [16, 32],
-  mailnews_23: [16],
-  mmsys_119: [16, 32],
-  mplayer_1_13: [16, 32],
-  mailnews_3: [16, 32],
-  mmsys_120: [16, 32],
-  mmsys_122: [16, 32],
-  mmsys_123: [32],
-  mailnews_6: [32],
-  mmsys_124: [32],
-  mplayer_12: [16, 32],
-  mailnews_7: [16, 32],
-  mmsys_90: [32],
-  mmsys_99: [16, 32],
-  moscudll_128: [16, 32],
-  mplayer_1_15: [16, 32],
-  mplayer_1_10: [16, 32],
-  mailnews_8: [16, 32],
-  mplayer_10: [16, 32],
-  mailnews_9: [32],
-  main_100: [32],
-  main_103: [32],
-  main_104: [32],
-  mplayer_1_11: [16, 32],
-  mplayer_11: [16, 32],
-  msacm32_10: [32],
-  mplayer_1_14: [16, 32],
-  mplayer_14: [16, 32],
-  mplayer_1_16: [32],
-  mplayer_16: [32],
-  mplayer_15: [16, 32],
-  mplayer_13: [16, 32],
-  mprserv_120: [48],
-  mprserv_121: [48],
-  mprserv_68: [32],
-  msawt_awt_icon: [16, 32],
-  msfs32_1951: [32],
-  mshearts_1: [32],
-  mshtml_32528: [16, 32, 48],
-  mshtml_32529: [16, 32],
-  mshtml_32534: [32],
-  mshtml_32535: [32],
-  mshtml_32536: [16, 32],
-  mshtml_32537: [16, 32],
-  mshtml_32538: [16, 32],
-  mshtml_32539: [16, 32],
-  mshtml_32540: [16, 32],
-  mshtml_32541: [16, 32],
-  mshtml_32542: [16, 32],
-  mshtml_32543: [16, 32],
-  mshtml_32544: [16, 32],
-  mshtml_32545: [16, 32],
-  mshtml_32546: [16, 32],
-  mshtml_32547: [16, 32],
-  mshtml_32548: [16, 32],
-  mshtml_32549: [16, 32],
-  mshtml_32550: [16, 32],
-  mshtml_32552: [32],
-  mshtml_32553: [32],
-  msnp32_folder_icon: [16, 32],
-  msnp32_server_icon: [16, 32],
-  msnp32_wrkgrp_icon: [16, 32],
-  msnsetup_1: [16, 32],
-  msnstart_1: [16, 32],
-  msnsign_100: [32],
-  mshtml_32551: [16, 32],
-  msnsvc_3000: [16, 32],
-  msnsign_4001: [32],
-  msnsign_ico_app: [16, 32],
-  msnstart_100: [32],
-  msrating_104: [32],
-  msnstart_110: [32],
-  msnstart_120: [32],
-  msrating_102: [32],
-  msrating_103: [32],
-  msrating_105: [32],
-  msrating_106: [16, 32],
-  msrating_107: [32],
-  msrating_108: [16, 32],
-  nwnp32_folder_icon: [16, 32],
-  msrating_109: [16, 32],
-  nwnp32_server_icon: [16, 32],
-  msvfw32_943: [32],
-  nwnp32_wrkgrp_icon: [16, 32],
-  mystify_your_mind_100: [16, 32],
-  netwatch_101: [16, 32],
-  notepad_1: [16, 32],
-  nwnp32_printer_icon: [16, 32],
-  optional_3000: [16, 32],
-  oidis400_seqfileicon: [32],
-  oislb400_dc_scan_ico: [32],
-  oiui400_imgstamp: [32],
-  oiui400_textstamp: [32],
-  ole32_8: [32],
-  password_1000: [32],
-  password_1010: [32],
-  powercfg_211: [16, 32],
-  packager_1: [32],
-  password_100: [32],
-  pbrush_1: [32],
-  plugin_2: [16, 32],
-  powercfg_205: [32],
-  powercfg_210: [16, 32],
-  prodinv_myicon: [32],
-  progman_1: [32],
-  progman_10: [32],
-  progman_11: [32],
-  progman_12: [32],
-  progman_13: [32],
-  progman_14: [32],
-  progman_15: [32],
-  progman_16: [32],
-  progman_17: [32],
-  progman_18: [32],
-  progman_19: [32],
-  progman_2: [32],
-  progman_20: [32],
-  progman_21: [32],
-  progman_22: [32],
-  progman_23: [32],
-  progman_24: [32],
-  progman_25: [32],
-  progman_26: [32],
-  progman_27: [32],
-  progman_28: [32],
-  progman_29: [32],
-  progman_30: [32],
-  smmscrpt_100: [16, 32],
-  sndrec32_15: [16, 32],
-  sndrec32_16: [16, 32],
-  sndvol32_300: [16, 32],
-  sndvol32_301: [32],
-  sndvol32_302: [32],
-  sndvol32_303: [16, 32],
-  sndvol32_304: [16, 32],
-  sol_1: [16, 32],
-  progman_31: [32],
-  progman_32: [32],
-  progman_33: [32],
-  swinst5_3000: [16, 32],
-  syncui_120: [16, 32],
-  syncui_121: [32],
-  syncui_122: [32],
-  syncui_124: [32],
-  syncui_123: [32],
-  syncui_125: [32],
-  progman_34: [32],
-  progman_35: [32],
-  progman_36: [32],
-  progman_37: [32],
-  progman_38: [32],
-  progman_39: [32],
-  progman_4: [32],
-  progman_40: [32],
-  progman_41: [32],
-  progman_42: [32],
-  syncui_126: [32],
-  progman_43: [32],
-  progman_44: [32],
-  progman_45: [32],
-  progman_46: [32],
-  progman_5: [32],
-  progman_6: [32],
-  progman_7: [32],
-  progman_8: [32],
-  progman_9: [32],
-  qfecheck_111: [32],
-  quartz_100: [16, 32],
-  quartz_101: [16, 32],
-  quartz_102: [16, 32],
-  quartz_103: [16, 32],
-  quartz_200: [16, 32],
-  quartz_201: [16, 32],
-  quartz_202: [16, 32],
-  quartz_203: [16, 32],
-  quartz_300: [16, 32],
-  syncui_127: [32],
-  syncui_128: [32],
-  quartz_301: [16, 32],
-  quikview_1: [32],
-  quikview_2: [32],
-  quikview_3: [32],
-  quikview_4: [32],
-  raplayer_801: [32],
-  rasapi32_100: [32],
-  rasapi32_101: [32],
-  rasapi32_102: [32],
-  rasapi32_103: [32],
-  rasapi32_104: [16, 32],
-  syncui_129: [32],
-  sysedit_1: [32],
-  syncui_132: [32],
-  regedit_100: [16, 32],
-  regedit_101: [16, 32],
-  regedit_102: [32],
-  regedit_201: [16],
-  regedit_202: [16],
-  regedit_203: [16],
-  regedit_204: [16],
-  regedit_205: [16],
-  regedit_206: [16],
-  regwiz_117: [32],
-  regwiz_122: [32],
-  regwiz_127: [32],
-  regwiz_129: [32],
-  rnaapp_100: [32],
-  rnaapp_101: [16, 32],
-  rnaapp_102: [16, 32],
-  rnaapp_110: [16],
-  rnaapp_111: [16],
-  rnaapp_112: [16],
-  rnaapp_113: [16],
-  rnaapp_114: [16],
-  rnanp_100: [16, 32],
-  rnaui_100: [16, 32],
-  rnaui_101: [16, 32],
-  rnaui_102: [16, 32],
-  rnaui_103: [16, 32],
-  rnaui_104: [32],
-  rnaui_105: [32],
-  rnaui_106: [32],
-  rsrcmtr_100: [16, 32],
-  rsrcmtr_121: [16],
-  rsrcmtr_122: [16],
-  rsrcmtr_123: [16],
-  rsrcmtr_124: [16],
-  rsrcmtr_125: [16],
-  rsrcmtr_126: [16],
-  rsrcmtr_127: [16],
-  rsrcmtr_128: [16],
-  rsrcmtr_129: [16],
-  rsrcmtr_130: [16],
-  rsrcmtr_131: [16],
-  rsrcmtr_132: [16],
-  rsrcmtr_133: [16],
-  rundll_1: [32],
-  runonce_106: [32],
-  scandskw_1: [16, 32],
-  sccview_icon: [16, 32],
-  scrolling_marquee_100: [16, 32],
-  sendmail_2001: [16, 32],
-  setupslt_3000: [16, 32],
-  shdocvw_256: [16, 32],
-  shdocvw_257: [16, 32, 48],
-  shdocvw_258: [16, 32],
-  shdocvw_259: [16, 32],
-  shdocvw_260: [16, 32],
-  shdocvw_261: [16, 32],
-  shdocvw_262: [16, 32],
-  shdocvw_272: [16, 32],
-  shdocvw_273: [16, 32],
-  shdocvw_274: [16, 32],
-  shdocvw_275: [16, 32],
-  shell32_1: [16, 32],
-  shell32_10: [16, 32],
-  shell32_11: [16, 32],
-  shell32_12: [16, 32],
-  shell32_13: [16, 32],
-  shell32_133: [16, 32],
-  shell32_134: [16, 32],
-  shell32_135: [16, 32],
-  shell32_136: [16, 32],
-  shell32_137: [16, 32],
-  shell32_138: [16, 32],
-  shell32_139: [16, 32],
-  shell32_14: [16, 32],
-  shell32_140: [16, 32],
-  shell32_141: [16, 32],
-  shell32_142: [32],
-  shell32_143: [32],
-  shell32_144: [32],
-  shell32_145: [32],
-  shell32_146: [32],
-  shell32_147: [16, 32],
-  shell32_148: [32],
-  shell32_15: [16, 32],
-  shell32_151: [16, 32],
-  shell32_152: [16, 32],
-  shell32_153: [16, 32],
-  shell32_154: [16, 32],
-  shell32_155: [16, 32],
-  shell32_156: [16, 32],
-  shell32_16: [16, 32],
-  shell32_160: [16, 32],
-  shell32_161: [32],
-  shell32_165: [16, 32],
-  shell32_166: [32],
-  shell32_167: [16, 32],
-  shell32_168: [16, 32],
-  shell32_169: [16, 32],
-  shell32_17: [16, 32],
-  shell32_170: [16, 32],
-  shell32_18: [16, 32],
-  shell32_19: [16, 32],
-  shell32_2: [16, 32],
-  shell32_20: [16, 32],
-  shell32_21: [16, 32],
-  shell32_22: [16, 32],
-  shell32_23: [16, 32],
-  shell32_24: [16, 32],
-  shell32_25: [16, 32],
-  shell32_26: [16, 32],
-  shell32_27: [16, 32],
-  shell32_28: [16, 32],
-  shell32_29: [16, 32],
-  shell32_3: [16, 32],
-  shell32_30: [16, 32],
-  shell32_31: [32],
-  shell32_32: [16, 32],
-  shell32_33: [16, 32],
-  shell32_34: [16, 32],
-  shell32_35: [16, 32],
-  shell32_36: [16, 32],
-  shell32_37: [16, 32],
-  shell32_38: [16, 32],
-  shell32_39: [16, 32],
-  shell32_4: [16, 32],
-  shell32_40: [16, 32],
-  shell32_41: [16, 32],
-  shell32_42: [16, 32],
-  shell32_5: [16, 32],
-  shell32_6: [16, 32],
-  shell32_7: [16, 32],
-  shell32_8: [16, 32],
-  shell32_9: [16, 32],
-  shscrap_100: [16, 32],
-  sndrec32_10: [16, 32],
-  syncui_130: [32],
-  syncui_131: [32],
-  syncui_135: [16, 32],
-  sysmon_1000: [32],
-  sysedit_2: [64],
-  systray_200: [16, 32],
-  systray_210: [16],
-  systray_221: [16],
-  systray_300: [16, 32],
-  systray_220: [16],
-  systray_303: [16, 32],
-  systray_301: [16, 32],
-  systray_302: [16, 32],
-  systray_304: [16, 32],
-  systray_305: [32],
-  systray_306: [16, 32],
-  taskman_100: [32],
-  timedate_200: [16, 32],
-  voxplay_3000: [16, 32],
-  tour_1: [32],
-  twunk_32_twunk_icon: [32],
-  tssoft32_10: [32],
-  ulclient_1002: [16, 32],
-  ulclient_1235: [32],
-  url_1_102: [16, 32],
-  url_102: [16, 32],
-  url_1_103: [32],
-  url_103: [32],
-  url_1_104: [32],
-  url_104: [32],
-  url_1_105: [32],
-  url_105: [32],
-  user_1: [10, 12, 14, 16, 22, 32],
-  user_2: [32],
-  user_3: [32],
-  user_4: [32],
-  user_5: [32],
-  user_6: [16, 32],
-  user_7: [32],
-  vvexe32_1: [32],
-  wab32_1010: [32],
-  wab32_1011: [16, 32],
-  wab32_1012: [16, 32],
-  wab32_1013: [16, 32],
-  wab32_1014: [32],
-  wab32_1015: [32],
-  wab32_1016: [32],
-  wab32_1017: [32],
-  wab32_1018: [32],
-  wab32_1019: [32],
-  wab32_1020: [32],
-  wangimg_128: [16, 32],
-  wangimg_130: [16, 32],
-  wangimg_129: [16, 32],
-  wgpocpl_128: [32],
-  winfile_1: [32],
-  winfile_2: [32],
-  winfile_3: [32],
-  winfile_4: [32],
-  winhlp32_4000: [16, 32],
-  winhlp32_4001: [16, 32],
-  winhlp32_4002: [16, 32],
-  wininet_32546: [16, 32],
-  winmine_1: [16, 32],
-  winpopup_1: [16, 32],
-  winpopup_3: [16, 32],
-  winpopup_2: [16, 32],
-  wintrust_103: [32],
-  wmsui32_1000: [16, 32],
-  wmsui32_1001: [16, 32],
-  wmsui32_1306: [32],
-  wmsui32_2219: [16, 32],
-  wmsui32_2220: [16, 32],
-  wmsui32_2221: [16, 32],
-  wmsui32_2223: [16, 32],
-  wmsui32_2224: [16, 32],
-  wmsui32_2225: [16, 32],
-  wmsui32_2226: [16, 32],
-  wmsui32_3911: [16, 32],
-  wmsui32_3912: [16, 32],
-  wmsui32_3919: [16, 32],
-  wmsui32_3920: [16, 32],
-  wmsui32_3926: [16, 32],
-  wmsui32_3924: [16, 32],
-  wmsui32_3929: [16],
-  wmsui32_3934: [16, 32],
-  wmsui32_3935: [16],
-  wmsui32_3936: [16],
-  wmsui32_3938: [32],
-  wmsui32_5084: [32],
-  wmsui32_5085: [32],
-  wmsui32_5086: [32],
-  wmsui32_5087: [32],
-  wmsui32_5900: [16, 32],
-  wmsui32_5901: [16, 32],
-  write_1: [16, 32],
+  access_110: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_218: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_219: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_220: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_221: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_222: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_223: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_224: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_225: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_226: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_227: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_228: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_229: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  access_230: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  accessibility: [
+    {
+      bpp: 1,
+      size: 64,
+      variant: 1,
+    },
+  ],
+  actmovie_303: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  amovie_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  appwiz_1500: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  appwiz_1501: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  appwiz_1502: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  appwiz_1503: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  arrow_left: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  arrow_right: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfext32_6049: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfext32_6050: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfext32_6051: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfext32_6052: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfext32_6053: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxcg32_1301: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxcg32_1302: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxcg32_1303: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxcg32_1304: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxcg32_1305: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_109: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_113: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_114: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_115: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_116: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_117: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_118: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_119: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_120: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_121: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_awfxex: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awfxex32_info: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awschd32_400: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awschd32_401: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awschd32_402: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awsnto32_49: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  awsnto32_50: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bat: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bat_exec: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bat_exec_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bat_wait: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bill: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  blank_screen_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bookmark: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  brush: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  bulb: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cachevu_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  calc_sc: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  calculator: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  camera: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ccapi_104: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ccapi_105: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ccapi_106: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cd_exe: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cd_music: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cd_search: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cdplayer_107: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cdplayer_110: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  cdplayer_114: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  charmap_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  chatshow_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comctl32_150: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_528: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_529: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_530: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_531: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_532: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_533: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_534: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_535: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_536: [
+    {
+      bpp: 4,
+      size: 91,
+      variant: 1,
+    },
+  ],
+  comdlg32_537: [
+    {
+      bpp: 4,
+      size: 98,
+      variant: 1,
+    },
+  ],
+  comdlg32_538: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  comdlg32_539: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  computer: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  computer_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  computer_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  computer_4: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  computer_5: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  computer_find: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_107: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_108: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_109: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_1100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_116: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_118: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  confcp_120: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  conflnk_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  conflnk_103: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  controls_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  coreui_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  curves_and_colors_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  d3_flower_box_100: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  d3_flying_objects_id_app: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  d3_maze_100: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  d3_pipes_id_app: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  d3_text_100: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_4: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_5: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_6: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_7: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_8: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  defrag_9: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  desk_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  desktop: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  dial: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  dialer_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  dialer_2: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  dialmon_200: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  directcc_1001: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  directcc_1002: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  directcc_1003: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  directcc_1004: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  directcc_1005: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  directcc_directcc: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  diskcopy_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  dpmodemx_701: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_4: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_5: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_6: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_7: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  drvspace_8: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  earth: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explore: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_101: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_103: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_104: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_107: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  explorer_108: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  expostrt_128: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fax: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fax_warning: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  faxcover_108: [
+    {
+      bpp: 1,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  faxcover_140: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  faxcover_2: [
+    {
+      bpp: 1,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  faxcover_3: [
+    {
+      bpp: 1,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_corrupted: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_delete: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_find: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_find2: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_find3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_font: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_font_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_icons: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_pen: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_pencil: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_pick: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_pin: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_settings: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_text: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_text_settings: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  file_transfer: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  files: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  filexfer_128: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  filexfer_129: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  filexfer_130: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  flying_through_space_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  flying_windows_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fm20enu_5: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_exe: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_exe2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_file: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_font: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_open: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_print: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_rename: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_settings: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_settings_2: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  folder_shared: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  font: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fontext_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fontext_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fontext_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fontext_4: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fontview_110: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fontview_111: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  forbidden: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  freecell_1: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  fte_128: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_10001: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10002: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10003: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10004: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10005: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10006: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10007: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10008: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10009: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10010: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10011: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10012: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10013: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10014: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10015: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10016: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10017: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10018: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10020: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10021: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10022: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10023: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10024: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10025: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10026: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10027: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10028: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10029: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10030: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10031: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10032: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10033: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10034: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10035: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10036: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10037: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10038: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10039: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10040: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10041: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10042: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10043: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10044: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10045: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10046: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10047: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10048: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10049: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10050: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10051: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10052: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10053: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10054: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10055: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10056: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10057: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10058: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10059: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10060: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10061: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10062: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10063: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_10064: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_101: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_102: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_104: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_106: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_107: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  gcdef_108: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_109: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_110: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_111: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_112: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_113: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_114: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_115: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_116: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_117: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_122: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  gcdef_124: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 64,
+      variant: 1,
+    },
+  ],
+  globe: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  grpconv_100: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  grpconv_101: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  hand: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  hardware: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  help_book: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  icmui_1200: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  icmui_1201: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  icwdial_101: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  icwdial_102: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  imgadmin_214: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  imgedit_10: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  imgedit_277: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  imgscan_10: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  imgthumb_10: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcfg_2300: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcfg_2301: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcfg_2302: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcfg_2303: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1301: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1302: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1303: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1304: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1305: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1306: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1307: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1308: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1309: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1310: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1311: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1312: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1313: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  inetcpl_1314: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1315: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1317: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1318: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1319: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1320: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_1321: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  inetcpl_4432: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  info_bubble: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  install: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  internat_151: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  intl_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  isign32_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  isign32_4001: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  isign32_ico_app: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  issue: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  isuninst_1000: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  jdbgmgr_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  jgdwmie_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  joy_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  joy_108: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  joy_110: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  key: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  keyboard_mouse: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  keys: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  lights_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  lights_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  lights_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  lights_103: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  lights_99: [
+    {
+      bpp: 4,
+      size: 256,
+      variant: 1,
+    },
+  ],
+  loader_bat: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  lock: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  log_view: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  logo: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mail: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_12: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_13: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_14: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_15: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_16: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_17: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_18: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_19: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_20: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_21: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_22: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_23: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  mailnews_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_6: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_7: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_8: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mailnews_9: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_104: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_106: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_107: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_200: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_300: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_400: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_500: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  main_600: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mapi32_451: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mapi32_501: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mapi32_801: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  mapi32_icon_attach: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mapisp32_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcdpkgtm_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_3200: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_3201: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_3202: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_3203: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_401: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_502: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_earth: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mcm_phone: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mdisp32_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  media_audio: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  media_cd: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  media_video: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  memory: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mic: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  microsoft_exchange: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  microsoft_network: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mkcompat_900: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mlcfg32_129: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_102: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 2,
+    },
+  ],
+  mmsys_103: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_104: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_105: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_106: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_107: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_108: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_109: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_110: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_111: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_112: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_113: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_114: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_115: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_116: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_117: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_118: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_119: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_120: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_121: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_122: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_123: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_124: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_90: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mmsys_99: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  moscudll_128: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_10: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_11: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_12: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_13: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_14: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_15: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_16: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_10: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_11: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_12: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_13: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_14: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_15: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mplayer_1_16: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mprserv_120: [
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  mprserv_121: [
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  mprserv_68: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ms_dos: [
+    {
+      bpp: 32,
+      size: 128,
+      variant: 1,
+    },
+    {
+      bpp: 32,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 32,
+      size: 24,
+      variant: 1,
+    },
+    {
+      bpp: 32,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 32,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  msacm32_10: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msawt_awt_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msfs32_1951: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshearts_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32528: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  mshtml_32529: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32534: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32535: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32536: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32537: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32538: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32539: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32540: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32541: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32542: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32543: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32544: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32545: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32546: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32547: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32548: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32549: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32550: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32551: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32552: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mshtml_32553: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnp32_folder_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnp32_server_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnp32_wrkgrp_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnsetup_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnsign_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnsign_4001: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnsign_ico_app: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnstart_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnstart_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnstart_110: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnstart_120: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msnsvc_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mspaint: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_102: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_104: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_106: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_107: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_108: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msrating_109: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  msvfw32_943: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 2,
+    },
+  ],
+  mute: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  mystify_your_mind_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  netwatch_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  network: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  network_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  network_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  notepad: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  notepad_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  notepad_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  nwnp32_folder_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  nwnp32_printer_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  nwnp32_server_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  nwnp32_wrkgrp_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  oidis400_seqfileicon: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  oislb400_dc_scan_ico: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  oiui400_imgstamp: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  oiui400_textstamp: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ole32_8: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  optional_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  packager: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  packager_1: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  password_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  password_1000: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  password_1010: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  pbrush_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  phone: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  phone_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  plugin: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  plugin_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  power_off: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  power_on: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  powercfg_205: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  powercfg_210: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  powercfg_211: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  printer: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  printer_calendar: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  printer_drive: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  printer_shared: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  prodinv_myicon: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 2,
+    },
+  ],
+  progman_1: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_10: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_11: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_12: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_13: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_14: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_15: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_16: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_17: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_18: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_19: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_2: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_20: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_21: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_22: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_23: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_24: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_25: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_26: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_27: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_28: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_29: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_30: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_31: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_32: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_33: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_34: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_35: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_36: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_37: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_38: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_39: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_4: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_40: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_41: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_42: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_43: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_44: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_45: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_46: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_5: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_6: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_7: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_8: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  progman_9: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  qfecheck_111: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_103: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_200: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_201: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_202: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_203: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_300: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quartz_301: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  question_bubble: [
+    {
+      bpp: 32,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quikview_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quikview_2: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quikview_3: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  quikview_4: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  raplayer_801: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rasapi32_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rasapi32_101: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rasapi32_102: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rasapi32_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rasapi32_104: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_cd: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_cd_2: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_closed: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_disket: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_disket2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_disket_casset: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_eject: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_noshared: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_opened: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  reader_shared: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  recycle_empty: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  recycle_file: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  recycle_filefolder: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  recycle_folder: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  recycle_full: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regedit: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regedit_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regedit_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regedit_102: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regedit_201: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  regedit_202: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  regedit_203: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  regedit_204: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  regedit_205: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  regedit_206: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  regwiz_117: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regwiz_122: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regwiz_127: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  regwiz_129: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaapp_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaapp_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaapp_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaapp_110: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rnaapp_111: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rnaapp_112: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rnaapp_113: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rnaapp_114: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rnanp_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_101: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_103: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_104: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rnaui_106: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_121: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_122: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_123: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_124: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_125: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_126: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_127: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_128: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_129: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_130: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_131: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_132: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rsrcmtr_133: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  rundll_1: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  runonce_106: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  scandskw_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sccview_icon: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  scrolling_marquee_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sendmail_2001: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  settings: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  setupslt_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_256: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_257: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 48,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 8,
+      size: 48,
+      variant: 1,
+    },
+  ],
+  shdocvw_258: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_259: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_260: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_261: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_262: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_272: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_273: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_274: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shdocvw_275: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_10: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_11: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_12: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_13: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_133: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_134: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_135: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_136: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_137: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_138: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_139: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_14: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_140: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_141: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_142: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_143: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_144: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_145: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_146: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_147: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_148: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_15: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_151: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_152: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_153: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_154: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_155: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_156: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_16: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_160: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_161: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_165: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_166: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_167: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_168: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_169: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_17: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_170: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_18: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_19: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_20: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_21: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_22: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_23: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_24: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_25: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_26: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_27: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_28: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_29: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_30: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_31: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_32: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_33: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_34: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_35: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_36: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_37: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_38: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_39: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_4: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_40: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_41: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_42: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_5: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_6: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_7: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_8: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shell32_9: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shortcut: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shortcut2: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  shscrap_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  signup: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  smmscrpt_100: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndrec32_10: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndrec32_15: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndrec32_16: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndvol32_300: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndvol32_301: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndvol32_302: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndvol32_303: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sndvol32_304: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sol_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  star: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  swinst5_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_120: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_121: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_122: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_123: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_124: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_125: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_126: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_127: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_128: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_129: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_130: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_131: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_132: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  syncui_135: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sys_package: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sysedit_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  sysedit_2: [
+    {
+      bpp: 1,
+      size: 64,
+      variant: 1,
+    },
+  ],
+  sysmon_1000: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_200: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_210: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  systray_220: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  systray_221: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  systray_300: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_301: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_302: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_303: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_304: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_305: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  systray_306: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  taskman_100: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  textchat: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  textchat_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  timedate: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  timedate_200: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  timer_font: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  tour_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  tree: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  tssoft32_10: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  twunk_32_twunk_icon: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ulclient_1002: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  ulclient_1235: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  uninstall: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  unmute: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_104: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_1_102: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_1_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_1_104: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  url_1_105: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_1: [
+    {
+      bpp: 4,
+      size: 10,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 12,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 14,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 22,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_2: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_3: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_4: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_5: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_6: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  user_7: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  voxplay_3000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  vvexe32_1: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1010: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1011: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1012: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1013: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1014: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1015: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1016: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1017: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1018: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1019: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wab32_1020: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wangimg_128: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wangimg_129: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wangimg_130: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  warning: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wgpocpl_128: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  window_abc: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  window_accessibility: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  window_graph: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  windows_explorer: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winfile_1: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winfile_2: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winfile_3: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winfile_4: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winhlp32_4000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winhlp32_4001: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winhlp32_4002: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wininet_32546: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winmine_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winpopup_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winpopup_2: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  winpopup_3: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wintrust_103: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_1000: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_1001: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_1306: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 1,
+      size: 32,
+      variant: 2,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2219: [
+    {
+      bpp: 1,
+      size: 32,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2220: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2221: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2223: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2224: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2225: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_2226: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3911: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3912: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3919: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3920: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3924: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3926: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3929: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  wmsui32_3934: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_3935: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  wmsui32_3936: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+  ],
+  wmsui32_3938: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_5084: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_5085: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_5086: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_5087: [
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_5900: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wmsui32_5901: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  wordpad: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
+  write_1: [
+    {
+      bpp: 4,
+      size: 16,
+      variant: 1,
+    },
+    {
+      bpp: 4,
+      size: 32,
+      variant: 1,
+    },
+  ],
 };
 
 export default sizes;
