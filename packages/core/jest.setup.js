@@ -11,13 +11,21 @@ jest.mock('icojs', () => ({
     Promise.resolve([
       {
         width: 16,
-        buffer: 'buffer16',
-        bbt: 4,
+        buffer: 'buffer-16-4-1',
+        bpp: 4,
+        variant: 1,
       },
       {
         width: 32,
-        buffer: 'buffer32',
-        bbt: 4,
+        buffer: 'buffer-32-4-1',
+        bpp: 4,
+        variant: 1,
+      },
+      {
+        width: 32,
+        buffer: 'buffer-32-4-2',
+        bpp: 4,
+        variant: 2,
       },
     ]),
   ),
