@@ -1,10 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
-export const BUFFER_SIZES = {
-  16: 'buffer16',
-  32: 'buffer32',
-};
-
 jest.mock('icojs', () => ({
   isICO: jest.fn(() => true),
   parse: jest.fn(() =>
