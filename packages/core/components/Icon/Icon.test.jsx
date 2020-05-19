@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderHook } from '@testing-library/react-hooks';
-import { waitRender } from '../shared/test/utils';
+import { waitRender, act } from '../shared/test/utils';
 
 import useIcon from './useIcon';
 import Icon from './Icon';
@@ -96,5 +96,33 @@ describe('useIcon', () => {
     expect(result.current.availableIcons).toHaveLength(
       Object.keys(BUFFER_SIZES).length,
     );
+  });
+
+  it('should return different icons due to variant prop', async () => {
+    const iconSize = 32;
+    let variant = 1;
+
+    const { result, waitForNextUpdate } = renderHook(() =>
+      useIcon({ name: 'bat', size: iconSize, variant: 1 }),
+    );
+
+    const { result: result2 } = renderHook(() =>
+      useIcon({ name: 'bat', size: iconSize, variant: 2 }),
+    );
+
+    expect(result.current.iconUrl).toBe('');
+
+    await waitForNextUpdate();
+
+    const iconsWithIconSize = result.current.availableIcons.filter(
+      i => i.size === iconSize,
+    );
+
+    expect(iconsWithIconSize).toHaveLength(2);
+
+    const [first, second] = iconsWithIconSize;
+    expect(first).not.toBe(second);
+
+    expect(result.current.iconUrl).not.toBe(result2.current.iconUrl);
   });
 });
