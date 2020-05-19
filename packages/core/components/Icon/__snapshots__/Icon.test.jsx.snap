@@ -15,7 +15,7 @@ exports[`<Icon /> should match snapshot 1`] = `
     class="c0"
     height="32"
     name="bat"
-    style="background-image: url(buffer32);"
+    style="background-image: url(buffer-32-4-1);"
     width="32"
   />
 </div>
@@ -36,7 +36,7 @@ exports[`<Icon /> should match snapshot with different size 1`] = `
     class="c0"
     height="16"
     name="bat"
-    style="background-image: url(buffer16);"
+    style="background-image: url(buffer-16-4-1);"
     width="16"
   />
 </div>
@@ -96,21 +96,21 @@ exports[`<Icon /> should match snapshot with different width and height 1`] = `
     class="c0"
     height="10"
     name="bat"
-    style="background-image: url(buffer32);"
+    style="background-image: url(buffer-32-4-1);"
     width="10"
   />
   <i
     class="c1"
     height="20"
     name="bat"
-    style="background-image: url(buffer32);"
+    style="background-image: url(buffer-32-4-1);"
     width="20"
   />
   <i
     class="c2"
     height="30"
     name="bat"
-    style="background-image: url(buffer32);"
+    style="background-image: url(buffer-32-4-1);"
     width="30"
   />
 </div>

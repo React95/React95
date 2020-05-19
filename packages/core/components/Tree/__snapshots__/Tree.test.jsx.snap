@@ -90,7 +90,7 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
             class="c4"
             height="14"
             name="bat"
-            style="background-image: url(buffer32);"
+            style="background-image: url(buffer-32-4-1);"
             width="14"
           />
         </div>
