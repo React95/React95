@@ -1,10 +1,9 @@
 import React from 'react';
 import { renderHook } from '@testing-library/react-hooks';
-import { waitRender, act } from '../shared/test/utils';
+import { waitRender } from '../shared/test/utils';
 
 import useIcon from './useIcon';
 import Icon from './Icon';
-import { BUFFER_SIZES } from '../../jest.setup';
 
 describe('<Icon />', () => {
   it('should match snapshot', async () => {
@@ -93,15 +92,12 @@ describe('useIcon', () => {
   });
 
   it('should return different icons due to variant prop', async () => {
-    const iconSize = 32;
-    let variant = 1;
-
     const { result, waitForNextUpdate } = renderHook(() =>
-      useIcon({ name: 'bat', size: iconSize, variant: 1 }),
+      useIcon({ name: 'bat', size: 32, variant: 1 }),
     );
 
     const { result: result2 } = renderHook(() =>
-      useIcon({ name: 'bat', size: iconSize, variant: 2 }),
+      useIcon({ name: 'bat', size: 32, variant: 2 }),
     );
 
     expect(result.current.iconUrl).toBe('');
@@ -109,7 +105,7 @@ describe('useIcon', () => {
     await waitForNextUpdate();
 
     const iconsWithIconSize = result.current.availableIcons.filter(
-      i => i.size === iconSize,
+      i => i.size === 32,
     );
 
     expect(iconsWithIconSize).toHaveLength(2);

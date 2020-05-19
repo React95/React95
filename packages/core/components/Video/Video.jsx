@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
-import { string } from 'prop-types';
+import { string, shape, bool } from 'prop-types';
 
 import Btn from '../shared-style/Btn';
 import { Frame, Range, Icon } from '..';
@@ -18,6 +18,10 @@ const VideoTag = styled.video`
 const Source = ({ src }) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
+
+Source.propTypes = {
+  src: string.isRequired,
+};
 
 const ControlBtn = styled(Btn)`
   display: inline-flex;
@@ -96,6 +100,11 @@ const VideoRange = styled(Range)`
   }
 `;
 
+const PlayOrPause = ({ playing }) => (playing ? <Pause /> : <Play />);
+PlayOrPause.propTypes = {
+  playing: bool.isRequired,
+};
+
 const arrayFy = str => [].concat(str);
 
 function updateProgressBar(player, updateProgress) {
@@ -109,18 +118,18 @@ function parseCurrentTime(secs) {
     return '00:00';
   }
 
-  const sec_num = parseInt(secs, 10);
-  const hours = Math.floor(sec_num / 3600);
-  const minutes = Math.floor(sec_num / 60) % 60;
-  const seconds = sec_num % 60;
+  const sec = parseInt(secs, 10);
+  const hours = Math.floor(sec / 3600);
+  const minutes = Math.floor(sec / 60) % 60;
+  const seconds = sec % 60;
 
   return [hours, minutes, seconds]
-    .map(v => (v < 10 ? '0' + v : v))
+    .map(v => (v < 10 ? `0${v}` : v))
     .filter((v, i) => v !== '00' || i > 0)
     .join(':');
 }
 
-const Video = ({ src, name, videoProps, ...props }) => {
+const Video = ({ src, name, videoProps, style, ...props }) => {
   const [playing, setPlaying] = useState(false);
   const [loadeddata, setLoadeddata] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -161,12 +170,12 @@ const Video = ({ src, name, videoProps, ...props }) => {
       {...props}
       style={{
         width: !loadeddata ? 260 : undefined,
-        ...props.style,
+        ...style,
       }}
     >
       <TitleBar>
         <Icon name="mplayer_1_13" size={16} style={{ marginRight: 4 }} />
-        {name ? name : pathname.replace(/^.*[\\\/]/, '')}
+        {name || pathname.replace(/^.*[\\/]/, '')}
         {!loadeddata && ' (Openning)'}
       </TitleBar>
       <VideoTag {...videoProps} ref={player} visible={loadeddata}>
@@ -214,15 +223,11 @@ const Video = ({ src, name, videoProps, ...props }) => {
               } else {
                 player.current.pause();
               }
-              setPlaying(playing => !playing);
+              setPlaying(!playing);
             }}
           >
             {loadeddata ? (
-              playing ? (
-                <Pause />
-              ) : (
-                <Play />
-              )
+              <PlayOrPause playing={playing} />
             ) : (
               <Icon
                 name="user_4"
@@ -275,10 +280,14 @@ const Video = ({ src, name, videoProps, ...props }) => {
 Video.propTypes = {
   name: string,
   src: string.isRequired,
+  videoProps: shape({}),
+  style: shape({}),
 };
 
 Video.defaultProps = {
   name: '',
+  videoProps: {},
+  style: {},
 };
 
 export default Video;
