@@ -150,7 +150,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
         class="c2"
         height="32"
         name="folder_exe2"
-        style="background-image: url(buffer32);"
+        style="background-image: url(buffer-32-4-1);"
         width="32"
       />
       <ul
@@ -164,7 +164,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
             class="c2"
             height="32"
             name="microsoft_exchange"
-            style="background-image: url(buffer32);"
+            style="background-image: url(buffer-32-4-1);"
             width="32"
           />
           Microsoft Exchange
@@ -179,7 +179,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
             class="c2"
             height="32"
             name="windows_explorer"
-            style="background-image: url(buffer32);"
+            style="background-image: url(buffer-32-4-1);"
             width="32"
           />
           Windows Explorer

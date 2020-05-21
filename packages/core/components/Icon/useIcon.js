@@ -12,14 +12,14 @@ function icoParse(file) {
   return [];
 }
 
-const useIcon = ({ name, size, fallback }) => {
+const useIcon = ({ name, size, fallback, bpp = 4, variant = 1 }) => {
   const [data, setAvailableIcons] = useState({
     iconUrl: '',
     availableIcons: [{}],
   });
 
-  const changeIconUrl = (newUrl) => {
-    setAvailableIcons((iconData) => ({ ...iconData, iconUrl: newUrl }));
+  const changeIconUrl = newUrl => {
+    setAvailableIcons(iconData => ({ ...iconData, iconUrl: newUrl }));
   };
 
   useEffect(() => {
@@ -29,17 +29,18 @@ const useIcon = ({ name, size, fallback }) => {
 
       const allIcons = await icoParse(iconBuffer);
 
-      const iconsToRender = allIcons.map((i) => ({
+      const iconsToRender = allIcons.map(i => ({
         size: i.width,
         url: URL.createObjectURL(new Blob([i.buffer], { type: MIME_TYPE })),
-        bit: i.bbt,
+        bpp: i.bpp,
       }));
 
       let url;
-      const match = iconsToRender.find((i) => i.size === size);
+      const match = iconsToRender.filter(i => i.size === size && i.bpp === bpp);
 
-      if (match) {
-        url = match.url;
+      if (match.length > 0) {
+        const finded = match[variant - 1];
+        url = finded.url;
       } else if (fallback) {
         url = iconsToRender[0].url;
       }
