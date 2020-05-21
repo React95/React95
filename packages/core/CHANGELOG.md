@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/React95/React95/compare/@react95/core@2.8.0...@react95/core@2.9.0) (2020-05-21)
+
+
+### Features
+
+* **globalstyle:** add 95Video fontface to the GlobalStyle ([3106578](https://github.com/React95/React95/commit/3106578c6fdd368f18216bea0dc7850dd62c1435))
+* **icon:** add bits per pixel prop to Icon Component ([f98ed2d](https://github.com/React95/React95/commit/f98ed2d51976a953e361b1db707093d9ce252b01))
+* **icon:** add new prop `variant` ([26e6faf](https://github.com/React95/React95/commit/26e6fafdd4cfc99647208695db29c7980a155417))
+* **video:** add 95Video font used for time counters ([ae36cca](https://github.com/React95/React95/commit/ae36cca06cf97e19a081e001ddead7ee0dc51cf5))
+* **video:** add loadeddata eventlistener ([60a7453](https://github.com/React95/React95/commit/60a745339fa691f0525778c8cc2b4eb7288a43ca))
+* **video:** new Video component ([e1b5fdf](https://github.com/React95/React95/commit/e1b5fdffc049f1916dffc669e90dd76c5933d5a6)), closes [#142](https://github.com/React95/React95/issues/142)
+* **video:** new Video component :tada: ([ae2138e](https://github.com/React95/React95/commit/ae2138e5dc5d3159c7c0b1b10950521620555fe7)), closes [#142](https://github.com/React95/React95/issues/142)
+* **video:** replace old font with the React95Video-Number new one ([e6cf520](https://github.com/React95/React95/commit/e6cf520ee361baadf9e054c8404b769965b3a0e8))
+
+
+
+
+
 # [2.8.0](https://github.com/React95/React95/compare/@react95/core@2.7.0...@react95/core@2.8.0) (2020-05-15)
 
 
