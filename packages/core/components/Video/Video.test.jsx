@@ -129,5 +129,32 @@ describe('<Video />', () => {
 
       expect(video.currentTime).toBeGreaterThan(0);
     });
+
+    describe('when video ends', () => {
+      it('should reset range', async () => {
+        const { container } = await waitRender(
+          <Video src="foo/bar/some_video.mp4" />,
+        );
+
+        const video = container.querySelector('video');
+        const range = container.querySelector('input');
+        const duration = 60;
+        const currentTime = duration / 2;
+        const initialExpectedRange = (currentTime / duration) * 100;
+
+        video.duration = duration;
+        video.currentTime = currentTime;
+
+        act(() => {
+          video.dispatchEvent(new window.Event('timeupdate'));
+        });
+        expect(range.value).toBe(String(initialExpectedRange));
+
+        act(() => {
+          video.dispatchEvent(new window.Event('ended'));
+        });
+        expect(range.value).toBe('0');
+      });
+    });
   });
 });
