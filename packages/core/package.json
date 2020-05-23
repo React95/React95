@@ -14,7 +14,6 @@
     "@styled-system/prop-types": "^5.1.5",
     "@testing-library/react-hooks": "^3.2.1",
     "@xstyled/styled-components": "^1.17.1",
-    "clippyjs": "^0.0.3",
     "icojs": "^0.14.0",
     "prop-types": "^15.7.2",
     "react-draggable": "^4.3.1",
@@ -27,6 +26,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "@react95/clippy": "0.0.1",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
