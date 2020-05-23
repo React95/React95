@@ -29,7 +29,7 @@ function useClippy(agentName = AGENTS.CLIPPY) {
     });
   }, [agentName]);
 
-  return fn => fn(clippy);
+  return clippy;
 }
 
 export default useClippy;
