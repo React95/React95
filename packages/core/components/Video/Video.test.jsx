@@ -46,7 +46,7 @@ describe('<Video />', () => {
         .spyOn(window.HTMLMediaElement.prototype, 'pause')
         .mockImplementation(() => {});
 
-      const { container } = await waitRender(
+      const { container, getByLabelText } = await waitRender(
         <Video src="foo/bar/some_video.mp4" />,
       );
 
@@ -55,14 +55,12 @@ describe('<Video />', () => {
         video.dispatchEvent(new window.Event('loadeddata'));
       });
 
-      const [playBtn, stopBtn] = container.querySelectorAll('button');
-
       // Play
-      fireEvent.click(playBtn);
+      fireEvent.click(getByLabelText('play'));
       // Pause
-      fireEvent.click(playBtn);
+      fireEvent.click(getByLabelText('pause'));
       // Stop
-      fireEvent.click(stopBtn);
+      fireEvent.click(getByLabelText('stop'));
 
       expect(playStub).toHaveBeenCalled();
       // Pause + Stop
