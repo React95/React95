@@ -1,6 +1,7 @@
 import React from 'react';
 import { waitRender, fireEvent, act } from '../shared/test/utils';
 import Video from './Video';
+import { PLAY_DATA_TEST_ID, PAUSE_DATA_TEST_ID } from './buttons';
 
 describe('<Video />', () => {
   describe('Snapshot', () => {
@@ -131,29 +132,54 @@ describe('<Video />', () => {
     });
 
     describe('when video ends', () => {
-      it('should reset range', async () => {
-        const { container } = await waitRender(
+      const duration = 60;
+      const currentTime = duration / 2;
+
+      const getElements = async () => {
+        const { container, getByTestId } = await waitRender(
           <Video src="foo/bar/some_video.mp4" />,
         );
 
         const video = container.querySelector('video');
-        const range = container.querySelector('input');
-        const duration = 60;
-        const currentTime = duration / 2;
-        const initialExpectedRange = (currentTime / duration) * 100;
 
         video.duration = duration;
         video.currentTime = currentTime;
 
+        return {
+          container,
+          video,
+          getByTestId,
+          range: container.querySelector('input'),
+        };
+      };
+
+      it('should reset range', async () => {
+        const { video, range } = await getElements();
+
         act(() => {
           video.dispatchEvent(new window.Event('timeupdate'));
         });
-        expect(range.value).toBe(String(initialExpectedRange));
+        expect(range.value).toBe(String((currentTime / duration) * 100));
 
         act(() => {
           video.dispatchEvent(new window.Event('ended'));
         });
         expect(range.value).toBe('0');
+      });
+
+      it('should update play/pause button', async () => {
+        const { video, getByTestId } = await getElements();
+
+        act(() => {
+          video.dispatchEvent(new window.Event('loadeddata'));
+          video.dispatchEvent(new window.Event('playing'));
+        });
+        expect(getByTestId(PAUSE_DATA_TEST_ID)).toBeTruthy();
+
+        act(() => {
+          video.dispatchEvent(new window.Event('ended'));
+        });
+        expect(getByTestId(PLAY_DATA_TEST_ID)).toBeTruthy();
       });
     });
   });
