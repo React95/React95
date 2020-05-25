@@ -1,7 +1,6 @@
 import React from 'react';
 import { waitRender, fireEvent, act } from '../shared/test/utils';
 import Video from './Video';
-import { PLAY_DATA_TEST_ID, PAUSE_DATA_TEST_ID } from './buttons';
 
 describe('<Video />', () => {
   describe('Snapshot', () => {
@@ -136,7 +135,7 @@ describe('<Video />', () => {
       const currentTime = duration / 2;
 
       const getElements = async () => {
-        const { container, getByTestId } = await waitRender(
+        const { container, getByLabelText } = await waitRender(
           <Video src="foo/bar/some_video.mp4" />,
         );
 
@@ -148,18 +147,19 @@ describe('<Video />', () => {
         return {
           container,
           video,
-          getByTestId,
+          getByLabelText,
           range: container.querySelector('input'),
         };
       };
 
       it('should update range input', async () => {
         const { video, range } = await getElements();
+        const expectedRangeValue = String((currentTime / duration) * 100);
 
         act(() => {
           video.dispatchEvent(new window.Event('timeupdate'));
         });
-        expect(range.value).toBe(String((currentTime / duration) * 100));
+        expect(range.value).toBe(expectedRangeValue);
 
         act(() => {
           video.dispatchEvent(new window.Event('ended'));
@@ -168,18 +168,18 @@ describe('<Video />', () => {
       });
 
       it('should update play/pause button', async () => {
-        const { video, getByTestId } = await getElements();
+        const { video, getByLabelText } = await getElements();
 
         act(() => {
           video.dispatchEvent(new window.Event('loadeddata'));
           video.dispatchEvent(new window.Event('playing'));
         });
-        expect(getByTestId(PAUSE_DATA_TEST_ID)).toBeTruthy();
+        expect(getByLabelText('pause')).toBeTruthy();
 
         act(() => {
           video.dispatchEvent(new window.Event('ended'));
         });
-        expect(getByTestId(PLAY_DATA_TEST_ID)).toBeTruthy();
+        expect(getByLabelText('play')).toBeTruthy();
       });
     });
   });
