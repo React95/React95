@@ -133,7 +133,7 @@ describe('<Video />', () => {
       const currentTime = duration / 2;
 
       const getElements = async () => {
-        const { container, getByLabelText } = await waitRender(
+        const { container, queryAllByLabelText } = await waitRender(
           <Video src="foo/bar/some_video.mp4" />,
         );
 
@@ -143,9 +143,8 @@ describe('<Video />', () => {
         video.currentTime = currentTime;
 
         return {
-          container,
           video,
-          getByLabelText,
+          queryAllByLabelText,
           range: container.querySelector('input'),
         };
       };
@@ -166,18 +165,20 @@ describe('<Video />', () => {
       });
 
       it('should update play/pause button', async () => {
-        const { video, getByLabelText } = await getElements();
+        const { video, queryAllByLabelText } = await getElements();
 
         act(() => {
           video.dispatchEvent(new window.Event('loadeddata'));
           video.dispatchEvent(new window.Event('playing'));
         });
-        expect(getByLabelText('pause')).toBeTruthy();
+        expect(queryAllByLabelText('pause')).toHaveLength(1);
+        expect(queryAllByLabelText('play')).toHaveLength(0);
 
         act(() => {
           video.dispatchEvent(new window.Event('ended'));
         });
-        expect(getByLabelText('play')).toBeTruthy();
+        expect(queryAllByLabelText('play')).toHaveLength(1);
+        expect(queryAllByLabelText('pause')).toHaveLength(0);
       });
     });
   });
