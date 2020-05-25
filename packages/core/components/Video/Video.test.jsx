@@ -153,7 +153,7 @@ describe('<Video />', () => {
         };
       };
 
-      it('should reset range', async () => {
+      it('should update range input', async () => {
         const { video, range } = await getElements();
 
         act(() => {
