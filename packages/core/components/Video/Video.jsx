@@ -162,6 +162,13 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
       },
       false,
     );
+    player.current.addEventListener(
+      'playing',
+      () => {
+        setPlaying(true);
+      },
+      false,
+    );
   }, [player.current]);
 
   return (
