@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/React95/React95/compare/@react95/core@2.9.0...@react95/core@2.10.0) (2020-05-26)
+
+
+### Features
+
+* **video:** listen to "playing" event ([152a0a4](https://github.com/React95/React95/commit/152a0a423963ac344e91939897c7608392ab7f54))
+* **video:** use aria-label attribute on buttons ([faf2ca7](https://github.com/React95/React95/commit/faf2ca7c590db82c61d574e673e058b7f8b04c43))
+* **video:** use aria-label on stop button ([6d1c4c4](https://github.com/React95/React95/commit/6d1c4c4561826f856e931ab8a8dd62dbff55a939))
+
+
+
+
+
 # [2.9.0](https://github.com/React95/React95/compare/@react95/core@2.8.0...@react95/core@2.9.0) (2020-05-21)
 
 
