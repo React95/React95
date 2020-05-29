@@ -168,6 +168,7 @@ class Clippy extends React.Component {
   constructor(...args) {
     super(...args);
     this.state = {
+      pkg: 'core',
       component: '',
       code: '',
       clippyButton: false,
@@ -236,9 +237,9 @@ class Clippy extends React.Component {
     channel.removeListener('clippy/set_component', this._speak);
   }
 
-  setComponent = ({ component, code }) => {
+  setComponent = ({ component, code, pkg = 'core' }) => {
     this._closeModal();
-    this.setState({ component, code });
+    this.setState({ component, code, pkg });
   };
 
   _showMeTheCode = () => this._openModal();
@@ -282,13 +283,14 @@ class Clippy extends React.Component {
   _copySelectedText = () => document.execCommand('copy');
 
   render() {
-    const { showModal, code, component } = this.state;
+    const { showModal, code, component, pkg } = this.state;
 
     const formattedCode = [
-      `import { ${component} } from '@react95/core';`,
+      `import { ${component} } from '@react95/${pkg}';`,
       '',
       code,
     ].join('\n');
+    console.log('Clippy -> render -> formattedCode', formattedCode);
 
     return (
       <ThemeProvider>
