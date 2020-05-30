@@ -51,7 +51,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lerna run lint:all",
-      "pre-push": "lerna run test"
+      "pre-push": "yarn test"
     }
   }
 }
