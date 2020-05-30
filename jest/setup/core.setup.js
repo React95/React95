@@ -1,3 +1,5 @@
+import 'jest-styled-components';
+
 jest.mock('icojs', () => ({
   isICO: jest.fn(() => true),
   parse: jest.fn(() =>
