@@ -12,7 +12,7 @@ jobs:
 
       script:
         - lerna run lint:all
-        - lerna run test
+        - yarn test
 
       after_success:
         - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
