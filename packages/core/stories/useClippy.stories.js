@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { useClippy, ClippyProvider, AGENTS } from '@react95/clippy';
 import styled from '@xstyled/styled-components';
