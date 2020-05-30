@@ -29,7 +29,7 @@ exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
     class="c0"
   >
     <div
-      class="Frame-sc-1eyf5rz-0 c1"
+      class="sc-qPlga c1"
     >
       Tooltip text
     </div>

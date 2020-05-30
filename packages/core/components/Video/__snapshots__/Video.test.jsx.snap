@@ -342,7 +342,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           </svg>
         </button>
         <input
-          class="sc-pAyMl c10"
+          class="sc-pdjNk c10"
           max="100"
           min="0"
           step="1"
