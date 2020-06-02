@@ -39,19 +39,11 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "lint:components": "yarn lint ./components",
-    "lint:stories": "yarn lint ./stories",
-    "lint:js": "yarn lint ./*.js",
-    "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
-    "lint": "eslint --ext js,jsx --quiet",
     "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
     "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
     "deploy-storybook": "storybook-to-ghpages",
-    "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate",
     "build": "cross-env NODE_ENV=production babel ./components --out-dir dist",
     "prebuild": "rimraf ./dist",
-    "semantic-release": "semantic-release",
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
     "prepublishOnly": "node ../../scripts/prepublish.js"
