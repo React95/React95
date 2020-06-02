@@ -8,9 +8,10 @@ describe('ClippyProvider', () => {
   it('should add Clippy styles', () => {
     const { head } = document;
     const DOMStyles = head.getElementsByTagName('style');
+
     expect(DOMStyles).toHaveLength(0);
 
-    const { container } = render(<ClippyProvider />);
+    render(<ClippyProvider />);
 
     expect(DOMStyles).toHaveLength(1);
 

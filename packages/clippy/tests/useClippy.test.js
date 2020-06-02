@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { renderHook } from '@testing-library/react-hooks';
 import { useClippy, AGENTS, ClippyProvider } from '@react95/clippy';
@@ -24,7 +25,7 @@ describe('useClippy', () => {
   });
 
   it('agent should be different', () => {
-    let agentName = AGENTS.MERLIN;
+    const agentName = AGENTS.MERLIN;
 
     const wrapper = ({ children }) => (
       <ClippyProvider agentName={agentName}>{children}</ClippyProvider>
