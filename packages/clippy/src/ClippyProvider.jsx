@@ -1,5 +1,6 @@
 import 'jquery';
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import clippyjs from 'clippyjs';
 import clippyStyle from './style';
 import AGENTS from './agents';
@@ -66,6 +67,19 @@ const ClippyProvider = ({ children, agentName = AGENTS.CLIPPY }) => {
       {children}
     </ClippyContext.Provider>
   );
+};
+
+ClippyProvider.propTypes = {
+  agentName: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
+
+ClippyProvider.defaultProps = {
+  agentName: AGENTS.CLIPPY,
+  children: undefined,
 };
 
 export default ClippyProvider;
