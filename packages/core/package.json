@@ -49,16 +49,12 @@
     "deploy-storybook": "storybook-to-ghpages",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
-    "clean:files:build": "rimraf ./dist/**/*.test.jsx ./dist/**/*/*.test.jsx",
-    "clean:directories:build": "rimraf ./dist/**/__snapshots__ ./dist/**/*/__snapshots__",
-    "clean:build": "rimraf ./dist",
-    "postbuild": "yarn clean:directories:build && yarn clean:files:build && yarn copy-files",
-    "copy-files": "babel-node ./scripts/copy-files.js",
-    "prebuild": "yarn clean:build",
+    "build": "cross-env NODE_ENV=production babel ./components --out-dir dist",
+    "prebuild": "rimraf ./dist",
     "semantic-release": "semantic-release",
     "prepublish": "yarn build",
-    "postpublish": "yarn deploy-storybook --ci"
+    "postpublish": "yarn deploy-storybook --ci",
+    "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "publishConfig": {
     "access": "public",
