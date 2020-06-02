@@ -26,6 +26,8 @@
     "url": "https://github.com/React95/React95/issues"
   },
   "dependencies": {
+    "@testing-library/react": "^10.0.5",
+    "@testing-library/react-hooks": "^3.2.1",
     "clippyjs": "^0.0.3",
     "jquery": "^3.5.1",
     "react": "^16.13.1"
