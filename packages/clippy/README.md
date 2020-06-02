@@ -15,7 +15,7 @@ yarn add @react95/clippy
 ## Usage
 
 ```jsx
-import { useClippy, ClippyProvider, AGENTS } from '@react95/clippy';
+import { useClippy, ClippyProvider } from '@react95/clippy';
 
 const MyComponent = () => {
   const { clippy } = useClippy();
