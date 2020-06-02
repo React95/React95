@@ -1,6 +1,6 @@
-<p style="text-align: center;">
+<div style="text-align: center;">
   <img src="Clippy.gif" alt="Clippy agent">
-</p>
+</div>
 
 # @react95/useClipy
 
