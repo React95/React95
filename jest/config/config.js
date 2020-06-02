@@ -1,3 +1,3 @@
 module.exports = {
-  projects: ['<rootDir>/core.js'],
+  projects: ['<rootDir>/core.js', '<rootDir>/clippy.js'],
 };
