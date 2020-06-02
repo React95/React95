@@ -1,168 +1,83 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import addons from '@storybook/addons';
+import clippy from 'clippyjs';
+
+import { createGlobalStyle } from 'styled-components';
 
 import { Modal } from '../../../components/Modal';
 import List from '../../../components/List';
 import ThemeProvider from '../../../components/ThemeProvider';
 import TextArea from '../../../components/TextArea';
-import { useClippy, AGENTS } from '@react95/clippy';
 
-const agentName = AGENTS[~~(Math.random() * Object.keys(AGENTS).length)];
-const TALKS = [
-  'PRs are always welcome!',
-  'What do you think about this component?',
-  'You can star this repo if you want',
-  'What do you think about this project?',
-];
-
-const NewClippy = ({ channel, api }) => {
-  const clippy = useClippy(agentName);
-  const [compData, setCompData] = useState({});
-  const [clippyButton, toggleClippyButton] = useState(false);
-  const [showModal, toggleModal] = useState(false);
-  const modal = useRef(null);
-  const textArea = useRef(null);
-
-  function addClippyButton() {
-    const [clippyContent] = clippy._balloon._balloon;
-    const btn = document.createElement('button');
-
-    btn.setAttribute('class', 'clippy-button');
-    btn.appendChild(document.createTextNode('Show me!'));
-    btn.addEventListener('click', openModal);
-
-    clippyContent.appendChild(btn);
-
-    toggleClippyButton(true);
+const ClippyStyle = createGlobalStyle`
+  .clippy, .clippy-balloon {
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
   }
 
-  function openModal() {
-    toggleModal(true);
+  .clippy-balloon {
+    background: #FFC;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
   }
 
-  function closeModal() {
-    toggleModal(false);
+  .clippy-content {
+    max-width: 200px;
+    min-width: 120px;
+    font-family: 'MS Sans Serif';
+    font-size: 12px;
   }
 
-  function closeModalMenu() {
-    modal._resetState();
+  .clippy-button {
+    background-color: transparent;
+    border: 1px solid #d5d1b5;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 14px;
+    font-size: 12px;
   }
 
-  function selectAllText() {
-    textArea.select();
+  .clippy-tip {
+    width: 10px;
+    height: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF///MAAAA////52QwgAAAAAN0Uk5T//8A18oNQQAAAGxJREFUeNqs0kEOwCAIRFHn3//QTUU6xMyyxii+jQosrTPkyPEM6IN3FtzIRk1U4dFeKWQiH6pRRowMVKEmvronEynkwj0uZJgR22+YLopPSo9P34wJSamLSU7lSIWLJU7NkNomNlhqxUeAAQC+TQLZyEuJBwAAAABJRU5ErkJggg==) no-repeat;
+    position: absolute;
   }
 
-  function copySelectedText() {
-    document.execCommand('copy');
+  .clippy-top-left .clippy-tip {
+    top: 100%;
+    margin-top: 0px;
+    left: 100%;
+    margin-left: -50px;
   }
 
-  function clearCompData(data) {
-    setCompData(data);
+  .clippy-top-right .clippy-tip {
+    top: 100%;
+    margin-top: 0px;
+    left: 0;
+    margin-left: 50px;
+    background-position: -10px 0;
   }
 
-  function speak() {
-    if (!clippyButton) {
-      addClippyButton();
-    }
-
-    const { component, code } = compData;
-
-    if (component && code) {
-      clippy.speak('Do you wanna see the code?');
-      clippy.animate();
-    }
+  .clippy-bottom-right .clippy-tip {
+    top: 0;
+    margin-top: -16px;
+    left: 0;
+    margin-left: 50px;
+    background-position: -10px -16px;
   }
 
-  useEffect(() => {
-    if (clippy) {
-      channel.on('clippy/set_component', clearCompData);
-
-      const msg = TALKS[~~(Math.random() * TALKS.length)];
-
-      clippy.play('Wave');
-      clippy.speak(msg);
-
-      clippy._el[0].addEventListener('click', () => {
-        speak();
-      });
-
-      return () => {
-        api.onStory(() => {
-          clearCompData();
-        });
-
-        channel.removeListener('clippy/set_component', speak);
-      };
-    }
-  }, [clippy]);
-
-  const formattedCode = [
-    `import { ${compData.component} } from '@react95/core';`,
-    '',
-    compData.code,
-  ].join('\n');
-
-  return (
-    <ThemeProvider>
-      {showModal && (
-        <Modal
-          icon="file_text"
-          title={compData.component}
-          style={{
-            left: '40%',
-            top: '15%',
-            width: 300,
-            height: 220,
-            zIndex: 9,
-          }}
-          closeModal={closeModal}
-          ref={modal}
-          menu={[
-            {
-              name: 'File',
-              list: (
-                <List>
-                  <List.Item onClick={closeModal}>Exit</List.Item>
-                </List>
-              ),
-            },
-            {
-              name: 'Edit',
-              list: (
-                <List>
-                  <List.Item
-                    onClick={() => {
-                      copySelectedText();
-                      closeModalMenu();
-                    }}
-                  >
-                    Copy
-                  </List.Item>
-                  <List.Divider />
-                  <List.Item
-                    onClick={() => {
-                      selectAllText();
-                      closeModalMenu();
-                    }}
-                  >
-                    Select All
-                  </List.Item>
-                </List>
-              ),
-            },
-          ]}
-        >
-          <TextArea
-            readOnly
-            ref={textArea}
-            defaultValue={formattedCode}
-            rows={10}
-          />
-        </Modal>
-      )}
-    </ThemeProvider>
-  );
-};
+  .clippy-bottom-left .clippy-tip {
+    top: 0;
+    margin-top: -16px;
+    left: 100%;
+    margin-left: -50px;
+    background-position: 0px -16px;
+  }
+`;
 
 class Clippy extends React.Component {
   constructor(...args) {
@@ -294,6 +209,7 @@ class Clippy extends React.Component {
 
     return (
       <ThemeProvider>
+        <ClippyStyle />
         {showModal && (
           <Modal
             icon="file_text"
@@ -359,7 +275,7 @@ addons.register('clippy', api => {
   addons.addPanel('clippy/panel', {
     title: 'Clippy',
     render: ({ active }) => (
-      <NewClippy channel={addons.getChannel()} api={api} active={active} />
+      <Clippy channel={addons.getChannel()} api={api} active={active} />
     ),
   });
 });
