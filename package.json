@@ -39,7 +39,10 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "yarn workspace @react95/core storybook",
+    "pretest": "lerna run prebuild",
     "test": "jest --config=./jest/config/config.js",
+    "test:core": "jest --config=./jest/config/core.js",
+    "test:clippy": "jest --config=./jest/config/clippy.js",
     "clean": "lerna clean",
     "build": "lerna run build --stream --parallel"
   },
