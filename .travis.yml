@@ -11,7 +11,7 @@ jobs:
       node_js: lts/*
 
       script:
-        - lerna run lint:all
+        - yarn lint:all
         - yarn test
 
       after_success:
