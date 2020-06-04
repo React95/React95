@@ -1,8 +1,8 @@
 <p align="center">
-  <img width="145" height="141" src="Clippy.gif" alt="Clippy agent">
+  <img width="145" height="141" src="https://raw.githubusercontent.com/React95/React95/master/assets/clippy.gif" alt="Clippy agent">
 </p>
 
-# @react95/useClipy
+# @react95/clippy
 
 Using Clippy and its friends in your React Application it has never been easier!
 

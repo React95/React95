@@ -1,4 +1,4 @@
-# `@react95/icons`
+# @react95/icons
 
 All React95 icons in one place!
 
