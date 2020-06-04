@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "2.10.0",
+  "version": "2.10.1",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -26,7 +26,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "@react95/clippy": "0.0.1",
+    "@react95/clippy": "^0.1.0",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
