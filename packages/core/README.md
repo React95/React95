@@ -1,6 +1,6 @@
 ![React95 components simple example](../../assets/components.png)
 
-# React95
+# @react95/core
 
 React95 is a component library inspired on the **Windows 95** UI design.
 
