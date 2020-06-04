@@ -14,7 +14,6 @@
     "@styled-system/prop-types": "^5.1.5",
     "@testing-library/react-hooks": "^3.2.1",
     "@xstyled/styled-components": "^1.17.1",
-    "clippyjs": "^0.0.3",
     "icojs": "^0.14.0",
     "prop-types": "^15.7.2",
     "react-draggable": "^4.3.1",
@@ -27,6 +26,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "@react95/clippy": "0.0.1",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
@@ -39,29 +39,14 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "lint:components": "yarn lint ./components",
-    "lint:stories": "yarn lint ./stories",
-    "lint:js": "yarn lint ./*.js",
-    "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
-    "lint": "eslint --ext js,jsx --quiet",
-    "test": "jest",
-    "test:components": "yarn test ./components",
-    "test:coverage": "yarn test:components --coverage",
     "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
     "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
     "deploy-storybook": "storybook-to-ghpages",
-    "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate",
-    "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
-    "clean:files:build": "rimraf ./dist/**/*.test.jsx ./dist/**/*/*.test.jsx",
-    "clean:directories:build": "rimraf ./dist/**/__snapshots__ ./dist/**/*/__snapshots__",
-    "clean:build": "rimraf ./dist",
-    "postbuild": "yarn clean:directories:build && yarn clean:files:build && yarn copy-files",
-    "copy-files": "babel-node ./scripts/copy-files.js",
-    "prebuild": "yarn clean:build",
-    "semantic-release": "semantic-release",
+    "build": "cross-env NODE_ENV=production babel ./components --out-dir dist",
+    "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
-    "postpublish": "yarn deploy-storybook --ci"
+    "postpublish": "yarn deploy-storybook --ci",
+    "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "publishConfig": {
     "access": "public",

@@ -89,7 +89,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 
 <div>
   <div
-    class="Frame-sc-1eyf5rz-0 c0"
+    class="sc-pItiW c0"
   >
     <i
       class="c1"
@@ -161,7 +161,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 
 <div>
   <div
-    class="Frame-sc-1eyf5rz-0 c0"
+    class="sc-pItiW c0"
   >
     <i
       class="c1"
@@ -173,7 +173,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     
   </div>
   <div
-    class="Frame-sc-1eyf5rz-0 c2"
+    class="sc-pItiW c2"
   >
     <i
       class="c1"
@@ -220,7 +220,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 
 <div>
   <div
-    class="Frame-sc-1eyf5rz-0 c0"
+    class="sc-pItiW c0"
   >
     <i
       class="c1"
@@ -266,7 +266,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 
 <div>
   <div
-    class="Frame-sc-1eyf5rz-0 c0"
+    class="sc-pItiW c0"
   >
     <i
       class="c1"
@@ -567,7 +567,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="Frame-sc-1eyf5rz-0 dexWFc"
+    class="sc-pItiW hnNHoh"
     display="flex"
     height="28"
     width="100%"
@@ -674,10 +674,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <div
-      class="Frame-sc-1eyf5rz-0 sc-pZnSc cFSFWv"
+      class="sc-pItiW sc-pcJja gFqxMG"
     >
       <i
-        class="Icon__I-x4qr3b-0 dJGCwO"
+        class="sc-qQYBZ hAbNvo"
         height="20"
         name="logo"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
@@ -686,19 +686,19 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       Start
     </div>
     <div
-      class="Frame-sc-1eyf5rz-0 fXDwNj"
+      class="sc-pItiW dBxQPa"
       display="flex"
       width="100%"
     />
     <div
-      class="Frame-sc-1eyf5rz-0 kDZWIJ"
+      class="sc-pItiW anGto"
       style="display: flex; justify-content: center; align-items: center;"
     >
       <div
-        class="sc-pItiW cPLUaX sc-pQSRh jCGGxC"
+        class="sc-pZnSc kYvPuw sc-oUoif Iwwvw"
       >
         <div
-          class="Frame-sc-1eyf5rz-0 sc-pzYib hqDAcu"
+          class="sc-pItiW sc-pQSRh bZAVFf"
         >
           24 August 1995
         </div>

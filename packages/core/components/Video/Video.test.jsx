@@ -2,6 +2,16 @@ import React from 'react';
 import { waitRender, fireEvent, act } from '../shared/test/utils';
 import Video from './Video';
 
+const originalError = console.error;
+
+beforeEach(() => {
+  console.error = jest.fn();
+});
+
+afterEach(() => {
+  console.error = originalError;
+});
+
 describe('<Video />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', async () => {

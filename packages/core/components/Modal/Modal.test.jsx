@@ -129,16 +129,16 @@ describe('<Modal />', () => {
           icon="bat"
           title="file.bat"
           buttons={[
-            { value: 'button' },
-            { value: 'button' },
-            { value: 'button' },
+            { value: 'button 1' },
+            { value: 'button 2' },
+            { value: 'button 3' },
           ]}
         >
           Hello
         </Modal>,
       );
 
-      expect(getAllByText('button').length).toBe(3);
+      expect(getAllByText(/^button/).length).toBe(3);
     });
 
     it('should call onClick function when Modal action button is clicked', async () => {

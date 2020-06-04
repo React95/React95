@@ -11,8 +11,8 @@ jobs:
       node_js: lts/*
 
       script:
-        - lerna run lint:all
-        - lerna run test
+        - yarn lint:all
+        - yarn test
 
       after_success:
         - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
