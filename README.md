@@ -14,9 +14,9 @@ React95 is a component library inspired on the **Windows 95** UI design.
 
 ## Packages
 
-| @react95/core                                                                                                                                                                                      |                                                                                    @react95/icons                                                                                    |                                                                            @react95/clippy                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [<img height="120" alt="React95 components simple example" title="React95 components simple example" src="assets/components.png" />](https://github.com/React95/React95/tree/master/packages/core) | [<img height="120" alt="React95 icons simple example" title="React95 icons simple example" src="assets/icons.png" />](https://github.com/React95/React95/tree/master/packages/icons) | [<img height="120" alt="React95 clippy agent" title="React95 clippy agent" src="assets/clippy.gif" />](https://github.com/React95/React95/tree/master/packages/clippy) |
+| @react95/core                                                                                                                                                                                                                                               |                                                                                                                @react95/icons                                                                                                                 |                                                                                                         @react95/clippy                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [<img height="120" alt="React95 components simple example" title="React95 components simple example" src="https://raw.githubusercontent.com/React95/React95/master/assets/components.png" />](https://github.com/React95/React95/tree/master/packages/core) | [<img height="120" alt="React95 icons simple example" title="React95 icons simple example" src="https://raw.githubusercontent.com/React95/React95/master/assets/icons.png" />](https://github.com/React95/React95/tree/master/packages/icons) | [<img height="120" alt="React95 clippy agent" title="React95 clippy agent" src="https://raw.githubusercontent.com/React95/React95/master/assets/clippy.gif" />](https://github.com/React95/React95/tree/master/packages/clippy) |
 
 ## Roadmap
 
@@ -26,7 +26,7 @@ You can see what we have in mind to put on React95 at our [projects](https://git
 
 If you'd like to help us out with the project, we welcome contributions of all types! Check out our [CONTRIBUTING.md](CONTRIBUTING.md) for more details on how you can help make React95 amazing!
 
-## Amazing projects
+## Awesome projects
 
 - [95Recipes](https://github.com/ggdaltoso/95Recipes)
 

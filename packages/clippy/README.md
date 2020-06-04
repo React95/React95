@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="145" height="141" src="../../assets/clippy.gif" alt="Clippy agent">
+  <img width="145" height="141" src="https://raw.githubusercontent.com/React95/React95/master/assets/clippy.gif" alt="Clippy agent">
 </p>
 
 # @react95/clippy

@@ -1,4 +1,4 @@
-![React95 components simple example](../../assets/components.png)
+![React95 components simple example](https://raw.githubusercontent.com/React95/React95/master/assets/components.png)
 
 # @react95/core
 
