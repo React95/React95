@@ -31,6 +31,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [95Recipes](https://github.com/ggdaltoso/95Recipes)
 - [Kaio Felipe Silva's personal website](https://github.com/kaiofelipejs/personal-site)
 - [Lorenzo Pieri's personal website](https://github.com/LRNZ09/lrnz09.github.io)
+- [Insaf Khamzin's portfolio website](https://github.com/InsafKhamzin/portfolio)
 
 ## Contributors
 
