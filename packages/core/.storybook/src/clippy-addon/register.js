@@ -205,7 +205,6 @@ class Clippy extends React.Component {
       '',
       code,
     ].join('\n');
-    console.log('Clippy -> render -> formattedCode', formattedCode);
 
     return (
       <ThemeProvider>
