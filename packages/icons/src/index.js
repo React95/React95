@@ -1,146 +1,4 @@
 /* eslint camelcase: "off" */
-import arrow_left from './icons/arrow_left.ico';
-import arrow_right from './icons/arrow_right.ico';
-import bat from './icons/bat.ico';
-import bat_exec from './icons/bat_exec.ico';
-import bat_exec_2 from './icons/bat_exec_2.ico';
-import bat_wait from './icons/bat_wait.ico';
-import bookmark from './icons/bookmark.ico';
-import brush from './icons/brush.ico';
-import bulb from './icons/bulb.ico';
-import calculator from './icons/calculator.ico';
-import camera from './icons/camera.ico';
-import computer from './icons/computer.ico';
-import computer_2 from './icons/computer_2.ico';
-import computer_3 from './icons/computer_3.ico';
-import computer_4 from './icons/computer_4.ico';
-import computer_find from './icons/computer_find.ico';
-import defrag from './icons/defrag.ico';
-import desktop from './icons/desktop.ico';
-import earth from './icons/earth.ico';
-import explore from './icons/explore.ico';
-import file_delete from './icons/file_delete.ico';
-import file_find from './icons/file_find.ico';
-import file_find2 from './icons/file_find2.ico';
-import file_find3 from './icons/file_find3.ico';
-import file_corrupted from './icons/file_corrupted.ico';
-import file_font from './icons/file_font.ico';
-import file_font_2 from './icons/file_font_2.ico';
-import file_pen from './icons/file_pen.ico';
-import file_pencil from './icons/file_pencil.ico';
-import file_pin from './icons/file_pin.ico';
-import file_settings from './icons/file_settings.ico';
-import file_text from './icons/file_text.ico';
-import file_text_settings from './icons/file_text_settings.ico';
-import file_transfer from './icons/file_transfer.ico';
-import files from './icons/files.ico';
-import folder from './icons/folder.ico';
-import folder_exe from './icons/folder_exe.ico';
-import folder_exe2 from './icons/folder_exe2.ico';
-import folder_file from './icons/folder_file.ico';
-import folder_font from './icons/folder_font.ico';
-import folder_open from './icons/folder_open.ico';
-import folder_print from './icons/folder_print.ico';
-import folder_rename from './icons/folder_rename.ico';
-import folder_settings from './icons/folder_settings.ico';
-import folder_settings_2 from './icons/folder_settings_2.ico';
-import folder_shared from './icons/folder_shared.ico';
-import forbidden from './icons/forbidden.ico';
-import globe from './icons/globe.ico';
-import hand from './icons/hand.ico';
-import help_book from './icons/help_book.ico';
-import issue from './icons/issue.ico';
-import install from './icons/install.ico';
-import key from './icons/key.ico';
-import keys from './icons/keys.ico';
-import loader_bat from './icons/loader_bat.ico';
-import lock from './icons/lock.ico';
-import logo from './icons/logo.ico';
-import mail from './icons/mail.ico';
-import media_cd from './icons/media_cd.ico';
-import memory from './icons/memory.ico';
-import mic from './icons/mic.ico';
-import mute from './icons/mute.ico';
-import network from './icons/network.ico';
-import network_2 from './icons/network_2.ico';
-import network_3 from './icons/network_3.ico';
-import notepad from './icons/notepad.ico';
-import packager from './icons/packager.ico';
-import phone from './icons/phone.ico';
-import plugin from './icons/plugin.ico';
-import power_off from './icons/power_off.ico';
-import power_on from './icons/power_on.ico';
-import printer from './icons/printer.ico';
-import printer_calendar from './icons/printer_calendar.ico';
-import printer_drive from './icons/printer_drive.ico';
-import printer_shared from './icons/printer_shared.ico';
-import question_bubble from './icons/question_bubble.ico';
-import reader_cd from './icons/reader_cd.ico';
-import reader_cd_2 from './icons/reader_cd_2.ico';
-import reader_closed from './icons/reader_closed.ico';
-import reader_disket from './icons/reader_disket.ico';
-import reader_disket_casset from './icons/reader_disket_casset.ico';
-import reader_disket2 from './icons/reader_disket2.ico';
-import reader_eject from './icons/reader_eject.ico';
-import reader_noshared from './icons/reader_noshared.ico';
-import reader_opened from './icons/reader_opened.ico';
-import reader_shared from './icons/reader_shared.ico';
-import regedit from './icons/regedit.ico';
-import recycle_empty from './icons/recycle_empty.ico';
-import recycle_file from './icons/recycle_file.ico';
-import recycle_filefolder from './icons/recycle_filefolder.ico';
-import recycle_folder from './icons/recycle_folder.ico';
-import recycle_full from './icons/recycle_full.ico';
-import settings from './icons/settings.ico';
-import shortcut from './icons/shortcut.ico';
-import shortcut2 from './icons/shortcut2.ico';
-import star from './icons/star.ico';
-import textchat from './icons/textchat.ico';
-import textchat_2 from './icons/textchat_2.ico';
-import timedate from './icons/timedate.ico';
-import tree from './icons/tree.ico';
-import unmute from './icons/unmute.ico';
-import user from './icons/user.ico';
-import warning from './icons/warning.ico';
-import wordpad from './icons/wordpad.ico';
-import windows_explorer from './icons/windows_explorer.ico';
-import ms_dos from './icons/ms_dos.ico';
-import microsoft_network from './icons/microsoft_network.ico';
-import microsoft_exchange from './icons/microsoft_exchange.ico';
-import timer_font from './icons/timer_font.ico';
-import media_video from './icons/media_video.ico';
-import media_audio from './icons/media_audio.ico';
-import font from './icons/font.ico';
-import window_graph from './icons/window_graph.ico';
-import window_accessibility from './icons/window_accessibility.ico';
-import window_abc from './icons/window_abc.ico';
-import notepad_2 from './icons/notepad_2.ico';
-import keyboard_mouse from './icons/keyboard_mouse.ico';
-import cd_music from './icons/cd_music.ico';
-import bill from './icons/bill_add.ico';
-import accessibility from './icons/accessibility.ico';
-import file_icons from './icons/file_icons.ico';
-import computer_5 from './icons/computer_5.ico';
-import mspaint from './icons/mspaint.ico';
-import signup from './icons/signup.ico';
-import phone_2 from './icons/phone_2.ico';
-import file_pick from './icons/file_pick.ico';
-import fax from './icons/fax.ico';
-import dial from './icons/dial.ico';
-import sys_package from './icons/sys_package.ico';
-import log_view from './icons/log_view.ico';
-import hardware from './icons/hardware_diag.ico';
-import uninstall from './icons/uninstall.ico';
-import info_bubble from './icons/info_bubble.ico';
-import fax_warning from './icons/fax_warning.ico';
-import cd_search from './icons/cd_search.ico';
-import cd_exe from './icons/cd_exe.ico';
-
-import d3_flower_box_100 from './icons/d3_flower_box_100.ico';
-import d3_flying_objects_id_app from './icons/d3_flying_objects_id_app.ico';
-import d3_maze_100 from './icons/d3_maze_100.ico';
-import d3_pipes_id_app from './icons/d3_pipes_id_app.ico';
-import d3_text_100 from './icons/d3_text_100.ico';
 import access_110 from './icons/access_110.ico';
 import access_218 from './icons/access_218.ico';
 import access_219 from './icons/access_219.ico';
@@ -155,12 +13,17 @@ import access_227 from './icons/access_227.ico';
 import access_228 from './icons/access_228.ico';
 import access_229 from './icons/access_229.ico';
 import access_230 from './icons/access_230.ico';
+import accessibility from './icons/accessibility.ico';
 import actmovie_303 from './icons/actmovie_303.ico';
+import addrbook from './icons/addrbook.ico';
 import amovie_2 from './icons/amovie_2.ico';
 import appwiz_1500 from './icons/appwiz_1500.ico';
 import appwiz_1501 from './icons/appwiz_1501.ico';
 import appwiz_1502 from './icons/appwiz_1502.ico';
 import appwiz_1503 from './icons/appwiz_1503.ico';
+import arrow_left from './icons/arrow_left.ico';
+import arrow_right from './icons/arrow_right.ico';
+import attach from './icons/attach.ico';
 import awfext32_6049 from './icons/awfext32_6049.ico';
 import awfext32_6050 from './icons/awfext32_6050.ico';
 import awfext32_6051 from './icons/awfext32_6051.ico';
@@ -188,17 +51,37 @@ import awschd32_401 from './icons/awschd32_401.ico';
 import awschd32_402 from './icons/awschd32_402.ico';
 import awsnto32_49 from './icons/awsnto32_49.ico';
 import awsnto32_50 from './icons/awsnto32_50.ico';
+import back from './icons/back.ico';
+import bat from './icons/bat.ico';
+import bat_exec from './icons/bat_exec.ico';
+import bat_exec_2 from './icons/bat_exec_2.ico';
+import bat_wait from './icons/bat_wait.ico';
+import bill from './icons/bill_add.ico';
+import binoc from './icons/binoc.ico';
 import blank_screen_100 from './icons/blank_screen_100.ico';
+import bold from './icons/bold.ico';
+import bookmark from './icons/bookmark.ico';
+import brush from './icons/brush.ico';
+import bulb from './icons/bulb.ico';
 import cachevu_100 from './icons/cachevu_100.ico';
 import calc_sc from './icons/calc_sc.ico';
+import calculator from './icons/calculator.ico';
+import camera from './icons/camera.ico';
 import ccapi_104 from './icons/ccapi_104.ico';
 import ccapi_105 from './icons/ccapi_105.ico';
 import ccapi_106 from './icons/ccapi_106.ico';
+import cd_exe from './icons/cd_exe.ico';
+import cd_music from './icons/cd_music.ico';
+import cd_search from './icons/cd_search.ico';
 import cdplayer_107 from './icons/cdplayer_107.ico';
 import cdplayer_110 from './icons/cdplayer_110.ico';
 import cdplayer_114 from './icons/cdplayer_114.ico';
+import centre from './icons/centre.ico';
 import charmap_1 from './icons/charmap_1.ico';
 import chatshow_3000 from './icons/chatshow_3000.ico';
+import circle from './icons/circle.ico';
+import close from './icons/close.ico';
+import columns from './icons/columns.ico';
 import comctl32_150 from './icons/comctl32_150.ico';
 import comdlg32_528 from './icons/comdlg32_528.ico';
 import comdlg32_529 from './icons/comdlg32_529.ico';
@@ -212,6 +95,12 @@ import comdlg32_536 from './icons/comdlg32_536.ico';
 import comdlg32_537 from './icons/comdlg32_537.ico';
 import comdlg32_538 from './icons/comdlg32_538.ico';
 import comdlg32_539 from './icons/comdlg32_539.ico';
+import computer from './icons/computer.ico';
+import computer_2 from './icons/computer_2.ico';
+import computer_3 from './icons/computer_3.ico';
+import computer_4 from './icons/computer_4.ico';
+import computer_5 from './icons/computer_5.ico';
+import computer_find from './icons/computer_find.ico';
 import confcp_102 from './icons/confcp_102.ico';
 import confcp_107 from './icons/confcp_107.ico';
 import confcp_108 from './icons/confcp_108.ico';
@@ -223,8 +112,18 @@ import confcp_120 from './icons/confcp_120.ico';
 import conflnk_102 from './icons/conflnk_102.ico';
 import conflnk_103 from './icons/conflnk_103.ico';
 import controls_3000 from './icons/controls_3000.ico';
+import copy from './icons/copy.ico';
 import coreui_3000 from './icons/coreui_3000.ico';
 import curves_and_colors_100 from './icons/curves_and_colors_100.ico';
+import cut from './icons/cut.ico';
+import d3_flower_box_100 from './icons/d3_flower_box_100.ico';
+import d3_flying_objects_id_app from './icons/d3_flying_objects_id_app.ico';
+import d3_maze_100 from './icons/d3_maze_100.ico';
+import d3_pipes_id_app from './icons/d3_pipes_id_app.ico';
+import d3_text_100 from './icons/d3_text_100.ico';
+import data16 from './icons/data16.ico';
+import date from './icons/date.ico';
+import defrag from './icons/defrag.ico';
 import defrag_1 from './icons/defrag_1.ico';
 import defrag_2 from './icons/defrag_2.ico';
 import defrag_3 from './icons/defrag_3.ico';
@@ -234,7 +133,11 @@ import defrag_6 from './icons/defrag_6.ico';
 import defrag_7 from './icons/defrag_7.ico';
 import defrag_8 from './icons/defrag_8.ico';
 import defrag_9 from './icons/defrag_9.ico';
+import deleteico from './icons/delete.ico';
 import desk_100 from './icons/desk_100.ico';
+import desktop from './icons/desktop.ico';
+import detlicon from './icons/detlicon.ico';
+import dial from './icons/dial.ico';
 import dialer_1 from './icons/dialer_1.ico';
 import dialer_2 from './icons/dialer_2.ico';
 import dialmon_200 from './icons/dialmon_200.ico';
@@ -245,6 +148,9 @@ import directcc_1004 from './icons/directcc_1004.ico';
 import directcc_1005 from './icons/directcc_1005.ico';
 import directcc_directcc from './icons/directcc_directcc.ico';
 import diskcopy_1 from './icons/diskcopy_1.ico';
+import doc from './icons/doc.ico';
+import doc_gris from './icons/doc_gris.ico';
+import download from './icons/download.ico';
 import dpmodemx_701 from './icons/dpmodemx_701.ico';
 import drvspace_1 from './icons/drvspace_1.ico';
 import drvspace_2 from './icons/drvspace_2.ico';
@@ -254,6 +160,8 @@ import drvspace_5 from './icons/drvspace_5.ico';
 import drvspace_6 from './icons/drvspace_6.ico';
 import drvspace_7 from './icons/drvspace_7.ico';
 import drvspace_8 from './icons/drvspace_8.ico';
+import earth from './icons/earth.ico';
+import explore from './icons/explore.ico';
 import explorer_100 from './icons/explorer_100.ico';
 import explorer_101 from './icons/explorer_101.ico';
 import explorer_102 from './icons/explorer_102.ico';
@@ -263,24 +171,66 @@ import explorer_105 from './icons/explorer_105.ico';
 import explorer_107 from './icons/explorer_107.ico';
 import explorer_108 from './icons/explorer_108.ico';
 import expostrt_128 from './icons/expostrt_128.ico';
+import fave from './icons/fave.ico';
+import fax from './icons/fax.ico';
+import fax_warning from './icons/fax_warning.ico';
 import faxcover_108 from './icons/faxcover_108.ico';
 import faxcover_140 from './icons/faxcover_140.ico';
 import faxcover_2 from './icons/faxcover_2.ico';
 import faxcover_3 from './icons/faxcover_3.ico';
+import file_corrupted from './icons/file_corrupted.ico';
+import file_delete from './icons/file_delete.ico';
+import file_find from './icons/file_find.ico';
+import file_find2 from './icons/file_find2.ico';
+import file_find3 from './icons/file_find3.ico';
+import file_font from './icons/file_font.ico';
+import file_font_2 from './icons/file_font_2.ico';
+import file_icons from './icons/file_icons.ico';
+import file_pen from './icons/file_pen.ico';
+import file_pencil from './icons/file_pencil.ico';
+import file_pick from './icons/file_pick.ico';
+import file_pin from './icons/file_pin.ico';
+import file_settings from './icons/file_settings.ico';
+import file_text from './icons/file_text.ico';
+import file_text_settings from './icons/file_text_settings.ico';
+import file_transfer from './icons/file_transfer.ico';
+import files from './icons/files.ico';
 import filexfer_128 from './icons/filexfer_128.ico';
 import filexfer_129 from './icons/filexfer_129.ico';
 import filexfer_130 from './icons/filexfer_130.ico';
+import find_arr from './icons/find_arr.ico';
+import find_dc2 from './icons/find_dc2.ico';
+import find_doc from './icons/find_doc.ico';
 import flying_through_space_100 from './icons/flying_through_space_100.ico';
 import flying_windows_100 from './icons/flying_windows_100.ico';
 import fm20enu_5 from './icons/fm20enu_5.ico';
+import folder from './icons/folder.ico';
+import folder_exe from './icons/folder_exe.ico';
+import folder_exe2 from './icons/folder_exe2.ico';
+import folder_file from './icons/folder_file.ico';
+import folder_font from './icons/folder_font.ico';
+import folder_open from './icons/folder_open.ico';
+import folder_print from './icons/folder_print.ico';
+import folder_rename from './icons/folder_rename.ico';
+import folder_settings from './icons/folder_settings.ico';
+import folder_settings_2 from './icons/folder_settings_2.ico';
+import folder_shared from './icons/folder_shared.ico';
+import font from './icons/font.ico';
+import font_big from './icons/font_big.ico';
+import font_sml from './icons/font_sml.ico';
+import font_wid from './icons/font_wid.ico';
+import font2 from './icons/font2.ico';
 import fontext_1 from './icons/fontext_1.ico';
 import fontext_2 from './icons/fontext_2.ico';
 import fontext_3 from './icons/fontext_3.ico';
 import fontext_4 from './icons/fontext_4.ico';
 import fontview_110 from './icons/fontview_110.ico';
 import fontview_111 from './icons/fontview_111.ico';
+import forbidden from './icons/forbidden.ico';
+import format16 from './icons/format16.ico';
 import freecell_1 from './icons/freecell_1.ico';
 import fte_128 from './icons/fte_128.ico';
+import fullscrn from './icons/fullscrn.ico';
 import gcdef_100 from './icons/gcdef_100.ico';
 import gcdef_10001 from './icons/gcdef_10001.ico';
 import gcdef_10002 from './icons/gcdef_10002.ico';
@@ -365,12 +315,20 @@ import gcdef_116 from './icons/gcdef_116.ico';
 import gcdef_117 from './icons/gcdef_117.ico';
 import gcdef_122 from './icons/gcdef_122.ico';
 import gcdef_124 from './icons/gcdef_124.ico';
+import globe from './icons/globe.ico';
 import grpconv_100 from './icons/grpconv_100.ico';
 import grpconv_101 from './icons/grpconv_101.ico';
+import hand from './icons/hand.ico';
+import hardware from './icons/hardware_diag.ico';
+import help from './icons/help.ico';
+import help_book from './icons/help_book.ico';
+import help_ptr from './icons/help_ptr.ico';
+import html_page from './icons/html_page.ico';
 import icmui_1200 from './icons/icmui_1200.ico';
 import icmui_1201 from './icons/icmui_1201.ico';
 import icwdial_101 from './icons/icwdial_101.ico';
 import icwdial_102 from './icons/icwdial_102.ico';
+import ie from './icons/ie.ico';
 import imgadmin_214 from './icons/imgadmin_214.ico';
 import imgedit_10 from './icons/imgedit_10.ico';
 import imgedit_277 from './icons/imgedit_277.ico';
@@ -401,22 +359,42 @@ import inetcpl_1319 from './icons/inetcpl_1319.ico';
 import inetcpl_1320 from './icons/inetcpl_1320.ico';
 import inetcpl_1321 from './icons/inetcpl_1321.ico';
 import inetcpl_4432 from './icons/inetcpl_4432.ico';
+import info_bubble from './icons/info_bubble.ico';
+import install from './icons/install.ico';
 import internat_151 from './icons/internat_151.ico';
 import intl_101 from './icons/intl_101.ico';
 import isign32_100 from './icons/isign32_100.ico';
 import isign32_4001 from './icons/isign32_4001.ico';
 import isign32_ico_app from './icons/isign32_ico_app.ico';
+import issue from './icons/issue.ico';
 import isuninst_1000 from './icons/isuninst_1000.ico';
+import italic from './icons/italic.ico';
 import jdbgmgr_100 from './icons/jdbgmgr_100.ico';
 import jgdwmie_101 from './icons/jgdwmie_101.ico';
+import job116 from './icons/job116.ico';
 import joy_102 from './icons/joy_102.ico';
 import joy_108 from './icons/joy_108.ico';
 import joy_110 from './icons/joy_110.ico';
+import justify from './icons/justify.ico';
+import key from './icons/key.ico';
+import keyboard_mouse from './icons/keyboard_mouse.ico';
+import keys from './icons/keys.ico';
+import left from './icons/left.ico';
 import lights_100 from './icons/lights_100.ico';
 import lights_101 from './icons/lights_101.ico';
 import lights_102 from './icons/lights_102.ico';
 import lights_103 from './icons/lights_103.ico';
 import lights_99 from './icons/lights_99.ico';
+import listicon from './icons/listicon.ico';
+import loader_bat from './icons/loader_bat.ico';
+import lock from './icons/lock.ico';
+import log_view from './icons/log_view.ico';
+import logo from './icons/logo.ico';
+import lrg_icon from './icons/lrg_icon.ico';
+import lst2icon from './icons/lst2icon.ico';
+import mail from './icons/mail.ico';
+import mail2 from './icons/mail2.ico';
+import mail3 from './icons/mail3.ico';
 import mailnews_12 from './icons/mailnews_12.ico';
 import mailnews_13 from './icons/mailnews_13.ico';
 import mailnews_14 from './icons/mailnews_14.ico';
@@ -461,6 +439,15 @@ import mcm_502 from './icons/mcm_502.ico';
 import mcm_earth from './icons/mcm_earth.ico';
 import mcm_phone from './icons/mcm_phone.ico';
 import mdisp32_1 from './icons/mdisp32_1.ico';
+import media_audio from './icons/media_audio.ico';
+import media_cd from './icons/media_cd.ico';
+import media_video from './icons/media_video.ico';
+import memory from './icons/memory.ico';
+import message from './icons/message.ico';
+import mic from './icons/mic.ico';
+import microsoft_exchange from './icons/microsoft_exchange.ico';
+import microsoft_network from './icons/microsoft_network.ico';
+import mipac from './icons/mipac.ico';
 import mkcompat_900 from './icons/mkcompat_900.ico';
 import mlcfg32_129 from './icons/mlcfg32_129.ico';
 import mmsys_100 from './icons/mmsys_100.ico';
@@ -508,6 +495,7 @@ import mplayer_16 from './icons/mplayer_16.ico';
 import mprserv_120 from './icons/mprserv_120.ico';
 import mprserv_121 from './icons/mprserv_121.ico';
 import mprserv_68 from './icons/mprserv_68.ico';
+import ms_dos from './icons/ms_dos.ico';
 import msacm32_10 from './icons/msacm32_10.ico';
 import msawt_awt_icon from './icons/msawt_awt_icon.ico';
 import msfs32_1951 from './icons/msfs32_1951.ico';
@@ -546,6 +534,7 @@ import msnstart_100 from './icons/msnstart_100.ico';
 import msnstart_110 from './icons/msnstart_110.ico';
 import msnstart_120 from './icons/msnstart_120.ico';
 import msnsvc_3000 from './icons/msnsvc_3000.ico';
+import mspaint from './icons/mspaint.ico';
 import msrating_102 from './icons/msrating_102.ico';
 import msrating_103 from './icons/msrating_103.ico';
 import msrating_104 from './icons/msrating_104.ico';
@@ -555,9 +544,18 @@ import msrating_107 from './icons/msrating_107.ico';
 import msrating_108 from './icons/msrating_108.ico';
 import msrating_109 from './icons/msrating_109.ico';
 import msvfw32_943 from './icons/msvfw32_943.ico';
+import mute from './icons/mute.ico';
 import mystify_your_mind_100 from './icons/mystify_your_mind_100.ico';
 import netwatch_101 from './icons/netwatch_101.ico';
+import network from './icons/network.ico';
+import network_2 from './icons/network_2.ico';
+import network_3 from './icons/network_3.ico';
+import new16 from './icons/new16.ico';
+import newico from './icons/new.ico';
+import notepad from './icons/notepad.ico';
 import notepad_1 from './icons/notepad_1.ico';
+import notepad_2 from './icons/notepad_2.ico';
+import num_page from './icons/num_page.ico';
 import nwnp32_folder_icon from './icons/nwnp32_folder_icon.ico';
 import nwnp32_printer_icon from './icons/nwnp32_printer_icon.ico';
 import nwnp32_server_icon from './icons/nwnp32_server_icon.ico';
@@ -567,16 +565,38 @@ import oislb400_dc_scan_ico from './icons/oislb400_dc_scan_ico.ico';
 import oiui400_imgstamp from './icons/oiui400_imgstamp.ico';
 import oiui400_textstamp from './icons/oiui400_textstamp.ico';
 import ole32_8 from './icons/ole32_8.ico';
+import open from './icons/open.ico';
 import optional_3000 from './icons/optional_3000.ico';
+import order_as from './icons/order_as.ico';
+import order_ds from './icons/order_ds.ico';
+import packager from './icons/packager.ico';
 import packager_1 from './icons/packager_1.ico';
+import para_bul from './icons/para_bul.ico';
+import para_num from './icons/para_num.ico';
 import password_100 from './icons/password_100.ico';
 import password_1000 from './icons/password_1000.ico';
 import password_1010 from './icons/password_1010.ico';
+import paste from './icons/paste.ico';
 import pbrush_1 from './icons/pbrush_1.ico';
+import pen from './icons/pen.ico';
+import person116 from './icons/person116.ico';
+import phone from './icons/phone.ico';
+import phone_2 from './icons/phone_2.ico';
+import playd16 from './icons/playd16.ico';
+import playp16 from './icons/playp16.ico';
+import plugin from './icons/plugin.ico';
 import plugin_2 from './icons/plugin_2.ico';
+import power_off from './icons/power_off.ico';
+import power_on from './icons/power_on.ico';
 import powercfg_205 from './icons/powercfg_205.ico';
 import powercfg_210 from './icons/powercfg_210.ico';
 import powercfg_211 from './icons/powercfg_211.ico';
+import print from './icons/print.ico';
+import print2 from './icons/print2.ico';
+import printer from './icons/printer.ico';
+import printer_calendar from './icons/printer_calendar.ico';
+import printer_drive from './icons/printer_drive.ico';
+import printer_shared from './icons/printer_shared.ico';
 import prodinv_myicon from './icons/prodinv_myicon.ico';
 import progman_1 from './icons/progman_1.ico';
 import progman_10 from './icons/progman_10.ico';
@@ -624,6 +644,8 @@ import progman_6 from './icons/progman_6.ico';
 import progman_7 from './icons/progman_7.ico';
 import progman_8 from './icons/progman_8.ico';
 import progman_9 from './icons/progman_9.ico';
+import props from './icons/props.ico';
+import pshbtn from './icons/pshbtn.ico';
 import qfecheck_111 from './icons/qfecheck_111.ico';
 import quartz_100 from './icons/quartz_100.ico';
 import quartz_101 from './icons/quartz_101.ico';
@@ -635,6 +657,7 @@ import quartz_202 from './icons/quartz_202.ico';
 import quartz_203 from './icons/quartz_203.ico';
 import quartz_300 from './icons/quartz_300.ico';
 import quartz_301 from './icons/quartz_301.ico';
+import question_bubble from './icons/question_bubble.ico';
 import quikview_1 from './icons/quikview_1.ico';
 import quikview_2 from './icons/quikview_2.ico';
 import quikview_3 from './icons/quikview_3.ico';
@@ -645,6 +668,24 @@ import rasapi32_101 from './icons/rasapi32_101.ico';
 import rasapi32_102 from './icons/rasapi32_102.ico';
 import rasapi32_103 from './icons/rasapi32_103.ico';
 import rasapi32_104 from './icons/rasapi32_104.ico';
+import reader_cd from './icons/reader_cd.ico';
+import reader_cd_2 from './icons/reader_cd_2.ico';
+import reader_closed from './icons/reader_closed.ico';
+import reader_disket from './icons/reader_disket.ico';
+import reader_disket_casset from './icons/reader_disket_casset.ico';
+import reader_disket2 from './icons/reader_disket2.ico';
+import reader_eject from './icons/reader_eject.ico';
+import reader_noshared from './icons/reader_noshared.ico';
+import reader_opened from './icons/reader_opened.ico';
+import reader_shared from './icons/reader_shared.ico';
+import recycle_empty from './icons/recycle_empty.ico';
+import recycle_file from './icons/recycle_file.ico';
+import recycle_filefolder from './icons/recycle_filefolder.ico';
+import recycle_folder from './icons/recycle_folder.ico';
+import recycle_full from './icons/recycle_full.ico';
+import redo from './icons/redo.ico';
+import refresh from './icons/refresh.ico';
+import regedit from './icons/regedit.ico';
 import regedit_100 from './icons/regedit_100.ico';
 import regedit_101 from './icons/regedit_101.ico';
 import regedit_102 from './icons/regedit_102.ico';
@@ -658,6 +699,7 @@ import regwiz_117 from './icons/regwiz_117.ico';
 import regwiz_122 from './icons/regwiz_122.ico';
 import regwiz_127 from './icons/regwiz_127.ico';
 import regwiz_129 from './icons/regwiz_129.ico';
+import right from './icons/right.ico';
 import rnaapp_100 from './icons/rnaapp_100.ico';
 import rnaapp_101 from './icons/rnaapp_101.ico';
 import rnaapp_102 from './icons/rnaapp_102.ico';
@@ -690,10 +732,12 @@ import rsrcmtr_132 from './icons/rsrcmtr_132.ico';
 import rsrcmtr_133 from './icons/rsrcmtr_133.ico';
 import rundll_1 from './icons/rundll_1.ico';
 import runonce_106 from './icons/runonce_106.ico';
+import save from './icons/save.ico';
 import scandskw_1 from './icons/scandskw_1.ico';
 import sccview_icon from './icons/sccview_icon.ico';
 import scrolling_marquee_100 from './icons/scrolling_marquee_100.ico';
 import sendmail_2001 from './icons/sendmail_2001.ico';
+import settings from './icons/settings.ico';
 import setupslt_3000 from './icons/setupslt_3000.ico';
 import shdocvw_256 from './icons/shdocvw_256.ico';
 import shdocvw_257 from './icons/shdocvw_257.ico';
@@ -778,7 +822,10 @@ import shell32_6 from './icons/shell32_6.ico';
 import shell32_7 from './icons/shell32_7.ico';
 import shell32_8 from './icons/shell32_8.ico';
 import shell32_9 from './icons/shell32_9.ico';
+import shortcut from './icons/shortcut.ico';
+import shortcut2 from './icons/shortcut2.ico';
 import shscrap_100 from './icons/shscrap_100.ico';
+import signup from './icons/signup.ico';
 import smmscrpt_100 from './icons/smmscrpt_100.ico';
 import sndrec32_10 from './icons/sndrec32_10.ico';
 import sndrec32_15 from './icons/sndrec32_15.ico';
@@ -789,6 +836,9 @@ import sndvol32_302 from './icons/sndvol32_302.ico';
 import sndvol32_303 from './icons/sndvol32_303.ico';
 import sndvol32_304 from './icons/sndvol32_304.ico';
 import sol_1 from './icons/sol_1.ico';
+import spellchk from './icons/spellchk.ico';
+import star from './icons/star.ico';
+import svrworld from './icons/svrworld.ico';
 import swinst5_3000 from './icons/swinst5_3000.ico';
 import syncui_120 from './icons/syncui_120.ico';
 import syncui_121 from './icons/syncui_121.ico';
@@ -804,6 +854,7 @@ import syncui_130 from './icons/syncui_130.ico';
 import syncui_131 from './icons/syncui_131.ico';
 import syncui_132 from './icons/syncui_132.ico';
 import syncui_135 from './icons/syncui_135.ico';
+import sys_package from './icons/sys_package.ico';
 import sysedit_1 from './icons/sysedit_1.ico';
 import sysedit_2 from './icons/sysedit_2.ico';
 import sysmon_1000 from './icons/sysmon_1000.ico';
@@ -819,12 +870,24 @@ import systray_304 from './icons/systray_304.ico';
 import systray_305 from './icons/systray_305.ico';
 import systray_306 from './icons/systray_306.ico';
 import taskman_100 from './icons/taskman_100.ico';
+import textchat from './icons/textchat.ico';
+import textchat_2 from './icons/textchat_2.ico';
+import tick from './icons/tick.ico';
+import time from './icons/time.ico';
+import timedate from './icons/timedate.ico';
 import timedate_200 from './icons/timedate_200.ico';
+import timer_font from './icons/timer_font.ico';
+import toupper from './icons/toupper.ico';
 import tour_1 from './icons/tour_1.ico';
+import tree from './icons/tree.ico';
 import tssoft32_10 from './icons/tssoft32_10.ico';
 import twunk_32_twunk_icon from './icons/twunk_32_twunk_icon.ico';
 import ulclient_1002 from './icons/ulclient_1002.ico';
 import ulclient_1235 from './icons/ulclient_1235.ico';
+import underlne from './icons/underlne.ico';
+import undo from './icons/undo.ico';
+import uninstall from './icons/uninstall.ico';
+import unmute from './icons/unmute.ico';
 import url_1_102 from './icons/url_1_102.ico';
 import url_1_103 from './icons/url_1_103.ico';
 import url_1_104 from './icons/url_1_104.ico';
@@ -833,6 +896,7 @@ import url_102 from './icons/url_102.ico';
 import url_103 from './icons/url_103.ico';
 import url_104 from './icons/url_104.ico';
 import url_105 from './icons/url_105.ico';
+import user from './icons/user.ico';
 import user_1 from './icons/user_1.ico';
 import user_2 from './icons/user_2.ico';
 import user_3 from './icons/user_3.ico';
@@ -856,7 +920,17 @@ import wab32_1020 from './icons/wab32_1020.ico';
 import wangimg_128 from './icons/wangimg_128.ico';
 import wangimg_129 from './icons/wangimg_129.ico';
 import wangimg_130 from './icons/wangimg_130.ico';
+import warning from './icons/warning.ico';
+import web_link from './icons/web_link.ico';
+import web_open from './icons/web_open.ico';
+import web_txfr from './icons/web_txfr.ico';
+import websrch from './icons/websrch.ico';
 import wgpocpl_128 from './icons/wgpocpl_128.ico';
+import what from './icons/what.ico';
+import window_abc from './icons/window_abc.ico';
+import window_accessibility from './icons/window_accessibility.ico';
+import window_graph from './icons/window_graph.ico';
+import windows_explorer from './icons/windows_explorer.ico';
 import winfile_1 from './icons/winfile_1.ico';
 import winfile_2 from './icons/winfile_2.ico';
 import winfile_3 from './icons/winfile_3.ico';
@@ -897,150 +971,10 @@ import wmsui32_5086 from './icons/wmsui32_5086.ico';
 import wmsui32_5087 from './icons/wmsui32_5087.ico';
 import wmsui32_5900 from './icons/wmsui32_5900.ico';
 import wmsui32_5901 from './icons/wmsui32_5901.ico';
+import wordpad from './icons/wordpad.ico';
 import write_1 from './icons/write_1.ico';
 
 const path = {
-  accessibility,
-  arrow_left,
-  arrow_right,
-  bat,
-  bat_exec,
-  bat_exec_2,
-  bat_wait,
-  bill,
-  bookmark,
-  brush,
-  bulb,
-  calculator,
-  camera,
-  cd_exe,
-  cd_music,
-  cd_search,
-  computer,
-  computer_2,
-  computer_3,
-  computer_4,
-  computer_5,
-  computer_find,
-  defrag,
-  desktop,
-  dial,
-  earth,
-  explore,
-  fax,
-  fax_warning,
-  file_delete,
-  file_find,
-  file_find2,
-  file_find3,
-  file_corrupted,
-  file_font,
-  file_font_2,
-  file_icons,
-  file_pen,
-  file_pencil,
-  file_pick,
-  file_pin,
-  file_settings,
-  file_text,
-  file_text_settings,
-  file_transfer,
-  files,
-  folder,
-  folder_exe,
-  folder_exe2,
-  folder_file,
-  folder_font,
-  folder_open,
-  folder_print,
-  folder_rename,
-  folder_settings,
-  folder_settings_2,
-  folder_shared,
-  font,
-  forbidden,
-  globe,
-  hand,
-  hardware,
-  help_book,
-  info_bubble,
-  install,
-  issue,
-  key,
-  keyboard_mouse,
-  keys,
-  loader_bat,
-  lock,
-  logo,
-  log_view,
-  mail,
-  media_audio,
-  media_cd,
-  media_video,
-  memory,
-  mic,
-  mspaint,
-  mute,
-  network,
-  network_2,
-  network_3,
-  notepad,
-  notepad_2,
-  packager,
-  phone,
-  phone_2,
-  plugin,
-  power_off,
-  power_on,
-  printer,
-  printer_calendar,
-  printer_drive,
-  printer_shared,
-  question_bubble,
-  reader_cd,
-  reader_cd_2,
-  reader_closed,
-  reader_disket,
-  reader_disket_casset,
-  reader_disket2,
-  reader_eject,
-  reader_noshared,
-  reader_opened,
-  reader_shared,
-  recycle_empty,
-  recycle_file,
-  recycle_filefolder,
-  recycle_folder,
-  recycle_full,
-  regedit,
-  settings,
-  signup,
-  star,
-  shortcut,
-  shortcut2,
-  sys_package,
-  textchat,
-  textchat_2,
-  timedate,
-  timer_font,
-  tree,
-  uninstall,
-  unmute,
-  user,
-  wordpad,
-  warning,
-  window_abc,
-  window_accessibility,
-  window_graph,
-  windows_explorer,
-  ms_dos,
-  microsoft_network,
-  microsoft_exchange,
-  d3_flower_box_100,
-  d3_flying_objects_id_app,
-  d3_maze_100,
-  d3_pipes_id_app,
-  d3_text_100,
   access_110,
   access_218,
   access_219,
@@ -1055,12 +989,17 @@ const path = {
   access_228,
   access_229,
   access_230,
+  accessibility,
   actmovie_303,
+  addrbook,
   amovie_2,
   appwiz_1500,
   appwiz_1501,
   appwiz_1502,
   appwiz_1503,
+  arrow_left,
+  arrow_right,
+  attach,
   awfext32_6049,
   awfext32_6050,
   awfext32_6051,
@@ -1088,17 +1027,37 @@ const path = {
   awschd32_402,
   awsnto32_49,
   awsnto32_50,
+  back,
+  bat_exec_2,
+  bat_exec,
+  bat_wait,
+  bat,
+  bill,
+  binoc,
   blank_screen_100,
+  bold,
+  bookmark,
+  brush,
+  bulb,
   cachevu_100,
   calc_sc,
+  calculator,
+  camera,
   ccapi_104,
   ccapi_105,
   ccapi_106,
+  cd_exe,
+  cd_music,
+  cd_search,
   cdplayer_107,
   cdplayer_110,
   cdplayer_114,
+  centre,
   charmap_1,
   chatshow_3000,
+  circle,
+  close,
+  columns,
   comctl32_150,
   comdlg32_528,
   comdlg32_529,
@@ -1112,6 +1071,12 @@ const path = {
   comdlg32_537,
   comdlg32_538,
   comdlg32_539,
+  computer_2,
+  computer_3,
+  computer_4,
+  computer_5,
+  computer_find,
+  computer,
   confcp_102,
   confcp_107,
   confcp_108,
@@ -1123,8 +1088,17 @@ const path = {
   conflnk_102,
   conflnk_103,
   controls_3000,
+  copy,
   coreui_3000,
   curves_and_colors_100,
+  cut,
+  d3_flower_box_100,
+  d3_flying_objects_id_app,
+  d3_maze_100,
+  d3_pipes_id_app,
+  d3_text_100,
+  data16,
+  date,
   defrag_1,
   defrag_2,
   defrag_3,
@@ -1134,7 +1108,12 @@ const path = {
   defrag_7,
   defrag_8,
   defrag_9,
+  defrag,
+  deleteico,
   desk_100,
+  desktop,
+  detlicon,
+  dial,
   dialer_1,
   dialer_2,
   dialmon_200,
@@ -1145,6 +1124,9 @@ const path = {
   directcc_1005,
   directcc_directcc,
   diskcopy_1,
+  doc_gris,
+  doc,
+  download,
   dpmodemx_701,
   drvspace_1,
   drvspace_2,
@@ -1154,6 +1136,8 @@ const path = {
   drvspace_6,
   drvspace_7,
   drvspace_8,
+  earth,
+  explore,
   explorer_100,
   explorer_101,
   explorer_102,
@@ -1163,24 +1147,66 @@ const path = {
   explorer_107,
   explorer_108,
   expostrt_128,
+  fave,
+  fax_warning,
+  fax,
   faxcover_108,
   faxcover_140,
   faxcover_2,
   faxcover_3,
+  file_corrupted,
+  file_delete,
+  file_find,
+  file_find2,
+  file_find3,
+  file_font_2,
+  file_font,
+  file_icons,
+  file_pen,
+  file_pencil,
+  file_pick,
+  file_pin,
+  file_settings,
+  file_text_settings,
+  file_text,
+  file_transfer,
+  files,
   filexfer_128,
   filexfer_129,
   filexfer_130,
+  find_arr,
+  find_dc2,
+  find_doc,
   flying_through_space_100,
   flying_windows_100,
   fm20enu_5,
+  folder_exe,
+  folder_exe2,
+  folder_file,
+  folder_font,
+  folder_open,
+  folder_print,
+  folder_rename,
+  folder_settings_2,
+  folder_settings,
+  folder_shared,
+  folder,
+  font_big,
+  font_sml,
+  font_wid,
+  font,
+  font2,
   fontext_1,
   fontext_2,
   fontext_3,
   fontext_4,
   fontview_110,
   fontview_111,
+  forbidden,
+  format16,
   freecell_1,
   fte_128,
+  fullscrn,
   gcdef_100,
   gcdef_10001,
   gcdef_10002,
@@ -1265,12 +1291,20 @@ const path = {
   gcdef_117,
   gcdef_122,
   gcdef_124,
+  globe,
   grpconv_100,
   grpconv_101,
+  hand,
+  hardware,
+  help_book,
+  help_ptr,
+  help,
+  html_page,
   icmui_1200,
   icmui_1201,
   icwdial_101,
   icwdial_102,
+  ie,
   imgadmin_214,
   imgedit_10,
   imgedit_277,
@@ -1301,22 +1335,42 @@ const path = {
   inetcpl_1320,
   inetcpl_1321,
   inetcpl_4432,
+  info_bubble,
+  install,
   internat_151,
   intl_101,
   isign32_100,
   isign32_4001,
   isign32_ico_app,
+  issue,
   isuninst_1000,
+  italic,
   jdbgmgr_100,
   jgdwmie_101,
+  job116,
   joy_102,
   joy_108,
   joy_110,
+  justify,
+  key,
+  keyboard_mouse,
+  keys,
+  left,
   lights_100,
   lights_101,
   lights_102,
   lights_103,
   lights_99,
+  listicon,
+  loader_bat,
+  lock,
+  log_view,
+  logo,
+  lrg_icon,
+  lst2icon,
+  mail,
+  mail2,
+  mail3,
   mailnews_12,
   mailnews_13,
   mailnews_14,
@@ -1361,6 +1415,15 @@ const path = {
   mcm_earth,
   mcm_phone,
   mdisp32_1,
+  media_audio,
+  media_cd,
+  media_video,
+  memory,
+  message,
+  mic,
+  microsoft_exchange,
+  microsoft_network,
+  mipac,
   mkcompat_900,
   mlcfg32_129,
   mmsys_100,
@@ -1408,6 +1471,7 @@ const path = {
   mprserv_120,
   mprserv_121,
   mprserv_68,
+  ms_dos,
   msacm32_10,
   msawt_awt_icon,
   msfs32_1951,
@@ -1446,6 +1510,7 @@ const path = {
   msnstart_110,
   msnstart_120,
   msnsvc_3000,
+  mspaint,
   msrating_102,
   msrating_103,
   msrating_104,
@@ -1455,9 +1520,18 @@ const path = {
   msrating_108,
   msrating_109,
   msvfw32_943,
+  mute,
   mystify_your_mind_100,
   netwatch_101,
+  network_2,
+  network_3,
+  network,
+  new16,
+  newico,
   notepad_1,
+  notepad_2,
+  notepad,
+  num_page,
   nwnp32_folder_icon,
   nwnp32_printer_icon,
   nwnp32_server_icon,
@@ -1467,16 +1541,38 @@ const path = {
   oiui400_imgstamp,
   oiui400_textstamp,
   ole32_8,
+  open,
   optional_3000,
+  order_as,
+  order_ds,
   packager_1,
+  packager,
+  para_bul,
+  para_num,
   password_100,
   password_1000,
   password_1010,
+  paste,
   pbrush_1,
+  pen,
+  person116,
+  phone_2,
+  phone,
+  playd16,
+  playp16,
   plugin_2,
+  plugin,
+  power_off,
+  power_on,
   powercfg_205,
   powercfg_210,
   powercfg_211,
+  print,
+  print2,
+  printer_calendar,
+  printer_drive,
+  printer_shared,
+  printer,
   prodinv_myicon,
   progman_1,
   progman_10,
@@ -1524,6 +1620,8 @@ const path = {
   progman_7,
   progman_8,
   progman_9,
+  props,
+  pshbtn,
   qfecheck_111,
   quartz_100,
   quartz_101,
@@ -1535,6 +1633,7 @@ const path = {
   quartz_203,
   quartz_300,
   quartz_301,
+  question_bubble,
   quikview_1,
   quikview_2,
   quikview_3,
@@ -1545,6 +1644,23 @@ const path = {
   rasapi32_102,
   rasapi32_103,
   rasapi32_104,
+  reader_cd_2,
+  reader_cd,
+  reader_closed,
+  reader_disket_casset,
+  reader_disket,
+  reader_disket2,
+  reader_eject,
+  reader_noshared,
+  reader_opened,
+  reader_shared,
+  recycle_empty,
+  recycle_file,
+  recycle_filefolder,
+  recycle_folder,
+  recycle_full,
+  redo,
+  refresh,
   regedit_100,
   regedit_101,
   regedit_102,
@@ -1554,10 +1670,12 @@ const path = {
   regedit_204,
   regedit_205,
   regedit_206,
+  regedit,
   regwiz_117,
   regwiz_122,
   regwiz_127,
   regwiz_129,
+  right,
   rnaapp_100,
   rnaapp_101,
   rnaapp_102,
@@ -1590,10 +1708,12 @@ const path = {
   rsrcmtr_133,
   rundll_1,
   runonce_106,
+  save,
   scandskw_1,
   sccview_icon,
   scrolling_marquee_100,
   sendmail_2001,
+  settings,
   setupslt_3000,
   shdocvw_256,
   shdocvw_257,
@@ -1678,7 +1798,10 @@ const path = {
   shell32_7,
   shell32_8,
   shell32_9,
+  shortcut,
+  shortcut2,
   shscrap_100,
+  signup,
   smmscrpt_100,
   sndrec32_10,
   sndrec32_15,
@@ -1689,6 +1812,9 @@ const path = {
   sndvol32_303,
   sndvol32_304,
   sol_1,
+  spellchk,
+  star,
+  svrworld,
   swinst5_3000,
   syncui_120,
   syncui_121,
@@ -1704,6 +1830,7 @@ const path = {
   syncui_131,
   syncui_132,
   syncui_135,
+  sys_package,
   sysedit_1,
   sysedit_2,
   sysmon_1000,
@@ -1719,12 +1846,24 @@ const path = {
   systray_305,
   systray_306,
   taskman_100,
+  textchat_2,
+  textchat,
+  tick,
+  time,
   timedate_200,
+  timedate,
+  timer_font,
+  toupper,
   tour_1,
+  tree,
   tssoft32_10,
   twunk_32_twunk_icon,
   ulclient_1002,
   ulclient_1235,
+  underlne,
+  undo,
+  uninstall,
+  unmute,
   url_1_102,
   url_1_103,
   url_1_104,
@@ -1740,6 +1879,7 @@ const path = {
   user_5,
   user_6,
   user_7,
+  user,
   voxplay_3000,
   vvexe32_1,
   wab32_1010,
@@ -1756,7 +1896,17 @@ const path = {
   wangimg_128,
   wangimg_129,
   wangimg_130,
+  warning,
+  web_link,
+  web_open,
+  web_txfr,
+  websrch,
   wgpocpl_128,
+  what,
+  window_abc,
+  window_accessibility,
+  window_graph,
+  windows_explorer,
   winfile_1,
   winfile_2,
   winfile_3,
@@ -1797,6 +1947,7 @@ const path = {
   wmsui32_5087,
   wmsui32_5900,
   wmsui32_5901,
+  wordpad,
   write_1,
 };
 
