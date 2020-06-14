@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.3](https://github.com/React95/React95/compare/@react95/core@2.10.2...@react95/core@2.10.3) (2020-06-14)
+
+
+### Bug Fixes
+
+* **register:** remove console.log ([27cdc97](https://github.com/React95/React95/commit/27cdc97467da79c08e10fa7d32472434e4ae2859))
+
+
+
+
+
 ## [2.10.2](https://github.com/React95/React95/compare/@react95/core@2.10.1...@react95/core@2.10.2) (2020-06-04)
 
 **Note:** Version bump only for package @react95/core
