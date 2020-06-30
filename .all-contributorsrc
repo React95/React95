@@ -69,6 +69,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "oddisland",
+      "name": "Blood Boy",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20609161?v=4",
+      "profile": "https://github.com/oddisland",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
