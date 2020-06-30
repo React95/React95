@@ -165,6 +165,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "InsafKhamzin",
+      "name": "Insaf",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/27154217?v=4",
+      "profile": "http://insafkhamzin.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
