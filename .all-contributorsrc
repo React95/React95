@@ -78,6 +78,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "beizhedenglong",
+      "name": "Victor",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12963675?v=4",
+      "profile": "https://twitter.com/HelloVictorWang",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
