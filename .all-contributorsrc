@@ -97,6 +97,15 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "accuvit",
+      "name": "Junior Campos",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/19792530?v=4",
+      "profile": "https://github.com/accuvit",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
