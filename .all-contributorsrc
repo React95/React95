@@ -87,6 +87,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "thomazcapra",
+      "name": "Thomaz Capra",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13137325?v=4",
+      "profile": "https://stackoverflow.com/users/6061376/thomaz-capra?tab=profile",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "skipCi": true,
