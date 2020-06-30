@@ -147,6 +147,15 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "kaiofelipejs",
+      "name": "Kaio Felipe Silva",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/41922744?v=4",
+      "profile": "http://kaiofelipejs.dev",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
