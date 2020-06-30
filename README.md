@@ -50,6 +50,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/lukehorvat"><img src="https://avatars2.githubusercontent.com/u/1034878?v=4" width="100px;" alt=""/><br /><sub><b>Luke Horvat</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=lukehorvat" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/oddisland"><img src="https://avatars2.githubusercontent.com/u/20609161?v=4" width="100px;" alt=""/><br /><sub><b>Blood Boy</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=oddisland" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://twitter.com/HelloVictorWang"><img src="https://avatars3.githubusercontent.com/u/12963675?v=4" width="100px;" alt=""/><br /><sub><b>Victor</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=beizhedenglong" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
