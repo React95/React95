@@ -156,6 +156,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "LRNZ09",
+      "name": "Lorenzo Pieri",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13508373?v=4",
+      "profile": "https://lorenzopieri.dev",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
