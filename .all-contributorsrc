@@ -60,6 +60,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "lukehorvat",
+      "name": "Luke Horvat",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1034878?v=4",
+      "profile": "https://github.com/lukehorvat",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

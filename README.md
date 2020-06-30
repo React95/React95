@@ -47,6 +47,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/gennymcdonagh"><img src="https://avatars1.githubusercontent.com/u/25296442?v=4" width="100px;" alt=""/><br /><sub><b>Genny McDonagh</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=gennymcdonagh" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/andreloureiro"><img src="https://avatars0.githubusercontent.com/u/2106717?v=4" width="100px;" alt=""/><br /><sub><b>André Loureiro</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=andreloureiro" title="Code">💻</a></td>
     <td align="center"><a href="http://cieslak.dev"><img src="https://avatars0.githubusercontent.com/u/14146176?v=4" width="100px;" alt=""/><br /><sub><b>Luiz Fernando da Silva Cieslak</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=luizcieslak" title="Documentation">📖</a> <a href="#ideas-luizcieslak" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/lukehorvat"><img src="https://avatars2.githubusercontent.com/u/1034878?v=4" width="100px;" alt=""/><br /><sub><b>Luke Horvat</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=lukehorvat" title="Documentation">📖</a></td>
   </tr>
 </table>
 
