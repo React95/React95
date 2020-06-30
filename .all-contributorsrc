@@ -115,6 +115,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mikegsrv",
+      "name": "Mike",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/15021175?v=4",
+      "profile": "http://mikegsrv.ru",
+      "contributions": [
+        "code",
+        "test",
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
