@@ -59,6 +59,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://twitter.com/drosenwasser"><img src="https://avatars2.githubusercontent.com/u/972891?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Rosenwasser</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3ADanielRosenwasser" title="Bug reports">🐛</a> <a href="https://github.com/React95/React95/commits?author=DanielRosenwasser" title="Documentation">📖</a> <a href="https://github.com/React95/React95/commits?author=DanielRosenwasser" title="Code">💻</a> <a href="https://github.com/React95/React95/commits?author=DanielRosenwasser" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/ddsilva"><img src="https://avatars1.githubusercontent.com/u/755101?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Silva</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=ddsilva" title="Tests">⚠️</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://kaiofelipejs.dev"><img src="https://avatars2.githubusercontent.com/u/41922744?v=4" width="100px;" alt=""/><br /><sub><b>Kaio Felipe Silva</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kaiofelipejs" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
