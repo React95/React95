@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://stackoverflow.com/users/6061376/thomaz-capra?tab=profile"><img src="https://avatars2.githubusercontent.com/u/13137325?v=4" width="100px;" alt=""/><br /><sub><b>Thomaz Capra</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=thomazcapra" title="Code">💻</a> <a href="https://github.com/React95/React95/commits?author=thomazcapra" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/accuvit"><img src="https://avatars0.githubusercontent.com/u/19792530?v=4" width="100px;" alt=""/><br /><sub><b>Junior Campos</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=accuvit" title="Code">💻</a></td>
     <td align="center"><a href="http://antongunnarsson.com"><img src="https://avatars2.githubusercontent.com/u/6201720?v=4" width="100px;" alt=""/><br /><sub><b>Anton Gunnarsson</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=anton-g" title="Code">💻</a></td>
+    <td align="center"><a href="http://mikegsrv.ru"><img src="https://avatars1.githubusercontent.com/u/15021175?v=4" width="100px;" alt=""/><br /><sub><b>Mike</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=mikegsrv" title="Code">💻</a> <a href="https://github.com/React95/React95/commits?author=mikegsrv" title="Tests">⚠️</a> <a href="https://github.com/React95/React95/issues?q=author%3Amikegsrv" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
