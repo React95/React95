@@ -50,6 +50,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "luizcieslak",
+      "name": "Luiz Fernando da Silva Cieslak",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/14146176?v=4",
+      "profile": "http://cieslak.dev",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
     }
-  ]
+  ],
+  "skipCi": true,
+  "contributorsPerLine": 7
 }
