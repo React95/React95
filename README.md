@@ -61,6 +61,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   </tr>
   <tr>
     <td align="center"><a href="http://kaiofelipejs.dev"><img src="https://avatars2.githubusercontent.com/u/41922744?v=4" width="100px;" alt=""/><br /><sub><b>Kaio Felipe Silva</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kaiofelipejs" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://lorenzopieri.dev"><img src="https://avatars2.githubusercontent.com/u/13508373?v=4" width="100px;" alt=""/><br /><sub><b>Lorenzo Pieri</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=LRNZ09" title="Documentation">📖</a></td>
   </tr>
 </table>
 
