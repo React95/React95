@@ -126,6 +126,18 @@
         "test",
         "bug"
       ]
+    },
+    {
+      "login": "DanielRosenwasser",
+      "name": "Daniel Rosenwasser",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/972891?v=4",
+      "profile": "https://twitter.com/drosenwasser",
+      "contributions": [
+        "bug",
+        "doc",
+        "code",
+        "test"
+      ]
     }
   ],
   "skipCi": true,
