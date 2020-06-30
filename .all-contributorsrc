@@ -106,6 +106,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "anton-g",
+      "name": "Anton Gunnarsson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6201720?v=4",
+      "profile": "http://antongunnarsson.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
