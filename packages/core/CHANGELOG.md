@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.4](https://github.com/React95/React95/compare/@react95/core@2.10.3...@react95/core@2.10.4) (2020-07-13)
+
+
+### Bug Fixes
+
+* **build:** add assets files to the final package ([ca5f4db](https://github.com/React95/React95/commit/ca5f4db94aeb5b174435b84d27b4121822225ec4))
+
+
+
+
+
 ## [2.10.3](https://github.com/React95/React95/compare/@react95/core@2.10.2...@react95/core@2.10.3) (2020-06-14)
 
 
