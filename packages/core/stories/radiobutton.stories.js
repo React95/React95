@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 
@@ -10,51 +10,41 @@ const RadioButtonList = styled.div`
   flex-direction: column;
 `;
 
-class RadioButtonStory extends React.Component {
-  constructor(props) {
-    super(props);
+const RadioButtonStory = () => {
+  const [selectedOption, setSelectedOption] = useState('one');
 
-    this.state = {
-      selectedOption: 'one',
-    };
-  }
+  const handleChange = e => setSelectedOption(e.target.value);
 
-  handleChange = e => this.setState({ selectedOption: e.target.value });
-
-  render() {
-    const { selectedOption } = this.state;
-
-    return (
-      <RadioButtonList>
-        <RadioButton
-          name="working"
-          value="one"
-          checked={selectedOption === 'one'}
-          onChange={this.handleChange}
-        >
-          Working
-        </RadioButton>
-        <RadioButton
-          name="working"
-          value="two"
-          checked={selectedOption === 'two'}
-          onChange={this.handleChange}
-        >
-          Working
-        </RadioButton>
-        <RadioButton readOnly checked value="example">
-          Checked
-        </RadioButton>
-        <RadioButton readOnly disabled value="example">
-          Disabled
-        </RadioButton>
-        <RadioButton readOnly checked disabled value="example">
-          Checked & Disabled
-        </RadioButton>
-      </RadioButtonList>
-    );
-  }
-}
+  return (
+    <RadioButtonList>
+      <RadioButton
+        name="working"
+        value="one"
+        checked={selectedOption === 'one'}
+        onChange={handleChange}
+      >
+        Working
+      </RadioButton>
+      <RadioButton
+        name="working"
+        value="two"
+        checked={selectedOption === 'two'}
+        onChange={handleChange}
+      >
+        Working
+      </RadioButton>
+      <RadioButton readOnly checked value="example">
+        Checked
+      </RadioButton>
+      <RadioButton readOnly disabled value="example">
+        Disabled
+      </RadioButton>
+      <RadioButton readOnly checked disabled value="example">
+        Checked & Disabled
+      </RadioButton>
+    </RadioButtonList>
+  );
+};
 
 const code = `<RadioButton checked>
   Checked
