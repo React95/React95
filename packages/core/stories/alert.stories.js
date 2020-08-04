@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
 
@@ -6,48 +6,35 @@ import Alert from '../components/Alert';
 import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
 
-class AlertStory extends React.Component {
-  constructor(props) {
-    super(props);
+const AlertStory = () => {
+  const [showAlert, toggleShowAler] = useState(false);
+  const [type, setType] = useState('error');
 
-    this.state = {
-      showAlert: false,
-      type: 'error',
-    };
-  }
+  const handleOpenAlert = () => toggleShowAler(true);
+  const handleCloseAlert = () => toggleShowAler(false);
+  const onImageChange = e => setType(e.target.value);
 
-  handleOpenAlert = () => this.setState({ showAlert: true });
-
-  handleCloseAlert = () => this.setState({ showAlert: false });
-
-  handleButtonClick = e => alert(e.target.value);
-
-  onImageChange = e => this.setState({ type: e.target.value });
-
-  render() {
-    const { showAlert, type } = this.state;
-    return (
-      <>
-        <div style={{ marginBottom: 10 }}>
-          Alert Type:
-          <Dropdown
-            options={['error', 'info', 'question', 'warning']}
-            onChange={this.onImageChange}
-          />
-        </div>
-        <Button onClick={this.handleOpenAlert}>Trigger Alert</Button>
-        {showAlert && (
-          <Alert
-            title="Windows Networking"
-            type={type}
-            message="The Windows password you typed is incorrect."
-            closeAlert={this.handleCloseAlert}
-          />
-        )}
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <div style={{ marginBottom: 10 }}>
+        Alert Type:
+        <Dropdown
+          options={['error', 'info', 'question', 'warning']}
+          onChange={onImageChange}
+        />
+      </div>
+      <Button onClick={handleOpenAlert}>Trigger Alert</Button>
+      {showAlert && (
+        <Alert
+          title="Windows Networking"
+          type={type}
+          message="The Windows password you typed is incorrect."
+          closeAlert={handleCloseAlert}
+        />
+      )}
+    </>
+  );
+};
 
 const code = `<Alert
   title="Windows Networking"
