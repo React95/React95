@@ -20,7 +20,8 @@
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "typeRoots": ["node_modules/@types"]
   },
   "include": ["components/**/*"],
   "exclude": ["node_modules", "build", "scripts"]
