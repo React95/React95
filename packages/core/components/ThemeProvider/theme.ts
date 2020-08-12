@@ -6,7 +6,7 @@ export interface IColors {
   secondary: String;
 }
 
-export class Colors {
+export class Colors implements IColors {
   grays: Array<String>;
   black: String;
   white: String;
