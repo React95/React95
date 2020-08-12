@@ -1,3 +1,4 @@
+import * as React from 'react';
 import styled from '@xstyled/styled-components';
 import {
   padding,
@@ -8,7 +9,10 @@ import {
   ShadowProps,
 } from 'styled-system';
 
-export type InputProps = PaddingProps & BorderProps & ShadowProps;
+export type InputProps = PaddingProps &
+  BorderProps &
+  ShadowProps &
+  React.HTMLProps<HTMLInputElement>;
 
 const Input = styled.input<InputProps>`
   outline: none;
@@ -28,7 +32,7 @@ const Input = styled.input<InputProps>`
   border-left-style: 1;
   border-left-color: grays.3;
   
-  box-shadow: 'input';
+  box-shadow: input;
 
   ${padding}
   ${borders}
