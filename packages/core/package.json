@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@react95/clippy": "^0.1.1",
+    "@storybook/addon-essentials": "^6.0.5",
     "@storybook/addons": "^6.0.5",
     "@storybook/react": "^6.0.5",
     "@storybook/storybook-deployer": "^2.8.6",
