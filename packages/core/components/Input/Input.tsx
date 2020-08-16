@@ -12,9 +12,9 @@ import {
 export type InputProps = PaddingProps &
   BorderProps &
   ShadowProps &
-  React.HTMLProps<HTMLInputElement>;
+  React.HTMLAttributes<HTMLInputElement>;
 
-const Input = styled.input<InputProps>`
+export const Input = styled.input<InputProps>`
   outline: none;
   border: none;
   cursor: text;
@@ -38,5 +38,3 @@ const Input = styled.input<InputProps>`
   ${borders}
   ${shadow}
 `;
-
-export default Input;
