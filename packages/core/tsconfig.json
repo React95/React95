@@ -5,10 +5,8 @@
     "target": "es5",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "sourceMap": true,
-    "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDirs": ["components", "stories"],
     "baseUrl": "components",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -19,10 +17,14 @@
     "noUnusedLocals": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "incremental": false,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["components/**/*"],
+  "include": ["components", "stories"],
   "exclude": ["node_modules", "build", "scripts"]
 }

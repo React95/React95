@@ -1,4 +1,5 @@
 module.exports = {
-  stories: ['../stories/*.stories.@(ts|js)'],
+  stories: ['../stories/*.stories.tsx'],
+  logLevel: 'debug',
   addons: ['@storybook/addon-essentials'],
 };
