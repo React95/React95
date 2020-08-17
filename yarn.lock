@@ -4384,6 +4384,14 @@
   dependencies:
     "@types/styled-components" "*"
 
+"@types/xstyled__system@^1.17.1":
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/@types/xstyled__system/-/xstyled__system-1.17.1.tgz#a08e1db8cc9a8139c392d42e3cb47e963a50a423"
+  integrity sha512-nMfQALPRvbDZZFCBRuuqrn7ZWMqvK1MC838G2IBHn4KDwdrAsFACZD2md16BkXUYDDf7iWCYHCfDrzHV/4s+LQ==
+  dependencies:
+    "@types/react" "*"
+    csstype "^3.0.2"
+
 "@types/yargs-parser@*":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-15.0.0.tgz#cb3f9f741869e20cce330ffbeb9271590483882d"
