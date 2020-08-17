@@ -1,6 +1,7 @@
 import { ModalContext } from './Modal';
+import Button from './Button';
+import GlobalStyle from './GlobalStyle';
 import Input from './Input';
 import ThemeProvider from './ThemeProvider';
-import GlobalStyle from './GlobalStyle';
 
-export { Input, ModalContext, ThemeProvider, GlobalStyle };
+export { Button, GlobalStyle, ModalContext, ThemeProvider, Input };
