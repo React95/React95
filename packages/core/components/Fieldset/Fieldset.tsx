@@ -1,22 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import * as React from 'react';
+import styled from '@xstyled/styled-components';
 
 const Field = styled.fieldset`
   border-top-style: groove;
-  border-top-width: 2px;
+  border-top-width: 2;
   border-top-color: #e6e6e6;
 
   border-left-style: groove;
-  border-left-width: 2px;
+  border-left-width: 2;
   border-left-color: #e6e6e6;
 
   border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom-width: 1;
   border-bottom-color: #848284;
 
   border-right-style: solid;
-  border-right-width: 1px;
+  border-right-width: 1;
   border-right-color: #848284;
 
   box-shadow: 1px 1px 0 0 #e6e6e6;
@@ -27,16 +26,15 @@ const Legend = styled.legend`
   padding-right: 1px;
 `;
 
-const Fieldset = ({ legend, children, ...rest }) => (
+export type FieldSetProps = {
+  legend?: String;
+} & React.HTMLAttributes<HTMLFieldSetElement>;
+
+const Fieldset: React.FC<FieldSetProps> = ({ legend, children, ...rest }) => (
   <Field {...rest}>
     {legend && <Legend>{legend}</Legend>}
     {children}
   </Field>
 );
-
-Fieldset.propTypes = {
-  legend: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
 
 export default Fieldset;
