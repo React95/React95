@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -37,7 +36,9 @@ const Text = styled.span`
   user-select: none;
 `;
 
-const Field = styled.input`
+const Field = styled.input.attrs({
+  type: 'checkbox',
+})`
   width: 12px;
   height: 12px;
 
@@ -71,7 +72,11 @@ const Field = styled.input`
 
 Field.displayName = 'Field';
 
-const Label = styled.label`
+export type LabelProps = {
+  disabled: boolean;
+};
+
+const Label = styled.label<LabelProps>`
   display: inline-block;
   height: 15px;
 
@@ -90,48 +95,25 @@ const Label = styled.label`
     `}
 `;
 
+export type CheckboxProps = {
+  children?: string;
+  checked?: boolean;
+  disabled?: boolean;
+  style?: React.CSSProperties;
+} & React.HTMLAttributes<HTMLInputElement>;
+
 const Checkbox = ({
   children,
-  label,
-  value,
   style,
   checked,
-  disabled,
-  onChange,
+  disabled = false,
   ...rest
-}) => (
-  <Label style={style} checked={checked} disabled={disabled}>
-    <Field
-      type="checkbox"
-      value={value}
-      onChange={onChange}
-      checked={checked}
-      disabled={disabled}
-      {...rest}
-    />
+}: CheckboxProps) => (
+  <Label style={style} disabled={disabled}>
+    <Field checked={checked} disabled={disabled} {...rest} />
     <Icon />
-    <Text>{children || label}</Text>
+    <Text>{children}</Text>
   </Label>
 );
-
-Checkbox.propTypes = {
-  value: PropTypes.string,
-  label: PropTypes.string,
-  children: PropTypes.string,
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func,
-  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-};
-
-Checkbox.defaultProps = {
-  value: undefined,
-  label: 'Checkbox',
-  children: '',
-  checked: null,
-  disabled: null,
-  onChange: () => {},
-  style: undefined,
-};
 
 export default Checkbox;
