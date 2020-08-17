@@ -14,7 +14,7 @@ export type InputProps = PaddingProps &
   ShadowProps &
   React.HTMLAttributes<HTMLInputElement>;
 
-export const Input = styled.input<InputProps>`
+const Input = styled.input<InputProps>`
   outline: none;
   border: none;
   cursor: text;
@@ -38,3 +38,5 @@ export const Input = styled.input<InputProps>`
   ${borders}
   ${shadow}
 `;
+
+export default Input;
