@@ -8,7 +8,7 @@ import 'react-virtualized/styles.css';
 
 import { Icon, Frame, Tabs, Tab } from '../components';
 
-import availableSizes from './icons.stories.data';
+import iconsSizes from './icons.stories.data';
 
 const TableWrapper = styled.div`
   .ReactVirtualized__Table__row {
@@ -42,6 +42,14 @@ const AllIconsName = styled.span`
 const list = Object.keys(icons).map(icon => ({
   name: icon,
 }));
+
+const availableSizesByName = iconsSizes.reduce((keyedData, iconData) => {
+    const newData = {
+      ...keyedData,
+      ...iconData
+    }
+    return newData
+  }, {})
 
 const code = `<Icon
   name="bat"
@@ -99,15 +107,15 @@ storiesOf('Icon', module)
                     <p style={{ display: 'flex', flexDirection: 'column' }}>
                       <span>
                         sizes: (
-                        {availableSizes[cellData].map(s => s.size).join(', ')})
+                        {availableSizesByName[cellData].map(s => s.size).join(', ')})
                       </span>
                       <span>
                         bpp: (
-                        {availableSizes[cellData].map(s => s.bpp).join(', ')})
+                        {availableSizesByName[cellData].map(s => s.bpp).join(', ')})
                       </span>
                       <span>
                         variant: (
-                        {availableSizes[cellData]
+                        {availableSizesByName[cellData]
                           .map(s => s.variant)
                           .join(', ')}
                         )
@@ -243,7 +251,7 @@ storiesOf('Icon', module)
       </Tab>
       <Tab title="All Icons (laggy)">
         <Frame overflowY="auto" boxShadow="none" height="calc(100vh - 80px)">
-          {availableSizes.map(iconDef => {
+          {iconsSizes.map(iconDef => {
             const [[name, sizes]] = Object.entries(iconDef);
 
             return (
