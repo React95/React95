@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-const NavItem = styled.li`
+const NavItem = styled.li<{ active: Boolean }>`
   list-style: none;
   padding: 3 6;
   background-color: bg;
@@ -19,8 +18,8 @@ const NavItem = styled.li`
     margin-left: 4;
   }
 
-  ${props =>
-    props.active &&
+  ${({ active }) =>
+    active &&
     css`
       margin-top: -${th('space.2')}px;
       margin-left: -${th('space.2')}px;
@@ -47,19 +46,17 @@ const NavItem = styled.li`
     `}
 `;
 
-const Tab = ({ activeTab, title, ...rest }) => (
+export interface TabProps extends React.HTMLAttributes<HTMLLIElement> {
+  activeTab?: string;
+  title: string;
+  disabled?: Boolean;
+  onClick?(e: React.MouseEvent): void;
+}
+
+const Tab: React.FC<TabProps> = ({ activeTab, title, ...rest }) => (
   <NavItem {...rest} active={activeTab === title}>
     {title}
   </NavItem>
 );
-
-Tab.propTypes = {
-  activeTab: PropTypes.string,
-  title: PropTypes.string.isRequired,
-};
-
-Tab.defaultProps = {
-  activeTab: undefined,
-};
 
 export default Tab;
