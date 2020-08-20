@@ -5,7 +5,7 @@ import Frame from '../components/Frame';
 
 export default {
   title: 'Frame',
-  Component: Frame,
+  component: Frame,
 } as Meta;
 
 export const Simple = () => <Frame width={200} height={100} />;

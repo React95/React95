@@ -12,7 +12,7 @@ const CheckboxList = styled.div`
 
 export default {
   title: 'Fieldset',
-  Component: Fieldset,
+  component: Fieldset,
 } as Meta;
 
 export const Simple = () => (

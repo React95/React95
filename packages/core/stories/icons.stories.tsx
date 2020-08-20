@@ -52,7 +52,7 @@ const AllIconsName = styled.span`
 
 export default {
   title: 'Icon',
-  Component: Icon,
+  component: Icon,
 } as Meta;
 
 export const All = () => (

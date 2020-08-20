@@ -5,7 +5,7 @@ import Button from '../components/Button';
 
 export default {
   title: 'Button',
-  Component: Button,
+  component: Button,
 } as Meta;
 
 export const Simple = () => <Button>Ok</Button>;

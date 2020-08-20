@@ -11,7 +11,7 @@ const CheckboxList = styled.div`
 
 export default {
   title: 'Checkbox',
-  Component: Checkbox,
+  component: Checkbox,
 } as Meta;
 
 export const All = () => {
