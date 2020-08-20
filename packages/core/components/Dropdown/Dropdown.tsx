@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -64,7 +63,11 @@ const Select = styled.select`
   appearance: none;
 `;
 
-const Dropdown = ({ options, ...rest }) => (
+type DropdownProps = {
+  options: Array<string | number>;
+} & React.HTMLAttributes<HTMLSelectElement>;
+
+const Dropdown: React.FC<DropdownProps> = ({ options, ...rest }) => (
   <Wrapper>
     <Select {...rest}>
       {options.length &&
@@ -76,12 +79,6 @@ const Dropdown = ({ options, ...rest }) => (
     </Select>
   </Wrapper>
 );
-
-Dropdown.propTypes = {
-  options: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ),
-};
 
 Dropdown.defaultProps = {
   options: [

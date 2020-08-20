@@ -24,7 +24,7 @@ const If = ({ condition, children }: { condition: Boolean; children: any }) =>
   condition && children;
 
 interface TabsProps {
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
   defaultActiveTab?: string;
 
   onChange?(title: string, e: React.MouseEvent): void;
