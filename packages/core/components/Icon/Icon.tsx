@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled from 'styled-components';
 
 import useIcon from './useIcon';
 
-const I = styled.i.attrs(({ url }) => ({
+type IProps = {
+  url: String;
+  width: Number;
+  height: Number;
+};
+
+const I = styled.i.attrs<IProps>(({ url }: Partial<IProps>) => ({
   style: {
     backgroundImage: url ? `url('${url}')` : 'none',
   },
@@ -15,13 +20,23 @@ const I = styled.i.attrs(({ url }) => ({
   background-position: center;
   background-size: contain;
 
-  ${({ width, height }) => `
+  ${({ width, height }: Partial<IProps>) => `
     width: ${width}px;
     height: ${height}px;
   `}
 `;
 
-const Icon = ({
+export type IconProps = {
+  name: string;
+  width?: number;
+  height?: number;
+  fallback?: Boolean;
+  size?: number;
+  bpp?: number;
+  variant?: number;
+} & React.HTMLAttributes<HTMLElement>;
+
+const Icon: React.FC<IconProps> = ({
   name,
   width,
   height,
@@ -39,35 +54,18 @@ const Icon = ({
     variant,
   });
 
-  useEffect(() => {
+  React.useEffect(() => {
     const icon = availableIcons.find(i => i.size === size);
 
-    changeIconUrl(icon ? icon.url : undefined);
+    changeIconUrl(icon ? icon.url : '');
   }, [size]);
 
   return (
-    <I
-      name={name}
-      width={width || size}
-      height={height || size}
-      {...rest}
-      url={iconUrl}
-    />
+    <I width={width || size} height={height || size} url={iconUrl} {...rest} />
   );
 };
 
-Icon.propTypes = {
-  name: PropTypes.string,
-  width: PropTypes.number,
-  height: PropTypes.number,
-  fallback: PropTypes.bool,
-  size: PropTypes.number,
-  bpp: PropTypes.number,
-  variant: PropTypes.number,
-};
-
 Icon.defaultProps = {
-  name: null,
   width: undefined,
   height: undefined,
   fallback: true,

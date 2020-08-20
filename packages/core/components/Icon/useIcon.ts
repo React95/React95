@@ -1,10 +1,14 @@
-import { useState, useEffect } from 'react';
+import * as React from 'react';
 import icons from '@react95/icons';
 import ico from 'icojs';
 
+import 'isomorphic-fetch';
+
+import { IconProps } from './Icon';
+
 const MIME_TYPE = 'image/png';
 
-function icoParse(file) {
+async function icoParse(file: ArrayBuffer): Promise<ico.ParsedImage[]> {
   if (ico.isICO(file)) {
     return ico.parse(file);
   }
@@ -12,17 +16,32 @@ function icoParse(file) {
   return [];
 }
 
-const useIcon = ({ name, size, fallback, bpp = 4, variant = 1 }) => {
-  const [data, setAvailableIcons] = useState({
+export interface IAvailableIcon {
+  size: number;
+  url: string;
+  bpp: number;
+}
+
+const useIcon = ({
+  name,
+  size,
+  fallback,
+  bpp = 4,
+  variant = 1,
+}: Partial<IconProps>) => {
+  const [data, setAvailableIcons] = React.useState<{
+    iconUrl: string;
+    availableIcons: Array<IAvailableIcon>;
+  }>({
     iconUrl: '',
-    availableIcons: [{}],
+    availableIcons: [],
   });
 
-  const changeIconUrl = newUrl => {
+  const changeIconUrl = (newUrl: string) => {
     setAvailableIcons(iconData => ({ ...iconData, iconUrl: newUrl }));
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     async function fetchIcon() {
       const response = await fetch(icons[name]);
       const iconBuffer = await response.arrayBuffer();
@@ -35,7 +54,7 @@ const useIcon = ({ name, size, fallback, bpp = 4, variant = 1 }) => {
         bpp: i.bpp,
       }));
 
-      let url;
+      let url = '';
       const match = iconsToRender.filter(i => i.size === size && i.bpp === bpp);
 
       if (match.length > 0) {
