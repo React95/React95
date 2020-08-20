@@ -64,13 +64,13 @@ const Select = styled.select`
 `;
 
 type DropdownProps = {
-  options: Array<string | number>;
+  options?: Array<string | number>;
 } & React.HTMLAttributes<HTMLSelectElement>;
 
 const Dropdown: React.FC<DropdownProps> = ({ options, ...rest }) => (
   <Wrapper>
     <Select {...rest}>
-      {options.length &&
+      {options &&
         options.map(option => (
           <option key={option} value={option}>
             {option}
