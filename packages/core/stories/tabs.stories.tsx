@@ -10,6 +10,7 @@ import Input from '../components/Input';
 export default {
   title: 'Tabs, Tab',
   component: Tabs,
+  subcomponents: { Tab },
 } as Meta;
 
 export const Simple = () => (
@@ -66,7 +67,7 @@ export const Simple = () => (
       <br />
       <br />
       <p>
-        Learn more about
+        Learn more about{' '}
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#">program compatibility.</a>
       </p>
