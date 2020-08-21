@@ -1,14 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
 import Icon from '../Icon';
-import List from './List';
+import { IListProps } from './List';
 
 import rightcaret from '../shared/assets/pattern/rightcaret.svg';
 
-const Item = styled.li`
+const Item = styled.li<{
+  icon?: String;
+  hasList: Boolean;
+}>`
   position: relative;
 
   display: flex;
@@ -74,13 +76,23 @@ const Item = styled.li`
     `};
 `;
 
-const ListItem = ({ icon, children, onClick, ...rest }) => (
+export type ListItemProps = {
+  icon?: String;
+};
+
+const ListItem: React.FC<ListItemProps> = ({
+  icon,
+  children = [],
+  ...rest
+}) => (
   <Item
     {...rest}
-    onClick={onClick}
     icon={icon}
-    hasList={React.Children.map(children, child => child.type === List).some(
-      child => child,
+    hasList={Boolean(
+      children &&
+        React.Children.map(children, child =>
+          React.isValidElement<IListProps>(child),
+        ).some(child => child),
     )}
   >
     {icon && <Icon name={icon} />}
@@ -88,15 +100,6 @@ const ListItem = ({ icon, children, onClick, ...rest }) => (
   </Item>
 );
 
-ListItem.propTypes = {
-  icon: PropTypes.string,
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func,
-};
-
-ListItem.defaultProps = {
-  icon: '',
-  onClick: () => {},
-};
+ListItem.displayName = 'List.Item';
 
 export default ListItem;

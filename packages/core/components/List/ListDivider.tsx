@@ -12,4 +12,6 @@ const Divider = styled.li`
   margin-left: 2;
 `;
 
+Divider.displayName = 'List.Divider';
+
 export default Divider;

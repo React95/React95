@@ -27,7 +27,7 @@ const I = styled.i.attrs<IProps>(({ url }: Partial<IProps>) => ({
 `;
 
 export type IconProps = {
-  name: string;
+  name: String;
   width?: number;
   height?: number;
   fallback?: Boolean;
