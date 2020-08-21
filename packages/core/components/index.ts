@@ -8,6 +8,7 @@ import Frame from './Frame';
 import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
+import TextArea from './TextArea';
 import ThemeProvider from './ThemeProvider';
 
 export {
