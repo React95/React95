@@ -8,6 +8,8 @@ import Frame from './Frame';
 import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
+import ProgressBar from './ProgressBar';
+import Range from './Range';
 import TextArea from './TextArea';
 import ThemeProvider from './ThemeProvider';
 
@@ -21,7 +23,10 @@ export {
   Icon,
   Input,
   ModalContext,
+  ProgressBar,
+  Range,
   Tab,
   Tabs,
+  TextArea,
   ThemeProvider,
 };
