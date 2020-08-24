@@ -1,10 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-const Wrapper = styled.div`
-  width: ${props => props.width}px;
+export type ProgressBarProps = {
+  width?: number;
+  percent?: number;
+};
+
+const Wrapper = styled.div<Pick<ProgressBarProps, 'width'>>`
+  width: ${({ width }) => width}px;
   height: 20px;
 
   position: relative;
@@ -12,8 +16,8 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
-const WhiteBar = styled.div`
-  width: ${props => props.width}px;
+const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`
+  width: ${({ width }) => width}px;
   height: 20px;
   line-height: 20px;
 
@@ -33,8 +37,8 @@ const WhiteBar = styled.div`
   `}
 `;
 
-const Container = styled.div`
-  width: ${props => props.percent}%;
+const Container = styled.div<Pick<ProgressBarProps, 'percent'>>`
+  width: ${({ percent }) => percent}%;
 
   position: absolute;
   top: 0;
@@ -43,8 +47,8 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const Progress = styled.div`
-  width: ${props => props.width}px;
+const Progress = styled.div<Pick<ProgressBarProps, 'width'>>`
+  width: ${({ width }) => width}px;
   height: 17px;
   line-height: 18px;
 
@@ -55,7 +59,11 @@ const Progress = styled.div`
   color: ${th('colors.white')};
 `;
 
-const ProgressBar = ({ width, percent, ...rest }) => (
+const ProgressBar: React.FC<ProgressBarProps> = ({
+  width,
+  percent,
+  ...rest
+}) => (
   <Wrapper width={width} {...rest}>
     <WhiteBar width={width}>{`${percent}%`}</WhiteBar>
     <Container percent={percent}>
@@ -63,11 +71,6 @@ const ProgressBar = ({ width, percent, ...rest }) => (
     </Container>
   </Wrapper>
 );
-
-ProgressBar.propTypes = {
-  width: PropTypes.number,
-  percent: PropTypes.number,
-};
 
 ProgressBar.defaultProps = {
   width: 150,
