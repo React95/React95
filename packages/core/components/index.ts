@@ -9,6 +9,7 @@ import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
 import ProgressBar from './ProgressBar';
+import RadioButton from './RadioButton';
 import Range from './Range';
 import TextArea from './TextArea';
 import ThemeProvider from './ThemeProvider';
@@ -24,6 +25,7 @@ export {
   Input,
   ModalContext,
   ProgressBar,
+  RadioButton,
   Range,
   Tab,
   Tabs,

@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -9,6 +8,8 @@ import {
   radioUnchecked,
   radioUncheckedDisabled,
 } from './radioButtonStates';
+
+export type RadioButtonProps = React.InputHTMLAttributes<HTMLInputElement>;
 
 const Icon = styled.span`
   width: 12px;
@@ -33,7 +34,7 @@ const Text = styled.span`
   left: 18px;
 `;
 
-const Field = styled.input.attrs({
+const Field = styled.input.attrs<RadioButtonProps>({
   type: 'radio',
 })`
   margin: 0;
@@ -58,36 +59,34 @@ const Field = styled.input.attrs({
   }
 `;
 
-const Label = styled.label`
+const Label = styled.label<Pick<RadioButtonProps, 'disabled'>>`
   position: relative;
   margin-bottom: 10;
   display: block;
 
-  ${props =>
-    props.disabled &&
+  ${({ disabled }) =>
+    disabled &&
     css`
       color: ${th('colors.grays.3')};
       text-shadow: 0.5px 0.5px ${th('colors.grays.1')};
     `}
 `;
 
-const RadioButton = ({ children, onChange, disabled, ...props }) => (
+const RadioButton: React.FC<RadioButtonProps> = ({
+  children,
+  onChange,
+  disabled,
+  ...props
+}) => (
   <Label disabled={disabled}>
-    <Field onChange={onChange} disabled={disabled} {...props} />
+    <Field disabled={disabled} {...props} />
     <Icon />
     <Text>{children}</Text>
   </Label>
 );
 
-RadioButton.propTypes = {
-  children: PropTypes.string,
-  onChange: PropTypes.func,
-  disabled: PropTypes.bool,
-};
-
 RadioButton.defaultProps = {
   children: '',
-  onChange: () => {},
   disabled: false,
 };
 
