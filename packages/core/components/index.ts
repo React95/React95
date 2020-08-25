@@ -12,6 +12,7 @@ import ProgressBar from './ProgressBar';
 import RadioButton from './RadioButton';
 import Range from './Range';
 import TextArea from './TextArea';
+import Tooltip from './Tooltip';
 import ThemeProvider from './ThemeProvider';
 
 export {
@@ -30,5 +31,6 @@ export {
   Tab,
   Tabs,
   TextArea,
+  Tooltip,
   ThemeProvider,
 };

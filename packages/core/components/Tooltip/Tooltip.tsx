@@ -1,10 +1,9 @@
-import React, { useState, forwardRef } from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled from '@xstyled/styled-components';
 
 import Frame from '../Frame';
 
-const Tip = styled(Frame)`
+const Tip = styled(Frame)<{ show: Boolean }>`
   background: radial-gradient(#ff0 20%, transparent 20%) 0 0,
     radial-gradient(#ff0 20%, transparent 20%) 4px 4px,
     radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 0 1px,
@@ -21,6 +20,11 @@ const Tip = styled(Frame)`
   display: ${({ show }) => (show ? 'block' : 'none')};
 `;
 
+export type TooltipProps = {
+  text?: string;
+  delay?: number;
+} & React.HTMLAttributes<HTMLDivElement>;
+
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
@@ -28,12 +32,15 @@ const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-const Tooltip = forwardRef(({ children, text, delay, ...rest }, ref) => {
-  const [show, setShow] = useState(false);
-  const [delayTimer, setDelayTimer] = useState(null);
+const TooltipRenderer = (
+  { children, text, delay, ...rest }: TooltipProps,
+  ref: React.Ref<HTMLDivElement>,
+) => {
+  const [show, setShow] = React.useState(false);
+  const [delayTimer, setDelayTimer] = React.useState(0);
 
   const handleEnter = () => {
-    const timer = setTimeout(() => {
+    const timer = window.setTimeout(() => {
       setShow(true);
     }, delay);
 
@@ -56,9 +63,11 @@ const Tooltip = forwardRef(({ children, text, delay, ...rest }, ref) => {
       {children}
     </Wrapper>
   );
-});
+};
 
-function formatDate(date) {
+const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(TooltipRenderer);
+
+function formatDate(date: Date): string {
   const monthNames = [
     'January',
     'February',
@@ -80,12 +89,6 @@ function formatDate(date) {
 
   return `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`;
 }
-
-Tooltip.propTypes = {
-  children: PropTypes.node.isRequired,
-  text: PropTypes.string,
-  delay: PropTypes.number,
-};
 
 Tooltip.defaultProps = {
   delay: 1000,
