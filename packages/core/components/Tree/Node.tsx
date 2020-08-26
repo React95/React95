@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -22,7 +21,7 @@ export const icons = {
   FILE_EXECUTABLE: 'bat_exec',
 };
 
-const NodeItem = styled.div`
+const NodeItem = styled.div<{ isOpen: boolean }>`
   list-style-type: none;
   background-repeat: no-repeat;
   background-image: url(${treeMidLines});
@@ -55,14 +54,14 @@ const FolderStatus = styled.div`
   font-size: 11px;
 `;
 
-const IconContainer = styled.div`
+const IconContainer = styled.div<{ hasChildren: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20px;
   height: 20px;
   margin-right: 6;
-  margin-left: ${props => (props.hasChildren ? 8 : 18)}px;
+  margin-left: ${({ hasChildren }) => (hasChildren ? 8 : 18)}px;
 `;
 
 const NodeChildren = styled.ul`
@@ -82,11 +81,29 @@ const Label = styled.span`
   }
 `;
 
-const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
-  const [isOpen, setIsOpen] = useState(false);
+export type NodeProps = {
+  label: string;
+  iconName?: string;
+  id: number;
+  children?: Array<NodeProps>;
+  onClick?(
+    event: React.MouseEvent | React.KeyboardEvent,
+    props: NodeProps,
+  ): void;
+};
+
+const Node: React.FC<NodeProps> = ({
+  children = [],
+  id,
+  iconName,
+  label,
+  onClick = () => {},
+  ...rest
+}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
   const hasChildren = children.length > 0;
 
-  function getIconName() {
+  function getIconName(): string {
     if (!hasChildren) {
       return iconName || icons.FILE_UNKNOWN;
     }
@@ -98,7 +115,7 @@ const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
     return FOLDER_CLOSED;
   }
 
-  const onClickHandler = event => {
+  const onClickHandler = (event: React.MouseEvent | React.KeyboardEvent) => {
     onClick(event, {
       id,
       iconName,
@@ -107,7 +124,7 @@ const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
     });
   };
 
-  const onKeyDownHandler = event => {
+  const onKeyDownHandler = (event: React.KeyboardEvent) => {
     if (event.key === ' ') {
       setIsOpen(!isOpen);
       onClickHandler(event);
@@ -136,36 +153,13 @@ const Node = ({ children, id, iconName, label, onClick, ...rest }) => {
       </NodeInfo>
       {hasChildren && isOpen && (
         <NodeChildren>
-          {children.map(dataNode => (
+          {children?.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
         </NodeChildren>
       )}
     </NodeItem>
   );
-};
-
-Node.defaultProps = {
-  label: '',
-  iconName: null,
-  children: [],
-  id: null,
-  onClick: () => {},
-};
-
-Node.propTypes = {
-  label: PropTypes.string,
-  iconName: PropTypes.string,
-  children: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string,
-      iconName: PropTypes.string,
-      id: PropTypes.number,
-      onClick: PropTypes.func,
-    }),
-  ),
-  id: PropTypes.number,
-  onClick: PropTypes.func,
 };
 
 export default Node;

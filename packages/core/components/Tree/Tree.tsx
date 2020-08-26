@@ -1,23 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Node, { icons } from './Node';
+import Node, { icons, NodeProps } from './Node';
 
 const TreeParent = styled.ul`
   padding: 0;
 `;
 
-const Tree = ({ data, ...rest }) => (
+export type TreeProps = {
+  data: Array<NodeProps>;
+};
+
+const Tree: React.FC<TreeProps> & {
+  icons: typeof icons;
+} = ({ data, ...rest }) => (
   <TreeParent {...rest}>
     {data.map(dataNode => (
       <Node key={dataNode.id} {...dataNode} />
     ))}
   </TreeParent>
 );
-
-Tree.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape(Node.propTypes)),
-};
 
 Tree.defaultProps = {
   data: [],
