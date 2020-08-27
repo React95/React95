@@ -7,7 +7,7 @@ import {
   color,
   ColorProps,
   flexbox,
-  FlexProps,
+  FlexboxProps,
   shadow,
   ShadowProps,
   position,
@@ -17,7 +17,7 @@ import {
 export type FrameProps = SpaceProps &
   LayoutProps &
   ColorProps &
-  FlexProps &
+  FlexboxProps &
   ShadowProps &
   PositionProps;
 
