@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-const Play = props => (
+const Play = (props: React.HTMLAttributes<SVGElement>) => (
   <svg
     height="6"
     viewBox="0 0 494.942 494.942"

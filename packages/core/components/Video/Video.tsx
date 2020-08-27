@@ -1,27 +1,26 @@
-import React, { useRef, useState, useEffect } from 'react';
+import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
-import { string, shape, bool } from 'prop-types';
 
 import Btn from '../shared-style/Btn';
-import { Frame, Range, Icon } from '..';
+import Frame, { FrameProps } from '../Frame/Frame';
+import Range from '../Range';
+import Icon from '../Icon';
 import { Play, Pause, Stop } from './buttons';
 import Divider from '../List/ListDivider';
 
-const VideoTag = styled.video`
+const VideoTag = styled.video<{ visible: boolean }>`
   width: 100%;
   padding: 2;
 
   display: ${({ visible }) => (visible ? 'block' : 'none')};
 `;
 
-const Source = ({ src }) => (
+export type Source = Pick<HTMLSourceElement, 'src'>;
+
+const Source: React.FC<Source> = ({ src }) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
-
-Source.propTypes = {
-  src: string.isRequired,
-};
 
 const ControlBtn = styled(Btn)`
   display: inline-flex;
@@ -100,25 +99,26 @@ const VideoRange = styled(Range)`
   }
 `;
 
-const PlayOrPause = ({ playing }) => (playing ? <Pause /> : <Play />);
-PlayOrPause.propTypes = {
-  playing: bool.isRequired,
-};
+const PlayOrPause = ({ playing }: { playing: boolean }) =>
+  playing ? <Pause /> : <Play />;
 
-const arrayFy = str => [].concat(str);
+const arrayFy = (str: string | string[]) => ([] as string[]).concat(str);
 
-function updateProgressBar(player, updateProgress) {
+function updateProgressBar(
+  player: HTMLVideoElement,
+  updateProgress: (value: number) => void,
+) {
   const percentage = Math.floor((100 / player.duration) * player.currentTime);
 
   updateProgress(percentage);
 }
 
-function parseCurrentTime(secs) {
+function parseCurrentTime(secs: number): string {
   if (!secs) {
     return '00:00';
   }
 
-  const sec = parseInt(secs, 10);
+  const sec = parseInt(secs.toString(), 10);
   const hours = Math.floor(sec / 3600);
   const minutes = Math.floor(sec / 60) % 60;
   const seconds = sec % 60;
@@ -129,18 +129,32 @@ function parseCurrentTime(secs) {
     .join(':');
 }
 
-const Video = ({ src, name, videoProps, style, ...props }) => {
-  const [playing, setPlaying] = useState(false);
-  const [loadeddata, setLoadeddata] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const player = useRef(null);
-  const progressRef = useRef(null);
+export type VideoProps = {
+  name?: string;
+  src: string;
+  videoProps?: React.HTMLAttributes<HTMLVideoElement>;
+  style?: React.CSSProperties;
+} & FrameProps;
+
+const Video: React.FC<VideoProps> = ({
+  name,
+  src,
+  videoProps,
+  style,
+  ...props
+}) => {
+  const [playing, setPlaying] = React.useState(false);
+  const [loadeddata, setLoadeddata] = React.useState(false);
+  const [progress, setProgress] = React.useState(0);
+
+  const player = React.useRef<HTMLVideoElement>(null);
+  const progressRef = React.useRef<HTMLInputElement>(null);
 
   const paths = arrayFy(src);
   const [pathname] = paths;
 
-  useEffect(() => {
-    player.current.addEventListener(
+  React.useEffect(() => {
+    player.current?.addEventListener(
       'ended',
       () => {
         setPlaying(false);
@@ -148,21 +162,26 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
       },
       false,
     );
-    player.current.addEventListener(
+
+    player.current?.addEventListener(
       'timeupdate',
       () => {
-        updateProgressBar(player.current || {}, setProgress);
+        if (player.current) {
+          updateProgressBar(player.current, setProgress);
+        }
       },
       false,
     );
-    player.current.addEventListener(
+
+    player.current?.addEventListener(
       'loadeddata',
       () => {
         setLoadeddata(true);
       },
       false,
     );
-    player.current.addEventListener(
+
+    player.current?.addEventListener(
       'playing',
       () => {
         setPlaying(true);
@@ -174,7 +193,7 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
   return (
     <Frame
       p={2}
-      {...props}
+      {...(props as typeof Frame)}
       style={{
         width: !loadeddata ? 260 : undefined,
         ...style,
@@ -185,7 +204,7 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
         {name || pathname.replace(/^.*[\\/]/, '')}
         {!loadeddata && ' (Openning)'}
       </TitleBar>
-      <VideoTag {...videoProps} ref={player} visible={loadeddata}>
+      <VideoTag {...videoProps} visible={loadeddata} ref={player}>
         {paths.map(s => (
           <Source key={s} src={s} />
         ))}
@@ -201,7 +220,7 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
                 marginTop: 'auto',
               }}
             >
-              {parseCurrentTime(player.current?.duration)}
+              {player.current && parseCurrentTime(player.current.duration)}
             </VideoFont>
 
             <VideoFont style={{ height: 12 }}>
@@ -215,7 +234,7 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
                 fontSize: 22,
               }}
             >
-              {parseCurrentTime(player.current?.currentTime)}
+              {player.current && parseCurrentTime(player.current.currentTime)}
             </VideoFont>
 
             <VideoFont style={{ height: 12 }}>time</VideoFont>
@@ -226,9 +245,9 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
             disabled={!loadeddata}
             onClick={() => {
               if (!playing) {
-                player.current.play();
+                player.current?.play();
               } else {
-                player.current.pause();
+                player.current?.pause();
               }
               setPlaying(!playing);
             }}
@@ -247,10 +266,11 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
           <ControlBtn
             disabled={!loadeddata}
             onClick={() => {
-              player.current.pause();
-              if (player.current.currentTime) {
+              if (player.current) {
+                player.current.pause();
                 player.current.currentTime = 0;
               }
+
               setPlaying(false);
             }}
           >
@@ -271,30 +291,19 @@ const Video = ({ src, name, videoProps, style, ...props }) => {
               const { current: el } = progressRef;
               const { current: video } = player;
 
-              const percent = e.nativeEvent.offsetX / el.offsetWidth;
+              if (video && el) {
+                const percent = e.nativeEvent.offsetX / el.offsetWidth;
 
-              video.currentTime = percent * video.duration;
+                video.currentTime = percent * video.duration;
 
-              setProgress(Math.floor(percent / 100));
+                setProgress(Math.floor(percent / 100));
+              }
             }}
           />
         </Controls>
       </ResetFrame>
     </Frame>
   );
-};
-
-Video.propTypes = {
-  name: string,
-  src: string.isRequired,
-  videoProps: shape({}),
-  style: shape({}),
-};
-
-Video.defaultProps = {
-  name: '',
-  videoProps: {},
-  style: {},
 };
 
 export default Video;

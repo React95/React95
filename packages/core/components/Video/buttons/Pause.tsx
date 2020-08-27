@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-const Pause = props => (
+const Pause = (props: React.HTMLAttributes<SVGElement>) => (
   <svg
     height="6"
     viewBox="0 0 424.236 424.236"

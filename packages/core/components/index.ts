@@ -15,6 +15,7 @@ import TextArea from './TextArea';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
 import ThemeProvider from './ThemeProvider';
+import Video from './Video';
 
 export {
   Button,
@@ -35,4 +36,5 @@ export {
   Tree,
   Tooltip,
   ThemeProvider,
+  Video,
 };
