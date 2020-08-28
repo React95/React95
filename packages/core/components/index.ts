@@ -1,4 +1,4 @@
-import { ModalContext } from './Modal';
+import { Modal, ModalContext } from './Modal';
 import { Tab, Tabs } from './Tabs';
 import Button from './Button';
 import Checkbox from './Checkbox';
@@ -26,6 +26,7 @@ export {
   GlobalStyle,
   Icon,
   Input,
+  Modal,
   ModalContext,
   ProgressBar,
   RadioButton,
