@@ -63,6 +63,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="http://kaiofelipejs.dev"><img src="https://avatars2.githubusercontent.com/u/41922744?v=4" width="100px;" alt=""/><br /><sub><b>Kaio Felipe Silva</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kaiofelipejs" title="Documentation">📖</a></td>
     <td align="center"><a href="https://lorenzopieri.dev"><img src="https://avatars2.githubusercontent.com/u/13508373?v=4" width="100px;" alt=""/><br /><sub><b>Lorenzo Pieri</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=LRNZ09" title="Documentation">📖</a></td>
     <td align="center"><a href="http://insafkhamzin.com"><img src="https://avatars3.githubusercontent.com/u/27154217?v=4" width="100px;" alt=""/><br /><sub><b>Insaf</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=InsafKhamzin" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://theoomoregbee.me"><img src="https://avatars3.githubusercontent.com/u/10440327?v=4" width="100px;" alt=""/><br /><sub><b>Theophilus Omoregbee</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=theoomoregbee" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Atheoomoregbee" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 

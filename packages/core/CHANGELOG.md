@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.5](https://github.com/React95/React95/compare/@react95/core@2.10.4...@react95/core@2.10.5) (2020-08-19)
+
+
+### Bug Fixes
+
+* **icons.stories:** keyed icon sizes by icon name ([0d3f3dc](https://github.com/React95/React95/commit/0d3f3dc7324f7538b56f3be16e2f7f6a51318dc9)), closes [#175](https://github.com/React95/React95/issues/175)
+
+
+
+
+
 ## [2.10.4](https://github.com/React95/React95/compare/@react95/core@2.10.3...@react95/core@2.10.4) (2020-07-13)
 
 
