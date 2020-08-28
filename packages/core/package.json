@@ -15,6 +15,7 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react-virtualized": "^9.21.10",
     "@xstyled/styled-components": "^1.17.1",
+    "csstype": "^3.0.3",
     "icojs": "^0.14.0",
     "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.7.2",
