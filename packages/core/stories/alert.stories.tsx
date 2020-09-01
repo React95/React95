@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
-import { storiesOf } from '@storybook/react';
-import withClippy from '../.storybook/src/clippy-addon/clippy-addon';
+import * as React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
-import Alert from '../components/Alert';
+import Alert, { DialogImages } from '../components/Alert/Alert';
 import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
 
-const AlertStory = () => {
-  const [showAlert, toggleShowAler] = useState(false);
-  const [type, setType] = useState('error');
+export default {
+  title: 'Alert',
+  component: Alert,
+} as Meta;
+
+export const Simple = () => {
+  const [showAlert, toggleShowAler] = React.useState(false);
+  const [type, setType] = React.useState<keyof typeof DialogImages>('error');
 
   const handleOpenAlert = () => toggleShowAler(true);
   const handleCloseAlert = () => toggleShowAler(false);
-  const onImageChange = e => setType(e.target.value);
+  const onImageChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
+    setType(e.target.value as keyof typeof DialogImages);
 
   return (
     <>
@@ -35,15 +40,3 @@ const AlertStory = () => {
     </>
   );
 };
-
-const code = `<Alert
-  title="Windows Networking"
-  type="error"
-  message="The Windows password you typed is incorrect."
-  closeAlert={this.handleCloseAlert}
-/>`;
-
-storiesOf('Alert', module)
-  .addDecorator(withClippy)
-  .addParameters({ code })
-  .add('default', () => <AlertStory />);
