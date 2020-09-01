@@ -2,7 +2,7 @@
 import { createContext } from 'react';
 
 export type Windows = {
-  icon: String;
+  icon?: String;
   title: String;
 };
 
