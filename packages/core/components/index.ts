@@ -1,5 +1,6 @@
 import { Modal, ModalContext } from './Modal';
 import { Tab, Tabs } from './Tabs';
+import Alert from './Alert';
 import Button from './Button';
 import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
@@ -8,6 +9,7 @@ import Frame from './Frame';
 import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
+import List from './List';
 import ProgressBar from './ProgressBar';
 import RadioButton from './RadioButton';
 import Range from './Range';
@@ -18,6 +20,7 @@ import ThemeProvider from './ThemeProvider';
 import Video from './Video';
 
 export {
+  Alert,
   Button,
   Checkbox,
   Dropdown,
@@ -26,6 +29,7 @@ export {
   GlobalStyle,
   Icon,
   Input,
+  List,
   Modal,
   ModalContext,
   ProgressBar,
