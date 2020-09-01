@@ -104,13 +104,13 @@ const Content = styled.div`
 `;
 
 type ButtonWrapperProps = {
-  buttonsAlignment: CSS.Property.JustifyContent;
+  buttonsAlignment?: CSS.Property.JustifyContent;
 };
 
 const ButtonWrapper = styled.div<ButtonWrapperProps>`
   display: flex;
   flex-direction: row;
-  justify-content: ${({ buttonsAlignment }) => buttonsAlignment};
+  justify-content: ${({ buttonsAlignment = 'center' }) => buttonsAlignment};
 
   padding: 0 6 6 6;
 
@@ -179,12 +179,12 @@ export type ModalDefaultPosition = {
 };
 
 export type ModalProps = {
-  icon: string;
+  icon?: string;
   closeModal(event: React.MouseEvent): void;
   title: string;
-  buttons: Array<ModalButtons>;
-  menu: Array<ModalMenu>;
-  defaultPosition: ModalDefaultPosition;
+  buttons?: Array<ModalButtons>;
+  menu?: Array<ModalMenu>;
+  defaultPosition?: ModalDefaultPosition;
 } & Omit<WrapperProps, 'active'> &
   ButtonWrapperProps &
   React.HTMLAttributes<HTMLDivElement>;
@@ -252,7 +252,7 @@ const ModalRenderer = (
           </OptionsBox>
         </TitleBar>
 
-        {menu.length > 0 && (
+        {menu && menu.length > 0 && (
           <MenuWrapper>
             {menu.map(({ name, list }) => {
               const active = menuOpened === name;
@@ -271,14 +271,16 @@ const ModalRenderer = (
         )}
 
         <Content onClick={() => setMenuOpened('')}>{children}</Content>
-        {buttons.length > 0 && (
+        {buttons && buttons.length > 0 && (
           <ButtonWrapper buttonsAlignment={buttonsAlignment}>
             {buttons.map(button => (
               <Button
                 key={button.value}
                 onClick={button.onClick}
                 value={button.value}
-              />
+              >
+                {button.value}
+              </Button>
             ))}
           </ButtonWrapper>
         )}
