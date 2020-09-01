@@ -78,7 +78,7 @@ const Item = styled.li<{
 
 export type ListItemProps = {
   icon?: String;
-};
+} & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem: React.FC<ListItemProps> = ({
   icon,
