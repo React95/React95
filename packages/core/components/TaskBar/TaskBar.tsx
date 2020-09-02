@@ -1,10 +1,10 @@
 /* eslint-disable react/no-array-index-key */
-import React, { useContext, useState } from 'react';
+import * as React from 'react';
 import styled from '@xstyled/styled-components';
-import PropTypes from 'prop-types';
 
 import { ModalContext } from '../Modal';
 import Frame from '../Frame';
+import List from '../List';
 
 import Clock from './Clock';
 import WindowButton from './WindowButton';
@@ -16,10 +16,16 @@ const Truncate = styled.span`
   -webkit-box-orient: vertical;
 `;
 
-const TaskBar = ({ list }) => {
-  const [showList, toggleShowList] = useState(false);
-  const [activeStart, toggleActiveStart] = useState(false);
-  const { windows, activeWindow, setActiveWindow } = useContext(ModalContext);
+export type TaskBarProps = {
+  list?: React.ReactElement<typeof List>;
+};
+
+const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
+  const [showList, toggleShowList] = React.useState(false);
+  const [activeStart, toggleActiveStart] = React.useState(false);
+  const { windows, activeWindow, setActiveWindow } = React.useContext(
+    ModalContext,
+  );
 
   return (
     <Frame
@@ -29,7 +35,7 @@ const TaskBar = ({ list }) => {
       right={0}
       display="flex"
       justifyContent="space-between"
-      height="28"
+      height={28}
       width="100%"
       padding={2}
       zIndex="taskbar"
@@ -82,10 +88,6 @@ const TaskBar = ({ list }) => {
       <Clock />
     </Frame>
   );
-};
-
-TaskBar.propTypes = {
-  list: PropTypes.node,
 };
 
 TaskBar.defaultProps = {

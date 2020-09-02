@@ -1,18 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import Frame from '../Frame';
+import Frame, { FrameProps } from '../Frame/Frame';
 import Icon from '../Icon';
+import { Windows } from '../Modal/ModalContext';
 
-const Button = styled(Frame)`
+export type WindowButtonProps = {
+  small: boolean;
+  active: boolean;
+} & Pick<Windows, 'icon'> &
+  React.HTMLAttributes<HTMLButtonElement> &
+  FrameProps;
+
+const Button = styled(Frame)<Omit<WindowButtonProps, 'icon'>>`
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 2 3;
   margin-right: 2;
   max-width: 150px;
+  border: none;
+  outline: none;
 
   ${({ small }) =>
     !small
@@ -34,7 +43,13 @@ const Button = styled(Frame)`
       : ''}
 `;
 
-const WindowButton = ({ children, small, icon, active, ...props }) => (
+const WindowButton: React.FC<WindowButtonProps> = ({
+  children = '',
+  small,
+  icon = '',
+  active,
+  ...props
+}) => (
   <Button
     active={active}
     small={small}
@@ -47,21 +62,14 @@ const WindowButton = ({ children, small, icon, active, ...props }) => (
           boxShadow: 'out',
         })}
     {...props}
+    as="button"
   >
     <Icon name={icon} style={{ marginRight: 4 }} width={20} height={20} />
     {children}
   </Button>
 );
 
-WindowButton.propTypes = {
-  children: PropTypes.node,
-  small: PropTypes.bool,
-  icon: PropTypes.string,
-  active: PropTypes.bool,
-};
-
 WindowButton.defaultProps = {
-  children: '',
   small: false,
   icon: '',
   active: false,

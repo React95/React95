@@ -13,6 +13,7 @@ import List from './List';
 import ProgressBar from './ProgressBar';
 import RadioButton from './RadioButton';
 import Range from './Range';
+import TaskBar from './TaskBar';
 import TextArea from './TextArea';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
@@ -37,6 +38,7 @@ export {
   Range,
   Tab,
   Tabs,
+  TaskBar,
   TextArea,
   Tree,
   Tooltip,

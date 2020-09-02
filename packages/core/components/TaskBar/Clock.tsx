@@ -14,7 +14,7 @@ const Clock = () => {
   const [timer, setTimer] = useState('');
 
   useEffect(() => {
-    function checkTime(i) {
+    function checkTime(i: number) {
       return i < 10 ? `0${i}` : i;
     }
 
