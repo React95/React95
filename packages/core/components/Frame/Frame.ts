@@ -1,33 +1,37 @@
 import styled from 'styled-components';
 import {
-  space,
-  SpaceProps,
-  layout,
-  LayoutProps,
+  backgrounds,
+  BackgroundsProps,
   color,
   ColorProps,
-  flexbox,
-  FlexboxProps,
-  shadow,
-  ShadowProps,
-  position,
-  PositionProps,
-} from 'styled-system';
+  flexboxes,
+  FlexboxesProps,
+  layout,
+  LayoutProps,
+  positioning,
+  PositioningProps,
+  shadows,
+  ShadowsProps,
+  space,
+  SpaceProps,
+} from '@xstyled/system';
 
-export type FrameProps = SpaceProps &
-  LayoutProps &
+export type FrameProps = BackgroundsProps &
   ColorProps &
-  FlexboxProps &
-  ShadowProps &
-  PositionProps;
+  FlexboxesProps &
+  LayoutProps &
+  PositioningProps &
+  ShadowsProps &
+  SpaceProps;
 
 const Frame = styled.div<FrameProps>`
-  ${space}
-  ${layout}
+  ${backgrounds}
   ${color}
-  ${flexbox}
-  ${shadow}
-  ${position}
+  ${flexboxes}
+  ${layout}
+  ${positioning}
+  ${shadows}
+  ${space}
 `;
 
 Frame.defaultProps = {
