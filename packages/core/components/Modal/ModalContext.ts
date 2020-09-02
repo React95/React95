@@ -2,16 +2,16 @@
 import { createContext } from 'react';
 
 export type Windows = {
-  icon?: String;
-  title: String;
+  icon?: string;
+  title: string;
 };
 
 export interface IModalContextProps {
   windows: Array<Windows>;
   addWindows(window: Windows): void;
-  removeWindows(title: String): void;
-  setActiveWindow(title: String): void;
-  activeWindow?: String;
+  removeWindows(title: string): void;
+  setActiveWindow(title: string): void;
+  activeWindow?: string;
 }
 
 const ModalContext = createContext<IModalContextProps>({
