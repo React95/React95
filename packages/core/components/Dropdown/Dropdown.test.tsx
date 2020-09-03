@@ -22,11 +22,12 @@ describe('<Dropdown />', () => {
 
     it('should display correct option text', () => {
       const { container } = render(<Dropdown options={options} />);
-      const renderedOptions = container.querySelectorAll('option');
+      const dropDownOptions = container.querySelectorAll('option');
+      const [opt1, opt2, opt3] = Array.from(dropDownOptions);
 
-      expect(renderedOptions[0].textContent).toBe(options[0]);
-      expect(renderedOptions[1].textContent).toBe(options[1]);
-      expect(renderedOptions[2].textContent).toBe(options[2]);
+      expect(opt1.textContent).toBe(options[0]);
+      expect(opt2.textContent).toBe(options[1]);
+      expect(opt3.textContent).toBe(options[2]);
     });
   });
 });
