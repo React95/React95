@@ -157,26 +157,6 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   margin-right: 0;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  background-image: url(test-file-stub);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 45px;
-  width: 45px;
-  background-position: center;
-  margin-right: 10px;
-}
-
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -190,6 +170,26 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c8 {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  margin-right: 10px;
+  background-image: url(test-file-stub);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 <div>
@@ -410,26 +410,6 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   margin-right: 0;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  background-image: url(test-file-stub);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 45px;
-  width: 45px;
-  background-position: center;
-  margin-right: 10px;
-}
-
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -443,6 +423,26 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c8 {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  margin-right: 10px;
+  background-image: url(test-file-stub);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 <div>
@@ -663,26 +663,6 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   margin-right: 0;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  background-image: url(test-file-stub);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 45px;
-  width: 45px;
-  background-position: center;
-  margin-right: 10px;
-}
-
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -696,6 +676,26 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c8 {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  margin-right: 10px;
+  background-image: url(test-file-stub);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 <div>
@@ -916,26 +916,6 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   margin-right: 0;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  background-image: url(test-file-stub);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 45px;
-  width: 45px;
-  background-position: center;
-  margin-right: 10px;
-}
-
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -949,6 +929,26 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c8 {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  margin-right: 10px;
+  background-image: url(test-file-stub);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 <div>
