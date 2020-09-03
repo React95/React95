@@ -74,7 +74,6 @@ const Label = styled.label<Pick<RadioButtonProps, 'disabled'>>`
 
 const RadioButton: React.FC<RadioButtonProps> = ({
   children,
-  onChange,
   disabled,
   ...props
 }) => (
