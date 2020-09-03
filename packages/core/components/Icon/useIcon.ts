@@ -30,7 +30,7 @@ const useIcon = ({
   variant = 1,
 }: Partial<IconProps>) => {
   const [data, setAvailableIcons] = React.useState<{
-    iconUrl: string;
+    iconUrl?: string;
     availableIcons: Array<IAvailableIcon>;
   }>({
     iconUrl: '',
@@ -54,7 +54,7 @@ const useIcon = ({
         bpp: i.bpp,
       }));
 
-      let url = '';
+      let url = undefined;
       const match = iconsToRender.filter(i => i.size === size && i.bpp === bpp);
 
       if (match.length > 0) {
