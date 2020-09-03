@@ -1,7 +1,7 @@
 module.exports = {
   testMatch: [
-    '<rootDir>/../../packages/core/**/*.test.js',
-    '<rootDir>/../../packages/core/**/*.test.jsx',
+    '<rootDir>/../../packages/core/**/*.test.ts',
+    '<rootDir>/../../packages/core/**/*.test.tsx',
   ],
   roots: ['<rootDir>/../../'],
   moduleNameMapper: {
