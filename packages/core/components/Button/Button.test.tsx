@@ -14,7 +14,7 @@ describe('<Button />', () => {
     it('should display value as Button children', () => {
       const { container } = render(<Button>Cancel</Button>);
 
-      expect(container.querySelector('button').textContent).toBe('Cancel');
+      expect(container.querySelector('button')?.textContent).toBe('Cancel');
     });
   });
 
