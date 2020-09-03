@@ -1,7 +1,6 @@
-import React from 'react';
+import * as React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
-
-import { storiesOf } from '@storybook/react';
 
 const types = [
   'auto',
@@ -66,14 +65,17 @@ const Cursor = styled.li`
     1px 1px 0 1px #000;
 `;
 
-storiesOf('Cursor', module).add('default', () => (
-  <>
-    <CursorList>
-      {types.map(type => (
-        <Cursor className={type} key={type}>
-          {type}
-        </Cursor>
-      ))}
-    </CursorList>
-  </>
-));
+export default {
+  title: 'Cursor',
+  component: Cursor,
+} as Meta;
+
+export const Simple = () => (
+  <CursorList>
+    {types.map(type => (
+      <Cursor className={type} key={type}>
+        {type}
+      </Cursor>
+    ))}
+  </CursorList>
+);
