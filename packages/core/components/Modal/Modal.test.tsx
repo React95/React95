@@ -11,7 +11,11 @@ describe('<Modal />', () => {
         <Modal
           icon="bat"
           title="file.bat"
-          buttons={[{ value: 'Ok' }, { value: 'Cancel' }]}
+          closeModal={() => {}}
+          buttons={[
+            { value: 'Ok', onClick: () => {} },
+            { value: 'Cancel', onClick: () => {} },
+          ]}
           menu={[
             {
               name: 'File',
@@ -42,7 +46,11 @@ describe('<Modal />', () => {
         <Modal
           icon="bat"
           title="file.bat"
-          buttons={[{ value: 'Ok' }, { value: 'Cancel' }]}
+          closeModal={() => {}}
+          buttons={[
+            { value: 'Ok', onClick: () => {} },
+            { value: 'Cancel', onClick: () => {} },
+          ]}
           buttonsAlignment="center"
         >
           Hello
@@ -56,7 +64,11 @@ describe('<Modal />', () => {
         <Modal
           icon="bat"
           title="file.bat"
-          buttons={[{ value: 'Ok' }, { value: 'Cancel' }]}
+          closeModal={() => {}}
+          buttons={[
+            { value: 'Ok', onClick: () => {} },
+            { value: 'Cancel', onClick: () => {} },
+          ]}
           buttonsAlignment="flex-start"
         >
           Hello
@@ -67,7 +79,13 @@ describe('<Modal />', () => {
 
     it('should match snapshot with width and height props', async () => {
       const { container } = await waitRender(
-        <Modal icon="bat" title="file.bat" width={300} height={200}>
+        <Modal
+          icon="bat"
+          title="file.bat"
+          width="300"
+          height="200"
+          closeModal={() => {}}
+        >
           Hello
         </Modal>,
       );
@@ -85,7 +103,13 @@ describe('<Modal />', () => {
             activeWindow: '',
           }}
         >
-          <Modal icon="bat" title="file.bat" width={300} height={200}>
+          <Modal
+            icon="bat"
+            title="file.bat"
+            width="300"
+            height="200"
+            closeModal={() => {}}
+          >
             Hello
           </Modal>
         </ModalContext.Provider>,
@@ -112,15 +136,18 @@ describe('<Modal />', () => {
   describe('Modal action buttons', () => {
     it('should display button text correctly', async () => {
       const buttonText = 'button text';
-      const { container } = await waitRender(
-        <Modal icon="bat" title="file.bat" buttons={[{ value: buttonText }]}>
+      const { getByText } = await waitRender(
+        <Modal
+          icon="bat"
+          title="file.bat"
+          buttons={[{ value: buttonText, onClick: () => {} }]}
+          closeModal={() => {}}
+        >
           Hello
         </Modal>,
       );
 
-      expect(
-        container.querySelector(`button[value='${buttonText}']`).textContent,
-      ).toBe(buttonText);
+      expect(getByText(buttonText).textContent).toBe(buttonText);
     });
 
     it('should display more than one button', async () => {
@@ -129,10 +156,11 @@ describe('<Modal />', () => {
           icon="bat"
           title="file.bat"
           buttons={[
-            { value: 'button 1' },
-            { value: 'button 2' },
-            { value: 'button 3' },
+            { value: 'button 1', onClick: () => {} },
+            { value: 'button 2', onClick: () => {} },
+            { value: 'button 3', onClick: () => {} },
           ]}
+          closeModal={() => {}}
         >
           Hello
         </Modal>,
@@ -144,7 +172,13 @@ describe('<Modal />', () => {
     it('should call onClick function when Modal action button is clicked', async () => {
       const onClickMock = jest.fn();
       const { getByText } = await waitRender(
-        <Modal buttons={[{ value: 'Ok', onClick: onClickMock }]}>Hello</Modal>,
+        <Modal
+          title="file.bat"
+          buttons={[{ value: 'Ok', onClick: onClickMock }]}
+          closeModal={() => {}}
+        >
+          Hello
+        </Modal>,
       );
 
       fireEvent.click(getByText('Ok'));
@@ -157,6 +191,8 @@ describe('<Modal />', () => {
     it('should display menu name correctly', async () => {
       const { container } = await waitRender(
         <Modal
+          title="file.bat"
+          closeModal={() => {}}
           menu={[
             {
               name: 'Menu Text',
@@ -172,12 +208,14 @@ describe('<Modal />', () => {
         </Modal>,
       );
 
-      expect(container.querySelector('li').textContent).toBe('Menu Text');
+      expect(container.querySelector('li')?.textContent).toBe('Menu Text');
     });
 
     it('should display menu list correctly', async () => {
       const { getByText } = await waitRender(
         <Modal
+          title="file.bat"
+          closeModal={() => {}}
           menu={[
             {
               name: 'Edit',
@@ -195,7 +233,7 @@ describe('<Modal />', () => {
 
       fireEvent.mouseDown(getByText('Edit'));
 
-      expect(getByText('Edit').querySelector('li').textContent).toBe('Exit');
+      expect(getByText('Edit').querySelector('li')?.textContent).toBe('Exit');
     });
   });
 });
