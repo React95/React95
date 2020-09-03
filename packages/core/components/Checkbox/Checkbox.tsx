@@ -96,6 +96,7 @@ const Label = styled.label<LabelProps>`
 `;
 
 export type CheckboxProps = {
+  label?: string;
   children?: string;
   checked?: boolean;
   disabled?: boolean;
@@ -106,13 +107,14 @@ const Checkbox = ({
   children,
   style,
   checked,
+  label,
   disabled = false,
   ...rest
 }: CheckboxProps) => (
   <Label style={style} disabled={disabled}>
     <Field checked={checked} disabled={disabled} {...rest} />
     <Icon />
-    <Text>{children}</Text>
+    <Text>{children || label}</Text>
   </Label>
 );
 
