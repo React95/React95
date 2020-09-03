@@ -16,4 +16,5 @@ module.exports = {
     'jest-styled-components',
     '<rootDir>/../setup/core.setup.js',
   ],
+  snapshotResolver: './snapshotResolver.js',
 };
