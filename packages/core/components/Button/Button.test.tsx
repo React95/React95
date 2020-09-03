@@ -12,7 +12,7 @@ describe('<Button />', () => {
 
   describe('value prop', () => {
     it('should display value as Button children', () => {
-      const { container } = render(<Button value="Cancel" />);
+      const { container } = render(<Button>Cancel</Button>);
 
       expect(container.querySelector('button').textContent).toBe('Cancel');
     });
@@ -21,7 +21,7 @@ describe('<Button />', () => {
   describe('onClick prop', () => {
     it('should call onClick function when Button is clicked', () => {
       const onClickMock = jest.fn();
-      const { getByText } = render(<Button onClick={onClickMock} value="ok" />);
+      const { getByText } = render(<Button onClick={onClickMock}>ok</Button>);
 
       fireEvent.click(getByText('ok'));
 
