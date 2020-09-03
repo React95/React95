@@ -15,7 +15,7 @@ describe('<RadioButton />', () => {
     });
 
     it('should match snapshot with checked prop', () => {
-      const { container } = render(<RadioButton checked />);
+      const { container } = render(<RadioButton checked onChange={() => {}} />);
       expect(container).toMatchSnapshot();
     });
 
