@@ -29,6 +29,8 @@ exports[`<Button /> Snapshots should match snapshot 1`] = `
 <div>
   <button
     class="c0"
-  />
+  >
+    Ok
+  </button>
 </div>
 `;
