@@ -77,16 +77,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
       class="c1 c2"
       disabled=""
       type="checkbox"
-      value=""
     />
     <span
       class="c3 c4"
     />
     <span
       class="c5 c6"
-    >
-      Checkbox
-    </span>
+    />
   </label>
 </div>
 `;
@@ -164,16 +161,13 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
     <input
       class="c1 c2"
       type="checkbox"
-      value=""
     />
     <span
       class="c3 c4"
     />
     <span
       class="c5 c6"
-    >
-      Checkbox
-    </span>
+    />
   </label>
 </div>
 `;

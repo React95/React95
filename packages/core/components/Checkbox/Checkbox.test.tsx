@@ -21,19 +21,19 @@ describe('<Checkbox />', () => {
     it('should display label prop as Checkbox label', () => {
       const { container } = render(<Checkbox label={label} />);
 
-      expect(container.querySelector('label').textContent).toBe(label);
+      expect(container.querySelector('label')?.textContent).toBe(label);
     });
 
     it('should display children as Checkbox label', () => {
       const { container } = render(<Checkbox>{label}</Checkbox>);
 
-      expect(container.querySelector('label').textContent).toBe(label);
+      expect(container.querySelector('label')?.textContent).toBe(label);
     });
-    
+
     it('should apply given color to the label', () => {
       const { container } = render(<Checkbox style={{ color: 'red' }} />);
-      expect(container.querySelector('label').style.color).toBe('red');
-    })
+      expect(container.querySelector('label')?.style.color).toBe('red');
+    });
   });
 
   describe('onChange prop', () => {
