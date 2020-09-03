@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> should match snapshot 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="32"
+    style="background-image: url(buffer-32-4-1);"
+    width="32"
+  />
+</div>
+`;
+
+exports[`<Icon /> should match snapshot with different size 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="16"
+    style="background-image: url(buffer-16-4-1);"
+    width="16"
+  />
+</div>
+`;
+
+exports[`<Icon /> should match snapshot with different size and without a fallback 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 64px;
+  height: 64px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="64"
+    style="background-image: none;"
+    width="64"
+  />
+</div>
+`;
+
+exports[`<Icon /> should match snapshot with different width and height 1`] = `
+.c0 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.c2 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+<div>
+  <i
+    class="c0"
+    height="10"
+    style="background-image: url(buffer-32-4-1);"
+    width="10"
+  />
+  <i
+    class="c1"
+    height="20"
+    style="background-image: url(buffer-32-4-1);"
+    width="20"
+  />
+  <i
+    class="c2"
+    height="30"
+    style="background-image: url(buffer-32-4-1);"
+    width="30"
+  />
+</div>
+`;

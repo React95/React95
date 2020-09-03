@@ -59,7 +59,7 @@ describe('useIcon', () => {
 
   it('should return no iconUrl if you ommit the size', async () => {
     const { result, waitForNextUpdate } = renderHook(
-      ({ name, size }) => useIcon({ name, size }),
+      ({ name }) => useIcon({ name }),
       {
         initialProps: { name: 'bat' },
       },
