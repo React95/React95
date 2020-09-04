@@ -16,7 +16,7 @@ describe('<Tooltip />', () => {
   });
 
   describe('Tooltip visibility', () => {
-    it('should show Tooltip when hovered', () => {
+    it.only('should show Tooltip when hovered', () => {
       const tooltipText = 'Tooltip text';
       jest.useFakeTimers();
 
@@ -26,14 +26,14 @@ describe('<Tooltip />', () => {
         </Tooltip>,
       );
 
-      expect(getByText(tooltipText)).toHaveStyleRule('display', 'none');
+      expect(() => getByText(tooltipText)).toThrowError();
 
       act(() => {
-        fireEvent.mouseEnter(container.firstChild);
+        fireEvent.mouseEnter(container.firstChild as HTMLSpanElement);
         jest.runAllTimers();
       });
 
-      expect(getByText(tooltipText)).toHaveStyleRule('display', 'block');
+      expect(getByText(tooltipText)).not.toBeNull();
     });
   });
 });
