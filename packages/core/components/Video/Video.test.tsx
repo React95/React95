@@ -25,36 +25,24 @@ describe('<Video />', () => {
   describe('events', () => {
     beforeAll(() => {
       // Get and set video duration
-      Object.defineProperty(
-        global.window.HTMLMediaElement.prototype,
-        'duration',
-        {
-          writable: true,
-        },
-      );
-      Object.defineProperty(
-        global.window.HTMLMediaElement.prototype,
-        'currentTime',
-        {
-          writable: true,
-        },
-      );
-      Object.defineProperty(
-        global.window.HTMLElement.prototype,
-        'offsetWidth',
-        {
-          writable: true,
-        },
-      );
+      Object.defineProperty(window.HTMLMediaElement.prototype, 'duration', {
+        writable: true,
+      });
+      Object.defineProperty(window.HTMLMediaElement.prototype, 'currentTime', {
+        writable: true,
+      });
+      Object.defineProperty(window.HTMLElement.prototype, 'offsetWidth', {
+        writable: true,
+      });
     });
 
     it('should play, pause, and stop', async () => {
       const playStub = jest
         .spyOn(window.HTMLMediaElement.prototype, 'play')
-        .mockImplementation(() => {});
+        .mockImplementation(() => Promise.resolve());
       const pauseStub = jest
         .spyOn(window.HTMLMediaElement.prototype, 'pause')
-        .mockImplementation(() => {});
+        .mockImplementation(() => Promise.resolve());
 
       const { container, getByLabelText } = await waitRender(
         <Video src="foo/bar/some_video.mp4" />,
@@ -62,7 +50,7 @@ describe('<Video />', () => {
 
       const video = container.querySelector('video');
       act(() => {
-        video.dispatchEvent(new window.Event('loadeddata'));
+        video?.dispatchEvent(new window.Event('loadeddata'));
       });
 
       // Play
@@ -82,12 +70,13 @@ describe('<Video />', () => {
         <Video src="foo/bar/some_video.mp4" />,
       );
 
-      const video = container.querySelector('video');
+      const video = container.querySelector('video')!;
       // 60s video
+      // @ts-ignore
       video.duration = 60;
       video.currentTime = 0;
 
-      const videoRange = container.querySelector('input');
+      const videoRange = container.querySelector('input')!;
 
       expect(videoRange.value).toBe('0');
 
@@ -101,7 +90,7 @@ describe('<Video />', () => {
 
     it('should update video when range updates', async () => {
       class ExtendableMouseEvent extends MouseEvent {
-        constructor(type, values) {
+        constructor(type: string, values: Partial<MouseEvent>) {
           const { offsetX, ...mouseValues } = values;
           super(type, { ...mouseValues, bubbles: true, cancelable: true });
 
@@ -115,12 +104,14 @@ describe('<Video />', () => {
         <Video src="foo/bar/some_video.mp4" />,
       );
 
-      const video = container.querySelector('video');
+      const video = container.querySelector('video')!;
       // 60s video
+      // @ts-ignore
       video.duration = 60;
       video.currentTime = 0;
 
-      const videoRange = container.querySelector('input');
+      const videoRange = container.querySelector('input')!;
+      // @ts-ignore
       videoRange.offsetWidth = 100;
 
       expect(videoRange.value).toBe('0');
@@ -147,15 +138,17 @@ describe('<Video />', () => {
           <Video src="foo/bar/some_video.mp4" />,
         );
 
-        const video = container.querySelector('video');
+        const video = container.querySelector('video')!;
 
+        // @ts-ignore
         video.duration = duration;
+        // @ts-ignore
         video.currentTime = currentTime;
 
         return {
           video,
           queryAllByLabelText,
-          range: container.querySelector('input'),
+          range: container.querySelector('input')!,
         };
       };
 
