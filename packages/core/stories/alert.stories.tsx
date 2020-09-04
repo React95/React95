@@ -11,11 +11,11 @@ export default {
 } as Meta;
 
 export const Simple = () => {
-  const [showAlert, toggleShowAler] = React.useState(false);
+  const [showAlert, toggleShowAlert] = React.useState(false);
   const [type, setType] = React.useState<keyof typeof DialogImages>('error');
 
-  const handleOpenAlert = () => toggleShowAler(true);
-  const handleCloseAlert = () => toggleShowAler(false);
+  const handleOpenAlert = () => toggleShowAlert(true);
+  const handleCloseAlert = () => toggleShowAlert(false);
   const onImageChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
     setType(e.target.value as keyof typeof DialogImages);
 
