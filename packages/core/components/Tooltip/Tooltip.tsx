@@ -3,7 +3,7 @@ import styled from '@xstyled/styled-components';
 
 import Frame from '../Frame';
 
-const Tip = styled(Frame)<{ show: Boolean }>`
+const Tip = styled(Frame)`
   background: radial-gradient(#ff0 20%, transparent 20%) 0 0,
     radial-gradient(#ff0 20%, transparent 20%) 4px 4px,
     radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 0 1px,
@@ -17,7 +17,6 @@ const Tip = styled(Frame)<{ show: Boolean }>`
   top: -20px;
   text-align: center;
   z-index: taskbar;
-  display: ${({ show }) => (show ? 'block' : 'none')};
 `;
 
 export type TooltipProps = {
@@ -59,7 +58,7 @@ const TooltipRenderer = (
       {...rest}
       ref={ref}
     >
-      <Tip show={show}>{text}</Tip>
+      {show && <Tip>{text}</Tip>}
       {children}
     </Wrapper>
   );
