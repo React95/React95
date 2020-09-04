@@ -61,7 +61,13 @@ const Icon: React.FC<IconProps> = ({
   }, [size]);
 
   return (
-    <I width={width || size} height={height || size} url={iconUrl} {...rest} />
+    <I
+      width={width || size}
+      height={height || size}
+      url={iconUrl}
+      data-icon-name={name}
+      {...rest}
+    />
   );
 };
 

@@ -13,6 +13,7 @@ exports[`<Icon /> should match snapshot 1`] = `
 <div>
   <i
     class="c0"
+    data-icon-name="bat"
     height="32"
     style="background-image: url(buffer-32-4-1);"
     width="32"
@@ -33,6 +34,7 @@ exports[`<Icon /> should match snapshot with different size 1`] = `
 <div>
   <i
     class="c0"
+    data-icon-name="bat"
     height="16"
     style="background-image: url(buffer-16-4-1);"
     width="16"
@@ -53,6 +55,7 @@ exports[`<Icon /> should match snapshot with different size and without a fallba
 <div>
   <i
     class="c0"
+    data-icon-name="bat"
     height="64"
     style="background-image: none;"
     width="64"
@@ -91,18 +94,21 @@ exports[`<Icon /> should match snapshot with different width and height 1`] = `
 <div>
   <i
     class="c0"
+    data-icon-name="bat"
     height="10"
     style="background-image: url(buffer-32-4-1);"
     width="10"
   />
   <i
     class="c1"
+    data-icon-name="bat"
     height="20"
     style="background-image: url(buffer-32-4-1);"
     width="20"
   />
   <i
     class="c2"
+    data-icon-name="bat"
     height="30"
     style="background-image: url(buffer-32-4-1);"
     width="30"
