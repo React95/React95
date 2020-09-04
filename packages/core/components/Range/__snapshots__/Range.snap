@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Range /> Snapshot should match snapshot 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  outline: none;
+}
+
+.c0::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: #000000;
+  cursor: pointer;
+  border-top: 1px solid;
+  border-top-color: #d2d2d2;
+  border-right: 2px solid;
+  border-right-color: #ffffff;
+  border-bottom: 1px solid;
+  border-bottom-color: #e6e6e6;
+  border-left: 2px solid;
+  border-left-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+.c0::-webkit-slider-thumb {
+  width: 12px;
+  height: 20px;
+  background-color: #c3c7cb;
+  cursor: pointer;
+  margin-top: -8px;
+  border-top: 1px solid;
+  border-top-color: #ffffff;
+  border-right: 1px solid;
+  border-right-color: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #000000;
+  border-left: 1px solid;
+  border-left-color: #ffffff;
+  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
+  -webkit-appearance: none;
+}
+
+.c0:focus::-webkit-slider-runnable-track {
+  background: #000000;
+}
+
+.c0::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  background: #000000;
+  cursor: pointer;
+  border-top: 1px solid;
+  border-top-color: #d2d2d2;
+  border-right: 2px solid;
+  border-right-color: #ffffff;
+  border-bottom: 1px solid;
+  border-bottom-color: #e6e6e6;
+  border-left: 2px solid;
+  border-left-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+.c0::-moz-range-thumb {
+  width: 12px;
+  height: 20px;
+  background-color: #c3c7cb;
+  cursor: pointer;
+  margin-top: -8px;
+  border-top: 1px solid;
+  border-top-color: #ffffff;
+  border-right: 1px solid;
+  border-right-color: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #000000;
+  border-left: 1px solid;
+  border-left-color: #ffffff;
+  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
+  -webkit-appearance: none;
+}
+
+<div>
+  <input
+    class="c0"
+    type="range"
+  />
+</div>
+`;
