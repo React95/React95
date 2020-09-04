@@ -22,6 +22,11 @@ export interface IAvailableIcon {
   bpp: number;
 }
 
+type UseIconState = {
+  iconUrl?: string;
+  availableIcons: Array<IAvailableIcon>;
+};
+
 const useIcon = ({
   name,
   size,
@@ -29,10 +34,7 @@ const useIcon = ({
   bpp = 4,
   variant = 1,
 }: Partial<IconProps>) => {
-  const [data, setAvailableIcons] = React.useState<{
-    iconUrl?: string;
-    availableIcons: Array<IAvailableIcon>;
-  }>({
+  const [data, setAvailableIcons] = React.useState<UseIconState>({
     iconUrl: '',
     availableIcons: [],
   });
@@ -58,8 +60,8 @@ const useIcon = ({
       const match = iconsToRender.filter(i => i.size === size && i.bpp === bpp);
 
       if (match.length > 0) {
-        const finded = match[variant - 1];
-        url = finded.url;
+        const found = match[variant - 1];
+        url = found.url;
       } else if (fallback) {
         url = iconsToRender[0].url;
       }
