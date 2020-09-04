@@ -142,7 +142,6 @@ describe('<Video />', () => {
 
         // @ts-ignore
         video.duration = duration;
-        // @ts-ignore
         video.currentTime = currentTime;
 
         return {
