@@ -5,12 +5,23 @@ import Tooltip from './Tooltip';
 describe('<Tooltip />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
+      jest.useFakeTimers();
+
       const { container } = render(
         <Tooltip delay={0} text="Tooltip text">
           <span>hover</span>
         </Tooltip>,
       );
 
+      // without "Tip"
+      expect(container).toMatchSnapshot();
+
+      act(() => {
+        fireEvent.mouseEnter(container.firstChild as HTMLSpanElement);
+        jest.runAllTimers();
+      });
+
+      // with "Tip"
       expect(container).toMatchSnapshot();
     });
   });
