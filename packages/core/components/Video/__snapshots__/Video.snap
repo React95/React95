@@ -266,6 +266,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
     >
       <i
         class="c2"
+        data-icon-name="mplayer_1_13"
         height="16"
         style="margin-right: 4px; background-image: url(buffer-16-4-1);"
         width="16"
@@ -335,6 +336,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         >
           <i
             class="c2"
+            data-icon-name="user_4"
             height="16"
             style="margin-top: -2px; background-image: url(buffer-32-4-1);"
             width="16"

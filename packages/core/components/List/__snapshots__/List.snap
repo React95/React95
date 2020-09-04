@@ -148,6 +148,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
     >
       <i
         class="c2"
+        data-icon-name="folder_exe2"
         height="32"
         style="background-image: url(buffer-32-4-1);"
         width="32"
@@ -161,6 +162,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
         >
           <i
             class="c2"
+            data-icon-name="microsoft_exchange"
             height="32"
             style="background-image: url(buffer-32-4-1);"
             width="32"
@@ -175,6 +177,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
         >
           <i
             class="c2"
+            data-icon-name="windows_explorer"
             height="32"
             style="background-image: url(buffer-32-4-1);"
             width="32"

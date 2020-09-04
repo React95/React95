@@ -210,6 +210,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
     >
       <i
         class="c2"
+        data-icon-name="bat"
         height="13"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
         width="15"
@@ -449,6 +450,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     >
       <i
         class="c2"
+        data-icon-name="bat"
         height="13"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
         width="15"
@@ -674,6 +676,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     >
       <i
         class="c2"
+        data-icon-name="bat"
         height="13"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
         width="15"
@@ -851,6 +854,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
     >
       <i
         class="c2"
+        data-icon-name="bat"
         height="13"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
         width="15"
@@ -1013,6 +1017,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
     >
       <i
         class="c2"
+        data-icon-name="bat"
         height="13"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
         width="15"
