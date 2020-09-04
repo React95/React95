@@ -16,7 +16,7 @@ describe('<Tooltip />', () => {
   });
 
   describe('Tooltip visibility', () => {
-    it.only('should show Tooltip when hovered', () => {
+    it('should show Tooltip when hovered', () => {
       const tooltipText = 'Tooltip text';
       jest.useFakeTimers();
 

@@ -33,17 +33,17 @@ describe('<Tabs />', () => {
 
     it('should have first Tab active', () => {
       const { queryByText } = TabComponent();
-      expect(queryByText('first text')).toBeInTheDocument();
+      expect(queryByText('first text')).toBeTruthy();
     });
 
     it('should active second Tab when Tab is clicked', () => {
       const { queryByText } = TabComponent();
-      expect(queryByText('first text')).toBeInTheDocument();
+      expect(queryByText('first text')).toBeTruthy();
 
-      fireEvent.click(queryByText('second'));
+      fireEvent.click(queryByText('second') as HTMLParagraphElement);
 
-      expect(queryByText('first text')).not.toBeInTheDocument();
-      expect(queryByText('second text')).toBeInTheDocument();
+      expect(queryByText('first text')).not.toBeTruthy();
+      expect(queryByText('second text')).toBeTruthy();
     });
   });
 });
