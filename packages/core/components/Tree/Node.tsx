@@ -95,7 +95,7 @@ export type NodeProps = {
 const Node: React.FC<NodeProps> = ({
   children = [],
   id,
-  iconName,
+  iconName = 'bat',
   label,
   onClick = () => {},
   ...rest

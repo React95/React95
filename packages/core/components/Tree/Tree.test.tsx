@@ -40,22 +40,28 @@ describe('<Tree />', () => {
     it('should render multiple levels of files if given', async () => {
       const { queryByText } = await waitRender(<Tree data={data} />);
 
-      const parentNode = queryByText('foo');
-      expect(parentNode).toBeInTheDocument();
+      const parentNode = queryByText('foo')!;
+      expect(parentNode).not.toBeNull();
 
       // Opening the folder
-      await act(async () => fireEvent.doubleClick(parentNode));
+      await act(async () => {
+        fireEvent.doubleClick(parentNode);
+      });
 
-      expect(queryByText('bar')).toBeInTheDocument();
-      expect(queryByText('baz')).toBeInTheDocument();
+      expect(queryByText('bar')).not.toBeNull();
+      expect(queryByText('baz')).not.toBeNull();
     });
 
     it("should render the default icon if the `iconName` prop isn't defined", async () => {
       const { container, queryByText } = await waitRender(<Tree data={data} />);
 
-      await act(async () => fireEvent.doubleClick(queryByText('foo')));
+      await act(async () => {
+        fireEvent.doubleClick(queryByText('foo')!);
+      });
 
-      const itemsWithDefaultIcon = container.querySelectorAll('[name=bat]');
+      const itemsWithDefaultIcon = container.querySelectorAll(
+        '[data-icon-name=bat]',
+      );
 
       expect(itemsWithDefaultIcon.length).toBe(1);
     });
@@ -63,8 +69,12 @@ describe('<Tree />', () => {
     it('should trigger `onClick`', async () => {
       const { queryByText } = await waitRender(<Tree data={data} />);
 
-      await act(async () => fireEvent.doubleClick(queryByText('foo')));
-      await act(async () => fireEvent.click(queryByText('bar')));
+      await act(async () => {
+        fireEvent.doubleClick(queryByText('foo')!);
+      });
+      await act(async () => {
+        fireEvent.click(queryByText('bar')!);
+      });
 
       expect(onClickMock).toHaveBeenCalled();
     });
