@@ -12,25 +12,27 @@ import TaskBar from './TaskBar';
 
 const WINDOWS95_LAUNCH_DATE = '24 August 1995';
 
-const tooltipDefaultText = Tooltip.defaultProps.text;
+const tooltipDefaultText = Tooltip.defaultProps?.text;
 
 describe('<TaskBar />', () => {
   beforeAll(() => {
     jest.useFakeTimers();
 
-    Tooltip.defaultProps.text = WINDOWS95_LAUNCH_DATE;
+    (Tooltip?.defaultProps || {}).text = WINDOWS95_LAUNCH_DATE;
   });
 
   afterAll(() => {
     jest.useRealTimers();
 
-    Tooltip.defaultProps.text = tooltipDefaultText;
+    (Tooltip?.defaultProps || {}).text = tooltipDefaultText;
   });
 
   describe('Snapshots', () => {
     describe('<Clock />', () => {
       it('should match snapshot', () => {
-        act(() => jest.advanceTimersByTime(2000));
+        act(() => {
+          jest.advanceTimersByTime(2000);
+        });
 
         const { container } = render(<Clock />);
         expect(container).toMatchSnapshot();
@@ -69,7 +71,9 @@ describe('<TaskBar />', () => {
     });
 
     it('should match snapshot', async () => {
-      act(() => jest.advanceTimersByTime(1000));
+      act(() => {
+        jest.advanceTimersByTime(1000);
+      });
 
       const { container } = await waitRender(<TaskBar />);
 
@@ -77,11 +81,13 @@ describe('<TaskBar />', () => {
     });
 
     it('should match snapshot with one Modal', async () => {
-      act(() => jest.advanceTimersByTime(1000));
+      act(() => {
+        jest.advanceTimersByTime(1000);
+      });
 
       const { container } = await waitRender(
         <>
-          <Modal icon="bat" title="file.bat" />
+          <Modal icon="bat" title="file.bat" closeModal={() => {}} />
           <TaskBar />
         </>,
       );
@@ -90,12 +96,18 @@ describe('<TaskBar />', () => {
     });
 
     it('should match snapshot with two Modals', async () => {
-      act(() => jest.advanceTimersByTime(1000));
+      act(() => {
+        jest.advanceTimersByTime(1000);
+      });
 
       const { container } = await waitRender(
         <>
-          <Modal icon="windows_explorer" title="Windows Explorer" />
-          <Modal icon="bat" title="file.bat" />
+          <Modal
+            icon="windows_explorer"
+            title="Windows Explorer"
+            closeModal={() => {}}
+          />
+          <Modal icon="bat" title="file.bat" closeModal={() => {}} />
           <TaskBar />
         </>,
       );
@@ -104,7 +116,9 @@ describe('<TaskBar />', () => {
     });
 
     it('should match snapshot with list prop', async () => {
-      act(() => jest.advanceTimersByTime(1000));
+      act(() => {
+        jest.advanceTimersByTime(1000);
+      });
 
       const { container, getByText } = await waitRender(
         <TaskBar

@@ -7,8 +7,8 @@ import Icon from '../Icon';
 import { Windows } from '../Modal/ModalContext';
 
 export type WindowButtonProps = {
-  small: boolean;
-  active: boolean;
+  small?: boolean;
+  active?: boolean;
 } & Pick<Windows, 'icon'> &
   React.HTMLAttributes<HTMLButtonElement> &
   FrameProps;
