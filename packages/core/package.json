@@ -56,7 +56,7 @@
     "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
     "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
     "deploy-storybook": "storybook-to-ghpages",
-    "build": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
+    "build": "cross-env NODE_ENV=production tsc --build ./tsconfig.production.json",
     "postbuild": "rimraf ./dist/**/__snapshots__",
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
