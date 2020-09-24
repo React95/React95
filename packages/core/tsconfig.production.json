@@ -5,5 +5,9 @@
     "jsx": "react"
   },
   "include": ["components", "../../types"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "components/**/*test.tsx",
+    "components/**/__snapshots__"
+  ]
 }
