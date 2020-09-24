@@ -27,7 +27,7 @@ const Legend = styled.legend`
 `;
 
 export type FieldSetProps = {
-  legend?: String;
+  legend?: string;
 } & React.HTMLAttributes<HTMLFieldSetElement>;
 
 const Fieldset: React.FC<FieldSetProps> = ({ legend, children, ...rest }) => (

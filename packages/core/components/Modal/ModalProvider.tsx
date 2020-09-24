@@ -8,11 +8,11 @@ const ModalProvider: React.FunctionComponent<ModalProviderProps> = ({
   children,
 }) => {
   const [windows, setWindows] = React.useState<Array<Windows>>([]);
-  const [activeWindow, setActiveWindow] = React.useState<String>();
+  const [activeWindow, setActiveWindow] = React.useState<string>();
 
   const addWindows = (window: Windows) =>
     setWindows(state => [...state, window]);
-  const removeWindows = (title: String) =>
+  const removeWindows = (title: string) =>
     setWindows(state => state.filter(w => w.title !== title));
 
   return (

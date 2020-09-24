@@ -45,7 +45,7 @@ const useIcon = ({
 
   React.useEffect(() => {
     async function fetchIcon() {
-      const response = await fetch(icons[name]);
+      const response = await fetch(icons[name!]);
       const iconBuffer = await response.arrayBuffer();
 
       const allIcons = await icoParse(iconBuffer);

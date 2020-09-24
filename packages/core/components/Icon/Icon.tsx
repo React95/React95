@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import useIcon from './useIcon';
 
 type IProps = {
-  url: String;
+  url: string;
   width: Number;
   height: Number;
 };
@@ -27,7 +27,7 @@ const I = styled.i.attrs<IProps>(({ url }: Partial<IProps>) => ({
 `;
 
 export type IconProps = {
-  name: String;
+  name: string;
   width?: number;
   height?: number;
   fallback?: Boolean;

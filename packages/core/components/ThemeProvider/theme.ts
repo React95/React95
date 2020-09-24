@@ -1,17 +1,17 @@
 export interface IColors {
-  grays: Array<String>;
-  black: String;
-  white: String;
-  primary: String;
-  secondary: String;
+  grays: Array<string>;
+  black: string;
+  white: string;
+  primary: string;
+  secondary: string;
 }
 
 export class Colors implements IColors {
-  grays: Array<String>;
-  black: String;
-  white: String;
-  primary: String;
-  secondary: String;
+  grays: Array<string>;
+  black: string;
+  white: string;
+  primary: string;
+  secondary: string;
 
   constructor(values: IColors) {
     const { grays, black, white, primary, secondary } = values;
@@ -23,7 +23,7 @@ export class Colors implements IColors {
     this.secondary = secondary;
   }
 
-  get bg(): String {
+  get bg(): string {
     return this.grays[2];
   }
 }
@@ -36,7 +36,7 @@ const colors = new Colors({
   secondary: '#55aaaa',
 });
 
-interface ISpace extends Array<Number> {}
+interface ISpace extends Array<number> {}
 
 const space: ISpace = [
   0,
@@ -62,18 +62,18 @@ const space: ISpace = [
   20,
 ];
 
-export interface IBorderWidth extends Array<Number> {}
+export interface IBorderWidth extends Array<number> {}
 
 const borderWidths: IBorderWidth = [0, 1];
 
-export interface IBorderStyles extends Array<String> {}
+export interface IBorderStyles extends Array<string> {}
 
 const borderStyles: IBorderStyles = ['none', 'solid'];
 
 export interface IShadows {
-  out: String;
-  in: String;
-  input: String;
+  out: string;
+  in: string;
+  input: string;
 }
 
 const shadows: IShadows = {
@@ -90,25 +90,25 @@ const shadows: IShadows = {
           0.5px 0.5px 0 0.5px ${colors.white}`,
 };
 
-export class ZIndexes extends Array<Number> {
-  private _modal: Number;
-  private _taskbar: Number;
+export class ZIndexes extends Array<number> {
+  private _modal: number;
+  private _taskbar: number;
 
-  constructor(values: Number[]) {
+  constructor(values: number[]) {
     super(...values);
   }
 
-  get modal(): Number {
+  get modal(): number {
     return this._modal ?? this[1];
   }
-  set modal(value: Number) {
+  set modal(value: number) {
     this._modal = value;
   }
 
-  get taskbar(): Number {
+  get taskbar(): number {
     return this._taskbar ?? this[2];
   }
-  set taskbar(value: Number) {
+  set taskbar(value: number) {
     this._taskbar = value;
   }
 }
@@ -118,7 +118,7 @@ const zIndices: ZIndexes = new ZIndexes([0, 1, 2]);
 
 export interface ITheme {
   colors: IColors;
-  space: Array<Number>;
+  space: Array<number>;
   shadows: IShadows;
   borderWidths: IBorderWidth;
   borderStyles: IBorderStyles;

@@ -8,7 +8,7 @@ import { IListProps } from './List';
 import rightcaret from '../shared/assets/pattern/rightcaret.svg';
 
 const Item = styled.li<{
-  icon?: String;
+  icon?: string;
   hasList: Boolean;
 }>`
   position: relative;
@@ -77,7 +77,7 @@ const Item = styled.li<{
 `;
 
 export type ListItemProps = {
-  icon?: String;
+  icon?: string;
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem: React.FC<ListItemProps> = ({
