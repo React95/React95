@@ -52,8 +52,9 @@
     "lint": "eslint --ext js,jsx --quiet",
     "clean": "lerna clean",
     "build": "lerna run build --stream --parallel",
-    "build:core": "lerna run build --scope=@react95/core",
-    "build:clippy": "lerna run build --scope=@react95/clippy"
+    "build:clippy": "lerna run build --stream --scope=@react95/clippy",
+    "build:core": "lerna run build --stream --scope=@react95/core",
+    "build:icons": "lerna run build --stream --scope=@react95/icons"
   },
   "config": {
     "commitizen": {
