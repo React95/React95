@@ -1,4 +1,4 @@
-interface ICO extends ArrayBuffer {}
+type ICO = string;
 
 declare module '*.ico' {
   const value: ICO;
