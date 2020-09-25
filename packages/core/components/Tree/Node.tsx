@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import Icon from '../Icon';
+import Icon, { IconProps } from '../Icon/Icon';
 import treeMidLines from '../shared/assets/tree-mid.png';
 import treeLastLines from '../shared/assets/tree-last.png';
 import treeNodeChildrenLine from '../shared/assets/tree-node-children.png';
@@ -10,7 +10,7 @@ import treeNodeChildrenLine from '../shared/assets/tree-node-children.png';
 const FOLDER_CLOSED = 'folder';
 const FOLDER_OPENED = 'folder_open';
 
-export const icons = {
+export const icons: { [key: string]: IconProps['name'] } = {
   FILE_MEDIA: 'media_cd',
   FILE_TEXT: 'file_text',
   FILE_UNKNOWN: 'bat',
@@ -83,7 +83,7 @@ const Label = styled.span`
 
 export type NodeProps = {
   label: string;
-  iconName?: string;
+  iconName?: IconProps['name'];
   id: number;
   children?: Array<NodeProps>;
   onClick?(
@@ -103,7 +103,7 @@ const Node: React.FC<NodeProps> = ({
   const [isOpen, setIsOpen] = React.useState(false);
   const hasChildren = children.length > 0;
 
-  function getIconName(): string {
+  function getIconName(): IconProps['name'] {
     if (!hasChildren) {
       return iconName || icons.FILE_UNKNOWN;
     }

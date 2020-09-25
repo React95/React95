@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import icons from '@react95/icons';
 
 import useIcon from './useIcon';
 
@@ -27,7 +28,7 @@ const I = styled.i.attrs<IProps>(({ url }: Partial<IProps>) => ({
 `;
 
 export type IconProps = {
-  name: string;
+  name?: keyof typeof icons;
   width?: number;
   height?: number;
   fallback?: Boolean;

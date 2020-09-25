@@ -6,7 +6,7 @@ import Draggable from 'react-draggable';
 
 import Btn from '../shared-style/Btn';
 import Button from '../Button';
-import Icon from '../Icon';
+import Icon, { IconProps } from '../Icon/Icon';
 import List from '../List';
 import ModalContext from './ModalContext';
 
@@ -179,7 +179,7 @@ export type ModalDefaultPosition = {
 };
 
 export type ModalProps = {
-  icon?: string;
+  icon?: IconProps['name'];
   closeModal(event: React.MouseEvent): void;
   title: string;
   buttons?: Array<ModalButtons>;
@@ -294,7 +294,7 @@ const Modal = React.forwardRef<HTMLDivElement, ModalProps>(ModalRenderer);
 Modal.displayName = 'Modal';
 
 Modal.defaultProps = {
-  icon: '',
+  icon: undefined,
   title: 'Modal',
   buttonsAlignment: 'flex-end',
   children: null,

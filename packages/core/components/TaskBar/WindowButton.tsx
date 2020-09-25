@@ -46,7 +46,7 @@ const Button = styled(Frame)<Omit<WindowButtonProps, 'icon'>>`
 const WindowButton: React.FC<WindowButtonProps> = ({
   children = '',
   small,
-  icon = '',
+  icon = undefined,
   active,
   ...props
 }) => (
@@ -71,7 +71,7 @@ const WindowButton: React.FC<WindowButtonProps> = ({
 
 WindowButton.defaultProps = {
   small: false,
-  icon: '',
+  icon: undefined,
   active: false,
 };
 

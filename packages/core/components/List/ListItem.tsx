@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import Icon from '../Icon';
+import Icon, { IconProps } from '../Icon/Icon';
 import { IListProps } from './List';
 
 import rightcaret from '../shared/assets/pattern/rightcaret.svg';
@@ -77,7 +77,7 @@ const Item = styled.li<{
 `;
 
 export type ListItemProps = {
-  icon?: string;
+  icon?: IconProps['name'];
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem: React.FC<ListItemProps> = ({

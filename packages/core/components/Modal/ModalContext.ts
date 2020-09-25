@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { createContext } from 'react';
 
+import { IconProps } from '../Icon/Icon';
+
 export type Windows = {
-  icon?: string;
+  icon?: IconProps['name'];
   title: string;
 };
 
