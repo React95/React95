@@ -82,7 +82,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
   >
     <i
       class="c1"
-      data-icon-name=""
       height="20"
       style="margin-right: 4px; background-image: url(buffer-32-4-1);"
       width="20"
@@ -164,7 +163,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   >
     <i
       class="c1"
-      data-icon-name=""
       height="20"
       style="margin-right: 4px; background-image: url(buffer-32-4-1);"
       width="20"
@@ -178,7 +176,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   >
     <i
       class="c1"
-      data-icon-name=""
       height="20"
       style="margin-right: 4px; background-image: url(buffer-32-4-1);"
       width="20"
@@ -283,7 +280,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
   >
     <i
       class="c1"
-      data-icon-name=""
       height="20"
       style="margin-right: 4px; background-image: url(buffer-32-4-1);"
       width="20"
