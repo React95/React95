@@ -5,7 +5,7 @@ import { ModalProvider } from '../Modal';
 import mainTheme, { ITheme } from './theme';
 
 export type ThemeProviderProps = {
-  theme: ITheme;
+  theme?: ITheme;
 };
 
 const ThemeProvider: React.FunctionComponent<ThemeProviderProps> = ({
