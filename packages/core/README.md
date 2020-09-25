@@ -31,4 +31,16 @@ const MyApp = () => (
 );
 ```
 
+## Typescript
+
+React95 has built-in TS support!
+
+make sure to install the types properly for `styled-components` and `xstyled`
+
+```shell
+npm install @types/styled-components @types/xstyled__styled-components
+# or
+yarn add @types/styled-components @types/xstyled__styled-components
+```
+
 You can find a list of all available components at our [Storybook](https://react95.github.io/React95/)
