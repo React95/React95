@@ -61,7 +61,7 @@ const Field = styled.input.attrs({
   }
 
   &:checked &:disabled + ${Icon} {
-    background-image:  url('${checkDisabled}'), url('${bgpattern}');
+    background-image: url('${checkDisabled}'), url('${bgpattern}');
     background-size: 7px 7px, 1.9px 1.9px;
   }
 
@@ -73,7 +73,7 @@ const Field = styled.input.attrs({
 Field.displayName = 'Field';
 
 export type LabelProps = {
-  disabled: boolean;
+  disabled?: boolean;
 };
 
 const Label = styled.label<LabelProps>`
@@ -99,18 +99,18 @@ export type CheckboxProps = {
   label?: string;
   children?: string;
   checked?: boolean;
-  disabled?: boolean;
   style?: React.CSSProperties;
-} & React.HTMLAttributes<HTMLInputElement>;
+} & LabelProps &
+  React.HTMLAttributes<HTMLInputElement>;
 
-const Checkbox = ({
+const Checkbox: React.FC<CheckboxProps> = ({
   children,
   style,
   checked,
   label,
   disabled = false,
   ...rest
-}: CheckboxProps) => (
+}) => (
   <Label style={style} disabled={disabled}>
     <Field checked={checked} disabled={disabled} {...rest} />
     <Icon />
