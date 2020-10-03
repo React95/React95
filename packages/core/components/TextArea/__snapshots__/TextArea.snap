@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextArea /> Snapshot should match snapshot 1`] = `
+.c0 {
+  outline: none;
+  border: none;
+  cursor: text;
+  padding: 3px 3px 5px 3px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #868a8e;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #868a8e;
+  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
+}
+
+<div>
+  <textarea
+    class="c0"
+  />
+</div>
+`;
