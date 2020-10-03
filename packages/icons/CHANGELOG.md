@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/React95/React95/compare/@react95/icons@0.4.1...@react95/icons@0.4.2) (2020-10-03)
+
+
+### Bug Fixes
+
+* **icons:** remove dictories and file fields from package.json and fix publishConfig ([2d788cc](https://github.com/React95/React95/commit/2d788cccaf41517e52cffc417731cba4f7e97087))
+
+
+
+
+
 ## [0.4.1](https://github.com/React95/React95/compare/@react95/icons@0.4.0...@react95/icons@0.4.1) (2020-10-03)
 
 
