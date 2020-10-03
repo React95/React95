@@ -32,6 +32,7 @@
     "build": "tsc --build ./tsconfig.production.json",
     "prebuild": "rimraf dist",
     "postbuild": "cp -R src/icons dist",
+    "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   }
 }
