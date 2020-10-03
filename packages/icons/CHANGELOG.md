@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/React95/React95/compare/@react95/icons@0.4.0...@react95/icons@0.4.1) (2020-10-03)
+
+
+### Bug Fixes
+
+* **icons:** add prepublish npm script ([cca8196](https://github.com/React95/React95/commit/cca8196129007bb5b33ba600cec5dd6bf13c678a))
+
+
+
+
+
 # [0.4.0](https://github.com/React95/React95/compare/@react95/icons@0.3.0...@react95/icons@0.4.0) (2020-10-03)
 
 
