@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/React95/React95/compare/@react95/core@2.10.5...@react95/core@2.11.0) (2020-10-03)
+
+
+### Bug Fixes
+
+* **types:** adjust primitive types ([f22a39b](https://github.com/React95/React95/commit/f22a39b1c803fbfe24daccde0cfe422df0f94797))
+
+
+### Features
+
+* **icon:** add data-icon-name on Icon ([c1e998d](https://github.com/React95/React95/commit/c1e998db2c5eb016e21a6e33fdf78588e357bdf9))
+* **icons:** add properly icons name when it appears ([ea45f20](https://github.com/React95/React95/commit/ea45f2046c916b2528d4c45d1acb16de71cb6a22))
+
+
+
+
+
 ## [2.10.5](https://github.com/React95/React95/compare/@react95/core@2.10.4...@react95/core@2.10.5) (2020-08-19)
 
 

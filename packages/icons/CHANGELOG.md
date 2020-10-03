@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/React95/React95/compare/@react95/icons@0.3.0...@react95/icons@0.4.0) (2020-10-03)
+
+
+### Features
+
+* **icons:** add icons declaration file ([893b3ef](https://github.com/React95/React95/commit/893b3ef7f2fd639cdc1766907e4f62608bbfd8a3))
+* **types:** move *.ico module declaration to root types folder ([bef505d](https://github.com/React95/React95/commit/bef505d89fcdfcbb1da7bad855f9eb03308191ba))
+
+
+
+
+
 # [0.3.0](https://github.com/React95/React95/compare/@react95/icons@0.2.0...@react95/icons@0.3.0) (2020-06-14)
 
 
