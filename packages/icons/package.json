@@ -12,14 +12,9 @@
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
   "main": "index.js",
-  "directories": {
-    "src": "src"
-  },
-  "files": [
-    "src"
-  ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist"
   },
   "repository": {
     "type": "git",
