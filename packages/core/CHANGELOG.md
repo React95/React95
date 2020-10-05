@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.3](https://github.com/React95/React95/compare/@react95/core@2.11.2...@react95/core@2.11.3) (2020-10-05)
+
+
+### Bug Fixes
+
+* **alert:** change DialogImages from enum to object ([2e9855e](https://github.com/React95/React95/commit/2e9855e350f3042b4ccc9ab6555b0ff2b2afd6cf))
+
+
+
+
+
 ## [2.11.2](https://github.com/React95/React95/compare/@react95/core@2.11.1...@react95/core@2.11.2) (2020-10-03)
 
 **Note:** Version bump only for package @react95/core
