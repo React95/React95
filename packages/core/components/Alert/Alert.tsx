@@ -3,19 +3,19 @@ import styled, { StyledComponent } from '@xstyled/styled-components';
 
 import Modal, { ModalProps } from '../Modal/Modal';
 
-import {
-  dialogError,
-  dialogInfo,
-  dialogQuestion,
-  dialogWarning,
-} from './alertImages';
+import icons from '@react95/icons';
 
-export enum DialogImages {
-  error = dialogError,
-  info = dialogInfo,
-  question = dialogQuestion,
-  warning = dialogWarning,
-}
+const dialogError = icons.user_4;
+const dialogInfo = icons.user_5;
+const dialogQuestion = icons.user_3;
+const dialogWarning = icons.user_2;
+
+export const DialogImages = {
+  error: dialogError,
+  info: dialogInfo,
+  question: dialogQuestion,
+  warning: dialogWarning,
+};
 
 export type DialogImageProps = { type?: keyof typeof DialogImages };
 

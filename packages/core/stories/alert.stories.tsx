@@ -35,6 +35,7 @@ export const Simple = () => {
           type={type}
           message="The Windows password you typed is incorrect."
           closeAlert={handleCloseAlert}
+          buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
         />
       )}
     </>
