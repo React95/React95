@@ -189,7 +189,7 @@ describe('<Modal />', () => {
 
   describe('Menus', () => {
     it('should display menu name correctly', async () => {
-      const { container } = await waitRender(
+      const { getByTestId } = await waitRender(
         <Modal
           title="file.bat"
           closeModal={() => {}}
@@ -207,8 +207,7 @@ describe('<Modal />', () => {
           Hello
         </Modal>,
       );
-
-      expect(container.querySelector('li')?.textContent).toBe('Menu Text');
+      expect(getByTestId('menu-item')?.textContent).toBe('Menu Text');
     });
 
     it('should display menu list correctly', async () => {
