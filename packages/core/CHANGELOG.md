@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.4](https://github.com/React95/React95/compare/@react95/core@2.11.3...@react95/core@2.11.4) (2020-10-17)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 ## [2.11.3](https://github.com/React95/React95/compare/@react95/core@2.11.2...@react95/core@2.11.3) (2020-10-05)
 
 
