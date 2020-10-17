@@ -67,8 +67,16 @@ const OptionsBox = styled.ul`
   display: flex;
 `;
 
-const Option = styled(Btn)`
+const OptionItem = styled.li`
+  display: flex;
   margin-right: 2;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+const Option = styled(Btn)`
   padding: 0;
 
   width: 17px;
@@ -76,10 +84,6 @@ const Option = styled(Btn)`
   min-width: 0;
 
   font-size: 10;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &:active {
     padding: 1 0 0 1;
@@ -247,8 +251,12 @@ const ModalRenderer = (
           {icon && <Icon name={icon} {...iconStyle} />}
           <Title>{title}</Title>
           <OptionsBox>
-            <Option>?</Option>
-            <Option onClick={closeModal}>x</Option>
+            <OptionItem>
+              <Option>?</Option>
+            </OptionItem>
+            <OptionItem>
+              <Option onClick={closeModal}>x</Option>
+            </OptionItem>
           </OptionsBox>
         </TitleBar>
 

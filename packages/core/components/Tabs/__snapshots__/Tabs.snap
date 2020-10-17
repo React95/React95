@@ -54,7 +54,7 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
 
 <div>
   <ol
-    class="sc-qXhiz c0"
+    class="sc-pzYib c0"
     height="auto"
     width="auto"
   >
@@ -65,7 +65,7 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
     </li>
   </ol>
   <div
-    class="sc-qXhiz c2"
+    class="sc-pzYib c2"
     height="auto"
     width="auto"
   >

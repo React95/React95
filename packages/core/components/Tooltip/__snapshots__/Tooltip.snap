@@ -22,7 +22,7 @@ exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
 exports[`<Tooltip /> Snapshot should match snapshot 2`] = `
 <div>
   <div
-    class="sc-pzYib fzdhZo"
+    class="sc-pItiW cPLUaX"
   >
     .c0 {
   background-color: #c3c7cb;
@@ -42,7 +42,7 @@ exports[`<Tooltip /> Snapshot should match snapshot 2`] = `
 }
 
 <div
-      class="sc-qPlga c0"
+      class="sc-qXhiz c0"
       height="auto"
       width="auto"
     >

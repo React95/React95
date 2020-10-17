@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
-.c11 {
+.c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -9,17 +9,17 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c11:disabled {
+.c12:disabled {
   color: #868a8e;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c11:active {
+.c12:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -74,13 +74,24 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   display: flex;
 }
 
-.c5 {
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
-  margin-right: 2px;
   padding: 0;
   width: 17px;
   height: 14px;
@@ -88,37 +99,33 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   font-size: 10px;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c5:active {
+.c6:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c5:focus {
+.c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -133,7 +140,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   padding: 6px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -148,16 +155,16 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   padding: 0 6px 6px 6px;
 }
 
-.c10 .c4 {
+.c11 .c5 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c10 .c4:last-child {
+.c11 .c5:last-child {
   margin-right: 0;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -172,7 +179,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -182,7 +189,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,40 +216,48 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
       <ul
         class="c3"
       >
-        <button
-          class="c4 c5"
+        <li
+          class="c4"
         >
-          ?
-        </button>
-        <button
-          class="c4 c5"
+          <button
+            class="c5 c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c4"
         >
-          x
-        </button>
+          <button
+            class="c5 c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     >
       <div
-        class="c7"
+        class="c8"
       >
         <div
-          class="c8"
+          class="c9"
           type="error"
         />
         <div
-          class="c9"
+          class="c10"
         >
           Error
         </div>
       </div>
     </div>
     <div
-      class="c10"
+      class="c11"
     >
       <button
-        class="c4 c11"
+        class="c5 c12"
         value="OK"
       >
         OK
@@ -253,7 +268,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
-.c11 {
+.c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -261,17 +276,17 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c11:disabled {
+.c12:disabled {
   color: #868a8e;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c11:active {
+.c12:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -326,13 +341,24 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   display: flex;
 }
 
-.c5 {
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
-  margin-right: 2px;
   padding: 0;
   width: 17px;
   height: 14px;
@@ -340,37 +366,33 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   font-size: 10px;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c5:active {
+.c6:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c5:focus {
+.c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -385,7 +407,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   padding: 6px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -400,16 +422,16 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   padding: 0 6px 6px 6px;
 }
 
-.c10 .c4 {
+.c11 .c5 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c10 .c4:last-child {
+.c11 .c5:last-child {
   margin-right: 0;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -424,7 +446,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -434,7 +456,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -461,40 +483,48 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
       <ul
         class="c3"
       >
-        <button
-          class="c4 c5"
+        <li
+          class="c4"
         >
-          ?
-        </button>
-        <button
-          class="c4 c5"
+          <button
+            class="c5 c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c4"
         >
-          x
-        </button>
+          <button
+            class="c5 c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     >
       <div
-        class="c7"
+        class="c8"
       >
         <div
-          class="c8"
+          class="c9"
           type="info"
         />
         <div
-          class="c9"
+          class="c10"
         >
           Info
         </div>
       </div>
     </div>
     <div
-      class="c10"
+      class="c11"
     >
       <button
-        class="c4 c11"
+        class="c5 c12"
         value="OK"
       >
         OK
@@ -505,7 +535,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
-.c11 {
+.c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -513,17 +543,17 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c11:disabled {
+.c12:disabled {
   color: #868a8e;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c11:active {
+.c12:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -578,13 +608,24 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   display: flex;
 }
 
-.c5 {
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
-  margin-right: 2px;
   padding: 0;
   width: 17px;
   height: 14px;
@@ -592,37 +633,33 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   font-size: 10px;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c5:active {
+.c6:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c5:focus {
+.c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -637,7 +674,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   padding: 6px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -652,16 +689,16 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   padding: 0 6px 6px 6px;
 }
 
-.c10 .c4 {
+.c11 .c5 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c10 .c4:last-child {
+.c11 .c5:last-child {
   margin-right: 0;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -676,7 +713,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -686,7 +723,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -713,40 +750,48 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
       <ul
         class="c3"
       >
-        <button
-          class="c4 c5"
+        <li
+          class="c4"
         >
-          ?
-        </button>
-        <button
-          class="c4 c5"
+          <button
+            class="c5 c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c4"
         >
-          x
-        </button>
+          <button
+            class="c5 c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     >
       <div
-        class="c7"
+        class="c8"
       >
         <div
-          class="c8"
+          class="c9"
           type="question"
         />
         <div
-          class="c9"
+          class="c10"
         >
           question
         </div>
       </div>
     </div>
     <div
-      class="c10"
+      class="c11"
     >
       <button
-        class="c4 c11"
+        class="c5 c12"
         value="OK"
       >
         OK
@@ -757,7 +802,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
-.c11 {
+.c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -765,17 +810,17 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c11:disabled {
+.c12:disabled {
   color: #868a8e;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c11:active {
+.c12:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -830,13 +875,24 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   display: flex;
 }
 
-.c5 {
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
-  margin-right: 2px;
   padding: 0;
   width: 17px;
   height: 14px;
@@ -844,37 +900,33 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   font-size: 10px;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c5:active {
+.c6:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c5:focus {
+.c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -889,7 +941,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   padding: 6px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -904,16 +956,16 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   padding: 0 6px 6px 6px;
 }
 
-.c10 .c4 {
+.c11 .c5 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c10 .c4:last-child {
+.c11 .c5:last-child {
   margin-right: 0;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -928,7 +980,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -938,7 +990,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -965,40 +1017,48 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
       <ul
         class="c3"
       >
-        <button
-          class="c4 c5"
+        <li
+          class="c4"
         >
-          ?
-        </button>
-        <button
-          class="c4 c5"
+          <button
+            class="c5 c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c4"
         >
-          x
-        </button>
+          <button
+            class="c5 c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     >
       <div
-        class="c7"
+        class="c8"
       >
         <div
-          class="c8"
+          class="c9"
           type="warning"
         />
         <div
-          class="c9"
+          class="c10"
         >
           Warning
         </div>
       </div>
     </div>
     <div
-      class="c10"
+      class="c11"
     >
       <button
-        class="c4 c11"
+        class="c5 c12"
         value="OK"
       >
         OK

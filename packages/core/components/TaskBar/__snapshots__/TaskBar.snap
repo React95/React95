@@ -76,7 +76,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 
 <div>
   <button
-    class="sc-pItiW c0"
+    class="sc-pQSRh c0"
     height="auto"
     width="auto"
   >
@@ -157,7 +157,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 
 <div>
   <button
-    class="sc-pItiW c0"
+    class="sc-pQSRh c0"
     height="auto"
     width="auto"
   >
@@ -170,7 +170,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     
   </button>
   <button
-    class="sc-pItiW c2"
+    class="sc-pQSRh c2"
     height="auto"
     width="auto"
   >
@@ -222,7 +222,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 
 <div>
   <button
-    class="sc-pItiW c0"
+    class="sc-pQSRh c0"
     height="auto"
     width="auto"
   >
@@ -274,7 +274,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 
 <div>
   <button
-    class="sc-pItiW c0"
+    class="sc-pQSRh c0"
     height="auto"
     width="auto"
   >
@@ -574,7 +574,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="sc-pItiW gojuKw"
+    class="sc-pQSRh jHQQlH"
     display="flex"
     height="28"
     width="100%"
@@ -685,7 +685,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <button
-      class="sc-pItiW sc-pcJja bIJQWW"
+      class="sc-pQSRh sc-pliRl fbgwoX"
       height="auto"
       width="auto"
     >
@@ -699,19 +699,19 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       Start
     </button>
     <div
-      class="sc-pItiW dcSYlO"
+      class="sc-pQSRh PBLSF"
       display="flex"
       height="auto"
       width="100%"
     />
     <div
-      class="sc-pItiW kRyWDA"
+      class="sc-pQSRh eHiMqf"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="sc-pZnSc kYvPuw sc-oUoif Iwwvw"
+        class="sc-oUoif iaFRZS sc-pcJja VfkaY"
       >
         
       </div>
@@ -730,7 +730,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   height: 13px;
 }
 
-.c9 {
+.c10 {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
@@ -788,12 +788,23 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c5:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
-  margin-right: 2px;
   padding: 0;
   width: 17px;
   height: 14px;
@@ -801,37 +812,33 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   font-size: 10px;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c5:active {
+.c6:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c5:focus {
+.c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -846,7 +853,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding: 6px;
 }
 
-.c7 {
+.c8 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -871,7 +878,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding: 2px;
 }
 
-.c10 {
+.c11 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -888,7 +895,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   margin-left: 2px;
 }
 
-.c13 {
+.c14 {
   background-color: transparent;
   width: auto;
   height: auto;
@@ -899,18 +906,18 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding-bottom: 2px;
 }
 
-.c14 {
+.c15 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c15 div:first-child {
+.c16 div:first-child {
   right: 0;
 }
 
-.c8 {
+.c9 {
   background-color: #c3c7cb;
   width: auto;
   height: auto;
@@ -934,7 +941,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   outline: none;
 }
 
-.c11 {
+.c12 {
   background-color: #e6e6e6;
   width: auto;
   height: auto;
@@ -959,7 +966,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   width: 100%;
 }
 
-.c12 {
+.c13 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -989,35 +996,43 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       <ul
         class="c4"
       >
-        <button
-          class="sc-pscky c5"
+        <li
+          class="c5"
         >
-          ?
-        </button>
-        <button
-          class="sc-pscky c5"
+          <button
+            class="sc-pscky c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c5"
         >
-          x
-        </button>
+          <button
+            class="sc-pscky c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     />
   </div>
   <div
-    class="c7"
+    class="c8"
     display="flex"
     height="28"
     width="100%"
   >
     <button
-      class="c8"
+      class="c9"
       height="auto"
       width="auto"
     >
       <i
-        class="c9"
+        class="c10"
         data-icon-name="logo"
         height="20"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
@@ -1026,38 +1041,38 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       Start
     </button>
     <div
-      class="c10"
+      class="c11"
       display="flex"
       height="auto"
       width="100%"
     >
       <button
-        class="c11"
+        class="c12"
         height="auto"
         width="auto"
       >
         <i
-          class="c9"
+          class="c10"
           data-icon-name="bat"
           height="20"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
           width="20"
         />
         <span
-          class="c12"
+          class="c13"
         >
           file.bat
         </span>
       </button>
     </div>
     <div
-      class="c13"
+      class="c14"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="c14 c15"
+        class="c15 c16"
       >
         
       </div>
@@ -1076,7 +1091,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   height: 13px;
 }
 
-.c11 {
+.c12 {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
@@ -1102,7 +1117,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   height: auto;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1132,7 +1147,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   background-color: #868a8e;
 }
 
-.c8 {
+.c9 {
   height: 18px;
   margin-bottom: 2px;
   color: #ffffff;
@@ -1163,12 +1178,23 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c5:last-child {
+  margin-right: 0;
+}
+
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
-  margin-right: 2px;
   padding: 0;
   width: 17px;
   height: 14px;
@@ -1176,37 +1202,33 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   font-size: 10px;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c5:active {
+.c6:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c5:focus {
+.c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c6 {
+.c7 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1221,7 +1243,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding: 6px;
 }
 
-.c9 {
+.c10 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1246,7 +1268,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding: 2px;
 }
 
-.c12 {
+.c13 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1263,7 +1285,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   margin-left: 2px;
 }
 
-.c16 {
+.c17 {
   background-color: transparent;
   width: auto;
   height: auto;
@@ -1274,18 +1296,18 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding-bottom: 2px;
 }
 
-.c17 {
+.c18 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c18 div:first-child {
+.c19 div:first-child {
   right: 0;
 }
 
-.c10 {
+.c11 {
   background-color: #c3c7cb;
   width: auto;
   height: auto;
@@ -1309,7 +1331,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   outline: none;
 }
 
-.c13 {
+.c14 {
   background-color: #c3c7cb;
   width: auto;
   height: auto;
@@ -1334,7 +1356,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   width: 100%;
 }
 
-.c15 {
+.c16 {
   background-color: #e6e6e6;
   width: auto;
   height: auto;
@@ -1359,7 +1381,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   width: 100%;
 }
 
-.c14 {
+.c15 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1389,28 +1411,36 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       <ul
         class="c4"
       >
-        <button
-          class="sc-pscky c5"
+        <li
+          class="c5"
         >
-          ?
-        </button>
-        <button
-          class="sc-pscky c5"
+          <button
+            class="sc-pscky c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c5"
         >
-          x
-        </button>
+          <button
+            class="sc-pscky c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     />
   </div>
   <div
-    class="c7 react-draggable"
+    class="c8 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c8 draggable"
+      class="c9 draggable"
     >
       <i
         class="c2"
@@ -1427,35 +1457,43 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       <ul
         class="c4"
       >
-        <button
-          class="sc-pscky c5"
+        <li
+          class="c5"
         >
-          ?
-        </button>
-        <button
-          class="sc-pscky c5"
+          <button
+            class="sc-pscky c6"
+          >
+            ?
+          </button>
+        </li>
+        <li
+          class="c5"
         >
-          x
-        </button>
+          <button
+            class="sc-pscky c6"
+          >
+            x
+          </button>
+        </li>
       </ul>
     </div>
     <div
-      class="c6"
+      class="c7"
     />
   </div>
   <div
-    class="c9"
+    class="c10"
     display="flex"
     height="28"
     width="100%"
   >
     <button
-      class="c10"
+      class="c11"
       height="auto"
       width="auto"
     >
       <i
-        class="c11"
+        class="c12"
         data-icon-name="logo"
         height="20"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
@@ -1464,56 +1502,56 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       Start
     </button>
     <div
-      class="c12"
+      class="c13"
       display="flex"
       height="auto"
       width="100%"
     >
       <button
-        class="c13"
+        class="c14"
         height="auto"
         width="auto"
       >
         <i
-          class="c11"
+          class="c12"
           data-icon-name="windows_explorer"
           height="20"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
           width="20"
         />
         <span
-          class="c14"
+          class="c15"
         >
           Windows Explorer
         </span>
       </button>
       <button
-        class="c15"
+        class="c16"
         height="auto"
         width="auto"
       >
         <i
-          class="c11"
+          class="c12"
           data-icon-name="bat"
           height="20"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
           width="20"
         />
         <span
-          class="c14"
+          class="c15"
         >
           file.bat
         </span>
       </button>
     </div>
     <div
-      class="c16"
+      class="c17"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="c17 c18"
+        class="c18 c19"
       >
         
       </div>
