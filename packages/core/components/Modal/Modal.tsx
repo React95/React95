@@ -269,7 +269,6 @@ const ModalRenderer = (
                   key={name}
                   onMouseDown={() => setMenuOpened(name)}
                   active={active}
-                  data-testid="menu-item"
                 >
                   {name}
                   {active && list}

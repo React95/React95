@@ -255,13 +255,11 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
     >
       <li
         class="c9"
-        data-testid="menu-item"
       >
         File
       </li>
       <li
         class="c9"
-        data-testid="menu-item"
       >
         Edit
       </li>
