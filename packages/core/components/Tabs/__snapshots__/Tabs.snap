@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tabs /> Snapshot should match snapshot 1`] = `
-.c1 {
+.c2 {
   list-style: none;
   padding: 3px 6px;
   background-color: #c3c7cb;
@@ -14,15 +14,15 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -0.5px 3px 0 0.5px #c3c7cb, -2px 2px 0 0 #ffffff,-2px 0 0 -1px #ffffff, 1px 2px 0 0 #868a8e,2px 0 0 -1px #000000, 2px 2px 0 0 #000000;
 }
 
-.c1:first-child {
+.c2:first-child {
   margin-left: 4px;
 }
 
-.c1:first-child {
+.c2:first-child {
   margin-left: 2px;
 }
 
-.c1 + li {
+.c2 + li {
   margin-left: 0;
   box-shadow: inset 0 1px 0 0 #ffffff, 2px 1px 0 -1px #868a8e, 2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
 }
@@ -32,6 +32,9 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   width: auto;
   height: auto;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,29 +46,25 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   background-color: unset;
 }
 
-.c2 {
-  background-color: #c3c7cb;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+.c3 {
   padding: 12px;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
 <div>
   <ol
-    class="sc-pzYib c0"
+    class="c0 c1"
     height="auto"
     width="auto"
   >
     <li
-      class="c1"
+      class="c2"
     >
       example
     </li>
   </ol>
   <div
-    class="sc-pzYib c2"
+    class="c0 c3"
     height="auto"
     width="auto"
   >

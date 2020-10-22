@@ -1,6 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Video /> Snapshot should match snapshot 1`] = `
+.c11 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+}
+
+.c11:disabled {
+  color: #868a8e;
+}
+
+.c11:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
+}
+
+.c11:active {
+  padding: 8px 20px 4px;
+  outline: 1px dotted #000000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+}
+
 .c2 {
   display: block;
   background-repeat: no-repeat;
@@ -18,18 +43,132 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px;
 }
 
+.c4 {
+  background-color: #c3c7cb;
+  max-width: 250px;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4px;
+}
+
+.c6 {
+  background-color: #c3c7cb;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c8 {
+  background-color: #c3c7cb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c13 {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.c13:hover,
+.c13:focus,
+.c13:active {
+  outline: none;
+}
+
+.c13::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: #000000;
+  cursor: pointer;
+  border-top: 1px solid;
+  border-top-color: #d2d2d2;
+  border-right: 2px solid;
+  border-right-color: #ffffff;
+  border-bottom: 1px solid;
+  border-bottom-color: #e6e6e6;
+  border-left: 2px solid;
+  border-left-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+.c13::-webkit-slider-thumb {
+  width: 12px;
+  height: 20px;
+  background-color: #c3c7cb;
+  cursor: pointer;
+  margin-top: -8px;
+  border-top: 1px solid;
+  border-top-color: #ffffff;
+  border-right: 1px solid;
+  border-right-color: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #000000;
+  border-left: 1px solid;
+  border-left-color: #ffffff;
+  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
+  -webkit-appearance: none;
+}
+
+.c13:focus::-webkit-slider-runnable-track {
+  background: #000000;
+}
+
+.c13::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  background: #000000;
+  cursor: pointer;
+  border-top: 1px solid;
+  border-top-color: #d2d2d2;
+  border-right: 2px solid;
+  border-right-color: #ffffff;
+  border-bottom: 1px solid;
+  border-bottom-color: #e6e6e6;
+  border-left: 2px solid;
+  border-left-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+.c13::-moz-range-thumb {
+  width: 12px;
+  height: 20px;
+  background-color: #c3c7cb;
+  cursor: pointer;
+  margin-top: -8px;
+  border-top: 1px solid;
+  border-top-color: #ffffff;
+  border-right: 1px solid;
+  border-right-color: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #000000;
+  border-left: 1px solid;
+  border-left-color: #ffffff;
+  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
+  -webkit-appearance: none;
+}
+
 .c3 {
   width: 100%;
   padding: 2px;
   display: none;
 }
 
-.c9 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -44,35 +183,18 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   align-items: center;
 }
 
-.c9:disabled {
-  color: #868a8e;
-}
-
-.c9:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c9:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c9.c9,
-.c9:active,
-.c9:focus {
+.c12.c12,
+.c12:active,
+.c12:focus {
   width: 20px;
   height: 20px;
   padding: 7px;
   padding: 4px;
 }
 
-.c9.c9 svg,
-.c9:active svg,
-.c9:focus svg {
+.c12.c12 svg,
+.c12:active svg,
+.c12:focus svg {
   fill: #868a8e;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
@@ -94,7 +216,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   background-color: #000e7a;
 }
 
-.c8 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -106,11 +228,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px 0;
 }
 
-.c5 {
-  background-color: #c3c7cb;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,134 +241,23 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   color: #ffffff;
 }
 
-.c7 {
+.c9 {
   font-family: 'React95Video-Numbers';
   text-transform: uppercase;
 }
 
-.c4 {
-  background-color: #c3c7cb;
-  max-width: 250px;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 4px;
+.c5 {
   background-color: transparent;
   box-shadow: none;
 }
 
-.c6 {
-  background-color: #c3c7cb;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-  height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.c10 {
-  -webkit-appearance: none;
-  width: 100%;
-}
-
-.c10:hover,
-.c10:focus,
-.c10:active {
-  outline: none;
-}
-
-.c10::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 4px;
-  background: #000000;
-  cursor: pointer;
-  border-top: 1px solid;
-  border-top-color: #d2d2d2;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 1px solid;
-  border-bottom-color: #e6e6e6;
-  border-left: 2px solid;
-  border-left-color: #ffffff;
-  box-shadow: 0px 1px 0px 0px #ffffff;
-}
-
-.c10::-webkit-slider-thumb {
-  width: 12px;
-  height: 20px;
-  background-color: #c3c7cb;
-  cursor: pointer;
-  margin-top: -8px;
-  border-top: 1px solid;
-  border-top-color: #ffffff;
-  border-right: 1px solid;
-  border-right-color: #000000;
-  border-bottom: 1px solid;
-  border-bottom-color: #000000;
-  border-left: 1px solid;
-  border-left-color: #ffffff;
-  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
-  -webkit-appearance: none;
-}
-
-.c10:focus::-webkit-slider-runnable-track {
-  background: #000000;
-}
-
-.c10::-moz-range-track {
-  width: 100%;
-  height: 4px;
-  background: #000000;
-  cursor: pointer;
-  border-top: 1px solid;
-  border-top-color: #d2d2d2;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 1px solid;
-  border-bottom-color: #e6e6e6;
-  border-left: 2px solid;
-  border-left-color: #ffffff;
-  box-shadow: 0px 1px 0px 0px #ffffff;
-}
-
-.c10::-moz-range-thumb {
-  width: 12px;
-  height: 20px;
-  background-color: #c3c7cb;
-  cursor: pointer;
-  margin-top: -8px;
-  border-top: 1px solid;
-  border-top-color: #ffffff;
-  border-right: 1px solid;
-  border-right-color: #000000;
-  border-bottom: 1px solid;
-  border-bottom-color: #000000;
-  border-left: 1px solid;
-  border-left-color: #ffffff;
-  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
-  -webkit-appearance: none;
-}
-
-.c10::-webkit-slider-thumb {
+.c14::-webkit-slider-thumb {
   height: 18px;
   margin-top: -7px;
   width: 10px;
 }
 
-.c10[value='0']::-webkit-slider-thumb {
+.c14[value='0']::-webkit-slider-thumb {
   margin-left: -2px;
 }
 
@@ -283,44 +290,44 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
       />
     </video>
     <div
-      class="c4"
+      class="c4 c5"
       height="auto"
       width="auto"
     >
       <div
-        class="c5"
+        class="c6 c7"
         height="auto"
         width="auto"
       >
         <div
-          class="c6"
+          class="c8 c5"
           display="flex"
           height="auto"
           width="40%"
         >
           <span
-            class="c7"
+            class="c9"
             style="margin-top: auto;"
           />
           <span
-            class="c7"
+            class="c9"
             style="height: 12px;"
           >
             Openning
           </span>
         </div>
         <div
-          class="c6"
+          class="c8 c5"
           display="flex"
           height="auto"
           width="40%"
         >
           <span
-            class="c7"
+            class="c9"
             style="margin-top: auto; font-size: 22px;"
           />
           <span
-            class="c7"
+            class="c9"
             style="height: 12px;"
           >
             time
@@ -328,10 +335,10 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="c8"
+        class="c10"
       >
         <button
-          class="sc-pscky c9"
+          class="c11 c12"
           disabled=""
         >
           <i
@@ -343,7 +350,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           />
         </button>
         <button
-          class="sc-pscky c9"
+          class="c11 c12"
           disabled=""
         >
           <svg
@@ -358,7 +365,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           </svg>
         </button>
         <input
-          class="sc-pzYib c10"
+          class="c13 c14"
           max="100"
           min="0"
           step="1"
