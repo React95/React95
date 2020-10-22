@@ -4,7 +4,6 @@ import styled, { StyledComponent } from '@xstyled/styled-components';
 import Modal, { ModalProps } from '../Modal/Modal';
 
 import icons from '@react95/icons';
-import { useEffect } from '@storybook/addons';
 
 const dialogError = icons.user_4;
 const dialogInfo = icons.user_5;
