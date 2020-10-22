@@ -57,35 +57,35 @@ export type AlertProps = Omit<
   ModalProps,
   'closeModal'
 > & {} & DialogImageProps & {
-  message: string;
-  closeAlert: ModalProps['closeModal'];
-};
+    message: string;
+    closeAlert: ModalProps['closeModal'];
+  };
 
 const Alert: React.FC<AlertProps> = ({
   type,
   message,
   closeAlert,
   ...rest
-}) => {
-  return (<Modal closeModal={closeAlert} height="120" {...rest}>
+}) => (
+  <Modal closeModal={closeAlert} height="120" {...rest}>
     <Dialog>
       <Dialog.Image type={type} />
       <Dialog.Message>{message}</Dialog.Message>
     </Dialog>
-  </Modal>)
-}
+  </Modal>
+);
 
 Alert.displayName = 'Alert';
 
 Alert.defaultProps = {
   type: 'error',
-  buttons: [{ value: 'OK', onClick: () => { } }],
-  closeAlert: () => { },
+  buttons: [{ value: 'OK', onClick: () => {} }],
+  closeAlert: () => {},
   buttonsAlignment: 'center',
   defaultPosition: {
-    x: window !== undefined ? Math.floor(window.innerWidth / 2) - 150 : 0,
-    y: window !== undefined ? Math.floor(window.innerHeight / 2) - 80 : 0
-  }
+    x: typeof window == 'undefined' ? 0 : Math.floor(window.innerWidth / 2) - 150,
+    y: typeof window == 'undefined' ? 0 : Math.floor(window.innerHeight / 2) - 80,
+  },
 };
 
 export default Alert;

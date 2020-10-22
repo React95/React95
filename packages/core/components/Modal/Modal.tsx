@@ -220,9 +220,6 @@ const ModalRenderer = (
   React.useEffect(() => {
     addWindows({ icon, title });
     setActiveWindow(title);
-
-    console.log(defaultPosition)
-
     return () => removeWindows(title);
   }, [defaultPosition]);
 
