@@ -221,8 +221,10 @@ const ModalRenderer = (
     addWindows({ icon, title });
     setActiveWindow(title);
 
+    console.log(defaultPosition)
+
     return () => removeWindows(title);
-  }, []);
+  }, [defaultPosition]);
 
   const iconStyle = {
     width: 15,
@@ -311,6 +313,6 @@ Modal.defaultProps = {
   menu: [],
   width: undefined,
   height: undefined,
-  closeModal: () => {},
+  closeModal: () => { },
 };
 export default Modal;
