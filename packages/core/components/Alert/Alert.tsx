@@ -83,8 +83,8 @@ Alert.defaultProps = {
   closeAlert: () => {},
   buttonsAlignment: 'center',
   defaultPosition: {
-    x: Math.floor(window.innerWidth / 2) - 150,
-    y: Math.floor(window.innerHeight / 2) - 80,
+    x: typeof window == 'undefined' ? 0 : Math.floor(window.innerWidth / 2) - 150,
+    y: typeof window == 'undefined' ? 0 : Math.floor(window.innerHeight / 2) - 80,
   },
 };
 

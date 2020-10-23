@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Modal /> Snapshots should match snapshot 1`] = `
-.c12 {
+.c7 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -9,17 +9,17 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c12:disabled {
+.c7:disabled {
   color: #868a8e;
 }
 
-.c12:focus {
+.c7:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c12:active {
+.c7:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -95,12 +95,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   margin-right: 0;
 }
 
-.c7 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+.c8 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -108,33 +103,16 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   font-size: 10px;
 }
 
-.c7:disabled {
-  color: #868a8e;
-}
-
-.c7:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c7:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c7:active {
+.c8:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c7:focus {
+.c8:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c10 {
+.c11 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -149,7 +127,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   padding: 6px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -164,16 +142,16 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   padding: 0 6px 6px 6px;
 }
 
-.c11 .c6 {
+.c12 .c6 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c11 .c6:last-child {
+.c12 .c6:last-child {
   margin-right: 0;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -191,7 +169,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   box-shadow: 0 1px 0 0 #e6e6e6;
 }
 
-.c9 {
+.c10 {
   position: relative;
   padding-left: 6px;
   padding-right: 6px;
@@ -201,7 +179,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   user-select: none;
 }
 
-.c9 ul {
+.c10 ul {
   position: absolute;
   left: 0;
   color: #000000;
@@ -234,7 +212,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
           class="c5"
         >
           <button
-            class="c6 c7"
+            class="c6 c7 c8"
           >
             ?
           </button>
@@ -243,7 +221,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
           class="c5"
         >
           <button
-            class="c6 c7"
+            class="c6 c7 c8"
           >
             x
           </button>
@@ -251,35 +229,35 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
       </ul>
     </div>
     <ul
-      class="c8"
+      class="c9"
     >
       <li
-        class="c9"
+        class="c10"
       >
         File
       </li>
       <li
-        class="c9"
+        class="c10"
       >
         Edit
       </li>
     </ul>
     <div
-      class="c10"
+      class="c11"
     >
       Hello
     </div>
     <div
-      class="c11"
+      class="c12"
     >
       <button
-        class="c6 c12"
+        class="c6 c7"
         value="Ok"
       >
         Ok
       </button>
       <button
-        class="c6 c12"
+        class="c6 c7"
         value="Cancel"
       >
         Cancel
@@ -290,7 +268,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 `;
 
 exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equals center 1`] = `
-.c10 {
+.c7 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -298,17 +276,17 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c10:disabled {
+.c7:disabled {
   color: #868a8e;
 }
 
-.c10:focus {
+.c7:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c10:active {
+.c7:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -384,12 +362,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   margin-right: 0;
 }
 
-.c7 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+.c8 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -397,33 +370,16 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   font-size: 10px;
 }
 
-.c7:disabled {
-  color: #868a8e;
-}
-
-.c7:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c7:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c7:active {
+.c8:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c7:focus {
+.c8:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -438,7 +394,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 6px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -453,12 +409,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 0 6px 6px 6px;
 }
 
-.c9 .c6 {
+.c10 .c6 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c9 .c6:last-child {
+.c10 .c6:last-child {
   margin-right: 0;
 }
 
@@ -489,7 +445,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
           class="c5"
         >
           <button
-            class="c6 c7"
+            class="c6 c7 c8"
           >
             ?
           </button>
@@ -498,7 +454,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
           class="c5"
         >
           <button
-            class="c6 c7"
+            class="c6 c7 c8"
           >
             x
           </button>
@@ -506,21 +462,21 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       </ul>
     </div>
     <div
-      class="c8"
+      class="c9"
     >
       Hello
     </div>
     <div
-      class="c9"
+      class="c10"
     >
       <button
-        class="c6 c10"
+        class="c6 c7"
         value="Ok"
       >
         Ok
       </button>
       <button
-        class="c6 c10"
+        class="c6 c7"
         value="Cancel"
       >
         Cancel
@@ -531,7 +487,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 `;
 
 exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equals flex-start 1`] = `
-.c10 {
+.c7 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -539,17 +495,17 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c10:disabled {
+.c7:disabled {
   color: #868a8e;
 }
 
-.c10:focus {
+.c7:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c10:active {
+.c7:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -625,12 +581,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   margin-right: 0;
 }
 
-.c7 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+.c8 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -638,33 +589,16 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   font-size: 10px;
 }
 
-.c7:disabled {
-  color: #868a8e;
-}
-
-.c7:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c7:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c7:active {
+.c8:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c7:focus {
+.c8:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -679,7 +613,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 6px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -694,12 +628,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 0 6px 6px 6px;
 }
 
-.c9 .c6 {
+.c10 .c6 {
   margin-right: 6px;
   min-width: 70px;
 }
 
-.c9 .c6:last-child {
+.c10 .c6:last-child {
   margin-right: 0;
 }
 
@@ -730,7 +664,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
           class="c5"
         >
           <button
-            class="c6 c7"
+            class="c6 c7 c8"
           >
             ?
           </button>
@@ -739,7 +673,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
           class="c5"
         >
           <button
-            class="c6 c7"
+            class="c6 c7 c8"
           >
             x
           </button>
@@ -747,21 +681,21 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       </ul>
     </div>
     <div
-      class="c8"
+      class="c9"
     >
       Hello
     </div>
     <div
-      class="c9"
+      class="c10"
     >
       <button
-        class="c6 c10"
+        class="c6 c7"
         value="Ok"
       >
         Ok
       </button>
       <button
-        class="c6 c10"
+        class="c6 c7"
         value="Cancel"
       >
         Cancel
@@ -772,6 +706,31 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 `;
 
 exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1`] = `
+.c6 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+}
+
+.c6:disabled {
+  color: #868a8e;
+}
+
+.c6:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
+}
+
+.c6:active {
+  padding: 8px 20px 4px;
+  outline: 1px dotted #000000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+}
+
 .c2 {
   display: block;
   background-repeat: no-repeat;
@@ -840,12 +799,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   margin-right: 0;
 }
 
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+.c7 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -853,33 +807,16 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   font-size: 10px;
 }
 
-.c6:disabled {
-  color: #868a8e;
-}
-
-.c6:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c6:active {
+.c7:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c6:focus {
+.c7:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c7 {
+.c8 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -923,7 +860,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
           class="c5"
         >
           <button
-            class="sc-pscky c6"
+            class="c6 c7"
           >
             ?
           </button>
@@ -932,7 +869,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
           class="c5"
         >
           <button
-            class="sc-pscky c6"
+            class="c6 c7"
           >
             x
           </button>
@@ -940,7 +877,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
       </ul>
     </div>
     <div
-      class="c7"
+      class="c8"
     >
       Hello
     </div>
@@ -949,6 +886,31 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 `;
 
 exports[`<Modal /> Snapshots should match snapshot with width and height props 1`] = `
+.c6 {
+  background-color: #c3c7cb;
+  padding: 7px 20px 5px;
+  border: none;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+}
+
+.c6:disabled {
+  color: #868a8e;
+}
+
+.c6:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -5px;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
+}
+
+.c6:active {
+  padding: 8px 20px 4px;
+  outline: 1px dotted #000000;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+}
+
 .c2 {
   display: block;
   background-repeat: no-repeat;
@@ -1018,12 +980,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   margin-right: 0;
 }
 
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+.c7 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -1031,33 +988,16 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   font-size: 10px;
 }
 
-.c6:disabled {
-  color: #868a8e;
-}
-
-.c6:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c6:active {
+.c7:active {
   padding: 1px 0 0 1px;
   outline: none;
 }
 
-.c6:focus {
+.c7:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c7 {
+.c8 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1101,7 +1041,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
           class="c5"
         >
           <button
-            class="sc-pscky c6"
+            class="c6 c7"
           >
             ?
           </button>
@@ -1110,7 +1050,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
           class="c5"
         >
           <button
-            class="sc-pscky c6"
+            class="c6 c7"
           >
             x
           </button>
@@ -1118,7 +1058,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
       </ul>
     </div>
     <div
-      class="c7"
+      class="c8"
     >
       Hello
     </div>
