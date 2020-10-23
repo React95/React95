@@ -8,7 +8,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-[![npm version](https://badge.fury.io/js/%40react95%2Fcore.svg)](https://www.npmjs.com/package/@react95/core)
+[![npm version](https://badge.fury.io/js/%40react95%2Fcore.svg)](https://www.npmjs.com/package/@react95/core) [![Join the chat at https://gitter.im/React95/React95](https://badges.gitter.im/React95/React95.svg)](https://gitter.im/React95/React95?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 React95 is a component library inspired on the **Windows 95** UI design.
 
