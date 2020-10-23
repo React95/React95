@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.5](https://github.com/React95/React95/compare/@react95/core@2.11.4...@react95/core@2.11.5) (2020-10-23)
+
+
+### Bug Fixes
+
+* **alert.tsx:** alert threw an error when used with next.js ([47f60ad](https://github.com/React95/React95/commit/47f60ad68689fde6c5d057032f74a051bca24b27))
+* **alert.tsx:** nextjs bug with window object being undefined ([f8ef975](https://github.com/React95/React95/commit/f8ef97538b7f809e408fcd253ba9cb41326c7569))
+
+
+
+
+
 ## [2.11.4](https://github.com/React95/React95/compare/@react95/core@2.11.3...@react95/core@2.11.4) (2020-10-17)
 
 **Note:** Version bump only for package @react95/core
