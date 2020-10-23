@@ -186,6 +186,16 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "belakm",
+      "name": "Mitja Belak",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13392444?v=4",
+      "profile": "https://github.com/belakm",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "skipCi": true,
