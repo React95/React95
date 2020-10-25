@@ -1,10 +1,4 @@
-export interface IColors {
-  grays: Array<string>;
-  black: string;
-  white: string;
-  primary: string;
-  secondary: string;
-}
+import { DefaultTheme, IBorderStyles, IBorderWidth, IColors, IShadows, ISpace } from 'styled-components'
 
 export class Colors implements IColors {
   grays: Array<string>;
@@ -36,8 +30,6 @@ const colors = new Colors({
   secondary: '#55aaaa',
 });
 
-interface ISpace extends Array<number> {}
-
 const space: ISpace = [
   0,
   1,
@@ -62,19 +54,8 @@ const space: ISpace = [
   20,
 ];
 
-export interface IBorderWidth extends Array<number> {}
-
 const borderWidths: IBorderWidth = [0, 1];
-
-export interface IBorderStyles extends Array<string> {}
-
 const borderStyles: IBorderStyles = ['none', 'solid'];
-
-export interface IShadows {
-  out: string;
-  in: string;
-  input: string;
-}
 
 const shadows: IShadows = {
   out: `inset 0.5px 0.5px 0px 0.5px ${colors.white},
@@ -116,16 +97,7 @@ export class ZIndexes extends Array<number> {
 const zIndices: ZIndexes = new ZIndexes([0, 1, 2]);
 [, zIndices.modal, zIndices.taskbar] = zIndices;
 
-export interface ITheme {
-  colors: IColors;
-  space: Array<number>;
-  shadows: IShadows;
-  borderWidths: IBorderWidth;
-  borderStyles: IBorderStyles;
-  zIndices: ZIndexes;
-}
-
-const theme: ITheme = {
+const theme: DefaultTheme = {
   colors,
   space,
   shadows,

@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { ThemeProvider as SCThemeProvider } from 'styled-components';
+import { ThemeProvider as SCThemeProvider, DefaultTheme } from 'styled-components';
 
-import { ModalProvider } from '../Modal';
-import mainTheme, { ITheme } from './theme';
+import mainTheme from './themes/default';
 
 export type ThemeProviderProps = {
-  theme?: ITheme;
+  theme?: DefaultTheme;
 };
 
 const ThemeProvider: React.FunctionComponent<ThemeProviderProps> = ({
@@ -13,7 +12,7 @@ const ThemeProvider: React.FunctionComponent<ThemeProviderProps> = ({
   theme = mainTheme,
 }) => (
   <SCThemeProvider theme={theme}>
-    <ModalProvider>{children}</ModalProvider>
+    {children}
   </SCThemeProvider>
 );
 

@@ -17,7 +17,7 @@ import TaskBar from './TaskBar';
 import TextArea from './TextArea';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
-import ThemeProvider from './ThemeProvider';
+import ThemeProvider from './ThemeProvider/index';
 import Video from './Video';
 
 export {

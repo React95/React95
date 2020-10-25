@@ -53,7 +53,7 @@
     "ts-jest": "^26.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
+    "storybook": "start-storybook -p 6006 -s ./components/shared/assets --debug-webpack",
     "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "cross-env NODE_ENV=production tsc --build ./tsconfig.production.json",
