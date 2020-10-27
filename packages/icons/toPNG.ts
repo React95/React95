@@ -6,7 +6,7 @@ const DEST_FOLDER = './src/png';
 
 const files = fs.readdirSync(ICONS_FOLDER);
 
-files.slice(0,1).forEach(icon => {
+files.forEach(icon => {
   const buffer = fs.readFileSync(`${ICONS_FOLDER}/${icon}`);
 
   ICO.parse(buffer, 'image/png').then(images => {
