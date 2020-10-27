@@ -28,6 +28,10 @@
     "prebuild": "rimraf dist",
     "postbuild": "cp -R src/icons dist",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js",
+    "toPNG": "ts-node toPNG.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0"
   }
 }
