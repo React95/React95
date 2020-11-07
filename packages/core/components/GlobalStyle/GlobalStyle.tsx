@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { createScrollbars } from '../shared-style/Scrollbar'
 
 import woff2 from '../shared/assets/font/MS-Sans-Serif.woff2';
 import woff from '../shared/assets/font/MS-Sans-Serif.woff';
@@ -8,12 +9,6 @@ import videowoff2 from '../shared/assets/font/React95Video-Numbers.woff2';
 import videowoff from '../shared/assets/font/React95Video-Numbers.woff';
 import videottf from '../shared/assets/font/React95Video-Numbers.ttf';
 import videoeot from '../shared/assets/font/React95Video-Numbers.eot';
-
-import pattern from '../shared/assets/pattern/dropdown.png';
-import upcaret from '../shared/assets/pattern/upcaret.svg';
-import downcaret from '../shared/assets/pattern/downcaret.svg';
-import leftcaret from '../shared/assets/pattern/leftcaret.svg';
-import rightcaret from '../shared/assets/pattern/rightcaret.svg';
 
 import auto from '../shared/assets/cursors/Arrow.png';
 import text from '../shared/assets/cursors/Text.png';
@@ -82,69 +77,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  ::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
-    background: url('${pattern}');
-    background-size: 3px 3px;
-  }
-
-  ::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
-
-  ::-webkit-scrollbar-button {
-    width: 15px;
-    height: 15px;
-    background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-
-    background-size: 10px 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  ::-webkit-scrollbar-button:end:decrement,
-  ::-webkit-scrollbar-button:start:increment {
-    display: none;
-  }
-
-  ::-webkit-scrollbar-button:vertical {
-    background-size: 6px 3px;
-  }
-
-  ::-webkit-scrollbar-button:horizontal {
-    background-size: 3px 6px;
-  }
-
-  ::-webkit-scrollbar-button:vertical:start:decrement {
-    background-image: url('${upcaret}');
-  }
-
-  ::-webkit-scrollbar-button:vertical:end:increment {
-    background-image: url('${downcaret}');
-  }
-
-  ::-webkit-scrollbar-button:horizontal:start:decrement {
-    background-image: url('${leftcaret}');
-  }
-
-  ::-webkit-scrollbar-button:horizontal:end:increment {
-    background-image: url('${rightcaret}');
-  }
-
-  ::-webkit-resizer {
-    /* TODO? */
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-  }
+  // scrollbar
+  ${createScrollbars()}
 
   html, .auto, *       { cursor: url('${auto}'), auto; }
   .default             { cursor: url('${auto}'), default; }

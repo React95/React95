@@ -1,50 +1,24 @@
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import border, { createBorder } from '../shared-style/Border'
 
 const trackStyle = css`
   width: 100%;
   height: 4px;
 
-  background: ${th('colors.black')};
+  background: ${({ theme }) => theme.colors.borderDarkest};
 
   cursor: pointer;
-
-  border-top: 1;
-  border-top-color: grays.1;
-  border-right: 2;
-  border-right-color: ${th('colors.white')};
-  border-bottom: 1;
-  border-bottom-color: grays.0;
-  border-left: 2;
-  border-left-color: ${th('colors.white')};
-
-  box-shadow: 0px 1px 0px 0px ${th('colors.white')};
+  
+  ${border({ direction: 'intrude'})}
 `;
 
 const thumbStyle = css`
   width: 12px;
   height: 20px;
-
-  background-color: bg;
-
+  background-color: ${({theme}) => theme.colors.material};
   cursor: pointer;
-
-  margin-top: -${th('space.8')}px;
-
-  border-top: 1;
-  border-top-color: ${th('colors.white')};
-  border-right: 1;
-  border-right-color: ${th('colors.black')};
-  border-bottom: 1;
-  border-bottom-color: ${th('colors.black')};
-  border-left: 1;
-  border-left-color: ${th('colors.white')};
-
-  box-shadow: inset 0px -1px 0px ${th('colors.grays.3')},
-    inset -1px 0px 0px ${th('colors.grays.3')},
-    inset 0px 1px 0px ${th('colors.grays.0')},
-    inset 1px 0px 0px ${th('colors.grays.0')};
-
+  margin-top: -8px;
+  ${border()}
   -webkit-appearance: none;
 `;
 
@@ -69,7 +43,7 @@ const Range = styled.input.attrs({
   }
 
   &:focus::-webkit-slider-runnable-track {
-    background: ${th('colors.black')};
+    background: ${({ theme }) => theme.colors.borderDarkest};
   }
 
   &::-moz-range-track {

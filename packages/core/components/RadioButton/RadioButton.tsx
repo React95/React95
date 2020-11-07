@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import {
   radioChecked,
@@ -67,8 +66,8 @@ const Label = styled.label<Pick<RadioButtonProps, 'disabled'>>`
   ${({ disabled }) =>
     disabled &&
     css`
-      color: ${th('colors.grays.3')};
-      text-shadow: 0.5px 0.5px ${th('colors.grays.1')};
+      color: ${({ theme }) => theme.colors.borderDark};
+      text-shadow: 0.5px 0.5px ${({ theme }) => theme.colors.borderLight};
     `}
 `;
 

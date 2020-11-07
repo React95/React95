@@ -34,9 +34,9 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
     "@react95/clippy": "^0.1.1",
-    "@storybook/addon-essentials": "^6.0.21",
-    "@storybook/addons": "^6.0.21",
-    "@storybook/react": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.27",
+    "@storybook/addons": "^6.0.27",
+    "@storybook/react": "^6.0.27",
     "@storybook/storybook-deployer": "^2.8.6",
     "@storybook/theming": "^6.0.21",
     "@testing-library/jest-dom": "^5.5.0",
@@ -49,11 +49,12 @@
     "fs-extra": "^9.0.0",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
+    "storybook-addon-styled-components-themes": "^0.0.1",
     "styled-components": "^5.1.0",
     "ts-jest": "^26.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./components/shared/assets --debug-webpack",
+    "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
     "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "cross-env NODE_ENV=production tsc --build ./tsconfig.production.json",

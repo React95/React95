@@ -4,6 +4,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import Alert, { DialogImages } from '../components/Alert/Alert';
 import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
+import { ModalProvider } from '../components/Modal';
 
 export default {
   title: 'Alert',
@@ -29,15 +30,17 @@ export const Simple = () => {
         />
       </div>
       <Button onClick={handleOpenAlert}>Trigger Alert</Button>
-      {showAlert && (
-        <Alert
-          title="Windows Networking"
-          type={type}
-          message="The Windows password you typed is incorrect."
-          closeAlert={handleCloseAlert}
-          buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
-        />
-      )}
+      <ModalProvider>
+        {showAlert && (
+          <Alert
+            title="Windows Networking"
+            type={type}
+            message="The Windows password you typed is incorrect."
+            closeAlert={handleCloseAlert}
+            buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
+          />
+        )}
+      </ModalProvider>
     </>
   );
 };

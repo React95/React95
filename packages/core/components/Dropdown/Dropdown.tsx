@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import caret from '../shared/assets/pattern/downcaret.png';
 
@@ -22,11 +21,9 @@ const Wrapper = styled.div`
     right: 1px;
     top: 2px;
 
-    background-color: bg;
-    box-shadow: inset 0.5px 0.7px 0px 0.7px ${th('colors.grays.2')},
-      inset -1px 0px 0 1px ${th(
-        'colors.grays.3',
-      )}, inset 1.5px 1.5px 0px 1.5px ${th('colors.white')};
+    background-color: ${({theme}) => theme.colors.material};
+    box-shadow: inset 0.5px 0.7px 0px 0.7px ${({ theme }) => theme.colors.borderLight},
+      inset -1px 0px 0 1px ${({ theme }) => theme.colors.borderLight}, inset 1.5px 1.5px 0px 1.5px ${({ theme }) => theme.colors.borderLightest};
 
     border-right: 1;
     border-bottom: 1;
@@ -50,13 +47,13 @@ const Select = styled.select`
   background-color: white;
 
   border-left: 1;
-  border-left-color: grays.3;
+  border-left-color: ${({ theme }) => theme.colors.borderDarkest};
   border-top: 1;
-  border-top-color: grays.3;
+  border-top-color: ${({ theme }) => theme.colors.borderDarkest};
 
-  box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
-    inset 1px 1px 0 0 ${th('colors.black')},
-    0.5px 0.5px 0 0.5px ${th('colors.white')};
+  box-shadow: inset -1px -1px 0 0 ${({ theme }) => theme.colors.borderLight},
+    inset 1px 1px 0 0 ${({ theme }) => theme.colors.borderDarkest},
+    0.5px 0.5px 0 0.5px ${({ theme }) => theme.colors.borderLightest};
 
   -webkit-appearance: none;
   -moz-appearance: none;

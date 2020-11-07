@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider as SCThemeProvider, DefaultTheme } from 'styled-components';
 
-import mainTheme from './themes/default';
+import mainTheme from './themes/win95';
 
 export type ThemeProviderProps = {
   theme?: DefaultTheme;

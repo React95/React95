@@ -67,7 +67,7 @@ const Alert: React.FC<AlertProps> = ({
   closeAlert,
   ...rest
 }) => (
-  <Modal closeModal={closeAlert} height="120" {...rest}>
+  <Modal closeModal={closeAlert} {...rest}>
     <Dialog>
       <Dialog.Image type={type} />
       <Dialog.Message>{message}</Dialog.Message>

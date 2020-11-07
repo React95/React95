@@ -1,19 +1,22 @@
 import * as React from 'react';
 
-import ModalContext, { Windows } from './ModalContext';
+import ModalContext, { IWindow } from './ModalContext';
 
 export type ModalProviderProps = {};
 
 const ModalProvider: React.FunctionComponent<ModalProviderProps> = ({
   children,
 }) => {
-  const [windows, setWindows] = React.useState<Array<Windows>>([]);
+  const [windows, setWindows] = React.useState<Array<IWindow>>([]);
   const [activeWindow, setActiveWindow] = React.useState<string>();
 
-  const addWindows = (window: Windows) =>
+  const addWindows = (window: IWindow) => {
+    console.log("hello", window)
     setWindows(state => [...state, window]);
-  const removeWindows = (title: string) =>
-    setWindows(state => state.filter(w => w.title !== title));
+    setActiveWindow(window.id)
+  }
+  const removeWindows = (id: string) =>
+    setWindows(state => state.filter(w => w.id !== id));
 
   return (
     <ModalContext.Provider

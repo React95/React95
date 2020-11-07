@@ -2,23 +2,23 @@ import * as React from 'react';
 import styled from '@xstyled/styled-components';
 
 import Tab, { TabProps } from './Tab';
-import Frame from '../Frame';
+import Panel, { StyledPanel } from './../Panel/Panel';
 
-const Navbar = styled(Frame)`
+const StyledTabs = styled.section`
+  display: inline-block;
+  position: relative;
+`
+
+const Navbar = styled(StyledPanel)`
+  position: relative;
+  z-index: 1;
   display: flex;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 3px;
+  margin: 0 0 -5px 0;
   border: none;
   box-shadow: none;
   background-color: unset;
 `;
-
-const NavContainer = styled(Frame)`
-  padding: 12;
-  box-shadow: out;
-`;
-
-NavContainer.displayName = 'NavContainer';
 
 const If = ({ condition, children }: { condition: Boolean; children: any }) =>
   condition && children;
@@ -45,8 +45,8 @@ const Tabs: React.FC<TabsProps> = ({
   );
 
   return (
-    <>
-      <Navbar style={style} {...rest} as="ol">
+    <StyledTabs>
+      <Navbar style={style} {...rest}>
         {React.Children.map(children, (child: React.ReactElement<TabProps>) => {
           const { title, disabled } = child.props;
 
@@ -68,14 +68,14 @@ const Tabs: React.FC<TabsProps> = ({
         })}
       </Navbar>
 
-      <NavContainer style={style}>
+      <Panel style={style} shadow='extrude'>
         {React.Children.map(children, (child: React.ReactElement<TabProps>) => (
           <If condition={child.props.title === activeTab}>
             {child.props.children}
           </If>
         ))}
-      </NavContainer>
-    </>
+      </Panel>
+    </StyledTabs>
   );
 };
 

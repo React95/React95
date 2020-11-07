@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import Icon, { IconProps } from '../Icon/Icon';
 import { IListProps } from './List';
@@ -16,15 +15,15 @@ const Item = styled.li<{
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 2 6;
+  padding: 4px 6px 3px;
 
   i {
     margin-right: 10;
   }
 
   &:hover {
-    background-color: primary;
-    color: ${th('colors.white')};
+    background-color: ${({ theme }) => theme.colors.headerBackground};
+    color: ${({ theme }) => theme.colors.borderLightest};
   }
 
   ul {
@@ -32,7 +31,7 @@ const Item = styled.li<{
     position: absolute;
     top: -2px;
     left: 97%;
-    color: ${th('colors.black')};
+    color: ${({ theme }) => theme.colors.borderDarkest};
 
     i {
       width: 18px;
@@ -42,7 +41,7 @@ const Item = styled.li<{
   }
 
   svg {
-    fill: ${th('colors.white')};
+    fill: ${({ theme }) => theme.colors.borderLightest};
   }
 
   ${({ icon }) => !icon && 'padding-left: 26px;'};
@@ -57,7 +56,7 @@ const Item = styled.li<{
         right: 8px;
 
         content: '';
-        background-color: ${th('colors.black')};
+        background-color: ${({ theme }) => theme.colors.borderDarkest};
         mask-image: url('${rightcaret}');
         mask-position: center center;
         mask-size: 5px 8px;
@@ -66,7 +65,7 @@ const Item = styled.li<{
 
       &:hover {
         &:after {
-          background-color: ${th('colors.white')};
+          background-color: ${({ theme }) => theme.colors.borderLightest};
         }
 
         ul {
@@ -78,10 +77,12 @@ const Item = styled.li<{
 
 export type ListItemProps = {
   icon?: IconProps['name'];
+  small?: boolean
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem: React.FC<ListItemProps> = ({
   icon,
+  small,
   children = [],
   ...rest
 }) => (
@@ -95,7 +96,7 @@ const ListItem: React.FC<ListItemProps> = ({
         ).some(child => child),
     )}
   >
-    {icon && <Icon name={icon} />}
+    {icon && <Icon name={icon} size={ small ? 16 : 32} />}
     {children}
   </Item>
 );

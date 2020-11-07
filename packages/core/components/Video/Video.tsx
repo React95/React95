@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import Btn from '../shared-style/Btn';
 import Frame, { FrameProps } from '../Frame/Frame';
@@ -39,7 +38,7 @@ const ControlBtn = styled(Btn)`
       css`
         padding: 4;
         svg {
-          fill: ${th('colors.grays.3')};
+          fill: ${({ theme }) => theme.colors.borderDark};
           border-bottom: 1px solid white;
           border-right: 1px solid white;
         }
@@ -51,12 +50,12 @@ const TitleBar = styled.div`
   height: 18px;
   margin-bottom: 2;
 
-  color: ${th('colors.white')};
+  color: ${({ theme }) => theme.colors.borderLightest};
   padding: 0 2;
 
   display: flex;
   align-items: center;
-  background-color: primary;
+  ${({ theme }) => theme.colors.headerBackground};
 `;
 
 const Controls = styled.div`
@@ -71,7 +70,7 @@ const CountDownContainer = styled(Frame)`
   margin-bottom: 4;
 
   box-shadow: in;
-  background-color: ${th('colors.black')};
+  background-color: ${({ theme }) => theme.colors.borderDarkest};
   height: 50px;
 
   color: white;

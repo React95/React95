@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import Frame, { FrameProps } from '../Frame/Frame';
 import Icon from '../Icon';
@@ -33,8 +32,8 @@ const Button = styled(Frame)<Omit<WindowButtonProps, 'icon'>>`
   ${({ active, small }) =>
     active && small
       ? css`
-          outline: ${th('space.1')}px dotted ${th('colors.black')};
-          outline-offset: -${th('space.4')}px;
+          outline: ${({ theme }) => theme.space[1]}px dotted ${({ theme }) => theme.colors.borderDarkest};
+          outline-offset: -${({ theme }) => theme.space[4]}px;
           padding-top: 4;
           padding-right: 2;
           padding-bottom: 0;
@@ -56,7 +55,6 @@ const WindowButton: React.FC<WindowButtonProps> = ({
     {...(active
       ? {
           boxShadow: 'in',
-          bg: small ? undefined : 'grays.0',
         }
       : {
           boxShadow: 'out',

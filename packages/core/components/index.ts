@@ -3,6 +3,7 @@ import { Tab, Tabs } from './Tabs';
 import Alert from './Alert';
 import Button from './Button';
 import Checkbox from './Checkbox';
+import Divider from './Divider'
 import Dropdown from './Dropdown';
 import Fieldset from './Fieldset';
 import Frame from './Frame';
@@ -17,13 +18,14 @@ import TaskBar from './TaskBar';
 import TextArea from './TextArea';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
-import ThemeProvider from './ThemeProvider/index';
+import ThemeProvider from './ThemeProvider';
 import Video from './Video';
 
 export {
   Alert,
   Button,
   Checkbox,
+  Divider,
   Dropdown,
   Fieldset,
   Frame,
