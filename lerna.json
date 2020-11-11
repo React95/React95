@@ -5,7 +5,13 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["**/*.unit.test.jsx", "**/*.md"]
+      "ignoreChanges": [
+        "**/*.unit.test.tsx",
+        "**/*.md",
+        "stories",
+        ".storybook",
+        "package.json"
+      ]
     },
     "version": {
       "conventionalCommits": true,
