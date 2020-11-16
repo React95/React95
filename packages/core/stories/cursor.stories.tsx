@@ -79,3 +79,7 @@ export const Simple = () => (
     ))}
   </CursorList>
 );
+
+Simple.parameters = {
+  design: { disabled: true },
+};
