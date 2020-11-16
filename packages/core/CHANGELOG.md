@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/React95/React95/compare/@react95/core@2.11.5...@react95/core@2.12.0) (2020-11-16)
+
+
+### Features
+
+* **frame:** add overflow as prop ([a39d182](https://github.com/React95/React95/commit/a39d18226c89655bdc7774a220d54684c0c7b956))
+
+
+
+
+
 ## [2.11.5](https://github.com/React95/React95/compare/@react95/core@2.11.4...@react95/core@2.11.5) (2020-10-23)
 
 
