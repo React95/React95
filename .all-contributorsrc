@@ -196,6 +196,16 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "janneilkka",
+      "name": "janneilkka",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/49063172?v=4",
+      "profile": "http://janneilkka.com",
+      "contributions": [
+        "design",
+        "ideas"
+      ]
     }
   ],
   "skipCi": true,

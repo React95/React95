@@ -68,6 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="http://insafkhamzin.com"><img src="https://avatars3.githubusercontent.com/u/27154217?v=4" width="100px;" alt=""/><br /><sub><b>Insaf</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=InsafKhamzin" title="Documentation">📖</a></td>
     <td align="center"><a href="https://theoomoregbee.me"><img src="https://avatars3.githubusercontent.com/u/10440327?v=4" width="100px;" alt=""/><br /><sub><b>Theophilus Omoregbee</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=theoomoregbee" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Atheoomoregbee" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/belakm"><img src="https://avatars2.githubusercontent.com/u/13392444?v=4" width="100px;" alt=""/><br /><sub><b>Mitja Belak</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Abelakm" title="Bug reports">🐛</a> <a href="https://github.com/React95/React95/commits?author=belakm" title="Code">💻</a></td>
+    <td align="center"><a href="http://janneilkka.com"><img src="https://avatars3.githubusercontent.com/u/49063172?v=4" width="100px;" alt=""/><br /><sub><b>janneilkka</b></sub></a><br /><a href="#design-janneilkka" title="Design">🎨</a> <a href="#ideas-janneilkka" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
