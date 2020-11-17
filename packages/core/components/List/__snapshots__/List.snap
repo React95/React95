@@ -21,7 +21,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-  padding: 2px 6px;
+  padding: 4px 6px 3px;
 }
 
 .c1 i {
@@ -29,8 +29,8 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c1:hover {
-  background-color: #000e7a;
-  color: #ffffff;
+  background-color: #000080;
+  color: #fefefe;
 }
 
 .c1 ul {
@@ -38,7 +38,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   position: absolute;
   top: -2px;
   left: 97%;
-  color: #000000;
+  color: #0a0a0a;
 }
 
 .c1 ul i {
@@ -48,28 +48,24 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c1 svg {
-  fill: #ffffff;
+  fill: #0a0a0a;
 }
 
 .c1:after {
   position: absolute;
-  width: 5px;
-  height: 8px;
+  width: 17px;
+  height: 17px;
   right: 8px;
   content: '';
-  background-color: #000000;
-  -webkit-mask-image: url('test-file-stub');
-  mask-image: url('test-file-stub');
-  -webkit-mask-position: center center;
-  mask-position: center center;
-  -webkit-mask-size: 5px 8px;
-  mask-size: 5px 8px;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIxIiB3aWR0aD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxnIHRyYW5zZm9ybT0icm90YXRlKDI3MCAxMyAxMykiPgogICAgICA8cG9seWdvbiBmaWxsPSIjMGEwYTBhIiBwb2ludHM9IjYsMTAgMjAsMTAgMTMsMTciLz4KICAgIDwvZz4KICA8L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 0 0;
 }
 
 .c1:hover:after {
-  background-color: #ffffff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIxIiB3aWR0aD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxnIHRyYW5zZm9ybT0icm90YXRlKDI3MCAxMyAxMykiPgogICAgICA8cG9seWdvbiBmaWxsPSIjZmVmZWZlIiBwb2ludHM9IjYsMTAgMjAsMTAgMTMsMTciLz4KICAgIDwvZz4KICA8L3N2Zz4=);
 }
 
 .c1:hover ul {
@@ -87,7 +83,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-  padding: 2px 6px;
+  padding: 4px 6px 3px;
 }
 
 .c3 i {
@@ -95,8 +91,8 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c3:hover {
-  background-color: #000e7a;
-  color: #ffffff;
+  background-color: #000080;
+  color: #fefefe;
 }
 
 .c3 ul {
@@ -104,7 +100,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   position: absolute;
   top: -2px;
   left: 97%;
-  color: #000000;
+  color: #0a0a0a;
 }
 
 .c3 ul i {
@@ -114,28 +110,50 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c3 svg {
-  fill: #ffffff;
+  fill: #0a0a0a;
 }
 
 .c4 {
   height: 1px;
   border-top: 1px solid;
-  border-top-color: #868a8e;
+  border-top-color: #848584;
   border-bottom: 1px solid;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #fefefe;
   width: 98%;
   margin-left: 2px;
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   padding: 5px 20px 6px;
   border: none;
   margin: 0;
   padding: 2px;
   list-style: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  border-top-color: #dfdfdf;
+  border-right-color: #0a0a0a;
+  border-bottom-color: #0a0a0a;
+  border-left-color: #dfdfdf;
   width: 200px;
+}
+
+.c0:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: #fefefe;
+  border-right-color: #848584;
+  border-bottom-color: #848584;
+  border-left-color: #fefefe;
+  pointer-events: none;
 }
 
 <div>

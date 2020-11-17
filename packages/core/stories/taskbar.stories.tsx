@@ -7,6 +7,7 @@ import List from '../components/List';
 import { Tree } from '../components';
 import { TreeProps } from '../components/Tree/Tree';
 import { icons } from '../components/Tree/Node';
+import Panel from '../components/Panel/Panel';
 
 const treeNodes: TreeProps = {
   data: [
@@ -43,7 +44,33 @@ const treeNodes: TreeProps = {
           ],
         },
       ],
-    }
+    },
+    {
+      id: 3,
+      label: 'Other',
+      children: [
+        {
+          id: 0,
+          label: 'Fira Code.ttf',
+          iconName: icons.FILE_FONT,
+        },
+        {
+          id: 1,
+          label: 'Journal.txt',
+          iconName: icons.FILE_TEXT,
+        },
+      ],
+    },
+    {
+      id: 4,
+      label: 'config.cfg',
+      iconName: icons.FILE_SETTINGS,
+    },
+    {
+      id: 5,
+      label: 'random_file',
+      iconName: icons.FILE_UNKNOWN,
+    },
   ],
 };
 
@@ -70,7 +97,9 @@ export const Simple = () => {
             width="300"
             height="200"
           >
-            <Tree {...treeNodes}></Tree>
+            <Panel shadow="none" padding="0">
+              <Tree {...treeNodes}></Tree>
+            </Panel>
           </Modal>
         )}
 
@@ -79,18 +108,37 @@ export const Simple = () => {
             defaultPosition={{ x: 50, y: 50 }}
             width="300"
             height="200"
-            icon="reader_closed"
-            title="Local Disk (C:)"
+            icon="notepad"
+            title="Notepad"
             closeModal={closeSecond}
-          />
+          >
+            <Panel asCanvas={true}>
+              On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure of the moment, so blinded by desire, that they cannot
+              foresee the pain and trouble that are bound to ensue; and equal
+              blame belongs to those who fail in their duty through weakness of
+              will, which is the same as saying through shrinking from toil and
+              pain. These cases are perfectly simple and easy to distinguish. In
+              a free hour, when our power of choice is untrammelled and when
+              nothing prevents our being able to do what we like best, every
+              pleasure is to be welcomed and every pain avoided. But in certain
+              circumstances and owing to the claims of duty or the obligations
+              of business it will frequently occur that pleasures have to be
+              repudiated and annoyances accepted. The wise man therefore always
+              holds in these matters to this principle of selection: he rejects
+              pleasures to secure other greater pleasures, or else he endures
+              pains to avoid worse pains.
+            </Panel>
+          </Modal>
         )}
       </ModalProvider>
 
       <TaskBar
         list={
           <List>
-            <List.Item icon="reader_closed" onClick={() => toggleSecond(true)}>
-              Local Disk (C:)
+            <List.Item icon="notepad" onClick={() => toggleSecond(true)}>
+              Notepad
             </List.Item>
             <List.Item
               icon="windows_explorer"

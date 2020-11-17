@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from '@xstyled/styled-components';
+import border from '../shared-style/Border';
 
 export type ProgressBarProps = {
   width?: number;
@@ -8,22 +9,19 @@ export type ProgressBarProps = {
 
 const Wrapper = styled.div<Pick<ProgressBarProps, 'width'>>`
   width: ${({ width }) => width}px;
-  height: 20px;
+  height: 21px;
   position: relative;
   text-align: center;
+  ${border({ direction: 'intrude', useBoxShadow: true })}
 `;
 
 const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
-  height: 20px;
-  line-height: 20px;
-  padding: 1px 0 0 5px;
+  width: ${({ width }) => (width || 4) - 4}px;
+  height: 17px;
+  line-height: 17px;
+  margin: 1px 0 0 1px;
   background: ${({ theme }) => theme.colors.borderLightest};
   color: ${({ theme }) => theme.colors.borderDarkest};
-  box-shadow: inset 1px 1px 0px 0px ${({ theme }) => theme.colors.borderDark},
-    inset 1px 1px 0px 1px ${({ theme }) => theme.colors.borderDarkest},
-    inset 0 0 0 1px ${({ theme }) => theme.colors.borderLight}, 
-    1px 1px 0 0px ${({ theme }) => theme.colors.borderLightest};
 `;
 
 const Container = styled.div<Pick<ProgressBarProps, 'percent'>>`
@@ -35,11 +33,10 @@ const Container = styled.div<Pick<ProgressBarProps, 'percent'>>`
 `;
 
 const Progress = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
+  width: ${({ width }) => (width || 4) - 4}px;
   height: 17px;
-  line-height: 18px;
-  margin-left: 2;
-  margin-top: 2;
+  line-height: 17px;
+  margin: 1px 0 0 1px;
   background-color: ${({ theme }) => theme.colors.headerBackground};
   color: ${({ theme }) => theme.colors.borderLightest};
 `;

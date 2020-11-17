@@ -11,7 +11,6 @@ import Divider from '../List/ListDivider';
 const VideoTag = styled.video<{ visible: boolean }>`
   width: 100%;
   padding: 2;
-
   display: ${({ visible }) => (visible ? 'block' : 'none')};
 `;
 
@@ -31,12 +30,10 @@ const ControlBtn = styled(Btn)`
   &:focus {
     width: 20px;
     height: 20px;
-    padding: 7;
-
+    padding: ${({ disabled }) => (disabled ? 7 : 4)}px;
     ${({ disabled }) =>
       disabled &&
       css`
-        padding: 4;
         svg {
           fill: ${({ theme }) => theme.colors.borderDark};
           border-bottom: 1px solid white;
@@ -49,13 +46,11 @@ const ControlBtn = styled(Btn)`
 const TitleBar = styled.div`
   height: 18px;
   margin-bottom: 2;
-
-  color: ${({ theme }) => theme.colors.borderLightest};
+  background: ${({ theme }) => theme.colors.headerBackground};
+  color: ${({ theme }) => theme.colors.headerText};
   padding: 0 2;
-
   display: flex;
   align-items: center;
-  ${({ theme }) => theme.colors.headerBackground};
 `;
 
 const Controls = styled.div`
@@ -100,8 +95,6 @@ const VideoRange = styled(Range)`
 
 const PlayOrPause = ({ playing }: { playing: boolean }) =>
   playing ? <Pause /> : <Play />;
-
-const arrayFy = (str: string | string[]) => ([] as string[]).concat(str);
 
 function updateProgressBar(
   player: HTMLVideoElement,
@@ -149,6 +142,7 @@ const Video: React.FC<VideoProps> = ({
   const player = React.useRef<HTMLVideoElement>(null);
   const progressRef = React.useRef<HTMLInputElement>(null);
 
+  const arrayFy = (str: string | string[]) => ([] as string[]).concat(str);
   const paths = arrayFy(src);
   const [pathname] = paths;
 
@@ -201,7 +195,7 @@ const Video: React.FC<VideoProps> = ({
       <TitleBar>
         <Icon name="mplayer_1_13" size={16} style={{ marginRight: 4 }} />
         {name || pathname.replace(/^.*[\\/]/, '')}
-        {!loadeddata && ' (Openning)'}
+        {!loadeddata && ' (Opening)'}
       </TitleBar>
       <VideoTag {...videoProps} visible={loadeddata} ref={player}>
         {paths.map(s => (
@@ -223,7 +217,7 @@ const Video: React.FC<VideoProps> = ({
             </VideoFont>
 
             <VideoFont style={{ height: 12 }}>
-              {!loadeddata && 'Openning'}
+              {!loadeddata && 'Opening'}
             </VideoFont>
           </ResetFrame>
           <ResetFrame display="flex" flexDirection="column" width="40%">
@@ -286,6 +280,7 @@ const Video: React.FC<VideoProps> = ({
               width: '70%',
               marginLeft: 20,
             }}
+            onChange={() => {}}
             onClick={e => {
               const { current: el } = progressRef;
               const { current: video } = player;

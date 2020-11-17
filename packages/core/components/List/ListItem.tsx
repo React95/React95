@@ -3,8 +3,7 @@ import styled, { css } from '@xstyled/styled-components';
 
 import Icon, { IconProps } from '../Icon/Icon';
 import { IListProps } from './List';
-
-import rightcaret from '../shared/assets/pattern/rightcaret.svg';
+import { createTriangleSVG } from './../shared-style/Scrollbar';
 
 const Item = styled.li<{
   icon?: string;
@@ -23,7 +22,7 @@ const Item = styled.li<{
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.headerBackground};
-    color: ${({ theme }) => theme.colors.borderLightest};
+    color: ${({ theme }) => theme.colors.headerText};
   }
 
   ul {
@@ -31,7 +30,7 @@ const Item = styled.li<{
     position: absolute;
     top: -2px;
     left: 97%;
-    color: ${({ theme }) => theme.colors.borderDarkest};
+    color: ${({ theme }) => theme.colors.materialText};
 
     i {
       width: 18px;
@@ -41,7 +40,7 @@ const Item = styled.li<{
   }
 
   svg {
-    fill: ${({ theme }) => theme.colors.borderLightest};
+    fill: ${({ theme }) => theme.colors.materialText};
   }
 
   ${({ icon }) => !icon && 'padding-left: 26px;'};
@@ -51,21 +50,23 @@ const Item = styled.li<{
     css`
       &:after {
         position: absolute;
-        width: 5px;
-        height: 8px;
+        width: 17px;
+        height: 17px;
         right: 8px;
 
         content: '';
-        background-color: ${({ theme }) => theme.colors.borderDarkest};
-        mask-image: url('${rightcaret}');
-        mask-position: center center;
-        mask-size: 5px 8px;
-        mask-repeat: no-repeat;
+        background-color: transparent;
+        background-image: ${({ theme }) =>
+          createTriangleSVG(theme.colors.materialText, 270)};
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 0 0;
       }
 
       &:hover {
         &:after {
-          background-color: ${({ theme }) => theme.colors.borderLightest};
+          background-image: ${({ theme }) =>
+            createTriangleSVG(theme.colors.headerText, 270)};
         }
 
         ul {
@@ -77,7 +78,7 @@ const Item = styled.li<{
 
 export type ListItemProps = {
   icon?: IconProps['name'];
-  small?: boolean
+  small?: boolean;
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem: React.FC<ListItemProps> = ({
@@ -96,7 +97,7 @@ const ListItem: React.FC<ListItemProps> = ({
         ).some(child => child),
     )}
   >
-    {icon && <Icon name={icon} size={ small ? 16 : 32} />}
+    {icon && <Icon name={icon} size={small ? 16 : 32} />}
     {children}
   </Item>
 );

@@ -34,6 +34,7 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
     "@react95/clippy": "^0.1.1",
+    "@react95/icons": "^0.4.2",
     "@storybook/addon-essentials": "^6.0.27",
     "@storybook/addons": "^6.0.27",
     "@storybook/react": "^6.0.27",

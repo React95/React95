@@ -1,76 +1,184 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tabs /> Snapshot should match snapshot 1`] = `
+.c4 {
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 25px;
+  padding: 5px 9px;
+  z-index: 2;
+  margin-top: 0px;
+  border: none;
+  background: #c6c6c6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #0a0a0a;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #fefefe;
+  border-right-color: #0a0a0a;
+  border-bottom-color: #0a0a0a;
+  border-left-color: #fefefe;
+  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.c4:focus,
+.c4:active {
+  outline: 0;
+}
+
+.c4:first-child {
+  border-top-left-radius: 5px;
+  margin-left: 0px;
+}
+
+.c4:first-child:after {
+  box-shadow: inset 1px 0 0 0#fefefe, inset 2px 0 0 0#dfdfdf, inset 0 1px 0 0 #c6c6c6, inset 0 -1px 0 0 #c6c6c6;
+}
+
+.c4:last-child {
+  border-top-right-radius: 5px;
+}
+
+.c4:after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  height: 2px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  box-shadow: inset 0 1px 0 0 #c6c6c6, inset 0 -1px 0 0 #c6c6c6;
+}
+
 .c2 {
-  list-style: none;
-  padding: 3px 6px;
-  background-color: #c3c7cb;
-  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -3px 1px 0 -1px #ffffff,-2px 0 0 -1px #ffffff, 2px 1px 0 -1px #868a8e,2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
-  margin-right: 2px;
-  margin-left: 2px;
-  margin-top: -2px;
-  margin-left: -2px;
-  margin-bottom: 1px;
-  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -0.5px 3px 0 0.5px #c3c7cb, -2px 2px 0 0 #ffffff,-2px 0 0 -1px #ffffff, 1px 2px 0 0 #868a8e,2px 0 0 -1px #000000, 2px 2px 0 0 #000000;
-}
-
-.c2:first-child {
-  margin-left: 4px;
-}
-
-.c2:first-child {
-  margin-left: 2px;
-}
-
-.c2 + li {
-  margin-left: 0;
-  box-shadow: inset 0 1px 0 0 #ffffff, 2px 1px 0 -1px #868a8e, 2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
-}
-
-.c0 {
-  background-color: #c3c7cb;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  margin: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 12px;
+  overflow-x: visible;
+  overflow-y: visible;
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+}
+
+.c2[direction="row"] > .c1 + .c1 {
+  border-left: 0;
+}
+
+.c2[direction='column'] > .c1 + .c1 {
+  border-top: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1px;
+  overflow-x: visible;
+  overflow-y: auto;
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #fefefe;
+  border-right-color: #0a0a0a;
+  border-bottom-color: #0a0a0a;
+  border-left-color: #fefefe;
+  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
+}
+
+.c5[direction="row"] > .c1 + .c1 {
+  border-left: 0;
+}
+
+.c5[direction='column'] > .c1 + .c1 {
+  border-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  overflow: auto;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c3 {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 3px;
+  margin: 0 0 -5px 0;
   border: none;
   box-shadow: none;
   background-color: unset;
 }
 
-.c3 {
-  padding: 12px;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-}
-
 <div>
-  <ol
-    class="c0 c1"
-    height="auto"
-    width="auto"
+  <section
+    class="c0"
   >
-    <li
-      class="c2"
+    <section
+      class="c1 c2 c3"
     >
-      example
-    </li>
-  </ol>
-  <div
-    class="c0 c3"
-    height="auto"
-    width="auto"
-  >
-    <p>
-      Example text
-    </p>
-  </div>
+      <button
+        class="c4"
+      >
+        example
+      </button>
+    </section>
+    <section
+      class="c1 c5"
+      direction="column"
+    >
+      <div
+        class="c6"
+      >
+        <p>
+          Example text
+        </p>
+      </div>
+    </section>
+  </section>
 </div>
 `;

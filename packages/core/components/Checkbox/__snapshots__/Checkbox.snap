@@ -9,11 +9,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
   position: absolute;
   left: 0;
   border-left: 1px solid;
-  border-left-color: #868a8e;
+  border-left-color: #0a0a0a;
   border-top: 1px solid;
-  border-top-color: #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
-  background-color: #ffffff;
+  border-top-color: #0a0a0a;
+  box-shadow: inset -1px -1px 0 0 #dfdfdf, inset 1px 1px 0 0 #0a0a0a, 0.5px 0.5px 0 0.5px #fefefe;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
@@ -44,17 +44,22 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
   padding: 0;
 }
 
+.c2:disabled {
+  color: #848584;
+  text-shadow: 1px 1px #fefefe;
+}
+
 .c2:checked + .c3 {
   background-image: url('test-file-stub');
 }
 
 .c2:checked .c1:disabled + .c3 {
   background-image: url('test-file-stub'),url('test-file-stub');
-  background-size: 7px 7px,1.9px 1.9px;
+  background-size: 7px 7px,2px 2px;
 }
 
 .c2:disabled + .c3 {
-  background-color: #d2d2d2;
+  background-color: #dfdfdf;
 }
 
 .c0 {
@@ -64,8 +69,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
   position: relative;
   margin: 4px 0;
   padding-left: 20px;
-  color: #868a8e;
-  text-shadow: 0.5px 0.5px #d2d2d2;
+  color: #0a0a0a;
+  text-shadow: 0.5px 0.5px #dfdfdf;
 }
 
 <div>
@@ -97,11 +102,11 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   position: absolute;
   left: 0;
   border-left: 1px solid;
-  border-left-color: #868a8e;
+  border-left-color: #0a0a0a;
   border-top: 1px solid;
-  border-top-color: #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
-  background-color: #ffffff;
+  border-top-color: #0a0a0a;
+  box-shadow: inset -1px -1px 0 0 #dfdfdf, inset 1px 1px 0 0 #0a0a0a, 0.5px 0.5px 0 0.5px #fefefe;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
@@ -132,17 +137,22 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   padding: 0;
 }
 
+.c2:disabled {
+  color: #848584;
+  text-shadow: 1px 1px #fefefe;
+}
+
 .c2:checked + .c3 {
   background-image: url('test-file-stub');
 }
 
 .c2:checked .c1:disabled + .c3 {
   background-image: url('test-file-stub'),url('test-file-stub');
-  background-size: 7px 7px,1.9px 1.9px;
+  background-size: 7px 7px,2px 2px;
 }
 
 .c2:disabled + .c3 {
-  background-color: #d2d2d2;
+  background-color: #dfdfdf;
 }
 
 .c0 {

@@ -4,10 +4,19 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
 .c0 {
   position: relative;
   width: 200px;
-  height: 20px;
+  height: 23px;
 }
 
 .c0:after {
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #dfdfdf;
+  border-right-color: #0a0a0a;
+  border-bottom-color: #0a0a0a;
+  border-left-color: #dfdfdf;
+  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  content: '';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,18 +29,17 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   height: 17px;
   font-size: 14px;
   line-height: 1.1;
-  content: '';
   pointer-events: none;
   position: absolute;
   right: 1px;
   top: 2px;
-  background-color: #c3c7cb;
-  box-shadow: inset 0.5px 0.7px 0px 0.7px #c3c7cb, inset -1px 0px 0 1px #868a8e,inset 1.5px 1.5px 0px 1.5px #ffffff;
+  background-color: #c6c6c6;
   border-right: 1px solid;
   border-bottom: 1px solid;
-  background-image: url('test-file-stub');
-  background-position: center center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIxIiB3aWR0aD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxnIHRyYW5zZm9ybT0icm90YXRlKDAgMTMgMTMpIj4KICAgICAgPHBvbHlnb24gZmlsbD0iIzBhMGEwYSIgcG9pbnRzPSI2LDEwIDIwLDEwIDEzLDE3Ii8+CiAgICA8L2c+CiAgPC9zdmc+);
   background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 0 0;
 }
 
 .c1 {
@@ -40,19 +48,20 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   border: none;
   border-radius: 0;
   width: 100%;
-  height: 20px;
+  height: 23px;
   padding: 3px;
   background-color: #ffffff;
-  border-left: 1px solid;
-  border-left-color: #868a8e;
-  border-top: 1px solid;
-  border-top-color: #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
+  color: #0a0a0a;
   -webkit-appearance: none;
   -moz-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #848584;
+  border-right-color: #fefefe;
+  border-bottom-color: #fefefe;
+  border-left-color: #848584;
+  box-shadow: inset -1px -1px 0 0px  #dfdfdf , inset 1px 1px 0 0px  #0a0a0a;
 }
 
 <div>

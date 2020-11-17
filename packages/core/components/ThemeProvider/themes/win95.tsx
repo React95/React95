@@ -1,7 +1,8 @@
-import { DefaultTheme, IColors } from 'styled-components'
-import BaseTheme, { generateShadows } from './baseTheme'
+import { DefaultTheme, IColors } from 'styled-components';
+import BaseTheme, { generateShadows } from './baseTheme';
 
-const colors : IColors = {anchor: '#1034a6',
+const colors: IColors = {
+  anchor: '#1034a6',
   anchorVisited: '#440381',
   borderDark: '#848584',
   borderDarkest: '#0a0a0a',
@@ -12,7 +13,7 @@ const colors : IColors = {anchor: '#1034a6',
   canvasTextDisabled: '#848584',
   canvasTextDisabledShadow: '#fefefe',
   canvasTextInvert: '#fefefe',
-  headerBackground: '#060084',
+  headerBackground: '#000080',
   headerNotActiveBackground: '#7f787f',
   headerNotActiveText: '#c6c6c6',
   headerText: '#fefefe',
@@ -22,14 +23,14 @@ const colors : IColors = {anchor: '#1034a6',
   materialTextDisabled: '#848584',
   materialTextDisabledShadow: '#fefefe',
   materialTextInvert: '#fefefe',
-  progress: '#060084',
-  tooltip: '#fefbcc'
+  progress: '#000080',
+  tooltip: '#fefbcc',
 };
 
 const theme: DefaultTheme = {
   ...BaseTheme,
   colors,
-  shadows: generateShadows(colors)
+  shadows: generateShadows(colors),
 };
 
 export default theme;

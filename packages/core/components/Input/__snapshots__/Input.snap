@@ -5,16 +5,15 @@ exports[`<Input /> Snapshots should match snapshot 1`] = `
   outline: none;
   border: none;
   cursor: text;
-  padding: 3px 3px 5px 3px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #868a8e;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #868a8e;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
+  padding: 4px 4px 5px 4px;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #848584;
+  border-right-color: #fefefe;
+  border-bottom-color: #fefefe;
+  border-left-color: #848584;
+  box-shadow: inset -1px -1px 0 0px  #dfdfdf , inset 1px 1px 0 0px  #0a0a0a;
 }
 
 <div>

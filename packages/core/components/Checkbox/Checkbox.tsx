@@ -5,8 +5,6 @@ import check from '../shared/assets/pattern/check.svg';
 import checkDisabled from '../shared/assets/pattern/check-disabled.svg';
 import bgpattern from '../shared/assets/pattern/dropdown.png';
 
-import Window from './../Window/index';
-
 const Icon = styled.span`
   width: 12px;
   height: 12px;
@@ -58,8 +56,9 @@ const Field = styled.input.attrs({
   }
 
   &:disabled {
-    color: ${({theme}) => theme.colors.canvasTextDisabled};
-    text-shadow: 1px 1px ${({ theme }) => theme.colors.canvasTextDisabledShadow};
+    color: ${({ theme }) => theme.colors.canvasTextDisabled};
+    text-shadow: 1px 1px ${({ theme }) =>
+      theme.colors.canvasTextDisabledShadow};
   }
 
   &:checked + ${Icon} {
@@ -105,7 +104,7 @@ export type CheckboxProps = {
 } & LabelProps &
   React.HTMLAttributes<HTMLInputElement>;
 
-const emptyFn = () => {}
+const emptyFn = () => {};
 const Checkbox: React.FC<CheckboxProps> = ({
   children,
   style,
@@ -116,7 +115,12 @@ const Checkbox: React.FC<CheckboxProps> = ({
   ...rest
 }) => (
   <Label style={style} disabled={disabled}>
-    <Field onChange={onChange} checked={checked} disabled={disabled} {...rest} />
+    <Field
+      onChange={onChange}
+      checked={checked}
+      disabled={disabled}
+      {...rest}
+    />
     <Icon />
     <Text>{children || label}</Text>
   </Label>

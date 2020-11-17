@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Video /> Snapshot should match snapshot 1`] = `
+.c0 {
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #dfdfdf;
+  border-right-color: #0a0a0a;
+  border-bottom-color: #0a0a0a;
+  border-left-color: #dfdfdf;
+  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div>
+  <section
+    class="c0"
+    direction="column"
+    height="auto"
+    width="320"
+  />
+</div>
+`;

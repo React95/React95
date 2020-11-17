@@ -1,7 +1,7 @@
-import { css } from 'styled-components'
-import  { scrollBarBorder } from './Border';
+import { css } from 'styled-components';
+import { scrollBarBorder } from './Border';
 
-const createTriangleSVG = (color : string, angle = 0) => {
+export const createTriangleSVG = (color: string, angle = 0) => {
   const svg = `<svg height="21" width="21" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g transform="rotate(${angle} 13 13)">
       <polygon fill="${color}" points="6,10 20,10 13,17"/>
@@ -15,7 +15,7 @@ const createTriangleSVG = (color : string, angle = 0) => {
 export const createHatchedBackground = ({
   mainColor = 'black',
   secondaryColor = 'transparent',
-  pixelSize = 2
+  pixelSize = 2,
 }) => css`
   background-image: ${[
     `linear-gradient(
@@ -31,7 +31,7 @@ export const createHatchedBackground = ({
       transparent 25%,
       transparent 75%,
       ${mainColor} 75%
-    )`
+    )`,
   ].join(',')};
   background-color: ${secondaryColor};
   background-size: ${`${pixelSize * 2}px ${pixelSize * 2}px`};
@@ -47,7 +47,7 @@ export const createScrollbars = (variant = 'default') => css`
     ${({ theme }) =>
       createHatchedBackground({
         mainColor: theme.colors.material,
-        secondaryColor: theme.colors.borderLightest
+        secondaryColor: theme.colors.borderLightest,
       })}
   }
   ::-webkit-scrollbar-thumb {
@@ -55,7 +55,7 @@ export const createScrollbars = (variant = 'default') => css`
     display: inline-block;
     background: ${({ theme }) => theme.colors.material};
     color: ${({ theme }) => theme.colors.materialText};
-    ${scrollBarBorder()}
+    ${scrollBarBorder({ useBoxShadow: true })}
   }
 
   ::-webkit-scrollbar-corner {
@@ -66,7 +66,7 @@ export const createScrollbars = (variant = 'default') => css`
     display: inline-block;
     background: ${({ theme }) => theme.colors.material};
     color: ${({ theme }) => theme.colors.materialText};
-    ${scrollBarBorder()}
+    ${scrollBarBorder({ useBoxShadow: true })}
     display: block;
     outline-offset: -2px;
     height: 17px;
@@ -78,7 +78,7 @@ export const createScrollbars = (variant = 'default') => css`
   ::-webkit-scrollbar-button:active,
   ::-webkit-scrollbar-button:active {
     background-position: 0 1px;
-    ${scrollBarBorder()}
+    ${scrollBarBorder({ useBoxShadow: true })}
   }
 
   ::-webkit-scrollbar-button:horizontal:increment:start,

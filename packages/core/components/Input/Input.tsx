@@ -5,9 +5,9 @@ import {
   PaddingProps,
   borders,
   BorderProps,
-  shadow,
   ShadowProps,
 } from 'styled-system';
+import border from '../shared-style/Border';
 
 export type InputProps = PaddingProps &
   BorderProps &
@@ -19,13 +19,9 @@ const Input = styled.input<InputProps>`
   border: none;
   cursor: text;
   padding: 4px 4px 5px 4px;
-  box-shadow: inset 1px 1px 0px 0px ${({ theme }) => theme.colors.borderDark},
-    inset 1px 1px 0px 1px ${({ theme }) => theme.colors.borderDarkest},
-    inset 0 0 0 1px ${({ theme }) => theme.colors.borderLight}, 
-    1px 1px 0 0px ${({ theme }) => theme.colors.borderLightest};
+  ${border({ useBoxShadow: true, direction: 'intrude' })}
   ${padding}
   ${borders}
-  ${shadow}
 `;
 
 export default Input;

@@ -20,7 +20,8 @@ const ModalWrapper = styled.div<WrapperProps>`
   flex-direction: column;
   position: fixed;
   top: 50px;
-  background-color: ${({theme}) => theme.colors.material};
+  background-color: ${({ theme, active }) =>
+    active ? theme.colors.material : theme.colors.materialDark};
   ${({ active }) =>
     active
       ? css`
@@ -30,14 +31,20 @@ const ModalWrapper = styled.div<WrapperProps>`
 `;
 
 interface TitleBarProps {
-  isActive?: boolean
+  isActive?: boolean;
 }
 const TitleBar = styled.div<TitleBarProps>`
   height: 20px;
-  padding: 2px 0 2px 2px;
+  padding: 1px;
+  margin-bottom: 2px;
   display: flex;
-  background-color: ${({isActive, theme}) => isActive ? theme.colors.headerBackground : theme.colors.headerNotActiveBackground  };
-  color: ${({isActive, theme}) => isActive ? theme.colors.headerText : theme.colors.headerNotActiveText };
+  align-items: center;
+  background-color: ${({ isActive, theme }) =>
+    isActive
+      ? theme.colors.headerBackground
+      : theme.colors.headerNotActiveBackground};
+  color: ${({ isActive, theme }) =>
+    isActive ? theme.colors.headerText : theme.colors.headerNotActiveText};
 `;
 
 const Title = styled.h1`
@@ -79,6 +86,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   overflow: auto;
+  padding: 2px;
 `;
 
 type ButtonWrapperProps = {
@@ -115,6 +123,7 @@ const MenuItem = styled.li<Pick<WrapperProps, 'active'>>`
   position: relative;
   padding-left: 6;
   padding-right: 6;
+  z-index: 1;
 
   user-select: none;
 
@@ -180,13 +189,13 @@ const ModalRenderer = (
     addWindows,
     removeWindows,
     setActiveWindow,
-    activeWindow: activeWindowId
+    activeWindow: activeWindowId,
   } = React.useContext(ModalContext);
-  const [ menuOpened, setMenuOpened ] = React.useState('');
-  const [ id ] = React.useState(() => Math.random().toString(16).slice(-4))
+  const [menuOpened, setMenuOpened] = React.useState('');
+  const [id] = React.useState(() => Math.random().toString(16).slice(-4));
 
   React.useEffect(() => {
-    console.log(title)
+    console.log(title);
     addWindows({ icon, title, id });
   }, []);
 
@@ -207,10 +216,7 @@ const ModalRenderer = (
         {...rest}
       >
         <Window width={width} height={height}>
-          <TitleBar
-            isActive={activeWindowId === id}
-            className="draggable"
-          >
+          <TitleBar isActive={activeWindowId === id} className="draggable">
             {icon && <Icon name={icon} {...iconStyle} />}
             <Title>{title}</Title>
             <OptionsBox>
@@ -218,10 +224,14 @@ const ModalRenderer = (
                 <Option>?</Option>
               </OptionItem>
               <OptionItem>
-                <Option onClick={(event) => {
-                  closeModal(event)
-                  removeWindows(title)
-                }}>X</Option>
+                <Option
+                  onClick={event => {
+                    closeModal(event);
+                    removeWindows(title);
+                  }}
+                >
+                  X
+                </Option>
               </OptionItem>
             </OptionsBox>
           </TitleBar>
@@ -243,11 +253,12 @@ const ModalRenderer = (
               })}
             </MenuWrapper>
           )}
-          <Content onClick={() => setMenuOpened('')}>
-            {children}
-          </Content>
+          <Content onClick={() => setMenuOpened('')}>{children}</Content>
           {buttons && buttons.length > 0 && (
-            <ButtonWrapper buttonsAlignment={buttonsAlignment} onClick={() => setMenuOpened('')}>
+            <ButtonWrapper
+              buttonsAlignment={buttonsAlignment}
+              onClick={() => setMenuOpened('')}
+            >
               {buttons.map(button => (
                 <Button
                   key={button.value}

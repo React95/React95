@@ -17,9 +17,7 @@ interface WindowProps {
 }
 
 const isNumeric = (input: string | number) => {
-  return (
-    typeof input == 'string' && !isNaN(parseFloat(input)) // we only process strings!
-  ); // ...and ensure strings of whitespace fail
+  return typeof input == 'string' && !isNaN(parseFloat(input));
 };
 
 const toPxUnits = (input: pxInput | undefined) => {
@@ -27,14 +25,14 @@ const toPxUnits = (input: pxInput | undefined) => {
 };
 
 const Window = styled.section<WindowProps>`
-  ${windowBorder()}
+  ${windowBorder({ useBoxShadow: true })}
   background: ${({ theme }) => theme.colors.material};
   color: ${({ theme }) => theme.colors.materialText};
   width: ${({ width }) => toPxUnits(width)};
   min-width: ${({ minWidth }) => minWidth};
   height: ${({ height }) => toPxUnits(height)};
   min-height: ${({ minHeight }) => minHeight};
-  padding: 4px;
+  padding: 1px;
   display: flex;
   flex-direction: ${({ direction }) => direction};;
 `;

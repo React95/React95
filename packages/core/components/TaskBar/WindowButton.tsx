@@ -3,12 +3,12 @@ import styled, { css } from '@xstyled/styled-components';
 
 import Frame, { FrameProps } from '../Frame/Frame';
 import Icon from '../Icon';
-import { Windows } from '../Modal/ModalContext';
+import { IWindow } from '../Modal/ModalContext';
 
 export type WindowButtonProps = {
   small?: boolean;
   active?: boolean;
-} & Pick<Windows, 'icon'> &
+} & Pick<IWindow, 'icon'> &
   React.HTMLAttributes<HTMLButtonElement> &
   FrameProps;
 
