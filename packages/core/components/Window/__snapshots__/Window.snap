@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Video /> Snapshot should match snapshot 1`] = `
+exports[`<Window /> Snapshot should match snapshot 1`] = `
 .c0 {
   position: relative;
   border-width: 1px;

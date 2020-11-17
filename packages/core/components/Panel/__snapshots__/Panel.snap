@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Modal /> Snapshots should match snapshot 1`] = `
+exports[`<Panel /> Snapshots should match snapshot 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
