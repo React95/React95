@@ -7,7 +7,7 @@ export const createTriangleSVG = (color: string, angle = 0) => {
       <polygon fill="${color}" points="6,10 20,10 13,17"/>
     </g>
   </svg>`;
-  const encoded = window.btoa(svg);
+  const encoded = typeof window != 'undefined' ? window.btoa(svg) : '';
   return `url(data:image/svg+xml;base64,${encoded})`;
 };
 

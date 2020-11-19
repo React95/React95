@@ -11,6 +11,7 @@ import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Input from './Input';
 import List from './List';
+import Panel from './Panel';
 import ProgressBar from './ProgressBar';
 import RadioButton from './RadioButton';
 import Range from './Range';
@@ -20,6 +21,7 @@ import Tree from './Tree';
 import Tooltip from './Tooltip';
 import ThemeProvider from './ThemeProvider';
 import Video from './Video';
+import Window from './Window';
 
 export {
   Alert,
@@ -35,6 +37,7 @@ export {
   List,
   Modal,
   ModalContext,
+  Panel,
   ProgressBar,
   RadioButton,
   Range,
@@ -46,4 +49,5 @@ export {
   Tooltip,
   ThemeProvider,
   Video,
+  Window
 };

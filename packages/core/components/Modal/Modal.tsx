@@ -195,7 +195,6 @@ const ModalRenderer = (
   const [id] = React.useState(() => Math.random().toString(16).slice(-4));
 
   React.useEffect(() => {
-    console.log(title);
     addWindows({ icon, title, id });
   }, []);
 
