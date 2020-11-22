@@ -75,7 +75,7 @@ const treeNodes: TreeProps = {
 };
 
 export default {
-  title: 'TaskBar',
+  title: 'Task bar',
   component: TaskBar,
 } as Meta;
 

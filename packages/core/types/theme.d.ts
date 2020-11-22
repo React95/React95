@@ -57,5 +57,12 @@ declare module 'styled-components' {
   export interface IColors extends R95_Colors {}
   export interface IShadows extends R95_Shadows {}
   export interface IZIndices extends R95_ZIndices {}
-  export interface DefaultTheme extends R95_DefaultTheme {}
+  export interface DefaultTheme extends R95_DefaultTheme {
+    colors: IColors;
+    space: Array<number>;
+    shadows: IShadows;
+    borderWidths: IBorderWidth;
+    borderStyles: IBorderStyles;
+    zIndices: IZIndices;
+  }
 }

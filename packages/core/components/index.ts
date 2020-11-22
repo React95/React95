@@ -17,6 +17,7 @@ import RadioButton from './RadioButton';
 import Range from './Range';
 import TaskBar from './TaskBar';
 import TextArea from './TextArea';
+import TitleBar from './TitleBar';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
 import ThemeProvider from './ThemeProvider';
@@ -45,6 +46,7 @@ export {
   Tabs,
   TaskBar,
   TextArea,
+  TitleBar,
   Tree,
   Tooltip,
   ThemeProvider,

@@ -4,10 +4,12 @@ import styled, { css } from '@xstyled/styled-components';
 import Draggable from 'react-draggable';
 
 import Button, { StyledButton } from '../Button/Button';
-import Icon, { IconProps } from '../Icon/Icon';
+import { IconProps } from '../Icon/Icon';
 import List from '../List';
 import ModalContext from './ModalContext';
 import Window from '../Window';
+import TitleBar from '../TitleBar';
+import { Option, OptionItem, OptionsBox } from '../TitleBar/TitleBar';
 
 type WrapperProps = {
   width?: CSS.Property.Width | number;
@@ -29,57 +31,6 @@ const ModalWrapper = styled.div<WrapperProps>`
         `
       : ''}
 `;
-
-interface TitleBarProps {
-  isActive?: boolean;
-}
-const TitleBar = styled.div<TitleBarProps>`
-  height: 20px;
-  padding: 1px;
-  margin-bottom: 2px;
-  display: flex;
-  align-items: center;
-  background-color: ${({ isActive, theme }) =>
-    isActive
-      ? theme.colors.headerBackground
-      : theme.colors.headerNotActiveBackground};
-  color: ${({ isActive, theme }) =>
-    isActive ? theme.colors.headerText : theme.colors.headerNotActiveText};
-`;
-
-const Title = styled.h1`
-  flex-grow: 1;
-  font-weight: bold;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-`;
-
-const OptionsBox = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-`;
-
-const OptionItem = styled.li`
-  display: flex;
-  margin-left: 2;
-  &:first-child {
-    margin-right: 0;
-  }
-`;
-
-const Option = styled(StyledButton)`
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10;
-  font-weight: 600;
-`;
-
-Option.displayName = 'Option';
 
 const Content = styled.div`
   flex-grow: 1;
@@ -198,14 +149,6 @@ const ModalRenderer = (
     addWindows({ icon, title, id });
   }, []);
 
-  const iconStyle = {
-    width: 15,
-    height: 13,
-    style: {
-      marginRight: '4px',
-    },
-  };
-
   return (
     <Draggable handle=".draggable" defaultPosition={defaultPosition}>
       <ModalWrapper
@@ -215,9 +158,12 @@ const ModalRenderer = (
         {...rest}
       >
         <Window width={width} height={height}>
-          <TitleBar isActive={activeWindowId === id} className="draggable">
-            {icon && <Icon name={icon} {...iconStyle} />}
-            <Title>{title}</Title>
+          <TitleBar
+            title={title}
+            icon={icon}
+            isActive={activeWindowId === id}
+            className="draggable"
+          >
             <OptionsBox>
               <OptionItem>
                 <Option>?</Option>
