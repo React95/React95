@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Cursor, { ICursor } from './../components/shared-style/Cursor';
 import border from '../components/shared-style/Border';
 
-const types: [ICursor] = [
+const types: ICursor[] = [
   'auto',
   'default',
   'none',
