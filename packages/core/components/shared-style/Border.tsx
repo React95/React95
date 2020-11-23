@@ -88,19 +88,6 @@ export const createBoxShadowBorder = ({
       ${direction == 'extrude' ? innerTopLeft : outerBottomRight};
 `;
 
-/*
-
-    box-shadow: inset -1px -1px 0 0px
-        ${direction == 'extrude' ? outerBottomRight : outerTopLeft},
-      inset 1px 1px 0 0px
-        ${direction == 'extrude' ? outerTopLeft : innerBottomRight},
-      inset -2px -2px 0 0px
-        ${direction == 'extrude' ? innerBottomRight : innerTopLeft},
-      inset 2px 2px 0 0px
-        ${direction == 'extrude' ? innerTopLeft : outerBottomRight};
-
-*/
-
 export const border = ({
   direction = 'extrude',
   useBoxShadow = false,
