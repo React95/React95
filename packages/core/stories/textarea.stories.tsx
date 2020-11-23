@@ -38,4 +38,11 @@ export const SimpleWithScrollbar = () => {
       }: React.ChangeEvent<HTMLTextAreaElement>) => setValue(value)}
     />
   );
+}
+Simple.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A18',
+  },
 };

@@ -1,9 +1,11 @@
 import { IAvailableIcon } from '../components/Icon/useIcon';
 import { IconProps } from '../components/Icon/Icon';
 
-type IconData = {
-  [name: string]: Array<Partial<IAvailableIcon & IconProps>>;
-};
+type AvailableIcons = NonNullable<IconProps['name']>;
+
+type IconData = Partial<
+  Record<AvailableIcons, Array<Partial<IAvailableIcon & IconProps>>>
+>;
 
 const sizes: Array<IconData> = [
   {

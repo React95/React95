@@ -81,3 +81,7 @@ export const Simple = () => (
     ))}
   </Cursors>
 );
+
+Simple.parameters = {
+  design: { disabled: true },
+};

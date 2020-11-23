@@ -38,15 +38,41 @@ export const All = () => {
   );
 };
 
+All.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+  },
+};
+
 export const Checked = () => <Checkbox checked>Checked</Checkbox>;
+
+Checked.parameters = {
+  design: { disabled: true },
+};
+
 export const Unchecked = () => <Checkbox checked={false}>Unchecked</Checkbox>;
+
+Unchecked.parameters = {
+  design: { disabled: true },
+};
+
 export const Disabled = () => <Checkbox disabled>Disabled</Checkbox>;
+
+Disabled.parameters = {
+  design: { disabled: true },
+};
 
 export const CheckedAndDisabled = () => (
   <Checkbox disabled checked>
     Checked and Disabled
   </Checkbox>
 );
+
+CheckedAndDisabled.parameters = {
+  design: { disabled: true },
+};
 
 export const Working = () => {
   const [checked, toggleChecked] = React.useState(true);
@@ -56,4 +82,8 @@ export const Working = () => {
       Working
     </Checkbox>
   );
+};
+
+Working.parameters = {
+  design: { disabled: true },
 };

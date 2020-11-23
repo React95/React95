@@ -8,6 +8,7 @@ import 'react-virtualized/styles.css';
 import { Icon, Frame, Tabs, Tab } from '../components';
 
 import iconsSizes from './icons.stories.data';
+import { IconProps } from '../components/Icon/Icon';
 
 const list = Object.keys(icons).map(icon => ({
   name: icon,
@@ -94,34 +95,25 @@ export const All = () => (
               label="Name"
               dataKey="name"
               width={100}
-              cellRenderer={({ cellData }) => (
-                <>
-                  <span>{cellData}</span>
-                  <p style={{ display: 'flex', flexDirection: 'column' }}>
-                    <span>
-                      sizes: (
-                      {availableSizesByName[cellData]
-                        .map(s => s.size)
-                        .join(', ')}
-                      )
-                    </span>
-                    <span>
-                      bpp: (
-                      {availableSizesByName[cellData]
-                        .map(s => s.bpp)
-                        .join(', ')}
-                      )
-                    </span>
-                    <span>
-                      variant: (
-                      {availableSizesByName[cellData]
-                        .map(s => s.variant)
-                        .join(', ')}
-                      )
-                    </span>
-                  </p>
-                </>
-              )}
+              cellRenderer={({ cellData }) => {
+                const cellIcon: Array<Partial<IconProps>> =
+                  availableSizesByName[cellData];
+
+                return (
+                  <>
+                    <span>{cellData}</span>
+                    <p style={{ display: 'flex', flexDirection: 'column' }}>
+                      <span>
+                        sizes: ({cellIcon.map(s => s.size).join(', ')})
+                      </span>
+                      <span>bpp: ({cellIcon.map(s => s.bpp).join(', ')})</span>
+                      <span>
+                        variant: ({cellIcon.map(s => s.variant).join(', ')})
+                      </span>
+                    </p>
+                  </>
+                );
+              }}
             />
             <Column
               style={{
@@ -249,18 +241,18 @@ export const All = () => (
       </Frame>
     </Tab>
     <Tab title="All Icons (laggy)">
-      <Frame overflowY="auto" boxShadow="none" height="calc(100vh - 80px)">
+      <Frame overflow="auto" boxShadow="none" height="calc(100vh - 80px)">
         {iconsSizes.map(iconDef => {
           const [[name, sizes]] = Object.entries(iconDef);
 
           return (
             <div key={name} style={{ marginTop: 4 }}>
               <AllIconsName>{name}:</AllIconsName>
-              {sizes.map(({ size, bpp, variant }) => (
+              {sizes!.map(({ size, bpp, variant }) => (
                 <Icon
                   key={`${name}-${size}-${bpp}-${variant}`}
                   bpp={bpp}
-                  name={name}
+                  name={name as IconProps['name']}
                   size={size}
                   variant={variant}
                   style={{ display: 'inline-block', marginRight: 4 }}
@@ -274,3 +266,11 @@ export const All = () => (
     </Tab>
   </Tabs>
 );
+
+All.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=4%3A35',
+  },
+};

@@ -8,7 +8,10 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-[![npm version](https://badge.fury.io/js/%40react95%2Fcore.svg)](https://www.npmjs.com/package/@react95/core) [![Join the chat at https://gitter.im/React95/React95](https://badges.gitter.im/React95/React95.svg)](https://gitter.im/React95/React95?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm version](https://badge.fury.io/js/%40react95%2Fcore.svg)](https://www.npmjs.com/package/@react95/core) 
+[![Join the chat at https://gitter.im/React95/React95](https://badges.gitter.im/React95/React95.svg)](https://gitter.im/React95/React95?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Follow @React95lib](https://img.shields.io/twitter/follow/React95lib)](https://twitter.com/intent/follow?screen_name=React95lib)
+[![Figma Design kit](https://img.shields.io/badge/Figma-Design%20kit-blueviolet)](https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit)
 
 React95 is a component library inspired on the **Windows 95** UI design.
 
@@ -65,6 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="http://insafkhamzin.com"><img src="https://avatars3.githubusercontent.com/u/27154217?v=4" width="100px;" alt=""/><br /><sub><b>Insaf</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=InsafKhamzin" title="Documentation">📖</a></td>
     <td align="center"><a href="https://theoomoregbee.me"><img src="https://avatars3.githubusercontent.com/u/10440327?v=4" width="100px;" alt=""/><br /><sub><b>Theophilus Omoregbee</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=theoomoregbee" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Atheoomoregbee" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/belakm"><img src="https://avatars2.githubusercontent.com/u/13392444?v=4" width="100px;" alt=""/><br /><sub><b>Mitja Belak</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Abelakm" title="Bug reports">🐛</a> <a href="https://github.com/React95/React95/commits?author=belakm" title="Code">💻</a></td>
+    <td align="center"><a href="http://janneilkka.com"><img src="https://avatars3.githubusercontent.com/u/49063172?v=4" width="100px;" alt=""/><br /><sub><b>janneilkka</b></sub></a><br /><a href="#design-janneilkka" title="Design">🎨</a> <a href="#ideas-janneilkka" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
