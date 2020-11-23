@@ -4,11 +4,11 @@ import { addons } from '@storybook/addons';
 import theme from './theme';
 import Frame from './decorators/Frame';
 
-import { withThemes } from './addons/theme-changer/withThemes';
+import { withThemes } from './src/theme-changer/withThemes';
 import themes from '../components/ThemeProvider/themes'
 
 export const globals = {
-  selectedTheme: themes.win95
+  selectedTheme: themes.rose
 };
 
 addParameters({

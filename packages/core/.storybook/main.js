@@ -3,6 +3,6 @@ module.exports = {
   logLevel: 'debug',
   addons: [
     '@storybook/addon-essentials',
-    './addons/theme-changer/register.js'
+    './src/theme-changer/register'
   ],
 };

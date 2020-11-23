@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
+import Cursor, { ICursor } from './../components/shared-style/Cursor';
+import border from '../components/shared-style/Border';
 
-const types = [
+const types: [ICursor] = [
   'auto',
   'default',
   'none',
@@ -39,43 +41,43 @@ const types = [
   'zoom-out',
 ];
 
-const CursorList = styled.ul`
+const Cursors = styled.ul`
   margin: 0;
   padding: 0;
   width: 600px;
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-
   list-style: none;
 `;
 
-const Cursor = styled.li`
+interface ICursorListItem {
+  cursor: ICursor;
+}
+const CursorListItem = styled.li<ICursorListItem>`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 50px;
-  background-color: #c3c7cb;
+  background-color: ${({ theme }) => theme.colors.material};
+  color: ${({ theme }) => theme.colors.materialText};
   padding: 5px 20px 6px;
-  border: none;
-
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,
-    1px 1px 0 1px #000;
+  ${border()}
+  ${({ cursor }) => Cursor(cursor)}
 `;
 
 export default {
-  title: 'Cursor',
-  component: Cursor,
+  title: 'Cursors',
+  component: Cursors,
 } as Meta;
 
 export const Simple = () => (
-  <CursorList>
+  <Cursors>
     {types.map(type => (
-      <Cursor className={type} key={type}>
+      <CursorListItem cursor={type} key={type}>
         {type}
-      </Cursor>
+      </CursorListItem>
     ))}
-  </CursorList>
+  </Cursors>
 );

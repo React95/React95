@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
+.c1 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c0 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000080;
+  color: #fefefe;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <i
+      class="c1"
+      data-icon-name="help"
+      height="16"
+      style="margin-right: 4px; background-image: url(buffer-32-4-1);"
+      width="16"
+    />
+    <h1
+      class="c2"
+    >
+      test.exe
+    </h1>
+  </div>
+</div>
+`;

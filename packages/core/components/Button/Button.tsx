@@ -9,21 +9,20 @@ export const StyledButton = styled.button<ButtonProps>`
   min-width: 70px;
   font-size: 12px;
   ${border()};
-  &:disabled {
+  :disabled {
     color: ${({ theme }) => theme.colors.canvasTextDisabled};
-    background-color: ${({ theme }) => theme.colors.materialDark};
+    text-shadow: 1px 1px white;
   }
-  &:focus {
+  :focus {
     outline: 1px dotted ${({ theme }) => theme.colors.borderDarkest};
     outline-offset: -5px;
   }
-  &:active {
-    padding: 8 20 4;
+  :not(:disabled):active {
     outline: 1px dotted ${({ theme }) => theme.colors.borderDarkest};
     outline-offset: -5px;
     ${border({ direction: 'intrude' })};
   }
-  &:not(:last-child) {
+  :not(:last-child) {
     margin-right: 6px;
   }
 `;

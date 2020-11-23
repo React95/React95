@@ -23,7 +23,6 @@ export const Option = styled(StyledButton)`
   width: 17px;
   height: 16px;
   min-width: 0;
-  font-size: 10;
   font-weight: 600;
 `;
 
