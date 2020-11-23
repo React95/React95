@@ -85,7 +85,7 @@ const TitleBar: React.FunctionComponent<TitleBarProps> = ({
 
 TitleBar.defaultProps = {
   title: 'UNKNOWN.EXE',
-  icon: 'notepad_2',
+  icon: undefined,
   isActive: true,
 };
 

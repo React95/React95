@@ -38,7 +38,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       height={28}
       width="100%"
       padding={2}
-      zIndex="taskbar"
+      zIndex={1}
     >
       {showList && (
         <Frame
@@ -63,7 +63,6 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       >
         Start
       </WindowButton>
-
       <Frame
         boxShadow="none"
         width="100%"
@@ -72,12 +71,12 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
         display="flex"
       >
         {windows &&
-          windows.map(({ icon, title }, index) => (
+          windows.map(({ icon, title, id }, index) => (
             <WindowButton
-              key={`${title}-${index}`}
+              key={id}
               icon={icon}
-              active={title === activeWindow}
-              onClick={() => setActiveWindow(title)}
+              active={id === activeWindow}
+              onClick={() => setActiveWindow(id)}
               small={false}
             >
               <Truncate>{title}</Truncate>

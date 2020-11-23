@@ -172,7 +172,7 @@ const ModalRenderer = (
                 <Option
                   onClick={event => {
                     closeModal(event);
-                    removeWindows(title);
+                    removeWindows(id);
                   }}
                 >
                   X

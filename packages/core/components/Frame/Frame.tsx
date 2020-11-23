@@ -28,7 +28,7 @@ export type FrameProps = BackgroundsProps &
   OverflowProps;
 
 const Frame = styled.div<FrameProps>`
-  background-color: ${({theme}) => theme.colors.material};
+  background-color: ${({ theme }) => theme.colors.material};
   ${backgrounds}
   ${color}
   ${flexboxes}

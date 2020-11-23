@@ -132,25 +132,25 @@ export const Simple = () => {
             </Panel>
           </Modal>
         )}
-      </ModalProvider>
 
-      <TaskBar
-        list={
-          <List>
-            <List.Item icon="notepad" onClick={() => toggleSecond(true)}>
-              Notepad
-            </List.Item>
-            <List.Item
-              icon="windows_explorer"
-              onClick={() => {
-                toggleFirst(true);
-              }}
-            >
-              Windows Explorer
-            </List.Item>
-          </List>
-        }
-      />
+        <TaskBar
+          list={
+            <List>
+              <List.Item icon="notepad" onClick={() => toggleSecond(true)}>
+                Notepad
+              </List.Item>
+              <List.Item
+                icon="windows_explorer"
+                onClick={() => {
+                  toggleFirst(true);
+                }}
+              >
+                Windows Explorer
+              </List.Item>
+            </List>
+          }
+        />
+      </ModalProvider>
     </>
   );
 };

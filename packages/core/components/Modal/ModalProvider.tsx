@@ -14,8 +14,9 @@ const ModalProvider: React.FunctionComponent<ModalProviderProps> = ({
     setWindows(state => [...state, window]);
     setActiveWindow(window.id);
   };
-  const removeWindows = (id: string) =>
+  const removeWindows = (id: string) => {
     setWindows(state => state.filter(w => w.id !== id));
+  };
 
   return (
     <ModalContext.Provider

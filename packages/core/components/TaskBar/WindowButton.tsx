@@ -21,25 +21,28 @@ const Button = styled(Frame)<Omit<WindowButtonProps, 'icon'>>`
   max-width: 150px;
   border: none;
   outline: none;
-
+  color: ${({ theme }) => theme.colors.materialText};
   ${({ small }) =>
     !small
       ? `
     width: 100%;
   `
       : ''}
-
+  ${({ active, theme }) => css`
+    ${active && `background-color: ${theme.colors.borderLight}`};
+  `}
   ${({ active, small }) =>
     active && small
       ? css`
-          outline: ${({ theme }) => theme.space[1]}px dotted ${({ theme }) => theme.colors.borderDarkest};
+          outline: ${({ theme }) => theme.space[1]}px dotted
+            ${({ theme }) => theme.colors.borderDarkest};
           outline-offset: -${({ theme }) => theme.space[4]}px;
           padding-top: 4;
           padding-right: 2;
           padding-bottom: 0;
           padding-left: 4;
         `
-      : ''}
+      : ''};
 `;
 
 const WindowButton: React.FC<WindowButtonProps> = ({
