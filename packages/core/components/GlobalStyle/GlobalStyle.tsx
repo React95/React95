@@ -10,7 +10,6 @@ import videowoff2 from '../shared/assets/font/React95Video-Numbers.woff2';
 import videowoff from '../shared/assets/font/React95Video-Numbers.woff';
 import videottf from '../shared/assets/font/React95Video-Numbers.ttf';
 import videoeot from '../shared/assets/font/React95Video-Numbers.eot';
-import auto from '../shared/assets/cursors/Arrow.png';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -59,30 +58,30 @@ const GlobalStyle = createGlobalStyle`
   .wait                { cursor: ${Cursor('wait')}}
   .crosshair           { cursor: ${Cursor('crosshair')}}
   .text                { cursor: ${Cursor('text')}}
-  .vertical-text       { cursor: ${Cursor('verticalText')}}
+  .vertical-text       { cursor: ${Cursor('vertical-text')}}
   .alias               { cursor: ${Cursor('alias')}}
   .copy                { cursor: ${Cursor('copy')}}
   .move                { cursor: ${Cursor('move')}}
-  .no-drop             { cursor: ${Cursor('noDrop')}}
-  .not-allowed         { cursor: ${Cursor('notAllowed')}}
+  .no-drop             { cursor: ${Cursor('no-drop')}}
+  .not-allowed         { cursor: ${Cursor('not-allowed')}}
   .grab                { cursor: ${Cursor('grab')}}
   .grabbing            { cursor: ${Cursor('grabbing')}}
-  .col-resize          { cursor: ${Cursor('colResize')}}
-  .row-resize          { cursor: ${Cursor('rowResize')}}
-  .n-resize            { cursor: ${Cursor('nResize')}}
-  .e-resize            { cursor: ${Cursor('eResize')}}
-  .s-resize            { cursor: ${Cursor('sResize')}}
-  .w-resize            { cursor: ${Cursor('wResize')}}
-  .ns-resize           { cursor: ${Cursor('nsResize')}}
-  .ew-resize           { cursor: ${Cursor('ewResize')}}
-  .ne-resize           { cursor: ${Cursor('neResize')}}
-  .nw-resize           { cursor: ${Cursor('nwResize')}}
-  .se-resize           { cursor: ${Cursor('seResize')}}
-  .sw-resize           { cursor: ${Cursor('swResize')}}
-  .nesw-resize         { cursor: ${Cursor('neswResize')}}
-  .nwse-resize         { cursor: ${Cursor('nwseResize')}}
-  .zoom-in             { cursor: ${Cursor('zoomIn')}}
-  .zoom-out            { cursor: ${Cursor('zoomOut')}}
+  .col-resize          { cursor: ${Cursor('col-resize')}}
+  .row-resize          { cursor: ${Cursor('row-resize')}}
+  .n-resize            { cursor: ${Cursor('n-resize')}}
+  .e-resize            { cursor: ${Cursor('e-resize')}}
+  .s-resize            { cursor: ${Cursor('s-resize')}}
+  .w-resize            { cursor: ${Cursor('w-resize')}}
+  .ns-resize           { cursor: ${Cursor('ns-resize')}}
+  .ew-resize           { cursor: ${Cursor('ew-resize')}}
+  .ne-resize           { cursor: ${Cursor('ne-resize')}}
+  .nw-resize           { cursor: ${Cursor('nw-resize')}}
+  .se-resize           { cursor: ${Cursor('se-resize')}}
+  .sw-resize           { cursor: ${Cursor('sw-resize')}}
+  .nesw-resize         { cursor: ${Cursor('nesw-resize')}}
+  .nwse-resize         { cursor: ${Cursor('nwse-resize')}}
+  .zoom-in             { cursor: ${Cursor('zoom-in')}}
+  .zoom-out            { cursor: ${Cursor('zoom-out')}}
 `;
 
 export default GlobalStyle;
