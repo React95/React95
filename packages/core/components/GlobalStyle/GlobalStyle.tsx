@@ -49,39 +49,39 @@ const GlobalStyle = createGlobalStyle`
   // scrollbar
   ${createScrollbars()}
 
-  html, .auto, *       { cursor: ${Cursor('auto')}}
-  .default             { cursor: ${Cursor('auto')}}
-  .none                { cursor: ${Cursor('none')}}
-  .help                { cursor: ${Cursor('help')}}
-  .pointer, :any-link  { cursor: ${Cursor('pointer')}}
-  .progress            { cursor: ${Cursor('progress')}}
-  .wait                { cursor: ${Cursor('wait')}}
-  .crosshair           { cursor: ${Cursor('crosshair')}}
-  .text                { cursor: ${Cursor('text')}}
-  .vertical-text       { cursor: ${Cursor('vertical-text')}}
-  .alias               { cursor: ${Cursor('alias')}}
-  .copy                { cursor: ${Cursor('copy')}}
-  .move                { cursor: ${Cursor('move')}}
-  .no-drop             { cursor: ${Cursor('no-drop')}}
-  .not-allowed         { cursor: ${Cursor('not-allowed')}}
-  .grab                { cursor: ${Cursor('grab')}}
-  .grabbing            { cursor: ${Cursor('grabbing')}}
-  .col-resize          { cursor: ${Cursor('col-resize')}}
-  .row-resize          { cursor: ${Cursor('row-resize')}}
-  .n-resize            { cursor: ${Cursor('n-resize')}}
-  .e-resize            { cursor: ${Cursor('e-resize')}}
-  .s-resize            { cursor: ${Cursor('s-resize')}}
-  .w-resize            { cursor: ${Cursor('w-resize')}}
-  .ns-resize           { cursor: ${Cursor('ns-resize')}}
-  .ew-resize           { cursor: ${Cursor('ew-resize')}}
-  .ne-resize           { cursor: ${Cursor('ne-resize')}}
-  .nw-resize           { cursor: ${Cursor('nw-resize')}}
-  .se-resize           { cursor: ${Cursor('se-resize')}}
-  .sw-resize           { cursor: ${Cursor('sw-resize')}}
-  .nesw-resize         { cursor: ${Cursor('nesw-resize')}}
-  .nwse-resize         { cursor: ${Cursor('nwse-resize')}}
-  .zoom-in             { cursor: ${Cursor('zoom-in')}}
-  .zoom-out            { cursor: ${Cursor('zoom-out')}}
+  html, .auto, *       { ${Cursor('auto')} }
+  .default             { ${Cursor('auto')} }
+  .none                { ${Cursor('none')} }
+  .help                { ${Cursor('help')} }
+  .pointer, :any-link  { ${Cursor('pointer')} }
+  .progress            { ${Cursor('progress')} }
+  .wait                { ${Cursor('wait')} }
+  .crosshair           { ${Cursor('crosshair')} }
+  .text                { ${Cursor('text')} }
+  .vertical-text       { ${Cursor('vertical-text')} }
+  .alias               { ${Cursor('alias')} }
+  .copy                { ${Cursor('copy')} }
+  .move                { ${Cursor('move')} }
+  .no-drop             { ${Cursor('no-drop')} }
+  .not-allowed         { ${Cursor('not-allowed')} }
+  .grab                { ${Cursor('grab')} }
+  .grabbing            { ${Cursor('grabbing')} }
+  .col-resize          { ${Cursor('col-resize')} }
+  .row-resize          { ${Cursor('row-resize')} }
+  .n-resize            { ${Cursor('n-resize')} }
+  .e-resize            { ${Cursor('e-resize')} }
+  .s-resize            { ${Cursor('s-resize')} }
+  .w-resize            { ${Cursor('w-resize')} }
+  .ns-resize           { ${Cursor('ns-resize')} }
+  .ew-resize           { ${Cursor('ew-resize')} }
+  .ne-resize           { ${Cursor('ne-resize')} }
+  .nw-resize           { ${Cursor('nw-resize')} }
+  .se-resize           { ${Cursor('se-resize')} }
+  .sw-resize           { ${Cursor('sw-resize')} }
+  .nesw-resize         { ${Cursor('nesw-resize')} }
+  .nwse-resize         { ${Cursor('nwse-resize')} }
+  .zoom-in             { ${Cursor('zoom-in')} }
+  .zoom-out            { ${Cursor('zoom-out')} }
 `;
 
 export default GlobalStyle;

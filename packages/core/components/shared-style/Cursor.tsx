@@ -116,7 +116,6 @@ const Cursor = (cursor: ICursor) => {
   const noneCss = css`
     cursor: none;
   `;
-  console.log(cursor, camelCaseCursor);
   return cursor == 'none' ? noneCss : cursorCss;
 };
 

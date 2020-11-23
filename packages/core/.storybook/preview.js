@@ -8,7 +8,7 @@ import { withThemes } from './src/theme-changer/withThemes';
 import themes from '../components/ThemeProvider/themes'
 
 export const globals = {
-  selectedTheme: themes.rose
+  selectedTheme: 'win95'
 };
 
 addParameters({

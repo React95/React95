@@ -15,6 +15,7 @@ exports[`<TextArea /> Snapshot should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 1px;
   position: relative;
   border-width: 1px;
   border-style: solid;

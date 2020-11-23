@@ -50,28 +50,13 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   margin-top: -10px;
   -webkit-appearance: none;
   position: relative;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-top-color: #fefefe;
   border-right-color: #0a0a0a;
   border-bottom-color: #0a0a0a;
   border-left-color: #fefefe;
-}
-
-.c0::-webkit-slider-thumb:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #dfdfdf;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #dfdfdf;
-  pointer-events: none;
+  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
 }
 
 .c0:focus::-webkit-slider-runnable-track {
@@ -116,28 +101,13 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   margin-top: -10px;
   -webkit-appearance: none;
   position: relative;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-top-color: #fefefe;
   border-right-color: #0a0a0a;
   border-bottom-color: #0a0a0a;
   border-left-color: #fefefe;
-}
-
-.c0::-moz-range-thumb:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #dfdfdf;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #dfdfdf;
-  pointer-events: none;
+  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
 }
 
 <div>

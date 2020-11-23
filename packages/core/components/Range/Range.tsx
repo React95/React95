@@ -16,7 +16,7 @@ const thumbStyle = css`
   cursor: pointer;
   margin-top: -10px;
   -webkit-appearance: none;
-  ${border()}
+  ${border({ useBoxShadow: true })}
 `;
 
 const Range = styled.input.attrs({

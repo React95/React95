@@ -30,7 +30,7 @@ export const SimpleWithScrollbar = () => {
 
   return (
     <TextArea
-      rows={10}
+      rows={5}
       cols={50}
       value={text}
       onChange={({
@@ -38,7 +38,7 @@ export const SimpleWithScrollbar = () => {
       }: React.ChangeEvent<HTMLTextAreaElement>) => setValue(value)}
     />
   );
-}
+};
 Simple.parameters = {
   design: {
     type: 'figma',

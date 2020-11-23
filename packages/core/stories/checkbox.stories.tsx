@@ -22,7 +22,6 @@ export const All = () => {
       <Checkbox
         checked={checked}
         onChange={() => {
-          console.log('OK');
           toggleChecked(!checked);
         }}
       >
