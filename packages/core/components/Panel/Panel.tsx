@@ -16,7 +16,7 @@ export const StyledPanel = styled.section<IStyledPanel>`
   display: flex;
   flex-grow: 1;
   flex-direction: ${({ direction }) => direction};
-  padding: ${({ padding }) => (padding ? padding : '12px')};
+  padding: ${({ padding }) => padding};
   overflow-x: ${({ direction }) =>
     direction == 'row' || direction == 'row-reverse' ? 'auto' : 'visible'};
   overflow-y: ${({ direction }) =>
@@ -49,12 +49,19 @@ export const StyledPanel = styled.section<IStyledPanel>`
   }
 `;
 
-const ScrollWrap = styled.div`
+interface IScrollWrap {
+  direction: CSS.Property.FlexDirection;
+  padding: CSS.Property.Padding;
+}
+const ScrollWrap = styled.div<IScrollWrap>`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding: 4px;
   overflow: auto;
+  display: flex;
+  padding: ${({ padding }) => padding};
+  flex-direction: ${({ direction }) => direction};
 `;
 
 type ConditonalWrapperProps = {
@@ -75,7 +82,7 @@ const Panel: React.FunctionComponent<IStyledPanel> = ({
   direction = 'column',
   asCanvas = false,
   style,
-  padding = '1px',
+  padding = '12px',
   isScrollable = true,
 }) => {
   let el;
@@ -87,11 +94,15 @@ const Panel: React.FunctionComponent<IStyledPanel> = ({
           shadow="extrude"
           background={background}
           direction={direction}
-          padding={padding}
+          padding={isScrollable ? 0 : padding}
         >
           <ConditonalWrapper
             condition={isScrollable}
-            wrapper={children => <ScrollWrap>{children}</ScrollWrap>}
+            wrapper={children => (
+              <ScrollWrap padding={padding} direction={direction}>
+                {children}
+              </ScrollWrap>
+            )}
           >
             <>{children}</>
           </ConditonalWrapper>
@@ -107,11 +118,15 @@ const Panel: React.FunctionComponent<IStyledPanel> = ({
         background={background}
         direction={direction}
         style={style}
-        padding={padding}
+        padding={isScrollable ? 0 : padding}
       >
         <ConditonalWrapper
           condition={isScrollable}
-          wrapper={children => <ScrollWrap>{children}</ScrollWrap>}
+          wrapper={children => (
+            <ScrollWrap padding={padding} direction={direction}>
+              {children}
+            </ScrollWrap>
+          )}
         >
           <>{children}</>
         </ConditonalWrapper>

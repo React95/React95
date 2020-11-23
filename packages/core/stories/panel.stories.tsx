@@ -10,25 +10,25 @@ export default {
 
 const loremIpsum = (styleName: string) => (
   <p>
+    <span
+      style={{
+        padding: '4px',
+        color: 'darkblue',
+        fontSize: '2em',
+        fontWeight: 900,
+      }}
+    >
+      {styleName}
+    </span>
     On the other hand, we denounce with righteous indignation and dislike men
     who are so beguiled and demoralized by the charms of pleasure of the moment,
     so blinded by desire, that they cannot foresee the pain and trouble that are
     bound to ensue; and equal blame belongs to those who fail in their duty
     through weakness of will, which is the same as saying through shrinking from
     toil and pain.These cases are perfectly simple and easy to distinguish. In a
-    free hour, when our power of choice is untrammelled and when nothing{' '}
-    <span
-      style={{ padding: '4px', color: 'red', fontSize: '2em', fontWeight: 900 }}
-    >
-      {styleName}
-    </span>{' '}
+    free hour, when our power of choice is untrammelled and when nothing
     prevents our being able to do what we like best, every pleasure is to be
-    welcomed and every pain avoided. But in certain circumstances and owing to
-    the claims of duty or the obligations of business it will frequently occur
-    that pleasures have to be repudiated and annoyances accepted. The wise man
-    therefore always holds in these matters to this principle of selection: he
-    rejects pleasures to secure other greater pleasures, or else he endures
-    pains to avoid worse pains.
+    welcomed and every pain avoided.
   </p>
 );
 
@@ -46,7 +46,7 @@ export const Extruded = () => (
 
 export const Walled = () => (
   <Window>
-    <Panel shadow="in-out">{loremIpsum('walled')}</Panel>
+    <Panel shadow="in-out">{loremIpsum('in-out')}</Panel>
   </Window>
 );
 
@@ -60,22 +60,19 @@ export const asCanvas = () => (
 
 export const Adjacent = () => (
   <Window direction="row" width="auto">
-    <Panel direction="column">
+    <Panel direction="column" shadow="none">
       <Panel>{loremIpsum('intrude')}</Panel>
-      <Panel direction="row">
-        <Panel shadow="extrude">{loremIpsum('extrude')}</Panel>
-        <Panel shadow="intrude">{loremIpsum('intrude')}</Panel>
-      </Panel>
-    </Panel>
-    <Panel direction="row">
-      <Panel asCanvas={true} shadow="intrude">
-        {loremIpsum('intrude asCanvas')}
-      </Panel>
-      <Panel direction="column">
-        <Panel shadow="in-out">{loremIpsum('walled')}</Panel>
-        <Panel shadow="in-out" asCanvas>
-          {loremIpsum('walled asCanvas')}
+      <Panel shadow="in-out">{loremIpsum('in-out')}</Panel>
+      <Panel direction="row" shadow="none">
+        <Panel asCanvas={true} shadow="extrude">
+          {loremIpsum('extrude asCanvas')}
         </Panel>
+        <Panel shadow="extrude">{loremIpsum('extrude')}</Panel>
+        <Panel shadow="none">{loremIpsum('none')}</Panel>
+        <Panel asCanvas={true} shadow="intrude">
+          {loremIpsum('intrude asCanvas')}
+        </Panel>
+        <Panel shadow="intrude">{loremIpsum('intrude')}</Panel>
       </Panel>
     </Panel>
   </Window>

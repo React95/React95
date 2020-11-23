@@ -13,7 +13,7 @@ exports[`<Panel /> Snapshots should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 1px;
+  padding: 0;
   overflow-x: visible;
   overflow-y: auto;
   background-color: #c6c6c6;
@@ -42,6 +42,14 @@ exports[`<Panel /> Snapshots should match snapshot 1`] = `
   height: 100%;
   padding: 4px;
   overflow: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 <div>
@@ -51,6 +59,7 @@ exports[`<Panel /> Snapshots should match snapshot 1`] = `
   >
     <div
       class="c2"
+      direction="column"
     >
       Dorem ipsum
     </div>
