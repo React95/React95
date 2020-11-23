@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
-.c7 {
+.c8 {
   background-color: #c6c6c6;
   color: #0a0a0a;
   padding: 7px 20px 5px;
@@ -16,7 +16,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   border-left-color: #fefefe;
 }
 
-.c7:before {
+.c8:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -32,18 +32,17 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   pointer-events: none;
 }
 
-.c7:disabled {
+.c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
-.c7:focus {
+.c8:focus {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
 }
 
-.c7:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -55,7 +54,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   border-left-color: #848584;
 }
 
-.c7:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -71,7 +70,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   pointer-events: none;
 }
 
-.c7:not(:last-child) {
+.c8:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -98,22 +97,49 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -127,7 +153,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   color: #c6c6c6;
 }
 
-.c3 {
+.c4 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -138,38 +164,20 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   font-size: 1em;
 }
 
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c5:first-child {
-  margin-right: 0;
-}
-
-.c8 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -185,7 +193,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -200,16 +208,16 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   justify-content: center;
 }
 
-.c13 .c6 {
+.c14 .c7 {
   margin-left: 6px;
   min-width: 70px;
 }
 
-.c13 .c6:first-child {
+.c14 .c7:first-child {
   margin-left: 0;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -224,7 +232,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -234,7 +242,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -258,28 +266,35 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
       <div
         class="c2 draggable"
       >
-        <h1
+        <i
           class="c3"
+          data-icon-name="notepad_2"
+          height="16"
+          style="margin-right: 4px; background-image: none;"
+          width="16"
+        />
+        <h1
+          class="c4"
         >
           Error
         </h1>
         <ul
-          class="c4"
+          class="c5"
         >
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               ?
             </button>
           </li>
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               X
             </button>
@@ -287,27 +302,27 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
         </ul>
       </div>
       <div
-        class="c9"
+        class="c10"
       >
         <div
-          class="c10"
+          class="c11"
         >
           <div
-            class="c11"
+            class="c12"
             type="error"
           />
           <div
-            class="c12"
+            class="c13"
           >
             Error
           </div>
         </div>
       </div>
       <div
-        class="c13"
+        class="c14"
       >
         <button
-          class="c6 c7"
+          class="c7 c8"
           font-size="12px"
           value="OK"
         >
@@ -320,7 +335,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
-.c7 {
+.c8 {
   background-color: #c6c6c6;
   color: #0a0a0a;
   padding: 7px 20px 5px;
@@ -335,7 +350,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   border-left-color: #fefefe;
 }
 
-.c7:before {
+.c8:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -351,18 +366,17 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   pointer-events: none;
 }
 
-.c7:disabled {
+.c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
-.c7:focus {
+.c8:focus {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
 }
 
-.c7:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -374,7 +388,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   border-left-color: #848584;
 }
 
-.c7:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -390,7 +404,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   pointer-events: none;
 }
 
-.c7:not(:last-child) {
+.c8:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -417,22 +431,49 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -446,7 +487,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   color: #c6c6c6;
 }
 
-.c3 {
+.c4 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -457,38 +498,20 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   font-size: 1em;
 }
 
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c5:first-child {
-  margin-right: 0;
-}
-
-.c8 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -504,7 +527,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -519,16 +542,16 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   justify-content: center;
 }
 
-.c13 .c6 {
+.c14 .c7 {
   margin-left: 6px;
   min-width: 70px;
 }
 
-.c13 .c6:first-child {
+.c14 .c7:first-child {
   margin-left: 0;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -543,7 +566,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -553,7 +576,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -577,28 +600,35 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
       <div
         class="c2 draggable"
       >
-        <h1
+        <i
           class="c3"
+          data-icon-name="notepad_2"
+          height="16"
+          style="margin-right: 4px; background-image: none;"
+          width="16"
+        />
+        <h1
+          class="c4"
         >
           Info
         </h1>
         <ul
-          class="c4"
+          class="c5"
         >
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               ?
             </button>
           </li>
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               X
             </button>
@@ -606,27 +636,27 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
         </ul>
       </div>
       <div
-        class="c9"
+        class="c10"
       >
         <div
-          class="c10"
+          class="c11"
         >
           <div
-            class="c11"
+            class="c12"
             type="info"
           />
           <div
-            class="c12"
+            class="c13"
           >
             Info
           </div>
         </div>
       </div>
       <div
-        class="c13"
+        class="c14"
       >
         <button
-          class="c6 c7"
+          class="c7 c8"
           font-size="12px"
           value="OK"
         >
@@ -639,7 +669,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
-.c7 {
+.c8 {
   background-color: #c6c6c6;
   color: #0a0a0a;
   padding: 7px 20px 5px;
@@ -654,7 +684,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   border-left-color: #fefefe;
 }
 
-.c7:before {
+.c8:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -670,18 +700,17 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   pointer-events: none;
 }
 
-.c7:disabled {
+.c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
-.c7:focus {
+.c8:focus {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
 }
 
-.c7:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -693,7 +722,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   border-left-color: #848584;
 }
 
-.c7:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -709,7 +738,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   pointer-events: none;
 }
 
-.c7:not(:last-child) {
+.c8:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -736,22 +765,49 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -765,7 +821,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   color: #c6c6c6;
 }
 
-.c3 {
+.c4 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -776,38 +832,20 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   font-size: 1em;
 }
 
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c5:first-child {
-  margin-right: 0;
-}
-
-.c8 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -823,7 +861,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -838,16 +876,16 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   justify-content: center;
 }
 
-.c13 .c6 {
+.c14 .c7 {
   margin-left: 6px;
   min-width: 70px;
 }
 
-.c13 .c6:first-child {
+.c14 .c7:first-child {
   margin-left: 0;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -862,7 +900,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -872,7 +910,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -896,28 +934,35 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
       <div
         class="c2 draggable"
       >
-        <h1
+        <i
           class="c3"
+          data-icon-name="notepad_2"
+          height="16"
+          style="margin-right: 4px; background-image: none;"
+          width="16"
+        />
+        <h1
+          class="c4"
         >
           question
         </h1>
         <ul
-          class="c4"
+          class="c5"
         >
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               ?
             </button>
           </li>
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               X
             </button>
@@ -925,27 +970,27 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
         </ul>
       </div>
       <div
-        class="c9"
+        class="c10"
       >
         <div
-          class="c10"
+          class="c11"
         >
           <div
-            class="c11"
+            class="c12"
             type="question"
           />
           <div
-            class="c12"
+            class="c13"
           >
             question
           </div>
         </div>
       </div>
       <div
-        class="c13"
+        class="c14"
       >
         <button
-          class="c6 c7"
+          class="c7 c8"
           font-size="12px"
           value="OK"
         >
@@ -958,7 +1003,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
-.c7 {
+.c8 {
   background-color: #c6c6c6;
   color: #0a0a0a;
   padding: 7px 20px 5px;
@@ -973,7 +1018,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   border-left-color: #fefefe;
 }
 
-.c7:before {
+.c8:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -989,18 +1034,17 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   pointer-events: none;
 }
 
-.c7:disabled {
+.c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
-.c7:focus {
+.c8:focus {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
 }
 
-.c7:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -1012,7 +1056,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   border-left-color: #848584;
 }
 
-.c7:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -1028,7 +1072,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   pointer-events: none;
 }
 
-.c7:not(:last-child) {
+.c8:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -1055,22 +1099,49 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1084,7 +1155,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   color: #c6c6c6;
 }
 
-.c3 {
+.c4 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1095,38 +1166,20 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   font-size: 1em;
 }
 
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c5:first-child {
-  margin-right: 0;
-}
-
-.c8 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-.c9 {
+.c10 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1142,7 +1195,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1157,16 +1210,16 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   justify-content: center;
 }
 
-.c13 .c6 {
+.c14 .c7 {
   margin-left: 6px;
   min-width: 70px;
 }
 
-.c13 .c6:first-child {
+.c14 .c7:first-child {
   margin-left: 0;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1181,7 +1234,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -1191,7 +1244,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1215,28 +1268,35 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
       <div
         class="c2 draggable"
       >
-        <h1
+        <i
           class="c3"
+          data-icon-name="notepad_2"
+          height="16"
+          style="margin-right: 4px; background-image: none;"
+          width="16"
+        />
+        <h1
+          class="c4"
         >
           Warning
         </h1>
         <ul
-          class="c4"
+          class="c5"
         >
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               ?
             </button>
           </li>
           <li
-            class="c5"
+            class="c6"
           >
             <button
-              class="c6 c7 c8"
+              class="c7 c8 c9"
             >
               X
             </button>
@@ -1244,27 +1304,27 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
         </ul>
       </div>
       <div
-        class="c9"
+        class="c10"
       >
         <div
-          class="c10"
+          class="c11"
         >
           <div
-            class="c11"
+            class="c12"
             type="warning"
           />
           <div
-            class="c12"
+            class="c13"
           >
             Warning
           </div>
         </div>
       </div>
       <div
-        class="c13"
+        class="c14"
       >
         <button
-          class="c6 c7"
+          class="c7 c8"
           font-size="12px"
           value="OK"
         >

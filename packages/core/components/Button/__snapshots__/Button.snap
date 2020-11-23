@@ -34,7 +34,7 @@ exports[`<Button /> Snapshots should match snapshot 1`] = `
 
 .c0:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
 .c0:focus {
@@ -42,8 +42,7 @@ exports[`<Button /> Snapshots should match snapshot 1`] = `
   outline-offset: -5px;
 }
 
-.c0:active {
-  padding: 8 20 4;
+.c0:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -55,7 +54,7 @@ exports[`<Button /> Snapshots should match snapshot 1`] = `
   border-left-color: #848584;
 }
 
-.c0:active:before {
+.c0:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;

@@ -34,7 +34,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 
 .c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
 .c8:focus {
@@ -42,8 +42,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   outline-offset: -5px;
 }
 
-.c8:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -55,7 +54,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   border-left-color: #848584;
 }
 
-.c8:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -73,15 +72,6 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 
 .c8:not(:last-child) {
   margin-right: 6px;
-}
-
-.c3 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c1 {
@@ -107,22 +97,49 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -147,35 +164,17 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   font-size: 1em;
 }
 
-.c5 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c9 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
 .c12 {
@@ -267,9 +266,9 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
         <i
           class="c3"
           data-icon-name="bat"
-          height="13"
+          height="16"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="15"
+          width="16"
         />
         <h1
           class="c4"
@@ -375,7 +374,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
 .c8:focus {
@@ -383,8 +382,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   outline-offset: -5px;
 }
 
-.c8:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -396,7 +394,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   border-left-color: #848584;
 }
 
-.c8:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -414,15 +412,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c8:not(:last-child) {
   margin-right: 6px;
-}
-
-.c3 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c1 {
@@ -448,22 +437,49 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -488,35 +504,17 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   font-size: 1em;
 }
 
-.c5 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c9 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
 .c10 {
@@ -576,9 +574,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         <i
           class="c3"
           data-icon-name="bat"
-          height="13"
+          height="16"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="15"
+          width="16"
         />
         <h1
           class="c4"
@@ -670,7 +668,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c8:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
 .c8:focus {
@@ -678,8 +676,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   outline-offset: -5px;
 }
 
-.c8:active {
-  padding: 8 20 4;
+.c8:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -691,7 +688,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   border-left-color: #848584;
 }
 
-.c8:active:before {
+.c8:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -709,15 +706,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c8:not(:last-child) {
   margin-right: 6px;
-}
-
-.c3 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c1 {
@@ -743,22 +731,49 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c9 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -783,35 +798,17 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   font-size: 1em;
 }
 
-.c5 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c9 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
 .c10 {
@@ -871,9 +868,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         <i
           class="c3"
           data-icon-name="bat"
-          height="13"
+          height="16"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="15"
+          width="16"
         />
         <h1
           class="c4"
@@ -965,7 +962,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 
 .c7:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
 .c7:focus {
@@ -973,8 +970,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   outline-offset: -5px;
 }
 
-.c7:active {
-  padding: 8 20 4;
+.c7:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -986,7 +982,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   border-left-color: #848584;
 }
 
-.c7:active:before {
+.c7:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -1004,15 +1000,6 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 
 .c7:not(:last-child) {
   margin-right: 6px;
-}
-
-.c3 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c1 {
@@ -1038,22 +1025,49 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1078,35 +1092,17 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   font-size: 1em;
 }
 
-.c5 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c8 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
 .c9 {
@@ -1142,9 +1138,9 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
         <i
           class="c3"
           data-icon-name="bat"
-          height="13"
+          height="16"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="15"
+          width="16"
         />
         <h1
           class="c4"
@@ -1218,7 +1214,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
 
 .c7:disabled {
   color: #848584;
-  background-color: #9a9e9c;
+  text-shadow: 1px 1px white;
 }
 
 .c7:focus {
@@ -1226,8 +1222,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   outline-offset: -5px;
 }
 
-.c7:active {
-  padding: 8 20 4;
+.c7:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
   position: relative;
@@ -1239,7 +1234,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   border-left-color: #848584;
 }
 
-.c7:active:before {
+.c7:not(:disabled):active:before {
   content: '';
   position: absolute;
   left: -1px;
@@ -1257,15 +1252,6 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
 
 .c7:not(:last-child) {
   margin-right: 6px;
-}
-
-.c3 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c1 {
@@ -1291,22 +1277,49 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   flex-direction: column;
 }
 
-.c0 {
+.c3 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  background-color: #9a9e9c;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
 }
 
 .c2 {
   height: 20px;
-  padding: 1px;
+  padding: 1px 2px;
+  margin: 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1331,35 +1344,17 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   font-size: 1em;
 }
 
-.c5 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2px;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c8 {
-  padding: 0;
-  width: 17px;
-  height: 16px;
-  min-width: 0;
-  font-size: 10px;
-  font-weight: 600;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: #9a9e9c;
 }
 
 .c9 {
@@ -1395,9 +1390,9 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
         <i
           class="c3"
           data-icon-name="bat"
-          height="13"
+          height="16"
           style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="15"
+          width="16"
         />
         <h1
           class="c4"
