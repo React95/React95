@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
+import YouTube, { YouTubeProps } from 'react-youtube';
+import { YouTubePlayer } from 'youtube-player/dist/types';
 
 import Btn from '../shared-style/Btn';
 import Frame, { FrameProps } from '../Frame/Frame';
@@ -48,15 +50,24 @@ const ControlBtn = styled(Btn)`
 `;
 
 const TitleBar = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  min-width: 0;
   height: 18px;
   margin-bottom: 2;
 
   color: ${th('colors.white')};
   padding: 0 2;
 
-  display: flex;
-  align-items: center;
   background-color: primary;
+`;
+
+const TitleText = styled.span`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const Controls = styled.div`
@@ -105,7 +116,7 @@ const PlayOrPause = ({ playing }: { playing: boolean }) =>
 const arrayFy = (str: string | string[]) => ([] as string[]).concat(str);
 
 function updateProgressBar(
-  player: HTMLVideoElement,
+  player: Pick<HTMLVideoElement, 'duration' | 'currentTime'>,
   updateProgress: (value: number) => void,
 ) {
   const percentage = Math.floor((100 / player.duration) * player.currentTime);
@@ -131,18 +142,24 @@ function parseCurrentTime(secs: number): string {
 
 export type VideoProps = {
   name?: string;
-  src: string;
+  src?: string;
   videoProps?: React.HTMLAttributes<HTMLVideoElement>;
   style?: React.CSSProperties;
+  youtubeProps?: YouTubeProps;
 } & FrameProps;
 
 const Video: React.FC<VideoProps> = ({
   name,
-  src,
+  src = '',
   videoProps,
   style,
+  youtubeProps,
   ...props
 }) => {
+  const [videoTitle, setVideoTitle] = React.useState(name);
+  const [youtubePlayer, setYoutubePlayer] = React.useState<
+    YouTubePlayer | undefined
+  >(undefined);
   const [playing, setPlaying] = React.useState(false);
   const [loadeddata, setLoadeddata] = React.useState(false);
   const [progress, setProgress] = React.useState(0);
@@ -152,6 +169,7 @@ const Video: React.FC<VideoProps> = ({
 
   const paths = arrayFy(src);
   const [pathname] = paths;
+  const isYoutubeVideo = Boolean(youtubeProps?.videoId);
 
   React.useEffect(() => {
     player.current?.addEventListener(
@@ -190,6 +208,23 @@ const Video: React.FC<VideoProps> = ({
     );
   }, [player.current]);
 
+  const play = () => {
+    if (!playing) {
+      if (isYoutubeVideo) {
+        youtubePlayer?.playVideo();
+      } else {
+        player.current?.play();
+      }
+    } else {
+      if (isYoutubeVideo) {
+        youtubePlayer?.pauseVideo();
+      } else {
+        player.current?.pause();
+      }
+    }
+    setPlaying(!playing);
+  };
+
   return (
     <Frame
       p={2}
@@ -200,15 +235,46 @@ const Video: React.FC<VideoProps> = ({
       }}
     >
       <TitleBar>
-        <Icon name="mplayer_1_13" size={16} style={{ marginRight: 4 }} />
-        {name || pathname.replace(/^.*[\\/]/, '')}
-        {!loadeddata && ' (Openning)'}
+        <Icon
+          name="mplayer_1_13"
+          size={16}
+          style={{ marginRight: 4, minWidth: 16 }}
+        />
+        <TitleText>
+          {isYoutubeVideo
+            ? videoTitle
+            : videoTitle || pathname.replace(/^.*[\\/]/, '')}
+          {!loadeddata && ' (Openning)'}
+        </TitleText>
       </TitleBar>
-      <VideoTag {...videoProps} visible={loadeddata} ref={player}>
-        {paths.map(s => (
-          <Source key={s} src={s} />
-        ))}
-      </VideoTag>
+      {youtubeProps?.videoId ? (
+        <YouTube
+          opts={{
+            width: '100%',
+            height: '100%',
+          }}
+          {...youtubeProps}
+          onReady={e => {
+            // @ts-ignore
+            const { title } = e.target.getVideoData();
+
+            setVideoTitle(title);
+            setLoadeddata(true);
+            setYoutubePlayer(e.target);
+
+            youtubeProps.onReady?.(e);
+          }}
+          onStateChange={e => {
+            console.log(e);
+          }}
+        />
+      ) : (
+        <VideoTag {...videoProps} visible={loadeddata} ref={player}>
+          {paths.map(s => (
+            <Source key={s} src={s} />
+          ))}
+        </VideoTag>
+      )}
       {loadeddata && (
         <Divider as="span" style={{ display: 'block', marginBottom: 2 }} />
       )}
@@ -241,26 +307,11 @@ const Video: React.FC<VideoProps> = ({
           </ResetFrame>
         </CountDownContainer>
         <Controls>
-          <ControlBtn
-            disabled={!loadeddata}
-            onClick={() => {
-              if (!playing) {
-                player.current?.play();
-              } else {
-                player.current?.pause();
-              }
-              setPlaying(!playing);
-            }}
-          >
+          <ControlBtn disabled={!loadeddata} onClick={play}>
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <Icon
-                name="user_4"
-                width={16}
-                height={16}
-                style={{ marginTop: -2 }}
-              />
+              <Icon name="user_4" width={16} height={16} />
             )}
           </ControlBtn>
           <ControlBtn

@@ -13,6 +13,15 @@ export const Simple = () => (
   <>
     <Video
       width={320}
+      youtubeProps={{ videoId: 'BD_guK9b64k' }}
+      name="Explorer"
+      style={{
+        marginBottom: 4,
+      }}
+    />
+
+    <Video
+      width={320}
       src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
       style={{
         marginBottom: 4,
