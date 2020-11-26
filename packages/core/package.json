@@ -22,6 +22,7 @@
     "react-docgen-typescript-loader": "^3.7.2",
     "react-draggable": "^4.3.1",
     "react-virtualized": "^9.21.2",
+    "react-youtube": "^7.13.0",
     "styled-system": "^5.1.5",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7"
@@ -47,6 +48,7 @@
     "@types/styled-system": "^5.1.10",
     "@types/xstyled__styled-components": "^1.17.0",
     "@types/xstyled__system": "^1.17.1",
+    "@types/youtube-player": "^5.5.3",
     "fs-extra": "^9.0.0",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
