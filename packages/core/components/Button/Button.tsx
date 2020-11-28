@@ -8,7 +8,7 @@ export const StyledButton = styled.button<ButtonProps>`
   padding: 7px 20px 5px;
   min-width: 70px;
   font-size: 12px;
-  ${border()};
+  ${border({ useBoxShadow: true })};
   :disabled {
     color: ${({ theme }) => theme.colors.canvasTextDisabled};
     text-shadow: 1px 1px white;
