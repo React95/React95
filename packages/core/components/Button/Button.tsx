@@ -5,10 +5,10 @@ import { border } from './../shared-style/Border';
 export const StyledButton = styled.button<ButtonProps>`
   background-color: ${({ theme }) => theme.colors.material};
   color: ${({ theme }) => theme.colors.materialText};
-  padding: 7px 20px 5px;
+  padding: 6px 22px 6px;
   min-width: 70px;
   font-size: 12px;
-  ${border({ useBoxShadow: true })};
+  ${border()}
   :disabled {
     color: ${({ theme }) => theme.colors.canvasTextDisabled};
     text-shadow: 1px 1px white;

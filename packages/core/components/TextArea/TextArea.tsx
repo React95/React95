@@ -31,7 +31,7 @@ const TextAreaComponent = styled.textarea<TextAreaProps>`
 const TextAreaWrapper = styled.div`
   display: flex;
   padding: 1px;
-  ${border({ direction: 'intrude', useBoxShadow: true })}
+  ${border({ direction: 'intrude' })}
 `;
 
 const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(

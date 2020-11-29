@@ -21,7 +21,7 @@ const StyledTab = styled.button<StyledTabProps>`
   background: ${({ theme }) => theme.colors.material};
   user-select: none;
   color: ${({ theme }) => theme.colors.materialText};
-  ${border({ useBoxShadow: true })}
+  ${border()}
 
   &:focus, &:active {
     outline: 0;
@@ -54,9 +54,9 @@ const StyledTab = styled.button<StyledTabProps>`
     z-index: 1;
     position: absolute;
     height: 2px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     ${({ isActive, theme }) => `
       box-shadow: 
         inset 0 1px 0 0 ${

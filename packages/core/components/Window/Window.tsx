@@ -25,14 +25,14 @@ const toPxUnits = (input: pxInput | undefined) => {
 };
 
 const Window = styled.section<WindowProps>`
-  ${windowBorder({ useBoxShadow: true })}
+  ${windowBorder()}
   background: ${({ theme }) => theme.colors.material};
   color: ${({ theme }) => theme.colors.materialText};
   width: ${({ width }) => toPxUnits(width)};
   min-width: ${({ minWidth }) => minWidth};
   height: ${({ height }) => toPxUnits(height)};
   min-height: ${({ minHeight }) => minHeight};
-  padding: 1px;
+  padding: 3px;
   display: flex;
   flex-direction: ${({ direction }) => direction};;
 `;

@@ -8,14 +8,8 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
 }
 
 .c0:after {
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #dfdfdf;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #dfdfdf;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   content: '';
   display: -webkit-box;
   display: -webkit-flex;
@@ -25,17 +19,15 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   font-size: 14px;
   line-height: 1.1;
   pointer-events: none;
   position: absolute;
-  right: 1px;
+  right: 2px;
   top: 2px;
   background-color: #c6c6c6;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIxIiB3aWR0aD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxnIHRyYW5zZm9ybT0icm90YXRlKDAgMTMgMTMpIj4KICAgICAgPHBvbHlnb24gZmlsbD0iIzBhMGEwYSIgcG9pbnRzPSI2LDEwIDIwLDEwIDEzLDE3Ii8+CiAgICA8L2c+CiAgPC9zdmc+);
   background-repeat: no-repeat;
   background-size: 80%;
@@ -49,19 +41,13 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   border-radius: 0;
   width: 100%;
   height: 23px;
-  padding: 3px;
+  padding: 5px;
   background-color: #ffffff;
   color: #0a0a0a;
   -webkit-appearance: none;
   -moz-appearance: none;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-  box-shadow: inset -1px -1px 0 0px  #dfdfdf , inset 1px 1px 0 0px  #0a0a0a;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 <div>

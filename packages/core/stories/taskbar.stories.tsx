@@ -97,7 +97,7 @@ export const Simple = () => {
             width="300"
             height="200"
           >
-            <Panel shadow="none" padding="0">
+            <Panel shadow="none">
               <Tree {...treeNodes}></Tree>
             </Panel>
           </Modal>

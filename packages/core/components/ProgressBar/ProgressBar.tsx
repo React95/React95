@@ -12,7 +12,7 @@ const Wrapper = styled.div<Pick<ProgressBarProps, 'width'>>`
   height: 21px;
   position: relative;
   text-align: center;
-  ${border({ direction: 'intrude', useBoxShadow: true })}
+  ${border({ direction: 'intrude' })}
 `;
 
 const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`

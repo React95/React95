@@ -38,11 +38,11 @@ interface TitleBarProps {
 const TitleBarBackground = styled.div<{ isActive?: boolean }>`
   height: 20px;
   padding: 1px 2px;
-  margin: 1px;
+  margin: 0 0 1px;
   margin-bottom: 2px;
   display: flex;
   align-items: center;
-  background-color: ${({ isActive, theme }) =>
+  background: ${({ isActive, theme }) =>
     isActive
       ? theme.colors.headerBackground
       : theme.colors.headerNotActiveBackground};

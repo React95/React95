@@ -130,30 +130,9 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   margin: 0;
   padding: 2px;
   list-style: none;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #dfdfdf;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #dfdfdf;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   width: 200px;
-}
-
-.c0:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #fefefe;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #fefefe;
-  pointer-events: none;
 }
 
 <div>

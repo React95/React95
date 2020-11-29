@@ -9,21 +9,19 @@ const Wrapper = styled.div`
   height: 23px;
 
   &:after {
-    ${scrollBarBorder({ useBoxShadow: true })}
+    ${scrollBarBorder()}
     content: '';
     display: flex;
     justify-content: center;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     font-size: 14px;
     line-height: 1.1;
     pointer-events: none;
     position: absolute;
-    right: 1px;
+    right: 2px;
     top: 2px;
     background-color: ${({ theme }) => theme.colors.material};
-    border-right: 1;
-    border-bottom: 1;
     background-image: ${({ theme }) =>
       createTriangleSVG(theme.colors.materialText, 0)};
     background-repeat: no-repeat;
@@ -39,12 +37,12 @@ const Select = styled.select`
   border-radius: 0;
   width: 100%;
   height: 23px;
-  padding: 3;
+  padding: 5;
   background-color: ${({ theme }) => theme.colors.canvas};
   color: ${({ theme }) => theme.colors.canvasText};
   -webkit-appearance: none;
   -moz-appearance: none;
-  ${border({ useBoxShadow: true, direction: 'intrude' })}
+  ${border({ direction: 'intrude' })}
 `;
 
 type DropdownProps = {

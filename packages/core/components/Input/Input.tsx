@@ -19,7 +19,7 @@ const Input = styled.input<InputProps>`
   border: none;
   cursor: text;
   padding: 4px 4px 5px 4px;
-  ${border({ useBoxShadow: true, direction: 'intrude' })}
+  ${border({ direction: 'intrude' })}
   ${padding}
   ${borders}
 `;

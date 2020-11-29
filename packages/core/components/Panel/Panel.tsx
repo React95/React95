@@ -4,13 +4,12 @@ import CSS from 'csstype';
 import border from './../shared-style/Border';
 
 interface IStyledPanel {
-  shadow?: 'intrude' | 'extrude' | 'in-out' | 'none';
+  shadow?: 'intrude' | 'extrude' | 'none';
   background?: CSS.Property.Background;
   padding?: CSS.Property.Padding;
   direction?: CSS.Property.FlexDirection;
   style?: React.CSSProperties;
   asCanvas?: boolean;
-  isScrollable?: boolean;
 }
 export const StyledPanel = styled.section<IStyledPanel>`
   display: flex;
@@ -33,14 +32,7 @@ export const StyledPanel = styled.section<IStyledPanel>`
     background || asCanvas
       ? theme.colors.canvasText
       : theme.colors.materialText};
-  ${({ shadow }) => {
-    let shadowStyle;
-    if (shadow == 'extrude')
-      shadowStyle = border({ direction: 'extrude', useBoxShadow: true });
-    else if (shadow == 'intrude')
-      shadowStyle = border({ direction: 'intrude', useBoxShadow: true });
-    return shadowStyle;
-  }}
+  ${({ shadow }) => (shadow != 'none' ? border({ direction: shadow }) : '')}
   &[direction="row"] > & + & {
     border-left: 0;
   }
@@ -69,13 +61,22 @@ type ConditonalWrapperProps = {
   condition: boolean;
   wrapper: (children: React.ReactElement) => JSX.Element;
 };
+
 const ConditonalWrapper: React.FC<ConditonalWrapperProps> = ({
   condition,
   wrapper,
   children,
 }) => (condition ? wrapper(children) : children);
 
-const Panel: React.FunctionComponent<IStyledPanel> = ({
+interface IPanel {
+  shadow?: 'intrude' | 'extrude' | 'in-out' | 'none';
+  background?: CSS.Property.Background;
+  padding?: CSS.Property.Padding;
+  direction?: CSS.Property.FlexDirection;
+  style?: React.CSSProperties;
+  asCanvas?: boolean;
+}
+const Panel: React.FunctionComponent<IPanel> = ({
   children,
   shadow = 'intrude',
   background = undefined,
@@ -83,58 +84,29 @@ const Panel: React.FunctionComponent<IStyledPanel> = ({
   asCanvas = false,
   style,
   padding = '12px',
-  isScrollable = true,
-}) => {
-  let el;
-  if (shadow === 'in-out') {
-    el = (
-      <StyledPanel shadow="intrude" padding="4px" style={style}>
-        <StyledPanel
-          asCanvas={asCanvas}
-          shadow="extrude"
-          background={background}
-          direction={direction}
-          padding={isScrollable ? 0 : padding}
-        >
-          <ConditonalWrapper
-            condition={isScrollable}
-            wrapper={children => (
-              <ScrollWrap padding={padding} direction={direction}>
-                {children}
-              </ScrollWrap>
-            )}
-          >
-            <>{children}</>
-          </ConditonalWrapper>
-        </StyledPanel>
+}) => (
+  <ConditonalWrapper
+    condition={shadow == 'in-out'}
+    wrapper={children => (
+      <StyledPanel shadow="intrude" padding="6px">
+        {children}
       </StyledPanel>
-    );
-  } else {
-    // intrude, extrude
-    el = (
-      <StyledPanel
-        asCanvas={asCanvas}
-        shadow={shadow}
-        background={background}
-        direction={direction}
-        style={style}
-        padding={isScrollable ? 0 : padding}
-      >
-        <ConditonalWrapper
-          condition={isScrollable}
-          wrapper={children => (
-            <ScrollWrap padding={padding} direction={direction}>
-              {children}
-            </ScrollWrap>
-          )}
-        >
-          <>{children}</>
-        </ConditonalWrapper>
-      </StyledPanel>
-    );
-  }
-  return el;
-};
+    )}
+  >
+    <StyledPanel
+      asCanvas={asCanvas}
+      shadow={shadow == 'in-out' ? 'extrude' : shadow}
+      background={background}
+      direction={direction}
+      padding={'2px'}
+      style={style}
+    >
+      <ScrollWrap padding={padding} direction={direction}>
+        {children}
+      </ScrollWrap>
+    </StyledPanel>
+  </ConditonalWrapper>
+);
 
 Panel.defaultProps = {
   shadow: 'intrude',

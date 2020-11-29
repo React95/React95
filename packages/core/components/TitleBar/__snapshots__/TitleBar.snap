@@ -13,7 +13,7 @@ exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
 .c0 {
   height: 20px;
   padding: 1px 2px;
-  margin: 1px;
+  margin: 0 0 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,7 +23,7 @@ exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000080;
+  background: #000080;
   color: #fefefe;
 }
 

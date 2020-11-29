@@ -2,13 +2,8 @@
 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
 .c4 {
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
   width: 12px;
   height: 12px;
   left: 0;
@@ -19,22 +14,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
   background-position: center center;
   background-size: 7px 7px;
   margin-top: 2px;
-}
-
-.c4:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
 }
 
 .c6 {
@@ -112,13 +91,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
 
 exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
 .c4 {
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
   width: 12px;
   height: 12px;
   left: 0;
@@ -129,22 +103,6 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   background-position: center center;
   background-size: 7px 7px;
   margin-top: 2px;
-}
-
-.c4:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
 }
 
 .c6 {

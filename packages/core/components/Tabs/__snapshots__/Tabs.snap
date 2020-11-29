@@ -27,14 +27,8 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   color: #0a0a0a;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -62,9 +56,9 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   z-index: 1;
   position: absolute;
   height: 2px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   box-shadow: inset 0 1px 0 0 #c6c6c6, inset 0 -1px 0 0 #c6c6c6;
 }
 
@@ -81,6 +75,8 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   overflow-y: visible;
   background-color: #c6c6c6;
   color: #0a0a0a;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c2[direction="row"] > .c1 + .c1 {
@@ -103,19 +99,13 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0;
+  padding: 2px;
   overflow-x: visible;
   overflow-y: auto;
   background-color: #c6c6c6;
   color: #0a0a0a;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c5[direction="row"] > .c1 + .c1 {

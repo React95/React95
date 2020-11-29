@@ -4,32 +4,11 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 .c7 {
   background-color: #c6c6c6;
   color: #0a0a0a;
-  padding: 7px 20px 5px;
+  padding: 6px 22px 6px;
   min-width: 70px;
   font-size: 12px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-}
-
-.c7:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #dfdfdf;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #dfdfdf;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c7:disabled {
@@ -45,29 +24,8 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 .c7:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-}
-
-.c7:not(:disabled):active:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 .c7:not(:last-child) {
@@ -75,19 +33,13 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 }
 
 .c1 {
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #dfdfdf;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #dfdfdf;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   background: #c6c6c6;
   color: #0a0a0a;
   width: 320px;
   height: auto;
-  padding: 1px;
+  padding: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -130,7 +82,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 .c2 {
   height: 20px;
   padding: 1px 2px;
-  margin: 1px;
+  margin: 0 0 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -140,7 +92,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #7f787f;
+  background: #7f787f;
   color: #c6c6c6;
 }
 
@@ -181,7 +133,6 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: auto;
-  padding: 2px;
 }
 
 .c13 {
@@ -322,32 +273,11 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 .c7 {
   background-color: #c6c6c6;
   color: #0a0a0a;
-  padding: 7px 20px 5px;
+  padding: 6px 22px 6px;
   min-width: 70px;
   font-size: 12px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-}
-
-.c7:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #dfdfdf;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #dfdfdf;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c7:disabled {
@@ -363,29 +293,8 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 .c7:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-}
-
-.c7:not(:disabled):active:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 .c7:not(:last-child) {
@@ -393,19 +302,13 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 }
 
 .c1 {
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #dfdfdf;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #dfdfdf;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   background: #c6c6c6;
   color: #0a0a0a;
   width: 320px;
   height: auto;
-  padding: 1px;
+  padding: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -448,7 +351,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 .c2 {
   height: 20px;
   padding: 1px 2px;
-  margin: 1px;
+  margin: 0 0 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -458,7 +361,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #7f787f;
+  background: #7f787f;
   color: #c6c6c6;
 }
 
@@ -499,7 +402,6 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: auto;
-  padding: 2px;
 }
 
 .c13 {
@@ -640,32 +542,11 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 .c7 {
   background-color: #c6c6c6;
   color: #0a0a0a;
-  padding: 7px 20px 5px;
+  padding: 6px 22px 6px;
   min-width: 70px;
   font-size: 12px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-}
-
-.c7:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #dfdfdf;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #dfdfdf;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c7:disabled {
@@ -681,29 +562,8 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 .c7:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-}
-
-.c7:not(:disabled):active:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 .c7:not(:last-child) {
@@ -711,19 +571,13 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 }
 
 .c1 {
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #dfdfdf;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #dfdfdf;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   background: #c6c6c6;
   color: #0a0a0a;
   width: 320px;
   height: auto;
-  padding: 1px;
+  padding: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -766,7 +620,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 .c2 {
   height: 20px;
   padding: 1px 2px;
-  margin: 1px;
+  margin: 0 0 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -776,7 +630,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #7f787f;
+  background: #7f787f;
   color: #c6c6c6;
 }
 
@@ -817,7 +671,6 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: auto;
-  padding: 2px;
 }
 
 .c13 {
@@ -958,32 +811,11 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 .c7 {
   background-color: #c6c6c6;
   color: #0a0a0a;
-  padding: 7px 20px 5px;
+  padding: 6px 22px 6px;
   min-width: 70px;
   font-size: 12px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-}
-
-.c7:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #dfdfdf;
-  border-right-color: #848584;
-  border-bottom-color: #848584;
-  border-left-color: #dfdfdf;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c7:disabled {
@@ -999,29 +831,8 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 .c7:not(:disabled):active {
   outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-}
-
-.c7:not(:disabled):active:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 .c7:not(:last-child) {
@@ -1029,19 +840,13 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 }
 
 .c1 {
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #dfdfdf;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #dfdfdf;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #fefefe;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   background: #c6c6c6;
   color: #0a0a0a;
   width: 320px;
   height: auto;
-  padding: 1px;
+  padding: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1084,7 +889,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 .c2 {
   height: 20px;
   padding: 1px 2px;
-  margin: 1px;
+  margin: 0 0 1px;
   margin-bottom: 2px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1094,7 +899,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #7f787f;
+  background: #7f787f;
   color: #c6c6c6;
 }
 
@@ -1135,7 +940,6 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: auto;
-  padding: 2px;
 }
 
 .c13 {

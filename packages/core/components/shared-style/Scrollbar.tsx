@@ -55,7 +55,7 @@ export const createScrollbars = (variant = 'default') => css`
     display: inline-block;
     background: ${({ theme }) => theme.colors.material};
     color: ${({ theme }) => theme.colors.materialText};
-    ${scrollBarBorder({ useBoxShadow: true })}
+    ${scrollBarBorder()}
   }
 
   ::-webkit-scrollbar-corner {
@@ -66,7 +66,7 @@ export const createScrollbars = (variant = 'default') => css`
     display: inline-block;
     background: ${({ theme }) => theme.colors.material};
     color: ${({ theme }) => theme.colors.materialText};
-    ${scrollBarBorder({ useBoxShadow: true })}
+    ${scrollBarBorder()}
     display: block;
     outline-offset: -2px;
     height: 17px;
@@ -78,7 +78,7 @@ export const createScrollbars = (variant = 'default') => css`
   ::-webkit-scrollbar-button:active,
   ::-webkit-scrollbar-button:active {
     background-position: 0 1px;
-    ${scrollBarBorder({ useBoxShadow: true })}
+    ${scrollBarBorder()}
   }
 
   ::-webkit-scrollbar-button:horizontal:increment:start,

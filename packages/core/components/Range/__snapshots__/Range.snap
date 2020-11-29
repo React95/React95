@@ -17,29 +17,8 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   height: 4px;
   background: #0a0a0a;
   cursor: pointer;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-}
-
-.c0::-webkit-slider-runnable-track:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 .c0::-webkit-slider-thumb {
@@ -49,14 +28,8 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   cursor: pointer;
   margin-top: -10px;
   -webkit-appearance: none;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c0:focus::-webkit-slider-runnable-track {
@@ -68,29 +41,8 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   height: 4px;
   background: #0a0a0a;
   cursor: pointer;
-  position: relative;
-  border-width: 2px;
-  border-style: solid;
-  border-top-color: #848584;
-  border-right-color: #fefefe;
-  border-bottom-color: #fefefe;
-  border-left-color: #848584;
-}
-
-.c0::-moz-range-track:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #0a0a0a;
-  border-right-color: #dfdfdf;
-  border-bottom-color: #dfdfdf;
-  border-left-color: #0a0a0a;
-  pointer-events: none;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
 .c0::-moz-range-thumb {
@@ -100,14 +52,8 @@ exports[`<Range /> Snapshot should match snapshot 1`] = `
   cursor: pointer;
   margin-top: -10px;
   -webkit-appearance: none;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-top-color: #fefefe;
-  border-right-color: #0a0a0a;
-  border-bottom-color: #0a0a0a;
-  border-left-color: #fefefe;
-  box-shadow: inset -1px -1px 0 0px  #848584 , inset 1px 1px 0 0px  #dfdfdf;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 <div>

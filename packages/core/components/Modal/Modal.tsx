@@ -37,7 +37,6 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   overflow: auto;
-  padding: 2px;
 `;
 
 type ButtonWrapperProps = {
