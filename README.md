@@ -8,7 +8,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-[![npm version](https://badge.fury.io/js/%40react95%2Fcore.svg)](https://www.npmjs.com/package/@react95/core) 
+[![npm version](https://badge.fury.io/js/%40react95%2Fcore.svg)](https://www.npmjs.com/package/@react95/core)
 [![Join the chat at https://gitter.im/React95/React95](https://badges.gitter.im/React95/React95.svg)](https://gitter.im/React95/React95?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Follow @React95lib](https://img.shields.io/twitter/follow/React95lib)](https://twitter.com/intent/follow?screen_name=React95lib)
 [![Figma Design kit](https://img.shields.io/badge/Figma-Design%20kit-blueviolet)](https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit)
@@ -35,6 +35,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Kaio Felipe Silva's personal website](https://github.com/kaiofelipejs/kaiofelipejs.dev)
 - [Lorenzo Pieri's personal website](https://github.com/LRNZ09/lrnz09.github.io)
 - [Insaf Khamzin's portfolio website](https://github.com/InsafKhamzin/portfolio)
+- [Janne Koivisto's portfolio website](https://janneilkka.com)
 
 ## Contributors
 
@@ -74,6 +75,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
