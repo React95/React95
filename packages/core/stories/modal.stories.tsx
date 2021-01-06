@@ -10,7 +10,7 @@ export default {
   component: Modal,
 } as Meta;
 
-export const Simple: React.FC = ({ children }) => {
+export const Simple = () => {
   const [showModal, toggleShowModal] = React.useState(true);
 
   const handleOpenModal = () => toggleShowModal(true);
@@ -54,10 +54,16 @@ export const Simple: React.FC = ({ children }) => {
               ),
             },
           ]}
-        >
-          {children}
-        </Modal>
+        />
       )}
     </>
   );
+};
+
+Simple.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A12',
+  },
 };

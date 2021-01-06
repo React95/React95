@@ -14,6 +14,8 @@ import {
   ShadowsProps,
   space,
   SpaceProps,
+  overflow,
+  OverflowProps,
 } from '@xstyled/system';
 
 export type FrameProps = BackgroundsProps &
@@ -22,7 +24,8 @@ export type FrameProps = BackgroundsProps &
   LayoutProps &
   PositioningProps &
   ShadowsProps &
-  SpaceProps;
+  SpaceProps &
+  OverflowProps;
 
 const Frame = styled.div<FrameProps>`
   ${backgrounds}
@@ -32,6 +35,7 @@ const Frame = styled.div<FrameProps>`
   ${positioning}
   ${shadows}
   ${space}
+  ${overflow}
 `;
 
 Frame.defaultProps = {

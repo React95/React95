@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "2.11.5",
+  "version": "2.12.0",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -35,11 +35,12 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
     "@react95/clippy": "^0.1.1",
-    "@storybook/addon-essentials": "^6.0.21",
-    "@storybook/addons": "^6.0.21",
-    "@storybook/react": "^6.0.21",
-    "@storybook/storybook-deployer": "^2.8.6",
-    "@storybook/theming": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-storysource": "^6.0.28",
+    "@storybook/addons": "^6.0.28",
+    "@storybook/react": "^6.0.28",
+    "@storybook/storybook-deployer": "^2.8.7",
+    "@storybook/theming": "^6.0.28",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.4",
     "@types/jest": "^26.0.8",
@@ -51,6 +52,7 @@
     "fs-extra": "^9.0.0",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
+    "storybook-addon-designs": "^5.4.2",
     "styled-components": "^5.1.0",
     "ts-jest": "^26.1.4"
   },

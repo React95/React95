@@ -9,3 +9,11 @@ export default {
 } as Meta;
 
 export const Simple = () => <ProgressBar width={200} percent={49} />;
+
+Simple.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A13',
+  },
+};

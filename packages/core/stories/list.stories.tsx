@@ -44,6 +44,14 @@ export const WithIcons = () => (
   </List>
 );
 
+WithIcons.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A11',
+  },
+};
+
 export const Simple = () => (
   <List>
     <List.Item>View</List.Item>
@@ -64,3 +72,11 @@ export const Simple = () => (
     <List.Item>Properties</List.Item>
   </List>
 );
+
+Simple.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A11',
+  },
+};
