@@ -1,8 +1,7 @@
 import styled, { StyledComponent } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
-
 import ListItem from './ListItem';
 import Divider from './ListDivider';
+import { windowBorder } from './../shared-style/Border';
 
 type ListProps = {
   width?: Number;
@@ -15,7 +14,7 @@ export type IListProps = StyledComponent<'ul', any, ListProps, never> & {
 
 const List: IListProps = Object.assign(
   styled.ul<ListProps>`
-    background-color: bg;
+    background-color: ${({theme}) => theme.colors.material};
     padding: 5 20 6;
     border: none;
 
@@ -23,17 +22,15 @@ const List: IListProps = Object.assign(
     padding: 2;
     list-style: none;
 
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-      inset 0 0 0 1px ${th('colors.grays.3')},
-      1px 1px 0 1px ${th('colors.black')};
+    ${windowBorder()}
 
     ${({ width }) => `
-  width: ${width}px;
-`};
+      width: ${width}px;
+    `};
   `,
   {
     Item: ListItem,
-    Divider: Divider,
+    Divider: Divider
   },
 );
 

@@ -5,6 +5,7 @@ import Frame from '../Frame';
 import Tooltip from '../Tooltip';
 
 const StyledTooltip = styled(Tooltip)`
+  color: ${({ theme }) => theme.colors.materialText};
   div:first-child {
     right: 0;
   }

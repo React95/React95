@@ -1,11 +1,9 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import Icon, { IconProps } from '../Icon/Icon';
 import { IListProps } from './List';
-
-import rightcaret from '../shared/assets/pattern/rightcaret.svg';
+import { createTriangleSVG } from './../shared-style/Scrollbar';
 
 const Item = styled.li<{
   icon?: string;
@@ -16,15 +14,15 @@ const Item = styled.li<{
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 2 6;
+  padding: 4px 6px 3px;
 
   i {
     margin-right: 10;
   }
 
   &:hover {
-    background-color: primary;
-    color: ${th('colors.white')};
+    background-color: ${({ theme }) => theme.colors.headerBackground};
+    color: ${({ theme }) => theme.colors.headerText};
   }
 
   ul {
@@ -32,7 +30,7 @@ const Item = styled.li<{
     position: absolute;
     top: -2px;
     left: 97%;
-    color: ${th('colors.black')};
+    color: ${({ theme }) => theme.colors.materialText};
 
     i {
       width: 18px;
@@ -42,7 +40,7 @@ const Item = styled.li<{
   }
 
   svg {
-    fill: ${th('colors.white')};
+    fill: ${({ theme }) => theme.colors.materialText};
   }
 
   ${({ icon }) => !icon && 'padding-left: 26px;'};
@@ -52,21 +50,23 @@ const Item = styled.li<{
     css`
       &:after {
         position: absolute;
-        width: 5px;
-        height: 8px;
+        width: 17px;
+        height: 17px;
         right: 8px;
 
         content: '';
-        background-color: ${th('colors.black')};
-        mask-image: url('${rightcaret}');
-        mask-position: center center;
-        mask-size: 5px 8px;
-        mask-repeat: no-repeat;
+        background-color: transparent;
+        background-image: ${({ theme }) =>
+          createTriangleSVG(theme.colors.materialText, 270)};
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 0 0;
       }
 
       &:hover {
         &:after {
-          background-color: ${th('colors.white')};
+          background-image: ${({ theme }) =>
+            createTriangleSVG(theme.colors.headerText, 270)};
         }
 
         ul {
@@ -78,10 +78,12 @@ const Item = styled.li<{
 
 export type ListItemProps = {
   icon?: IconProps['name'];
+  small?: boolean;
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem: React.FC<ListItemProps> = ({
   icon,
+  small,
   children = [],
   ...rest
 }) => (
@@ -95,7 +97,7 @@ const ListItem: React.FC<ListItemProps> = ({
         ).some(child => child),
     )}
   >
-    {icon && <Icon name={icon} />}
+    {icon && <Icon name={icon} size={small ? 16 : 32} />}
     {children}
   </Item>
 );

@@ -59,7 +59,7 @@ describe('<Alert />', () => {
         />,
       );
 
-      fireEvent.click(getByText('x'));
+      fireEvent.click(getByText('X'));
 
       expect(closeAlertMock).toHaveBeenCalled();
     });

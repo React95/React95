@@ -4,6 +4,7 @@ import Node, { icons, NodeProps } from './Node';
 
 const TreeParent = styled.ul`
   padding: 0;
+  margin: 0;
 `;
 
 export type TreeProps = {

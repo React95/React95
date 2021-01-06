@@ -2,33 +2,40 @@
 
 exports[`<Button /> Snapshots should match snapshot 1`] = `
 .c0 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
 .c0:disabled {
-  color: #868a8e;
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
 .c0:focus {
-  outline: 1px dotted #000000;
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c0:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c0:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
+}
+
+.c0:not(:last-child) {
+  margin-right: 6px;
 }
 
 <div>
   <button
     class="c0"
+    font-size="12px"
   >
     Ok
   </button>

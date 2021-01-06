@@ -2,10 +2,11 @@
 
 exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
 .c0 {
+  background-color: #c6c6c6;
   background-color: transparent;
   width: auto;
   height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #848584, 0.5px 0.5px 0px 0.5px #fefefe;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 2px;
@@ -17,6 +18,10 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
   position: relative;
   cursor: default;
   white-space: nowrap;
+}
+
+.c2 {
+  color: #0a0a0a;
 }
 
 .c2 div:first-child {
@@ -50,10 +55,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 .c1 {
@@ -74,6 +79,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
   max-width: 150px;
   border: none;
   outline: none;
+  color: #0a0a0a;
   width: 100%;
 }
 
@@ -105,17 +111,17 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 .c3 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #848584, 0.5px 0.5px 0px 0.5px #fefefe;
 }
 
 .c1 {
@@ -136,6 +142,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   max-width: 150px;
   border: none;
   outline: none;
+  color: #0a0a0a;
 }
 
 .c4 {
@@ -156,7 +163,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   max-width: 150px;
   border: none;
   outline: none;
-  outline: 1px dotted #000000;
+  color: #0a0a0a;
+  background-color: #dfdfdf;
+  outline: 1px dotted #0a0a0a;
   outline-offset: -4px;
   padding-top: 4px;
   padding-right: 2px;
@@ -205,10 +214,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 .c1 {
@@ -229,6 +238,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
   max-width: 150px;
   border: none;
   outline: none;
+  color: #0a0a0a;
   width: 100%;
 }
 
@@ -261,10 +271,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 .c1 {
@@ -285,6 +295,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
   max-width: 150px;
   border: none;
   outline: none;
+  color: #0a0a0a;
 }
 
 <div>
@@ -315,7 +326,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -334,20 +345,20 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  z-index: 1;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
   padding: 2px;
 }
 
 .c1 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 .c4 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -364,10 +375,11 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 }
 
 .c5 {
+  background-color: #c6c6c6;
   background-color: transparent;
   width: auto;
   height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #848584, 0.5px 0.5px 0px 0.5px #fefefe;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 2px;
@@ -379,6 +391,10 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
   position: relative;
   cursor: default;
   white-space: nowrap;
+}
+
+.c7 {
+  color: #0a0a0a;
 }
 
 .c7 div:first-child {
@@ -403,6 +419,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
   max-width: 150px;
   border: none;
   outline: none;
+  color: #0a0a0a;
 }
 
 <div>
@@ -459,7 +476,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -478,20 +495,20 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  z-index: 1;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
   padding: 2px;
 }
 
 .c1 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 .c4 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -508,10 +525,11 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 }
 
 .c5 {
+  background-color: #c6c6c6;
   background-color: transparent;
   width: auto;
   height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #848584, 0.5px 0.5px 0px 0.5px #fefefe;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 2px;
@@ -523,6 +541,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
   position: relative;
   cursor: default;
   white-space: nowrap;
+}
+
+.c7 {
+  color: #0a0a0a;
 }
 
 .c7 div:first-child {
@@ -547,6 +569,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
   max-width: 150px;
   border: none;
   outline: none;
+  color: #0a0a0a;
 }
 
 <div>
@@ -595,7 +618,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="sc-JsfGe PEIsU"
+    class="sc-gGGEav jzLiRH"
     display="flex"
     height="28"
     width="100%"
@@ -620,7 +643,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-  padding: 2px 6px;
+  padding: 4px 6px 3px;
 }
 
 .c2 i {
@@ -628,8 +651,8 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 }
 
 .c2:hover {
-  background-color: #000e7a;
-  color: #ffffff;
+  background-color: #000080;
+  color: #fefefe;
 }
 
 .c2 ul {
@@ -637,7 +660,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   position: absolute;
   top: -2px;
   left: 97%;
-  color: #000000;
+  color: #0a0a0a;
 }
 
 .c2 ul i {
@@ -647,27 +670,28 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 }
 
 .c2 svg {
-  fill: #ffffff;
+  fill: #0a0a0a;
 }
 
 .c1 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   padding: 5px 20px 6px;
   border: none;
   margin: 0;
   padding: 2px;
   list-style: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
   width: 200px;
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
   position: absolute;
   bottom: 28px;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
 <div
@@ -706,12 +730,12 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <button
-      class="sc-JsfGe sc-hkoqCG dSEShf jyIXGv"
+      class="sc-gGGEav sc-bShfyb bcIiOO hdzfPK"
       height="auto"
       width="auto"
     >
       <i
-        class="sc-gstumO gYrVcR"
+        class="sc-amjij gNFXoj"
         data-icon-name="logo"
         height="20"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
@@ -720,19 +744,19 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       Start
     </button>
     <div
-      class="sc-JsfGe dZDqmK"
+      class="sc-gGGEav hFiUij"
       display="flex"
       height="auto"
       width="100%"
     />
     <div
-      class="sc-JsfGe kalnGE"
+      class="sc-gGGEav fRvquE"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="sc-dksuAk dBsGaw sc-jhGSUB gcSXVA"
+        class="sc-jhGSUB cMTgYS sc-hkoqCG Jlevj"
       >
         
       </div>
@@ -742,47 +766,128 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 `;
 
 exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+.c7 {
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
-.c6:disabled {
-  color: #868a8e;
+.c7:disabled {
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
-.c6:focus {
-  outline: 1px dotted #000000;
+.c7:focus {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c7:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
-.c2 {
+.c7:not(:last-child) {
+  margin-right: 6px;
+}
+
+.c1 {
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 15px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
 }
 
-.c12 {
+.c13 {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 20px;
   height: 20px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.c2 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 0 0 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #7f787f;
+  color: #c6c6c6;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .c0 {
@@ -794,75 +899,11 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  padding: 2px 2px 8px;
   top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: auto;
-  z-index: 1;
+  background-color: #9a9e9c;
 }
 
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000e7a;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -874,11 +915,11 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 6px;
+  overflow: auto;
 }
 
-.c9 {
-  background-color: #c3c7cb;
+.c10 {
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -897,20 +938,20 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  z-index: 1;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
   padding: 2px;
 }
 
-.c10 {
-  background-color: #c3c7cb;
+.c11 {
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
-.c13 {
-  background-color: #c3c7cb;
+.c14 {
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -926,36 +967,34 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   margin-left: 2px;
 }
 
-.c17 {
+.c15 {
+  background-color: #c6c6c6;
   background-color: transparent;
   width: auto;
   height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #848584, 0.5px 0.5px 0px 0.5px #fefefe;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
-.c14 {
-  background-color: #e6e6e6;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
-}
-
-.c18 {
+.c16 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c19 div:first-child {
+.c17 {
+  color: #0a0a0a;
+}
+
+.c17 div:first-child {
   right: 0;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -973,34 +1012,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   max-width: 150px;
   border: none;
   outline: none;
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 2px 3px;
-  margin-right: 2px;
-  max-width: 150px;
-  border: none;
-  outline: none;
-  width: 100%;
-}
-
-.c16 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  color: #0a0a0a;
 }
 
 <div>
@@ -1008,61 +1020,68 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
     class="c0 react-draggable"
     style="transform: translate(0px,0px);"
   >
-    <div
-      class="c1 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
-      <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
-      />
       <div
-        class="c3"
+        class="c2 draggable"
       >
-        file.bat
+        <i
+          class="c3"
+          data-icon-name="bat"
+          height="16"
+          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
+          width="16"
+        />
+        <h1
+          class="c4"
+        >
+          file.bat
+        </h1>
+        <ul
+          class="c5"
+        >
+          <li
+            class="c6"
+          >
+            <button
+              class="c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c6"
+          >
+            <button
+              class="c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c4"
-      >
-        <li
-          class="c5"
-        >
-          <button
-            class="c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c5"
-        >
-          <button
-            class="c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    />
+      <div
+        class="c9"
+      />
+    </section>
   </div>
   <div
-    class="c9"
+    class="c10"
     display="flex"
     height="28"
     width="100%"
   >
     <button
-      class="c10 c11"
+      class="c11 c12"
       height="auto"
       width="auto"
     >
       <i
-        class="c12"
+        class="c13"
         data-icon-name="logo"
         height="20"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
@@ -1071,38 +1090,19 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       Start
     </button>
     <div
-      class="c13"
+      class="c14"
       display="flex"
       height="auto"
       width="100%"
-    >
-      <button
-        class="c14 c15"
-        height="auto"
-        width="auto"
-      >
-        <i
-          class="c12"
-          data-icon-name="bat"
-          height="20"
-          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="20"
-        />
-        <span
-          class="c16"
-        >
-          file.bat
-        </span>
-      </button>
-    </div>
+    />
     <div
-      class="c17"
+      class="c15"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="c18 c19"
+        class="c16 c17"
       >
         
       </div>
@@ -1112,47 +1112,128 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 `;
 
 exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+.c7 {
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
-.c6:disabled {
-  color: #868a8e;
+.c7:disabled {
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
-.c6:focus {
-  outline: 1px dotted #000000;
+.c7:focus {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c7:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
 }
 
-.c2 {
+.c7:not(:last-child) {
+  margin-right: 6px;
+}
+
+.c1 {
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 15px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
 }
 
-.c14 {
+.c13 {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 20px;
   height: 20px;
+}
+
+.c5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c6:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.c2 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 0 0 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #7f787f;
+  color: #c6c6c6;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .c0 {
@@ -1164,15 +1245,15 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  padding: 2px 2px 8px;
   top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: auto;
+  background-color: #9a9e9c;
 }
 
 .c9 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1180,104 +1261,11 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: fixed;
-  padding: 2px 2px 8px;
-  top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #868a8e;
+  overflow: auto;
 }
 
 .c10 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000e7a;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c5:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c8 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 6px;
-}
-
-.c11 {
-  background-color: #c3c7cb;
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1296,20 +1284,20 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  z-index: 1;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
   padding: 2px;
 }
 
-.c12 {
-  background-color: #c3c7cb;
+.c11 {
+  background-color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #fefefe, inset 0 0 0 1px #848584, 1px 0px 0 0px #0a0a0a, 0px 1px 0 0px #0a0a0a, 1px 1px 0 0px #0a0a0a;
 }
 
-.c15 {
-  background-color: #c3c7cb;
+.c14 {
+  background-color: #c6c6c6;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1325,36 +1313,34 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   margin-left: 2px;
 }
 
-.c19 {
+.c15 {
+  background-color: #c6c6c6;
   background-color: transparent;
   width: auto;
   height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #848584, 0.5px 0.5px 0px 0.5px #fefefe;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
-.c18 {
-  background-color: #e6e6e6;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
-}
-
-.c20 {
+.c16 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c21 div:first-child {
+.c17 {
+  color: #0a0a0a;
+}
+
+.c17 div:first-child {
   right: 0;
 }
 
-.c13 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1372,34 +1358,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   max-width: 150px;
   border: none;
   outline: none;
-}
-
-.c16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 2px 3px;
-  margin-right: 2px;
-  max-width: 150px;
-  border: none;
-  outline: none;
-  width: 100%;
-}
-
-.c17 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  color: #0a0a0a;
 }
 
 <div>
@@ -1407,107 +1366,121 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     class="c0 react-draggable"
     style="transform: translate(0px,0px);"
   >
-    <div
-      class="c1 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
-      <i
-        class="c2"
-        data-icon-name="windows_explorer"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
-      />
       <div
-        class="c3"
+        class="c2 draggable"
       >
-        Windows Explorer
+        <i
+          class="c3"
+          data-icon-name="windows_explorer"
+          height="16"
+          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
+          width="16"
+        />
+        <h1
+          class="c4"
+        >
+          Windows Explorer
+        </h1>
+        <ul
+          class="c5"
+        >
+          <li
+            class="c6"
+          >
+            <button
+              class="c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c6"
+          >
+            <button
+              class="c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c4"
-      >
-        <li
-          class="c5"
-        >
-          <button
-            class="c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c5"
-        >
-          <button
-            class="c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    />
+      <div
+        class="c9"
+      />
+    </section>
   </div>
   <div
-    class="c9 react-draggable"
+    class="c0 react-draggable"
     style="transform: translate(0px,0px);"
   >
-    <div
-      class="c10 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
-      <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
-      />
       <div
-        class="c3"
+        class="c2 draggable"
       >
-        file.bat
+        <i
+          class="c3"
+          data-icon-name="bat"
+          height="16"
+          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
+          width="16"
+        />
+        <h1
+          class="c4"
+        >
+          file.bat
+        </h1>
+        <ul
+          class="c5"
+        >
+          <li
+            class="c6"
+          >
+            <button
+              class="c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c6"
+          >
+            <button
+              class="c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c4"
-      >
-        <li
-          class="c5"
-        >
-          <button
-            class="c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c5"
-        >
-          <button
-            class="c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    />
+      <div
+        class="c9"
+      />
+    </section>
   </div>
   <div
-    class="c11"
+    class="c10"
     display="flex"
     height="28"
     width="100%"
   >
     <button
-      class="c12 c13"
+      class="c11 c12"
       height="auto"
       width="auto"
     >
       <i
-        class="c14"
+        class="c13"
         data-icon-name="logo"
         height="20"
         style="margin-right: 4px; background-image: url(buffer-32-4-1);"
@@ -1516,56 +1489,19 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       Start
     </button>
     <div
-      class="c15"
+      class="c14"
       display="flex"
       height="auto"
       width="100%"
-    >
-      <button
-        class="c12 c16"
-        height="auto"
-        width="auto"
-      >
-        <i
-          class="c14"
-          data-icon-name="windows_explorer"
-          height="20"
-          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="20"
-        />
-        <span
-          class="c17"
-        >
-          Windows Explorer
-        </span>
-      </button>
-      <button
-        class="c18 c16"
-        height="auto"
-        width="auto"
-      >
-        <i
-          class="c14"
-          data-icon-name="bat"
-          height="20"
-          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="20"
-        />
-        <span
-          class="c17"
-        >
-          file.bat
-        </span>
-      </button>
-    </div>
+    />
     <div
-      class="c19"
+      class="c15"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="c20 c21"
+        class="c16 c17"
       >
         
       </div>

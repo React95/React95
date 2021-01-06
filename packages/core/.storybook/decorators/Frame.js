@@ -1,13 +1,11 @@
 import React from 'react';
-import { GlobalStyle, ThemeProvider } from '../../components';
+import { GlobalStyle } from '../../components';
 
 const Frame = Story => (
-  <ThemeProvider>
-    <div style={{ padding: 10 }}>
-      <GlobalStyle />
-      <Story />
-    </div>
-  </ThemeProvider>
+  <div style={{ padding: 10 }}>
+    <GlobalStyle />
+    <Story />
+  </div>
 );
 
 export default Frame;

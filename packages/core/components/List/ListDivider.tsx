@@ -1,12 +1,11 @@
 import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 const Divider = styled.li`
   height: 1px;
   border-top: 1;
-  border-top-color: grays.3;
+  border-top-color: ${({ theme }) => theme.colors.borderDark};
   border-bottom: 1;
-  border-bottom-color: ${th('colors.white')};
+  border-bottom-color: ${({ theme }) => theme.colors.borderLightest};
 
   width: 98%;
   margin-left: 2;

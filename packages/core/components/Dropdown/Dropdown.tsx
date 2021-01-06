@@ -1,39 +1,32 @@
 import React from 'react';
 import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
-
-import caret from '../shared/assets/pattern/downcaret.png';
+import border, { scrollBarBorder } from '../shared-style/Border';
+import { createTriangleSVG } from './../shared-style/Scrollbar';
 
 const Wrapper = styled.div`
   position: relative;
   width: 200px;
-  height: 20px;
+  height: 23px;
 
   &:after {
+    ${scrollBarBorder()}
+    content: '';
     display: flex;
     justify-content: center;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     font-size: 14px;
     line-height: 1.1;
-    content: '';
     pointer-events: none;
     position: absolute;
-    right: 1px;
+    right: 2px;
     top: 2px;
-
-    background-color: bg;
-    box-shadow: inset 0.5px 0.7px 0px 0.7px ${th('colors.grays.2')},
-      inset -1px 0px 0 1px ${th(
-        'colors.grays.3',
-      )}, inset 1.5px 1.5px 0px 1.5px ${th('colors.white')};
-
-    border-right: 1;
-    border-bottom: 1;
-
-    background-image: url('${caret}');
-    background-position: center center;
+    background-color: ${({ theme }) => theme.colors.material};
+    background-image: ${({ theme }) =>
+      createTriangleSVG(theme.colors.materialText, 0)};
     background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 0 0;
   }
 `;
 
@@ -43,24 +36,13 @@ const Select = styled.select`
   border: none;
   border-radius: 0;
   width: 100%;
-  height: 20px;
-
-  padding: 3;
-
-  background-color: white;
-
-  border-left: 1;
-  border-left-color: grays.3;
-  border-top: 1;
-  border-top-color: grays.3;
-
-  box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
-    inset 1px 1px 0 0 ${th('colors.black')},
-    0.5px 0.5px 0 0.5px ${th('colors.white')};
-
+  height: 23px;
+  padding: 5;
+  background-color: ${({ theme }) => theme.colors.canvas};
+  color: ${({ theme }) => theme.colors.canvasText};
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  ${border({ direction: 'intrude' })}
 `;
 
 type DropdownProps = {

@@ -27,11 +27,9 @@ export const All = () => {
       >
         Working
       </Checkbox>
-
       <Checkbox checked>Checked</Checkbox>
       <Checkbox checked={false}>Unchecked</Checkbox>
       <Checkbox disabled>Disabled</Checkbox>
-
       <Checkbox disabled checked>
         Checked and Disabled
       </Checkbox>

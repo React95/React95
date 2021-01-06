@@ -1,8 +1,6 @@
 import React from 'react';
 import styled, { StyledComponent } from '@xstyled/styled-components';
-
 import Modal, { ModalProps } from '../Modal/Modal';
-
 import icons from '@react95/icons';
 
 const dialogError = icons.user_4;
@@ -67,7 +65,7 @@ const Alert: React.FC<AlertProps> = ({
   closeAlert,
   ...rest
 }) => (
-  <Modal closeModal={closeAlert} height="120" {...rest}>
+  <Modal closeModal={closeAlert} {...rest}>
     <Dialog>
       <Dialog.Image type={type} />
       <Dialog.Message>{message}</Dialog.Message>
@@ -83,8 +81,14 @@ Alert.defaultProps = {
   closeAlert: () => {},
   buttonsAlignment: 'center',
   defaultPosition: {
-    x: typeof window == 'undefined' ? 0 : Math.floor(window.innerWidth / 2) - 150,
-    y: typeof window == 'undefined' ? 0 : Math.floor(window.innerHeight / 2) - 80,
+    x:
+      typeof window == 'undefined'
+        ? 0
+        : Math.floor(window.innerWidth / 2) - 150,
+    y:
+      typeof window == 'undefined'
+        ? 0
+        : Math.floor(window.innerHeight / 2) - 80,
   },
 };
 

@@ -9,14 +9,14 @@ const Tip = styled(Frame)`
     radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 0 1px,
     radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 25%) 3px 4px;
   background-size: 7px 7px;
-  background-color: white;
+  background-color: ${({theme}) => theme.colors.tooltip};
   border: 1;
   padding: 2 2 2 4;
   box-shadow: none;
   position: absolute;
   top: -20px;
   text-align: center;
-  z-index: taskbar;
+  z-index: ${({theme}) => theme.zIndices.tooltip};
 `;
 
 export type TooltipProps = {

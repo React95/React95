@@ -1,110 +1,42 @@
-import * as React from 'react';
-import * as CSS from 'csstype';
+import React from 'react';
+import CSS from 'csstype';
 import styled, { css } from '@xstyled/styled-components';
-import { th, backgroundColor, BackgroundColorProps } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
-import Btn from '../shared-style/Btn';
-import Button from '../Button';
-import Icon, { IconProps } from '../Icon/Icon';
+import Button, { StyledButton } from '../Button/Button';
+import { IconProps } from '../Icon/Icon';
 import List from '../List';
 import ModalContext from './ModalContext';
+import Window from '../Window';
+import TitleBar from '../TitleBar';
+import { Option, OptionItem, OptionsBox } from '../TitleBar/TitleBar';
 
 type WrapperProps = {
-  width?: CSS.Property.Width;
-  height?: CSS.Property.Height;
+  width?: CSS.Property.Width | number;
+  height?: CSS.Property.Height | number;
   active?: boolean;
 };
 
 const ModalWrapper = styled.div<WrapperProps>`
   display: flex;
   flex-direction: column;
-
   position: fixed;
-
-  padding: 2 2 8;
-
   top: 50px;
-
-  background-color: bg;
-
-  box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-    inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 1px ${th('colors.black')};
-
-  ${({ width, height }) => `
-    width: ${width ? `${width}px` : 'auto'};
-    height: ${height ? `${height}px` : 'auto'};
-  `}
+  background-color: ${({ theme, active }) =>
+    active ? theme.colors.material : theme.colors.materialDark};
   ${({ active }) =>
     active
       ? css`
-          z-index: modal;
+          z-index: ${({ theme }) => theme.zIndices.modal};
         `
       : ''}
 `;
-
-const TitleBar = styled.div<BackgroundColorProps>`
-  height: 18px;
-  margin-bottom: 2;
-
-  color: ${th('colors.white')};
-  padding: 2 2 0;
-
-  display: flex;
-  ${backgroundColor}
-`;
-
-const Title = styled.div`
-  flex-grow: 1;
-  font-weight: bold;
-`;
-
-const OptionsBox = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-`;
-
-const OptionItem = styled.li`
-  display: flex;
-  margin-right: 2;
-
-  &:last-child {
-    margin-right: 0;
-  }
-`;
-
-const Option = styled(Btn)`
-  padding: 0;
-
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-
-  font-size: 10;
-
-  &:active {
-    padding: 1 0 0 1;
-
-    outline: none;
-  }
-
-  &:focus {
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-      inset -1px -1px 0px 1px ${th('colors.grays.3')};
-  }
-`;
-
-Option.displayName = 'Option';
 
 const Content = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-
-  padding: 6;
+  overflow: auto;
 `;
 
 type ButtonWrapperProps = {
@@ -112,18 +44,17 @@ type ButtonWrapperProps = {
 };
 
 const ButtonWrapper = styled.div<ButtonWrapperProps>`
+  padding: 12px;
   display: flex;
   flex-direction: row;
   justify-content: ${({ buttonsAlignment = 'center' }) => buttonsAlignment};
 
-  padding: 0 6 6 6;
-
-  & ${Btn} {
-    margin-right: 6;
+  & ${StyledButton} {
+    margin-left: 6;
     min-width: 70px;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 `;
@@ -131,37 +62,32 @@ const ButtonWrapper = styled.div<ButtonWrapperProps>`
 const MenuWrapper = styled.ul`
   display: flex;
   flex-direction: row;
-
   list-style: none;
   margin: 0;
   padding-left: 0;
   padding-bottom: 3;
-
-  border-bottom-style: solid;
-  border-width: 1;
-  border-bottom-color: grays.3;
-
-  box-shadow: 0 1px 0 0 ${th('colors.grays.0')};
+  padding-top: 5;
 `;
 
 const MenuItem = styled.li<Pick<WrapperProps, 'active'>>`
   position: relative;
   padding-left: 6;
   padding-right: 6;
+  z-index: 1;
 
   user-select: none;
 
   ul {
     position: absolute;
     left: 0;
-    color: ${th('colors.black')};
+    color: ${({ theme }) => theme.colors.canvasText};
   }
 
   ${({ active }) =>
     active &&
     css`
-      background-color: primary;
-      color: ${th('colors.white')};
+      background: ${({ theme }) => theme.colors.headerBackground};
+      color: ${({ theme }) => theme.colors.headerText};
     `};
 `;
 
@@ -200,11 +126,11 @@ const ModalRenderer = (
     children,
     closeModal,
     defaultPosition,
+    width,
     height,
     icon,
     menu,
     title,
-    width,
     ...rest
   }: ModalProps,
   ref: React.Ref<HTMLDivElement>,
@@ -213,84 +139,82 @@ const ModalRenderer = (
     addWindows,
     removeWindows,
     setActiveWindow,
-    activeWindow,
+    activeWindow: activeWindowId,
   } = React.useContext(ModalContext);
   const [menuOpened, setMenuOpened] = React.useState('');
+  const [id] = React.useState(() => Math.random().toString(16).slice(-4));
 
   React.useEffect(() => {
-    addWindows({ icon, title });
-    setActiveWindow(title);
-    return () => removeWindows(title);
+    addWindows({ icon, title, id });
   }, []);
-
-  const iconStyle = {
-    width: 15,
-    height: 13,
-    style: {
-      marginRight: '4px',
-    },
-  };
-
-  const isActive = title === activeWindow;
 
   return (
     <Draggable handle=".draggable" defaultPosition={defaultPosition}>
       <ModalWrapper
-        width={width}
-        height={height}
-        {...rest}
-        onClick={() => setActiveWindow(title)}
-        active={isActive}
+        onClick={() => setActiveWindow(id)}
+        active={activeWindowId === id}
         ref={ref}
+        {...rest}
       >
-        <TitleBar
-          className="draggable"
-          backgroundColor={isActive ? 'primary' : 'grays.3'}
-        >
-          {icon && <Icon name={icon} {...iconStyle} />}
-          <Title>{title}</Title>
-          <OptionsBox>
-            <OptionItem>
-              <Option>?</Option>
-            </OptionItem>
-            <OptionItem>
-              <Option onClick={closeModal}>x</Option>
-            </OptionItem>
-          </OptionsBox>
-        </TitleBar>
-
-        {menu && menu.length > 0 && (
-          <MenuWrapper>
-            {menu.map(({ name, list }) => {
-              const active = menuOpened === name;
-              return (
-                <MenuItem
-                  key={name}
-                  onMouseDown={() => setMenuOpened(name)}
-                  active={active}
+        <Window width={width} height={height}>
+          <TitleBar
+            title={title}
+            icon={icon}
+            isActive={activeWindowId === id}
+            className="draggable"
+          >
+            <OptionsBox>
+              <OptionItem>
+                <Option>?</Option>
+              </OptionItem>
+              <OptionItem>
+                <Option
+                  onClick={event => {
+                    closeModal(event);
+                    removeWindows(id);
+                  }}
                 >
-                  {name}
-                  {active && list}
-                </MenuItem>
-              );
-            })}
-          </MenuWrapper>
-        )}
+                  X
+                </Option>
+              </OptionItem>
+            </OptionsBox>
+          </TitleBar>
 
-        <Content onClick={() => setMenuOpened('')}>{children}</Content>
-        {buttons && buttons.length > 0 && (
-          <ButtonWrapper buttonsAlignment={buttonsAlignment}>
-            {buttons.map(button => (
-              <Button
-                key={button.value}
-                onClick={button.onClick}
-                value={button.value}
-              >
-                {button.value}
-              </Button>
-            ))}
-          </ButtonWrapper>
-        )}
+          {menu && menu.length > 0 && (
+            <MenuWrapper>
+              {menu.map(({ name, list }) => {
+                const active = menuOpened === name;
+                return (
+                  <MenuItem
+                    key={name}
+                    onMouseDown={() => setMenuOpened(name)}
+                    active={active}
+                  >
+                    {name}
+                    {active && list}
+                  </MenuItem>
+                );
+              })}
+            </MenuWrapper>
+          )}
+          <Content onClick={() => setMenuOpened('')}>{children}</Content>
+          {buttons && buttons.length > 0 && (
+            <ButtonWrapper
+              buttonsAlignment={buttonsAlignment}
+              onClick={() => setMenuOpened('')}
+            >
+              {buttons.map(button => (
+                <Button
+                  key={button.value}
+                  onClick={button.onClick}
+                  value={button.value}
+                >
+                  {button.value}
+                </Button>
+              ))}
+            </ButtonWrapper>
+          )}
+        </Window>
       </ModalWrapper>
     </Draggable>
   );

@@ -12,6 +12,31 @@ const copyFile = file => {
   return file;
 };
 
+const createTypes = () => {
+  const srcDir = `./types`;
+  const destDir = `${outDir}/_types`;
+
+  try {
+    fs.emptyDirSync(`${destDir}`)
+  } catch (err) {
+    console.error(err)
+    throw err
+  }
+  try {
+    fs.mkdirSync(`${destDir}`)
+  } catch (err) {
+    if (err.code !== 'EEXIST') throw err
+  }
+  try {
+    fs.copySync(srcDir, destDir);
+  } catch (err) {
+    console.error(err)
+    throw err
+  }
+
+  return '_/types'
+}
+
 const createPackageJson = () => {
   const {
     scripts,
@@ -37,7 +62,7 @@ const createPackageJson = () => {
 };
 
 const run = () => {
-  const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
+  const distFiles = [...['README.md'].map(copyFile), createPackageJson(), createTypes()];
 
   console.log(
     `Created ${distFiles.map(file => file).join(', ')} in ${

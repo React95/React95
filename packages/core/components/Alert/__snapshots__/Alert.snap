@@ -1,29 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+.c7 {
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
-.c6:disabled {
-  color: #868a8e;
+.c7:disabled {
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
-.c6:focus {
-  outline: 1px dotted #000000;
+.c7:focus {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c7:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
+}
+
+.c7:not(:last-child) {
+  margin-right: 6px;
+}
+
+.c1 {
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c5:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.c2 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 0 0 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #7f787f;
+  color: #c6c6c6;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .c0 {
@@ -35,75 +116,11 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  padding: 2px 2px 8px;
   top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: 120px;
-  z-index: 1;
+  background-color: #9a9e9c;
 }
 
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000e7a;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -115,10 +132,11 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 6px;
+  overflow: auto;
 }
 
-.c12 {
+.c13 {
+  padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -130,19 +148,18 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 6px 6px 6px;
 }
 
-.c12 .c5 {
-  margin-right: 6px;
+.c13 .c6 {
+  margin-left: 6px;
   min-width: 70px;
 }
 
-.c12 .c5:last-child {
-  margin-right: 0;
+.c13 .c6:first-child {
+  margin-left: 0;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -157,7 +174,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -167,7 +184,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -180,95 +197,183 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 <div>
   <div
     class="c0 react-draggable"
-    height="120"
     style="transform: translate(362px,304px);"
   >
-    <div
-      class="c1 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
-        Error
+        <h1
+          class="c3"
+        >
+          Error
+        </h1>
+        <ul
+          class="c4"
+        >
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c3"
-      >
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    >
       <div
         class="c9"
       >
         <div
           class="c10"
-          type="error"
-        />
-        <div
-          class="c11"
         >
-          Error
+          <div
+            class="c11"
+            type="error"
+          />
+          <div
+            class="c12"
+          >
+            Error
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="c12"
-    >
-      <button
-        class="c5 c6"
-        value="OK"
+      <div
+        class="c13"
       >
-        OK
-      </button>
-    </div>
+        <button
+          class="c6 c7"
+          font-size="12px"
+          value="OK"
+        >
+          OK
+        </button>
+      </div>
+    </section>
   </div>
 </div>
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+.c7 {
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
-.c6:disabled {
-  color: #868a8e;
+.c7:disabled {
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
-.c6:focus {
-  outline: 1px dotted #000000;
+.c7:focus {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c7:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
+}
+
+.c7:not(:last-child) {
+  margin-right: 6px;
+}
+
+.c1 {
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c5:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.c2 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 0 0 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #7f787f;
+  color: #c6c6c6;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .c0 {
@@ -280,75 +385,11 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  padding: 2px 2px 8px;
   top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: 120px;
-  z-index: 1;
+  background-color: #9a9e9c;
 }
 
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000e7a;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -360,10 +401,11 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 6px;
+  overflow: auto;
 }
 
-.c12 {
+.c13 {
+  padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -375,19 +417,18 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 6px 6px 6px;
 }
 
-.c12 .c5 {
-  margin-right: 6px;
+.c13 .c6 {
+  margin-left: 6px;
   min-width: 70px;
 }
 
-.c12 .c5:last-child {
-  margin-right: 0;
+.c13 .c6:first-child {
+  margin-left: 0;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -402,7 +443,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -412,7 +453,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -425,95 +466,183 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 <div>
   <div
     class="c0 react-draggable"
-    height="120"
     style="transform: translate(362px,304px);"
   >
-    <div
-      class="c1 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
-        Info
+        <h1
+          class="c3"
+        >
+          Info
+        </h1>
+        <ul
+          class="c4"
+        >
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c3"
-      >
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    >
       <div
         class="c9"
       >
         <div
           class="c10"
-          type="info"
-        />
-        <div
-          class="c11"
         >
-          Info
+          <div
+            class="c11"
+            type="info"
+          />
+          <div
+            class="c12"
+          >
+            Info
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="c12"
-    >
-      <button
-        class="c5 c6"
-        value="OK"
+      <div
+        class="c13"
       >
-        OK
-      </button>
-    </div>
+        <button
+          class="c6 c7"
+          font-size="12px"
+          value="OK"
+        >
+          OK
+        </button>
+      </div>
+    </section>
   </div>
 </div>
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+.c7 {
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
-.c6:disabled {
-  color: #868a8e;
+.c7:disabled {
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
-.c6:focus {
-  outline: 1px dotted #000000;
+.c7:focus {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c7:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
+}
+
+.c7:not(:last-child) {
+  margin-right: 6px;
+}
+
+.c1 {
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c5:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.c2 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 0 0 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #7f787f;
+  color: #c6c6c6;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .c0 {
@@ -525,75 +654,11 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  padding: 2px 2px 8px;
   top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: 120px;
-  z-index: 1;
+  background-color: #9a9e9c;
 }
 
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000e7a;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -605,10 +670,11 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 6px;
+  overflow: auto;
 }
 
-.c12 {
+.c13 {
+  padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -620,19 +686,18 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 6px 6px 6px;
 }
 
-.c12 .c5 {
-  margin-right: 6px;
+.c13 .c6 {
+  margin-left: 6px;
   min-width: 70px;
 }
 
-.c12 .c5:last-child {
-  margin-right: 0;
+.c13 .c6:first-child {
+  margin-left: 0;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -647,7 +712,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -657,7 +722,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -670,95 +735,183 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 <div>
   <div
     class="c0 react-draggable"
-    height="120"
     style="transform: translate(362px,304px);"
   >
-    <div
-      class="c1 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
-        question
+        <h1
+          class="c3"
+        >
+          question
+        </h1>
+        <ul
+          class="c4"
+        >
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c3"
-      >
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    >
       <div
         class="c9"
       >
         <div
           class="c10"
-          type="question"
-        />
-        <div
-          class="c11"
         >
-          question
+          <div
+            class="c11"
+            type="question"
+          />
+          <div
+            class="c12"
+          >
+            question
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="c12"
-    >
-      <button
-        class="c5 c6"
-        value="OK"
+      <div
+        class="c13"
       >
-        OK
-      </button>
-    </div>
+        <button
+          class="c6 c7"
+          font-size="12px"
+          value="OK"
+        >
+          OK
+        </button>
+      </div>
+    </section>
   </div>
 </div>
 `;
 
 exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
+.c7 {
+  background-color: #c6c6c6;
+  color: #0a0a0a;
+  padding: 6px 22px 6px;
+  min-width: 70px;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #fefefe , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #dfdfdf;
 }
 
-.c6:disabled {
-  color: #868a8e;
+.c7:disabled {
+  color: #848584;
+  text-shadow: 1px 1px white;
 }
 
-.c6:focus {
-  outline: 1px dotted #000000;
+.c7:focus {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
+.c7:not(:disabled):active {
+  outline: 1px dotted #0a0a0a;
   outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #dfdfdf , inset 1px 1px 0 0  #848584 , inset -2px -2px 0 0  #fefefe , inset 2px 2px 0 0  #0a0a0a;
+}
+
+.c7:not(:last-child) {
+  margin-right: 6px;
+}
+
+.c1 {
+  border: 0;
+  box-shadow: inset -1px -1px 0 0  #0a0a0a , inset 1px 1px 0 0  #dfdfdf , inset -2px -2px 0 0  #848584 , inset 2px 2px 0 0  #fefefe;
+  background: #c6c6c6;
+  color: #0a0a0a;
+  width: 320px;
+  height: auto;
+  padding: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2;
+}
+
+.c5:first-child {
+  margin-right: 0;
+}
+
+.c8 {
+  padding: 0;
+  width: 17px;
+  height: 16px;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.c2 {
+  height: 20px;
+  padding: 1px 2px;
+  margin: 0 0 1px;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #7f787f;
+  color: #c6c6c6;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .c0 {
@@ -770,75 +923,11 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  padding: 2px 2px 8px;
   top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
-  width: auto;
-  height: 120px;
-  z-index: 1;
+  background-color: #9a9e9c;
 }
 
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000e7a;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c8 {
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -850,10 +939,11 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 6px;
+  overflow: auto;
 }
 
-.c12 {
+.c13 {
+  padding: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -865,19 +955,18 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 6px 6px 6px;
 }
 
-.c12 .c5 {
-  margin-right: 6px;
+.c13 .c6 {
+  margin-left: 6px;
   min-width: 70px;
 }
 
-.c12 .c5:last-child {
-  margin-right: 0;
+.c13 .c6:first-child {
+  margin-left: 0;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -892,7 +981,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   background-repeat: no-repeat;
   background-size: 70%;
   height: 45px;
@@ -902,7 +991,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -915,67 +1004,74 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 <div>
   <div
     class="c0 react-draggable"
-    height="120"
     style="transform: translate(362px,304px);"
   >
-    <div
-      class="c1 draggable"
+    <section
+      class="c1"
+      direction="column"
+      height="auto"
+      width="320"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
-        Warning
+        <h1
+          class="c3"
+        >
+          Warning
+        </h1>
+        <ul
+          class="c4"
+        >
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              ?
+            </button>
+          </li>
+          <li
+            class="c5"
+          >
+            <button
+              class="c6 c7 c8"
+            >
+              X
+            </button>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="c3"
-      >
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
-        </li>
-        <li
-          class="c4"
-        >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c8"
-    >
       <div
         class="c9"
       >
         <div
           class="c10"
-          type="warning"
-        />
-        <div
-          class="c11"
         >
-          Warning
+          <div
+            class="c11"
+            type="warning"
+          />
+          <div
+            class="c12"
+          >
+            Warning
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="c12"
-    >
-      <button
-        class="c5 c6"
-        value="OK"
+      <div
+        class="c13"
       >
-        OK
-      </button>
-    </div>
+        <button
+          class="c6 c7"
+          font-size="12px"
+          value="OK"
+        >
+          OK
+        </button>
+      </div>
+    </section>
   </div>
 </div>
 `;

@@ -3,14 +3,15 @@ import { createContext } from 'react';
 
 import { IconProps } from '../Icon/Icon';
 
-export type Windows = {
+export interface IWindow {
   icon?: IconProps['name'];
   title: string;
+  id: string;
 };
 
 export interface IModalContextProps {
-  windows: Array<Windows>;
-  addWindows(window: Windows): void;
+  windows: Array<IWindow>;
+  addWindows(window: IWindow): void;
   removeWindows(title: string): void;
   setActiveWindow(title: string): void;
   activeWindow?: string;

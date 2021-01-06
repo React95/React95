@@ -71,6 +71,7 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
 
 .c0 {
   padding: 0;
+  margin: 0;
 }
 
 <div>

@@ -127,7 +127,7 @@ describe('<Modal />', () => {
         </Modal>,
       );
 
-      fireEvent.click(getByText('x'));
+      fireEvent.click(getByText('X'));
 
       expect(closeModalMock).toHaveBeenCalled();
     });

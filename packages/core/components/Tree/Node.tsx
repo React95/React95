@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import Icon, { IconProps } from '../Icon/Icon';
 import treeMidLines from '../shared/assets/tree-mid.png';
@@ -27,8 +26,7 @@ const NodeItem = styled.div<{ isOpen: boolean }>`
   background-image: url(${treeMidLines});
 
   &:last-child {
-    background-image: url(${({ isOpen }) =>
-      isOpen ? treeMidLines : treeLastLines});
+    background-image: url(${({ isOpen }) => isOpen ? treeMidLines : treeLastLines});
   }
 `;
 
@@ -49,8 +47,8 @@ const FolderStatus = styled.div`
   width: 10px;
   height: 10px;
   border: 1;
-  border-color: ${th('colors.black')};
-  background-color: ${th('colors.white')};
+  border-color: ${({ theme }) => theme.colors.borderDarkest};
+  background-color: ${({ theme }) => theme.colors.borderLightest};
   font-size: 11px;
 `;
 

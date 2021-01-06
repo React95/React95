@@ -9,6 +9,7 @@ export default {
 } as Meta;
 
 export const Simple = () => <Button>Ok</Button>;
+export const Disabled = () => <Button disabled>Ok</Button>;
 
 Simple.parameters = {
   design: {

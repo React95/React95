@@ -1,34 +1,23 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import check from '../shared/assets/pattern/check.svg';
 import checkDisabled from '../shared/assets/pattern/check-disabled.svg';
 import bgpattern from '../shared/assets/pattern/dropdown.png';
+import { border } from '../shared-style/Border';
 
 const Icon = styled.span`
+  ${border({ direction: 'intrude' })}
   width: 12px;
   height: 12px;
-
-  content: '';
-  display: inline-block;
-
-  position: absolute;
   left: 0;
-
-  border-left: 1;
-  border-left-color: grays.3;
-  border-top: 1;
-  border-top-color: grays.3;
-
-  box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
-    inset 1px 1px 0 0 ${th('colors.black')},
-    0.5px 0.5px 0 0.5px ${th('colors.white')};
-
-  background-color: white;
+  display: inline-block;
+  position: absolute;
+  background-color: ${({ theme }) => theme.colors.canvas};
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
+  margin-top: 2px;
 `;
 
 const Text = styled.span`
@@ -41,32 +30,28 @@ const Field = styled.input.attrs({
 })`
   width: 12px;
   height: 12px;
-
   margin: 0;
-
   position: absolute;
   top: 0;
   left: 0;
-
   opacity: 0;
-
   &:focus ~ ${Text}, &:active ~ ${Text} {
     border-width: 1;
     border-style: dotted;
     padding: 0;
   }
-
+  &:disabled {
+    color: ${({ theme }) => theme.colors.canvasTextDisabled};
+  }
   &:checked + ${Icon} {
     background-image: url('${check}');
   }
-
   &:checked &:disabled + ${Icon} {
     background-image: url('${checkDisabled}'), url('${bgpattern}');
-    background-size: 7px 7px, 1.9px 1.9px;
+    background-size: 7px 7px, 2px 2px;
   }
-
   &:disabled + ${Icon} {
-    background-color: grays.1;
+    background-color: ${({ theme }) => theme.colors.borderLight};
   }
 `;
 
@@ -79,19 +64,15 @@ export type LabelProps = {
 const Label = styled.label<LabelProps>`
   display: inline-block;
   height: 15px;
-
   line-height: 1.5;
-
   position: relative;
-
-  margin: 4 0;
-  padding-left: 20;
-
+  margin: 4px 0px;
+  padding-left: 20px;
   ${({ disabled }) =>
     disabled &&
     css`
-      color: grays.3;
-      text-shadow: 0.5px 0.5px ${th('colors.grays.1')};
+      color: ${({ theme }) => theme.colors.canvasText};
+      text-shadow: 0.5px 0.5px ${({ theme }) => theme.colors.borderLight};
     `}
 `;
 
@@ -103,16 +84,23 @@ export type CheckboxProps = {
 } & LabelProps &
   React.HTMLAttributes<HTMLInputElement>;
 
+const emptyFn = () => {};
 const Checkbox: React.FC<CheckboxProps> = ({
   children,
   style,
   checked,
   label,
   disabled = false,
+  onChange = emptyFn,
   ...rest
 }) => (
   <Label style={style} disabled={disabled}>
-    <Field checked={checked} disabled={disabled} {...rest} />
+    <Field
+      onChange={onChange}
+      checked={checked}
+      disabled={disabled}
+      {...rest}
+    />
     <Icon />
     <Text>{children || label}</Text>
   </Label>

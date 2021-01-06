@@ -9,8 +9,8 @@ module.exports = {
         controls: false,
       },
     },
-    'storybook-addon-designs',
     '@storybook/addon-storysource',
+    'storybook-addon-designs',
     {
       name: '@storybook/addon-docs',
       options: {
@@ -20,5 +20,6 @@ module.exports = {
         },
       },
     },
+    './src/theme-changer/register',
   ],
 };

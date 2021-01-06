@@ -1,6 +1,6 @@
 import * as React from 'react';
-import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled from '@xstyled/styled-components';
+import border from '../shared-style/Border';
 
 export type ProgressBarProps = {
   width?: number;
@@ -9,54 +9,36 @@ export type ProgressBarProps = {
 
 const Wrapper = styled.div<Pick<ProgressBarProps, 'width'>>`
   width: ${({ width }) => width}px;
-  height: 20px;
-
+  height: 21px;
   position: relative;
-
   text-align: center;
+  ${border({ direction: 'intrude' })}
 `;
 
 const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
-  height: 20px;
-  line-height: 20px;
-
-  border-left: 1;
-  border-left-color: grays.3;
-
-  border-top: 1;
-  border-top-color: grays.3;
-
-  background: ${th('colors.white')};
-  color: ${th('colors.black')};
-
-  ${css`
-    box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
-      inset 1px 1px 0 0 ${th('colors.black')},
-      0.5px 0.5px 0 0.5px ${th('colors.white')};
-  `}
+  width: ${({ width }) => (width || 4) - 4}px;
+  height: 17px;
+  line-height: 17px;
+  margin: 1px 0 0 1px;
+  background: ${({ theme }) => theme.colors.borderLightest};
+  color: ${({ theme }) => theme.colors.borderDarkest};
 `;
 
 const Container = styled.div<Pick<ProgressBarProps, 'percent'>>`
   width: ${({ percent }) => percent}%;
-
   position: absolute;
   top: 0;
   left: 0;
-
   overflow: hidden;
 `;
 
 const Progress = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
+  width: ${({ width }) => (width || 4) - 4}px;
   height: 17px;
-  line-height: 18px;
-
-  margin-left: 2;
-  margin-top: 2;
-
-  background-color: primary;
-  color: ${th('colors.white')};
+  line-height: 17px;
+  margin: 1px 0 0 1px;
+  background-color: ${({ theme }) => theme.colors.headerBackground};
+  color: ${({ theme }) => theme.colors.borderLightest};
 `;
 
 const ProgressBar: React.FC<ProgressBarProps> = ({
