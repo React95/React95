@@ -548,7 +548,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="sc-JsfGe PEIsU"
+    class="sc-JAcuL jekMd"
     display="flex"
     height="28"
     width="100%"
@@ -646,30 +646,30 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <button
-      class="sc-JsfGe sc-hkoqCG dSEShf jyIXGv"
+      class="sc-JAcuL sc-hkwnrn gsIxq cqsJoZ"
       height="auto"
       width="auto"
     >
       <i
-        class="sc-gstumO dHcMIY logo_32x32_4bit"
+        class="sc-gsBrbv cXPMda logo_32x32_4bit"
         style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
     </button>
     <div
-      class="sc-JsfGe dZDqmK"
+      class="sc-JAcuL skmoH"
       display="flex"
       height="auto"
       width="100%"
     />
     <div
-      class="sc-JsfGe kalnGE"
+      class="sc-JAcuL cZFya-d"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="sc-dksuAk dBsGaw sc-jhGSUB gcSXVA"
+        class="sc-dkAroR FcOKL sc-jifIRw PfXDR"
       >
         
       </div>
