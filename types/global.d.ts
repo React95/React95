@@ -1,6 +1,1 @@
-type ICO = string;
-
-declare module '*.ico' {
-  const value: ICO;
-  export = value;
-}
+declare module '@react95/clippy';
