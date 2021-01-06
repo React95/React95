@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/React95/React95/compare/@react95/core@2.12.0...@react95/core@2.13.0) (2021-01-06)
+
+
+### Bug Fixes
+
+* **icon:** omit name to be forwarded to the HTML element ([2b17855](https://github.com/React95/React95/commit/2b1785518fa351cc576386bc0ca12b324fb9e65c))
+* **icons:** add r95 class ([0068bdc](https://github.com/React95/React95/commit/0068bdcd9caaa6fe3c8e0235035754cc82fdedec))
+* **icons:** fix weird missing icons ([c839923](https://github.com/React95/React95/commit/c8399239bba8508fb1d1372b39aee81d934a3780))
+
+
+### Features
+
+* **icons:** add @react9/icons CSS module to ThemeProvider ([5dadbdb](https://github.com/React95/React95/commit/5dadbdbdb1c77596d09c458cce35b2d9911b2d4b))
+
+
+
+
+
 # [2.12.0](https://github.com/React95/React95/compare/@react95/core@2.11.5...@react95/core@2.12.0) (2020-11-16)
 
 

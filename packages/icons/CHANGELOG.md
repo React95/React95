@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/React95/React95/compare/@react95/icons@0.4.2...@react95/icons@0.5.0) (2021-01-06)
+
+
+### Bug Fixes
+
+* **icons:** add r95 class ([0068bdc](https://github.com/React95/React95/commit/0068bdcd9caaa6fe3c8e0235035754cc82fdedec))
+* **icons:** remove blank png files ([3027ef5](https://github.com/React95/React95/commit/3027ef56411285fb9c9d032c2743901cc3593ea2))
+
+
+### Code Refactoring
+
+* **icons:** package reworked: @react95/icons is now basically a CSS file ([c185f0e](https://github.com/React95/React95/commit/c185f0edd196469b4e1ad1972d85fa50a2fef929)), closes [#189](https://github.com/React95/React95/issues/189)
+
+
+### Features
+
+* **icons:** create icons as png files ([2fd3627](https://github.com/React95/React95/commit/2fd362706dcb3be40c22885844d5d4eb194b4a2e))
+* **topng:** create a script to generate png for each icon ([5710158](https://github.com/React95/React95/commit/5710158efc398cf7443bce3ec2bd689b49f89e13))
+
+
+### BREAKING CHANGES
+
+* **icons:** @react95/icons is a now CSS file and it works despite React
+
+
+
+
+
 ## [0.4.2](https://github.com/React95/React95/compare/@react95/icons@0.4.1...@react95/icons@0.4.2) (2020-10-03)
 
 
