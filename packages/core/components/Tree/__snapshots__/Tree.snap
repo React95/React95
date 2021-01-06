@@ -3,11 +3,6 @@
 exports[`<Tree /> Snapshot should match snapshot 1`] = `
 .c4 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 14px;
-  height: 14px;
 }
 
 .c1 {
@@ -87,11 +82,8 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
           class="c3"
         >
           <i
-            class="c4"
-            data-icon-name="bat"
-            height="14"
-            style="background-image: url(buffer-32-4-1);"
-            width="14"
+            class="c4 r95 bat_32x32_4bit"
+            style="width: 14px; height: 14px;"
           />
         </div>
         <span

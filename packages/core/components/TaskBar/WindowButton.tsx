@@ -64,7 +64,10 @@ const WindowButton: React.FC<WindowButtonProps> = ({
     {...props}
     as="button"
   >
-    <Icon name={icon} style={{ marginRight: 4 }} width={20} height={20} />
+    <Icon
+      name="logo_32x32_4bit"
+      style={{ marginRight: 4, width: 20, height: 20 }}
+    />
     {children}
   </Button>
 );

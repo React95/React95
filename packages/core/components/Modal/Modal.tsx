@@ -224,9 +224,9 @@ const ModalRenderer = (
   }, []);
 
   const iconStyle = {
-    width: 15,
-    height: 13,
     style: {
+      width: 15,
+      height: 13,
       marginRight: '4px',
     },
   };

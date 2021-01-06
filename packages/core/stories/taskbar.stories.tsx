@@ -21,7 +21,7 @@ export const Simple = () => {
     <>
       {first && (
         <Modal
-          icon="windows_explorer"
+          icon="windows_explorer_32x32_4bit"
           title="Windows Explorer"
           closeModal={closeFirst}
           width="300"
@@ -34,7 +34,7 @@ export const Simple = () => {
           defaultPosition={{ x: 50, y: 50 }}
           width="300"
           height="200"
-          icon="reader_closed"
+          icon="reader_closed_32x32_4bit"
           title="Local Disk (C:)"
           closeModal={closeSecond}
         />
@@ -43,11 +43,14 @@ export const Simple = () => {
       <TaskBar
         list={
           <List>
-            <List.Item icon="reader_closed" onClick={() => toggleSecond(true)}>
+            <List.Item
+              icon="reader_closed_32x32_4bit"
+              onClick={() => toggleSecond(true)}
+            >
               Local Disk (C:)
             </List.Item>
             <List.Item
-              icon="windows_explorer"
+              icon="windows_explorer_32x32_4bit"
               onClick={() => {
                 toggleFirst(true);
               }}

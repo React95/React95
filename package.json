@@ -31,7 +31,8 @@
     "jest-styled-components": "^7.0.0",
     "lerna": "^3.20.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "typescript-plugin-css-modules": "^3.0.1"
   },
   "npmClient": "yarn",
   "workspaces": [

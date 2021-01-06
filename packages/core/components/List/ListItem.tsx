@@ -7,10 +7,12 @@ import { IListProps } from './List';
 
 import rightcaret from '../shared/assets/pattern/rightcaret.svg';
 
-const Item = styled.li<{
+type ItemProps = {
   icon?: string;
   hasList: Boolean;
-}>`
+};
+
+const Item = styled.li<ItemProps>`
   position: relative;
 
   display: flex;

@@ -7,18 +7,18 @@ import treeMidLines from '../shared/assets/tree-mid.png';
 import treeLastLines from '../shared/assets/tree-last.png';
 import treeNodeChildrenLine from '../shared/assets/tree-node-children.png';
 
-const FOLDER_CLOSED = 'folder';
-const FOLDER_OPENED = 'folder_open';
+const FOLDER_CLOSED = 'folder_32x32_4bit';
+const FOLDER_OPENED = 'folder_open_32x32_4bit';
 
 export const icons: { [key: string]: IconProps['name'] } = {
-  FILE_MEDIA: 'media_cd',
-  FILE_TEXT: 'file_text',
-  FILE_UNKNOWN: 'bat',
-  FILE_FONT: 'file_font_2',
-  FILE_PEN: 'file_pen',
-  FILE_SETTINGS: 'file_settings',
-  FILE_TEXT_SETTINGS: 'file_text_settings',
-  FILE_EXECUTABLE: 'bat_exec',
+  FILE_MEDIA: 'media_cd_32x32_4bit',
+  FILE_TEXT: 'file_text_32x32_4bit',
+  FILE_UNKNOWN: 'bat_32x32_4bit',
+  FILE_FONT: 'file_font_2_32x32_4bit',
+  FILE_PEN: 'file_pen_32x32_4bit',
+  FILE_SETTINGS: 'file_settings_32x32_4bit',
+  FILE_TEXT_SETTINGS: 'file_text_settings_32x32_4bit',
+  FILE_EXECUTABLE: 'bat_exec_32x32_4bit',
 };
 
 const NodeItem = styled.div<{ isOpen: boolean }>`
@@ -95,7 +95,7 @@ export type NodeProps = {
 const Node: React.FC<NodeProps> = ({
   children = [],
   id,
-  iconName = 'bat',
+  iconName = 'bat_32x32_4bit',
   label,
   onClick = () => {},
   ...rest
@@ -140,7 +140,7 @@ const Node: React.FC<NodeProps> = ({
           </FolderStatus>
         )}
         <IconContainer hasChildren={hasChildren}>
-          <Icon name={getIconName()} width={14} height={14} />
+          <Icon name={getIconName()} style={{ width: 14, height: 14 }} />
         </IconContainer>
         <Label
           tabIndex={0}

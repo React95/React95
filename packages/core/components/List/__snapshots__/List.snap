@@ -3,11 +3,6 @@
 exports[`<List /> Snapshots should match snapshot 1`] = `
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 32px;
-  height: 32px;
 }
 
 .c1 {
@@ -147,11 +142,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
       class="c1"
     >
       <i
-        class="c2"
-        data-icon-name="folder_exe2"
-        height="32"
-        style="background-image: url(buffer-32-4-1);"
-        width="32"
+        class="c2 r95 folder_exe2"
       />
       <ul
         class="c0"
@@ -161,11 +152,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
           class="c3"
         >
           <i
-            class="c2"
-            data-icon-name="microsoft_exchange"
-            height="32"
-            style="background-image: url(buffer-32-4-1);"
-            width="32"
+            class="c2 r95 microsoft_exchange"
           />
           Microsoft Exchange
         </li>
@@ -176,11 +163,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
           class="c3"
         >
           <i
-            class="c2"
-            data-icon-name="windows_explorer"
-            height="32"
-            style="background-image: url(buffer-32-4-1);"
-            width="32"
+            class="c2 r95 windows_explorer"
           />
           Windows Explorer
         </li>

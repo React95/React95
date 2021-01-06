@@ -28,11 +28,6 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 16px;
-  height: 16px;
 }
 
 .c0 {
@@ -272,11 +267,8 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
       class="c1"
     >
       <i
-        class="c2"
-        data-icon-name="mplayer_1_13"
-        height="16"
-        style="margin-right: 4px; background-image: url(buffer-16-4-1);"
-        width="16"
+        class="c2 r95 mplayer_1_13_16x16_4bit"
+        style="margin-right: 4px; width: 16px; height: 16px;"
       />
       some_video.mp4
        (Openning)
@@ -342,11 +334,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           disabled=""
         >
           <i
-            class="c2"
-            data-icon-name="user_4"
-            height="16"
-            style="margin-top: -2px; background-image: url(buffer-32-4-1);"
-            width="16"
+            class="c2 r95 user_4_32x32_4bit"
           />
         </button>
         <button
