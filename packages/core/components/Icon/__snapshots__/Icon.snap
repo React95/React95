@@ -7,7 +7,7 @@ exports[`<Icon /> should match snapshot 1`] = `
 
 <div>
   <i
-    class="c0 bat_16x16_4bit"
+    class="c0 r95 bat_16x16_4bit"
   />
 </div>
 `;

@@ -189,7 +189,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
       class="c1 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -414,7 +414,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       class="c1 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -625,7 +625,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       class="c1 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -813,7 +813,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
       class="c1 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -986,7 +986,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
       class="c1 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div

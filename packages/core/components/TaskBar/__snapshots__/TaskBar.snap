@@ -79,7 +79,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
     width="auto"
   >
     <i
-      class="c2 logo_32x32_4bit"
+      class="c2 r95 logo_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -159,7 +159,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     width="auto"
   >
     <i
-      class="c2 logo_32x32_4bit"
+      class="c2 r95 logo_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -170,7 +170,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     width="auto"
   >
     <i
-      class="c2 logo_32x32_4bit"
+      class="c2 r95 logo_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -218,7 +218,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
     width="auto"
   >
     <i
-      class="c2 logo_32x32_4bit"
+      class="c2 r95 logo_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -265,7 +265,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
     width="auto"
   >
     <i
-      class="c2 logo_32x32_4bit"
+      class="c2 r95 logo_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -382,7 +382,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
       width="auto"
     >
       <i
-        class="c3 logo_32x32_4bit"
+        class="c3 r95 logo_32x32_4bit"
         style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
@@ -518,7 +518,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
       width="auto"
     >
       <i
-        class="c3 logo_32x32_4bit"
+        class="c3 r95 logo_32x32_4bit"
         style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
@@ -631,7 +631,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
           class="c2"
         >
           <i
-            class="c3 reader_closed"
+            class="c3 r95 reader_closed"
           />
           Local Disk (C:)
         </li>
@@ -639,7 +639,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
           class="c2"
         >
           <i
-            class="c3 windows_explorer"
+            class="c3 r95 windows_explorer"
           />
           Windows Explorer
         </li>
@@ -651,7 +651,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       width="auto"
     >
       <i
-        class="sc-gsBrbv cXPMda logo_32x32_4bit"
+        class="sc-gsBrbv cXPMda r95 logo_32x32_4bit"
         style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
@@ -935,7 +935,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       class="c1 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -982,7 +982,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       width="auto"
     >
       <i
-        class="c2 logo_32x32_4bit"
+        class="c2 r95 logo_32x32_4bit"
         style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
@@ -999,7 +999,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         width="auto"
       >
         <i
-          class="c2 logo_32x32_4bit"
+          class="c2 r95 logo_32x32_4bit"
           style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
@@ -1311,7 +1311,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       class="c1 draggable"
     >
       <i
-        class="c2 windows_explorer"
+        class="c2 r95 windows_explorer"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -1354,7 +1354,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       class="c10 draggable"
     >
       <i
-        class="c2 bat"
+        class="c2 r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -1401,7 +1401,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       width="auto"
     >
       <i
-        class="c2 logo_32x32_4bit"
+        class="c2 r95 logo_32x32_4bit"
         style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
@@ -1418,7 +1418,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         width="auto"
       >
         <i
-          class="c2 logo_32x32_4bit"
+          class="c2 r95 logo_32x32_4bit"
           style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
@@ -1433,7 +1433,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         width="auto"
       >
         <i
-          class="c2 logo_32x32_4bit"
+          class="c2 r95 logo_32x32_4bit"
           style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
