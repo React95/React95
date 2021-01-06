@@ -2,27 +2,16 @@ import React from 'react';
 import styled, { StyledComponent } from '@xstyled/styled-components';
 
 import Modal, { ModalProps } from '../Modal/Modal';
-
-import icons from '@react95/icons';
-
-const dialogError = icons.user_4;
-const dialogInfo = icons.user_5;
-const dialogQuestion = icons.user_3;
-const dialogWarning = icons.user_2;
+import Icon, { IconProps } from '../Icon/Icon';
 
 export const DialogImages = {
-  error: dialogError,
-  info: dialogInfo,
-  question: dialogQuestion,
-  warning: dialogWarning,
+  error: 'user_4_32x32_4bit',
+  info: 'user_5_32x32_4bit',
+  question: 'user_3_32x32_4bit',
+  warning: 'user_2_32x32_4bit',
 };
 
 export type DialogImageProps = { type?: keyof typeof DialogImages };
-
-export type DialogProps = StyledComponent<'div', any, {}, never> & {
-  Message: StyledComponent<'div', any, {}, never>;
-  Image: StyledComponent<'div', any, DialogImageProps, never>;
-};
 
 const Message = styled.div`
   display: flex;
@@ -30,17 +19,14 @@ const Message = styled.div`
   justify-content: center;
 `;
 
-const Image = styled.div<DialogImageProps>`
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 45px;
-  width: 45px;
-  background-position: center;
-  margin-right: 10;
-
-  ${({ type }) =>
-    `background-image: url(${type ? DialogImages[type] : DialogImages.error});`}
+const Image = styled(Icon)`
+  margin: 7 15 7 7;
 `;
+
+export type DialogProps = StyledComponent<'div', any, {}, never> & {
+  Message: typeof Message;
+  Image: typeof Icon;
+};
 
 const Dialog: DialogProps = Object.assign(
   styled.div`
@@ -62,14 +48,14 @@ export type AlertProps = Omit<
   };
 
 const Alert: React.FC<AlertProps> = ({
-  type,
+  type = 'error',
   message,
   closeAlert,
   ...rest
 }) => (
   <Modal closeModal={closeAlert} height="120" {...rest}>
     <Dialog>
-      <Dialog.Image type={type} />
+      <Dialog.Image name={DialogImages[type] as IconProps['name']} />
       <Dialog.Message>{message}</Dialog.Message>
     </Dialog>
   </Modal>
@@ -83,8 +69,14 @@ Alert.defaultProps = {
   closeAlert: () => {},
   buttonsAlignment: 'center',
   defaultPosition: {
-    x: typeof window == 'undefined' ? 0 : Math.floor(window.innerWidth / 2) - 150,
-    y: typeof window == 'undefined' ? 0 : Math.floor(window.innerHeight / 2) - 80,
+    x:
+      typeof window == 'undefined'
+        ? 0
+        : Math.floor(window.innerWidth / 2) - 150,
+    y:
+      typeof window == 'undefined'
+        ? 0
+        : Math.floor(window.innerHeight / 2) - 80,
   },
 };
 

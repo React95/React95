@@ -25,7 +25,7 @@ export const Simple: React.FC = ({ children }) => {
         <Modal
           width="300"
           height="200"
-          icon="computer"
+          icon="computer_32x32_4bit"
           title="Browse"
           defaultPosition={{
             x: 0,

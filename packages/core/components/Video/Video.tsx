@@ -16,9 +16,9 @@ const VideoTag = styled.video<{ visible: boolean }>`
   display: ${({ visible }) => (visible ? 'block' : 'none')};
 `;
 
-export type Source = Pick<HTMLSourceElement, 'src'>;
+type SourceProps = Pick<HTMLSourceElement, 'src'>;
 
-const Source: React.FC<Source> = ({ src }) => (
+const Source: React.FC<SourceProps> = ({ src }) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
 
@@ -200,7 +200,10 @@ const Video: React.FC<VideoProps> = ({
       }}
     >
       <TitleBar>
-        <Icon name="mplayer_1_13" size={16} style={{ marginRight: 4 }} />
+        <Icon
+          name="mplayer_1_13_16x16_4bit"
+          style={{ marginRight: 4, width: 16, height: 16 }}
+        />
         {name || pathname.replace(/^.*[\\/]/, '')}
         {!loadeddata && ' (Openning)'}
       </TitleBar>
@@ -256,10 +259,8 @@ const Video: React.FC<VideoProps> = ({
               <PlayOrPause playing={playing} />
             ) : (
               <Icon
-                name="user_4"
-                width={16}
-                height={16}
-                style={{ marginTop: -2 }}
+                name="user_4_32x32_4bit"
+                style={{ marginTop: -2, width: 16, height: 16 }}
               />
             )}
           </ControlBtn>
