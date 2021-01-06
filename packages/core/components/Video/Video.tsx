@@ -258,10 +258,7 @@ const Video: React.FC<VideoProps> = ({
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <Icon
-                name="user_4_32x32_4bit"
-                style={{ marginTop: -2, width: 16, height: 16 }}
-              />
+              <Icon name="user_4_32x32_4bit" />
             )}
           </ControlBtn>
           <ControlBtn
