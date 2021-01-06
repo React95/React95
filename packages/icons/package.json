@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "index.js",
+  "main": "icons.css",
   "publishConfig": {
     "access": "public",
     "directory": "dist"
@@ -24,14 +24,15 @@
     "url": "https://github.com/React95/React95/issues"
   },
   "scripts": {
-    "build": "tsc --build ./tsconfig.production.json",
     "prebuild": "rimraf dist",
-    "postbuild": "cp -R src/icons dist",
+    "copy:stylesheet": "cp icons.module.css ./dist/icons.module.css",
+    "copy:assets": "cp -R ./src/png/ ./dist/src/png",
+    "copy:types": "cp -R ./types ./dist",
+    "copy": "yarn copy:stylesheet && yarn copy:assets && yarn copy:types",
+    "precopy": "mkdir -p dist/src/png",
+    "build": "yarn copy",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js",
-    "toPNG": "ts-node toPNG.ts"
-  },
-  "devDependencies": {
-    "ts-node": "^9.0.0"
+    "toPNG": "node toPNG.js"
   }
 }

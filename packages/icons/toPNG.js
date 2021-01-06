@@ -13,10 +13,10 @@ files.forEach(icon => {
     images.forEach(image => {
       const [iconName] = icon.split('.');
 
-      let fileName = `${iconName}_${image.width}x${image.height}-${image.bpp}`;
+      let fileName = `${iconName}_${image.width}x${image.height}_${image.bpp}`;
 
       if (fs.existsSync(`${DEST_FOLDER}/${fileName}bit.png`)) {
-        fileName = `${fileName}bit_(1).png`;
+        fileName = `${fileName}bit_1.png`;
       } else {
         fileName = `${fileName}bit.png`;
       }
@@ -29,6 +29,3 @@ files.forEach(icon => {
     });
   });
 });
-
-
-  
