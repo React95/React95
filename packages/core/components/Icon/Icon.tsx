@@ -11,7 +11,7 @@ const Icon = styled.i
       !['name'].includes(prop) && defaultValidatorFn(prop),
   })
   .attrs<IconProps>(({ name }) => ({
-    className: name,
+    className: `r95 ${name}`,
   }))<IconProps>`
   display: block;
 `;
