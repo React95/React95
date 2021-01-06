@@ -28,11 +28,6 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c0 {
@@ -194,11 +189,9 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -295,11 +288,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c0 {
@@ -427,11 +415,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -514,11 +500,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c0 {
@@ -646,11 +627,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -733,11 +712,6 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c0 {
@@ -842,11 +816,9 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -913,11 +885,6 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
 }
 
 .c0 {
@@ -1023,11 +990,9 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"

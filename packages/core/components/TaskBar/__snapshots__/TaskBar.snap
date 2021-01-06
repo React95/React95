@@ -42,11 +42,6 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -84,10 +79,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
     width="auto"
   >
     <i
-      class="c2"
-      height="20"
-      style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-      width="20"
+      class="c2 logo_32x32_4bit"
+      name="logo_32x32_4bit"
+      style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -97,11 +91,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with active prop 1`] = `
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -171,10 +160,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     width="auto"
   >
     <i
-      class="c2"
-      height="20"
-      style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-      width="20"
+      class="c2 logo_32x32_4bit"
+      name="logo_32x32_4bit"
+      style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -184,10 +172,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     width="auto"
   >
     <i
-      class="c2"
-      height="20"
-      style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-      width="20"
+      class="c2 logo_32x32_4bit"
+      name="logo_32x32_4bit"
+      style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -197,11 +184,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon prop 1`] = `
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -239,11 +221,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
     width="auto"
   >
     <i
-      class="c2"
-      data-icon-name="bat"
-      height="20"
-      style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-      width="20"
+      class="c2 logo_32x32_4bit"
+      name="logo_32x32_4bit"
+      style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -253,11 +233,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small prop 1`] = `
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -294,10 +269,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
     width="auto"
   >
     <i
-      class="c2"
-      height="20"
-      style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-      width="20"
+      class="c2 logo_32x32_4bit"
+      name="logo_32x32_4bit"
+      style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -307,11 +281,6 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 .c3 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -418,11 +387,9 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
       width="auto"
     >
       <i
-        class="c3"
-        data-icon-name="logo"
-        height="20"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="20"
+        class="c3 logo_32x32_4bit"
+        name="logo_32x32_4bit"
+        style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -451,11 +418,6 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 .c3 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -562,11 +524,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
       width="auto"
     >
       <i
-        class="c3"
-        data-icon-name="logo"
-        height="20"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="20"
+        class="c3 logo_32x32_4bit"
+        name="logo_32x32_4bit"
+        style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -602,11 +562,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   >
     .c3 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 32px;
-  height: 32px;
 }
 
 .c2 {
@@ -683,11 +638,8 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
           class="c2"
         >
           <i
-            class="c3"
-            data-icon-name="reader_closed"
-            height="32"
-            style="background-image: url(buffer-32-4-1);"
-            width="32"
+            class="c3 reader_closed"
+            name="reader_closed"
           />
           Local Disk (C:)
         </li>
@@ -695,11 +647,8 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
           class="c2"
         >
           <i
-            class="c3"
-            data-icon-name="windows_explorer"
-            height="32"
-            style="background-image: url(buffer-32-4-1);"
-            width="32"
+            class="c3 windows_explorer"
+            name="windows_explorer"
           />
           Windows Explorer
         </li>
@@ -711,11 +660,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       width="auto"
     >
       <i
-        class="sc-gstumO gYrVcR"
-        data-icon-name="logo"
-        height="20"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="20"
+        class="sc-gstumO dHcMIY logo_32x32_4bit"
+        name="logo_32x32_4bit"
+        style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -769,20 +716,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
-}
-
-.c12 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -909,7 +842,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c13 {
+.c12 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -926,7 +859,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   margin-left: 2px;
 }
 
-.c17 {
+.c16 {
   background-color: transparent;
   width: auto;
   height: auto;
@@ -937,21 +870,21 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding-bottom: 2px;
 }
 
-.c14 {
+.c13 {
   background-color: #e6e6e6;
   width: auto;
   height: auto;
   box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
 }
 
-.c18 {
+.c17 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c19 div:first-child {
+.c18 div:first-child {
   right: 0;
 }
 
@@ -975,7 +908,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   outline: none;
 }
 
-.c15 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -996,7 +929,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   width: 100%;
 }
 
-.c16 {
+.c15 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1012,11 +945,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -1062,47 +993,43 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       width="auto"
     >
       <i
-        class="c12"
-        data-icon-name="logo"
-        height="20"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="20"
+        class="c2 logo_32x32_4bit"
+        name="logo_32x32_4bit"
+        style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
     </button>
     <div
-      class="c13"
+      class="c12"
       display="flex"
       height="auto"
       width="100%"
     >
       <button
-        class="c14 c15"
+        class="c13 c14"
         height="auto"
         width="auto"
       >
         <i
-          class="c12"
-          data-icon-name="bat"
-          height="20"
-          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="20"
+          class="c2 logo_32x32_4bit"
+          name="logo_32x32_4bit"
+          style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
-          class="c16"
+          class="c15"
         >
           file.bat
         </span>
       </button>
     </div>
     <div
-      class="c17"
+      class="c16"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="c18 c19"
+        class="c17 c18"
       >
         
       </div>
@@ -1139,20 +1066,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 
 .c2 {
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 15px;
-  height: 13px;
-}
-
-.c14 {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 .c0 {
@@ -1308,7 +1221,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c15 {
+.c14 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1325,7 +1238,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   margin-left: 2px;
 }
 
-.c19 {
+.c18 {
   background-color: transparent;
   width: auto;
   height: auto;
@@ -1336,21 +1249,21 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding-bottom: 2px;
 }
 
-.c18 {
+.c17 {
   background-color: #e6e6e6;
   width: auto;
   height: auto;
   box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
 }
 
-.c20 {
+.c19 {
   display: inline-block;
   position: relative;
   cursor: default;
   white-space: nowrap;
 }
 
-.c21 div:first-child {
+.c20 div:first-child {
   right: 0;
 }
 
@@ -1374,7 +1287,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   outline: none;
 }
 
-.c16 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1395,7 +1308,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   width: 100%;
 }
 
-.c17 {
+.c16 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1411,11 +1324,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       class="c1 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="windows_explorer"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 windows_explorer"
+        name="windows_explorer"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -1457,11 +1368,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       class="c10 draggable"
     >
       <i
-        class="c2"
-        data-icon-name="bat"
-        height="13"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="15"
+        class="c2 bat"
+        name="bat"
+        style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
         class="c3"
@@ -1507,65 +1416,59 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       width="auto"
     >
       <i
-        class="c14"
-        data-icon-name="logo"
-        height="20"
-        style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-        width="20"
+        class="c2 logo_32x32_4bit"
+        name="logo_32x32_4bit"
+        style="margin-right: 4px; width: 20px; height: 20px;"
       />
       Start
     </button>
     <div
-      class="c15"
+      class="c14"
       display="flex"
       height="auto"
       width="100%"
     >
       <button
-        class="c12 c16"
+        class="c12 c15"
         height="auto"
         width="auto"
       >
         <i
-          class="c14"
-          data-icon-name="windows_explorer"
-          height="20"
-          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="20"
+          class="c2 logo_32x32_4bit"
+          name="logo_32x32_4bit"
+          style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
-          class="c17"
+          class="c16"
         >
           Windows Explorer
         </span>
       </button>
       <button
-        class="c18 c16"
+        class="c17 c15"
         height="auto"
         width="auto"
       >
         <i
-          class="c14"
-          data-icon-name="bat"
-          height="20"
-          style="margin-right: 4px; background-image: url(buffer-32-4-1);"
-          width="20"
+          class="c2 logo_32x32_4bit"
+          name="logo_32x32_4bit"
+          style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
-          class="c17"
+          class="c16"
         >
           file.bat
         </span>
       </button>
     </div>
     <div
-      class="c19"
+      class="c18"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="c20 c21"
+        class="c19 c20"
       >
         
       </div>

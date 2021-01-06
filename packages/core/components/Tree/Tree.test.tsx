@@ -60,7 +60,7 @@ describe('<Tree />', () => {
       });
 
       const itemsWithDefaultIcon = container.querySelectorAll(
-        '[data-icon-name=bat]',
+        '.bat_32x32_4bit',
       );
 
       expect(itemsWithDefaultIcon.length).toBe(1);
