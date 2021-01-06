@@ -3,6 +3,6 @@
   "compilerOptions": {
     "jsx": "react"
   },
-  "include": ["components", "stories", "../../types"],
+  "include": ["components", "stories", "../../types", "../icons/types"],
   "exclude": ["node_modules"]
 }
