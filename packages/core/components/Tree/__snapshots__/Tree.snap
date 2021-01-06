@@ -83,7 +83,6 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
         >
           <i
             class="c4 bat_32x32_4bit"
-            name="bat_32x32_4bit"
             style="width: 14px; height: 14px;"
           />
         </div>

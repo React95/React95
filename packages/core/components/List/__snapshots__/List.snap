@@ -143,7 +143,6 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
     >
       <i
         class="c2 folder_exe2"
-        name="folder_exe2"
       />
       <ul
         class="c0"
@@ -154,7 +153,6 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
         >
           <i
             class="c2 microsoft_exchange"
-            name="microsoft_exchange"
           />
           Microsoft Exchange
         </li>
@@ -166,7 +164,6 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
         >
           <i
             class="c2 windows_explorer"
-            name="windows_explorer"
           />
           Windows Explorer
         </li>

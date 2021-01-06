@@ -268,7 +268,6 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
     >
       <i
         class="c2 mplayer_1_13_16x16_4bit"
-        name="mplayer_1_13_16x16_4bit"
         style="margin-right: 4px; width: 16px; height: 16px;"
       />
       some_video.mp4
@@ -336,7 +335,6 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         >
           <i
             class="c2 user_4_32x32_4bit"
-            name="user_4_32x32_4bit"
             style="margin-top: -2px; width: 16px; height: 16px;"
           />
         </button>

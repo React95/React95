@@ -220,7 +220,6 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
       >
         <i
           class="c10 c11 user_4_32x32_4bit"
-          name="user_4_32x32_4bit"
         />
         <div
           class="c12"
@@ -463,7 +462,6 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
       >
         <i
           class="c10 c11 user_5_32x32_4bit"
-          name="user_5_32x32_4bit"
         />
         <div
           class="c12"
@@ -706,7 +704,6 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
       >
         <i
           class="c10 c11 user_3_32x32_4bit"
-          name="user_3_32x32_4bit"
         />
         <div
           class="c12"
@@ -949,7 +946,6 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
       >
         <i
           class="c10 c11 user_2_32x32_4bit"
-          name="user_2_32x32_4bit"
         />
         <div
           class="c12"

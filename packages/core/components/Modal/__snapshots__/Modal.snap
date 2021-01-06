@@ -190,7 +190,6 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
     >
       <i
         class="c2 bat"
-        name="bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -416,7 +415,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     >
       <i
         class="c2 bat"
-        name="bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -628,7 +626,6 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     >
       <i
         class="c2 bat"
-        name="bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -817,7 +814,6 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
     >
       <i
         class="c2 bat"
-        name="bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
@@ -991,7 +987,6 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
     >
       <i
         class="c2 bat"
-        name="bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
