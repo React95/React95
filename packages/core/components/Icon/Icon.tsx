@@ -5,9 +5,14 @@ export interface IconProps {
   name: keyof typeof icons;
 }
 
-const Icon = styled.i.attrs<IconProps>(({ name }) => ({
-  className: name,
-}))<IconProps>`
+const Icon = styled.i
+  .withConfig({
+    shouldForwardProp: (prop, defaultValidatorFn) =>
+      !['name'].includes(prop) && defaultValidatorFn(prop),
+  })
+  .attrs<IconProps>(({ name }) => ({
+    className: name,
+  }))<IconProps>`
   display: block;
 `;
 
