@@ -14,6 +14,7 @@ const Truncate = styled.span`
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  text-align: left;
 `;
 
 export type TaskBarProps = {
