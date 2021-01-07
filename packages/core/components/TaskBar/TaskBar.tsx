@@ -54,6 +54,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       )}
       <WindowButton
         small
+        icon="logo_32x32_4bit"
         active={activeStart}
         onClick={() => {
           toggleActiveStart(!activeStart);

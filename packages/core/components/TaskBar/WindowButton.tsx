@@ -13,7 +13,9 @@ export type WindowButtonProps = {
   React.HTMLAttributes<HTMLButtonElement> &
   FrameProps;
 
-const Button = styled(Frame)<Omit<WindowButtonProps, 'icon'>>`
+type ButtonFrameProps = Omit<WindowButtonProps, 'icon'>;
+
+const Button = styled(Frame)<ButtonFrameProps>`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,7 +48,7 @@ const Button = styled(Frame)<Omit<WindowButtonProps, 'icon'>>`
 const WindowButton: React.FC<WindowButtonProps> = ({
   children = '',
   small,
-  icon = undefined,
+  icon = 'bat_exec_32x32_4bit',
   active,
   ...props
 }) => (
@@ -64,17 +66,14 @@ const WindowButton: React.FC<WindowButtonProps> = ({
     {...props}
     as="button"
   >
-    <Icon
-      name="logo_32x32_4bit"
-      style={{ marginRight: 4, width: 20, height: 20 }}
-    />
+    <Icon name={icon} style={{ marginRight: 4, width: 20, height: 20 }} />
     {children}
   </Button>
 );
 
 WindowButton.defaultProps = {
   small: false,
-  icon: undefined,
+  icon: 'bat_32x32_4bit',
   active: false,
 };
 
