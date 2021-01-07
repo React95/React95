@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.4](https://github.com/React95/React95/compare/@react95/core@2.13.3...@react95/core@2.13.4) (2021-01-07)
+
+
+### Bug Fixes
+
+* **taskbar:** fixes text trunkation ([fb72963](https://github.com/React95/React95/commit/fb72963889a10af48a884169ac47ad882ff734fb)), closes [#203](https://github.com/React95/React95/issues/203)
+
+
+
+
+
 ## [2.13.3](https://github.com/React95/React95/compare/@react95/core@2.13.2...@react95/core@2.13.3) (2021-01-07)
 
 
