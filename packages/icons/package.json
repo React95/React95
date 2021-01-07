@@ -11,8 +11,8 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "icons.module.css",
-  "unpkg": "icons.module.css",
+  "main": "icons.css",
+  "unpkg": "icons.css",
   "publishConfig": {
     "access": "public",
     "directory": "dist"
@@ -26,8 +26,8 @@
   },
   "scripts": {
     "prebuild": "rimraf dist",
-    "copy:stylesheet": "cp icons.module.css ./dist/icons.module.css",
-    "copy:assets": "cp -R ./src/png/ ./dist/src/png",
+    "copy:stylesheet": "cp icons.css ./dist/icons.css",
+    "copy:assets": "cp -R ./src/png/ ./dist/src/png/",
     "copy:types": "cp -R ./types ./dist",
     "copy": "yarn copy:stylesheet && yarn copy:assets && yarn copy:types",
     "precopy": "mkdir -p dist/src/png",
