@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/React95/React95/compare/@react95/icons@0.5.1...@react95/icons@0.5.2) (2021-01-07)
+
+
+### Bug Fixes
+
+* **icons:** eslint fix ([c3a28f4](https://github.com/React95/React95/commit/c3a28f4325e5d2fc064e27e101a17158f8d87d07))
+* **icons:** fix png path build process ([74a9ef1](https://github.com/React95/React95/commit/74a9ef1dbe1055e6c8dc350f5f6940f7edd283aa))
+
+
+
+
+
 ## [0.5.1](https://github.com/React95/React95/compare/@react95/icons@0.5.0...@react95/icons@0.5.1) (2021-01-07)
 
 
