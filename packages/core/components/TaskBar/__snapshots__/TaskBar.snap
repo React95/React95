@@ -79,7 +79,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
     width="auto"
   >
     <i
-      class="c2 r95 logo_32x32_4bit"
+      class="c2 r95 bat_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -159,7 +159,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     width="auto"
   >
     <i
-      class="c2 r95 logo_32x32_4bit"
+      class="c2 r95 bat_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -170,7 +170,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     width="auto"
   >
     <i
-      class="c2 r95 logo_32x32_4bit"
+      class="c2 r95 bat_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -218,7 +218,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
     width="auto"
   >
     <i
-      class="c2 r95 logo_32x32_4bit"
+      class="c2 r95 bat"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -265,7 +265,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
     width="auto"
   >
     <i
-      class="c2 r95 logo_32x32_4bit"
+      class="c2 r95 bat_32x32_4bit"
       style="margin-right: 4px; width: 20px; height: 20px;"
     />
     
@@ -999,7 +999,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         width="auto"
       >
         <i
-          class="c2 r95 logo_32x32_4bit"
+          class="c2 r95 bat"
           style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
@@ -1418,7 +1418,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         width="auto"
       >
         <i
-          class="c2 r95 logo_32x32_4bit"
+          class="c2 r95 windows_explorer"
           style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
@@ -1433,7 +1433,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         width="auto"
       >
         <i
-          class="c2 r95 logo_32x32_4bit"
+          class="c2 r95 bat"
           style="margin-right: 4px; width: 20px; height: 20px;"
         />
         <span
