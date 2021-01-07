@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.3](https://github.com/React95/React95/compare/@react95/core@2.13.2...@react95/core@2.13.3) (2021-01-07)
+
+
+### Bug Fixes
+
+* **taskbar:** fix wrong icons when Modal is open ([2e31618](https://github.com/React95/React95/commit/2e31618040d05850654e2d3dbe13388ec71bf633))
+
+
+
+
+
 ## [2.13.2](https://github.com/React95/React95/compare/@react95/core@2.13.1...@react95/core@2.13.2) (2021-01-07)
 
 **Note:** Version bump only for package @react95/core
