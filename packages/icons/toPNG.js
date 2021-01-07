@@ -25,6 +25,8 @@ files.forEach(icon => {
       const fileDestination = `${DEST_FOLDER}/${fileName}`;
 
       fs.writeFileSync(fileDestination, data);
+
+      // eslint-disable-next-line no-console
       console.log(`icon ${fileDestination} created`);
     });
   });
