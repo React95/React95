@@ -52,10 +52,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -80,7 +80,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
   >
     <i
       class="c2 r95 bat_32x32_4bit"
-      style="margin-right: 4px; width: 20px; height: 20px;"
+      style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -107,10 +107,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -127,10 +127,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -160,7 +160,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   >
     <i
       class="c2 r95 bat_32x32_4bit"
-      style="margin-right: 4px; width: 20px; height: 20px;"
+      style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -171,7 +171,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
   >
     <i
       class="c2 r95 bat_32x32_4bit"
-      style="margin-right: 4px; width: 20px; height: 20px;"
+      style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -191,10 +191,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -219,7 +219,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
   >
     <i
       class="c2 r95 bat"
-      style="margin-right: 4px; width: 20px; height: 20px;"
+      style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -239,10 +239,10 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -266,7 +266,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
   >
     <i
       class="c2 r95 bat_32x32_4bit"
-      style="margin-right: 4px; width: 20px; height: 20px;"
+      style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
     />
     
   </button>
@@ -350,10 +350,10 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -383,7 +383,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
     >
       <i
         class="c3 r95 logo_32x32_4bit"
-        style="margin-right: 4px; width: 20px; height: 20px;"
+        style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -486,10 +486,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -519,7 +519,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
     >
       <i
         class="c3 r95 logo_32x32_4bit"
-        style="margin-right: 4px; width: 20px; height: 20px;"
+        style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -646,13 +646,13 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <button
-      class="sc-JAcuL sc-hkwnrn gsIxq cqsJoZ"
+      class="sc-JAcuL sc-hkwnrn gsIxq bVOaZJ"
       height="auto"
       width="auto"
     >
       <i
         class="sc-gsBrbv cXPMda r95 logo_32x32_4bit"
-        style="margin-right: 4px; width: 20px; height: 20px;"
+        style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -879,10 +879,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 }
 
 .c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -899,10 +899,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 }
 
 .c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -924,6 +924,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  text-align: left;
 }
 
 <div>
@@ -983,7 +984,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
     >
       <i
         class="c2 r95 logo_32x32_4bit"
-        style="margin-right: 4px; width: 20px; height: 20px;"
+        style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -1000,7 +1001,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       >
         <i
           class="c2 r95 bat"
-          style="margin-right: 4px; width: 20px; height: 20px;"
+          style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
         />
         <span
           class="c15"
@@ -1255,10 +1256,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 }
 
 .c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -1275,10 +1276,10 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 }
 
 .c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -1300,6 +1301,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  text-align: left;
 }
 
 <div>
@@ -1402,7 +1404,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     >
       <i
         class="c2 r95 logo_32x32_4bit"
-        style="margin-right: 4px; width: 20px; height: 20px;"
+        style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
       />
       Start
     </button>
@@ -1419,7 +1421,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       >
         <i
           class="c2 r95 windows_explorer"
-          style="margin-right: 4px; width: 20px; height: 20px;"
+          style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
         />
         <span
           class="c16"
@@ -1434,7 +1436,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       >
         <i
           class="c2 r95 bat"
-          style="margin-right: 4px; width: 20px; height: 20px;"
+          style="margin-right: 4px; min-width: 20px; width: 20px; height: 20px;"
         />
         <span
           class="c16"

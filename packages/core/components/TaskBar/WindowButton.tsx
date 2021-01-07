@@ -16,7 +16,7 @@ export type WindowButtonProps = {
 type ButtonFrameProps = Omit<WindowButtonProps, 'icon'>;
 
 const Button = styled(Frame)<ButtonFrameProps>`
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   padding: 2 3;
@@ -66,7 +66,10 @@ const WindowButton: React.FC<WindowButtonProps> = ({
     {...props}
     as="button"
   >
-    <Icon name={icon} style={{ marginRight: 4, width: 20, height: 20 }} />
+    <Icon
+      name={icon}
+      style={{ marginRight: 4, minWidth: 20, width: 20, height: 20 }}
+    />
     {children}
   </Button>
 );
