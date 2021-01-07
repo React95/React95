@@ -27,7 +27,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "copy:stylesheet": "cp icons.css ./dist/icons.css",
-    "copy:assets": "cp -R ./src/png/ ./dist/src/png/",
+    "copy:assets": "cp -R ./src/png ./dist/src",
     "copy:types": "cp -R ./types ./dist",
     "copy": "yarn copy:stylesheet && yarn copy:assets && yarn copy:types",
     "precopy": "mkdir -p dist/src/png",
