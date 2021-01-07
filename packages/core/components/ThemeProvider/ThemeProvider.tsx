@@ -4,7 +4,7 @@ import { ThemeProvider as SCThemeProvider } from 'styled-components';
 import { ModalProvider } from '../Modal';
 import mainTheme, { ITheme } from './theme';
 
-import '@react95/icons/icons.module.css';
+import '@react95/icons/icons.css';
 
 export type ThemeProviderProps = {
   theme?: ITheme;

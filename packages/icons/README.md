@@ -1524,5 +1524,5 @@ yarn add @react95/icons
 ## Usage
 
 ```
-import '@react95/icons/icons.module.css';
+import '@react95/icons/icons.css';
 ```
