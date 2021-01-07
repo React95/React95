@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.1](https://github.com/React95/React95/compare/@react95/core@2.13.0...@react95/core@2.13.1) (2021-01-07)
+
+
+### Bug Fixes
+
+* **icons:** change CSS modules to a simplier CSS file ([c968dd5](https://github.com/React95/React95/commit/c968dd52b8f9c1981082b3da119b42641199054d))
+
+
+
+
+
 # [2.13.0](https://github.com/React95/React95/compare/@react95/core@2.12.0...@react95/core@2.13.0) (2021-01-06)
 
 
