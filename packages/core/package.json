@@ -57,11 +57,10 @@
     "ts-jest": "^26.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
-    "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
+    "storybook": "start-storybook -p 6006 -s ./components/GlobalStyle",
+    "build-storybook": "build-storybook -c .storybook -s ./components/GlobalStyle -o docs",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "cross-env NODE_ENV=production tsc --build ./tsconfig.production.json",
-    "postbuild": "cp -R components/shared/assets dist/shared/assets",
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
