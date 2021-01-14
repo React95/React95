@@ -4,9 +4,11 @@ module.exports = {
     '@babel/preset-react',
     '@babel/preset-typescript',
   ],
-  ignore: ['**/*.test.tsx'],
   env: {
-    esm: { presets: [['@babel/preset-env', { modules: false }]] },
-    cjs: { presets: ['@babel/preset-env'] },
+    esm: {
+      presets: [['@babel/preset-env', { modules: false }]],
+      ignore: ['**/*.test.tsx'],
+    },
+    cjs: { presets: ['@babel/preset-env'], ignore: ['**/*.test.tsx'] },
   },
 };
