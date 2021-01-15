@@ -75,5 +75,8 @@
   "publishConfig": {
     "access": "public",
     "directory": "dist"
-  }
+  },
+  "sideEffects": [
+    "**/*.{woff2,woff,ttf,eot}"
+  ]
 }
