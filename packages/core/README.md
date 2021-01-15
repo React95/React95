@@ -45,7 +45,7 @@ yarn add @types/styled-components @types/xstyled__styled-components
 
 You can find a list of all available components at our [Storybook](https://react95.github.io/React95/)
 
-### SSR
+### Next.JS
 
 If you want to use React95 on a NextJS project, you will need to do the follow
 steps:
