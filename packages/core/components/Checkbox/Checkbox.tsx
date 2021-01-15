@@ -2,9 +2,8 @@ import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import check from '../shared/assets/pattern/check.svg';
-import checkDisabled from '../shared/assets/pattern/check-disabled.svg';
-import bgpattern from '../shared/assets/pattern/dropdown.png';
+import check from './imgs/check.svg';
+import checkDisabled from './imgs/check-disabled.svg';
 
 const Icon = styled.span`
   width: 12px;
@@ -61,7 +60,7 @@ const Field = styled.input.attrs({
   }
 
   &:checked &:disabled + ${Icon} {
-    background-image: url('${checkDisabled}'), url('${bgpattern}');
+    background-image: url('${checkDisabled}');
     background-size: 7px 7px, 1.9px 1.9px;
   }
 
