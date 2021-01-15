@@ -14,20 +14,20 @@ npm install @react95/core
 yarn add @react95/core
 ```
 
-_Warning:_ React95 isn't production ready yet, use it at your own risk!
+You'll also need to add the [`@react95/icons/icons.css`](../icons) file
 
 ## Usage
 
 After installation, you can use any React95 component in your React application:
 
 ```js
-import { Button } from '@react95/core';
-// ...
+import { Button, ThemeProvider } from '@react95/core';
+import '@react95/icons/icons.css';
 
 const MyApp = () => (
-  <div>
+  <ThemeProvider>
     <Button>Click me!</Button>
-  </div>
+  </ThemeProvider>
 );
 ```
 
@@ -44,3 +44,25 @@ yarn add @types/styled-components @types/xstyled__styled-components
 ```
 
 You can find a list of all available components at our [Storybook](https://react95.github.io/React95/)
+
+### SSR
+
+If you want to use React95 on a NextJS project, you will need to do the follow
+steps:
+
+- Add `next-transpile-modules` and `next-fonts` dependencies:
+
+```
+  npm install --save-dev next-transpile-modules next-fonts
+  // or
+  yarn add next-transpile-modules next-fonts
+```
+
+- Edit your `next.config.js` file to something like:
+
+```javascript
+const withFonts = require('next-fonts');
+const withTM = require('next-transpile-modules')(['@react95/core']);
+
+module.exports = withTM(withFonts());
+```
