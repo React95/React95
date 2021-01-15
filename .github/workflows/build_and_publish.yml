@@ -33,7 +33,7 @@ jobs:
         run: yarn test
       - name: Build
         run: |
-          yarn build:packages
+          yarn build
       - name: Publish
         run: |
           GH_TOKEN=${GH_TOKEN}
