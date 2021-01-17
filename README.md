@@ -36,6 +36,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Lorenzo Pieri's personal website](https://github.com/LRNZ09/lrnz09.github.io)
 - [Insaf Khamzin's portfolio website](https://github.com/InsafKhamzin/portfolio)
 - [Janne Koivisto's portfolio website](https://janneilkka.com)
+- [Tomas Nasjleti's personal website](https://tominasweb.com)
 
 ## Contributors
 
