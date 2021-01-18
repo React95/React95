@@ -3,9 +3,9 @@ import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
 import Icon, { IconProps } from '../Icon/Icon';
-import treeMidLines from '../shared/assets/tree-mid.png';
-import treeLastLines from '../shared/assets/tree-last.png';
-import treeNodeChildrenLine from '../shared/assets/tree-node-children.png';
+import treeMidLines from './imgs/tree-mid.png';
+import treeLastLines from './imgs/tree-last.png';
+import treeNodeChildrenLine from './imgs/tree-node-children.png';
 
 const FOLDER_CLOSED = 'folder_32x32_4bit';
 const FOLDER_OPENED = 'folder_open_32x32_4bit';

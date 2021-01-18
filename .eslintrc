@@ -1,7 +1,9 @@
 {
-  "parser": "babel-eslint",
-  "plugins": ["react"],
-  "extends": ["airbnb", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
   "env": {
     "jest": true,
     "browser": true
@@ -15,6 +17,8 @@
     "no-confusing-arrow": 0,
     "react/jsx-props-no-spreading": 0,
     "react/jsx-wrap-multilines": 0,
-    "react/jsx-one-expression-per-line": 0
+    "react/jsx-one-expression-per-line": 0,
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
   }
 }
