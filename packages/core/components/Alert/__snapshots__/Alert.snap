@@ -182,10 +182,10 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1 draggable"
+      class="c1"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
         Error
       </div>
@@ -424,10 +424,10 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1 draggable"
+      class="c1"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
         Info
       </div>
@@ -666,10 +666,10 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1 draggable"
+      class="c1"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
         question
       </div>
@@ -908,10 +908,10 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1 draggable"
+      class="c1"
     >
       <div
-        class="c2"
+        class="c2 draggable"
       >
         Warning
       </div>

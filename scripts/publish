@@ -7,7 +7,7 @@ set -e
 
 if [[ $BRANCH == "master" ]];
 then
-  yarn lerna publish major --conventional-graduate --yes
+  yarn lerna publish --yes
 elif [[ $BRANCH == "alpha" ]];
 then
   yarn lerna publish --conventional-prerelease --yes --preid $BRANCH --dist-tag $BRANCH 

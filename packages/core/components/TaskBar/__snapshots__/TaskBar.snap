@@ -933,14 +933,14 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 draggable"
+      class="c1"
     >
       <i
-        class="c2 r95 bat"
+        class="c2 draggable r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
-        class="c3"
+        class="c3 draggable"
       >
         file.bat
       </div>
@@ -1310,14 +1310,14 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 draggable"
+      class="c1"
     >
       <i
-        class="c2 r95 windows_explorer"
+        class="c2 draggable r95 windows_explorer"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
-        class="c3"
+        class="c3 draggable"
       >
         Windows Explorer
       </div>
@@ -1353,14 +1353,14 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c10 draggable"
+      class="c10"
     >
       <i
-        class="c2 r95 bat"
+        class="c2 draggable r95 bat"
         style="width: 15px; height: 13px; margin-right: 4px;"
       />
       <div
-        class="c3"
+        class="c3 draggable"
       >
         file.bat
       </div>
