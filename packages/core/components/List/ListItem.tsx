@@ -5,7 +5,7 @@ import { th } from '@xstyled/system';
 import Icon, { IconProps } from '../Icon/Icon';
 import { IListProps } from './List';
 
-import rightcaret from '../shared/assets/pattern/rightcaret.svg';
+import rightcaret from '../GlobalStyle/imgs/rightcaret.svg';
 
 type ItemProps = {
   icon?: string;

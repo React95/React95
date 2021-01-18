@@ -1,0 +1,46 @@
+name: React95 - Publish workflow
+
+on:
+  push:
+    branches:
+      - master
+      - alpha
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'Merge')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Configure CI Git User
+        run: |
+          git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git config --global user.email ggdaltoso@gmail.com
+          git config --global user.name ggdaltoso
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn --pure-lockfile --non-interactive
+      - name: Lint
+        run: yarn lint:all
+      - name: Test
+        run: yarn test
+      - name: Build
+        run: |
+          yarn build
+      - name: Publish
+        run: |
+          GH_TOKEN=${GH_TOKEN}
+          NPM_TOKEN=${NPM_TOKEN}
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+          chmod +x ./scripts/publish
+          ./scripts/publish
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
