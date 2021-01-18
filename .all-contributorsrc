@@ -206,6 +206,15 @@
         "design",
         "ideas"
       ]
+    },
+    {
+      "login": "TomAndril",
+      "name": "Tomas Nasjleti",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/32068891?v=4",
+      "profile": "http://tominasweb.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
