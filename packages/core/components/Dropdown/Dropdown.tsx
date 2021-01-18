@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import caret from './imgs/downcaret.png';
+import caret from '../shared/assets/pattern/downcaret.png';
 
 const Wrapper = styled.div`
   position: relative;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     width: 17px;
-    height: 16px;
+    height: 17px;
     font-size: 14px;
     line-height: 1.1;
     content: '';
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     border-bottom: 1;
 
     background-image: url('${caret}');
-    background-position: 60% 60%;
+    background-position: center center;
     background-repeat: no-repeat;
   }
 `;

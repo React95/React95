@@ -17,7 +17,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 17px;
-  height: 16px;
+  height: 17px;
   font-size: 14px;
   line-height: 1.1;
   content: '';
@@ -30,7 +30,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   border-right: 1px solid;
   border-bottom: 1px solid;
   background-image: url('test-file-stub');
-  background-position: 60% 60%;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 

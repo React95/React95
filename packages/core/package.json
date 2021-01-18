@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "2.13.5-alpha.0",
+  "version": "2.13.4",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -10,8 +10,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@react95/clippy": "^0.1.2-alpha.0",
-    "@react95/icons": "^0.5.3-alpha.0",
+    "@react95/clippy": "^0.1.1",
+    "@react95/icons": "^0.5.2",
     "@styled-system/prop-types": "^5.1.5",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react-virtualized": "^9.21.10",
@@ -48,7 +48,6 @@
     "@types/styled-system": "^5.1.10",
     "@types/xstyled__styled-components": "^1.17.0",
     "@types/xstyled__system": "^1.17.1",
-    "babel-plugin-inline-import-data-uri": "^1.0.1",
     "copy-to-clipboard": "^3.3.1",
     "fs-extra": "^9.0.0",
     "react-test-renderer": "^16.13.1",
@@ -58,15 +57,11 @@
     "ts-jest": "^26.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./components/GlobalStyle",
-    "build-storybook": "build-storybook -c .storybook -s ./components/GlobalStyle -o docs",
+    "storybook": "start-storybook -p 6006 -s ./components/shared/assets",
+    "build-storybook": "build-storybook -c .storybook -s ./components/shared/assets -o docs",
     "deploy-storybook": "storybook-to-ghpages",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
-    "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
-    "build:esm": "cross-env NODE_ENV=esm yarn babel ./components --out-dir dist/esm --extensions .ts,.tsx",
-    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./components --out-dir dist/cjs --extensions .ts,.tsx",
-    "postbuild:cjs": "cp -r ./components/GlobalStyle/font ./dist/cjs/GlobalStyle ",
-    "postbuild:esm": "cp -r ./components/GlobalStyle/font ./dist/esm/GlobalStyle ",
+    "build": "cross-env NODE_ENV=production tsc --build ./tsconfig.production.json",
+    "postbuild": "cp -R components/shared/assets dist/shared/assets",
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
@@ -75,8 +70,5 @@
   "publishConfig": {
     "access": "public",
     "directory": "dist"
-  },
-  "sideEffects": [
-    "**/*.{woff2,woff,ttf,eot}"
-  ]
+  }
 }

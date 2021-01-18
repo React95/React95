@@ -1,0 +1,27 @@
+sudo: false
+language: node_js
+
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - stage: release
+      node_js: lts/*
+
+      script:
+        - yarn lint:all
+        - yarn test
+
+      after_success:
+        - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        - git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+        - git checkout master
+
+      deploy:
+        provider: script
+        skip_cleanup: true
+        keep_history: true
+        script:
+          - lerna publish -y

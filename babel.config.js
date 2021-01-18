@@ -5,10 +5,8 @@ module.exports = {
     '@babel/preset-typescript',
   ],
   env: {
-    esm: {
-      presets: [['@babel/preset-env', { modules: false }]],
-      ignore: ['**/*.test.tsx'],
+    production: {
+      ignore: ['**/*.test.jsx'],
     },
-    cjs: { presets: ['@babel/preset-env'], ignore: ['**/*.test.tsx'] },
   },
 };
