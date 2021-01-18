@@ -1,8 +1,10 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "jsx": "react"
+    "outDir": "./dist/@types",
+    "jsx": "react",
+    "declaration": true, 
+    "emitDeclarationOnly": true
   },
   "include": ["components", "../../types", "../icons/types"],
   "exclude": [

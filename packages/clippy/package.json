@@ -1,6 +1,6 @@
 {
   "name": "@react95/clippy",
-  "version": "0.1.1",
+  "version": "0.1.2-alpha.0",
   "description": "Our old good friend Clippy as a React Hook!",
   "keywords": [
     "React95",
@@ -22,7 +22,9 @@
   },
   "scripts": {
     "prebuild": "rimraf ./dist",
-    "build": "cross-env NODE_ENV=production babel ./src --out-dir dist --copy-files",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --copy-files",
+    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --copy-files",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
