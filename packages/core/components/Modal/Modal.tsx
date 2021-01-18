@@ -243,12 +243,9 @@ const ModalRenderer = (
         active={isActive}
         ref={ref}
       >
-        <TitleBar
-          className="draggable"
-          backgroundColor={isActive ? 'primary' : 'grays.3'}
-        >
-          {icon && <Icon name={icon} {...iconStyle} />}
-          <Title>{title}</Title>
+        <TitleBar backgroundColor={isActive ? 'primary' : 'grays.3'}>
+          {icon && <Icon className="draggable" name={icon} {...iconStyle} />}
+          <Title className="draggable">{title}</Title>
           <OptionsBox>
             <OptionItem>
               <Option>?</Option>
