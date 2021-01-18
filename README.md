@@ -4,7 +4,7 @@
 
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-[![Build Status](https://travis-ci.org/React95/React95.svg?branch=master)](https://travis-ci.org/React95/React95)
+[![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
