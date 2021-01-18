@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "2.13.5-alpha.0",
+  "version": "2.13.5-alpha.1",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -10,8 +10,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@react95/clippy": "^0.1.2-alpha.0",
-    "@react95/icons": "^0.5.3-alpha.0",
+    "@react95/clippy": "^0.1.2-alpha.1",
+    "@react95/icons": "^0.5.3-alpha.1",
     "@styled-system/prop-types": "^5.1.5",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react-virtualized": "^9.21.10",
