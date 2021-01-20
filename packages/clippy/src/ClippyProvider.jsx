@@ -6,8 +6,6 @@ import clippyStyle from './style';
 import AGENTS from './agents';
 import ClippyContext from './ClippyContext';
 
-window.CLIPPY_CDN = '//s3.amazonaws.com/clippy.js/Agents/';
-
 let clippyAgent;
 
 const ClippyProvider = ({ children, agentName = AGENTS.CLIPPY }) => {
