@@ -19,6 +19,7 @@
     "react/jsx-wrap-multilines": 0,
     "react/jsx-one-expression-per-line": 0,
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"]
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-empty-function": 0
   }
 }
