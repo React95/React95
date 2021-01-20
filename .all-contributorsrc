@@ -215,6 +215,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "mctang719",
+      "name": "mctang719",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/17521191?v=4",
+      "profile": "https://github.com/mctang719",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
