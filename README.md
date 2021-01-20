@@ -73,6 +73,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="http://janneilkka.com"><img src="https://avatars3.githubusercontent.com/u/49063172?v=4?s=100" width="100px;" alt=""/><br /><sub><b>janneilkka</b></sub></a><br /><a href="#design-janneilkka" title="Design">🎨</a> <a href="#ideas-janneilkka" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://tominasweb.com"><img src="https://avatars1.githubusercontent.com/u/32068891?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tomas Nasjleti</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=TomAndril" title="Documentation">📖</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/mctang719"><img src="https://avatars0.githubusercontent.com/u/17521191?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mctang719</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Amctang719" title="Bug reports">🐛</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
