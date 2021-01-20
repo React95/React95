@@ -1,5 +1,5 @@
-import React from 'react';
-import styled, { StyledComponent } from '@xstyled/styled-components';
+import React, { forwardRef } from 'react';
+import styled from '@xstyled/styled-components';
 
 import Modal, { ModalProps } from '../Modal/Modal';
 import Icon, { IconProps } from '../Icon/Icon';
@@ -23,7 +23,8 @@ const Image = styled(Icon)`
   margin: 7 15 7 7;
 `;
 
-export type DialogProps = StyledComponent<'div', any, {}, never> & {
+// using typeof Message because Message is just a 'div' too
+export type DialogProps = typeof Message & {
   Message: typeof Message;
   Image: typeof Icon;
 };
@@ -39,26 +40,21 @@ const Dialog: DialogProps = Object.assign(
   },
 );
 
-export type AlertProps = Omit<
-  ModalProps,
-  'closeModal'
-> & {} & DialogImageProps & {
+export type AlertProps = Omit<ModalProps, 'closeModal'> &
+  DialogImageProps & {
     message: string;
     closeAlert: ModalProps['closeModal'];
   };
 
-const Alert: React.FC<AlertProps> = ({
-  type = 'error',
-  message,
-  closeAlert,
-  ...rest
-}) => (
-  <Modal closeModal={closeAlert} height="120" {...rest}>
-    <Dialog>
-      <Dialog.Image name={DialogImages[type] as IconProps['name']} />
-      <Dialog.Message>{message}</Dialog.Message>
-    </Dialog>
-  </Modal>
+const Alert = forwardRef<HTMLDivElement, AlertProps>(
+  ({ type = 'error', message, closeAlert, ...rest }, ref) => (
+    <Modal closeModal={closeAlert} height="120" {...rest} ref={ref}>
+      <Dialog>
+        <Dialog.Image name={DialogImages[type] as IconProps['name']} />
+        <Dialog.Message>{message}</Dialog.Message>
+      </Dialog>
+    </Modal>
+  ),
 );
 
 Alert.displayName = 'Alert';
