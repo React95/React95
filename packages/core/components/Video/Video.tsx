@@ -2,8 +2,8 @@ import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import Btn from '../shared-style/Btn';
 import Frame, { FrameProps } from '../Frame/Frame';
+import Button from '../Button';
 import Range from '../Range';
 import Icon from '../Icon';
 import { Play, Pause, Stop } from './buttons';
@@ -22,7 +22,7 @@ const Source: React.FC<SourceProps> = ({ src }) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
 
-const ControlBtn = styled(Btn)`
+const ControlBtn = styled(Button)`
   display: inline-flex;
   justify-content: center;
   align-items: center;

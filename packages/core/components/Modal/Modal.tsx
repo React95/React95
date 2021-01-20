@@ -4,7 +4,6 @@ import styled, { css } from '@xstyled/styled-components';
 import { th, backgroundColor, BackgroundColorProps } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
-import Btn from '../shared-style/Btn';
 import Button from '../Button';
 import Icon, { IconProps } from '../Icon/Icon';
 import List from '../List';
@@ -76,7 +75,7 @@ const OptionItem = styled.li`
   }
 `;
 
-const Option = styled(Btn)`
+const Option = styled(Button)`
   padding: 0;
 
   width: 17px;
@@ -118,7 +117,7 @@ const ButtonWrapper = styled.div<ButtonWrapperProps>`
 
   padding: 0 6 6 6;
 
-  & ${Btn} {
+  & ${Button} {
     margin-right: 6;
     min-width: 70px;
 
