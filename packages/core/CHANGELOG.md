@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.3 (2021-01-20)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 ## 3.0.2 (2021-01-18)
 
 **Note:** Version bump only for package @react95/core
