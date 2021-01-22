@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -9,7 +9,7 @@ import rightcaret from '../GlobalStyle/imgs/rightcaret.svg';
 
 type ItemProps = {
   icon?: string;
-  hasList: Boolean;
+  hasList: boolean;
 };
 
 const Item = styled.li<ItemProps>`
@@ -82,24 +82,23 @@ export type ListItemProps = {
   icon?: IconProps['name'];
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
-const ListItem: React.FC<ListItemProps> = ({
-  icon,
-  children = [],
-  ...rest
-}) => (
-  <Item
-    {...rest}
-    icon={icon}
-    hasList={Boolean(
-      children &&
-        React.Children.map(children, child =>
-          React.isValidElement<IListProps>(child),
-        ).some(child => child),
-    )}
-  >
-    {icon && <Icon name={icon} />}
-    {children}
-  </Item>
+const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
+  ({ icon, children = [], ...rest }, ref) => (
+    <Item
+      {...rest}
+      icon={icon}
+      ref={ref}
+      hasList={Boolean(
+        children &&
+          React.Children.map(children, child =>
+            React.isValidElement<IListProps>(child),
+          ).some(child => child),
+      )}
+    >
+      {icon && <Icon name={icon} />}
+      {children}
+    </Item>
+  ),
 );
 
 ListItem.displayName = 'List.Item';
