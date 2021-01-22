@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -67,17 +67,19 @@ type DropdownProps = {
   options?: Array<string | number>;
 } & React.HTMLAttributes<HTMLSelectElement>;
 
-const Dropdown: React.FC<DropdownProps> = ({ options, ...rest }) => (
-  <Wrapper>
-    <Select {...rest}>
-      {options &&
-        options.map(option => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-    </Select>
-  </Wrapper>
+const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
+  ({ options, ...rest }, ref) => (
+    <Wrapper>
+      <Select {...rest} ref={ref}>
+        {options &&
+          options.map(option => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+      </Select>
+    </Wrapper>
+  ),
 );
 
 Dropdown.defaultProps = {
