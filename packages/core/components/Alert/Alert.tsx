@@ -29,16 +29,13 @@ export type DialogProps = typeof Message & {
   Image: typeof Icon;
 };
 
-const Dialog: DialogProps = Object.assign(
-  styled.div`
-    display: flex;
-    flex-direction: row;
-  `,
-  {
-    Message,
-    Image,
-  },
-);
+const Dialog = styled.div`
+  display: flex;
+  flex-direction: row;
+` as DialogProps;
+
+Dialog.Message = Message;
+Dialog.Image = Image;
 
 export type AlertProps = Omit<ModalProps, 'closeModal'> &
   DialogImageProps & {
