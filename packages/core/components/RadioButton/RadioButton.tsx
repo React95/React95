@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -72,16 +72,14 @@ const Label = styled.label<Pick<RadioButtonProps, 'disabled'>>`
     `}
 `;
 
-const RadioButton: React.FC<RadioButtonProps> = ({
-  children,
-  disabled,
-  ...props
-}) => (
-  <Label disabled={disabled}>
-    <Field disabled={disabled} {...props} />
-    <Icon />
-    <Text>{children}</Text>
-  </Label>
+const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
+  ({ children, disabled, ...props }, ref) => (
+    <Label disabled={disabled}>
+      <Field disabled={disabled} {...props} ref={ref} />
+      <Icon />
+      <Text>{children}</Text>
+    </Label>
+  ),
 );
 
 RadioButton.defaultProps = {
