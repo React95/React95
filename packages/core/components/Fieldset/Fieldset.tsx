@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
 
 const Field = styled.fieldset`
@@ -30,11 +30,13 @@ export type FieldSetProps = {
   legend?: string;
 } & React.HTMLAttributes<HTMLFieldSetElement>;
 
-const Fieldset: React.FC<FieldSetProps> = ({ legend, children, ...rest }) => (
-  <Field {...rest}>
-    {legend && <Legend>{legend}</Legend>}
-    {children}
-  </Field>
+const Fieldset = forwardRef<HTMLFieldSetElement, FieldSetProps>(
+  ({ legend, children, ...rest }, ref) => (
+    <Field {...rest} ref={ref}>
+      {legend && <Legend>{legend}</Legend>}
+      {children}
+    </Field>
+  ),
 );
 
 export default Fieldset;
