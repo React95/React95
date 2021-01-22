@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -102,19 +102,14 @@ export type CheckboxProps = {
 } & LabelProps &
   React.HTMLAttributes<HTMLInputElement>;
 
-const Checkbox: React.FC<CheckboxProps> = ({
-  children,
-  style,
-  checked,
-  label,
-  disabled = false,
-  ...rest
-}) => (
-  <Label style={style} disabled={disabled}>
-    <Field checked={checked} disabled={disabled} {...rest} />
-    <Icon />
-    <Text>{children || label}</Text>
-  </Label>
+const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
+  ({ children, style, checked, label, disabled = false, ...rest }, ref) => (
+    <Label style={style} disabled={disabled}>
+      <Field checked={checked} disabled={disabled} {...rest} ref={ref} />
+      <Icon />
+      <Text>{children || label}</Text>
+    </Label>
+  ),
 );
 
 export default Checkbox;
