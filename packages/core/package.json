@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
-    "@react95/clippy": "^0.1.1",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-storysource": "^6.0.28",
     "@storybook/addons": "^6.0.28",
@@ -70,7 +69,8 @@
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js",
+    "bojagi:deploy": "bojagi deploy"
   },
   "publishConfig": {
     "access": "public",

@@ -5,3 +5,5 @@ yarn-error.log
 dist
 
 .npmrc
+
+.env
