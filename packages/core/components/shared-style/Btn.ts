@@ -4,7 +4,7 @@ import { th } from '@xstyled/system';
 export default styled.button`
   background-color: bg;
   padding: 7 20 5;
-  border: none;
+  border: 1px solid red;
 
   font-size: 12px;
 
