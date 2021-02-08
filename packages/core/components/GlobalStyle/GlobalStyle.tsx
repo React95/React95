@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     src: url('${woff2}') format('woff2'),
          url('${woff}') format('woff'),
          url('${ttf}') format('truetype'),
-         url('${eot}.eot?#iefix') format('embedded-opentype');
+         url('${eot}?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
     src: url('${videowoff2}') format('woff2'),
          url('${videowoff}') format('woff'),
          url('${videottf}') format('truetype'),
-         url('${videoeot}.eot?#iefix') format('embedded-opentype');
+         url('${videoeot}?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
