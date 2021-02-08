@@ -4,7 +4,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
-  border: none;
+  border: 1px solid red;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
@@ -246,7 +246,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
-  border: none;
+  border: 1px solid red;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
@@ -488,7 +488,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
-  border: none;
+  border: 1px solid red;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
@@ -730,7 +730,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
-  border: none;
+  border: 1px solid red;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
