@@ -73,7 +73,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
         display="flex"
       >
         {windows &&
-          windows.map(({ icon, title }, index) => (
+          windows.map(({ icon, title, hasButton }, index) => hasButton && (
             <WindowButton
               key={`${title}-${index}`}
               icon={icon}
