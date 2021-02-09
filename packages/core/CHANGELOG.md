@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.6](https://github.com/React95/React95/compare/@react95/core@3.0.5...@react95/core@3.0.6) (2021-02-09)
+
+
+### Bug Fixes
+
+* **alert:** prevent Alert to be displayed in TaskBar as a WindowsButton ([ef0f997](https://github.com/React95/React95/commit/ef0f997e186c02f0d4b6018c4f2da609df3051eb))
+
+
+
+
+
 ## [3.0.5](https://github.com/React95/React95/compare/@react95/core@3.0.4...@react95/core@3.0.5) (2021-02-08)
 
 
