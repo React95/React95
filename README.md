@@ -76,6 +76,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   <tr>
     <td align="center"><a href="https://github.com/mctang719"><img src="https://avatars0.githubusercontent.com/u/17521191?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mctang719</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Amctang719" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/JohannesMerz"><img src="https://avatars.githubusercontent.com/u/11529353?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Johannes Merz</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3AJohannesMerz" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/sparky-raccoon"><img src="https://avatars.githubusercontent.com/u/16033537?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrea Saez</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Asparky-raccoon" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
