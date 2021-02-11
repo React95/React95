@@ -189,12 +189,14 @@ export type ModalProps = {
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
   defaultPosition?: ModalDefaultPosition;
+  hasWindowButton?: boolean;
 } & Omit<WrapperProps, 'active'> &
   ButtonWrapperProps &
   React.HTMLAttributes<HTMLDivElement>;
 
 const ModalRenderer = (
   {
+    hasWindowButton = true,
     buttons,
     buttonsAlignment,
     children,
@@ -218,7 +220,7 @@ const ModalRenderer = (
   const [menuOpened, setMenuOpened] = React.useState('');
 
   React.useEffect(() => {
-    addWindows({ icon, title });
+    addWindows({ icon, title, hasButton: hasWindowButton });
     setActiveWindow(title);
     return () => removeWindows(title);
   }, []);

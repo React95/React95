@@ -224,6 +224,24 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "JohannesMerz",
+      "name": "Johannes Merz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11529353?v=4",
+      "profile": "https://github.com/JohannesMerz",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "sparky-raccoon",
+      "name": "Andrea Saez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16033537?v=4",
+      "profile": "https://github.com/sparky-raccoon",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,

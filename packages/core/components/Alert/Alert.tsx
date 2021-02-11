@@ -42,10 +42,10 @@ const Dialog: DialogProps = Object.assign(
 export type AlertProps = Omit<
   ModalProps,
   'closeModal'
-> & {} & DialogImageProps & {
-    message: string;
-    closeAlert: ModalProps['closeModal'];
-  };
+> & DialogImageProps & {
+  message: string;
+  closeAlert: ModalProps['closeModal'];
+};
 
 const Alert: React.FC<AlertProps> = ({
   type = 'error',
@@ -53,7 +53,7 @@ const Alert: React.FC<AlertProps> = ({
   closeAlert,
   ...rest
 }) => (
-  <Modal closeModal={closeAlert} height="120" {...rest}>
+  <Modal closeModal={closeAlert} height="120" hasWindowButton={false} {...rest}>
     <Dialog>
       <Dialog.Image name={DialogImages[type] as IconProps['name']} />
       <Dialog.Message>{message}</Dialog.Message>

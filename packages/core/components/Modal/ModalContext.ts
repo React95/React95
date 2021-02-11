@@ -6,6 +6,7 @@ import { IconProps } from '../Icon/Icon';
 export type Windows = {
   icon?: IconProps['name'];
   title: string;
+  hasButton: boolean;
 };
 
 export interface IModalContextProps {
