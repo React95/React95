@@ -47,7 +47,7 @@ export type AlertProps = Omit<
 > & DialogImageProps & {
   message: string;
   closeAlert: ModalProps['closeModal'];
-  hasSound: boolean;
+  hasSound?: boolean;
 };
 
 const Alert: React.FC<AlertProps> = ({
