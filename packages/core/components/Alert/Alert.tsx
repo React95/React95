@@ -4,7 +4,7 @@ import styled, { StyledComponent } from '@xstyled/styled-components';
 import Modal, { ModalProps } from '../Modal/Modal';
 import Icon, { IconProps } from '../Icon/Icon';
 
-import wavFile from '../../assets/chord.wav'
+import wavFile from '../../assets/chord.wav';
 
 export const DialogImages = {
   error: 'user_4_32x32_4bit',
