@@ -9,8 +9,7 @@
         "**/*.unit.test.tsx",
         "**/*.md",
         "stories",
-        ".storybook",
-        "package.json"
+        ".storybook"
       ]
     },
     "version": {
