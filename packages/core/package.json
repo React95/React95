@@ -9,6 +9,7 @@
     "Gabriel Daltoso <ggdaltoso@gmail.com>"
   ],
   "license": "MIT",
+  "types": "@types",
   "dependencies": {
     "@react95/clippy": "^1.0.3",
     "@react95/icons": "^1.0.3",
