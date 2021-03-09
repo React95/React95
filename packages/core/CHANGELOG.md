@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.7](https://github.com/React95/React95/compare/@react95/core@3.0.6...@react95/core@3.0.7) (2021-03-09)
+
+
+### Bug Fixes
+
+* **core:** add types lookup attribute to package.json ([696769e](https://github.com/React95/React95/commit/696769e9dec68abfd2f1ddd44b04669dc70eb067))
+
+
+
+
+
 ## [3.0.6](https://github.com/React95/React95/compare/@react95/core@3.0.5...@react95/core@3.0.6) (2021-02-09)
 
 
