@@ -242,6 +242,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "kirkobyte",
+      "name": "Kirk Holloway",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6798667?v=4",
+      "profile": "https://github.com/kirkobyte",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
