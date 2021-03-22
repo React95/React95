@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconBat, IconReaderClosed, IconWindowsExplorer } from '@react95/icons';
 
 import { render, waitRender, fireEvent, act } from '../shared/test/utils';
 
@@ -64,7 +65,9 @@ describe('<TaskBar />', () => {
       });
 
       it('should match snapshot with icon prop', async () => {
-        const { container } = await waitRender(<WindowButton icon="bat" />);
+        const { container } = await waitRender(
+          <WindowButton icon={<IconBat />} />,
+        );
 
         expect(container).toMatchSnapshot();
       });
@@ -87,7 +90,7 @@ describe('<TaskBar />', () => {
 
       const { container } = await waitRender(
         <>
-          <Modal icon="bat" title="file.bat" closeModal={() => {}} />
+          <Modal icon={<IconBat />} title="file.bat" closeModal={() => {}} />
           <TaskBar />
         </>,
       );
@@ -103,11 +106,11 @@ describe('<TaskBar />', () => {
       const { container } = await waitRender(
         <>
           <Modal
-            icon="windows_explorer"
+            icon={<IconWindowsExplorer />}
             title="Windows Explorer"
             closeModal={() => {}}
           />
-          <Modal icon="bat" title="file.bat" closeModal={() => {}} />
+          <Modal icon={<IconBat />} title="file.bat" closeModal={() => {}} />
           <TaskBar />
         </>,
       );
@@ -124,8 +127,10 @@ describe('<TaskBar />', () => {
         <TaskBar
           list={
             <List>
-              <List.Item icon="reader_closed">Local Disk (C:)</List.Item>
-              <List.Item icon="windows_explorer">Windows Explorer</List.Item>
+              <List.Item icon={<IconReaderClosed />}>Local Disk (C:)</List.Item>
+              <List.Item icon={<IconWindowsExplorer />}>
+                Windows Explorer
+              </List.Item>
             </List>
           }
         />,

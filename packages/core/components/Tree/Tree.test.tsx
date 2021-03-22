@@ -53,17 +53,14 @@ describe('<Tree />', () => {
     });
 
     it("should render the default icon if the `iconName` prop isn't defined", async () => {
-      const { container, queryByText } = await waitRender(<Tree data={data} />);
+      const { getByText, getByTestId } = await waitRender(<Tree data={data} />);
 
       await act(async () => {
-        fireEvent.doubleClick(queryByText('foo')!);
+        fireEvent.doubleClick(getByText('foo'));
       });
-
-      const itemsWithDefaultIcon = container.querySelectorAll(
-        '.bat_32x32_4bit',
-      );
-
-      expect(itemsWithDefaultIcon.length).toBe(1);
+      expect(
+        getByTestId('react95-default-icon-folder-open'),
+      ).toBeInTheDocument();
     });
 
     it('should trigger `onClick`', async () => {

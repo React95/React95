@@ -2,24 +2,32 @@ import * as React from 'react';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import Icon, { IconProps } from '../Icon/Icon';
 import treeMidLines from './imgs/tree-mid.png';
 import treeLastLines from './imgs/tree-last.png';
 import treeNodeChildrenLine from './imgs/tree-node-children.png';
+import {
+  IconBat,
+  IconBatExec,
+  IconFileFont2,
+  IconFilePen,
+  IconFileSettings,
+  IconFileText,
+  IconFileTextSettings,
+  IconFolder,
+  IconFolderOpen,
+  IconMediaCd,
+} from '@react95/icons';
 
-const FOLDER_CLOSED = 'folder_32x32_4bit';
-const FOLDER_OPENED = 'folder_open_32x32_4bit';
-
-export const icons: { [key: string]: IconProps['name'] } = {
-  FILE_MEDIA: 'media_cd_32x32_4bit',
-  FILE_TEXT: 'file_text_32x32_4bit',
-  FILE_UNKNOWN: 'bat_32x32_4bit',
-  FILE_FONT: 'file_font_2_32x32_4bit',
-  FILE_PEN: 'file_pen_32x32_4bit',
-  FILE_SETTINGS: 'file_settings_32x32_4bit',
-  FILE_TEXT_SETTINGS: 'file_text_settings_32x32_4bit',
-  FILE_EXECUTABLE: 'bat_exec_32x32_4bit',
-};
+export const icons = {
+  FILE_MEDIA: IconMediaCd,
+  FILE_TEXT: IconFileText,
+  FILE_UNKNOWN: IconBat,
+  FILE_FONT: IconFileFont2,
+  FILE_PEN: IconFilePen,
+  FILE_SETTINGS: IconFileSettings,
+  FILE_TEXT_SETTINGS: IconFileTextSettings,
+  FILE_EXECUTABLE: IconBatExec,
+} as const;
 
 const NodeItem = styled.div<{ isOpen: boolean }>`
   list-style-type: none;
@@ -27,8 +35,7 @@ const NodeItem = styled.div<{ isOpen: boolean }>`
   background-image: url(${treeMidLines});
 
   &:last-child {
-    background-image: url(${({ isOpen }) =>
-      isOpen ? treeMidLines : treeLastLines});
+    background-image: url(${({ isOpen }) => isOpen ? treeMidLines : treeLastLines});
   }
 `;
 
@@ -62,6 +69,11 @@ const IconContainer = styled.div<{ hasChildren: boolean }>`
   height: 20px;
   margin-right: 6;
   margin-left: ${({ hasChildren }) => (hasChildren ? 8 : 18)}px;
+
+  > img {
+    width: 14px;
+    height: 14px;
+  }
 `;
 
 const NodeChildren = styled.ul`
@@ -81,9 +93,31 @@ const Label = styled.span`
   }
 `;
 
+const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
+  hasChildren,
+  isOpen,
+}) => {
+  if (!hasChildren) {
+    return <IconBat variant="32x32_4" data-testid="react95-default-icon-bat" />;
+  }
+
+  if (isOpen) {
+    return (
+      <IconFolderOpen
+        variant="32x32_4"
+        data-testid="react95-default-icon-folder-open"
+      />
+    );
+  }
+
+  return (
+    <IconFolder variant="32x32_4" data-testid="react95-default-icon-folder" />
+  );
+};
+
 export type NodeProps = {
   label: string;
-  iconName?: IconProps['name'];
+  icon?: React.ReactElement;
   id: number;
   children?: Array<NodeProps>;
   onClick?(
@@ -95,7 +129,7 @@ export type NodeProps = {
 const Node: React.FC<NodeProps> = ({
   children = [],
   id,
-  iconName = 'bat_32x32_4bit',
+  icon,
   label,
   onClick = () => {},
   ...rest
@@ -103,22 +137,10 @@ const Node: React.FC<NodeProps> = ({
   const [isOpen, setIsOpen] = React.useState(false);
   const hasChildren = children.length > 0;
 
-  function getIconName(): IconProps['name'] {
-    if (!hasChildren) {
-      return iconName || icons.FILE_UNKNOWN;
-    }
-
-    if (isOpen) {
-      return FOLDER_OPENED;
-    }
-
-    return FOLDER_CLOSED;
-  }
-
   const onClickHandler = (event: React.MouseEvent | React.KeyboardEvent) => {
     onClick(event, {
       id,
-      iconName,
+      icon,
       label,
       children,
     });
@@ -140,7 +162,7 @@ const Node: React.FC<NodeProps> = ({
           </FolderStatus>
         )}
         <IconContainer hasChildren={hasChildren}>
-          <Icon name={getIconName()} style={{ width: 14, height: 14 }} />
+          {icon || <NodeIcon hasChildren={hasChildren} isOpen={isOpen} />}
         </IconContainer>
         <Label
           tabIndex={0}

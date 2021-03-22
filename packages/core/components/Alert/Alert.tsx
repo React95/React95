@@ -1,17 +1,24 @@
 import React from 'react';
-import styled, { StyledComponent } from '@xstyled/styled-components';
+import styled from '@xstyled/styled-components';
 
 import Modal, { ModalProps } from '../Modal/Modal';
-import Icon, { IconProps } from '../Icon/Icon';
+import { IconUser3, IconUser2, IconUser4, IconUser5 } from '@react95/icons';
 
-export const DialogImages = {
-  error: 'user_4_32x32_4bit',
-  info: 'user_5_32x32_4bit',
-  question: 'user_3_32x32_4bit',
-  warning: 'user_2_32x32_4bit',
+export type AlertType = 'error' | 'info' | 'question' | 'warning';
+
+const RenderImage: React.FC<{ option: string }> = ({ option }) => {
+  switch (option) {
+    case 'info':
+      return <IconUser5 variant="32x32_4" />;
+    case 'question':
+      return <IconUser3 variant="32x32_4" />;
+    case 'warning':
+      return <IconUser2 variant="32x32_4" />;
+    case 'error':
+    default:
+      return <IconUser4 variant="32x32_4" />;
+  }
 };
-
-export type DialogImageProps = { type?: keyof typeof DialogImages };
 
 const Message = styled.div`
   display: flex;
@@ -19,32 +26,19 @@ const Message = styled.div`
   justify-content: center;
 `;
 
-const Image = styled(Icon)`
-  margin: 7 15 7 7;
+const IconWrapper = styled.div`
+  padding: 7px 15px 7px 7px;
 `;
 
-export type DialogProps = StyledComponent<'div', any, {}, never> & {
-  Message: typeof Message;
-  Image: typeof Icon;
-};
+const Dialog = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
-const Dialog: DialogProps = Object.assign(
-  styled.div`
-    display: flex;
-    flex-direction: row;
-  `,
-  {
-    Message,
-    Image,
-  },
-);
-
-export type AlertProps = Omit<
-  ModalProps,
-  'closeModal'
-> & DialogImageProps & {
+export type AlertProps = Omit<ModalProps, 'closeModal'> & {
   message: string;
   closeAlert: ModalProps['closeModal'];
+  type?: AlertType;
 };
 
 const Alert: React.FC<AlertProps> = ({
@@ -55,8 +49,10 @@ const Alert: React.FC<AlertProps> = ({
 }) => (
   <Modal closeModal={closeAlert} height="120" hasWindowButton={false} {...rest}>
     <Dialog>
-      <Dialog.Image name={DialogImages[type] as IconProps['name']} />
-      <Dialog.Message>{message}</Dialog.Message>
+      <IconWrapper>
+        <RenderImage option={type} />
+      </IconWrapper>
+      <Message>{message}</Message>
     </Dialog>
   </Modal>
 );

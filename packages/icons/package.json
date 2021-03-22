@@ -8,10 +8,17 @@
     "windows95",
     "w95"
   ],
+  "files": [
+    "icons.css",
+    "dist",
+    "png"
+  ],
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "icons.css",
+  "main": "./dist/cjs",
+  "module": "./dist/esm",
+  "types": "./dist/types/",
   "unpkg": "icons.css",
   "publishConfig": {
     "access": "public",
@@ -25,15 +32,19 @@
     "url": "https://github.com/React95/React95/issues"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
-    "copy:stylesheet": "cp icons.css ./dist/icons.css",
-    "copy:assets": "cp -R ./src/png ./dist/src",
-    "copy:types": "cp -R ./types ./dist",
-    "copy": "yarn copy:stylesheet && yarn copy:assets && yarn copy:types",
     "precopy": "mkdir -p dist/src/png",
-    "build": "yarn copy",
+    "prebuild": "ts-node processIcons.ts",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
+    "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
+    "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
+    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js",
-    "toPNG": "node toPNG.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js"
+  },
+  "devDependencies": {
+    "@types/rimraf": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   }
 }

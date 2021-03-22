@@ -8,6 +8,7 @@ import List from '../List';
 
 import Clock from './Clock';
 import WindowButton from './WindowButton';
+import { IconLogo } from '@react95/icons';
 
 const Truncate = styled.span`
   overflow: hidden;
@@ -55,7 +56,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       )}
       <WindowButton
         small
-        icon="logo_32x32_4bit"
+        icon={<IconLogo variant="32x32_4" />}
         active={activeStart}
         onClick={() => {
           toggleActiveStart(!activeStart);
@@ -73,17 +74,20 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
         display="flex"
       >
         {windows &&
-          windows.map(({ icon, title, hasButton }, index) => hasButton && (
-            <WindowButton
-              key={`${title}-${index}`}
-              icon={icon}
-              active={title === activeWindow}
-              onClick={() => setActiveWindow(title)}
-              small={false}
-            >
-              <Truncate>{title}</Truncate>
-            </WindowButton>
-          ))}
+          windows.map(
+            ({ icon, title, hasButton }, index) =>
+              hasButton && (
+                <WindowButton
+                  key={`${title}-${index}`}
+                  icon={icon}
+                  active={title === activeWindow}
+                  onClick={() => setActiveWindow(title)}
+                  small={false}
+                >
+                  <Truncate>{title}</Truncate>
+                </WindowButton>
+              ),
+          )}
       </Frame>
 
       <Clock />

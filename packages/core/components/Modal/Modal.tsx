@@ -6,7 +6,6 @@ import Draggable from 'react-draggable';
 
 import Btn from '../shared-style/Btn';
 import Button from '../Button';
-import Icon, { IconProps } from '../Icon/Icon';
 import List from '../List';
 import ModalContext from './ModalContext';
 
@@ -52,6 +51,12 @@ const TitleBar = styled.div<BackgroundColorProps>`
 
   display: flex;
   ${backgroundColor}
+
+  img {
+    width: 15px;
+    height: 13px;
+    margin-right: 4px;
+  }
 `;
 
 const Title = styled.div`
@@ -183,7 +188,7 @@ export type ModalDefaultPosition = {
 };
 
 export type ModalProps = {
-  icon?: IconProps['name'];
+  icon?: React.ReactElement;
   closeModal(event: React.MouseEvent): void;
   title: string;
   buttons?: Array<ModalButtons>;
@@ -225,14 +230,6 @@ const ModalRenderer = (
     return () => removeWindows(title);
   }, []);
 
-  const iconStyle = {
-    style: {
-      width: 15,
-      height: 13,
-      marginRight: '4px',
-    },
-  };
-
   const isActive = title === activeWindow;
 
   return (
@@ -246,7 +243,7 @@ const ModalRenderer = (
         ref={ref}
       >
         <TitleBar backgroundColor={isActive ? 'primary' : 'grays.3'}>
-          {icon && <Icon className="draggable" name={icon} {...iconStyle} />}
+          {icon}
           <Title className="draggable">{title}</Title>
           <OptionsBox>
             <OptionItem>
