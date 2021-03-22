@@ -7,7 +7,7 @@
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.0",
-    "@bojagi/cli": "^0.13.1",
+    "@bojagi/cli": "^0.15.1",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
