@@ -37,6 +37,8 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Insaf Khamzin's portfolio website](https://github.com/InsafKhamzin/portfolio)
 - [Janne Koivisto's portfolio website](https://janneilkka.com)
 - [Tomas Nasjleti's personal website](https://tominasweb.com)
+- [Breno Felipe's React95-video](https://react-video-silk.vercel.app)
+
 
 ## Contributors
 
