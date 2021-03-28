@@ -80,6 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/JohannesMerz"><img src="https://avatars.githubusercontent.com/u/11529353?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Johannes Merz</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3AJohannesMerz" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/sparky-raccoon"><img src="https://avatars.githubusercontent.com/u/16033537?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrea Saez</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Asparky-raccoon" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/kirkobyte"><img src="https://avatars.githubusercontent.com/u/6798667?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kirk Holloway</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kirkobyte" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/breno-felipe"><img src="https://avatars2.githubusercontent.com/u/50807243?v=4" width="100px;" alt=""/><br /><sub><b>Breno Felipe</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=breno-felipe" title="Documentation">📖</a></td>
   </tr>
 </table>
 
