@@ -20,6 +20,7 @@ const iconBlockedIds = [
   'Awfext326050_32x32_4',
   'Awfxcg321302_16x16_4',
   'Awfxcg321303_16x16_4',
+  'Awfxcg321305_16x16_4',
   'Dial16x16_4',
   'Explorer104_32x32_4',
   'Filefind3_16x16_4',

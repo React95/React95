@@ -5,7 +5,7 @@ import copy from 'copy-to-clipboard';
 
 import { Frame } from '../components';
 
-import { icons } from '@react95/icons/dist/iconDemos';
+import { icons } from '@react95/icons/src/iconDemos';
 import styled from '@xstyled/styled-components';
 
 const IconContainer = styled.button`

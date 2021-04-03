@@ -1,5 +1,4 @@
 import { addDecorator, addParameters } from '@storybook/react';
-import '@react95/icons/icons.css';
 
 import theme from './theme';
 import Frame from './decorators/Frame';

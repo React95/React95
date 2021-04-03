@@ -16,8 +16,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "./dist/cjs",
-  "module": "./dist/esm",
+  "main": "./src/index.ts",
   "types": "./dist/types/",
   "unpkg": "icons.css",
   "publishConfig": {
