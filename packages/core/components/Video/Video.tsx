@@ -48,15 +48,21 @@ const ControlBtn = styled(Btn)`
 `;
 
 const TitleBar = styled.div`
-  height: 18px;
-  margin-bottom: 2;
-
-  color: ${th('colors.white')};
-  padding: 0 2;
-
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: primary;
+
+  div {
+    height: 18px;
+    margin-bottom: 2;
+
+    color: ${th('colors.white')};
+    padding: 0 2;
+
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const Controls = styled.div`
@@ -99,6 +105,44 @@ const VideoRange = styled(Range)`
   }
 `;
 
+const OptionsBox = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+`;
+
+const OptionItem = styled.li`
+  display: flex;
+  margin-right: 2;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+const Option = styled(Btn)`
+  padding: 0;
+
+  width: 17px;
+  height: 17px;
+  min-width: 0;
+
+  font-size: 10;
+
+  &:active {
+    padding: 1 0 0 1;
+
+    outline: none;
+  }
+
+  &:focus {
+    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
+      inset -1px -1px 0px 1px ${th('colors.grays.3')};
+  }
+`;
+
 const PlayOrPause = ({ playing }: { playing: boolean }) =>
   playing ? <Pause /> : <Play />;
 
@@ -134,6 +178,7 @@ export type VideoProps = {
   src: string;
   videoProps?: React.HTMLAttributes<HTMLVideoElement>;
   style?: React.CSSProperties;
+  closeModal(event: React.MouseEvent): void;
 } & FrameProps;
 
 const Video: React.FC<VideoProps> = ({
@@ -141,9 +186,11 @@ const Video: React.FC<VideoProps> = ({
   src,
   videoProps,
   style,
+  closeModal,
   ...props
 }) => {
   const [playing, setPlaying] = React.useState(false);
+  3 - 9;
   const [loadeddata, setLoadeddata] = React.useState(false);
   const [progress, setProgress] = React.useState(0);
 
@@ -200,12 +247,22 @@ const Video: React.FC<VideoProps> = ({
       }}
     >
       <TitleBar>
-        <Icon
-          name="mplayer_1_13_16x16_4bit"
-          style={{ marginRight: 4, width: 16, height: 16 }}
-        />
-        {name || pathname.replace(/^.*[\\/]/, '')}
-        {!loadeddata && ' (Openning)'}
+        <div>
+          <Icon
+            name="mplayer_1_13_16x16_4bit"
+            style={{ marginRight: 4, width: 16, height: 16 }}
+          />
+          {name || pathname.replace(/^.*[\\/]/, '')}
+          {!loadeddata && ' (Openning)'}
+        </div>
+        <OptionsBox>
+          <OptionItem>
+            <Option>?</Option>
+          </OptionItem>
+          <OptionItem>
+            <Option onClick={closeModal}>x</Option>
+          </OptionItem>
+        </OptionsBox>
       </TitleBar>
       <VideoTag {...videoProps} visible={loadeddata} ref={player}>
         {paths.map(s => (
