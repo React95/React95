@@ -178,7 +178,7 @@ export type VideoProps = {
   src: string;
   videoProps?: React.HTMLAttributes<HTMLVideoElement>;
   style?: React.CSSProperties;
-  closeModal(event: React.MouseEvent): void;
+  closeModal?(event: React.MouseEvent): void;
 } & FrameProps;
 
 const Video: React.FC<VideoProps> = ({
