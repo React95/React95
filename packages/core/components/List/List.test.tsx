@@ -7,13 +7,15 @@ describe('<List />', () => {
     it('should match snapshot', async () => {
       const { container } = await waitRender(
         <List>
-          <List.Item icon="folder_exe2">
+          <List.Item icon="folder_exe2_32x32_4bit">
             <List>
-              <List.Item icon="microsoft_exchange">
+              <List.Item icon="microsoft_exchange_32x32_4bit">
                 Microsoft Exchange
               </List.Item>
               <List.Divider />
-              <List.Item icon="windows_explorer">Windows Explorer</List.Item>
+              <List.Item icon="windows_explorer_32x32_4bit">
+                Windows Explorer
+              </List.Item>
             </List>
             Programs
           </List.Item>
