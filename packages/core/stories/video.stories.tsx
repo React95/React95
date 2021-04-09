@@ -20,26 +20,31 @@ export const Simple = () => {
           toggleShowVideo(true);
           toggleOtherVideo(true);
         }}
-        style={{ marginBottom: '30px' }}
+        style={{ position: 'absolute', right: 0, top: 0 }}
       >
         Show Video
       </Button>
       {showVideo && (
         <Video
-          width={320}
+          name="Trailer Sitel"
           src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
           style={{
-            marginBottom: 4,
+            width: 320,
           }}
           closeModal={() => toggleShowVideo(false)}
         />
       )}
       {showOtherVideo && (
         <Video
-          width={320}
           src={EXPLORER_VIDEO}
           name="Explorer"
           closeModal={() => toggleOtherVideo(false)}
+          style={{
+            width: 320,
+            position: 'absolute',
+            right: '30%',
+            top: '10%',
+          }}
         />
       )}
     </>

@@ -3,7 +3,8 @@ import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
 import Btn from '../shared-style/Btn';
-import Frame, { FrameProps } from '../Frame/Frame';
+import { Modal } from '../Modal';
+import Frame from '../Frame';
 import Range from '../Range';
 import Icon from '../Icon';
 import { Play, Pause, Stop } from './buttons';
@@ -47,24 +48,6 @@ const ControlBtn = styled(Btn)`
   }
 `;
 
-const TitleBar = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: primary;
-
-  div {
-    height: 18px;
-    margin-bottom: 2;
-
-    color: ${th('colors.white')};
-    padding: 0 2;
-
-    display: flex;
-    align-items: center;
-  }
-`;
-
 const Controls = styled.div`
   display: flex;
   align-items: center;
@@ -105,44 +88,6 @@ const VideoRange = styled(Range)`
   }
 `;
 
-const OptionsBox = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-`;
-
-const OptionItem = styled.li`
-  display: flex;
-  margin-right: 2;
-
-  &:last-child {
-    margin-right: 0;
-  }
-`;
-
-const Option = styled(Btn)`
-  padding: 0;
-
-  width: 17px;
-  height: 17px;
-  min-width: 0;
-
-  font-size: 10;
-
-  &:active {
-    padding: 1 0 0 1;
-
-    outline: none;
-  }
-
-  &:focus {
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-      inset -1px -1px 0px 1px ${th('colors.grays.3')};
-  }
-`;
-
 const PlayOrPause = ({ playing }: { playing: boolean }) =>
   playing ? <Pause /> : <Play />;
 
@@ -174,12 +119,12 @@ function parseCurrentTime(secs: number): string {
 }
 
 export type VideoProps = {
-  name?: string;
+  name: string;
   src: string;
   videoProps?: React.HTMLAttributes<HTMLVideoElement>;
   style?: React.CSSProperties;
-  closeModal?(event: React.MouseEvent): void;
-} & FrameProps;
+  closeModal(event: React.MouseEvent): void;
+};
 
 const Video: React.FC<VideoProps> = ({
   name,
@@ -187,7 +132,6 @@ const Video: React.FC<VideoProps> = ({
   videoProps,
   style,
   closeModal,
-  ...props
 }) => {
   const [playing, setPlaying] = React.useState(false);
   3 - 9;
@@ -198,7 +142,6 @@ const Video: React.FC<VideoProps> = ({
   const progressRef = React.useRef<HTMLInputElement>(null);
 
   const paths = arrayFy(src);
-  const [pathname] = paths;
 
   React.useEffect(() => {
     player.current?.addEventListener(
@@ -238,32 +181,15 @@ const Video: React.FC<VideoProps> = ({
   }, [player.current]);
 
   return (
-    <Frame
-      p={2}
-      {...(props as typeof Frame)}
+    <Modal
+      title={name}
+      icon="mplayer_1_13_16x16_4bit"
+      closeModal={closeModal}
       style={{
         width: !loadeddata ? 260 : undefined,
         ...style,
       }}
     >
-      <TitleBar>
-        <div>
-          <Icon
-            name="mplayer_1_13_16x16_4bit"
-            style={{ marginRight: 4, width: 16, height: 16 }}
-          />
-          {name || pathname.replace(/^.*[\\/]/, '')}
-          {!loadeddata && ' (Openning)'}
-        </div>
-        <OptionsBox>
-          <OptionItem>
-            <Option>?</Option>
-          </OptionItem>
-          <OptionItem>
-            <Option onClick={closeModal}>x</Option>
-          </OptionItem>
-        </OptionsBox>
-      </TitleBar>
       <VideoTag {...videoProps} visible={loadeddata} ref={player}>
         {paths.map(s => (
           <Source key={s} src={s} />
@@ -357,7 +283,7 @@ const Video: React.FC<VideoProps> = ({
           />
         </Controls>
       </ResetFrame>
-    </Frame>
+    </Modal>
   );
 };
 

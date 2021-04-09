@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Video /> Snapshot should match snapshot 1`] = `
-.c5 {
+.c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -9,17 +9,17 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #868a8e;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c5:active {
+.c6:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -31,14 +31,98 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
 }
 
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  padding: 2px 2px 8px;
+  top: 50px;
   background-color: #c3c7cb;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  padding: 2px;
+  z-index: 1;
+}
+
+.c1 {
+  height: 18px;
+  margin-bottom: 2px;
+  color: #ffffff;
+  padding: 2px 2px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000e7a;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2px;
+}
+
+.c5:last-child {
+  margin-right: 0;
+}
+
+.c7 {
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-size: 10px;
+}
+
+.c7:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c7:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.c10 {
   background-color: #c3c7cb;
   max-width: 250px;
   width: auto;
@@ -49,14 +133,14 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   margin-bottom: 4px;
 }
 
-.c10 {
+.c12 {
   background-color: #c3c7cb;
   width: auto;
   height: auto;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c12 {
+.c14 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -74,18 +158,18 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c16 {
+.c18 {
   -webkit-appearance: none;
   width: 100%;
 }
 
-.c16:hover,
-.c16:focus,
-.c16:active {
+.c18:hover,
+.c18:focus,
+.c18:active {
   outline: none;
 }
 
-.c16::-webkit-slider-runnable-track {
+.c18::-webkit-slider-runnable-track {
   width: 100%;
   height: 4px;
   background: #000000;
@@ -101,7 +185,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
-.c16::-webkit-slider-thumb {
+.c18::-webkit-slider-thumb {
   width: 12px;
   height: 20px;
   background-color: #c3c7cb;
@@ -119,11 +203,11 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-.c16:focus::-webkit-slider-runnable-track {
+.c18:focus::-webkit-slider-runnable-track {
   background: #000000;
 }
 
-.c16::-moz-range-track {
+.c18::-moz-range-track {
   width: 100%;
   height: 4px;
   background: #000000;
@@ -139,7 +223,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
-.c16::-moz-range-thumb {
+.c18::-moz-range-thumb {
   width: 12px;
   height: 20px;
   background-color: #c3c7cb;
@@ -157,13 +241,13 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-.c7 {
+.c9 {
   width: 100%;
   padding: 2px;
   display: none;
 }
 
-.c15 {
+.c17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -178,55 +262,24 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   align-items: center;
 }
 
-.c15.c15,
-.c15:active,
-.c15:focus {
+.c17.c17,
+.c17:active,
+.c17:focus {
   width: 20px;
   height: 20px;
   padding: 7px;
   padding: 4px;
 }
 
-.c15.c15 svg,
-.c15:active svg,
-.c15:focus svg {
+.c17.c17 svg,
+.c17:active svg,
+.c17:focus svg {
   fill: #868a8e;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  background-color: #000e7a;
-}
-
-.c1 div {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 0 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,7 +291,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px 0;
 }
 
-.c11 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -251,194 +304,158 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   color: #ffffff;
 }
 
-.c13 {
+.c15 {
   font-family: 'React95Video-Numbers';
   text-transform: uppercase;
 }
 
-.c9 {
+.c11 {
   background-color: transparent;
   box-shadow: none;
 }
 
-.c17::-webkit-slider-thumb {
+.c19::-webkit-slider-thumb {
   height: 18px;
   margin-top: -7px;
   width: 10px;
 }
 
-.c17[value='0']::-webkit-slider-thumb {
+.c19[value='0']::-webkit-slider-thumb {
   margin-left: -2px;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c6 {
-  padding: 0;
-  width: 17px;
-  height: 17px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c6:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c6:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 <div>
   <div
-    class="c0"
-    height="auto"
-    style="width: 260px;"
-    width="auto"
+    class="c0 react-draggable"
+    style="width: 260px; transform: translate(0px,0px);"
   >
     <div
       class="c1"
     >
-      <div>
-        <i
-          class="c2 r95 mplayer_1_13_16x16_4bit"
-          style="margin-right: 4px; width: 16px; height: 16px;"
-        />
-        some_video.mp4
-         (Openning)
+      <i
+        class="c2 draggable r95 mplayer_1_13_16x16_4bit"
+        style="width: 15px; height: 13px; margin-right: 4px;"
+      />
+      <div
+        class="c3 draggable"
+      >
+        Some Video
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5"
         >
           <button
-            class="c5 c6"
+            class="c6 c7"
           >
             ?
           </button>
         </li>
         <li
-          class="c4"
+          class="c5"
         >
           <button
-            class="c5 c6"
+            class="c6 c7"
           >
             x
           </button>
         </li>
       </ul>
     </div>
-    <video
-      class="c7"
-    >
-      <source
-        src="foo/bar/some_video.mp4"
-        type="video/mp4"
-      />
-    </video>
     <div
-      class="c8 c9"
-      height="auto"
-      width="auto"
+      class="c8"
     >
+      <video
+        class="c9"
+      >
+        <source
+          src="foo/bar/some_video.mp4"
+          type="video/mp4"
+        />
+      </video>
       <div
         class="c10 c11"
         height="auto"
         width="auto"
       >
         <div
-          class="c12 c9"
-          display="flex"
+          class="c12 c13"
           height="auto"
-          width="40%"
+          width="auto"
         >
-          <span
-            class="c13"
-            style="margin-top: auto;"
-          />
-          <span
-            class="c13"
-            style="height: 12px;"
+          <div
+            class="c14 c11"
+            display="flex"
+            height="auto"
+            width="40%"
           >
-            Openning
-          </span>
+            <span
+              class="c15"
+              style="margin-top: auto;"
+            />
+            <span
+              class="c15"
+              style="height: 12px;"
+            >
+              Openning
+            </span>
+          </div>
+          <div
+            class="c14 c11"
+            display="flex"
+            height="auto"
+            width="40%"
+          >
+            <span
+              class="c15"
+              style="margin-top: auto; font-size: 22px;"
+            />
+            <span
+              class="c15"
+              style="height: 12px;"
+            >
+              time
+            </span>
+          </div>
         </div>
         <div
-          class="c12 c9"
-          display="flex"
-          height="auto"
-          width="40%"
+          class="c16"
         >
-          <span
-            class="c13"
-            style="margin-top: auto; font-size: 22px;"
-          />
-          <span
-            class="c13"
-            style="height: 12px;"
+          <button
+            class="c6 c17"
+            disabled=""
           >
-            time
-          </span>
-        </div>
-      </div>
-      <div
-        class="c14"
-      >
-        <button
-          class="c5 c15"
-          disabled=""
-        >
-          <i
-            class="c2 r95 user_4_32x32_4bit"
-          />
-        </button>
-        <button
-          class="c5 c15"
-          disabled=""
-        >
-          <svg
-            aria-label="stop"
-            height="6"
-            width="6"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h306v306H0z"
+            <i
+              class="c2 r95 user_4_32x32_4bit"
             />
-          </svg>
-        </button>
-        <input
-          class="c16 c17"
-          max="100"
-          min="0"
-          step="1"
-          style="width: 70%; margin-left: 20px;"
-          type="range"
-          value="0"
-        />
+          </button>
+          <button
+            class="c6 c17"
+            disabled=""
+          >
+            <svg
+              aria-label="stop"
+              height="6"
+              width="6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h306v306H0z"
+              />
+            </svg>
+          </button>
+          <input
+            class="c18 c19"
+            max="100"
+            min="0"
+            step="1"
+            style="width: 70%; margin-left: 20px;"
+            type="range"
+            value="0"
+          />
+        </div>
       </div>
     </div>
   </div>

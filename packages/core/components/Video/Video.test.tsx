@@ -16,7 +16,11 @@ describe('<Video />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', async () => {
       const { container } = await waitRender(
-        <Video src="foo/bar/some_video.mp4" />,
+        <Video
+          src="foo/bar/some_video.mp4"
+          closeModal={() => {}}
+          name="Some Video"
+        />,
       );
       expect(container).toMatchSnapshot();
     });
@@ -45,7 +49,11 @@ describe('<Video />', () => {
         .mockImplementation(() => Promise.resolve());
 
       const { container, getByLabelText } = await waitRender(
-        <Video src="foo/bar/some_video.mp4" />,
+        <Video
+          src="foo/bar/some_video.mp4"
+          closeModal={() => {}}
+          name="Some Video"
+        />,
       );
 
       const video = container.querySelector('video');
@@ -67,7 +75,11 @@ describe('<Video />', () => {
 
     it('should change range when video updates', async () => {
       const { container } = await waitRender(
-        <Video src="foo/bar/some_video.mp4" />,
+        <Video
+          src="foo/bar/some_video.mp4"
+          closeModal={() => {}}
+          name="Some Video"
+        />,
       );
 
       const video = container.querySelector('video')!;
@@ -101,7 +113,11 @@ describe('<Video />', () => {
       }
 
       const { container } = await waitRender(
-        <Video src="foo/bar/some_video.mp4" />,
+        <Video
+          src="foo/bar/some_video.mp4"
+          closeModal={() => {}}
+          name="Some Video"
+        />,
       );
 
       const video = container.querySelector('video')!;
@@ -135,7 +151,11 @@ describe('<Video />', () => {
 
       const getElements = async () => {
         const { container, queryAllByLabelText } = await waitRender(
-          <Video src="foo/bar/some_video.mp4" />,
+          <Video
+            src="foo/bar/some_video.mp4"
+            closeModal={() => {}}
+            name="Some Video"
+          />,
         );
 
         const video = container.querySelector('video')!;
