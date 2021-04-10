@@ -8,16 +8,10 @@
     "windows95",
     "w95"
   ],
-  "files": [
-    "icons.css",
-    "dist",
-    "png"
-  ],
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
   "main": "./src/index.ts",
-  "types": "./dist/types/",
   "unpkg": "icons.css",
   "publishConfig": {
     "access": "public",
@@ -34,12 +28,14 @@
     "precopy": "mkdir -p dist/src/png",
     "process-icons": "ts-node-script processIcons.ts",
     "postinstall": "yarn process-icons",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
+    "prebuild": "rimraf ./dist",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:types && yarn build:css",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
+    "build:css": "cp ./icons.css ./dist/icons.css",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js --types"
   },
   "devDependencies": {
     "@types/rimraf": "^3.0.0",
