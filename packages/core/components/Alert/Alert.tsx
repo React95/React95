@@ -27,7 +27,7 @@ const Message = styled.div`
 `;
 
 const IconWrapper = styled.div`
-  padding: 7px 15px 7px 7px;
+  padding: 7 15 7 7;
 `;
 
 const Dialog = styled.div`
