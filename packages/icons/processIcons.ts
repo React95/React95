@@ -21,15 +21,13 @@ export interface IconData {
 }
 
 const ICONS_FOLDER = './src/icons';
-const ICON_DEMOS_FILE_PATH = path.join('src', 'iconDemos.ts');
-const ICONS_INDEX_FILE_PATH = path.join('src', 'index.ts');
-const REACT_FOLDER = path.join('src', 'react');
-const getReactFileName = (name: string) =>
-  path.join(REACT_FOLDER, `${name}.tsx`);
-const IMAGE_FOLDER = path.join('.', 'png');
-const getImageFileName = (imageId: string) =>
-  `${path.join(IMAGE_FOLDER, imageId)}.png`;
-const CSS_FILE_PATH = path.join('.', 'icons.css');
+const ICON_DEMOS_FILE_PATH = './src/iconDemos.ts';
+const ICONS_INDEX_FILE_PATH = './src/index.ts';
+const REACT_FOLDER = './src/react';
+const getReactFileName = (name: string) => `${REACT_FOLDER}/${name}.tsx`;
+const IMAGE_FOLDER = './png';
+const getImageFileName = (imageId: string) => `${IMAGE_FOLDER}/${imageId}.png`;
+const CSS_FILE_PATH = './icons.css';
 
 const makeCssClass = (icon: IconData) => `
   .${icon.id} {

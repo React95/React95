@@ -32,7 +32,7 @@
   },
   "scripts": {
     "precopy": "mkdir -p dist/src/png",
-    "postinstall": "ts-node processIcons.ts",
+    "postinstall": "ts-node-script processIcons.ts",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
