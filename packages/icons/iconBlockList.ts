@@ -43,6 +43,7 @@ const iconBlockedIds = [
   'Lights102_32x32_4',
   'Lights103_32x32_4',
   'Mshtml32539_16x16_4',
+  'Mshtml32544_32x32_4',
   'Mshtml32545_32x32_4',
   'Shdocvw261_32x32_4',
   'Shdocvw274_32x32_4',

@@ -45,6 +45,7 @@
     "contributors:generate": "all-contributors generate",
     "dev": "yarn workspace @react95/core storybook",
     "pretest": "lerna run prebuild",
+    "postinstall": "yarn workspace @react95/icons process-icons",
     "test": "jest --config=./jest/config/config.js",
     "test:core": "jest --config=./jest/config/core.js",
     "test:clippy": "jest --config=./jest/config/clippy.js",

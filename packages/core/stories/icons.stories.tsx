@@ -44,8 +44,16 @@ export default {
 } as Meta;
 
 export const All = () => {
-  const [selectedIcon] = React.useState('');
+  const [selectedIcon, setSelectedIcon] = React.useState('');
   const { clippy } = useClippy();
+
+  const copyToClipboard = (componentName: string, variantName: string) => {
+    const text = `<${componentName} variant="${variantName}"/>`;
+    setSelectedIcon(text);
+
+    copy(text);
+  };
+
   React.useEffect(() => {
     if (selectedIcon) {
       clippy.speak('copied to clipboard!');
@@ -67,9 +75,7 @@ export const All = () => {
                     style={{ display: 'inline-block', marginRight: 4 }}
                     // eslint-disable-next-line
                     variant={variantName as any}
-                    onClick={() =>
-                      copy(`<${componentName} variant="${variantName}"/>`)
-                    }
+                    onClick={() => copyToClipboard(componentName, variantName)}
                   />
                   {Component.name}
                   <br />
