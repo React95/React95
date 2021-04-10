@@ -27,6 +27,7 @@ export const Simple = () => {
           height="200"
           icon="computer_32x32_4bit"
           title="Browse"
+          handle="handle"
           defaultPosition={{
             x: 0,
             y: 20,

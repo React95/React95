@@ -190,6 +190,7 @@ export type ModalProps = {
   menu?: Array<ModalMenu>;
   defaultPosition?: ModalDefaultPosition;
   hasWindowButton?: boolean;
+  handle?: string;
 } & Omit<WrapperProps, 'active'> &
   ButtonWrapperProps &
   React.HTMLAttributes<HTMLDivElement>;
@@ -207,6 +208,7 @@ const ModalRenderer = (
     menu,
     title,
     width,
+    handle,
     ...rest
   }: ModalProps,
   ref: React.Ref<HTMLDivElement>,
@@ -236,7 +238,7 @@ const ModalRenderer = (
   const isActive = title === activeWindow;
 
   return (
-    <Draggable handle=".handle" defaultPosition={defaultPosition}>
+    <Draggable handle={`.${handle}`} defaultPosition={defaultPosition}>
       <ModalWrapper
         width={width}
         height={height}
