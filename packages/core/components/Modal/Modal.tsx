@@ -236,7 +236,7 @@ const ModalRenderer = (
   const isActive = title === activeWindow;
 
   return (
-    <Draggable handle=".draggable" defaultPosition={defaultPosition}>
+    <Draggable handle=".handle" defaultPosition={defaultPosition}>
       <ModalWrapper
         width={width}
         height={height}
