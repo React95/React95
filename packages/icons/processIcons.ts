@@ -30,11 +30,11 @@ const getImageFileName = (imageId: string) => `${IMAGE_FOLDER}/${imageId}.png`;
 const CSS_FILE_PATH = './icons.css';
 
 const makeCssClass = (icon: IconData) => `
-  .${icon.id} {
-    width: ${icon.width};
-    height: ${icon.height};
-    background-image: url(${icon.filePath});
-  }
+.${icon.id} {
+  width: ${icon.width};
+  height: ${icon.height};
+  background-image: url(${icon.filePath});
+}
 `;
 
 rimrafSync('dist');
@@ -71,7 +71,9 @@ const icons = files.map(fileName => {
       return {
         ...image,
         filePath: imageFileName,
-        reactImportPath: path.relative(REACT_FOLDER, imageFileName),
+        reactImportPath: path
+          .relative(REACT_FOLDER, imageFileName)
+          .replace(/\\/g, '/'),
         variant: variant,
         id: imageId,
       };
@@ -95,6 +97,7 @@ const cssClasses: string[] = [];
 const indexFileReExports: string[] = [];
 const demoFileImports: string[] = [];
 const demoFileExports: string[] = [];
+
 icons.forEach(({ name, variants }) => {
   const componentName = getComponentName(name);
   const variantDataName = getIconDataName(name);
