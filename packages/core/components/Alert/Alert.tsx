@@ -2,21 +2,21 @@ import React from 'react';
 import styled from '@xstyled/styled-components';
 
 import Modal, { ModalProps } from '../Modal/Modal';
-import { IconUser3, IconUser2, IconUser4, IconUser5 } from '@react95/icons';
+import { User3, User2, User4, User5 } from '@react95/icons';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
 const RenderImage: React.FC<{ option: string }> = ({ option }) => {
   switch (option) {
     case 'info':
-      return <IconUser5 variant="32x32_4" />;
+      return <User5 variant="32x32_4" />;
     case 'question':
-      return <IconUser3 variant="32x32_4" />;
+      return <User3 variant="32x32_4" />;
     case 'warning':
-      return <IconUser2 variant="32x32_4" />;
+      return <User2 variant="32x32_4" />;
     case 'error':
     default:
-      return <IconUser4 variant="32x32_4" />;
+      return <User4 variant="32x32_4" />;
   }
 };
 

@@ -8,7 +8,7 @@ import List from '../List';
 
 import Clock from './Clock';
 import WindowButton from './WindowButton';
-import { IconLogo } from '@react95/icons';
+import { Logo } from '@react95/icons';
 
 const Truncate = styled.span`
   overflow: hidden;
@@ -56,7 +56,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       )}
       <WindowButton
         small
-        icon={<IconLogo variant="32x32_4" />}
+        icon={<Logo variant="32x32_4" />}
         active={activeStart}
         onClick={() => {
           toggleActiveStart(!activeStart);

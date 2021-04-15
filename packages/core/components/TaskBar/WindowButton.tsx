@@ -4,7 +4,7 @@ import { th } from '@xstyled/system';
 
 import Frame, { FrameProps } from '../Frame/Frame';
 import { Windows } from '../Modal/ModalContext';
-import { IconBat } from '@react95/icons';
+import { Bat } from '@react95/icons';
 
 export type WindowButtonProps = {
   small?: boolean;
@@ -82,7 +82,7 @@ const WindowButton: React.FC<WindowButtonProps> = ({
 
 WindowButton.defaultProps = {
   small: false,
-  icon: <IconBat variant="32x32_4" />,
+  icon: <Bat variant="32x32_4" />,
   active: false,
 };
 

@@ -7,7 +7,7 @@ import Frame, { FrameProps } from '../Frame/Frame';
 import Range from '../Range';
 import { Play, Pause, Stop } from './buttons';
 import Divider from '../List/ListDivider';
-import { IconMplayer113, IconUser4 } from '@react95/icons';
+import { Mplayer113, User4 } from '@react95/icons';
 
 const VideoTag = styled.video<{ visible: boolean }>`
   width: 100%;
@@ -200,7 +200,7 @@ const Video: React.FC<VideoProps> = ({
       }}
     >
       <TitleBar>
-        <IconMplayer113
+        <Mplayer113
           variant="16x16_4"
           style={{ marginRight: 4, width: 16, height: 16 }}
         />
@@ -258,7 +258,7 @@ const Video: React.FC<VideoProps> = ({
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <IconUser4 variant="32x32_4" />
+              <User4 variant="32x32_4" />
             )}
           </ControlBtn>
           <ControlBtn

@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import { Modal } from '../components/Modal';
 import Button from '../components/Button';
 import List from '../components/List';
-import { IconComputer } from '@react95/icons';
+import { Computer } from '@react95/icons';
 
 export default {
   title: 'Modal',
@@ -26,7 +26,7 @@ export const Simple = () => {
         <Modal
           width="300"
           height="200"
-          icon={<IconComputer variant="32x32_4" />}
+          icon={<Computer variant="32x32_4" />}
           title="Browse"
           defaultPosition={{
             x: 0,

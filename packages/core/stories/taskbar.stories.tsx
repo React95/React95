@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import TaskBar from '../components/TaskBar';
 import { Modal } from '../components/Modal';
 import List from '../components/List';
-import { IconReaderClosed, IconWindowsExplorer } from '@react95/icons';
+import { ReaderClosed, WindowsExplorer } from '@react95/icons';
 
 export default {
   title: 'TaskBar',
@@ -22,7 +22,7 @@ export const Simple = () => {
     <>
       {first && (
         <Modal
-          icon={<IconWindowsExplorer variant="16x16_4" />}
+          icon={<WindowsExplorer variant="16x16_4" />}
           title="Windows Explorer"
           closeModal={closeFirst}
           width="300"
@@ -35,7 +35,7 @@ export const Simple = () => {
           defaultPosition={{ x: 50, y: 50 }}
           width="300"
           height="200"
-          icon={<IconReaderClosed variant="16x16_4" />}
+          icon={<ReaderClosed variant="16x16_4" />}
           title="Local Disk (C:)"
           closeModal={closeSecond}
         />
@@ -45,13 +45,13 @@ export const Simple = () => {
         list={
           <List>
             <List.Item
-              icon={<IconReaderClosed variant="32x32_4" />}
+              icon={<ReaderClosed variant="32x32_4" />}
               onClick={() => toggleSecond(true)}
             >
               Local Disk (C:)
             </List.Item>
             <List.Item
-              icon={<IconWindowsExplorer variant="32x32_4" />}
+              icon={<WindowsExplorer variant="32x32_4" />}
               onClick={() => {
                 toggleFirst(true);
               }}

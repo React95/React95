@@ -2,11 +2,7 @@ import fs from 'fs';
 import ICO from 'icojs';
 import path from 'path';
 import { sync as rimrafSync } from 'rimraf';
-import {
-  iconComponentTemplate,
-  getIconDataName,
-  getComponentName,
-} from './component-template';
+import { iconComponentTemplate, getIconDataName } from './component-template';
 import { filterBlockedIcons } from './iconBlockList';
 
 export interface IconData {
@@ -99,7 +95,7 @@ const demoFileImports: string[] = [];
 const demoFileExports: string[] = [];
 
 icons.forEach(({ name, variants }) => {
-  const componentName = getComponentName(name);
+  const componentName = name;
   const variantDataName = getIconDataName(name);
 
   // Index file for making all icons importable from '@react95/icons'

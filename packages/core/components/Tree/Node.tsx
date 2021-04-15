@@ -6,27 +6,27 @@ import treeMidLines from './imgs/tree-mid.png';
 import treeLastLines from './imgs/tree-last.png';
 import treeNodeChildrenLine from './imgs/tree-node-children.png';
 import {
-  IconBat,
-  IconBatExec,
-  IconFileFont2,
-  IconFilePen,
-  IconFileSettings,
-  IconFileText,
-  IconFileTextSettings,
-  IconFolder,
-  IconFolderOpen,
-  IconMediaCd,
+  Bat,
+  BatExec,
+  FileFont2,
+  FilePen,
+  FileSettings,
+  FileText,
+  FileTextSettings,
+  Folder,
+  FolderOpen,
+  MediaCd,
 } from '@react95/icons';
 
 export const icons = {
-  FILE_MEDIA: IconMediaCd,
-  FILE_TEXT: IconFileText,
-  FILE_UNKNOWN: IconBat,
-  FILE_FONT: IconFileFont2,
-  FILE_PEN: IconFilePen,
-  FILE_SETTINGS: IconFileSettings,
-  FILE_TEXT_SETTINGS: IconFileTextSettings,
-  FILE_EXECUTABLE: IconBatExec,
+  FILE_MEDIA: MediaCd,
+  FILE_TEXT: FileText,
+  FILE_UNKNOWN: Bat,
+  FILE_FONT: FileFont2,
+  FILE_PEN: FilePen,
+  FILE_SETTINGS: FileSettings,
+  FILE_TEXT_SETTINGS: FileTextSettings,
+  FILE_EXECUTABLE: BatExec,
 } as const;
 
 const NodeItem = styled.div<{ isOpen: boolean }>`
@@ -98,12 +98,12 @@ const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
   isOpen,
 }) => {
   if (!hasChildren) {
-    return <IconBat variant="32x32_4" data-testid="react95-default-icon-bat" />;
+    return <Bat variant="32x32_4" data-testid="react95-default-icon-bat" />;
   }
 
   if (isOpen) {
     return (
-      <IconFolderOpen
+      <FolderOpen
         variant="32x32_4"
         data-testid="react95-default-icon-folder-open"
       />
@@ -111,7 +111,7 @@ const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
   }
 
   return (
-    <IconFolder variant="32x32_4" data-testid="react95-default-icon-folder" />
+    <Folder variant="32x32_4" data-testid="react95-default-icon-folder" />
   );
 };
 

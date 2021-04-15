@@ -3,20 +3,20 @@ import { Meta } from '@storybook/react/types-6-0';
 
 import List from '../components/List';
 import {
-  IconComputer3,
-  IconFileFind,
-  IconFolderExe,
-  IconFolderExe2,
-  IconFolderFile,
-  IconFolderPrint,
-  IconFolderSettings,
-  IconHelpBook,
-  IconLoaderBat,
-  IconMicrosoftExchange,
-  IconMicrosoftNetwork,
-  IconMsDos,
-  IconSettings,
-  IconWindowsExplorer,
+  Computer3,
+  FileFind,
+  FolderExe,
+  FolderExe2,
+  FolderFile,
+  FolderPrint,
+  FolderSettings,
+  HelpBook,
+  LoaderBat,
+  MicrosoftExchange,
+  MicrosoftNetwork,
+  MsDos,
+  Settings,
+  WindowsExplorer,
 } from '@react95/icons';
 
 export default {
@@ -27,46 +27,46 @@ export default {
 
 export const WithIcons = () => (
   <List>
-    <List.Item icon={<IconFolderExe2 variant="32x32_4" />}>
+    <List.Item icon={<FolderExe2 variant="32x32_4" />}>
       <List>
-        <List.Item icon={<IconFolderExe variant="16x16_4" />}>
+        <List.Item icon={<FolderExe variant="16x16_4" />}>
           Accessories
         </List.Item>
-        <List.Item icon={<IconFolderExe variant="16x16_4" />}>
+        <List.Item icon={<FolderExe variant="16x16_4" />}>
           StartUp
         </List.Item>
-        <List.Item icon={<IconMicrosoftExchange variant="16x16_4" />}>
+        <List.Item icon={<MicrosoftExchange variant="16x16_4" />}>
           Microsoft Exchange
         </List.Item>
-        <List.Item icon={<IconMsDos variant="16x16_32" />}>
+        <List.Item icon={<MsDos variant="16x16_32" />}>
           MS-DOS Prompt
         </List.Item>
-        <List.Item icon={<IconMicrosoftNetwork variant="16x16_4" />}>
+        <List.Item icon={<MicrosoftNetwork variant="16x16_4" />}>
           The Microsoft Network
         </List.Item>
-        <List.Item icon={<IconWindowsExplorer variant="16x16_4" />}>
+        <List.Item icon={<WindowsExplorer variant="16x16_4" />}>
           Windows Explorer
         </List.Item>
       </List>
       Programs
     </List.Item>
-    <List.Item icon={<IconFolderFile variant="32x32_4" />}>Documents</List.Item>
-    <List.Item icon={<IconSettings variant="32x32_4" />}>
+    <List.Item icon={<FolderFile variant="32x32_4" />}>Documents</List.Item>
+    <List.Item icon={<Settings variant="32x32_4" />}>
       <List>
-        <List.Item icon={<IconFolderSettings variant="16x16_4" />}>
+        <List.Item icon={<FolderSettings variant="16x16_4" />}>
           Control Panel
         </List.Item>
-        <List.Item icon={<IconFolderPrint variant="16x16_4" />}>
+        <List.Item icon={<FolderPrint variant="16x16_4" />}>
           Printers
         </List.Item>
       </List>
       Settings
     </List.Item>
-    <List.Item icon={<IconFileFind variant="32x32_4" />}>Find</List.Item>
-    <List.Item icon={<IconHelpBook variant="32x32_4" />}>Help</List.Item>
-    <List.Item icon={<IconLoaderBat variant="32x32_4" />}>Run...</List.Item>
+    <List.Item icon={<FileFind variant="32x32_4" />}>Find</List.Item>
+    <List.Item icon={<HelpBook variant="32x32_4" />}>Help</List.Item>
+    <List.Item icon={<LoaderBat variant="32x32_4" />}>Run...</List.Item>
     <List.Divider />
-    <List.Item icon={<IconComputer3 variant="32x32_4" />}>
+    <List.Item icon={<Computer3 variant="32x32_4" />}>
       Shut Down...
     </List.Item>
   </List>
