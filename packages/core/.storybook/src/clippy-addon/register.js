@@ -1,6 +1,7 @@
 import React from 'react';
 import addons from '@storybook/addons';
 import clippy from 'clippyjs';
+import { FileText } from '@react95/icons';
 
 import { createGlobalStyle } from 'styled-components';
 
@@ -211,7 +212,7 @@ class Clippy extends React.Component {
         <ClippyStyle />
         {showModal && (
           <Modal
-            icon="file_text"
+            icon={<FileText variant="16x16_4" />}
             title={component}
             style={{
               left: '40%',

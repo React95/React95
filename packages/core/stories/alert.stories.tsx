@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 
-import Alert, { DialogImages } from '../components/Alert/Alert';
+import Alert, { AlertType } from '../components/Alert/Alert';
 import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
 
@@ -12,12 +12,12 @@ export default {
 
 export const Simple = () => {
   const [showAlert, toggleShowAlert] = React.useState(false);
-  const [type, setType] = React.useState<keyof typeof DialogImages>('error');
+  const [type, setType] = React.useState<AlertType>('error');
 
   const handleOpenAlert = () => toggleShowAlert(true);
   const handleCloseAlert = () => toggleShowAlert(false);
   const onImageChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
-    setType(e.target.value as keyof typeof DialogImages);
+    setType(e.target.value as AlertType);
 
   return (
     <>

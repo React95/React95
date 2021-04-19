@@ -3,10 +3,10 @@
   "compilerOptions": {
     "outDir": "./dist/@types",
     "jsx": "react",
-    "declaration": true, 
+    "declaration": true,
     "emitDeclarationOnly": true
   },
-  "include": ["components", "../../types", "../icons/types"],
+  "include": ["components", "../../types"],
   "exclude": [
     "node_modules",
     "components/**/*test.tsx",

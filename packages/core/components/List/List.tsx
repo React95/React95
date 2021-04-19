@@ -5,7 +5,7 @@ import ListItem from './ListItem';
 import Divider from './ListDivider';
 
 type ListProps = {
-  width?: Number;
+  width?: number;
 };
 
 export type IListProps = StyledComponent<'ul', any, ListProps, never> & {

@@ -1,10 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { createContext } from 'react';
 
-import { IconProps } from '../Icon/Icon';
-
 export type Windows = {
-  icon?: IconProps['name'];
+  icon?: React.ReactElement;
   title: string;
   hasButton: boolean;
 };

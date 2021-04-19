@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Video /> Snapshot should match snapshot 1`] = `
-.c11 {
+.c10 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -9,25 +9,21 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
 }
 
-.c11:disabled {
+.c10:disabled {
   color: #868a8e;
 }
 
-.c11:focus {
+.c10:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c11:active {
+.c10:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c2 {
-  display: block;
 }
 
 .c0 {
@@ -38,7 +34,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px;
 }
 
-.c4 {
+.c3 {
   background-color: #c3c7cb;
   max-width: 250px;
   width: auto;
@@ -49,14 +45,14 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   margin-bottom: 4px;
 }
 
-.c6 {
+.c5 {
   background-color: #c3c7cb;
   width: auto;
   height: auto;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c8 {
+.c7 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -74,18 +70,18 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c13 {
+.c12 {
   -webkit-appearance: none;
   width: 100%;
 }
 
-.c13:hover,
-.c13:focus,
-.c13:active {
+.c12:hover,
+.c12:focus,
+.c12:active {
   outline: none;
 }
 
-.c13::-webkit-slider-runnable-track {
+.c12::-webkit-slider-runnable-track {
   width: 100%;
   height: 4px;
   background: #000000;
@@ -101,7 +97,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
-.c13::-webkit-slider-thumb {
+.c12::-webkit-slider-thumb {
   width: 12px;
   height: 20px;
   background-color: #c3c7cb;
@@ -119,11 +115,11 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-.c13:focus::-webkit-slider-runnable-track {
+.c12:focus::-webkit-slider-runnable-track {
   background: #000000;
 }
 
-.c13::-moz-range-track {
+.c12::-moz-range-track {
   width: 100%;
   height: 4px;
   background: #000000;
@@ -139,7 +135,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
-.c13::-moz-range-thumb {
+.c12::-moz-range-thumb {
   width: 12px;
   height: 20px;
   background-color: #c3c7cb;
@@ -157,13 +153,13 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-.c3 {
+.c2 {
   width: 100%;
   padding: 2px;
   display: none;
 }
 
-.c12 {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -178,18 +174,18 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   align-items: center;
 }
 
-.c12.c12,
-.c12:active,
-.c12:focus {
+.c11.c11,
+.c11:active,
+.c11:focus {
   width: 20px;
   height: 20px;
   padding: 7px;
   padding: 4px;
 }
 
-.c12.c12 svg,
-.c12:active svg,
-.c12:focus svg {
+.c11.c11 svg,
+.c11:active svg,
+.c11:focus svg {
   fill: #868a8e;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
@@ -211,7 +207,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   background-color: #000e7a;
 }
 
-.c10 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -223,7 +219,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px 0;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,23 +232,23 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   color: #ffffff;
 }
 
-.c9 {
+.c8 {
   font-family: 'React95Video-Numbers';
   text-transform: uppercase;
 }
 
-.c5 {
+.c4 {
   background-color: transparent;
   box-shadow: none;
 }
 
-.c14::-webkit-slider-thumb {
+.c13::-webkit-slider-thumb {
   height: 18px;
   margin-top: -7px;
   width: 10px;
 }
 
-.c14[value='0']::-webkit-slider-thumb {
+.c13[value='0']::-webkit-slider-thumb {
   margin-left: -2px;
 }
 
@@ -266,15 +262,17 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
     <div
       class="c1"
     >
-      <i
-        class="c2 r95 mplayer_1_13_16x16_4bit"
+      <img
+        height="16"
+        src="test-file-stub"
         style="margin-right: 4px; width: 16px; height: 16px;"
+        width="16"
       />
       some_video.mp4
-       (Openning)
+       (Opening)
     </div>
     <video
-      class="c3"
+      class="c2"
     >
       <source
         src="foo/bar/some_video.mp4"
@@ -282,44 +280,44 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
       />
     </video>
     <div
-      class="c4 c5"
+      class="c3 c4"
       height="auto"
       width="auto"
     >
       <div
-        class="c6 c7"
+        class="c5 c6"
         height="auto"
         width="auto"
       >
         <div
-          class="c8 c5"
+          class="c7 c4"
           display="flex"
           height="auto"
           width="40%"
         >
           <span
-            class="c9"
+            class="c8"
             style="margin-top: auto;"
           />
           <span
-            class="c9"
+            class="c8"
             style="height: 12px;"
           >
             Openning
           </span>
         </div>
         <div
-          class="c8 c5"
+          class="c7 c4"
           display="flex"
           height="auto"
           width="40%"
         >
           <span
-            class="c9"
+            class="c8"
             style="margin-top: auto; font-size: 22px;"
           />
           <span
-            class="c9"
+            class="c8"
             style="height: 12px;"
           >
             time
@@ -327,18 +325,20 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="c10"
+        class="c9"
       >
         <button
-          class="c11 c12"
+          class="c10 c11"
           disabled=""
         >
-          <i
-            class="c2 r95 user_4_32x32_4bit"
+          <img
+            height="32"
+            src="test-file-stub"
+            width="32"
           />
         </button>
         <button
-          class="c11 c12"
+          class="c10 c11"
           disabled=""
         >
           <svg
@@ -353,7 +353,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           </svg>
         </button>
         <input
-          class="c13 c14"
+          class="c12 c13"
           max="100"
           min="0"
           step="1"
