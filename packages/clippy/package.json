@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "clippyjs": "^0.0.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"
