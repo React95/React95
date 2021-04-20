@@ -1,7 +1,6 @@
 name: React95 - Bojagi workflow
 
-on:
-  push
+on: [push, pull_request]
 
 jobs:
   build_and_publish:
