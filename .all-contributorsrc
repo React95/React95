@@ -253,6 +253,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "tchock",
+      "name": "Simon Jentsch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1235818?v=4",
+      "profile": "https://www.bojagi.io",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "skipCi": true,
