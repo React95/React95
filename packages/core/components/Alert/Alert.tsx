@@ -4,7 +4,7 @@ import { User3, User2, User4, User5 } from '@react95/icons';
 
 import Modal, { ModalProps } from '../Modal/Modal';
 
-import wavFile from '../../assets/chord.wav';
+import sound from './assets/chord.mp3';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
@@ -53,7 +53,7 @@ const Alert: React.FC<AlertProps> = ({
 }) => {
   if (hasSound) {
     useEffect(() => {
-      const audio = new Audio(wavFile);
+      const audio = new Audio(sound);
       audio.play();
     }, []);
   }
