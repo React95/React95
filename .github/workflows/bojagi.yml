@@ -1,15 +1,11 @@
-name: React95 - Publish workflow
+name: React95 - Bojagi workflow
 
 on:
-  push:
-    branches:
-      - master
-      - alpha
+  push
 
 jobs:
   build_and_publish:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
       - uses: actions/checkout@v2
         with:
@@ -27,20 +23,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
-      - name: Lint
-        run: yarn lint:all
-      - name: Test
-        run: yarn test
-      - name: Build
+      - name: Bojagi
         run: |
-          yarn build
-      - name: Publish
-        run: |
-          GH_TOKEN=${GH_TOKEN}
-          NPM_TOKEN=${NPM_TOKEN}
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          chmod +x ./scripts/publish
-          ./scripts/publish
+          BOJAGI_SECRET=${BOJAGI_SECRET}
+          yarn bojagi:core
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          BOJAGI_SECRET: ${{ secrets.BOJAGI_SECRET }}
