@@ -44,3 +44,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Bojagi
+        run: |
+          BOJAGI_SECRET=${BOJAGI_SECRET}
+          yarn bojagi:core
+        env:
+          BOJAGI_SECRET: ${{ secrets.BOJAGI_SECRET }}

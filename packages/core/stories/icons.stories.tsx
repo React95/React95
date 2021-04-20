@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
-import icons from '@react95/icons/icons.module.css';
 import { useClippy, ClippyProvider } from '@react95/clippy';
 import copy from 'copy-to-clipboard';
 
-import { Icon, Frame } from '../components';
+import { Frame } from '../components';
 
-import availableIcons from './icons.stories.data';
+import { icons } from '@react95/icons/src/iconDemos';
 import styled from '@xstyled/styled-components';
 
 const IconContainer = styled.button`
@@ -35,7 +34,6 @@ const IconContainer = styled.button`
 
 export default {
   title: 'Icon',
-  component: Icon,
   decorators: [
     Story => (
       <ClippyProvider>
@@ -49,11 +47,12 @@ export const All = () => {
   const [selectedIcon, setSelectedIcon] = React.useState('');
   const { clippy } = useClippy();
 
-  function copyToClipboard(text: string) {
+  const copyToClipboard = (componentName: string, variantName: string) => {
+    const text = `<${componentName} variant="${variantName}"/>`;
     setSelectedIcon(text);
 
-    copy(`<Icon name="${text}" />`);
-  }
+    copy(text);
+  };
 
   React.useEffect(() => {
     if (selectedIcon) {
@@ -64,18 +63,28 @@ export const All = () => {
   return (
     <div>
       <Frame p={4}>
-        <p>We have, currently, {availableIcons.length} icons</p>
-
-        {availableIcons.map((icon: keyof typeof icons) => (
-          <IconContainer key={icon} onClick={() => copyToClipboard(icon)}>
-            <Icon
-              name={icon}
-              style={{ display: 'inline-block', marginRight: 4 }}
-              title={icon}
-            />
-            {icon}
-          </IconContainer>
-        ))}
+        <p>We have, currently, {icons.length} icons</p>
+        {icons.map(({ component: Component, componentName, variants }) => {
+          return (
+            <>
+              {Object.entries(variants).map(([variantName]) => (
+                <IconContainer key={variantName}>
+                  <Component
+                    key={variantName}
+                    title={variantName}
+                    style={{ display: 'inline-block', marginRight: 4 }}
+                    // eslint-disable-next-line
+                    variant={variantName as any}
+                    onClick={() => copyToClipboard(componentName, variantName)}
+                  />
+                  {Component.name}
+                  <br />
+                  {variantName}
+                </IconContainer>
+              ))}
+            </>
+          );
+        })}
       </Frame>
     </div>
   );

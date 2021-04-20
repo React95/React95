@@ -7,6 +7,7 @@
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.0",
+    "@bojagi/cli": "^0.15.1",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
@@ -44,6 +45,7 @@
     "contributors:generate": "all-contributors generate",
     "dev": "yarn workspace @react95/core storybook",
     "pretest": "lerna run prebuild",
+    "postinstall": "lerna run postinstall --scope=@react95/icons --stream",
     "test": "jest --config=./jest/config/config.js",
     "test:core": "jest --config=./jest/config/core.js",
     "test:clippy": "jest --config=./jest/config/clippy.js",
@@ -55,7 +57,8 @@
     "build": "lerna run build --stream --parallel",
     "build:clippy": "lerna run build --stream --scope=@react95/clippy",
     "build:core": "lerna run build --stream --scope=@react95/core",
-    "build:icons": "lerna run build --stream --scope=@react95/icons"
+    "build:icons": "lerna run build --stream --scope=@react95/icons",
+    "bojagi:core": "lerna run bojagi:deploy --stream --scope=@react95/core"
   },
   "config": {
     "commitizen": {

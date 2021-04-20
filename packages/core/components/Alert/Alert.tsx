@@ -1,19 +1,26 @@
 import React, { useEffect } from 'react';
-import styled, { StyledComponent } from '@xstyled/styled-components';
+import styled from '@xstyled/styled-components';
+import { User3, User2, User4, User5 } from '@react95/icons';
 
 import Modal, { ModalProps } from '../Modal/Modal';
-import Icon, { IconProps } from '../Icon/Icon';
 
 import wavFile from '../../assets/chord.wav';
 
-export const DialogImages = {
-  error: 'user_4_32x32_4bit',
-  info: 'user_5_32x32_4bit',
-  question: 'user_3_32x32_4bit',
-  warning: 'user_2_32x32_4bit',
-};
+export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
-export type DialogImageProps = { type?: keyof typeof DialogImages };
+const RenderImage: React.FC<{ option: string }> = ({ option }) => {
+  switch (option) {
+    case 'info':
+      return <User5 variant="32x32_4" />;
+    case 'question':
+      return <User3 variant="32x32_4" />;
+    case 'warning':
+      return <User2 variant="32x32_4" />;
+    case 'error':
+    default:
+      return <User4 variant="32x32_4" />;
+  }
+};
 
 const Message = styled.div`
   display: flex;
@@ -21,33 +28,20 @@ const Message = styled.div`
   justify-content: center;
 `;
 
-const Image = styled(Icon)`
-  margin: 7 15 7 7;
+const IconWrapper = styled.div`
+  padding: 7 15 7 7;
 `;
 
-export type DialogProps = StyledComponent<'div', any, {}, never> & {
-  Message: typeof Message;
-  Image: typeof Icon;
-};
+const Dialog = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
-const Dialog: DialogProps = Object.assign(
-  styled.div`
-    display: flex;
-    flex-direction: row;
-  `,
-  {
-    Message,
-    Image,
-  },
-);
-
-export type AlertProps = Omit<
-  ModalProps,
-  'closeModal'
-> & DialogImageProps & {
+export type AlertProps = Omit<ModalProps, 'closeModal'> & {
   message: string;
   closeAlert: ModalProps['closeModal'];
   hasSound?: boolean;
+  type?: AlertType;
 };
 
 const Alert: React.FC<AlertProps> = ({
@@ -59,20 +53,27 @@ const Alert: React.FC<AlertProps> = ({
 }) => {
   if (hasSound) {
     useEffect(() => {
-      const audio = new Audio(wavFile)
-      audio.play()
-    }, [])
+      const audio = new Audio(wavFile);
+      audio.play();
+    }, []);
   }
 
   return (
-    <Modal closeModal={closeAlert} height="120" hasWindowButton={false} {...rest}>
+    <Modal
+      closeModal={closeAlert}
+      height="120"
+      hasWindowButton={false}
+      {...rest}
+    >
       <Dialog>
-        <Dialog.Image name={DialogImages[type] as IconProps['name']} />
-        <Dialog.Message>{message}</Dialog.Message>
+        <IconWrapper>
+          <RenderImage option={type} />
+        </IconWrapper>
+        <Message>{message}</Message>
       </Dialog>
     </Modal>
   );
-}
+};
 
 Alert.displayName = 'Alert';
 

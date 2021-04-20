@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tree /> Snapshot should match snapshot 1`] = `
-.c4 {
-  display: block;
-}
-
 .c1 {
   list-style-type: none;
   background-repeat: no-repeat;
@@ -53,12 +49,17 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
   margin-left: 18px;
 }
 
-.c5 {
+.c3 > img {
+  width: 14px;
+  height: 14px;
+}
+
+.c4 {
   outline: none;
   padding: 1px;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
   border-style: dotted;
   padding: 0;
@@ -81,13 +82,15 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
         <div
           class="c3"
         >
-          <i
-            class="c4 r95 bat_32x32_4bit"
-            style="width: 14px; height: 14px;"
+          <img
+            data-testid="react95-default-icon-bat"
+            height="32"
+            src="test-file-stub"
+            width="32"
           />
         </div>
         <span
-          class="c5"
+          class="c4"
           tabindex="0"
         >
           foo

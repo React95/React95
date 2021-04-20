@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "3.0.6",
+  "version": "4.0.0",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@react95/clippy": "^1.0.3",
-    "@react95/icons": "^1.0.3",
+    "@react95/icons": "^2.0.0",
     "@styled-system/prop-types": "^5.1.5",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react-virtualized": "^9.21.10",
@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
-    "@react95/clippy": "^0.1.1",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-storysource": "^6.0.28",
     "@storybook/addons": "^6.0.28",
@@ -70,7 +69,8 @@
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
+    "bojagi:deploy": "bojagi deploy"
   },
   "publishConfig": {
     "access": "public",

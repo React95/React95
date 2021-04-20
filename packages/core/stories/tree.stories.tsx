@@ -14,7 +14,7 @@ const treeNodes: TreeProps = {
         {
           id: 1,
           label: 'virus.exe',
-          iconName: icons.FILE_EXECUTABLE,
+          icon: <icons.FILE_EXECUTABLE />,
         },
       ],
     },
@@ -29,13 +29,13 @@ const treeNodes: TreeProps = {
             {
               id: 4,
               label: 'Weezer',
-              iconName: icons.FILE_MEDIA,
+              icon: <icons.FILE_MEDIA />,
               onClick: () => alert('nice!'),
             },
             {
               id: 5,
               label: 'Supergrass',
-              iconName: icons.FILE_MEDIA,
+              icon: <icons.FILE_MEDIA />,
             },
           ],
         },
@@ -48,24 +48,24 @@ const treeNodes: TreeProps = {
         {
           id: 0,
           label: 'Fira Code.ttf',
-          iconName: icons.FILE_FONT,
+          icon: <icons.FILE_FONT />,
         },
         {
           id: 1,
           label: 'Journal.txt',
-          iconName: icons.FILE_TEXT,
+          icon: <icons.FILE_TEXT />,
         },
       ],
     },
     {
       id: 4,
       label: 'config.cfg',
-      iconName: icons.FILE_SETTINGS,
+      icon: <icons.FILE_SETTINGS />,
     },
     {
       id: 5,
       label: 'random_file',
-      iconName: icons.FILE_UNKNOWN,
+      icon: <icons.FILE_UNKNOWN />,
     },
   ],
 };

@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/React95/React95/compare/@react95/core@3.0.7...@react95/core@4.0.0) (2021-04-19)
+
+
+### Bug Fixes
+
+* **icons:** fix 'main' for while building to make prevent build collisions ([a97c940](https://github.com/React95/React95/commit/a97c9401f83dab44e5e1def431492d66ecc4f1d7))
+
+
+### Code Refactoring
+
+* **icons:** export icons as individual components from @react95/icons ([9a9a562](https://github.com/React95/React95/commit/9a9a562071c09baaaa71f38e1a2abd66cca07aff)), closes [#235](https://github.com/React95/React95/issues/235) [#189](https://github.com/React95/React95/issues/189)
+
+
+### BREAKING CHANGES
+
+* **icons:** icons now need to be individually imported from the icons package instead of passed
+as strings
+
+
+
+
+
+## [3.0.7](https://github.com/React95/React95/compare/@react95/core@3.0.6...@react95/core@3.0.7) (2021-03-09)
+
+
+### Bug Fixes
+
+* **core:** add types lookup attribute to package.json ([696769e](https://github.com/React95/React95/commit/696769e9dec68abfd2f1ddd44b04669dc70eb067))
+
+
+
+
+
 ## [3.0.6](https://github.com/React95/React95/compare/@react95/core@3.0.5...@react95/core@3.0.6) (2021-02-09)
 
 
