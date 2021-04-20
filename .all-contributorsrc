@@ -262,6 +262,15 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "sime",
+      "name": "Simon Males",
+      "avatar_url": "https://avatars.githubusercontent.com/u/216917?v=4",
+      "profile": "https://sime.net.au/",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "skipCi": true,
