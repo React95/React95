@@ -58,7 +58,8 @@
     "build:clippy": "lerna run build --stream --scope=@react95/clippy",
     "build:core": "lerna run build --stream --scope=@react95/core",
     "build:icons": "lerna run build --stream --scope=@react95/icons",
-    "bojagi:core": "lerna run bojagi:deploy --stream --scope=@react95/core"
+    "build:bojagi": "lerna run bojagi:build --stream --scope=@react95/core",
+    "upload:bojagi": "lerna run bojagi:upload --stream --scope=@react95/core"
   },
   "config": {
     "commitizen": {

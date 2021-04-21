@@ -4,6 +4,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import Alert, { AlertType } from '../components/Alert/Alert';
 import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
+import Checkbox from '../components/Checkbox';
 
 export default {
   title: 'Alert',
@@ -12,6 +13,7 @@ export default {
 
 export const Simple = () => {
   const [showAlert, toggleShowAlert] = React.useState(false);
+  const [withSound, toggleWithSound] = React.useState(false);
   const [type, setType] = React.useState<AlertType>('error');
 
   const handleOpenAlert = () => toggleShowAlert(true);
@@ -27,6 +29,12 @@ export const Simple = () => {
           options={['error', 'info', 'question', 'warning']}
           onChange={onImageChange}
         />
+        <Checkbox
+          checked={withSound}
+          onChange={() => toggleWithSound(!withSound)}
+        >
+          sound
+        </Checkbox>
       </div>
       <Button onClick={handleOpenAlert}>Trigger Alert</Button>
       {showAlert && (
@@ -35,6 +43,7 @@ export const Simple = () => {
           type={type}
           message="The Windows password you typed is incorrect."
           closeAlert={handleCloseAlert}
+          hasSound={withSound}
           buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
         />
       )}

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from '@xstyled/styled-components';
+import { User3, User2, User4, User5 } from '@react95/icons';
 
 import Modal, { ModalProps } from '../Modal/Modal';
-import { User3, User2, User4, User5 } from '@react95/icons';
+
+import sound from './assets/chord.mp3';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
@@ -38,6 +40,7 @@ const Dialog = styled.div`
 export type AlertProps = Omit<ModalProps, 'closeModal'> & {
   message: string;
   closeAlert: ModalProps['closeModal'];
+  hasSound?: boolean;
   type?: AlertType;
 };
 
@@ -45,17 +48,32 @@ const Alert: React.FC<AlertProps> = ({
   type = 'error',
   message,
   closeAlert,
+  hasSound,
   ...rest
-}) => (
-  <Modal closeModal={closeAlert} height="120" hasWindowButton={false} {...rest}>
-    <Dialog>
-      <IconWrapper>
-        <RenderImage option={type} />
-      </IconWrapper>
-      <Message>{message}</Message>
-    </Dialog>
-  </Modal>
-);
+}) => {
+  if (hasSound) {
+    useEffect(() => {
+      const audio = new Audio(sound);
+      audio.play();
+    }, []);
+  }
+
+  return (
+    <Modal
+      closeModal={closeAlert}
+      height="120"
+      hasWindowButton={false}
+      {...rest}
+    >
+      <Dialog>
+        <IconWrapper>
+          <RenderImage option={type} />
+        </IconWrapper>
+        <Message>{message}</Message>
+      </Dialog>
+    </Modal>
+  );
+};
 
 Alert.displayName = 'Alert';
 
@@ -74,6 +92,7 @@ Alert.defaultProps = {
         ? 0
         : Math.floor(window.innerHeight / 2) - 80,
   },
+  hasSound: false,
 };
 
 export default Alert;

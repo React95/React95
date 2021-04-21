@@ -70,7 +70,8 @@
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
     "prepublishOnly": "node ../../scripts/prepublish.js --types",
-    "bojagi:deploy": "bojagi deploy"
+    "bojagi:build": "bojagi bundle",
+    "bojagi:upload": "bojagi upload"
   },
   "publishConfig": {
     "access": "public",
