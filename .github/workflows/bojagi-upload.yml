@@ -56,7 +56,7 @@ jobs:
       - run: unzip ./packages/core/.bojagi.zip -d ./packages/core/.bojagi
 
       - name: Get commit SHA
-        run: echo "::set-output name=commit_sha::$(cat ./packages/core/.bojagi/commit_sha)
+        run: echo "::set-output name=commit_sha::$(cat ./packages/core/.bojagi/commit_sha)"
         id: bojagi_commit_sha
 
       - name: Upload
