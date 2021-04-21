@@ -30,10 +30,30 @@ jobs:
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
 
-      - uses: actions/download-artifact@v2
+      - name: 'Download artifact'
+        uses: actions/github-script@v3.1.1
         with:
-          name: .bojagi
-          path: packages/core/.bojagi
+          script: |
+            var artifacts = await github.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: ${{github.event.workflow_run.id }},
+            });
+
+            var matchArtifact = artifacts.data.artifacts.find((artifact) => {
+              return artifact.name == ".bojagi"
+            });
+
+            var download = await github.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+
+            var fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/packages/core/.bojagi.zip', Buffer.from(download.data));
+      - run: unzip ./packages/core/.bojagi.zip -d ./packages/core/.bojagi
 
       - name: Get commit SHA
         run: echo "::set-output name=commit_sha::$(cat ./packages/core/.bojagi/commit_sha)
