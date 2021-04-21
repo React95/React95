@@ -1,14 +1,15 @@
-name: React95 - Bojagi workflow
+name: React95 - Bojagi build workflow
 
 on: [push, pull_request]
 
 jobs:
-  build_and_publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: Configure CI Git User
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
@@ -16,15 +17,20 @@ jobs:
           git config --global user.name ggdaltoso
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
+
       - name: Bojagi
         run: |
-          BOJAGI_SECRET=${BOJAGI_SECRET}
-          yarn bojagi:core
-        env:
-          BOJAGI_SECRET: ${{ secrets.BOJAGI_SECRET }}
+          yarn build:bojagi
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: .bojagi
+          path: packages/core/.bojagi

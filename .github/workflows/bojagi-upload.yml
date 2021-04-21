@@ -1,0 +1,35 @@
+name: React95 - Bojagi upload workflow
+
+on:
+  workflow_run:
+    workflows: ['React95 - Bojagi build workflow']
+    types:
+      - completed
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Configure CI Git User
+        run: |
+          git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git config --global user.email ggdaltoso@gmail.com
+          git config --global user.name ggdaltoso
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn --pure-lockfile --non-interactive
+      - uses: actions/download-artifact@v2
+        with:
+          name: .bojagi
+          path: packages/core/.bojagi
+      - name: Bojagi
+        run: |
+          yarn upload:bojagi
