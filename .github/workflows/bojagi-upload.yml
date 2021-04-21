@@ -53,7 +53,9 @@ jobs:
 
             var fs = require('fs');
             fs.writeFileSync('${{github.workspace}}/packages/core/.bojagi.zip', Buffer.from(download.data));
-      - run: unzip ./packages/core/.bojagi.zip -d ./packages/core/.bojagi
+
+      - name: Decompress .bojagi files
+        run: unzip ./packages/core/.bojagi.zip -d ./packages/core/.bojagi
 
       - name: Get commit SHA
         run: echo "::set-output name=commit_sha::$(cat ./packages/core/.bojagi/commit_sha)"
@@ -61,4 +63,7 @@ jobs:
 
       - name: Upload
         run: |
+          BOJAGI_SECRET=${BOJAGI_SECRET}
           yarn upload:bojagi -- -- --commit ${{ steps.bojagi_commit_sha.outputs.commit_sha }}
+        env:
+          BOJAGI_SECRET: ${{ secrets.BOJAGI_SECRET }}
