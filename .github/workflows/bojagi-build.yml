@@ -30,7 +30,10 @@ jobs:
         run: |
           yarn build:bojagi
 
+      - name: Save commit SHA
+        run: echo ${{ GITHUB_SHA }} > ./packages/core/.bojagi/commit_sha
+
       - uses: actions/upload-artifact@v2
         with:
           name: .bojagi
-          path: packages/core/.bojagi
+          path: ./packages/core/.bojagi
