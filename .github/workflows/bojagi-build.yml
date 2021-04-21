@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
 
-      - name: Bojagi
+      - name: Build
         run: |
           yarn build:bojagi
 
