@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/React95/React95/compare/@react95/core@4.0.1...@react95/core@4.1.0) (2021-04-21)
+
+
+### Bug Fixes
+
+* **Alert:** add missing semicolon ([bcd50be](https://github.com/React95/React95/commit/bcd50be6aa413594e2ca54635a816e4a2b5c6c28))
+* **Alert:** make hasSound prop optional ([69613a7](https://github.com/React95/React95/commit/69613a72193b8ff2454a661d9abeccdcc2e55335))
+
+
+### Features
+
+* add hasSound prop to Alert as an option to display it with a CHORD sound ([b027ad4](https://github.com/React95/React95/commit/b027ad4f29dbbc4fe282522cdc3d5365a0e90861))
+
+
+
+
+
 ## [4.0.1](https://github.com/React95/React95/compare/@react95/core@4.0.0...@react95/core@4.0.1) (2021-04-20)
 
 **Note:** Version bump only for package @react95/core
