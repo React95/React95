@@ -61,4 +61,4 @@ jobs:
 
       - name: Upload
         run: |
-          yarn upload:bojagi --commit ${{ steps.bojagi_commit_sha.outputs.commit_sha }}
+          yarn upload:bojagi -- -- --commit ${{ steps.bojagi_commit_sha.outputs.commit_sha }}
