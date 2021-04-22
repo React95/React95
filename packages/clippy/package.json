@@ -34,11 +34,13 @@
   "devDependencies": {
     "@testing-library/react": "^10.0.5",
     "@testing-library/react-hooks": "^3.2.1",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
     "clippyjs": "^0.0.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"
