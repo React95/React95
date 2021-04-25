@@ -201,7 +201,7 @@ export type ModalProps = {
 
 const ModalRenderer = (
   {
-    hasWindowButton = true,
+    hasWindowButton: hasButton = true,
     buttons,
     buttonsAlignment,
     children,
@@ -218,17 +218,32 @@ const ModalRenderer = (
 ) => {
   const {
     addWindows,
-    removeWindows,
+    removeWindowById,
+    updateWindow,
     setActiveWindow,
     activeWindow,
   } = React.useContext(ModalContext);
+  const [id, setId] = React.useState<string | null>(null);
   const [menuOpened, setMenuOpened] = React.useState('');
 
   React.useEffect(() => {
-    addWindows({ icon, title, hasButton: hasWindowButton });
-    setActiveWindow(title);
-    return () => removeWindows(title);
-  }, []);
+    if (!id) {
+      const newId = addWindows({ icon, title, hasButton });
+      if (newId) {
+        setId(newId);
+        setActiveWindow(title);
+      }
+    } else {
+      updateWindow(id, { icon, title, hasButton });
+    }
+  }, [id, icon, title, hasButton]);
+  React.useEffect(() => {
+    return () => {
+      if (id) {
+        removeWindowById(id);
+      }
+    };
+  }, [id]);
 
   const isActive = title === activeWindow;
 

@@ -101,6 +101,8 @@ describe('<Modal />', () => {
             addWindows: () => {},
             removeWindows: () => {},
             setActiveWindow: () => {},
+            removeWindowById: () => {},
+            updateWindow: () => {},
             activeWindow: '',
           }}
         >
