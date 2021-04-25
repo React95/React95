@@ -19,6 +19,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "0.0.6",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
     "babel-polyfill": "^6.26.0",
     "commitizen": "^4.0.3",
     "cross-env": "^7.0.2",
