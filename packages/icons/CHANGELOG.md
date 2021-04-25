@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3-alpha.0](https://github.com/React95/React95/compare/@react95/icons@2.0.2...@react95/icons@2.0.3-alpha.0) (2021-04-25)
+
+
+### Bug Fixes
+
+* **icons:** tranform PNG to base64 on build ([8b9baae](https://github.com/React95/React95/commit/8b9baae9788fb8e8ddb2f09b70d5a719c7b03ba7)), closes [#253](https://github.com/React95/React95/issues/253)
+
+
+
+
+
 ## [2.0.2](https://github.com/React95/React95/compare/@react95/icons@2.0.1...@react95/icons@2.0.2) (2021-04-23)
 
 **Note:** Version bump only for package @react95/icons
