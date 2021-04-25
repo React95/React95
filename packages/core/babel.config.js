@@ -6,7 +6,7 @@ module.exports = {
     [
       'inline-import-data-uri',
       {
-        extensions: ['.mp3'],
+        extensions: ['.mp3', '.svg', '.png'],
       },
     ],
   ],
