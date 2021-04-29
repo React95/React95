@@ -2,7 +2,7 @@
 
 exports[`<Video /> Snapshot should match snapshot 1`] = `
 .c10 {
-  background-color: #c3c7cb;
+  background-color: red;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;

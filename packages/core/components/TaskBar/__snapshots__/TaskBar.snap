@@ -738,7 +738,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 
 exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 .c5 {
-  background-color: #c3c7cb;
+  background-color: red;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
@@ -1106,7 +1106,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 
 exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 .c5 {
-  background-color: #c3c7cb;
+  background-color: red;
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
