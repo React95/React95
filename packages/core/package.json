@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": "git@github.com:React95/React95.git",
