@@ -34,6 +34,7 @@
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
     "build:css": "cp ./icons.css ./dist/icons.css",
+    "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js --types"
   },
