@@ -27,8 +27,8 @@ const CSS_FILE_PATH = './icons.css';
 
 const makeCssClass = (icon: IconData) => `
 .${icon.id} {
-  width: ${icon.width};
-  height: ${icon.height};
+  width: ${icon.width}px;
+  height: ${icon.height}px;
   background-image: url(${icon.filePath});
 }
 `;
