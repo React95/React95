@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/React95/React95/compare/@react95/icons@2.0.2...@react95/icons@2.0.3) (2021-05-03)
+
+
+### Bug Fixes
+
+* **icons:** add postbuild copy command to move png files into dist ([5c3731e](https://github.com/React95/React95/commit/5c3731e126bb40077339ba5643a1734f966751b4)), closes [#259](https://github.com/React95/React95/issues/259) [#253](https://github.com/React95/React95/issues/253)
+* **icons:** adding missing unit into generated css file ([cb327e3](https://github.com/React95/React95/commit/cb327e35f92007eb78139490f9ff54c5c829a9d4))
+
+
+
+
+
 ## [2.0.2](https://github.com/React95/React95/compare/@react95/icons@2.0.1...@react95/icons@2.0.2) (2021-04-23)
 
 **Note:** Version bump only for package @react95/icons
