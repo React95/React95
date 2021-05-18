@@ -231,7 +231,7 @@ const ModalRenderer = (
       const newId = addWindows({ icon, title, hasButton });
       if (newId) {
         setId(newId);
-        setActiveWindow(title);
+        setActiveWindow(newId);
       }
     } else {
       updateWindow(id, { icon, title, hasButton });
@@ -245,7 +245,7 @@ const ModalRenderer = (
     };
   }, [id]);
 
-  const isActive = title === activeWindow;
+  const isActive = id === activeWindow;
 
   return (
     <Draggable handle=".draggable" defaultPosition={defaultPosition}>
@@ -253,7 +253,7 @@ const ModalRenderer = (
         width={width}
         height={height}
         {...rest}
-        onClick={() => setActiveWindow(title)}
+        onClick={id ? () => setActiveWindow(id) : undefined}
         active={isActive}
         ref={ref}
       >

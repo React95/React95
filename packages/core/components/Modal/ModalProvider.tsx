@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import ModalContext, { Windows } from './ModalContext';
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export type ModalProviderProps = {};
 
 type WindowStack = Record<string, Windows>;
@@ -81,7 +82,7 @@ const ModalProvider: React.FunctionComponent = ({ children }) => {
   return (
     <ModalContext.Provider
       value={{
-        windows: Object.values(windows),
+        windows,
         addWindows,
         removeWindows,
         removeWindowById,

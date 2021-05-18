@@ -73,21 +73,20 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
         ml={2}
         display="flex"
       >
-        {windows &&
-          windows.map(
-            ({ icon, title, hasButton }, index) =>
-              hasButton && (
-                <WindowButton
-                  key={`${title}-${index}`}
-                  icon={icon}
-                  active={title === activeWindow}
-                  onClick={() => setActiveWindow(title)}
-                  small={false}
-                >
-                  <Truncate>{title}</Truncate>
-                </WindowButton>
-              ),
-          )}
+        {Object.entries(windows).map(
+          ([windowId, { icon, title, hasButton }]) =>
+            hasButton && (
+              <WindowButton
+                key={windowId}
+                icon={icon}
+                active={windowId === activeWindow}
+                onClick={() => setActiveWindow(windowId)}
+                small={false}
+              >
+                <Truncate>{title}</Truncate>
+              </WindowButton>
+            ),
+        )}
       </Frame>
 
       <Clock />
