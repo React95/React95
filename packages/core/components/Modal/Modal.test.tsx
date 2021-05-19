@@ -97,10 +97,11 @@ describe('<Modal />', () => {
       const { container } = await waitRender(
         <ModalContext.Provider
           value={{
-            windows: [],
+            windows: {},
             addWindows: () => {},
-            removeWindows: () => {},
+            removeWindow: () => {},
             setActiveWindow: () => {},
+            updateWindow: () => {},
             activeWindow: '',
           }}
         >
