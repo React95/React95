@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/React95/React95/compare/@react95/core@4.1.3...@react95/core@5.0.0) (2021-05-19)
+
+
+### Bug Fixes
+
+* make focus state only show for the right modal, rather than every one with the same title ([cd2a823](https://github.com/React95/React95/commit/cd2a82311a3f081073f6da980efd23b5fea92b03))
+* **modal:** update taskbar icon and text on modal change ([a452b92](https://github.com/React95/React95/commit/a452b92dc03b6be58fbd03996200f3212e114333)), closes [#231](https://github.com/React95/React95/issues/231)
+
+
+### Code Refactoring
+
+* **modalprovider:** remove old removeWindows method and rename removeWindowById to removeWindow ([dc4c62b](https://github.com/React95/React95/commit/dc4c62b4cabc8e8406e319588bed84905f312873))
+
+
+### BREAKING CHANGES
+
+* **modalprovider:** Removes 'removeWindows' method from ModalProvider and replaces it iwth
+'removeWindow' which takes a window id
+
+
+
+
+
 ## [4.1.3](https://github.com/React95/React95/compare/@react95/core@4.1.2...@react95/core@4.1.3) (2021-05-03)
 
 **Note:** Version bump only for package @react95/core
