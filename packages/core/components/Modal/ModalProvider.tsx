@@ -22,10 +22,6 @@ type WindowAction =
   | {
       type: 'REMOVE_WINDOW';
       id: string;
-    }
-  | {
-      type: 'REMOVE_BY_TITLE';
-      title: string;
     };
 
 const windowStackReducer: React.Reducer<WindowStack, WindowAction> = (
@@ -46,14 +42,6 @@ const windowStackReducer: React.Reducer<WindowStack, WindowAction> = (
       newWindows[action.id] = action.window;
       return newWindows;
     }
-    case 'REMOVE_BY_TITLE': {
-      Object.entries(newWindows).forEach(([id, window]) => {
-        if (window.title === action.title) {
-          delete newWindows[id];
-        }
-      });
-      return newWindows;
-    }
     default:
       return state;
   }
@@ -68,11 +56,7 @@ const ModalProvider: React.FunctionComponent = ({ children }) => {
     dispatch({ type: 'ADD_WINDOW', id, window });
     return id;
   };
-  // TODO: Remove this method in the next major release - updating by IDs is more sensible
-  const removeWindows = (title: string) => {
-    dispatch({ type: 'REMOVE_BY_TITLE', title });
-  };
-  const removeWindowById = (id: string) => {
+  const removeWindow = (id: string) => {
     dispatch({ type: 'REMOVE_WINDOW', id });
   };
   const updateWindow = (id: string, window: Windows) => {
@@ -84,8 +68,7 @@ const ModalProvider: React.FunctionComponent = ({ children }) => {
       value={{
         windows,
         addWindows,
-        removeWindows,
-        removeWindowById,
+        removeWindow,
         updateWindow,
         setActiveWindow,
         activeWindow,

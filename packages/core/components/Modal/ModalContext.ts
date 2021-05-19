@@ -10,8 +10,7 @@ export type Windows = {
 export interface IModalContextProps {
   windows: Record<string, Windows>;
   addWindows(window: Windows): string | void;
-  removeWindows(title: string): void;
-  removeWindowById(id: string): void;
+  removeWindow(id: string): void;
   updateWindow(id: string, window: Windows): void;
   setActiveWindow(title: string): void;
   activeWindow?: string;
@@ -20,8 +19,7 @@ export interface IModalContextProps {
 const ModalContext = createContext<IModalContextProps>({
   windows: {},
   addWindows: () => {},
-  removeWindows: () => {},
-  removeWindowById: () => {},
+  removeWindow: () => {},
   updateWindow: () => {},
   setActiveWindow: () => {},
   activeWindow: '',

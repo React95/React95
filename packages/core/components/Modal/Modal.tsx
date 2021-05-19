@@ -218,7 +218,7 @@ const ModalRenderer = (
 ) => {
   const {
     addWindows,
-    removeWindowById,
+    removeWindow,
     updateWindow,
     setActiveWindow,
     activeWindow,
@@ -240,7 +240,7 @@ const ModalRenderer = (
   React.useEffect(() => {
     return () => {
       if (id) {
-        removeWindowById(id);
+        removeWindow(id);
       }
     };
   }, [id]);
