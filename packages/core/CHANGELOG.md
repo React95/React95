@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/React95/React95/compare/@react95/core@5.0.0...@react95/core@5.0.1) (2021-05-30)
+
+
+### Bug Fixes
+
+* **build:** add [@copyfiles](https://github.com/copyfiles) and make platform agnostic ([d8674c7](https://github.com/React95/React95/commit/d8674c7b991c7e06dac28faa0d186c3c2523801c)), closes [#262](https://github.com/React95/React95/issues/262)
+
+
+
+
+
 # [5.0.0](https://github.com/React95/React95/compare/@react95/core@4.1.3...@react95/core@5.0.0) (2021-05-19)
 
 
