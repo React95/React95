@@ -153,6 +153,8 @@ const VideoRenderer = (
   const player = React.useRef<HTMLVideoElement>(null);
   const progressRef = React.useRef<HTMLInputElement>(null);
   const wrapperRef = React.useRef<HTMLDivElement>(null);
+  const playPauseRef = React.useRef<HTMLButtonElement>(null);
+  const stopRef = React.useRef<HTMLButtonElement>(null);
 
   const paths = arrayFy(src);
   const [pathname] = paths;
@@ -166,6 +168,12 @@ const VideoRenderer = (
     },
     get wrapper() {
       return wrapperRef;
+    },
+    get playpause() {
+      return playPauseRef;
+    },
+    get stop() {
+      return stopRef;
     },
   }));
 
@@ -271,6 +279,7 @@ const VideoRenderer = (
               }
               setPlaying(!playing);
             }}
+            ref={playPauseRef}
           >
             {loadeddata ? (
               <PlayOrPause playing={playing} />
@@ -288,6 +297,7 @@ const VideoRenderer = (
 
               setPlaying(false);
             }}
+            ref={stopRef}
           >
             <Stop />
           </ControlBtn>
