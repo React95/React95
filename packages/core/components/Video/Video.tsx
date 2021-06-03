@@ -140,6 +140,8 @@ export type VideoRefs = {
   video: React.Ref<HTMLVideoElement>;
   progress: React.Ref<HTMLInputElement>;
   wrapper: React.Ref<HTMLDivElement>;
+  playpause: React.Ref<HTMLButtonElement>;
+  stop: React.Ref<HTMLButtonElement>;
 };
 
 const VideoRenderer = (

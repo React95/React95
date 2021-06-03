@@ -20,7 +20,7 @@ export const FromURL = () => (
 );
 
 export const FromFile = () => (
-  <Video width={320} src={EXPLORER_VIDEO} name="Explorer" ref={videoRef} />
+  <Video width={320} src={EXPLORER_VIDEO} name="Explorer" />
 );
 
 FromURL.parameters = {
