@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
+import { Mplayer113, User4 } from '@react95/icons';
 import { th } from '@xstyled/system';
 
 import Frame, { FrameProps } from '../Frame/Frame';
@@ -7,7 +8,6 @@ import Button from '../Button';
 import Range from '../Range';
 import { Play, Pause, Stop } from './buttons';
 import Divider from '../List/ListDivider';
-import { Mplayer113, User4 } from '@react95/icons';
 
 const VideoTag = styled.video<{ visible: boolean }>`
   width: 100%;
@@ -136,22 +136,38 @@ export type VideoProps = {
   style?: React.CSSProperties;
 } & FrameProps;
 
-const Video: React.FC<VideoProps> = ({
-  name,
-  src,
-  videoProps,
-  style,
-  ...props
-}) => {
+export type VideoRefs = {
+  video: React.Ref<HTMLVideoElement>;
+  progress: React.Ref<HTMLInputElement>;
+  wrapper: React.Ref<HTMLDivElement>;
+};
+
+const VideoRenderer = (
+  { name, src, videoProps, style, ...props }: VideoProps,
+  ref: React.Ref<VideoRefs>,
+) => {
   const [playing, setPlaying] = React.useState(false);
   const [loadeddata, setLoadeddata] = React.useState(false);
   const [progress, setProgress] = React.useState(0);
 
   const player = React.useRef<HTMLVideoElement>(null);
   const progressRef = React.useRef<HTMLInputElement>(null);
+  const wrapperRef = React.useRef<HTMLDivElement>(null);
 
   const paths = arrayFy(src);
   const [pathname] = paths;
+
+  React.useImperativeHandle(ref, () => ({
+    get video() {
+      return player;
+    },
+    get progress() {
+      return progressRef;
+    },
+    get wrapper() {
+      return wrapperRef;
+    },
+  }));
 
   React.useEffect(() => {
     player.current?.addEventListener(
@@ -198,6 +214,7 @@ const Video: React.FC<VideoProps> = ({
         width: !loadeddata ? 260 : undefined,
         ...style,
       }}
+      ref={wrapperRef}
     >
       <TitleBar>
         <Mplayer113
@@ -303,5 +320,7 @@ const Video: React.FC<VideoProps> = ({
     </Frame>
   );
 };
+
+const Video = React.forwardRef<VideoRefs, VideoProps>(VideoRenderer);
 
 export default Video;
