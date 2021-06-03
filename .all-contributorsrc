@@ -224,6 +224,53 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "JohannesMerz",
+      "name": "Johannes Merz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11529353?v=4",
+      "profile": "https://github.com/JohannesMerz",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "sparky-raccoon",
+      "name": "Andrea Saez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16033537?v=4",
+      "profile": "https://github.com/sparky-raccoon",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "kirkobyte",
+      "name": "Kirk Holloway",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6798667?v=4",
+      "profile": "https://github.com/kirkobyte",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "tchock",
+      "name": "Simon Jentsch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1235818?v=4",
+      "profile": "https://www.bojagi.io",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "sime",
+      "name": "Simon Males",
+      "avatar_url": "https://avatars.githubusercontent.com/u/216917?v=4",
+      "profile": "https://sime.net.au/",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "skipCi": true,

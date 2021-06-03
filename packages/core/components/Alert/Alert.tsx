@@ -1,17 +1,26 @@
-import React, { forwardRef } from 'react';
+import React, { useEffect, forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
+import { User3, User2, User4, User5 } from '@react95/icons';
 
 import Modal, { ModalProps } from '../Modal/Modal';
-import Icon, { IconProps } from '../Icon/Icon';
 
-export const DialogImages = {
-  error: 'user_4_32x32_4bit',
-  info: 'user_5_32x32_4bit',
-  question: 'user_3_32x32_4bit',
-  warning: 'user_2_32x32_4bit',
+import sound from './assets/chord.mp3';
+
+export type AlertType = 'error' | 'info' | 'question' | 'warning';
+
+const RenderImage: React.FC<{ option: string }> = ({ option }) => {
+  switch (option) {
+    case 'info':
+      return <User5 variant="32x32_4" />;
+    case 'question':
+      return <User3 variant="32x32_4" />;
+    case 'warning':
+      return <User2 variant="32x32_4" />;
+    case 'error':
+    default:
+      return <User4 variant="32x32_4" />;
+  }
 };
-
-export type DialogImageProps = { type?: keyof typeof DialogImages };
 
 const Message = styled.div`
   display: flex;
@@ -19,39 +28,48 @@ const Message = styled.div`
   justify-content: center;
 `;
 
-const Image = styled(Icon)`
-  margin: 7 15 7 7;
+const IconWrapper = styled.div`
+  padding: 7 15 7 7;
 `;
-
-// using typeof Message because Message is just a 'div' too
-export type DialogProps = typeof Message & {
-  Message: typeof Message;
-  Image: typeof Icon;
-};
 
 const Dialog = styled.div`
   display: flex;
   flex-direction: row;
-` as DialogProps;
+`;
 
-Dialog.Message = Message;
-Dialog.Image = Image;
-
-export type AlertProps = Omit<ModalProps, 'closeModal'> &
-  DialogImageProps & {
-    message: string;
-    closeAlert: ModalProps['closeModal'];
-  };
+export type AlertProps = Omit<ModalProps, 'closeModal'> & {
+  message: string;
+  closeAlert: ModalProps['closeModal'];
+  hasSound?: boolean;
+  type?: AlertType;
+};
 
 const Alert = forwardRef<HTMLDivElement, AlertProps>(
-  ({ type = 'error', message, closeAlert, ...rest }, ref) => (
-    <Modal closeModal={closeAlert} height="120" {...rest} ref={ref}>
-      <Dialog>
-        <Dialog.Image name={DialogImages[type] as IconProps['name']} />
-        <Dialog.Message>{message}</Dialog.Message>
-      </Dialog>
-    </Modal>
-  ),
+  ({ type = 'error', message, closeAlert, hasSound, ...rest }, ref) => {
+    if (hasSound) {
+      useEffect(() => {
+        const audio = new Audio(sound);
+        audio.play();
+      }, []);
+    }
+
+    return (
+      <Modal
+        closeModal={closeAlert}
+        height="120"
+        hasWindowButton={false}
+        {...rest}
+        ref={ref}
+      >
+        <Dialog>
+          <IconWrapper>
+            <RenderImage option={type} />
+          </IconWrapper>
+          <Message>{message}</Message>
+        </Dialog>
+      </Modal>
+    );
+  },
 );
 
 Alert.displayName = 'Alert';
@@ -71,6 +89,7 @@ Alert.defaultProps = {
         ? 0
         : Math.floor(window.innerHeight / 2) - 80,
   },
+  hasSound: false,
 };
 
 export default Alert;

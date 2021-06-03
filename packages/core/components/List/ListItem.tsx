@@ -2,13 +2,12 @@ import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-import Icon, { IconProps } from '../Icon/Icon';
 import { IListProps } from './List';
 
 import rightcaret from '../GlobalStyle/imgs/rightcaret.svg';
 
 type ItemProps = {
-  icon?: string;
+  icon?: boolean;
   hasList: boolean;
 };
 
@@ -20,7 +19,7 @@ const Item = styled.li<ItemProps>`
   margin: 0;
   padding: 2 6;
 
-  i {
+  img {
     margin-right: 10;
   }
 
@@ -36,7 +35,7 @@ const Item = styled.li<ItemProps>`
     left: 97%;
     color: ${th('colors.black')};
 
-    i {
+    img {
       width: 18px;
       height: 20px;
       margin-right: 6;
@@ -79,14 +78,14 @@ const Item = styled.li<ItemProps>`
 `;
 
 export type ListItemProps = {
-  icon?: IconProps['name'];
+  icon?: React.ReactElement;
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
 const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
   ({ icon, children = [], ...rest }, ref) => (
     <Item
       {...rest}
-      icon={icon}
+      icon={!!icon}
       ref={ref}
       hasList={Boolean(
         children &&
@@ -95,7 +94,7 @@ const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
           ).some(child => child),
       )}
     >
-      {icon && <Icon name={icon} />}
+      {icon}
       {children}
     </Item>
   ),

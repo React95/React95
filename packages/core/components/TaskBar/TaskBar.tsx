@@ -8,6 +8,7 @@ import List from '../List';
 
 import Clock from './Clock';
 import WindowButton from './WindowButton';
+import { Logo } from '@react95/icons';
 
 const Truncate = styled.span`
   overflow: hidden;
@@ -56,7 +57,7 @@ const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(({ list }, ref) => {
       )}
       <WindowButton
         small
-        icon="logo_32x32_4bit"
+        icon={<Logo variant="32x32_4" />}
         active={activeStart}
         onClick={() => {
           toggleActiveStart(!activeStart);
@@ -73,18 +74,20 @@ const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(({ list }, ref) => {
         ml={2}
         display="flex"
       >
-        {windows &&
-          windows.map(({ icon, title }, index) => (
-            <WindowButton
-              key={`${title}-${index}`}
-              icon={icon}
-              active={title === activeWindow}
-              onClick={() => setActiveWindow(title)}
-              small={false}
-            >
-              <Truncate>{title}</Truncate>
-            </WindowButton>
-          ))}
+        {Object.entries(windows).map(
+          ([windowId, { icon, title, hasButton }]) =>
+            hasButton && (
+              <WindowButton
+                key={windowId}
+                icon={icon}
+                active={windowId === activeWindow}
+                onClick={() => setActiveWindow(windowId)}
+                small={false}
+              >
+                <Truncate>{title}</Truncate>
+              </WindowButton>
+            ),
+        )}
       </Frame>
 
       <Clock />

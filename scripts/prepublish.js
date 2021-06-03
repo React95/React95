@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs-extra');
 
 const pkg = require(path.resolve('./package.json'));
+const includeTypesFolder = process.argv.find(arg => arg.includes('types'));
 const outDir = './dist';
 
 const copyFile = file => {
@@ -28,6 +29,7 @@ const createPackageJson = () => {
     main: './cjs',
     module: './esm',
     private: false,
+    ...(includeTypesFolder && { types: '@types' }),
   };
 
   const buildPath = path.resolve(`${outDir}/package.json`);

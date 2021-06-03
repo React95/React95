@@ -3,6 +3,155 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/React95/React95/compare/@react95/core@5.0.1...@react95/core@5.0.2) (2021-06-01)
+
+
+### Bug Fixes
+
+* **build:** use [@copyfiles](https://github.com/copyfiles) in all components ([585a48f](https://github.com/React95/React95/commit/585a48f7fa11b90eebffd9dddcbfa9ca21ae51a9)), closes [#262](https://github.com/React95/React95/issues/262)
+
+
+
+
+
+## [5.0.1](https://github.com/React95/React95/compare/@react95/core@5.0.0...@react95/core@5.0.1) (2021-05-30)
+
+
+### Bug Fixes
+
+* **build:** add [@copyfiles](https://github.com/copyfiles) and make platform agnostic ([d8674c7](https://github.com/React95/React95/commit/d8674c7b991c7e06dac28faa0d186c3c2523801c)), closes [#262](https://github.com/React95/React95/issues/262)
+
+
+
+
+
+# [5.0.0](https://github.com/React95/React95/compare/@react95/core@4.1.3...@react95/core@5.0.0) (2021-05-19)
+
+
+### Bug Fixes
+
+* make focus state only show for the right modal, rather than every one with the same title ([cd2a823](https://github.com/React95/React95/commit/cd2a82311a3f081073f6da980efd23b5fea92b03))
+* **modal:** update taskbar icon and text on modal change ([a452b92](https://github.com/React95/React95/commit/a452b92dc03b6be58fbd03996200f3212e114333)), closes [#231](https://github.com/React95/React95/issues/231)
+
+
+### Code Refactoring
+
+* **modalprovider:** remove old removeWindows method and rename removeWindowById to removeWindow ([dc4c62b](https://github.com/React95/React95/commit/dc4c62b4cabc8e8406e319588bed84905f312873))
+
+
+### BREAKING CHANGES
+
+* **modalprovider:** Removes 'removeWindows' method from ModalProvider and replaces it iwth
+'removeWindow' which takes a window id
+
+
+
+
+
+## [4.1.3](https://github.com/React95/React95/compare/@react95/core@4.1.2...@react95/core@4.1.3) (2021-05-03)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+## [4.1.2](https://github.com/React95/React95/compare/@react95/core@4.1.1...@react95/core@4.1.2) (2021-04-29)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+## [4.1.1](https://github.com/React95/React95/compare/@react95/core@4.1.0...@react95/core@4.1.1) (2021-04-23)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+# [4.1.0](https://github.com/React95/React95/compare/@react95/core@4.0.1...@react95/core@4.1.0) (2021-04-21)
+
+
+### Bug Fixes
+
+* **Alert:** add missing semicolon ([bcd50be](https://github.com/React95/React95/commit/bcd50be6aa413594e2ca54635a816e4a2b5c6c28))
+* **Alert:** make hasSound prop optional ([69613a7](https://github.com/React95/React95/commit/69613a72193b8ff2454a661d9abeccdcc2e55335))
+
+
+### Features
+
+* add hasSound prop to Alert as an option to display it with a CHORD sound ([b027ad4](https://github.com/React95/React95/commit/b027ad4f29dbbc4fe282522cdc3d5365a0e90861))
+
+
+
+
+
+## [4.0.1](https://github.com/React95/React95/compare/@react95/core@4.0.0...@react95/core@4.0.1) (2021-04-20)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+# [4.0.0](https://github.com/React95/React95/compare/@react95/core@3.0.7...@react95/core@4.0.0) (2021-04-19)
+
+
+### Bug Fixes
+
+* **icons:** fix 'main' for while building to make prevent build collisions ([a97c940](https://github.com/React95/React95/commit/a97c9401f83dab44e5e1def431492d66ecc4f1d7))
+
+
+### Code Refactoring
+
+* **icons:** export icons as individual components from @react95/icons ([9a9a562](https://github.com/React95/React95/commit/9a9a562071c09baaaa71f38e1a2abd66cca07aff)), closes [#235](https://github.com/React95/React95/issues/235) [#189](https://github.com/React95/React95/issues/189)
+
+
+### BREAKING CHANGES
+
+* **icons:** icons now need to be individually imported from the icons package instead of passed
+as strings
+
+
+
+
+
+## [3.0.7](https://github.com/React95/React95/compare/@react95/core@3.0.6...@react95/core@3.0.7) (2021-03-09)
+
+
+### Bug Fixes
+
+* **core:** add types lookup attribute to package.json ([696769e](https://github.com/React95/React95/commit/696769e9dec68abfd2f1ddd44b04669dc70eb067))
+
+
+
+
+
+## [3.0.6](https://github.com/React95/React95/compare/@react95/core@3.0.5...@react95/core@3.0.6) (2021-02-09)
+
+
+### Bug Fixes
+
+* **alert:** prevent Alert to be displayed in TaskBar as a WindowsButton ([ef0f997](https://github.com/React95/React95/commit/ef0f997e186c02f0d4b6018c4f2da609df3051eb))
+
+
+
+
+
+## [3.0.5](https://github.com/React95/React95/compare/@react95/core@3.0.4...@react95/core@3.0.5) (2021-02-08)
+
+
+### Bug Fixes
+
+* **core:** use eot fonts correctly ([29c9c80](https://github.com/React95/React95/commit/29c9c80ef19ae35837dcbf7706059355f52fc5f2))
+
+
+
+
+
 ## 3.0.4 (2021-01-20)
 
 **Note:** Version bump only for package @react95/core

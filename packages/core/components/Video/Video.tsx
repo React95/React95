@@ -5,9 +5,9 @@ import { th } from '@xstyled/system';
 import Frame, { FrameProps } from '../Frame/Frame';
 import Button from '../Button';
 import Range from '../Range';
-import Icon from '../Icon';
 import { Play, Pause, Stop } from './buttons';
 import Divider from '../List/ListDivider';
+import { Mplayer113, User4 } from '@react95/icons';
 
 const VideoTag = styled.video<{ visible: boolean }>`
   width: 100%;
@@ -200,12 +200,12 @@ const Video: React.FC<VideoProps> = ({
       }}
     >
       <TitleBar>
-        <Icon
-          name="mplayer_1_13_16x16_4bit"
+        <Mplayer113
+          variant="16x16_4"
           style={{ marginRight: 4, width: 16, height: 16 }}
         />
         {name || pathname.replace(/^.*[\\/]/, '')}
-        {!loadeddata && ' (Openning)'}
+        {!loadeddata && ' (Opening)'}
       </TitleBar>
       <VideoTag {...videoProps} visible={loadeddata} ref={player}>
         {paths.map(s => (
@@ -258,7 +258,7 @@ const Video: React.FC<VideoProps> = ({
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <Icon name="user_4_32x32_4bit" />
+              <User4 variant="32x32_4" />
             )}
           </ControlBtn>
           <ControlBtn

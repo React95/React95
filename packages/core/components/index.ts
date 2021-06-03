@@ -7,7 +7,6 @@ import Dropdown from './Dropdown';
 import Fieldset from './Fieldset';
 import Frame from './Frame';
 import GlobalStyle from './GlobalStyle';
-import Icon from './Icon';
 import Input from './Input';
 import List from './List';
 import ProgressBar from './ProgressBar';
@@ -28,7 +27,6 @@ export {
   Fieldset,
   Frame,
   GlobalStyle,
-  Icon,
   Input,
   List,
   Modal,

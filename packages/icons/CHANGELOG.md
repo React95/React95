@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/React95/React95/compare/@react95/icons@2.0.2...@react95/icons@2.0.3) (2021-05-03)
+
+
+### Bug Fixes
+
+* **icons:** add postbuild copy command to move png files into dist ([5c3731e](https://github.com/React95/React95/commit/5c3731e126bb40077339ba5643a1734f966751b4)), closes [#259](https://github.com/React95/React95/issues/259) [#253](https://github.com/React95/React95/issues/253)
+* **icons:** adding missing unit into generated css file ([cb327e3](https://github.com/React95/React95/commit/cb327e35f92007eb78139490f9ff54c5c829a9d4))
+
+
+
+
+
+## [2.0.2](https://github.com/React95/React95/compare/@react95/icons@2.0.1...@react95/icons@2.0.2) (2021-04-23)
+
+**Note:** Version bump only for package @react95/icons
+
+
+
+
+
+## [2.0.1](https://github.com/React95/React95/compare/@react95/icons@2.0.0...@react95/icons@2.0.1) (2021-04-20)
+
+**Note:** Version bump only for package @react95/icons
+
+
+
+
+
+# [2.0.0](https://github.com/React95/React95/compare/@react95/icons@1.0.3...@react95/icons@2.0.0) (2021-04-19)
+
+
+### Bug Fixes
+
+* **icons:** fix 'main' for while building to make prevent build collisions ([a97c940](https://github.com/React95/React95/commit/a97c9401f83dab44e5e1def431492d66ecc4f1d7))
+* **icons:** make processIcons a postinstall step ([c663999](https://github.com/React95/React95/commit/c663999a00edf0269a282c7d59a1efe06407f683))
+
+
+### Code Refactoring
+
+* **icons:** export icons as individual components from @react95/icons ([9a9a562](https://github.com/React95/React95/commit/9a9a562071c09baaaa71f38e1a2abd66cca07aff)), closes [#235](https://github.com/React95/React95/issues/235) [#189](https://github.com/React95/React95/issues/189)
+
+
+### BREAKING CHANGES
+
+* **icons:** icons now need to be individually imported from the icons package instead of passed
+as strings
+
+
+
+
+
 ## 1.0.3 (2021-01-20)
 
 **Note:** Version bump only for package @react95/icons

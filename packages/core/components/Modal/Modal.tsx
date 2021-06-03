@@ -5,7 +5,6 @@ import { th, backgroundColor, BackgroundColorProps } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
 import Button from '../Button';
-import Icon, { IconProps } from '../Icon/Icon';
 import List from '../List';
 import ModalContext from './ModalContext';
 
@@ -51,6 +50,12 @@ const TitleBar = styled.div<BackgroundColorProps>`
 
   display: flex;
   ${backgroundColor}
+
+  img {
+    width: 15px;
+    height: 13px;
+    margin-right: 4px;
+  }
 `;
 
 const Title = styled.div`
@@ -182,18 +187,20 @@ export type ModalDefaultPosition = {
 };
 
 export type ModalProps = {
-  icon?: IconProps['name'];
+  icon?: React.ReactElement;
   closeModal(event: React.MouseEvent): void;
   title: string;
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
   defaultPosition?: ModalDefaultPosition;
+  hasWindowButton?: boolean;
 } & Omit<WrapperProps, 'active'> &
   ButtonWrapperProps &
   React.HTMLAttributes<HTMLDivElement>;
 
 const ModalRenderer = (
   {
+    hasWindowButton: hasButton = true,
     buttons,
     buttonsAlignment,
     children,
@@ -210,27 +217,34 @@ const ModalRenderer = (
 ) => {
   const {
     addWindows,
-    removeWindows,
+    removeWindow,
+    updateWindow,
     setActiveWindow,
     activeWindow,
   } = React.useContext(ModalContext);
+  const [id, setId] = React.useState<string | null>(null);
   const [menuOpened, setMenuOpened] = React.useState('');
 
   React.useEffect(() => {
-    addWindows({ icon, title });
-    setActiveWindow(title);
-    return () => removeWindows(title);
-  }, []);
+    if (!id) {
+      const newId = addWindows({ icon, title, hasButton });
+      if (newId) {
+        setId(newId);
+        setActiveWindow(newId);
+      }
+    } else {
+      updateWindow(id, { icon, title, hasButton });
+    }
+  }, [id, icon, title, hasButton]);
+  React.useEffect(() => {
+    return () => {
+      if (id) {
+        removeWindow(id);
+      }
+    };
+  }, [id]);
 
-  const iconStyle = {
-    style: {
-      width: 15,
-      height: 13,
-      marginRight: '4px',
-    },
-  };
-
-  const isActive = title === activeWindow;
+  const isActive = id === activeWindow;
 
   return (
     <Draggable handle=".draggable" defaultPosition={defaultPosition}>
@@ -238,12 +252,12 @@ const ModalRenderer = (
         width={width}
         height={height}
         {...rest}
-        onClick={() => setActiveWindow(title)}
+        onClick={id ? () => setActiveWindow(id) : undefined}
         active={isActive}
         ref={ref}
       >
         <TitleBar backgroundColor={isActive ? 'primary' : 'grays.3'}>
-          {icon && <Icon className="draggable" name={icon} {...iconStyle} />}
+          {icon}
           <Title className="draggable">{title}</Title>
           <OptionsBox>
             <OptionItem>

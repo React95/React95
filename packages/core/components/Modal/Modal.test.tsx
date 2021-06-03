@@ -1,4 +1,5 @@
 import React from 'react';
+import { Bat } from '@react95/icons';
 import { waitRender, fireEvent } from '../shared/test/utils';
 import Modal from './Modal';
 import ModalContext from './ModalContext';
@@ -9,7 +10,7 @@ describe('<Modal />', () => {
     it('should match snapshot', async () => {
       const { container } = await waitRender(
         <Modal
-          icon="bat"
+          icon={<Bat />}
           title="file.bat"
           closeModal={() => {}}
           buttons={[
@@ -44,7 +45,7 @@ describe('<Modal />', () => {
     it('should match snapshot with buttonsAligment prop equals center', async () => {
       const { container } = await waitRender(
         <Modal
-          icon="bat"
+          icon={<Bat />}
           title="file.bat"
           closeModal={() => {}}
           buttons={[
@@ -62,7 +63,7 @@ describe('<Modal />', () => {
     it('should match snapshot with buttonsAligment prop equals flex-start', async () => {
       const { container } = await waitRender(
         <Modal
-          icon="bat"
+          icon={<Bat />}
           title="file.bat"
           closeModal={() => {}}
           buttons={[
@@ -80,7 +81,7 @@ describe('<Modal />', () => {
     it('should match snapshot with width and height props', async () => {
       const { container } = await waitRender(
         <Modal
-          icon="bat"
+          icon={<Bat />}
           title="file.bat"
           width="300"
           height="200"
@@ -96,15 +97,16 @@ describe('<Modal />', () => {
       const { container } = await waitRender(
         <ModalContext.Provider
           value={{
-            windows: [],
+            windows: {},
             addWindows: () => {},
-            removeWindows: () => {},
+            removeWindow: () => {},
             setActiveWindow: () => {},
+            updateWindow: () => {},
             activeWindow: '',
           }}
         >
           <Modal
-            icon="bat"
+            icon={<Bat />}
             title="file.bat"
             width="300"
             height="200"
@@ -122,7 +124,7 @@ describe('<Modal />', () => {
     it('should call closeModal when Modal close button is clicked', async () => {
       const closeModalMock = jest.fn();
       const { getByText } = await waitRender(
-        <Modal icon="bat" title="file.bat" closeModal={closeModalMock}>
+        <Modal icon={<Bat />} title="file.bat" closeModal={closeModalMock}>
           Hello
         </Modal>,
       );
@@ -138,7 +140,7 @@ describe('<Modal />', () => {
       const buttonText = 'button text';
       const { getByText } = await waitRender(
         <Modal
-          icon="bat"
+          icon={<Bat />}
           title="file.bat"
           buttons={[{ value: buttonText, onClick: () => {} }]}
           closeModal={() => {}}
@@ -153,7 +155,7 @@ describe('<Modal />', () => {
     it('should display more than one button', async () => {
       const { getAllByText } = await waitRender(
         <Modal
-          icon="bat"
+          icon={<Bat />}
           title="file.bat"
           buttons={[
             { value: 'button 1', onClick: () => {} },

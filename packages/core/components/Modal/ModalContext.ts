@@ -1,25 +1,26 @@
 /* eslint-disable no-unused-vars */
 import { createContext } from 'react';
 
-import { IconProps } from '../Icon/Icon';
-
 export type Windows = {
-  icon?: IconProps['name'];
+  icon?: React.ReactElement;
   title: string;
+  hasButton: boolean;
 };
 
 export interface IModalContextProps {
-  windows: Array<Windows>;
-  addWindows(window: Windows): void;
-  removeWindows(title: string): void;
+  windows: Record<string, Windows>;
+  addWindows(window: Windows): string | void;
+  removeWindow(id: string): void;
+  updateWindow(id: string, window: Windows): void;
   setActiveWindow(title: string): void;
   activeWindow?: string;
 }
 
 const ModalContext = createContext<IModalContextProps>({
-  windows: [],
+  windows: {},
   addWindows: () => {},
-  removeWindows: () => {},
+  removeWindow: () => {},
+  updateWindow: () => {},
   setActiveWindow: () => {},
   activeWindow: '',
 });

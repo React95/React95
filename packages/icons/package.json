@@ -1,6 +1,6 @@
 {
   "name": "@react95/icons",
-  "version": "1.0.3",
+  "version": "2.0.3",
   "description": "React95 icons gallery",
   "keywords": [
     "React95",
@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "icons.css",
+  "main": "./src/index.ts",
   "unpkg": "icons.css",
   "publishConfig": {
     "access": "public",
@@ -25,15 +25,24 @@
     "url": "https://github.com/React95/React95/issues"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
-    "copy:stylesheet": "cp icons.css ./dist/icons.css",
-    "copy:assets": "cp -R ./src/png ./dist/src",
-    "copy:types": "cp -R ./types ./dist",
-    "copy": "yarn copy:stylesheet && yarn copy:assets && yarn copy:types",
     "precopy": "mkdir -p dist/src/png",
-    "build": "yarn copy",
+    "process-icons": "ts-node-script processIcons.ts",
+    "postinstall": "yarn process-icons",
+    "prebuild": "rimraf ./dist",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:types && yarn build:css",
+    "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
+    "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
+    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
+    "build:css": "cp ./icons.css ./dist/icons.css",
+    "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js",
-    "toPNG": "node toPNG.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js --types"
+  },
+  "devDependencies": {
+    "@types/rimraf": "^3.0.0",
+    "icojs": "^0.14.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   }
 }
