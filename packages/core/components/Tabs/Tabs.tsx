@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
 
 import Tab, { TabProps } from './Tab';
@@ -19,10 +19,6 @@ const NavContainer = styled(Frame)`
 `;
 
 NavContainer.displayName = 'NavContainer';
-
-const If = ({ condition, children }: { condition: Boolean; children: any }) =>
-  condition && children;
-
 interface TabsProps {
   style?: React.CSSProperties;
   defaultActiveTab?: string;
@@ -30,53 +26,52 @@ interface TabsProps {
   onChange?(title: string, e: React.MouseEvent): void;
 }
 
-const Tabs: React.FC<TabsProps> = ({
-  children,
-  style,
-  defaultActiveTab,
-  onChange,
-  ...rest
-}) => {
-  const [firstTab] = React.Children.toArray(children) as Array<
-    React.ReactElement<TabProps>
-  >;
-  const [activeTab, setActiveTab] = React.useState(
-    defaultActiveTab || firstTab.props.title,
-  );
+const Tabs = forwardRef<HTMLOListElement, TabsProps>(
+  ({ children, style, defaultActiveTab, onChange, ...rest }, ref) => {
+    const [firstTab] = React.Children.toArray(children) as Array<
+      React.ReactElement<TabProps>
+    >;
+    const [activeTab, setActiveTab] = React.useState(
+      defaultActiveTab || firstTab.props.title,
+    );
 
-  return (
-    <>
-      <Navbar style={style} {...rest} as="ol">
-        {React.Children.map(children, (child: React.ReactElement<TabProps>) => {
-          const { title, disabled } = child.props;
+    return (
+      <>
+        <Navbar style={style} {...rest} as="ol" ref={ref}>
+          {React.Children.map(
+            children,
+            (child: React.ReactElement<TabProps>) => {
+              const { title, disabled } = child.props;
 
-          return (
-            <Tab
-              key={title}
-              {...child.props}
-              activeTab={activeTab}
-              onClick={e => {
-                if (!disabled) {
-                  if (onChange) {
-                    onChange(title, e);
-                  }
-                  setActiveTab(title);
-                }
-              }}
-            />
-          );
-        })}
-      </Navbar>
+              return (
+                <Tab
+                  key={title}
+                  {...child.props}
+                  activeTab={activeTab}
+                  onClick={e => {
+                    if (!disabled) {
+                      if (onChange) {
+                        onChange(title, e);
+                      }
+                      setActiveTab(title);
+                    }
+                  }}
+                />
+              );
+            },
+          )}
+        </Navbar>
 
-      <NavContainer style={style}>
-        {React.Children.map(children, (child: React.ReactElement<TabProps>) => (
-          <If condition={child.props.title === activeTab}>
-            {child.props.children}
-          </If>
-        ))}
-      </NavContainer>
-    </>
-  );
-};
+        <NavContainer style={style}>
+          {React.Children.map(
+            children,
+            (child: React.ReactElement<TabProps>) =>
+              child.props.title === activeTab && child.props.children,
+          )}
+        </NavContainer>
+      </>
+    );
+  },
+);
 
 export default Tabs;

@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
-const NavItem = styled.li<{ active: Boolean }>`
+const NavItem = styled.li<{ active: boolean }>`
   list-style: none;
   padding: 3 6;
   background-color: bg;
@@ -49,14 +49,16 @@ const NavItem = styled.li<{ active: Boolean }>`
 export interface TabProps extends React.HTMLAttributes<HTMLLIElement> {
   activeTab?: string;
   title: string;
-  disabled?: Boolean;
+  disabled?: boolean;
   onClick?(e: React.MouseEvent): void;
 }
 
-const Tab: React.FC<TabProps> = ({ activeTab, title, ...rest }) => (
-  <NavItem {...rest} active={activeTab === title}>
-    {title}
-  </NavItem>
+const Tab = forwardRef<HTMLLIElement, TabProps>(
+  ({ activeTab, title, ...rest }, ref) => (
+    <NavItem {...rest} active={activeTab === title} ref={ref}>
+      {title}
+    </NavItem>
+  ),
 );
 
 export default Tab;

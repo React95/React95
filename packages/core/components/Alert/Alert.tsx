@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
 import { User3, User2, User4, User5 } from '@react95/icons';
 
@@ -44,36 +44,33 @@ export type AlertProps = Omit<ModalProps, 'closeModal'> & {
   type?: AlertType;
 };
 
-const Alert: React.FC<AlertProps> = ({
-  type = 'error',
-  message,
-  closeAlert,
-  hasSound,
-  ...rest
-}) => {
-  if (hasSound) {
-    useEffect(() => {
-      const audio = new Audio(sound);
-      audio.play();
-    }, []);
-  }
+const Alert = forwardRef<HTMLDivElement, AlertProps>(
+  ({ type = 'error', message, closeAlert, hasSound, ...rest }, ref) => {
+    if (hasSound) {
+      useEffect(() => {
+        const audio = new Audio(sound);
+        audio.play();
+      }, []);
+    }
 
-  return (
-    <Modal
-      closeModal={closeAlert}
-      height="120"
-      hasWindowButton={false}
-      {...rest}
-    >
-      <Dialog>
-        <IconWrapper>
-          <RenderImage option={type} />
-        </IconWrapper>
-        <Message>{message}</Message>
-      </Dialog>
-    </Modal>
-  );
-};
+    return (
+      <Modal
+        closeModal={closeAlert}
+        height="120"
+        hasWindowButton={false}
+        {...rest}
+        ref={ref}
+      >
+        <Dialog>
+          <IconWrapper>
+            <RenderImage option={type} />
+          </IconWrapper>
+          <Message>{message}</Message>
+        </Dialog>
+      </Modal>
+    );
+  },
+);
 
 Alert.displayName = 'Alert';
 

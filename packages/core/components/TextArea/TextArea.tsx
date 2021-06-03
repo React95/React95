@@ -24,14 +24,14 @@ const TextAreaComponent = styled.textarea<TextAreaProps>`
   border-top-width: 1;
   border-top-style: 1;
   border-top-color: grays.3;
-  
+
   border-right-width: 0;
   border-bottom-width: 0;
 
   border-left-width: 1;
   border-left-style: 1;
   border-left-color: grays.3;
-  
+
   box-shadow: input;
 
   ${padding}

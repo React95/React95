@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
 
 import { ModalContext } from '../Modal';
@@ -22,7 +22,7 @@ export type TaskBarProps = {
   list?: React.ReactElement<typeof List>;
 };
 
-const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
+const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(({ list }, ref) => {
   const [showList, toggleShowList] = React.useState(false);
   const [activeStart, toggleActiveStart] = React.useState(false);
   const { windows, activeWindow, setActiveWindow } = React.useContext(
@@ -41,6 +41,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       width="100%"
       padding={2}
       zIndex="taskbar"
+      ref={ref}
     >
       {showList && (
         <Frame
@@ -92,7 +93,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ list }) => {
       <Clock />
     </Frame>
   );
-};
+});
 
 TaskBar.defaultProps = {
   list: undefined,

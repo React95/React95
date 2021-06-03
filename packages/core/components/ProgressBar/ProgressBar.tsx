@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -59,17 +59,15 @@ const Progress = styled.div<Pick<ProgressBarProps, 'width'>>`
   color: ${th('colors.white')};
 `;
 
-const ProgressBar: React.FC<ProgressBarProps> = ({
-  width,
-  percent,
-  ...rest
-}) => (
-  <Wrapper width={width} {...rest}>
-    <WhiteBar width={width}>{`${percent}%`}</WhiteBar>
-    <Container percent={percent}>
-      <Progress width={width}>{`${percent}%`}</Progress>
-    </Container>
-  </Wrapper>
+const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(
+  ({ width, percent, ...rest }, ref) => (
+    <Wrapper width={width} {...rest} ref={ref}>
+      <WhiteBar width={width}>{`${percent}%`}</WhiteBar>
+      <Container percent={percent}>
+        <Progress width={width}>{`${percent}%`}</Progress>
+      </Container>
+    </Wrapper>
+  ),
 );
 
 ProgressBar.defaultProps = {

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
 
@@ -81,24 +81,23 @@ export type ListItemProps = {
   icon?: React.ReactElement;
 } & React.HtmlHTMLAttributes<HTMLLIElement>;
 
-const ListItem: React.FC<ListItemProps> = ({
-  icon,
-  children = [],
-  ...rest
-}) => (
-  <Item
-    {...rest}
-    icon={!!icon}
-    hasList={Boolean(
-      children &&
-        React.Children.map(children, child =>
-          React.isValidElement<IListProps>(child),
-        ).some(child => child),
-    )}
-  >
-    {icon}
-    {children}
-  </Item>
+const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
+  ({ icon, children = [], ...rest }, ref) => (
+    <Item
+      {...rest}
+      icon={!!icon}
+      ref={ref}
+      hasList={Boolean(
+        children &&
+          React.Children.map(children, child =>
+            React.isValidElement<IListProps>(child),
+          ).some(child => child),
+      )}
+    >
+      {icon}
+      {children}
+    </Item>
+  ),
 );
 
 ListItem.displayName = 'List.Item';
