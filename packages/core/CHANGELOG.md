@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/React95/React95/compare/@react95/core@5.0.2...@react95/core@5.1.0) (2021-06-03)
+
+
+### Features
+
+* **video:** add forwardRef ([67be260](https://github.com/React95/React95/commit/67be26091e2e24e74620570f62b68269798c43bf))
+
+
+
+
+
 ## [5.0.2](https://github.com/React95/React95/compare/@react95/core@5.0.1...@react95/core@5.0.2) (2021-06-01)
 
 
