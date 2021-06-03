@@ -1,0 +1,11 @@
+'@react95/core':
+  - packages/core/**/*
+
+'@react95/clippy':
+  - packages/clippy/**/*
+
+'@react95/icons':
+  - packages/icons/**/*
+
+'@react95/design':
+  - packages/design/**/*
