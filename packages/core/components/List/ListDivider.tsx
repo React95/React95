@@ -4,9 +4,9 @@ import { th } from '@xstyled/system';
 const Divider = styled.li`
   height: 1px;
   border-top: 1;
-  border-top-color: grays.3;
+  border-top-color: borderDark;
   border-bottom: 1;
-  border-bottom-color: ${th('colors.white')};
+  border-bottom-color: ${th('colors.borderLightest')};
 
   width: 98%;
   margin-left: 2;

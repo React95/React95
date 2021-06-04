@@ -9,7 +9,7 @@ type ListProps = {
 };
 
 const StyledList = styled.ul<ListProps>`
-  background-color: bg;
+  background-color: material;
   padding: 5 20 6;
   border: none;
 
@@ -17,8 +17,9 @@ const StyledList = styled.ul<ListProps>`
   padding: 2;
   list-style: none;
 
-  box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-    inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 1px ${th('colors.black')};
+  box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
+    inset 0 0 0 1px ${th('colors.borderDark')},
+    1px 1px 0 1px ${th('colors.borderDarkest')};
 
   ${({ width }) => `
     width: ${width}px;

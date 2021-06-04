@@ -24,8 +24,8 @@ const Item = styled.li<ItemProps>`
   }
 
   &:hover {
-    background-color: primary;
-    color: ${th('colors.white')};
+    background-color: headerBackground;
+    color: ${th('colors.materialTextInvert')};
   }
 
   ul {
@@ -33,7 +33,7 @@ const Item = styled.li<ItemProps>`
     position: absolute;
     top: -2px;
     left: 97%;
-    color: ${th('colors.black')};
+    color: ${th('colors.materialText')};
 
     img {
       width: 18px;
@@ -43,7 +43,7 @@ const Item = styled.li<ItemProps>`
   }
 
   svg {
-    fill: ${th('colors.white')};
+    fill: ${th('colors.materialTextInvert')};
   }
 
   ${({ icon }) => !icon && 'padding-left: 26px;'};
@@ -58,7 +58,7 @@ const Item = styled.li<ItemProps>`
         right: 8px;
 
         content: '';
-        background-color: ${th('colors.black')};
+        background-color: ${th('colors.materialText')};
         mask-image: url('${rightcaret}');
         mask-position: center center;
         mask-size: 5px 8px;
@@ -67,7 +67,7 @@ const Item = styled.li<ItemProps>`
 
       &:hover {
         &:after {
-          background-color: ${th('colors.white')};
+          background-color: ${th('colors.materialTextInvert')};
         }
 
         ul {
