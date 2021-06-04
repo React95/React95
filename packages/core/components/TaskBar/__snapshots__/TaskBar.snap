@@ -601,7 +601,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="sc-cHjxUU kduqxh"
+    class="sc-cHjxUU dhrIYR"
     display="flex"
     height="28"
     width="100%"
@@ -654,7 +654,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   margin: 0;
   padding: 2px;
   list-style: none;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: 200px;
 }
 
@@ -699,7 +699,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <button
-      class="sc-cHjxUU sc-jifIRw gCOLHW bIBXZe"
+      class="sc-cHjxUU sc-jifIRw kpUmSe bIBXZe"
       height="auto"
       width="auto"
     >
@@ -721,7 +721,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       width="100%"
     />
     <div
-      class="sc-cHjxUU kEDKYd"
+      class="sc-cHjxUU djyLKl"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
@@ -742,7 +742,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c5:disabled {
@@ -774,7 +774,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: auto;
   height: auto;
   z-index: 1;
@@ -1110,7 +1110,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding: 7px 20px 5px;
   border: none;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c5:disabled {
@@ -1142,7 +1142,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: auto;
   height: auto;
 }
@@ -1159,7 +1159,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: auto;
   height: auto;
   z-index: 1;
