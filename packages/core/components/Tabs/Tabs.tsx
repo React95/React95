@@ -22,6 +22,7 @@ NavContainer.displayName = 'NavContainer';
 interface TabsProps {
   style?: React.CSSProperties;
   defaultActiveTab?: string;
+  children: React.ReactElement<TabProps> | Array<React.ReactElement<TabProps>>;
 
   onChange?(title: string, e: React.MouseEvent): void;
 }

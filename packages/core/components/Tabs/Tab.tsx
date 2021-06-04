@@ -5,12 +5,14 @@ import { th } from '@xstyled/system';
 const NavItem = styled.li<{ active: boolean }>`
   list-style: none;
   padding: 3 6;
-  background-color: bg;
-  box-shadow: inset 0 1px 0 0 ${th('colors.white')},
-    -2px 1px 0 -1px ${th('colors.grays.2')},
-    -3px 1px 0 -1px ${th('colors.white')}, -2px 0 0 -1px ${th('colors.white')},
-    2px 1px 0 -1px ${th('colors.grays.3')}, 2px 0 0 -1px ${th('colors.black')},
-    3px 1px 0 -1px ${th('colors.black')};
+  background-color: material;
+  box-shadow: inset 0 1px 0 0 ${th('colors.borderLightest')},
+    -2px 1px 0 -1px ${th('colors.material')},
+    -3px 1px 0 -1px ${th('colors.borderLightest')},
+    -2px 0 0 -1px ${th('colors.borderLightest')},
+    2px 1px 0 -1px ${th('colors.borderDark')},
+    2px 0 0 -1px ${th('colors.borderDarkest')},
+    3px 1px 0 -1px ${th('colors.borderDarkest')};
   margin-right: 2;
   margin-left: 2;
 
@@ -29,19 +31,21 @@ const NavItem = styled.li<{ active: boolean }>`
         margin-left: 2;
       }
 
-      box-shadow: inset 0 1px 0 0 ${th('colors.white')},
-        -2px 1px 0 -1px ${th('colors.grays.2')},
-        -0.5px 3px 0 0.5px ${th('colors.grays.2')},
-        -2px 2px 0 0 ${th('colors.white')}, -2px 0 0 -1px ${th('colors.white')},
-        1px 2px 0 0 ${th('colors.grays.3')}, 2px 0 0 -1px ${th('colors.black')},
-        2px 2px 0 0 ${th('colors.black')};
+      box-shadow: inset 0 1px 0 0 ${th('colors.borderLightest')},
+        -2px 1px 0 -1px ${th('colors.material')},
+        -0.5px 3px 0 0.5px ${th('colors.material')},
+        -2px 2px 0 0 ${th('colors.borderLightest')},
+        -2px 0 0 -1px ${th('colors.borderLightest')},
+        1px 2px 0 0 ${th('colors.borderDark')},
+        2px 0 0 -1px ${th('colors.borderDarkest')},
+        2px 2px 0 0 ${th('colors.borderDarkest')};
 
       & + li {
         margin-left: 0;
-        box-shadow: inset 0 1px 0 0 ${th('colors.white')},
-          2px 1px 0 -1px ${th('colors.grays.3')},
-          2px 0 0 -1px ${th('colors.black')},
-          3px 1px 0 -1px ${th('colors.black')};
+        box-shadow: inset 0 1px 0 0 ${th('colors.borderLightest')},
+          2px 1px 0 -1px ${th('colors.borderDark')},
+          2px 0 0 -1px ${th('colors.borderDarkest')},
+          3px 1px 0 -1px ${th('colors.borderDarkest')};
       }
     `}
 `;
