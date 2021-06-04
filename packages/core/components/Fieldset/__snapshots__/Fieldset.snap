@@ -10,10 +10,10 @@ exports[`<Fieldset /> Snapshots should match snapshot with legend prop and child
   border-left-color: #e6e6e6;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #848284;
+  border-bottom-color: #868a8e;
   border-right-style: solid;
   border-right-width: 1px;
-  border-right-color: #848284;
+  border-right-color: #868a8e;
   box-shadow: 1px 1px 0 0 #e6e6e6;
 }
 
