@@ -67,8 +67,8 @@ const Label = styled.label<Pick<RadioButtonProps, 'disabled'>>`
   ${({ disabled }) =>
     disabled &&
     css`
-      color: ${th('colors.grays.3')};
-      text-shadow: 0.5px 0.5px ${th('colors.grays.1')};
+      color: ${th('colors.materialTextDisabled')};
+      text-shadow: 0.5px 0.5px ${th('colors.materialTextDisabledShadow')};
     `}
 `;
 
