@@ -54,6 +54,7 @@ const ModalProvider: React.FunctionComponent = ({ children }) => {
   const addWindows = (window: Windows) => {
     const id = nanoid();
     dispatch({ type: 'ADD_WINDOW', id, window });
+
     return id;
   };
   const removeWindow = (id: string) => {

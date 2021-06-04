@@ -24,10 +24,11 @@ const ModalWrapper = styled.div<WrapperProps>`
 
   top: 50px;
 
-  background-color: bg;
+  background-color: material;
 
-  box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-    inset 0 0 0 1px ${th('colors.grays.3')}, 1px 1px 0 1px ${th('colors.black')};
+  box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
+    inset 0 0 0 1px ${th('colors.borderDark')},
+    1px 1px 0 1px ${th('colors.borderDarkest')};
 
   ${({ width, height }) => `
     width: ${width ? `${width}px` : 'auto'};
@@ -45,7 +46,7 @@ const TitleBar = styled.div<BackgroundColorProps>`
   height: 18px;
   margin-bottom: 2;
 
-  color: ${th('colors.white')};
+  color: ${th('colors.materialTextInvert')};
   padding: 2 2 0;
 
   display: flex;
@@ -96,8 +97,8 @@ const Option = styled(Button)`
   }
 
   &:focus {
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.white')},
-      inset -1px -1px 0px 1px ${th('colors.grays.3')};
+    box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
+      inset -1px -1px 0px 1px ${th('colors.borderDark')};
   }
 `;
 
@@ -143,9 +144,9 @@ const MenuWrapper = styled.ul`
 
   border-bottom-style: solid;
   border-width: 1;
-  border-bottom-color: grays.3;
+  border-bottom-color: borderDark;
 
-  box-shadow: 0 1px 0 0 ${th('colors.grays.0')};
+  box-shadow: 0 1px 0 0 ${th('colors.borderLighter')};
 `;
 
 const MenuItem = styled.li<Pick<WrapperProps, 'active'>>`
@@ -158,14 +159,14 @@ const MenuItem = styled.li<Pick<WrapperProps, 'active'>>`
   ul {
     position: absolute;
     left: 0;
-    color: ${th('colors.black')};
+    color: ${th('colors.materialText')};
   }
 
   ${({ active }) =>
     active &&
     css`
       background-color: primary;
-      color: ${th('colors.white')};
+      color: ${th('colors.materialTextInvert')};
     `};
 `;
 
@@ -256,7 +257,9 @@ const ModalRenderer = (
         active={isActive}
         ref={ref}
       >
-        <TitleBar backgroundColor={isActive ? 'primary' : 'grays.3'}>
+        <TitleBar
+          backgroundColor={isActive ? 'headerBackground' : 'borderDark'}
+        >
           {icon}
           <Title className="draggable">{title}</Title>
           <OptionsBox>
