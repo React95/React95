@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import treeMidLines from './imgs/tree-mid.png';
 import treeLastLines from './imgs/tree-last.png';
