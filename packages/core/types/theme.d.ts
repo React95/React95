@@ -28,6 +28,8 @@ export interface R95_Colors {
   materialTextInvert: string;
   tooltip: string;
   progress: string;
+  inputBackground: string;
+  inputBackgroundDisabled: string;
 }
 
 export interface R95_Shadows {
