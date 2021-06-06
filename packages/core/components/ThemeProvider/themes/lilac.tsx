@@ -7,7 +7,8 @@ const colors: IColors = {
   borderDark: '#5f549b',
   borderDarkest: '#1c1449',
   borderLight: '#bcb4e9',
-  borderLightest: '#d3ccf4',
+  borderLighter: '#dad5f2',
+  borderLightest: '#eae7f7',
   canvas: '#ffffff',
   canvasText: '#050608',
   canvasTextDisabled: '#5f549b',
@@ -24,6 +25,8 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ffffff',
   materialTextInvert: '#ffffff',
   progress: '#5e4dba',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#bcb4e9',
   tooltip: '#fefbcc',
 };
 

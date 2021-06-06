@@ -7,7 +7,8 @@ const colors: IColors = {
   borderDark: '#6c684b',
   borderDarkest: '#020000',
   borderLight: '#e2ddc9',
-  borderLightest: '#ffffff',
+  borderLighter: '#efece1',
+  borderLightest: '#f6f4ee',
   canvas: '#ffffff',
   canvasText: '#020000',
   canvasTextDisabled: '#6c684b',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ffffff',
   materialTextInvert: '#ffffff',
   progress: '#8e0101',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#e2ddc9',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const brick: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default brick;

@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#00706f',
   borderDarkest: '#000000',
   borderLight: '#2fcecd',
+  borderLighter: '#2fcecd',
   borderLightest: '#58ffff',
-  canvas: '#98DFEA',
-  canvasText: '#000000',
+  canvas: '#000000',
+  canvasText: '#98DFEA',
   canvasTextDisabled: '#00706f',
   canvasTextDisabledShadow: '#58ffff',
   canvasTextInvert: '#000000',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#58ffff',
   materialTextInvert: '#000000',
   progress: '#FF99C8',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#2fcecd',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const vaporTeal: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default vaporTeal;

@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#6c1f71',
   borderDarkest: '#010001',
   borderLight: '#d982de',
-  borderLightest: '#df9be7',
-  canvas: '#ffffff',
-  canvasText: '#010001',
+  borderLighter: '#eabaec',
+  borderLightest: '#f3d9f4',
+  canvas: '#010001',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#6c1f71',
   canvasTextDisabledShadow: '#df9be7',
   canvasTextInvert: '#010001',
@@ -22,15 +23,17 @@ const colors: IColors = {
   materialText: '#010001',
   materialTextDisabled: '#6c1f71',
   materialTextDisabledShadow: '#df9be7',
-  materialTextInvert: '#010001',
+  materialTextInvert: '#ffffff',
   progress: '#0f0',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#d982de',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const theSixtiesUSA: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default theSixtiesUSA;

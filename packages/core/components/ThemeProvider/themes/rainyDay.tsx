@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#3d5367',
   borderDarkest: '#16233b',
   borderLight: '#91abc2',
-  borderLightest: '#b7cee5',
-  canvas: '#ffffff',
-  canvasText: '#050608',
+  borderLighter: '#c2d0dd',
+  borderLightest: '#dde5ec',
+  canvas: '#050608',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#3d5367',
   canvasTextDisabledShadow: '#b7cee5',
   canvasTextInvert: '#ffffff',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#b7cee5',
   materialTextInvert: '#ffffff',
   progress: '#4b6480',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#91abc2',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const rainyDay: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default rainyDay;

@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#5a0302',
   borderDarkest: '#000000',
   borderLight: '#c81d19',
-  borderLightest: '#fe5757',
-  canvas: '#FFF1D0',
-  canvasText: '#000000',
+  borderLighter: '#ed7673',
+  borderLightest: '#f5b3b1',
+  canvas: '#000000',
+  canvasText: '#FFF1D0',
   canvasTextDisabled: '#5a0302',
   canvasTextDisabledShadow: '#FFF1D0',
   canvasTextInvert: '#ffffff',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#fe5757',
   materialTextInvert: '#ffffff',
   progress: '#474973',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#c81d19',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const tooSexy: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default tooSexy;

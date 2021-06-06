@@ -7,8 +7,9 @@ const colors: IColors = {
   borderDark: '#526d67',
   borderDarkest: '#050608',
   borderLight: '#a2c7c0',
-  borderLightest: '#cee8e3',
-  canvas: '#ffffff',
+  borderLighter: '#cbe0dc',
+  borderLightest: '#e2edeb',
+  canvas: '#000000',
   canvasText: '#050608',
   canvasTextDisabled: '#526d67',
   canvasTextDisabledShadow: '#cee8e3',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#cee8e3',
   materialTextInvert: '#ffffff',
   progress: '#4b8178',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#a2c7c0',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const eggplant: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default eggplant;

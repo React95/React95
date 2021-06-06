@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#7b5f5b',
   borderDarkest: '#050608',
   borderLight: '#c3b1aa',
-  borderLightest: '#e8dad6',
-  canvas: '#dad0c7',
-  canvasText: '#050608',
+  borderLighter: '#ddd4d0',
+  borderLightest: '#ece7e5',
+  canvas: '#050608',
+  canvasText: '#dad0c7',
   canvasTextDisabled: '#7b5f5b',
   canvasTextDisabledShadow: '#e8dad6',
   canvasTextInvert: '#e8dad6',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#e8dad6',
   materialTextInvert: '#ffffff',
   progress: '#483f63',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#c3b1aa',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const plum: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default plum;

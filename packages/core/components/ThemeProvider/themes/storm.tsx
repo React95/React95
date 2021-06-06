@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#848584',
   borderDarkest: '#0a0a0a',
   borderLight: '#dfdfdf',
-  borderLightest: '#fefefe',
-  canvas: '#ffffff',
-  canvasText: '#0a0a0a',
+  borderLighter: '#ededed',
+  borderLightest: '#f5f5f5',
+  canvas: '#0a0a0a',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#848584',
   canvasTextDisabledShadow: '#fefefe',
   canvasTextInvert: '#fefefe',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#fefefe',
   materialTextInvert: '#fefefe',
   progress: '#8c0184',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#dfdfdf',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const storm: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default storm;

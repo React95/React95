@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#7f2120',
   borderDarkest: '#130405',
   borderLight: '#d25051',
-  borderLightest: '#e59697',
-  canvas: '#EFE9F4',
-  canvasText: '#130405',
+  borderLighter: '#e69e9f',
+  borderLightest: '#f1c9ca',
+  canvas: '#130405',
+  canvasText: '#EFE9F4',
   canvasTextDisabled: '#7f2120',
   canvasTextDisabledShadow: '#e59697',
   canvasTextInvert: '#EFE9F4',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#e59697',
   materialTextInvert: '#EFE9F4',
   progress: '#000103',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#d25051',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const vermillion: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default vermillion;

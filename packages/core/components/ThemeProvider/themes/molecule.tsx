@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#993845',
   borderDarkest: '#4b4d4e',
   borderLight: '#dfe0e3',
+  borderLighter: '#dfe0e3',
   borderLightest: '#d79099',
-  canvas: '#f1f5f6',
-  canvasText: '#020102',
+  canvasText: '#f1f5f6',
+  canvas: '#020102',
   canvasTextDisabled: '#993845',
   canvasTextDisabledShadow: '#d79099',
   canvasTextInvert: '#f1f5f6',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#d79099',
   materialTextInvert: '#f1f5f6',
   progress: '#a03d49',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#dfe0e3',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const molecule: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default molecule;

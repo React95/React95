@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#446b7c',
   borderDarkest: '#000814',
   borderLight: '#adc8da',
-  borderLightest: '#c3d9e9',
-  canvas: '#f2ffff',
-  canvasText: '#00010f',
+  borderLighter: '#d1e0ea',
+  borderLightest: '#e5edf3',
+  canvas: '#00010f',
+  canvasText: '#f2ffff',
   canvasTextDisabled: '#446b7c',
   canvasTextDisabledShadow: '#c3d9e9',
   canvasTextInvert: '#f2ffff',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#c3d9e9',
   materialTextInvert: '#f2ffff',
   progress: '#448199',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#adc8da',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const slate: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default slate;

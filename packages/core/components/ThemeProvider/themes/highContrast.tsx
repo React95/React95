@@ -7,7 +7,8 @@ const colors: IColors = {
   borderDark: '#888c8f',
   borderDarkest: '#ffffff',
   borderLight: '#dfe0e3',
-  borderLightest: '#ffffff',
+  borderLighter: '#ededef',
+  borderLightest: '#f5f5f6',
   canvas: '#353535',
   canvasText: '#ffffff',
   canvasTextDisabled: '#888c8f',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ffffff',
   materialTextInvert: '#ffffff',
   progress: '#8e0284',
+  inputBackground: '#353535',
+  inputBackgroundDisabled: '#dfe0e3',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const highContrast: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default highContrast;

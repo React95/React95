@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#828282',
   borderDarkest: 'black',
   borderLight: '#e5e5e5',
-  borderLightest: '#ffffff',
-  canvas: '#ffffff',
-  canvasText: 'black',
+  borderLighter: '#f0f0f0',
+  borderLightest: '#f6f6f6',
+  canvas: 'black',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#828282',
   canvasTextDisabledShadow: '#ffffff',
   canvasTextInvert: '#ffffff',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ffffff',
   materialTextInvert: '#ffffff',
   progress: '#00256e',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#e5e5e5',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const millenium: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default millenium;

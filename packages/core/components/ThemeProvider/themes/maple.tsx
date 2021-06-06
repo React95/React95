@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#ab9042',
   borderDarkest: '#2a1801',
   borderLight: '#f5e2bb',
-  borderLightest: '#ffffff',
-  canvas: '#ffffff',
-  canvasText: '#2a1801',
+  borderLighter: '#f9efd9',
+  borderLightest: '#fbf6ea',
+  canvas: '#2a1801',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#ab9042',
   canvasTextDisabledShadow: '#ffffff',
   canvasTextInvert: '#ffffff',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ffffff',
   materialTextInvert: '#ffffff',
   progress: '#8e0101',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#f5e2bb',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const maple: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default maple;

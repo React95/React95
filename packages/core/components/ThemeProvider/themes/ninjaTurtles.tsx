@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#017401',
   borderDarkest: '#000000',
   borderLight: '#1dbc1b',
-  borderLightest: '#55fd55',
-  canvas: '#ffffff',
-  canvasText: '#000000',
+  borderLighter: '#72ea71',
+  borderLightest: '#b1f3b0',
+  canvas: '#000000',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#017401',
   canvasTextDisabledShadow: '#55fd55',
   canvasTextInvert: '#000000',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#55fd55',
   materialTextInvert: '#000000',
   progress: '#FF1D15',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#e5e5e5',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const ninjaTurtles: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default ninjaTurtles;

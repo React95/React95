@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#05427f',
   borderDarkest: '#000000',
   borderLight: '#2b8fff',
-  borderLightest: '#7ebfff',
-  canvas: '#ffffff',
-  canvasText: '#000000',
+  borderLighter: '#8ac1ff',
+  borderLightest: '#bedcff',
+  canvas: '#000000',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#05427f',
   canvasTextDisabledShadow: '#7ebfff',
   canvasTextInvert: '#000000',
@@ -22,15 +23,17 @@ const colors: IColors = {
   materialText: '#000000',
   materialTextDisabled: '#05427f',
   materialTextDisabledShadow: '#7ebfff',
-  materialTextInvert: '#000000',
+  materialTextInvert: '#ffffff',
   progress: '#F46036',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#2b8fff',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const azureOrange: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default azureOrange;

@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#477b5e',
   borderDarkest: '#001004',
   borderLight: '#b0d2bb',
-  borderLightest: '#cdead2',
-  canvas: '#fcfff6',
-  canvasText: '#050608',
+  borderLighter: '#d3e6d9',
+  borderLightest: '#e6f1ea',
+  canvas: '#050608',
+  canvasText: '#fcfff6',
   canvasTextDisabled: '#3d5367',
   canvasTextDisabledShadow: '#cdead2',
   canvasTextInvert: '#fcfff6',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#cdead2',
   materialTextInvert: '#fcfff6',
   progress: '#3d9961',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#b0d2bb',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const spruce: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default spruce;

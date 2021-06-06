@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#846d06',
   borderDarkest: '#0C1618',
   borderLight: '#e7c221',
-  borderLightest: '#f8df6e',
-  canvas: '#ffffff',
-  canvasText: '#0C1618',
+  borderLighter: '#f1dd84',
+  borderLightest: '#f7ecbb',
+  canvas: '#0C1618',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#846d06',
   canvasTextDisabledShadow: '#f8df6e',
   canvasTextInvert: '#ffffff',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#f8df6e',
   materialTextInvert: '#ffffff',
   progress: '#0C1618',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#e7c221',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const bee: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default bee;

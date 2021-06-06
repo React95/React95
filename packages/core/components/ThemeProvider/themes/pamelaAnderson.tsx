@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#7e0541',
   borderDarkest: '#000000',
   borderLight: '#ff308f',
-  borderLightest: '#ff7ebf',
-  canvas: '#F5CCE8',
-  canvasText: '#000000',
+  borderLighter: '#ff8dc1',
+  borderLightest: '#fec0dc',
+  canvas: '#000000',
+  canvasText: '#F5CCE8',
   canvasTextDisabled: '#7e0541',
   canvasTextDisabledShadow: '#ff7ebf',
   canvasTextInvert: '#F1E4E8',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ff7ebf',
   materialTextInvert: '#F1E4E8',
   progress: '#004FFF',
+  inputBackground: '#fec0dc',
+  inputBackgroundDisabled: '#ff308f',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const pamelaAnderson: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default pamelaAnderson;

@@ -7,7 +7,8 @@ const colors: IColors = {
   borderDark: '#d1579e',
   borderDarkest: '#44132f',
   borderLight: '#f1acd5',
-  borderLightest: '#EFF1F3',
+  borderLighter: '#f7d1e7',
+  borderLightest: '#fae5f1',
   canvas: '#EFF1F3',
   canvasText: '#000000',
   canvasTextDisabled: '#d1579e',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#EFF1F3',
   materialTextInvert: '#EFF1F3',
   progress: '#256EFF',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#f1acd5',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const candy: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default candy;

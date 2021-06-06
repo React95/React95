@@ -7,9 +7,10 @@ const colors: IColors = {
   borderDark: '#7F3163',
   borderDarkest: '#190000',
   borderLight: '#E597C9',
-  borderLightest: '#FFCAFC',
-  canvas: '#dab1c7',
-  canvasText: '#000000',
+  borderLighter: '#f0c5e1',
+  borderLightest: '#f6dfee',
+  canvas: '#000000',
+  canvasText: '#f6dfee',
   canvasTextDisabled: '#000000',
   canvasTextDisabledShadow: '#000000',
   canvasTextInvert: '#ecbfe3',
@@ -24,13 +25,15 @@ const colors: IColors = {
   materialTextDisabledShadow: '#ecbfe3',
   materialTextInvert: '#ecbfe3',
   progress: '#713259',
+  inputBackground: '#ffffff',
+  inputBackgroundDisabled: '#E597C9',
   tooltip: '#fefbcc',
 };
 
-const theme: DefaultTheme = {
+const lilacRoseDark: DefaultTheme = {
   ...BaseTheme,
   colors,
   shadows: generateShadows(colors),
 };
 
-export default theme;
+export default lilacRoseDark;
