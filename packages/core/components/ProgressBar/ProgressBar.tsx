@@ -27,8 +27,8 @@ const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`
   border-top: 1;
   border-top-color: borderDark;
 
-  background: ${th('colors.borderLightest')};
-  color: ${th('colors.materialText')};
+  background-color: inputBackground;
+  color: materialText;
 
   ${css`
     box-shadow: inset -1px -1px 0 0 ${th('colors.material')},

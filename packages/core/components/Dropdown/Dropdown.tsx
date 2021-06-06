@@ -47,7 +47,8 @@ const Select = styled.select`
 
   padding: 3;
 
-  background-color: canvas;
+  color: materialText;
+  background-color: inputBackground;
 
   border-left: 1;
   border-left-color: borderDark;

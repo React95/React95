@@ -19,12 +19,14 @@ const Item = styled.li<ItemProps>`
   margin: 0;
   padding: 2 6;
 
+  color: materialText;
+
   img {
     margin-right: 10;
   }
 
   &:hover {
-    background-color: headerBackground;
+    background: ${th('colors.headerBackground')};
     color: ${th('colors.materialTextInvert')};
   }
 
@@ -33,7 +35,7 @@ const Item = styled.li<ItemProps>`
     position: absolute;
     top: -2px;
     left: 97%;
-    color: ${th('colors.materialText')};
+    color: materialText;
 
     img {
       width: 18px;

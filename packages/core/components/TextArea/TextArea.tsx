@@ -21,6 +21,9 @@ const TextAreaComponent = styled.textarea<TextAreaProps>`
 
   padding: 3 3 5 3;
 
+  color: materialText;
+  background-color: inputBackground;
+
   border-top-width: 1;
   border-top-style: 1;
   border-top-color: borderDark;

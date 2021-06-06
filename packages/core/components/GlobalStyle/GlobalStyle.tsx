@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 import woff2 from './font/MS-Sans-Serif.woff2';
 import woff from './font/MS-Sans-Serif.woff';
@@ -75,6 +76,15 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 12px;
+    color: materialText;
+  }
+
+  a {
+    color: anchor;
+  }
+
+  a:visited {
+    color: anchorVisited;
   }
 
   * {
@@ -96,8 +106,10 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-button {
     width: 15px;
     height: 15px;
-    background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
+    background-color: borderLight;
+    box-shadow: inset 1px 1px 0px 1px ${th(
+      'colors.borderLightest',
+    )}, inset 0 0 0 1px ${th('colors.borderDark')};
     border-right: 2px solid black;
     border-bottom: 2px solid black;
 
@@ -140,10 +152,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #c3c7cb;
-    box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    background-color: borderLight;
+    box-shadow: inset 1px 1px 0px 1px ${th(
+      'colors.borderLightest',
+    )}, inset 0 0 0 1px ${th('colors.borderDark')};
+    border-right: 2px solid;
+    border-right-color: borderDarkest;
+    border-bottom: 2px solid;
+    border-bottom-color: borderDarkest;
   }
 
   html, .auto, *       { cursor: url('${auto}'), auto; }

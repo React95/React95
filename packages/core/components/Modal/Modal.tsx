@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as CSS from 'csstype';
 import styled, { css } from '@xstyled/styled-components';
-import { th, backgroundColor, BackgroundColorProps } from '@xstyled/system';
+import { th, BackgroundProps } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
 import Button from '../Button';
@@ -42,7 +42,7 @@ const ModalWrapper = styled.div<WrapperProps>`
       : ''}
 `;
 
-const TitleBar = styled.div<BackgroundColorProps>`
+const TitleBar = styled.div<BackgroundProps>`
   height: 18px;
   margin-bottom: 2;
 
@@ -50,7 +50,7 @@ const TitleBar = styled.div<BackgroundColorProps>`
   padding: 2 2 0;
 
   display: flex;
-  ${backgroundColor}
+  background: ${({ background }) => th(`colors.${background}`)};
 
   img {
     width: 15px;
@@ -62,6 +62,8 @@ const TitleBar = styled.div<BackgroundColorProps>`
 const Title = styled.div`
   flex-grow: 1;
   font-weight: bold;
+
+  color: headerText;
 `;
 
 const OptionsBox = styled.ul`
@@ -258,7 +260,9 @@ const ModalRenderer = (
         ref={ref}
       >
         <TitleBar
-          backgroundColor={isActive ? 'headerBackground' : 'borderDark'}
+          background={
+            isActive ? 'headerBackground' : 'headerNotActiveBackground'
+          }
         >
           {icon}
           <Title className="draggable">{title}</Title>

@@ -57,8 +57,8 @@ const FolderStatus = styled.div`
   width: 10px;
   height: 10px;
   border: 1;
-  border-color: ${th('colors.borderDarkest')};
-  background-color: ${th('colors.canvas')};
+  border-color: borderDarkest;
+  background-color: inputBackground;
   font-size: 11px;
 `;
 

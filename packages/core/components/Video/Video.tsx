@@ -27,6 +27,10 @@ const ControlBtn = styled(Button)`
   justify-content: center;
   align-items: center;
 
+  svg {
+    fill: ${th('colors.materialText')};
+  }
+
   &&,
   &:active,
   &:focus {
@@ -58,7 +62,7 @@ const TitleBar = styled.div`
 
   display: flex;
   align-items: center;
-  background-color: headerBackground;
+  background: ${th('colors.headerBackground')};
 `;
 
 const Controls = styled.div`
@@ -73,10 +77,10 @@ const CountDownContainer = styled(Frame)`
   margin-bottom: 4;
 
   box-shadow: in;
-  background-color: ${th('colors.canvasText')};
+  background-color: canvas;
   height: 50px;
 
-  color: materialTextInvert;
+  color: canvasText;
 `;
 
 const VideoFont = styled.span`

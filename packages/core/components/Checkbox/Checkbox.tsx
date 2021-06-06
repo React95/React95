@@ -24,7 +24,8 @@ const Icon = styled.span`
     inset 1px 1px 0 0 ${th('colors.borderDarkest')},
     0.5px 0.5px 0 0.5px ${th('colors.borderLightest')};
 
-  background-color: canvas;
+  background-color: inputBackground;
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
@@ -65,7 +66,7 @@ const Field = styled.input.attrs({
   }
 
   &:disabled + ${Icon} {
-    background-color: borderLight;
+    background-color: inputBackgroundDisabled;
   }
 `;
 
