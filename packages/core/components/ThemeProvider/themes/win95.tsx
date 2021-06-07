@@ -10,7 +10,7 @@ const colors: IColors = {
   borderLighter: '#e6e6e6',
   borderLightest: '#ffffff',
   canvas: '#000000',
-  canvasText: '#000000',
+  canvasText: '#ffffff',
   canvasTextDisabled: '#848584',
   canvasTextDisabledShadow: '#fefefe',
   canvasTextInvert: '#fefefe',

@@ -5,6 +5,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -174,6 +175,10 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   align-items: center;
 }
 
+.c11 svg {
+  fill: #000000;
+}
+
 .c11.c11,
 .c11:active,
 .c11:focus {
@@ -206,7 +211,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c9 {

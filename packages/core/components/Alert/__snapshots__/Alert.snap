@@ -5,6 +5,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -53,7 +54,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -68,6 +69,7 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -255,6 +257,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -303,7 +306,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -318,6 +321,7 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -505,6 +509,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -553,7 +558,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -568,6 +573,7 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -755,6 +761,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -803,7 +810,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -818,6 +825,7 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {

@@ -618,6 +618,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   align-items: center;
   margin: 0;
   padding: 2px 6px;
+  color: #000000;
 }
 
 .c2 img {
@@ -625,7 +626,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 }
 
 .c2:hover {
-  background-color: #000e7a;
+  background: #000e7a;
   color: #ffffff;
 }
 
@@ -635,6 +636,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
   top: -2px;
   left: 97%;
   color: #000000;
+  z-index: 2;
 }
 
 .c2 ul img {
@@ -741,6 +743,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -789,7 +792,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -804,6 +807,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -1109,6 +1113,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
@@ -1174,7 +1179,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #868a8e;
+  background: #7f787f;
 }
 
 .c1 img {
@@ -1192,7 +1197,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c9 img {
@@ -1207,6 +1212,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {

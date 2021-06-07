@@ -13,6 +13,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   align-items: center;
   margin: 0;
   padding: 2px 6px;
+  color: #000000;
 }
 
 .c1 img {
@@ -20,7 +21,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c1:hover {
-  background-color: #000e7a;
+  background: #000e7a;
   color: #ffffff;
 }
 
@@ -30,6 +31,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   top: -2px;
   left: 97%;
   color: #000000;
+  z-index: 2;
 }
 
 .c1 ul img {
@@ -79,6 +81,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   align-items: center;
   margin: 0;
   padding: 2px 6px;
+  color: #000000;
 }
 
 .c2 img {
@@ -86,7 +89,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c2:hover {
-  background-color: #000e7a;
+  background: #000e7a;
   color: #ffffff;
 }
 
@@ -96,6 +99,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
   top: -2px;
   left: 97%;
   color: #000000;
+  z-index: 2;
 }
 
 .c2 ul img {

@@ -16,7 +16,7 @@ exports[`<ProgressBar /> Snapshots should match snapshot 1`] = `
   border-left-color: #868a8e;
   border-top: 1px solid;
   border-top-color: #868a8e;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #000000;
   box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
 }
