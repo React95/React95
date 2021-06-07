@@ -2,30 +2,7 @@ import * as React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 import styled from '@xstyled/styled-components';
 
-import {
-  Alert,
-  Button,
-  Checkbox,
-  Dropdown,
-  Fieldset,
-  Frame,
-  GlobalStyle,
-  Input,
-  List,
-  Modal,
-  ModalContext,
-  ProgressBar,
-  RadioButton,
-  Range,
-  Tab,
-  Tabs,
-  TaskBar,
-  TextArea,
-  Tree,
-  Tooltip,
-  ThemeProvider,
-  Video,
-} from '../components';
+import { Alert } from '../components';
 
 import { Simple as SimpleButton } from './button.stories';
 import { Simple as SimpleDropdown } from './dropdown.stories';
@@ -36,6 +13,7 @@ import { Simple as SimpleProgressBar } from './progressbar.stories';
 import { Simple as SimpleRadioButton } from './radiobutton.stories';
 import { Simple as SimpleRange } from './range.stories';
 import { Simple as SimpleTabs } from './tabs.stories';
+import { Simple as SimpleTooltip } from './tooltip.stories';
 import { Simple as SimpleTree } from './tree.stories';
 import { All as AllCheckbox } from './checkbox.stories';
 import { WithIcons, Simple as SimpleList } from './list.stories';
@@ -124,6 +102,10 @@ export const All = () => (
 
     <br />
     <SimpleTree />
+
+    <br />
+
+    <SimpleTooltip />
 
     <br />
     <FromURL />
