@@ -36,6 +36,7 @@ const Item = styled.li<ItemProps>`
     top: -2px;
     left: 97%;
     color: materialText;
+    z-index: taskbar;
 
     img {
       width: 18px;
