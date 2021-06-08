@@ -7,7 +7,11 @@ import Frame from './decorators/Frame';
 import { withThemes } from './src/theme-changer/withThemes';
 
 export const globals = {
-  selectedTheme: 'win95',
+  selectedTheme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: 'win95',
+  },
 };
 
 addParameters({
