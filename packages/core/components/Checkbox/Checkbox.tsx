@@ -16,15 +16,16 @@ const Icon = styled.span`
   left: 0;
 
   border-left: 1;
-  border-left-color: grays.3;
+  border-left-color: borderDark;
   border-top: 1;
-  border-top-color: grays.3;
+  border-top-color: borderDark;
 
-  box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
-    inset 1px 1px 0 0 ${th('colors.black')},
-    0.5px 0.5px 0 0.5px ${th('colors.white')};
+  box-shadow: inset -1px -1px 0 0 ${th('colors.material')},
+    inset 1px 1px 0 0 ${th('colors.borderDarkest')},
+    0.5px 0.5px 0 0.5px ${th('colors.borderLightest')};
 
-  background-color: white;
+  background-color: inputBackground;
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 7px 7px;
@@ -65,7 +66,7 @@ const Field = styled.input.attrs({
   }
 
   &:disabled + ${Icon} {
-    background-color: grays.1;
+    background-color: inputBackgroundDisabled;
   }
 `;
 
@@ -89,8 +90,8 @@ const Label = styled.label<LabelProps>`
   ${({ disabled }) =>
     disabled &&
     css`
-      color: grays.3;
-      text-shadow: 0.5px 0.5px ${th('colors.grays.1')};
+      color: borderDark;
+      text-shadow: 0.5px 0.5px ${th('colors.borderLight')};
     `}
 `;
 

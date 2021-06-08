@@ -22,18 +22,18 @@ const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`
   line-height: 20px;
 
   border-left: 1;
-  border-left-color: grays.3;
+  border-left-color: borderDark;
 
   border-top: 1;
-  border-top-color: grays.3;
+  border-top-color: borderDark;
 
-  background: ${th('colors.white')};
-  color: ${th('colors.black')};
+  background-color: inputBackground;
+  color: materialText;
 
   ${css`
-    box-shadow: inset -1px -1px 0 0 ${th('colors.grays.2')},
-      inset 1px 1px 0 0 ${th('colors.black')},
-      0.5px 0.5px 0 0.5px ${th('colors.white')};
+    box-shadow: inset -1px -1px 0 0 ${th('colors.material')},
+      inset 1px 1px 0 0 ${th('colors.borderDarkest')},
+      0.5px 0.5px 0 0.5px ${th('colors.borderLightest')};
   `}
 `;
 
@@ -55,8 +55,8 @@ const Progress = styled.div<Pick<ProgressBarProps, 'width'>>`
   margin-left: 2;
   margin-top: 2;
 
-  background-color: primary;
-  color: ${th('colors.white')};
+  background-color: progress;
+  color: ${th('colors.materialTextInvert')};
 `;
 
 const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(

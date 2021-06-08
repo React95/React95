@@ -5,45 +5,45 @@ const trackStyle = css`
   width: 100%;
   height: 4px;
 
-  background: ${th('colors.black')};
+  background: ${th('colors.borderDarkest')};
 
   cursor: pointer;
 
   border-top: 1;
-  border-top-color: grays.1;
+  border-top-color: borderLight;
   border-right: 2;
-  border-right-color: ${th('colors.white')};
+  border-right-color: ${th('colors.borderLightest')};
   border-bottom: 1;
-  border-bottom-color: grays.0;
+  border-bottom-color: borderLighter;
   border-left: 2;
-  border-left-color: ${th('colors.white')};
+  border-left-color: ${th('colors.borderLightest')};
 
-  box-shadow: 0px 1px 0px 0px ${th('colors.white')};
+  box-shadow: 0px 1px 0px 0px ${th('colors.borderLightest')};
 `;
 
 const thumbStyle = css`
   width: 12px;
   height: 20px;
 
-  background-color: bg;
+  background-color: material;
 
   cursor: pointer;
 
   margin-top: -${th('space.8')}px;
 
   border-top: 1;
-  border-top-color: ${th('colors.white')};
+  border-top-color: ${th('colors.borderLightest')};
   border-right: 1;
-  border-right-color: ${th('colors.black')};
+  border-right-color: ${th('colors.borderDarkest')};
   border-bottom: 1;
-  border-bottom-color: ${th('colors.black')};
+  border-bottom-color: ${th('colors.borderDarkest')};
   border-left: 1;
-  border-left-color: ${th('colors.white')};
+  border-left-color: ${th('colors.borderLightest')};
 
-  box-shadow: inset 0px -1px 0px ${th('colors.grays.3')},
-    inset -1px 0px 0px ${th('colors.grays.3')},
-    inset 0px 1px 0px ${th('colors.grays.0')},
-    inset 1px 0px 0px ${th('colors.grays.0')};
+  box-shadow: inset 0px -1px 0px ${th('colors.borderDark')},
+    inset -1px 0px 0px ${th('colors.borderDark')},
+    inset 0px 1px 0px ${th('colors.borderLighter')},
+    inset 1px 0px 0px ${th('colors.borderLighter')};
 
   -webkit-appearance: none;
 `;
@@ -69,7 +69,7 @@ const Range = styled.input.attrs({
   }
 
   &:focus::-webkit-slider-runnable-track {
-    background: ${th('colors.black')};
+    background: ${th('colors.borderDarkest')};
   }
 
   &::-moz-range-track {

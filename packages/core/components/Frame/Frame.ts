@@ -41,7 +41,7 @@ const Frame = styled.div<FrameProps>`
 Frame.defaultProps = {
   width: 'auto',
   height: 'auto',
-  bg: 'bg',
+  bg: 'material',
   boxShadow: 'out',
 };
 

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import treeMidLines from './imgs/tree-mid.png';
 import treeLastLines from './imgs/tree-last.png';
@@ -35,7 +34,8 @@ const NodeItem = styled.div<{ isOpen: boolean }>`
   background-image: url(${treeMidLines});
 
   &:last-child {
-    background-image: url(${({ isOpen }) => isOpen ? treeMidLines : treeLastLines});
+    background-image: url(${({ isOpen }) =>
+      isOpen ? treeMidLines : treeLastLines});
   }
 `;
 
@@ -56,8 +56,8 @@ const FolderStatus = styled.div`
   width: 10px;
   height: 10px;
   border: 1;
-  border-color: ${th('colors.black')};
-  background-color: ${th('colors.white')};
+  border-color: borderDarkest;
+  background-color: inputBackground;
   font-size: 11px;
 `;
 
@@ -110,9 +110,7 @@ const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
     );
   }
 
-  return (
-    <Folder variant="32x32_4" data-testid="react95-default-icon-folder" />
-  );
+  return <Folder variant="32x32_4" data-testid="react95-default-icon-folder" />;
 };
 
 export type NodeProps = {

@@ -6,6 +6,8 @@ exports[`<TextArea /> Snapshot should match snapshot 1`] = `
   border: none;
   cursor: text;
   padding: 3px 3px 5px 3px;
+  color: #000000;
+  background-color: #ffffff;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #868a8e;

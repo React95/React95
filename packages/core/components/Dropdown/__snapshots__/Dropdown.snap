@@ -42,6 +42,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
   width: 100%;
   height: 20px;
   padding: 3px;
+  color: #000000;
   background-color: #ffffff;
   border-left: 1px solid;
   border-left-color: #868a8e;

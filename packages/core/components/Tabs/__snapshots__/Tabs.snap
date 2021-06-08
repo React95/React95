@@ -5,13 +5,13 @@ exports[`<Tabs /> Snapshot should match snapshot 1`] = `
   list-style: none;
   padding: 3px 6px;
   background-color: #c3c7cb;
-  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -3px 1px 0 -1px #ffffff,-2px 0 0 -1px #ffffff, 2px 1px 0 -1px #868a8e,2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
+  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -3px 1px 0 -1px #ffffff, -2px 0 0 -1px #ffffff, 2px 1px 0 -1px #868a8e, 2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
   margin-right: 2px;
   margin-left: 2px;
   margin-top: -2px;
   margin-left: -2px;
   margin-bottom: 1px;
-  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -0.5px 3px 0 0.5px #c3c7cb, -2px 2px 0 0 #ffffff,-2px 0 0 -1px #ffffff, 1px 2px 0 0 #868a8e,2px 0 0 -1px #000000, 2px 2px 0 0 #000000;
+  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -0.5px 3px 0 0.5px #c3c7cb, -2px 2px 0 0 #ffffff, -2px 0 0 -1px #ffffff, 1px 2px 0 0 #868a8e, 2px 0 0 -1px #000000, 2px 2px 0 0 #000000;
 }
 
 .c2:first-child {

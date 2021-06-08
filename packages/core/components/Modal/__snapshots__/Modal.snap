@@ -5,8 +5,9 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c6:disabled {
@@ -38,7 +39,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: auto;
   height: auto;
   z-index: 1;
@@ -53,7 +54,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -68,6 +69,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -267,8 +269,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c6:disabled {
@@ -300,7 +303,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: auto;
   height: auto;
   z-index: 1;
@@ -315,7 +318,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -330,6 +333,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -481,8 +485,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c6:disabled {
@@ -514,7 +519,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: auto;
   height: auto;
   z-index: 1;
@@ -529,7 +534,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -544,6 +549,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -695,8 +701,9 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c5:disabled {
@@ -728,7 +735,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: 300px;
   height: 200px;
 }
@@ -742,7 +749,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #868a8e;
+  background: #7f787f;
 }
 
 .c1 img {
@@ -757,6 +764,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {
@@ -870,8 +878,9 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
+  color: #000000;
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 0px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
 .c5:disabled {
@@ -903,7 +912,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   padding: 2px 2px 8px;
   top: 50px;
   background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e,1px 1px 0 1px #000000;
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
   width: 300px;
   height: 200px;
   z-index: 1;
@@ -918,7 +927,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000e7a;
+  background: #000e7a;
 }
 
 .c1 img {
@@ -933,6 +942,7 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
+  color: #fefefe;
 }
 
 .c3 {

@@ -27,6 +27,10 @@ const ControlBtn = styled(Button)`
   justify-content: center;
   align-items: center;
 
+  svg {
+    fill: ${th('colors.materialText')};
+  }
+
   &&,
   &:active,
   &:focus {
@@ -39,9 +43,11 @@ const ControlBtn = styled(Button)`
       css`
         padding: 4;
         svg {
-          fill: ${th('colors.grays.3')};
-          border-bottom: 1px solid white;
-          border-right: 1px solid white;
+          fill: ${th('colors.borderDark')};
+          border-bottom: 1px solid;
+          border-bottom-color: borderLightest;
+          border-right: 1px solid;
+          border-right-color: borderLightest;
         }
       `}
   }
@@ -51,12 +57,12 @@ const TitleBar = styled.div`
   height: 18px;
   margin-bottom: 2;
 
-  color: ${th('colors.white')};
+  color: ${th('colors.materialTextInvert')};
   padding: 0 2;
 
   display: flex;
   align-items: center;
-  background-color: primary;
+  background: ${th('colors.headerBackground')};
 `;
 
 const Controls = styled.div`
@@ -71,10 +77,10 @@ const CountDownContainer = styled(Frame)`
   margin-bottom: 4;
 
   box-shadow: in;
-  background-color: ${th('colors.black')};
+  background-color: canvas;
   height: 50px;
 
-  color: white;
+  color: canvasText;
 `;
 
 const VideoFont = styled.span`

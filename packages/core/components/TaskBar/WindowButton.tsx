@@ -35,7 +35,7 @@ const Button = styled(Frame)<ButtonFrameProps>`
   ${({ active, small }) =>
     active && small
       ? css`
-          outline: ${th('space.1')}px dotted ${th('colors.black')};
+          outline: ${th('space.1')}px dotted ${th('colors.borderDarkest')};
           outline-offset: -${th('space.4')}px;
           padding-top: 4;
           padding-right: 2;
@@ -67,7 +67,7 @@ const WindowButton: React.FC<WindowButtonProps> = ({
     {...(active
       ? {
           boxShadow: 'in',
-          bg: small ? undefined : 'grays.0',
+          bg: small ? undefined : 'borderLighter',
         }
       : {
           boxShadow: 'out',

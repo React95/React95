@@ -1,14 +1,21 @@
-import { addDecorator, addParameters } from '@storybook/react';
+import { addParameters } from '@storybook/react';
 
-import theme from './theme';
 import Frame from './decorators/Frame';
+import { withThemes } from './src/theme-changer/withThemes';
+
+export const globals = {
+  selectedTheme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: 'win95',
+  },
+};
 
 addParameters({
   options: {
     name: 'React95',
     url: 'https://github.com/React95/React95',
-    theme,
   },
 });
 
-addDecorator(Frame);
+export const decorators = [Frame, withThemes];

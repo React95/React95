@@ -1,24 +1,25 @@
 import React, { forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
+import { th } from '@xstyled/system';
 
 const Field = styled.fieldset`
   border-top-style: groove;
   border-top-width: 2;
-  border-top-color: #e6e6e6;
+  border-top-color: borderLighter;
 
   border-left-style: groove;
   border-left-width: 2;
-  border-left-color: #e6e6e6;
+  border-left-color: borderLighter;
 
   border-bottom-style: solid;
   border-bottom-width: 1;
-  border-bottom-color: #848284;
+  border-bottom-color: borderDark;
 
   border-right-style: solid;
   border-right-width: 1;
-  border-right-color: #848284;
+  border-right-color: borderDark;
 
-  box-shadow: 1px 1px 0 0 #e6e6e6;
+  box-shadow: 1px 1px 0 0 ${th('colors.borderLighter')};
 `;
 
 const Legend = styled.legend`
