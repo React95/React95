@@ -1,4 +1,4 @@
-import { addDecorator, addParameters } from '@storybook/react';
+import { addParameters } from '@storybook/react';
 import { addons } from '@storybook/addons';
 
 import theme from './theme';
@@ -26,5 +26,4 @@ addons.setConfig({
   theme,
 });
 
-addDecorator(Frame);
-addDecorator(withThemes);
+export const decorators = [Frame, withThemes];
