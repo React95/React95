@@ -1,9 +1,6 @@
 import { addParameters } from '@storybook/react';
-import { addons } from '@storybook/addons';
 
-import theme from './theme';
 import Frame from './decorators/Frame';
-
 import { withThemes } from './src/theme-changer/withThemes';
 
 export const globals = {
@@ -19,11 +16,6 @@ addParameters({
     name: 'React95',
     url: 'https://github.com/React95/React95',
   },
-});
-
-addons.setConfig({
-  panelPosition: 'bottom',
-  theme,
 });
 
 export const decorators = [Frame, withThemes];
