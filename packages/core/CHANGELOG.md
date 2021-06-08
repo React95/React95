@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/React95/React95/compare/@react95/core@5.1.0...@react95/core@5.2.0) (2021-06-08)
+
+
+### Features
+
+* **docs:** add theme changer into storybook ([e6e79ea](https://github.com/React95/React95/commit/e6e79ea670c76971c1981ee930f2c29a89a0e2c2))
+* **list:** add zIndex ([599b3c5](https://github.com/React95/React95/commit/599b3c51426a6168a7acef837aeaa1840a5b2d72))
+* **theme:** add better typings for our theme object ([81dd134](https://github.com/React95/React95/commit/81dd134b7c5d05ce28044bb07afaa8437d3c44c2))
+* **theme:** add input colors into theme ([9e98b21](https://github.com/React95/React95/commit/9e98b214be234f81bf1148a2ec801a40acc98097))
+* **ThemeProvider:** add a lot of new themes ([097d9a2](https://github.com/React95/React95/commit/097d9a2222f2ae3df95d010b0d6ac4e8895e6a78))
+
+
+
+
+
 # [5.1.0](https://github.com/React95/React95/compare/@react95/core@5.0.2...@react95/core@5.1.0) (2021-06-03)
 
 
