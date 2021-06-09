@@ -1,0 +1,29 @@
+{
+  "name": "@react95/cra-template",
+  "version": "1.0.0",
+  "description": "The official React95 template for Create React App.",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "cra-template",
+    "@react95"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://react95.github.io/React95/",
+  "license": "MIT",
+  "main": "lib/cra-template.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/React95/React95/issues"
+  }
+}
