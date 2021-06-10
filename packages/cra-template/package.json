@@ -12,16 +12,18 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "lib/cra-template.js",
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/React95/React95.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/cra-template"
   },
   "bugs": {
     "url": "https://github.com/React95/React95/issues"
