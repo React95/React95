@@ -3,11 +3,12 @@
   "version": "5.2.0",
   "description": "Windows 95 styleguide",
   "main": "index.js",
-  "repository": "git@github.com:React95/React95.git",
-  "contributors": [
-    "Allysson dos Santos <aallysson0@gmail.com>",
-    "Gabriel Daltoso <ggdaltoso@gmail.com>"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/core"
+  },
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@react95/icons": "^2.0.3",

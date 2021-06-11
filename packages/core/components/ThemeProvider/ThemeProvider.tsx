@@ -5,14 +5,14 @@ import { ModalProvider } from '../Modal';
 import themes from './themes';
 
 export type ThemeProviderProps = {
-  theme: keyof typeof themes;
+  theme?: keyof typeof themes;
 };
 
 const ThemeProvider: React.FunctionComponent<ThemeProviderProps> = ({
   children,
   theme,
 }) => (
-  <SCThemeProvider theme={themes[theme] || themes.win95}>
+  <SCThemeProvider theme={themes[theme || 'win95']}>
     <ModalProvider>{children}</ModalProvider>
   </SCThemeProvider>
 );
