@@ -1,0 +1,32 @@
+{
+  "name": "@react95/cra-template-typescript",
+  "version": "0.0.0",
+  "description": "The official React95+TS template for Create React App.",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "cra-template",
+    "typescript",
+    "@react95"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://react95.github.io/React95/",
+  "license": "MIT",
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/cra-template-typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/React95/React95/issues"
+  }
+}
