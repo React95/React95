@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.1](https://github.com/React95/React95/compare/@react95/core@5.2.0...@react95/core@5.2.1) (2021-06-11)
+
+
+### Bug Fixes
+
+* **TaskBar:** add alt attribute in logo ([a67cf0a](https://github.com/React95/React95/commit/a67cf0ad5922f5617d93455948ea3a604c01aed6))
+
+
+
+
+
 # [5.2.0](https://github.com/React95/React95/compare/@react95/core@5.1.0...@react95/core@5.2.0) (2021-06-08)
 
 
