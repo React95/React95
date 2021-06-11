@@ -425,6 +425,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
         class="c3"
       >
         <img
+          alt="Windows95 Logo"
           height="32"
           src="test-file-stub"
           width="32"
@@ -569,6 +570,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
         class="c3"
       >
         <img
+          alt="Windows95 Logo"
           height="32"
           src="test-file-stub"
           width="32"
@@ -709,6 +711,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
         class="sc-hkwnrn jKLAct"
       >
         <img
+          alt="Windows95 Logo"
           height="32"
           src="test-file-stub"
           width="32"
@@ -1058,6 +1061,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         class="c11"
       >
         <img
+          alt="Windows95 Logo"
           height="32"
           src="test-file-stub"
           width="32"
@@ -1507,6 +1511,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         class="c13"
       >
         <img
+          alt="Windows95 Logo"
           height="32"
           src="test-file-stub"
           width="32"
