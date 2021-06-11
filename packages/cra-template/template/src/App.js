@@ -24,7 +24,7 @@ function App() {
 
   return (
     <Centered>
-      <img src={logo} style={{ width: 200 }} />
+      <img src={logo} alt="Windows 95 logo" style={{ width: 200 }} />
       <Button>Start</Button>
     </Centered>
   );
