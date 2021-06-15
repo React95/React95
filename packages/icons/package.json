@@ -19,7 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/React95/React95.git"
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/icons"
   },
   "bugs": {
     "url": "https://github.com/React95/React95/issues"
