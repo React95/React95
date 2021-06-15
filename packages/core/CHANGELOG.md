@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.3](https://github.com/React95/React95/compare/@react95/core@5.2.2...@react95/core@5.2.3) (2021-06-15)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 ## [5.2.2](https://github.com/React95/React95/compare/@react95/core@5.2.1...@react95/core@5.2.2) (2021-06-15)
 
 
