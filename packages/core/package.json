@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "5.2.1",
+  "version": "5.2.2",
   "description": "Windows 95 styleguide",
   "main": "index.js",
   "repository": {
@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@react95/icons": "^2.0.3",
+    "@react95/icons": "^2.0.4",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react-virtualized": "^9.21.10",
     "@xstyled/styled-components": "^1.17.1",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@bojagi/cli": "^0.16.1",
-    "@react95/clippy": "^1.0.4",
+    "@react95/clippy": "^1.0.5",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-storysource": "^6.0.28",
     "@storybook/addons": "^6.0.28",
