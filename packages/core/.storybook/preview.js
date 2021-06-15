@@ -3,7 +3,7 @@ import { addParameters } from '@storybook/react';
 import Frame from './decorators/Frame';
 import { withThemes } from './src/theme-changer/withThemes';
 
-export const globals = {
+export const globalTypes = {
   selectedTheme: {
     name: 'Theme',
     description: 'Global theme for components',
