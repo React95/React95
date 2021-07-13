@@ -227,6 +227,7 @@ const ModalRenderer = (
   } = React.useContext(ModalContext);
   const [id, setId] = React.useState<string | null>(null);
   const [menuOpened, setMenuOpened] = React.useState('');
+  const [isActive, setIsActive] = React.useState(false);
 
   React.useEffect(() => {
     if (!id) {
@@ -246,16 +247,18 @@ const ModalRenderer = (
       }
     };
   }, [id]);
-
-  const isActive = id === activeWindow;
+  React.useEffect(() => setIsActive(id === activeWindow), [id, activeWindow]);
 
   return (
-    <Draggable handle=".draggable" defaultPosition={defaultPosition}>
+    <Draggable
+      handle=".draggable"
+      defaultPosition={defaultPosition}
+      onMouseDown={id ? () => setActiveWindow(id) : undefined}
+    >
       <ModalWrapper
         width={width}
         height={height}
         {...rest}
-        onClick={id ? () => setActiveWindow(id) : undefined}
         active={isActive}
         ref={ref}
       >
