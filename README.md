@@ -80,6 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/kirkobyte"><img src="https://avatars.githubusercontent.com/u/6798667?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kirk Holloway</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kirkobyte" title="Code">💻</a> <a href="https://github.com/React95/React95/commits?author=kirkobyte" title="Documentation">📖</a> <a href="#ideas-kirkobyte" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://www.bojagi.io"><img src="https://avatars.githubusercontent.com/u/1235818?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Jentsch</b></sub></a><br /><a href="#infra-tchock" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://sime.net.au/"><img src="https://avatars.githubusercontent.com/u/216917?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Males</b></sub></a><br /><a href="#infra-sime" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://kembreyfarquhar.com"><img src="https://avatars.githubusercontent.com/u/47987809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Katie Embrey-Farquhar</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kembreyfarquhar" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Akembreyfarquhar" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
