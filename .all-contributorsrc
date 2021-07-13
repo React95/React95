@@ -271,6 +271,16 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "kembreyfarquhar",
+      "name": "Katie Embrey-Farquhar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47987809?v=4",
+      "profile": "https://kembreyfarquhar.com",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
