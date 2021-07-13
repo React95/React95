@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/React95/React95/compare/@react95/core@5.2.3...@react95/core@5.3.0) (2021-07-13)
+
+
+### Features
+
+* **modal:** instant activation of modal on click rather than on mouseUp ([9694393](https://github.com/React95/React95/commit/969439358d1afc48733e16e160464d94ca9860c4))
+
+
+
+
+
 ## [5.2.3](https://github.com/React95/React95/compare/@react95/core@5.2.2...@react95/core@5.2.3) (2021-06-15)
 
 **Note:** Version bump only for package @react95/core
