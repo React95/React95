@@ -250,7 +250,11 @@ const ModalRenderer = (
   React.useEffect(() => setIsActive(id === activeWindow), [id, activeWindow]);
 
   return (
-    <Draggable handle=".draggable" defaultPosition={defaultPosition} onMouseDown={id ? () => setActiveWindow(id) : undefined}>
+    <Draggable
+      handle=".draggable"
+      defaultPosition={defaultPosition}
+      onMouseDown={id ? () => setActiveWindow(id) : undefined}
+    >
       <ModalWrapper
         width={width}
         height={height}
