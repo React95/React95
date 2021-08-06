@@ -40,8 +40,8 @@ export const createHatchedBackground = ({
 
 export const scrollbars = css`
   ::-webkit-scrollbar {
-    width: 17px;
-    height: 17px;
+    width: 17;
+    height: 17;
   }
   ::-webkit-scrollbar-track {
     ${({ theme }) =>
@@ -69,15 +69,15 @@ export const scrollbars = css`
     ${scrollBarBorder()}
     display: block;
     outline-offset: -2px;
-    height: 17px;
-    width: 17px;
+    height: 17;
+    width: 17;
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 0 0;
   }
   ::-webkit-scrollbar-button:active,
   ::-webkit-scrollbar-button:active {
-    background-position: 0 1px;
+    background-position: 0 1;
     ${scrollBarBorder()}
   }
 

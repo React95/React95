@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
+
 import Cursor from '../components/Cursor/Cursor';
 import { Frame } from '../components';
 
@@ -49,5 +50,5 @@ export const Simple = () => (
 );
 
 Simple.parameters = {
-  design: { disabled: true },
+  design: { disable: true },
 };

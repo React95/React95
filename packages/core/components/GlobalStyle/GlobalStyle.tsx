@@ -1,6 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-import { scrollbars } from './Scrollbar';
-import Cursor from '../Cursor/Cursor';
+import { createGlobalStyle } from '@xstyled/styled-components';
 
 import woff2 from './font/MS-Sans-Serif.woff2';
 import woff from './font/MS-Sans-Serif.woff';
@@ -10,6 +8,9 @@ import videowoff2 from './font/React95Video-Numbers.woff2';
 import videowoff from './font/React95Video-Numbers.woff';
 import videottf from './font/React95Video-Numbers.ttf';
 import videoeot from './font/React95Video-Numbers.eot';
+
+import { scrollbars } from './Scrollbar';
+import Cursor from '../Cursor/Cursor';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -29,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     src: url('${videowoff2}') format('woff2'),
          url('${videowoff}') format('woff'),
          url('${videottf}') format('truetype'),
-         url('${videoeot}.eot?#iefix') format('embedded-opentype');
+         url('${videoeot}?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
