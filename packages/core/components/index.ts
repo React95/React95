@@ -3,6 +3,7 @@ import { Tab, Tabs } from './Tabs';
 import Alert from './Alert';
 import Button from './Button';
 import Checkbox from './Checkbox';
+import Cursor from './Cursor';
 import Dropdown from './Dropdown';
 import Fieldset from './Fieldset';
 import Frame from './Frame';
@@ -23,6 +24,7 @@ export {
   Alert,
   Button,
   Checkbox,
+  Cursor,
   Dropdown,
   Fieldset,
   Frame,
