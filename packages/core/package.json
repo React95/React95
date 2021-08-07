@@ -27,7 +27,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "@bojagi/cli": "^0.16.1",
+    "@bojagi/cli": "^0.18.1",
     "@react95/clippy": "^1.0.5",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-storysource": "^6.3.6",
