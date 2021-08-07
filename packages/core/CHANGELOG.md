@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/React95/React95/compare/@react95/core@5.3.0...@react95/core@5.4.0) (2021-08-07)
+
+
+### Features
+
+* **cursor:** export all cursor ([ffee5b5](https://github.com/React95/React95/commit/ffee5b55cbf69426cff183bd858cf54d88af351e))
+
+
+
+
+
 # [5.3.0](https://github.com/React95/React95/compare/@react95/core@5.2.3...@react95/core@5.3.0) (2021-07-13)
 
 
