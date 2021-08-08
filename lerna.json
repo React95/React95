@@ -6,8 +6,9 @@
     "publish": {
       "conventionalCommits": true,
       "ignoreChanges": [
-        "**/*.unit.test.tsx",
+        "**/*.test.tsx",
         "**/*.md",
+        "**/*.json",
         "stories",
         ".storybook"
       ]
