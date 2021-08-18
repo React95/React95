@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as CSS from 'csstype';
 import styled, { css } from '@xstyled/styled-components';
-import { th, BackgroundProps } from '@xstyled/system';
+import { th } from '@xstyled/system';
 import Draggable from 'react-draggable';
 
 import Button from '../Button';
 import List from '../List';
+import TitleBar from '../TitleBar';
 import ModalContext from './ModalContext';
 
 type WrapperProps = {
@@ -41,70 +42,6 @@ const ModalWrapper = styled.div<WrapperProps>`
         `
       : ''}
 `;
-
-const TitleBar = styled.div<BackgroundProps>`
-  height: 18px;
-  margin-bottom: 2;
-
-  color: ${th('colors.materialTextInvert')};
-  padding: 2 2 0;
-
-  display: flex;
-  background: ${({ background }) => th(`colors.${background}`)};
-
-  img {
-    width: 15px;
-    height: 13px;
-    margin-right: 4px;
-  }
-`;
-
-const Title = styled.div`
-  flex-grow: 1;
-  font-weight: bold;
-
-  color: headerText;
-`;
-
-const OptionsBox = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-`;
-
-const OptionItem = styled.li`
-  display: flex;
-  margin-right: 2;
-
-  &:last-child {
-    margin-right: 0;
-  }
-`;
-
-const Option = styled(Button)`
-  padding: 0;
-
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-
-  font-size: 10;
-
-  &:active {
-    padding: 1 0 0 1;
-
-    outline: none;
-  }
-
-  &:focus {
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
-      inset -1px -1px 0px 1px ${th('colors.borderDark')};
-  }
-`;
-
-Option.displayName = 'Option';
 
 const Content = styled.div`
   flex-grow: 1;
@@ -263,20 +200,19 @@ const ModalRenderer = (
         ref={ref}
       >
         <TitleBar
-          background={
-            isActive ? 'headerBackground' : 'headerNotActiveBackground'
-          }
+          isActive={isActive}
+          icon={icon}
+          title={title}
+          className="draggable"
         >
-          {icon}
-          <Title className="draggable">{title}</Title>
-          <OptionsBox>
-            <OptionItem>
-              <Option>?</Option>
-            </OptionItem>
-            <OptionItem>
-              <Option onClick={closeModal}>x</Option>
-            </OptionItem>
-          </OptionsBox>
+          <TitleBar.OptionsBox>
+            <TitleBar.OptionItem>
+              <TitleBar.Option>?</TitleBar.Option>
+            </TitleBar.OptionItem>
+            <TitleBar.OptionItem>
+              <TitleBar.Option onClick={closeModal}>x</TitleBar.Option>
+            </TitleBar.OptionItem>
+          </TitleBar.OptionsBox>
         </TitleBar>
 
         {menu && menu.length > 0 && (
