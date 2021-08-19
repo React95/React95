@@ -10,10 +10,10 @@ describe('<TitleBar />', () => {
     it('should match snapshot', async () => {
       const { container } = await waitRender(
         <>
-          <TitleBar title="test.exe" icon={<Bat />} isActive />
-          <TitleBar title="test.exe" icon={<Bat />} isActive={false} />
-          <TitleBar isActive />
-          <TitleBar isActive={false} />
+          <TitleBar title="test.exe" icon={<Bat />} active />
+          <TitleBar title="test.exe" icon={<Bat />} active={false} />
+          <TitleBar active />
+          <TitleBar active={false} />
         </>,
       );
 
@@ -22,14 +22,10 @@ describe('<TitleBar />', () => {
 
     it('should match snapshot with all Options', async () => {
       const { container } = await waitRender(
-        <TitleBar title="test.exe" icon={<Bat />} isActive>
+        <TitleBar title="test.exe" icon={<Bat />} active>
           <TitleBar.OptionsBox>
-            <TitleBar.OptionItem>
-              <TitleBar.Option>?</TitleBar.Option>
-            </TitleBar.OptionItem>
-            <TitleBar.OptionItem>
-              <TitleBar.Option>x</TitleBar.Option>
-            </TitleBar.OptionItem>
+            <TitleBar.Option>?</TitleBar.Option>
+            <TitleBar.Option>x</TitleBar.Option>
           </TitleBar.OptionsBox>
         </TitleBar>,
       );

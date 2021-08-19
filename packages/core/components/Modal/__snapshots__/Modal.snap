@@ -27,7 +27,15 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c3 {
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -37,19 +45,20 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   display: flex;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 2px;
-}
-
-.c4:first-child {
-  margin-right: 0;
-}
-
-.c7 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -63,29 +72,33 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
   outline: none;
 }
 
+.c7:first-child {
+  margin-right: 0;
+}
+
 .c7:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c1 {
+.c2 {
   height: 18px;
   margin-bottom: 2px;
-  padding: 2px 2px 0;
+  padding: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: none;
   background: #000e7a;
-  color: #fefefe;
 }
 
-.c1 img {
+.c2 img {
   width: 15px;
-  height: 13px;
+  height: 14px;
   margin-right: 4px;
 }
 
-.c2 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -193,7 +206,10 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <img
         height="32"
@@ -201,30 +217,22 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
         width="32"
       />
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         file.bat
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -294,7 +302,15 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c3 {
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -304,19 +320,20 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   display: flex;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 2px;
-}
-
-.c4:first-child {
-  margin-right: 0;
-}
-
-.c7 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -330,29 +347,33 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   outline: none;
 }
 
+.c7:first-child {
+  margin-right: 0;
+}
+
 .c7:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c1 {
+.c2 {
   height: 18px;
   margin-bottom: 2px;
-  padding: 2px 2px 0;
+  padding: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: none;
   background: #000e7a;
-  color: #fefefe;
 }
 
-.c1 img {
+.c2 img {
   width: 15px;
-  height: 13px;
+  height: 14px;
   margin-right: 4px;
 }
 
-.c2 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -426,7 +447,10 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <img
         height="32"
@@ -434,30 +458,22 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         width="32"
       />
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         file.bat
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -513,7 +529,15 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c3 {
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -523,19 +547,20 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   display: flex;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 2px;
-}
-
-.c4:first-child {
-  margin-right: 0;
-}
-
-.c7 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -549,29 +574,33 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
   outline: none;
 }
 
+.c7:first-child {
+  margin-right: 0;
+}
+
 .c7:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c1 {
+.c2 {
   height: 18px;
   margin-bottom: 2px;
-  padding: 2px 2px 0;
+  padding: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: none;
   background: #000e7a;
-  color: #fefefe;
 }
 
-.c1 img {
+.c2 img {
   width: 15px;
-  height: 13px;
+  height: 14px;
   margin-right: 4px;
 }
 
-.c2 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -645,7 +674,10 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <img
         height="32"
@@ -653,30 +685,22 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
         width="32"
       />
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         file.bat
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -732,7 +756,15 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c3 {
+.c1 {
+  background-color: #c3c7cb;
+  color: #c6c6c6;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -742,19 +774,20 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   display: flex;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 2px;
-}
-
-.c4:first-child {
-  margin-right: 0;
-}
-
-.c6 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -768,29 +801,33 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
   outline: none;
 }
 
+.c6:first-child {
+  margin-right: 0;
+}
+
 .c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c1 {
+.c2 {
   height: 18px;
   margin-bottom: 2px;
-  padding: 2px 2px 0;
+  padding: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: none;
   background: #7f787f;
-  color: #c6c6c6;
 }
 
-.c1 img {
+.c2 img {
   width: 15px;
-  height: 13px;
+  height: 14px;
   margin-right: 4px;
 }
 
-.c2 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -841,7 +878,10 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
     width="300"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerNotActiveText"
+      height="auto"
+      width="auto"
     >
       <img
         height="32"
@@ -849,30 +889,22 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
         width="32"
       />
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         file.bat
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6"
         >
-          <button
-            class="c5 c6"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6"
         >
-          <button
-            class="c5 c6"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -912,7 +944,15 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
-.c3 {
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -922,19 +962,20 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   display: flex;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 2px;
-}
-
-.c4:first-child {
-  margin-right: 0;
-}
-
-.c6 {
   padding: 0;
   width: 17px;
   height: 14px;
@@ -948,29 +989,33 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
   outline: none;
 }
 
+.c6:first-child {
+  margin-right: 0;
+}
+
 .c6:focus {
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
-.c1 {
+.c2 {
   height: 18px;
   margin-bottom: 2px;
-  padding: 2px 2px 0;
+  padding: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: none;
   background: #000e7a;
-  color: #fefefe;
 }
 
-.c1 img {
+.c2 img {
   width: 15px;
-  height: 13px;
+  height: 14px;
   margin-right: 4px;
 }
 
-.c2 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1022,7 +1067,10 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
     width="300"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <img
         height="32"
@@ -1030,30 +1078,22 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
         width="32"
       />
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         file.bat
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6"
         >
-          <button
-            class="c5 c6"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6"
         >
-          <button
-            class="c5 c6"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
