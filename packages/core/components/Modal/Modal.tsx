@@ -200,18 +200,14 @@ const ModalRenderer = (
         ref={ref}
       >
         <TitleBar
-          isActive={isActive}
+          active={isActive}
           icon={icon}
           title={title}
           className="draggable"
         >
           <TitleBar.OptionsBox>
-            <TitleBar.OptionItem>
-              <TitleBar.Option>?</TitleBar.Option>
-            </TitleBar.OptionItem>
-            <TitleBar.OptionItem>
-              <TitleBar.Option onClick={closeModal}>x</TitleBar.Option>
-            </TitleBar.OptionItem>
+            <TitleBar.Option>?</TitleBar.Option>
+            <TitleBar.Option onClick={closeModal}>X</TitleBar.Option>
           </TitleBar.OptionsBox>
         </TitleBar>
 

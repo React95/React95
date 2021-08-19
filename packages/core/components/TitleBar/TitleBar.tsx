@@ -4,6 +4,7 @@ import { th } from '@xstyled/system';
 import { BatExec } from '@react95/icons';
 
 import Button from '../Button';
+import Frame, { FrameProps } from '../Frame/Frame';
 
 const OptionsBox = styled.ul`
   list-style: none;
@@ -13,16 +14,14 @@ const OptionsBox = styled.ul`
   display: flex;
 `;
 
-const OptionItem = styled.li`
+const Option = styled(Button).attrs({
+  as: 'li',
+})`
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-left: 2;
-
-  &:first-child {
-    margin-right: 0;
-  }
-`;
-
-const Option = styled(Button)`
   padding: 0;
 
   width: 17px;
@@ -38,6 +37,10 @@ const Option = styled(Button)`
     outline: none;
   }
 
+  &:first-child {
+    margin-right: 0;
+  }
+
   &:focus {
     box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
       inset -1px -1px 0px 1px ${th('colors.borderDark')};
@@ -46,31 +49,34 @@ const Option = styled(Button)`
 
 Option.displayName = 'Option';
 
-interface TitleBarBackgroundProps extends React.HTMLAttributes<HTMLDivElement> {
-  isActive?: boolean;
+interface TitleBarBackgroundProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
+    FrameProps {
+  active?: boolean;
   icon?: React.ReactElement;
   title?: string;
 }
 
-const TitleBarBackground = styled.div<{ isActive?: boolean }>`
-  height: 18px;
+const TitleBarBackground = styled(Frame)<{ active?: boolean }>`
+  height: 18;
   margin-bottom: 2;
 
-  padding: 2 2 0;
+  padding: 2;
 
   display: flex;
 
+  box-shadow: none;
+
   img {
-    width: 15px;
-    height: 13px;
-    margin-right: 4px;
+    width: 15;
+    height: 14;
+    margin-right: 4;
   }
-  background: ${({ isActive, theme }) =>
-    isActive
+
+  background: ${({ active, theme }) =>
+    active
       ? theme.colors.headerBackground
       : theme.colors.headerNotActiveBackground};
-  color: ${({ isActive, theme }) =>
-    isActive ? theme.colors.headerText : theme.colors.headerNotActiveText};
 `;
 
 const Title = styled.div`
@@ -83,7 +89,6 @@ const Title = styled.div`
 
 interface TitleBarOptions {
   Option: typeof Option;
-  OptionItem: typeof OptionItem;
   OptionsBox: typeof OptionsBox;
 }
 
@@ -98,14 +103,19 @@ const TitleBarRenderer: React.ForwardRefRenderFunction<
   {
     children,
     title = 'UNKNOWN.EXE',
-    icon = <BatExec variant="16x16_4" />,
-    isActive = true,
+    icon = <BatExec variant="32x32_4" />,
+    active = true,
     className,
     ...props
   },
   ref: React.Ref<HTMLDivElement>,
 ) => (
-  <TitleBarBackground isActive={isActive} {...props} ref={ref}>
+  <TitleBarBackground
+    active={active}
+    color={active ? 'headerText' : 'headerNotActiveText'}
+    {...props}
+    ref={ref}
+  >
     {icon && icon}
     <Title className={className}>{title}</Title>
 
@@ -117,7 +127,6 @@ const TitleBar = Object.assign(
   React.forwardRef<HTMLDivElement, TitleBarBackgroundProps>(TitleBarRenderer),
   {
     Option,
-    OptionItem,
     OptionsBox,
   },
 ) as ITitleBarProps & typeof TitleBarRenderer;
