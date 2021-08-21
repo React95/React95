@@ -207,11 +207,6 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
       height="auto"
       width="auto"
     >
-      <img
-        height="32"
-        src="test-file-stub"
-        width="32"
-      />
       <div
         class="c3 draggable"
       >
@@ -475,11 +470,6 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
       height="auto"
       width="auto"
     >
-      <img
-        height="32"
-        src="test-file-stub"
-        width="32"
-      />
       <div
         class="c3 draggable"
       >
@@ -743,11 +733,6 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
       height="auto"
       width="auto"
     >
-      <img
-        height="32"
-        src="test-file-stub"
-        width="32"
-      />
       <div
         class="c3 draggable"
       >
@@ -1011,11 +996,6 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
       height="auto"
       width="auto"
     >
-      <img
-        height="32"
-        src="test-file-stub"
-        width="32"
-      />
       <div
         class="c3 draggable"
       >

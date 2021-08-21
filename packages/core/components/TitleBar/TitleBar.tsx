@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@xstyled/styled-components';
 import { th } from '@xstyled/system';
-import { BatExec } from '@react95/icons';
 
 import Button from '../Button';
 import Frame, { FrameProps } from '../Frame/Frame';
@@ -100,14 +99,7 @@ const TitleBarRenderer: React.ForwardRefRenderFunction<
   HTMLDivElement,
   TitleBarBackgroundProps
 > = (
-  {
-    children,
-    title = 'UNKNOWN.EXE',
-    icon = <BatExec variant="32x32_4" />,
-    active = true,
-    className,
-    ...props
-  },
+  { children, title = 'UNKNOWN.EXE', icon, active = true, className, ...props },
   ref: React.Ref<HTMLDivElement>,
 ) => (
   <TitleBarBackground
