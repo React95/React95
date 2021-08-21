@@ -29,7 +29,7 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.3",
+    "husky": "^7.0.0",
     "jest": "^25.1.0",
     "jest-styled-components": "^7.0.0",
     "lerna": "^4.0.0",
@@ -60,17 +60,12 @@
     "build:core": "lerna run build --stream --scope=@react95/core",
     "build:icons": "lerna run build --stream --scope=@react95/icons",
     "build:bojagi": "lerna run bojagi:build --stream --scope=@react95/core",
-    "upload:bojagi": "lerna run bojagi:upload --stream --scope=@react95/core"
+    "upload:bojagi": "lerna run bojagi:upload --stream --scope=@react95/core",
+    "prepare": "husky install"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint:all",
-      "pre-push": "yarn test"
     }
   }
 }
