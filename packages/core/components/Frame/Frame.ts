@@ -18,14 +18,15 @@ import {
   OverflowProps,
 } from '@xstyled/system';
 
-export type FrameProps = BackgroundsProps &
-  ColorProps &
-  FlexboxesProps &
-  LayoutProps &
-  PositioningProps &
-  ShadowsProps &
-  SpaceProps &
-  OverflowProps;
+export interface FrameProps
+  extends BackgroundsProps,
+    ColorProps,
+    FlexboxesProps,
+    LayoutProps,
+    PositioningProps,
+    ShadowsProps,
+    SpaceProps,
+    OverflowProps {}
 
 const Frame = styled.div<FrameProps>`
   ${backgrounds}

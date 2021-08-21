@@ -15,6 +15,11 @@ import { Simple as SimpleRange } from './range.stories';
 import { Simple as SimpleTabs } from './tabs.stories';
 import { Simple as SimpleTooltip } from './tooltip.stories';
 import { Simple as SimpleTree } from './tree.stories';
+import {
+  Simple as SimpleTitleBar,
+  Inactive,
+  Complete,
+} from './titlebar.stories';
 import { All as AllCheckbox } from './checkbox.stories';
 import { WithIcons, Simple as SimpleList } from './list.stories';
 import { FromURL } from './video.stories';
@@ -54,15 +59,12 @@ export const All = () => (
     </div>
 
     <br />
-
     <AllCheckbox />
 
     <br />
-
     <SimpleDropdown />
 
     <br />
-
     <SimpleFieldset />
 
     <br />
@@ -87,27 +89,33 @@ export const All = () => (
     </div>
 
     <br />
-
     <SimpleProgressBar />
-    <br />
 
+    <br />
     <SimpleRadioButton />
 
     <br />
     <SimpleRange />
 
     <br />
-
     <SimpleTabs />
 
     <br />
     <SimpleTree />
 
     <br />
-
     <SimpleTooltip />
 
     <br />
     <FromURL />
+
+    <br />
+    <SimpleTitleBar />
+
+    <br />
+    <Inactive />
+
+    <br />
+    <Complete />
   </AllList>
 );

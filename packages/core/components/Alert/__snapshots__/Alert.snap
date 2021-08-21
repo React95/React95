@@ -27,6 +27,88 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.c7:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c7:first-child {
+  margin-right: 0;
+}
+
+.c7:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
+}
+
+.c2 {
+  height: 18px;
+  margin-bottom: 2px;
+  padding: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: none;
+  background: #000e7a;
+}
+
+.c2 img {
+  width: 15px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -43,72 +125,6 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
   width: auto;
   height: 120px;
   z-index: 1;
-}
-
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: #000e7a;
-}
-
-.c1 img {
-  width: 15px;
-  height: 13px;
-  margin-right: 4px;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-  color: #fefefe;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c8 {
@@ -186,33 +202,28 @@ exports[`<Alert /> Snapshots should match snapshot with error type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         Error
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -279,6 +290,88 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.c7:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c7:first-child {
+  margin-right: 0;
+}
+
+.c7:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
+}
+
+.c2 {
+  height: 18px;
+  margin-bottom: 2px;
+  padding: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: none;
+  background: #000e7a;
+}
+
+.c2 img {
+  width: 15px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -295,72 +388,6 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
   width: auto;
   height: 120px;
   z-index: 1;
-}
-
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: #000e7a;
-}
-
-.c1 img {
-  width: 15px;
-  height: 13px;
-  margin-right: 4px;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-  color: #fefefe;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c8 {
@@ -438,33 +465,28 @@ exports[`<Alert /> Snapshots should match snapshot with info type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         Info
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -531,6 +553,88 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.c7:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c7:first-child {
+  margin-right: 0;
+}
+
+.c7:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
+}
+
+.c2 {
+  height: 18px;
+  margin-bottom: 2px;
+  padding: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: none;
+  background: #000e7a;
+}
+
+.c2 img {
+  width: 15px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -547,72 +651,6 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
   width: auto;
   height: 120px;
   z-index: 1;
-}
-
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: #000e7a;
-}
-
-.c1 img {
-  width: 15px;
-  height: 13px;
-  margin-right: 4px;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-  color: #fefefe;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c8 {
@@ -690,33 +728,28 @@ exports[`<Alert /> Snapshots should match snapshot with question type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         question
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
@@ -783,6 +816,88 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
 }
 
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c4 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 2px;
+  padding: 0;
+  width: 17px;
+  height: 14px;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.c7:active {
+  padding: 1px 0 0 1px;
+  outline: none;
+}
+
+.c7:first-child {
+  margin-right: 0;
+}
+
+.c7:focus {
+  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
+}
+
+.c2 {
+  height: 18px;
+  margin-bottom: 2px;
+  padding: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: none;
+  background: #000e7a;
+}
+
+.c2 img {
+  width: 15px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -799,72 +914,6 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
   width: auto;
   height: 120px;
   z-index: 1;
-}
-
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 2px 2px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background: #000e7a;
-}
-
-.c1 img {
-  width: 15px;
-  height: 13px;
-  margin-right: 4px;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  font-weight: bold;
-  color: #fefefe;
-}
-
-.c3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 2px;
-}
-
-.c4:last-child {
-  margin-right: 0;
-}
-
-.c7 {
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
 }
 
 .c8 {
@@ -942,33 +991,28 @@ exports[`<Alert /> Snapshots should match snapshot with warning type 1`] = `
     style="transform: translate(362px,304px);"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <div
-        class="c2 draggable"
+        class="c3 draggable"
       >
         Warning
       </div>
       <ul
-        class="c3"
+        class="c4"
       >
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            ?
-          </button>
+          ?
         </li>
         <li
-          class="c4"
+          class="c5 c6 c7"
         >
-          <button
-            class="c5 c6 c7"
-          >
-            x
-          </button>
+          X
         </li>
       </ul>
     </div>
