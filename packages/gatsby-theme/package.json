@@ -1,0 +1,42 @@
+{
+  "name": "@react95/gatsby-theme",
+  "version": "1.0.0",
+  "description": "A React95 theme for your Gatsby blog",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "react",
+    "react95",
+    "blog"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://github.com/React95/React95",
+  "license": "MIT",
+  "devDependencies": {
+    "gatsby": "^2.15.21",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.15.21",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/gatsby-theme"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  }
+}
