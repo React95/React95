@@ -33,8 +33,8 @@
     "jest": "^25.1.0",
     "jest-styled-components": "^7.0.0",
     "lerna": "^4.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "npmClient": "yarn",
   "workspaces": [
@@ -45,6 +45,7 @@
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "dev": "yarn workspace @react95/core storybook",
+    "dev:explorer": "yarn workspace @react95/explorer develop",
     "pretest": "lerna run prebuild",
     "postinstall": "lerna run postinstall --scope=@react95/icons --stream",
     "test": "jest --config=./jest/config/config.js",
