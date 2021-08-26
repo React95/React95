@@ -1,6 +1,9 @@
 module.exports = {
   stories: ['../stories/*.stories.tsx'],
   logLevel: 'debug',
+  core: {
+    builder: 'webpack5',
+  },
   addons: [
     {
       name: '@storybook/addon-essentials',
