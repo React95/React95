@@ -13,6 +13,16 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://github.com/React95/React95",
   "license": "MIT",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@react95/core": "^5.5.0",
+    "gatsby-plugin-mdx": "^2.12.0",
+    "gatsby-plugin-mdx-frontmatter": "^0.0.4",
+    "gatsby-plugin-typescript": "^3.12.0",
+    "gatsby-source-filesystem": "^3.12.0",
+    "lodash.startcase": "^4.4.0"
+  },
   "devDependencies": {
     "gatsby": "^3.12.0",
     "react": "^16.14.0",
