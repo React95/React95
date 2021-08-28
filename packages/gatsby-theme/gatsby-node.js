@@ -11,29 +11,6 @@ exports.onPreBootstrap = ({ reporter }) => {
   }
 };
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === 'Mdx') {
-    const parent = getNode(node.parent);
-
-    const value =
-      parent.relativePath && parent.relativePath.replace(parent.ext, '');
-
-    createNodeField({
-      node,
-      name: 'slug',
-      value: `/${value && value.replace('index', '')}`,
-    });
-
-    createNodeField({
-      name: 'title',
-      node,
-      value: node.frontmatter.title || startCase(parent.name),
-    });
-  }
-};
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const basePath = '/';
 
@@ -49,9 +26,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMdx {
         edges {
           node {
-            fields {
-              slug
-            }
+            slug
           }
         }
       }
@@ -66,12 +41,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const contents = result.data.allMdx.edges;
 
-  contents.forEach(({ node: { fields } }) => {
-    const { slug } = fields;
+  contents.forEach(({ node }) => {
+    const { slug } = node;
 
     createPage({
       path: slug,
       component: path.resolve('./src/components/desktop.js'),
     });
+  });
+};
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.ts$/,
+          use: ['ts-loader'],
+        },
+      ],
+    },
   });
 };
