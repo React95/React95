@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider, GlobalStyle } from '@react95/core';
 import { graphql } from 'gatsby';
 
+import ContentExplorer from './content-explorer';
 import TaskBar from './taskbar';
 import { navify } from '../utils';
 
@@ -15,6 +16,7 @@ const Desktop = ({ data }) => {
   return (
     <ThemeProvider>
       <GlobalStyle />
+      <ContentExplorer nav={nav} />
 
       <TaskBar nav={nav} />
     </ThemeProvider>
