@@ -30,14 +30,16 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "styled-components": "^5.1.0",
-    "ts-loader": "^9.2.5"
+    "ts-loader": "^9.2.5",
+    "@xstyled/styled-components": "^3.0.3"
   },
   "peerDependencies": {
     "@react95/core": "^5.5.0",
     "gatsby": "^3.12.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "@xstyled/styled-components": "^3.0.3"
   },
   "publishConfig": {
     "access": "public",
