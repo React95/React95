@@ -40,9 +40,13 @@ const StyledFrame = styled(Frame)`
   }
 `;
 
-export const Shortcut = ({ name, ...rest }) => (
+export const Shortcut = ({
+  name,
+  icon: Icon = <R95Icons.Explorer101 variant="32x32_4" />,
+  ...rest
+}) => (
   <StyledFrame
-    display="inline-flex"
+    display="inline-block"
     justifyContent="flex-start"
     alignItems="center"
     flexDirection="column"
@@ -53,14 +57,23 @@ export const Shortcut = ({ name, ...rest }) => (
     tabIndex="0"
     {...rest}
   >
-    <Frame mb={4} position="relative" boxShadow="none" bg="transparent">
-      <R95Icons.Explorer101 variant="32x32_4" />
+    <Frame
+      mb={4}
+      position="relative"
+      boxShadow="none"
+      bg="transparent"
+      minHeight={34}
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+    >
+      {Icon}
     </Frame>
     <Name>{name}</Name>
   </StyledFrame>
 );
 
-function getTreeData(nav) {
+function getTreeData(nav, select) {
   return Object.values(nav).map(({ slug, icon = {}, title, ...restNavs }) => {
     const IconRenderer = R95Icons[icon?.name] || R95Icons.BatExec;
     const variant = icon?.variant || undefined;
@@ -76,6 +89,7 @@ function getTreeData(nav) {
 
       return {
         ...node,
+        onClick: () => select({ title, data }),
         children: data,
       };
     }
@@ -84,28 +98,40 @@ function getTreeData(nav) {
   });
 }
 
+const FrameWrapper = styled.div`
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 6;
+`;
+
 const ExplorerModal = ({ nav, closeModal }) => {
-  const treeData = getTreeData(nav);
+  const [selectedFolder, setSelectedFolder] = React.useState({ data: [] });
+  const treeData = getTreeData(nav, setSelectedFolder);
 
   return (
     <Modal
       defaultPosition={{ x: 50, y: 50 }}
-      width="300"
+      width="500"
       height="500"
       icon={<R95Icons.Explorer101 variant="16x16_4" />}
       title="Explorer"
       closeModal={closeModal}
     >
-      <Frame
-        bg="white"
-        width={200}
-        height="100%"
-        boxShadow="in"
-        pl="1em"
-        pr="1em"
-      >
-        <Tree data={treeData} />
-      </Frame>
+      <FrameWrapper>
+        <Frame bg="white" boxShadow="in" pl="1em" pr="1em">
+          <Tree data={treeData} />
+        </Frame>
+
+        <Frame bg="white" boxShadow="in">
+          {selectedFolder.data.map(content => (
+            <Shortcut name={content.label} icon={content.icon} />
+          ))}
+        </Frame>
+      </FrameWrapper>
+      <Frame p={2} mt={6} boxShadow="in">{`${
+        Object.keys(nav).length
+      } objects(s)`}</Frame>
     </Modal>
   );
 };
