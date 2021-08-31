@@ -27,6 +27,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             slug
+            frontmatter {
+              icon {
+                name
+                variant
+              }
+              title
+            }
+            body
           }
         }
       }
@@ -46,7 +54,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     createPage({
       path: slug,
-      component: path.resolve('./src/components/desktop.js'),
+      component: path.resolve('./src/components/content.js'),
+      context: { content: node, data: result.data },
     });
   });
 };
