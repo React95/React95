@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { TaskBar as R95TaskBar, List } from '@react95/core';
 import * as R95Icons from '@react95/icons';
 
@@ -20,7 +21,12 @@ const NavList = ({ nav }) => (
       }
 
       return (
-        <List.Item key={slug} icon={<IconRenderer variant={variant} />}>
+        <List.Item
+          as={Link}
+          to={`/${slug}`}
+          key={slug}
+          icon={<IconRenderer variant={variant} />}
+        >
           {title}
         </List.Item>
       );
