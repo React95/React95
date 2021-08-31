@@ -15,12 +15,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const basePath = '/';
 
   const { createPage } = actions;
-
-  createPage({
-    path: basePath,
-    component: path.resolve('./src/components/desktop.js'),
-  });
-
   const result = await graphql(`
     query {
       allMdx {
@@ -47,6 +41,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
+  createPage({
+    path: basePath,
+    component: path.resolve('./src/components/desktop.js'),
+    context: { content: {}, data: result.data },
+  });
+
   const contents = result.data.allMdx.edges;
 
   contents.forEach(({ node }) => {
@@ -54,7 +54,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     createPage({
       path: slug,
-      component: path.resolve('./src/components/content.js'),
+      component: path.resolve('./src/components/desktop.js'),
       context: { content: node, data: result.data },
     });
   });

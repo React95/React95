@@ -20,10 +20,12 @@ const DesktopStyle = createGlobalStyle`
   }
 `;
 
-const Desktop = ({ data, children }) => {
+const Desktop = ({ pageContext: { data, content = {} } }) => {
   const {
     allMdx: { edges },
   } = data;
+
+  const { body: mdx } = content;
 
   const nav = navify(edges.map(e => e.node));
 
@@ -31,33 +33,14 @@ const Desktop = ({ data, children }) => {
     <ThemeProvider>
       <GlobalStyle />
       <DesktopStyle />
+
       <ContentExplorer nav={nav} />
-      <MDXProvider>
-        {children && <MDXRenderer>{children}</MDXRenderer>}
-      </MDXProvider>
+
+      <MDXProvider>{mdx && <MDXRenderer>{mdx}</MDXRenderer>}</MDXProvider>
 
       <TaskBar nav={nav} />
     </ThemeProvider>
   );
 };
-
-export const query = graphql`
-  query DesktopQuery {
-    allMdx {
-      edges {
-        node {
-          slug
-          frontmatter {
-            icon {
-              name
-              variant
-            }
-            title
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default Desktop;
