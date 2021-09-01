@@ -1,14 +1,12 @@
 import React from 'react';
 import { ThemeProvider, GlobalStyle } from '@react95/core';
 import { createGlobalStyle } from '@xstyled/styled-components';
-import { graphql } from 'gatsby';
 
-import { MDXProvider } from '@mdx-js/react';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { navify } from '../utils';
 
 import ContentExplorer from './content-explorer';
 import TaskBar from './taskbar';
-import { navify } from '../utils';
+import Content from './content';
 
 const DesktopStyle = createGlobalStyle`
   html {
@@ -25,8 +23,6 @@ const Desktop = ({ pageContext: { data, content = {} } }) => {
     allMdx: { edges },
   } = data;
 
-  const { body: mdx } = content;
-
   const nav = navify(edges.map(e => e.node));
 
   return (
@@ -36,7 +32,7 @@ const Desktop = ({ pageContext: { data, content = {} } }) => {
 
       <ContentExplorer nav={nav} />
 
-      <MDXProvider>{mdx && <MDXRenderer>{mdx}</MDXRenderer>}</MDXProvider>
+      <Content content={content} />
 
       <TaskBar nav={nav} />
     </ThemeProvider>
