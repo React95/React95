@@ -1,19 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { navigate } from 'gatsby';
 import { TaskBar as R95TaskBar, List } from '@react95/core';
-import * as R95Icons from '@react95/icons';
 
 import { isEmpty } from '../utils';
+import IconRenderer from './icon-renderer';
 
 const NavList = ({ nav }) => (
   <List>
     {Object.values(nav).map(({ slug, icon = {}, title, ...restNavs }) => {
-      const IconRenderer = R95Icons[icon?.name] || R95Icons.BatExec;
-      const variant = icon?.variant || undefined;
-
       if (!isEmpty(restNavs)) {
         return (
-          <List.Item key={slug} icon={<IconRenderer variant={variant} />}>
+          <List.Item key={slug} icon={<IconRenderer {...icon} />}>
             {title}
             <NavList nav={restNavs} />
           </List.Item>
@@ -22,10 +19,10 @@ const NavList = ({ nav }) => (
 
       return (
         <List.Item
-          as={Link}
-          to={`/${slug}`}
           key={slug}
-          icon={<IconRenderer variant={variant} />}
+          onClick={() => navigate(`/${slug}`)}
+          icon={<IconRenderer {...icon} />}
+          role="button"
         >
           {title}
         </List.Item>

@@ -4,6 +4,7 @@ import * as R95Icons from '@react95/icons';
 import styled from '@xstyled/styled-components';
 
 import { isEmpty } from '../utils';
+import IconRenderer from './icon-renderer';
 
 const Name = styled.span`
   word-break: break-word;
@@ -75,13 +76,10 @@ export const Shortcut = ({
 
 function getTreeData(nav, select) {
   return Object.values(nav).map(({ slug, icon = {}, title, ...restNavs }) => {
-    const IconRenderer = R95Icons[icon?.name] || R95Icons.BatExec;
-    const variant = icon?.variant || undefined;
-
     const node = {
       label: title,
       id: slug,
-      icon: <IconRenderer variant={variant} />,
+      icon: <IconRenderer {...icon} />,
     };
 
     if (!isEmpty(restNavs)) {
