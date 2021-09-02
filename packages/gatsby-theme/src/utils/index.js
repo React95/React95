@@ -1,4 +1,5 @@
 import isEmpty from './isEmpty';
 import navify from './navify';
+import isMobile from './isMobile';
 
-export { isEmpty, navify };
+export { isEmpty, isMobile, navify };
