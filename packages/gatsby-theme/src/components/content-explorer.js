@@ -41,9 +41,7 @@ const Name = styled.span`
 `;
 
 const StyledFrame = styled(({ children, to, ...rest }) => (
-  <Frame {...rest}>
-    <Link to={to}>{children}</Link>
-  </Frame>
+  <Frame {...rest}>{to ? <Link to={to}>{children}</Link> : children}</Frame>
 ))`
   text-align: center;
   position: relative;
