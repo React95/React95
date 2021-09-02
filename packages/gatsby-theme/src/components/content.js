@@ -2,11 +2,10 @@ import React from 'react';
 import { navigate } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { Modal } from '@react95/core';
+import * as R95Components from '@react95/core';
 
 import IconRenderer from './icon-renderer';
-
-const TASKBAR_HEIGHT = 30;
+import { TASKBAR_HEIGHT } from '../utils/constants';
 
 const Content = ({ content }) => {
   if (!content.body) return null;
@@ -17,7 +16,7 @@ const Content = ({ content }) => {
   } = content;
 
   return (
-    <Modal
+    <R95Components.Modal
       title={title}
       icon={<IconRenderer {...icon} />}
       style={{
@@ -27,10 +26,10 @@ const Content = ({ content }) => {
       }}
       closeModal={() => navigate('/')}
     >
-      <MDXProvider>
+      <MDXProvider components={R95Components}>
         <MDXRenderer>{body}</MDXRenderer>
       </MDXProvider>
-    </Modal>
+    </R95Components.Modal>
   );
 };
 
