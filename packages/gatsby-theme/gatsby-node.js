@@ -4,6 +4,7 @@ const path = require('path');
 exports.onPreBootstrap = ({ reporter }) => {
   const contentPath = 'content';
 
+exports.onPreBootstrap = ({ reporter }, { contentPath = 'content' }) => {
   if (!fs.existsSync(contentPath)) {
     reporter.info(`creating the ${contentPath} directory`);
 
@@ -11,10 +12,12 @@ exports.onPreBootstrap = ({ reporter }) => {
   }
 };
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const basePath = '/';
-
+exports.createPages = async (
+  { actions, graphql, reporter },
+  { basePath = '/' },
+) => {
   const { createPage } = actions;
+
   const result = await graphql(`
     query {
       allMdx {
