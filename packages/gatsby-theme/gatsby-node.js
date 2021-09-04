@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 
 const MDX_TEMPLATE = `---
 title: Getting Started
@@ -58,7 +57,7 @@ exports.createPages = async (
 
   createPage({
     path: basePath,
-    component: path.resolve('./src/components/desktop.js'),
+    component: require.resolve('./src/components/desktop.js'),
     context: { content: {}, data: result.data },
   });
 
@@ -69,7 +68,7 @@ exports.createPages = async (
 
     createPage({
       path: slug,
-      component: path.resolve('./src/components/desktop.js'),
+      component: require.resolve('./src/components/desktop.js'),
       context: { content: node, data: result.data },
     });
   });
