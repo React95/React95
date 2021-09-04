@@ -54,38 +54,8 @@ const Blink = styled.span`
   animation: ${makeMeBlink} 1s steps(1) infinite;
 `;
 
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-`;
-
-const Vignette = styled(Overlay)`
-  background-image: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.25) 100%
-  );
-`;
-
-const Scanline = styled(Overlay)`
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0) 25%,
-    rgba(0, 0, 0, 0.33) 25%,
-    rgba(0, 0, 0, 0.33) 50%,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0) 75%,
-    rgba(0, 0, 0, 0.33) 75%,
-    rgba(0, 0, 0, 0.33) 100%
-  );
-  background-size: 4px 4px;
-`;
-
 const H1 = styled.h1`
-  background-color: silver;
+  background-color: #f1f1f1;
   color: #00a;
   padding: 0 1rem;
   font-size: 1rem;
@@ -99,8 +69,6 @@ const CenterText = styled.div`
 const ErrorPage = () => (
   <ThemeProvider>
     <ErrorPageStyle />
-    <Vignette />
-    <Scanline />
 
     <Frame
       width="100%"
