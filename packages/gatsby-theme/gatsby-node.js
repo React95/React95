@@ -1,14 +1,26 @@
 const fs = require('fs');
 const path = require('path');
 
-exports.onPreBootstrap = ({ reporter }) => {
-  const contentPath = 'content';
+const MDX_TEMPLATE = `---
+title: Getting Started
+icon:
+  name: Computer
+  variant: 32x32_4
+---
+
+# Your blog starts on this folder!
+
+Feel free to add your content!
+`;
 
 exports.onPreBootstrap = ({ reporter }, { contentPath = 'content' }) => {
   if (!fs.existsSync(contentPath)) {
-    reporter.info(`creating the ${contentPath} directory`);
+    reporter.info(
+      `creating the ${contentPath} directory with a getting started file`,
+    );
 
     fs.mkdirSync(contentPath);
+    fs.writeFileSync(`${contentPath}/getting-started.mdx`, MDX_TEMPLATE);
   }
 };
 
