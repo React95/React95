@@ -42,8 +42,7 @@
     "@xstyled/styled-components": "^3.0.3"
   },
   "publishConfig": {
-    "access": "public",
-    "directory": "dist"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -51,9 +50,9 @@
     "directory": "packages/gatsby-theme"
   },
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "THEME_STANDALONE=true gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "THEME_STANDALONE=true gatsby build",
     "clean": "gatsby clean",
     "serve": "gatsby serve"
   }
