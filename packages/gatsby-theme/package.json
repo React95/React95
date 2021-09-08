@@ -1,6 +1,6 @@
 {
   "name": "@react95/gatsby-theme",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A React95 theme for your Gatsby blog",
   "keywords": [
     "gatsby",
