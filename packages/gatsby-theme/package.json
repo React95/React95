@@ -50,9 +50,9 @@
     "directory": "packages/gatsby-theme"
   },
   "scripts": {
-    "develop": "THEME_STANDALONE=true gatsby develop",
+    "develop": "cross-env THEME_STANDALONE=true gatsby develop",
     "start": "gatsby develop",
-    "build": "THEME_STANDALONE=true gatsby build",
+    "build": "cross-env THEME_STANDALONE=true gatsby build",
     "clean": "gatsby clean",
     "serve": "gatsby serve"
   }
