@@ -10,25 +10,28 @@ import { TASKBAR_HEIGHT } from '../utils/constants';
 import IconRenderer from './icon-renderer';
 
 function getTreeData(nav, select) {
-  return Object.values(nav).map(({ slug, icon = {}, title, ...restNavs }) => {
-    const node = {
-      label: title,
-      id: slug,
-      icon: <IconRenderer {...icon} />,
-    };
-
-    if (!isEmpty(restNavs)) {
-      const data = getTreeData(restNavs);
-
-      return {
-        ...node,
-        onClick: () => select({ title, data }),
-        children: data,
+  return Object.values(nav).map(
+    ({ slug, icon = {}, title, description, image, ...restNavs }) => {
+      const node = {
+        label: title,
+        title: description,
+        id: slug,
+        icon: <IconRenderer {...icon} />,
       };
-    }
 
-    return { ...node, onClick: () => navigate(`/${slug}`) };
-  });
+      if (!isEmpty(restNavs)) {
+        const data = getTreeData(restNavs);
+
+        return {
+          ...node,
+          onClick: () => select({ title, data }),
+          children: data,
+        };
+      }
+
+      return { ...node, onClick: () => navigate(`/${slug}`) };
+    },
+  );
 }
 
 const Name = styled.span`
@@ -143,7 +146,7 @@ const ExplorerModal = ({ nav, closeModal }) => {
 
         <Frame bg="white" boxShadow="in">
           {selectedFolder.data.map(content => (
-            <Shortcut {...content} />
+            <Shortcut key={content.id} {...content} />
           ))}
         </Frame>
       </FrameWrapper>

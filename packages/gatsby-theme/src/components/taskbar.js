@@ -7,27 +7,33 @@ import IconRenderer from './icon-renderer';
 
 const NavList = ({ nav }) => (
   <List>
-    {Object.values(nav).map(({ slug, icon = {}, title, ...restNavs }) => {
-      if (!isEmpty(restNavs)) {
+    {Object.values(nav).map(
+      ({ slug, icon = {}, title, description, image, ...restNavs }) => {
+        if (!isEmpty(restNavs)) {
+          return (
+            <List.Item
+              key={slug}
+              icon={<IconRenderer {...icon} title={description} />}
+            >
+              {title}
+              <NavList nav={restNavs} />
+            </List.Item>
+          );
+        }
+
         return (
-          <List.Item key={slug} icon={<IconRenderer {...icon} />}>
+          <List.Item
+            key={slug}
+            onClick={() => navigate(`/${slug}`)}
+            icon={<IconRenderer {...icon} />}
+            role="button"
+            title={description}
+          >
             {title}
-            <NavList nav={restNavs} />
           </List.Item>
         );
-      }
-
-      return (
-        <List.Item
-          key={slug}
-          onClick={() => navigate(`/${slug}`)}
-          icon={<IconRenderer {...icon} />}
-          role="button"
-        >
-          {title}
-        </List.Item>
-      );
-    })}
+      },
+    )}
   </List>
 );
 

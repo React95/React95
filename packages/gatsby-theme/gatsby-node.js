@@ -2,12 +2,13 @@ const fs = require('fs');
 
 const MDX_TEMPLATE = `---
 title: Getting Started
+description: Your awesome and nostalgic website!
 icon:
   name: Computer
   variant: 32x32_4
 ---
 
-# Your blog starts on this folder!
+# Your website starts on this folder
 
 Feel free to add your content!
 `;
@@ -41,6 +42,8 @@ exports.createPages = async (
                 variant
               }
               title
+              description
+              image
             }
             body
           }
@@ -85,4 +88,28 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       ],
     },
   });
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+
+  const extendedFrontmatter = `
+    type Mdx implements Node {
+      frontmatter: MdxFrontmatter!
+    }
+
+    type Icon {
+      name: String!
+      variant: String!
+    }
+
+    type MdxFrontmatter {
+      title: String
+      description: String
+      icon: Icon
+      image: String
+    }
+  `;
+
+  createTypes(extendedFrontmatter);
 };
