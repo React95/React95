@@ -4,8 +4,6 @@ const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
     title: 'Gatsby - Powered By React95',
     description: 'This is a Gatsby website that uses React95',
     url: '',
-    author: 'ggdaltoso',
-    image: '/React95-clouds.png',
   },
   plugins: [
     {

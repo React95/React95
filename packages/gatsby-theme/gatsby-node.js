@@ -94,19 +94,24 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
   const extendedFrontmatter = `
-    type Mdx implements Node {
-      frontmatter: MdxFrontmatter!
-    }
-
     type Icon {
       name: String!
       variant: String!
     }
 
-    type MdxFrontmatter {
+    type Mdx implements Node @infer {
+      frontmatter: MdxFrontmatter!
+    }
+
+    type MdxFrontmatter @infer {
       title: String
       description: String
       icon: Icon
+      image: String
+    }
+
+    type SiteSiteMetadata @infer {
+      author: String
       image: String
     }
   `;
