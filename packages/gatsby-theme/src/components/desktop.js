@@ -7,6 +7,7 @@ import { navify } from '../utils';
 import ContentExplorer from './content-explorer';
 import TaskBar from './taskbar';
 import Content from './content';
+import Seo from './seo';
 
 const DesktopStyle = createGlobalStyle`
   html {
@@ -29,6 +30,7 @@ const Desktop = ({ pageContext: { data, content = {} } }) => {
     <ThemeProvider>
       <GlobalStyle />
       <DesktopStyle />
+      <Seo content={content} />
 
       <ContentExplorer nav={nav} />
 
