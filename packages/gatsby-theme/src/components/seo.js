@@ -9,7 +9,7 @@ const SEO = ({ content }) => {
         siteMetadata {
           title
           description
-          url
+          siteUrl
           image
         }
       }
@@ -18,22 +18,13 @@ const SEO = ({ content }) => {
 
   const defaults = data.site.siteMetadata;
 
-  if (defaults.url === '' && typeof window !== 'undefined') {
-    defaults.url = window.location.origin;
-  }
-
-  if (defaults.url === '') {
-    console.error('Please set a url in your site metadata!');
-
-    return null;
-  }
-
   const title = content.frontmatter?.title || defaults.title;
   const description = content.frontmatter?.description || defaults.description;
-  const url = new URL(content.slug || '', defaults.url);
-  const image = defaults.image
-    ? `${defaults.url}${content.frontmatter?.image || defaults.image}`
-    : false;
+  const url = `${defaults.siteUrl}/${content.slug || ''}`;
+  const image =
+    content.frontmatter?.image || defaults.image
+      ? `${defaults.siteUrl}${content.frontmatter?.image || defaults.image}`
+      : false;
   const author = content.frontmatter?.author || defaults.author;
 
   return (

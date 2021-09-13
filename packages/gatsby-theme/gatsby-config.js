@@ -3,7 +3,7 @@ const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
     basePath,
     title: 'Gatsby - Powered By React95',
     description: 'This is a Gatsby website that uses React95',
-    url: '',
+    siteUrl: 'http://localhost:8000',
   },
   plugins: [
     {
