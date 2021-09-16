@@ -111,6 +111,24 @@ Icon type
 | name    | String |
 | variant | String |
 
+```md
+# content/getting-started.mdx
+
+---
+
+title: Getting Started
+description: Your awesome and nostalgic website!
+icon:
+  name: Computer
+  variant: 32x32_4
+
+---
+
+# Your website starts on this folder
+
+Feel free to add your content!
+```
+
 ### Image Behavior
 
 Content can include references to images from static folder inside frontmatter.
