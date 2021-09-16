@@ -153,4 +153,8 @@ icon:
 </Frame>
 ```
 
-## Screenshots
+## Examples
+
+| File structure                                        | Desktop View                                    |
+| ----------------------------------------------------- | ----------------------------------------------- |
+| ![folder structure](./screenshots/file-structure.png) | ![Desktop view](./screenshots/desktop-view.png) |

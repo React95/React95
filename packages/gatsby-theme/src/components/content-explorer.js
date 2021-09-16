@@ -118,7 +118,7 @@ const FrameWrapper = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 6;
+  grid-gap: 6px;
 `;
 
 const boxProps = {
