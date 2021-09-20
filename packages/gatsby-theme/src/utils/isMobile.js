@@ -1,6 +1,8 @@
 const isMobile =
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+  typeof window !== 'undefined' &&
+  (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent,
-  ) || window.innerWidth < 500;
+  ) ||
+    window.innerWidth < 500);
 
 export default isMobile;
