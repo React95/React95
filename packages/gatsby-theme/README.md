@@ -119,8 +119,8 @@ Icon type
 title: Getting Started
 description: Your awesome and nostalgic website!
 icon:
-  name: Computer
-  variant: 32x32_4
+name: Computer
+variant: 32x32_4
 
 ---
 
@@ -173,6 +173,29 @@ icon:
 
 ## Examples
 
-| File structure                                        | Desktop View                                    |
-| ----------------------------------------------------- | ----------------------------------------------- |
-| ![folder structure](./screenshots/file-structure.png) | ![Desktop view](./screenshots/desktop-view.png) |
+<table>
+  <tr>
+    <td>
+      File structure
+    </td>
+    <td>
+      <img alt="folder structure" src="./screenshots/file-structure.png" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Desktop View
+    </td>
+    <td>
+      <img alt="Desktop view" src="./screenshots/desktop-view.png" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      404 page
+    </td>
+    <td>
+      <img alt="Desktop view" src="./screenshots/404.png" />
+    </td>
+  </tr>
+</table>
