@@ -1,0 +1,33 @@
+{
+  "name": "@react95/explorer",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The documentation of React95",
+  "keywords": [
+    "gatsby",
+    "react",
+    "react95"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://react95.github.io/react95/",
+  "license": "MIT",
+  "dependencies": {
+    "@react95/gatsby-theme": "^1.0.0-alpha.0",
+    "gatsby": "^3.12.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/explorer"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  }
+}

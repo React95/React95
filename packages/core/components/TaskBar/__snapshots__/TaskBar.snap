@@ -603,7 +603,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="sc-gsBrbv bSSgss"
+    class="sc-aKXVD jWLXrN"
     display="flex"
     height="28"
     width="100%"
@@ -703,12 +703,12 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       </ul>
     </div>
     <button
-      class="sc-gsBrbv sc-dkAroR kGDkXj MDZGi"
+      class="sc-aKXVD sc-jifHHV joEajy jrxYBV"
       height="auto"
       width="auto"
     >
       <div
-        class="sc-jifIRw dEqiVO"
+        class="sc-hkwmXC bGWNs"
       >
         <img
           alt="Windows95 Logo"
@@ -720,19 +720,19 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       Start
     </button>
     <div
-      class="sc-gsBrbv kCVCDu"
+      class="sc-aKXVD iEovL"
       display="flex"
       height="auto"
       width="100%"
     />
     <div
-      class="sc-gsBrbv hQACtM"
+      class="sc-aKXVD iWdXVx"
       height="auto"
       style="display: flex; justify-content: center; align-items: center;"
       width="auto"
     >
       <div
-        class="sc-JAcuL ljilhj sc-gHftXq dsrcHo"
+        class="sc-gHfsNP evzaNL sc-dkAqVg kvToDv"
       >
         
       </div>

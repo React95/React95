@@ -33,8 +33,8 @@
     "jest": "^25.1.0",
     "jest-styled-components": "^7.0.0",
     "lerna": "^4.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "npmClient": "yarn",
   "workspaces": [
@@ -45,6 +45,8 @@
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "dev": "yarn workspace @react95/core storybook",
+    "dev:explorer": "yarn workspace @react95/explorer develop",
+    "dev:theme": "yarn workspace @react95/gatsby-theme develop",
     "pretest": "lerna run prebuild",
     "postinstall": "lerna run postinstall --scope=@react95/icons --stream",
     "test": "jest --config=./jest/config/config.js",
@@ -54,7 +56,7 @@
     "lint:clippy": "yarn lint packages/clippy",
     "lint:all": "yarn lint:core && yarn lint:clippy",
     "lint": "eslint --ext js,jsx --quiet",
-    "clean": "lerna clean",
+    "clean": "lerna clean -y",
     "build": "lerna run build --stream --parallel",
     "build:clippy": "lerna run build --stream --scope=@react95/clippy",
     "build:core": "lerna run build --stream --scope=@react95/core",
@@ -67,5 +69,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "resolutions": {
+    "graphql": "^15.4.0",
+    "graphql-compose": "^7.25.0",
+    "webpack": "^5.24.2"
   }
 }

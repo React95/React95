@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
-  "main": "./src/index.ts",
+  "main": "./src",
   "unpkg": "icons.css",
   "publishConfig": {
     "access": "public",
