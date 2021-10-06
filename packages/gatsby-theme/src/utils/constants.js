@@ -1,0 +1,3 @@
+const TASKBAR_HEIGHT = 30;
+
+export { TASKBAR_HEIGHT };

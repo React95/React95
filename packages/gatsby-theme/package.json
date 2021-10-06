@@ -1,0 +1,61 @@
+{
+  "name": "@react95/gatsby-theme",
+  "version": "1.0.0",
+  "description": "A React95 theme for your Gatsby blog",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "react",
+    "react95",
+    "blog"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://github.com/React95/React95",
+  "license": "MIT",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@react95/icons": "^2.0.4",
+    "gatsby-plugin-mdx": "^2.12.0",
+    "gatsby-plugin-mdx-frontmatter": "^0.0.4",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-typescript": "^3.12.0",
+    "gatsby-source-filesystem": "^3.12.0",
+    "lodash.startcase": "^4.4.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@react95/core": "^5.5.1",
+    "@xstyled/styled-components": "^3.0.3",
+    "gatsby": "^3.12.0",
+    "object-path": "^0.11.7",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.1.0",
+    "ts-loader": "^9.2.5"
+  },
+  "peerDependencies": {
+    "@react95/core": "^5.5.0",
+    "@xstyled/styled-components": "^3.0.3",
+    "gatsby": "^3.12.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React95/React95.git",
+    "directory": "packages/gatsby-theme"
+  },
+  "scripts": {
+    "develop": "cross-env THEME_STANDALONE=true gatsby develop -o",
+    "start": "gatsby develop",
+    "build": "cross-env THEME_STANDALONE=true gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  }
+}

@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.1](https://github.com/React95/React95/compare/@react95/core@5.5.0...@react95/core@5.5.1) (2021-09-24)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+# [5.5.0](https://github.com/React95/React95/compare/@react95/core@5.4.1...@react95/core@5.5.0) (2021-08-21)
+
+
+### Bug Fixes
+
+* **titlebar:** removing default icon prop from TitleBar ([ad4e3ed](https://github.com/React95/React95/commit/ad4e3ed99b6e585c5b775877f90bfe6bad6b9c17))
+
+
+### Features
+
+* **titlebar:** add Frame to the TitleBar and revisit the generated DOM tree ([5ff11d4](https://github.com/React95/React95/commit/5ff11d4c1469cff9ee8e43e97620eb97e312186f))
+* **titlebar:** exporting it ([260f864](https://github.com/React95/React95/commit/260f864ef8186a3cd342c6b50d114015b747cc43))
+* **titlebar:** exporting TitleBar as a separated component ([d9dbcd2](https://github.com/React95/React95/commit/d9dbcd20ad0b5e0418308780b20f6124ec949ce7))
+
+
+
+
+
+## [5.4.1](https://github.com/React95/React95/compare/@react95/core@5.4.0...@react95/core@5.4.1) (2021-08-07)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+# [5.4.0](https://github.com/React95/React95/compare/@react95/core@5.3.0...@react95/core@5.4.0) (2021-08-07)
+
+
+### Features
+
+* **cursor:** export all cursor ([ffee5b5](https://github.com/React95/React95/commit/ffee5b55cbf69426cff183bd858cf54d88af351e))
+
+
+
+
+
 # [5.3.0](https://github.com/React95/React95/compare/@react95/core@5.2.3...@react95/core@5.3.0) (2021-07-13)
 
 

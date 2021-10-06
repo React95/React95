@@ -9,3 +9,7 @@ dist
 .env
 
 .bojagi
+
+# gatsby
+.cache
+public

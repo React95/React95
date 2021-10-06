@@ -6,6 +6,7 @@ import { th } from '@xstyled/system';
 import Frame, { FrameProps } from '../Frame/Frame';
 import Button from '../Button';
 import Range from '../Range';
+import TitleBar from '../TitleBar';
 import { Play, Pause, Stop } from './buttons';
 import Divider from '../List/ListDivider';
 
@@ -51,18 +52,6 @@ const ControlBtn = styled(Button)`
         }
       `}
   }
-`;
-
-const TitleBar = styled.div`
-  height: 18px;
-  margin-bottom: 2;
-
-  color: ${th('colors.materialTextInvert')};
-  padding: 0 2;
-
-  display: flex;
-  align-items: center;
-  background: ${th('colors.headerBackground')};
 `;
 
 const Controls = styled.div`
@@ -167,6 +156,9 @@ const VideoRenderer = (
   const paths = arrayFy(src);
   const [pathname] = paths;
 
+  const normalizedName = name || pathname.replace(/^.*[\\/]/, '');
+  const title = `${normalizedName}${!loadeddata ? ' (Opening)' : ''}`;
+
   React.useImperativeHandle(ref, () => ({
     get video() {
       return player;
@@ -232,14 +224,7 @@ const VideoRenderer = (
       }}
       ref={wrapperRef}
     >
-      <TitleBar>
-        <Mplayer113
-          variant="16x16_4"
-          style={{ marginRight: 4, width: 16, height: 16 }}
-        />
-        {name || pathname.replace(/^.*[\\/]/, '')}
-        {!loadeddata && ' (Opening)'}
-      </TitleBar>
+      <TitleBar icon={<Mplayer113 variant="16x16_4" />} title={title} />
       <VideoTag {...videoProps} visible={loadeddata} ref={player}>
         {paths.map(s => (
           <Source key={s} src={s} />

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Video /> Snapshot should match snapshot 1`] = `
-.c10 {
+.c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
   border: none;
@@ -10,17 +10,17 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
 }
 
-.c10:disabled {
+.c12:disabled {
   color: #868a8e;
 }
 
-.c10:focus {
+.c12:focus {
   outline: 1px dotted #000000;
   outline-offset: -5px;
   box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
 }
 
-.c10:active {
+.c12:active {
   padding: 8px 20px 4px;
   outline: 1px dotted #000000;
   outline-offset: -5px;
@@ -35,7 +35,15 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px;
 }
 
-.c3 {
+.c1 {
+  background-color: #c3c7cb;
+  color: #fefefe;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+}
+
+.c5 {
   background-color: #c3c7cb;
   max-width: 250px;
   width: auto;
@@ -46,14 +54,14 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   margin-bottom: 4px;
 }
 
-.c5 {
+.c7 {
   background-color: #c3c7cb;
   width: auto;
   height: auto;
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c7 {
+.c9 {
   background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -71,18 +79,47 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
 }
 
-.c12 {
+.c2 {
+  height: 18px;
+  margin-bottom: 2px;
+  padding: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: none;
+  background: #000e7a;
+}
+
+.c2 img {
+  width: 15px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1em;
+}
+
+.c14 {
   -webkit-appearance: none;
   width: 100%;
 }
 
-.c12:hover,
-.c12:focus,
-.c12:active {
+.c14:hover,
+.c14:focus,
+.c14:active {
   outline: none;
 }
 
-.c12::-webkit-slider-runnable-track {
+.c14::-webkit-slider-runnable-track {
   width: 100%;
   height: 4px;
   background: #000000;
@@ -98,7 +135,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
-.c12::-webkit-slider-thumb {
+.c14::-webkit-slider-thumb {
   width: 12px;
   height: 20px;
   background-color: #c3c7cb;
@@ -116,11 +153,11 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-.c12:focus::-webkit-slider-runnable-track {
+.c14:focus::-webkit-slider-runnable-track {
   background: #000000;
 }
 
-.c12::-moz-range-track {
+.c14::-moz-range-track {
   width: 100%;
   height: 4px;
   background: #000000;
@@ -136,7 +173,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
-.c12::-moz-range-thumb {
+.c14::-moz-range-thumb {
   width: 12px;
   height: 20px;
   background-color: #c3c7cb;
@@ -154,13 +191,13 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-appearance: none;
 }
 
-.c2 {
+.c4 {
   width: 100%;
   padding: 2px;
   display: none;
 }
 
-.c11 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -175,22 +212,22 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   align-items: center;
 }
 
-.c11 svg {
+.c13 svg {
   fill: #000000;
 }
 
-.c11.c11,
-.c11:active,
-.c11:focus {
+.c13.c13,
+.c13:active,
+.c13:focus {
   width: 20px;
   height: 20px;
   padding: 7px;
   padding: 4px;
 }
 
-.c11.c11 svg,
-.c11:active svg,
-.c11:focus svg {
+.c13.c13 svg,
+.c13:active svg,
+.c13:focus svg {
   fill: #868a8e;
   border-bottom: 1px solid;
   border-bottom-color: #ffffff;
@@ -198,23 +235,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   border-right-color: #ffffff;
 }
 
-.c1 {
-  height: 18px;
-  margin-bottom: 2px;
-  color: #ffffff;
-  padding: 0 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #000e7a;
-}
-
-.c9 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -226,7 +247,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   padding: 2px 0;
 }
 
-.c6 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -239,23 +260,23 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   color: #ffffff;
 }
 
-.c8 {
+.c10 {
   font-family: 'React95Video-Numbers';
   text-transform: uppercase;
 }
 
-.c4 {
+.c6 {
   background-color: transparent;
   box-shadow: none;
 }
 
-.c13::-webkit-slider-thumb {
+.c15::-webkit-slider-thumb {
   height: 18px;
   margin-top: -7px;
   width: 10px;
 }
 
-.c13[value='0']::-webkit-slider-thumb {
+.c15[value='0']::-webkit-slider-thumb {
   margin-left: -2px;
 }
 
@@ -267,19 +288,24 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
     width="auto"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="headerText"
+      height="auto"
+      width="auto"
     >
       <img
         height="16"
         src="test-file-stub"
-        style="margin-right: 4px; width: 16px; height: 16px;"
         width="16"
       />
-      some_video.mp4
-       (Opening)
+      <div
+        class="c3"
+      >
+        some_video.mp4 (Opening)
+      </div>
     </div>
     <video
-      class="c2"
+      class="c4"
     >
       <source
         src="foo/bar/some_video.mp4"
@@ -287,44 +313,44 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
       />
     </video>
     <div
-      class="c3 c4"
+      class="c5 c6"
       height="auto"
       width="auto"
     >
       <div
-        class="c5 c6"
+        class="c7 c8"
         height="auto"
         width="auto"
       >
         <div
-          class="c7 c4"
+          class="c9 c6"
           display="flex"
           height="auto"
           width="40%"
         >
           <span
-            class="c8"
+            class="c10"
             style="margin-top: auto;"
           />
           <span
-            class="c8"
+            class="c10"
             style="height: 12px;"
           >
             Openning
           </span>
         </div>
         <div
-          class="c7 c4"
+          class="c9 c6"
           display="flex"
           height="auto"
           width="40%"
         >
           <span
-            class="c8"
+            class="c10"
             style="margin-top: auto; font-size: 22px;"
           />
           <span
-            class="c8"
+            class="c10"
             style="height: 12px;"
           >
             time
@@ -332,10 +358,10 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="c9"
+        class="c11"
       >
         <button
-          class="c10 c11"
+          class="c12 c13"
           disabled=""
         >
           <img
@@ -345,7 +371,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           />
         </button>
         <button
-          class="c10 c11"
+          class="c12 c13"
           disabled=""
         >
           <svg
@@ -360,7 +386,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           </svg>
         </button>
         <input
-          class="c12 c13"
+          class="c14 c15"
           max="100"
           min="0"
           step="1"
