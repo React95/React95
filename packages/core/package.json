@@ -18,6 +18,7 @@
     "csstype": "^3.0.3",
     "nanoid": "^3.1.22",
     "react-draggable": "^4.3.1",
+    "react-use": "^17.3.1",
     "styled-system": "^5.1.5",
     "typescript": "^3.9.7"
   },
