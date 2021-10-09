@@ -15,7 +15,6 @@ const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
     },
     'gatsby-plugin-mdx-frontmatter',
     'gatsby-plugin-mdx',
-    'gatsby-plugin-typescript',
   ],
 });
 
