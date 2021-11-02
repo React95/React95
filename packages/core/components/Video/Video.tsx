@@ -7,7 +7,7 @@ import Frame, { FrameProps } from '../Frame/Frame';
 import Button from '../Button';
 import Range from '../Range';
 import TitleBar from '../TitleBar';
-import { Play, Pause, Stop } from './buttons';
+import { Play, Pause, Stop, Fullscreen } from './buttons';
 import Divider from '../List/ListDivider';
 
 const VideoTag = styled.video<{ visible: boolean }>`
@@ -152,6 +152,7 @@ const VideoRenderer = (
   const wrapperRef = React.useRef<HTMLDivElement>(null);
   const playPauseRef = React.useRef<HTMLButtonElement>(null);
   const stopRef = React.useRef<HTMLButtonElement>(null);
+  const fullScreenRef = React.useRef<HTMLButtonElement>(null);
 
   const paths = arrayFy(src);
   const [pathname] = paths;
@@ -293,6 +294,15 @@ const VideoRenderer = (
             ref={stopRef}
           >
             <Stop />
+          </ControlBtn>
+          <ControlBtn
+            disabled={!loadeddata}
+            onClick={() => {
+              player?.current?.requestFullscreen();
+            }}
+            ref={fullScreenRef}
+          >
+            <Fullscreen />
           </ControlBtn>
 
           <VideoRange
