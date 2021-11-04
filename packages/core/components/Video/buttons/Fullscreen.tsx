@@ -3,9 +3,9 @@ import * as React from 'react';
 const Fullscreen = (props: React.HTMLAttributes<SVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="100%"
+    width="6"
     viewBox="0 0 24 24"
-    height="100%"
+    height="6"
     aria-label="fullscreen"
     {...props}
   >
