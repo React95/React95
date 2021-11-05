@@ -86,6 +86,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://sime.net.au/"><img src="https://avatars.githubusercontent.com/u/216917?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Males</b></sub></a><br /><a href="#infra-sime" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://kembreyfarquhar.com"><img src="https://avatars.githubusercontent.com/u/47987809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Katie Embrey-Farquhar</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kembreyfarquhar" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Akembreyfarquhar" title="Bug reports">🐛</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="#fundingFinding-mmartinsoliveira" title="Funding Finding">🔍</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
