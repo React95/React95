@@ -137,6 +137,7 @@ export type VideoRefs = {
   wrapper: React.Ref<HTMLDivElement>;
   playpause: React.Ref<HTMLButtonElement>;
   stop: React.Ref<HTMLButtonElement>;
+  fullScreen: React.Ref<HTMLButtonElement>;
 };
 
 const VideoRenderer = (
@@ -175,6 +176,9 @@ const VideoRenderer = (
     },
     get stop() {
       return stopRef;
+    },
+    get fullScreen() {
+      return fullScreenRef;
     },
   }));
 
