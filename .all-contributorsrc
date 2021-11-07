@@ -166,7 +166,8 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/13508373?v=4",
       "profile": "https://github.com/LRNZ09",
       "contributions": [
-        "doc"
+        "doc",
+        "question"
       ]
     },
     {
@@ -281,6 +282,15 @@
       "contributions": [
         "code",
         "bug"
+      ]
+    },
+    {
+      "login": "mmartinsoliveira",
+      "name": "Matheus Martins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
+      "profile": "https://mmartins.vercel.app/",
+      "contributions": [
+        "fundingFinding"
       ]
     }
   ],

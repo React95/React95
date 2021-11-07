@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -74,7 +74,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   </tr>
   <tr>
     <td align="center"><a href="http://kaiofelipejs.dev"><img src="https://avatars2.githubusercontent.com/u/41922744?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kaio Felipe Silva</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kaiofelipejs" title="Documentation">📖</a> <a href="https://github.com/React95/React95/commits?author=kaiofelipejs" title="Code">💻</a> <a href="https://github.com/React95/React95/commits?author=kaiofelipejs" title="Tests">⚠️</a></td>
-    <td align="center"><a href="https://github.com/LRNZ09"><img src="https://avatars2.githubusercontent.com/u/13508373?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lorenzo Pieri</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=LRNZ09" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/LRNZ09"><img src="https://avatars2.githubusercontent.com/u/13508373?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lorenzo Pieri</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=LRNZ09" title="Documentation">📖</a> <a href="#question-LRNZ09" title="Answering Questions">💬</a></td>
     <td align="center"><a href="http://insafkhamzin.com"><img src="https://avatars3.githubusercontent.com/u/27154217?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Insaf</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=InsafKhamzin" title="Documentation">📖</a></td>
     <td align="center"><a href="https://theoomoregbee.me"><img src="https://avatars3.githubusercontent.com/u/10440327?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Theophilus Omoregbee</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=theoomoregbee" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Atheoomoregbee" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/belakm"><img src="https://avatars2.githubusercontent.com/u/13392444?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mitja Belak</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Abelakm" title="Bug reports">🐛</a> <a href="https://github.com/React95/React95/commits?author=belakm" title="Code">💻</a></td>
@@ -89,6 +89,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://www.bojagi.io"><img src="https://avatars.githubusercontent.com/u/1235818?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Jentsch</b></sub></a><br /><a href="#infra-tchock" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://sime.net.au/"><img src="https://avatars.githubusercontent.com/u/216917?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Males</b></sub></a><br /><a href="#infra-sime" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://kembreyfarquhar.com"><img src="https://avatars.githubusercontent.com/u/47987809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Katie Embrey-Farquhar</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kembreyfarquhar" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Akembreyfarquhar" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="#fundingFinding-mmartinsoliveira" title="Funding Finding">🔍</a></td>
   </tr>
 </table>
 
