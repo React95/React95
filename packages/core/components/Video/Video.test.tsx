@@ -34,6 +34,16 @@ describe('<Video />', () => {
       Object.defineProperty(window.HTMLElement.prototype, 'offsetWidth', {
         writable: true,
       });
+
+      // extend HTMLMediaElement
+      Object.defineProperty(
+        window.HTMLMediaElement.prototype,
+        'requestFullscreen',
+        {
+          value: () => {},
+          writable: true,
+        },
+      );
     });
 
     it('should play, pause, and stop', async () => {
@@ -42,6 +52,10 @@ describe('<Video />', () => {
         .mockImplementation(() => Promise.resolve());
       const pauseStub = jest
         .spyOn(window.HTMLMediaElement.prototype, 'pause')
+        .mockImplementation(() => Promise.resolve());
+
+      const fullScreenStub = jest
+        .spyOn(window.HTMLMediaElement.prototype, 'requestFullscreen')
         .mockImplementation(() => Promise.resolve());
 
       const { container, getByLabelText } = await waitRender(
@@ -60,9 +74,13 @@ describe('<Video />', () => {
       // Stop
       fireEvent.click(getByLabelText('stop'));
 
+      fireEvent.click(getByLabelText('fullscreen'));
+
       expect(playStub).toHaveBeenCalled();
       // Pause + Stop
       expect(pauseStub).toHaveBeenCalledTimes(2);
+
+      expect(fullScreenStub).toHaveBeenCalled();
     });
 
     it('should change range when video updates', async () => {
