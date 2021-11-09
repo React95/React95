@@ -292,6 +292,15 @@
       "contributions": [
         "fundingFinding"
       ]
+    },
+    {
+      "login": "mavericardo",
+      "name": "Marcos Ricardo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27781419?v=4",
+      "profile": "https://www.linkedin.com/in/marcosricardo0101/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
