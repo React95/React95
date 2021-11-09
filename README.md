@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -92,6 +92,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   </tr>
   <tr>
     <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="#fundingFinding-mmartinsoliveira" title="Funding Finding">🔍</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/marcosricardo0101/"><img src="https://avatars.githubusercontent.com/u/27781419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcos Ricardo</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=mavericardo" title="Documentation">📖</a></td>
   </tr>
 </table>
 
