@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/React95/React95/compare/@react95/core@5.5.1...@react95/core@5.6.0) (2021-11-09)
+
+
+### Bug Fixes
+
+* **video:** adjust width of full screen icon ([5be7930](https://github.com/React95/React95/commit/5be79304fd8c8007d0ac3bb1a7dacee852fa2e45))
+
+
+### Features
+
+* **video:** add resource from full screen ([6475d89](https://github.com/React95/React95/commit/6475d891c221311df96fc9e75a826f58b1c2a779)), closes [#288](https://github.com/React95/React95/issues/288)
+* **video:** add VideoRefs and getter ([ef745a9](https://github.com/React95/React95/commit/ef745a98a630189b78be204e6646f845d4df53d7)), closes [#288](https://github.com/React95/React95/issues/288)
+
+
+
+
+
 ## [5.5.1](https://github.com/React95/React95/compare/@react95/core@5.5.0...@react95/core@5.5.1) (2021-09-24)
 
 **Note:** Version bump only for package @react95/core
