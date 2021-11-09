@@ -385,6 +385,23 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
             />
           </svg>
         </button>
+        <button
+          class="c12 c13"
+          disabled=""
+        >
+          <svg
+            aria-label="fullscreen"
+            height="6"
+            viewBox="0 0 24 24"
+            width="6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24 9h-2v-5h-7v-2h9v7zm-9 13v-2h7v-5h2v7h-9zm-15-7h2v5h7v2h-9v-7zm9-13v2h-7v5h-2v-7h9zm11 4h-16v12h16v-12z"
+              style="width: 1000px;"
+            />
+          </svg>
+        </button>
         <input
           class="c14 c15"
           max="100"
