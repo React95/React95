@@ -67,7 +67,7 @@ const withTM = require('next-transpile-modules')(['@react95/core']);
 module.exports = withTM(withFonts());
 ```
 
-- If you are going to use the @react95/icons module in your project, you must add it to the array by importing the next-transpile-modules into the `next.config.js` file
+- If you are going to use the @react95/icons module in your project, you must add it to the `next.config.js` file as shown below
 
 ```javascript
 const withFont = require('next-fonts');
