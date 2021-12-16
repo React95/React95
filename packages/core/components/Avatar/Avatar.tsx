@@ -1,7 +1,13 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
+import Frame, { FrameProps } from '../Frame/Frame';
 
-export interface AvatarProps extends React.ImgHTMLAttributes<HTMLDivElement> {
+export interface AvatarProps
+  extends Omit<
+      React.ImgHTMLAttributes<HTMLDivElement>,
+      'width' | 'color' | 'height'
+    >,
+    FrameProps {
   circle?: boolean;
   size?: number;
 }
@@ -10,7 +16,7 @@ const Image = styled.img`
   max-width: 100%;
 `;
 
-const StyledAvatar = styled.div<AvatarProps>`
+const StyledAvatar = styled(Frame)<AvatarProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +25,8 @@ const StyledAvatar = styled.div<AvatarProps>`
   overflow: hidden;
   margin-right: 1;
   margin-bottom: 1;
+
+  box-shadow: unset;
 
   ${({ circle, size = 48 }) => css`
     border-radius: ${circle ? '50%' : 0};
