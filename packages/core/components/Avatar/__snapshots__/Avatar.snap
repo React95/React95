@@ -14,20 +14,15 @@ exports[`<Avatar /> Snapshots should match snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #c3c7cb;
-  border-top: 2px solid;
-  border-top-color: #868a8e;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 2px solid;
-  border-bottom-color: #ffffff;
-  border-left: 2px solid;
-  border-left-color: #868a8e;
-  border-radius: 0;
   font-weight: bold;
   overflow: hidden;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border-radius: 0;
   width: 48px;
   height: 48px;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  padding-left: 1px;
 }
 
 <div>
@@ -51,20 +46,15 @@ exports[`<Avatar /> Snapshots should match snapshot in default avatar with child
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #c3c7cb;
-  border-top: 2px solid;
-  border-top-color: #868a8e;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 2px solid;
-  border-bottom-color: #ffffff;
-  border-left: 2px solid;
-  border-left-color: #868a8e;
-  border-radius: 0;
   font-weight: bold;
   overflow: hidden;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border-radius: 0;
   width: 48px;
   height: 48px;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  padding-left: 1px;
 }
 
 <div>
@@ -92,20 +82,19 @@ exports[`<Avatar /> Snapshots should match snapshot in default avatar with child
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #c3c7cb;
-  border-top: 2px solid;
-  border-top-color: #868a8e;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 2px solid;
-  border-bottom-color: #ffffff;
-  border-left: 2px solid;
-  border-left-color: #868a8e;
-  border-radius: 50%;
   font-weight: bold;
   overflow: hidden;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: #868a8e;
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
+  border-left-color: #868a8e;
 }
 
 <div>
@@ -137,20 +126,15 @@ exports[`<Avatar /> Snapshots should match snapshot in default avatar with src a
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #c3c7cb;
-  border-top: 2px solid;
-  border-top-color: #868a8e;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 2px solid;
-  border-bottom-color: #ffffff;
-  border-left: 2px solid;
-  border-left-color: #868a8e;
-  border-radius: 0;
   font-weight: bold;
   overflow: hidden;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border-radius: 0;
   width: 48px;
   height: 48px;
+  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
+  padding-left: 1px;
 }
 
 <div>

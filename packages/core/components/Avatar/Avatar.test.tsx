@@ -1,5 +1,5 @@
 import React from 'react';
-import { screen ,render } from '../shared/test/utils';
+import { screen, render } from '../shared/test/utils';
 import Avatar from './Avatar';
 
 describe('<Avatar />', () => {
@@ -11,7 +11,12 @@ describe('<Avatar />', () => {
     });
 
     it('should match snapshot in default avatar with src and alt prop', () => {
-      const { container } = render(<Avatar src="https://github.com/React95.png" alt="React95 brand logo" />);
+      const { container } = render(
+        <Avatar
+          src="https://github.com/React95.png"
+          alt="React95 brand logo"
+        />,
+      );
 
       expect(container).toMatchSnapshot();
     });
@@ -20,7 +25,7 @@ describe('<Avatar />', () => {
       const { container } = render(
         <Avatar>
           <p>GG</p>
-        </Avatar>
+        </Avatar>,
       );
 
       expect(container).toMatchSnapshot();
@@ -30,17 +35,22 @@ describe('<Avatar />', () => {
       const { container } = render(
         <Avatar circle>
           <p>GG</p>
-        </Avatar>
-        );
+        </Avatar>,
+      );
 
       expect(container).toMatchSnapshot();
-      });
+    });
   });
 
   describe('value prop', () => {
     it('should render avatar with src and alt', () => {
-      render(<Avatar src="https://github.com/React95.png" alt="React95 brand logo" />);
-  
+      render(
+        <Avatar
+          src="https://github.com/React95.png"
+          alt="React95 brand logo"
+        />,
+      );
+
       expect(screen.getByRole('img')).toBeInTheDocument();
     });
 
@@ -48,16 +58,16 @@ describe('<Avatar />', () => {
       render(<Avatar circle>GG</Avatar>);
 
       expect(screen.getByText(/GG/i)).toHaveStyle({
-        borderRadius: '50%'
+        borderRadius: '50%',
       });
     });
 
     it('should render avatar with size', () => {
-      render(<Avatar size="100">GG</Avatar>);
-  
+      render(<Avatar size={100}>GG</Avatar>);
+
       expect(screen.getByText(/GG/i)).toHaveStyle({
         width: '100px',
-        height: '100px'
+        height: '100px',
       });
     });
   });
