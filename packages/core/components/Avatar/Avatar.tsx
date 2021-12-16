@@ -1,46 +1,54 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 
-export type AvatarProps = {
-   src?: string,
-   alt?: string,
-   circle?: boolean
-   size?: string | number
-   children?: React.ReactNode
-} & React.HTMLAttributes<HTMLDivElement>
+export interface AvatarProps extends React.ImgHTMLAttributes<HTMLDivElement> {
+  circle?: boolean;
+  size?: number;
+}
 
-const Image = styled.img` 
+const Image = styled.img`
   max-width: 100%;
-`
+`;
 
-const StyledAvatar =  styled.div<AvatarProps>`
- ${({circle, size}) => css`
-   display: flex;
-   align-items: center;
-   justify-content: center;
- 
-   background-color: material;
-   border-top: 2px solid;
-   border-top-color: borderDark;
-   border-right: 2px solid;
-   border-right-color: borderLightest;
-   border-bottom: 2px solid;
-   border-bottom-color: borderLightest;
-   border-left: 2px solid;
-   border-left-color: borderDark;
-   border-radius: ${circle ? '50%' : 0};
-   font-weight: bold;
-   overflow: hidden;
+const StyledAvatar = styled.div<AvatarProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   width: ${size ? size : 48}px;
-   height: ${size ? size : 48}px;
- `}
-`
+  font-weight: bold;
+  overflow: hidden;
+  margin-right: 1;
+  margin-bottom: 1;
 
-const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(({src, alt, circle, children, ...otherProps}, ref) => (
-    <StyledAvatar circle={circle}  ref={ref} {...otherProps}>
-        {src ? <Image src={src} alt={alt} /> :  children}
+  ${({ circle, size = 48 }) => css`
+    border-radius: ${circle ? '50%' : 0};
+
+    width: ${size};
+    height: ${size};
+  `}
+
+  ${({ circle }) =>
+    circle
+      ? css`
+          border-style: solid;
+          border-width: 1;
+          border-top-color: borderDark;
+          border-right-color: borderLightest;
+          border-bottom-color: borderLightest;
+          border-left-color: borderDark;
+        `
+      : css`
+          box-shadow: in;
+          padding-left: 1;
+        `}
+`;
+
+const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+  ({ src, srcSet, alt, circle, children, ...otherProps }, ref) => (
+    <StyledAvatar circle={circle} ref={ref} {...otherProps}>
+      {src || srcSet ? <Image src={src} srcSet={srcSet} alt={alt} /> : children}
     </StyledAvatar>
-));
+  ),
+);
 
 export default Avatar;
