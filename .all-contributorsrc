@@ -313,6 +313,17 @@
         "question",
         "doc"
       ]
+    },
+    {
+      "login": "mmartinsolliv",
+      "name": "Matheus Martins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
+      "profile": "https://mmartins.vercel.app/",
+      "contributions": [
+        "code",
+        "ideas",
+        "financial"
+      ]
     }
   ],
   "skipCi": true,
