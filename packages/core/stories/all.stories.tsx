@@ -4,6 +4,7 @@ import styled from '@xstyled/styled-components';
 
 import { Alert } from '../components';
 
+import {Simple as SimpleAvatar} from './avatar.stories';
 import { Simple as SimpleButton } from './button.stories';
 import { Simple as SimpleDropdown } from './dropdown.stories';
 import { Simple as SimpleFieldset } from './fieldset.stories';
@@ -57,6 +58,9 @@ export const All = () => (
     <div>
       <SimpleButton />
     </div>
+
+    <br />
+    <SimpleAvatar />
 
     <br />
     <AllCheckbox />
