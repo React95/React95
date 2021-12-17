@@ -285,15 +285,6 @@
       ]
     },
     {
-      "login": "mmartinsoliveira",
-      "name": "Matheus Martins",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
-      "profile": "https://mmartins.vercel.app/",
-      "contributions": [
-        "fundingFinding"
-      ]
-    },
-    {
       "login": "mavericardo",
       "name": "Marcos Ricardo",
       "avatar_url": "https://avatars.githubusercontent.com/u/27781419?v=4",
@@ -322,7 +313,8 @@
       "contributions": [
         "code",
         "ideas",
-        "financial"
+        "financial",
+        "fundingFinding"
       ]
     }
   ],

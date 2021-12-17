@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -91,10 +91,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://kembreyfarquhar.com"><img src="https://avatars.githubusercontent.com/u/47987809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Katie Embrey-Farquhar</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=kembreyfarquhar" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Akembreyfarquhar" title="Bug reports">🐛</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="#fundingFinding-mmartinsoliveira" title="Funding Finding">🔍</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/marcosricardo0101/"><img src="https://avatars.githubusercontent.com/u/27781419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcos Ricardo</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=mavericardo" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/felipsbreno"><img src="https://avatars.githubusercontent.com/u/50807243?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Breno Felipe de Bairros</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=felipsbreno" title="Code">💻</a> <a href="#ideas-felipsbreno" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-felipsbreno" title="Answering Questions">💬</a> <a href="https://github.com/React95/React95/commits?author=felipsbreno" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=mmartinsolliv" title="Code">💻</a> <a href="#ideas-mmartinsolliv" title="Ideas, Planning, & Feedback">🤔</a> <a href="#financial-mmartinsolliv" title="Financial">💵</a></td>
+    <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=mmartinsolliv" title="Code">💻</a> <a href="#ideas-mmartinsolliv" title="Ideas, Planning, & Feedback">🤔</a> <a href="#financial-mmartinsolliv" title="Financial">💵</a> <a href="#fundingFinding-mmartinsolliv" title="Funding Finding">🔍</a></td>
   </tr>
 </table>
 
