@@ -4,12 +4,9 @@
     "outDir": "./dist/@types",
     "jsx": "react",
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
   },
   "include": ["components", "types", "../../types"],
-  "exclude": [
-    "node_modules",
-    "components/**/*test.tsx",
-    "components/**/__snapshots__"
-  ]
+  "exclude": ["components/**/*test.tsx", "components/**/__snapshots__"]
 }
