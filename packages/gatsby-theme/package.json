@@ -1,6 +1,6 @@
 {
   "name": "@react95/gatsby-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React95 theme for your Gatsby blog",
   "keywords": [
     "gatsby",
@@ -28,7 +28,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@react95/core": "^5.7.1",
+    "@react95/core": "^5.7.2",
     "@xstyled/styled-components": "^3.0.3",
     "gatsby": "^4.4.0",
     "object-path": "^0.11.7",
