@@ -54,7 +54,7 @@
     "ts-jest": "^26.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./components/GlobalStyle",
+    "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -s ./components/GlobalStyle -o docs",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types",
