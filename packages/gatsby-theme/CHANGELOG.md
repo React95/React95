@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.1.0...@react95/gatsby-theme@1.2.0) (2021-12-19)
+
+
+### Features
+
+* **SEO:** add gatsby react helmet plugin ([701b7c5](https://github.com/React95/React95/commit/701b7c58ebc58a07b719fbb50f38b31ff998c233))
+
+
+
+
+
 # [1.1.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.4...@react95/gatsby-theme@1.1.0) (2021-12-19)
 
 
