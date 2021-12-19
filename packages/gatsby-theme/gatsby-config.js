@@ -17,6 +17,7 @@ const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
     'gatsby-plugin-mdx-frontmatter',
     'gatsby-plugin-mdx',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
   ],
 });
 
