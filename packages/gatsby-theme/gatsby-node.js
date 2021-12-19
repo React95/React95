@@ -77,19 +77,6 @@ exports.createPages = async (
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          use: ['ts-loader'],
-        },
-      ],
-    },
-  });
-};
-
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
