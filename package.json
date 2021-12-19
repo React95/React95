@@ -57,7 +57,7 @@
     "lint:all": "yarn lint:core && yarn lint:clippy",
     "lint": "eslint --ext js,jsx --quiet",
     "clean": "lerna clean -y",
-    "build": "lerna run build --stream --parallel",
+    "build": "lerna run build --stream --parallel --ignore=@react95/explorer",
     "build:clippy": "lerna run build --stream --scope=@react95/clippy",
     "build:core": "lerna run build --stream --scope=@react95/core",
     "build:icons": "lerna run build --stream --scope=@react95/icons",

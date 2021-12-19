@@ -10,13 +10,15 @@
         "**/*.md",
         "**/*.json",
         "stories",
-        ".storybook"
+        ".storybook",
+        "explorer"
       ]
     },
     "version": {
       "conventionalCommits": true,
       "createRelease": "github",
-      "message": "chore(release): publish :floppy_disk: :tada: [skip ci]"
+      "message": "chore(release): publish :floppy_disk: :tada: [skip ci]",
+      "ignoreChanges": ["explorer"]
     }
   }
 }
