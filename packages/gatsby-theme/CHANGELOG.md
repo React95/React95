@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.2...@react95/gatsby-theme@1.0.3) (2021-12-19)
+
+
+### Bug Fixes
+
+* **gatsby-theme:** moving theme and global styles to gatsby wrappers ([a8ecfd7](https://github.com/React95/React95/commit/a8ecfd72b35111e1982c58d29c1cbbbe7293697f))
+
+
+
+
+
 ## [1.0.2](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.1...@react95/gatsby-theme@1.0.2) (2021-12-16)
 
 **Note:** Version bump only for package @react95/gatsby-theme
