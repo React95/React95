@@ -13,9 +13,10 @@ const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
         path: contentPath,
       },
     },
+    'gatsby-plugin-typescript',
     'gatsby-plugin-mdx-frontmatter',
     'gatsby-plugin-mdx',
-    'gatsby-plugin-typescript',
+    'gatsby-plugin-styled-components',
   ],
 });
 

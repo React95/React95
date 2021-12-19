@@ -2,12 +2,12 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.0",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
     "@bojagi/cli": "^0.15.1",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
@@ -16,7 +16,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.1.0",
-    "babel-plugin-styled-components": "^1.10.7",
+    "babel-plugin-styled-components": "^2.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "0.0.6",
     "babel-polyfill": "^6.26.0",
@@ -73,6 +73,6 @@
   "resolutions": {
     "graphql": "^15.4.0",
     "graphql-compose": "^7.25.0",
-    "webpack": "^5.24.2"
+    "webpack": "^5.65.0"
   }
 }

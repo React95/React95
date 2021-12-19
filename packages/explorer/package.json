@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@react95/gatsby-theme": "^1.0.2",
-    "gatsby": "^3.12.0",
+    "gatsby": "^4.4.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },

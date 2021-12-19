@@ -1,4 +1,5 @@
 module.exports = {
+  staticDirs: ['../components/GlobalStyle'],
   stories: ['../stories/*.stories.tsx'],
   logLevel: 'debug',
   core: {
