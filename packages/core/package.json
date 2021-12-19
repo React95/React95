@@ -55,7 +55,7 @@
   },
   "scripts": {
     "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook -s ./components/GlobalStyle -o docs",
+    "build-storybook": "build-storybook -o docs",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
