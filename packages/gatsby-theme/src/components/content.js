@@ -27,7 +27,7 @@ const Content = ({ content }) => {
       closeModal={() => navigate('/')}
     >
       <MDXProvider components={R95Components}>
-        <MDXRenderer>{body}</MDXRenderer>
+        <MDXRenderer frontmatter={content.frontmatter}>{body}</MDXRenderer>
       </MDXProvider>
     </R95Components.Modal>
   );
