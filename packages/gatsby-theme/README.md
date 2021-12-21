@@ -96,13 +96,14 @@ module.exports = {
 
 The following are the defined content fields based on the node interface in the schema
 
-| Field       | Type   |
-| ----------- | ------ |
-| title       | String |
-| image       | String |
-| description | String |
-| icon        | Icon   |
-| image       | String |
+| Field       | Type    |
+| ----------- | ------- |
+| title       | String  |
+| image       | String  |
+| description | String  |
+| icon        | Icon    |
+| image       | String  |
+| modal       | Boolean |
 
 Icon type
 
@@ -118,9 +119,10 @@ Icon type
 
 title: Getting Started
 description: Your awesome and nostalgic website!
+modal:false
 icon:
-name: Computer
-variant: 32x32_4
+  name: Computer
+  variant: 32x32_4
 
 ---
 
