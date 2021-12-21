@@ -1,17 +1,23 @@
-'@react95/core':
-  - packages/core/**/*
-
 '@react95/clippy':
   - packages/clippy/**/*
 
-'@react95/icons':
-  - packages/icons/**/*
-
-'@react95/design':
-  - packages/design/**/*
+'@react95/core':
+  - packages/core/**/*
 
 '@react95/cra-template':
   - packages/cra-template/**/*
 
 '@react95/cra-template-typescript':
   - packages/cra-template-typescript/**/*
+
+'@react95/design':
+  - packages/design/**/*
+
+'@react95/explorer':
+  - packages/explorer/**/*
+
+'@react95/gatsby-theme':
+  - packages/gatsby-theme/**/*
+
+'@react95/icons':
+  - packages/icons/**/*
