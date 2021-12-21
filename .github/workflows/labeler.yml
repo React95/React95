@@ -10,6 +10,7 @@ jobs:
       pull-requests: write
 
     steps:
-    - uses: actions/labeler@v2
+    - uses: actions/labeler@v3
       with:
         repo-token: "${{ secrets.GH_TOKEN }}"
+        sync-labels: true
