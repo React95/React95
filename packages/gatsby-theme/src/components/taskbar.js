@@ -8,7 +8,7 @@ import IconRenderer from './icon-renderer';
 const NavList = ({ nav }) => (
   <List>
     {Object.values(nav).map(
-      ({ slug, icon = {}, title, description, image, ...restNavs }) => {
+      ({ slug, icon = {}, title, description, image, modal, ...restNavs }) => {
         if (!isEmpty(restNavs)) {
           return (
             <List.Item
