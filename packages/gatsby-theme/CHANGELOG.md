@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.2.0...@react95/gatsby-theme@1.3.0) (2021-12-21)
+
+
+### Features
+
+* **theme:** add `modal` as opt-out inside your mdx frontmatter ([cc063ed](https://github.com/React95/React95/commit/cc063ede718329cfde459313a6649a3d24e5be5d))
+* **theme:** add frontmatter to be used as a prop inside any MDX ([d1ab019](https://github.com/React95/React95/commit/d1ab019a802b3ad06d796b4e42e4951c8db208ab))
+
+
+
+
+
 # [1.2.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.1.0...@react95/gatsby-theme@1.2.0) (2021-12-19)
 
 
