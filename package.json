@@ -33,8 +33,8 @@
     "jest": "^25.1.0",
     "jest-styled-components": "^7.0.0",
     "lerna": "^4.0.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "beta",
+    "react-dom": "beta"
   },
   "npmClient": "yarn",
   "workspaces": [

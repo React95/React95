@@ -12,7 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "@react95/icons": "^2.0.4",
-    "@testing-library/react-hooks": "^3.2.1",
     "@types/react-virtualized": "^9.21.10",
     "@xstyled/styled-components": "^1.17.1",
     "csstype": "^3.0.3",
@@ -22,8 +21,8 @@
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "beta",
+    "react-dom": "beta",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
@@ -38,7 +37,7 @@
     "@storybook/storybook-deployer": "^2.8.10",
     "@storybook/theming": "^6.3.6",
     "@testing-library/jest-dom": "^5.5.0",
-    "@testing-library/react": "^10.0.4",
+    "@testing-library/react": "alpha",
     "@types/jest": "^26.0.8",
     "@types/styled-components": "^5.1.2",
     "@types/styled-system": "^5.1.10",
