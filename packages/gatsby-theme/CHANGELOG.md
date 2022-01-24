@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.2.0...@react95/gatsby-theme@1.3.0) (2021-12-21)
+
+
+### Features
+
+* **theme:** add `modal` as opt-out inside your mdx frontmatter ([cc063ed](https://github.com/React95/React95/commit/cc063ede718329cfde459313a6649a3d24e5be5d))
+* **theme:** add frontmatter to be used as a prop inside any MDX ([d1ab019](https://github.com/React95/React95/commit/d1ab019a802b3ad06d796b4e42e4951c8db208ab))
+
+
+
+
+
+# [1.2.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.1.0...@react95/gatsby-theme@1.2.0) (2021-12-19)
+
+
+### Features
+
+* **SEO:** add gatsby react helmet plugin ([701b7c5](https://github.com/React95/React95/commit/701b7c58ebc58a07b719fbb50f38b31ff998c233))
+
+
+
+
+
+# [1.1.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.4...@react95/gatsby-theme@1.1.0) (2021-12-19)
+
+
+### Features
+
+* **SEO:** improving SEO social share metatags ([a301357](https://github.com/React95/React95/commit/a301357ad114c2b7cb2005822a9ffa95d56fbd10))
+
+
+
+
+
+## [1.0.4](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.3...@react95/gatsby-theme@1.0.4) (2021-12-19)
+
+**Note:** Version bump only for package @react95/gatsby-theme
+
+
+
+
+
+## [1.0.3](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.2...@react95/gatsby-theme@1.0.3) (2021-12-19)
+
+
+### Bug Fixes
+
+* **gatsby-theme:** moving theme and global styles to gatsby wrappers ([a8ecfd7](https://github.com/React95/React95/commit/a8ecfd72b35111e1982c58d29c1cbbbe7293697f))
+
+
+
+
+
+## [1.0.2](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.1...@react95/gatsby-theme@1.0.2) (2021-12-16)
+
+**Note:** Version bump only for package @react95/gatsby-theme
+
+
+
+
+
 ## [1.0.1](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.0.0...@react95/gatsby-theme@1.0.1) (2021-11-09)
 
 **Note:** Version bump only for package @react95/gatsby-theme

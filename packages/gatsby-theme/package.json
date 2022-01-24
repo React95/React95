@@ -1,6 +1,6 @@
 {
   "name": "@react95/gatsby-theme",
-  "version": "1.0.1",
+  "version": "1.3.0",
   "description": "A React95 theme for your Gatsby blog",
   "keywords": [
     "gatsby",
@@ -17,18 +17,20 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@react95/icons": "^2.0.4",
+    "babel-plugin-styled-components": "^2.0.2",
     "gatsby-plugin-mdx": "^2.12.0",
     "gatsby-plugin-mdx-frontmatter": "^0.0.4",
-    "gatsby-plugin-react-helmet": "^4.13.0",
-    "gatsby-plugin-typescript": "^3.12.0",
-    "gatsby-source-filesystem": "^3.12.0",
+    "gatsby-plugin-react-helmet": "^5.4.0",
+    "gatsby-plugin-styled-components": "^5.4.0",
+    "gatsby-plugin-typescript": "^4.4.0",
+    "gatsby-source-filesystem": "^4.4.0",
     "lodash.startcase": "^4.4.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@react95/core": "^5.6.0",
+    "@react95/core": "^5.7.2",
     "@xstyled/styled-components": "^3.0.3",
-    "gatsby": "^3.12.0",
+    "gatsby": "^4.4.0",
     "object-path": "^0.11.7",
     "react": "beta",
     "react-dom": "beta",
@@ -38,7 +40,7 @@
   "peerDependencies": {
     "@react95/core": "^5.5.0",
     "@xstyled/styled-components": "^3.0.3",
-    "gatsby": "^3.12.0",
+    "gatsby": "^4.4.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "styled-components": "^5.1.0"

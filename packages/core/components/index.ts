@@ -1,6 +1,7 @@
 import { Modal, ModalContext } from './Modal';
 import { Tab, Tabs } from './Tabs';
 import Alert from './Alert';
+import Avatar from './Avatar';
 import Button from './Button';
 import Checkbox from './Checkbox';
 import Cursor from './Cursor';
@@ -23,6 +24,7 @@ import Video from './Video';
 
 export {
   Alert,
+  Avatar,
   Button,
   Checkbox,
   Cursor,

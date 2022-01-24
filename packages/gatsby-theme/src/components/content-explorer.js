@@ -11,7 +11,7 @@ import IconRenderer from './icon-renderer';
 
 function getTreeData(nav, select) {
   return Object.values(nav).map(
-    ({ slug, icon = {}, title, description, image, ...restNavs }) => {
+    ({ slug, icon = {}, title, description, image, modal, ...restNavs }) => {
       const node = {
         label: title,
         title: description,

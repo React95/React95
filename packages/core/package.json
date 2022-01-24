@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "5.6.0",
+  "version": "5.7.2",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "repository": {
@@ -53,8 +53,8 @@
     "ts-jest": "^26.1.4"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./components/GlobalStyle",
-    "build-storybook": "build-storybook -c .storybook -s ./components/GlobalStyle -o docs",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -o docs",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",

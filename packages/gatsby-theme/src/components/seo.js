@@ -28,25 +28,66 @@ const SEO = ({ content }) => {
   const author = content.frontmatter?.author || defaults.author;
 
   return (
-    <>
-      <Helmet>
-        <title>{title}</title>
-        <link rel="canonical" href={url} />
-        <meta name="description" content={description} />
-        {image && <meta name="image" content={image} />}
+    <Helmet
+      title={title}
+      titleTemplate={`${defaults.title} | %s`}
+      meta={[
+        {
+          name: 'description',
+          content: description,
+        },
+        {
+          name: 'image',
+          content: image,
+        },
 
-        <meta property="og:url" content={url} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        {image && <meta property="og:image" content={image} />}
+        // og
+        {
+          name: 'og:url',
+          content: url,
+        },
+        {
+          name: 'og:title',
+          content: title,
+        },
+        {
+          name: 'og:description',
+          content: description,
+        },
+        {
+          name: 'og:image',
+          content: image,
+        },
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content={author} />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        {image && <meta name="twitter:image" content={image} />}
-      </Helmet>
-    </>
+        // twitter
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:creator',
+          content: author,
+        },
+        {
+          name: 'twitter:title',
+          content: title,
+        },
+        {
+          name: 'twitter:description',
+          content: description,
+        },
+        {
+          name: 'twitter:image',
+          content: image,
+        },
+      ]}
+      link={[
+        {
+          rel: 'canonical',
+          href: url,
+        },
+      ]}
+    />
   );
 };
 

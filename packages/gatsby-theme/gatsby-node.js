@@ -44,6 +44,7 @@ exports.createPages = async (
               title
               description
               image
+              modal
             }
             body
           }
@@ -77,44 +78,55 @@ exports.createPages = async (
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          use: ['ts-loader'],
-        },
-      ],
-    },
-  });
-};
-
-exports.createSchemaCustomization = ({ actions }) => {
+exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
 
-  const extendedFrontmatter = `
-    type Icon {
-      name: String!
-      variant: String!
-    }
+  const typeDefs = [
+    schema.buildObjectType({
+      name: 'Icon',
+      fields: {
+        name: 'String!',
+        variant: 'String!',
+      },
+    }),
+    schema.buildObjectType({
+      name: 'Mdx',
+      fields: {
+        frontmatter: 'MdxFrontmatter!',
+      },
+      interfaces: ['Node'],
+      extensions: {
+        infer: true,
+      },
+    }),
+    schema.buildObjectType({
+      name: 'MdxFrontmatter',
+      fields: {
+        title: 'String',
+        description: 'String',
+        icon: 'Icon',
+        image: 'String',
+        modal: {
+          type: 'Boolean',
+          resolve: ({ modal = true }) => modal,
+        },
+      },
+      extensions: {
+        infer: true,
+      },
+    }),
+    schema.buildObjectType({
+      name: 'SiteSiteMetadata',
+      fields: {
+        author: 'String',
+        image: 'String',
+      },
+      extensions: {
+        infer: true,
+      },
+    }),
+  ];
 
-    type Mdx implements Node @infer {
-      frontmatter: MdxFrontmatter!
-    }
 
-    type MdxFrontmatter @infer {
-      title: String
-      description: String
-      icon: Icon
-      image: String
-    }
-
-    type SiteSiteMetadata @infer {
-      author: String
-      image: String
-    }
-  `;
-
-  createTypes(extendedFrontmatter);
+  createTypes(typeDefs);
 };

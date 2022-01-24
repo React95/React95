@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.7.2](https://github.com/React95/React95/compare/@react95/core@5.7.1...@react95/core@5.7.2) (2021-12-19)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+## [5.7.1](https://github.com/React95/React95/compare/@react95/core@5.7.0...@react95/core@5.7.1) (2021-12-19)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
+# [5.7.0](https://github.com/React95/React95/compare/@react95/core@5.6.0...@react95/core@5.7.0) (2021-12-16)
+
+
+### Features
+
+* **avatar:** create avatar component ([5abd770](https://github.com/React95/React95/commit/5abd770c5a77c02d21520c36b69310a33dec4101))
+* **avatar:** now Avatar is receiving all Frame props :tada: ([dcd3bbb](https://github.com/React95/React95/commit/dcd3bbb11bd58c0726a4f3bffe1f5232e4ecd9ef))
+
+
+
+
+
 # [5.6.0](https://github.com/React95/React95/compare/@react95/core@5.5.1...@react95/core@5.6.0) (2021-11-09)
 
 

@@ -285,15 +285,6 @@
       ]
     },
     {
-      "login": "mmartinsoliveira",
-      "name": "Matheus Martins",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
-      "profile": "https://mmartins.vercel.app/",
-      "contributions": [
-        "fundingFinding"
-      ]
-    },
-    {
       "login": "mavericardo",
       "name": "Marcos Ricardo",
       "avatar_url": "https://avatars.githubusercontent.com/u/27781419?v=4",
@@ -303,14 +294,27 @@
       ]
     },
     {
-      "login": "breno-felipe",
+      "login": "felipsbreno",
       "name": "Breno Felipe de Bairros",
       "avatar_url": "https://avatars.githubusercontent.com/u/50807243?v=4",
-      "profile": "https://github.com/breno-felipe",
+      "profile": "https://github.com/felipsbreno",
       "contributions": [
         "code",
         "ideas",
-        "question"
+        "question",
+        "doc"
+      ]
+    },
+    {
+      "login": "mmartinsolliv",
+      "name": "Matheus Martins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
+      "profile": "https://mmartins.vercel.app/",
+      "contributions": [
+        "code",
+        "ideas",
+        "financial",
+        "fundingFinding"
       ]
     }
   ],
