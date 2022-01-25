@@ -10,4 +10,5 @@ module.exports = {
     '@testing-library/jest-dom/extend-expect',
     '<rootDir>/../setup/clippy.setup.js',
   ],
+  testEnvironment: 'jsdom',
 };

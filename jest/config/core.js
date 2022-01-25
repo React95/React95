@@ -17,4 +17,5 @@ module.exports = {
     '<rootDir>/../setup/core.setup.js',
   ],
   snapshotResolver: './snapshotResolver.js',
+  testEnvironment: 'jsdom',
 };
