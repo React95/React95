@@ -100,6 +100,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
+Windows and all associated images are the property of the Microsoft Corp and are not covered by this license.
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
