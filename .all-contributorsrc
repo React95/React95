@@ -316,6 +316,15 @@
         "financial",
         "fundingFinding"
       ]
+    },
+    {
+      "login": "cybaj",
+      "name": "Minseok Kim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11937687?v=4",
+      "profile": "https://github.com/cybaj",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
