@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0-alpha.0](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.3.1-alpha.1...@react95/gatsby-theme@1.4.0-alpha.0) (2022-02-14)
+
+
+### Features
+
+* **gatsby-theme:** conditionally adding TS support when in development ([c05af56](https://github.com/React95/React95/commit/c05af56981becab29188b92bf9dab00483c5ac8c))
+
+
+
+
+
 ## [1.3.1-alpha.1](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.3.1-alpha.0...@react95/gatsby-theme@1.3.1-alpha.1) (2022-02-14)
 
 
