@@ -30,17 +30,17 @@
   "devDependencies": {
     "@react95/core": "^5.7.2",
     "@xstyled/styled-components": "^3.0.3",
-    "gatsby": "^4.4.0",
+    "gatsby": "^4.7.1",
     "object-path": "^0.11.7",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "beta",
+    "react-dom": "beta",
     "styled-components": "^5.1.0",
     "ts-loader": "^9.2.5"
   },
   "peerDependencies": {
     "@react95/core": "^5.5.0",
     "@xstyled/styled-components": "^3.0.3",
-    "gatsby": "^4.4.0",
+    "gatsby": "^4.7.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "styled-components": "^5.1.0"
