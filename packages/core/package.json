@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "5.7.2",
+  "version": "5.7.3-alpha.0",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "repository": {
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@bojagi/cli": "^0.18.1",
-    "@react95/clippy": "^1.0.5",
+    "@react95/clippy": "^1.0.6-alpha.0",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-storysource": "^6.3.6",
     "@storybook/addons": "^6.3.6",
