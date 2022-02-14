@@ -5,7 +5,7 @@ const plugins = [
   'gatsby-plugin-react-helmet',
 ];
 
-if (NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   plugins.push('gatsby-plugin-typescript');
 }
 
