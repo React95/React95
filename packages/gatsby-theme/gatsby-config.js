@@ -1,3 +1,14 @@
+const plugins = [
+  'gatsby-plugin-mdx-frontmatter',
+  'gatsby-plugin-mdx',
+  'gatsby-plugin-styled-components',
+  'gatsby-plugin-react-helmet',
+];
+
+if (process.env.NODE_ENV === 'development') {
+  plugins.push('gatsby-plugin-typescript');
+}
+
 const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
   siteMetadata: {
     basePath,
@@ -13,11 +24,7 @@ const config = ({ contentPath = 'content', basePath = '/' } = {}) => ({
         path: contentPath,
       },
     },
-    'gatsby-plugin-typescript',
-    'gatsby-plugin-mdx-frontmatter',
-    'gatsby-plugin-mdx',
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-react-helmet',
+    ...plugins,
   ],
 });
 
