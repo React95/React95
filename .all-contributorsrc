@@ -325,6 +325,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Mrpanquecas",
+      "name": "Ricardo Costa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10724552?v=4",
+      "profile": "https://github.com/Mrpanquecas",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
