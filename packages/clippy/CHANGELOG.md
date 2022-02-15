@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/React95/React95/compare/@react95/clippy@1.0.5...@react95/clippy@1.0.6) (2022-02-15)
+
+
+### Bug Fixes
+
+* **clippy:** add s3 CDN and conditionally set clippy cdn variable based on the window property ([c93d6a0](https://github.com/React95/React95/commit/c93d6a07c570666a4c19215ec43f72f3983133d9)), closes [#319](https://github.com/React95/React95/issues/319)
+
+
+
+
+
 ## [1.0.5](https://github.com/React95/React95/compare/@react95/clippy@1.0.4...@react95/clippy@1.0.5) (2021-06-15)
 
 **Note:** Version bump only for package @react95/clippy
