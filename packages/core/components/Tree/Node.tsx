@@ -49,12 +49,12 @@ const NodeInfo = styled.div`
   -ms-user-select: none;
 `;
 
-const FolderStatus = styled.div`
+const FolderStatus = styled.div<{size: number}>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10px;
-  height: 10px;
+  width: ${size || '10'}px;
+  height: ${size || '10'}px;
   border: 1;
   border-color: borderDarkest;
   background-color: inputBackground;
@@ -116,6 +116,7 @@ const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
 export type NodeProps = {
   label: string;
   icon?: React.ReactElement;
+  folderStatusSize?: number;
   id: number;
   children?: Array<NodeProps>;
   onClick?(
@@ -129,6 +130,7 @@ const Node: React.FC<NodeProps> = ({
   id,
   icon,
   label,
+  folderStatusSize,
   onClick = () => {},
   ...rest
 }) => {
@@ -155,7 +157,7 @@ const Node: React.FC<NodeProps> = ({
     <NodeItem isOpen={isOpen} {...rest}>
       <NodeInfo>
         {hasChildren && (
-          <FolderStatus onClick={() => setIsOpen(!isOpen)}>
+          <FolderStatus size={folderStatusSize} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? '-' : '+'}
           </FolderStatus>
         )}
