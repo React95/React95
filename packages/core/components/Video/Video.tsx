@@ -238,9 +238,9 @@ const VideoRenderer = (
       {loadeddata && (
         <Divider as="span" style={{ display: 'block', marginBottom: 2 }} />
       )}
-      <ResetFrame maxWidth={250} mx="auto" mb={4}>
+      <ResetFrame maxWidth="250" mx="auto" mb={4}>
         <CountDownContainer>
-          <ResetFrame display="flex" flexDirection="column" width="40%">
+          <ResetFrame display="flex" flexDirection="column" w="40%">
             <VideoFont
               style={{
                 marginTop: 'auto',
@@ -253,7 +253,7 @@ const VideoRenderer = (
               {!loadeddata && 'Openning'}
             </VideoFont>
           </ResetFrame>
-          <ResetFrame display="flex" flexDirection="column" width="40%">
+          <ResetFrame display="flex" flexDirection="column" w="40%">
             <VideoFont
               style={{
                 marginTop: 'auto',
