@@ -28,41 +28,44 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
 }
 
 .c0 {
-  background-color: #c3c7cb;
+  padding: 2px;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  padding: 2px;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c1 {
-  background-color: #c3c7cb;
   color: #fefefe;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c5 {
-  background-color: #c3c7cb;
   max-width: 250px;
-  width: auto;
-  height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4px;
+  width: auto;
+  height: auto;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c7 {
-  background-color: #c3c7cb;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c9 {
-  background-color: #c3c7cb;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -70,13 +73,11 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 40%;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c2 {
@@ -283,20 +284,14 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
 <div>
   <div
     class="c0"
-    height="auto"
     style="width: 260px;"
-    width="auto"
   >
     <div
       class="c1 c2"
       color="headerText"
-      height="auto"
-      width="auto"
     >
       <img
-        height="16"
         src="test-file-stub"
-        width="16"
       />
       <div
         class="c3"
@@ -314,19 +309,13 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
     </video>
     <div
       class="c5 c6"
-      height="auto"
-      width="auto"
     >
       <div
         class="c7 c8"
-        height="auto"
-        width="auto"
       >
         <div
           class="c9 c6"
           display="flex"
-          height="auto"
-          width="40%"
         >
           <span
             class="c10"
@@ -342,8 +331,6 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         <div
           class="c9 c6"
           display="flex"
-          height="auto"
-          width="40%"
         >
           <span
             class="c10"
@@ -365,9 +352,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           disabled=""
         >
           <img
-            height="32"
             src="test-file-stub"
-            width="32"
           />
         </button>
         <button

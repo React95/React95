@@ -142,9 +142,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
       class="c1"
     >
       <img
-        height="32"
         src="test-file-stub"
-        width="32"
       />
       <ul
         class="c0"
@@ -154,9 +152,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
           class="c2"
         >
           <img
-            height="32"
             src="test-file-stub"
-            width="32"
           />
           Microsoft Exchange
         </li>
@@ -167,9 +163,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
           class="c2"
         >
           <img
-            height="32"
             src="test-file-stub"
-            width="32"
           />
           Windows Explorer
         </li>

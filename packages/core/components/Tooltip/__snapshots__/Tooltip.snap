@@ -21,10 +21,11 @@ exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
 
 exports[`<Tooltip /> Snapshot should match snapshot 2`] = `
 .c1 {
-  background-color: #c3c7cb;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c2 {
@@ -53,8 +54,6 @@ exports[`<Tooltip /> Snapshot should match snapshot 2`] = `
   >
     <div
       class="c1 c2"
-      height="auto"
-      width="auto"
     >
       Tooltip text
     </div>

@@ -28,11 +28,12 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 }
 
 .c1 {
-  background-color: #c3c7cb;
   color: #fefefe;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c4 {
@@ -208,13 +209,9 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
     <div
       class="c1 c2"
       color="headerText"
-      height="auto"
-      width="auto"
     >
       <img
-        height="32"
         src="test-file-stub"
-        width="32"
       />
       <div
         class="c3 draggable"
@@ -303,11 +300,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c1 {
-  background-color: #c3c7cb;
   color: #fefefe;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c4 {
@@ -449,13 +447,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     <div
       class="c1 c2"
       color="headerText"
-      height="auto"
-      width="auto"
     >
       <img
-        height="32"
         src="test-file-stub"
-        width="32"
       />
       <div
         class="c3 draggable"
@@ -530,11 +524,12 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 }
 
 .c1 {
-  background-color: #c3c7cb;
   color: #fefefe;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c4 {
@@ -676,13 +671,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
     <div
       class="c1 c2"
       color="headerText"
-      height="auto"
-      width="auto"
     >
       <img
-        height="32"
         src="test-file-stub"
-        width="32"
       />
       <div
         class="c3 draggable"
@@ -757,11 +748,12 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 }
 
 .c1 {
-  background-color: #c3c7cb;
   color: #c6c6c6;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c4 {
@@ -880,13 +872,9 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
     <div
       class="c1 c2"
       color="headerNotActiveText"
-      height="auto"
-      width="auto"
     >
       <img
-        height="32"
         src="test-file-stub"
-        width="32"
       />
       <div
         class="c3 draggable"
@@ -945,11 +933,12 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
 }
 
 .c1 {
-  background-color: #c3c7cb;
   color: #fefefe;
   width: auto;
   height: auto;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  background-color: #c3c7cb;
+  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
+  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
 }
 
 .c4 {
@@ -1069,13 +1058,9 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
     <div
       class="c1 c2"
       color="headerText"
-      height="auto"
-      width="auto"
     >
       <img
-        height="32"
         src="test-file-stub"
-        width="32"
       />
       <div
         class="c3 draggable"

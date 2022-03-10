@@ -84,9 +84,7 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
         >
           <img
             data-testid="react95-default-icon-bat"
-            height="32"
             src="test-file-stub"
-            width="32"
           />
         </div>
         <span
