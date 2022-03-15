@@ -17,33 +17,33 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@react95/icons": "^2.0.4",
-    "babel-plugin-styled-components": "^2.0.2",
+    "babel-plugin-styled-components": "^2.0.6",
     "gatsby-plugin-mdx": "^2.12.0",
     "gatsby-plugin-mdx-frontmatter": "^0.0.4",
-    "gatsby-plugin-react-helmet": "^5.4.0",
-    "gatsby-plugin-styled-components": "^5.4.0",
-    "gatsby-plugin-typescript": "^4.4.0",
-    "gatsby-source-filesystem": "^4.4.0",
+    "gatsby-plugin-react-helmet": "^5.9.0",
+    "gatsby-plugin-styled-components": "^5.9.0",
+    "gatsby-plugin-typescript": "^4.9.1",
+    "gatsby-source-filesystem": "^4.9.1",
     "lodash.startcase": "^4.4.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@react95/core": "^5.7.3",
-    "@xstyled/styled-components": "^3.0.3",
-    "gatsby": "^4.4.0",
-    "object-path": "^0.11.7",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "styled-components": "^5.1.0",
-    "ts-loader": "^9.2.5"
+    "@xstyled/styled-components": "^3.5.1",
+    "gatsby": "^4.9.3",
+    "object-path": "^0.11.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3",
+    "ts-loader": "^9.2.8"
   },
   "peerDependencies": {
     "@react95/core": "^5.5.0",
-    "@xstyled/styled-components": "^3.0.3",
-    "gatsby": "^4.4.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "styled-components": "^5.1.0"
+    "@xstyled/styled-components": "^3.5.1",
+    "gatsby": "^4.9.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
   },
   "publishConfig": {
     "access": "public"
