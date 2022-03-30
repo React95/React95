@@ -45,7 +45,7 @@ const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(({ list }, ref) => {
       {showList && (
         <Frame
           position="absolute"
-          bottom={28}
+          bottom="28"
           onClick={() => {
             toggleActiveStart(false);
             toggleShowList(false);
@@ -66,13 +66,7 @@ const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(({ list }, ref) => {
         Start
       </WindowButton>
 
-      <Frame
-        boxShadow="none"
-        width="100%"
-        paddingLeft={0}
-        ml={2}
-        display="flex"
-      >
+      <Frame boxShadow="none" w="100%" paddingLeft={0} ml={2} display="flex">
         {Object.entries(windows).map(
           ([windowId, { icon, title, hasButton }]) =>
             hasButton && (

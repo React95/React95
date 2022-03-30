@@ -59,6 +59,17 @@ export interface R95_DefaultTheme {
 }
 
 declare module 'styled-components' {
+  export interface ISpace extends R95_Space {}
+
+  export interface IBorderWidth extends R95_BorderWidth {}
+
+  export interface IBorderStyles extends R95_BorderStyles {}
+
+  export interface IColors extends R95_Colors {}
+
+  export interface IShadows extends R95_Shadows {}
+
+  export interface IZIndices extends R95_ZIndices {}
   export interface DefaultTheme extends R95_DefaultTheme {
     colors: IColors;
     space: Array<number>;
