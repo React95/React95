@@ -71,8 +71,11 @@ export interface IconData {
           const imageId = `${iconName}_${variant}`;
 
           const imageFileName = getImageFileName(imageId);
+
           return {
             ...image,
+            width: image.width,
+            height: image.height,
             filePath: imageFileName,
             reactImportPath: path
               .relative(REACT_FOLDER, imageFileName)
@@ -140,7 +143,7 @@ export interface IconData {
     ICON_DEMOS_FILE_PATH,
     `
   ${demoFileImports.join('\n')}
-  
+
   export const icons = [
     ${demoFileExports.join('\n')}
   ]
