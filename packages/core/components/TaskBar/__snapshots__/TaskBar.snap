@@ -83,7 +83,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
       class="c2"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
     </div>
     
@@ -169,7 +171,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
       class="c2"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
     </div>
     
@@ -181,7 +185,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
       class="c2"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
     </div>
     
@@ -234,7 +240,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
       class="c2"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
     </div>
     
@@ -286,7 +294,9 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
       class="c2"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
     </div>
     
@@ -328,13 +338,13 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 .c4 {
   --x-shadow: none;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
+  width: 100%;
   padding-left: 0;
   margin-left: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   height: auto;
   background-color: #c3c7cb;
 }
@@ -402,7 +412,9 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
       >
         <img
           alt="Windows95 Logo"
+          height="32"
           src="test-file-stub"
+          width="32"
         />
       </div>
       Start
@@ -410,7 +422,6 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
     <div
       class="c4"
       display="flex"
-      width="100%"
     />
     <div
       class="c5"
@@ -460,13 +471,13 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 .c4 {
   --x-shadow: none;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
+  width: 100%;
   padding-left: 0;
   margin-left: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   height: auto;
   background-color: #c3c7cb;
 }
@@ -534,7 +545,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
       >
         <img
           alt="Windows95 Logo"
+          height="32"
           src="test-file-stub"
+          width="32"
         />
       </div>
       Start
@@ -542,7 +555,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
     <div
       class="c4"
       display="flex"
-      width="100%"
     />
     <div
       class="c5"
@@ -584,13 +596,13 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 .c7 {
   --x-shadow: none;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
+  width: 100%;
   padding-left: 0;
   margin-left: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   height: auto;
   background-color: #c3c7cb;
 }
@@ -739,7 +751,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
           class="c3"
         >
           <img
+            height="32"
             src="test-file-stub"
+            width="32"
           />
           Local Disk (C:)
         </li>
@@ -747,7 +761,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
           class="c3"
         >
           <img
+            height="32"
             src="test-file-stub"
+            width="32"
           />
           Windows Explorer
         </li>
@@ -761,7 +777,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
       >
         <img
           alt="Windows95 Logo"
+          height="32"
           src="test-file-stub"
+          width="32"
         />
       </div>
       Start
@@ -769,7 +787,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
     <div
       class="c7"
       display="flex"
-      width="100%"
     />
     <div
       class="c8"
@@ -845,13 +862,13 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 .c12 {
   --x-shadow: none;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
+  width: 100%;
   padding-left: 0;
   margin-left: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   height: auto;
   background-color: #c3c7cb;
 }
@@ -1069,7 +1086,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       color="headerText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -1107,7 +1126,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
       >
         <img
           alt="Windows95 Logo"
+          height="32"
           src="test-file-stub"
+          width="32"
         />
       </div>
       Start
@@ -1115,7 +1136,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
     <div
       class="c12"
       display="flex"
-      width="100%"
     >
       <button
         class="c13 c14"
@@ -1124,7 +1144,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
           class="c11"
         >
           <img
+            height="32"
             src="test-file-stub"
+            width="32"
           />
         </div>
         <span
@@ -1217,13 +1239,13 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
 .c15 {
   --x-shadow: none;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
+  width: 100%;
   padding-left: 0;
   margin-left: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   height: auto;
   background-color: #c3c7cb;
 }
@@ -1476,7 +1498,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       color="headerNotActiveText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -1511,7 +1535,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       color="headerText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -1549,7 +1575,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
       >
         <img
           alt="Windows95 Logo"
+          height="32"
           src="test-file-stub"
+          width="32"
         />
       </div>
       Start
@@ -1557,7 +1585,6 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     <div
       class="c15"
       display="flex"
-      width="100%"
     >
       <button
         class="c12 c16"
@@ -1566,7 +1593,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
           class="c14"
         >
           <img
+            height="32"
             src="test-file-stub"
+            width="32"
           />
         </div>
         <span
@@ -1582,7 +1611,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
           class="c14"
         >
           <img
+            height="32"
             src="test-file-stub"
+            width="32"
           />
         </div>
         <span

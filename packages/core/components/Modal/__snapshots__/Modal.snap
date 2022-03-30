@@ -211,7 +211,9 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
       color="headerText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -449,7 +451,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       color="headerText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -673,7 +677,9 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
       color="headerText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -874,7 +880,9 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
       color="headerNotActiveText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"
@@ -1060,7 +1068,9 @@ exports[`<Modal /> Snapshots should match snapshot with width and height props 1
       color="headerText"
     >
       <img
+        height="32"
         src="test-file-stub"
+        width="32"
       />
       <div
         class="c3 draggable"

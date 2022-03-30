@@ -72,7 +72,9 @@ exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
     color="headerText"
   >
     <img
+      height="32"
       src="test-file-stub"
+      width="32"
     />
     <div
       class="c2"
@@ -85,7 +87,9 @@ exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
     color="headerNotActiveText"
   >
     <img
+      height="32"
       src="test-file-stub"
+      width="32"
     />
     <div
       class="c2"
@@ -232,7 +236,9 @@ exports[`<TitleBar /> Snapshot should match snapshot with all Options 1`] = `
     color="headerText"
   >
     <img
+      height="32"
       src="test-file-stub"
+      width="32"
     />
     <div
       class="c2"

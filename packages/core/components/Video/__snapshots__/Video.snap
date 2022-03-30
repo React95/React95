@@ -291,7 +291,9 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
       color="headerText"
     >
       <img
+        height="16"
         src="test-file-stub"
+        width="16"
       />
       <div
         class="c3"
@@ -352,7 +354,9 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
           disabled=""
         >
           <img
+            height="32"
             src="test-file-stub"
+            width="32"
           />
         </button>
         <button
