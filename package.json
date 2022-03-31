@@ -8,7 +8,6 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@bojagi/cli": "^0.18.1",
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
@@ -62,8 +61,6 @@
     "build:core": "lerna run build --stream --scope=@react95/core",
     "build:theme": "lerna run build --stream --scope=@react95/gatsby-theme",
     "build:icons": "lerna run build --stream --scope=@react95/icons",
-    "build:bojagi": "lerna run bojagi:build --stream --scope=@react95/core",
-    "upload:bojagi": "lerna run bojagi:upload --stream --scope=@react95/core",
     "prepare": "husky install"
   },
   "config": {
