@@ -25,7 +25,7 @@ export const ${iconDataVariableName} = {${images
     .map(
       image => `
   '${image.variant}': {
-    imageSrc: ${image.id},
+    imageSrc: ${image.id} as string,
     width: ${image.width},
     height: ${image.height},
   },`,

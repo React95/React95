@@ -9,9 +9,9 @@ export default {
   component: TitleBar,
 } as Meta;
 
-export const Simple = () => <TitleBar width={200} />;
+export const Simple = () => <TitleBar w={200} />;
 
-export const Inactive = () => <TitleBar active={false} width={200} />;
+export const Inactive = () => <TitleBar active={false} w={200} />;
 
 export const Complete = () => (
   <TitleBar
@@ -19,7 +19,7 @@ export const Complete = () => (
     icon={<FileIcons variant="32x32_4" />}
     title="untitled - Paint"
     className="draggable"
-    width={200}
+    w={200}
   >
     <TitleBar.OptionsBox>
       <TitleBar.Option>?</TitleBar.Option>

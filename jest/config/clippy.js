@@ -1,13 +1,16 @@
 module.exports = {
   testMatch: [
-    '<rootDir>/../../packages/clippy/**/*.test.js',
-    '<rootDir>/../../packages/clippy/**/*.test.jsx',
+    '<rootDir>/packages/clippy/**/*.test.js',
+    '<rootDir>/packages/clippy/**/*.test.jsx',
   ],
-  roots: ['<rootDir>/../../'],
+  testPathIgnorePatterns: ['<rootDir>/packages/core'],
+  rootDir: './../../',
   displayName: 'clippy',
+  name: 'clippy',
   setupFilesAfterEnv: [
     'babel-polyfill',
     '@testing-library/jest-dom/extend-expect',
-    '<rootDir>/../setup/clippy.setup.js',
+    '<rootDir>/jest/setup/clippy.setup.js',
   ],
+  testEnvironment: 'jsdom',
 };

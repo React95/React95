@@ -1,4 +1,9 @@
 import 'styled-components';
+import '@xstyled/system';
+import {
+  ITheme,
+  DefaultTheme as XStyledDefaultTheme,
+} from '@xstyled/styled-components';
 
 export interface R95_Space extends Array<number> {}
 export interface R95_BorderWidth extends Array<number> {}
@@ -65,8 +70,18 @@ declare module 'styled-components' {
   export interface IShadows extends R95_Shadows {}
 
   export interface IZIndices extends R95_ZIndices {}
-
   export interface DefaultTheme extends R95_DefaultTheme {
+    colors: IColors;
+    space: Array<number>;
+    shadows: IShadows;
+    borderWidths: IBorderWidth;
+    borderStyles: IBorderStyles;
+    zIndices: IZIndices;
+  }
+}
+
+declare module '@xstyled/system' {
+  export interface Theme extends ITheme, XStyledDefaultTheme, R95_DefaultTheme {
     colors: IColors;
     space: Array<number>;
     shadows: IShadows;

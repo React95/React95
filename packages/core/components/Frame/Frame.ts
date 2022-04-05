@@ -1,47 +1,13 @@
-import styled from 'styled-components';
-import {
-  backgrounds,
-  BackgroundsProps,
-  color,
-  ColorProps,
-  flexboxes,
-  FlexboxesProps,
-  layout,
-  LayoutProps,
-  positioning,
-  PositioningProps,
-  shadows,
-  ShadowsProps,
-  space,
-  SpaceProps,
-  overflow,
-  OverflowProps,
-} from '@xstyled/system';
+import styled from '@xstyled/styled-components';
+import { system, SystemProps } from '@xstyled/system';
 
-export interface FrameProps
-  extends BackgroundsProps,
-    ColorProps,
-    FlexboxesProps,
-    LayoutProps,
-    PositioningProps,
-    ShadowsProps,
-    SpaceProps,
-    OverflowProps {}
+export interface FrameProps extends SystemProps {}
 
-const Frame = styled.div<FrameProps>`
-  ${backgrounds}
-  ${color}
-  ${flexboxes}
-  ${layout}
-  ${positioning}
-  ${shadows}
-  ${space}
-  ${overflow}
-`;
+const Frame = styled.div<FrameProps>(system);
 
 Frame.defaultProps = {
-  width: 'auto',
-  height: 'auto',
+  w: 'auto',
+  h: 'auto',
   bg: 'material',
   boxShadow: 'out',
 };
