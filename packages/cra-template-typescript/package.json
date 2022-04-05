@@ -1,6 +1,6 @@
 {
   "name": "@react95/cra-template-typescript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The official React95+TS template for Create React App.",
   "keywords": [
     "react",

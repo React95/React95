@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/React95/React95/compare/@react95/core@5.7.3...@react95/core@6.0.0) (2022-04-05)
+
+
+### Bug Fixes
+
+* **core:** update types (and re-exporting some in .d.ts) ([b511356](https://github.com/React95/React95/commit/b511356e8eb2a50542adc4acba42c640dfa74c0f))
+
+
+### Features
+
+* **core:** update [@xstyled](https://github.com/xstyled) from v1 to v3 ([bc1ef4a](https://github.com/React95/React95/commit/bc1ef4ad48cfaf8b2d905ec9b553ac2158ffe76a))
+
+
+### BREAKING CHANGES
+
+* **core:** `width` and `height` props wouldn't work anymore since @xstyled change its API
+
+
+
+
+
 ## [5.7.3](https://github.com/React95/React95/compare/@react95/core@5.7.2...@react95/core@5.7.3) (2022-02-15)
 
 **Note:** Version bump only for package @react95/core
