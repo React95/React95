@@ -13,7 +13,6 @@
   "dependencies": {
     "@react95/icons": "^2.0.5",
     "@types/react-virtualized": "^9.21.20",
-    "@xstyled/styled-components": "^3.5.1",
     "csstype": "^3.0.11",
     "nanoid": "^3.3.1",
     "react-draggable": "^4.4.4",
@@ -21,8 +20,9 @@
     "typescript": "^4.6.2"
   },
   "peerDependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "@xstyled/styled-components": "^3.6.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
@@ -44,6 +44,7 @@
     "@types/styled-system": "^5.1.15",
     "@types/xstyled__styled-components": "^1.19.2",
     "@types/xstyled__system": "^1.19.3",
+    "@xstyled/styled-components": "^3.6.0",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
     "copy-to-clipboard": "^3.3.1",
     "copyfiles": "^2.4.1",
