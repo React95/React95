@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
-import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { css, th } from '@xstyled/styled-components';
 
 const NavItem = styled.li<{ active: boolean }>`
   list-style: none;
@@ -23,8 +22,8 @@ const NavItem = styled.li<{ active: boolean }>`
   ${({ active }) =>
     active &&
     css`
-      margin-top: -${th('space.2')}px;
-      margin-left: -${th('space.2')}px;
+      margin-top: -2;
+      margin-left: -2;
       margin-bottom: 1;
 
       &:first-child {

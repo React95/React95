@@ -1,10 +1,9 @@
 import React from 'react';
-import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { css, th } from '@xstyled/styled-components';
+import { Bat } from '@react95/icons';
 
 import Frame, { FrameProps } from '../Frame/Frame';
 import { Windows } from '../Modal/ModalContext';
-import { Bat } from '@react95/icons';
 
 export type WindowButtonProps = {
   small?: boolean;

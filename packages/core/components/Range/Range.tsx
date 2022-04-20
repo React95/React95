@@ -1,22 +1,21 @@
-import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { css, th } from '@xstyled/styled-components';
 
 const trackStyle = css`
   width: 100%;
   height: 4px;
 
-  background: ${th('colors.borderDarkest')};
+  background-color: borderDarkest;
 
   cursor: pointer;
 
   border-top: 1;
   border-top-color: borderLight;
   border-right: 2;
-  border-right-color: ${th('colors.borderLightest')};
+  border-right-color: borderLightest;
   border-bottom: 1;
   border-bottom-color: borderLighter;
   border-left: 2;
-  border-left-color: ${th('colors.borderLightest')};
+  border-left-color: borderLightest;
 
   box-shadow: 0px 1px 0px 0px ${th('colors.borderLightest')};
 `;
@@ -29,16 +28,16 @@ const thumbStyle = css`
 
   cursor: pointer;
 
-  margin-top: -${th('space.8')}px;
+  margin-top: -8;
 
   border-top: 1;
-  border-top-color: ${th('colors.borderLightest')};
+  border-top-color: borderLightest;
   border-right: 1;
-  border-right-color: ${th('colors.borderDarkest')};
+  border-right-color: borderDarkest;
   border-bottom: 1;
-  border-bottom-color: ${th('colors.borderDarkest')};
+  border-bottom-color: borderDarkest;
   border-left: 1;
-  border-left-color: ${th('colors.borderLightest')};
+  border-left-color: borderLightest;
 
   box-shadow: inset 0px -1px 0px ${th('colors.borderDark')},
     inset -1px 0px 0px ${th('colors.borderDark')},
@@ -69,7 +68,7 @@ const Range = styled.input.attrs({
   }
 
   &:focus::-webkit-slider-runnable-track {
-    background: ${th('colors.borderDarkest')};
+    background-color: borderDarkest;
   }
 
   &::-moz-range-track {

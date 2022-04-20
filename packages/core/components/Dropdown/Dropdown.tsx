@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
-import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { th } from '@xstyled/styled-components';
 
 import caret from './imgs/downcaret.png';
 
@@ -24,9 +23,8 @@ const Wrapper = styled.div`
 
     background-color: material;
     box-shadow: inset 0.5px 0.7px 0px 0.7px ${th('colors.material')},
-      inset -1px 0px 0 1px ${th(
-        'colors.borderDark',
-      )}, inset 1.5px 1.5px 0px 1.5px ${th('colors.borderLightest')};
+      inset -1px 0px 0 1px ${th('colors.borderDark')},
+      inset 1.5px 1.5px 0px 1.5px ${th('colors.borderLightest')};
 
     border-right: 1;
     border-bottom: 1;

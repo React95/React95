@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { Mplayer113, User4 } from '@react95/icons';
-import { th } from '@xstyled/system';
 
 import Frame, { FrameProps } from '../Frame/Frame';
 import Button from '../Button';
@@ -29,7 +28,7 @@ const ControlBtn = styled(Button)`
   align-items: center;
 
   svg {
-    fill: ${th('colors.materialText')};
+    fill: materialText;
   }
 
   &&,
@@ -44,7 +43,7 @@ const ControlBtn = styled(Button)`
       css`
         padding: 4;
         svg {
-          fill: ${th('colors.borderDark')};
+          fill: borderDark;
           border-bottom: 1px solid;
           border-bottom-color: borderLightest;
           border-right: 1px solid;

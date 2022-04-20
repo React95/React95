@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as CSS from 'csstype';
-import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { css, th } from '@xstyled/styled-components';
+
 import Draggable from 'react-draggable';
 
 import Button from '../Button';
@@ -105,7 +105,7 @@ const MenuItem = styled.li<Pick<WrapperProps, 'active'>>`
     active &&
     css`
       background-color: primary;
-      color: ${th('colors.materialTextInvert')};
+      color: materialTextInvert;
     `};
 `;
 
