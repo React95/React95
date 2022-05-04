@@ -20,10 +20,10 @@
     "typescript": "^4.6.2"
   },
   "peerDependencies": {
-    "@xstyled/styled-components": "^3.6.0",
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "styled-components": "^5.3.3"
+    "@xstyled/styled-components": ">= 3.6.0",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0",
+    "styled-components": ">= 5.3.3"
   },
   "devDependencies": {
     "@bojagi/cli": "^0.18.1",
