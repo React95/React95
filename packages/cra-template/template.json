@@ -1,15 +1,15 @@
 {
   "package": {
     "dependencies": {
+      "@react95/clippy": "latest",
+      "@react95/core": "latest",
+      "@react95/icons": "latest",
       "@testing-library/jest-dom": "^5.14.1",
       "@testing-library/react": "^13.0.0",
       "@testing-library/user-event": "^13.2.1",
-      "web-vitals": "^2.1.4",
-      "styled-components": "^5.1.0",
-      "@xstyled/styled-components": "^3.5.1",
-      "@react95/core": "file:../React95/packages/core/dist",
-      "@react95/icons": "file:../React95/packages/icons/dist",
-      "@react95/clippy": "file:../React95/packages/clippy/dist"
+      "@xstyled/styled-components": "^3.6.0",
+      "styled-components": "^5.3.5",
+      "web-vitals": "^2.1.4"
     }
   }
 }
