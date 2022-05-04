@@ -47,7 +47,9 @@ const windowStackReducer: React.Reducer<WindowStack, WindowAction> = (
   }
 };
 
-const ModalProvider: React.FunctionComponent = ({ children }) => {
+const ModalProvider: React.FC<React.PropsWithChildren<ModalProviderProps>> = ({
+  children,
+}) => {
   const [windows, dispatch] = React.useReducer(windowStackReducer, {});
   const [activeWindow, setActiveWindow] = React.useState<string>();
 

@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
-import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { css, th } from '@xstyled/styled-components';
 
 import check from './imgs/check.svg';
 import checkDisabled from './imgs/check-disabled.svg';

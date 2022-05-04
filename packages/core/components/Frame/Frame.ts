@@ -1,5 +1,4 @@
-import styled from '@xstyled/styled-components';
-import { system, SystemProps } from '@xstyled/system';
+import styled, { system, SystemProps } from '@xstyled/styled-components';
 
 export interface FrameProps extends SystemProps {}
 

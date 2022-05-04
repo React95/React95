@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { th } from '@xstyled/styled-components';
 
 import Button from '../Button';
 import Frame, { FrameProps } from '../Frame/Frame';
@@ -99,13 +98,12 @@ const TitleBarRenderer: React.ForwardRefRenderFunction<
   HTMLDivElement,
   TitleBarBackgroundProps
 > = (
-  { children, title = 'UNKNOWN.EXE', icon, active = true, className, ...props },
+  { children, title = 'UNKNOWN.EXE', icon, active = true, className },
   ref: React.Ref<HTMLDivElement>,
 ) => (
   <TitleBarBackground
     active={active}
     color={active ? 'headerText' : 'headerNotActiveText'}
-    {...props}
     ref={ref}
   >
     {icon && icon}

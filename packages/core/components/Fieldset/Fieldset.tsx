@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
-import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { th } from '@xstyled/styled-components';
 
 const Field = styled.fieldset`
   border-top-style: groove;
