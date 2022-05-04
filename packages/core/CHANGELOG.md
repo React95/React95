@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/React95/React95/compare/@react95/core@6.0.0...@react95/core@6.0.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* **deps:** fix core peerDependencies values ([e5ec5d6](https://github.com/React95/React95/commit/e5ec5d6afd9db31500f3d995437813ca1f0874e2)), closes [#331](https://github.com/React95/React95/issues/331)
+
+
+
+
+
 # [6.0.0](https://github.com/React95/React95/compare/@react95/core@5.7.3...@react95/core@6.0.0) (2022-04-05)
 
 
