@@ -31,7 +31,9 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
   >
     <div
       class="c1 c2"
-    />
+    >
+      
+    </div>
   </div>
 </div>
 `;
@@ -86,6 +88,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
         width="32"
       />
     </div>
+    
   </button>
 </div>
 `;
@@ -173,6 +176,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
         width="32"
       />
     </div>
+    
   </button>
   <button
     class="c3 c4"
@@ -186,6 +190,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
         width="32"
       />
     </div>
+    
   </button>
 </div>
 `;
@@ -240,6 +245,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
         width="32"
       />
     </div>
+    
   </button>
 </div>
 `;
@@ -293,6 +299,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
         width="32"
       />
     </div>
+    
   </button>
 </div>
 `;
@@ -422,7 +429,9 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
     >
       <div
         class="c6 c7"
-      />
+      >
+        
+      </div>
     </div>
   </div>
 </div>
@@ -553,7 +562,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
     >
       <div
         class="c6 c7"
-      />
+      >
+        
+      </div>
     </div>
   </div>
 </div>
@@ -783,7 +794,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
     >
       <div
         class="c9 c10"
-      />
+      >
+        
+      </div>
     </div>
   </div>
 </div>
@@ -1149,7 +1162,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
     >
       <div
         class="c17 c18"
-      />
+      >
+        
+      </div>
     </div>
   </div>
 </div>
@@ -1614,7 +1629,9 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     >
       <div
         class="c20 c21"
-      />
+      >
+        
+      </div>
     </div>
   </div>
 </div>
