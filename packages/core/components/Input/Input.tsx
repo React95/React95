@@ -24,6 +24,8 @@ const Input = styled.input<InputProps>`
   color: materialText;
   background-color: inputBackground;
 
+  border-radius: 0;
+
   border-top-width: 1;
   border-top-style: 1;
   border-top-color: borderDark;
@@ -36,6 +38,8 @@ const Input = styled.input<InputProps>`
   border-left-color: borderDark;
 
   box-shadow: input;
+
+  -webkit-appearance: none;
 
   ${padding}
   ${borders}
