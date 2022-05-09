@@ -33,7 +33,9 @@
     "jest-styled-components": "^7.0.8",
     "lerna": "^4.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "nx": "14.1.4",
+    "@nrwl/nx-cloud": "latest"
   },
   "npmClient": "yarn",
   "workspaces": [
