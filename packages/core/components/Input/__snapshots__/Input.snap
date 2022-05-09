@@ -8,6 +8,7 @@ exports[`<Input /> Snapshots should match snapshot 1`] = `
   padding: 3px 3px 5px 3px;
   color: #000000;
   background-color: #ffffff;
+  border-radius: 0;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #868a8e;
@@ -17,6 +18,7 @@ exports[`<Input /> Snapshots should match snapshot 1`] = `
   border-left-style: solid;
   border-left-color: #868a8e;
   box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
+  -webkit-appearance: none;
 }
 
 <div>
