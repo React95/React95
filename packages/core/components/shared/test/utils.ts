@@ -1,4 +1,9 @@
-import { render, act, RenderOptions } from '@testing-library/react';
+import {
+  render,
+  act,
+  RenderOptions,
+  RenderResult,
+} from '@testing-library/react';
 import ThemeProvider from '../../ThemeProvider';
 
 const customRender = (
@@ -9,7 +14,7 @@ const customRender = (
 const waitRender = async (
   ui: React.ReactElement,
   options?: Omit<RenderOptions, 'queries'>,
-) => {
+): Promise<RenderResult> => {
   const { container, ...rest } = customRender(ui, options);
 
   await act(async () => {

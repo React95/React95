@@ -1,5 +1,4 @@
-import styled from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
+import styled, { th } from '@xstyled/styled-components';
 
 import ListItem from './ListItem';
 import Divider from './ListDivider';

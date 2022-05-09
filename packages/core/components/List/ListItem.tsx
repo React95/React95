@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import { th } from '@xstyled/system';
 
 import { IListProps } from './List';
 
@@ -26,8 +25,8 @@ const Item = styled.li<ItemProps>`
   }
 
   &:hover {
-    background: ${th('colors.headerBackground')};
-    color: ${th('colors.materialTextInvert')};
+    background-color: headerBackground;
+    color: materialTextInvert;
   }
 
   ul {
@@ -46,7 +45,7 @@ const Item = styled.li<ItemProps>`
   }
 
   svg {
-    fill: ${th('colors.materialTextInvert')};
+    fill: materialTextInvert;
   }
 
   ${({ icon }) => !icon && 'padding-left: 26px;'};
@@ -61,7 +60,7 @@ const Item = styled.li<ItemProps>`
         right: 8px;
 
         content: '';
-        background-color: ${th('colors.materialText')};
+        background-color: materialText;
         mask-image: url('${rightcaret}');
         mask-position: center center;
         mask-size: 5px 8px;
@@ -70,7 +69,7 @@ const Item = styled.li<ItemProps>`
 
       &:hover {
         &:after {
-          background-color: ${th('colors.materialTextInvert')};
+          background-color: materialTextInvert;
         }
 
         ul {
@@ -92,7 +91,7 @@ const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
       ref={ref}
       hasList={Boolean(
         children &&
-          React.Children.map(children, child =>
+          React.Children.map<any, IListProps>(children as any, child =>
             React.isValidElement<IListProps>(child),
           ).some(child => child),
       )}

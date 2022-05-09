@@ -1,5 +1,4 @@
 import 'styled-components';
-import '@xstyled/system';
 import {
   ITheme,
   DefaultTheme as XStyledDefaultTheme,
@@ -80,7 +79,7 @@ declare module 'styled-components' {
   }
 }
 
-declare module '@xstyled/system' {
+declare module '@xstyled/styled-components' {
   export interface Theme extends ITheme, XStyledDefaultTheme, R95_DefaultTheme {
     colors: IColors;
     space: Array<number>;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ThemeProvider as SCThemeProvider } from 'styled-components';
+import { ThemeProvider as SCThemeProvider } from '@xstyled/styled-components';
 
 import { ModalProvider } from '../Modal';
 import themes from './themes';
@@ -8,7 +8,7 @@ export type ThemeProviderProps = {
   theme?: keyof typeof themes;
 };
 
-const ThemeProvider: React.FunctionComponent<ThemeProviderProps> = ({
+const ThemeProvider: React.FC<React.PropsWithChildren<ThemeProviderProps>> = ({
   children,
   theme,
 }) => (

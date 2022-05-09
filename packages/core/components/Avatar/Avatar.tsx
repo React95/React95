@@ -1,13 +1,12 @@
 import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
-import Frame, { FrameProps } from '../Frame/Frame';
+import Frame from '../Frame/Frame';
 
 export interface AvatarProps
   extends Omit<
-      React.ImgHTMLAttributes<HTMLDivElement>,
-      'width' | 'color' | 'height'
-    >,
-    FrameProps {
+    React.ImgHTMLAttributes<HTMLDivElement>,
+    'width' | 'color' | 'height'
+  > {
   circle?: boolean;
   size?: number;
 }

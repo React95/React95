@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { renderHook } from '@testing-library/react-hooks';
+import { render } from '@testing-library/react';
 import { useClippy, AGENTS, ClippyProvider } from '@react95/clippy';
 
 describe('useClippy', () => {
@@ -8,7 +8,20 @@ describe('useClippy', () => {
     const wrapper = ({ children }) => (
       <ClippyProvider>{children}</ClippyProvider>
     );
-    const { result } = renderHook(() => useClippy(), { wrapper });
+    const result = React.createRef();
+
+    function Test() {
+      const pendingResult = useClippy();
+
+      React.useEffect(() => {
+        result.current = pendingResult;
+      });
+
+      return null;
+    }
+
+    render(<Test />, { wrapper });
+
     const { clippy: agent } = result.current;
 
     expect(agent).toBeTruthy();
@@ -18,7 +31,20 @@ describe('useClippy', () => {
     const wrapper = ({ children }) => (
       <ClippyProvider>{children}</ClippyProvider>
     );
-    const { result } = renderHook(() => useClippy(), { wrapper });
+
+    const result = React.createRef();
+
+    function Test() {
+      const pendingResult = useClippy();
+
+      React.useEffect(() => {
+        result.current = pendingResult;
+      });
+
+      return null;
+    }
+    render(<Test />, { wrapper });
+
     const { clippy: agent } = result.current;
 
     expect(agent.agentName).toBe(AGENTS.CLIPPY);
@@ -30,7 +56,20 @@ describe('useClippy', () => {
     const wrapper = ({ children }) => (
       <ClippyProvider agentName={agentName}>{children}</ClippyProvider>
     );
-    const { result } = renderHook(() => useClippy(), { wrapper });
+
+    const result = React.createRef();
+
+    function Test() {
+      const pendingResult = useClippy();
+
+      React.useEffect(() => {
+        result.current = pendingResult;
+      });
+
+      return null;
+    }
+    render(<Test />, { wrapper });
+
     const { clippy: agent } = result.current;
 
     expect(agent.agentName).toBe(agentName);

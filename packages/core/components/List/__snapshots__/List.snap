@@ -21,7 +21,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c1:hover {
-  background: #000e7a;
+  background-color: #000e7a;
   color: #ffffff;
 }
 
@@ -89,7 +89,7 @@ exports[`<List /> Snapshots should match snapshot 1`] = `
 }
 
 .c2:hover {
-  background: #000e7a;
+  background-color: #000e7a;
   color: #ffffff;
 }
 
