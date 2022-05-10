@@ -26,7 +26,7 @@ const Clock = () => {
     });
 
     return () => clearInterval(interval);
-  });
+  }, []);
 
   return (
     <Frame
