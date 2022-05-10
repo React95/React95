@@ -17,7 +17,7 @@ const tooltipDefaultText = Tooltip.defaultProps?.text;
 
 describe('<TaskBar />', () => {
   beforeAll(() => {
-    jest.useFakeTimers();
+    jest.useFakeTimers().setSystemTime(new Date('August 24, 1995 10:00:00'));
 
     (Tooltip?.defaultProps || {}).text = WINDOWS95_LAUNCH_DATE;
   });
@@ -31,11 +31,12 @@ describe('<TaskBar />', () => {
   describe('Snapshots', () => {
     describe('<Clock />', () => {
       it('should match snapshot', () => {
+        const { container } = render(<Clock />);
+
         act(() => {
           jest.advanceTimersByTime(2000);
         });
 
-        const { container } = render(<Clock />);
         expect(container).toMatchSnapshot();
       });
     });
@@ -65,29 +66,23 @@ describe('<TaskBar />', () => {
       });
 
       it('should match snapshot with icon prop', async () => {
-        const { container } = await waitRender(
-          <WindowButton icon={<Bat />} />,
-        );
+        const { container } = await waitRender(<WindowButton icon={<Bat />} />);
 
         expect(container).toMatchSnapshot();
       });
     });
 
     it('should match snapshot', async () => {
+      const { container } = await waitRender(<TaskBar />);
+
       act(() => {
         jest.advanceTimersByTime(1000);
       });
-
-      const { container } = await waitRender(<TaskBar />);
 
       expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with one Modal', async () => {
-      act(() => {
-        jest.advanceTimersByTime(1000);
-      });
-
       const { container } = await waitRender(
         <>
           <Modal icon={<Bat />} title="file.bat" closeModal={() => {}} />
@@ -95,14 +90,14 @@ describe('<TaskBar />', () => {
         </>,
       );
 
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot with two Modals', async () => {
       act(() => {
         jest.advanceTimersByTime(1000);
       });
 
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with two Modals', async () => {
       const { container } = await waitRender(
         <>
           <Modal
@@ -115,26 +110,28 @@ describe('<TaskBar />', () => {
         </>,
       );
 
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot with list prop', async () => {
       act(() => {
         jest.advanceTimersByTime(1000);
       });
 
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with list prop', async () => {
       const { container, getByText } = await waitRender(
         <TaskBar
           list={
             <List>
               <List.Item icon={<ReaderClosed />}>Local Disk (C:)</List.Item>
-              <List.Item icon={<WindowsExplorer />}>
-                Windows Explorer
-              </List.Item>
+              <List.Item icon={<WindowsExplorer />}>Windows Explorer</List.Item>
             </List>
           }
         />,
       );
+
+      act(() => {
+        jest.advanceTimersByTime(1000);
+      });
 
       // closed
       expect(container.querySelectorAll('li').length).toBe(0);
