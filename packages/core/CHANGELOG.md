@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/React95/React95/compare/@react95/core@6.0.1...@react95/core@6.0.2) (2022-05-10)
+
+
+### Bug Fixes
+
+* **input:** update border-radius on iOS ([da015d3](https://github.com/React95/React95/commit/da015d353a50ca45be06d956d30fc72f034789c0)), closes [#335](https://github.com/React95/React95/issues/335)
+* **taskbar:** prevent Clock to be rendered everytime ([9d576ff](https://github.com/React95/React95/commit/9d576ff913d6aebc3a4b459d8de9afdc843acfb3))
+* **textarea:** update border-radius on iOS ([1242b69](https://github.com/React95/React95/commit/1242b69d5d74e216d4a9b54825515ec9853d3bca))
+
+
+
+
+
 ## [6.0.1](https://github.com/React95/React95/compare/@react95/core@6.0.0...@react95/core@6.0.1) (2022-05-04)
 
 
