@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.12](https://github.com/React95/React95/compare/@react95/explorer@0.1.11...@react95/explorer@0.1.12) (2022-05-11)
+
+**Note:** Version bump only for package @react95/explorer
+
+
+
+
+
 ## [0.1.11](https://github.com/React95/React95/compare/@react95/explorer@0.1.10...@react95/explorer@0.1.11) (2022-05-10)
 
 **Note:** Version bump only for package @react95/explorer
