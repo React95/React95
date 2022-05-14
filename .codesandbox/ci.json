@@ -1,5 +1,0 @@
-{
-  "buildCommand": "build",
-  "node": "16",
-  "packages": ["./packages/core", "./packages/icons"]
-}
