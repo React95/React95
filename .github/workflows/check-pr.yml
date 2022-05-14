@@ -1,4 +1,4 @@
-name: Check PR
+name: Lint, Test, and build
 
 on:
   pull_request:
