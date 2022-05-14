@@ -1,7 +1,6 @@
 name: Check PR
 
 on:
-  push:
   pull_request:
     branches:
       - master
