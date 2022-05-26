@@ -2,6 +2,7 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "useNx": true,
   "command": {
     "publish": {
       "conventionalCommits": true,
