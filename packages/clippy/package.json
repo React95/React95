@@ -27,7 +27,8 @@
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --copy-files",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --copy-files",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js",
+    "test": "jest --config=../../jest/config/clippy.js"
   },
   "bugs": {
     "url": "https://github.com/React95/React95/issues"

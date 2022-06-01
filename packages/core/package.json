@@ -68,8 +68,7 @@
     "prepublish": "yarn build",
     "postpublish": "yarn deploy-storybook --ci",
     "prepublishOnly": "node ../../scripts/prepublish.js --types",
-    "bojagi:build": "bojagi bundle",
-    "bojagi:upload": "bojagi upload"
+    "test": "jest --config=../../jest/config/core.js"
   },
   "publishConfig": {
     "access": "public",
