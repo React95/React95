@@ -3,9 +3,6 @@
   "version": "0.1.13",
   "private": true,
   "description": "The documentation of React95",
-  "nx": {
-    "ignore": true
-  },
   "keywords": [
     "gatsby",
     "react",
