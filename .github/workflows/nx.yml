@@ -19,10 +19,12 @@ jobs:
           fetch-depth: 0
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
+        with:
+          main-branch-name: 'master'
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm install
+      - run: yarn
       - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
@@ -37,10 +39,12 @@ jobs:
           fetch-depth: 0
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
+        with:
+          main-branch-name: 'master'
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm install
+      - run: yarn
       - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
@@ -57,6 +61,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm install
+      - run: yarn
       - name: Start Nx Agent ${{ matrix.agent }}
         run: npx nx-cloud start-agent
