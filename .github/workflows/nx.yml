@@ -31,7 +31,5 @@ jobs:
         with:
           node-version: 16
       - run: yarn
-      - run: yarn nx-cloud start-ci-run
       - run: yarn nx affected --target=build --parallel
       - run: yarn nx affected --target=test --parallel
-      - run: yarn nx-cloud stop-all-agents
