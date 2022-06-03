@@ -26,6 +26,7 @@
     "gatsby-plugin-styled-components": "^5.11.0",
     "gatsby-plugin-typescript": "^4.11.0",
     "gatsby-react-router-scroll": "^5.11.0",
+    "gatsby-script": "1.0.1",
     "gatsby-source-filesystem": "^4.11.0",
     "lodash.startcase": "^4.4.0",
     "react-helmet": "^6.1.0"

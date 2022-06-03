@@ -46,7 +46,7 @@
     "commit": "git-cz",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "dev": "yarn workspace @react95/core storybook",
+    "dev": "yarn nx storybook @react95/core ",
     "dev:explorer": "yarn workspace @react95/explorer develop",
     "dev:theme": "yarn workspace @react95/gatsby-theme develop",
     "pretest": "lerna run prebuild",
@@ -73,10 +73,9 @@
   },
   "resolutions": {
     "graphql": "^15.4.0",
-    "graphql-compose": "^7.25.0",
-    "webpack": "^5.65.0"
+    "graphql-compose": "^7.25.0"
   },
   "dependencies": {
-    "webpack": "^5.65.0"
+    "webpack": "^5.73.0"
   }
 }

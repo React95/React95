@@ -221,7 +221,7 @@ const VideoRenderer = (
   return (
     <Frame
       p={2}
-      {...(props as typeof Frame)}
+      {...(props as typeof Frame as object)}
       style={{
         width: !loadeddata ? 260 : undefined,
         ...style,
