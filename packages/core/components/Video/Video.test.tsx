@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import { waitRender, fireEvent, act } from '../shared/test/utils';
 import Video from './Video';
