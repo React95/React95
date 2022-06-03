@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.4](https://github.com/React95/React95/compare/@react95/core@6.0.3...@react95/core@6.0.4) (2022-06-03)
+
+
+### Bug Fixes
+
+* **video:** spreading props in the right way ([27e9a5a](https://github.com/React95/React95/commit/27e9a5a06950c17c236850ac2d3ce55a9927082c))
+
+
+
+
+
 ## [6.0.3](https://github.com/React95/React95/compare/@react95/core@6.0.2...@react95/core@6.0.3) (2022-06-03)
 
 **Note:** Version bump only for package @react95/core
