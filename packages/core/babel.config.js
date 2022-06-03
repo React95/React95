@@ -11,6 +11,7 @@ module.exports = {
           '@xstyled/styled-components/native',
           '@xstyled/styled-components/primitives',
         ],
+        minify: false,
       },
     ],
     [
@@ -20,5 +21,4 @@ module.exports = {
       },
     ],
   ],
-  ignore: ['**/*.test.tsx', '**/test', '**/*.d.ts'],
 };
