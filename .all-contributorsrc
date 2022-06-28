@@ -337,6 +337,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "ezzcodeezzlife",
+      "name": "fabi.s",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64021988?v=4",
+      "profile": "https://github.com/ezzcodeezzlife",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
