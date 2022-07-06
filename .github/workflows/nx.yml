@@ -1,6 +1,6 @@
 name: Nx CI
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - master
 
@@ -10,11 +10,10 @@ env:
 jobs:
   pr:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' }}
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request_target.head.ref }}
           fetch-depth: 0
 
       - name: Restoring cache
