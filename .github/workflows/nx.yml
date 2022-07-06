@@ -3,6 +3,9 @@ on:
   pull_request:
     branches:
       - master
+  pull_request_target:
+    branches:
+      - master
 
 env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
@@ -10,11 +13,16 @@ env:
 jobs:
   pr:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' }}
     steps:
+      - uses: haya14busa/action-cond@v1
+        id: prref
+        with:
+          cond: ${{ github.event_name == 'pull_request' }}
+          if_true: ${{ github.event.pull_request.head.ref }}
+          if_false: ${{ github.event.pull_request_target.head.ref }}
       - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ steps.prref.outputs.value }}
           fetch-depth: 0
 
       - name: Restoring cache
