@@ -1,8 +1,5 @@
 name: Codeball
-on:
-  pull_request:
-    branches:
-      - master
+on: [pull_request]
 
 jobs:
   codeball_job:
@@ -14,5 +11,5 @@ jobs:
         with:
           approvePullRequests: "true"
           labelPullRequestsWhenApproved: "true"
-          labelPullRequestsWhenReviewNeeded: "false"
+          labelPullRequestsWhenReviewNeeded: "true"
           failJobsWhenReviewNeeded: "false"
