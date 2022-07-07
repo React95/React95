@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-35-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -96,6 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/cybaj"><img src="https://avatars.githubusercontent.com/u/11937687?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Minseok Kim</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=cybaj" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Mrpanquecas"><img src="https://avatars.githubusercontent.com/u/10724552?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ricardo Costa</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3AMrpanquecas" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/ezzcodeezzlife"><img src="https://avatars.githubusercontent.com/u/64021988?v=4?s=100" width="100px;" alt=""/><br /><sub><b>fabi.s</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=ezzcodeezzlife" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://joshuaghali.com"><img src="https://avatars.githubusercontent.com/u/11557261?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joshua Ghali</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Ajjghali" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
