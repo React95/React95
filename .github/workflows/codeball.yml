@@ -1,5 +1,8 @@
 name: Codeball
-on: [pull_request]
+on:
+  pull_request_target:
+    branches:
+      - master
 
 jobs:
   codeball_job:
