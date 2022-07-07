@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.12](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.3.11...@react95/gatsby-theme@1.3.12) (2022-07-06)
+
+
+### Bug Fixes
+
+* update react95/core peerdependencies for support of latest version of gatsby ([c2c8fc8](https://github.com/React95/React95/commit/c2c8fc8b48393355f9624170c47314c65227e354))
+
+
+
+
+
 ## [1.3.11](https://github.com/React95/React95/compare/@react95/gatsby-theme@1.3.10...@react95/gatsby-theme@1.3.11) (2022-06-07)
 
 **Note:** Version bump only for package @react95/gatsby-theme
