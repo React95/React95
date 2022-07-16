@@ -1,6 +1,6 @@
 {
   "name": "@react95/gatsby-theme",
-  "version": "1.3.11",
+  "version": "1.3.12",
   "description": "A React95 theme for your Gatsby blog",
   "keywords": [
     "gatsby",
@@ -42,7 +42,7 @@
     "ts-loader": "^9.2.8"
   },
   "peerDependencies": {
-    "@react95/core": "^5.5.0",
+    "@react95/core": "^6.0.4",
     "@xstyled/styled-components": "^3.5.1",
     "gatsby": "^4.11.0",
     "react": "^17.0.2",
