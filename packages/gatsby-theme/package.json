@@ -42,12 +42,12 @@
     "ts-loader": "^9.2.8"
   },
   "peerDependencies": {
-    "@react95/core": "^6.0.4",
-    "@xstyled/styled-components": "^3.5.1",
-    "gatsby": "^4.11.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "@react95/core": ">= 6.0.4",
+    "@xstyled/styled-components": ">= 3.5.1",
+    "gatsby": ">= 4.11.0",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0",
+    "styled-components": ">= 5.3.3"
   },
   "publishConfig": {
     "access": "public"
