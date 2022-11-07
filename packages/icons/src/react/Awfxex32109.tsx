@@ -1,0 +1,43 @@
+import React from 'react';
+import { IconProps } from '../iconType';
+import { BaseIcon } from '../internal';
+import Awfxex32109_32x32_4 from '../../png/Awfxex32109_32x32_4.png';
+import Awfxex32109_16x16_4 from '../../png/Awfxex32109_16x16_4.png';
+
+export const awfxex32109Data = {
+  '32x32_4': {
+    imageSrc: Awfxex32109_32x32_4 as string,
+    width: 32,
+    height: 32,
+  },
+
+  '16x16_4': {
+    imageSrc: Awfxex32109_16x16_4 as string,
+    width: 16,
+    height: 16,
+  },
+};
+
+export interface Awfxex32109Props extends IconProps {
+  /**
+   * Icon variant to use.
+   * also provides default styling with the correct height and width
+   **/
+  variant?: '32x32_4' | '16x16_4';
+}
+
+export const Awfxex32109: React.FC<Awfxex32109Props> = ({
+  variant = '32x32_4',
+  ...rest
+}) => {
+  const image = awfxex32109Data[variant];
+
+  return (
+    <BaseIcon
+      width={image.width}
+      height={image.height}
+      src={image.imageSrc}
+      {...rest}
+    />
+  );
+};
