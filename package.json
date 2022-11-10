@@ -35,7 +35,7 @@
     "jest-styled-components": "^7.0.8",
     "lerna": "^5.0.0",
     "nx": "^14.1.9",
-    "react": "^18.0.0",
+    "reacty": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "npmClient": "yarn",
