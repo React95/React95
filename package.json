@@ -50,7 +50,6 @@
     "dev:explorer": "yarn workspace @react95/explorer develop",
     "dev:theme": "yarn workspace @react95/gatsby-theme develop",
     "pretest": "lerna run prebuild",
-    "postinstall": "lerna run postinstall --scope=@react95/icons --stream",
     "test": "yarn nx run-many --target=test --all --parallel",
     "test:core": "yarn nx test @react95/core",
     "test:clippy": "yarn nx test @react95/clippy",

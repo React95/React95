@@ -28,7 +28,6 @@
   "scripts": {
     "precopy": "mkdir -p dist/src/png",
     "process-icons": "ts-node-script processIcons.ts",
-    "postinstall": "yarn process-icons",
     "prebuild": "rimraf ./dist",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types && yarn build:css",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
