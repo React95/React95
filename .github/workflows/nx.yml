@@ -1,8 +1,5 @@
 name: Nx CI
-on:
-  pull_request_target:
-    branches:
-      - master
+on: [pull_request]
 
 env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
