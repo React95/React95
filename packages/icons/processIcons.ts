@@ -2,7 +2,7 @@ import fs from 'fs';
 import ICO from 'icojs';
 import path from 'path';
 import { sync as rimrafSync } from 'rimraf';
-import { iconComponentTemplate, getIconDataName } from './component-template';
+import { getIconDataName, iconComponentTemplate } from './component-template';
 import { filterBlockedIcons } from './iconBlockList';
 
 export interface IconData {
@@ -27,13 +27,12 @@ export interface IconData {
     `${IMAGE_FOLDER}/${imageId}.png`;
   const CSS_FILE_PATH = './icons.css';
 
-  const makeCssClass = (icon: IconData) => `
-  .${icon.id} {
+  const makeCssClass = (icon: IconData) => `.${icon.id} {
     width: ${icon.width}px;
     height: ${icon.height}px;
     background-image: url(${icon.filePath});
   }
-  `;
+`;
 
   rimrafSync('dist');
   rimrafSync(REACT_FOLDER);
