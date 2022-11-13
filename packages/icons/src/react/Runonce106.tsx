@@ -1,0 +1,36 @@
+import React from 'react';
+import { IconProps } from '../iconType';
+import { BaseIcon } from '../internal';
+import Runonce106_32x32_4 from '../../png/Runonce106_32x32_4.png';
+
+export const runonce106Data = {
+  '32x32_4': {
+    imageSrc: Runonce106_32x32_4 as string,
+    width: 32,
+    height: 32,
+  },
+};
+
+export interface Runonce106Props extends IconProps {
+  /**
+   * Icon variant to use.
+   * also provides default styling with the correct height and width
+   **/
+  variant?: '32x32_4';
+}
+
+export const Runonce106: React.FC<Runonce106Props> = ({
+  variant = '32x32_4',
+  ...rest
+}) => {
+  const image = runonce106Data[variant];
+
+  return (
+    <BaseIcon
+      width={image.width}
+      height={image.height}
+      src={image.imageSrc}
+      {...rest}
+    />
+  );
+};

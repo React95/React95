@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "6.0.4",
+  "version": "6.0.5",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "repository": {
@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@react95/icons": "^2.0.5",
+    "@react95/icons": "^2.0.6",
     "@types/react-virtualized": "^9.21.20",
     "csstype": "^3.0.11",
     "nanoid": "^3.3.1",
