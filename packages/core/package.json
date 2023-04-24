@@ -17,7 +17,8 @@
     "nanoid": "^3.3.1",
     "react-draggable": "^4.4.4",
     "styled-system": "^5.1.5",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "url-loader": "^4.1.1"
   },
   "peerDependencies": {
     "@xstyled/styled-components": ">= 3.6.0",
