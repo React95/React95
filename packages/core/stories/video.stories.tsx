@@ -1,38 +1,40 @@
+import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
 
-import EXPLORER_VIDEO from './EXPLORER.mp4';
 import Video from '../components/Video';
+import EXPLORER_VIDEO from './EXPLORER.mp4';
 
 export default {
   title: 'Video',
   component: Video,
-} as Meta;
+} as Meta<typeof Video>;
 
-export const FromURL = () => (
-  <Video
-    w="320"
-    src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    style={{
-      marginBottom: 4,
-    }}
-  />
-);
+export const FromURL = {
+  render: () => (
+    <Video
+      w="320"
+      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+      style={{
+        marginBottom: 4,
+      }}
+    />
+  ),
 
-export const FromFile = () => (
-  <Video w="320" src={EXPLORER_VIDEO} name="Explorer" />
-);
-
-FromURL.parameters = {
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
+    },
   },
 };
 
-FromFile.parameters = {
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
+export const FromFile = {
+  render: () => <Video w="320" src={EXPLORER_VIDEO} name="Explorer" />,
+
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
+    },
   },
 };

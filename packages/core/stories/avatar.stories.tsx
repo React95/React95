@@ -1,42 +1,46 @@
+import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
 
-import Avatar from '../components/Avatar';
 import { Frame } from '../components';
+import Avatar from '../components/Avatar';
 
 export default {
   title: 'Avatar',
   component: Avatar,
-} as Meta;
+} as Meta<typeof Avatar>;
 
-export const Simple = () => (
-  <Avatar src="https://github.com/React95.png" alt="photo" />
-);
+export const Simple = {
+  render: () => <Avatar src="https://github.com/React95.png" alt="photo" />,
 
-Simple.parameters = {
-  design: { disable: true },
+  parameters: {
+    design: { disable: true },
+  },
 };
 
-export const Circle = () => (
-  <Avatar src="https://github.com/React95.png" alt="photo" circle />
-);
+export const Circle = {
+  render: () => (
+    <Avatar src="https://github.com/React95.png" alt="photo" circle />
+  ),
 
-Circle.parameters = {
-  design: { disable: true },
+  parameters: {
+    design: { disable: true },
+  },
 };
 
-export const Letters = () => (
-  <Frame
-    display="inline-flex"
-    boxShadow="none"
-    bg="transparent"
-    style={{ gap: 8 }}
-  >
-    <Avatar>SQ</Avatar>
-    <Avatar circle>RO</Avatar>
-  </Frame>
-);
+export const Letters = {
+  render: () => (
+    <Frame
+      display="inline-flex"
+      boxShadow="none"
+      bg="transparent"
+      style={{ gap: 8 }}
+    >
+      <Avatar>SQ</Avatar>
+      <Avatar circle>RO</Avatar>
+    </Frame>
+  ),
 
-Letters.parameters = {
-  design: { disable: true },
+  parameters: {
+    design: { disable: true },
+  },
 };

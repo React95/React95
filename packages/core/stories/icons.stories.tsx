@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
-import { useClippy, ClippyProvider } from '@react95/clippy';
+import { ClippyProvider, useClippy } from '@react95/clippy';
+import type { Meta } from '@storybook/react';
 import copy from 'copy-to-clipboard';
+import * as React from 'react';
 
 import { Frame } from '../components';
 
@@ -43,57 +43,60 @@ export default {
   ],
 } as Meta;
 
-export const All = () => {
-  const [selectedIcon, setSelectedIcon] = React.useState('');
-  const { clippy } = useClippy();
+export const All = {
+  render: () => {
+    const [selectedIcon, setSelectedIcon] = React.useState('');
+    const { clippy } = useClippy();
 
-  const copyToClipboard = (componentName: string, variantName: string) => {
-    const text = `<${componentName} variant="${variantName}"/>`;
-    setSelectedIcon(text);
+    const copyToClipboard = (componentName: string, variantName: string) => {
+      const text = `<${componentName} variant="${variantName}"/>`;
+      setSelectedIcon(text);
 
-    copy(text);
-  };
+      copy(text);
+    };
 
-  React.useEffect(() => {
-    if (selectedIcon) {
-      clippy.speak('copied to clipboard!');
-    }
-  }, [clippy, selectedIcon]);
+    React.useEffect(() => {
+      if (selectedIcon) {
+        clippy.speak('copied to clipboard!');
+      }
+    }, [clippy, selectedIcon]);
 
-  return (
-    <div>
-      <Frame p={4}>
-        <p>We have, currently, {icons.length} icons</p>
-        {icons.map(({ component: Component, componentName, variants }) => {
-          return (
-            <>
-              {Object.entries(variants).map(([variantName]) => (
-                <IconContainer key={variantName}>
-                  <Component
-                    key={variantName}
-                    title={variantName}
-                    style={{ display: 'inline-block', marginRight: 4 }}
-                    // eslint-disable-next-line
-                    variant={variantName as any}
-                    onClick={() => copyToClipboard(componentName, variantName)}
-                  />
-                  {Component.name}
-                  <br />
-                  {variantName}
-                </IconContainer>
-              ))}
-            </>
-          );
-        })}
-      </Frame>
-    </div>
-  );
-};
+    return (
+      <div>
+        <Frame p={4}>
+          <p>We have, currently, {icons.length} icons</p>
+          {icons.map(({ component: Component, componentName, variants }) => {
+            return (
+              <>
+                {Object.entries(variants).map(([variantName]) => (
+                  <IconContainer key={variantName}>
+                    <Component
+                      key={variantName}
+                      title={variantName}
+                      style={{ display: 'inline-block', marginRight: 4 }}
+                      // eslint-disable-next-line
+                      variant={variantName as any}
+                      onClick={() =>
+                        copyToClipboard(componentName, variantName)
+                      }
+                    />
+                    {Component.name}
+                    <br />
+                    {variantName}
+                  </IconContainer>
+                ))}
+              </>
+            );
+          })}
+        </Frame>
+      </div>
+    );
+  },
 
-All.parameters = {
-  design: {
-    type: 'figma',
-    url:
-      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=4%3A35',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=4%3A35',
+    },
   },
 };

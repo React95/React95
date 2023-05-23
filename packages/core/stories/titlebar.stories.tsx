@@ -1,15 +1,23 @@
-import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
 import { FileIcons } from '@react95/icons';
+import type { Meta } from '@storybook/react';
+import * as React from 'react';
 
 import TitleBar from '../components/TitleBar';
 
 export default {
   title: 'TitleBar',
   component: TitleBar,
-} as Meta;
+} as Meta<typeof TitleBar>;
 
-export const Simple = () => <TitleBar w={200} />;
+export const Simple = {
+  render: () => <TitleBar w={200} />,
+
+  parameters: {
+    design: {
+      disabled: true,
+    },
+  },
+};
 
 export const Inactive = () => <TitleBar active={false} w={200} />;
 
@@ -27,9 +35,3 @@ export const Complete = () => (
     </TitleBar.OptionsBox>
   </TitleBar>
 );
-
-Simple.parameters = {
-  design: {
-    disabled: true,
-  },
-};
