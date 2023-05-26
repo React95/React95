@@ -9,7 +9,9 @@ export default {
 } as Meta<typeof Button>;
 
 export const Simple = {
-  render: () => <Button>Ok</Button>,
+  render: () => {
+    return <Button>Ok</Button>;
+  },
 
   parameters: {
     design: {

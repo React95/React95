@@ -41,85 +41,89 @@ export default {
   title: 'All',
 } as Meta;
 
-export const All = () => (
-  <AllList>
-    <Alert
-      title="Windows Networking"
-      type="error"
-      closeAlert={() => {}}
-      defaultPosition={{
-        x: 150,
-        y: 500,
-      }}
-      message="The Windows password you typed is incorrect."
-      buttons={[{ value: 'OK', onClick: () => {} }]}
-    />
+export const All = {
+  render: () => {
+    return (
+      <AllList>
+        <Alert
+          title="Windows Networking"
+          type="error"
+          closeAlert={() => {}}
+          defaultPosition={{
+            x: 150,
+            y: 500,
+          }}
+          message="The Windows password you typed is incorrect."
+          buttons={[{ value: 'OK', onClick: () => {} }]}
+        />
 
-    <div>
-      <SimpleButton />
-    </div>
+        <div>
+          <SimpleButton.render />
+        </div>
 
-    <br />
-    <SimpleAvatar />
+        <br />
+        <SimpleAvatar.render />
 
-    <br />
-    <AllCheckbox />
+        <br />
+        <AllCheckbox.render />
 
-    <br />
-    <SimpleDropdown />
+        <br />
+        <SimpleDropdown.render />
 
-    <br />
-    <SimpleFieldset />
+        <br />
+        <SimpleFieldset.render />
 
-    <br />
-    <div>
-      <SimpleInput />
-    </div>
+        <br />
+        <div>
+          <SimpleInput.render />
+        </div>
 
-    <br />
-    <br />
+        <br />
+        <br />
 
-    <div>
-      <SimpleTextArea />
-    </div>
+        <div>
+          <SimpleTextArea.render />
+        </div>
 
-    <br />
-    <br />
+        <br />
+        <br />
 
-    <div>
-      <WithIcons />
-      <br />
-      <SimpleList />
-    </div>
+        <div>
+          <WithIcons.render />
+          <br />
+          <SimpleList.render />
+        </div>
 
-    <br />
-    <SimpleProgressBar />
+        <br />
+        <SimpleProgressBar.render />
 
-    <br />
-    <SimpleRadioButton />
+        <br />
+        <SimpleRadioButton.render />
 
-    <br />
-    <SimpleRange />
+        <br />
+        <SimpleRange.render />
 
-    <br />
-    <SimpleTabs />
+        <br />
+        <SimpleTabs.render />
 
-    <br />
-    <SimpleTree />
+        <br />
+        <SimpleTree.render />
 
-    <br />
-    <SimpleTooltip />
+        <br />
+        <SimpleTooltip.render />
 
-    <br />
-    <FromURL />
+        <br />
+        <FromURL.render />
 
-    <br />
-    <SimpleTitleBar />
+        <br />
+        <SimpleTitleBar.render />
 
-    <br />
-    <Inactive />
+        <br />
+        <Inactive.render />
 
-    <br />
-    <Complete />
-  </AllList>
-);
+        <br />
+        <Complete.render />
+      </AllList>
+    );
+  },
+};

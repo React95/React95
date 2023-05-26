@@ -19,19 +19,23 @@ export const Simple = {
   },
 };
 
-export const Inactive = () => <TitleBar active={false} w={200} />;
+export const Inactive = {
+  render: () => <TitleBar active={false} w={200} />,
+};
 
-export const Complete = () => (
-  <TitleBar
-    active
-    icon={<FileIcons variant="32x32_4" />}
-    title="untitled - Paint"
-    className="draggable"
-    w={200}
-  >
-    <TitleBar.OptionsBox>
-      <TitleBar.Option>?</TitleBar.Option>
-      <TitleBar.Option>X</TitleBar.Option>
-    </TitleBar.OptionsBox>
-  </TitleBar>
-);
+export const Complete = {
+  render: () => (
+    <TitleBar
+      active
+      icon={<FileIcons variant="32x32_4" />}
+      title="untitled - Paint"
+      className="draggable"
+      w={200}
+    >
+      <TitleBar.OptionsBox>
+        <TitleBar.Option>?</TitleBar.Option>
+        <TitleBar.Option>X</TitleBar.Option>
+      </TitleBar.OptionsBox>
+    </TitleBar>
+  ),
+};
