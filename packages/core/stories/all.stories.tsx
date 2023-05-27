@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import styled from '@xstyled/styled-components';
 import * as React from 'react';
 
-import { Alert } from '../components';
+import { Alert, Button } from '../components';
 
 import { Simple as SimpleAvatar } from './avatar.stories';
 import { Simple as SimpleButton } from './button.stories';
@@ -30,7 +30,7 @@ const AllList = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
 
-  height: 600px;
+  height: 620px;
 
   > * {
     margin-right: 10px;
@@ -43,19 +43,28 @@ export default {
 
 export const All = {
   render: () => {
+    const [openAlert, setOpenAlert] = React.useState(true);
+
     return (
       <AllList>
-        <Alert
-          title="Windows Networking"
-          type="error"
-          closeAlert={() => {}}
-          defaultPosition={{
-            x: 150,
-            y: 500,
-          }}
-          message="The Windows password you typed is incorrect."
-          buttons={[{ value: 'OK', onClick: () => {} }]}
-        />
+        <div>
+          <Button onClick={() => setOpenAlert(true)}> Show Alert </Button>
+        </div>
+        {openAlert && (
+          <Alert
+            title="Windows Networking"
+            type="error"
+            closeAlert={() => {}}
+            defaultPosition={{
+              x: -130,
+              y: -130,
+            }}
+            message="The Windows password you typed is incorrect."
+            buttons={[{ value: 'OK', onClick: () => setOpenAlert(false) }]}
+          />
+        )}
+
+        <br />
 
         <div>
           <SimpleButton.render />
