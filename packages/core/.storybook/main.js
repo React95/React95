@@ -1,6 +1,6 @@
 export default {
   staticDirs: ['../components/GlobalStyle'],
-  stories: ['../stories/*.stories.tsx'],
+  stories: ['../stories/all.stories.tsx', '../stories/(?!all)*.stories.tsx'],
   logLevel: 'debug',
   addons: [
     {
