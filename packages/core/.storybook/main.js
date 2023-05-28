@@ -11,7 +11,10 @@ export default {
       },
     },
     '@storybook/addon-storysource',
-    'storybook-addon-designs',
+    // Incompatible with Storybook 7.0
+    // implementation in progress
+    // see https://github.com/storybookjs/addon-designs/pull/192
+    // 'storybook-addon-designs',
     './src/theme-changer/register',
   ],
   framework: {
