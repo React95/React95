@@ -1,6 +1,15 @@
+import { readdirSync } from 'fs';
+
 export default {
   staticDirs: ['../components/GlobalStyle'],
-  stories: ['../stories/all.stories.tsx', '../stories/(?!all)*.stories.tsx'],
+  // stories: [, '../stories/(?!all)*.stories.tsx'],
+  stories: [
+    '../stories/all.stories.tsx',
+    ...readdirSync('./stories')
+      .filter(file => file !== 'all.stories.tsx')
+      .filter(file => file.endsWith('.stories.tsx'))
+      .map(file => `../stories/${file}`),
+  ],
   logLevel: 'debug',
   addons: [
     {
@@ -22,6 +31,6 @@ export default {
     options: {},
   },
   docs: {
-    autodocs: true,
+    autodocs: 'tag',
   },
 };

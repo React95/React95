@@ -9,6 +9,7 @@ import TaskBar from '../components/TaskBar';
 export default {
   title: 'TaskBar',
   component: TaskBar,
+  tags: ['autodocs'],
 } as Meta<typeof TaskBar>;
 
 export const Simple = {

@@ -12,6 +12,7 @@ const RadioButtonList = styled.div`
 export default {
   title: 'RadioButton',
   component: RadioButton,
+  tags: ['autodocs'],
 } as Meta<typeof RadioButton>;
 
 export const Simple = {

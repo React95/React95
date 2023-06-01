@@ -73,6 +73,7 @@ const treeNodes: TreeProps = {
 export default {
   title: 'Tree',
   component: Tree,
+  tags: ['autodocs'],
 } as Meta<typeof Tree>;
 
 export const Simple = {

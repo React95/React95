@@ -13,6 +13,7 @@ const CheckboxList = styled.div`
 export default {
   title: 'Fieldset',
   component: Fieldset,
+  tags: ['autodocs'],
 } as Meta<typeof Fieldset>;
 
 export const Simple = {

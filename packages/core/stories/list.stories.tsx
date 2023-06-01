@@ -23,6 +23,7 @@ export default {
   title: 'List',
   component: List,
   subcomponents: { 'List.Item': List.Item, 'List.Divider': List.Divider },
+  tags: ['autodocs'],
 } as Meta<typeof List>;
 
 export const WithIcons = {

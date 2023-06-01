@@ -6,6 +6,7 @@ import ProgressBar from '../components/ProgressBar';
 export default {
   title: 'ProgressBar',
   component: ProgressBar,
+  tags: ['autodocs'],
 } as Meta<typeof ProgressBar>;
 
 export const Simple = {

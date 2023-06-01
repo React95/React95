@@ -6,6 +6,7 @@ import Frame from '../components/Frame';
 export default {
   title: 'Frame',
   component: Frame,
+  tags: ['autodocs'],
 } as Meta<typeof Frame>;
 
 export const Simple = {

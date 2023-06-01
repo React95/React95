@@ -11,6 +11,7 @@ import { Computer, Mmsys113, Mshtml32534 } from '@react95/icons';
 export default {
   title: 'Modal',
   component: Modal,
+  tags: ['autodocs'],
 } as Meta<typeof Modal>;
 
 export const Simple = {

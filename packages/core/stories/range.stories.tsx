@@ -6,6 +6,7 @@ import Range from '../components/Range';
 export default {
   title: 'Range',
   component: Range,
+  tags: ['autodocs'],
 } as Meta<typeof Range>;
 
 export const Simple = {

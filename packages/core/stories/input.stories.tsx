@@ -6,6 +6,7 @@ import Input from '../components/Input/Input';
 export default {
   title: 'Input',
   component: Input,
+  tags: ['autodocs'],
 } as Meta<typeof Input>;
 
 export const Simple = {

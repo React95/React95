@@ -7,6 +7,7 @@ import Avatar from '../components/Avatar';
 export default {
   title: 'Avatar',
   component: Avatar,
+  tags: ['autodocs'],
 } as Meta<typeof Avatar>;
 
 export const Simple = {

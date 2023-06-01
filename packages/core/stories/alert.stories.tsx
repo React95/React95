@@ -9,6 +9,7 @@ import Dropdown from '../components/Dropdown';
 export default {
   title: 'Alert',
   component: Alert,
+  tags: ['autodocs'],
 } as Meta<typeof Alert>;
 
 export const Simple = {

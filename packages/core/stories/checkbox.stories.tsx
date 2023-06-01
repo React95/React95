@@ -12,6 +12,7 @@ const CheckboxList = styled.div`
 export default {
   title: 'Checkbox',
   component: Checkbox,
+  tags: ['autodocs'],
 } as Meta<typeof Checkbox>;
 
 export const All = {

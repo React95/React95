@@ -7,6 +7,7 @@ import EXPLORER_VIDEO from './EXPLORER.mp4';
 export default {
   title: 'Video',
   component: Video,
+  tags: ['autodocs'],
 } as Meta<typeof Video>;
 
 export const FromURL = {

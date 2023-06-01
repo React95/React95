@@ -6,6 +6,7 @@ import Tooltip from '../components/Tooltip';
 export default {
   title: 'Tooltip',
   component: Tooltip,
+  tags: ['autodocs'],
 } as Meta<typeof Tooltip>;
 
 export const Simple = {

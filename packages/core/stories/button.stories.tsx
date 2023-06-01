@@ -6,6 +6,7 @@ import Button from '../components/Button';
 export default {
   title: 'Button',
   component: Button,
+  tags: ['autodocs'],
 } as Meta<typeof Button>;
 
 export const Simple = {

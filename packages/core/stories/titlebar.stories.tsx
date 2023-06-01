@@ -7,6 +7,7 @@ import TitleBar from '../components/TitleBar';
 export default {
   title: 'TitleBar',
   component: TitleBar,
+  tags: ['autodocs'],
 } as Meta<typeof TitleBar>;
 
 export const Simple = {
