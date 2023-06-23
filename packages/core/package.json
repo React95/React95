@@ -61,7 +61,6 @@
   "scripts": {
     "storybook": "storybook dev",
     "build-storybook": "storybook build -o docs",
-    "deploy-storybook": "storybook-to-ghpages",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./components --out-dir dist/esm --extensions .ts,.tsx",
@@ -71,7 +70,6 @@
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
-    "postpublish": "yarn deploy-storybook --ci",
     "prepublishOnly": "node ../../scripts/prepublish.js --types",
     "test": "jest --config=../../jest/config/core.js"
   },
