@@ -57,7 +57,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Deploy
+      - name: Build storybook
+        run: |
+          yarn build:storybook
+
+      - name: Deploy storybook
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
