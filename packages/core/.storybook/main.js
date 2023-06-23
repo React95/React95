@@ -1,4 +1,5 @@
 import { readdirSync } from 'fs';
+import { mergeConfig } from 'vite';
 
 export default {
   staticDirs: ['../components/GlobalStyle'],
@@ -32,5 +33,10 @@ export default {
   },
   docs: {
     autodocs: 'tag',
+  },
+  viteFinal: async function viteFinal(config) {
+    return mergeConfig(config, {
+      build: { chunkSizeWarningLimit: 1600 },
+    });
   },
 };
