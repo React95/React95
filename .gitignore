@@ -4,6 +4,9 @@ yarn-error.log
 
 dist
 
+# storybook build
+packages/core/docs
+
 .npmrc
 
 .env

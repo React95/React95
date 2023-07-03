@@ -1,10 +1,17 @@
-module.exports = {
+import { readdirSync } from 'fs';
+import { mergeConfig } from 'vite';
+
+export default {
   staticDirs: ['../components/GlobalStyle'],
-  stories: ['../stories/*.stories.tsx'],
+  // stories: [, '../stories/(?!all)*.stories.tsx'],
+  stories: [
+    '../stories/all.stories.tsx',
+    ...readdirSync('./stories')
+      .filter(file => file !== 'all.stories.tsx')
+      .filter(file => file.endsWith('.stories.tsx'))
+      .map(file => `../stories/${file}`),
+  ],
   logLevel: 'debug',
-  core: {
-    builder: 'webpack5',
-  },
   addons: [
     {
       name: '@storybook/addon-essentials',
@@ -14,35 +21,22 @@ module.exports = {
       },
     },
     '@storybook/addon-storysource',
-    'storybook-addon-designs',
-    {
-      name: '@storybook/addon-docs',
-      options: {
-        sourceLoaderOptions: {
-          parser: 'typescript',
-          injectStoryParameters: false,
-        },
-      },
-    },
+    // Incompatible with Storybook 7.0
+    // implementation in progress
+    // see https://github.com/storybookjs/addon-designs/pull/192
+    // 'storybook-addon-designs',
     './src/theme-changer/register',
   ],
-  webpackFinal: async config => {
-    // replace asset loader with url loader in order to bundle icons into js
-    function isAssetLoader(rule) {
-      return rule.test.toString().includes('png');
-    }
-
-    const assetLoader = config.module.rules.find(isAssetLoader);
-
-    config.module.rules = config.module.rules.filter(
-      rule => !isAssetLoader(rule),
-    );
-
-    config.module.rules.push({
-      test: assetLoader.test,
-      loader: 'url-loader',
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
+  },
+  docs: {
+    autodocs: 'tag',
+  },
+  viteFinal: async function viteFinal(config) {
+    return mergeConfig(config, {
+      build: { chunkSizeWarningLimit: 1600 },
     });
-
-    return config;
   },
 };

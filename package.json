@@ -61,6 +61,7 @@
     "build:clippy": "yarn nx build @react95/clippy",
     "build:core": "yarn nx build @react95/core",
     "build:icons": "yarn nx build @react95/icons",
+    "build:storybook": "yarn nx build-storybook @react95/core",
     "prepare": "husky install"
   },
   "config": {

@@ -32,15 +32,20 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
+
       - name: Lint
         run: yarn lint:all
+
       - name: Test
         run: yarn test
+
       - name: Build
         run: |
           yarn build
+
       - name: Publish
         run: |
           GH_TOKEN=${GH_TOKEN}
@@ -51,3 +56,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Build storybook
+        run: |
+          yarn build:storybook
+
+      - name: Deploy storybook
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./packages/core/docs
