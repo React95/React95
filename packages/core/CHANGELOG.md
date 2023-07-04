@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/React95/React95/compare/@react95/core@6.1.0...@react95/core@6.1.1) (2023-07-04)
+
+**Note:** Version bump only for package @react95/core
+
 # [6.1.0](https://github.com/React95/React95/compare/@react95/core@6.0.7...@react95/core@6.1.0) (2023-07-03)
 
 ### Bug Fixes
