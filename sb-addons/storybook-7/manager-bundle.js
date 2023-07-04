@@ -1,0 +1,4 @@
+try{
+var l=__STORYBOOKADDONS__,{addons:a,types:_,mockChannel:O}=__STORYBOOKADDONS__;var T=__STORYBOOKTHEMING__,{CacheProvider:b,ClassNames:R,Global:B,ThemeProvider:x,background:y,color:C,convert:N,create:o,createCache:k,createGlobal:v,createReset:D,css:G,darken:K,ensure:Y,ignoreSsrWarning:I,isPropValid:M,jsx:P,keyframes:w,lighten:A,styled:E,themes:H,typography:j,useTheme:U,withTheme:V}=__STORYBOOKTHEMING__;var n=o({base:"light",fontBase:'"MS Sans Serif", sans-serif',brandTitle:"React95",brandUrl:"https://github.com/React95/React95",brandImage:"https://avatars2.githubusercontent.com/u/38158713",appBg:"white",appBorderColor:"grey",appBorderRadius:0}),s=n;a.setConfig({theme:s});
+}catch(e){ console.error("[Storybook] One of your manager-entries failed: " + import.meta.url, e); }
+//# sourceMappingURL=manager-bundle.js.map
