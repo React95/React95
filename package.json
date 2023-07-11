@@ -48,7 +48,6 @@
     "contributors:generate": "all-contributors generate",
     "dev": "yarn nx storybook @react95/core ",
     "dev:explorer": "yarn workspace @react95/explorer develop",
-    "dev:theme": "yarn workspace @react95/gatsby-theme develop",
     "pretest": "lerna run prebuild",
     "test": "yarn nx run-many --target=test --all --parallel",
     "test:core": "yarn nx test @react95/core",
@@ -61,8 +60,8 @@
     "build": "yarn nx run-many --target=build --all --parallel",
     "build:clippy": "yarn nx build @react95/clippy",
     "build:core": "yarn nx build @react95/core",
-    "build:theme": "yarn nx build @react95/gatsby-theme",
     "build:icons": "yarn nx build @react95/icons",
+    "build:storybook": "yarn nx build-storybook @react95/core",
     "prepare": "husky install"
   },
   "config": {

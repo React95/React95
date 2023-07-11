@@ -1,9 +1,9 @@
+import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
 
-import Fieldset from '../components/Fieldset';
 import Checkbox from '../components/Checkbox';
+import Fieldset from '../components/Fieldset';
 
 const CheckboxList = styled.div`
   display: flex;
@@ -13,22 +13,24 @@ const CheckboxList = styled.div`
 export default {
   title: 'Fieldset',
   component: Fieldset,
-} as Meta;
+  tags: ['autodocs'],
+} as Meta<typeof Fieldset>;
 
-export const Simple = () => (
-  <Fieldset legend="Connection Settings" style={{ width: '300px' }}>
-    <CheckboxList>
-      <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
-      <Checkbox checked={false}>Disable Local Keyboard & Pointer</Checkbox>
-      <Checkbox checked>Remove Desktop Wallpaper</Checkbox>
-    </CheckboxList>
-  </Fieldset>
-);
+export const Simple = {
+  render: () => (
+    <Fieldset legend="Connection Settings" style={{ width: '300px' }}>
+      <CheckboxList>
+        <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
+        <Checkbox checked={false}>Disable Local Keyboard & Pointer</Checkbox>
+        <Checkbox checked>Remove Desktop Wallpaper</Checkbox>
+      </CheckboxList>
+    </Fieldset>
+  ),
 
-Simple.parameters = {
-  design: {
-    type: 'figma',
-    url:
-      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A7',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A7',
+    },
   },
 };

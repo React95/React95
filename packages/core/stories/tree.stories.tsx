@@ -1,5 +1,5 @@
+import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
 
 import Tree, { TreeProps } from '../components/Tree/Tree';
 
@@ -73,14 +73,16 @@ const treeNodes: TreeProps = {
 export default {
   title: 'Tree',
   component: Tree,
-} as Meta;
+  tags: ['autodocs'],
+} as Meta<typeof Tree>;
 
-export const Simple = () => <Tree {...treeNodes} />;
+export const Simple = {
+  render: () => <Tree {...treeNodes} />,
 
-Simple.parameters = {
-  design: {
-    type: 'figma',
-    url:
-      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A20',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A20',
+    },
   },
 };

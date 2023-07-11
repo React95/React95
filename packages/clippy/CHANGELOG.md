@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.10](https://github.com/React95/React95/compare/@react95/clippy@1.0.9...@react95/clippy@1.0.10) (2023-01-31)
+
+
+### Bug Fixes
+
+* **clippy:** broken dependecy url ([a0d1e62](https://github.com/React95/React95/commit/a0d1e623e868b806ba4fa1a6577f240c08a5b365))
+* **clippy:** switch to jsdelivr ([3b19892](https://github.com/React95/React95/commit/3b19892f3e87f8eb80cce756c5c19746b93b942a))
+
+
+
+
+
 ## [1.0.9](https://github.com/React95/React95/compare/@react95/clippy@1.0.8...@react95/clippy@1.0.9) (2022-06-03)
 
 **Note:** Version bump only for package @react95/clippy

@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
 import styled from '@xstyled/styled-components';
+import React, { forwardRef } from 'react';
 
-import Tab, { TabProps } from './Tab';
 import Frame from '../Frame';
+import Tab, { TabProps } from './Tab';
 
 const Navbar = styled(Frame)`
   display: flex;
@@ -19,7 +19,7 @@ const NavContainer = styled(Frame)`
 `;
 
 NavContainer.displayName = 'NavContainer';
-interface TabsProps {
+export interface TabsProps {
   style?: React.CSSProperties;
   defaultActiveTab?: string;
   children: React.ReactElement<TabProps> | Array<React.ReactElement<TabProps>>;

@@ -13,11 +13,5 @@
 '@react95/design':
   - packages/design/**/*
 
-'@react95/explorer':
-  - packages/explorer/**/*
-
-'@react95/gatsby-theme':
-  - packages/gatsby-theme/**/*
-
 '@react95/icons':
   - packages/icons/**/*

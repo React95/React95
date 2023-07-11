@@ -355,8 +355,18 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "lucianweber",
+      "name": "Lucian Weber",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7360204?v=4",
+      "profile": "https://weber.xyz",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "commitConvention": "angular"
 }

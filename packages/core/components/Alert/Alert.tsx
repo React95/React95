@@ -1,6 +1,6 @@
-import React, { useEffect, forwardRef } from 'react';
+import { User2, User3, User4, User5 } from '@react95/icons';
 import styled from '@xstyled/styled-components';
-import { User3, User2, User4, User5 } from '@react95/icons';
+import React, { forwardRef, useEffect } from 'react';
 
 import Modal, { ModalProps } from '../Modal/Modal';
 
@@ -79,7 +79,7 @@ Alert.defaultProps = {
   buttons: [{ value: 'OK', onClick: () => {} }],
   closeAlert: () => {},
   buttonsAlignment: 'center',
-  defaultPosition: {
+  positionOffset: {
     x:
       typeof window == 'undefined'
         ? 0

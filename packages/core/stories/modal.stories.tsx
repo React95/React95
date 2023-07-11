@@ -1,73 +1,75 @@
+import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
 
-import { Modal } from '../components/Modal';
 import Button from '../components/Button';
-import List from '../components/List';
 import Frame from '../components/Frame';
+import List from '../components/List';
+import { Modal } from '../components/Modal';
 
-import { Computer, Mshtml32534, Mmsys113 } from '@react95/icons';
+import { Computer, Mmsys113, Mshtml32534 } from '@react95/icons';
 
 export default {
   title: 'Modal',
   component: Modal,
-} as Meta;
+  tags: ['autodocs'],
+} as Meta<typeof Modal>;
 
-export const Simple = () => {
-  const [showModal, toggleShowModal] = React.useState(true);
+export const Simple = {
+  render: () => {
+    const [showModal, toggleShowModal] = React.useState(true);
 
-  const handleOpenModal = () => toggleShowModal(true);
-  const handleCloseModal = () => toggleShowModal(false);
-  const handleButtonClick = (e: React.MouseEvent<HTMLLIElement>) =>
-    alert(e.currentTarget.value);
+    const handleOpenModal = () => toggleShowModal(true);
+    const handleCloseModal = () => toggleShowModal(false);
+    const handleButtonClick = (e: React.MouseEvent<HTMLLIElement>) =>
+      alert(e.currentTarget.value);
 
-  return (
-    <>
-      <Button onClick={handleOpenModal}>Trigger Modal</Button>
-      {showModal && (
-        <Modal
-          width="300"
-          height="200"
-          icon={<Computer variant="32x32_4" />}
-          title="Browse"
-          defaultPosition={{
-            x: 0,
-            y: 20,
-          }}
-          closeModal={handleCloseModal}
-          buttons={[
-            { value: 'Ok', onClick: handleButtonClick },
-            { value: 'Cancel', onClick: handleButtonClick },
-          ]}
-          menu={[
-            {
-              name: 'File',
-              list: (
-                <List>
-                  <List.Item onClick={handleCloseModal}>Exit</List.Item>
-                </List>
-              ),
-            },
-            {
-              name: 'Edit',
-              list: (
-                <List>
-                  <List.Item>Copy</List.Item>
-                </List>
-              ),
-            },
-          ]}
-        />
-      )}
-    </>
-  );
-};
+    return (
+      <>
+        <Button onClick={handleOpenModal}>Trigger Modal</Button>
+        {showModal && (
+          <Modal
+            width="300"
+            height="200"
+            icon={<Computer variant="32x32_4" />}
+            title="Browse"
+            defaultPosition={{
+              x: 0,
+              y: 20,
+            }}
+            closeModal={handleCloseModal}
+            buttons={[
+              { value: 'Ok', onClick: handleButtonClick },
+              { value: 'Cancel', onClick: handleButtonClick },
+            ]}
+            menu={[
+              {
+                name: 'File',
+                list: (
+                  <List>
+                    <List.Item onClick={handleCloseModal}>Exit</List.Item>
+                  </List>
+                ),
+              },
+              {
+                name: 'Edit',
+                list: (
+                  <List>
+                    <List.Item>Copy</List.Item>
+                  </List>
+                ),
+              },
+            ]}
+          />
+        )}
+      </>
+    );
+  },
 
-Simple.parameters = {
-  design: {
-    type: 'figma',
-    url:
-      'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A12',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A12',
+    },
   },
 };
 
@@ -125,14 +127,13 @@ export const Multiple = () => {
             },
           ]}
         >
-          <Frame
-            bg="white"
-            boxShadow="in"
-            height="100%"
-            width="100%"
-            padding="0px 5px"
-          >
-            <p>The active modal will be based on the order they render, most recently rendered will be the active component. On click of a non-active modal will fire an action to set that modal as the active one.</p>
+          <Frame bg="white" boxShadow="in" h="100%" w="100%" padding="0px 5px">
+            <p>
+              The active modal will be based on the order they render, most
+              recently rendered will be the active component. On click of a
+              non-active modal will fire an action to set that modal as the
+              active one.
+            </p>
           </Frame>
         </Modal>
       )}
@@ -170,14 +171,11 @@ export const Multiple = () => {
             },
           ]}
         >
-          <Frame
-            bg="white"
-            boxShadow="in"
-            height="100%"
-            width="100%"
-            padding="0px 5px"
-          >
-            <p>Try playing with the modals. See which on is active, click and drag them. Understand their behavior.</p>
+          <Frame bg="white" boxShadow="in" h="100%" w="100%" padding="0px 5px">
+            <p>
+              Try playing with the modals. See which on is active, click and
+              drag them. Understand their behavior.
+            </p>
           </Frame>
         </Modal>
       )}

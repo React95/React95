@@ -1,9 +1,10 @@
-import * as React from 'react';
-import * as CSS from 'csstype';
 import styled, { css, th } from '@xstyled/styled-components';
+import * as CSS from 'csstype';
+import * as React from 'react';
 
 import Draggable from 'react-draggable';
 
+import { DraggableProps } from 'react-draggable';
 import Button from '../Button';
 import List from '../List';
 import TitleBar from '../TitleBar';
@@ -132,7 +133,8 @@ export type ModalProps = {
   title: string;
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
-  defaultPosition?: ModalDefaultPosition;
+  defaultPosition?: DraggableProps['defaultPosition'];
+  positionOffset?: DraggableProps['positionOffset'];
   hasWindowButton?: boolean;
 } & Omit<WrapperProps, 'active'> &
   ButtonWrapperProps &
@@ -146,6 +148,7 @@ const ModalRenderer = (
     children,
     closeModal,
     defaultPosition,
+    positionOffset,
     height,
     icon,
     menu,
@@ -190,6 +193,7 @@ const ModalRenderer = (
     <Draggable
       handle=".draggable"
       defaultPosition={defaultPosition}
+      positionOffset={positionOffset}
       onMouseDown={id ? () => setActiveWindow(id) : undefined}
     >
       <ModalWrapper

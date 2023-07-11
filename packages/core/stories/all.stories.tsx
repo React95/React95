@@ -1,28 +1,28 @@
-import * as React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
+import type { Meta } from '@storybook/react';
 import styled from '@xstyled/styled-components';
+import * as React from 'react';
 
-import { Alert } from '../components';
+import { Alert, Button } from '../components';
 
-import {Simple as SimpleAvatar} from './avatar.stories';
+import { Simple as SimpleAvatar } from './avatar.stories';
 import { Simple as SimpleButton } from './button.stories';
+import { All as AllCheckbox } from './checkbox.stories';
 import { Simple as SimpleDropdown } from './dropdown.stories';
 import { Simple as SimpleFieldset } from './fieldset.stories';
 import { Simple as SimpleInput } from './input.stories';
-import { Simple as SimpleTextArea } from './textarea.stories';
+import { Simple as SimpleList, WithIcons } from './list.stories';
 import { Simple as SimpleProgressBar } from './progressbar.stories';
 import { Simple as SimpleRadioButton } from './radiobutton.stories';
 import { Simple as SimpleRange } from './range.stories';
 import { Simple as SimpleTabs } from './tabs.stories';
+import { Simple as SimpleTextArea } from './textarea.stories';
+import {
+  Complete,
+  Inactive,
+  Simple as SimpleTitleBar,
+} from './titlebar.stories';
 import { Simple as SimpleTooltip } from './tooltip.stories';
 import { Simple as SimpleTree } from './tree.stories';
-import {
-  Simple as SimpleTitleBar,
-  Inactive,
-  Complete,
-} from './titlebar.stories';
-import { All as AllCheckbox } from './checkbox.stories';
-import { WithIcons, Simple as SimpleList } from './list.stories';
 import { FromURL } from './video.stories';
 
 const AllList = styled.div`
@@ -30,7 +30,7 @@ const AllList = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
 
-  height: 600px;
+  height: 620px;
 
   > * {
     margin-right: 10px;
@@ -41,85 +41,98 @@ export default {
   title: 'All',
 } as Meta;
 
-export const All = () => (
-  <AllList>
-    <Alert
-      title="Windows Networking"
-      type="error"
-      closeAlert={() => {}}
-      defaultPosition={{
-        x: 150,
-        y: 500,
-      }}
-      message="The Windows password you typed is incorrect."
-      buttons={[{ value: 'OK', onClick: () => {} }]}
-    />
+export const All = {
+  render: () => {
+    const [openAlert, setOpenAlert] = React.useState(true);
 
-    <div>
-      <SimpleButton />
-    </div>
+    return (
+      <AllList>
+        <div>
+          <Button onClick={() => setOpenAlert(true)}> Show Alert </Button>
+        </div>
+        {openAlert && (
+          <Alert
+            title="Windows Networking"
+            type="error"
+            closeAlert={() => {}}
+            defaultPosition={{
+              x: -130,
+              y: -130,
+            }}
+            message="The Windows password you typed is incorrect."
+            buttons={[{ value: 'OK', onClick: () => setOpenAlert(false) }]}
+          />
+        )}
 
-    <br />
-    <SimpleAvatar />
+        <br />
 
-    <br />
-    <AllCheckbox />
+        <div>
+          <SimpleButton.render />
+        </div>
 
-    <br />
-    <SimpleDropdown />
+        <br />
+        <SimpleAvatar.render />
 
-    <br />
-    <SimpleFieldset />
+        <br />
+        <AllCheckbox.render />
 
-    <br />
-    <div>
-      <SimpleInput />
-    </div>
+        <br />
+        <SimpleDropdown.render />
 
-    <br />
-    <br />
+        <br />
+        <SimpleFieldset.render />
 
-    <div>
-      <SimpleTextArea />
-    </div>
+        <br />
+        <div>
+          <SimpleInput.render />
+        </div>
 
-    <br />
-    <br />
+        <br />
+        <br />
 
-    <div>
-      <WithIcons />
-      <br />
-      <SimpleList />
-    </div>
+        <div>
+          <SimpleTextArea.render />
+        </div>
 
-    <br />
-    <SimpleProgressBar />
+        <br />
+        <br />
 
-    <br />
-    <SimpleRadioButton />
+        <div>
+          <WithIcons.render />
+          <br />
+          <SimpleList.render />
+        </div>
 
-    <br />
-    <SimpleRange />
+        <br />
+        <SimpleProgressBar.render />
 
-    <br />
-    <SimpleTabs />
+        <br />
+        <SimpleRadioButton.render />
 
-    <br />
-    <SimpleTree />
+        <br />
+        <SimpleRange.render />
 
-    <br />
-    <SimpleTooltip />
+        <br />
+        <SimpleTabs.render />
 
-    <br />
-    <FromURL />
+        <br />
+        <SimpleTree.render />
 
-    <br />
-    <SimpleTitleBar />
+        <br />
+        <SimpleTooltip.render />
 
-    <br />
-    <Inactive />
+        <br />
+        <FromURL.render />
 
-    <br />
-    <Complete />
-  </AllList>
-);
+        <br />
+        <SimpleTitleBar.render />
+
+        <br />
+        <Inactive.render />
+
+        <br />
+        <Complete.render />
+      </AllList>
+    );
+  },
+};

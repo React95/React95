@@ -1,16 +1,16 @@
 import { createGlobalStyle } from '@xstyled/styled-components';
 
-import woff2 from './font/MS-Sans-Serif.woff2';
-import woff from './font/MS-Sans-Serif.woff';
-import ttf from './font/MS-Sans-Serif.ttf';
 import eot from './font/MS-Sans-Serif.eot';
-import videowoff2 from './font/React95Video-Numbers.woff2';
-import videowoff from './font/React95Video-Numbers.woff';
-import videottf from './font/React95Video-Numbers.ttf';
+import ttf from './font/MS-Sans-Serif.ttf';
+import woff from './font/MS-Sans-Serif.woff';
+import woff2 from './font/MS-Sans-Serif.woff2';
 import videoeot from './font/React95Video-Numbers.eot';
+import videottf from './font/React95Video-Numbers.ttf';
+import videowoff from './font/React95Video-Numbers.woff';
+import videowoff2 from './font/React95Video-Numbers.woff2';
 
-import { scrollbars } from './Scrollbar';
 import Cursor from '../Cursor/Cursor';
+import { scrollbars } from './Scrollbar';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
