@@ -1,5 +1,5 @@
 name: Nx CI
-on: [pull_request]
+on: [pull_request_target]
 
 env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
