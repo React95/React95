@@ -5,9 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-37-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -104,6 +102,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://weber.xyz"><img src="https://avatars.githubusercontent.com/u/7360204?v=4?s=100" width="100px;" alt="Lucian Weber"/><br /><sub><b>Lucian Weber</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Alucianweber" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://rafaelfranco.com"><img src="https://avatars.githubusercontent.com/u/19496473?v=4?s=100" width="100px;" alt="Rafael Franco"/><br /><sub><b>Rafael Franco</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Arfoel" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
