@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.2](https://github.com/React95/React95/compare/@react95/core@6.1.1...@react95/core@6.1.2) (2023-07-29)
+
+### Bug Fixes
+
+- **core:** disable overflow when using GlobalStyle ([c512a80](https://github.com/React95/React95/commit/c512a805bc763f07b735fcde3c29d65c21b52607))
+
 ## [6.1.1](https://github.com/React95/React95/compare/@react95/core@6.1.0...@react95/core@6.1.1) (2023-07-04)
 
 **Note:** Version bump only for package @react95/core
