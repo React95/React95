@@ -672,6 +672,7 @@ button:focus {
     padding: 0;
     font-size: 12px;
     color: materialText;
+    overflow: hidden;
   }
 
   a {
