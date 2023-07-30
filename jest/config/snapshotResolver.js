@@ -11,13 +11,4 @@ module.exports = {
       .join('/')
       .replace(/\.test\.([tj]sx?)/, `${snapshotExtension}`)}`;
   },
-  // resolves from snapshot to test path
-  resolveTestPath: (snapshotFilePath, snapshotExtension) =>
-    `${snapshotFilePath
-      .replace(`/${SNAPSHOT_FOLDER}`, '')
-      .replace(snapshotExtension, '.test')}.tsx`,
-
-  // Example test path, used for preflight consistency check of the implementation above
-  testPathForConsistencyCheck:
-    'packages/core/components/Example/Example.test.tsx',
 };
