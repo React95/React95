@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Video /> Snapshot should match snapshot 1`] = `
+exports[`<Video /> > Snapshot > should match snapshot 1`] = `
 .c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -292,7 +292,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
     >
       <img
         height="16"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Mplayer113_16x16_4.png"
         width="16"
       />
       <div
@@ -355,7 +355,7 @@ exports[`<Video /> Snapshot should match snapshot 1`] = `
         >
           <img
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/User4_32x32_4.png"
             width="32"
           />
         </button>

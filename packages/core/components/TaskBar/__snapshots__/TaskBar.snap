@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
+exports[`<TaskBar /> > Snapshots > <Clock /> > should match snapshot 1`] = `
 .c0 {
   --x-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -38,7 +38,7 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -84,7 +84,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
     </div>
@@ -92,7 +92,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with active prop 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with active prop 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -171,7 +171,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
     </div>
@@ -184,7 +184,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
     </div>
@@ -192,7 +192,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon prop 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with icon prop 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -238,7 +238,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
     </div>
@@ -246,7 +246,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small prop 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with small prop 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -291,7 +291,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
     </div>
@@ -299,7 +299,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot 1`] = `
 .c0 {
   position: fixed;
   bottom: 0;
@@ -408,7 +408,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
         <img
           alt="Windows95 Logo"
           height="32"
-          src="test-file-stub"
+          src="/@fs/home/ggdaltoso/React95/packages/icons/png/Logo_32x32_4.png"
           width="32"
         />
       </div>
@@ -432,7 +432,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 1`] = `
 .c0 {
   position: fixed;
   bottom: 0;
@@ -541,7 +541,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
         <img
           alt="Windows95 Logo"
           height="32"
-          src="test-file-stub"
+          src="/@fs/home/ggdaltoso/React95/packages/icons/png/Logo_32x32_4.png"
           width="32"
         />
       </div>
@@ -565,7 +565,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 .c0 {
   position: fixed;
   bottom: 0;
@@ -747,7 +747,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
         >
           <img
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/ReaderClosed_32x32_4.png"
             width="32"
           />
           Local Disk (C:)
@@ -757,7 +757,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
         >
           <img
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/WindowsExplorer_32x32_1.png"
             width="32"
           />
           Windows Explorer
@@ -773,7 +773,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
         <img
           alt="Windows95 Logo"
           height="32"
-          src="test-file-stub"
+          src="/@fs/home/ggdaltoso/React95/packages/icons/png/Logo_32x32_4.png"
           width="32"
         />
       </div>
@@ -797,7 +797,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 .c5 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -1082,7 +1082,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
       <div
@@ -1122,7 +1122,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         <img
           alt="Windows95 Logo"
           height="32"
-          src="test-file-stub"
+          src="/@fs/home/ggdaltoso/React95/packages/icons/png/Logo_32x32_4.png"
           width="32"
         />
       </div>
@@ -1140,7 +1140,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
         >
           <img
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
             width="32"
           />
         </div>
@@ -1165,7 +1165,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 .c5 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -1494,7 +1494,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/WindowsExplorer_32x32_1.png"
         width="32"
       />
       <div
@@ -1531,7 +1531,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
     >
       <img
         height="32"
-        src="test-file-stub"
+        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
         width="32"
       />
       <div
@@ -1571,7 +1571,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         <img
           alt="Windows95 Logo"
           height="32"
-          src="test-file-stub"
+          src="/@fs/home/ggdaltoso/React95/packages/icons/png/Logo_32x32_4.png"
           width="32"
         />
       </div>
@@ -1589,7 +1589,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         >
           <img
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/WindowsExplorer_32x32_1.png"
             width="32"
           />
         </div>
@@ -1607,7 +1607,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
         >
           <img
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
             width="32"
           />
         </div>

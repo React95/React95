@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
+exports[`<Tooltip /> > Snapshot > should match snapshot 1`] = `
 .c0 {
   display: inline-block;
   position: relative;
@@ -19,7 +19,7 @@ exports[`<Tooltip /> Snapshot should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<Tooltip /> Snapshot should match snapshot 2`] = `
+exports[`<Tooltip /> > Snapshot > should match snapshot 2`] = `
 .c1 {
   width: auto;
   height: auto;

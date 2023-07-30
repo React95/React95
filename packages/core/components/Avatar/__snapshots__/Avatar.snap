@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Avatar /> Snapshots should match snapshot 1`] = `
+exports[`<Avatar /> > Snapshots > should match snapshot 1`] = `
 .c0 {
   width: auto;
   height: auto;
@@ -41,7 +41,7 @@ exports[`<Avatar /> Snapshots should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<Avatar /> Snapshots should match snapshot in default avatar with children 1`] = `
+exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with children 1`] = `
 .c0 {
   width: auto;
   height: auto;
@@ -86,7 +86,7 @@ exports[`<Avatar /> Snapshots should match snapshot in default avatar with child
 </div>
 `;
 
-exports[`<Avatar /> Snapshots should match snapshot in default avatar with children and circle 1`] = `
+exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with children and circle 1`] = `
 .c0 {
   width: auto;
   height: auto;
@@ -135,7 +135,7 @@ exports[`<Avatar /> Snapshots should match snapshot in default avatar with child
 </div>
 `;
 
-exports[`<Avatar /> Snapshots should match snapshot in default avatar with src and alt prop 1`] = `
+exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with src and alt prop 1`] = `
 .c0 {
   width: auto;
   height: auto;

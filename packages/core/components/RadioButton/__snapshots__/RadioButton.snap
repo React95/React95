@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<RadioButton /> Snapshots should match snapshot with checked and disabled prop 1`] = `
+exports[`<RadioButton /> > Snapshots > should match snapshot with checked and disabled prop 1`] = `
 .c3 {
   width: 12px;
   height: 12px;
@@ -9,7 +9,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked and disabl
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
 }
 
 .c5 {
@@ -36,163 +36,15 @@ exports[`<RadioButton /> Snapshots should match snapshot with checked and disabl
 }
 
 .c1:checked + .c2 {
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-checked.png);
 }
 
 .c1:disabled + .c2 {
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
 }
 
 .c1:checked:disabled + .c2 {
-  background-image: url(test-file-stub);
-}
-
-.c0 {
-  position: relative;
-  margin-bottom: 10px;
-  display: block;
-  color: #868a8e;
-  text-shadow: 0.5px 0.5px #d2d2d2;
-}
-
-<div>
-  <label
-    class="c0"
-    disabled=""
-  >
-    <input
-      checked=""
-      class="c1"
-      disabled=""
-      type="radio"
-    />
-    <span
-      class="c2 c3"
-    />
-    <span
-      class="c4 c5"
-    />
-  </label>
-</div>
-`;
-
-exports[`<RadioButton /> Snapshots should match snapshot with checked prop 1`] = `
-.c3 {
-  width: 12px;
-  height: 12px;
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: url(test-file-stub);
-}
-
-.c5 {
-  padding: 1px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  top: 0;
-  left: 18px;
-}
-
-.c1 {
-  margin: 0;
-  opacity: 0;
-}
-
-.c1:focus ~ .c4,
-.c1:active + .c4 {
-  border-width: 1px;
-  border-style: dotted;
-  padding: 0;
-}
-
-.c1:checked + .c2 {
-  background-image: url(test-file-stub);
-}
-
-.c1:disabled + .c2 {
-  background-image: url(test-file-stub);
-}
-
-.c1:checked:disabled + .c2 {
-  background-image: url(test-file-stub);
-}
-
-.c0 {
-  position: relative;
-  margin-bottom: 10px;
-  display: block;
-}
-
-<div>
-  <label
-    class="c0"
-  >
-    <input
-      checked=""
-      class="c1"
-      type="radio"
-    />
-    <span
-      class="c2 c3"
-    />
-    <span
-      class="c4 c5"
-    />
-  </label>
-</div>
-`;
-
-exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] = `
-.c3 {
-  width: 12px;
-  height: 12px;
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: url(test-file-stub);
-}
-
-.c5 {
-  padding: 1px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  top: 0;
-  left: 18px;
-}
-
-.c1 {
-  margin: 0;
-  opacity: 0;
-}
-
-.c1:focus ~ .c4,
-.c1:active + .c4 {
-  border-width: 1px;
-  border-style: dotted;
-  padding: 0;
-}
-
-.c1:checked + .c2 {
-  background-image: url(test-file-stub);
-}
-
-.c1:disabled + .c2 {
-  background-image: url(test-file-stub);
-}
-
-.c1:checked:disabled + .c2 {
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
 }
 
 .c0 {
@@ -223,7 +75,7 @@ exports[`<RadioButton /> Snapshots should match snapshot with disabled prop 1`] 
 </div>
 `;
 
-exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
+exports[`<RadioButton /> > Snapshots > should match snapshot with checked prop 1`] = `
 .c3 {
   width: 12px;
   height: 12px;
@@ -232,7 +84,7 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
 }
 
 .c5 {
@@ -259,15 +111,161 @@ exports[`<RadioButton /> Snapshots should match snapshot without props 1`] = `
 }
 
 .c1:checked + .c2 {
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-checked.png);
 }
 
 .c1:disabled + .c2 {
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
 }
 
 .c1:checked:disabled + .c2 {
-  background-image: url(test-file-stub);
+  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 10px;
+  display: block;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1"
+      type="radio"
+    />
+    <span
+      class="c2 c3"
+    />
+    <span
+      class="c4 c5"
+    />
+  </label>
+</div>
+`;
+
+exports[`<RadioButton /> > Snapshots > should match snapshot with disabled prop 1`] = `
+.c3 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
+}
+
+.c5 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.c1 {
+  margin: 0;
+  opacity: 0;
+}
+
+.c1:focus ~ .c4,
+.c1:active + .c4 {
+  border-width: 1px;
+  border-style: dotted;
+  padding: 0;
+}
+
+.c1:checked + .c2 {
+  background-image: url(/components/RadioButton/imgs/radio-checked.png);
+}
+
+.c1:disabled + .c2 {
+  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
+}
+
+.c1:checked:disabled + .c2 {
+  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 10px;
+  display: block;
+  color: #868a8e;
+  text-shadow: 0.5px 0.5px #d2d2d2;
+}
+
+<div>
+  <label
+    class="c0"
+    disabled=""
+  >
+    <input
+      class="c1"
+      disabled=""
+      type="radio"
+    />
+    <span
+      class="c2 c3"
+    />
+    <span
+      class="c4 c5"
+    />
+  </label>
+</div>
+`;
+
+exports[`<RadioButton /> > Snapshots > should match snapshot without props 1`] = `
+.c3 {
+  width: 12px;
+  height: 12px;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
+}
+
+.c5 {
+  padding: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.c1 {
+  margin: 0;
+  opacity: 0;
+}
+
+.c1:focus ~ .c4,
+.c1:active + .c4 {
+  border-width: 1px;
+  border-style: dotted;
+  padding: 0;
+}
+
+.c1:checked + .c2 {
+  background-image: url(/components/RadioButton/imgs/radio-checked.png);
+}
+
+.c1:disabled + .c2 {
+  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
+}
+
+.c1:checked:disabled + .c2 {
+  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
 }
 
 .c0 {

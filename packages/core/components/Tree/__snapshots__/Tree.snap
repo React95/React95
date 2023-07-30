@@ -1,14 +1,14 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Tree /> Snapshot should match snapshot 1`] = `
+exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
 .c1 {
   list-style-type: none;
   background-repeat: no-repeat;
-  background-image: url(test-file-stub);
+  background-image: url(/components/Tree/imgs/tree-mid.png);
 }
 
 .c1:last-child {
-  background-image: url(test-file-stub);
+  background-image: url(/components/Tree/imgs/tree-last.png);
 }
 
 .c2 {
@@ -85,7 +85,7 @@ exports[`<Tree /> Snapshot should match snapshot 1`] = `
           <img
             data-testid="react95-default-icon-bat"
             height="32"
-            src="test-file-stub"
+            src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
             width="32"
           />
         </div>
