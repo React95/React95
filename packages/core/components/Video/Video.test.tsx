@@ -1,12 +1,13 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
-import { waitRender, fireEvent, act } from '../shared/test/utils';
+import { describe, expect, it, vi } from 'vitest';
+import { act, fireEvent, waitRender } from '../shared/test/utils';
 import Video from './Video';
 
 const originalError = console.error;
 
 beforeEach(() => {
-  console.error = jest.fn();
+  console.error = vi.fn();
 });
 
 afterEach(() => {
@@ -48,14 +49,14 @@ describe('<Video />', () => {
     });
 
     it('should play, pause, and stop', async () => {
-      const playStub = jest
+      const playStub = vi
         .spyOn(window.HTMLMediaElement.prototype, 'play')
         .mockImplementation(() => Promise.resolve());
-      const pauseStub = jest
+      const pauseStub = vi
         .spyOn(window.HTMLMediaElement.prototype, 'pause')
         .mockImplementation(() => Promise.resolve());
 
-      const fullScreenStub = jest
+      const fullScreenStub = vi
         .spyOn(window.HTMLMediaElement.prototype, 'requestFullscreen')
         .mockImplementation(() => Promise.resolve());
 

@@ -1,9 +1,10 @@
-import React from 'react';
 import {
   FolderExe2,
   MicrosoftExchange,
   WindowsExplorer,
 } from '@react95/icons';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 import { waitRender } from '../shared/test/utils';
 import List from './List';
 

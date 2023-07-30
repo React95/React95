@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, fireEvent } from '../shared/test/utils';
+import { describe, expect, it, vi } from 'vitest';
+import { fireEvent, render } from '../shared/test/utils';
 import RadioButton from './RadioButton';
 
 describe('<RadioButton />', () => {
@@ -27,7 +28,7 @@ describe('<RadioButton />', () => {
 
   describe('onChange prop', () => {
     it('should call onChange callback when RadioButton is changed', () => {
-      const onChangeMock = jest.fn();
+      const onChangeMock = vi.fn();
       const { getByTestId } = render(
         <RadioButton onChange={onChangeMock} data-testid="radio">
           Radio

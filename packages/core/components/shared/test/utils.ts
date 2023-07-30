@@ -1,15 +1,20 @@
 import {
-  render,
-  act,
   RenderOptions,
   RenderResult,
+  act,
+  cleanup,
+  render,
 } from '@testing-library/react';
 import ThemeProvider from '../../ThemeProvider';
 
 const customRender = (
   ui: React.ReactElement,
   options?: Omit<RenderOptions, 'queries'>,
-) => render(ui, { wrapper: ThemeProvider, ...options });
+) => {
+  cleanup();
+
+  return render(ui, { wrapper: ThemeProvider, ...options });
+};
 
 const waitRender = async (
   ui: React.ReactElement,

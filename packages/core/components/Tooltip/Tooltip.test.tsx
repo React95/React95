@@ -1,11 +1,12 @@
 import React from 'react';
-import { render, fireEvent, act } from '../shared/test/utils';
+import { describe, expect, it, vi } from 'vitest';
+import { act, fireEvent, render } from '../shared/test/utils';
 import Tooltip from './Tooltip';
 
 describe('<Tooltip />', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      jest.useFakeTimers();
+      vi.useFakeTimers();
 
       const { container } = render(
         <Tooltip delay={0} text="Tooltip text">
@@ -18,7 +19,7 @@ describe('<Tooltip />', () => {
 
       act(() => {
         fireEvent.mouseEnter(container.firstChild as HTMLSpanElement);
-        jest.runAllTimers();
+        vi.runAllTimers();
       });
 
       // with "Tip"
@@ -29,7 +30,7 @@ describe('<Tooltip />', () => {
   describe('Tooltip visibility', () => {
     it('should show Tooltip when hovered', () => {
       const tooltipText = 'Tooltip text';
-      jest.useFakeTimers();
+      vi.useFakeTimers();
 
       const { container, getByText } = render(
         <Tooltip delay={0} text={tooltipText}>
@@ -41,7 +42,7 @@ describe('<Tooltip />', () => {
 
       act(() => {
         fireEvent.mouseEnter(container.firstChild as HTMLSpanElement);
-        jest.runAllTimers();
+        vi.runAllTimers();
       });
 
       expect(getByText(tooltipText)).not.toBeNull();
