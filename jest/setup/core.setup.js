@@ -1,8 +1,9 @@
 import 'jest-styled-components';
+import { beforeAll, vi } from 'vitest';
 
-jest.mock('icojs', () => ({
-  isICO: jest.fn(() => true),
-  parse: jest.fn(() =>
+vi.mock('icojs', () => ({
+  isICO: vi.fn(() => true),
+  parse: vi.fn(() =>
     Promise.resolve([
       {
         width: 16,
@@ -27,9 +28,9 @@ jest.mock('icojs', () => ({
 }));
 
 beforeAll(() => {
-  global.fetch = jest.fn().mockImplementation(() =>
+  global.fetch = vi.fn().mockImplementation(() =>
     Promise.resolve({
-      arrayBuffer: jest.fn(() => ({})),
+      arrayBuffer: vi.fn(() => ({})),
     }),
   );
   global.Blob = class Blob {
@@ -42,5 +43,5 @@ beforeAll(() => {
     }
   };
 
-  global.URL.createObjectURL = jest.fn(data => data.toString());
+  global.URL.createObjectURL = vi.fn(data => data.toString());
 });
