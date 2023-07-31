@@ -1,8 +1,14 @@
-jest.mock('clippyjs', () => ({
-  load: jest.fn((agentName, cb) => {
-    const show = jest.fn(() => {});
-    const hide = jest.fn(() => {});
+import { vi } from 'vitest';
 
-    cb({ agentName, show, hide });
-  }),
-}));
+vi.mock('clippyjs', () => {
+  return {
+    default: {
+      load: vi.fn((agentName, cb) => {
+        const show = vi.fn(() => { });
+        const hide = vi.fn(() => { });
+
+        cb({ agentName, show, hide });
+      })
+    }
+  }
+});
