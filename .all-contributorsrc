@@ -364,9 +364,19 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "rfoel",
+      "name": "Rafael Franco",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19496473?v=4",
+      "profile": "https://rafaelfranco.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
   "contributorsPerLine": 7,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
