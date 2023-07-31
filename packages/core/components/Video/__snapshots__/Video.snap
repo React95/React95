@@ -292,7 +292,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
     >
       <img
         height="16"
-        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Mplayer113_16x16_4.png"
+        src="test-file-stub"
         width="16"
       />
       <div
@@ -355,7 +355,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
         >
           <img
             height="32"
-            src="/@fs/home/ggdaltoso/React95/packages/icons/png/User4_32x32_4.png"
+            src="test-file-stub"
             width="32"
           />
         </button>

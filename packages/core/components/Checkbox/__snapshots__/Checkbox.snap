@@ -45,11 +45,11 @@ exports[`<Checkbox /> > Snapshots > should match snapshot with disabled prop 1`]
 }
 
 .c2:checked + .c3 {
-  background-image: url('/components/Checkbox/imgs/check.svg');
+  background-image: url('test-file-stub');
 }
 
 .c2:checked .c1:disabled + .c3 {
-  background-image: url('/components/Checkbox/imgs/check-disabled.svg');
+  background-image: url('test-file-stub');
   background-size: 7px 7px,1.9px 1.9px;
 }
 
@@ -133,11 +133,11 @@ exports[`<Checkbox /> > Snapshots > should match snapshot without props 1`] = `
 }
 
 .c2:checked + .c3 {
-  background-image: url('/components/Checkbox/imgs/check.svg');
+  background-image: url('test-file-stub');
 }
 
 .c2:checked .c1:disabled + .c3 {
-  background-image: url('/components/Checkbox/imgs/check-disabled.svg');
+  background-image: url('test-file-stub');
   background-size: 7px 7px,1.9px 1.9px;
 }
 

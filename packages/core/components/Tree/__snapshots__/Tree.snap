@@ -4,11 +4,11 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
 .c1 {
   list-style-type: none;
   background-repeat: no-repeat;
-  background-image: url(/components/Tree/imgs/tree-mid.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:last-child {
-  background-image: url(/components/Tree/imgs/tree-last.png);
+  background-image: url(test-file-stub);
 }
 
 .c2 {
@@ -85,7 +85,7 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
           <img
             data-testid="react95-default-icon-bat"
             height="32"
-            src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+            src="test-file-stub"
             width="32"
           />
         </div>

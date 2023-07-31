@@ -212,7 +212,7 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
     >
       <img
         height="32"
-        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+        src="test-file-stub"
         width="32"
       />
       <div
@@ -452,7 +452,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
     >
       <img
         height="32"
-        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+        src="test-file-stub"
         width="32"
       />
       <div
@@ -678,7 +678,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
     >
       <img
         height="32"
-        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+        src="test-file-stub"
         width="32"
       />
       <div
@@ -881,7 +881,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
     >
       <img
         height="32"
-        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+        src="test-file-stub"
         width="32"
       />
       <div
@@ -1069,7 +1069,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
     >
       <img
         height="32"
-        src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+        src="test-file-stub"
         width="32"
       />
       <div

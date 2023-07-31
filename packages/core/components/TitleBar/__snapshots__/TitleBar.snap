@@ -73,7 +73,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
   >
     <img
       height="32"
-      src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+      src="test-file-stub"
       width="32"
     />
     <div
@@ -88,7 +88,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
   >
     <img
       height="32"
-      src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+      src="test-file-stub"
       width="32"
     />
     <div
@@ -237,7 +237,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
   >
     <img
       height="32"
-      src="/@fs/home/ggdaltoso/React95/packages/icons/png/Bat_32x32_4.png"
+      src="test-file-stub"
       width="32"
     />
     <div

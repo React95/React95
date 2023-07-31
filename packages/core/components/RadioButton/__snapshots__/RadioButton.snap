@@ -9,7 +9,7 @@ exports[`<RadioButton /> > Snapshots > should match snapshot with checked and di
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
+  background-image: url(test-file-stub);
 }
 
 .c5 {
@@ -36,15 +36,15 @@ exports[`<RadioButton /> > Snapshots > should match snapshot with checked and di
 }
 
 .c1:checked + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:checked:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c0 {
@@ -84,7 +84,7 @@ exports[`<RadioButton /> > Snapshots > should match snapshot with checked prop 1
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
+  background-image: url(test-file-stub);
 }
 
 .c5 {
@@ -111,15 +111,15 @@ exports[`<RadioButton /> > Snapshots > should match snapshot with checked prop 1
 }
 
 .c1:checked + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:checked:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c0 {
@@ -155,7 +155,7 @@ exports[`<RadioButton /> > Snapshots > should match snapshot with disabled prop 
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
+  background-image: url(test-file-stub);
 }
 
 .c5 {
@@ -182,15 +182,15 @@ exports[`<RadioButton /> > Snapshots > should match snapshot with disabled prop 
 }
 
 .c1:checked + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:checked:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c0 {
@@ -230,7 +230,7 @@ exports[`<RadioButton /> > Snapshots > should match snapshot without props 1`] =
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/components/RadioButton/imgs/radio-unchecked.png);
+  background-image: url(test-file-stub);
 }
 
 .c5 {
@@ -257,15 +257,15 @@ exports[`<RadioButton /> > Snapshots > should match snapshot without props 1`] =
 }
 
 .c1:checked + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-unchecked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c1:checked:disabled + .c2 {
-  background-image: url(/components/RadioButton/imgs/radio-checked-disabled.png);
+  background-image: url(test-file-stub);
 }
 
 .c0 {
