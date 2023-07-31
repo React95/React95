@@ -1,7 +1,7 @@
-const snapshotResolver = require('./snapshotResolver');
-const { resolve } = require('path');
+import { resolve } from 'path';
+import snapshotResolver from './snapshotResolver';
 
-module.exports = {
+export default {
   test: {
     alias: [
       {
@@ -19,7 +19,7 @@ module.exports = {
       'babel-polyfill',
       'jest-styled-components',
       '@testing-library/jest-dom',
-      '../../jest/setup/core.setup.js',
+      '../../config/setup/core.setup.js',
     ],
     testMatch: [
       '<root>/packages/core/**/*.test.ts',

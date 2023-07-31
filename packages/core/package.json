@@ -71,7 +71,7 @@
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js --types",
-    "test": "vitest run --config=../../jest/config/core.js"
+    "test": "vitest run --config=../../config/test/core.js"
   },
   "publishConfig": {
     "access": "public",
