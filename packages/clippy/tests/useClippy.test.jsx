@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
+import { AGENTS, ClippyProvider, useClippy } from '@react95/clippy';
 import { render } from '@testing-library/react';
-import { useClippy, AGENTS, ClippyProvider } from '@react95/clippy';
+import React from 'react';
+import { describe, expect, it } from 'vitest';
 
 describe('useClippy', () => {
   it('should get agent from ClippyContext', () => {
