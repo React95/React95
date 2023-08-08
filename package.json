@@ -32,7 +32,6 @@
     "eslint-plugin-react": "^7.29.3",
     "happy-dom": "^10.5.2",
     "husky": "^7.0.4",
-    "jest": "^27.5.1",
     "jest-styled-components": "^7.0.8",
     "lerna": "^5.0.0",
     "nx": "^14.1.9",
