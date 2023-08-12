@@ -1,4 +1,3 @@
-import 'jest-styled-components';
 import { beforeAll, vi } from 'vitest';
 
 vi.mock('icojs', () => ({
