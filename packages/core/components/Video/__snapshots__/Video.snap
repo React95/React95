@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Video /> Snapshot should match snapshot 1`] = `
+exports[`<Video /> > Snapshot > should match snapshot 1`] = `
 .c12 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;

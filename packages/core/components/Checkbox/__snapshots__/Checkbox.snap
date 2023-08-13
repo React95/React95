@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
+exports[`<Checkbox /> > Snapshots > should match snapshot with disabled prop 1`] = `
 .c4 {
   width: 12px;
   height: 12px;
@@ -88,7 +88,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled prop 1`] = `
 </div>
 `;
 
-exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
+exports[`<Checkbox /> > Snapshots > should match snapshot without props 1`] = `
 .c4 {
   width: 12px;
   height: 12px;

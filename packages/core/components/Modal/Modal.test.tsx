@@ -1,9 +1,10 @@
-import React from 'react';
 import { Bat } from '@react95/icons';
-import { waitRender, fireEvent } from '../shared/test/utils';
+import React from 'react';
+import { describe, expect, it, vi } from 'vitest';
+import List from '../List';
+import { fireEvent, waitRender } from '../shared/test/utils';
 import Modal from './Modal';
 import ModalContext from './ModalContext';
-import List from '../List';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {
@@ -122,7 +123,7 @@ describe('<Modal />', () => {
 
   describe('closeModal prop', () => {
     it('should call closeModal when Modal close button is clicked', async () => {
-      const closeModalMock = jest.fn();
+      const closeModalMock = vi.fn();
       const { getByText } = await waitRender(
         <Modal icon={<Bat />} title="file.bat" closeModal={closeModalMock}>
           Hello
@@ -172,7 +173,7 @@ describe('<Modal />', () => {
     });
 
     it('should call onClick function when Modal action button is clicked', async () => {
-      const onClickMock = jest.fn();
+      const onClickMock = vi.fn();
       const { getByText } = await waitRender(
         <Modal
           title="file.bat"

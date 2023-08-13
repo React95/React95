@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, fireEvent } from '../shared/test/utils';
+import { describe, expect, it, vi } from 'vitest';
+import { fireEvent, render } from '../shared/test/utils';
 import Alert from './Alert';
 
 describe('<Alert />', () => {
@@ -50,7 +51,7 @@ describe('<Alert />', () => {
 
   describe('closeAlert prop', () => {
     it('should call closeAlert when modal "OK" button is pressed', () => {
-      const closeAlertMock = jest.fn();
+      const closeAlertMock = vi.fn();
       const { getByText } = render(
         <Alert
           title="closeAlert"

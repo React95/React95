@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Dropdown /> Snapshots should match snapshot with options prop 1`] = `
+exports[`<Dropdown /> > Snapshots > should match snapshot with options prop 1`] = `
 .c0 {
   position: relative;
   width: 200px;

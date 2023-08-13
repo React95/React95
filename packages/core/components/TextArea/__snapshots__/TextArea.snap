@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<TextArea /> Snapshot should match snapshot 1`] = `
+exports[`<TextArea /> > Snapshot > should match snapshot 1`] = `
 .c0 {
   outline: none;
   border: none;

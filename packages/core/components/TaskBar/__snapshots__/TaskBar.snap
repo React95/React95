@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
+exports[`<TaskBar /> > Snapshots > <Clock /> > should match snapshot 1`] = `
 .c0 {
   --x-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -38,7 +38,7 @@ exports[`<TaskBar /> Snapshots <Clock /> should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -92,7 +92,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with active prop 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with active prop 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -192,7 +192,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with activ
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon prop 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with icon prop 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -246,7 +246,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with icon 
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small prop 1`] = `
+exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with small prop 1`] = `
 .c0 {
   --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
   box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
@@ -299,7 +299,7 @@ exports[`<TaskBar /> Snapshots <WindowButton /> should match snapshot with small
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot 1`] = `
 .c0 {
   position: fixed;
   bottom: 0;
@@ -432,7 +432,7 @@ exports[`<TaskBar /> Snapshots should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 1`] = `
 .c0 {
   position: fixed;
   bottom: 0;
@@ -565,7 +565,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 .c0 {
   position: fixed;
   bottom: 0;
@@ -797,7 +797,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with list prop 2`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 .c5 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -1165,7 +1165,7 @@ exports[`<TaskBar /> Snapshots should match snapshot with one Modal 1`] = `
 </div>
 `;
 
-exports[`<TaskBar /> Snapshots should match snapshot with two Modals 1`] = `
+exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 .c5 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;

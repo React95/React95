@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
+exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
 .c0 {
   color: #fefefe;
   width: auto;
@@ -120,7 +120,7 @@ exports[`<TitleBar /> Snapshot should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TitleBar /> Snapshot should match snapshot with all Options 1`] = `
+exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = `
 .c4 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;

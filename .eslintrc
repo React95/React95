@@ -3,7 +3,6 @@
   "plugins": ["react", "@typescript-eslint"],
   "extends": ["plugin:@typescript-eslint/recommended"],
   "env": {
-    "jest": true,
     "browser": true
   },
   "rules": {

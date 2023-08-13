@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Modal /> Snapshots should match snapshot 1`] = `
+exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -274,7 +274,7 @@ exports[`<Modal /> Snapshots should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equals center 1`] = `
+exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals center 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -500,7 +500,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 </div>
 `;
 
-exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equals flex-start 1`] = `
+exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals flex-start 1`] = `
 .c6 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -726,7 +726,7 @@ exports[`<Modal /> Snapshots should match snapshot with buttonsAligment prop equ
 </div>
 `;
 
-exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1`] = `
+exports[`<Modal /> > Snapshots > should match snapshot with different activeWindow 1`] = `
 .c5 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;
@@ -913,7 +913,7 @@ exports[`<Modal /> Snapshots should match snapshot with different activeWindow 1
 </div>
 `;
 
-exports[`<Modal /> Snapshots should match snapshot with width and height props 1`] = `
+exports[`<Modal /> > Snapshots > should match snapshot with width and height props 1`] = `
 .c5 {
   background-color: #c3c7cb;
   padding: 7px 20px 5px;

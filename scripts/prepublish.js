@@ -18,7 +18,6 @@ const createPackageJson = () => {
     scripts,
     devDependencies,
     'lint-staged': lintStaged,
-    jest,
     release,
     config,
     ...packageDataOther
@@ -43,8 +42,7 @@ const run = () => {
   const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
 
   console.log(
-    `Created ${distFiles.map(file => file).join(', ')} in ${
-      pkg.name
+    `Created ${distFiles.map(file => file).join(', ')} in ${pkg.name
     }${outDir.replace('.', '')}`,
   );
 };

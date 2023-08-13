@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Range /> Snapshot should match snapshot 1`] = `
+exports[`<Range /> > Snapshot > should match snapshot 1`] = `
 .c0 {
   -webkit-appearance: none;
   width: 100%;

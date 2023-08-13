@@ -29,7 +29,7 @@
     "lint": "eslint --ext js,jsx --quiet src tests",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js",
-    "test": "jest --config=../../jest/config/clippy.js"
+    "test": "vitest run --config=../../config/test/clippy.js"
   },
   "bugs": {
     "url": "https://github.com/React95/React95/issues"

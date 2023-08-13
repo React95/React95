@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<List /> Snapshots should match snapshot 1`] = `
+exports[`<List /> > Snapshots > should match snapshot 1`] = `
 .c1 {
   position: relative;
   display: -webkit-box;

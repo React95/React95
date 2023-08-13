@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Fieldset /> Snapshots should match snapshot with legend prop and children element 1`] = `
+exports[`<Fieldset /> > Snapshots > should match snapshot with legend prop and children element 1`] = `
 .c0 {
   border-top-style: groove;
   border-top-width: 2px;

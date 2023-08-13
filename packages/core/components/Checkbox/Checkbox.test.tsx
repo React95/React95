@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, fireEvent } from '../shared/test/utils';
+import { describe, expect, it, vi } from 'vitest';
+import { fireEvent, render } from '../shared/test/utils';
 import Checkbox from './Checkbox';
 
 describe('<Checkbox />', () => {
@@ -38,7 +39,7 @@ describe('<Checkbox />', () => {
 
   describe('onChange prop', () => {
     it('should call onChange function when Checkbox is changed', () => {
-      const onChangeMock = jest.fn();
+      const onChangeMock = vi.fn();
       const { getByTestId } = render(
         <Checkbox
           onChange={onChangeMock}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { waitRender, fireEvent, act } from '../shared/test/utils';
+import { describe, expect, it, vi } from 'vitest';
+import { act, fireEvent, waitRender } from '../shared/test/utils';
 import Tree from './Tree';
 
 const { icons } = Tree;
@@ -16,7 +17,7 @@ describe('<Tree />', () => {
   });
 
   describe('Rendering', () => {
-    const onClickMock = jest.fn();
+    const onClickMock = vi.fn();
 
     const data = [
       {
