@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.4](https://github.com/React95/React95/compare/@react95/core@6.1.3...@react95/core@6.1.4) (2023-10-16)
+
+### Bug Fixes
+
+- **globalstyle:** remove overflow from body ([cdb91db](https://github.com/React95/React95/commit/cdb91dbc2f75113df18c242464fcfe28459175ea))
+
 ## [6.1.3](https://github.com/React95/React95/compare/@react95/core@6.1.2...@react95/core@6.1.3) (2023-08-13)
 
 **Note:** Version bump only for package @react95/core
