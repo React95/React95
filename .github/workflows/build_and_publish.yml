@@ -9,7 +9,10 @@ on:
 jobs:
   build_and_publish:
     permissions:
+      contents: write
+      pull-requests: write
       id-token: write
+      pages: write
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
