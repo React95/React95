@@ -32,7 +32,7 @@
     "husky": "^7.0.4",
     "jest-styled-components": "^7.0.8",
     "lerna": "^7.3.1",
-    "nx": "^14.1.9",
+    "nx": "^16.10.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "vitest": "^0.33.0"
