@@ -8,6 +8,9 @@ on:
 
 jobs:
   build_and_publish:
+    permissions:
+      contents: read
+      id-token: write
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
@@ -30,7 +33,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
