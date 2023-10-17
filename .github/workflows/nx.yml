@@ -27,7 +27,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
 
       - run: yarn
       - run: yarn nx-cloud start-ci-run
@@ -47,7 +47,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
       - run: yarn
       - name: Start Nx Agent ${{ matrix.agent }}
         run: yarn nx-cloud start-agent
