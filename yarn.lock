@@ -11941,7 +11941,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha512-4jbtZXNAsfZbAHiiqjLPBiCl16dES1zI4Hpzzxw61Tk+loF+sBDBKx1ICKKKwIqQ7M0mFn1TmkN7euSncWgHiQ==
 
-nx@14.8.8, nx@^14.1.9:
+nx@14.8.8:
   version "14.8.8"
   resolved "https://registry.yarnpkg.com/nx/-/nx-14.8.8.tgz#f33e8ca6bd197a5eaba93ff751ace4c33f2c3bed"
   integrity sha512-hXoTcBjY+3+OituiSE9G44CjwfbFVEtw6W9Hl0DxcFW+Vb9V+sa/LHAQbIq1GXvr819sBduP0bncowUoOq6iBg==
@@ -11982,7 +11982,7 @@ nx@14.8.8, nx@^14.1.9:
     yargs "^17.4.0"
     yargs-parser "21.0.1"
 
-nx@16.10.0, "nx@>=16.5.1 < 17":
+nx@16.10.0, "nx@>=16.5.1 < 17", nx@^16.10.0:
   version "16.10.0"
   resolved "https://registry.yarnpkg.com/nx/-/nx-16.10.0.tgz#b070461f7de0a3d7988bd78558ea84cda3543ace"
   integrity sha512-gZl4iCC0Hx0Qe1VWmO4Bkeul2nttuXdPpfnlcDKSACGu3ZIo+uySqwOF8yBAxSTIf8xe2JRhgzJN1aFkuezEBg==
