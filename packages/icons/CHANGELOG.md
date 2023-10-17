@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.8](https://github.com/React95/React95/compare/@react95/icons@2.0.7...@react95/icons@2.0.8) (2023-10-17)
+
+**Note:** Version bump only for package @react95/icons
+
+
+
+
+
 ## [2.0.7](https://github.com/React95/React95/compare/@react95/icons@2.0.6...@react95/icons@2.0.7) (2023-07-04)
 
 **Note:** Version bump only for package @react95/icons

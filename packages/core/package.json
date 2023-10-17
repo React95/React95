@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "6.1.4",
+  "version": "6.1.5",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "repository": {
@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@react95/icons": "^2.0.7",
+    "@react95/icons": "^2.0.8",
     "csstype": "^3.0.11",
     "nanoid": "^3.3.1",
     "react-draggable": "^4.4.4",
@@ -26,7 +26,7 @@
     "styled-components": ">= 5.3.3"
   },
   "devDependencies": {
-    "@react95/clippy": "^1.0.11",
+    "@react95/clippy": "^1.0.12",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-storysource": "^7.4.6",
     "@storybook/addons": "^7.4.6",
