@@ -46,7 +46,7 @@ const ClippyProvider = ({ children, agentName = AGENTS.CLIPPY }) => {
         () => {
           setClippy();
         },
-        window?.CLIPPY_CDN || 'https://cdn.jsdelivr.net/pi0/clippyjs/master/assets/agents/',
+        window?.CLIPPY_CDN || 'https://cdn.jsdelivr.net/gh/pi0/clippyjs@master/assets/agents/',
       );
     }
 
