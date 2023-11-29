@@ -59,7 +59,6 @@ const GlobalStyle = createGlobalStyle`
   // scrollbar
   ${scrollbars}
 
-  html, .auto, *       { ${Cursor.Auto} }
   .default             { ${Cursor.Auto} }
   .none                { ${Cursor.None} }
   .help                { ${Cursor.Help} }
