@@ -8,6 +8,7 @@ import {
   shadow,
   ShadowProps,
 } from 'styled-system';
+import Cursor from '../Cursor';
 
 export type InputProps = PaddingProps &
   BorderProps &
@@ -40,6 +41,8 @@ const Input = styled.input<InputProps>`
   box-shadow: input;
 
   -webkit-appearance: none;
+
+  ${Cursor.Text};
 
   ${padding}
   ${borders}

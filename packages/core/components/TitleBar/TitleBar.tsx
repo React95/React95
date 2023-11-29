@@ -79,9 +79,12 @@ const TitleBarBackground = styled(Frame)<{ active?: boolean }>`
 
 const Title = styled.div`
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white, 1.5px 0px white;
+  color: transparent;
+  letter-spacing: 1px;
   font-size: 1em;
 `;
 
@@ -105,6 +108,7 @@ const TitleBarRenderer: React.ForwardRefRenderFunction<
     active={active}
     color={active ? 'headerText' : 'headerNotActiveText'}
     ref={ref}
+    className="default"
   >
     {icon && icon}
     <Title className={className}>{title}</Title>
