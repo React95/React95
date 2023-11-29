@@ -104,9 +104,15 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -207,7 +213,7 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2"
+      class="c1 c2 default"
       color="headerText"
     >
       <img
@@ -378,9 +384,15 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -447,7 +459,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2"
+      class="c1 c2 default"
       color="headerText"
     >
       <img
@@ -604,9 +616,15 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -673,7 +691,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2"
+      class="c1 c2 default"
       color="headerText"
     >
       <img
@@ -830,9 +848,15 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -876,7 +900,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
     width="300"
   >
     <div
-      class="c1 c2"
+      class="c1 c2 default"
       color="headerNotActiveText"
     >
       <img
@@ -1017,9 +1041,15 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -1064,7 +1094,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
     width="300"
   >
     <div
-      class="c1 c2"
+      class="c1 c2 default"
       color="headerText"
     >
       <img

@@ -103,9 +103,15 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -287,7 +293,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
     style="width: 260px;"
   >
     <div
-      class="c1 c2"
+      class="c1 c2 default"
       color="headerText"
     >
       <img
