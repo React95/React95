@@ -14,20 +14,18 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           fetch-depth: 0
 
-      - name: Restoring cache
-        uses: actions/cache@v3
+      - uses: actions/setup-node@v4
         with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: yarn --pure-lockfile --non-interactive
 
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
         with:
           main-branch-name: 'master'
-
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 18
 
       - run: yarn
       - run: yarn nx-cloud start-ci-run
