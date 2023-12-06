@@ -1,12 +1,16 @@
 {
   "extends": "nx/presets/npm.json",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": ["build", "test", "lint"],
-        "accessToken": "MTUyNTE0ZGEtZTVjYS00MDdkLTk2M2MtZjNiNzhhZWZhZDA5fHJlYWQtd3JpdGU="
-      }
+  "nxCloudAccessToken": "MTUyNTE0ZGEtZTVjYS00MDdkLTk2M2MtZjNiNzhhZWZhZDA5fHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "test": {
+      "dependsOn": ["^test"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
     }
   },
   "targetDependencies": {
@@ -35,6 +39,14 @@
   "pluginsConfig": {
     "@nrwl/js": {
       "analyzeSourceFiles": false
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"]
+      }
     }
   }
 }
