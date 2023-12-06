@@ -1,6 +1,11 @@
 {
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": false
+    }
+  },
   "extends": "nx/presets/npm.json",
-  "nxCloudAccessToken": "MTUyNTE0ZGEtZTVjYS00MDdkLTk2M2MtZjNiNzhhZWZhZDA5fHJlYWQtd3JpdGU=",
+  "nxCloudAccessToken": "YzlhNWQwNDItNTAzOC00YWEzLTlkZWEtN2M2MzRjNmM4NWFifHJlYWQ=",
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
@@ -38,11 +43,6 @@
   },
   "affected": {
     "defaultBase": "master"
-  },
-  "pluginsConfig": {
-    "@nrwl/js": {
-      "analyzeSourceFiles": false
-    }
   },
   "tasksRunnerOptions": {
     "default": {
