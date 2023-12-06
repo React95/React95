@@ -6,46 +6,22 @@ env:
 
 jobs:
   pr:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          fetch-depth: 0
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
-
-      - name: Install dependencies
-        run: yarn --pure-lockfile --non-interactive
-
-      - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        uses: nrwl/nx-set-shas@v2
-        with:
-          main-branch-name: 'master'
-
-      - run: yarn
-      - run: yarn nx-cloud start-ci-run
-      - run: yarn nx affected --target=build --parallel --max-parallel=3
-      - run: yarn nx affected --target=test --parallel --max-parallel=2
-      - run: yarn nx affected --target=lint --parallel --max-parallel=1
-      - run: yarn nx-cloud stop-all-agents
+    name: Nx Cloud - Main Job
+    uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.1
+    with:
+      main-branch-name: master
+      number-of-agents: 3
+      init-commands: |
+        yarn nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
+      parallel-commands: |
+        yarn nx-cloud record -- yarn nx format:check
+      parallel-commands-on-agents: |
+        yarn nx affected --target=lint --parallel=3
+        yarn nx affected --target=test --parallel=3
+        yarn nx affected --target=build --parallel=3
 
   agents:
-    runs-on: ubuntu-latest
-    name: Agent 1
-    timeout-minutes: 60
-    strategy:
-      matrix:
-        agent: [1, 2, 3]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: yarn
-      - name: Start Nx Agent ${{ matrix.agent }}
-        run: yarn nx-cloud start-agent
+    name: Nx Cloud - Agents
+    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.1
+    with:
+      number-of-agents: 3
