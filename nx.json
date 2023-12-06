@@ -47,6 +47,12 @@
       "options": {
         "cacheableOperations": ["build", "lint", "test"]
       }
+    },
+    "ci": {
+      "runner": "nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"]
+      }
     }
   }
 }
