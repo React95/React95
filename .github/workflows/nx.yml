@@ -3,22 +3,15 @@ on: [pull_request]
 
 jobs:
   pr:
-    name: Nx Cloud - Main Job
+    name: Nx Cloud Checker
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.1
     with:
       main-branch-name: master
-      number-of-agents: 3
       init-commands: |
-        yarn nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
+        yarn nx-cloud start-ci-run --stop-agents-after="build"
       parallel-commands: |
         yarn nx-cloud record -- yarn nx format:check
       parallel-commands-on-agents: |
-        yarn nx affected --runner=ci --target=lint --parallel=3
-        yarn nx affected --runner=ci --target=test --parallel=3
-        yarn nx affected --runner=ci --target=build --parallel=3
-
-  agents:
-    name: Nx Cloud - Agents
-    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.1
-    with:
-      number-of-agents: 3
+        yarn nx affected --runner=ci --target=lint
+        yarn nx affected --runner=ci --target=test
+        yarn nx affected --runner=ci --target=build
