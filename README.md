@@ -45,7 +45,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Insaf Khamzin's portfolio website](https://github.com/InsafKhamzin/portfolio)
 - [Janne Koivisto's portfolio website](https://janneilkka.com)
 - [Decode base64 to PDF](https://base64.rafaelfranco.com/)
-- [Liyun Li's personal website](https://liyun.li)
+- Liyun Li's personal website: [Website](https://liyun.li), [GitLab](https://gitlab.com/liyun-li/95)
 
 ## Contributors
 
