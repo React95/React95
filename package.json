@@ -47,7 +47,7 @@
     "contributors:generate": "all-contributors generate",
     "dev": "yarn nx storybook @react95/core ",
     "dev:explorer": "yarn workspace @react95/explorer develop",
-    "pretest": "lerna run prebuild",
+    "pretest": "yarn nx run-many --target=prebuild",
     "test": "yarn nx run-many --target=test --all --parallel",
     "test:core": "yarn nx test @react95/core",
     "test:clippy": "yarn nx test @react95/clippy",

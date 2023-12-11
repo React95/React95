@@ -12,6 +12,10 @@
       "outputs": ["{projectRoot}/dist"],
       "cache": true
     },
+    "prebuild": {
+      "dependsOn": ["^prebuild"],
+      "cache": true
+    },
     "test": {
       "dependsOn": ["^test"],
       "cache": true
@@ -47,9 +51,6 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default"
-    },
-    "ci": {
-      "runner": "nx-cloud"
     }
   }
 }
