@@ -1,6 +1,9 @@
 name: Nx CI
 on: [pull_request]
 
+env:
+  NX_TASKS_RUNNER: ci
+
 jobs:
   pr:
     name: Nx Cloud Checker
@@ -9,9 +12,9 @@ jobs:
       main-branch-name: master
       init-commands: |
         yarn nx-cloud start-ci-run --stop-agents-after="build"
-      parallel-commands: |
+        parallel-commands: |
         yarn nx-cloud record -- yarn nx format:check
-      parallel-commands-on-agents: |
-        yarn nx affected --runner=ci --target=lint
-        yarn nx affected --runner=ci --target=test
-        yarn nx affected --runner=ci --target=build
+        parallel-commands-on-agents: |
+        yarn nx affected --target=lint
+        yarn nx affected --target=test
+        yarn nx affected --target=build

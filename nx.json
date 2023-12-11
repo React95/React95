@@ -51,6 +51,9 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default"
+    },
+    "ci": {
+      "runner": "nx-cloud"
     }
   }
 }
