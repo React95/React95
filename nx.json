@@ -49,10 +49,10 @@
     "defaultBase": "master"
   },
   "tasksRunnerOptions": {
-    "default": {
+    "local": {
       "runner": "nx/tasks-runners/default"
     },
-    "ci": {
+    "default": {
       "runner": "nx-cloud"
     }
   }
