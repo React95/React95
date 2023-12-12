@@ -12,7 +12,7 @@ jobs:
       main-branch-name: master
       init-commands: |
         yarn nx-cloud start-ci-run --stop-agents-after="build"
-        parallel-commands: |
+      parallel-commands: |
         yarn nx-cloud record -- yarn nx format:check
         parallel-commands-on-agents: |
         yarn nx affected --target=lint
