@@ -25,24 +25,6 @@ We're really happy you want to contribute to the project! The following steps wi
 
 Access http://localhost:6006 to see the storybook running
 
-## Testing
-
-For some commands, such as `test`, and `lint`, we use Nx. The default configuration sets Nx runner
-as `nx-cloud`. You will see some errors in your terminal if you run these commands
-outside CI context.
-
-To fix this, you can either add `--runner=local` to your command:
-
-```sh
-$  yarn test:clippy --runner=local
-```
-
-Or set `NX_TASKS_RUNNER` env variable:
-
-```sh
-$ NX_TASKS_RUNNER=local yarn test:clippy
-```
-
 ### Directories
 
 You need to follow a simple structure pattern:
