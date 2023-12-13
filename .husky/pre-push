@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-NX_TASKS_RUNNER=local yarn nx affected --target=test --parallel
+yarn test
