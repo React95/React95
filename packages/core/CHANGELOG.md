@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/React95/React95/compare/@react95/core@6.1.6...@react95/core@6.2.0) (2023-12-15)
+
+
+### Bug Fixes
+
+* **font:** updating font files to have more characters than just basic ones ([74d9f79](https://github.com/React95/React95/commit/74d9f791b371e055e84e6ce17f6b8de899695e61))
+* remove cursor default from everywhere ([28eedae](https://github.com/React95/React95/commit/28eedae814b612201f94f22eed1194662aefe7ab))
+
+
+### Features
+
+* add some cursors ([34912da](https://github.com/React95/React95/commit/34912da29398e71c75230cae6a00a0220f808ecf))
+
+
+
+
+
 ## [6.1.6](https://github.com/React95/React95/compare/@react95/core@6.1.5...@react95/core@6.1.6) (2023-10-18)
 
 **Note:** Version bump only for package @react95/core
