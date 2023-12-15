@@ -60,15 +60,21 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
 <div>
   <div
-    class="c0 c1"
+    class="c0 c1 default"
     color="headerText"
   >
     <img
@@ -83,7 +89,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="c3 c4"
+    class="c3 c4 default"
     color="headerNotActiveText"
   >
     <img
@@ -98,7 +104,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="c0 c1"
+    class="c0 c1 default"
     color="headerText"
   >
     <div
@@ -108,7 +114,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="c3 c4"
+    class="c3 c4 default"
     color="headerNotActiveText"
   >
     <div
@@ -224,15 +230,21 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-weight: bold;
   line-height: 1.4em;
   margin: 0;
+  font-size: 1em;
+  text-shadow: 0.5px 0px white,1.5px 0px white;
+  color: transparent;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
 <div>
   <div
-    class="c0 c1"
+    class="c0 c1 default"
     color="headerText"
   >
     <img

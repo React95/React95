@@ -1,12 +1,28 @@
 {
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": false
+    }
+  },
   "extends": "nx/presets/npm.json",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": ["build", "test", "lint"],
-        "accessToken": "MTUyNTE0ZGEtZTVjYS00MDdkLTk2M2MtZjNiNzhhZWZhZDA5fHJlYWQtd3JpdGU="
-      }
+  "nxCloudAccessToken": "YzlhNWQwNDItNTAzOC00YWEzLTlkZWEtN2M2MzRjNmM4NWFifHJlYWQ=",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    },
+    "prebuild": {
+      "dependsOn": ["^prebuild"],
+      "cache": true
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "cache": true
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "cache": true
     }
   },
   "targetDependencies": {
@@ -32,9 +48,12 @@
   "affected": {
     "defaultBase": "master"
   },
-  "pluginsConfig": {
-    "@nrwl/js": {
-      "analyzeSourceFiles": false
+  "tasksRunnerOptions": {
+    "local": {
+      "runner": "nx/tasks-runners/default"
+    },
+    "default": {
+      "runner": "nx-cloud"
     }
   }
 }

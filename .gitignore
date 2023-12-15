@@ -16,3 +16,5 @@ packages/core/docs
 # gatsby
 .cache
 public
+
+.nx

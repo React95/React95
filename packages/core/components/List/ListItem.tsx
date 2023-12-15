@@ -95,6 +95,7 @@ const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
             React.isValidElement<IListProps>(child),
           ).some(child => child),
       )}
+      className="default"
     >
       {icon}
       {children}

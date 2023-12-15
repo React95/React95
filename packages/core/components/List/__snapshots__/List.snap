@@ -139,7 +139,7 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
     width="200"
   >
     <li
-      class="c1"
+      class="c1 default"
     >
       <img
         height="32"
@@ -151,7 +151,7 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
         width="200"
       >
         <li
-          class="c2"
+          class="c2 default"
         >
           <img
             height="32"
@@ -164,7 +164,7 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
           class="c3"
         />
         <li
-          class="c2"
+          class="c2 default"
         >
           <img
             height="32"
