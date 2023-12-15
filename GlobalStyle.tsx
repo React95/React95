@@ -1,9 +1,7 @@
 import { createGlobalStyle } from '@xstyled/styled-components';
 
-import eot from './font/MS-Sans-Serif.eot';
-import ttf from './font/MS-Sans-Serif.ttf';
-import woff from './font/MS-Sans-Serif.woff';
-import woff2 from './font/MS-Sans-Serif.woff2';
+import ttf from './font/MS-Sans-Serif-8pt.ttf';
+import ttfBold from './font/MS-Sans-Serif-8pt-bold.ttf';
 import videoeot from './font/React95Video-Numbers.eot';
 import videottf from './font/React95Video-Numbers.ttf';
 import videowoff from './font/React95Video-Numbers.woff';
@@ -15,12 +13,17 @@ import { scrollbars } from './Scrollbar';
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'MS Sans Serif';
-    src: url('${eot}');
-    src: url('${woff2}') format('woff2'),
-         url('${woff}') format('woff'),
-         url('${ttf}') format('truetype'),
-         url('${eot}?#iefix') format('embedded-opentype');
+    src: url('${ttf}') format('truetype');
+
     font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MS Sans Serif';
+    src: url('${ttfBold}') format('truetype');
+
+    font-weight: bold;
     font-style: normal;
   }
 
@@ -59,7 +62,6 @@ const GlobalStyle = createGlobalStyle`
   // scrollbar
   ${scrollbars}
 
-  html, .auto, *       { ${Cursor.Auto} }
   .default             { ${Cursor.Auto} }
   .none                { ${Cursor.None} }
   .help                { ${Cursor.Help} }
