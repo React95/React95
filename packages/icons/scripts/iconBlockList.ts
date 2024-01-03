@@ -1,4 +1,4 @@
-import { IconData } from './processIcons';
+import { IconData } from './utils';
 
 /** This list includes all icons seen as not including any visual output */
 const iconBlockedIds = [

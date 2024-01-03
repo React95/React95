@@ -69,44 +69,44 @@ function extractColors(img: ImageData) {
   return colors;
 }
 
-export function convertImage(img: ImageData) {
-  function colorsToPaths(colors: ColorMap) {
-    let output = '';
+function colorsToPaths(colors: ColorMap) {
+  let output = '';
 
-    Object.entries(colors).map(([colormap, values]) => {
-      const color = getColor(
-        colormap.split(',') as [string, string, string, string],
-      );
+  Object.entries(colors).map(([colormap, values]) => {
+    const color = getColor(
+      colormap.split(',') as [string, string, string, string],
+    );
 
-      if (!color) {
-        return;
-      }
+    if (!color) {
+      return;
+    }
 
-      const paths: string[] = [];
-      let curPath: ColorMapRange;
-      let w = 1;
+    const paths: string[] = [];
+    let curPath: ColorMapRange = [0, 0];
+    let w = 1;
 
-      // Loops through each color's pixels to optimize paths
-      values.map(function (value) {
-        if (curPath && value[1] === curPath[1] && value[0] === curPath[0] + w) {
-          w++;
-        } else {
-          if (curPath) {
-            paths.push(makePathData(curPath[0], curPath[1], w));
-            w = 1;
-          }
-          curPath = value;
+    // Loops through each color's pixels to optimize paths
+    values.map(function (value) {
+      if (curPath && value[1] === curPath[1] && value[0] === curPath[0] + w) {
+        w++;
+      } else {
+        if (curPath) {
+          paths.push(makePathData(curPath[0], curPath[1], w));
+          w = 1;
         }
-      });
-
-      paths.push(makePathData(curPath![0], curPath![1], w)); // Finish last path
-
-      output += makePath(color, paths.join(''));
+        curPath = value;
+      }
     });
 
-    return output;
-  }
+    paths.push(makePathData(curPath[0], curPath[1], w)); // Finish last path
 
+    output += makePath(color, paths.join(''));
+  });
+
+  return output;
+}
+
+function convertImage(img: ImageData) {
   const colors = extractColors(img);
   const paths = colorsToPaths(colors);
 
@@ -123,19 +123,10 @@ export function convertImage(img: ImageData) {
   return output;
 }
 
-function convert(fileName: string) {
-  console.time('conversion');
-
+export function generateSVG(fileName: string) {
   const imgData = ImageData.getSync(fileName);
 
-  const converted = convertImage(imgData);
-  console.log(converted);
+  const svg = convertImage(imgData);
+
+  return svg;
 }
-
-function main() {
-  const fileName = process.argv[2];
-
-  convert(fileName);
-}
-
-main();

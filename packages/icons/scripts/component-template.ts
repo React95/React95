@@ -1,6 +1,6 @@
 // @ts-check
 
-import { IconData } from './processIcons';
+import { IconData } from './utils';
 
 export const getIconDataName = (name: string): string => {
   const lowercase = name.charAt(0).toLowerCase() + name.slice(1);

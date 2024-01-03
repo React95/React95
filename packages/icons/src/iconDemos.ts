@@ -1,5 +1,4 @@
-
-  import {access110Data, Access110} from './react/Access110';
+import {access110Data, Access110} from './react/Access110';
 import {access218Data, Access218} from './react/Access218';
 import {access219Data, Access219} from './react/Access219';
 import {access220Data, Access220} from './react/Access220';
@@ -975,4881 +974,4880 @@ import {wmsui325901Data, Wmsui325901} from './react/Wmsui325901';
 import {wordpadData, Wordpad} from './react/Wordpad';
 import {write1Data, Write1} from './react/Write1';
 
-  export const icons = [
+export const icons = [
     {
-      componentName: "Access110",
-      component: Access110,
-      variants: access110Data,
-    },
-{
-      componentName: "Access218",
-      component: Access218,
-      variants: access218Data,
-    },
-{
-      componentName: "Access219",
-      component: Access219,
-      variants: access219Data,
-    },
-{
-      componentName: "Access220",
-      component: Access220,
-      variants: access220Data,
-    },
-{
-      componentName: "Access221",
-      component: Access221,
-      variants: access221Data,
-    },
-{
-      componentName: "Access222",
-      component: Access222,
-      variants: access222Data,
-    },
-{
-      componentName: "Access223",
-      component: Access223,
-      variants: access223Data,
-    },
-{
-      componentName: "Access224",
-      component: Access224,
-      variants: access224Data,
-    },
-{
-      componentName: "Access225",
-      component: Access225,
-      variants: access225Data,
-    },
-{
-      componentName: "Access226",
-      component: Access226,
-      variants: access226Data,
-    },
-{
-      componentName: "Access227",
-      component: Access227,
-      variants: access227Data,
-    },
-{
-      componentName: "Access228",
-      component: Access228,
-      variants: access228Data,
-    },
-{
-      componentName: "Access229",
-      component: Access229,
-      variants: access229Data,
-    },
-{
-      componentName: "Access230",
-      component: Access230,
-      variants: access230Data,
-    },
-{
-      componentName: "Accessibility",
-      component: Accessibility,
-      variants: accessibilityData,
-    },
-{
-      componentName: "Actmovie303",
-      component: Actmovie303,
-      variants: actmovie303Data,
-    },
-{
-      componentName: "Addrbook",
-      component: Addrbook,
-      variants: addrbookData,
-    },
-{
-      componentName: "Amovie2",
-      component: Amovie2,
-      variants: amovie2Data,
-    },
-{
-      componentName: "Appwiz1500",
-      component: Appwiz1500,
-      variants: appwiz1500Data,
-    },
-{
-      componentName: "Appwiz1501",
-      component: Appwiz1501,
-      variants: appwiz1501Data,
-    },
-{
-      componentName: "Appwiz1502",
-      component: Appwiz1502,
-      variants: appwiz1502Data,
-    },
-{
-      componentName: "Appwiz1503",
-      component: Appwiz1503,
-      variants: appwiz1503Data,
-    },
-{
-      componentName: "ArrowLeft",
-      component: ArrowLeft,
-      variants: arrowLeftData,
-    },
-{
-      componentName: "ArrowRight",
-      component: ArrowRight,
-      variants: arrowRightData,
-    },
-{
-      componentName: "Attach",
-      component: Attach,
-      variants: attachData,
-    },
-{
-      componentName: "Awfext326049",
-      component: Awfext326049,
-      variants: awfext326049Data,
-    },
-{
-      componentName: "Awfext326050",
-      component: Awfext326050,
-      variants: awfext326050Data,
-    },
-{
-      componentName: "Awfext326051",
-      component: Awfext326051,
-      variants: awfext326051Data,
-    },
-{
-      componentName: "Awfext326052",
-      component: Awfext326052,
-      variants: awfext326052Data,
-    },
-{
-      componentName: "Awfext326053",
-      component: Awfext326053,
-      variants: awfext326053Data,
-    },
-{
-      componentName: "Awfxcg321301",
-      component: Awfxcg321301,
-      variants: awfxcg321301Data,
-    },
-{
-      componentName: "Awfxcg321302",
-      component: Awfxcg321302,
-      variants: awfxcg321302Data,
-    },
-{
-      componentName: "Awfxcg321303",
-      component: Awfxcg321303,
-      variants: awfxcg321303Data,
-    },
-{
-      componentName: "Awfxcg321304",
-      component: Awfxcg321304,
-      variants: awfxcg321304Data,
-    },
-{
-      componentName: "Awfxcg321305",
-      component: Awfxcg321305,
-      variants: awfxcg321305Data,
-    },
-{
-      componentName: "Awfxex32109",
-      component: Awfxex32109,
-      variants: awfxex32109Data,
-    },
-{
-      componentName: "Awfxex32113",
-      component: Awfxex32113,
-      variants: awfxex32113Data,
-    },
-{
-      componentName: "Awfxex32114",
-      component: Awfxex32114,
-      variants: awfxex32114Data,
-    },
-{
-      componentName: "Awfxex32115",
-      component: Awfxex32115,
-      variants: awfxex32115Data,
-    },
-{
-      componentName: "Awfxex32116",
-      component: Awfxex32116,
-      variants: awfxex32116Data,
-    },
-{
-      componentName: "Awfxex32117",
-      component: Awfxex32117,
-      variants: awfxex32117Data,
-    },
-{
-      componentName: "Awfxex32118",
-      component: Awfxex32118,
-      variants: awfxex32118Data,
-    },
-{
-      componentName: "Awfxex32119",
-      component: Awfxex32119,
-      variants: awfxex32119Data,
-    },
-{
-      componentName: "Awfxex32120",
-      component: Awfxex32120,
-      variants: awfxex32120Data,
-    },
-{
-      componentName: "Awfxex32121",
-      component: Awfxex32121,
-      variants: awfxex32121Data,
-    },
-{
-      componentName: "Awfxex32Awfxex",
-      component: Awfxex32Awfxex,
-      variants: awfxex32AwfxexData,
-    },
-{
-      componentName: "Awfxex32Info",
-      component: Awfxex32Info,
-      variants: awfxex32InfoData,
-    },
-{
-      componentName: "Awschd32400",
-      component: Awschd32400,
-      variants: awschd32400Data,
-    },
-{
-      componentName: "Awschd32401",
-      component: Awschd32401,
-      variants: awschd32401Data,
-    },
-{
-      componentName: "Awschd32402",
-      component: Awschd32402,
-      variants: awschd32402Data,
-    },
-{
-      componentName: "Awsnto3249",
-      component: Awsnto3249,
-      variants: awsnto3249Data,
-    },
-{
-      componentName: "Awsnto3250",
-      component: Awsnto3250,
-      variants: awsnto3250Data,
-    },
-{
-      componentName: "Back",
-      component: Back,
-      variants: backData,
-    },
-{
-      componentName: "Bat",
-      component: Bat,
-      variants: batData,
-    },
-{
-      componentName: "BatExec",
-      component: BatExec,
-      variants: batExecData,
-    },
-{
-      componentName: "BatExec2",
-      component: BatExec2,
-      variants: batExec2Data,
-    },
-{
-      componentName: "BatWait",
-      component: BatWait,
-      variants: batWaitData,
-    },
-{
-      componentName: "BillAdd",
-      component: BillAdd,
-      variants: billAddData,
-    },
-{
-      componentName: "Binoc",
-      component: Binoc,
-      variants: binocData,
-    },
-{
-      componentName: "BlankScreen100",
-      component: BlankScreen100,
-      variants: blankScreen100Data,
-    },
-{
-      componentName: "Bold",
-      component: Bold,
-      variants: boldData,
-    },
-{
-      componentName: "Bookmark",
-      component: Bookmark,
-      variants: bookmarkData,
-    },
-{
-      componentName: "Brush",
-      component: Brush,
-      variants: brushData,
-    },
-{
-      componentName: "Bulb",
-      component: Bulb,
-      variants: bulbData,
-    },
-{
-      componentName: "Cachevu100",
-      component: Cachevu100,
-      variants: cachevu100Data,
-    },
-{
-      componentName: "CalcSc",
-      component: CalcSc,
-      variants: calcScData,
-    },
-{
-      componentName: "Calculator",
-      component: Calculator,
-      variants: calculatorData,
-    },
-{
-      componentName: "Camera",
-      component: Camera,
-      variants: cameraData,
-    },
-{
-      componentName: "Ccapi104",
-      component: Ccapi104,
-      variants: ccapi104Data,
-    },
-{
-      componentName: "Ccapi105",
-      component: Ccapi105,
-      variants: ccapi105Data,
-    },
-{
-      componentName: "Ccapi106",
-      component: Ccapi106,
-      variants: ccapi106Data,
-    },
-{
-      componentName: "CdExe",
-      component: CdExe,
-      variants: cdExeData,
-    },
-{
-      componentName: "CdMusic",
-      component: CdMusic,
-      variants: cdMusicData,
-    },
-{
-      componentName: "CdSearch",
-      component: CdSearch,
-      variants: cdSearchData,
-    },
-{
-      componentName: "Cdplayer107",
-      component: Cdplayer107,
-      variants: cdplayer107Data,
-    },
-{
-      componentName: "Cdplayer110",
-      component: Cdplayer110,
-      variants: cdplayer110Data,
-    },
-{
-      componentName: "Cdplayer114",
-      component: Cdplayer114,
-      variants: cdplayer114Data,
-    },
-{
-      componentName: "Centre",
-      component: Centre,
-      variants: centreData,
-    },
-{
-      componentName: "Charmap1",
-      component: Charmap1,
-      variants: charmap1Data,
-    },
-{
-      componentName: "Chatshow3000",
-      component: Chatshow3000,
-      variants: chatshow3000Data,
-    },
-{
-      componentName: "Circle",
-      component: Circle,
-      variants: circleData,
-    },
-{
-      componentName: "Close",
-      component: Close,
-      variants: closeData,
-    },
-{
-      componentName: "Columns",
-      component: Columns,
-      variants: columnsData,
-    },
-{
-      componentName: "Comctl32150",
-      component: Comctl32150,
-      variants: comctl32150Data,
-    },
-{
-      componentName: "Comdlg32528",
-      component: Comdlg32528,
-      variants: comdlg32528Data,
-    },
-{
-      componentName: "Comdlg32529",
-      component: Comdlg32529,
-      variants: comdlg32529Data,
-    },
-{
-      componentName: "Comdlg32530",
-      component: Comdlg32530,
-      variants: comdlg32530Data,
-    },
-{
-      componentName: "Comdlg32531",
-      component: Comdlg32531,
-      variants: comdlg32531Data,
-    },
-{
-      componentName: "Comdlg32532",
-      component: Comdlg32532,
-      variants: comdlg32532Data,
-    },
-{
-      componentName: "Comdlg32533",
-      component: Comdlg32533,
-      variants: comdlg32533Data,
-    },
-{
-      componentName: "Comdlg32534",
-      component: Comdlg32534,
-      variants: comdlg32534Data,
-    },
-{
-      componentName: "Comdlg32535",
-      component: Comdlg32535,
-      variants: comdlg32535Data,
-    },
-{
-      componentName: "Comdlg32536",
-      component: Comdlg32536,
-      variants: comdlg32536Data,
-    },
-{
-      componentName: "Comdlg32537",
-      component: Comdlg32537,
-      variants: comdlg32537Data,
-    },
-{
-      componentName: "Comdlg32538",
-      component: Comdlg32538,
-      variants: comdlg32538Data,
-    },
-{
-      componentName: "Comdlg32539",
-      component: Comdlg32539,
-      variants: comdlg32539Data,
-    },
-{
-      componentName: "Computer",
-      component: Computer,
-      variants: computerData,
-    },
-{
-      componentName: "Computer2",
-      component: Computer2,
-      variants: computer2Data,
-    },
-{
-      componentName: "Computer3",
-      component: Computer3,
-      variants: computer3Data,
-    },
-{
-      componentName: "Computer4",
-      component: Computer4,
-      variants: computer4Data,
-    },
-{
-      componentName: "Computer5",
-      component: Computer5,
-      variants: computer5Data,
-    },
-{
-      componentName: "ComputerFind",
-      component: ComputerFind,
-      variants: computerFindData,
-    },
-{
-      componentName: "Confcp102",
-      component: Confcp102,
-      variants: confcp102Data,
-    },
-{
-      componentName: "Confcp107",
-      component: Confcp107,
-      variants: confcp107Data,
-    },
-{
-      componentName: "Confcp108",
-      component: Confcp108,
-      variants: confcp108Data,
-    },
-{
-      componentName: "Confcp109",
-      component: Confcp109,
-      variants: confcp109Data,
-    },
-{
-      componentName: "Confcp1100",
-      component: Confcp1100,
-      variants: confcp1100Data,
-    },
-{
-      componentName: "Confcp116",
-      component: Confcp116,
-      variants: confcp116Data,
-    },
-{
-      componentName: "Confcp118",
-      component: Confcp118,
-      variants: confcp118Data,
-    },
-{
-      componentName: "Confcp120",
-      component: Confcp120,
-      variants: confcp120Data,
-    },
-{
-      componentName: "Conflnk102",
-      component: Conflnk102,
-      variants: conflnk102Data,
-    },
-{
-      componentName: "Conflnk103",
-      component: Conflnk103,
-      variants: conflnk103Data,
-    },
-{
-      componentName: "Controls3000",
-      component: Controls3000,
-      variants: controls3000Data,
-    },
-{
-      componentName: "Copy",
-      component: Copy,
-      variants: copyData,
-    },
-{
-      componentName: "Coreui3000",
-      component: Coreui3000,
-      variants: coreui3000Data,
-    },
-{
-      componentName: "CurvesAndColors100",
-      component: CurvesAndColors100,
-      variants: curvesAndColors100Data,
-    },
-{
-      componentName: "Cut",
-      component: Cut,
-      variants: cutData,
-    },
-{
-      componentName: "D3FlowerBox100",
-      component: D3FlowerBox100,
-      variants: d3FlowerBox100Data,
-    },
-{
-      componentName: "D3FlyingObjectsIdApp",
-      component: D3FlyingObjectsIdApp,
-      variants: d3FlyingObjectsIdAppData,
-    },
-{
-      componentName: "D3Maze100",
-      component: D3Maze100,
-      variants: d3Maze100Data,
-    },
-{
-      componentName: "D3PipesIdApp",
-      component: D3PipesIdApp,
-      variants: d3PipesIdAppData,
-    },
-{
-      componentName: "D3Text100",
-      component: D3Text100,
-      variants: d3Text100Data,
-    },
-{
-      componentName: "Data16",
-      component: Data16,
-      variants: data16Data,
-    },
-{
-      componentName: "Date",
-      component: Date,
-      variants: dateData,
-    },
-{
-      componentName: "Defrag",
-      component: Defrag,
-      variants: defragData,
-    },
-{
-      componentName: "Defrag1",
-      component: Defrag1,
-      variants: defrag1Data,
-    },
-{
-      componentName: "Defrag2",
-      component: Defrag2,
-      variants: defrag2Data,
-    },
-{
-      componentName: "Defrag3",
-      component: Defrag3,
-      variants: defrag3Data,
-    },
-{
-      componentName: "Defrag4",
-      component: Defrag4,
-      variants: defrag4Data,
-    },
-{
-      componentName: "Defrag5",
-      component: Defrag5,
-      variants: defrag5Data,
-    },
-{
-      componentName: "Defrag6",
-      component: Defrag6,
-      variants: defrag6Data,
-    },
-{
-      componentName: "Defrag7",
-      component: Defrag7,
-      variants: defrag7Data,
-    },
-{
-      componentName: "Defrag8",
-      component: Defrag8,
-      variants: defrag8Data,
-    },
-{
-      componentName: "Defrag9",
-      component: Defrag9,
-      variants: defrag9Data,
-    },
-{
-      componentName: "Delete",
-      component: Delete,
-      variants: deleteData,
-    },
-{
-      componentName: "Desk100",
-      component: Desk100,
-      variants: desk100Data,
-    },
-{
-      componentName: "Desktop",
-      component: Desktop,
-      variants: desktopData,
-    },
-{
-      componentName: "Detlicon",
-      component: Detlicon,
-      variants: detliconData,
-    },
-{
-      componentName: "Dial",
-      component: Dial,
-      variants: dialData,
-    },
-{
-      componentName: "Dialer1",
-      component: Dialer1,
-      variants: dialer1Data,
-    },
-{
-      componentName: "Dialer2",
-      component: Dialer2,
-      variants: dialer2Data,
-    },
-{
-      componentName: "Dialmon200",
-      component: Dialmon200,
-      variants: dialmon200Data,
-    },
-{
-      componentName: "Directcc1001",
-      component: Directcc1001,
-      variants: directcc1001Data,
-    },
-{
-      componentName: "Directcc1002",
-      component: Directcc1002,
-      variants: directcc1002Data,
-    },
-{
-      componentName: "Directcc1003",
-      component: Directcc1003,
-      variants: directcc1003Data,
-    },
-{
-      componentName: "Directcc1004",
-      component: Directcc1004,
-      variants: directcc1004Data,
-    },
-{
-      componentName: "Directcc1005",
-      component: Directcc1005,
-      variants: directcc1005Data,
-    },
-{
-      componentName: "DirectccDirectcc",
-      component: DirectccDirectcc,
-      variants: directccDirectccData,
-    },
-{
-      componentName: "Diskcopy1",
-      component: Diskcopy1,
-      variants: diskcopy1Data,
-    },
-{
-      componentName: "Doc",
-      component: Doc,
-      variants: docData,
-    },
-{
-      componentName: "DocGris",
-      component: DocGris,
-      variants: docGrisData,
-    },
-{
-      componentName: "Download",
-      component: Download,
-      variants: downloadData,
-    },
-{
-      componentName: "Dpmodemx701",
-      component: Dpmodemx701,
-      variants: dpmodemx701Data,
-    },
-{
-      componentName: "Drvspace1",
-      component: Drvspace1,
-      variants: drvspace1Data,
-    },
-{
-      componentName: "Drvspace2",
-      component: Drvspace2,
-      variants: drvspace2Data,
-    },
-{
-      componentName: "Drvspace3",
-      component: Drvspace3,
-      variants: drvspace3Data,
-    },
-{
-      componentName: "Drvspace4",
-      component: Drvspace4,
-      variants: drvspace4Data,
-    },
-{
-      componentName: "Drvspace5",
-      component: Drvspace5,
-      variants: drvspace5Data,
-    },
-{
-      componentName: "Drvspace6",
-      component: Drvspace6,
-      variants: drvspace6Data,
-    },
-{
-      componentName: "Drvspace7",
-      component: Drvspace7,
-      variants: drvspace7Data,
-    },
-{
-      componentName: "Drvspace8",
-      component: Drvspace8,
-      variants: drvspace8Data,
-    },
-{
-      componentName: "Earth",
-      component: Earth,
-      variants: earthData,
-    },
-{
-      componentName: "Explore",
-      component: Explore,
-      variants: exploreData,
-    },
-{
-      componentName: "Explorer100",
-      component: Explorer100,
-      variants: explorer100Data,
-    },
-{
-      componentName: "Explorer101",
-      component: Explorer101,
-      variants: explorer101Data,
-    },
-{
-      componentName: "Explorer102",
-      component: Explorer102,
-      variants: explorer102Data,
-    },
-{
-      componentName: "Explorer103",
-      component: Explorer103,
-      variants: explorer103Data,
-    },
-{
-      componentName: "Explorer104",
-      component: Explorer104,
-      variants: explorer104Data,
-    },
-{
-      componentName: "Explorer105",
-      component: Explorer105,
-      variants: explorer105Data,
-    },
-{
-      componentName: "Explorer107",
-      component: Explorer107,
-      variants: explorer107Data,
-    },
-{
-      componentName: "Explorer108",
-      component: Explorer108,
-      variants: explorer108Data,
-    },
-{
-      componentName: "Expostrt128",
-      component: Expostrt128,
-      variants: expostrt128Data,
-    },
-{
-      componentName: "Fave",
-      component: Fave,
-      variants: faveData,
-    },
-{
-      componentName: "Fax",
-      component: Fax,
-      variants: faxData,
-    },
-{
-      componentName: "FaxWarning",
-      component: FaxWarning,
-      variants: faxWarningData,
-    },
-{
-      componentName: "Faxcover108",
-      component: Faxcover108,
-      variants: faxcover108Data,
-    },
-{
-      componentName: "Faxcover140",
-      component: Faxcover140,
-      variants: faxcover140Data,
-    },
-{
-      componentName: "Faxcover2",
-      component: Faxcover2,
-      variants: faxcover2Data,
-    },
-{
-      componentName: "Faxcover3",
-      component: Faxcover3,
-      variants: faxcover3Data,
-    },
-{
-      componentName: "FileCorrupted",
-      component: FileCorrupted,
-      variants: fileCorruptedData,
-    },
-{
-      componentName: "FileDelete",
-      component: FileDelete,
-      variants: fileDeleteData,
-    },
-{
-      componentName: "FileFind",
-      component: FileFind,
-      variants: fileFindData,
-    },
-{
-      componentName: "FileFind2",
-      component: FileFind2,
-      variants: fileFind2Data,
-    },
-{
-      componentName: "FileFind3",
-      component: FileFind3,
-      variants: fileFind3Data,
-    },
-{
-      componentName: "FileFont",
-      component: FileFont,
-      variants: fileFontData,
-    },
-{
-      componentName: "FileFont2",
-      component: FileFont2,
-      variants: fileFont2Data,
-    },
-{
-      componentName: "FileIcons",
-      component: FileIcons,
-      variants: fileIconsData,
-    },
-{
-      componentName: "FilePen",
-      component: FilePen,
-      variants: filePenData,
-    },
-{
-      componentName: "FilePencil",
-      component: FilePencil,
-      variants: filePencilData,
-    },
-{
-      componentName: "FilePick",
-      component: FilePick,
-      variants: filePickData,
-    },
-{
-      componentName: "FilePin",
-      component: FilePin,
-      variants: filePinData,
-    },
-{
-      componentName: "FileSettings",
-      component: FileSettings,
-      variants: fileSettingsData,
-    },
-{
-      componentName: "FileText",
-      component: FileText,
-      variants: fileTextData,
-    },
-{
-      componentName: "FileTextSettings",
-      component: FileTextSettings,
-      variants: fileTextSettingsData,
-    },
-{
-      componentName: "FileTransfer",
-      component: FileTransfer,
-      variants: fileTransferData,
-    },
-{
-      componentName: "Files",
-      component: Files,
-      variants: filesData,
-    },
-{
-      componentName: "Filexfer128",
-      component: Filexfer128,
-      variants: filexfer128Data,
-    },
-{
-      componentName: "Filexfer129",
-      component: Filexfer129,
-      variants: filexfer129Data,
-    },
-{
-      componentName: "Filexfer130",
-      component: Filexfer130,
-      variants: filexfer130Data,
-    },
-{
-      componentName: "FindArr",
-      component: FindArr,
-      variants: findArrData,
-    },
-{
-      componentName: "FindDc2",
-      component: FindDc2,
-      variants: findDc2Data,
-    },
-{
-      componentName: "FindDoc",
-      component: FindDoc,
-      variants: findDocData,
-    },
-{
-      componentName: "FlyingThroughSpace100",
-      component: FlyingThroughSpace100,
-      variants: flyingThroughSpace100Data,
-    },
-{
-      componentName: "FlyingWindows100",
-      component: FlyingWindows100,
-      variants: flyingWindows100Data,
-    },
-{
-      componentName: "Fm20enu5",
-      component: Fm20enu5,
-      variants: fm20enu5Data,
-    },
-{
-      componentName: "Folder",
-      component: Folder,
-      variants: folderData,
-    },
-{
-      componentName: "FolderExe",
-      component: FolderExe,
-      variants: folderExeData,
-    },
-{
-      componentName: "FolderExe2",
-      component: FolderExe2,
-      variants: folderExe2Data,
-    },
-{
-      componentName: "FolderFile",
-      component: FolderFile,
-      variants: folderFileData,
-    },
-{
-      componentName: "FolderFont",
-      component: FolderFont,
-      variants: folderFontData,
-    },
-{
-      componentName: "FolderOpen",
-      component: FolderOpen,
-      variants: folderOpenData,
-    },
-{
-      componentName: "FolderPrint",
-      component: FolderPrint,
-      variants: folderPrintData,
-    },
-{
-      componentName: "FolderRename",
-      component: FolderRename,
-      variants: folderRenameData,
-    },
-{
-      componentName: "FolderSettings",
-      component: FolderSettings,
-      variants: folderSettingsData,
-    },
-{
-      componentName: "FolderSettings2",
-      component: FolderSettings2,
-      variants: folderSettings2Data,
-    },
-{
-      componentName: "FolderShared",
-      component: FolderShared,
-      variants: folderSharedData,
-    },
-{
-      componentName: "Font",
-      component: Font,
-      variants: fontData,
-    },
-{
-      componentName: "Font2",
-      component: Font2,
-      variants: font2Data,
-    },
-{
-      componentName: "FontBig",
-      component: FontBig,
-      variants: fontBigData,
-    },
-{
-      componentName: "FontSml",
-      component: FontSml,
-      variants: fontSmlData,
-    },
-{
-      componentName: "FontWid",
-      component: FontWid,
-      variants: fontWidData,
-    },
-{
-      componentName: "Fontext1",
-      component: Fontext1,
-      variants: fontext1Data,
-    },
-{
-      componentName: "Fontext2",
-      component: Fontext2,
-      variants: fontext2Data,
-    },
-{
-      componentName: "Fontext3",
-      component: Fontext3,
-      variants: fontext3Data,
-    },
-{
-      componentName: "Fontext4",
-      component: Fontext4,
-      variants: fontext4Data,
-    },
-{
-      componentName: "Fontview110",
-      component: Fontview110,
-      variants: fontview110Data,
-    },
-{
-      componentName: "Fontview111",
-      component: Fontview111,
-      variants: fontview111Data,
-    },
-{
-      componentName: "Forbidden",
-      component: Forbidden,
-      variants: forbiddenData,
-    },
-{
-      componentName: "Format16",
-      component: Format16,
-      variants: format16Data,
-    },
-{
-      componentName: "Freecell1",
-      component: Freecell1,
-      variants: freecell1Data,
-    },
-{
-      componentName: "Fte128",
-      component: Fte128,
-      variants: fte128Data,
-    },
-{
-      componentName: "Fullscrn",
-      component: Fullscrn,
-      variants: fullscrnData,
-    },
-{
-      componentName: "Gcdef100",
-      component: Gcdef100,
-      variants: gcdef100Data,
-    },
-{
-      componentName: "Gcdef10001",
-      component: Gcdef10001,
-      variants: gcdef10001Data,
-    },
-{
-      componentName: "Gcdef10002",
-      component: Gcdef10002,
-      variants: gcdef10002Data,
-    },
-{
-      componentName: "Gcdef10003",
-      component: Gcdef10003,
-      variants: gcdef10003Data,
-    },
-{
-      componentName: "Gcdef10004",
-      component: Gcdef10004,
-      variants: gcdef10004Data,
-    },
-{
-      componentName: "Gcdef10005",
-      component: Gcdef10005,
-      variants: gcdef10005Data,
-    },
-{
-      componentName: "Gcdef10006",
-      component: Gcdef10006,
-      variants: gcdef10006Data,
-    },
-{
-      componentName: "Gcdef10007",
-      component: Gcdef10007,
-      variants: gcdef10007Data,
-    },
-{
-      componentName: "Gcdef10008",
-      component: Gcdef10008,
-      variants: gcdef10008Data,
-    },
-{
-      componentName: "Gcdef10009",
-      component: Gcdef10009,
-      variants: gcdef10009Data,
-    },
-{
-      componentName: "Gcdef10010",
-      component: Gcdef10010,
-      variants: gcdef10010Data,
-    },
-{
-      componentName: "Gcdef10011",
-      component: Gcdef10011,
-      variants: gcdef10011Data,
-    },
-{
-      componentName: "Gcdef10012",
-      component: Gcdef10012,
-      variants: gcdef10012Data,
-    },
-{
-      componentName: "Gcdef10013",
-      component: Gcdef10013,
-      variants: gcdef10013Data,
-    },
-{
-      componentName: "Gcdef10014",
-      component: Gcdef10014,
-      variants: gcdef10014Data,
-    },
-{
-      componentName: "Gcdef10015",
-      component: Gcdef10015,
-      variants: gcdef10015Data,
-    },
-{
-      componentName: "Gcdef10016",
-      component: Gcdef10016,
-      variants: gcdef10016Data,
-    },
-{
-      componentName: "Gcdef10017",
-      component: Gcdef10017,
-      variants: gcdef10017Data,
-    },
-{
-      componentName: "Gcdef10018",
-      component: Gcdef10018,
-      variants: gcdef10018Data,
-    },
-{
-      componentName: "Gcdef10019",
-      component: Gcdef10019,
-      variants: gcdef10019Data,
-    },
-{
-      componentName: "Gcdef10020",
-      component: Gcdef10020,
-      variants: gcdef10020Data,
-    },
-{
-      componentName: "Gcdef10021",
-      component: Gcdef10021,
-      variants: gcdef10021Data,
-    },
-{
-      componentName: "Gcdef10022",
-      component: Gcdef10022,
-      variants: gcdef10022Data,
-    },
-{
-      componentName: "Gcdef10023",
-      component: Gcdef10023,
-      variants: gcdef10023Data,
-    },
-{
-      componentName: "Gcdef10024",
-      component: Gcdef10024,
-      variants: gcdef10024Data,
-    },
-{
-      componentName: "Gcdef10025",
-      component: Gcdef10025,
-      variants: gcdef10025Data,
-    },
-{
-      componentName: "Gcdef10026",
-      component: Gcdef10026,
-      variants: gcdef10026Data,
-    },
-{
-      componentName: "Gcdef10027",
-      component: Gcdef10027,
-      variants: gcdef10027Data,
-    },
-{
-      componentName: "Gcdef10028",
-      component: Gcdef10028,
-      variants: gcdef10028Data,
-    },
-{
-      componentName: "Gcdef10029",
-      component: Gcdef10029,
-      variants: gcdef10029Data,
-    },
-{
-      componentName: "Gcdef10030",
-      component: Gcdef10030,
-      variants: gcdef10030Data,
-    },
-{
-      componentName: "Gcdef10031",
-      component: Gcdef10031,
-      variants: gcdef10031Data,
-    },
-{
-      componentName: "Gcdef10032",
-      component: Gcdef10032,
-      variants: gcdef10032Data,
-    },
-{
-      componentName: "Gcdef10033",
-      component: Gcdef10033,
-      variants: gcdef10033Data,
-    },
-{
-      componentName: "Gcdef10034",
-      component: Gcdef10034,
-      variants: gcdef10034Data,
-    },
-{
-      componentName: "Gcdef10035",
-      component: Gcdef10035,
-      variants: gcdef10035Data,
-    },
-{
-      componentName: "Gcdef10036",
-      component: Gcdef10036,
-      variants: gcdef10036Data,
-    },
-{
-      componentName: "Gcdef10037",
-      component: Gcdef10037,
-      variants: gcdef10037Data,
-    },
-{
-      componentName: "Gcdef10038",
-      component: Gcdef10038,
-      variants: gcdef10038Data,
-    },
-{
-      componentName: "Gcdef10039",
-      component: Gcdef10039,
-      variants: gcdef10039Data,
-    },
-{
-      componentName: "Gcdef10040",
-      component: Gcdef10040,
-      variants: gcdef10040Data,
-    },
-{
-      componentName: "Gcdef10041",
-      component: Gcdef10041,
-      variants: gcdef10041Data,
-    },
-{
-      componentName: "Gcdef10042",
-      component: Gcdef10042,
-      variants: gcdef10042Data,
-    },
-{
-      componentName: "Gcdef10043",
-      component: Gcdef10043,
-      variants: gcdef10043Data,
-    },
-{
-      componentName: "Gcdef10044",
-      component: Gcdef10044,
-      variants: gcdef10044Data,
-    },
-{
-      componentName: "Gcdef10045",
-      component: Gcdef10045,
-      variants: gcdef10045Data,
-    },
-{
-      componentName: "Gcdef10046",
-      component: Gcdef10046,
-      variants: gcdef10046Data,
-    },
-{
-      componentName: "Gcdef10047",
-      component: Gcdef10047,
-      variants: gcdef10047Data,
-    },
-{
-      componentName: "Gcdef10048",
-      component: Gcdef10048,
-      variants: gcdef10048Data,
-    },
-{
-      componentName: "Gcdef10049",
-      component: Gcdef10049,
-      variants: gcdef10049Data,
-    },
-{
-      componentName: "Gcdef10050",
-      component: Gcdef10050,
-      variants: gcdef10050Data,
-    },
-{
-      componentName: "Gcdef10051",
-      component: Gcdef10051,
-      variants: gcdef10051Data,
-    },
-{
-      componentName: "Gcdef10052",
-      component: Gcdef10052,
-      variants: gcdef10052Data,
-    },
-{
-      componentName: "Gcdef10053",
-      component: Gcdef10053,
-      variants: gcdef10053Data,
-    },
-{
-      componentName: "Gcdef10054",
-      component: Gcdef10054,
-      variants: gcdef10054Data,
-    },
-{
-      componentName: "Gcdef10055",
-      component: Gcdef10055,
-      variants: gcdef10055Data,
-    },
-{
-      componentName: "Gcdef10056",
-      component: Gcdef10056,
-      variants: gcdef10056Data,
-    },
-{
-      componentName: "Gcdef10057",
-      component: Gcdef10057,
-      variants: gcdef10057Data,
-    },
-{
-      componentName: "Gcdef10058",
-      component: Gcdef10058,
-      variants: gcdef10058Data,
-    },
-{
-      componentName: "Gcdef10059",
-      component: Gcdef10059,
-      variants: gcdef10059Data,
-    },
-{
-      componentName: "Gcdef10060",
-      component: Gcdef10060,
-      variants: gcdef10060Data,
-    },
-{
-      componentName: "Gcdef10061",
-      component: Gcdef10061,
-      variants: gcdef10061Data,
-    },
-{
-      componentName: "Gcdef10062",
-      component: Gcdef10062,
-      variants: gcdef10062Data,
-    },
-{
-      componentName: "Gcdef10063",
-      component: Gcdef10063,
-      variants: gcdef10063Data,
-    },
-{
-      componentName: "Gcdef10064",
-      component: Gcdef10064,
-      variants: gcdef10064Data,
-    },
-{
-      componentName: "Gcdef101",
-      component: Gcdef101,
-      variants: gcdef101Data,
-    },
-{
-      componentName: "Gcdef102",
-      component: Gcdef102,
-      variants: gcdef102Data,
-    },
-{
-      componentName: "Gcdef103",
-      component: Gcdef103,
-      variants: gcdef103Data,
-    },
-{
-      componentName: "Gcdef104",
-      component: Gcdef104,
-      variants: gcdef104Data,
-    },
-{
-      componentName: "Gcdef105",
-      component: Gcdef105,
-      variants: gcdef105Data,
-    },
-{
-      componentName: "Gcdef106",
-      component: Gcdef106,
-      variants: gcdef106Data,
-    },
-{
-      componentName: "Gcdef107",
-      component: Gcdef107,
-      variants: gcdef107Data,
-    },
-{
-      componentName: "Gcdef108",
-      component: Gcdef108,
-      variants: gcdef108Data,
-    },
-{
-      componentName: "Gcdef109",
-      component: Gcdef109,
-      variants: gcdef109Data,
-    },
-{
-      componentName: "Gcdef110",
-      component: Gcdef110,
-      variants: gcdef110Data,
-    },
-{
-      componentName: "Gcdef111",
-      component: Gcdef111,
-      variants: gcdef111Data,
-    },
-{
-      componentName: "Gcdef112",
-      component: Gcdef112,
-      variants: gcdef112Data,
-    },
-{
-      componentName: "Gcdef113",
-      component: Gcdef113,
-      variants: gcdef113Data,
-    },
-{
-      componentName: "Gcdef114",
-      component: Gcdef114,
-      variants: gcdef114Data,
-    },
-{
-      componentName: "Gcdef115",
-      component: Gcdef115,
-      variants: gcdef115Data,
-    },
-{
-      componentName: "Gcdef116",
-      component: Gcdef116,
-      variants: gcdef116Data,
-    },
-{
-      componentName: "Gcdef117",
-      component: Gcdef117,
-      variants: gcdef117Data,
-    },
-{
-      componentName: "Gcdef122",
-      component: Gcdef122,
-      variants: gcdef122Data,
-    },
-{
-      componentName: "Gcdef124",
-      component: Gcdef124,
-      variants: gcdef124Data,
-    },
-{
-      componentName: "Globe",
-      component: Globe,
-      variants: globeData,
-    },
-{
-      componentName: "Grpconv100",
-      component: Grpconv100,
-      variants: grpconv100Data,
-    },
-{
-      componentName: "Grpconv101",
-      component: Grpconv101,
-      variants: grpconv101Data,
-    },
-{
-      componentName: "Hand",
-      component: Hand,
-      variants: handData,
-    },
-{
-      componentName: "HardwareDiag",
-      component: HardwareDiag,
-      variants: hardwareDiagData,
-    },
-{
-      componentName: "Help",
-      component: Help,
-      variants: helpData,
-    },
-{
-      componentName: "HelpBook",
-      component: HelpBook,
-      variants: helpBookData,
-    },
-{
-      componentName: "HelpPtr",
-      component: HelpPtr,
-      variants: helpPtrData,
-    },
-{
-      componentName: "HtmlPage",
-      component: HtmlPage,
-      variants: htmlPageData,
-    },
-{
-      componentName: "Icmui1200",
-      component: Icmui1200,
-      variants: icmui1200Data,
-    },
-{
-      componentName: "Icmui1201",
-      component: Icmui1201,
-      variants: icmui1201Data,
-    },
-{
-      componentName: "Icwdial101",
-      component: Icwdial101,
-      variants: icwdial101Data,
-    },
-{
-      componentName: "Icwdial102",
-      component: Icwdial102,
-      variants: icwdial102Data,
-    },
-{
-      componentName: "Ie",
-      component: Ie,
-      variants: ieData,
-    },
-{
-      componentName: "Imgadmin214",
-      component: Imgadmin214,
-      variants: imgadmin214Data,
-    },
-{
-      componentName: "Imgedit10",
-      component: Imgedit10,
-      variants: imgedit10Data,
-    },
-{
-      componentName: "Imgedit277",
-      component: Imgedit277,
-      variants: imgedit277Data,
-    },
-{
-      componentName: "Imgscan10",
-      component: Imgscan10,
-      variants: imgscan10Data,
-    },
-{
-      componentName: "Imgthumb10",
-      component: Imgthumb10,
-      variants: imgthumb10Data,
-    },
-{
-      componentName: "Inetcfg2300",
-      component: Inetcfg2300,
-      variants: inetcfg2300Data,
-    },
-{
-      componentName: "Inetcfg2301",
-      component: Inetcfg2301,
-      variants: inetcfg2301Data,
-    },
-{
-      componentName: "Inetcfg2302",
-      component: Inetcfg2302,
-      variants: inetcfg2302Data,
-    },
-{
-      componentName: "Inetcfg2303",
-      component: Inetcfg2303,
-      variants: inetcfg2303Data,
-    },
-{
-      componentName: "Inetcpl1301",
-      component: Inetcpl1301,
-      variants: inetcpl1301Data,
-    },
-{
-      componentName: "Inetcpl1302",
-      component: Inetcpl1302,
-      variants: inetcpl1302Data,
-    },
-{
-      componentName: "Inetcpl1303",
-      component: Inetcpl1303,
-      variants: inetcpl1303Data,
-    },
-{
-      componentName: "Inetcpl1304",
-      component: Inetcpl1304,
-      variants: inetcpl1304Data,
-    },
-{
-      componentName: "Inetcpl1305",
-      component: Inetcpl1305,
-      variants: inetcpl1305Data,
-    },
-{
-      componentName: "Inetcpl1306",
-      component: Inetcpl1306,
-      variants: inetcpl1306Data,
-    },
-{
-      componentName: "Inetcpl1307",
-      component: Inetcpl1307,
-      variants: inetcpl1307Data,
-    },
-{
-      componentName: "Inetcpl1308",
-      component: Inetcpl1308,
-      variants: inetcpl1308Data,
-    },
-{
-      componentName: "Inetcpl1309",
-      component: Inetcpl1309,
-      variants: inetcpl1309Data,
-    },
-{
-      componentName: "Inetcpl1310",
-      component: Inetcpl1310,
-      variants: inetcpl1310Data,
-    },
-{
-      componentName: "Inetcpl1311",
-      component: Inetcpl1311,
-      variants: inetcpl1311Data,
-    },
-{
-      componentName: "Inetcpl1312",
-      component: Inetcpl1312,
-      variants: inetcpl1312Data,
-    },
-{
-      componentName: "Inetcpl1313",
-      component: Inetcpl1313,
-      variants: inetcpl1313Data,
-    },
-{
-      componentName: "Inetcpl1314",
-      component: Inetcpl1314,
-      variants: inetcpl1314Data,
-    },
-{
-      componentName: "Inetcpl1315",
-      component: Inetcpl1315,
-      variants: inetcpl1315Data,
-    },
-{
-      componentName: "Inetcpl1317",
-      component: Inetcpl1317,
-      variants: inetcpl1317Data,
-    },
-{
-      componentName: "Inetcpl1318",
-      component: Inetcpl1318,
-      variants: inetcpl1318Data,
-    },
-{
-      componentName: "Inetcpl1319",
-      component: Inetcpl1319,
-      variants: inetcpl1319Data,
-    },
-{
-      componentName: "Inetcpl1320",
-      component: Inetcpl1320,
-      variants: inetcpl1320Data,
-    },
-{
-      componentName: "Inetcpl1321",
-      component: Inetcpl1321,
-      variants: inetcpl1321Data,
-    },
-{
-      componentName: "Inetcpl4432",
-      component: Inetcpl4432,
-      variants: inetcpl4432Data,
-    },
-{
-      componentName: "InfoBubble",
-      component: InfoBubble,
-      variants: infoBubbleData,
-    },
-{
-      componentName: "Install",
-      component: Install,
-      variants: installData,
-    },
-{
-      componentName: "Internat151",
-      component: Internat151,
-      variants: internat151Data,
-    },
-{
-      componentName: "Intl101",
-      component: Intl101,
-      variants: intl101Data,
-    },
-{
-      componentName: "Isign32100",
-      component: Isign32100,
-      variants: isign32100Data,
-    },
-{
-      componentName: "Isign324001",
-      component: Isign324001,
-      variants: isign324001Data,
-    },
-{
-      componentName: "Isign32IcoApp",
-      component: Isign32IcoApp,
-      variants: isign32IcoAppData,
-    },
-{
-      componentName: "Issue",
-      component: Issue,
-      variants: issueData,
-    },
-{
-      componentName: "Isuninst1000",
-      component: Isuninst1000,
-      variants: isuninst1000Data,
-    },
-{
-      componentName: "Italic",
-      component: Italic,
-      variants: italicData,
-    },
-{
-      componentName: "Jdbgmgr100",
-      component: Jdbgmgr100,
-      variants: jdbgmgr100Data,
-    },
-{
-      componentName: "Jgdwmie101",
-      component: Jgdwmie101,
-      variants: jgdwmie101Data,
-    },
-{
-      componentName: "Job116",
-      component: Job116,
-      variants: job116Data,
-    },
-{
-      componentName: "Joy102",
-      component: Joy102,
-      variants: joy102Data,
-    },
-{
-      componentName: "Joy108",
-      component: Joy108,
-      variants: joy108Data,
-    },
-{
-      componentName: "Joy110",
-      component: Joy110,
-      variants: joy110Data,
-    },
-{
-      componentName: "Justify",
-      component: Justify,
-      variants: justifyData,
-    },
-{
-      componentName: "Key",
-      component: Key,
-      variants: keyData,
-    },
-{
-      componentName: "KeyboardMouse",
-      component: KeyboardMouse,
-      variants: keyboardMouseData,
-    },
-{
-      componentName: "Keys",
-      component: Keys,
-      variants: keysData,
-    },
-{
-      componentName: "Left",
-      component: Left,
-      variants: leftData,
-    },
-{
-      componentName: "Lights100",
-      component: Lights100,
-      variants: lights100Data,
-    },
-{
-      componentName: "Lights101",
-      component: Lights101,
-      variants: lights101Data,
-    },
-{
-      componentName: "Lights102",
-      component: Lights102,
-      variants: lights102Data,
-    },
-{
-      componentName: "Lights103",
-      component: Lights103,
-      variants: lights103Data,
-    },
-{
-      componentName: "Lights99",
-      component: Lights99,
-      variants: lights99Data,
-    },
-{
-      componentName: "Listicon",
-      component: Listicon,
-      variants: listiconData,
-    },
-{
-      componentName: "LoaderBat",
-      component: LoaderBat,
-      variants: loaderBatData,
-    },
-{
-      componentName: "Lock",
-      component: Lock,
-      variants: lockData,
-    },
-{
-      componentName: "LogView",
-      component: LogView,
-      variants: logViewData,
-    },
-{
-      componentName: "Logo",
-      component: Logo,
-      variants: logoData,
-    },
-{
-      componentName: "LrgIcon",
-      component: LrgIcon,
-      variants: lrgIconData,
-    },
-{
-      componentName: "Lst2icon",
-      component: Lst2icon,
-      variants: lst2iconData,
-    },
-{
-      componentName: "Mail",
-      component: Mail,
-      variants: mailData,
-    },
-{
-      componentName: "Mail2",
-      component: Mail2,
-      variants: mail2Data,
-    },
-{
-      componentName: "Mail3",
-      component: Mail3,
-      variants: mail3Data,
-    },
-{
-      componentName: "Mailnews12",
-      component: Mailnews12,
-      variants: mailnews12Data,
-    },
-{
-      componentName: "Mailnews13",
-      component: Mailnews13,
-      variants: mailnews13Data,
-    },
-{
-      componentName: "Mailnews14",
-      component: Mailnews14,
-      variants: mailnews14Data,
-    },
-{
-      componentName: "Mailnews15",
-      component: Mailnews15,
-      variants: mailnews15Data,
-    },
-{
-      componentName: "Mailnews16",
-      component: Mailnews16,
-      variants: mailnews16Data,
-    },
-{
-      componentName: "Mailnews17",
-      component: Mailnews17,
-      variants: mailnews17Data,
-    },
-{
-      componentName: "Mailnews18",
-      component: Mailnews18,
-      variants: mailnews18Data,
-    },
-{
-      componentName: "Mailnews19",
-      component: Mailnews19,
-      variants: mailnews19Data,
-    },
-{
-      componentName: "Mailnews2",
-      component: Mailnews2,
-      variants: mailnews2Data,
-    },
-{
-      componentName: "Mailnews20",
-      component: Mailnews20,
-      variants: mailnews20Data,
-    },
-{
-      componentName: "Mailnews21",
-      component: Mailnews21,
-      variants: mailnews21Data,
-    },
-{
-      componentName: "Mailnews22",
-      component: Mailnews22,
-      variants: mailnews22Data,
-    },
-{
-      componentName: "Mailnews23",
-      component: Mailnews23,
-      variants: mailnews23Data,
-    },
-{
-      componentName: "Mailnews3",
-      component: Mailnews3,
-      variants: mailnews3Data,
-    },
-{
-      componentName: "Mailnews6",
-      component: Mailnews6,
-      variants: mailnews6Data,
-    },
-{
-      componentName: "Mailnews7",
-      component: Mailnews7,
-      variants: mailnews7Data,
-    },
-{
-      componentName: "Mailnews8",
-      component: Mailnews8,
-      variants: mailnews8Data,
-    },
-{
-      componentName: "Mailnews9",
-      component: Mailnews9,
-      variants: mailnews9Data,
-    },
-{
-      componentName: "Main100",
-      component: Main100,
-      variants: main100Data,
-    },
-{
-      componentName: "Main103",
-      component: Main103,
-      variants: main103Data,
-    },
-{
-      componentName: "Main104",
-      component: Main104,
-      variants: main104Data,
-    },
-{
-      componentName: "Main105",
-      component: Main105,
-      variants: main105Data,
-    },
-{
-      componentName: "Main106",
-      component: Main106,
-      variants: main106Data,
-    },
-{
-      componentName: "Main107",
-      component: Main107,
-      variants: main107Data,
-    },
-{
-      componentName: "Main200",
-      component: Main200,
-      variants: main200Data,
-    },
-{
-      componentName: "Main300",
-      component: Main300,
-      variants: main300Data,
-    },
-{
-      componentName: "Main400",
-      component: Main400,
-      variants: main400Data,
-    },
-{
-      componentName: "Main500",
-      component: Main500,
-      variants: main500Data,
-    },
-{
-      componentName: "Main600",
-      component: Main600,
-      variants: main600Data,
-    },
-{
-      componentName: "Mapi32451",
-      component: Mapi32451,
-      variants: mapi32451Data,
-    },
-{
-      componentName: "Mapi32501",
-      component: Mapi32501,
-      variants: mapi32501Data,
-    },
-{
-      componentName: "Mapi32801",
-      component: Mapi32801,
-      variants: mapi32801Data,
-    },
-{
-      componentName: "Mapi32IconAttach",
-      component: Mapi32IconAttach,
-      variants: mapi32IconAttachData,
-    },
-{
-      componentName: "Mapisp32100",
-      component: Mapisp32100,
-      variants: mapisp32100Data,
-    },
-{
-      componentName: "Mcdpkgtm3000",
-      component: Mcdpkgtm3000,
-      variants: mcdpkgtm3000Data,
-    },
-{
-      componentName: "Mcm3200",
-      component: Mcm3200,
-      variants: mcm3200Data,
-    },
-{
-      componentName: "Mcm3201",
-      component: Mcm3201,
-      variants: mcm3201Data,
-    },
-{
-      componentName: "Mcm3202",
-      component: Mcm3202,
-      variants: mcm3202Data,
-    },
-{
-      componentName: "Mcm3203",
-      component: Mcm3203,
-      variants: mcm3203Data,
-    },
-{
-      componentName: "Mcm401",
-      component: Mcm401,
-      variants: mcm401Data,
-    },
-{
-      componentName: "Mcm502",
-      component: Mcm502,
-      variants: mcm502Data,
-    },
-{
-      componentName: "McmEarth",
-      component: McmEarth,
-      variants: mcmEarthData,
-    },
-{
-      componentName: "McmPhone",
-      component: McmPhone,
-      variants: mcmPhoneData,
-    },
-{
-      componentName: "Mdisp321",
-      component: Mdisp321,
-      variants: mdisp321Data,
-    },
-{
-      componentName: "MediaAudio",
-      component: MediaAudio,
-      variants: mediaAudioData,
-    },
-{
-      componentName: "MediaCd",
-      component: MediaCd,
-      variants: mediaCdData,
-    },
-{
-      componentName: "MediaVideo",
-      component: MediaVideo,
-      variants: mediaVideoData,
-    },
-{
-      componentName: "Memory",
-      component: Memory,
-      variants: memoryData,
-    },
-{
-      componentName: "Message",
-      component: Message,
-      variants: messageData,
-    },
-{
-      componentName: "Mic",
-      component: Mic,
-      variants: micData,
-    },
-{
-      componentName: "MicrosoftExchange",
-      component: MicrosoftExchange,
-      variants: microsoftExchangeData,
-    },
-{
-      componentName: "MicrosoftNetwork",
-      component: MicrosoftNetwork,
-      variants: microsoftNetworkData,
-    },
-{
-      componentName: "Mipac",
-      component: Mipac,
-      variants: mipacData,
-    },
-{
-      componentName: "Mkcompat900",
-      component: Mkcompat900,
-      variants: mkcompat900Data,
-    },
-{
-      componentName: "Mlcfg32129",
-      component: Mlcfg32129,
-      variants: mlcfg32129Data,
-    },
-{
-      componentName: "Mmsys100",
-      component: Mmsys100,
-      variants: mmsys100Data,
-    },
-{
-      componentName: "Mmsys101",
-      component: Mmsys101,
-      variants: mmsys101Data,
-    },
-{
-      componentName: "Mmsys102",
-      component: Mmsys102,
-      variants: mmsys102Data,
-    },
-{
-      componentName: "Mmsys103",
-      component: Mmsys103,
-      variants: mmsys103Data,
-    },
-{
-      componentName: "Mmsys104",
-      component: Mmsys104,
-      variants: mmsys104Data,
-    },
-{
-      componentName: "Mmsys105",
-      component: Mmsys105,
-      variants: mmsys105Data,
-    },
-{
-      componentName: "Mmsys106",
-      component: Mmsys106,
-      variants: mmsys106Data,
-    },
-{
-      componentName: "Mmsys107",
-      component: Mmsys107,
-      variants: mmsys107Data,
-    },
-{
-      componentName: "Mmsys108",
-      component: Mmsys108,
-      variants: mmsys108Data,
-    },
-{
-      componentName: "Mmsys109",
-      component: Mmsys109,
-      variants: mmsys109Data,
-    },
-{
-      componentName: "Mmsys110",
-      component: Mmsys110,
-      variants: mmsys110Data,
-    },
-{
-      componentName: "Mmsys111",
-      component: Mmsys111,
-      variants: mmsys111Data,
-    },
-{
-      componentName: "Mmsys112",
-      component: Mmsys112,
-      variants: mmsys112Data,
-    },
-{
-      componentName: "Mmsys113",
-      component: Mmsys113,
-      variants: mmsys113Data,
-    },
-{
-      componentName: "Mmsys114",
-      component: Mmsys114,
-      variants: mmsys114Data,
-    },
-{
-      componentName: "Mmsys115",
-      component: Mmsys115,
-      variants: mmsys115Data,
-    },
-{
-      componentName: "Mmsys116",
-      component: Mmsys116,
-      variants: mmsys116Data,
-    },
-{
-      componentName: "Mmsys117",
-      component: Mmsys117,
-      variants: mmsys117Data,
-    },
-{
-      componentName: "Mmsys118",
-      component: Mmsys118,
-      variants: mmsys118Data,
-    },
-{
-      componentName: "Mmsys119",
-      component: Mmsys119,
-      variants: mmsys119Data,
-    },
-{
-      componentName: "Mmsys120",
-      component: Mmsys120,
-      variants: mmsys120Data,
-    },
-{
-      componentName: "Mmsys121",
-      component: Mmsys121,
-      variants: mmsys121Data,
-    },
-{
-      componentName: "Mmsys122",
-      component: Mmsys122,
-      variants: mmsys122Data,
-    },
-{
-      componentName: "Mmsys123",
-      component: Mmsys123,
-      variants: mmsys123Data,
-    },
-{
-      componentName: "Mmsys124",
-      component: Mmsys124,
-      variants: mmsys124Data,
-    },
-{
-      componentName: "Mmsys90",
-      component: Mmsys90,
-      variants: mmsys90Data,
-    },
-{
-      componentName: "Mmsys99",
-      component: Mmsys99,
-      variants: mmsys99Data,
-    },
-{
-      componentName: "Moscudll128",
-      component: Moscudll128,
-      variants: moscudll128Data,
-    },
-{
-      componentName: "Mplayer10",
-      component: Mplayer10,
-      variants: mplayer10Data,
-    },
-{
-      componentName: "Mplayer11",
-      component: Mplayer11,
-      variants: mplayer11Data,
-    },
-{
-      componentName: "Mplayer12",
-      component: Mplayer12,
-      variants: mplayer12Data,
-    },
-{
-      componentName: "Mplayer13",
-      component: Mplayer13,
-      variants: mplayer13Data,
-    },
-{
-      componentName: "Mplayer14",
-      component: Mplayer14,
-      variants: mplayer14Data,
-    },
-{
-      componentName: "Mplayer15",
-      component: Mplayer15,
-      variants: mplayer15Data,
-    },
-{
-      componentName: "Mplayer16",
-      component: Mplayer16,
-      variants: mplayer16Data,
-    },
-{
-      componentName: "Mplayer110",
-      component: Mplayer110,
-      variants: mplayer110Data,
-    },
-{
-      componentName: "Mplayer111",
-      component: Mplayer111,
-      variants: mplayer111Data,
-    },
-{
-      componentName: "Mplayer112",
-      component: Mplayer112,
-      variants: mplayer112Data,
-    },
-{
-      componentName: "Mplayer113",
-      component: Mplayer113,
-      variants: mplayer113Data,
-    },
-{
-      componentName: "Mplayer114",
-      component: Mplayer114,
-      variants: mplayer114Data,
-    },
-{
-      componentName: "Mplayer115",
-      component: Mplayer115,
-      variants: mplayer115Data,
-    },
-{
-      componentName: "Mplayer116",
-      component: Mplayer116,
-      variants: mplayer116Data,
-    },
-{
-      componentName: "Mprserv120",
-      component: Mprserv120,
-      variants: mprserv120Data,
-    },
-{
-      componentName: "Mprserv121",
-      component: Mprserv121,
-      variants: mprserv121Data,
-    },
-{
-      componentName: "Mprserv68",
-      component: Mprserv68,
-      variants: mprserv68Data,
-    },
-{
-      componentName: "MsDos",
-      component: MsDos,
-      variants: msDosData,
-    },
-{
-      componentName: "Msacm3210",
-      component: Msacm3210,
-      variants: msacm3210Data,
-    },
-{
-      componentName: "MsawtAwtIcon",
-      component: MsawtAwtIcon,
-      variants: msawtAwtIconData,
-    },
-{
-      componentName: "Msfs321951",
-      component: Msfs321951,
-      variants: msfs321951Data,
-    },
-{
-      componentName: "Mshearts1",
-      component: Mshearts1,
-      variants: mshearts1Data,
-    },
-{
-      componentName: "Mshtml32528",
-      component: Mshtml32528,
-      variants: mshtml32528Data,
-    },
-{
-      componentName: "Mshtml32529",
-      component: Mshtml32529,
-      variants: mshtml32529Data,
-    },
-{
-      componentName: "Mshtml32534",
-      component: Mshtml32534,
-      variants: mshtml32534Data,
-    },
-{
-      componentName: "Mshtml32535",
-      component: Mshtml32535,
-      variants: mshtml32535Data,
-    },
-{
-      componentName: "Mshtml32536",
-      component: Mshtml32536,
-      variants: mshtml32536Data,
-    },
-{
-      componentName: "Mshtml32537",
-      component: Mshtml32537,
-      variants: mshtml32537Data,
-    },
-{
-      componentName: "Mshtml32538",
-      component: Mshtml32538,
-      variants: mshtml32538Data,
-    },
-{
-      componentName: "Mshtml32539",
-      component: Mshtml32539,
-      variants: mshtml32539Data,
-    },
-{
-      componentName: "Mshtml32540",
-      component: Mshtml32540,
-      variants: mshtml32540Data,
-    },
-{
-      componentName: "Mshtml32541",
-      component: Mshtml32541,
-      variants: mshtml32541Data,
-    },
-{
-      componentName: "Mshtml32542",
-      component: Mshtml32542,
-      variants: mshtml32542Data,
-    },
-{
-      componentName: "Mshtml32543",
-      component: Mshtml32543,
-      variants: mshtml32543Data,
-    },
-{
-      componentName: "Mshtml32544",
-      component: Mshtml32544,
-      variants: mshtml32544Data,
-    },
-{
-      componentName: "Mshtml32545",
-      component: Mshtml32545,
-      variants: mshtml32545Data,
-    },
-{
-      componentName: "Mshtml32546",
-      component: Mshtml32546,
-      variants: mshtml32546Data,
-    },
-{
-      componentName: "Mshtml32547",
-      component: Mshtml32547,
-      variants: mshtml32547Data,
-    },
-{
-      componentName: "Mshtml32548",
-      component: Mshtml32548,
-      variants: mshtml32548Data,
-    },
-{
-      componentName: "Mshtml32549",
-      component: Mshtml32549,
-      variants: mshtml32549Data,
-    },
-{
-      componentName: "Mshtml32550",
-      component: Mshtml32550,
-      variants: mshtml32550Data,
-    },
-{
-      componentName: "Mshtml32551",
-      component: Mshtml32551,
-      variants: mshtml32551Data,
-    },
-{
-      componentName: "Mshtml32552",
-      component: Mshtml32552,
-      variants: mshtml32552Data,
-    },
-{
-      componentName: "Mshtml32553",
-      component: Mshtml32553,
-      variants: mshtml32553Data,
-    },
-{
-      componentName: "Msnp32FolderIcon",
-      component: Msnp32FolderIcon,
-      variants: msnp32FolderIconData,
-    },
-{
-      componentName: "Msnp32ServerIcon",
-      component: Msnp32ServerIcon,
-      variants: msnp32ServerIconData,
-    },
-{
-      componentName: "Msnp32WrkgrpIcon",
-      component: Msnp32WrkgrpIcon,
-      variants: msnp32WrkgrpIconData,
-    },
-{
-      componentName: "Msnsetup1",
-      component: Msnsetup1,
-      variants: msnsetup1Data,
-    },
-{
-      componentName: "Msnsign100",
-      component: Msnsign100,
-      variants: msnsign100Data,
-    },
-{
-      componentName: "Msnsign4001",
-      component: Msnsign4001,
-      variants: msnsign4001Data,
-    },
-{
-      componentName: "MsnsignIcoApp",
-      component: MsnsignIcoApp,
-      variants: msnsignIcoAppData,
-    },
-{
-      componentName: "Msnstart1",
-      component: Msnstart1,
-      variants: msnstart1Data,
-    },
-{
-      componentName: "Msnstart100",
-      component: Msnstart100,
-      variants: msnstart100Data,
-    },
-{
-      componentName: "Msnstart110",
-      component: Msnstart110,
-      variants: msnstart110Data,
-    },
-{
-      componentName: "Msnstart120",
-      component: Msnstart120,
-      variants: msnstart120Data,
-    },
-{
-      componentName: "Msnsvc3000",
-      component: Msnsvc3000,
-      variants: msnsvc3000Data,
-    },
-{
-      componentName: "Mspaint",
-      component: Mspaint,
-      variants: mspaintData,
-    },
-{
-      componentName: "Msrating102",
-      component: Msrating102,
-      variants: msrating102Data,
-    },
-{
-      componentName: "Msrating103",
-      component: Msrating103,
-      variants: msrating103Data,
-    },
-{
-      componentName: "Msrating104",
-      component: Msrating104,
-      variants: msrating104Data,
-    },
-{
-      componentName: "Msrating105",
-      component: Msrating105,
-      variants: msrating105Data,
-    },
-{
-      componentName: "Msrating106",
-      component: Msrating106,
-      variants: msrating106Data,
-    },
-{
-      componentName: "Msrating107",
-      component: Msrating107,
-      variants: msrating107Data,
-    },
-{
-      componentName: "Msrating108",
-      component: Msrating108,
-      variants: msrating108Data,
-    },
-{
-      componentName: "Msrating109",
-      component: Msrating109,
-      variants: msrating109Data,
-    },
-{
-      componentName: "Msvfw32943",
-      component: Msvfw32943,
-      variants: msvfw32943Data,
-    },
-{
-      componentName: "Mute",
-      component: Mute,
-      variants: muteData,
-    },
-{
-      componentName: "MystifyYourMind100",
-      component: MystifyYourMind100,
-      variants: mystifyYourMind100Data,
-    },
-{
-      componentName: "Netwatch101",
-      component: Netwatch101,
-      variants: netwatch101Data,
-    },
-{
-      componentName: "Network",
-      component: Network,
-      variants: networkData,
-    },
-{
-      componentName: "Network2",
-      component: Network2,
-      variants: network2Data,
-    },
-{
-      componentName: "Network3",
-      component: Network3,
-      variants: network3Data,
-    },
-{
-      componentName: "New",
-      component: New,
-      variants: newData,
-    },
-{
-      componentName: "New16",
-      component: New16,
-      variants: new16Data,
-    },
-{
-      componentName: "Notepad",
-      component: Notepad,
-      variants: notepadData,
-    },
-{
-      componentName: "Notepad1",
-      component: Notepad1,
-      variants: notepad1Data,
-    },
-{
-      componentName: "Notepad2",
-      component: Notepad2,
-      variants: notepad2Data,
-    },
-{
-      componentName: "NumPage",
-      component: NumPage,
-      variants: numPageData,
-    },
-{
-      componentName: "Nwnp32FolderIcon",
-      component: Nwnp32FolderIcon,
-      variants: nwnp32FolderIconData,
-    },
-{
-      componentName: "Nwnp32PrinterIcon",
-      component: Nwnp32PrinterIcon,
-      variants: nwnp32PrinterIconData,
-    },
-{
-      componentName: "Nwnp32ServerIcon",
-      component: Nwnp32ServerIcon,
-      variants: nwnp32ServerIconData,
-    },
-{
-      componentName: "Nwnp32WrkgrpIcon",
-      component: Nwnp32WrkgrpIcon,
-      variants: nwnp32WrkgrpIconData,
-    },
-{
-      componentName: "Oidis400Seqfileicon",
-      component: Oidis400Seqfileicon,
-      variants: oidis400SeqfileiconData,
-    },
-{
-      componentName: "Oislb400DcScanIco",
-      component: Oislb400DcScanIco,
-      variants: oislb400DcScanIcoData,
-    },
-{
-      componentName: "Oiui400Imgstamp",
-      component: Oiui400Imgstamp,
-      variants: oiui400ImgstampData,
-    },
-{
-      componentName: "Oiui400Textstamp",
-      component: Oiui400Textstamp,
-      variants: oiui400TextstampData,
-    },
-{
-      componentName: "Ole328",
-      component: Ole328,
-      variants: ole328Data,
-    },
-{
-      componentName: "Open",
-      component: Open,
-      variants: openData,
-    },
-{
-      componentName: "Optional3000",
-      component: Optional3000,
-      variants: optional3000Data,
-    },
-{
-      componentName: "OrderAs",
-      component: OrderAs,
-      variants: orderAsData,
-    },
-{
-      componentName: "OrderDs",
-      component: OrderDs,
-      variants: orderDsData,
-    },
-{
-      componentName: "Packager",
-      component: Packager,
-      variants: packagerData,
-    },
-{
-      componentName: "Packager1",
-      component: Packager1,
-      variants: packager1Data,
-    },
-{
-      componentName: "ParaBul",
-      component: ParaBul,
-      variants: paraBulData,
-    },
-{
-      componentName: "ParaNum",
-      component: ParaNum,
-      variants: paraNumData,
-    },
-{
-      componentName: "Password100",
-      component: Password100,
-      variants: password100Data,
-    },
-{
-      componentName: "Password1000",
-      component: Password1000,
-      variants: password1000Data,
-    },
-{
-      componentName: "Password1010",
-      component: Password1010,
-      variants: password1010Data,
-    },
-{
-      componentName: "Paste",
-      component: Paste,
-      variants: pasteData,
-    },
-{
-      componentName: "Pbrush1",
-      component: Pbrush1,
-      variants: pbrush1Data,
-    },
-{
-      componentName: "Pen",
-      component: Pen,
-      variants: penData,
-    },
-{
-      componentName: "Person116",
-      component: Person116,
-      variants: person116Data,
-    },
-{
-      componentName: "Phone",
-      component: Phone,
-      variants: phoneData,
-    },
-{
-      componentName: "Phone2",
-      component: Phone2,
-      variants: phone2Data,
-    },
-{
-      componentName: "Playd16",
-      component: Playd16,
-      variants: playd16Data,
-    },
-{
-      componentName: "Playp16",
-      component: Playp16,
-      variants: playp16Data,
-    },
-{
-      componentName: "Plugin",
-      component: Plugin,
-      variants: pluginData,
-    },
-{
-      componentName: "Plugin2",
-      component: Plugin2,
-      variants: plugin2Data,
-    },
-{
-      componentName: "PowerOff",
-      component: PowerOff,
-      variants: powerOffData,
-    },
-{
-      componentName: "PowerOn",
-      component: PowerOn,
-      variants: powerOnData,
-    },
-{
-      componentName: "Powercfg205",
-      component: Powercfg205,
-      variants: powercfg205Data,
-    },
-{
-      componentName: "Powercfg210",
-      component: Powercfg210,
-      variants: powercfg210Data,
-    },
-{
-      componentName: "Powercfg211",
-      component: Powercfg211,
-      variants: powercfg211Data,
-    },
-{
-      componentName: "Print",
-      component: Print,
-      variants: printData,
-    },
-{
-      componentName: "Print2",
-      component: Print2,
-      variants: print2Data,
-    },
-{
-      componentName: "Printer",
-      component: Printer,
-      variants: printerData,
-    },
-{
-      componentName: "PrinterCalendar",
-      component: PrinterCalendar,
-      variants: printerCalendarData,
-    },
-{
-      componentName: "PrinterDrive",
-      component: PrinterDrive,
-      variants: printerDriveData,
-    },
-{
-      componentName: "PrinterShared",
-      component: PrinterShared,
-      variants: printerSharedData,
-    },
-{
-      componentName: "ProdinvMyicon",
-      component: ProdinvMyicon,
-      variants: prodinvMyiconData,
-    },
-{
-      componentName: "Progman1",
-      component: Progman1,
-      variants: progman1Data,
-    },
-{
-      componentName: "Progman10",
-      component: Progman10,
-      variants: progman10Data,
-    },
-{
-      componentName: "Progman11",
-      component: Progman11,
-      variants: progman11Data,
-    },
-{
-      componentName: "Progman12",
-      component: Progman12,
-      variants: progman12Data,
-    },
-{
-      componentName: "Progman13",
-      component: Progman13,
-      variants: progman13Data,
-    },
-{
-      componentName: "Progman14",
-      component: Progman14,
-      variants: progman14Data,
-    },
-{
-      componentName: "Progman15",
-      component: Progman15,
-      variants: progman15Data,
-    },
-{
-      componentName: "Progman16",
-      component: Progman16,
-      variants: progman16Data,
-    },
-{
-      componentName: "Progman17",
-      component: Progman17,
-      variants: progman17Data,
-    },
-{
-      componentName: "Progman18",
-      component: Progman18,
-      variants: progman18Data,
-    },
-{
-      componentName: "Progman19",
-      component: Progman19,
-      variants: progman19Data,
-    },
-{
-      componentName: "Progman2",
-      component: Progman2,
-      variants: progman2Data,
-    },
-{
-      componentName: "Progman20",
-      component: Progman20,
-      variants: progman20Data,
-    },
-{
-      componentName: "Progman21",
-      component: Progman21,
-      variants: progman21Data,
-    },
-{
-      componentName: "Progman22",
-      component: Progman22,
-      variants: progman22Data,
-    },
-{
-      componentName: "Progman23",
-      component: Progman23,
-      variants: progman23Data,
-    },
-{
-      componentName: "Progman24",
-      component: Progman24,
-      variants: progman24Data,
-    },
-{
-      componentName: "Progman25",
-      component: Progman25,
-      variants: progman25Data,
-    },
-{
-      componentName: "Progman26",
-      component: Progman26,
-      variants: progman26Data,
-    },
-{
-      componentName: "Progman27",
-      component: Progman27,
-      variants: progman27Data,
-    },
-{
-      componentName: "Progman28",
-      component: Progman28,
-      variants: progman28Data,
-    },
-{
-      componentName: "Progman29",
-      component: Progman29,
-      variants: progman29Data,
-    },
-{
-      componentName: "Progman3",
-      component: Progman3,
-      variants: progman3Data,
-    },
-{
-      componentName: "Progman30",
-      component: Progman30,
-      variants: progman30Data,
-    },
-{
-      componentName: "Progman31",
-      component: Progman31,
-      variants: progman31Data,
-    },
-{
-      componentName: "Progman32",
-      component: Progman32,
-      variants: progman32Data,
-    },
-{
-      componentName: "Progman33",
-      component: Progman33,
-      variants: progman33Data,
-    },
-{
-      componentName: "Progman34",
-      component: Progman34,
-      variants: progman34Data,
-    },
-{
-      componentName: "Progman35",
-      component: Progman35,
-      variants: progman35Data,
-    },
-{
-      componentName: "Progman36",
-      component: Progman36,
-      variants: progman36Data,
-    },
-{
-      componentName: "Progman37",
-      component: Progman37,
-      variants: progman37Data,
-    },
-{
-      componentName: "Progman38",
-      component: Progman38,
-      variants: progman38Data,
-    },
-{
-      componentName: "Progman39",
-      component: Progman39,
-      variants: progman39Data,
-    },
-{
-      componentName: "Progman4",
-      component: Progman4,
-      variants: progman4Data,
-    },
-{
-      componentName: "Progman40",
-      component: Progman40,
-      variants: progman40Data,
-    },
-{
-      componentName: "Progman41",
-      component: Progman41,
-      variants: progman41Data,
-    },
-{
-      componentName: "Progman42",
-      component: Progman42,
-      variants: progman42Data,
-    },
-{
-      componentName: "Progman43",
-      component: Progman43,
-      variants: progman43Data,
-    },
-{
-      componentName: "Progman44",
-      component: Progman44,
-      variants: progman44Data,
-    },
-{
-      componentName: "Progman45",
-      component: Progman45,
-      variants: progman45Data,
-    },
-{
-      componentName: "Progman46",
-      component: Progman46,
-      variants: progman46Data,
-    },
-{
-      componentName: "Progman5",
-      component: Progman5,
-      variants: progman5Data,
-    },
-{
-      componentName: "Progman6",
-      component: Progman6,
-      variants: progman6Data,
-    },
-{
-      componentName: "Progman7",
-      component: Progman7,
-      variants: progman7Data,
-    },
-{
-      componentName: "Progman8",
-      component: Progman8,
-      variants: progman8Data,
-    },
-{
-      componentName: "Progman9",
-      component: Progman9,
-      variants: progman9Data,
-    },
-{
-      componentName: "Props",
-      component: Props,
-      variants: propsData,
-    },
-{
-      componentName: "Pshbtn",
-      component: Pshbtn,
-      variants: pshbtnData,
-    },
-{
-      componentName: "Qfecheck111",
-      component: Qfecheck111,
-      variants: qfecheck111Data,
-    },
-{
-      componentName: "Quartz100",
-      component: Quartz100,
-      variants: quartz100Data,
-    },
-{
-      componentName: "Quartz101",
-      component: Quartz101,
-      variants: quartz101Data,
-    },
-{
-      componentName: "Quartz102",
-      component: Quartz102,
-      variants: quartz102Data,
-    },
-{
-      componentName: "Quartz103",
-      component: Quartz103,
-      variants: quartz103Data,
-    },
-{
-      componentName: "Quartz200",
-      component: Quartz200,
-      variants: quartz200Data,
-    },
-{
-      componentName: "Quartz201",
-      component: Quartz201,
-      variants: quartz201Data,
-    },
-{
-      componentName: "Quartz202",
-      component: Quartz202,
-      variants: quartz202Data,
-    },
-{
-      componentName: "Quartz203",
-      component: Quartz203,
-      variants: quartz203Data,
-    },
-{
-      componentName: "Quartz300",
-      component: Quartz300,
-      variants: quartz300Data,
-    },
-{
-      componentName: "Quartz301",
-      component: Quartz301,
-      variants: quartz301Data,
-    },
-{
-      componentName: "QuestionBubble",
-      component: QuestionBubble,
-      variants: questionBubbleData,
-    },
-{
-      componentName: "Quikview1",
-      component: Quikview1,
-      variants: quikview1Data,
-    },
-{
-      componentName: "Quikview2",
-      component: Quikview2,
-      variants: quikview2Data,
-    },
-{
-      componentName: "Quikview3",
-      component: Quikview3,
-      variants: quikview3Data,
-    },
-{
-      componentName: "Quikview4",
-      component: Quikview4,
-      variants: quikview4Data,
-    },
-{
-      componentName: "Raplayer801",
-      component: Raplayer801,
-      variants: raplayer801Data,
-    },
-{
-      componentName: "Rasapi32100",
-      component: Rasapi32100,
-      variants: rasapi32100Data,
-    },
-{
-      componentName: "Rasapi32101",
-      component: Rasapi32101,
-      variants: rasapi32101Data,
-    },
-{
-      componentName: "Rasapi32102",
-      component: Rasapi32102,
-      variants: rasapi32102Data,
-    },
-{
-      componentName: "Rasapi32103",
-      component: Rasapi32103,
-      variants: rasapi32103Data,
-    },
-{
-      componentName: "Rasapi32104",
-      component: Rasapi32104,
-      variants: rasapi32104Data,
-    },
-{
-      componentName: "ReaderCd",
-      component: ReaderCd,
-      variants: readerCdData,
-    },
-{
-      componentName: "ReaderCd2",
-      component: ReaderCd2,
-      variants: readerCd2Data,
-    },
-{
-      componentName: "ReaderClosed",
-      component: ReaderClosed,
-      variants: readerClosedData,
-    },
-{
-      componentName: "ReaderDisket",
-      component: ReaderDisket,
-      variants: readerDisketData,
-    },
-{
-      componentName: "ReaderDisket2",
-      component: ReaderDisket2,
-      variants: readerDisket2Data,
-    },
-{
-      componentName: "ReaderDisketCasset",
-      component: ReaderDisketCasset,
-      variants: readerDisketCassetData,
-    },
-{
-      componentName: "ReaderEject",
-      component: ReaderEject,
-      variants: readerEjectData,
-    },
-{
-      componentName: "ReaderNoshared",
-      component: ReaderNoshared,
-      variants: readerNosharedData,
-    },
-{
-      componentName: "ReaderOpened",
-      component: ReaderOpened,
-      variants: readerOpenedData,
-    },
-{
-      componentName: "ReaderShared",
-      component: ReaderShared,
-      variants: readerSharedData,
-    },
-{
-      componentName: "RecycleEmpty",
-      component: RecycleEmpty,
-      variants: recycleEmptyData,
-    },
-{
-      componentName: "RecycleFile",
-      component: RecycleFile,
-      variants: recycleFileData,
-    },
-{
-      componentName: "RecycleFilefolder",
-      component: RecycleFilefolder,
-      variants: recycleFilefolderData,
-    },
-{
-      componentName: "RecycleFolder",
-      component: RecycleFolder,
-      variants: recycleFolderData,
-    },
-{
-      componentName: "RecycleFull",
-      component: RecycleFull,
-      variants: recycleFullData,
-    },
-{
-      componentName: "Redo",
-      component: Redo,
-      variants: redoData,
-    },
-{
-      componentName: "Refresh",
-      component: Refresh,
-      variants: refreshData,
-    },
-{
-      componentName: "Regedit",
-      component: Regedit,
-      variants: regeditData,
-    },
-{
-      componentName: "Regedit100",
-      component: Regedit100,
-      variants: regedit100Data,
-    },
-{
-      componentName: "Regedit101",
-      component: Regedit101,
-      variants: regedit101Data,
-    },
-{
-      componentName: "Regedit102",
-      component: Regedit102,
-      variants: regedit102Data,
-    },
-{
-      componentName: "Regedit201",
-      component: Regedit201,
-      variants: regedit201Data,
-    },
-{
-      componentName: "Regedit202",
-      component: Regedit202,
-      variants: regedit202Data,
-    },
-{
-      componentName: "Regedit203",
-      component: Regedit203,
-      variants: regedit203Data,
-    },
-{
-      componentName: "Regedit204",
-      component: Regedit204,
-      variants: regedit204Data,
-    },
-{
-      componentName: "Regedit205",
-      component: Regedit205,
-      variants: regedit205Data,
-    },
-{
-      componentName: "Regedit206",
-      component: Regedit206,
-      variants: regedit206Data,
-    },
-{
-      componentName: "Regwiz117",
-      component: Regwiz117,
-      variants: regwiz117Data,
-    },
-{
-      componentName: "Regwiz122",
-      component: Regwiz122,
-      variants: regwiz122Data,
-    },
-{
-      componentName: "Regwiz127",
-      component: Regwiz127,
-      variants: regwiz127Data,
-    },
-{
-      componentName: "Regwiz129",
-      component: Regwiz129,
-      variants: regwiz129Data,
-    },
-{
-      componentName: "Right",
-      component: Right,
-      variants: rightData,
-    },
-{
-      componentName: "Rnaapp100",
-      component: Rnaapp100,
-      variants: rnaapp100Data,
-    },
-{
-      componentName: "Rnaapp101",
-      component: Rnaapp101,
-      variants: rnaapp101Data,
-    },
-{
-      componentName: "Rnaapp102",
-      component: Rnaapp102,
-      variants: rnaapp102Data,
-    },
-{
-      componentName: "Rnaapp110",
-      component: Rnaapp110,
-      variants: rnaapp110Data,
-    },
-{
-      componentName: "Rnaapp111",
-      component: Rnaapp111,
-      variants: rnaapp111Data,
-    },
-{
-      componentName: "Rnaapp112",
-      component: Rnaapp112,
-      variants: rnaapp112Data,
-    },
-{
-      componentName: "Rnaapp113",
-      component: Rnaapp113,
-      variants: rnaapp113Data,
-    },
-{
-      componentName: "Rnaapp114",
-      component: Rnaapp114,
-      variants: rnaapp114Data,
-    },
-{
-      componentName: "Rnanp100",
-      component: Rnanp100,
-      variants: rnanp100Data,
-    },
-{
-      componentName: "Rnaui100",
-      component: Rnaui100,
-      variants: rnaui100Data,
-    },
-{
-      componentName: "Rnaui101",
-      component: Rnaui101,
-      variants: rnaui101Data,
-    },
-{
-      componentName: "Rnaui102",
-      component: Rnaui102,
-      variants: rnaui102Data,
-    },
-{
-      componentName: "Rnaui103",
-      component: Rnaui103,
-      variants: rnaui103Data,
-    },
-{
-      componentName: "Rnaui104",
-      component: Rnaui104,
-      variants: rnaui104Data,
-    },
-{
-      componentName: "Rnaui105",
-      component: Rnaui105,
-      variants: rnaui105Data,
-    },
-{
-      componentName: "Rnaui106",
-      component: Rnaui106,
-      variants: rnaui106Data,
-    },
-{
-      componentName: "Rsrcmtr100",
-      component: Rsrcmtr100,
-      variants: rsrcmtr100Data,
-    },
-{
-      componentName: "Rsrcmtr121",
-      component: Rsrcmtr121,
-      variants: rsrcmtr121Data,
-    },
-{
-      componentName: "Rsrcmtr122",
-      component: Rsrcmtr122,
-      variants: rsrcmtr122Data,
-    },
-{
-      componentName: "Rsrcmtr123",
-      component: Rsrcmtr123,
-      variants: rsrcmtr123Data,
-    },
-{
-      componentName: "Rsrcmtr124",
-      component: Rsrcmtr124,
-      variants: rsrcmtr124Data,
-    },
-{
-      componentName: "Rsrcmtr125",
-      component: Rsrcmtr125,
-      variants: rsrcmtr125Data,
-    },
-{
-      componentName: "Rsrcmtr126",
-      component: Rsrcmtr126,
-      variants: rsrcmtr126Data,
-    },
-{
-      componentName: "Rsrcmtr127",
-      component: Rsrcmtr127,
-      variants: rsrcmtr127Data,
-    },
-{
-      componentName: "Rsrcmtr128",
-      component: Rsrcmtr128,
-      variants: rsrcmtr128Data,
-    },
-{
-      componentName: "Rsrcmtr129",
-      component: Rsrcmtr129,
-      variants: rsrcmtr129Data,
-    },
-{
-      componentName: "Rsrcmtr130",
-      component: Rsrcmtr130,
-      variants: rsrcmtr130Data,
-    },
-{
-      componentName: "Rsrcmtr131",
-      component: Rsrcmtr131,
-      variants: rsrcmtr131Data,
-    },
-{
-      componentName: "Rsrcmtr132",
-      component: Rsrcmtr132,
-      variants: rsrcmtr132Data,
-    },
-{
-      componentName: "Rsrcmtr133",
-      component: Rsrcmtr133,
-      variants: rsrcmtr133Data,
-    },
-{
-      componentName: "Rundll1",
-      component: Rundll1,
-      variants: rundll1Data,
-    },
-{
-      componentName: "Runonce106",
-      component: Runonce106,
-      variants: runonce106Data,
-    },
-{
-      componentName: "Save",
-      component: Save,
-      variants: saveData,
-    },
-{
-      componentName: "Scandskw1",
-      component: Scandskw1,
-      variants: scandskw1Data,
-    },
-{
-      componentName: "SccviewIcon",
-      component: SccviewIcon,
-      variants: sccviewIconData,
-    },
-{
-      componentName: "ScrollingMarquee100",
-      component: ScrollingMarquee100,
-      variants: scrollingMarquee100Data,
-    },
-{
-      componentName: "Sendmail2001",
-      component: Sendmail2001,
-      variants: sendmail2001Data,
-    },
-{
-      componentName: "Settings",
-      component: Settings,
-      variants: settingsData,
-    },
-{
-      componentName: "Setupslt3000",
-      component: Setupslt3000,
-      variants: setupslt3000Data,
-    },
-{
-      componentName: "Shdocvw256",
-      component: Shdocvw256,
-      variants: shdocvw256Data,
-    },
-{
-      componentName: "Shdocvw257",
-      component: Shdocvw257,
-      variants: shdocvw257Data,
-    },
-{
-      componentName: "Shdocvw258",
-      component: Shdocvw258,
-      variants: shdocvw258Data,
-    },
-{
-      componentName: "Shdocvw259",
-      component: Shdocvw259,
-      variants: shdocvw259Data,
-    },
-{
-      componentName: "Shdocvw260",
-      component: Shdocvw260,
-      variants: shdocvw260Data,
-    },
-{
-      componentName: "Shdocvw261",
-      component: Shdocvw261,
-      variants: shdocvw261Data,
-    },
-{
-      componentName: "Shdocvw262",
-      component: Shdocvw262,
-      variants: shdocvw262Data,
-    },
-{
-      componentName: "Shdocvw272",
-      component: Shdocvw272,
-      variants: shdocvw272Data,
-    },
-{
-      componentName: "Shdocvw273",
-      component: Shdocvw273,
-      variants: shdocvw273Data,
-    },
-{
-      componentName: "Shdocvw274",
-      component: Shdocvw274,
-      variants: shdocvw274Data,
-    },
-{
-      componentName: "Shdocvw275",
-      component: Shdocvw275,
-      variants: shdocvw275Data,
-    },
-{
-      componentName: "Shell321",
-      component: Shell321,
-      variants: shell321Data,
-    },
-{
-      componentName: "Shell3210",
-      component: Shell3210,
-      variants: shell3210Data,
-    },
-{
-      componentName: "Shell3211",
-      component: Shell3211,
-      variants: shell3211Data,
-    },
-{
-      componentName: "Shell3212",
-      component: Shell3212,
-      variants: shell3212Data,
-    },
-{
-      componentName: "Shell3213",
-      component: Shell3213,
-      variants: shell3213Data,
-    },
-{
-      componentName: "Shell32133",
-      component: Shell32133,
-      variants: shell32133Data,
-    },
-{
-      componentName: "Shell32134",
-      component: Shell32134,
-      variants: shell32134Data,
-    },
-{
-      componentName: "Shell32135",
-      component: Shell32135,
-      variants: shell32135Data,
-    },
-{
-      componentName: "Shell32136",
-      component: Shell32136,
-      variants: shell32136Data,
-    },
-{
-      componentName: "Shell32137",
-      component: Shell32137,
-      variants: shell32137Data,
-    },
-{
-      componentName: "Shell32138",
-      component: Shell32138,
-      variants: shell32138Data,
-    },
-{
-      componentName: "Shell32139",
-      component: Shell32139,
-      variants: shell32139Data,
-    },
-{
-      componentName: "Shell3214",
-      component: Shell3214,
-      variants: shell3214Data,
-    },
-{
-      componentName: "Shell32140",
-      component: Shell32140,
-      variants: shell32140Data,
-    },
-{
-      componentName: "Shell32141",
-      component: Shell32141,
-      variants: shell32141Data,
-    },
-{
-      componentName: "Shell32142",
-      component: Shell32142,
-      variants: shell32142Data,
-    },
-{
-      componentName: "Shell32143",
-      component: Shell32143,
-      variants: shell32143Data,
-    },
-{
-      componentName: "Shell32144",
-      component: Shell32144,
-      variants: shell32144Data,
-    },
-{
-      componentName: "Shell32145",
-      component: Shell32145,
-      variants: shell32145Data,
-    },
-{
-      componentName: "Shell32146",
-      component: Shell32146,
-      variants: shell32146Data,
-    },
-{
-      componentName: "Shell32147",
-      component: Shell32147,
-      variants: shell32147Data,
-    },
-{
-      componentName: "Shell32148",
-      component: Shell32148,
-      variants: shell32148Data,
-    },
-{
-      componentName: "Shell3215",
-      component: Shell3215,
-      variants: shell3215Data,
-    },
-{
-      componentName: "Shell32151",
-      component: Shell32151,
-      variants: shell32151Data,
-    },
-{
-      componentName: "Shell32152",
-      component: Shell32152,
-      variants: shell32152Data,
-    },
-{
-      componentName: "Shell32153",
-      component: Shell32153,
-      variants: shell32153Data,
-    },
-{
-      componentName: "Shell32154",
-      component: Shell32154,
-      variants: shell32154Data,
-    },
-{
-      componentName: "Shell32155",
-      component: Shell32155,
-      variants: shell32155Data,
-    },
-{
-      componentName: "Shell32156",
-      component: Shell32156,
-      variants: shell32156Data,
-    },
-{
-      componentName: "Shell3216",
-      component: Shell3216,
-      variants: shell3216Data,
-    },
-{
-      componentName: "Shell32160",
-      component: Shell32160,
-      variants: shell32160Data,
-    },
-{
-      componentName: "Shell32161",
-      component: Shell32161,
-      variants: shell32161Data,
-    },
-{
-      componentName: "Shell32165",
-      component: Shell32165,
-      variants: shell32165Data,
-    },
-{
-      componentName: "Shell32166",
-      component: Shell32166,
-      variants: shell32166Data,
-    },
-{
-      componentName: "Shell32167",
-      component: Shell32167,
-      variants: shell32167Data,
-    },
-{
-      componentName: "Shell32168",
-      component: Shell32168,
-      variants: shell32168Data,
-    },
-{
-      componentName: "Shell32169",
-      component: Shell32169,
-      variants: shell32169Data,
-    },
-{
-      componentName: "Shell3217",
-      component: Shell3217,
-      variants: shell3217Data,
-    },
-{
-      componentName: "Shell32170",
-      component: Shell32170,
-      variants: shell32170Data,
-    },
-{
-      componentName: "Shell3218",
-      component: Shell3218,
-      variants: shell3218Data,
-    },
-{
-      componentName: "Shell3219",
-      component: Shell3219,
-      variants: shell3219Data,
-    },
-{
-      componentName: "Shell322",
-      component: Shell322,
-      variants: shell322Data,
-    },
-{
-      componentName: "Shell3220",
-      component: Shell3220,
-      variants: shell3220Data,
-    },
-{
-      componentName: "Shell3221",
-      component: Shell3221,
-      variants: shell3221Data,
-    },
-{
-      componentName: "Shell3222",
-      component: Shell3222,
-      variants: shell3222Data,
-    },
-{
-      componentName: "Shell3223",
-      component: Shell3223,
-      variants: shell3223Data,
-    },
-{
-      componentName: "Shell3224",
-      component: Shell3224,
-      variants: shell3224Data,
-    },
-{
-      componentName: "Shell3225",
-      component: Shell3225,
-      variants: shell3225Data,
-    },
-{
-      componentName: "Shell3226",
-      component: Shell3226,
-      variants: shell3226Data,
-    },
-{
-      componentName: "Shell3227",
-      component: Shell3227,
-      variants: shell3227Data,
-    },
-{
-      componentName: "Shell3228",
-      component: Shell3228,
-      variants: shell3228Data,
-    },
-{
-      componentName: "Shell3229",
-      component: Shell3229,
-      variants: shell3229Data,
-    },
-{
-      componentName: "Shell323",
-      component: Shell323,
-      variants: shell323Data,
-    },
-{
-      componentName: "Shell3230",
-      component: Shell3230,
-      variants: shell3230Data,
-    },
-{
-      componentName: "Shell3231",
-      component: Shell3231,
-      variants: shell3231Data,
-    },
-{
-      componentName: "Shell3232",
-      component: Shell3232,
-      variants: shell3232Data,
-    },
-{
-      componentName: "Shell3233",
-      component: Shell3233,
-      variants: shell3233Data,
-    },
-{
-      componentName: "Shell3234",
-      component: Shell3234,
-      variants: shell3234Data,
-    },
-{
-      componentName: "Shell3235",
-      component: Shell3235,
-      variants: shell3235Data,
-    },
-{
-      componentName: "Shell3236",
-      component: Shell3236,
-      variants: shell3236Data,
-    },
-{
-      componentName: "Shell3237",
-      component: Shell3237,
-      variants: shell3237Data,
-    },
-{
-      componentName: "Shell3238",
-      component: Shell3238,
-      variants: shell3238Data,
-    },
-{
-      componentName: "Shell3239",
-      component: Shell3239,
-      variants: shell3239Data,
-    },
-{
-      componentName: "Shell324",
-      component: Shell324,
-      variants: shell324Data,
-    },
-{
-      componentName: "Shell3240",
-      component: Shell3240,
-      variants: shell3240Data,
-    },
-{
-      componentName: "Shell3241",
-      component: Shell3241,
-      variants: shell3241Data,
-    },
-{
-      componentName: "Shell3242",
-      component: Shell3242,
-      variants: shell3242Data,
-    },
-{
-      componentName: "Shell325",
-      component: Shell325,
-      variants: shell325Data,
-    },
-{
-      componentName: "Shell326",
-      component: Shell326,
-      variants: shell326Data,
-    },
-{
-      componentName: "Shell327",
-      component: Shell327,
-      variants: shell327Data,
-    },
-{
-      componentName: "Shell328",
-      component: Shell328,
-      variants: shell328Data,
-    },
-{
-      componentName: "Shell329",
-      component: Shell329,
-      variants: shell329Data,
-    },
-{
-      componentName: "Shortcut",
-      component: Shortcut,
-      variants: shortcutData,
-    },
-{
-      componentName: "Shortcut2",
-      component: Shortcut2,
-      variants: shortcut2Data,
-    },
-{
-      componentName: "Shscrap100",
-      component: Shscrap100,
-      variants: shscrap100Data,
-    },
-{
-      componentName: "Signup",
-      component: Signup,
-      variants: signupData,
-    },
-{
-      componentName: "Smmscrpt100",
-      component: Smmscrpt100,
-      variants: smmscrpt100Data,
-    },
-{
-      componentName: "Sndrec3210",
-      component: Sndrec3210,
-      variants: sndrec3210Data,
-    },
-{
-      componentName: "Sndrec3215",
-      component: Sndrec3215,
-      variants: sndrec3215Data,
-    },
-{
-      componentName: "Sndrec3216",
-      component: Sndrec3216,
-      variants: sndrec3216Data,
-    },
-{
-      componentName: "Sndvol32300",
-      component: Sndvol32300,
-      variants: sndvol32300Data,
-    },
-{
-      componentName: "Sndvol32301",
-      component: Sndvol32301,
-      variants: sndvol32301Data,
-    },
-{
-      componentName: "Sndvol32302",
-      component: Sndvol32302,
-      variants: sndvol32302Data,
-    },
-{
-      componentName: "Sndvol32303",
-      component: Sndvol32303,
-      variants: sndvol32303Data,
-    },
-{
-      componentName: "Sndvol32304",
-      component: Sndvol32304,
-      variants: sndvol32304Data,
-    },
-{
-      componentName: "Sol1",
-      component: Sol1,
-      variants: sol1Data,
-    },
-{
-      componentName: "Spellchk",
-      component: Spellchk,
-      variants: spellchkData,
-    },
-{
-      componentName: "Star",
-      component: Star,
-      variants: starData,
-    },
-{
-      componentName: "Svrworld",
-      component: Svrworld,
-      variants: svrworldData,
-    },
-{
-      componentName: "Swinst53000",
-      component: Swinst53000,
-      variants: swinst53000Data,
-    },
-{
-      componentName: "Syncui120",
-      component: Syncui120,
-      variants: syncui120Data,
-    },
-{
-      componentName: "Syncui121",
-      component: Syncui121,
-      variants: syncui121Data,
-    },
-{
-      componentName: "Syncui122",
-      component: Syncui122,
-      variants: syncui122Data,
-    },
-{
-      componentName: "Syncui123",
-      component: Syncui123,
-      variants: syncui123Data,
-    },
-{
-      componentName: "Syncui124",
-      component: Syncui124,
-      variants: syncui124Data,
-    },
-{
-      componentName: "Syncui125",
-      component: Syncui125,
-      variants: syncui125Data,
-    },
-{
-      componentName: "Syncui126",
-      component: Syncui126,
-      variants: syncui126Data,
-    },
-{
-      componentName: "Syncui127",
-      component: Syncui127,
-      variants: syncui127Data,
-    },
-{
-      componentName: "Syncui128",
-      component: Syncui128,
-      variants: syncui128Data,
-    },
-{
-      componentName: "Syncui129",
-      component: Syncui129,
-      variants: syncui129Data,
-    },
-{
-      componentName: "Syncui130",
-      component: Syncui130,
-      variants: syncui130Data,
-    },
-{
-      componentName: "Syncui131",
-      component: Syncui131,
-      variants: syncui131Data,
-    },
-{
-      componentName: "Syncui132",
-      component: Syncui132,
-      variants: syncui132Data,
-    },
-{
-      componentName: "Syncui135",
-      component: Syncui135,
-      variants: syncui135Data,
-    },
-{
-      componentName: "SysPackage",
-      component: SysPackage,
-      variants: sysPackageData,
-    },
-{
-      componentName: "Sysedit1",
-      component: Sysedit1,
-      variants: sysedit1Data,
-    },
-{
-      componentName: "Sysedit2",
-      component: Sysedit2,
-      variants: sysedit2Data,
-    },
-{
-      componentName: "Sysmon1000",
-      component: Sysmon1000,
-      variants: sysmon1000Data,
-    },
-{
-      componentName: "Systray200",
-      component: Systray200,
-      variants: systray200Data,
-    },
-{
-      componentName: "Systray210",
-      component: Systray210,
-      variants: systray210Data,
-    },
-{
-      componentName: "Systray220",
-      component: Systray220,
-      variants: systray220Data,
-    },
-{
-      componentName: "Systray221",
-      component: Systray221,
-      variants: systray221Data,
-    },
-{
-      componentName: "Systray300",
-      component: Systray300,
-      variants: systray300Data,
-    },
-{
-      componentName: "Systray301",
-      component: Systray301,
-      variants: systray301Data,
-    },
-{
-      componentName: "Systray302",
-      component: Systray302,
-      variants: systray302Data,
-    },
-{
-      componentName: "Systray303",
-      component: Systray303,
-      variants: systray303Data,
-    },
-{
-      componentName: "Systray304",
-      component: Systray304,
-      variants: systray304Data,
-    },
-{
-      componentName: "Systray305",
-      component: Systray305,
-      variants: systray305Data,
-    },
-{
-      componentName: "Systray306",
-      component: Systray306,
-      variants: systray306Data,
-    },
-{
-      componentName: "Taskman100",
-      component: Taskman100,
-      variants: taskman100Data,
-    },
-{
-      componentName: "Textchat",
-      component: Textchat,
-      variants: textchatData,
-    },
-{
-      componentName: "Textchat2",
-      component: Textchat2,
-      variants: textchat2Data,
-    },
-{
-      componentName: "Tick",
-      component: Tick,
-      variants: tickData,
-    },
-{
-      componentName: "Time",
-      component: Time,
-      variants: timeData,
-    },
-{
-      componentName: "Timedate",
-      component: Timedate,
-      variants: timedateData,
-    },
-{
-      componentName: "Timedate200",
-      component: Timedate200,
-      variants: timedate200Data,
-    },
-{
-      componentName: "TimerFont",
-      component: TimerFont,
-      variants: timerFontData,
-    },
-{
-      componentName: "Toupper",
-      component: Toupper,
-      variants: toupperData,
-    },
-{
-      componentName: "Tour1",
-      component: Tour1,
-      variants: tour1Data,
-    },
-{
-      componentName: "Tree",
-      component: Tree,
-      variants: treeData,
-    },
-{
-      componentName: "Tssoft3210",
-      component: Tssoft3210,
-      variants: tssoft3210Data,
-    },
-{
-      componentName: "Twunk32TwunkIcon",
-      component: Twunk32TwunkIcon,
-      variants: twunk32TwunkIconData,
-    },
-{
-      componentName: "Ulclient1002",
-      component: Ulclient1002,
-      variants: ulclient1002Data,
-    },
-{
-      componentName: "Ulclient1235",
-      component: Ulclient1235,
-      variants: ulclient1235Data,
-    },
-{
-      componentName: "Underlne",
-      component: Underlne,
-      variants: underlneData,
-    },
-{
-      componentName: "Undo",
-      component: Undo,
-      variants: undoData,
-    },
-{
-      componentName: "Uninst1000",
-      component: Uninst1000,
-      variants: uninst1000Data,
-    },
-{
-      componentName: "Uninstall",
-      component: Uninstall,
-      variants: uninstallData,
-    },
-{
-      componentName: "Unmute",
-      component: Unmute,
-      variants: unmuteData,
-    },
-{
-      componentName: "Url102",
-      component: Url102,
-      variants: url102Data,
-    },
-{
-      componentName: "Url103",
-      component: Url103,
-      variants: url103Data,
-    },
-{
-      componentName: "Url104",
-      component: Url104,
-      variants: url104Data,
-    },
-{
-      componentName: "Url105",
-      component: Url105,
-      variants: url105Data,
-    },
-{
-      componentName: "Url1102",
-      component: Url1102,
-      variants: url1102Data,
-    },
-{
-      componentName: "Url1103",
-      component: Url1103,
-      variants: url1103Data,
-    },
-{
-      componentName: "Url1104",
-      component: Url1104,
-      variants: url1104Data,
-    },
-{
-      componentName: "Url1105",
-      component: Url1105,
-      variants: url1105Data,
-    },
-{
-      componentName: "User",
-      component: User,
-      variants: userData,
-    },
-{
-      componentName: "User1",
-      component: User1,
-      variants: user1Data,
-    },
-{
-      componentName: "User2",
-      component: User2,
-      variants: user2Data,
-    },
-{
-      componentName: "User3",
-      component: User3,
-      variants: user3Data,
-    },
-{
-      componentName: "User4",
-      component: User4,
-      variants: user4Data,
-    },
-{
-      componentName: "User5",
-      component: User5,
-      variants: user5Data,
-    },
-{
-      componentName: "User6",
-      component: User6,
-      variants: user6Data,
-    },
-{
-      componentName: "User7",
-      component: User7,
-      variants: user7Data,
-    },
-{
-      componentName: "Voxplay3000",
-      component: Voxplay3000,
-      variants: voxplay3000Data,
-    },
-{
-      componentName: "Vvexe321",
-      component: Vvexe321,
-      variants: vvexe321Data,
-    },
-{
-      componentName: "Wab321010",
-      component: Wab321010,
-      variants: wab321010Data,
-    },
-{
-      componentName: "Wab321011",
-      component: Wab321011,
-      variants: wab321011Data,
-    },
-{
-      componentName: "Wab321012",
-      component: Wab321012,
-      variants: wab321012Data,
-    },
-{
-      componentName: "Wab321013",
-      component: Wab321013,
-      variants: wab321013Data,
-    },
-{
-      componentName: "Wab321014",
-      component: Wab321014,
-      variants: wab321014Data,
-    },
-{
-      componentName: "Wab321015",
-      component: Wab321015,
-      variants: wab321015Data,
-    },
-{
-      componentName: "Wab321016",
-      component: Wab321016,
-      variants: wab321016Data,
-    },
-{
-      componentName: "Wab321017",
-      component: Wab321017,
-      variants: wab321017Data,
-    },
-{
-      componentName: "Wab321018",
-      component: Wab321018,
-      variants: wab321018Data,
-    },
-{
-      componentName: "Wab321019",
-      component: Wab321019,
-      variants: wab321019Data,
-    },
-{
-      componentName: "Wab321020",
-      component: Wab321020,
-      variants: wab321020Data,
-    },
-{
-      componentName: "Wangimg128",
-      component: Wangimg128,
-      variants: wangimg128Data,
-    },
-{
-      componentName: "Wangimg129",
-      component: Wangimg129,
-      variants: wangimg129Data,
-    },
-{
-      componentName: "Wangimg130",
-      component: Wangimg130,
-      variants: wangimg130Data,
-    },
-{
-      componentName: "Warning",
-      component: Warning,
-      variants: warningData,
-    },
-{
-      componentName: "WebLink",
-      component: WebLink,
-      variants: webLinkData,
-    },
-{
-      componentName: "WebOpen",
-      component: WebOpen,
-      variants: webOpenData,
-    },
-{
-      componentName: "WebTxfr",
-      component: WebTxfr,
-      variants: webTxfrData,
-    },
-{
-      componentName: "Websrch",
-      component: Websrch,
-      variants: websrchData,
-    },
-{
-      componentName: "Wgpocpl128",
-      component: Wgpocpl128,
-      variants: wgpocpl128Data,
-    },
-{
-      componentName: "What",
-      component: What,
-      variants: whatData,
-    },
-{
-      componentName: "WindowAbc",
-      component: WindowAbc,
-      variants: windowAbcData,
-    },
-{
-      componentName: "WindowAccessibility",
-      component: WindowAccessibility,
-      variants: windowAccessibilityData,
-    },
-{
-      componentName: "WindowGraph",
-      component: WindowGraph,
-      variants: windowGraphData,
-    },
-{
-      componentName: "WindowsExplorer",
-      component: WindowsExplorer,
-      variants: windowsExplorerData,
-    },
-{
-      componentName: "Winfile1",
-      component: Winfile1,
-      variants: winfile1Data,
-    },
-{
-      componentName: "Winfile2",
-      component: Winfile2,
-      variants: winfile2Data,
-    },
-{
-      componentName: "Winfile3",
-      component: Winfile3,
-      variants: winfile3Data,
-    },
-{
-      componentName: "Winfile4",
-      component: Winfile4,
-      variants: winfile4Data,
-    },
-{
-      componentName: "Winhlp324000",
-      component: Winhlp324000,
-      variants: winhlp324000Data,
-    },
-{
-      componentName: "Winhlp324001",
-      component: Winhlp324001,
-      variants: winhlp324001Data,
-    },
-{
-      componentName: "Winhlp324002",
-      component: Winhlp324002,
-      variants: winhlp324002Data,
-    },
-{
-      componentName: "Wininet32546",
-      component: Wininet32546,
-      variants: wininet32546Data,
-    },
-{
-      componentName: "Winmine1",
-      component: Winmine1,
-      variants: winmine1Data,
-    },
-{
-      componentName: "Winpopup1",
-      component: Winpopup1,
-      variants: winpopup1Data,
-    },
-{
-      componentName: "Winpopup2",
-      component: Winpopup2,
-      variants: winpopup2Data,
-    },
-{
-      componentName: "Winpopup3",
-      component: Winpopup3,
-      variants: winpopup3Data,
-    },
-{
-      componentName: "Wintrust103",
-      component: Wintrust103,
-      variants: wintrust103Data,
-    },
-{
-      componentName: "Wmsui321000",
-      component: Wmsui321000,
-      variants: wmsui321000Data,
-    },
-{
-      componentName: "Wmsui321001",
-      component: Wmsui321001,
-      variants: wmsui321001Data,
-    },
-{
-      componentName: "Wmsui321306",
-      component: Wmsui321306,
-      variants: wmsui321306Data,
-    },
-{
-      componentName: "Wmsui322219",
-      component: Wmsui322219,
-      variants: wmsui322219Data,
-    },
-{
-      componentName: "Wmsui322220",
-      component: Wmsui322220,
-      variants: wmsui322220Data,
-    },
-{
-      componentName: "Wmsui322221",
-      component: Wmsui322221,
-      variants: wmsui322221Data,
-    },
-{
-      componentName: "Wmsui322223",
-      component: Wmsui322223,
-      variants: wmsui322223Data,
-    },
-{
-      componentName: "Wmsui322224",
-      component: Wmsui322224,
-      variants: wmsui322224Data,
-    },
-{
-      componentName: "Wmsui322225",
-      component: Wmsui322225,
-      variants: wmsui322225Data,
-    },
-{
-      componentName: "Wmsui322226",
-      component: Wmsui322226,
-      variants: wmsui322226Data,
-    },
-{
-      componentName: "Wmsui323911",
-      component: Wmsui323911,
-      variants: wmsui323911Data,
-    },
-{
-      componentName: "Wmsui323912",
-      component: Wmsui323912,
-      variants: wmsui323912Data,
-    },
-{
-      componentName: "Wmsui323919",
-      component: Wmsui323919,
-      variants: wmsui323919Data,
-    },
-{
-      componentName: "Wmsui323920",
-      component: Wmsui323920,
-      variants: wmsui323920Data,
-    },
-{
-      componentName: "Wmsui323924",
-      component: Wmsui323924,
-      variants: wmsui323924Data,
-    },
-{
-      componentName: "Wmsui323926",
-      component: Wmsui323926,
-      variants: wmsui323926Data,
-    },
-{
-      componentName: "Wmsui323929",
-      component: Wmsui323929,
-      variants: wmsui323929Data,
-    },
-{
-      componentName: "Wmsui323934",
-      component: Wmsui323934,
-      variants: wmsui323934Data,
-    },
-{
-      componentName: "Wmsui323935",
-      component: Wmsui323935,
-      variants: wmsui323935Data,
-    },
-{
-      componentName: "Wmsui323936",
-      component: Wmsui323936,
-      variants: wmsui323936Data,
-    },
-{
-      componentName: "Wmsui323938",
-      component: Wmsui323938,
-      variants: wmsui323938Data,
-    },
-{
-      componentName: "Wmsui325084",
-      component: Wmsui325084,
-      variants: wmsui325084Data,
-    },
-{
-      componentName: "Wmsui325085",
-      component: Wmsui325085,
-      variants: wmsui325085Data,
-    },
-{
-      componentName: "Wmsui325086",
-      component: Wmsui325086,
-      variants: wmsui325086Data,
-    },
-{
-      componentName: "Wmsui325087",
-      component: Wmsui325087,
-      variants: wmsui325087Data,
-    },
-{
-      componentName: "Wmsui325900",
-      component: Wmsui325900,
-      variants: wmsui325900Data,
-    },
-{
-      componentName: "Wmsui325901",
-      component: Wmsui325901,
-      variants: wmsui325901Data,
-    },
-{
-      componentName: "Wordpad",
-      component: Wordpad,
-      variants: wordpadData,
-    },
-{
-      componentName: "Write1",
-      component: Write1,
-      variants: write1Data,
-    },
-  ]
-  
+    componentName: "Access110",
+    component: Access110,
+    variants: access110Data,
+  },
+  {
+    componentName: "Access218",
+    component: Access218,
+    variants: access218Data,
+  },
+  {
+    componentName: "Access219",
+    component: Access219,
+    variants: access219Data,
+  },
+  {
+    componentName: "Access220",
+    component: Access220,
+    variants: access220Data,
+  },
+  {
+    componentName: "Access221",
+    component: Access221,
+    variants: access221Data,
+  },
+  {
+    componentName: "Access222",
+    component: Access222,
+    variants: access222Data,
+  },
+  {
+    componentName: "Access223",
+    component: Access223,
+    variants: access223Data,
+  },
+  {
+    componentName: "Access224",
+    component: Access224,
+    variants: access224Data,
+  },
+  {
+    componentName: "Access225",
+    component: Access225,
+    variants: access225Data,
+  },
+  {
+    componentName: "Access226",
+    component: Access226,
+    variants: access226Data,
+  },
+  {
+    componentName: "Access227",
+    component: Access227,
+    variants: access227Data,
+  },
+  {
+    componentName: "Access228",
+    component: Access228,
+    variants: access228Data,
+  },
+  {
+    componentName: "Access229",
+    component: Access229,
+    variants: access229Data,
+  },
+  {
+    componentName: "Access230",
+    component: Access230,
+    variants: access230Data,
+  },
+  {
+    componentName: "Accessibility",
+    component: Accessibility,
+    variants: accessibilityData,
+  },
+  {
+    componentName: "Actmovie303",
+    component: Actmovie303,
+    variants: actmovie303Data,
+  },
+  {
+    componentName: "Addrbook",
+    component: Addrbook,
+    variants: addrbookData,
+  },
+  {
+    componentName: "Amovie2",
+    component: Amovie2,
+    variants: amovie2Data,
+  },
+  {
+    componentName: "Appwiz1500",
+    component: Appwiz1500,
+    variants: appwiz1500Data,
+  },
+  {
+    componentName: "Appwiz1501",
+    component: Appwiz1501,
+    variants: appwiz1501Data,
+  },
+  {
+    componentName: "Appwiz1502",
+    component: Appwiz1502,
+    variants: appwiz1502Data,
+  },
+  {
+    componentName: "Appwiz1503",
+    component: Appwiz1503,
+    variants: appwiz1503Data,
+  },
+  {
+    componentName: "ArrowLeft",
+    component: ArrowLeft,
+    variants: arrowLeftData,
+  },
+  {
+    componentName: "ArrowRight",
+    component: ArrowRight,
+    variants: arrowRightData,
+  },
+  {
+    componentName: "Attach",
+    component: Attach,
+    variants: attachData,
+  },
+  {
+    componentName: "Awfext326049",
+    component: Awfext326049,
+    variants: awfext326049Data,
+  },
+  {
+    componentName: "Awfext326050",
+    component: Awfext326050,
+    variants: awfext326050Data,
+  },
+  {
+    componentName: "Awfext326051",
+    component: Awfext326051,
+    variants: awfext326051Data,
+  },
+  {
+    componentName: "Awfext326052",
+    component: Awfext326052,
+    variants: awfext326052Data,
+  },
+  {
+    componentName: "Awfext326053",
+    component: Awfext326053,
+    variants: awfext326053Data,
+  },
+  {
+    componentName: "Awfxcg321301",
+    component: Awfxcg321301,
+    variants: awfxcg321301Data,
+  },
+  {
+    componentName: "Awfxcg321302",
+    component: Awfxcg321302,
+    variants: awfxcg321302Data,
+  },
+  {
+    componentName: "Awfxcg321303",
+    component: Awfxcg321303,
+    variants: awfxcg321303Data,
+  },
+  {
+    componentName: "Awfxcg321304",
+    component: Awfxcg321304,
+    variants: awfxcg321304Data,
+  },
+  {
+    componentName: "Awfxcg321305",
+    component: Awfxcg321305,
+    variants: awfxcg321305Data,
+  },
+  {
+    componentName: "Awfxex32109",
+    component: Awfxex32109,
+    variants: awfxex32109Data,
+  },
+  {
+    componentName: "Awfxex32113",
+    component: Awfxex32113,
+    variants: awfxex32113Data,
+  },
+  {
+    componentName: "Awfxex32114",
+    component: Awfxex32114,
+    variants: awfxex32114Data,
+  },
+  {
+    componentName: "Awfxex32115",
+    component: Awfxex32115,
+    variants: awfxex32115Data,
+  },
+  {
+    componentName: "Awfxex32116",
+    component: Awfxex32116,
+    variants: awfxex32116Data,
+  },
+  {
+    componentName: "Awfxex32117",
+    component: Awfxex32117,
+    variants: awfxex32117Data,
+  },
+  {
+    componentName: "Awfxex32118",
+    component: Awfxex32118,
+    variants: awfxex32118Data,
+  },
+  {
+    componentName: "Awfxex32119",
+    component: Awfxex32119,
+    variants: awfxex32119Data,
+  },
+  {
+    componentName: "Awfxex32120",
+    component: Awfxex32120,
+    variants: awfxex32120Data,
+  },
+  {
+    componentName: "Awfxex32121",
+    component: Awfxex32121,
+    variants: awfxex32121Data,
+  },
+  {
+    componentName: "Awfxex32Awfxex",
+    component: Awfxex32Awfxex,
+    variants: awfxex32AwfxexData,
+  },
+  {
+    componentName: "Awfxex32Info",
+    component: Awfxex32Info,
+    variants: awfxex32InfoData,
+  },
+  {
+    componentName: "Awschd32400",
+    component: Awschd32400,
+    variants: awschd32400Data,
+  },
+  {
+    componentName: "Awschd32401",
+    component: Awschd32401,
+    variants: awschd32401Data,
+  },
+  {
+    componentName: "Awschd32402",
+    component: Awschd32402,
+    variants: awschd32402Data,
+  },
+  {
+    componentName: "Awsnto3249",
+    component: Awsnto3249,
+    variants: awsnto3249Data,
+  },
+  {
+    componentName: "Awsnto3250",
+    component: Awsnto3250,
+    variants: awsnto3250Data,
+  },
+  {
+    componentName: "Back",
+    component: Back,
+    variants: backData,
+  },
+  {
+    componentName: "Bat",
+    component: Bat,
+    variants: batData,
+  },
+  {
+    componentName: "BatExec",
+    component: BatExec,
+    variants: batExecData,
+  },
+  {
+    componentName: "BatExec2",
+    component: BatExec2,
+    variants: batExec2Data,
+  },
+  {
+    componentName: "BatWait",
+    component: BatWait,
+    variants: batWaitData,
+  },
+  {
+    componentName: "BillAdd",
+    component: BillAdd,
+    variants: billAddData,
+  },
+  {
+    componentName: "Binoc",
+    component: Binoc,
+    variants: binocData,
+  },
+  {
+    componentName: "BlankScreen100",
+    component: BlankScreen100,
+    variants: blankScreen100Data,
+  },
+  {
+    componentName: "Bold",
+    component: Bold,
+    variants: boldData,
+  },
+  {
+    componentName: "Bookmark",
+    component: Bookmark,
+    variants: bookmarkData,
+  },
+  {
+    componentName: "Brush",
+    component: Brush,
+    variants: brushData,
+  },
+  {
+    componentName: "Bulb",
+    component: Bulb,
+    variants: bulbData,
+  },
+  {
+    componentName: "Cachevu100",
+    component: Cachevu100,
+    variants: cachevu100Data,
+  },
+  {
+    componentName: "CalcSc",
+    component: CalcSc,
+    variants: calcScData,
+  },
+  {
+    componentName: "Calculator",
+    component: Calculator,
+    variants: calculatorData,
+  },
+  {
+    componentName: "Camera",
+    component: Camera,
+    variants: cameraData,
+  },
+  {
+    componentName: "Ccapi104",
+    component: Ccapi104,
+    variants: ccapi104Data,
+  },
+  {
+    componentName: "Ccapi105",
+    component: Ccapi105,
+    variants: ccapi105Data,
+  },
+  {
+    componentName: "Ccapi106",
+    component: Ccapi106,
+    variants: ccapi106Data,
+  },
+  {
+    componentName: "CdExe",
+    component: CdExe,
+    variants: cdExeData,
+  },
+  {
+    componentName: "CdMusic",
+    component: CdMusic,
+    variants: cdMusicData,
+  },
+  {
+    componentName: "CdSearch",
+    component: CdSearch,
+    variants: cdSearchData,
+  },
+  {
+    componentName: "Cdplayer107",
+    component: Cdplayer107,
+    variants: cdplayer107Data,
+  },
+  {
+    componentName: "Cdplayer110",
+    component: Cdplayer110,
+    variants: cdplayer110Data,
+  },
+  {
+    componentName: "Cdplayer114",
+    component: Cdplayer114,
+    variants: cdplayer114Data,
+  },
+  {
+    componentName: "Centre",
+    component: Centre,
+    variants: centreData,
+  },
+  {
+    componentName: "Charmap1",
+    component: Charmap1,
+    variants: charmap1Data,
+  },
+  {
+    componentName: "Chatshow3000",
+    component: Chatshow3000,
+    variants: chatshow3000Data,
+  },
+  {
+    componentName: "Circle",
+    component: Circle,
+    variants: circleData,
+  },
+  {
+    componentName: "Close",
+    component: Close,
+    variants: closeData,
+  },
+  {
+    componentName: "Columns",
+    component: Columns,
+    variants: columnsData,
+  },
+  {
+    componentName: "Comctl32150",
+    component: Comctl32150,
+    variants: comctl32150Data,
+  },
+  {
+    componentName: "Comdlg32528",
+    component: Comdlg32528,
+    variants: comdlg32528Data,
+  },
+  {
+    componentName: "Comdlg32529",
+    component: Comdlg32529,
+    variants: comdlg32529Data,
+  },
+  {
+    componentName: "Comdlg32530",
+    component: Comdlg32530,
+    variants: comdlg32530Data,
+  },
+  {
+    componentName: "Comdlg32531",
+    component: Comdlg32531,
+    variants: comdlg32531Data,
+  },
+  {
+    componentName: "Comdlg32532",
+    component: Comdlg32532,
+    variants: comdlg32532Data,
+  },
+  {
+    componentName: "Comdlg32533",
+    component: Comdlg32533,
+    variants: comdlg32533Data,
+  },
+  {
+    componentName: "Comdlg32534",
+    component: Comdlg32534,
+    variants: comdlg32534Data,
+  },
+  {
+    componentName: "Comdlg32535",
+    component: Comdlg32535,
+    variants: comdlg32535Data,
+  },
+  {
+    componentName: "Comdlg32536",
+    component: Comdlg32536,
+    variants: comdlg32536Data,
+  },
+  {
+    componentName: "Comdlg32537",
+    component: Comdlg32537,
+    variants: comdlg32537Data,
+  },
+  {
+    componentName: "Comdlg32538",
+    component: Comdlg32538,
+    variants: comdlg32538Data,
+  },
+  {
+    componentName: "Comdlg32539",
+    component: Comdlg32539,
+    variants: comdlg32539Data,
+  },
+  {
+    componentName: "Computer",
+    component: Computer,
+    variants: computerData,
+  },
+  {
+    componentName: "Computer2",
+    component: Computer2,
+    variants: computer2Data,
+  },
+  {
+    componentName: "Computer3",
+    component: Computer3,
+    variants: computer3Data,
+  },
+  {
+    componentName: "Computer4",
+    component: Computer4,
+    variants: computer4Data,
+  },
+  {
+    componentName: "Computer5",
+    component: Computer5,
+    variants: computer5Data,
+  },
+  {
+    componentName: "ComputerFind",
+    component: ComputerFind,
+    variants: computerFindData,
+  },
+  {
+    componentName: "Confcp102",
+    component: Confcp102,
+    variants: confcp102Data,
+  },
+  {
+    componentName: "Confcp107",
+    component: Confcp107,
+    variants: confcp107Data,
+  },
+  {
+    componentName: "Confcp108",
+    component: Confcp108,
+    variants: confcp108Data,
+  },
+  {
+    componentName: "Confcp109",
+    component: Confcp109,
+    variants: confcp109Data,
+  },
+  {
+    componentName: "Confcp1100",
+    component: Confcp1100,
+    variants: confcp1100Data,
+  },
+  {
+    componentName: "Confcp116",
+    component: Confcp116,
+    variants: confcp116Data,
+  },
+  {
+    componentName: "Confcp118",
+    component: Confcp118,
+    variants: confcp118Data,
+  },
+  {
+    componentName: "Confcp120",
+    component: Confcp120,
+    variants: confcp120Data,
+  },
+  {
+    componentName: "Conflnk102",
+    component: Conflnk102,
+    variants: conflnk102Data,
+  },
+  {
+    componentName: "Conflnk103",
+    component: Conflnk103,
+    variants: conflnk103Data,
+  },
+  {
+    componentName: "Controls3000",
+    component: Controls3000,
+    variants: controls3000Data,
+  },
+  {
+    componentName: "Copy",
+    component: Copy,
+    variants: copyData,
+  },
+  {
+    componentName: "Coreui3000",
+    component: Coreui3000,
+    variants: coreui3000Data,
+  },
+  {
+    componentName: "CurvesAndColors100",
+    component: CurvesAndColors100,
+    variants: curvesAndColors100Data,
+  },
+  {
+    componentName: "Cut",
+    component: Cut,
+    variants: cutData,
+  },
+  {
+    componentName: "D3FlowerBox100",
+    component: D3FlowerBox100,
+    variants: d3FlowerBox100Data,
+  },
+  {
+    componentName: "D3FlyingObjectsIdApp",
+    component: D3FlyingObjectsIdApp,
+    variants: d3FlyingObjectsIdAppData,
+  },
+  {
+    componentName: "D3Maze100",
+    component: D3Maze100,
+    variants: d3Maze100Data,
+  },
+  {
+    componentName: "D3PipesIdApp",
+    component: D3PipesIdApp,
+    variants: d3PipesIdAppData,
+  },
+  {
+    componentName: "D3Text100",
+    component: D3Text100,
+    variants: d3Text100Data,
+  },
+  {
+    componentName: "Data16",
+    component: Data16,
+    variants: data16Data,
+  },
+  {
+    componentName: "Date",
+    component: Date,
+    variants: dateData,
+  },
+  {
+    componentName: "Defrag",
+    component: Defrag,
+    variants: defragData,
+  },
+  {
+    componentName: "Defrag1",
+    component: Defrag1,
+    variants: defrag1Data,
+  },
+  {
+    componentName: "Defrag2",
+    component: Defrag2,
+    variants: defrag2Data,
+  },
+  {
+    componentName: "Defrag3",
+    component: Defrag3,
+    variants: defrag3Data,
+  },
+  {
+    componentName: "Defrag4",
+    component: Defrag4,
+    variants: defrag4Data,
+  },
+  {
+    componentName: "Defrag5",
+    component: Defrag5,
+    variants: defrag5Data,
+  },
+  {
+    componentName: "Defrag6",
+    component: Defrag6,
+    variants: defrag6Data,
+  },
+  {
+    componentName: "Defrag7",
+    component: Defrag7,
+    variants: defrag7Data,
+  },
+  {
+    componentName: "Defrag8",
+    component: Defrag8,
+    variants: defrag8Data,
+  },
+  {
+    componentName: "Defrag9",
+    component: Defrag9,
+    variants: defrag9Data,
+  },
+  {
+    componentName: "Delete",
+    component: Delete,
+    variants: deleteData,
+  },
+  {
+    componentName: "Desk100",
+    component: Desk100,
+    variants: desk100Data,
+  },
+  {
+    componentName: "Desktop",
+    component: Desktop,
+    variants: desktopData,
+  },
+  {
+    componentName: "Detlicon",
+    component: Detlicon,
+    variants: detliconData,
+  },
+  {
+    componentName: "Dial",
+    component: Dial,
+    variants: dialData,
+  },
+  {
+    componentName: "Dialer1",
+    component: Dialer1,
+    variants: dialer1Data,
+  },
+  {
+    componentName: "Dialer2",
+    component: Dialer2,
+    variants: dialer2Data,
+  },
+  {
+    componentName: "Dialmon200",
+    component: Dialmon200,
+    variants: dialmon200Data,
+  },
+  {
+    componentName: "Directcc1001",
+    component: Directcc1001,
+    variants: directcc1001Data,
+  },
+  {
+    componentName: "Directcc1002",
+    component: Directcc1002,
+    variants: directcc1002Data,
+  },
+  {
+    componentName: "Directcc1003",
+    component: Directcc1003,
+    variants: directcc1003Data,
+  },
+  {
+    componentName: "Directcc1004",
+    component: Directcc1004,
+    variants: directcc1004Data,
+  },
+  {
+    componentName: "Directcc1005",
+    component: Directcc1005,
+    variants: directcc1005Data,
+  },
+  {
+    componentName: "DirectccDirectcc",
+    component: DirectccDirectcc,
+    variants: directccDirectccData,
+  },
+  {
+    componentName: "Diskcopy1",
+    component: Diskcopy1,
+    variants: diskcopy1Data,
+  },
+  {
+    componentName: "Doc",
+    component: Doc,
+    variants: docData,
+  },
+  {
+    componentName: "DocGris",
+    component: DocGris,
+    variants: docGrisData,
+  },
+  {
+    componentName: "Download",
+    component: Download,
+    variants: downloadData,
+  },
+  {
+    componentName: "Dpmodemx701",
+    component: Dpmodemx701,
+    variants: dpmodemx701Data,
+  },
+  {
+    componentName: "Drvspace1",
+    component: Drvspace1,
+    variants: drvspace1Data,
+  },
+  {
+    componentName: "Drvspace2",
+    component: Drvspace2,
+    variants: drvspace2Data,
+  },
+  {
+    componentName: "Drvspace3",
+    component: Drvspace3,
+    variants: drvspace3Data,
+  },
+  {
+    componentName: "Drvspace4",
+    component: Drvspace4,
+    variants: drvspace4Data,
+  },
+  {
+    componentName: "Drvspace5",
+    component: Drvspace5,
+    variants: drvspace5Data,
+  },
+  {
+    componentName: "Drvspace6",
+    component: Drvspace6,
+    variants: drvspace6Data,
+  },
+  {
+    componentName: "Drvspace7",
+    component: Drvspace7,
+    variants: drvspace7Data,
+  },
+  {
+    componentName: "Drvspace8",
+    component: Drvspace8,
+    variants: drvspace8Data,
+  },
+  {
+    componentName: "Earth",
+    component: Earth,
+    variants: earthData,
+  },
+  {
+    componentName: "Explore",
+    component: Explore,
+    variants: exploreData,
+  },
+  {
+    componentName: "Explorer100",
+    component: Explorer100,
+    variants: explorer100Data,
+  },
+  {
+    componentName: "Explorer101",
+    component: Explorer101,
+    variants: explorer101Data,
+  },
+  {
+    componentName: "Explorer102",
+    component: Explorer102,
+    variants: explorer102Data,
+  },
+  {
+    componentName: "Explorer103",
+    component: Explorer103,
+    variants: explorer103Data,
+  },
+  {
+    componentName: "Explorer104",
+    component: Explorer104,
+    variants: explorer104Data,
+  },
+  {
+    componentName: "Explorer105",
+    component: Explorer105,
+    variants: explorer105Data,
+  },
+  {
+    componentName: "Explorer107",
+    component: Explorer107,
+    variants: explorer107Data,
+  },
+  {
+    componentName: "Explorer108",
+    component: Explorer108,
+    variants: explorer108Data,
+  },
+  {
+    componentName: "Expostrt128",
+    component: Expostrt128,
+    variants: expostrt128Data,
+  },
+  {
+    componentName: "Fave",
+    component: Fave,
+    variants: faveData,
+  },
+  {
+    componentName: "Fax",
+    component: Fax,
+    variants: faxData,
+  },
+  {
+    componentName: "FaxWarning",
+    component: FaxWarning,
+    variants: faxWarningData,
+  },
+  {
+    componentName: "Faxcover108",
+    component: Faxcover108,
+    variants: faxcover108Data,
+  },
+  {
+    componentName: "Faxcover140",
+    component: Faxcover140,
+    variants: faxcover140Data,
+  },
+  {
+    componentName: "Faxcover2",
+    component: Faxcover2,
+    variants: faxcover2Data,
+  },
+  {
+    componentName: "Faxcover3",
+    component: Faxcover3,
+    variants: faxcover3Data,
+  },
+  {
+    componentName: "FileCorrupted",
+    component: FileCorrupted,
+    variants: fileCorruptedData,
+  },
+  {
+    componentName: "FileDelete",
+    component: FileDelete,
+    variants: fileDeleteData,
+  },
+  {
+    componentName: "FileFind",
+    component: FileFind,
+    variants: fileFindData,
+  },
+  {
+    componentName: "FileFind2",
+    component: FileFind2,
+    variants: fileFind2Data,
+  },
+  {
+    componentName: "FileFind3",
+    component: FileFind3,
+    variants: fileFind3Data,
+  },
+  {
+    componentName: "FileFont",
+    component: FileFont,
+    variants: fileFontData,
+  },
+  {
+    componentName: "FileFont2",
+    component: FileFont2,
+    variants: fileFont2Data,
+  },
+  {
+    componentName: "FileIcons",
+    component: FileIcons,
+    variants: fileIconsData,
+  },
+  {
+    componentName: "FilePen",
+    component: FilePen,
+    variants: filePenData,
+  },
+  {
+    componentName: "FilePencil",
+    component: FilePencil,
+    variants: filePencilData,
+  },
+  {
+    componentName: "FilePick",
+    component: FilePick,
+    variants: filePickData,
+  },
+  {
+    componentName: "FilePin",
+    component: FilePin,
+    variants: filePinData,
+  },
+  {
+    componentName: "FileSettings",
+    component: FileSettings,
+    variants: fileSettingsData,
+  },
+  {
+    componentName: "FileText",
+    component: FileText,
+    variants: fileTextData,
+  },
+  {
+    componentName: "FileTextSettings",
+    component: FileTextSettings,
+    variants: fileTextSettingsData,
+  },
+  {
+    componentName: "FileTransfer",
+    component: FileTransfer,
+    variants: fileTransferData,
+  },
+  {
+    componentName: "Files",
+    component: Files,
+    variants: filesData,
+  },
+  {
+    componentName: "Filexfer128",
+    component: Filexfer128,
+    variants: filexfer128Data,
+  },
+  {
+    componentName: "Filexfer129",
+    component: Filexfer129,
+    variants: filexfer129Data,
+  },
+  {
+    componentName: "Filexfer130",
+    component: Filexfer130,
+    variants: filexfer130Data,
+  },
+  {
+    componentName: "FindArr",
+    component: FindArr,
+    variants: findArrData,
+  },
+  {
+    componentName: "FindDc2",
+    component: FindDc2,
+    variants: findDc2Data,
+  },
+  {
+    componentName: "FindDoc",
+    component: FindDoc,
+    variants: findDocData,
+  },
+  {
+    componentName: "FlyingThroughSpace100",
+    component: FlyingThroughSpace100,
+    variants: flyingThroughSpace100Data,
+  },
+  {
+    componentName: "FlyingWindows100",
+    component: FlyingWindows100,
+    variants: flyingWindows100Data,
+  },
+  {
+    componentName: "Fm20enu5",
+    component: Fm20enu5,
+    variants: fm20enu5Data,
+  },
+  {
+    componentName: "Folder",
+    component: Folder,
+    variants: folderData,
+  },
+  {
+    componentName: "FolderExe",
+    component: FolderExe,
+    variants: folderExeData,
+  },
+  {
+    componentName: "FolderExe2",
+    component: FolderExe2,
+    variants: folderExe2Data,
+  },
+  {
+    componentName: "FolderFile",
+    component: FolderFile,
+    variants: folderFileData,
+  },
+  {
+    componentName: "FolderFont",
+    component: FolderFont,
+    variants: folderFontData,
+  },
+  {
+    componentName: "FolderOpen",
+    component: FolderOpen,
+    variants: folderOpenData,
+  },
+  {
+    componentName: "FolderPrint",
+    component: FolderPrint,
+    variants: folderPrintData,
+  },
+  {
+    componentName: "FolderRename",
+    component: FolderRename,
+    variants: folderRenameData,
+  },
+  {
+    componentName: "FolderSettings",
+    component: FolderSettings,
+    variants: folderSettingsData,
+  },
+  {
+    componentName: "FolderSettings2",
+    component: FolderSettings2,
+    variants: folderSettings2Data,
+  },
+  {
+    componentName: "FolderShared",
+    component: FolderShared,
+    variants: folderSharedData,
+  },
+  {
+    componentName: "Font",
+    component: Font,
+    variants: fontData,
+  },
+  {
+    componentName: "Font2",
+    component: Font2,
+    variants: font2Data,
+  },
+  {
+    componentName: "FontBig",
+    component: FontBig,
+    variants: fontBigData,
+  },
+  {
+    componentName: "FontSml",
+    component: FontSml,
+    variants: fontSmlData,
+  },
+  {
+    componentName: "FontWid",
+    component: FontWid,
+    variants: fontWidData,
+  },
+  {
+    componentName: "Fontext1",
+    component: Fontext1,
+    variants: fontext1Data,
+  },
+  {
+    componentName: "Fontext2",
+    component: Fontext2,
+    variants: fontext2Data,
+  },
+  {
+    componentName: "Fontext3",
+    component: Fontext3,
+    variants: fontext3Data,
+  },
+  {
+    componentName: "Fontext4",
+    component: Fontext4,
+    variants: fontext4Data,
+  },
+  {
+    componentName: "Fontview110",
+    component: Fontview110,
+    variants: fontview110Data,
+  },
+  {
+    componentName: "Fontview111",
+    component: Fontview111,
+    variants: fontview111Data,
+  },
+  {
+    componentName: "Forbidden",
+    component: Forbidden,
+    variants: forbiddenData,
+  },
+  {
+    componentName: "Format16",
+    component: Format16,
+    variants: format16Data,
+  },
+  {
+    componentName: "Freecell1",
+    component: Freecell1,
+    variants: freecell1Data,
+  },
+  {
+    componentName: "Fte128",
+    component: Fte128,
+    variants: fte128Data,
+  },
+  {
+    componentName: "Fullscrn",
+    component: Fullscrn,
+    variants: fullscrnData,
+  },
+  {
+    componentName: "Gcdef100",
+    component: Gcdef100,
+    variants: gcdef100Data,
+  },
+  {
+    componentName: "Gcdef10001",
+    component: Gcdef10001,
+    variants: gcdef10001Data,
+  },
+  {
+    componentName: "Gcdef10002",
+    component: Gcdef10002,
+    variants: gcdef10002Data,
+  },
+  {
+    componentName: "Gcdef10003",
+    component: Gcdef10003,
+    variants: gcdef10003Data,
+  },
+  {
+    componentName: "Gcdef10004",
+    component: Gcdef10004,
+    variants: gcdef10004Data,
+  },
+  {
+    componentName: "Gcdef10005",
+    component: Gcdef10005,
+    variants: gcdef10005Data,
+  },
+  {
+    componentName: "Gcdef10006",
+    component: Gcdef10006,
+    variants: gcdef10006Data,
+  },
+  {
+    componentName: "Gcdef10007",
+    component: Gcdef10007,
+    variants: gcdef10007Data,
+  },
+  {
+    componentName: "Gcdef10008",
+    component: Gcdef10008,
+    variants: gcdef10008Data,
+  },
+  {
+    componentName: "Gcdef10009",
+    component: Gcdef10009,
+    variants: gcdef10009Data,
+  },
+  {
+    componentName: "Gcdef10010",
+    component: Gcdef10010,
+    variants: gcdef10010Data,
+  },
+  {
+    componentName: "Gcdef10011",
+    component: Gcdef10011,
+    variants: gcdef10011Data,
+  },
+  {
+    componentName: "Gcdef10012",
+    component: Gcdef10012,
+    variants: gcdef10012Data,
+  },
+  {
+    componentName: "Gcdef10013",
+    component: Gcdef10013,
+    variants: gcdef10013Data,
+  },
+  {
+    componentName: "Gcdef10014",
+    component: Gcdef10014,
+    variants: gcdef10014Data,
+  },
+  {
+    componentName: "Gcdef10015",
+    component: Gcdef10015,
+    variants: gcdef10015Data,
+  },
+  {
+    componentName: "Gcdef10016",
+    component: Gcdef10016,
+    variants: gcdef10016Data,
+  },
+  {
+    componentName: "Gcdef10017",
+    component: Gcdef10017,
+    variants: gcdef10017Data,
+  },
+  {
+    componentName: "Gcdef10018",
+    component: Gcdef10018,
+    variants: gcdef10018Data,
+  },
+  {
+    componentName: "Gcdef10019",
+    component: Gcdef10019,
+    variants: gcdef10019Data,
+  },
+  {
+    componentName: "Gcdef10020",
+    component: Gcdef10020,
+    variants: gcdef10020Data,
+  },
+  {
+    componentName: "Gcdef10021",
+    component: Gcdef10021,
+    variants: gcdef10021Data,
+  },
+  {
+    componentName: "Gcdef10022",
+    component: Gcdef10022,
+    variants: gcdef10022Data,
+  },
+  {
+    componentName: "Gcdef10023",
+    component: Gcdef10023,
+    variants: gcdef10023Data,
+  },
+  {
+    componentName: "Gcdef10024",
+    component: Gcdef10024,
+    variants: gcdef10024Data,
+  },
+  {
+    componentName: "Gcdef10025",
+    component: Gcdef10025,
+    variants: gcdef10025Data,
+  },
+  {
+    componentName: "Gcdef10026",
+    component: Gcdef10026,
+    variants: gcdef10026Data,
+  },
+  {
+    componentName: "Gcdef10027",
+    component: Gcdef10027,
+    variants: gcdef10027Data,
+  },
+  {
+    componentName: "Gcdef10028",
+    component: Gcdef10028,
+    variants: gcdef10028Data,
+  },
+  {
+    componentName: "Gcdef10029",
+    component: Gcdef10029,
+    variants: gcdef10029Data,
+  },
+  {
+    componentName: "Gcdef10030",
+    component: Gcdef10030,
+    variants: gcdef10030Data,
+  },
+  {
+    componentName: "Gcdef10031",
+    component: Gcdef10031,
+    variants: gcdef10031Data,
+  },
+  {
+    componentName: "Gcdef10032",
+    component: Gcdef10032,
+    variants: gcdef10032Data,
+  },
+  {
+    componentName: "Gcdef10033",
+    component: Gcdef10033,
+    variants: gcdef10033Data,
+  },
+  {
+    componentName: "Gcdef10034",
+    component: Gcdef10034,
+    variants: gcdef10034Data,
+  },
+  {
+    componentName: "Gcdef10035",
+    component: Gcdef10035,
+    variants: gcdef10035Data,
+  },
+  {
+    componentName: "Gcdef10036",
+    component: Gcdef10036,
+    variants: gcdef10036Data,
+  },
+  {
+    componentName: "Gcdef10037",
+    component: Gcdef10037,
+    variants: gcdef10037Data,
+  },
+  {
+    componentName: "Gcdef10038",
+    component: Gcdef10038,
+    variants: gcdef10038Data,
+  },
+  {
+    componentName: "Gcdef10039",
+    component: Gcdef10039,
+    variants: gcdef10039Data,
+  },
+  {
+    componentName: "Gcdef10040",
+    component: Gcdef10040,
+    variants: gcdef10040Data,
+  },
+  {
+    componentName: "Gcdef10041",
+    component: Gcdef10041,
+    variants: gcdef10041Data,
+  },
+  {
+    componentName: "Gcdef10042",
+    component: Gcdef10042,
+    variants: gcdef10042Data,
+  },
+  {
+    componentName: "Gcdef10043",
+    component: Gcdef10043,
+    variants: gcdef10043Data,
+  },
+  {
+    componentName: "Gcdef10044",
+    component: Gcdef10044,
+    variants: gcdef10044Data,
+  },
+  {
+    componentName: "Gcdef10045",
+    component: Gcdef10045,
+    variants: gcdef10045Data,
+  },
+  {
+    componentName: "Gcdef10046",
+    component: Gcdef10046,
+    variants: gcdef10046Data,
+  },
+  {
+    componentName: "Gcdef10047",
+    component: Gcdef10047,
+    variants: gcdef10047Data,
+  },
+  {
+    componentName: "Gcdef10048",
+    component: Gcdef10048,
+    variants: gcdef10048Data,
+  },
+  {
+    componentName: "Gcdef10049",
+    component: Gcdef10049,
+    variants: gcdef10049Data,
+  },
+  {
+    componentName: "Gcdef10050",
+    component: Gcdef10050,
+    variants: gcdef10050Data,
+  },
+  {
+    componentName: "Gcdef10051",
+    component: Gcdef10051,
+    variants: gcdef10051Data,
+  },
+  {
+    componentName: "Gcdef10052",
+    component: Gcdef10052,
+    variants: gcdef10052Data,
+  },
+  {
+    componentName: "Gcdef10053",
+    component: Gcdef10053,
+    variants: gcdef10053Data,
+  },
+  {
+    componentName: "Gcdef10054",
+    component: Gcdef10054,
+    variants: gcdef10054Data,
+  },
+  {
+    componentName: "Gcdef10055",
+    component: Gcdef10055,
+    variants: gcdef10055Data,
+  },
+  {
+    componentName: "Gcdef10056",
+    component: Gcdef10056,
+    variants: gcdef10056Data,
+  },
+  {
+    componentName: "Gcdef10057",
+    component: Gcdef10057,
+    variants: gcdef10057Data,
+  },
+  {
+    componentName: "Gcdef10058",
+    component: Gcdef10058,
+    variants: gcdef10058Data,
+  },
+  {
+    componentName: "Gcdef10059",
+    component: Gcdef10059,
+    variants: gcdef10059Data,
+  },
+  {
+    componentName: "Gcdef10060",
+    component: Gcdef10060,
+    variants: gcdef10060Data,
+  },
+  {
+    componentName: "Gcdef10061",
+    component: Gcdef10061,
+    variants: gcdef10061Data,
+  },
+  {
+    componentName: "Gcdef10062",
+    component: Gcdef10062,
+    variants: gcdef10062Data,
+  },
+  {
+    componentName: "Gcdef10063",
+    component: Gcdef10063,
+    variants: gcdef10063Data,
+  },
+  {
+    componentName: "Gcdef10064",
+    component: Gcdef10064,
+    variants: gcdef10064Data,
+  },
+  {
+    componentName: "Gcdef101",
+    component: Gcdef101,
+    variants: gcdef101Data,
+  },
+  {
+    componentName: "Gcdef102",
+    component: Gcdef102,
+    variants: gcdef102Data,
+  },
+  {
+    componentName: "Gcdef103",
+    component: Gcdef103,
+    variants: gcdef103Data,
+  },
+  {
+    componentName: "Gcdef104",
+    component: Gcdef104,
+    variants: gcdef104Data,
+  },
+  {
+    componentName: "Gcdef105",
+    component: Gcdef105,
+    variants: gcdef105Data,
+  },
+  {
+    componentName: "Gcdef106",
+    component: Gcdef106,
+    variants: gcdef106Data,
+  },
+  {
+    componentName: "Gcdef107",
+    component: Gcdef107,
+    variants: gcdef107Data,
+  },
+  {
+    componentName: "Gcdef108",
+    component: Gcdef108,
+    variants: gcdef108Data,
+  },
+  {
+    componentName: "Gcdef109",
+    component: Gcdef109,
+    variants: gcdef109Data,
+  },
+  {
+    componentName: "Gcdef110",
+    component: Gcdef110,
+    variants: gcdef110Data,
+  },
+  {
+    componentName: "Gcdef111",
+    component: Gcdef111,
+    variants: gcdef111Data,
+  },
+  {
+    componentName: "Gcdef112",
+    component: Gcdef112,
+    variants: gcdef112Data,
+  },
+  {
+    componentName: "Gcdef113",
+    component: Gcdef113,
+    variants: gcdef113Data,
+  },
+  {
+    componentName: "Gcdef114",
+    component: Gcdef114,
+    variants: gcdef114Data,
+  },
+  {
+    componentName: "Gcdef115",
+    component: Gcdef115,
+    variants: gcdef115Data,
+  },
+  {
+    componentName: "Gcdef116",
+    component: Gcdef116,
+    variants: gcdef116Data,
+  },
+  {
+    componentName: "Gcdef117",
+    component: Gcdef117,
+    variants: gcdef117Data,
+  },
+  {
+    componentName: "Gcdef122",
+    component: Gcdef122,
+    variants: gcdef122Data,
+  },
+  {
+    componentName: "Gcdef124",
+    component: Gcdef124,
+    variants: gcdef124Data,
+  },
+  {
+    componentName: "Globe",
+    component: Globe,
+    variants: globeData,
+  },
+  {
+    componentName: "Grpconv100",
+    component: Grpconv100,
+    variants: grpconv100Data,
+  },
+  {
+    componentName: "Grpconv101",
+    component: Grpconv101,
+    variants: grpconv101Data,
+  },
+  {
+    componentName: "Hand",
+    component: Hand,
+    variants: handData,
+  },
+  {
+    componentName: "HardwareDiag",
+    component: HardwareDiag,
+    variants: hardwareDiagData,
+  },
+  {
+    componentName: "Help",
+    component: Help,
+    variants: helpData,
+  },
+  {
+    componentName: "HelpBook",
+    component: HelpBook,
+    variants: helpBookData,
+  },
+  {
+    componentName: "HelpPtr",
+    component: HelpPtr,
+    variants: helpPtrData,
+  },
+  {
+    componentName: "HtmlPage",
+    component: HtmlPage,
+    variants: htmlPageData,
+  },
+  {
+    componentName: "Icmui1200",
+    component: Icmui1200,
+    variants: icmui1200Data,
+  },
+  {
+    componentName: "Icmui1201",
+    component: Icmui1201,
+    variants: icmui1201Data,
+  },
+  {
+    componentName: "Icwdial101",
+    component: Icwdial101,
+    variants: icwdial101Data,
+  },
+  {
+    componentName: "Icwdial102",
+    component: Icwdial102,
+    variants: icwdial102Data,
+  },
+  {
+    componentName: "Ie",
+    component: Ie,
+    variants: ieData,
+  },
+  {
+    componentName: "Imgadmin214",
+    component: Imgadmin214,
+    variants: imgadmin214Data,
+  },
+  {
+    componentName: "Imgedit10",
+    component: Imgedit10,
+    variants: imgedit10Data,
+  },
+  {
+    componentName: "Imgedit277",
+    component: Imgedit277,
+    variants: imgedit277Data,
+  },
+  {
+    componentName: "Imgscan10",
+    component: Imgscan10,
+    variants: imgscan10Data,
+  },
+  {
+    componentName: "Imgthumb10",
+    component: Imgthumb10,
+    variants: imgthumb10Data,
+  },
+  {
+    componentName: "Inetcfg2300",
+    component: Inetcfg2300,
+    variants: inetcfg2300Data,
+  },
+  {
+    componentName: "Inetcfg2301",
+    component: Inetcfg2301,
+    variants: inetcfg2301Data,
+  },
+  {
+    componentName: "Inetcfg2302",
+    component: Inetcfg2302,
+    variants: inetcfg2302Data,
+  },
+  {
+    componentName: "Inetcfg2303",
+    component: Inetcfg2303,
+    variants: inetcfg2303Data,
+  },
+  {
+    componentName: "Inetcpl1301",
+    component: Inetcpl1301,
+    variants: inetcpl1301Data,
+  },
+  {
+    componentName: "Inetcpl1302",
+    component: Inetcpl1302,
+    variants: inetcpl1302Data,
+  },
+  {
+    componentName: "Inetcpl1303",
+    component: Inetcpl1303,
+    variants: inetcpl1303Data,
+  },
+  {
+    componentName: "Inetcpl1304",
+    component: Inetcpl1304,
+    variants: inetcpl1304Data,
+  },
+  {
+    componentName: "Inetcpl1305",
+    component: Inetcpl1305,
+    variants: inetcpl1305Data,
+  },
+  {
+    componentName: "Inetcpl1306",
+    component: Inetcpl1306,
+    variants: inetcpl1306Data,
+  },
+  {
+    componentName: "Inetcpl1307",
+    component: Inetcpl1307,
+    variants: inetcpl1307Data,
+  },
+  {
+    componentName: "Inetcpl1308",
+    component: Inetcpl1308,
+    variants: inetcpl1308Data,
+  },
+  {
+    componentName: "Inetcpl1309",
+    component: Inetcpl1309,
+    variants: inetcpl1309Data,
+  },
+  {
+    componentName: "Inetcpl1310",
+    component: Inetcpl1310,
+    variants: inetcpl1310Data,
+  },
+  {
+    componentName: "Inetcpl1311",
+    component: Inetcpl1311,
+    variants: inetcpl1311Data,
+  },
+  {
+    componentName: "Inetcpl1312",
+    component: Inetcpl1312,
+    variants: inetcpl1312Data,
+  },
+  {
+    componentName: "Inetcpl1313",
+    component: Inetcpl1313,
+    variants: inetcpl1313Data,
+  },
+  {
+    componentName: "Inetcpl1314",
+    component: Inetcpl1314,
+    variants: inetcpl1314Data,
+  },
+  {
+    componentName: "Inetcpl1315",
+    component: Inetcpl1315,
+    variants: inetcpl1315Data,
+  },
+  {
+    componentName: "Inetcpl1317",
+    component: Inetcpl1317,
+    variants: inetcpl1317Data,
+  },
+  {
+    componentName: "Inetcpl1318",
+    component: Inetcpl1318,
+    variants: inetcpl1318Data,
+  },
+  {
+    componentName: "Inetcpl1319",
+    component: Inetcpl1319,
+    variants: inetcpl1319Data,
+  },
+  {
+    componentName: "Inetcpl1320",
+    component: Inetcpl1320,
+    variants: inetcpl1320Data,
+  },
+  {
+    componentName: "Inetcpl1321",
+    component: Inetcpl1321,
+    variants: inetcpl1321Data,
+  },
+  {
+    componentName: "Inetcpl4432",
+    component: Inetcpl4432,
+    variants: inetcpl4432Data,
+  },
+  {
+    componentName: "InfoBubble",
+    component: InfoBubble,
+    variants: infoBubbleData,
+  },
+  {
+    componentName: "Install",
+    component: Install,
+    variants: installData,
+  },
+  {
+    componentName: "Internat151",
+    component: Internat151,
+    variants: internat151Data,
+  },
+  {
+    componentName: "Intl101",
+    component: Intl101,
+    variants: intl101Data,
+  },
+  {
+    componentName: "Isign32100",
+    component: Isign32100,
+    variants: isign32100Data,
+  },
+  {
+    componentName: "Isign324001",
+    component: Isign324001,
+    variants: isign324001Data,
+  },
+  {
+    componentName: "Isign32IcoApp",
+    component: Isign32IcoApp,
+    variants: isign32IcoAppData,
+  },
+  {
+    componentName: "Issue",
+    component: Issue,
+    variants: issueData,
+  },
+  {
+    componentName: "Isuninst1000",
+    component: Isuninst1000,
+    variants: isuninst1000Data,
+  },
+  {
+    componentName: "Italic",
+    component: Italic,
+    variants: italicData,
+  },
+  {
+    componentName: "Jdbgmgr100",
+    component: Jdbgmgr100,
+    variants: jdbgmgr100Data,
+  },
+  {
+    componentName: "Jgdwmie101",
+    component: Jgdwmie101,
+    variants: jgdwmie101Data,
+  },
+  {
+    componentName: "Job116",
+    component: Job116,
+    variants: job116Data,
+  },
+  {
+    componentName: "Joy102",
+    component: Joy102,
+    variants: joy102Data,
+  },
+  {
+    componentName: "Joy108",
+    component: Joy108,
+    variants: joy108Data,
+  },
+  {
+    componentName: "Joy110",
+    component: Joy110,
+    variants: joy110Data,
+  },
+  {
+    componentName: "Justify",
+    component: Justify,
+    variants: justifyData,
+  },
+  {
+    componentName: "Key",
+    component: Key,
+    variants: keyData,
+  },
+  {
+    componentName: "KeyboardMouse",
+    component: KeyboardMouse,
+    variants: keyboardMouseData,
+  },
+  {
+    componentName: "Keys",
+    component: Keys,
+    variants: keysData,
+  },
+  {
+    componentName: "Left",
+    component: Left,
+    variants: leftData,
+  },
+  {
+    componentName: "Lights100",
+    component: Lights100,
+    variants: lights100Data,
+  },
+  {
+    componentName: "Lights101",
+    component: Lights101,
+    variants: lights101Data,
+  },
+  {
+    componentName: "Lights102",
+    component: Lights102,
+    variants: lights102Data,
+  },
+  {
+    componentName: "Lights103",
+    component: Lights103,
+    variants: lights103Data,
+  },
+  {
+    componentName: "Lights99",
+    component: Lights99,
+    variants: lights99Data,
+  },
+  {
+    componentName: "Listicon",
+    component: Listicon,
+    variants: listiconData,
+  },
+  {
+    componentName: "LoaderBat",
+    component: LoaderBat,
+    variants: loaderBatData,
+  },
+  {
+    componentName: "Lock",
+    component: Lock,
+    variants: lockData,
+  },
+  {
+    componentName: "LogView",
+    component: LogView,
+    variants: logViewData,
+  },
+  {
+    componentName: "Logo",
+    component: Logo,
+    variants: logoData,
+  },
+  {
+    componentName: "LrgIcon",
+    component: LrgIcon,
+    variants: lrgIconData,
+  },
+  {
+    componentName: "Lst2icon",
+    component: Lst2icon,
+    variants: lst2iconData,
+  },
+  {
+    componentName: "Mail",
+    component: Mail,
+    variants: mailData,
+  },
+  {
+    componentName: "Mail2",
+    component: Mail2,
+    variants: mail2Data,
+  },
+  {
+    componentName: "Mail3",
+    component: Mail3,
+    variants: mail3Data,
+  },
+  {
+    componentName: "Mailnews12",
+    component: Mailnews12,
+    variants: mailnews12Data,
+  },
+  {
+    componentName: "Mailnews13",
+    component: Mailnews13,
+    variants: mailnews13Data,
+  },
+  {
+    componentName: "Mailnews14",
+    component: Mailnews14,
+    variants: mailnews14Data,
+  },
+  {
+    componentName: "Mailnews15",
+    component: Mailnews15,
+    variants: mailnews15Data,
+  },
+  {
+    componentName: "Mailnews16",
+    component: Mailnews16,
+    variants: mailnews16Data,
+  },
+  {
+    componentName: "Mailnews17",
+    component: Mailnews17,
+    variants: mailnews17Data,
+  },
+  {
+    componentName: "Mailnews18",
+    component: Mailnews18,
+    variants: mailnews18Data,
+  },
+  {
+    componentName: "Mailnews19",
+    component: Mailnews19,
+    variants: mailnews19Data,
+  },
+  {
+    componentName: "Mailnews2",
+    component: Mailnews2,
+    variants: mailnews2Data,
+  },
+  {
+    componentName: "Mailnews20",
+    component: Mailnews20,
+    variants: mailnews20Data,
+  },
+  {
+    componentName: "Mailnews21",
+    component: Mailnews21,
+    variants: mailnews21Data,
+  },
+  {
+    componentName: "Mailnews22",
+    component: Mailnews22,
+    variants: mailnews22Data,
+  },
+  {
+    componentName: "Mailnews23",
+    component: Mailnews23,
+    variants: mailnews23Data,
+  },
+  {
+    componentName: "Mailnews3",
+    component: Mailnews3,
+    variants: mailnews3Data,
+  },
+  {
+    componentName: "Mailnews6",
+    component: Mailnews6,
+    variants: mailnews6Data,
+  },
+  {
+    componentName: "Mailnews7",
+    component: Mailnews7,
+    variants: mailnews7Data,
+  },
+  {
+    componentName: "Mailnews8",
+    component: Mailnews8,
+    variants: mailnews8Data,
+  },
+  {
+    componentName: "Mailnews9",
+    component: Mailnews9,
+    variants: mailnews9Data,
+  },
+  {
+    componentName: "Main100",
+    component: Main100,
+    variants: main100Data,
+  },
+  {
+    componentName: "Main103",
+    component: Main103,
+    variants: main103Data,
+  },
+  {
+    componentName: "Main104",
+    component: Main104,
+    variants: main104Data,
+  },
+  {
+    componentName: "Main105",
+    component: Main105,
+    variants: main105Data,
+  },
+  {
+    componentName: "Main106",
+    component: Main106,
+    variants: main106Data,
+  },
+  {
+    componentName: "Main107",
+    component: Main107,
+    variants: main107Data,
+  },
+  {
+    componentName: "Main200",
+    component: Main200,
+    variants: main200Data,
+  },
+  {
+    componentName: "Main300",
+    component: Main300,
+    variants: main300Data,
+  },
+  {
+    componentName: "Main400",
+    component: Main400,
+    variants: main400Data,
+  },
+  {
+    componentName: "Main500",
+    component: Main500,
+    variants: main500Data,
+  },
+  {
+    componentName: "Main600",
+    component: Main600,
+    variants: main600Data,
+  },
+  {
+    componentName: "Mapi32451",
+    component: Mapi32451,
+    variants: mapi32451Data,
+  },
+  {
+    componentName: "Mapi32501",
+    component: Mapi32501,
+    variants: mapi32501Data,
+  },
+  {
+    componentName: "Mapi32801",
+    component: Mapi32801,
+    variants: mapi32801Data,
+  },
+  {
+    componentName: "Mapi32IconAttach",
+    component: Mapi32IconAttach,
+    variants: mapi32IconAttachData,
+  },
+  {
+    componentName: "Mapisp32100",
+    component: Mapisp32100,
+    variants: mapisp32100Data,
+  },
+  {
+    componentName: "Mcdpkgtm3000",
+    component: Mcdpkgtm3000,
+    variants: mcdpkgtm3000Data,
+  },
+  {
+    componentName: "Mcm3200",
+    component: Mcm3200,
+    variants: mcm3200Data,
+  },
+  {
+    componentName: "Mcm3201",
+    component: Mcm3201,
+    variants: mcm3201Data,
+  },
+  {
+    componentName: "Mcm3202",
+    component: Mcm3202,
+    variants: mcm3202Data,
+  },
+  {
+    componentName: "Mcm3203",
+    component: Mcm3203,
+    variants: mcm3203Data,
+  },
+  {
+    componentName: "Mcm401",
+    component: Mcm401,
+    variants: mcm401Data,
+  },
+  {
+    componentName: "Mcm502",
+    component: Mcm502,
+    variants: mcm502Data,
+  },
+  {
+    componentName: "McmEarth",
+    component: McmEarth,
+    variants: mcmEarthData,
+  },
+  {
+    componentName: "McmPhone",
+    component: McmPhone,
+    variants: mcmPhoneData,
+  },
+  {
+    componentName: "Mdisp321",
+    component: Mdisp321,
+    variants: mdisp321Data,
+  },
+  {
+    componentName: "MediaAudio",
+    component: MediaAudio,
+    variants: mediaAudioData,
+  },
+  {
+    componentName: "MediaCd",
+    component: MediaCd,
+    variants: mediaCdData,
+  },
+  {
+    componentName: "MediaVideo",
+    component: MediaVideo,
+    variants: mediaVideoData,
+  },
+  {
+    componentName: "Memory",
+    component: Memory,
+    variants: memoryData,
+  },
+  {
+    componentName: "Message",
+    component: Message,
+    variants: messageData,
+  },
+  {
+    componentName: "Mic",
+    component: Mic,
+    variants: micData,
+  },
+  {
+    componentName: "MicrosoftExchange",
+    component: MicrosoftExchange,
+    variants: microsoftExchangeData,
+  },
+  {
+    componentName: "MicrosoftNetwork",
+    component: MicrosoftNetwork,
+    variants: microsoftNetworkData,
+  },
+  {
+    componentName: "Mipac",
+    component: Mipac,
+    variants: mipacData,
+  },
+  {
+    componentName: "Mkcompat900",
+    component: Mkcompat900,
+    variants: mkcompat900Data,
+  },
+  {
+    componentName: "Mlcfg32129",
+    component: Mlcfg32129,
+    variants: mlcfg32129Data,
+  },
+  {
+    componentName: "Mmsys100",
+    component: Mmsys100,
+    variants: mmsys100Data,
+  },
+  {
+    componentName: "Mmsys101",
+    component: Mmsys101,
+    variants: mmsys101Data,
+  },
+  {
+    componentName: "Mmsys102",
+    component: Mmsys102,
+    variants: mmsys102Data,
+  },
+  {
+    componentName: "Mmsys103",
+    component: Mmsys103,
+    variants: mmsys103Data,
+  },
+  {
+    componentName: "Mmsys104",
+    component: Mmsys104,
+    variants: mmsys104Data,
+  },
+  {
+    componentName: "Mmsys105",
+    component: Mmsys105,
+    variants: mmsys105Data,
+  },
+  {
+    componentName: "Mmsys106",
+    component: Mmsys106,
+    variants: mmsys106Data,
+  },
+  {
+    componentName: "Mmsys107",
+    component: Mmsys107,
+    variants: mmsys107Data,
+  },
+  {
+    componentName: "Mmsys108",
+    component: Mmsys108,
+    variants: mmsys108Data,
+  },
+  {
+    componentName: "Mmsys109",
+    component: Mmsys109,
+    variants: mmsys109Data,
+  },
+  {
+    componentName: "Mmsys110",
+    component: Mmsys110,
+    variants: mmsys110Data,
+  },
+  {
+    componentName: "Mmsys111",
+    component: Mmsys111,
+    variants: mmsys111Data,
+  },
+  {
+    componentName: "Mmsys112",
+    component: Mmsys112,
+    variants: mmsys112Data,
+  },
+  {
+    componentName: "Mmsys113",
+    component: Mmsys113,
+    variants: mmsys113Data,
+  },
+  {
+    componentName: "Mmsys114",
+    component: Mmsys114,
+    variants: mmsys114Data,
+  },
+  {
+    componentName: "Mmsys115",
+    component: Mmsys115,
+    variants: mmsys115Data,
+  },
+  {
+    componentName: "Mmsys116",
+    component: Mmsys116,
+    variants: mmsys116Data,
+  },
+  {
+    componentName: "Mmsys117",
+    component: Mmsys117,
+    variants: mmsys117Data,
+  },
+  {
+    componentName: "Mmsys118",
+    component: Mmsys118,
+    variants: mmsys118Data,
+  },
+  {
+    componentName: "Mmsys119",
+    component: Mmsys119,
+    variants: mmsys119Data,
+  },
+  {
+    componentName: "Mmsys120",
+    component: Mmsys120,
+    variants: mmsys120Data,
+  },
+  {
+    componentName: "Mmsys121",
+    component: Mmsys121,
+    variants: mmsys121Data,
+  },
+  {
+    componentName: "Mmsys122",
+    component: Mmsys122,
+    variants: mmsys122Data,
+  },
+  {
+    componentName: "Mmsys123",
+    component: Mmsys123,
+    variants: mmsys123Data,
+  },
+  {
+    componentName: "Mmsys124",
+    component: Mmsys124,
+    variants: mmsys124Data,
+  },
+  {
+    componentName: "Mmsys90",
+    component: Mmsys90,
+    variants: mmsys90Data,
+  },
+  {
+    componentName: "Mmsys99",
+    component: Mmsys99,
+    variants: mmsys99Data,
+  },
+  {
+    componentName: "Moscudll128",
+    component: Moscudll128,
+    variants: moscudll128Data,
+  },
+  {
+    componentName: "Mplayer10",
+    component: Mplayer10,
+    variants: mplayer10Data,
+  },
+  {
+    componentName: "Mplayer11",
+    component: Mplayer11,
+    variants: mplayer11Data,
+  },
+  {
+    componentName: "Mplayer12",
+    component: Mplayer12,
+    variants: mplayer12Data,
+  },
+  {
+    componentName: "Mplayer13",
+    component: Mplayer13,
+    variants: mplayer13Data,
+  },
+  {
+    componentName: "Mplayer14",
+    component: Mplayer14,
+    variants: mplayer14Data,
+  },
+  {
+    componentName: "Mplayer15",
+    component: Mplayer15,
+    variants: mplayer15Data,
+  },
+  {
+    componentName: "Mplayer16",
+    component: Mplayer16,
+    variants: mplayer16Data,
+  },
+  {
+    componentName: "Mplayer110",
+    component: Mplayer110,
+    variants: mplayer110Data,
+  },
+  {
+    componentName: "Mplayer111",
+    component: Mplayer111,
+    variants: mplayer111Data,
+  },
+  {
+    componentName: "Mplayer112",
+    component: Mplayer112,
+    variants: mplayer112Data,
+  },
+  {
+    componentName: "Mplayer113",
+    component: Mplayer113,
+    variants: mplayer113Data,
+  },
+  {
+    componentName: "Mplayer114",
+    component: Mplayer114,
+    variants: mplayer114Data,
+  },
+  {
+    componentName: "Mplayer115",
+    component: Mplayer115,
+    variants: mplayer115Data,
+  },
+  {
+    componentName: "Mplayer116",
+    component: Mplayer116,
+    variants: mplayer116Data,
+  },
+  {
+    componentName: "Mprserv120",
+    component: Mprserv120,
+    variants: mprserv120Data,
+  },
+  {
+    componentName: "Mprserv121",
+    component: Mprserv121,
+    variants: mprserv121Data,
+  },
+  {
+    componentName: "Mprserv68",
+    component: Mprserv68,
+    variants: mprserv68Data,
+  },
+  {
+    componentName: "MsDos",
+    component: MsDos,
+    variants: msDosData,
+  },
+  {
+    componentName: "Msacm3210",
+    component: Msacm3210,
+    variants: msacm3210Data,
+  },
+  {
+    componentName: "MsawtAwtIcon",
+    component: MsawtAwtIcon,
+    variants: msawtAwtIconData,
+  },
+  {
+    componentName: "Msfs321951",
+    component: Msfs321951,
+    variants: msfs321951Data,
+  },
+  {
+    componentName: "Mshearts1",
+    component: Mshearts1,
+    variants: mshearts1Data,
+  },
+  {
+    componentName: "Mshtml32528",
+    component: Mshtml32528,
+    variants: mshtml32528Data,
+  },
+  {
+    componentName: "Mshtml32529",
+    component: Mshtml32529,
+    variants: mshtml32529Data,
+  },
+  {
+    componentName: "Mshtml32534",
+    component: Mshtml32534,
+    variants: mshtml32534Data,
+  },
+  {
+    componentName: "Mshtml32535",
+    component: Mshtml32535,
+    variants: mshtml32535Data,
+  },
+  {
+    componentName: "Mshtml32536",
+    component: Mshtml32536,
+    variants: mshtml32536Data,
+  },
+  {
+    componentName: "Mshtml32537",
+    component: Mshtml32537,
+    variants: mshtml32537Data,
+  },
+  {
+    componentName: "Mshtml32538",
+    component: Mshtml32538,
+    variants: mshtml32538Data,
+  },
+  {
+    componentName: "Mshtml32539",
+    component: Mshtml32539,
+    variants: mshtml32539Data,
+  },
+  {
+    componentName: "Mshtml32540",
+    component: Mshtml32540,
+    variants: mshtml32540Data,
+  },
+  {
+    componentName: "Mshtml32541",
+    component: Mshtml32541,
+    variants: mshtml32541Data,
+  },
+  {
+    componentName: "Mshtml32542",
+    component: Mshtml32542,
+    variants: mshtml32542Data,
+  },
+  {
+    componentName: "Mshtml32543",
+    component: Mshtml32543,
+    variants: mshtml32543Data,
+  },
+  {
+    componentName: "Mshtml32544",
+    component: Mshtml32544,
+    variants: mshtml32544Data,
+  },
+  {
+    componentName: "Mshtml32545",
+    component: Mshtml32545,
+    variants: mshtml32545Data,
+  },
+  {
+    componentName: "Mshtml32546",
+    component: Mshtml32546,
+    variants: mshtml32546Data,
+  },
+  {
+    componentName: "Mshtml32547",
+    component: Mshtml32547,
+    variants: mshtml32547Data,
+  },
+  {
+    componentName: "Mshtml32548",
+    component: Mshtml32548,
+    variants: mshtml32548Data,
+  },
+  {
+    componentName: "Mshtml32549",
+    component: Mshtml32549,
+    variants: mshtml32549Data,
+  },
+  {
+    componentName: "Mshtml32550",
+    component: Mshtml32550,
+    variants: mshtml32550Data,
+  },
+  {
+    componentName: "Mshtml32551",
+    component: Mshtml32551,
+    variants: mshtml32551Data,
+  },
+  {
+    componentName: "Mshtml32552",
+    component: Mshtml32552,
+    variants: mshtml32552Data,
+  },
+  {
+    componentName: "Mshtml32553",
+    component: Mshtml32553,
+    variants: mshtml32553Data,
+  },
+  {
+    componentName: "Msnp32FolderIcon",
+    component: Msnp32FolderIcon,
+    variants: msnp32FolderIconData,
+  },
+  {
+    componentName: "Msnp32ServerIcon",
+    component: Msnp32ServerIcon,
+    variants: msnp32ServerIconData,
+  },
+  {
+    componentName: "Msnp32WrkgrpIcon",
+    component: Msnp32WrkgrpIcon,
+    variants: msnp32WrkgrpIconData,
+  },
+  {
+    componentName: "Msnsetup1",
+    component: Msnsetup1,
+    variants: msnsetup1Data,
+  },
+  {
+    componentName: "Msnsign100",
+    component: Msnsign100,
+    variants: msnsign100Data,
+  },
+  {
+    componentName: "Msnsign4001",
+    component: Msnsign4001,
+    variants: msnsign4001Data,
+  },
+  {
+    componentName: "MsnsignIcoApp",
+    component: MsnsignIcoApp,
+    variants: msnsignIcoAppData,
+  },
+  {
+    componentName: "Msnstart1",
+    component: Msnstart1,
+    variants: msnstart1Data,
+  },
+  {
+    componentName: "Msnstart100",
+    component: Msnstart100,
+    variants: msnstart100Data,
+  },
+  {
+    componentName: "Msnstart110",
+    component: Msnstart110,
+    variants: msnstart110Data,
+  },
+  {
+    componentName: "Msnstart120",
+    component: Msnstart120,
+    variants: msnstart120Data,
+  },
+  {
+    componentName: "Msnsvc3000",
+    component: Msnsvc3000,
+    variants: msnsvc3000Data,
+  },
+  {
+    componentName: "Mspaint",
+    component: Mspaint,
+    variants: mspaintData,
+  },
+  {
+    componentName: "Msrating102",
+    component: Msrating102,
+    variants: msrating102Data,
+  },
+  {
+    componentName: "Msrating103",
+    component: Msrating103,
+    variants: msrating103Data,
+  },
+  {
+    componentName: "Msrating104",
+    component: Msrating104,
+    variants: msrating104Data,
+  },
+  {
+    componentName: "Msrating105",
+    component: Msrating105,
+    variants: msrating105Data,
+  },
+  {
+    componentName: "Msrating106",
+    component: Msrating106,
+    variants: msrating106Data,
+  },
+  {
+    componentName: "Msrating107",
+    component: Msrating107,
+    variants: msrating107Data,
+  },
+  {
+    componentName: "Msrating108",
+    component: Msrating108,
+    variants: msrating108Data,
+  },
+  {
+    componentName: "Msrating109",
+    component: Msrating109,
+    variants: msrating109Data,
+  },
+  {
+    componentName: "Msvfw32943",
+    component: Msvfw32943,
+    variants: msvfw32943Data,
+  },
+  {
+    componentName: "Mute",
+    component: Mute,
+    variants: muteData,
+  },
+  {
+    componentName: "MystifyYourMind100",
+    component: MystifyYourMind100,
+    variants: mystifyYourMind100Data,
+  },
+  {
+    componentName: "Netwatch101",
+    component: Netwatch101,
+    variants: netwatch101Data,
+  },
+  {
+    componentName: "Network",
+    component: Network,
+    variants: networkData,
+  },
+  {
+    componentName: "Network2",
+    component: Network2,
+    variants: network2Data,
+  },
+  {
+    componentName: "Network3",
+    component: Network3,
+    variants: network3Data,
+  },
+  {
+    componentName: "New",
+    component: New,
+    variants: newData,
+  },
+  {
+    componentName: "New16",
+    component: New16,
+    variants: new16Data,
+  },
+  {
+    componentName: "Notepad",
+    component: Notepad,
+    variants: notepadData,
+  },
+  {
+    componentName: "Notepad1",
+    component: Notepad1,
+    variants: notepad1Data,
+  },
+  {
+    componentName: "Notepad2",
+    component: Notepad2,
+    variants: notepad2Data,
+  },
+  {
+    componentName: "NumPage",
+    component: NumPage,
+    variants: numPageData,
+  },
+  {
+    componentName: "Nwnp32FolderIcon",
+    component: Nwnp32FolderIcon,
+    variants: nwnp32FolderIconData,
+  },
+  {
+    componentName: "Nwnp32PrinterIcon",
+    component: Nwnp32PrinterIcon,
+    variants: nwnp32PrinterIconData,
+  },
+  {
+    componentName: "Nwnp32ServerIcon",
+    component: Nwnp32ServerIcon,
+    variants: nwnp32ServerIconData,
+  },
+  {
+    componentName: "Nwnp32WrkgrpIcon",
+    component: Nwnp32WrkgrpIcon,
+    variants: nwnp32WrkgrpIconData,
+  },
+  {
+    componentName: "Oidis400Seqfileicon",
+    component: Oidis400Seqfileicon,
+    variants: oidis400SeqfileiconData,
+  },
+  {
+    componentName: "Oislb400DcScanIco",
+    component: Oislb400DcScanIco,
+    variants: oislb400DcScanIcoData,
+  },
+  {
+    componentName: "Oiui400Imgstamp",
+    component: Oiui400Imgstamp,
+    variants: oiui400ImgstampData,
+  },
+  {
+    componentName: "Oiui400Textstamp",
+    component: Oiui400Textstamp,
+    variants: oiui400TextstampData,
+  },
+  {
+    componentName: "Ole328",
+    component: Ole328,
+    variants: ole328Data,
+  },
+  {
+    componentName: "Open",
+    component: Open,
+    variants: openData,
+  },
+  {
+    componentName: "Optional3000",
+    component: Optional3000,
+    variants: optional3000Data,
+  },
+  {
+    componentName: "OrderAs",
+    component: OrderAs,
+    variants: orderAsData,
+  },
+  {
+    componentName: "OrderDs",
+    component: OrderDs,
+    variants: orderDsData,
+  },
+  {
+    componentName: "Packager",
+    component: Packager,
+    variants: packagerData,
+  },
+  {
+    componentName: "Packager1",
+    component: Packager1,
+    variants: packager1Data,
+  },
+  {
+    componentName: "ParaBul",
+    component: ParaBul,
+    variants: paraBulData,
+  },
+  {
+    componentName: "ParaNum",
+    component: ParaNum,
+    variants: paraNumData,
+  },
+  {
+    componentName: "Password100",
+    component: Password100,
+    variants: password100Data,
+  },
+  {
+    componentName: "Password1000",
+    component: Password1000,
+    variants: password1000Data,
+  },
+  {
+    componentName: "Password1010",
+    component: Password1010,
+    variants: password1010Data,
+  },
+  {
+    componentName: "Paste",
+    component: Paste,
+    variants: pasteData,
+  },
+  {
+    componentName: "Pbrush1",
+    component: Pbrush1,
+    variants: pbrush1Data,
+  },
+  {
+    componentName: "Pen",
+    component: Pen,
+    variants: penData,
+  },
+  {
+    componentName: "Person116",
+    component: Person116,
+    variants: person116Data,
+  },
+  {
+    componentName: "Phone",
+    component: Phone,
+    variants: phoneData,
+  },
+  {
+    componentName: "Phone2",
+    component: Phone2,
+    variants: phone2Data,
+  },
+  {
+    componentName: "Playd16",
+    component: Playd16,
+    variants: playd16Data,
+  },
+  {
+    componentName: "Playp16",
+    component: Playp16,
+    variants: playp16Data,
+  },
+  {
+    componentName: "Plugin",
+    component: Plugin,
+    variants: pluginData,
+  },
+  {
+    componentName: "Plugin2",
+    component: Plugin2,
+    variants: plugin2Data,
+  },
+  {
+    componentName: "PowerOff",
+    component: PowerOff,
+    variants: powerOffData,
+  },
+  {
+    componentName: "PowerOn",
+    component: PowerOn,
+    variants: powerOnData,
+  },
+  {
+    componentName: "Powercfg205",
+    component: Powercfg205,
+    variants: powercfg205Data,
+  },
+  {
+    componentName: "Powercfg210",
+    component: Powercfg210,
+    variants: powercfg210Data,
+  },
+  {
+    componentName: "Powercfg211",
+    component: Powercfg211,
+    variants: powercfg211Data,
+  },
+  {
+    componentName: "Print",
+    component: Print,
+    variants: printData,
+  },
+  {
+    componentName: "Print2",
+    component: Print2,
+    variants: print2Data,
+  },
+  {
+    componentName: "Printer",
+    component: Printer,
+    variants: printerData,
+  },
+  {
+    componentName: "PrinterCalendar",
+    component: PrinterCalendar,
+    variants: printerCalendarData,
+  },
+  {
+    componentName: "PrinterDrive",
+    component: PrinterDrive,
+    variants: printerDriveData,
+  },
+  {
+    componentName: "PrinterShared",
+    component: PrinterShared,
+    variants: printerSharedData,
+  },
+  {
+    componentName: "ProdinvMyicon",
+    component: ProdinvMyicon,
+    variants: prodinvMyiconData,
+  },
+  {
+    componentName: "Progman1",
+    component: Progman1,
+    variants: progman1Data,
+  },
+  {
+    componentName: "Progman10",
+    component: Progman10,
+    variants: progman10Data,
+  },
+  {
+    componentName: "Progman11",
+    component: Progman11,
+    variants: progman11Data,
+  },
+  {
+    componentName: "Progman12",
+    component: Progman12,
+    variants: progman12Data,
+  },
+  {
+    componentName: "Progman13",
+    component: Progman13,
+    variants: progman13Data,
+  },
+  {
+    componentName: "Progman14",
+    component: Progman14,
+    variants: progman14Data,
+  },
+  {
+    componentName: "Progman15",
+    component: Progman15,
+    variants: progman15Data,
+  },
+  {
+    componentName: "Progman16",
+    component: Progman16,
+    variants: progman16Data,
+  },
+  {
+    componentName: "Progman17",
+    component: Progman17,
+    variants: progman17Data,
+  },
+  {
+    componentName: "Progman18",
+    component: Progman18,
+    variants: progman18Data,
+  },
+  {
+    componentName: "Progman19",
+    component: Progman19,
+    variants: progman19Data,
+  },
+  {
+    componentName: "Progman2",
+    component: Progman2,
+    variants: progman2Data,
+  },
+  {
+    componentName: "Progman20",
+    component: Progman20,
+    variants: progman20Data,
+  },
+  {
+    componentName: "Progman21",
+    component: Progman21,
+    variants: progman21Data,
+  },
+  {
+    componentName: "Progman22",
+    component: Progman22,
+    variants: progman22Data,
+  },
+  {
+    componentName: "Progman23",
+    component: Progman23,
+    variants: progman23Data,
+  },
+  {
+    componentName: "Progman24",
+    component: Progman24,
+    variants: progman24Data,
+  },
+  {
+    componentName: "Progman25",
+    component: Progman25,
+    variants: progman25Data,
+  },
+  {
+    componentName: "Progman26",
+    component: Progman26,
+    variants: progman26Data,
+  },
+  {
+    componentName: "Progman27",
+    component: Progman27,
+    variants: progman27Data,
+  },
+  {
+    componentName: "Progman28",
+    component: Progman28,
+    variants: progman28Data,
+  },
+  {
+    componentName: "Progman29",
+    component: Progman29,
+    variants: progman29Data,
+  },
+  {
+    componentName: "Progman3",
+    component: Progman3,
+    variants: progman3Data,
+  },
+  {
+    componentName: "Progman30",
+    component: Progman30,
+    variants: progman30Data,
+  },
+  {
+    componentName: "Progman31",
+    component: Progman31,
+    variants: progman31Data,
+  },
+  {
+    componentName: "Progman32",
+    component: Progman32,
+    variants: progman32Data,
+  },
+  {
+    componentName: "Progman33",
+    component: Progman33,
+    variants: progman33Data,
+  },
+  {
+    componentName: "Progman34",
+    component: Progman34,
+    variants: progman34Data,
+  },
+  {
+    componentName: "Progman35",
+    component: Progman35,
+    variants: progman35Data,
+  },
+  {
+    componentName: "Progman36",
+    component: Progman36,
+    variants: progman36Data,
+  },
+  {
+    componentName: "Progman37",
+    component: Progman37,
+    variants: progman37Data,
+  },
+  {
+    componentName: "Progman38",
+    component: Progman38,
+    variants: progman38Data,
+  },
+  {
+    componentName: "Progman39",
+    component: Progman39,
+    variants: progman39Data,
+  },
+  {
+    componentName: "Progman4",
+    component: Progman4,
+    variants: progman4Data,
+  },
+  {
+    componentName: "Progman40",
+    component: Progman40,
+    variants: progman40Data,
+  },
+  {
+    componentName: "Progman41",
+    component: Progman41,
+    variants: progman41Data,
+  },
+  {
+    componentName: "Progman42",
+    component: Progman42,
+    variants: progman42Data,
+  },
+  {
+    componentName: "Progman43",
+    component: Progman43,
+    variants: progman43Data,
+  },
+  {
+    componentName: "Progman44",
+    component: Progman44,
+    variants: progman44Data,
+  },
+  {
+    componentName: "Progman45",
+    component: Progman45,
+    variants: progman45Data,
+  },
+  {
+    componentName: "Progman46",
+    component: Progman46,
+    variants: progman46Data,
+  },
+  {
+    componentName: "Progman5",
+    component: Progman5,
+    variants: progman5Data,
+  },
+  {
+    componentName: "Progman6",
+    component: Progman6,
+    variants: progman6Data,
+  },
+  {
+    componentName: "Progman7",
+    component: Progman7,
+    variants: progman7Data,
+  },
+  {
+    componentName: "Progman8",
+    component: Progman8,
+    variants: progman8Data,
+  },
+  {
+    componentName: "Progman9",
+    component: Progman9,
+    variants: progman9Data,
+  },
+  {
+    componentName: "Props",
+    component: Props,
+    variants: propsData,
+  },
+  {
+    componentName: "Pshbtn",
+    component: Pshbtn,
+    variants: pshbtnData,
+  },
+  {
+    componentName: "Qfecheck111",
+    component: Qfecheck111,
+    variants: qfecheck111Data,
+  },
+  {
+    componentName: "Quartz100",
+    component: Quartz100,
+    variants: quartz100Data,
+  },
+  {
+    componentName: "Quartz101",
+    component: Quartz101,
+    variants: quartz101Data,
+  },
+  {
+    componentName: "Quartz102",
+    component: Quartz102,
+    variants: quartz102Data,
+  },
+  {
+    componentName: "Quartz103",
+    component: Quartz103,
+    variants: quartz103Data,
+  },
+  {
+    componentName: "Quartz200",
+    component: Quartz200,
+    variants: quartz200Data,
+  },
+  {
+    componentName: "Quartz201",
+    component: Quartz201,
+    variants: quartz201Data,
+  },
+  {
+    componentName: "Quartz202",
+    component: Quartz202,
+    variants: quartz202Data,
+  },
+  {
+    componentName: "Quartz203",
+    component: Quartz203,
+    variants: quartz203Data,
+  },
+  {
+    componentName: "Quartz300",
+    component: Quartz300,
+    variants: quartz300Data,
+  },
+  {
+    componentName: "Quartz301",
+    component: Quartz301,
+    variants: quartz301Data,
+  },
+  {
+    componentName: "QuestionBubble",
+    component: QuestionBubble,
+    variants: questionBubbleData,
+  },
+  {
+    componentName: "Quikview1",
+    component: Quikview1,
+    variants: quikview1Data,
+  },
+  {
+    componentName: "Quikview2",
+    component: Quikview2,
+    variants: quikview2Data,
+  },
+  {
+    componentName: "Quikview3",
+    component: Quikview3,
+    variants: quikview3Data,
+  },
+  {
+    componentName: "Quikview4",
+    component: Quikview4,
+    variants: quikview4Data,
+  },
+  {
+    componentName: "Raplayer801",
+    component: Raplayer801,
+    variants: raplayer801Data,
+  },
+  {
+    componentName: "Rasapi32100",
+    component: Rasapi32100,
+    variants: rasapi32100Data,
+  },
+  {
+    componentName: "Rasapi32101",
+    component: Rasapi32101,
+    variants: rasapi32101Data,
+  },
+  {
+    componentName: "Rasapi32102",
+    component: Rasapi32102,
+    variants: rasapi32102Data,
+  },
+  {
+    componentName: "Rasapi32103",
+    component: Rasapi32103,
+    variants: rasapi32103Data,
+  },
+  {
+    componentName: "Rasapi32104",
+    component: Rasapi32104,
+    variants: rasapi32104Data,
+  },
+  {
+    componentName: "ReaderCd",
+    component: ReaderCd,
+    variants: readerCdData,
+  },
+  {
+    componentName: "ReaderCd2",
+    component: ReaderCd2,
+    variants: readerCd2Data,
+  },
+  {
+    componentName: "ReaderClosed",
+    component: ReaderClosed,
+    variants: readerClosedData,
+  },
+  {
+    componentName: "ReaderDisket",
+    component: ReaderDisket,
+    variants: readerDisketData,
+  },
+  {
+    componentName: "ReaderDisket2",
+    component: ReaderDisket2,
+    variants: readerDisket2Data,
+  },
+  {
+    componentName: "ReaderDisketCasset",
+    component: ReaderDisketCasset,
+    variants: readerDisketCassetData,
+  },
+  {
+    componentName: "ReaderEject",
+    component: ReaderEject,
+    variants: readerEjectData,
+  },
+  {
+    componentName: "ReaderNoshared",
+    component: ReaderNoshared,
+    variants: readerNosharedData,
+  },
+  {
+    componentName: "ReaderOpened",
+    component: ReaderOpened,
+    variants: readerOpenedData,
+  },
+  {
+    componentName: "ReaderShared",
+    component: ReaderShared,
+    variants: readerSharedData,
+  },
+  {
+    componentName: "RecycleEmpty",
+    component: RecycleEmpty,
+    variants: recycleEmptyData,
+  },
+  {
+    componentName: "RecycleFile",
+    component: RecycleFile,
+    variants: recycleFileData,
+  },
+  {
+    componentName: "RecycleFilefolder",
+    component: RecycleFilefolder,
+    variants: recycleFilefolderData,
+  },
+  {
+    componentName: "RecycleFolder",
+    component: RecycleFolder,
+    variants: recycleFolderData,
+  },
+  {
+    componentName: "RecycleFull",
+    component: RecycleFull,
+    variants: recycleFullData,
+  },
+  {
+    componentName: "Redo",
+    component: Redo,
+    variants: redoData,
+  },
+  {
+    componentName: "Refresh",
+    component: Refresh,
+    variants: refreshData,
+  },
+  {
+    componentName: "Regedit",
+    component: Regedit,
+    variants: regeditData,
+  },
+  {
+    componentName: "Regedit100",
+    component: Regedit100,
+    variants: regedit100Data,
+  },
+  {
+    componentName: "Regedit101",
+    component: Regedit101,
+    variants: regedit101Data,
+  },
+  {
+    componentName: "Regedit102",
+    component: Regedit102,
+    variants: regedit102Data,
+  },
+  {
+    componentName: "Regedit201",
+    component: Regedit201,
+    variants: regedit201Data,
+  },
+  {
+    componentName: "Regedit202",
+    component: Regedit202,
+    variants: regedit202Data,
+  },
+  {
+    componentName: "Regedit203",
+    component: Regedit203,
+    variants: regedit203Data,
+  },
+  {
+    componentName: "Regedit204",
+    component: Regedit204,
+    variants: regedit204Data,
+  },
+  {
+    componentName: "Regedit205",
+    component: Regedit205,
+    variants: regedit205Data,
+  },
+  {
+    componentName: "Regedit206",
+    component: Regedit206,
+    variants: regedit206Data,
+  },
+  {
+    componentName: "Regwiz117",
+    component: Regwiz117,
+    variants: regwiz117Data,
+  },
+  {
+    componentName: "Regwiz122",
+    component: Regwiz122,
+    variants: regwiz122Data,
+  },
+  {
+    componentName: "Regwiz127",
+    component: Regwiz127,
+    variants: regwiz127Data,
+  },
+  {
+    componentName: "Regwiz129",
+    component: Regwiz129,
+    variants: regwiz129Data,
+  },
+  {
+    componentName: "Right",
+    component: Right,
+    variants: rightData,
+  },
+  {
+    componentName: "Rnaapp100",
+    component: Rnaapp100,
+    variants: rnaapp100Data,
+  },
+  {
+    componentName: "Rnaapp101",
+    component: Rnaapp101,
+    variants: rnaapp101Data,
+  },
+  {
+    componentName: "Rnaapp102",
+    component: Rnaapp102,
+    variants: rnaapp102Data,
+  },
+  {
+    componentName: "Rnaapp110",
+    component: Rnaapp110,
+    variants: rnaapp110Data,
+  },
+  {
+    componentName: "Rnaapp111",
+    component: Rnaapp111,
+    variants: rnaapp111Data,
+  },
+  {
+    componentName: "Rnaapp112",
+    component: Rnaapp112,
+    variants: rnaapp112Data,
+  },
+  {
+    componentName: "Rnaapp113",
+    component: Rnaapp113,
+    variants: rnaapp113Data,
+  },
+  {
+    componentName: "Rnaapp114",
+    component: Rnaapp114,
+    variants: rnaapp114Data,
+  },
+  {
+    componentName: "Rnanp100",
+    component: Rnanp100,
+    variants: rnanp100Data,
+  },
+  {
+    componentName: "Rnaui100",
+    component: Rnaui100,
+    variants: rnaui100Data,
+  },
+  {
+    componentName: "Rnaui101",
+    component: Rnaui101,
+    variants: rnaui101Data,
+  },
+  {
+    componentName: "Rnaui102",
+    component: Rnaui102,
+    variants: rnaui102Data,
+  },
+  {
+    componentName: "Rnaui103",
+    component: Rnaui103,
+    variants: rnaui103Data,
+  },
+  {
+    componentName: "Rnaui104",
+    component: Rnaui104,
+    variants: rnaui104Data,
+  },
+  {
+    componentName: "Rnaui105",
+    component: Rnaui105,
+    variants: rnaui105Data,
+  },
+  {
+    componentName: "Rnaui106",
+    component: Rnaui106,
+    variants: rnaui106Data,
+  },
+  {
+    componentName: "Rsrcmtr100",
+    component: Rsrcmtr100,
+    variants: rsrcmtr100Data,
+  },
+  {
+    componentName: "Rsrcmtr121",
+    component: Rsrcmtr121,
+    variants: rsrcmtr121Data,
+  },
+  {
+    componentName: "Rsrcmtr122",
+    component: Rsrcmtr122,
+    variants: rsrcmtr122Data,
+  },
+  {
+    componentName: "Rsrcmtr123",
+    component: Rsrcmtr123,
+    variants: rsrcmtr123Data,
+  },
+  {
+    componentName: "Rsrcmtr124",
+    component: Rsrcmtr124,
+    variants: rsrcmtr124Data,
+  },
+  {
+    componentName: "Rsrcmtr125",
+    component: Rsrcmtr125,
+    variants: rsrcmtr125Data,
+  },
+  {
+    componentName: "Rsrcmtr126",
+    component: Rsrcmtr126,
+    variants: rsrcmtr126Data,
+  },
+  {
+    componentName: "Rsrcmtr127",
+    component: Rsrcmtr127,
+    variants: rsrcmtr127Data,
+  },
+  {
+    componentName: "Rsrcmtr128",
+    component: Rsrcmtr128,
+    variants: rsrcmtr128Data,
+  },
+  {
+    componentName: "Rsrcmtr129",
+    component: Rsrcmtr129,
+    variants: rsrcmtr129Data,
+  },
+  {
+    componentName: "Rsrcmtr130",
+    component: Rsrcmtr130,
+    variants: rsrcmtr130Data,
+  },
+  {
+    componentName: "Rsrcmtr131",
+    component: Rsrcmtr131,
+    variants: rsrcmtr131Data,
+  },
+  {
+    componentName: "Rsrcmtr132",
+    component: Rsrcmtr132,
+    variants: rsrcmtr132Data,
+  },
+  {
+    componentName: "Rsrcmtr133",
+    component: Rsrcmtr133,
+    variants: rsrcmtr133Data,
+  },
+  {
+    componentName: "Rundll1",
+    component: Rundll1,
+    variants: rundll1Data,
+  },
+  {
+    componentName: "Runonce106",
+    component: Runonce106,
+    variants: runonce106Data,
+  },
+  {
+    componentName: "Save",
+    component: Save,
+    variants: saveData,
+  },
+  {
+    componentName: "Scandskw1",
+    component: Scandskw1,
+    variants: scandskw1Data,
+  },
+  {
+    componentName: "SccviewIcon",
+    component: SccviewIcon,
+    variants: sccviewIconData,
+  },
+  {
+    componentName: "ScrollingMarquee100",
+    component: ScrollingMarquee100,
+    variants: scrollingMarquee100Data,
+  },
+  {
+    componentName: "Sendmail2001",
+    component: Sendmail2001,
+    variants: sendmail2001Data,
+  },
+  {
+    componentName: "Settings",
+    component: Settings,
+    variants: settingsData,
+  },
+  {
+    componentName: "Setupslt3000",
+    component: Setupslt3000,
+    variants: setupslt3000Data,
+  },
+  {
+    componentName: "Shdocvw256",
+    component: Shdocvw256,
+    variants: shdocvw256Data,
+  },
+  {
+    componentName: "Shdocvw257",
+    component: Shdocvw257,
+    variants: shdocvw257Data,
+  },
+  {
+    componentName: "Shdocvw258",
+    component: Shdocvw258,
+    variants: shdocvw258Data,
+  },
+  {
+    componentName: "Shdocvw259",
+    component: Shdocvw259,
+    variants: shdocvw259Data,
+  },
+  {
+    componentName: "Shdocvw260",
+    component: Shdocvw260,
+    variants: shdocvw260Data,
+  },
+  {
+    componentName: "Shdocvw261",
+    component: Shdocvw261,
+    variants: shdocvw261Data,
+  },
+  {
+    componentName: "Shdocvw262",
+    component: Shdocvw262,
+    variants: shdocvw262Data,
+  },
+  {
+    componentName: "Shdocvw272",
+    component: Shdocvw272,
+    variants: shdocvw272Data,
+  },
+  {
+    componentName: "Shdocvw273",
+    component: Shdocvw273,
+    variants: shdocvw273Data,
+  },
+  {
+    componentName: "Shdocvw274",
+    component: Shdocvw274,
+    variants: shdocvw274Data,
+  },
+  {
+    componentName: "Shdocvw275",
+    component: Shdocvw275,
+    variants: shdocvw275Data,
+  },
+  {
+    componentName: "Shell321",
+    component: Shell321,
+    variants: shell321Data,
+  },
+  {
+    componentName: "Shell3210",
+    component: Shell3210,
+    variants: shell3210Data,
+  },
+  {
+    componentName: "Shell3211",
+    component: Shell3211,
+    variants: shell3211Data,
+  },
+  {
+    componentName: "Shell3212",
+    component: Shell3212,
+    variants: shell3212Data,
+  },
+  {
+    componentName: "Shell3213",
+    component: Shell3213,
+    variants: shell3213Data,
+  },
+  {
+    componentName: "Shell32133",
+    component: Shell32133,
+    variants: shell32133Data,
+  },
+  {
+    componentName: "Shell32134",
+    component: Shell32134,
+    variants: shell32134Data,
+  },
+  {
+    componentName: "Shell32135",
+    component: Shell32135,
+    variants: shell32135Data,
+  },
+  {
+    componentName: "Shell32136",
+    component: Shell32136,
+    variants: shell32136Data,
+  },
+  {
+    componentName: "Shell32137",
+    component: Shell32137,
+    variants: shell32137Data,
+  },
+  {
+    componentName: "Shell32138",
+    component: Shell32138,
+    variants: shell32138Data,
+  },
+  {
+    componentName: "Shell32139",
+    component: Shell32139,
+    variants: shell32139Data,
+  },
+  {
+    componentName: "Shell3214",
+    component: Shell3214,
+    variants: shell3214Data,
+  },
+  {
+    componentName: "Shell32140",
+    component: Shell32140,
+    variants: shell32140Data,
+  },
+  {
+    componentName: "Shell32141",
+    component: Shell32141,
+    variants: shell32141Data,
+  },
+  {
+    componentName: "Shell32142",
+    component: Shell32142,
+    variants: shell32142Data,
+  },
+  {
+    componentName: "Shell32143",
+    component: Shell32143,
+    variants: shell32143Data,
+  },
+  {
+    componentName: "Shell32144",
+    component: Shell32144,
+    variants: shell32144Data,
+  },
+  {
+    componentName: "Shell32145",
+    component: Shell32145,
+    variants: shell32145Data,
+  },
+  {
+    componentName: "Shell32146",
+    component: Shell32146,
+    variants: shell32146Data,
+  },
+  {
+    componentName: "Shell32147",
+    component: Shell32147,
+    variants: shell32147Data,
+  },
+  {
+    componentName: "Shell32148",
+    component: Shell32148,
+    variants: shell32148Data,
+  },
+  {
+    componentName: "Shell3215",
+    component: Shell3215,
+    variants: shell3215Data,
+  },
+  {
+    componentName: "Shell32151",
+    component: Shell32151,
+    variants: shell32151Data,
+  },
+  {
+    componentName: "Shell32152",
+    component: Shell32152,
+    variants: shell32152Data,
+  },
+  {
+    componentName: "Shell32153",
+    component: Shell32153,
+    variants: shell32153Data,
+  },
+  {
+    componentName: "Shell32154",
+    component: Shell32154,
+    variants: shell32154Data,
+  },
+  {
+    componentName: "Shell32155",
+    component: Shell32155,
+    variants: shell32155Data,
+  },
+  {
+    componentName: "Shell32156",
+    component: Shell32156,
+    variants: shell32156Data,
+  },
+  {
+    componentName: "Shell3216",
+    component: Shell3216,
+    variants: shell3216Data,
+  },
+  {
+    componentName: "Shell32160",
+    component: Shell32160,
+    variants: shell32160Data,
+  },
+  {
+    componentName: "Shell32161",
+    component: Shell32161,
+    variants: shell32161Data,
+  },
+  {
+    componentName: "Shell32165",
+    component: Shell32165,
+    variants: shell32165Data,
+  },
+  {
+    componentName: "Shell32166",
+    component: Shell32166,
+    variants: shell32166Data,
+  },
+  {
+    componentName: "Shell32167",
+    component: Shell32167,
+    variants: shell32167Data,
+  },
+  {
+    componentName: "Shell32168",
+    component: Shell32168,
+    variants: shell32168Data,
+  },
+  {
+    componentName: "Shell32169",
+    component: Shell32169,
+    variants: shell32169Data,
+  },
+  {
+    componentName: "Shell3217",
+    component: Shell3217,
+    variants: shell3217Data,
+  },
+  {
+    componentName: "Shell32170",
+    component: Shell32170,
+    variants: shell32170Data,
+  },
+  {
+    componentName: "Shell3218",
+    component: Shell3218,
+    variants: shell3218Data,
+  },
+  {
+    componentName: "Shell3219",
+    component: Shell3219,
+    variants: shell3219Data,
+  },
+  {
+    componentName: "Shell322",
+    component: Shell322,
+    variants: shell322Data,
+  },
+  {
+    componentName: "Shell3220",
+    component: Shell3220,
+    variants: shell3220Data,
+  },
+  {
+    componentName: "Shell3221",
+    component: Shell3221,
+    variants: shell3221Data,
+  },
+  {
+    componentName: "Shell3222",
+    component: Shell3222,
+    variants: shell3222Data,
+  },
+  {
+    componentName: "Shell3223",
+    component: Shell3223,
+    variants: shell3223Data,
+  },
+  {
+    componentName: "Shell3224",
+    component: Shell3224,
+    variants: shell3224Data,
+  },
+  {
+    componentName: "Shell3225",
+    component: Shell3225,
+    variants: shell3225Data,
+  },
+  {
+    componentName: "Shell3226",
+    component: Shell3226,
+    variants: shell3226Data,
+  },
+  {
+    componentName: "Shell3227",
+    component: Shell3227,
+    variants: shell3227Data,
+  },
+  {
+    componentName: "Shell3228",
+    component: Shell3228,
+    variants: shell3228Data,
+  },
+  {
+    componentName: "Shell3229",
+    component: Shell3229,
+    variants: shell3229Data,
+  },
+  {
+    componentName: "Shell323",
+    component: Shell323,
+    variants: shell323Data,
+  },
+  {
+    componentName: "Shell3230",
+    component: Shell3230,
+    variants: shell3230Data,
+  },
+  {
+    componentName: "Shell3231",
+    component: Shell3231,
+    variants: shell3231Data,
+  },
+  {
+    componentName: "Shell3232",
+    component: Shell3232,
+    variants: shell3232Data,
+  },
+  {
+    componentName: "Shell3233",
+    component: Shell3233,
+    variants: shell3233Data,
+  },
+  {
+    componentName: "Shell3234",
+    component: Shell3234,
+    variants: shell3234Data,
+  },
+  {
+    componentName: "Shell3235",
+    component: Shell3235,
+    variants: shell3235Data,
+  },
+  {
+    componentName: "Shell3236",
+    component: Shell3236,
+    variants: shell3236Data,
+  },
+  {
+    componentName: "Shell3237",
+    component: Shell3237,
+    variants: shell3237Data,
+  },
+  {
+    componentName: "Shell3238",
+    component: Shell3238,
+    variants: shell3238Data,
+  },
+  {
+    componentName: "Shell3239",
+    component: Shell3239,
+    variants: shell3239Data,
+  },
+  {
+    componentName: "Shell324",
+    component: Shell324,
+    variants: shell324Data,
+  },
+  {
+    componentName: "Shell3240",
+    component: Shell3240,
+    variants: shell3240Data,
+  },
+  {
+    componentName: "Shell3241",
+    component: Shell3241,
+    variants: shell3241Data,
+  },
+  {
+    componentName: "Shell3242",
+    component: Shell3242,
+    variants: shell3242Data,
+  },
+  {
+    componentName: "Shell325",
+    component: Shell325,
+    variants: shell325Data,
+  },
+  {
+    componentName: "Shell326",
+    component: Shell326,
+    variants: shell326Data,
+  },
+  {
+    componentName: "Shell327",
+    component: Shell327,
+    variants: shell327Data,
+  },
+  {
+    componentName: "Shell328",
+    component: Shell328,
+    variants: shell328Data,
+  },
+  {
+    componentName: "Shell329",
+    component: Shell329,
+    variants: shell329Data,
+  },
+  {
+    componentName: "Shortcut",
+    component: Shortcut,
+    variants: shortcutData,
+  },
+  {
+    componentName: "Shortcut2",
+    component: Shortcut2,
+    variants: shortcut2Data,
+  },
+  {
+    componentName: "Shscrap100",
+    component: Shscrap100,
+    variants: shscrap100Data,
+  },
+  {
+    componentName: "Signup",
+    component: Signup,
+    variants: signupData,
+  },
+  {
+    componentName: "Smmscrpt100",
+    component: Smmscrpt100,
+    variants: smmscrpt100Data,
+  },
+  {
+    componentName: "Sndrec3210",
+    component: Sndrec3210,
+    variants: sndrec3210Data,
+  },
+  {
+    componentName: "Sndrec3215",
+    component: Sndrec3215,
+    variants: sndrec3215Data,
+  },
+  {
+    componentName: "Sndrec3216",
+    component: Sndrec3216,
+    variants: sndrec3216Data,
+  },
+  {
+    componentName: "Sndvol32300",
+    component: Sndvol32300,
+    variants: sndvol32300Data,
+  },
+  {
+    componentName: "Sndvol32301",
+    component: Sndvol32301,
+    variants: sndvol32301Data,
+  },
+  {
+    componentName: "Sndvol32302",
+    component: Sndvol32302,
+    variants: sndvol32302Data,
+  },
+  {
+    componentName: "Sndvol32303",
+    component: Sndvol32303,
+    variants: sndvol32303Data,
+  },
+  {
+    componentName: "Sndvol32304",
+    component: Sndvol32304,
+    variants: sndvol32304Data,
+  },
+  {
+    componentName: "Sol1",
+    component: Sol1,
+    variants: sol1Data,
+  },
+  {
+    componentName: "Spellchk",
+    component: Spellchk,
+    variants: spellchkData,
+  },
+  {
+    componentName: "Star",
+    component: Star,
+    variants: starData,
+  },
+  {
+    componentName: "Svrworld",
+    component: Svrworld,
+    variants: svrworldData,
+  },
+  {
+    componentName: "Swinst53000",
+    component: Swinst53000,
+    variants: swinst53000Data,
+  },
+  {
+    componentName: "Syncui120",
+    component: Syncui120,
+    variants: syncui120Data,
+  },
+  {
+    componentName: "Syncui121",
+    component: Syncui121,
+    variants: syncui121Data,
+  },
+  {
+    componentName: "Syncui122",
+    component: Syncui122,
+    variants: syncui122Data,
+  },
+  {
+    componentName: "Syncui123",
+    component: Syncui123,
+    variants: syncui123Data,
+  },
+  {
+    componentName: "Syncui124",
+    component: Syncui124,
+    variants: syncui124Data,
+  },
+  {
+    componentName: "Syncui125",
+    component: Syncui125,
+    variants: syncui125Data,
+  },
+  {
+    componentName: "Syncui126",
+    component: Syncui126,
+    variants: syncui126Data,
+  },
+  {
+    componentName: "Syncui127",
+    component: Syncui127,
+    variants: syncui127Data,
+  },
+  {
+    componentName: "Syncui128",
+    component: Syncui128,
+    variants: syncui128Data,
+  },
+  {
+    componentName: "Syncui129",
+    component: Syncui129,
+    variants: syncui129Data,
+  },
+  {
+    componentName: "Syncui130",
+    component: Syncui130,
+    variants: syncui130Data,
+  },
+  {
+    componentName: "Syncui131",
+    component: Syncui131,
+    variants: syncui131Data,
+  },
+  {
+    componentName: "Syncui132",
+    component: Syncui132,
+    variants: syncui132Data,
+  },
+  {
+    componentName: "Syncui135",
+    component: Syncui135,
+    variants: syncui135Data,
+  },
+  {
+    componentName: "SysPackage",
+    component: SysPackage,
+    variants: sysPackageData,
+  },
+  {
+    componentName: "Sysedit1",
+    component: Sysedit1,
+    variants: sysedit1Data,
+  },
+  {
+    componentName: "Sysedit2",
+    component: Sysedit2,
+    variants: sysedit2Data,
+  },
+  {
+    componentName: "Sysmon1000",
+    component: Sysmon1000,
+    variants: sysmon1000Data,
+  },
+  {
+    componentName: "Systray200",
+    component: Systray200,
+    variants: systray200Data,
+  },
+  {
+    componentName: "Systray210",
+    component: Systray210,
+    variants: systray210Data,
+  },
+  {
+    componentName: "Systray220",
+    component: Systray220,
+    variants: systray220Data,
+  },
+  {
+    componentName: "Systray221",
+    component: Systray221,
+    variants: systray221Data,
+  },
+  {
+    componentName: "Systray300",
+    component: Systray300,
+    variants: systray300Data,
+  },
+  {
+    componentName: "Systray301",
+    component: Systray301,
+    variants: systray301Data,
+  },
+  {
+    componentName: "Systray302",
+    component: Systray302,
+    variants: systray302Data,
+  },
+  {
+    componentName: "Systray303",
+    component: Systray303,
+    variants: systray303Data,
+  },
+  {
+    componentName: "Systray304",
+    component: Systray304,
+    variants: systray304Data,
+  },
+  {
+    componentName: "Systray305",
+    component: Systray305,
+    variants: systray305Data,
+  },
+  {
+    componentName: "Systray306",
+    component: Systray306,
+    variants: systray306Data,
+  },
+  {
+    componentName: "Taskman100",
+    component: Taskman100,
+    variants: taskman100Data,
+  },
+  {
+    componentName: "Textchat",
+    component: Textchat,
+    variants: textchatData,
+  },
+  {
+    componentName: "Textchat2",
+    component: Textchat2,
+    variants: textchat2Data,
+  },
+  {
+    componentName: "Tick",
+    component: Tick,
+    variants: tickData,
+  },
+  {
+    componentName: "Time",
+    component: Time,
+    variants: timeData,
+  },
+  {
+    componentName: "Timedate",
+    component: Timedate,
+    variants: timedateData,
+  },
+  {
+    componentName: "Timedate200",
+    component: Timedate200,
+    variants: timedate200Data,
+  },
+  {
+    componentName: "TimerFont",
+    component: TimerFont,
+    variants: timerFontData,
+  },
+  {
+    componentName: "Toupper",
+    component: Toupper,
+    variants: toupperData,
+  },
+  {
+    componentName: "Tour1",
+    component: Tour1,
+    variants: tour1Data,
+  },
+  {
+    componentName: "Tree",
+    component: Tree,
+    variants: treeData,
+  },
+  {
+    componentName: "Tssoft3210",
+    component: Tssoft3210,
+    variants: tssoft3210Data,
+  },
+  {
+    componentName: "Twunk32TwunkIcon",
+    component: Twunk32TwunkIcon,
+    variants: twunk32TwunkIconData,
+  },
+  {
+    componentName: "Ulclient1002",
+    component: Ulclient1002,
+    variants: ulclient1002Data,
+  },
+  {
+    componentName: "Ulclient1235",
+    component: Ulclient1235,
+    variants: ulclient1235Data,
+  },
+  {
+    componentName: "Underlne",
+    component: Underlne,
+    variants: underlneData,
+  },
+  {
+    componentName: "Undo",
+    component: Undo,
+    variants: undoData,
+  },
+  {
+    componentName: "Uninst1000",
+    component: Uninst1000,
+    variants: uninst1000Data,
+  },
+  {
+    componentName: "Uninstall",
+    component: Uninstall,
+    variants: uninstallData,
+  },
+  {
+    componentName: "Unmute",
+    component: Unmute,
+    variants: unmuteData,
+  },
+  {
+    componentName: "Url102",
+    component: Url102,
+    variants: url102Data,
+  },
+  {
+    componentName: "Url103",
+    component: Url103,
+    variants: url103Data,
+  },
+  {
+    componentName: "Url104",
+    component: Url104,
+    variants: url104Data,
+  },
+  {
+    componentName: "Url105",
+    component: Url105,
+    variants: url105Data,
+  },
+  {
+    componentName: "Url1102",
+    component: Url1102,
+    variants: url1102Data,
+  },
+  {
+    componentName: "Url1103",
+    component: Url1103,
+    variants: url1103Data,
+  },
+  {
+    componentName: "Url1104",
+    component: Url1104,
+    variants: url1104Data,
+  },
+  {
+    componentName: "Url1105",
+    component: Url1105,
+    variants: url1105Data,
+  },
+  {
+    componentName: "User",
+    component: User,
+    variants: userData,
+  },
+  {
+    componentName: "User1",
+    component: User1,
+    variants: user1Data,
+  },
+  {
+    componentName: "User2",
+    component: User2,
+    variants: user2Data,
+  },
+  {
+    componentName: "User3",
+    component: User3,
+    variants: user3Data,
+  },
+  {
+    componentName: "User4",
+    component: User4,
+    variants: user4Data,
+  },
+  {
+    componentName: "User5",
+    component: User5,
+    variants: user5Data,
+  },
+  {
+    componentName: "User6",
+    component: User6,
+    variants: user6Data,
+  },
+  {
+    componentName: "User7",
+    component: User7,
+    variants: user7Data,
+  },
+  {
+    componentName: "Voxplay3000",
+    component: Voxplay3000,
+    variants: voxplay3000Data,
+  },
+  {
+    componentName: "Vvexe321",
+    component: Vvexe321,
+    variants: vvexe321Data,
+  },
+  {
+    componentName: "Wab321010",
+    component: Wab321010,
+    variants: wab321010Data,
+  },
+  {
+    componentName: "Wab321011",
+    component: Wab321011,
+    variants: wab321011Data,
+  },
+  {
+    componentName: "Wab321012",
+    component: Wab321012,
+    variants: wab321012Data,
+  },
+  {
+    componentName: "Wab321013",
+    component: Wab321013,
+    variants: wab321013Data,
+  },
+  {
+    componentName: "Wab321014",
+    component: Wab321014,
+    variants: wab321014Data,
+  },
+  {
+    componentName: "Wab321015",
+    component: Wab321015,
+    variants: wab321015Data,
+  },
+  {
+    componentName: "Wab321016",
+    component: Wab321016,
+    variants: wab321016Data,
+  },
+  {
+    componentName: "Wab321017",
+    component: Wab321017,
+    variants: wab321017Data,
+  },
+  {
+    componentName: "Wab321018",
+    component: Wab321018,
+    variants: wab321018Data,
+  },
+  {
+    componentName: "Wab321019",
+    component: Wab321019,
+    variants: wab321019Data,
+  },
+  {
+    componentName: "Wab321020",
+    component: Wab321020,
+    variants: wab321020Data,
+  },
+  {
+    componentName: "Wangimg128",
+    component: Wangimg128,
+    variants: wangimg128Data,
+  },
+  {
+    componentName: "Wangimg129",
+    component: Wangimg129,
+    variants: wangimg129Data,
+  },
+  {
+    componentName: "Wangimg130",
+    component: Wangimg130,
+    variants: wangimg130Data,
+  },
+  {
+    componentName: "Warning",
+    component: Warning,
+    variants: warningData,
+  },
+  {
+    componentName: "WebLink",
+    component: WebLink,
+    variants: webLinkData,
+  },
+  {
+    componentName: "WebOpen",
+    component: WebOpen,
+    variants: webOpenData,
+  },
+  {
+    componentName: "WebTxfr",
+    component: WebTxfr,
+    variants: webTxfrData,
+  },
+  {
+    componentName: "Websrch",
+    component: Websrch,
+    variants: websrchData,
+  },
+  {
+    componentName: "Wgpocpl128",
+    component: Wgpocpl128,
+    variants: wgpocpl128Data,
+  },
+  {
+    componentName: "What",
+    component: What,
+    variants: whatData,
+  },
+  {
+    componentName: "WindowAbc",
+    component: WindowAbc,
+    variants: windowAbcData,
+  },
+  {
+    componentName: "WindowAccessibility",
+    component: WindowAccessibility,
+    variants: windowAccessibilityData,
+  },
+  {
+    componentName: "WindowGraph",
+    component: WindowGraph,
+    variants: windowGraphData,
+  },
+  {
+    componentName: "WindowsExplorer",
+    component: WindowsExplorer,
+    variants: windowsExplorerData,
+  },
+  {
+    componentName: "Winfile1",
+    component: Winfile1,
+    variants: winfile1Data,
+  },
+  {
+    componentName: "Winfile2",
+    component: Winfile2,
+    variants: winfile2Data,
+  },
+  {
+    componentName: "Winfile3",
+    component: Winfile3,
+    variants: winfile3Data,
+  },
+  {
+    componentName: "Winfile4",
+    component: Winfile4,
+    variants: winfile4Data,
+  },
+  {
+    componentName: "Winhlp324000",
+    component: Winhlp324000,
+    variants: winhlp324000Data,
+  },
+  {
+    componentName: "Winhlp324001",
+    component: Winhlp324001,
+    variants: winhlp324001Data,
+  },
+  {
+    componentName: "Winhlp324002",
+    component: Winhlp324002,
+    variants: winhlp324002Data,
+  },
+  {
+    componentName: "Wininet32546",
+    component: Wininet32546,
+    variants: wininet32546Data,
+  },
+  {
+    componentName: "Winmine1",
+    component: Winmine1,
+    variants: winmine1Data,
+  },
+  {
+    componentName: "Winpopup1",
+    component: Winpopup1,
+    variants: winpopup1Data,
+  },
+  {
+    componentName: "Winpopup2",
+    component: Winpopup2,
+    variants: winpopup2Data,
+  },
+  {
+    componentName: "Winpopup3",
+    component: Winpopup3,
+    variants: winpopup3Data,
+  },
+  {
+    componentName: "Wintrust103",
+    component: Wintrust103,
+    variants: wintrust103Data,
+  },
+  {
+    componentName: "Wmsui321000",
+    component: Wmsui321000,
+    variants: wmsui321000Data,
+  },
+  {
+    componentName: "Wmsui321001",
+    component: Wmsui321001,
+    variants: wmsui321001Data,
+  },
+  {
+    componentName: "Wmsui321306",
+    component: Wmsui321306,
+    variants: wmsui321306Data,
+  },
+  {
+    componentName: "Wmsui322219",
+    component: Wmsui322219,
+    variants: wmsui322219Data,
+  },
+  {
+    componentName: "Wmsui322220",
+    component: Wmsui322220,
+    variants: wmsui322220Data,
+  },
+  {
+    componentName: "Wmsui322221",
+    component: Wmsui322221,
+    variants: wmsui322221Data,
+  },
+  {
+    componentName: "Wmsui322223",
+    component: Wmsui322223,
+    variants: wmsui322223Data,
+  },
+  {
+    componentName: "Wmsui322224",
+    component: Wmsui322224,
+    variants: wmsui322224Data,
+  },
+  {
+    componentName: "Wmsui322225",
+    component: Wmsui322225,
+    variants: wmsui322225Data,
+  },
+  {
+    componentName: "Wmsui322226",
+    component: Wmsui322226,
+    variants: wmsui322226Data,
+  },
+  {
+    componentName: "Wmsui323911",
+    component: Wmsui323911,
+    variants: wmsui323911Data,
+  },
+  {
+    componentName: "Wmsui323912",
+    component: Wmsui323912,
+    variants: wmsui323912Data,
+  },
+  {
+    componentName: "Wmsui323919",
+    component: Wmsui323919,
+    variants: wmsui323919Data,
+  },
+  {
+    componentName: "Wmsui323920",
+    component: Wmsui323920,
+    variants: wmsui323920Data,
+  },
+  {
+    componentName: "Wmsui323924",
+    component: Wmsui323924,
+    variants: wmsui323924Data,
+  },
+  {
+    componentName: "Wmsui323926",
+    component: Wmsui323926,
+    variants: wmsui323926Data,
+  },
+  {
+    componentName: "Wmsui323929",
+    component: Wmsui323929,
+    variants: wmsui323929Data,
+  },
+  {
+    componentName: "Wmsui323934",
+    component: Wmsui323934,
+    variants: wmsui323934Data,
+  },
+  {
+    componentName: "Wmsui323935",
+    component: Wmsui323935,
+    variants: wmsui323935Data,
+  },
+  {
+    componentName: "Wmsui323936",
+    component: Wmsui323936,
+    variants: wmsui323936Data,
+  },
+  {
+    componentName: "Wmsui323938",
+    component: Wmsui323938,
+    variants: wmsui323938Data,
+  },
+  {
+    componentName: "Wmsui325084",
+    component: Wmsui325084,
+    variants: wmsui325084Data,
+  },
+  {
+    componentName: "Wmsui325085",
+    component: Wmsui325085,
+    variants: wmsui325085Data,
+  },
+  {
+    componentName: "Wmsui325086",
+    component: Wmsui325086,
+    variants: wmsui325086Data,
+  },
+  {
+    componentName: "Wmsui325087",
+    component: Wmsui325087,
+    variants: wmsui325087Data,
+  },
+  {
+    componentName: "Wmsui325900",
+    component: Wmsui325900,
+    variants: wmsui325900Data,
+  },
+  {
+    componentName: "Wmsui325901",
+    component: Wmsui325901,
+    variants: wmsui325901Data,
+  },
+  {
+    componentName: "Wordpad",
+    component: Wordpad,
+    variants: wordpadData,
+  },
+  {
+    componentName: "Write1",
+    component: Write1,
+    variants: write1Data,
+  },
+]
