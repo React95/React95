@@ -37,9 +37,11 @@
     "build:css": "cp ./icons.css ./dist/icons.css",
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types"
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
+    "tosvg": "ts-node-script toSVG.ts png/Access110_16x16_4.png "
   },
   "devDependencies": {
+    "@andreekeberg/imagedata": "^1.0.2",
     "@types/rimraf": "^3.0.2",
     "icojs": "^0.16.1",
     "rimraf": "^3.0.2",
