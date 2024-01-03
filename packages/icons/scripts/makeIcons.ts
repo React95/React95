@@ -1,6 +1,7 @@
 import fs from 'fs';
 import ICO from 'icojs';
 import path from 'path';
+
 import { getIconDataName, iconComponentTemplate } from './component-template';
 import { filterBlockedIcons } from './iconBlockList';
 import {
@@ -139,7 +140,7 @@ async function toDemo(icons: IconsMap[]) {
 
     // Demo file imports & exports for use in React95 Core Storybook
     demoFileImports.push(
-      `import {${variantDataName}, ${componentName}} from './react/${name}';`,
+      `import { ${variantDataName}, ${componentName} } from './react/${name}';`,
     );
     demoFileExports.push(`  {
     componentName: "${componentName}",
