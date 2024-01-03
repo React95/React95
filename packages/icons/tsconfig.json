@@ -6,7 +6,11 @@
     "jsx": "react",
     "incremental": true,
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "baseUrl": ".",
+    "paths": {
+      "@andreekeberg/imagedata": ["./scripts/imagedata.d.ts"]
+    }
   },
   "include": ["src"]
 }

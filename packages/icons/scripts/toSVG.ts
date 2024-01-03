@@ -1,6 +1,4 @@
-// no types for '@andreekeberg/imagedata'
-// @ts-ignore
-import ImageData from '@andreekeberg/imagedata';
+import { getSync as getImageDataSync } from '@andreekeberg/imagedata';
 
 type RGBAValues = `${string},${string},${string},${string}`;
 
@@ -124,7 +122,7 @@ function convertImage(img: ImageData) {
 }
 
 export function generateSVG(fileName: string) {
-  const imgData = ImageData.getSync(fileName);
+  const imgData = getImageDataSync(fileName);
 
   const svg = convertImage(imgData);
 
