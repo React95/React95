@@ -163,11 +163,12 @@ export const icons = [
 async function toSVG(icons: IconsMap[]) {
   console.log('💫 Generating SVG components');
 
-  icons.forEach(({ name, variants }) => {
+  icons.forEach(({ variants }) => {
     variants.forEach(variant => {
       const svg = generateSVG(variant.filePath);
+
       // Writing individual SVG files
-      fs.writeFileSync(getSVGFileName(name), svg);
+      fs.writeFileSync(getSVGFileName(variant.id), svg);
     });
   });
 }
