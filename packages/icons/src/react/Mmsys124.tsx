@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Mmsys124_32x32_4 from '../../png/Mmsys124_32x32_4.png';
+import type { SVGProps } from "react";
+
+const Mmsys124_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" width="1em" height="1em" {...props} />;
 
 export const mmsys124Data = {
-  '32x32_4': {
-    imageSrc: Mmsys124_32x32_4 as string,
-    width: 32,
-    height: 32,
-  },
+  '32x32_4': Mmsys124_32x32_4
 };
 
-export interface Mmsys124Props extends IconProps {
+export interface Mmsys124Props extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '32x32_4';
 }
@@ -23,14 +18,7 @@ export const Mmsys124: React.FC<Mmsys124Props> = ({
   variant = '32x32_4',
   ...rest
 }) => {
-  const image = mmsys124Data[variant];
+  const Svg = mmsys124Data[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

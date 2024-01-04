@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Left_16x16_4 from '../../png/Left_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Left_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="1em" height="1em" {...props}><path stroke="#000" d="M1 2h14M1 4h10M1 6h14M1 8h10M1 10h14M1 12h10" /></svg>;
 
 export const leftData = {
-  '16x16_4': {
-    imageSrc: Left_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '16x16_4': Left_16x16_4
 };
 
-export interface LeftProps extends IconProps {
+export interface LeftProps extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '16x16_4';
 }
@@ -23,14 +18,7 @@ export const Left: React.FC<LeftProps> = ({
   variant = '16x16_4',
   ...rest
 }) => {
-  const image = leftData[variant];
+  const Svg = leftData[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

@@ -1,27 +1,17 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Mspaint_32x32_4 from '../../png/Mspaint_32x32_4.png';
-import Mspaint_16x16_4 from '../../png/Mspaint_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Mspaint_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" width="1em" height="1em" {...props}><path stroke="green" d="M8 0h1M8 1h1M8 2h2M8 3h1m1 0h1M8 4h1m2 0h1M8 5h1m1 0h1M8 6h3M9 7h1m-1 9h2m-2 1h1m-1 1h1m-1 1h1m-5 1h1m2 0h1m-4 1h1m2 0h1m-4 1h1m2 0h1m-4 1h1m2 0h1m-4 1h1m1 0h2m-3 1h2m-7 5h3m3 0h1m-4 1h3" /><path stroke="#000" d="M16 0h1m9 0h1m3 0h1M9 1h1m6 0h2m8 0h1m3 0h1M10 2h1m6 0h1m8 0h1m3 0h1M11 3h1m6 0h1m7 0h1m3 0h1M12 4h1m5 0h1m6 0h2m3 0h1M13 5h1m4 0h1m5 0h3m2 0h2M13 6h1m4 0h1m4 0h3m2 0h3M13 7h1m4 0h1m4 0h1m3 0h3M12 8h1m5 0h1m3 0h1m4 0h1M13 9h1m8 0h1m3 0h1m-14 1h1m7 0h1m3 0h1M8 11h1m4 0h1m6 0h1m4 0h1m1 0h1M7 12h2m4 0h1m5 0h1m4 0h2m1 0h1M7 13h2m4 0h1m4 0h1m4 0h2m2 0h2M4 14h1m3 0h1m4 0h1m3 0h1m4 0h2m3 0h2M5 15h1m6 0h1m3 0h1m4 0h1m5 0h2M6 16h1m20 0h1m1 0h1M7 17h1m19 0h1m2 0h1m-4 1h1m2 0h1m-21 1h2m15 0h1m3 0h1m-20 1h2m13 0h1m3 0h1m-18 1h2m11 0h1m3 0h1m-16 1h2m9 0h1m3 0h1m-14 1h2m7 0h1m3 0h1m-12 1h3m7 0h1m-8 1h7m-3 1h1m-1 1h1M6 28h1m19 0h1M7 29h2m15 0h2M9 30h2m11 0h2m-13 1h11" /><path stroke="gray" d="M15 1h1m13 0h1M15 2h1m12 0h1m-2 1h1m-1 1h1M11 5h2m-1 1h1m13 0h1M8 7h1m3 0h1m12 0h1M10 8h2m12 0h1M9 9h1m2 0h1m-4 1h1m2 0h1m-8 3h1m22 3h1m0 1h1m-1 1h1m0 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-8 1h7" /><path stroke="olive" d="M25 1h1m-2 1h1M14 3h1m2 0h1m5 0h1M14 4h4m4 0h1m-9 1h1m2 0h1m4 0h1m-9 1h1m2 0h1m3 0h1m-8 1h1m2 0h1m1 0h1M9 8h1m4 0h1m2 0h1m5 0h1M7 9h2m5 0h1m2 0h1M6 10h1m7 0h1m11 0h1M5 11h1m8 0h1M5 12h1m8 0h1m-9 2h1m19 0h1M7 15h1m16 0h3M5 16h1m16 0h2m1 0h2M5 17h1m4 0h12m3 0h2M5 18h1m19 0h2M5 19h1m19 0h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2M5 25h1m-1 1h1m19 0h2M5 27h2m18 0h2M7 28h2m15 0h2M9 29h2m11 0h2m-13 1h11" /><path stroke="#fff" d="M16 2h1m-2 1h1m12 1h1M15 5h1m-1 1h1m6 0h1m-8 1h1m5 0h1m4 0h1M15 8h1m9 0h1M10 9h1m4 0h1m-9 1h1m7 0h1M6 11h1m8 0h1m10 0h1M6 12h1m19 0h1M6 13h1m19 0h1M7 14h1m16 0h2m-4 1h2m-13 1h11M6 17h1m-1 1h1m5 0h2m1 0h1m1 0h1m1 0h1M6 19h1m7 0h1m1 0h1m1 0h1M9 20h1m1 0h1m4 0h2m1 0h1m-10 1h1m1 0h1m5 0h1M9 22h1m1 0h1m1 0h1m1 0h1m-6 1h1m1 0h1m1 0h1m1 0h1m-8 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M8 25h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M6 26h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M8 27h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M9 28h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-8 1h1m1 0h1m1 0h1m1 0h1" /><path stroke="silver" d="M25 2h1m3 0h1M16 3h1m7 0h2m2 0h2m-7 1h2m4 0h1m-7 1h1m3 0h2M11 6h1m15 0h1M10 7h2m1 1h1m-3 1h1m-4 1h1m1 0h2m-5 1h1m-4 2h1m20 0h1M5 14h1m0 1h1m0 1h1m16 0h1m-2 1h2m-15 1h2m10 0h3m-13 1h2m7 0h1m1 0h2m-11 1h2m6 0h3m-9 1h2m3 0h1m1 0h2m-7 1h2m2 0h3m-5 1h2m1 0h2m-4 2h1m0 1h3m-4 1h1m1 0h2m-3 1h2m-3 1h1" /><path stroke="#0f0" d="M9 3h1M9 4h2M9 5h1M8 15h2m-2 1h1m-1 1h1m-2 1h2m-2 1h2m-3 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h1m-4 4h3m-5 1h6m-7 1h1m3 0h3" /><path stroke="#ff0" d="M16 5h1m-1 1h1m-1 1h1m5 0h1m-7 1h1m4 0h1m4 0h1M16 9h1m8 0h1m-10 1h1m5 7h1m-9 1h1m1 0h1m1 0h1m1 0h2m-7 1h1m1 0h1m1 0h2m1 0h1m-13 1h1m7 0h1m1 0h2M9 21h1m1 0h1m1 0h1m5 0h2m1 0h1m-13 1h1m1 0h1m1 0h1m5 0h2M9 23h1m1 0h1m1 0h1m1 0h1m1 0h1m4 0h1m-13 1h1m1 0h1m1 0h1m1 0h1m1 0h1M9 25h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1M8 26h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2M7 27h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-13 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m-11 1h1m1 0h1m1 0h1m1 0h1m1 0h2" /><path stroke="maroon" d="M20 7h1m-2 1h1m-2 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-2 1h1m-2 1h1" /><path stroke="red" d="M20 8h1m-2 1h2m-3 1h2m-3 1h2m-3 1h2m-3 1h2m-3 1h2m-3 1h2" /><path stroke="#0ff" d="M23 9h1m-2 1h1m-2 1h1m-2 1h1m-2 1h1m-2 1h1m-2 1h1" /><path stroke="#00f" d="M24 9h1m-2 1h2m-3 1h2m-3 1h3m-4 1h3m-4 1h3m-4 1h3" /><path stroke="purple" d="M9 11h1m2 0h1m-4 1h1m2 0h1m-4 1h1m2 0h1m-4 1h1m2 0h1" /><path stroke="#f0f" d="M10 11h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2" /><path stroke="navy" d="M24 11h1" /></svg>;
+const Mspaint_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="1em" height="1em" {...props}><path stroke="green" d="M4 0h1M4 1h2M4 2h1m1 0h1M4 3h1m1 0h1M5 4h1M4 8h1M4 9h1m-1 1h1m-1 1h1m-2 1h1m-1 2h1m-4 1h3" /><path stroke="#000" d="M13 0h1m-1 1h1m1 0h1m-3 1h1m1 0h1m-5 1h2m2 0h1M6 4h1m6 0h2M6 5h2m5 0h1M2 6h1m3 0h1m5 0h1m1 0h1M2 7h1m8 0h1m1 0h2m-2 1h1m1 0h1M5 9h1m7 0h1m1 0h1M6 10h2m5 0h1m1 0h1m-8 1h2m3 0h1m1 0h1m-6 1h5M3 13h1m9 0h1M4 14h2m5 0h2m-7 1h5" /><path stroke="olive" d="M11 1h2m-2 1h1m2 0h1M3 4h1m3 0h2M2 5h1m0 2h1M2 8h1m2 0h1m6 0h1M2 9h1m9 0h1M2 10h1m9 0h1M2 11h1m9 0h1M2 12h1" /><path stroke="#0f0" d="M5 2h1M5 3h1M4 7h1M3 8h1M3 9h1m-1 1h1m-1 1h1m-2 2h1m-3 1h3" /><path stroke="#fff" d="M12 2h1M3 5h1M3 6h1m8 1h1M6 8h6m-2 2h1m-6 1h1m1 0h1m3 0h1m-8 1h1m1 0h1m1 0h1m-4 1h1m1 0h1m1 0h1" /><path stroke="red" d="M10 3h1M9 4h2M8 5h2M7 6h2M6 7h2" /><path stroke="gray" d="M13 3h1M4 4h1m9 1h1m-1 3h1M6 9h1m1 1h1m1 1h1m3 0h1" /><path stroke="silver" d="M14 3h1m-2 3h1M7 9h5m-1 4h2" /><path stroke="maroon" d="M11 4h1m-2 1h1M9 6h1M8 7h1" /><path stroke="#0ff" d="M12 4h1" /><path stroke="#f0f" d="M4 5h2M4 6h2M5 7h1" /><path stroke="#00f" d="M11 5h2m-3 1h2M9 7h2" /><path stroke="#ff0" d="M5 10h1m3 0h1m1 0h1m-6 1h1m-2 1h1m1 0h1m1 0h1m-6 1h1m1 0h1m1 0h1m1 0h1m-5 1h5" /></svg>;
 
 export const mspaintData = {
-  '32x32_4': {
-    imageSrc: Mspaint_32x32_4 as string,
-    width: 32,
-    height: 32,
-  },
-
-  '16x16_4': {
-    imageSrc: Mspaint_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '32x32_4': Mspaint_32x32_4,
+  '16x16_4': Mspaint_16x16_4
 };
 
-export interface MspaintProps extends IconProps {
+export interface MspaintProps extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '32x32_4' | '16x16_4';
 }
@@ -30,14 +20,7 @@ export const Mspaint: React.FC<MspaintProps> = ({
   variant = '32x32_4',
   ...rest
 }) => {
-  const image = mspaintData[variant];
+  const Svg = mspaintData[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

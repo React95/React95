@@ -1,10 +1,21 @@
 // @ts-check
 
+import fs from 'fs';
+import { transform } from '@svgr/core';
 import { IconData } from './utils';
+import { Options } from '@svgr/babel-preset';
 
 export const getIconDataName = (name: string): string => {
   const lowercase = name.charAt(0).toLowerCase() + name.slice(1);
   return `${lowercase}Data`;
+};
+
+const svgTemplate: Options['template'] = (variables, { tpl }) => {
+  return tpl`
+const ${variables.componentName} = (${variables.props}) => (
+  ${variables.jsx}
+);
+`;
 };
 
 export const iconComponentTemplate = (
@@ -14,29 +25,41 @@ export const iconComponentTemplate = (
   const iconDataVariableName = getIconDataName(name);
   const componentName = name;
   const componentPropsName = `${componentName}Props`;
+
   return `import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
+import type { SVGProps } from "react";
+
 ${images
-  .map(image => `import ${image.id} from '${image.reactImportPath}';`)
+  .map(image => {
+    const svg = fs.readFileSync(image.svgImportPath).toString();
+
+    const component = transform.sync(
+      svg,
+      {
+        icon: true,
+        jsxRuntime: 'automatic',
+        template: svgTemplate,
+        plugins: ['@svgr/plugin-jsx'],
+        typescript: true,
+      },
+      { componentName: image.id },
+    );
+
+    return component;
+  })
   .join('\n')}
 
 export const ${iconDataVariableName} = {${images
     .map(
       image => `
-  '${image.variant}': {
-    imageSrc: ${image.id} as string,
-    width: ${image.width},
-    height: ${image.height},
-  },`,
+  '${image.variant}': ${image.id}`,
     )
-    .join('\n')}
+    .join(',')}
 };
 
-export interface ${componentPropsName} extends IconProps {
+export interface ${componentPropsName} extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: ${images.map(image => `'${image.variant}'`).join(' | ')};
 }
@@ -45,16 +68,9 @@ export const ${componentName}: React.FC<${componentPropsName}> = ({
   variant = '${images[0].variant}',
   ...rest
 }) => {
-  const image = ${iconDataVariableName}[variant];
+  const Svg = ${iconDataVariableName}[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };
 `;
 };

@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Centre_16x16_4 from '../../png/Centre_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Centre_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="1em" height="1em" {...props}><path stroke="#000" d="M1 2h14M3 4h10M1 6h14M3 8h10M1 10h14M3 12h10" /></svg>;
 
 export const centreData = {
-  '16x16_4': {
-    imageSrc: Centre_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '16x16_4': Centre_16x16_4
 };
 
-export interface CentreProps extends IconProps {
+export interface CentreProps extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '16x16_4';
 }
@@ -23,14 +18,7 @@ export const Centre: React.FC<CentreProps> = ({
   variant = '16x16_4',
   ...rest
 }) => {
-  const image = centreData[variant];
+  const Svg = centreData[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

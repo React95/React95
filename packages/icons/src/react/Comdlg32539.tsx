@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Comdlg32539_32x32_4 from '../../png/Comdlg32539_32x32_4.png';
+import type { SVGProps } from "react";
+
+const Comdlg32539_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" width="1em" height="1em" {...props}><path stroke="#000" d="M3 3h13m3 0h10M19 4h1m8 0h1M19 5h1m8 0h1M3 6h13m3 0h1m8 0h1M19 7h1m8 0h1M19 8h1m8 0h1M3 9h13m3 0h1m8 0h1m-10 1h1m8 0h1m-10 1h1m8 0h1M3 12h13m3 0h10" /></svg>;
 
 export const comdlg32539Data = {
-  '32x32_4': {
-    imageSrc: Comdlg32539_32x32_4 as string,
-    width: 32,
-    height: 32,
-  },
+  '32x32_4': Comdlg32539_32x32_4
 };
 
-export interface Comdlg32539Props extends IconProps {
+export interface Comdlg32539Props extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '32x32_4';
 }
@@ -23,14 +18,7 @@ export const Comdlg32539: React.FC<Comdlg32539Props> = ({
   variant = '32x32_4',
   ...rest
 }) => {
-  const image = comdlg32539Data[variant];
+  const Svg = comdlg32539Data[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

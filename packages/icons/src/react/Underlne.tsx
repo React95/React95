@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Underlne_16x16_4 from '../../png/Underlne_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Underlne_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="1em" height="1em" {...props}><path stroke="#000" d="M3 3h4m1 0h4M4 4h2m3 0h2M4 5h2m3 0h2M4 6h2m3 0h2M4 7h2m3 0h2M4 8h2m3 0h2M4 9h2m3 0h2m-7 1h2m3 0h2m-6 1h5m-7 2h9" /><path stroke="gray" d="M6 10h1m1 0h1" /></svg>;
 
 export const underlneData = {
-  '16x16_4': {
-    imageSrc: Underlne_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '16x16_4': Underlne_16x16_4
 };
 
-export interface UnderlneProps extends IconProps {
+export interface UnderlneProps extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '16x16_4';
 }
@@ -23,14 +18,7 @@ export const Underlne: React.FC<UnderlneProps> = ({
   variant = '16x16_4',
   ...rest
 }) => {
-  const image = underlneData[variant];
+  const Svg = underlneData[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

@@ -6,7 +6,7 @@ export interface IconData {
   filePath: string;
   height: number;
   id: string;
-  reactImportPath: string;
+  svgImportPath: string;
   variant: string;
   width: number;
 }

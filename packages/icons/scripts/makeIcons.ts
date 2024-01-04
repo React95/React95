@@ -50,15 +50,14 @@ async function extractPNGFromIco(fileName: string) {
       const imageId = `${iconName}_${variant}`;
 
       const imageFileName = getImageFileName(imageId);
+      const svgFileName = getSVGFileName(imageId);
 
       return {
         ...image,
         width: image.width,
         height: image.height,
         filePath: imageFileName,
-        reactImportPath: path
-          .relative(REACT_FOLDER, imageFileName)
-          .replace(/\\/g, '/'),
+        svgImportPath: svgFileName,
         variant: variant,
         id: imageId,
       };

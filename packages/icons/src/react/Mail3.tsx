@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Mail3_16x16_4 from '../../png/Mail3_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Mail3_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="1em" height="1em" {...props}><path stroke="#000" d="M0 4h1m1 0h1m1 0h12M5 5h2m7 0h2M0 6h1m1 0h1m1 0h2m1 0h1m5 0h1m1 0h1M5 7h1m2 0h1m3 0h1m2 0h1M0 8h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M5 9h2m3 0h1m3 0h2M0 10h1m1 0h1m1 0h2m9 0h1M5 11h11" /><path stroke="#ff0" d="M7 5h1m1 0h1m1 0h1m1 0h1M6 6h1m1 0h1m1 0h1m1 0h1m1 0h1M7 7h1m1 0h1m1 0h1m1 0h1M6 8h1m1 0h1m1 0h1m1 0h1m1 0h1M7 9h1m1 0h1m1 0h1m1 0h1m-8 1h1m1 0h1m1 0h1m1 0h1m1 0h1" /><path stroke="#fff" d="M8 5h1m1 0h1m1 0h1M9 6h1m1 0h1M6 7h1m3 0h1m3 0h1M8 9h1m3 0h1m-6 1h1m1 0h1m1 0h1m1 0h1" /></svg>;
 
 export const mail3Data = {
-  '16x16_4': {
-    imageSrc: Mail3_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '16x16_4': Mail3_16x16_4
 };
 
-export interface Mail3Props extends IconProps {
+export interface Mail3Props extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '16x16_4';
 }
@@ -23,14 +18,7 @@ export const Mail3: React.FC<Mail3Props> = ({
   variant = '16x16_4',
   ...rest
 }) => {
-  const image = mail3Data[variant];
+  const Svg = mail3Data[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };
