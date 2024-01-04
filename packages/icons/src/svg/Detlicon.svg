@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 16 16" shape-rendering="crispEdges">
-<path stroke="#000000" d="M0 0h1M4 2h4M9 2h3M13 2h3M4 6h4M9 6h3M13 6h3M4 8h4M9 8h3M13 8h3M4 10h4M9 10h3M13 10h3M4 12h4M9 12h3M13 12h3M4 14h4M9 14h3M13 14h3" />
-<path stroke="#000080" d="M0 0h1M1 4h15M1 6h1M1 8h1M1 10h1M1 12h1M1 14h1" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 16 16"><path stroke="#000" d="M4 2h4m1 0h3m1 0h3M4 6h4m1 0h3m1 0h3M4 8h4m1 0h3m1 0h3M4 10h4m1 0h3m1 0h3M4 12h4m1 0h3m1 0h3M4 14h4m1 0h3m1 0h3"/><path stroke="navy" d="M1 4h15M1 6h1M1 8h1m-1 2h1m-1 2h1m-1 2h1"/></svg>

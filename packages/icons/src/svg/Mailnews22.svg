@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 16 16" shape-rendering="crispEdges">
-<path stroke="#808080" d="M0 0h1M0 0h11M0 1h1M0 2h1M0 3h1M0 4h1M0 5h1M0 6h1M4 6h4M0 7h1M8 7h7M4 8h1M4 9h1M4 10h1M4 11h1M4 12h1M4 13h1M4 14h1" />
-<path stroke="#000000" d="M0 0h1M11 0h1M11 1h1M11 2h1M11 3h1M11 4h1M11 5h1M11 6h1M4 7h4M15 7h1M0 8h4M15 8h1M15 9h1M15 10h1M15 11h1M15 12h1M15 13h1M15 14h1M4 15h12" />
-<path stroke="#ffffff" d="M0 0h1M1 1h8M1 2h1M4 2h5M1 3h10M1 4h3M8 4h3M1 5h10M1 6h3M8 6h3M1 7h3M5 8h8M5 9h1M8 9h5M5 10h10M5 11h3M12 11h3M5 12h10M5 13h3M12 13h3M5 14h10" />
-<path stroke="#c0c0c0" d="M0 0h1M9 1h2M10 2h1M13 8h2M14 9h1" />
-<path stroke="#0000ff" d="M0 0h1M12 1h2M15 1h1M2 2h2M12 3h2M15 3h1M4 4h4M12 5h2M15 5h1M6 9h2M0 10h1M2 10h2M8 11h4M0 12h1M2 12h2M8 13h4M0 14h1M2 14h2" />
-<path stroke="#ff0000" d="M0 0h1M9 2h1M13 9h1" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 16 16"><path stroke="gray" d="M0 0h11M0 1h1M0 2h1M0 3h1M0 4h1M0 5h1M0 6h1m3 0h4M0 7h1m7 0h7M4 8h1M4 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1"/><path stroke="#000" d="M11 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 7h4m7 0h1M0 8h4m11 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 15h12"/><path stroke="#fff" d="M1 1h8M1 2h1m2 0h5M1 3h10M1 4h3m4 0h3M1 5h10M1 6h3m4 0h3M1 7h3m1 1h8M5 9h1m2 0h5m-8 1h10M5 11h3m4 0h3M5 12h10M5 13h3m4 0h3M5 14h10"/><path stroke="silver" d="M9 1h2m-1 1h1m2 6h2m-1 1h1"/><path stroke="#00f" d="M12 1h2m1 0h1M2 2h2m8 1h2m1 0h1M4 4h4m4 1h2m1 0h1M6 9h2m-8 1h1m1 0h2m4 1h4M0 12h1m1 0h2m4 1h4M0 14h1m1 0h2"/><path stroke="red" d="M9 2h1m3 7h1"/></svg>

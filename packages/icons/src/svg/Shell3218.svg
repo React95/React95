@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 16 16" shape-rendering="crispEdges">
-<path stroke="#808080" d="M0 0h9M0 1h1M0 2h1M0 3h1M0 4h1M0 5h1M7 5h8M0 6h1M6 6h1M0 7h1M6 7h1M0 8h1M6 8h1M12 8h1M0 9h1M3 9h4M12 9h1M6 10h1M9 10h4M2 11h1M6 11h1M2 12h1M6 12h1M14 12h1M0 13h2M5 13h2M14 13h1M6 14h1M9 14h6" />
-<path stroke="#ffffff" d="M0 0h1M1 1h7M1 2h1M1 3h1M1 4h1M1 5h1M7 6h7M7 7h1M1 8h5M7 8h1M7 9h1M7 10h1M7 13h7" />
-<path stroke="#000000" d="M0 0h1M8 1h1M2 2h4M8 2h1M2 3h1M8 3h1M2 4h1M8 4h1M14 6h1M1 7h5M8 7h5M14 7h1M8 8h1M14 8h1M8 9h1M14 9h1M1 10h5M8 10h1M14 10h1M3 11h1M14 11h1M3 12h1M7 12h7M15 12h1M4 13h1M15 13h1M0 14h2M4 14h2M15 14h1M2 15h2M7 15h8" />
-<path stroke="#000080" d="M0 0h1M6 2h1M6 3h1M6 4h1M2 5h5" />
-<path stroke="#c0c0c0" d="M0 0h1M7 2h1M7 3h1M7 4h1M1 6h5M13 7h1M13 8h1M1 9h1M13 9h1M13 10h1M7 11h7M7 14h1" />
-<path stroke="#00ffff" d="M0 0h1M3 3h1M9 8h1" />
-<path stroke="#0000ff" d="M0 0h1M4 3h2M3 4h3" />
-<path stroke="#008080" d="M0 0h1M10 8h2M9 9h3" />
-<path stroke="#00ff00" d="M0 0h1M2 9h1M8 14h1" />
-<path stroke="#ffff00" d="M0 0h1M2 13h1M2 14h1" />
-<path stroke="#808000" d="M0 0h1M3 13h1M3 14h1" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 16 16"><path stroke="gray" d="M1 0h8M0 1h1M0 2h1M0 3h1M0 4h1M0 5h1m6 0h8M0 6h1m5 0h1M0 7h1m5 0h1M0 8h1m5 0h1m5 0h1M0 9h1m2 0h4m5 0h1m-7 1h1m2 0h4M2 11h1m3 0h1m-5 1h1m3 0h1m7 0h1M0 13h2m3 0h2m7 0h1m-9 1h1m2 0h6"/><path stroke="#fff" d="M1 1h7M1 2h1M1 3h1M1 4h1M1 5h1m5 1h7M7 7h1M1 8h5m1 0h1M7 9h1m-1 1h1m-1 3h7"/><path stroke="#000" d="M8 1h1M2 2h4m2 0h1M2 3h1m5 0h1M2 4h1m5 0h1m5 2h1M1 7h5m2 0h5m1 0h1M8 8h1m5 0h1M8 9h1m5 0h1M1 10h5m2 0h1m5 0h1M3 11h1m10 0h1M3 12h1m3 0h7m1 0h1M4 13h1m10 0h1M0 14h2m2 0h2m9 0h1M2 15h2m3 0h8"/><path stroke="navy" d="M6 2h1M6 3h1M6 4h1M2 5h5"/><path stroke="silver" d="M7 2h1M7 3h1M7 4h1M1 6h5m7 1h1m-1 1h1M1 9h1m11 0h1m-1 1h1m-7 1h7m-7 3h1"/><path stroke="#0ff" d="M3 3h1m5 5h1"/><path stroke="#00f" d="M4 3h2M3 4h3"/><path stroke="teal" d="M10 8h2M9 9h3"/><path stroke="#0f0" d="M2 9h1m5 5h1"/><path stroke="#ff0" d="M2 13h1m-1 1h1"/><path stroke="olive" d="M3 13h1m-1 1h1"/></svg>

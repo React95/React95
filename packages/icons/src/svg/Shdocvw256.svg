@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 16 16" shape-rendering="crispEdges">
-<path stroke="#808080" d="M0 0h1M0 0h9M0 1h1M9 1h1M0 2h1M10 2h1M0 3h1M0 4h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1M0 10h1M6 10h1M0 11h1M6 11h1M0 12h1M6 12h1M0 13h1M6 13h1M6 14h1" />
-<path stroke="#ffffff" d="M0 0h1M1 1h7M1 2h7M9 2h1M1 3h7M1 4h1M5 4h5M1 5h8M1 6h1M1 7h6M1 8h1M1 9h4M1 10h1M7 10h6M1 11h5M7 11h6M1 12h5M7 12h2M12 12h1M7 13h2M12 13h1M7 14h2M12 14h1" />
-<path stroke="#c0c0c0" d="M0 0h1M8 1h1M8 2h1M2 4h3M10 5h1M2 6h6M9 6h1M8 7h1M2 8h4M7 8h1M2 10h4M13 10h1M13 11h1M13 12h1M1 13h5M13 13h1M13 14h1" />
-<path stroke="#000000" d="M0 0h1M8 3h4M10 4h2M11 5h1M12 6h1M13 7h1M14 8h1M5 9h11M14 10h1M14 11h1M14 12h1M11 13h1M14 13h1M0 14h6M11 14h1M14 14h1M6 15h9" />
-<path stroke="#ff0000" d="M0 0h1M12 4h1M12 5h1" />
-<path stroke="#800000" d="M0 0h1M13 4h1M13 5h1M13 6h1" />
-<path stroke="#808000" d="M0 0h1M9 5h1M8 6h1M11 6h1M7 7h1M10 7h1M12 7h1M6 8h1M9 8h1M11 8h1M13 8h1M9 12h3M9 13h1M9 14h1" />
-<path stroke="#ffff00" d="M0 0h1M10 6h1M9 7h1M11 7h1M8 8h1M10 8h1M12 8h1M10 13h1M10 14h1" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 16 16"><path stroke="gray" d="M0 0h9M0 1h1m8 0h1M0 2h1m9 0h1M0 3h1M0 4h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1m-1 1h1m5 0h1m-7 1h1m5 0h1m-7 1h1m5 0h1m-7 1h1m5 0h1m-1 1h1"/><path stroke="#fff" d="M1 1h7M1 2h7m1 0h1M1 3h7M1 4h1m3 0h5M1 5h8M1 6h1M1 7h6M1 8h1M1 9h4m-4 1h1m5 0h6M1 11h5m1 0h6M1 12h5m1 0h2m3 0h1m-6 1h2m3 0h1m-6 1h2m3 0h1"/><path stroke="silver" d="M8 1h1M8 2h1M2 4h3m5 1h1M2 6h6m1 0h1M8 7h1M2 8h4m1 0h1m-6 2h4m7 0h1m-1 1h1m-1 1h1M1 13h5m7 0h1m-1 1h1"/><path stroke="#000" d="M8 3h4m-2 1h2m-1 1h1m0 1h1m0 1h1m0 1h1M5 9h11m-2 1h1m-1 1h1m-1 1h1m-4 1h1m2 0h1M0 14h6m5 0h1m2 0h1m-9 1h9"/><path stroke="red" d="M12 4h1m-1 1h1"/><path stroke="maroon" d="M13 4h1m-1 1h1m-1 1h1"/><path stroke="olive" d="M9 5h1M8 6h1m2 0h1M7 7h1m2 0h1m1 0h1M6 8h1m2 0h1m1 0h1m1 0h1m-5 4h3m-3 1h1m-1 1h1"/><path stroke="#ff0" d="M10 6h1M9 7h1m1 0h1M8 8h1m1 0h1m1 0h1m-3 5h1m-1 1h1"/></svg>

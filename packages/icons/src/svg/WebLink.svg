@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 16 16" shape-rendering="crispEdges">
-<path stroke="#808080" d="M0 0h1M3 0h6M2 1h2M1 2h1M0 3h2M11 3h1M0 4h1M0 5h1M0 6h1M0 7h1M0 8h1M11 8h1M6 12h1M12 12h1" />
-<path stroke="#008080" d="M0 0h1M4 1h1M8 5h1M9 7h1" />
-<path stroke="#c0c0c0" d="M0 0h1M5 1h1M3 2h1M4 3h1M2 4h1M5 10h1M7 10h1M11 10h1M13 10h1M4 11h1M14 11h1M8 12h3M4 13h1M14 13h1M5 14h1M7 14h1M11 14h1M13 14h1" />
-<path stroke="#008000" d="M0 0h1M6 1h3M5 2h5M9 3h2M3 4h2M6 4h2M9 4h2M2 5h5M10 5h1M3 6h6M5 7h4M5 8h4" />
-<path stroke="#000000" d="M0 0h1M9 1h1M10 2h1M11 4h1M11 5h1M11 6h1M11 7h1M1 9h1M5 9h4M10 9h4M2 10h1M4 10h1M9 10h1M14 10h1M3 11h1M5 11h9M15 11h1M3 12h1M5 12h1M7 12h1M11 12h1M13 12h1M15 12h1M3 13h1M5 13h9M15 13h1M4 14h1M9 14h1M14 14h1M5 15h4M10 15h4" />
-<path stroke="#ffffff" d="M0 0h1M2 2h1M4 2h1M3 3h1M6 10h1M8 10h1M10 10h1M12 10h1M4 12h1M14 12h1M6 14h1M8 14h1M10 14h1M12 14h1" />
-<path stroke="#0000ff" d="M0 0h1M2 3h1M5 3h4M1 4h1M8 4h1M1 5h1M1 6h2M9 6h2M1 7h4M10 7h1M2 8h3M9 8h1M2 9h3" />
-<path stroke="#000080" d="M0 0h1M5 4h1M7 5h1M9 5h1M1 8h1M10 8h1M9 9h1M3 10h1" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 16 16"><path stroke="gray" d="M3 0h6M2 1h2M1 2h1M0 3h2m9 0h1M0 4h1M0 5h1M0 6h1M0 7h1M0 8h1m10 0h1m-6 4h1m5 0h1"/><path stroke="teal" d="M4 1h1m3 4h1m0 2h1"/><path stroke="silver" d="M5 1h1M3 2h1m0 1h1M2 4h1m2 6h1m1 0h1m3 0h1m1 0h1M4 11h1m9 0h1m-7 1h3m-7 1h1m9 0h1M5 14h1m1 0h1m3 0h1m1 0h1"/><path stroke="green" d="M6 1h3M5 2h5M9 3h2M3 4h2m1 0h2m1 0h2M2 5h5m3 0h1M3 6h6M5 7h4M5 8h4"/><path stroke="#000" d="M9 1h1m0 1h1m0 2h1m-1 1h1m-1 1h1m-1 1h1M1 9h1m3 0h4m1 0h4M2 10h1m1 0h1m4 0h1m4 0h1M3 11h1m1 0h9m1 0h1M3 12h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1M3 13h1m1 0h9m1 0h1M4 14h1m4 0h1m4 0h1M5 15h4m1 0h4"/><path stroke="#fff" d="M2 2h1m1 0h1M3 3h1m2 7h1m1 0h1m1 0h1m1 0h1m-9 2h1m9 0h1m-9 2h1m1 0h1m1 0h1m1 0h1"/><path stroke="#00f" d="M2 3h1m2 0h4M1 4h1m6 0h1M1 5h1M1 6h2m6 0h2M1 7h4m5 0h1M2 8h3m4 0h1M2 9h3"/><path stroke="navy" d="M5 4h1m1 1h1m1 0h1M1 8h1m8 0h1M9 9h1m-7 1h1"/></svg>

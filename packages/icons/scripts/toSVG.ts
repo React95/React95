@@ -1,3 +1,4 @@
+import { optimize } from 'svgo';
 import { getSync as getImageDataSync } from '@andreekeberg/imagedata';
 
 type RGBAValues = `${string},${string},${string},${string}`;
@@ -80,7 +81,7 @@ function colorsToPaths(colors: ColorMap) {
     }
 
     const paths: string[] = [];
-    let curPath: ColorMapRange = [0, 0];
+    let curPath: ColorMapRange;
     let w = 1;
 
     // Loops through each color's pixels to optimize paths
@@ -96,7 +97,7 @@ function colorsToPaths(colors: ColorMap) {
       }
     });
 
-    paths.push(makePathData(curPath[0], curPath[1], w)); // Finish last path
+    paths.push(makePathData(curPath![0], curPath![1], w)); // Finish last path
 
     output += makePath(color, paths.join(''));
   });
@@ -117,8 +118,10 @@ function convertImage(img: ImageData) {
     paths +
     '</svg>';
 
-  // Send message back to the main script
-  return output;
+  const { data: optimized } = optimize(output);
+
+  // Send optimized svg
+  return optimized;
 }
 
 export function generateSVG(fileName: string) {

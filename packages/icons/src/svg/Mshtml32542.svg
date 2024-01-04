@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 16 16" shape-rendering="crispEdges">
-<path stroke="#808080" d="M0 0h1M5 0h5M3 1h2M10 1h2M2 2h1M1 3h1M1 4h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1M0 10h1" />
-<path stroke="#c0c0c0" d="M0 0h1M5 1h1M4 2h1M3 3h1M2 4h1M1 5h1M3 5h1M1 7h1M3 7h1M2 8h1M2 9h1M5 10h1" />
-<path stroke="#ffffff" d="M0 0h1M6 1h1M3 2h1M5 2h1M2 3h1M3 4h1M2 5h1M4 5h1M1 6h3M2 7h1M4 7h1M3 8h1M5 8h1" />
-<path stroke="#0000ff" d="M0 0h1M7 1h1M6 2h1M6 4h2M5 5h2M9 5h1M13 5h1M4 6h1M7 6h1M11 6h2M9 7h1M12 7h1M10 8h1M12 9h1M3 10h2M10 10h1M3 11h3M9 11h1M2 12h5M8 12h1M3 13h2M7 13h1M9 13h1" />
-<path stroke="#008080" d="M0 0h1M8 1h2M4 3h1M13 6h1M1 8h1M1 9h1M4 9h2M10 9h1" />
-<path stroke="#008000" d="M0 0h1M7 2h2M10 2h2M10 3h3M9 4h1M11 4h2M11 5h2M5 6h1M9 6h1M6 7h2M6 8h2M9 8h1M6 9h1M8 9h2M1 10h1M8 10h1M6 11h3M7 12h1" />
-<path stroke="#ff0000" d="M0 0h1M9 2h1M5 3h1M7 9h1M2 10h1M11 11h1" />
-<path stroke="#000080" d="M0 0h1M12 2h1M13 7h1M12 8h2M13 9h1M9 10h1M12 10h2M10 11h1M12 11h1M1 12h1M9 12h1M12 12h1M2 13h1M5 13h2M8 13h1M10 13h2M3 14h7" />
-<path stroke="#000000" d="M0 0h1M6 3h2M13 3h1M8 4h1M10 4h1M13 4h1M7 5h2M10 5h1M14 5h1M6 6h1M8 6h1M10 6h1M14 6h1M5 7h1M8 7h1M10 7h2M14 7h1M4 8h1M8 8h1M11 8h1M14 8h1M3 9h1M11 9h1M14 9h1M11 10h1M14 10h1M13 11h1M13 12h1M12 13h1M10 14h2M5 15h5" />
-<path stroke="#800000" d="M0 0h1M8 3h2M4 4h2M6 10h2M1 11h2M10 12h2" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 16 16"><path stroke="gray" d="M5 0h5M3 1h2m5 0h2M2 2h1M1 3h1M1 4h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1m-1 1h1"/><path stroke="silver" d="M5 1h1M4 2h1M3 3h1M2 4h1M1 5h1m1 0h1M1 7h1m1 0h1M2 8h1M2 9h1m2 1h1"/><path stroke="#fff" d="M6 1h1M3 2h1m1 0h1M2 3h1m0 1h1M2 5h1m1 0h1M1 6h3M2 7h1m1 0h1M3 8h1m1 0h1"/><path stroke="#00f" d="M7 1h1M6 2h1M6 4h2M5 5h2m2 0h1m3 0h1M4 6h1m2 0h1m3 0h2M9 7h1m2 0h1m-3 1h1m1 1h1M3 10h2m5 0h1m-8 1h3m3 0h1m-8 1h5m1 0h1m-6 1h2m2 0h1m1 0h1"/><path stroke="teal" d="M8 1h2M4 3h1m8 3h1M1 8h1M1 9h1m2 0h2m4 0h1"/><path stroke="green" d="M7 2h2m1 0h2m-2 1h3M9 4h1m1 0h2m-2 1h2M5 6h1m3 0h1M6 7h2M6 8h2m1 0h1M6 9h1m1 0h2m-9 1h1m6 0h1m-3 1h3m-2 1h1"/><path stroke="red" d="M9 2h1M5 3h1m1 6h1m-6 1h1m8 1h1"/><path stroke="navy" d="M12 2h1m0 5h1m-2 1h2m-1 1h1m-5 1h1m2 0h2m-4 1h1m1 0h1M1 12h1m7 0h1m2 0h1M2 13h1m2 0h2m1 0h1m1 0h2m-9 1h7"/><path stroke="#000" d="M6 3h2m5 0h1M8 4h1m1 0h1m2 0h1M7 5h2m1 0h1m3 0h1M6 6h1m1 0h1m1 0h1m3 0h1M5 7h1m2 0h1m1 0h2m2 0h1M4 8h1m3 0h1m2 0h1m2 0h1M3 9h1m7 0h1m2 0h1m-4 1h1m2 0h1m-2 1h1m-1 1h1m-2 1h1m-3 1h2m-7 1h5"/><path stroke="maroon" d="M8 3h2M4 4h2m0 6h2m-7 1h2m7 1h2"/></svg>
