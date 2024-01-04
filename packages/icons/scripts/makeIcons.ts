@@ -21,10 +21,11 @@ const getSVGFileName = (name: string) => `${SVG_FOLDER}/${name}.svg`;
 const getImageFileName = (imageId: string) => `${IMAGE_FOLDER}/${imageId}.png`;
 
 const makeCssClass = (icon: IconData) => `.${icon.id} {
-    width: ${icon.width}px;
-    height: ${icon.height}px;
-    background-image: url(${icon.filePath});
-  }
+  width: ${icon.width}px;
+  height: ${icon.height}px;
+  background-image: url(${icon.svgImportPath});
+  display: inline-block;
+}
 `;
 
 const capitalizeFirst = (word: string) =>
@@ -108,8 +109,6 @@ async function toCSS(icons: IconsMap[]) {
     variants.forEach(variant => {
       // Writing CSS file for supporting older CSS file usage
       cssClasses.push(makeCssClass(variant));
-      // Writing individual PNG files
-      fs.writeFileSync(variant.filePath, Buffer.from(variant.buffer));
     });
   });
 
