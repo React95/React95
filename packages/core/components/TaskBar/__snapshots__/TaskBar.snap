@@ -621,7 +621,6 @@ exports[`<TaskBar /> > Snapshots > should match snapshot 1`] = `
         class="c3"
       >
         <svg
-          alt="Windows95 Logo"
           height="1em"
           shape-rendering="crispEdges"
           viewBox="0 -0.5 32 32"
@@ -793,7 +792,6 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 1`] = `
         class="c3"
       >
         <svg
-          alt="Windows95 Logo"
           height="1em"
           shape-rendering="crispEdges"
           viewBox="0 -0.5 32 32"
@@ -1102,7 +1100,6 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
         class="c6"
       >
         <svg
-          alt="Windows95 Logo"
           height="1em"
           shape-rendering="crispEdges"
           viewBox="0 -0.5 32 32"
@@ -1539,7 +1536,6 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
         class="c11"
       >
         <svg
-          alt="Windows95 Logo"
           height="1em"
           shape-rendering="crispEdges"
           viewBox="0 -0.5 32 32"
@@ -2130,7 +2126,6 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
         class="c14"
       >
         <svg
-          alt="Windows95 Logo"
           height="1em"
           shape-rendering="crispEdges"
           viewBox="0 -0.5 32 32"
