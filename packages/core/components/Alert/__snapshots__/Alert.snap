@@ -241,11 +241,30 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
         <div
           class="c10"
         >
-          <img
-            height="32"
-            src="test-file-stub"
-            width="32"
-          />
+          <svg
+            height="1em"
+            shape-rendering="crispEdges"
+            viewBox="0 -0.5 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 0h8M8 1h3m8 0h3M7 2h1m14 0h1M5 3h2m16 0h2M4 4h1m20 0h1M3 5h1m22 0h1M3 6h1m22 0h1M2 7h1m24 0h1M1 8h1m26 0h1M1 9h1m26 0h1M1 10h1m26 0h1M0 11h1m28 0h1M0 12h1m28 0h1M0 13h1m28 0h1M0 14h1m28 0h1M0 15h1m28 0h1M0 16h1m28 0h1M0 17h1m28 0h1M0 18h1m28 0h1M1 19h1m26 0h1M1 20h1m26 0h1M1 21h1m26 0h1M2 22h1m24 0h1M3 23h1m22 0h1M3 24h1m22 0h1M4 25h1m20 0h1M5 26h2m16 0h2M7 27h1m14 0h1M8 28h3m8 0h3m-11 1h8"
+              stroke="maroon"
+            />
+            <path
+              d="M11 1h8M8 2h14M7 3h16M5 4h20M4 5h22M4 6h22M3 7h6m1 0h10m1 0h6M2 8h6m3 0h8m3 0h6M2 9h5m5 0h6m5 0h5M2 10h6m5 0h4m5 0h6M1 11h8m5 0h2m5 0h8M1 12h9m10 0h9M1 13h10m8 0h10M1 14h11m6 0h11M1 15h11m6 0h11M1 16h10m8 0h10M1 17h9m10 0h9M1 18h8m5 0h2m5 0h8M2 19h6m5 0h4m5 0h6M2 20h5m5 0h6m5 0h5M2 21h6m3 0h8m3 0h6M3 22h6m1 0h10m1 0h6M4 23h22M4 24h22M5 25h20M7 26h16M8 27h14m-11 1h8"
+              stroke="red"
+            />
+            <path
+              d="M27 6h1m0 1h1m0 2h1m-1 1h2m-1 1h1m-1 1h1m-1 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-3 1h3m-3 1h3m-3 1h2m-3 1h3m-4 1h4m-4 1h3m-4 1h3m-4 1h4M6 27h1m16 0h5M7 28h1m14 0h5M9 29h2m8 0h6m-15 1h14m-11 1h8"
+              stroke="gray"
+            />
+            <path
+              d="M9 7h1m10 0h1M8 8h3m8 0h3M7 9h5m6 0h5M8 10h5m4 0h5M9 11h5m2 0h5m-11 1h10m-9 1h8m-7 1h6m-6 1h6m-7 1h8m-9 1h10M9 18h5m2 0h5M8 19h5m4 0h5M7 20h5m6 0h5M8 21h3m8 0h3M9 22h1m10 0h1"
+              stroke="#fff"
+            />
+          </svg>
         </div>
         <div
           class="c11"
@@ -509,11 +528,34 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
         <div
           class="c10"
         >
-          <img
-            height="32"
-            src="test-file-stub"
-            width="32"
-          />
+          <svg
+            height="1em"
+            shape-rendering="crispEdges"
+            viewBox="0 -0.5 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 0h8M8 1h3m8 0h3M6 2h2m14 0h2M5 3h1m18 0h1M4 4h1M3 5h1M2 6h1M1 7h1M1 8h1m27 0h1M0 9h1m29 0h1M0 10h1m29 0h1M0 11h1m29 0h2M0 12h1m29 0h2M0 13h1m29 0h2M0 14h1m29 0h2M0 15h1m29 0h2M1 16h1m27 0h3M1 17h1m27 0h3M2 18h1m25 0h3m-4 1h4m-5 1h4m-5 1h4m-5 1h4M7 23h1m14 0h5M8 24h3m8 0h7m-16 1h4m5 0h5m-11 1h1m5 0h2m-2 1h2m-2 1h2m-2 1h2m-3 1h3m-2 1h2"
+              stroke="gray"
+            />
+            <path
+              d="M11 1h1m6 0h1M8 2h1m12 0h1M6 3h1m16 0h1M12 4h1m4 0h1M2 7h1m9 0h1m4 0h1m9 0h1M1 9h1m26 0h1M1 15h1m26 0h1M2 17h1m24 0h1M6 21h1m16 0h1M8 22h1m12 0h1m-11 1h1m6 0h1m-5 1h1"
+              stroke="silver"
+            />
+            <path
+              d="M12 1h6M9 2h12M7 3h16M5 4h7m6 0h7M4 5h8m6 0h8M3 6h9m6 0h9M3 7h9m6 0h9M2 8h26M2 9h26M1 10h10m7 0h11M1 11h12m5 0h11M1 12h12m5 0h11M1 13h12m5 0h11M1 14h12m5 0h11M2 15h11m5 0h10M2 16h11m5 0h10M3 17h10m5 0h9M3 18h8m9 0h7M4 19h22M5 20h20M7 21h16M9 22h12m-9 1h6m-3 1h3m-3 1h3m-3 1h3m-2 1h2m-1 1h1"
+              stroke="#fff"
+            />
+            <path
+              d="M13 4h4m-5 1h6m-6 1h6m-5 1h4m-6 3h7m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-7 1h9"
+              stroke="#00f"
+            />
+            <path
+              d="M25 4h1m0 1h1m0 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1M3 19h1m22 0h1M4 20h1m20 0h1M5 21h1m18 0h1M6 22h2m14 0h2M8 23h3m8 0h3m-11 1h3m4 0h1m-5 1h1m3 0h1m-5 1h1m3 0h1m-4 1h1m2 0h1m-3 1h1m1 0h1m-2 1h2"
+              stroke="#000"
+            />
+          </svg>
         </div>
         <div
           class="c11"
@@ -777,11 +819,34 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
         <div
           class="c10"
         >
-          <img
-            height="32"
-            src="test-file-stub"
-            width="32"
-          />
+          <svg
+            height="1em"
+            shape-rendering="crispEdges"
+            viewBox="0 -0.5 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 0h8M8 1h3m8 0h3M6 2h2m14 0h2M5 3h1m18 0h1M4 4h1M3 5h1M2 6h1M1 7h1M1 8h1m27 0h1M0 9h1m29 0h1M0 10h1m29 0h1M0 11h1m29 0h2M0 12h1m29 0h2M0 13h1m29 0h2M0 14h1m29 0h2M0 15h1m29 0h2M1 16h1m27 0h3M1 17h1m27 0h3M2 18h1m25 0h3m-4 1h4m-5 1h4m-5 1h4m-5 1h4M7 23h1m14 0h5M8 24h3m8 0h7m-16 1h4m5 0h5m-11 1h1m5 0h2m-2 1h2m-2 1h2m-2 1h2m-3 1h3m-2 1h2"
+              stroke="gray"
+            />
+            <path
+              d="M11 1h1m6 0h1M8 2h1m12 0h1M6 3h1m16 0h1M11 5h1m6 0h1m-9 1h1m1 0h1m6 0h1M2 7h1m24 0h1M1 9h1m13 0h1m12 0h1m-19 1h1m2 0h1m0 1h1m1 2h1M1 15h1m26 0h1m-16 1h1m2 0h1M2 17h1m24 0h1m-15 2h1m2 0h1M6 21h1m16 0h1M8 22h1m12 0h1m-11 1h1m6 0h1m-5 1h1"
+              stroke="silver"
+            />
+            <path
+              d="M12 1h6M9 2h12M7 3h16M5 4h20M4 5h7m8 0h7M3 6h7m3 0h2m5 0h7M3 7h7m2 0h4m4 0h7M2 8h8m4 0h2m4 0h8M2 9h8m4 0h1m5 0h8M1 10h9m4 0h1m4 0h10M1 11h13m4 0h11M1 12h13m3 0h12M1 13h13m3 0h12M1 14h13m2 0h13M2 15h26M2 16h11m4 0h11M3 17h10m4 0h10M3 18h10m4 0h10M4 19h9m4 0h9M5 20h20M7 21h16M9 22h12m-9 1h6m-3 1h3m-3 1h3m-3 1h3m-2 1h2m-1 1h1"
+              stroke="#fff"
+            />
+            <path
+              d="M25 4h1m0 1h1m0 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1M3 19h1m22 0h1M4 20h1m20 0h1M5 21h1m18 0h1M6 22h2m14 0h2M8 23h3m8 0h3m-11 1h3m4 0h1m-5 1h1m3 0h1m-5 1h1m3 0h1m-4 1h1m2 0h1m-3 1h1m1 0h1m-2 1h2"
+              stroke="#000"
+            />
+            <path
+              d="M12 5h6m-7 1h1m3 0h4m-9 1h2m4 0h4M10 8h4m2 0h4M10 9h4m2 0h4m-9 1h2m2 0h4m-4 1h3m-4 1h3m-3 1h2m-2 1h2m-2 2h2m-3 1h4m-4 1h4m-3 1h2"
+              stroke="#00f"
+            />
+          </svg>
         </div>
         <div
           class="c11"
@@ -1045,11 +1110,34 @@ exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
         <div
           class="c10"
         >
-          <img
-            height="32"
-            src="test-file-stub"
-            width="32"
-          />
+          <svg
+            height="1em"
+            shape-rendering="crispEdges"
+            viewBox="0 -0.5 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 0h3m-4 1h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1M9 6h1M9 7h1M8 8h1M8 9h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m6 0h1m3 0h1M4 16h1m-1 1h1m-2 1h1m9 0h1m1 0h1M3 19h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m-1 1h1m-1 1h1m0 1h1m0 1h1"
+              stroke="olive"
+            />
+            <path
+              d="M13 1h2m-3 1h4m-4 1h5m-6 1h6m-6 1h7m-8 1h8m-8 1h9M9 8h10M9 9h3m5 0h3M8 10h4m5 0h3M8 11h4m5 0h4M7 12h5m5 0h4M7 13h5m5 0h5M6 14h6m5 0h5M6 15h6m5 0h6M5 16h7m5 0h6M5 17h8m3 0h8M4 18h9m3 0h8M4 19h9m3 0h9M3 20h11m1 0h10M3 21h23M2 22h11m4 0h9M2 23h11m4 0h10M1 24h12m4 0h10M1 25h12m4 0h11M1 26h27M1 27h26M2 28h24"
+              stroke="#ff0"
+            />
+            <path
+              d="M15 1h1m0 1h1m0 2h1m0 2h1m0 2h1m-8 1h1m3 0h1m3 1h1m0 2h1m0 2h1m-11 2h1m3 0h1m6 0h1m0 2h1m-12 1h1m1 0h1m9 1h1m-13 2h1m2 0h1m9 0h1m0 2h1m-15 1h1m2 0h1m10 2h1m-2 1h1"
+              stroke="silver"
+            />
+            <path
+              d="M16 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-8 1h3m4 0h1m-9 1h5m4 0h1m-10 1h5m4 0h1m-10 1h5m5 0h1m-11 1h5m5 0h1m-11 1h5m6 0h1m-11 1h3m7 0h1m-11 1h3m8 0h1m-12 1h3m8 0h1m-11 1h1m10 0h1m-12 1h1m10 0h1m-12 1h1m11 0h1m-1 1h1m-13 1h2m11 0h1m-15 1h4m10 0h1m-15 1h4m11 0h1m-15 1h2m12 0h1m-1 1h1m-1 1h1m-2 1h1M3 29h24"
+              stroke="#000"
+            />
+            <path
+              d="M18 2h1m-1 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-1 1h2m-2 1h2m-2 1h3m-3 1h3m-4 1h4m-5 1h5M4 30h27M5 31h25"
+              stroke="gray"
+            />
+          </svg>
         </div>
         <div
           class="c11"
