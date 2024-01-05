@@ -20,7 +20,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
 }
 
 .c1 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -32,13 +32,13 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
 }
 
 .c1 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
 .c4 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -50,8 +50,8 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
 }
 
 .c4 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
@@ -294,7 +294,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
 }
 
 .c1 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -306,8 +306,8 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
 }
 
 .c1 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 

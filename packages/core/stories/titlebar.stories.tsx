@@ -1,4 +1,4 @@
-import { FileIcons } from '@react95/icons';
+import { Doc } from '@react95/icons';
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
@@ -28,7 +28,7 @@ export const Complete = {
   render: () => (
     <TitleBar
       active
-      icon={<FileIcons variant="32x32_4" />}
+      icon={<Doc variant="16x16_4" />}
       title="untitled - Paint"
       className="draggable"
       w={200}

@@ -98,19 +98,19 @@ const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
   isOpen,
 }) => {
   if (!hasChildren) {
-    return <Bat variant="32x32_4" data-testid="react95-default-icon-bat" />;
+    return <Bat variant="16x16_4" data-testid="react95-default-icon-bat" />;
   }
 
   if (isOpen) {
     return (
       <FolderOpen
-        variant="32x32_4"
+        variant="16x16_4"
         data-testid="react95-default-icon-folder-open"
       />
     );
   }
 
-  return <Folder variant="32x32_4" data-testid="react95-default-icon-folder" />;
+  return <Folder variant="16x16_4" data-testid="react95-default-icon-folder" />;
 };
 
 export type NodeProps = {

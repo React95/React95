@@ -1320,7 +1320,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -1332,8 +1332,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
@@ -1829,7 +1829,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -1841,13 +1841,13 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
 .c10 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -1859,8 +1859,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 }
 
 .c10 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 

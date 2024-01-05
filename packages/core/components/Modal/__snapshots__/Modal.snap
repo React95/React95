@@ -82,7 +82,7 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -94,8 +94,8 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
@@ -405,7 +405,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -417,8 +417,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
@@ -680,7 +680,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -692,8 +692,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
@@ -955,7 +955,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -967,8 +967,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
@@ -1191,7 +1191,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
 }
 
 .c2 {
-  height: 18px;
+  height: 20px;
   margin-bottom: 2px;
   padding: 2px;
   display: -webkit-box;
@@ -1203,8 +1203,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
 }
 
 .c2 svg {
-  width: 15px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
 }
 
