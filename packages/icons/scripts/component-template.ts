@@ -41,6 +41,10 @@ ${images
         template: svgTemplate,
         plugins: ['@svgr/plugin-jsx'],
         typescript: true,
+        svgProps: {
+          width: image.width.toString(),
+          height: image.height.toString(),
+        },
       },
       { componentName: image.id },
     );
