@@ -36,8 +36,6 @@ ${images
     const component = transform.sync(
       svg,
       {
-        icon: true,
-        jsxRuntime: 'automatic',
         template: svgTemplate,
         plugins: ['@svgr/plugin-jsx'],
         typescript: true,
