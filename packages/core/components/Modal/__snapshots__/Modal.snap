@@ -93,7 +93,7 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
   background: #000e7a;
 }
 
-.c2 img {
+.c2 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -217,10 +217,10 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
       color="headerText"
     >
       <svg
-        height="1em"
+        height="32"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 32 32"
-        width="1em"
+        width="32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -416,7 +416,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
   background: #000e7a;
 }
 
-.c2 img {
+.c2 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -506,10 +506,10 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
       color="headerText"
     >
       <svg
-        height="1em"
+        height="32"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 32 32"
-        width="1em"
+        width="32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -691,7 +691,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
   background: #000e7a;
 }
 
-.c2 img {
+.c2 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -781,10 +781,10 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
       color="headerText"
     >
       <svg
-        height="1em"
+        height="32"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 32 32"
-        width="1em"
+        width="32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -966,7 +966,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
   background: #7f787f;
 }
 
-.c2 img {
+.c2 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -1033,10 +1033,10 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
       color="headerNotActiveText"
     >
       <svg
-        height="1em"
+        height="32"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 32 32"
-        width="1em"
+        width="32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -1202,7 +1202,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
   background: #000e7a;
 }
 
-.c2 img {
+.c2 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -1270,10 +1270,10 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
       color="headerText"
     >
       <svg
-        height="1em"
+        height="32"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 32 32"
-        width="1em"
+        width="32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

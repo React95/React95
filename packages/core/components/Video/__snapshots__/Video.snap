@@ -92,7 +92,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
   background: #000e7a;
 }
 
-.c2 img {
+.c2 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -297,10 +297,10 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
       color="headerText"
     >
       <svg
-        height="1em"
+        height="16"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 16 16"
-        width="1em"
+        width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -383,10 +383,11 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           disabled=""
         >
           <svg
-            height="1em"
+            height="32"
             shape-rendering="crispEdges"
+            style="border-right-width: initial; border-right-style: none; border-right-color: none; border-bottom-width: initial; border-bottom-style: none; border-bottom-color: none;"
             viewBox="0 -0.5 32 32"
-            width="1em"
+            width="32"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

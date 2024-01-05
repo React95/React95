@@ -65,7 +65,7 @@ const TitleBarBackground = styled(Frame)<{ active?: boolean }>`
 
   box-shadow: none;
 
-  img {
+  svg {
     width: 15;
     height: 14;
     margin-right: 4;

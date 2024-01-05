@@ -31,7 +31,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
   background: #000e7a;
 }
 
-.c1 img {
+.c1 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -49,7 +49,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
   background: #7f787f;
 }
 
-.c4 img {
+.c4 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -78,10 +78,10 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
     color="headerText"
   >
     <svg
-      height="1em"
+      height="32"
       shape-rendering="crispEdges"
       viewBox="0 -0.5 32 32"
-      width="1em"
+      width="32"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -136,10 +136,10 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
     color="headerNotActiveText"
   >
     <svg
-      height="1em"
+      height="32"
       shape-rendering="crispEdges"
       viewBox="0 -0.5 32 32"
-      width="1em"
+      width="32"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -305,7 +305,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
   background: #000e7a;
 }
 
-.c1 img {
+.c1 svg {
   width: 15px;
   height: 14px;
   margin-right: 4px;
@@ -334,10 +334,10 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
     color="headerText"
   >
     <svg
-      height="1em"
+      height="32"
       shape-rendering="crispEdges"
       viewBox="0 -0.5 32 32"
-      width="1em"
+      width="32"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

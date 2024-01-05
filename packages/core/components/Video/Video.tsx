@@ -281,7 +281,10 @@ const VideoRenderer = (
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <User4 variant="32x32_4" />
+              <User4
+                style={{ borderRight: 'none', borderBottom: 'none' }}
+                variant="32x32_4"
+              />
             )}
           </ControlBtn>
           <ControlBtn

@@ -70,7 +70,7 @@ const IconContainer = styled.div<{ hasChildren: boolean }>`
   margin-right: 6;
   margin-left: ${({ hasChildren }) => (hasChildren ? 8 : 18)}px;
 
-  > img {
+  > svg {
     width: 14px;
     height: 14px;
   }

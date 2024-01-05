@@ -49,7 +49,7 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
   margin-left: 18px;
 }
 
-.c3 > img {
+.c3 > svg {
   width: 14px;
   height: 14px;
 }
@@ -84,10 +84,10 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
         >
           <svg
             data-testid="react95-default-icon-bat"
-            height="1em"
+            height="32"
             shape-rendering="crispEdges"
             viewBox="0 -0.5 32 32"
-            width="1em"
+            width="32"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

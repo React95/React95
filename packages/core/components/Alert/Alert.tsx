@@ -11,14 +11,14 @@ export type AlertType = 'error' | 'info' | 'question' | 'warning';
 const RenderImage: React.FC<{ option: string }> = ({ option }) => {
   switch (option) {
     case 'info':
-      return <User5 variant="32x32_4" />;
+      return <User5 width={32} height={32} variant="32x32_4" />;
     case 'question':
-      return <User3 variant="32x32_4" />;
+      return <User3 width={32} height={32} variant="32x32_4" />;
     case 'warning':
-      return <User2 variant="32x32_4" />;
+      return <User2 width={32} height={32} variant="32x32_4" />;
     case 'error':
     default:
-      return <User4 variant="32x32_4" />;
+      return <User4 width={32} height={32} variant="32x32_4" />;
   }
 };
 
@@ -79,7 +79,7 @@ Alert.defaultProps = {
   buttons: [{ value: 'OK', onClick: () => {} }],
   closeAlert: () => {},
   buttonsAlignment: 'center',
-  positionOffset: {
+  defaultPosition: {
     x:
       typeof window == 'undefined'
         ? 0

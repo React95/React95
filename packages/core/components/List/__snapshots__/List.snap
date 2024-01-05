@@ -16,7 +16,7 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
   color: #000000;
 }
 
-.c1 img {
+.c1 svg {
   margin-right: 10px;
 }
 
@@ -34,14 +34,10 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
   z-index: 2;
 }
 
-.c1 ul img {
-  width: 18px;
-  height: 20px;
+.c1 ul svg {
+  width: 16px;
+  height: 16px;
   margin-right: 6px;
-}
-
-.c1 svg {
-  fill: #ffffff;
 }
 
 .c1:after {
@@ -59,6 +55,10 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
   mask-size: 5px 8px;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+.c1:after svg {
+  fill: #ffffff;
 }
 
 .c1:hover:after {
@@ -84,7 +84,7 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
   color: #000000;
 }
 
-.c2 img {
+.c2 svg {
   margin-right: 10px;
 }
 
@@ -102,14 +102,10 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
   z-index: 2;
 }
 
-.c2 ul img {
-  width: 18px;
-  height: 20px;
+.c2 ul svg {
+  width: 16px;
+  height: 16px;
   margin-right: 6px;
-}
-
-.c2 svg {
-  fill: #ffffff;
 }
 
 .c3 {
@@ -142,10 +138,10 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
       class="c1 default"
     >
       <svg
-        height="1em"
+        height="32"
         shape-rendering="crispEdges"
         viewBox="0 -0.5 32 32"
-        width="1em"
+        width="32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -213,10 +209,10 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
           class="c2 default"
         >
           <svg
-            height="1em"
+            height="32"
             shape-rendering="crispEdges"
             viewBox="0 -0.5 32 32"
-            width="1em"
+            width="32"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -269,10 +265,10 @@ exports[`<List /> > Snapshots > should match snapshot 1`] = `
           class="c2 default"
         >
           <svg
-            height="1em"
+            height="32"
             shape-rendering="crispEdges"
             viewBox="0 -0.5 32 32"
-            width="1em"
+            width="32"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

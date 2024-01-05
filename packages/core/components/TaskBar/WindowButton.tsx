@@ -45,11 +45,13 @@ const Button = styled(Frame)<ButtonFrameProps>`
 `;
 
 const IconWrapper = styled.div`
-  img {
+  svg {
+    margin-top: 4;
     margin-right: 4;
     min-width: 20;
     width: 20;
     height: 20;
+    shape-rendering: auto;
   }
 `;
 
