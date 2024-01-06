@@ -1,6 +1,9 @@
 import fs from 'fs';
 import ICO from 'icojs';
 import path from 'path';
+import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader';
+import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor';
+import { optimize } from 'svgo';
 
 import { getIconDataName, iconComponentTemplate } from './component-template';
 import { filterBlockedIcons } from './iconBlockList';
@@ -14,7 +17,6 @@ import {
   ICONS_FOLDER,
   SVG_FOLDER,
 } from './utils';
-import { generateSVG } from './toSVG';
 
 const getReactFileName = (name: string) => `${REACT_FOLDER}/${name}.tsx`;
 const getSVGFileName = (name: string) => `${SVG_FOLDER}/${name}.svg`;
@@ -161,14 +163,29 @@ export const icons = [
 async function toSVG(icons: IconsMap[]) {
   console.log('💫 Generating SVG components');
 
-  icons.forEach(({ variants }) => {
-    variants.forEach(variant => {
-      const svg = generateSVG(variant.filePath);
+  return await Promise.all(
+    icons.map(async ({ variants }) => {
+      return await Promise.all(
+        variants.map(async variant => {
+          const pixels = await loadPixels({
+            input: variant.filePath,
+            mimeType: 'image/png',
+            debug: str => str,
+          });
 
-      // Writing individual SVG files
-      fs.writeFileSync(getSVGFileName(variant.id), svg);
-    });
-  });
+          const svg = await toSvgString({
+            frame: pixels[0],
+            noMetadata: true,
+          });
+
+          const { data: optimized } = optimize(svg);
+
+          // Writing individual SVG files
+          fs.writeFileSync(getSVGFileName(variant.id), optimized);
+        }),
+      );
+    }),
+  );
 }
 
 export async function makeIcons() {

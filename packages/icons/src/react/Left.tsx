@@ -1,7 +1,7 @@
 import React from 'react';
 import type { SVGProps } from "react";
 
-const Left_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="16" height="16" {...props}><path stroke="#000" d="M1 2h14M1 4h10M1 6h14M1 8h10M1 10h14M1 12h10" /></svg>;
+const Left_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#000" d="M1 2h14M1 4h10M1 6h14M1 8h10M1 10h14M1 12h10" /></svg>;
 
 export const leftData = {
   '16x16_4': Left_16x16_4

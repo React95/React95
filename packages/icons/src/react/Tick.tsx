@@ -1,7 +1,7 @@
 import React from 'react';
 import type { SVGProps } from "react";
 
-const Tick_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" width="16" height="16" {...props}><path stroke="#000" d="M8 4h2M8 5h2M7 6h2M7 7h2M3 8h2m1 0h2M3 9h2m1 0h2m-4 1h3m-3 1h3m-2 1h1" /></svg>;
+const Tick_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#000" d="M8 4h2M8 5h2M7 6h2M7 7h2M3 8h2m1 0h2M3 9h2m1 0h2m-4 1h3m-3 1h3m-2 1h1" /></svg>;
 
 export const tickData = {
   '16x16_4': Tick_16x16_4
