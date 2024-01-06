@@ -79,7 +79,7 @@ Alert.defaultProps = {
   buttons: [{ value: 'OK', onClick: () => {} }],
   closeAlert: () => {},
   buttonsAlignment: 'center',
-  defaultPosition: {
+  positionOffset: {
     x:
       typeof window == 'undefined'
         ? 0
