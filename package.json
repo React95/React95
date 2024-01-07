@@ -71,10 +71,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "resolutions": {
-    "graphql": "^15.4.0",
-    "graphql-compose": "^7.25.0"
-  },
   "dependencies": {
     "webpack": "^5.73.0"
   }
