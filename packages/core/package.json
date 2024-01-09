@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "6.2.0",
+  "version": "7.0.0",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "repository": {
@@ -11,7 +11,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@react95/icons": "^2.0.8",
+    "@react95/icons": "^2.1.0",
     "csstype": "^3.0.11",
     "nanoid": "^3.3.1",
     "react-draggable": "^4.4.4",

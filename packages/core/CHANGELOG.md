@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/React95/React95/compare/@react95/core@6.2.0...@react95/core@7.0.0) (2024-01-09)
+
+
+### Features
+
+* **core:** revisiting components ([b712244](https://github.com/React95/React95/commit/b712244358388fa0002817e5c5cf84aa4a7e07ae))
+
+
+### BREAKING CHANGES
+
+* **core:** The icons are now pure SVG components. There is no need for adding or condiguring a
+custom loader or anything like that anymore.
+
+
+
+
+
 # [6.2.0](https://github.com/React95/React95/compare/@react95/core@6.1.6...@react95/core@6.2.0) (2023-12-15)
 
 

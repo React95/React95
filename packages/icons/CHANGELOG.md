@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/React95/React95/compare/@react95/icons@2.0.8...@react95/icons@2.1.0) (2024-01-09)
+
+
+### Features
+
+* CSS also use SVG files ([b849ef4](https://github.com/React95/React95/commit/b849ef4cdc8b0f382bc2807524dc77151a36d02e))
+* **icons:** add script to generate SVG from PNG ([00ac829](https://github.com/React95/React95/commit/00ac8297e27ea3133f2402517ddb4058262b71c1))
+* **icons:** new SVG icons! :tada: ([02e74ea](https://github.com/React95/React95/commit/02e74eacee79c3c3b9bbce1b74f7d72af0bec670))
+
+
+
+
+
 ## [2.0.8](https://github.com/React95/React95/compare/@react95/icons@2.0.7...@react95/icons@2.0.8) (2023-10-17)
 
 **Note:** Version bump only for package @react95/icons
