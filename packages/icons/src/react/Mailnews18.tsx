@@ -1,27 +1,17 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Mailnews18_32x32_4 from '../../png/Mailnews18_32x32_4.png';
-import Mailnews18_16x16_4 from '../../png/Mailnews18_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Mailnews18_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props} />;
+const Mailnews18_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#000" d="M6 4h3M6 5h1m1 0h1M3 6h4m1 0h4M3 7h1m7 0h1M4 8h1m5 0h1M5 9h1m3 0h1m-4 1h1m1 0h1m-2 1h1" /><path stroke="purple" d="M7 5h1M7 6h1M4 7h7M5 8h5M6 9h3m-2 1h1" /></svg>;
 
 export const mailnews18Data = {
-  '32x32_4': {
-    imageSrc: Mailnews18_32x32_4 as string,
-    width: 32,
-    height: 32,
-  },
-
-  '16x16_4': {
-    imageSrc: Mailnews18_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '32x32_4': Mailnews18_32x32_4,
+  '16x16_4': Mailnews18_16x16_4
 };
 
-export interface Mailnews18Props extends IconProps {
+export interface Mailnews18Props extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '32x32_4' | '16x16_4';
 }
@@ -30,14 +20,7 @@ export const Mailnews18: React.FC<Mailnews18Props> = ({
   variant = '32x32_4',
   ...rest
 }) => {
-  const image = mailnews18Data[variant];
+  const Svg = mailnews18Data[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

@@ -1,27 +1,17 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Joy108_32x32_4 from '../../png/Joy108_32x32_4.png';
-import Joy108_16x16_4 from '../../png/Joy108_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Joy108_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props} />;
+const Joy108_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#ff0" d="M9 6h4M7 7h8M7 8h3m2 0h3M6 9h4m2 0h4M6 10h4m2 0h4M6 11h4m2 0h4M6 12h10m-9 1h3m2 0h3m-8 1h8m-6 1h4" /><path stroke="#000" d="M10 8h2m-2 1h2m-2 1h2m-2 1h2m-2 2h2" /></svg>;
 
 export const joy108Data = {
-  '32x32_4': {
-    imageSrc: Joy108_32x32_4 as string,
-    width: 32,
-    height: 32,
-  },
-
-  '16x16_4': {
-    imageSrc: Joy108_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '32x32_4': Joy108_32x32_4,
+  '16x16_4': Joy108_16x16_4
 };
 
-export interface Joy108Props extends IconProps {
+export interface Joy108Props extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '32x32_4' | '16x16_4';
 }
@@ -30,14 +20,7 @@ export const Joy108: React.FC<Joy108Props> = ({
   variant = '32x32_4',
   ...rest
 }) => {
-  const image = joy108Data[variant];
+  const Svg = joy108Data[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

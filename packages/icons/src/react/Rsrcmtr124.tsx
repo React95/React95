@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import Rsrcmtr124_16x16_4 from '../../png/Rsrcmtr124_16x16_4.png';
+import type { SVGProps } from "react";
+
+const Rsrcmtr124_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="gray" d="M1 0h1m12 0h1M1 1h1m12 0h1M1 2h1m12 0h1M1 3h14M1 4h1m12 0h1M1 5h1m12 0h1M1 6h1m12 0h1M1 7h14M1 8h1m12 0h1M1 9h1m12 0h1M1 10h1m12 0h1M1 11h14M1 12h1m12 0h1M1 13h1m12 0h1M1 14h1m12 0h1M1 15h14" /><path stroke="#0f0" d="M2 4h12M2 5h12M2 6h12M2 8h12M2 9h12M2 10h12M2 12h12M2 13h12M2 14h12" /></svg>;
 
 export const rsrcmtr124Data = {
-  '16x16_4': {
-    imageSrc: Rsrcmtr124_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '16x16_4': Rsrcmtr124_16x16_4
 };
 
-export interface Rsrcmtr124Props extends IconProps {
+export interface Rsrcmtr124Props extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '16x16_4';
 }
@@ -23,14 +18,7 @@ export const Rsrcmtr124: React.FC<Rsrcmtr124Props> = ({
   variant = '16x16_4',
   ...rest
 }) => {
-  const image = rsrcmtr124Data[variant];
+  const Svg = rsrcmtr124Data[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

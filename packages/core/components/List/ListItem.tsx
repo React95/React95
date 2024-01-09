@@ -20,7 +20,7 @@ const Item = styled.li<ItemProps>`
 
   color: materialText;
 
-  img {
+  svg {
     margin-right: 10;
   }
 
@@ -37,15 +37,11 @@ const Item = styled.li<ItemProps>`
     color: materialText;
     z-index: taskbar;
 
-    img {
-      width: 18px;
-      height: 20px;
+    svg {
+      width: 16px;
+      height: 16px;
       margin-right: 6;
     }
-  }
-
-  svg {
-    fill: materialTextInvert;
   }
 
   ${({ icon }) => !icon && 'padding-left: 26px;'};
@@ -65,6 +61,10 @@ const Item = styled.li<ItemProps>`
         mask-position: center center;
         mask-size: 5px 8px;
         mask-repeat: no-repeat;
+
+        svg {
+          fill: materialTextInvert;
+        }
       }
 
       &:hover {

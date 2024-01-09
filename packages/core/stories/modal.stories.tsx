@@ -30,7 +30,7 @@ export const Simple = {
           <Modal
             width="300"
             height="200"
-            icon={<Computer variant="32x32_4" />}
+            icon={<Computer variant="16x16_4" />}
             title="Browse"
             defaultPosition={{
               x: 0,

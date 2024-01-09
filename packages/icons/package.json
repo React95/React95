@@ -28,21 +28,24 @@
   },
   "scripts": {
     "precopy": "mkdir -p dist/src/png",
-    "process-icons": "ts-node-script processIcons.ts",
+    "process-icons": "ts-node-script scripts/processIcons.ts",
     "prebuild": "rimraf ./dist",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:types && yarn build:css",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:types && yarn build:css && yarn build:svg",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
-    "build:css": "cp ./icons.css ./dist/icons.css",
+    "build:css": "cp ./icons.css ./dist/icons.css && sed -i -e 's/src\\///g' dist/icons.css",
+    "build:svg": "cp -r src/svg ./dist",
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js --types"
   },
   "devDependencies": {
-    "@types/rimraf": "^3.0.2",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
     "icojs": "^0.16.1",
-    "rimraf": "^3.0.2",
+    "pixel-perfect-svg": "^0.1.0",
+    "svgo": "^3.2.0",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
   }

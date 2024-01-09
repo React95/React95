@@ -47,7 +47,7 @@ const Option = styled(Button).attrs({
 
 Option.displayName = 'Option';
 
-interface TitleBarBackgroundProps
+export interface TitleBarBackgroundProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
     FrameProps {
   active?: boolean;
@@ -56,7 +56,7 @@ interface TitleBarBackgroundProps
 }
 
 const TitleBarBackground = styled(Frame)<{ active?: boolean }>`
-  height: 18;
+  height: 20;
   margin-bottom: 2;
 
   padding: 2;
@@ -65,9 +65,9 @@ const TitleBarBackground = styled(Frame)<{ active?: boolean }>`
 
   box-shadow: none;
 
-  img {
-    width: 15;
-    height: 14;
+  svg {
+    width: 16;
+    height: 16;
     margin-right: 4;
   }
 

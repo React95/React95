@@ -13,6 +13,7 @@ const IconContainer = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4px;
   padding: 4;
   min-width: 150px;
   border: none;
@@ -63,28 +64,36 @@ export const All = {
 
     return (
       <div>
-        <Frame p={4}>
-          <p>We have, currently, {icons.length} icons</p>
+        <p>We have, currently, {icons.length} icons</p>
+        <Frame p={12} display="flex" flexWrap="wrap" gap="4">
           {icons.map(({ component: Component, componentName, variants }) => {
             return (
               <>
-                {Object.entries(variants).map(([variantName]) => (
-                  <IconContainer key={variantName}>
-                    <Component
-                      key={variantName}
-                      title={variantName}
-                      style={{ display: 'inline-block', marginRight: 4 }}
-                      // eslint-disable-next-line
-                      variant={variantName as any}
-                      onClick={() =>
-                        copyToClipboard(componentName, variantName)
-                      }
-                    />
-                    {Component.name}
-                    <br />
-                    {variantName}
-                  </IconContainer>
-                ))}
+                {Object.entries(variants).map(([variantName]) => {
+                  const [size] = variantName.split('x');
+
+                  return (
+                    <IconContainer key={variantName}>
+                      <Component
+                        key={variantName}
+                        style={{
+                          display: 'inline-block',
+                          marginRight: 4,
+                          width: size,
+                          height: size,
+                        }}
+                        // eslint-disable-next-line
+                        variant={variantName as any}
+                        onClick={() =>
+                          copyToClipboard(componentName, variantName)
+                        }
+                      />
+                      {componentName}
+                      <br />
+                      {variantName}
+                    </IconContainer>
+                  );
+                })}
               </>
             );
           })}

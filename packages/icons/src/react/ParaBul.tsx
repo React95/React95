@@ -1,20 +1,15 @@
 import React from 'react';
-import { IconProps } from '../iconType';
-import { BaseIcon } from '../internal';
-import ParaBul_16x16_4 from '../../png/ParaBul_16x16_4.png';
+import type { SVGProps } from "react";
+
+const ParaBul_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="navy" d="M1 2h3M1 3h3M1 4h3M1 7h3M1 8h3M1 9h3m-3 3h3m-3 1h3m-3 1h3" /><path stroke="#000" d="M6 3h9M6 8h9m-9 5h9" /></svg>;
 
 export const paraBulData = {
-  '16x16_4': {
-    imageSrc: ParaBul_16x16_4 as string,
-    width: 16,
-    height: 16,
-  },
+  '16x16_4': ParaBul_16x16_4
 };
 
-export interface ParaBulProps extends IconProps {
+export interface ParaBulProps extends SVGProps<SVGSVGElement> {
   /**
    * Icon variant to use.
-   * also provides default styling with the correct height and width
    **/
   variant?: '16x16_4';
 }
@@ -23,14 +18,7 @@ export const ParaBul: React.FC<ParaBulProps> = ({
   variant = '16x16_4',
   ...rest
 }) => {
-  const image = paraBulData[variant];
+  const Svg = paraBulData[variant];
 
-  return (
-    <BaseIcon
-      width={image.width}
-      height={image.height}
-      src={image.imageSrc}
-      {...rest}
-    />
-  );
+  return <Svg {...rest} />;
 };

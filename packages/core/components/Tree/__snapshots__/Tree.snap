@@ -49,7 +49,7 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
   margin-left: 18px;
 }
 
-.c3 > img {
+.c3 > svg {
   width: 14px;
   height: 14px;
 }
@@ -82,12 +82,47 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
         <div
           class="c3"
         >
-          <img
+          <svg
             data-testid="react95-default-icon-bat"
-            height="32"
-            src="test-file-stub"
-            width="32"
-          />
+            height="16"
+            shape-rendering="crispEdges"
+            viewBox="0 -0.5 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 0h10M2 1h1m9 0h1M2 2h1m10 0h1M2 3h1M2 4h1M2 5h1M2 6h1M2 7h1M2 8h1M2 9h1m-1 1h1m-1 1h1m4 0h1m-6 1h1m-1 1h1m-1 1h1"
+              stroke="gray"
+            />
+            <path
+              d="M3 1h8M3 2h8m1 0h1M3 3h8M3 4h10M3 5h10M3 6h1m1 0h3m3 0h2M3 7h2m7 0h1M3 8h1m1 0h1m6 0h1M3 9h2m7 0h1M3 10h1m1 0h1m6 0h1M3 11h2m4 0h1m2 0h1M3 12h10M3 13h10"
+              stroke="#fff"
+            />
+            <path
+              d="M11 1h1m-1 1h1m1 2h1m-1 1h1m-1 1h1m-1 1h1M6 8h1m6 0h1m-1 1h1m-8 1h1m6 0h1m-6 1h1m1 0h1m2 0h1m-1 1h1m-1 1h1M3 14h11"
+              stroke="silver"
+            />
+            <path
+              d="M11 3h4m-1 1h1m-1 1h1M8 6h3m3 0h1M7 7h1m1 0h1m1 0h1m2 0h1M7 8h5m2 0h1M7 9h1m1 0h1m1 0h1m2 0h1M4 10h1m2 0h5m2 0h1M5 11h2m4 0h1m2 0h1m-1 1h1m-1 1h1m-1 1h1M2 15h13"
+              stroke="#000"
+            />
+            <path
+              d="M4 6h1m0 1h2m1 0h1"
+              stroke="red"
+            />
+            <path
+              d="M10 7h1"
+              stroke="green"
+            />
+            <path
+              d="M4 8h1m0 1h2m1 0h1"
+              stroke="#00f"
+            />
+            <path
+              d="M10 9h1"
+              stroke="#ff0"
+            />
+          </svg>
         </div>
         <span
           class="c4"

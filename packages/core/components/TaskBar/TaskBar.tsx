@@ -56,7 +56,7 @@ const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(({ list }, ref) => {
       )}
       <WindowButton
         small
-        icon={<Logo variant="32x32_4" alt="Windows95 Logo" />}
+        icon={<Logo variant="32x32_4" />}
         active={activeStart}
         onClick={() => {
           toggleActiveStart(!activeStart);
