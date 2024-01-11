@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@react95/clippy": "^1.0.13",
+    "@storybook/addon-designs": "^7.0.9",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-storysource": "^7.4.6",
     "@storybook/addons": "^7.4.6",
@@ -34,7 +35,6 @@
     "@storybook/react-vite": "^7.4.6",
     "@storybook/react-webpack5": "^7.4.6",
     "@storybook/storybook-deployer": "^2.8.16",
-    "@storybook/theming": "^7.4.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/react-hooks": "^8.0.0",
@@ -52,7 +52,6 @@
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
     "storybook": "^7.4.6",
-    "storybook-addon-designs": "^6.3.1",
     "styled-components": "^5.3.3",
     "vite": "^4.3.8"
   },
