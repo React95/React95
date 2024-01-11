@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/React95/React95/compare/@react95/core@7.0.0...@react95/core@7.0.1) (2024-01-11)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 # [7.0.0](https://github.com/React95/React95/compare/@react95/core@6.2.0...@react95/core@7.0.0) (2024-01-09)
 
 
