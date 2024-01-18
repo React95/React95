@@ -53,8 +53,8 @@ addons.register(ADDON_ID, api => {
   addons.add(PANEL_ID, {
     type: types.PANEL,
     title: 'Themes',
-    render: ({ active, key }) => (
-      <AddonPanel active={active} key={key}>
+    render: ({ active }) => (
+      <AddonPanel active={active}>
         <ThemePanel api={api} />
       </AddonPanel>
     ),
