@@ -321,16 +321,16 @@ const VideoRenderer = (
               width: '70%',
               marginLeft: 20,
             }}
-            onClick={e => {
-              const { current: el } = progressRef;
+            onChange={({ target }) => {
               const { current: video } = player;
 
-              if (video && el) {
-                const percent = e.nativeEvent.offsetX / el.offsetWidth;
+              if (video) {
+                const value = parseInt(target.value);
+                const percent = value / 100;
 
                 video.currentTime = percent * video.duration;
 
-                setProgress(Math.floor(percent / 100));
+                setProgress(value);
               }
             }}
           />

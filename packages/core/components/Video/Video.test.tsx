@@ -109,17 +109,6 @@ describe('<Video />', () => {
     });
 
     it('should update video when range updates', async () => {
-      class ExtendableMouseEvent extends MouseEvent {
-        constructor(type: string, values: Partial<MouseEvent>) {
-          const { offsetX, ...mouseValues } = values;
-          super(type, { ...mouseValues, bubbles: true, cancelable: true });
-
-          Object.assign(this, {
-            offsetX: offsetX || 0,
-          });
-        }
-      }
-
       const { container } = await waitRender(
         <Video src="foo/bar/some_video.mp4" />,
       );
@@ -131,19 +120,16 @@ describe('<Video />', () => {
       video.currentTime = 0;
 
       const videoRange = container.querySelector('input')!;
-      // @ts-ignore
-      videoRange.offsetWidth = 100;
 
       expect(videoRange.value).toBe('0');
 
       act(() => {
-        fireEvent(
-          videoRange,
-          new ExtendableMouseEvent('click', {
+        fireEvent.change(videoRange, {
+          target: {
             // forward 10%
-            offsetX: 10,
-          }),
-        );
+            value: 10,
+          },
+        });
       });
 
       expect(video.currentTime).toBeGreaterThan(0);
