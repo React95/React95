@@ -1,4 +1,4 @@
 module.exports = {
   extends: '../../babel.config.js',
-  ignore: ['**/*.d.ts'],
+  ignore: ['**/*.d.ts', 'src/iconDemos.ts'],
 };

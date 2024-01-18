@@ -12,5 +12,6 @@
       "@andreekeberg/imagedata": ["./scripts/imagedata.d.ts"]
     }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/iconDemos.ts"]
 }
