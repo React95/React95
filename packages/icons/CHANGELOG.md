@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/React95/React95/compare/@react95/icons@2.1.0...@react95/icons@2.1.1) (2024-01-18)
+
+
+### Bug Fixes
+
+* excluding `iconsDemo.ts` from build ([d573f87](https://github.com/React95/React95/commit/d573f874d7138ad3622f4756879cb1d67b3307c5))
+
+
+
+
+
 # [2.1.0](https://github.com/React95/React95/compare/@react95/icons@2.0.8...@react95/icons@2.1.0) (2024-01-09)
 
 

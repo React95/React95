@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2](https://github.com/React95/React95/compare/@react95/core@7.0.1...@react95/core@7.0.2) (2024-01-18)
+
+
+### Bug Fixes
+
+* **core:** update click handlers to be more concise ([8011aac](https://github.com/React95/React95/commit/8011aac16737ce82e011c35117ad3a6a00a78ecf)), closes [#409](https://github.com/React95/React95/issues/409)
+
+
+
+
+
 ## [7.0.1](https://github.com/React95/React95/compare/@react95/core@7.0.0...@react95/core@7.0.1) (2024-01-11)
 
 **Note:** Version bump only for package @react95/core
