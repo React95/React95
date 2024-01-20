@@ -1,13 +1,13 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Button from '../components/Button';
+import { Button, ButtonProps } from '../components/Button/Button';
 
 export default {
   title: 'Button',
   component: Button,
   tags: ['autodocs'],
-} as Meta<typeof Button>;
+} as Meta<ButtonProps>;
 
 export const Simple = {
   render: () => {
