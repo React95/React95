@@ -1,9 +1,9 @@
 import React from 'react';
-import { GlobalStyle } from '../../components';
+import '../../components/GlobalStyle/GlobalStyle.css';
+import { themeClass } from '../../components/ThemeProvider/themes/win95.css';
 
 const Frame = Story => (
-  <div style={{ padding: 10 }}>
-    <GlobalStyle />
+  <div className={themeClass} style={{ padding: 10 }}>
     <Story />
   </div>
 );

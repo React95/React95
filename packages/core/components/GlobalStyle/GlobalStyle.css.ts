@@ -17,7 +17,7 @@ globalFontFace(MSSansSerif, {
 globalFontFace(MSSansSerif, {
   src: `url('font/MS-Sans-Serif-8pt-bold.ttf') format('truetype')`,
   fontStyle: 'bold',
-  fontWeight: 'normal',
+  fontWeight: 'bold',
 });
 
 globalFontFace(R95VideoNumbers, {

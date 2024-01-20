@@ -33,7 +33,7 @@ const colors = {
   tooltip: '#fefbcc',
 };
 
-export const [themeClass, vars] = createTheme(contract, {
+export const themeClass = createTheme(contract, {
   ...theme,
   colors,
   shadows: generateShadows(colors),
