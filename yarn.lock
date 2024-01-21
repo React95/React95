@@ -7047,6 +7047,11 @@ esbuild-register@^3.5.0:
   dependencies:
     debug "^4.3.4"
 
+esbuild-vanilla-image-loader@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/esbuild-vanilla-image-loader/-/esbuild-vanilla-image-loader-0.1.3.tgz#1af308fd74850f85549b73861fcceb2d19bbc71e"
+  integrity sha512-Yg8FrpbTSR2NqwvLW1a6LhqmuZJQ0ThbZRzvcxiCKrotylMWrMX9XC9VFODfNwBzqYtkOZtL0qcSo/0DaugJLw==
+
 esbuild@0.17.6:
   version "0.17.6"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.6.tgz#bbccd4433629deb6e0a83860b3b61da120ba4e01"
