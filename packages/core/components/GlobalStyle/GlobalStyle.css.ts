@@ -1,7 +1,6 @@
 import { globalStyle, globalFontFace } from '@vanilla-extract/css';
 import { contract } from '../ThemeProvider/themes/contract.css';
 
-import Cursor from '../Cursor/Cursor';
 import { scrollbars } from './Scrollbar';
 
 import ttf from './font/MS-Sans-Serif-8pt.ttf';
@@ -67,38 +66,5 @@ globalStyle('a:visited', {
 `
   // scrollbar
   ${scrollbars}
-
-  .default             { ${Cursor.Auto} }
-  .none                { ${Cursor.None} }
-  .help                { ${Cursor.Help} }
-  .pointer, :any-link  { ${Cursor.Pointer} }
-  .progress            { ${Cursor.Progress} }
-  .wait                { ${Cursor.Wait} }
-  .crosshair           { ${Cursor.Crosshair} }
-  .text                { ${Cursor.Text} }
-  .vertical-text       { ${Cursor.VerticalText} }
-  .alias               { ${Cursor.Alias} }
-  .copy                { ${Cursor.Copy} }
-  .move                { ${Cursor.Move} }
-  .no-drop             { ${Cursor.NoDrop} }
-  .not-allowed         { ${Cursor.NotAllowed} }
-  .grab                { ${Cursor.Grab} }
-  .grabbing            { ${Cursor.Grabbing} }
-  .col-resize          { ${Cursor.ColResize} }
-  .row-resize          { ${Cursor.RowResize} }
-  .n-resize            { ${Cursor.NResize} }
-  .e-resize            { ${Cursor.EResize} }
-  .s-resize            { ${Cursor.SResize} }
-  .w-resize            { ${Cursor.WResize} }
-  .ns-resize           { ${Cursor.NsResize} }
-  .ew-resize           { ${Cursor.EwResize} }
-  .ne-resize           { ${Cursor.NeResize} }
-  .nw-resize           { ${Cursor.NwResize} }
-  .se-resize           { ${Cursor.SeResize} }
-  .sw-resize           { ${Cursor.SwResize} }
-  .nesw-resize         { ${Cursor.NeswResize} }
-  .nwse-resize         { ${Cursor.NwseResize} }
-  .zoom-in             { ${Cursor.ZoomIn} }
-  .zoom-out            { ${Cursor.ZoomOut} }
 `;
 */

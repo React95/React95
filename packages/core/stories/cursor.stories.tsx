@@ -3,7 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import { Frame } from '../components';
-import Cursor from '../components/Cursor/Cursor';
+import { Cursor } from '../components/Cursor/Cursor.css';
 
 const Cursors = styled.ul`
   margin: 0;
@@ -15,10 +15,6 @@ const Cursors = styled.ul`
   list-style: none;
 `;
 
-const CursorItem = styled(Frame)<{ type: keyof typeof Cursor }>`
-  ${({ type }) => Cursor[type]};
-`;
-
 export default {
   title: 'Cursors',
   component: Cursors,
@@ -27,8 +23,10 @@ export default {
 export const Simple = {
   render: () => (
     <Cursors>
-      {Object.keys(Cursor).map((type: keyof typeof Cursor) => (
-        <CursorItem
+      {Object.entries(Cursor).map(([type, className]) => (
+        <Frame
+          className={className}
+          key={type}
           display="flex"
           as="li"
           justifyContent="center"
@@ -41,11 +39,9 @@ export const Simple = {
           pr={20}
           pb={6}
           pl={20}
-          key={type}
-          type={type}
         >
           {type}
-        </CursorItem>
+        </Frame>
       ))}
     </Cursors>
   ),

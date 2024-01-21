@@ -5,7 +5,7 @@ import { ImageLoader } from 'esbuild-vanilla-image-loader';
 
 export default {
   // stories: [, '../stories/(?!all)*.stories.tsx'],
-  stories: ['../stories/button.stories.tsx'],
+  stories: ['../stories/button.stories.tsx', '../stories/cursor.stories.tsx'],
   // stories: [
   //   '../stories/all.stories.tsx',
   //   ...readdirSync('./stories')
