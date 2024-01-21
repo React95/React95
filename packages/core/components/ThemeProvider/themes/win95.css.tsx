@@ -1,4 +1,4 @@
-import { createTheme } from '@vanilla-extract/css';
+import { createGlobalTheme } from '@vanilla-extract/css';
 
 import { theme } from './baseTheme.css';
 import { contract } from './contract.css';
@@ -33,7 +33,7 @@ const colors = {
   tooltip: '#fefbcc',
 };
 
-export const themeClass = createTheme(contract, {
+createGlobalTheme(':root', contract, {
   ...theme,
   colors,
   shadows: generateShadows(colors),
