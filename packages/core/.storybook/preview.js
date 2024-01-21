@@ -1,6 +1,8 @@
 import Frame from './decorators/Frame';
 import { withThemes } from './src/theme-changer/withThemes';
 
+import './preview.css';
+
 export const globalTypes = {
   selectedTheme: {
     name: 'Theme',
