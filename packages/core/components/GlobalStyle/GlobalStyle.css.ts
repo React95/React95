@@ -1,30 +1,36 @@
 import { globalStyle, globalFontFace } from '@vanilla-extract/css';
 import { contract } from '../ThemeProvider/themes/contract.css';
-import { fontFace, style } from '@vanilla-extract/css';
 
 import Cursor from '../Cursor/Cursor';
 import { scrollbars } from './Scrollbar';
+
+import ttf from './font/MS-Sans-Serif-8pt.ttf';
+import ttfBold from './font/MS-Sans-Serif-8pt-bold.ttf';
+import videoeot from './font/React95Video-Numbers.eot';
+import videottf from './font/React95Video-Numbers.ttf';
+import videowoff from './font/React95Video-Numbers.woff';
+import videowoff2 from './font/React95Video-Numbers.woff2';
 
 const MSSansSerif = 'MS Sans Serif';
 const R95VideoNumbers = 'React95Video-Numbers';
 
 globalFontFace(MSSansSerif, {
-  src: `url('font/MS-Sans-Serif-8pt.ttf') format('truetype')`,
+  src: `url('${ttf}') format('truetype')`,
   fontStyle: 'normal',
   fontWeight: 'normal',
 });
 
 globalFontFace(MSSansSerif, {
-  src: `url('font/MS-Sans-Serif-8pt-bold.ttf') format('truetype')`,
+  src: `url('${ttfBold}') format('truetype')`,
   fontStyle: 'bold',
   fontWeight: 'bold',
 });
 
 globalFontFace(R95VideoNumbers, {
-  src: `url('font/React95Video-Numbers.woff2') format('woff2'),
-    url('font/React95Video-Numbers.woff') format('woff'),
-    url('font/React95Video-Numbers.ttf') format('truetype'),
-    url('font/React95Video-Numbers.eot?#iefix') format('embedded-opentype')`,
+  src: `url('${videowoff2}') format('woff2'),
+  url('${videowoff}') format('woff'),
+  url('${videottf}') format('truetype'),
+  url('${videoeot}?#iefix') format('embedded-opentype')`,
   fontStyle: 'normal',
   fontWeight: 'normal',
 });
