@@ -3,7 +3,6 @@ import { mergeConfig } from 'vite';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 export default {
-  staticDirs: ['../components/GlobalStyle'],
   // stories: [, '../stories/(?!all)*.stories.tsx'],
   stories: ['../stories/button.stories.tsx'],
   // stories: [
