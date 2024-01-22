@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Frame from '../components/Frame';
+import { Frame } from '../components/Frame/Frame';
 
 export default {
   title: 'Frame',
@@ -10,7 +10,7 @@ export default {
 } as Meta<typeof Frame>;
 
 export const Simple = {
-  render: () => <Frame w={200} h={100} />,
+  render: () => <Frame width="200" h="200" />,
 
   parameters: {
     design: {
