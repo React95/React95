@@ -45,7 +45,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Insaf Khamzin's portfolio website](https://github.com/InsafKhamzin/portfolio)
 - [Janne Koivisto's portfolio website](https://janneilkka.com)
 - [Decode base64 to PDF](https://base64.rafaelfranco.com/)
-
+- [Ideal Labs website](https://github.com/ideal-lab5/website)
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
