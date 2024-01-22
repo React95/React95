@@ -4344,6 +4344,13 @@
     modern-ahocorasick "^1.0.0"
     outdent "^0.8.0"
 
+"@vanilla-extract/dynamic@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/dynamic/-/dynamic-2.1.0.tgz#316d3bd4adfd5f5c9fb080445c41d55abe3b463c"
+  integrity sha512-8zl0IgBYRtgD1h+56Zu13wHTiMTJSVEa4F7RWX9vTB/5Xe2KtjoiqApy/szHPVFA56c+ex6A4GpCQjT1bKXbYw==
+  dependencies:
+    "@vanilla-extract/private" "^1.0.3"
+
 "@vanilla-extract/integration@^6.2.5":
   version "6.2.5"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.5.tgz#63056634fe969ce2c45506cd6b9587622fd0b06b"
@@ -4367,6 +4374,11 @@
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.3.tgz#7ec72bc2ff6fe51f9d650f962e8d1989b073690f"
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
+
+"@vanilla-extract/sprinkles@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/sprinkles/-/sprinkles-1.6.1.tgz#2c8a832757a0d8104dc6bd5d961db2c70d1dbdcb"
+  integrity sha512-N/RGKwGAAidBupZ436RpuweRQHEFGU+mvAqBo8PRMAjJEmHoPDttV8RObaMLrJHWLqvX+XUMinHUnD0hFRQISw==
 
 "@vanilla-extract/vite-plugin@^3.9.4":
   version "3.9.4"
@@ -11803,6 +11815,11 @@ quick-lru@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
+
+rainbow-sprinkles@^0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/rainbow-sprinkles/-/rainbow-sprinkles-0.17.1.tgz#1d3d2abfdc7d39d4d496871886237228fabe8ce9"
+  integrity sha512-s/6mCZsBw63mxw976CesRhaLEa3QJVOzEXiuUm3/OKp1R0bBNiCsM3AoAjvazLn3F+BKKxI5sqyNmfah7nTdnQ==
 
 ramda@0.29.0:
   version "0.29.0"
