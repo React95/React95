@@ -51,9 +51,6 @@ const colors = {
   tooltip: '',
 };
 
-const borderWidths = { '0': '0', '1': '1' };
-const borderStyles = { none: 'none', solid: 'solid' };
-
 const zIndices = {
   modal: '1',
   tooltip: '2',
@@ -63,7 +60,5 @@ const zIndices = {
 export const theme = {
   zIndices,
   space,
-  borderWidths,
-  borderStyles,
   colors,
 };
