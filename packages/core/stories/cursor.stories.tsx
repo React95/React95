@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Frame } from '../components';
+import { Frame } from '../components/Frame/Frame';
 import { Cursor } from '../components/Cursor/Cursor.css';
 
 const Cursors = styled.ul`
