@@ -50,13 +50,15 @@ const positioningAtomicProps = defineProperties({
 
 const colorsAtomicProps = defineProperties({
   dynamicProperties: colors,
+  shorthands: {
+    bgColor: ['backgroundColor'],
+  },
 });
 
 const backgroundAtomicProps = defineProperties({
   dynamicProperties: background,
   shorthands: {
     bg: ['background'],
-    bgColor: ['backgroundColor'],
   },
 });
 
@@ -89,17 +91,17 @@ const zIndicesAtomicProps = defineProperties({
 });
 
 export const sprinkles = createRainbowSprinkles(
+  colorsAtomicProps,
+  shadowsAtomicProps,
+  zIndicesAtomicProps,
   displayAndBoxModelAtomicProps,
   positioningAtomicProps,
-  colorsAtomicProps,
   backgroundAtomicProps,
   bordersAtomicProps,
   borderRadiusAtomicProps,
-  shadowsAtomicProps,
   outlineAtomicProps,
   fontAtomicProps,
   textAtomicProps,
-  zIndicesAtomicProps,
 );
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];

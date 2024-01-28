@@ -4,8 +4,7 @@ import React, {
   ForwardedRef,
   forwardRef,
 } from 'react';
-import { atoms, extractAtoms } from './atoms';
-import { Sprinkles } from './sprinkles.css';
+import { Sprinkles, sprinkles } from './sprinkles.css';
 
 type FixedForwardRef = <T, P = object>(
   render: (props: P, ref: React.Ref<T>) => React.ReactNode,
@@ -17,25 +16,27 @@ type DistributiveOmit<T, TOmitted extends PropertyKey> = T extends any
   ? Omit<T, TOmitted>
   : never;
 
+export type FrameProps<TAs extends ElementType = 'div'> = {
+  as?: TAs;
+} & DistributiveOmit<
+  ComponentPropsWithRef<ElementType extends TAs ? 'div' : TAs>,
+  'as'
+> &
+  Sprinkles;
+
 const FrameComponent = <TAs extends ElementType>(
-  props: {
-    as?: TAs;
-  } & DistributiveOmit<
-    ComponentPropsWithRef<ElementType extends TAs ? 'div' : TAs>,
-    'as'
-  > &
-    Sprinkles,
+  props: FrameProps<TAs>,
   ref: ForwardedRef<any>,
 ) => {
-  const { as: Component = 'div', ...other } = props;
+  const { as, children, ...rest } = props;
+  const Component = as || 'div';
+  const { className, style, otherProps } = sprinkles(rest);
 
-  const [atomsProps, propsToForward] = extractAtoms(other as Sprinkles);
-
-  const className = atoms({
-    ...atomsProps,
-  });
-
-  return <Component {...propsToForward} className={className} ref={ref} />;
+  return (
+    <Component className={className} style={style} {...otherProps} ref={ref}>
+      {children}
+    </Component>
+  );
 };
 
 export const Frame = fixedForwardRef(FrameComponent);

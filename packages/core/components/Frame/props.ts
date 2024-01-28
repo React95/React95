@@ -80,12 +80,11 @@ export const displayAndBoxModel = {
 export const colors = {
   backgroundColor: contract.colors,
   colors: contract.colors,
-};
+} as const;
 
 export const background = {
   background: true,
   backgroundAttachment: true,
-  backgroundColor: true,
   backgroundImage: true,
   backgroundPosition: true,
   backgroundRepeat: true,
