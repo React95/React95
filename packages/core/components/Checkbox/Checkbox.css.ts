@@ -3,8 +3,6 @@ import checkDisabled from './imgs/check-disabled.svg';
 import { globalStyle, style } from '@vanilla-extract/css';
 import { contract } from '../ThemeProvider/themes/contract.css';
 
-console.log({ shadows: contract.shadows });
-
 export const icon = style({
   width: contract.space[12],
   height: contract.space[12],
