@@ -8,5 +8,6 @@ export const contract = createThemeContract({
     out: '',
     in: '',
     input: '',
+    checkbox: '',
   },
 });

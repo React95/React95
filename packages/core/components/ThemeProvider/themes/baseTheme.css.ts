@@ -67,6 +67,9 @@ export const generateShadows = (colors: IColors) => {
     input: `inset -1px -1px 0 0 ${colors.material},
             inset 1px 1px 0 0 ${colors.borderDarkest},
             0.5px 0.5px 0 0.5px ${colors.borderLightest}`,
+    checkbox: `inset -1px -1px 0 0 ${colors.material},
+              inset 1px 1px 0 0 ${colors.borderDarkest},
+              0.5px 0.5px 0 0.5px ${colors.borderLightest}`,
   };
 };
 
