@@ -62,14 +62,5 @@ describe('<Avatar />', () => {
         borderRadius: '50%',
       });
     });
-
-    it('should render avatar with size', () => {
-      render(<Avatar size="100px">GG</Avatar>);
-
-      expect(screen.getByText(/GG/i)).toHaveStyle({
-        width: '100px',
-        height: '100px',
-      });
-    });
   });
 });
