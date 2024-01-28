@@ -1,16 +1,18 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Frame } from '../components/Frame/Frame';
+import { Frame, FrameProps } from '../components/Frame/Frame';
 
 export default {
   title: 'Frame',
   component: Frame,
   tags: ['autodocs'],
-} as Meta<typeof Frame>;
+} as Meta<FrameProps>;
 
 export const Simple = {
-  render: () => <Frame width="200" h="200" />,
+  render: () => (
+    <Frame bgColor="$material" w="200px" h="100px" boxShadow="$out" />
+  ),
 
   parameters: {
     design: {
@@ -21,7 +23,9 @@ export const Simple = {
 };
 
 export const WithBoxShadowIn = {
-  render: () => <Frame w={200} h={100} boxShadow="in" />,
+  render: () => (
+    <Frame w="200px" h="100px" bgColor="$material" boxShadow="$in" />
+  ),
 
   parameters: {
     design: {
@@ -33,8 +37,14 @@ export const WithBoxShadowIn = {
 
 export const WithBoxShadowInOut = {
   render: () => (
-    <Frame w={200} h={100} padding={4}>
-      <Frame h="100%" boxShadow="in" />
+    <Frame
+      w="200px"
+      h="100px"
+      bgColor="$material"
+      boxShadow="$out"
+      padding="$4"
+    >
+      <Frame h="100%" bgColor="$material" boxShadow="$in" />
     </Frame>
   ),
 
@@ -48,8 +58,14 @@ export const WithBoxShadowInOut = {
 
 export const WithBackgroundColor = {
   render: () => (
-    <Frame w={200} h={100} padding={4}>
-      <Frame h="100%" boxShadow="in" bg="white" />
+    <Frame
+      w="200px"
+      h="100px"
+      bgColor="$material"
+      boxShadow="$out"
+      padding="$4"
+    >
+      <Frame h="100%" bgColor="white" boxShadow="$in" />
     </Frame>
   ),
 

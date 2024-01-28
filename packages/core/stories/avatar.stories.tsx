@@ -1,14 +1,14 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Frame } from '../components';
-import Avatar from '../components/Avatar';
+import Avatar, { AvatarProps } from '../components/Avatar/Avatar';
+import Frame from '../components/Frame';
 
 export default {
   title: 'Avatar',
   component: Avatar,
   tags: ['autodocs'],
-} as Meta<typeof Avatar>;
+} as Meta<AvatarProps>;
 
 export const Simple = {
   render: () => <Avatar src="https://github.com/React95.png" alt="photo" />,
@@ -30,12 +30,7 @@ export const Circle = {
 
 export const Letters = {
   render: () => (
-    <Frame
-      display="inline-flex"
-      boxShadow="none"
-      bg="transparent"
-      style={{ gap: 8 }}
-    >
+    <Frame display="inline-flex" gap="8px">
       <Avatar>SQ</Avatar>
       <Avatar circle>RO</Avatar>
     </Frame>
