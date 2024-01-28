@@ -33,7 +33,12 @@ const FrameComponent = <TAs extends ElementType>(
   const { className, style, otherProps } = sprinkles(rest);
 
   return (
-    <Component className={className} style={style} {...otherProps} ref={ref}>
+    <Component
+      style={style}
+      {...otherProps}
+      className={`${className} ${otherProps.className}`}
+      ref={ref}
+    >
       {children}
     </Component>
   );
