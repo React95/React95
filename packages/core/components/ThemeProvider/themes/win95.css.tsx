@@ -1,8 +1,7 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
 
-import { theme } from './baseTheme.css';
+import { theme, generateShadows } from './baseTheme.css';
 import { contract } from './contract.css';
-import { generateShadows } from './baseTheme';
 
 const colors = {
   anchor: '#000e7a',
@@ -14,15 +13,11 @@ const colors = {
   borderLightest: '#ffffff',
   canvas: '#000000',
   canvasText: '#ffffff',
-  canvasTextDisabled: '#848584',
-  canvasTextDisabledShadow: '#fefefe',
-  canvasTextInvert: '#fefefe',
   headerBackground: '#000e7a',
   headerNotActiveBackground: '#7f787f',
   headerNotActiveText: '#c6c6c6',
   headerText: '#fefefe',
   material: '#c3c7cb',
-  materialDark: '#9a9e9c',
   materialText: '#000000',
   materialTextDisabled: '#868a8e',
   materialTextDisabledShadow: '#d2d2d2',
@@ -30,7 +25,6 @@ const colors = {
   progress: '#000e7a',
   inputBackground: '#ffffff',
   inputBackgroundDisabled: '#d2d2d2',
-  tooltip: '#fefbcc',
 };
 
 createGlobalTheme(':root', contract, {
