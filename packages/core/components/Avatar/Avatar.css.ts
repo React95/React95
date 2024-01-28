@@ -11,8 +11,6 @@ export const avatar = recipe({
     overflow: 'hidden',
     marginRight: contract.space[1],
     marginBottom: contract.space[1],
-    width: '48px',
-    height: '48px',
     backgroundColor: contract.colors.material,
     boxShadow: contract.shadows.in,
   },

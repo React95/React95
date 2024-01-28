@@ -64,7 +64,7 @@ describe('<Avatar />', () => {
     });
 
     it('should render avatar with size', () => {
-      render(<Avatar size={100}>GG</Avatar>);
+      render(<Avatar size="100px">GG</Avatar>);
 
       expect(screen.getByText(/GG/i)).toHaveStyle({
         width: '100px',
