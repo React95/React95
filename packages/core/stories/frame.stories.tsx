@@ -1,19 +1,56 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import * as React from 'react';
 
 import { Frame, FrameProps } from '../components/Frame/Frame';
+import { contract } from '../components/ThemeProvider/themes/contract.css';
+
+const colorsKeys = Object.keys(contract.colors).map(color => `$${color}`);
+const shadowsKeys = Object.keys(contract.shadows).map(shadows => `$${shadows}`);
 
 export default {
   title: 'Frame',
   component: Frame,
   tags: ['autodocs'],
+  argTypes: {
+    bgColor: {
+      options: colorsKeys,
+      defaultValue: '$material',
+    },
+    backgroundColor: {
+      options: colorsKeys,
+    },
+    color: {
+      options: colorsKeys,
+    },
+    w: {
+      control: 'text',
+    },
+    width: {
+      control: 'text',
+    },
+    h: {
+      control: 'text',
+    },
+    height: {
+      control: 'text',
+    },
+    boxShadow: {
+      options: shadowsKeys,
+      defaultValue: '$out',
+    },
+  },
 } as Meta<FrameProps>;
 
-export const Simple = {
-  render: () => (
-    <Frame bgColor="$material" w="200px" h="100px" boxShadow="$out" />
-  ),
+type Story = StoryObj<typeof Frame>;
 
+export const Simple: Story = {
+  render: args => <Frame {...args} />,
+  args: {
+    bgColor: '$material',
+    w: '200px',
+    h: '100px',
+    boxShadow: '$out',
+  },
   parameters: {
     design: {
       type: 'figma',
