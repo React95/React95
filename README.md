@@ -5,9 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-39-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -107,6 +105,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://weber.xyz"><img src="https://avatars.githubusercontent.com/u/7360204?v=4?s=100" width="100px;" alt="Lucian Weber"/><br /><sub><b>Lucian Weber</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Alucianweber" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://rafaelfranco.com"><img src="https://avatars.githubusercontent.com/u/19496473?v=4?s=100" width="100px;" alt="Rafael Franco"/><br /><sub><b>Rafael Franco</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Arfoel" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mmkal"><img src="https://avatars.githubusercontent.com/u/15040698?v=4?s=100" width="100px;" alt="Misha Kaletsky"/><br /><sub><b>Misha Kaletsky</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Ammkal" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/driemworks"><img src="https://avatars.githubusercontent.com/u/17711620?v=4?s=100" width="100px;" alt="Tony Riemer"/><br /><sub><b>Tony Riemer</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=driemworks" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
