@@ -3,7 +3,7 @@ import { calc } from '@vanilla-extract/css-utils';
 
 import { contract } from '../ThemeProvider/themes/contract.css';
 
-export const styles = style({
+export const button = style({
   backgroundColor: contract.colors.material,
   paddingTop: contract.space[7],
   paddingInline: contract.space[20],

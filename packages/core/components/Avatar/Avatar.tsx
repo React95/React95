@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import { avatar, imgStyle } from './Avatar.css';
 import Frame from '../Frame';
-import { Sprinkles } from '../Frame/sprinkles.css';
+import { FrameProps } from '../Frame/Frame';
 
 export interface AvatarProps
   extends Omit<
       React.ImgHTMLAttributes<HTMLDivElement>,
       'width' | 'color' | 'height'
     >,
-    Sprinkles {
+    FrameProps {
   circle?: boolean;
 }
 

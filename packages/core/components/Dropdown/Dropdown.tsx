@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 
 import { wrapper, select } from './Dropdown.css';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 const defaultOptions = [
   '',
@@ -11,13 +12,13 @@ const defaultOptions = [
 
 export type DropdownProps = {
   options?: Array<string | number>;
-} & React.HTMLAttributes<HTMLSelectElement>;
+} & React.HTMLAttributes<HTMLSelectElement> &
+  FrameProps;
 
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
   ({ options = defaultOptions, ...rest }, ref) => (
-    <div className={wrapper}>
+    <Frame className={wrapper} {...rest}>
       <select
-        {...rest}
         className={[select, rest.className].filter(Boolean).join(' ')}
         ref={ref}
       >
@@ -28,6 +29,6 @@ export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
             </option>
           ))}
       </select>
-    </div>
+    </Frame>
   ),
 );

@@ -1,10 +1,18 @@
 import React, { FC } from 'react';
 
-import { styles } from './Button.css';
+import { button } from './Button.css';
+import Frame from '../Frame';
+import { FrameProps } from '../Frame/Frame';
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  FrameProps;
 
 export const Button: FC<ButtonProps> = props => {
-  return <button {...props} className={[styles, props.className].join(' ')} />;
+  return (
+    <Frame
+      as="button"
+      {...props}
+      className={[button, props.className].join(' ')}
+    />
+  );
 };
