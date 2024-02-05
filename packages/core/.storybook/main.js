@@ -6,6 +6,7 @@ import { ImageLoader } from 'esbuild-vanilla-image-loader';
 export default {
   // stories: [, '../stories/(?!all)*.stories.tsx'],
   stories: [
+    '../stories/textarea.stories.tsx',
     '../stories/input.stories.tsx',
     '../stories/fieldset.stories.tsx',
     '../stories/dropdown.stories.tsx',
