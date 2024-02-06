@@ -19,7 +19,7 @@ export const icon = style({
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
   backgroundSize: '7px 7px',
-  boxShadow: contract.shadows.checkbox,
+  boxShadow: contract.shadows.input,
 });
 
 export const text = style({
