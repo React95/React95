@@ -41,7 +41,7 @@ export default {
   },
 } as Meta<FrameProps>;
 
-type Story = StoryObj<typeof Frame>;
+type Story = StoryObj<FrameProps>;
 
 export const Simple: Story = {
   render: args => <Frame {...args} />,
