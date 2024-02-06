@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import cn from 'classnames';
 
 import { wrapper, select } from './Dropdown.css';
 import { Frame, FrameProps } from '../Frame/Frame';
@@ -18,10 +19,7 @@ export type DropdownProps = {
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
   ({ options = defaultOptions, ...rest }, ref) => (
     <Frame className={wrapper} {...rest}>
-      <select
-        className={[select, rest.className].filter(Boolean).join(' ')}
-        ref={ref}
-      >
+      <select className={cn(select, rest.className)} ref={ref}>
         {options &&
           options.map(option => (
             <option key={option} value={option}>
