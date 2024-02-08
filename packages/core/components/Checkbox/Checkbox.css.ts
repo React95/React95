@@ -35,6 +35,7 @@ export const field = style({
   top: '0',
   left: '0',
   opacity: 0,
+  selectors: {},
 });
 
 export const label = style({
@@ -44,6 +45,12 @@ export const label = style({
   position: 'relative',
   marginBlock: contract.space[4],
   paddingLeft: contract.space[20],
+  selectors: {
+    '&:has(:disabled)': {
+      color: contract.colors.borderDark,
+      textShadow: `0.5px 0.5px ${contract.colors.borderLight}`,
+    },
+  },
 });
 
 globalStyle(`${field}:checked + ${icon}`, {
@@ -63,9 +70,4 @@ globalStyle(`${field}:checked:disabled + ${icon}`, {
 
 globalStyle(`${field}:disabled + ${icon}`, {
   backgroundColor: contract.colors.inputBackgroundDisabled,
-});
-
-globalStyle(`${label}:has(:disabled)`, {
-  color: contract.colors.borderDark,
-  textShadow: `0.5px 0.5px ${contract.colors.borderLight}`,
 });
