@@ -1,51 +1,29 @@
 import React from 'react';
-import styled, { th } from '@xstyled/styled-components';
 
-import Button from '../Button';
-import Frame, { FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps } from '../Frame/Frame';
 
-const OptionsBox = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
+import * as styles from './TitleBar.css';
+import { button } from '../Button/Button.css';
+import cn from 'classnames';
 
-  display: flex;
-`;
+const OptionsBox = React.forwardRef<HTMLDivElement, FrameProps>((rest, ref) => (
+  <Frame
+    {...rest}
+    ref={ref}
+    className={cn(styles.optionsBox, rest.className)}
+  />
+));
 
-const Option = styled(Button).attrs({
-  as: 'li',
-})`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-left: 2;
-  padding: 0;
-
-  width: 17px;
-  height: 14px;
-
-  min-width: 0;
-  font-weight: 600;
-  font-size: 10;
-
-  &:active {
-    padding: 1 0 0 1;
-
-    outline: none;
-  }
-
-  &:first-child {
-    margin-right: 0;
-  }
-
-  &:focus {
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
-      inset -1px -1px 0px 1px ${th('colors.borderDark')};
-  }
-`;
-
-Option.displayName = 'Option';
+const Option = React.forwardRef<HTMLButtonElement, FrameProps<'button'>>(
+  (rest, ref) => (
+    <Frame
+      {...rest}
+      ref={ref}
+      as="button"
+      className={cn(styles.option, button, rest.className)}
+    />
+  ),
+);
 
 export interface TitleBarBackgroundProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
@@ -55,74 +33,35 @@ export interface TitleBarBackgroundProps
   title?: string;
 }
 
-const TitleBarBackground = styled(Frame)<{ active?: boolean }>`
-  height: 20;
-  margin-bottom: 2;
-
-  padding: 2;
-
-  display: flex;
-
-  box-shadow: none;
-
-  svg {
-    width: 16;
-    height: 16;
-    margin-right: 4;
-  }
-
-  background: ${({ active, theme }) =>
-    active
-      ? theme.colors.headerBackground
-      : theme.colors.headerNotActiveBackground};
-`;
-
-const Title = styled.div`
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white, 1.5px 0px white;
-  color: transparent;
-  letter-spacing: 1px;
-  font-size: 1em;
-`;
-
 interface TitleBarOptions {
   Option: typeof Option;
   OptionsBox: typeof OptionsBox;
 }
 
-export interface ITitleBarProps
+export interface TitleBarProps
   extends TitleBarBackgroundProps,
-    TitleBarOptions {}
+    TitleBarOptions,
+    FrameProps {}
 
 const TitleBarRenderer: React.ForwardRefRenderFunction<
   HTMLDivElement,
   TitleBarBackgroundProps
 > = (
-  { children, title = 'UNKNOWN.EXE', icon, active = true, className },
+  { children, title = 'UNKNOWN.EXE', icon, active = true, ...rest },
   ref: React.Ref<HTMLDivElement>,
 ) => (
-  <TitleBarBackground
-    active={active}
-    color={active ? 'headerText' : 'headerNotActiveText'}
-    ref={ref}
-    className="default"
-  >
+  <Frame {...rest} className={styles.titleBarBackground({ active })} ref={ref}>
     {icon && icon}
-    <Title className={className}>{title}</Title>
+    <div className={styles.title}>{title}</div>
 
     {children}
-  </TitleBarBackground>
+  </Frame>
 );
 
-const TitleBar = Object.assign(
+export const TitleBar = Object.assign(
   React.forwardRef<HTMLDivElement, TitleBarBackgroundProps>(TitleBarRenderer),
   {
     Option,
     OptionsBox,
   },
-) as ITitleBarProps & typeof TitleBarRenderer;
-
-export default TitleBar;
+) as TitleBarProps & typeof TitleBarRenderer;
