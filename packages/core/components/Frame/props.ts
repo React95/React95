@@ -4,6 +4,8 @@ export const positioning = {
   position: true,
   top: true,
   right: true,
+  bottom: true,
+  left: true,
   pointerEvents: true,
 } as const;
 
