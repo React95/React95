@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render } from '../shared/test/utils';
-import RadioButton from './RadioButton';
+import { RadioButton } from './RadioButton';
 
 describe('<RadioButton />', () => {
   describe('Snapshots', () => {
