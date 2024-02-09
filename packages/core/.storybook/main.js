@@ -6,6 +6,7 @@ import { ImageLoader } from 'esbuild-vanilla-image-loader';
 export default {
   // stories: [, '../stories/(?!all)*.stories.tsx'],
   stories: [
+    '../stories/taskbar.stories.tsx',
     '../stories/tooltip.stories.tsx',
     '../stories/radiobutton.stories.tsx',
     '../stories/titlebar.stories.tsx',
@@ -33,8 +34,8 @@ export default {
     {
       name: '@storybook/addon-essentials',
       options: {
+        controls: true,
         actions: false,
-        controls: false,
       },
     },
     '@storybook/addon-storysource',
