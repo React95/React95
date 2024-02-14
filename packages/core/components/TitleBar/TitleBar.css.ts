@@ -38,13 +38,6 @@ export const option = style({
   },
 });
 
-/*
-svg {
-  width: 16;
-  height: 16;
-  margin-right: 4;
-}
-*/
 export const titleBarBackground = recipe({
   base: {
     height: contract.space[20],
@@ -67,7 +60,7 @@ export const titleBarBackground = recipe({
   },
 });
 
-globalStyle(`${titleBarBackground} svg`, {
+globalStyle(`${titleBarBackground.classNames.base} svg`, {
   width: contract.space[16],
   height: contract.space[16],
   marginRight: contract.space[4],
