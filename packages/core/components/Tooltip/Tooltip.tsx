@@ -2,13 +2,41 @@ import * as React from 'react';
 import { tip, wrapper } from './Tooltip.css';
 import cn from 'classnames';
 
+function formatDate(date: Date): string {
+  const monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  const day = date.getDate();
+  const monthIndex = date.getMonth();
+  const year = date.getFullYear();
+
+  return `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`;
+}
+
 export type TooltipProps = {
   text?: string;
   delay?: number;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const TooltipRenderer = (
-  { children, text = 'Hello!', delay = 1000, ...rest }: TooltipProps,
+  {
+    children,
+    text = formatDate(new Date()),
+    delay = 1000,
+    ...rest
+  }: TooltipProps,
   ref: React.Ref<HTMLDivElement>,
 ) => {
   const [show, setShow] = React.useState(false);
