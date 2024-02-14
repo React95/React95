@@ -46,6 +46,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Janne Koivisto's portfolio website](https://janneilkka.com)
 - [Decode base64 to PDF](https://base64.rafaelfranco.com/)
 - [Ideal Labs website](https://github.com/ideal-lab5/website)
+- [Henrique Specian's wedding website](https://github.com/henriquespecian/casamento-nextjs)
 
 ## Contributors
 
