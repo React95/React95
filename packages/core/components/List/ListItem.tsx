@@ -1,83 +1,19 @@
 import React, { forwardRef } from 'react';
-import styled, { css } from '@xstyled/styled-components';
+import cn from 'classnames';
 
 import { IListProps } from './List';
 
-import rightcaret from '../GlobalStyle/imgs/rightcaret.svg';
+import { Frame, FrameProps } from '../Frame/Frame';
+import { listItem } from './List.css';
 
-type ItemProps = {
+type ItemProps = Omit<FrameProps<'li'>, 'as'> & {
   icon?: boolean;
   hasList: boolean;
 };
 
-const Item = styled.li<ItemProps>`
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 2 6;
-
-  color: materialText;
-
-  svg {
-    margin-right: 10;
-  }
-
-  &:hover {
-    background-color: headerBackground;
-    color: materialTextInvert;
-  }
-
-  ul {
-    display: none;
-    position: absolute;
-    top: -2px;
-    left: 97%;
-    color: materialText;
-    z-index: taskbar;
-
-    svg {
-      width: 16px;
-      height: 16px;
-      margin-right: 6;
-    }
-  }
-
-  ${({ icon }) => !icon && 'padding-left: 26px;'};
-
-  ${({ hasList }) =>
-    hasList &&
-    css`
-      &:after {
-        position: absolute;
-        width: 5px;
-        height: 8px;
-        right: 8px;
-
-        content: '';
-        background-color: materialText;
-        mask-image: url('${rightcaret}');
-        mask-position: center center;
-        mask-size: 5px 8px;
-        mask-repeat: no-repeat;
-
-        svg {
-          fill: materialTextInvert;
-        }
-      }
-
-      &:hover {
-        &:after {
-          background-color: materialTextInvert;
-        }
-
-        ul {
-          display: block;
-        }
-      }
-    `};
-`;
+const Item = React.forwardRef<HTMLLIElement, ItemProps>((rest, ref) => (
+  <Frame {...rest} ref={ref} className={cn(listItem, rest.className)} as="li" />
+));
 
 export type ListItemProps = {
   icon?: React.ReactElement;
@@ -95,7 +31,6 @@ const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
             React.isValidElement<IListProps>(child),
           ).some(child => child),
       )}
-      className="default"
     >
       {icon}
       {children}

@@ -2,12 +2,12 @@ import * as React from 'react';
 import styled, { css } from '@xstyled/styled-components';
 import { Mplayer113, User4 } from '@react95/icons';
 
-import Frame, { FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps } from '../Frame/Frame';
 import Button from '../Button';
 import Range from '../Range';
 import TitleBar from '../TitleBar';
 import { Play, Pause, Stop, Fullscreen } from './buttons';
-import Divider from '../List/ListDivider';
+import { Divider } from '../List/ListDivider';
 
 const VideoTag = styled.video<{ visible: boolean }>`
   width: 100%;
