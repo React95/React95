@@ -1,4 +1,4 @@
-import ListItem from './ListItem';
+import { ListItem } from './ListItem';
 import { Divider } from './ListDivider';
 import { Frame, FrameProps } from '../Frame/Frame';
 import React from 'react';

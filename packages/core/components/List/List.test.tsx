@@ -1,12 +1,8 @@
-import {
-  FolderExe2,
-  MicrosoftExchange,
-  WindowsExplorer,
-} from '@react95/icons';
+import { FolderExe2, MicrosoftExchange, WindowsExplorer } from '@react95/icons';
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 import { waitRender } from '../shared/test/utils';
-import List from './List';
+import { List } from './List';
 
 describe('<List />', () => {
   describe('Snapshots', () => {
@@ -19,9 +15,7 @@ describe('<List />', () => {
                 Microsoft Exchange
               </List.Item>
               <List.Divider />
-              <List.Item icon={<WindowsExplorer />}>
-                Windows Explorer
-              </List.Item>
+              <List.Item icon={<WindowsExplorer />}>Windows Explorer</List.Item>
             </List>
             Programs
           </List.Item>

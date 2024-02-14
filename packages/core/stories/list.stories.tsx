@@ -30,7 +30,7 @@ export const WithIcons = {
   render: () => (
     <List width={'200px'}>
       <List.Item icon={<FolderExe2 variant="32x32_4" />}>
-        <List>
+        <List width={'200px'}>
           <List.Item icon={<FolderExe variant="16x16_4" />}>
             Accessories
           </List.Item>
@@ -52,7 +52,7 @@ export const WithIcons = {
       </List.Item>
       <List.Item icon={<FolderFile variant="32x32_4" />}>Documents</List.Item>
       <List.Item icon={<Settings variant="32x32_4" />}>
-        <List>
+        <List width={'200px'}>
           <List.Item icon={<FolderSettings variant="16x16_4" />}>
             Control Panel
           </List.Item>

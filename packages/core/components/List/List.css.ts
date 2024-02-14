@@ -8,6 +8,7 @@ export const listItem = style({
   position: 'relative',
   display: 'flex',
   alignItems: 'center',
+  userSelect: 'none',
   margin: contract.space[0],
   paddingBlock: contract.space[2],
   paddingInline: contract.space[6],
@@ -17,10 +18,32 @@ export const listItem = style({
       backgroundColor: contract.colors.headerBackground,
       color: contract.colors.materialTextInvert,
     },
+    '&:not(:has(svg))': {
+      paddingInlineStart: '26px',
+    },
+    '&:has(ul):after': {
+      position: 'absolute',
+      width: contract.space[5],
+      height: contract.space[8],
+      right: contract.space[8],
+      content: "''",
+      backgroundColor: contract.colors.materialText,
+      maskImage: `url('${rightcaret}')`,
+      maskPosition: 'center center',
+      maskSize: `${contract.space[5]} ${contract.space[8]}`,
+      maskRepeat: 'no-repeat',
+    },
+    '&:has(ul):hover:after': {
+      backgroundColor: contract.colors.materialTextInvert,
+    },
   },
 });
 
-globalStyle(`${listItem} svg`, { marginRight: contract.space[10] });
+globalStyle(`${listItem} svg`, {
+  marginRight: contract.space[10],
+  minWidth: contract.space[16],
+});
+
 globalStyle(`${listItem} ul`, {
   display: 'none',
   position: 'absolute',
@@ -28,6 +51,10 @@ globalStyle(`${listItem} ul`, {
   left: '97%',
   color: contract.colors.materialText,
   zIndex: contract.zIndices.taskbar,
+});
+
+globalStyle(`${listItem}:has(ul):hover > ul`, {
+  display: 'block',
 });
 
 export const divider = style({
