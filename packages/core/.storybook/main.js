@@ -6,6 +6,7 @@ import { ImageLoader } from 'esbuild-vanilla-image-loader';
 export default {
   // stories: [, '../stories/(?!all)*.stories.tsx'],
   stories: [
+    '../stories/tabs.stories.tsx',
     '../stories/list.stories.tsx',
     '../stories/taskbar.stories.tsx',
     '../stories/tooltip.stories.tsx',

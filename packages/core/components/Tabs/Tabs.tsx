@@ -1,34 +1,20 @@
-import styled from '@xstyled/styled-components';
 import React, { forwardRef } from 'react';
+import cn from 'classnames';
 
 import Frame from '../Frame';
-import Tab, { TabProps } from './Tab';
+import { Tab, TabProps } from './Tab';
+import { navContainer, navbar } from './Tabs.css';
+import { FrameProps } from '../Frame/Frame';
 
-const Navbar = styled(Frame)`
-  display: flex;
-  padding: 0;
-  margin: 0;
-  border: none;
-  box-shadow: none;
-  background-color: unset;
-`;
-
-const NavContainer = styled(Frame)`
-  padding: 12;
-  box-shadow: out;
-`;
-
-NavContainer.displayName = 'NavContainer';
-export interface TabsProps {
-  style?: React.CSSProperties;
+export type TabsProps = {
   defaultActiveTab?: string;
   children: React.ReactElement<TabProps> | Array<React.ReactElement<TabProps>>;
 
   onChange?(title: string, e: React.MouseEvent): void;
-}
+} & Omit<FrameProps<'ol'>, 'as'>;
 
-const Tabs = forwardRef<HTMLOListElement, TabsProps>(
-  ({ children, style, defaultActiveTab, onChange, ...rest }, ref) => {
+export const Tabs = forwardRef<HTMLOListElement, TabsProps>(
+  ({ children, defaultActiveTab, onChange, ...rest }, ref) => {
     const [firstTab] = React.Children.toArray(children) as Array<
       React.ReactElement<TabProps>
     >;
@@ -38,7 +24,12 @@ const Tabs = forwardRef<HTMLOListElement, TabsProps>(
 
     return (
       <>
-        <Navbar style={style} {...rest} as="ol" ref={ref}>
+        <Frame
+          {...rest}
+          className={cn(navbar, rest.className)}
+          as="ol"
+          ref={ref}
+        >
           {React.Children.map(
             children,
             (child: React.ReactElement<TabProps>) => {
@@ -61,18 +52,16 @@ const Tabs = forwardRef<HTMLOListElement, TabsProps>(
               );
             },
           )}
-        </Navbar>
+        </Frame>
 
-        <NavContainer style={style}>
+        <Frame className={navContainer} width={rest.width || rest.w}>
           {React.Children.map(
             children,
             (child: React.ReactElement<TabProps>) =>
               child.props.title === activeTab && child.props.children,
           )}
-        </NavContainer>
+        </Frame>
       </>
     );
   },
 );
-
-export default Tabs;

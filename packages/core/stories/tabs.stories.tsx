@@ -11,12 +11,13 @@ import { TabsProps } from '../components/Tabs/Tabs';
 export default {
   title: 'Tabs, Tab',
   component: Tabs,
+  tags: ['autodocs'],
   subcomponents: { Tab },
 } as Meta<TabsProps>;
 
 export const Simple = {
   render: () => (
-    <Tabs style={{ width: 350 }} defaultActiveTab="Compatibility">
+    <Tabs width="350px" defaultActiveTab="Compatibility">
       <Tab title="General">
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
           <Checkbox checked>Log on to Windows NT domain</Checkbox>
