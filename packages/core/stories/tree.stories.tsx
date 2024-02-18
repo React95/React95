@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Tree, { TreeProps } from '../components/Tree/Tree';
+import { Tree, TreeProps } from '../components/Tree/Tree';
 import { Explorer100 } from '@react95/icons';
 
 const { icons } = Tree;

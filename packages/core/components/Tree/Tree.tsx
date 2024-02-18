@@ -14,7 +14,7 @@ type TreeComposition = React.ForwardRefExoticComponent<
   icons: typeof icons;
 } & Omit<FrameProps<'menu'>, 'as'>;
 
-const Tree = forwardRef<HTMLUListElement, TreeProps>(
+export const Tree = forwardRef<HTMLUListElement, TreeProps>(
   ({ data, root, ...rest }, ref) => {
     return (
       <>
@@ -34,5 +34,3 @@ Tree.defaultProps = {
 };
 
 Tree.icons = icons;
-
-export default Tree;
