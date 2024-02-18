@@ -1,9 +1,5 @@
 import * as React from 'react';
-import styled from '@xstyled/styled-components';
 
-import treeMidLines from './imgs/tree-mid.png';
-import treeLastLines from './imgs/tree-last.png';
-import treeNodeChildrenLine from './imgs/tree-node-children.png';
 import {
   Bat,
   BatExec,
@@ -16,6 +12,9 @@ import {
   FolderOpen,
   MediaCd,
 } from '@react95/icons';
+import * as styles from './Tree.css';
+import { Frame, FrameProps } from '../Frame/Frame';
+import cn from 'classnames';
 
 export const icons = {
   FILE_MEDIA: MediaCd,
@@ -27,71 +26,6 @@ export const icons = {
   FILE_TEXT_SETTINGS: FileTextSettings,
   FILE_EXECUTABLE: BatExec,
 } as const;
-
-const NodeItem = styled.div<{ isOpen: boolean }>`
-  list-style-type: none;
-  background-repeat: no-repeat;
-  background-image: url(${treeMidLines});
-
-  &:last-child {
-    background-image: url(${({ isOpen }) =>
-      isOpen ? treeMidLines : treeLastLines});
-  }
-`;
-
-const NodeInfo = styled.div`
-  display: flex;
-  align-items: center;
-  user-select: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-`;
-
-const FolderStatus = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  border: 1;
-  border-color: borderDarkest;
-  background-color: inputBackground;
-  font-size: 11px;
-`;
-
-const IconContainer = styled.div<{ hasChildren: boolean }>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  margin-right: 6;
-  margin-left: ${({ hasChildren }) => (hasChildren ? 8 : 18)}px;
-
-  > svg {
-    width: 14px;
-    height: 14px;
-  }
-`;
-
-const NodeChildren = styled.ul`
-  padding: 0 0 0 22;
-  background-image: url(${treeNodeChildrenLine});
-  background-repeat: repeat-y;
-`;
-
-const Label = styled.span`
-  outline: none;
-  padding: 1;
-
-  :focus {
-    border-width: 1;
-    border-style: dotted;
-    padding: 0;
-  }
-`;
 
 const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
   hasChildren,
@@ -122,7 +56,9 @@ export type NodeProps = {
     event: React.MouseEvent | React.KeyboardEvent,
     props: NodeProps,
   ): void;
-};
+} & Omit<FrameProps, 'id' | 'children'>;
+
+export type NodeRootProps = Omit<NodeProps, 'children'>;
 
 const Node: React.FC<NodeProps> = ({
   children = [],
@@ -152,33 +88,83 @@ const Node: React.FC<NodeProps> = ({
   };
 
   return (
-    <NodeItem isOpen={isOpen} {...rest}>
-      <NodeInfo>
+    <Frame as="li" {...rest} className={styles.node}>
+      <div className={styles.nodeContent}>
         {hasChildren && (
-          <FolderStatus onClick={() => setIsOpen(!isOpen)}>
+          <div
+            className={styles.folderStatus}
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? '-' : '+'}
-          </FolderStatus>
+          </div>
         )}
-        <IconContainer hasChildren={hasChildren}>
+
+        <div className={styles.iconContainer({ hasChildren })}>
           {icon || <NodeIcon hasChildren={hasChildren} isOpen={isOpen} />}
-        </IconContainer>
-        <Label
+        </div>
+        <label
+          className={styles.label}
           tabIndex={0}
           onDoubleClick={() => setIsOpen(!isOpen)}
           onClick={onClickHandler}
           onKeyDown={onKeyDownHandler}
         >
           {label}
-        </Label>
-      </NodeInfo>
+        </label>
+      </div>
       {hasChildren && isOpen && (
-        <NodeChildren>
+        <menu className={styles.tree}>
           {children?.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
-        </NodeChildren>
+        </menu>
       )}
-    </NodeItem>
+    </Frame>
+  );
+};
+
+export const NodeRoot: React.FC<NodeRootProps> = ({
+  id,
+  icon,
+  label,
+  onClick = () => {},
+  ...rest
+}) => {
+  const onClickHandler = (event: React.MouseEvent | React.KeyboardEvent) => {
+    onClick(event, {
+      id,
+      icon,
+      label,
+    });
+  };
+
+  const onKeyDownHandler = (event: React.KeyboardEvent) => {
+    if (event.key === ' ') {
+      onClickHandler(event);
+    }
+  };
+
+  return (
+    <Frame as="p" {...rest} className={cn(styles.node, styles.nodeRoot)}>
+      <div className={styles.nodeContent}>
+        <div
+          className={cn(
+            styles.iconContainer.classNames.base,
+            styles.iconContainer.classNames.variants.hasChildren.true,
+          )}
+        >
+          {icon || <NodeIcon hasChildren={false} isOpen={true} />}
+        </div>
+        <label
+          className={styles.label}
+          tabIndex={0}
+          onClick={onClickHandler}
+          onKeyDown={onKeyDownHandler}
+        >
+          {label}
+        </label>
+      </div>
+    </Frame>
   );
 };
 

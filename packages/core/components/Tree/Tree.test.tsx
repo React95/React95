@@ -32,7 +32,7 @@ describe('<Tree />', () => {
           {
             id: 1,
             label: 'baz',
-            iconName: icons.FILE_MEDIA,
+            icon: <icons.FILE_MEDIA variant="16x16_4" />,
           },
         ],
       },

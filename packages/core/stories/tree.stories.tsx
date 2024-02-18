@@ -2,6 +2,7 @@ import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
 import Tree, { TreeProps } from '../components/Tree/Tree';
+import { Explorer100 } from '@react95/icons';
 
 const { icons } = Tree;
 
@@ -70,6 +71,12 @@ const treeNodes: TreeProps = {
   ],
 };
 
+const root = {
+  id: 6,
+  label: 'My Computer',
+  icon: <Explorer100 variant="16x16_4" />,
+};
+
 export default {
   title: 'Tree',
   component: Tree,
@@ -77,7 +84,7 @@ export default {
 } as Meta<typeof Tree>;
 
 export const Simple = {
-  render: () => <Tree {...treeNodes} />,
+  render: () => <Tree {...treeNodes} root={root} />,
 
   parameters: {
     design: {
