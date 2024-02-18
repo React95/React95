@@ -391,6 +391,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "henriquespecian",
+      "name": "Henrique Specian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27703331?v=4",
+      "profile": "https://github.com/henriquespecian",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
