@@ -50,7 +50,11 @@ const TitleBarRenderer: React.ForwardRefRenderFunction<
   { children, title = 'UNKNOWN.EXE', icon, active = true, ...rest },
   ref: React.Ref<HTMLDivElement>,
 ) => (
-  <Frame {...rest} className={styles.titleBarBackground({ active })} ref={ref}>
+  <Frame
+    {...rest}
+    className={cn(styles.titleBarBackground({ active }), rest.className)}
+    ref={ref}
+  >
     {icon && icon}
     <div className={styles.title}>{title}</div>
 

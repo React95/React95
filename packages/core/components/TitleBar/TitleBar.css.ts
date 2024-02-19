@@ -45,6 +45,7 @@ export const titleBarBackground = recipe({
     padding: contract.space[2],
     display: 'flex',
     boxShadow: 'none',
+    userSelect: 'none',
   },
   variants: {
     active: {
