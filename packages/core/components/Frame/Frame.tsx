@@ -5,6 +5,7 @@ import React, {
   forwardRef,
 } from 'react';
 import { Sprinkles, sprinkles } from './sprinkles.css';
+import cn from 'classnames';
 
 type FixedForwardRef = <T, P = object>(
   render: (props: P, ref: React.Ref<T>) => React.ReactNode,
@@ -34,9 +35,9 @@ const FrameComponent = <TAs extends ElementType>(
 
   return (
     <Component
-      style={style}
       {...otherProps}
-      className={`${className} ${otherProps.className}`}
+      style={{ ...style, ...otherProps.style }}
+      className={cn(className, otherProps.className)}
       ref={ref}
     >
       {children}
