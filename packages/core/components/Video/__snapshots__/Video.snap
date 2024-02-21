@@ -1,337 +1,25 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`<Video /> > Snapshot > should match snapshot 1`] = `
-.c12 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
-}
-
-.c12:disabled {
-  color: #868a8e;
-}
-
-.c12:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c12:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c0 {
-  padding: 2px;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c1 {
-  color: #fefefe;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c5 {
-  max-width: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 4px;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c7 {
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 40%;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c2 {
-  height: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: none;
-  background: #000e7a;
-}
-
-.c2 svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white,1.5px 0px white;
-  color: transparent;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.c14 {
-  -webkit-appearance: none;
-  width: 100%;
-}
-
-.c14:hover,
-.c14:focus,
-.c14:active {
-  outline: none;
-}
-
-.c14::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 4px;
-  background-color: #000000;
-  cursor: pointer;
-  border-top: 1px solid;
-  border-top-color: #d2d2d2;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 1px solid;
-  border-bottom-color: #e6e6e6;
-  border-left: 2px solid;
-  border-left-color: #ffffff;
-  box-shadow: 0px 1px 0px 0px #ffffff;
-}
-
-.c14::-webkit-slider-thumb {
-  width: 12px;
-  height: 20px;
-  background-color: #c3c7cb;
-  cursor: pointer;
-  margin-top: -8px;
-  border-top: 1px solid;
-  border-top-color: #ffffff;
-  border-right: 1px solid;
-  border-right-color: #000000;
-  border-bottom: 1px solid;
-  border-bottom-color: #000000;
-  border-left: 1px solid;
-  border-left-color: #ffffff;
-  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
-  -webkit-appearance: none;
-}
-
-.c14:focus::-webkit-slider-runnable-track {
-  background-color: #000000;
-}
-
-.c14::-moz-range-track {
-  width: 100%;
-  height: 4px;
-  background-color: #000000;
-  cursor: pointer;
-  border-top: 1px solid;
-  border-top-color: #d2d2d2;
-  border-right: 2px solid;
-  border-right-color: #ffffff;
-  border-bottom: 1px solid;
-  border-bottom-color: #e6e6e6;
-  border-left: 2px solid;
-  border-left-color: #ffffff;
-  box-shadow: 0px 1px 0px 0px #ffffff;
-}
-
-.c14::-moz-range-thumb {
-  width: 12px;
-  height: 20px;
-  background-color: #c3c7cb;
-  cursor: pointer;
-  margin-top: -8px;
-  border-top: 1px solid;
-  border-top-color: #ffffff;
-  border-right: 1px solid;
-  border-right-color: #000000;
-  border-bottom: 1px solid;
-  border-bottom-color: #000000;
-  border-left: 1px solid;
-  border-left-color: #ffffff;
-  box-shadow: inset 0px -1px 0px #868a8e, inset -1px 0px 0px #868a8e, inset 0px 1px 0px #e6e6e6, inset 1px 0px 0px #e6e6e6;
-  -webkit-appearance: none;
-}
-
-.c4 {
-  width: 100%;
-  padding: 2px;
-  display: none;
-}
-
-.c13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c13 svg {
-  fill: #000000;
-}
-
-.c13.c13,
-.c13:active,
-.c13:focus {
-  width: 20px;
-  height: 20px;
-  padding: 7px;
-  padding: 4px;
-}
-
-.c13.c13 svg,
-.c13:active svg,
-.c13:focus svg {
-  fill: #868a8e;
-  border-bottom: 1px solid;
-  border-bottom-color: #ffffff;
-  border-right: 1px solid;
-  border-right-color: #ffffff;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 2px 0;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 6px;
-  margin-bottom: 4px;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
-  background-color: #000000;
-  height: 50px;
-  color: #ffffff;
-}
-
-.c10 {
-  font-family: 'React95Video-Numbers';
-  text-transform: uppercase;
-}
-
-.c6 {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.c15::-webkit-slider-thumb {
-  height: 18px;
-  margin-top: -7px;
-  width: 10px;
-}
-
-.c15[value='0']::-webkit-slider-thumb {
-  margin-left: -2px;
-}
-
 <div>
   <div
-    class="c0"
-    style="width: 260px;"
+    class="sprinkles_padding__1txm3g82r sprinkles_boxShadow__1txm3g85z sprinkles_backgroundColor__1txm3g83p"
+    style="--padding__1txm3g82q: var(--space-2__g5jstu5); --boxShadow__1txm3g85y: var(--shadows-out__g5jstu19); --backgroundColor__1txm3g83o: var(--colors-material__g5jstu11);"
   >
     <div
-      class="c1 c2 default"
-      color="headerText"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683"
     >
-      <svg
-        height="16"
-        shape-rendering="crispEdges"
-        viewBox="0 -0.5 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 0h9M4 1h1m8 0h1M4 2h1m9 0h1M4 3h1M4 4h1M0 5h1m3 0h1M0 6h2m1 0h7m2 0h2M0 7h1m8 0h1m1 0h2M9 8h1M2 9h1m6 0h1m2 0h1M2 10h1m6 0h1m-6 2h1m-1 1h1m-1 1h1"
-          stroke="gray"
-        />
-        <path
-          d="M5 1h7M5 2h7m1 0h1M5 3h7M5 4h9M5 5h9m-4 1h2m-1 2h1m-1 2h1m-1 1h3m-9 1h9m-9 1h9"
-          stroke="#fff"
-        />
-        <path
-          d="M12 1h1m-1 1h1m1 2h1m-1 1h1M2 6h1m11 0h1M3 7h3m1 0h2m5 0h1M6 8h3m3 0h1m1 0h1M3 9h6m5 0h1M4 10h2m1 0h1m6 0h1m-1 1h1m-1 1h1m-1 1h1M5 14h10"
-          stroke="silver"
-        />
-        <path
-          d="M12 3h4m-1 1h1m-1 1h1m-1 1h1M1 7h2m3 0h1m3 0h1m2 0h1m1 0h1M0 8h1m1 0h4m4 0h1m2 0h1m1 0h1m-6 1h2m1 0h1m1 0h1M6 10h1m1 0h1m1 0h1m1 0h2m1 0h1M2 11h9m4 0h1m-1 1h1m-1 1h1m-1 1h1M4 15h12"
-          stroke="#000"
-        />
-        <path
-          d="M3 10h1"
-          stroke="red"
-        />
-      </svg>
+      <svg test-file-stub
+        variant="16x16_4"
+      />
       <div
-        class="c3"
+        class="TitleBar_title__1kpzw685"
       >
         some_video.mp4 (Opening)
       </div>
     </div>
     <video
-      class="c4"
+      class="Video_videoTag__13gnpv00 Video_videoTag_visible_false__13gnpv02"
     >
       <source
         src="foo/bar/some_video.mp4"
@@ -339,77 +27,55 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
       />
     </video>
     <div
-      class="c5 c6"
+      class="sprinkles_marginBottom__1txm3g82d sprinkles_marginLeft__1txm3g82l sprinkles_marginRight__1txm3g82n sprinkles_maxWidth__1txm3g81v"
+      style="--marginBottom__1txm3g82c: var(--space-4__g5jstu7); --marginLeft__1txm3g82k: auto; --marginRight__1txm3g82m: auto; --maxWidth__1txm3g81u: 250px;"
     >
       <div
-        class="c7 c8"
+        class="Video_countDownContainer__13gnpv04"
       >
         <div
-          class="c9 c6"
-          display="flex"
+          class="sprinkles_width__1txm3g81t sprinkles_display__1txm3g81 sprinkles_flexDirection__1txm3g815"
+          style="--width__1txm3g81s: 40%; --display__1txm3g80: flex; --flexDirection__1txm3g814: column;"
         >
-          <span
-            class="c10"
+          <div
+            class="Video_videoFont__13gnpv05"
             style="margin-top: auto;"
           />
-          <span
-            class="c10"
+          <div
+            class="Video_videoFont__13gnpv05"
             style="height: 12px;"
           >
             Openning
-          </span>
+          </div>
         </div>
         <div
-          class="c9 c6"
-          display="flex"
+          class="sprinkles_width__1txm3g81t sprinkles_display__1txm3g81 sprinkles_flexDirection__1txm3g815"
+          style="--width__1txm3g81s: 40%; --display__1txm3g80: flex; --flexDirection__1txm3g814: column;"
         >
-          <span
-            class="c10"
-            style="margin-top: auto; font-size: 22px;"
+          <div
+            class="Video_videoFont__13gnpv05 Video_currentTime__13gnpv06"
           />
-          <span
-            class="c10"
-            style="height: 12px;"
+          <div
+            class="Video_videoFont__13gnpv05 Video_elapsedTime__13gnpv07"
           >
             time
-          </span>
+          </div>
         </div>
       </div>
       <div
-        class="c11"
+        class="Video_controls__13gnpv03"
       >
         <button
-          class="c12 c13"
+          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv09"
           disabled=""
         >
-          <svg
-            height="32"
-            shape-rendering="crispEdges"
+          <svg test-file-stub
             style="border-right-width: initial; border-right-style: none; border-right-color: none; border-bottom-width: initial; border-bottom-style: none; border-bottom-color: none;"
-            viewBox="0 -0.5 32 32"
-            width="32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11 0h8M8 1h3m8 0h3M7 2h1m14 0h1M5 3h2m16 0h2M4 4h1m20 0h1M3 5h1m22 0h1M3 6h1m22 0h1M2 7h1m24 0h1M1 8h1m26 0h1M1 9h1m26 0h1M1 10h1m26 0h1M0 11h1m28 0h1M0 12h1m28 0h1M0 13h1m28 0h1M0 14h1m28 0h1M0 15h1m28 0h1M0 16h1m28 0h1M0 17h1m28 0h1M0 18h1m28 0h1M1 19h1m26 0h1M1 20h1m26 0h1M1 21h1m26 0h1M2 22h1m24 0h1M3 23h1m22 0h1M3 24h1m22 0h1M4 25h1m20 0h1M5 26h2m16 0h2M7 27h1m14 0h1M8 28h3m8 0h3m-11 1h8"
-              stroke="maroon"
-            />
-            <path
-              d="M11 1h8M8 2h14M7 3h16M5 4h20M4 5h22M4 6h22M3 7h6m1 0h10m1 0h6M2 8h6m3 0h8m3 0h6M2 9h5m5 0h6m5 0h5M2 10h6m5 0h4m5 0h6M1 11h8m5 0h2m5 0h8M1 12h9m10 0h9M1 13h10m8 0h10M1 14h11m6 0h11M1 15h11m6 0h11M1 16h10m8 0h10M1 17h9m10 0h9M1 18h8m5 0h2m5 0h8M2 19h6m5 0h4m5 0h6M2 20h5m5 0h6m5 0h5M2 21h6m3 0h8m3 0h6M3 22h6m1 0h10m1 0h6M4 23h22M4 24h22M5 25h20M7 26h16M8 27h14m-11 1h8"
-              stroke="red"
-            />
-            <path
-              d="M27 6h1m0 1h1m0 2h1m-1 1h2m-1 1h1m-1 1h1m-1 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-3 1h3m-3 1h3m-3 1h2m-3 1h3m-4 1h4m-4 1h3m-4 1h3m-4 1h4M6 27h1m16 0h5M7 28h1m14 0h5M9 29h2m8 0h6m-15 1h14m-11 1h8"
-              stroke="gray"
-            />
-            <path
-              d="M9 7h1m10 0h1M8 8h3m8 0h3M7 9h5m6 0h5M8 10h5m4 0h5M9 11h5m2 0h5m-11 1h10m-9 1h8m-7 1h6m-6 1h6m-7 1h8m-9 1h10M9 18h5m2 0h5M8 19h5m4 0h5M7 20h5m6 0h5M8 21h3m8 0h3M9 22h1m10 0h1"
-              stroke="#fff"
-            />
-          </svg>
+            variant="32x32_4"
+          />
         </button>
         <button
-          class="c12 c13"
+          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv09"
           disabled=""
         >
           <svg
@@ -424,7 +90,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           </svg>
         </button>
         <button
-          class="c12 c13"
+          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv09"
           disabled=""
         >
           <svg
@@ -441,7 +107,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           </svg>
         </button>
         <input
-          class="c14 c15"
+          class="Range_range__1i4w9z20 Video_range__13gnpv0a"
           max="100"
           min="0"
           step="1"
