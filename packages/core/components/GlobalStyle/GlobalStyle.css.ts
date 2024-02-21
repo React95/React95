@@ -11,8 +11,8 @@ import videottf from './font/React95Video-Numbers.ttf';
 import videowoff from './font/React95Video-Numbers.woff';
 import videowoff2 from './font/React95Video-Numbers.woff2';
 
-const MSSansSerif = 'MS Sans Serif';
-const R95VideoNumbers = 'React95Video-Numbers';
+export const MSSansSerif = 'MS Sans Serif';
+export const R95VideoNumbers = 'React95Video-Numbers';
 
 globalFontFace(MSSansSerif, {
   src: `url('${ttf}') format('truetype')`,
