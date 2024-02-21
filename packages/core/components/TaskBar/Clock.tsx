@@ -4,7 +4,7 @@ import Frame from '../Frame';
 import Tooltip from '../Tooltip';
 import { tooltip } from './TaskBar.css';
 
-const Clock = () => {
+export const Clock = () => {
   const [timer, setTimer] = useState('');
 
   useEffect(() => {
@@ -35,5 +35,3 @@ const Clock = () => {
     </Frame>
   );
 };
-
-export default Clock;

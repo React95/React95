@@ -9,7 +9,7 @@ export type WindowButtonProps = {
 } & Pick<Windows, 'icon'> &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const WindowButton = forwardRef<HTMLButtonElement, WindowButtonProps>(
+export const WindowButton = forwardRef<HTMLButtonElement, WindowButtonProps>(
   ({ children, small = false, icon, active = false, ...props }, ref) => (
     <button
       className={styles.windowsButton({ active, small })}
@@ -21,5 +21,3 @@ const WindowButton = forwardRef<HTMLButtonElement, WindowButtonProps>(
     </button>
   ),
 );
-
-export default WindowButton;

@@ -13,7 +13,7 @@ export interface AvatarProps
   circle?: boolean;
 }
 
-const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
   (
     { src, srcSet, alt, circle, children, size = '48px', ...otherProps },
     ref,
@@ -27,5 +27,3 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
     </Frame>
   ),
 );
-
-export default Avatar;
