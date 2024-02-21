@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Alert, { AlertType } from '../components/Alert/Alert';
+import { Alert, AlertType } from '../components/Alert/Alert';
 import Button from '../components/Button';
 import Checkbox from '../components/Checkbox';
 import Dropdown from '../components/Dropdown';
@@ -20,8 +20,9 @@ export const Simple = {
 
     const handleOpenAlert = () => toggleShowAlert(true);
     const handleCloseAlert = () => toggleShowAlert(false);
-    const onImageChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
-      setType(e.target.value as AlertType);
+    const onImageChange = (e: React.FormEvent<HTMLSelectElement>) => {
+      setType(e.currentTarget.value as AlertType);
+    };
 
     return (
       <>
@@ -44,7 +45,7 @@ export const Simple = {
             title="Windows Networking"
             type={type}
             message="The Windows password you typed is incorrect."
-            closeAlert={handleCloseAlert}
+            onClose={handleCloseAlert}
             hasSound={withSound}
             buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
           />
