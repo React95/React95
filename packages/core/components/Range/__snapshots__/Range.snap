@@ -3,7 +3,7 @@
 exports[`<Range /> > Snapshot > should match snapshot 1`] = `
 <div>
   <input
-    class=" Range_range__1i4w9z20"
+    class="Range_range__1i4w9z20"
     type="range"
   />
 </div>

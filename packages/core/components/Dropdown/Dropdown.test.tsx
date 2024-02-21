@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 import { render } from '../shared/test/utils';
-import Dropdown from './Dropdown';
+import { Dropdown } from './Dropdown';
 
 describe('<Dropdown />', () => {
   const options = ['', 'C:\\Windows', 'C:\\Windows/System32'];

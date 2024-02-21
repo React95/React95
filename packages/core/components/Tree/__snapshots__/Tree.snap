@@ -3,10 +3,10 @@
 exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
 <div>
   <menu
-    class=" Tree_tree__z2881c0"
+    class="Tree_tree__z2881c0"
   >
     <li
-      class=" Tree_node__z2881c1"
+      class="Tree_node__z2881c1"
     >
       <div
         class="Tree_nodeContent__z2881c3"

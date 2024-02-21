@@ -3,26 +3,26 @@
 exports[`<List /> > Snapshots > should match snapshot 1`] = `
 <div>
   <ul
-    class=" List_list__1lxkvz42"
+    class="List_list__1lxkvz42"
   >
     <li
-      class=" List_listItem__1lxkvz40"
+      class="List_listItem__1lxkvz40"
     >
       <svg test-file-stub />
       <ul
-        class=" List_list__1lxkvz42"
+        class="List_list__1lxkvz42"
       >
         <li
-          class=" List_listItem__1lxkvz40"
+          class="List_listItem__1lxkvz40"
         >
           <svg test-file-stub />
           Microsoft Exchange
         </li>
         <li
-          class=" List_divider__1lxkvz41"
+          class="List_divider__1lxkvz41"
         />
         <li
-          class=" List_listItem__1lxkvz40"
+          class="List_listItem__1lxkvz40"
         >
           <svg test-file-stub />
           Windows Explorer

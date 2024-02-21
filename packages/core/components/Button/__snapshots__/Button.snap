@@ -3,7 +3,7 @@
 exports[`<Button /> > Snapshots > should match snapshot 1`] = `
 <div>
   <button
-    class="Button_styles__1bzq74l0 "
+    class="Button_button__1bzq74l0"
   />
 </div>
 `;
