@@ -14,7 +14,7 @@ const defaultOptions = [
 
 export type DropdownProps = {
   options?: Array<string | number>;
-} & React.HTMLAttributes<HTMLSelectElement> &
+} & React.HTMLProps<HTMLSelectElement> &
   Omit<FrameProps<'select'>, 'as'>;
 
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(

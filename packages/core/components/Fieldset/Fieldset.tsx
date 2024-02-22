@@ -4,7 +4,7 @@ import { Frame, FrameProps } from '../Frame/Frame';
 
 export type FieldSetProps = {
   legend?: string;
-} & React.HTMLAttributes<HTMLFieldSetElement> &
+} & React.HTMLProps<HTMLFieldSetElement> &
   FrameProps;
 
 export const Fieldset = forwardRef<HTMLFieldSetElement, FieldSetProps>(

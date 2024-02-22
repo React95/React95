@@ -8,18 +8,16 @@ export type LabelProps = {
 export type CheckboxProps = {
   label?: string;
   children?: string;
-  checked?: boolean;
   style?: React.CSSProperties;
 } & LabelProps &
-  React.HTMLAttributes<HTMLInputElement>;
+  React.HTMLProps<HTMLInputElement>;
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ children, style, checked, label, disabled = false, ...rest }, ref) => (
+  ({ children, style, label, disabled = false, ...rest }, ref) => (
     <label style={style} className={styles.label}>
       <input
         className={styles.field}
         type="checkbox"
-        checked={checked}
         disabled={disabled}
         {...rest}
         ref={ref}

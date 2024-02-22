@@ -49,7 +49,7 @@ function parseCurrentTime(secs: number): string {
 export type VideoProps = {
   name?: string;
   src: string;
-  videoProps?: React.HTMLAttributes<HTMLVideoElement>;
+  videoProps?: React.HTMLProps<HTMLVideoElement>;
 } & FrameProps;
 
 export type VideoRefs = {

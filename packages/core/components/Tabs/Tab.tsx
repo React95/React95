@@ -9,7 +9,7 @@ export type TabProps = {
   title: string;
   disabled?: boolean;
   onClick?(e: React.MouseEvent): void;
-} & React.HTMLAttributes<HTMLLIElement> &
+} & React.HTMLProps<HTMLLIElement> &
   Omit<FrameProps<'li'>, 'as'>;
 
 export const Tab = forwardRef<HTMLLIElement, TabProps>(
