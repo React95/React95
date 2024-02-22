@@ -145,7 +145,7 @@ export const NodeRoot: React.FC<NodeRootProps> = ({
   };
 
   return (
-    <Frame as="p" {...rest} className={cn(styles.node, styles.nodeRoot)}>
+    <Frame {...rest} className={cn(styles.node, styles.nodeRoot)}>
       <div className={styles.nodeContent}>
         <div
           className={cn(
