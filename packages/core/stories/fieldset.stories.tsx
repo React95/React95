@@ -15,9 +15,15 @@ export const Simple = {
   render: () => (
     <Fieldset legend="Connection Settings" width="300px">
       <Frame display="flex" flexDirection="column">
-        <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
-        <Checkbox checked={false}>Disable Local Keyboard & Pointer</Checkbox>
-        <Checkbox checked>Remove Desktop Wallpaper</Checkbox>
+        <Checkbox readOnly checked={false}>
+          Disable Remote Keyboard & Pointer
+        </Checkbox>
+        <Checkbox readOnly checked={false}>
+          Disable Local Keyboard & Pointer
+        </Checkbox>
+        <Checkbox readOnly checked>
+          Remove Desktop Wallpaper
+        </Checkbox>
       </Frame>
     </Fieldset>
   ),

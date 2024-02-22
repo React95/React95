@@ -54,7 +54,7 @@ export const All = {
           <Alert
             title="Windows Networking"
             type="error"
-            closeAlert={() => {}}
+            onClose={() => {}}
             defaultPosition={{
               x: -130,
               y: -130,
@@ -71,7 +71,7 @@ export const All = {
         </div>
 
         <br />
-        <SimpleAvatar.render />
+        <SimpleAvatar.render {...SimpleAvatar.args} />
 
         <br />
         <AllCheckbox.render />
@@ -104,7 +104,7 @@ export const All = {
         </div>
 
         <br />
-        <SimpleProgressBar.render />
+        <SimpleProgressBar.render {...SimpleProgressBar.args} />
 
         <br />
         <SimpleRadioButton.render />
@@ -119,7 +119,7 @@ export const All = {
         <SimpleTree.render />
 
         <br />
-        <SimpleTooltip.render />
+        <SimpleTooltip.render {...SimpleTooltip.args} />
 
         <br />
         <FromURL.render />

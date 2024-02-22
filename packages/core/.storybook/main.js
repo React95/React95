@@ -4,37 +4,13 @@ import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { ImageLoader } from 'esbuild-vanilla-image-loader';
 
 export default {
-  // stories: [, '../stories/(?!all)*.stories.tsx'],
   stories: [
-    '../stories/video.stories.tsx',
-    '../stories/alert.stories.tsx',
-    '../stories/modal.stories.tsx',
-    '../stories/tree.stories.tsx',
-    '../stories/tabs.stories.tsx',
-    '../stories/list.stories.tsx',
-    '../stories/taskbar.stories.tsx',
-    '../stories/tooltip.stories.tsx',
-    '../stories/radiobutton.stories.tsx',
-    '../stories/titlebar.stories.tsx',
-    '../stories/range.stories.tsx',
-    '../stories/progressbar.stories.tsx',
-    '../stories/textarea.stories.tsx',
-    '../stories/input.stories.tsx',
-    '../stories/fieldset.stories.tsx',
-    '../stories/dropdown.stories.tsx',
-    '../stories/checkbox.stories.tsx',
-    '../stories/avatar.stories.tsx',
-    '../stories/button.stories.tsx',
-    '../stories/cursor.stories.tsx',
-    '../stories/frame.stories.tsx',
+    '../stories/all.stories.tsx',
+    ...readdirSync('./stories')
+      .filter(file => file !== 'all.stories.tsx')
+      .filter(file => file.endsWith('.stories.tsx'))
+      .map(file => `../stories/${file}`),
   ],
-  // stories: [
-  //   '../stories/all.stories.tsx',
-  //   ...readdirSync('./stories')
-  //     .filter(file => file !== 'all.stories.tsx')
-  //     .filter(file => file.endsWith('.stories.tsx'))
-  //     .map(file => `../stories/${file}`),
-  // ],
   logLevel: 'debug',
   addons: [
     {

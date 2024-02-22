@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import * as React from 'react';
 
-import Avatar, { AvatarProps } from '../components/Avatar/Avatar';
+import { Avatar, AvatarProps } from '../components/Avatar/Avatar';
 import Frame from '../components/Frame';
 
 export default {
@@ -37,8 +37,8 @@ export default {
 
 type Story = StoryObj<typeof Avatar>;
 
-export const Simple: Story = {
-  render: args => <Avatar {...args} />,
+export const Simple = {
+  render: (args: Story['args']) => <Avatar {...args} />,
   args: {
     src: 'https://github.com/React95.png',
     alt: 'Reac95 logo',

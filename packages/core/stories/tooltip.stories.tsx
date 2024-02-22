@@ -39,8 +39,8 @@ function formatDate(date: Date): string {
   return `${day.toString().padStart(2, '0')} ${monthNames[monthIndex]} ${year}`;
 }
 
-export const Simple: Story = {
-  render: args => (
+export const Simple = {
+  render: (args: Story['args']) => (
     <>
       <br />
       <br />

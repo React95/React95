@@ -25,11 +25,17 @@ export const All = {
           Working
         </Checkbox>
 
-        <Checkbox checked>Checked</Checkbox>
-        <Checkbox checked={false}>Unchecked</Checkbox>
-        <Checkbox disabled>Disabled</Checkbox>
+        <Checkbox readOnly checked>
+          Checked
+        </Checkbox>
+        <Checkbox readOnly checked={false}>
+          Unchecked
+        </Checkbox>
+        <Checkbox readOnly disabled>
+          Disabled
+        </Checkbox>
 
-        <Checkbox disabled checked>
+        <Checkbox readOnly disabled checked>
           Checked and Disabled
         </Checkbox>
       </Frame>
@@ -45,7 +51,11 @@ export const All = {
 };
 
 export const Checked = {
-  render: () => <Checkbox checked>Checked</Checkbox>,
+  render: () => (
+    <Checkbox checked readOnly>
+      Checked
+    </Checkbox>
+  ),
 
   parameters: {
     design: {
@@ -56,7 +66,11 @@ export const Checked = {
 };
 
 export const Unchecked = {
-  render: () => <Checkbox checked={false}>Unchecked</Checkbox>,
+  render: () => (
+    <Checkbox readOnly checked={false}>
+      Unchecked
+    </Checkbox>
+  ),
 
   parameters: {
     design: {
@@ -79,7 +93,7 @@ export const Disabled = {
 
 export const CheckedAndDisabled = {
   render: () => (
-    <Checkbox disabled checked>
+    <Checkbox readOnly disabled checked>
       Checked and Disabled
     </Checkbox>
   ),

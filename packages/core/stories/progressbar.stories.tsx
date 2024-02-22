@@ -14,8 +14,8 @@ export default {
 
 type Story = StoryObj<ProgressBarProps>;
 
-export const Simple: Story = {
-  render: args => <ProgressBar {...args} />,
+export const Simple = {
+  render: (args: Story['args']) => <ProgressBar {...args} />,
   args: {
     width: '200px',
     percent: 49,
