@@ -49,9 +49,9 @@ const colors = {
 type IColors = typeof colors;
 
 const zIndices = {
-  modal: '1',
-  tooltip: '2',
-  taskbar: '2',
+  modal: '2',
+  tooltip: '3',
+  taskbar: '3',
 };
 
 export const generateShadows = (colors: IColors) => {

@@ -8,6 +8,7 @@ export const navbar = style({
   padding: '0',
   margin: '0',
   border: 'none',
+  zIndex: 1,
 });
 
 export const navContainer = style({
