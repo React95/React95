@@ -1,4 +1,4 @@
-import { createGlobalTheme } from '@vanilla-extract/css';
+import { createGlobalTheme, createTheme } from '@vanilla-extract/css';
 
 import { theme, generateShadows } from './baseTheme.css';
 import { contract } from './contract.css';
@@ -26,6 +26,12 @@ const colors = {
   inputBackground: '#ffffff',
   inputBackgroundDisabled: '#d2d2d2',
 };
+
+export const win95 = createTheme(contract, {
+  ...theme,
+  colors,
+  shadows: generateShadows(colors),
+});
 
 createGlobalTheme(':root', contract, {
   ...theme,
