@@ -3,8 +3,10 @@ import { addons, types } from '@storybook/addons';
 import { AddonPanel } from '@storybook/components';
 import styled, { th } from '@xstyled/styled-components';
 
-import themes from '../../../components/ThemeProvider/themes';
-import { Button, Frame, ThemeProvider } from '../../../components';
+import * as themes from '../../../components/ThemeProvider/theme.css';
+import { Button, Frame } from '../../../components';
+
+console.log({ themes });
 
 const ADDON_ID = 'Themes';
 const PANEL_ID = `${ADDON_ID}/panel`;
@@ -14,17 +16,11 @@ const TitleBar = styled(Frame)`
 `;
 
 const ThemeWindow = ({ name, changeTheme }) => (
-  <Frame width={'auto'} m={10}>
-    <TitleBar
-      p={4}
-      m={2}
-      boxShadow="none"
-      bg="headerBackground"
-      color="headerText"
-    >
+  <Frame width="auto" m="$10">
+    <TitleBar p="$4" m="$2" bg="$headerBackground" color="$headerText">
       {name}
     </TitleBar>
-    <Frame shadow="none" p={10}>
+    <Frame p="$10">
       <Button
         onClick={() => {
           changeTheme({ selectedTheme: name });
@@ -41,9 +37,9 @@ export const ThemePanel = ({ api }) => (
     <h1 style={{ marginBottom: '12px' }}>Pick a theme below</h1>
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       {Object.keys(themes).map(name => (
-        <ThemeProvider theme={name} key={name}>
+        <div className={name} key={name}>
           <ThemeWindow name={name} changeTheme={api.updateGlobals} />
-        </ThemeProvider>
+        </div>
       ))}
     </div>
   </div>
