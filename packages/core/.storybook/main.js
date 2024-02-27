@@ -21,8 +21,8 @@ export default {
       },
     },
     '@storybook/addon-storysource',
+    './src/theme-changer',
     '@storybook/addon-designs',
-    './src/theme-changer/register',
   ],
   framework: {
     name: '@storybook/react-vite',
