@@ -3,7 +3,12 @@ import { addons, types } from '@storybook/addons';
 import { AddonPanel } from '@storybook/components';
 import styled, { th } from '@xstyled/styled-components';
 
-import * as themes from '../../../components/ThemeProvider/theme.css';
+// this wont work
+import * as themes from '../../../components/ThemeProvider/theme';
+
+// this wont eighter
+import { win95 } from '../../../components/ThemeProvider/theme/win95';
+
 import { Button, Frame } from '../../../components';
 
 console.log({ themes });
