@@ -1,0 +1,44 @@
+.theme-window {
+  width: 140px;
+  padding: 1px;
+  background-color: var(--r95_g5jstu11);
+  box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
+    inset 0 0 0 1px var(--r95_g5jstuq), 1px 1px 0 0px var(--r95_g5jstur);
+}
+
+.title-bar {
+  background: var(--r95_g5jstux);
+  padding: 4px;
+  margin: 2px;
+  color: var(--r95_g5jstu10);
+}
+
+.theme-widow-btn {
+  background-color: var(--r95_g5jstu11);
+  padding-top: var(--r95_g5jstua);
+  padding-inline: var(--r95_g5jstun);
+  padding-bottom: var(--r95_g5jstu8);
+  margin: 10px;
+  border: none;
+  color: var(--r95_g5jstu12);
+  font-size: 12px;
+  box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
+    inset 0 0 0 1px var(--r95_g5jstuq), 1px 1px 0 0px var(--r95_g5jstur);
+}
+
+.theme-widow-btn:focus {
+  outline: var(--r95_g5jstu4) dotted var(--r95_g5jstu12);
+  outline-offset: calc(var(--r95_g5jstu8) * -1);
+  box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
+    inset -0.5px -0.5px 0px 1px var(--r95_g5jstuq),
+    1px 1px 0 1px var(--r95_g5jstur);
+}
+
+.theme-widow-btn:active {
+  padding-top: var(--r95_g5jstub);
+  padding-inline: var(--r95_g5jstun);
+  padding-bottom: var(--r95_g5jstu7);
+  outline: var(--r95_g5jstu4) dotted var(--r95_g5jstur);
+  outline-offset: calc(var(--r95_g5jstu8) * -1);
+  box-shadow: inset 0 0 0 1px var(--r95_g5jstuq), 0 0 0 1px var(--r95_g5jstur);
+}
