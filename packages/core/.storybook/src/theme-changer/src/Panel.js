@@ -7,14 +7,16 @@ import { extractThemes } from './extractThemes';
 const ThemeWindow = ({ name, changeTheme }) => (
   <div className="theme-window">
     <div className="title-bar">{name}</div>
-    <button
-      className="theme-widow-btn"
-      onClick={() => {
-        changeTheme({ selectedTheme: name });
-      }}
-    >
-      {name}
-    </button>
+    <div className="btn-container">
+      <button
+        className="theme-widow-btn"
+        onClick={() => {
+          changeTheme({ selectedTheme: name });
+        }}
+      >
+        {name}
+      </button>
+    </div>
   </div>
 );
 

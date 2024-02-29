@@ -1,5 +1,5 @@
 .theme-window {
-  width: 140px;
+  width: 150px;
   padding: 1px;
   background-color: var(--r95_g5jstu11);
   box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
@@ -13,12 +13,16 @@
   color: var(--r95_g5jstu10);
 }
 
+.btn-container {
+  padding: 10px;
+}
+
 .theme-widow-btn {
   background-color: var(--r95_g5jstu11);
   padding-top: var(--r95_g5jstua);
   padding-inline: var(--r95_g5jstun);
   padding-bottom: var(--r95_g5jstu8);
-  margin: 10px;
+  width: 100%;
   border: none;
   color: var(--r95_g5jstu12);
   font-size: 12px;

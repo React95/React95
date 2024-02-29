@@ -122,9 +122,10 @@ class Clippy extends React.Component {
 
     channel.on('clippy/set_component', this.setComponent);
 
-    const agentName = this.availableAgents[
-      Math.floor(Math.random() * this.availableAgents.length)
-    ];
+    const agentName =
+      this.availableAgents[
+        Math.floor(Math.random() * this.availableAgents.length)
+      ];
 
     clippy.load(agentName, agent => {
       this.agent = agent;

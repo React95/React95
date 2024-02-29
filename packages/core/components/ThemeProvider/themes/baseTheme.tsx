@@ -9,36 +9,15 @@ import {
 
 type DefaultThemeWithoutColors = Omit<DefaultTheme, 'colors' | 'shadows'>;
 
-const space: ISpace = [
-  0,
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  16,
-  17,
-  18,
-  19,
-  20,
+export const space: ISpace = [
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 ];
 
-const borderWidths: IBorderWidth = [0, 1];
-const borderStyles: IBorderStyles = ['none', 'solid'];
+export const borderWidths: IBorderWidth = [0, 1];
+export const borderStyles: IBorderStyles = ['none', 'solid'];
 
-const zIndices: IZIndices = {
+export const zIndices: IZIndices = {
   modal: 1,
-  tooltip: 2,
   taskbar: 2,
 };
 
@@ -58,11 +37,9 @@ export const generateShadows = (colors: IColors) => {
   };
 };
 
-const theme: DefaultThemeWithoutColors = {
+export const theme: DefaultThemeWithoutColors = {
   space,
   borderWidths,
   borderStyles,
   zIndices,
 };
-
-export default theme;

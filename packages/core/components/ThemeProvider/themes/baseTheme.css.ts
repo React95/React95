@@ -48,7 +48,7 @@ const colors = {
 
 type IColors = typeof colors;
 
-const zIndices = {
+export const zIndices = {
   modal: '2',
   tooltip: '3',
   taskbar: '3',
