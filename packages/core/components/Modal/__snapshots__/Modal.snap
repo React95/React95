@@ -3,11 +3,11 @@
 exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
       <svg test-file-stub />
       <div
@@ -71,11 +71,11 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals center 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
       <svg test-file-stub />
       <div
@@ -125,11 +125,11 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals flex-start 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
       <svg test-file-stub />
       <div
@@ -216,11 +216,11 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
 exports[`<Modal /> > Snapshots > should match snapshot with width and height props 1`] = `
 <div>
   <div
-    class="sprinkles_width__1txm3g81t sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
+    class="sprinkles_width__1txm3g81t sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
     style="--width__1txm3g81s: 300; --height__1txm3g81y: 200; transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
       <svg test-file-stub />
       <div

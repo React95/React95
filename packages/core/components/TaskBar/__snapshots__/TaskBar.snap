@@ -204,11 +204,11 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
       <svg test-file-stub />
       <div
@@ -252,22 +252,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
     <div
       class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
       style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--space-2__g5jstu5); --paddingLeft__1txm3g836: var(--space-0__g5jstu3); --display__1txm3g80: flex;"
-    >
-      <button
-        class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_true__1ct83mo5 TaskBar_windowsButton_small_false__1ct83mo4 TaskBar_windowsButton_compound_1__1ct83mo8"
-      >
-        <div
-          class="TaskBar_icon__1ct83mo9"
-        >
-          <svg test-file-stub />
-        </div>
-        <div
-          class="TaskBar_truncate__1ct83mo0"
-        >
-          file.bat
-        </div>
-      </button>
-    </div>
+    />
     <div
       class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
       style="--paddingLeft__1txm3g836: var(--space-6__g5jstu9); --paddingRight__1txm3g838: var(--space-6__g5jstu9); --paddingTop__1txm3g83a: var(--space-2__g5jstu5); --paddingBottom__1txm3g82y: var(--space-2__g5jstu5); --boxShadow__1txm3g85y: var(--shadows-in__g5jstu1a); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
@@ -315,11 +300,11 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     />
   </div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
       <svg test-file-stub />
       <div
@@ -363,36 +348,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     <div
       class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
       style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--space-2__g5jstu5); --paddingLeft__1txm3g836: var(--space-0__g5jstu3); --display__1txm3g80: flex;"
-    >
-      <button
-        class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_false__1ct83mo6 TaskBar_windowsButton_small_false__1ct83mo4"
-      >
-        <div
-          class="TaskBar_icon__1ct83mo9"
-        >
-          <svg test-file-stub />
-        </div>
-        <div
-          class="TaskBar_truncate__1ct83mo0"
-        >
-          Windows Explorer
-        </div>
-      </button>
-      <button
-        class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_true__1ct83mo5 TaskBar_windowsButton_small_false__1ct83mo4 TaskBar_windowsButton_compound_1__1ct83mo8"
-      >
-        <div
-          class="TaskBar_icon__1ct83mo9"
-        >
-          <svg test-file-stub />
-        </div>
-        <div
-          class="TaskBar_truncate__1ct83mo0"
-        >
-          file.bat
-        </div>
-      </button>
-    </div>
+    />
     <div
       class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
       style="--paddingLeft__1txm3g836: var(--space-6__g5jstu9); --paddingRight__1txm3g838: var(--space-6__g5jstu9); --paddingTop__1txm3g83a: var(--space-2__g5jstu5); --paddingBottom__1txm3g82y: var(--space-2__g5jstu5); --boxShadow__1txm3g85y: var(--shadows-in__g5jstu1a); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
