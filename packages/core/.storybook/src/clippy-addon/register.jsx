@@ -7,7 +7,6 @@ import { createGlobalStyle } from 'styled-components';
 
 import { Modal } from '../../../components/Modal';
 import List from '../../../components/List';
-import ThemeProvider from '../../../components/ThemeProvider';
 import TextArea from '../../../components/TextArea';
 
 const ClippyStyle = createGlobalStyle`
@@ -209,7 +208,7 @@ class Clippy extends React.Component {
     ].join('\n');
 
     return (
-      <ThemeProvider>
+      <>
         <ClippyStyle />
         {showModal && (
           <Modal
@@ -267,7 +266,7 @@ class Clippy extends React.Component {
             />
           </Modal>
         )}
-      </ThemeProvider>
+      </>
     );
   }
 }

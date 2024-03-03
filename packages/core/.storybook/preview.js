@@ -1,7 +1,7 @@
 import Frame from './decorators/Frame';
-import { withThemes } from './src/theme-changer/withThemes';
 
 import './preview.css';
+import { withModal } from './src/theme-changer/decorators';
 
 export const globalTypes = {
   selectedTheme: {
@@ -11,4 +11,4 @@ export const globalTypes = {
   },
 };
 
-export const decorators = [Frame, withThemes];
+export const decorators = [Frame, withModal];

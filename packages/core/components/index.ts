@@ -19,7 +19,6 @@ import TextArea from './TextArea';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
 import TitleBar from './TitleBar';
-import ThemeProvider from './ThemeProvider';
 import Video from './Video';
 
 export {
@@ -46,6 +45,5 @@ export {
   Tree,
   Tooltip,
   TitleBar,
-  ThemeProvider,
   Video,
 };
