@@ -3,81 +3,9 @@ import addons from '@storybook/addons';
 import clippy from 'clippyjs';
 import { FileText } from '@react95/icons';
 
-import { createGlobalStyle } from 'styled-components';
-
 import { Modal } from '../../../components/Modal';
 import List from '../../../components/List';
 import TextArea from '../../../components/TextArea';
-
-const ClippyStyle = createGlobalStyle`
-  .clippy, .clippy-balloon {
-    position: fixed;
-    z-index: 1000;
-    cursor: pointer;
-  }
-
-  .clippy-balloon {
-    background: #FFC;
-    color: black;
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-
-  .clippy-content {
-    max-width: 200px;
-    min-width: 120px;
-    font-family: 'MS Sans Serif';
-    font-size: 12px;
-  }
-
-  .clippy-button {
-    background-color: transparent;
-    border: 1px solid #d5d1b5;
-    margin-top: 10px;
-    border-radius: 4px;
-    padding: 4px 14px;
-    font-size: 12px;
-  }
-
-  .clippy-tip {
-    width: 10px;
-    height: 16px;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF///MAAAA////52QwgAAAAAN0Uk5T//8A18oNQQAAAGxJREFUeNqs0kEOwCAIRFHn3//QTUU6xMyyxii+jQosrTPkyPEM6IN3FtzIRk1U4dFeKWQiH6pRRowMVKEmvronEynkwj0uZJgR22+YLopPSo9P34wJSamLSU7lSIWLJU7NkNomNlhqxUeAAQC+TQLZyEuJBwAAAABJRU5ErkJggg==) no-repeat;
-    position: absolute;
-  }
-
-  .clippy-top-left .clippy-tip {
-    top: 100%;
-    margin-top: 0px;
-    left: 100%;
-    margin-left: -50px;
-  }
-
-  .clippy-top-right .clippy-tip {
-    top: 100%;
-    margin-top: 0px;
-    left: 0;
-    margin-left: 50px;
-    background-position: -10px 0;
-  }
-
-  .clippy-bottom-right .clippy-tip {
-    top: 0;
-    margin-top: -16px;
-    left: 0;
-    margin-left: 50px;
-    background-position: -10px -16px;
-  }
-
-  .clippy-bottom-left .clippy-tip {
-    top: 0;
-    margin-top: -16px;
-    left: 100%;
-    margin-left: -50px;
-    background-position: 0px -16px;
-  }
-`;
 
 class Clippy extends React.Component {
   constructor(...args) {
@@ -207,67 +135,62 @@ class Clippy extends React.Component {
       code,
     ].join('\n');
 
-    return (
-      <>
-        <ClippyStyle />
-        {showModal && (
-          <Modal
-            icon={<FileText variant="16x16_4" />}
-            title={component}
-            style={{
-              left: '40%',
-              top: '15%',
-              width: 300,
-              height: 220,
-              zIndex: 9,
-            }}
-            closeModal={this._closeModal}
-            ref={modal => (this.modal = modal)}
-            menu={[
-              {
-                name: 'File',
-                list: (
-                  <List>
-                    <List.Item onClick={this._closeModal}>Exit</List.Item>
-                  </List>
-                ),
-              },
-              {
-                name: 'Edit',
-                list: (
-                  <List>
-                    <List.Item
-                      onClick={() => {
-                        this._copySelectedText();
-                        this._closeModalMenu();
-                      }}
-                    >
-                      Copy
-                    </List.Item>
-                    <List.Divider />
-                    <List.Item
-                      onClick={() => {
-                        this._selectAllText();
-                        this._closeModalMenu();
-                      }}
-                    >
-                      Select All
-                    </List.Item>
-                  </List>
-                ),
-              },
-            ]}
-          >
-            <TextArea
-              readOnly
-              ref={textArea => (this.textArea = textArea)}
-              defaultValue={formattedCode}
-              rows={10}
-            />
-          </Modal>
-        )}
-      </>
-    );
+    return showModal ? (
+      <Modal
+        icon={<FileText variant="16x16_4" />}
+        title={component}
+        style={{
+          left: '40%',
+          top: '15%',
+          width: 300,
+          height: 220,
+          zIndex: 9,
+        }}
+        closeModal={this._closeModal}
+        ref={modal => (this.modal = modal)}
+        menu={[
+          {
+            name: 'File',
+            list: (
+              <List>
+                <List.Item onClick={this._closeModal}>Exit</List.Item>
+              </List>
+            ),
+          },
+          {
+            name: 'Edit',
+            list: (
+              <List>
+                <List.Item
+                  onClick={() => {
+                    this._copySelectedText();
+                    this._closeModalMenu();
+                  }}
+                >
+                  Copy
+                </List.Item>
+                <List.Divider />
+                <List.Item
+                  onClick={() => {
+                    this._selectAllText();
+                    this._closeModalMenu();
+                  }}
+                >
+                  Select All
+                </List.Item>
+              </List>
+            ),
+          },
+        ]}
+      >
+        <TextArea
+          readOnly
+          ref={textArea => (this.textArea = textArea)}
+          defaultValue={formattedCode}
+          rows={10}
+        />
+      </Modal>
+    ) : null;
   }
 }
 
