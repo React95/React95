@@ -25,17 +25,7 @@ import { Simple as SimpleTooltip } from './tooltip.stories';
 import { Simple as SimpleTree } from './tree.stories';
 import { FromURL } from './video.stories';
 
-const AllList = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  height: 620px;
-
-  > * {
-    margin-right: 10px;
-  }
-`;
+import * as styles from './all.stories.css';
 
 export default {
   title: 'All',
@@ -46,7 +36,7 @@ export const All = {
     const [openAlert, setOpenAlert] = React.useState(true);
 
     return (
-      <AllList>
+      <div className={styles.list}>
         <div>
           <Button onClick={() => setOpenAlert(true)}> Show Alert </Button>
         </div>
@@ -132,7 +122,7 @@ export const All = {
 
         <br />
         <Complete.render />
-      </AllList>
+      </div>
     );
   },
 };
