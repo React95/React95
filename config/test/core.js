@@ -19,7 +19,6 @@ export default {
     environment: 'happy-dom',
     setupFiles: [
       'babel-polyfill',
-      'jest-styled-components',
       '@testing-library/jest-dom',
       '../../config/setup/core.setup.js',
     ],
