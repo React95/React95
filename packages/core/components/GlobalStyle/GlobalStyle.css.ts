@@ -48,7 +48,6 @@ globalStyle('html', {
 });
 
 globalStyle('body', {
-  backgroundColor: '#5aa',
   margin: 0,
   padding: 0,
   fontSize: 12,
