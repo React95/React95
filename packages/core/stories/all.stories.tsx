@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import styled from '@xstyled/styled-components';
 import * as React from 'react';
 
 import { Alert, Button } from '../components';
