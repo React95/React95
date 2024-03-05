@@ -1,6 +1,6 @@
 import { style, globalStyle } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 import rightcaret from '../GlobalStyle/imgs/rightcaret.svg';
 

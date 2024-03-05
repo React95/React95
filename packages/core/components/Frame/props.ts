@@ -1,4 +1,4 @@
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 export const positioning = {
   position: true,

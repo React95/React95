@@ -1,5 +1,5 @@
 import { globalStyle, style } from '@vanilla-extract/css';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 import { recipe } from '@vanilla-extract/recipes';
 
 export const optionsBox = style({

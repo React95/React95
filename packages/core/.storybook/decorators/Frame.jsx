@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../components/GlobalStyle/GlobalStyle.css';
-import * as themes from '../../components/ThemeProvider/theme';
+import * as themes from '../../components/themes/all';
 
 const Frame = (Story, { globals }) => {
   const { selectedTheme } = globals;

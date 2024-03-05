@@ -1,16 +1,16 @@
 .theme-window {
   width: 150px;
   padding: 1px;
-  background-color: var(--r95_g5jstu11);
-  box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
-    inset 0 0 0 1px var(--r95_g5jstuq), 1px 1px 0 0px var(--r95_g5jstur);
+  background-color: var(--r95_1vn1wl211);
+  box-shadow: inset 1px 1px 0px 1px var(--r95_1vn1wl2u),
+    inset 0 0 0 1px var(--r95_1vn1wl2q), 1px 1px 0 0px var(--r95_1vn1wl2r);
 }
 
 .title-bar {
-  background: var(--r95_g5jstux);
+  background: var(--r95_1vn1wl2x);
   padding: 4px;
   margin: 2px;
-  color: var(--r95_g5jstu10);
+  color: var(--r95_1vn1wl210);
 }
 
 .btn-container {
@@ -18,31 +18,31 @@
 }
 
 .theme-widow-btn {
-  background-color: var(--r95_g5jstu11);
-  padding-top: var(--r95_g5jstua);
-  padding-inline: var(--r95_g5jstun);
-  padding-bottom: var(--r95_g5jstu8);
+  background-color: var(--r95_1vn1wl211);
+  padding-top: var(--r95_1vn1wl2a);
+  padding-inline: var(--r95_1vn1wl2n);
+  padding-bottom: var(--r95_1vn1wl28);
   width: 100%;
   border: none;
-  color: var(--r95_g5jstu12);
+  color: var(--r95_1vn1wl212);
   font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
-    inset 0 0 0 1px var(--r95_g5jstuq), 1px 1px 0 0px var(--r95_g5jstur);
+  box-shadow: inset 1px 1px 0px 1px var(--r95_1vn1wl2u),
+    inset 0 0 0 1px var(--r95_1vn1wl2q), 1px 1px 0 0px var(--r95_1vn1wl2r);
 }
 
 .theme-widow-btn:focus {
-  outline: var(--r95_g5jstu4) dotted var(--r95_g5jstu12);
-  outline-offset: calc(var(--r95_g5jstu8) * -1);
-  box-shadow: inset 1px 1px 0px 1px var(--r95_g5jstuu),
-    inset -0.5px -0.5px 0px 1px var(--r95_g5jstuq),
-    1px 1px 0 1px var(--r95_g5jstur);
+  outline: var(--r95_1vn1wl24) dotted var(--r95_1vn1wl212);
+  outline-offset: calc(var(--r95_1vn1wl28) * -1);
+  box-shadow: inset 1px 1px 0px 1px var(--r95_1vn1wl2u),
+    inset -0.5px -0.5px 0px 1px var(--r95_1vn1wl2q),
+    1px 1px 0 1px var(--r95_1vn1wl2r);
 }
 
 .theme-widow-btn:active {
-  padding-top: var(--r95_g5jstub);
-  padding-inline: var(--r95_g5jstun);
-  padding-bottom: var(--r95_g5jstu7);
-  outline: var(--r95_g5jstu4) dotted var(--r95_g5jstur);
-  outline-offset: calc(var(--r95_g5jstu8) * -1);
-  box-shadow: inset 0 0 0 1px var(--r95_g5jstuq), 0 0 0 1px var(--r95_g5jstur);
+  padding-top: var(--r95_1vn1wl2b);
+  padding-inline: var(--r95_1vn1wl2n);
+  padding-bottom: var(--r95_1vn1wl27);
+  outline: var(--r95_1vn1wl24) dotted var(--r95_1vn1wl2r);
+  outline-offset: calc(var(--r95_1vn1wl28) * -1);
+  box-shadow: inset 0 0 0 1px var(--r95_1vn1wl2q), 0 0 0 1px var(--r95_1vn1wl2r);
 }

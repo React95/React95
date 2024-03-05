@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { Cursor } from '../components/Cursor/Cursor.css';
-import { contract } from '../components/ThemeProvider/themes/contract.css';
+import { contract } from '../components/themes/contract.css';
 
 export const btn = style([
   Cursor.Pointer,

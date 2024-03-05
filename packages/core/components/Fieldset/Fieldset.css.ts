@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 export const field = style({
   borderTopStyle: 'groove',

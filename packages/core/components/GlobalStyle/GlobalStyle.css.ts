@@ -1,7 +1,7 @@
 import { globalFontFace, globalStyle } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
 
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 import { createBorder, createTriangleSVG } from './utils';
 import ttfBold from './font/MS-Sans-Serif-8pt-bold.ttf';

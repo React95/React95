@@ -1,5 +1,5 @@
 import { recipe } from '@vanilla-extract/recipes';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 import { style } from '@vanilla-extract/css';
 
 export const avatar = recipe({

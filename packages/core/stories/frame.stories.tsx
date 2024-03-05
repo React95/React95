@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import * as React from 'react';
 
 import { Frame, FrameProps } from '../components/Frame/Frame';
-import { contract } from '../components/ThemeProvider/themes/contract.css';
+import { contract } from '../components/themes/contract.css';
 
 const colorsKeys = Object.keys(contract.colors).map(color => `$${color}`);
 const shadowsKeys = Object.keys(contract.shadows).map(shadows => `$${shadows}`);

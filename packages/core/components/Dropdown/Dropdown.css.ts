@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 import caret from './imgs/downcaret.png';
 

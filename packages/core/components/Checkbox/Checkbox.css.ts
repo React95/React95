@@ -1,7 +1,7 @@
 import check from './imgs/check.svg';
 import checkDisabled from './imgs/check-disabled.svg';
 import { globalStyle, style } from '@vanilla-extract/css';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 export const icon = style({
   width: contract.space[12],

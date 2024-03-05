@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { Cursor } from '../Cursor/Cursor.css';
-import { contract } from '../ThemeProvider/themes/contract.css';
+import { contract } from '../themes/contract.css';
 
 export const input = style([
   Cursor.Text,

@@ -13,7 +13,7 @@ export const extractThemes = (frame: HTMLIFrameElement) => {
 
   for (let link of frame.contentDocument.querySelectorAll('style')) {
     try {
-      if (link.dataset?.file?.includes('ThemeProvider')) {
+      if (link.dataset?.file?.includes('themes')) {
         const fileName = link.dataset.file.split('/').at(-1);
         const [name] = fileName?.split('.') || [];
 
@@ -50,10 +50,13 @@ export const extractThemes = (frame: HTMLIFrameElement) => {
   return extractedThemes;
 };
 
-export const injectThemes = (themes: Pick<ThemeObject, 'content'>[]) => {
-  themes.forEach(({ content }) => {
+export const injectThemes = (
+  themes: Pick<ThemeObject, 'content' | 'name'>[],
+) => {
+  themes.forEach(({ content, name }) => {
     const newLink = document.createElement('style');
     newLink.innerHTML = content;
+    newLink.dataset.r95ThemeName = name;
 
     document.head.appendChild(newLink);
   });
