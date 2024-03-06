@@ -1,4 +1,3 @@
-import * as CSS from 'csstype';
 import * as React from 'react';
 
 import Draggable from 'react-draggable';
@@ -39,7 +38,7 @@ export type ModalProps = {
   defaultPosition?: DraggableProps['defaultPosition'];
   positionOffset?: DraggableProps['positionOffset'];
   hasWindowButton?: boolean;
-  buttonsAlignment?: CSS.Property.JustifyContent;
+  buttonsAlignment?: FrameProps['justifyContent'];
 } & Omit<FrameProps, 'as'> &
   React.HTMLAttributes<HTMLDivElement>;
 
