@@ -1,3 +1,4 @@
+import path from 'path';
 import { readdirSync } from 'fs';
 import { mergeConfig } from 'vite';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
@@ -36,7 +37,18 @@ export default {
       build: { chunkSizeWarningLimit: 1600 },
       plugins: [
         vanillaExtractPlugin({
-          identifiers: ({ hash }) => `r95_${hash}`,
+          identifiers: ({ filePath, hash }) => {
+            if (
+              filePath.startsWith('components/themes') &&
+              !filePath.endsWith('contract.css.ts')
+            ) {
+              const file = path.basename(filePath, '.css.ts');
+
+              return `r95_theme_${file}_${hash}`;
+            }
+
+            return `r95_${hash}`;
+          },
           esbuildOptions: {
             plugins: [
               ImageLoader({
