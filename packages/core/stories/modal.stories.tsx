@@ -98,8 +98,8 @@ export const Multiple = () => {
       <Button onClick={handleOpenSecondModal}>Trigger 2nd</Button>
       {showFirstModal && (
         <Modal
-          width="300"
-          height="200"
+          width="300px"
+          height="200px"
           icon={<Mmsys113 variant="32x32_4" />}
           title="First Modal"
           defaultPosition={{
@@ -130,7 +130,7 @@ export const Multiple = () => {
             },
           ]}
         >
-          <Frame bg="white" boxShadow="in" h="100%" w="100%" padding="0px 5px">
+          <Frame bg="white" boxShadow="$in" h="100%" w="100%" padding="0px 5px">
             <p>
               The active modal will be based on the order they render, most
               recently rendered will be the active component. On click of a
@@ -142,8 +142,8 @@ export const Multiple = () => {
       )}
       {showSecondModal && (
         <Modal
-          width="300"
-          height="200"
+          width="300px"
+          height="200px"
           icon={<Mshtml32534 variant="32x32_4" />}
           title="Second Modal"
           defaultPosition={{
@@ -174,7 +174,7 @@ export const Multiple = () => {
             },
           ]}
         >
-          <Frame bg="white" boxShadow="in" h="100%" w="100%" padding="0px 5px">
+          <Frame bg="white" boxShadow="$in" h="100%" w="100%" padding="0px 5px">
             <p>
               Try playing with the modals. See which on is active, click and
               drag them. Understand their behavior.
