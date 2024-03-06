@@ -2,7 +2,7 @@
 
 exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
 <div>
-  <menu
+  <ul
     class="Tree_tree__z2881c0"
   >
     <li
@@ -27,6 +27,6 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
         </label>
       </div>
     </li>
-  </menu>
+  </ul>
 </div>
 `;

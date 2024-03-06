@@ -7,7 +7,7 @@ const base = { listStyle: 'none', margin: '0', padding: '0' };
 
 export const tree = style(base);
 
-globalStyle(`${tree} menu`, { ...base, marginLeft: contract.space[6] });
+globalStyle(`${tree} ul`, { ...base, marginLeft: contract.space[6] });
 
 export const node = style({
   marginLeft: contract.space[12],

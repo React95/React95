@@ -113,11 +113,11 @@ const Node: React.FC<NodeProps> = ({
         </label>
       </div>
       {hasChildren && isOpen && (
-        <menu className={styles.tree}>
+        <ul className={styles.tree}>
           {children?.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
-        </menu>
+        </ul>
       )}
     </Frame>
   );

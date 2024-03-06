@@ -12,14 +12,14 @@ type TreeComposition = React.ForwardRefExoticComponent<
   TreeProps & React.RefAttributes<HTMLUListElement>
 > & {
   icons: typeof icons;
-} & Omit<FrameProps<'menu'>, 'as'>;
+} & Omit<FrameProps<'ul'>, 'as'>;
 
 export const Tree = forwardRef<HTMLUListElement, TreeProps>(
   ({ data, root, ...rest }, ref) => {
     return (
       <>
         {root && <NodeRoot {...root} />}
-        <Frame {...rest} className={tree} as="menu" ref={ref}>
+        <Frame {...rest} className={tree} as="ul" ref={ref}>
           {data.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
