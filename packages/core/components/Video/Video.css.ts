@@ -32,7 +32,7 @@ export const countDownContainer = style({
   display: 'flex',
   padding: contract.space[6],
   marginBottom: contract.space[4],
-  boxShadow: 'in',
+  boxShadow: contract.shadows.in,
   backgroundColor: contract.colors.canvas,
   height: '50px',
   color: contract.colors.canvasText,
