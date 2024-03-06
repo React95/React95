@@ -5,6 +5,7 @@ import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { ImageLoader } from 'esbuild-vanilla-image-loader';
 
 export default {
+  staticDirs: ['../components/GlobalStyle'],
   stories: [
     '../stories/all.stories.tsx',
     ...readdirSync('./stories')
