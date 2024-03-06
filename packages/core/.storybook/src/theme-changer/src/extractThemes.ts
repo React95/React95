@@ -4,50 +4,60 @@ export type ThemeObject = {
   content: string;
 };
 
+function cssRuleListToThemeObject(rules: CSSRuleList) {
+  return Array.from(rules)
+    .filter(rule => (rule as CSSPageRule).selectorText !== 'body')
+    .map(rule => {
+      const className = (rule as CSSPageRule).selectorText.substring(1);
+
+      // theme classes are like:
+      //   r95_theme_win95_nrtzkz0
+      //   \_/ \___/ \___/ \_____/
+      // prefix  |     |     hash
+      //       base   name
+      const [prefix, base, name, hash] = className.split('_');
+
+      const content = rule.cssText;
+
+      return {
+        className,
+        name,
+        content,
+      };
+    });
+}
+
 export const extractThemes = (frame: HTMLIFrameElement) => {
   if (!frame.contentDocument) {
     return;
   }
 
-  const extractedThemes: ThemeObject[] = [];
+  // on development, vanilla-extract will create one style for each theme
+  if (process.env.NODE_ENV === 'development') {
+    const allStyleTagsArray = Array.from(
+      frame.contentDocument.querySelectorAll('style'),
+    );
+    const extractedThemes = allStyleTagsArray
+      // and each theme will have its file as data-attribute (data-file)
+      .filter(link => link.dataset?.file?.includes('themes') && link.sheet)
+      .map(link => {
+        const [themeObject] = cssRuleListToThemeObject(link.sheet!.cssRules);
 
-  for (let link of frame.contentDocument.querySelectorAll('style')) {
-    try {
-      if (link.dataset?.file?.includes('themes')) {
-        const fileName = link.dataset.file.split('/').at(-1);
-        const [name] = fileName?.split('.') || [];
+        return themeObject;
+      });
 
-        if (!(link as HTMLLinkElement | HTMLStyleElement).sheet) {
-          return;
-        }
+    return extractedThemes;
+  } else {
+    // on prod, all css files will be merged into a single one, named
+    // `preview-` and some hashes
+    const allThemesLinkTag = Array.from(frame.contentDocument.styleSheets).find(
+      s => s.href && s.href.includes('preview'),
+    );
 
-        if (!link.sheet) {
-          return;
-        }
-
-        const [themeClassName] = link.sheet.cssRules;
-
-        const className = (
-          themeClassName as CSSPageRule
-        ).selectorText.substring(1);
-
-        extractedThemes.push({
-          name,
-          className,
-          content: themeClassName.cssText,
-        });
-      }
-    } catch (e) {
-      console.warn(
-        'Warning:',
-        e.message,
-        ". Try set crossorigin='anonymous' on element",
-        link,
-      );
+    if (allThemesLinkTag) {
+      return cssRuleListToThemeObject(allThemesLinkTag.cssRules);
     }
   }
-
-  return extractedThemes;
 };
 
 export const injectThemes = (
