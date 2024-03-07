@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-alpha.0](https://github.com/React95/React95/compare/@react95/core@7.0.2...@react95/core@8.0.0-alpha.0) (2024-03-07)
+
+
+### Features
+
+* Avatar revisited! ([1b250d2](https://github.com/React95/React95/commit/1b250d2a8d010ae14e4e5b4e8568281af065ad60))
+* Checkbox revisited! ([8e7fb4f](https://github.com/React95/React95/commit/8e7fb4fdd1f819f7d248b1776900c4b7e6200c4f))
+* **core:** Alert revisited! ([af215f0](https://github.com/React95/React95/commit/af215f033e4c195a3137a69c93d0879b8e186ea5))
+* **core:** Cursors revisited! (part 2/2) ([0a5f7bf](https://github.com/React95/React95/commit/0a5f7bf26b7db3f913bc6f316e6ae0a4f9e36138))
+* **core:** Cursos revisited ([18732a8](https://github.com/React95/React95/commit/18732a873d1161256a460a84ac8bc6625721b945))
+* **core:** Dropdown revisited! ([e7342c5](https://github.com/React95/React95/commit/e7342c50badfeda0dc517cbfa7a54eb17999964a))
+* **core:** extract styled from Button ([1f4e4ff](https://github.com/React95/React95/commit/1f4e4ff73132689d6eae1fd4860978c7212b5a51))
+* **core:** Fieldset revisited! ([57b5c4e](https://github.com/React95/React95/commit/57b5c4eab7237b14e4633a68ef17936f562daf20))
+* **core:** Frame revisited! ([ecd39e9](https://github.com/React95/React95/commit/ecd39e9100cb8ea73d8263187e49225efd1cdc5d))
+* **core:** GlobalStyle revisited ([bd6205d](https://github.com/React95/React95/commit/bd6205dcc86763c3e75469639d2452b31cf25964))
+* **core:** Input revisited! ([cf36279](https://github.com/React95/React95/commit/cf362793b5ec293fa765937116f13120822cad70))
+* **core:** List revisited! (part 2/2) ([7e175e0](https://github.com/React95/React95/commit/7e175e0ef90ecc6a99f86fba5b015cf9f78d2d03))
+* **core:** Modal revisited! ([b66afba](https://github.com/React95/React95/commit/b66afbaa49af28a9413d2b7b3fc0a135f0629dd9))
+* **core:** more properties to Frame! :tada: ([1c423ea](https://github.com/React95/React95/commit/1c423eaaa9768e22bf18a9b0db0a615babaf8579))
+* **core:** ProgressBar revisited! ([6e93f9f](https://github.com/React95/React95/commit/6e93f9f137721d787c4303cee64d5a75147cf52c))
+* **core:** ProgressBar revisited! ([318ad89](https://github.com/React95/React95/commit/318ad899ee5582ff10cbb3226ddcedfbbbf4fa75))
+* **core:** RadioButton revisited! ([cbf52c6](https://github.com/React95/React95/commit/cbf52c62f6d2744c842b406d6670098b020f0116))
+* **core:** Range revisited! ([17e6218](https://github.com/React95/React95/commit/17e6218f93e69a847a0b29c61a94b125e2c4ab76))
+* **core:** rewrite the whole library to use `vanilla-extract` ([b772c34](https://github.com/React95/React95/commit/b772c34261e8695bde7da8dfab143e55235265c0)), closes [#423](https://github.com/React95/React95/issues/423) [#407](https://github.com/React95/React95/issues/407)
+* **core:** Tabs revisited! ([092cfec](https://github.com/React95/React95/commit/092cfecb7a8b3b7bb3f3562fef2c9e56acd207f3))
+* **core:** TaskBar revisited! ([51d64db](https://github.com/React95/React95/commit/51d64db1d8aeb7c6eda23e658b44dac73bfecb72))
+* **core:** TextArea revisited! ([617307d](https://github.com/React95/React95/commit/617307db9a38357d25edd05f732a35d79e749027))
+* **core:** TitleBar revisited! ([270e96a](https://github.com/React95/React95/commit/270e96abdf2377bce0b3fe46367c8b4eddaf7db3))
+* **core:** Tooltip revisited! ([6b60082](https://github.com/React95/React95/commit/6b60082eb4057d7f26d1d3da0aa4b1b84bcd5994))
+* **core:** Tree revisited! ([53e26c6](https://github.com/React95/React95/commit/53e26c69e46020e79110d418d5414546f96c5153))
+* **core:** Video revisited! ([34e5769](https://github.com/React95/React95/commit/34e57694e7edad67c28e404a60e94e1a9c61e621))
+* create "Addon/Theme Changer" story ([9085bc7](https://github.com/React95/React95/commit/9085bc7dca65a2f75017b051afa2b3bdbca69883))
+* create theme basics ([30ceb64](https://github.com/React95/React95/commit/30ceb64709d76a5ec2bbd516d30c94aecf7ace9b))
+* Frame complete! ([50ba3e8](https://github.com/React95/React95/commit/50ba3e825f6b1fca0e389408149c78e23bd5b0cd))
+* install vanilla-extract ([cb8d5ca](https://github.com/React95/React95/commit/cb8d5ca1409e34e431184fdcfc2e90b7e7d97b27))
+* List revisited! (part 1/2) ([64c21f3](https://github.com/React95/React95/commit/64c21f34a0f0e89d7488b91b4be708911c72a238))
+* **Modal:** add missing icons ([03f1bc7](https://github.com/React95/React95/commit/03f1bc7f24e52a3fe28ceff67fa1080be072cf6b))
+* started refactoring themes ([a9fffbf](https://github.com/React95/React95/commit/a9fffbf01b1d84d12e3ab1230989874ea8fdff9f))
+* starting exporting all themes ([d0468b8](https://github.com/React95/React95/commit/d0468b8067bde327906471da19cb1b7dd171cdf3))
+* ThemeProvider revisited! ([233e3aa](https://github.com/React95/React95/commit/233e3aa8a5086cd1016f93a002e23d7b21cd61c8))
+* themes revisited! ([af58e5c](https://github.com/React95/React95/commit/af58e5cd595747c742e58e136038a3b04fb6215a))
+* Tooltip with default date ([397caf9](https://github.com/React95/React95/commit/397caf99b6c754e31ac985a652f3ee8d7793bd9d))
+
+
+### BREAKING CHANGES
+
+* **core:** React95 now changes its styling core, from `styled-components`/`xstyled` to
+`vanilla-extract`. This will change how the lib is installed and how to use the components
+
+
+
+
+
 ## [7.0.2](https://github.com/React95/React95/compare/@react95/core@7.0.1...@react95/core@7.0.2) (2024-01-18)
 
 
