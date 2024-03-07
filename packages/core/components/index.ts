@@ -8,7 +8,7 @@ import Cursor from './Cursor';
 import Dropdown from './Dropdown';
 import Fieldset from './Fieldset';
 import Frame from './Frame';
-import GlobalStyle from './GlobalStyle';
+import * as GlobalStyle from './GlobalStyle/GlobalStyle.css';
 import Input from './Input';
 import List from './List';
 import ProgressBar from './ProgressBar';
@@ -19,7 +19,6 @@ import TextArea from './TextArea';
 import Tree from './Tree';
 import Tooltip from './Tooltip';
 import TitleBar from './TitleBar';
-import ThemeProvider from './ThemeProvider';
 import Video from './Video';
 
 export {
@@ -46,6 +45,5 @@ export {
   Tree,
   Tooltip,
   TitleBar,
-  ThemeProvider,
   Video,
 };

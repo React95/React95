@@ -1,4 +1,4 @@
-import Modal from './Modal';
+import { Modal } from './Modal';
 import ModalContext from './ModalContext';
 import ModalProvider from './ModalProvider';
 

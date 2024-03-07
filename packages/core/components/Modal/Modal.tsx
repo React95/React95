@@ -1,5 +1,3 @@
-import styled, { css, th } from '@xstyled/styled-components';
-import * as CSS from 'csstype';
 import * as React from 'react';
 
 import Draggable from 'react-draggable';
@@ -9,108 +7,11 @@ import Button from '../Button';
 import List from '../List';
 import TitleBar from '../TitleBar';
 import ModalContext from './ModalContext';
+import * as styles from './Modal.css';
+import { Frame, FrameProps } from '../Frame/Frame';
 
-type WrapperProps = {
-  width?: CSS.Property.Width;
-  height?: CSS.Property.Height;
-  active?: boolean;
-};
-
-const ModalWrapper = styled.div<WrapperProps>`
-  display: flex;
-  flex-direction: column;
-
-  position: fixed;
-
-  padding: 2 2 8;
-
-  top: 50px;
-
-  background-color: material;
-
-  box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
-    inset 0 0 0 1px ${th('colors.borderDark')},
-    1px 1px 0 1px ${th('colors.borderDarkest')};
-
-  ${({ width, height }) => `
-    width: ${width ? `${width}px` : 'auto'};
-    height: ${height ? `${height}px` : 'auto'};
-  `}
-  ${({ active }) =>
-    active
-      ? css`
-          z-index: modal;
-        `
-      : ''}
-`;
-
-const Content = styled.div`
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-
-  padding: 6;
-`;
-
-type ButtonWrapperProps = {
-  buttonsAlignment?: CSS.Property.JustifyContent;
-};
-
-const ButtonWrapper = styled.div<ButtonWrapperProps>`
-  display: flex;
-  flex-direction: row;
-  justify-content: ${({ buttonsAlignment = 'center' }) => buttonsAlignment};
-
-  padding: 0 6 6 6;
-
-  & ${Button} {
-    margin-right: 6;
-    min-width: 70px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-`;
-
-const MenuWrapper = styled.ul`
-  display: flex;
-  flex-direction: row;
-
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 3;
-
-  border-bottom-style: solid;
-  border-width: 1;
-  border-bottom-color: borderDark;
-
-  box-shadow: 0 1px 0 0 ${th('colors.borderLighter')};
-`;
-
-const MenuItem = styled.li<Pick<WrapperProps, 'active'>>`
-  position: relative;
-  padding-left: 6;
-  padding-right: 6;
-
-  user-select: none;
-
-  ul {
-    position: absolute;
-    left: 0;
-    color: ${th('colors.materialText')};
-  }
-
-  ${({ active }) =>
-    active &&
-    css`
-      background-color: primary;
-      color: materialTextInvert;
-    `};
-`;
-
-MenuItem.displayName = 'MenuItem';
+import close from './close.svg';
+import help from './help.svg';
 
 export type ModalButtons = {
   value: string;
@@ -129,29 +30,31 @@ export type ModalDefaultPosition = {
 
 export type ModalProps = {
   icon?: React.ReactElement;
-  closeModal(event: React.MouseEvent): void;
+  onClose(event: React.MouseEvent): void;
+  onHelp?(event: React.MouseEvent): void;
   title: string;
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
   defaultPosition?: DraggableProps['defaultPosition'];
   positionOffset?: DraggableProps['positionOffset'];
   hasWindowButton?: boolean;
-} & Omit<WrapperProps, 'active'> &
-  ButtonWrapperProps &
+  buttonsAlignment?: FrameProps['justifyContent'];
+} & Omit<FrameProps, 'as'> &
   React.HTMLAttributes<HTMLDivElement>;
 
 const ModalRenderer = (
   {
     hasWindowButton: hasButton = true,
-    buttons,
-    buttonsAlignment,
+    buttons = [],
+    buttonsAlignment = 'flex-end',
     children,
-    closeModal,
-    defaultPosition,
+    onClose = () => {},
+    onHelp,
+    defaultPosition = { x: 0, y: 0 },
     positionOffset,
     height,
     icon,
-    menu,
+    menu = [],
     title,
     width,
     ...rest
@@ -196,11 +99,11 @@ const ModalRenderer = (
       positionOffset={positionOffset}
       onMouseDown={id ? () => setActiveWindow(id) : undefined}
     >
-      <ModalWrapper
+      <Frame
+        {...rest}
         width={width}
         height={height}
-        {...rest}
-        active={isActive}
+        className={styles.modalWrapper({ active: isActive })}
         ref={ref}
       >
         <TitleBar
@@ -210,32 +113,45 @@ const ModalRenderer = (
           className="draggable"
         >
           <TitleBar.OptionsBox>
-            <TitleBar.Option>?</TitleBar.Option>
-            <TitleBar.Option onClick={closeModal}>X</TitleBar.Option>
+            {onHelp && (
+              <TitleBar.Option>
+                <img src={help} alt="help" onClick={onHelp} />
+              </TitleBar.Option>
+            )}
+
+            <TitleBar.Option onClick={onClose}>
+              <img src={close} alt="close" />
+            </TitleBar.Option>
           </TitleBar.OptionsBox>
         </TitleBar>
 
         {menu && menu.length > 0 && (
-          <MenuWrapper>
+          <ul className={styles.menuWrapper}>
             {menu.map(({ name, list }) => {
               const active = menuOpened === name;
               return (
-                <MenuItem
+                <li
                   key={name}
                   onMouseDown={() => setMenuOpened(name)}
-                  active={active}
+                  className={styles.menuItem({ active })}
                 >
                   {name}
                   {active && list}
-                </MenuItem>
+                </li>
               );
             })}
-          </MenuWrapper>
+          </ul>
         )}
 
-        <Content onClick={() => setMenuOpened('')}>{children}</Content>
+        <div className={styles.content} onClick={() => setMenuOpened('')}>
+          {children}
+        </div>
+
         {buttons && buttons.length > 0 && (
-          <ButtonWrapper buttonsAlignment={buttonsAlignment}>
+          <Frame
+            className={styles.buttonWrapper}
+            justifyContent={buttonsAlignment}
+          >
             {buttons.map(button => (
               <Button
                 key={button.value}
@@ -245,27 +161,27 @@ const ModalRenderer = (
                 {button.value}
               </Button>
             ))}
-          </ButtonWrapper>
+          </Frame>
         )}
-      </ModalWrapper>
+      </Frame>
     </Draggable>
   );
 };
 
-const Modal = React.forwardRef<HTMLDivElement, ModalProps>(ModalRenderer);
+export const Modal = React.forwardRef<HTMLDivElement, ModalProps>(
+  ModalRenderer,
+);
 
 Modal.displayName = 'Modal';
 
 Modal.defaultProps = {
   icon: undefined,
   title: 'Modal',
-  buttonsAlignment: 'flex-end',
   children: null,
   defaultPosition: { x: 0, y: 0 },
   buttons: [],
   menu: [],
   width: undefined,
   height: undefined,
-  closeModal: () => {},
+  onClose: () => {},
 };
-export default Modal;

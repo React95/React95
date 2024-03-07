@@ -8,9 +8,9 @@ import List from '../List';
 import { Modal } from '../Modal';
 import Tooltip from '../Tooltip';
 
-import Clock from './Clock';
-import TaskBar from './TaskBar';
-import WindowButton from './WindowButton';
+import { Clock } from './Clock';
+import { TaskBar } from './TaskBar';
+import { WindowButton } from './WindowButton';
 
 const WINDOWS95_LAUNCH_DATE = '24 August 1995';
 
@@ -86,7 +86,7 @@ describe('<TaskBar />', () => {
     it('should match snapshot with one Modal', async () => {
       const { container } = await waitRender(
         <>
-          <Modal icon={<Bat />} title="file.bat" closeModal={() => {}} />
+          <Modal icon={<Bat />} title="file.bat" onClose={() => {}} />
           <TaskBar />
         </>,
       );
@@ -104,9 +104,9 @@ describe('<TaskBar />', () => {
           <Modal
             icon={<WindowsExplorer />}
             title="Windows Explorer"
-            closeModal={() => {}}
+            onClose={() => {}}
           />
-          <Modal icon={<Bat />} title="file.bat" closeModal={() => {}} />
+          <Modal icon={<Bat />} title="file.bat" onClose={() => {}} />
           <TaskBar />
         </>,
       );

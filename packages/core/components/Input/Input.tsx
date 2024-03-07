@@ -1,52 +1,9 @@
 import * as React from 'react';
-import styled from '@xstyled/styled-components';
-import {
-  padding,
-  PaddingProps,
-  borders,
-  BorderProps,
-  shadow,
-  ShadowProps,
-} from 'styled-system';
-import Cursor from '../Cursor';
+import { Frame, FrameProps } from '../Frame/Frame';
+import { input } from './Input.css';
 
-export type InputProps = PaddingProps &
-  BorderProps &
-  ShadowProps &
-  React.HTMLAttributes<HTMLInputElement>;
+export type InputProps = Omit<FrameProps<'input'>, 'as'>;
 
-const Input = styled.input<InputProps>`
-  outline: none;
-  border: none;
-  cursor: text;
-
-  padding: 3 3 5 3;
-
-  color: materialText;
-  background-color: inputBackground;
-
-  border-radius: 0;
-
-  border-top-width: 1;
-  border-top-style: 1;
-  border-top-color: borderDark;
-
-  border-right-width: 0;
-  border-bottom-width: 0;
-
-  border-left-width: 1;
-  border-left-style: 1;
-  border-left-color: borderDark;
-
-  box-shadow: input;
-
-  -webkit-appearance: none;
-
-  ${Cursor.Text};
-
-  ${padding}
-  ${borders}
-  ${shadow}
-`;
-
-export default Input;
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  (rest, ref) => <Frame {...rest} ref={ref} className={input} as="input" />,
+);

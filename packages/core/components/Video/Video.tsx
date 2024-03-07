@@ -1,97 +1,20 @@
 import * as React from 'react';
-import styled, { css } from '@xstyled/styled-components';
 import { Mplayer113, User4 } from '@react95/icons';
 
-import Frame, { FrameProps } from '../Frame/Frame';
+import * as styles from './Video.css';
+
+import { Frame, FrameProps } from '../Frame/Frame';
 import Button from '../Button';
 import Range from '../Range';
 import TitleBar from '../TitleBar';
 import { Play, Pause, Stop, Fullscreen } from './buttons';
-import Divider from '../List/ListDivider';
-
-const VideoTag = styled.video<{ visible: boolean }>`
-  width: 100%;
-  padding: 2;
-
-  display: ${({ visible }) => (visible ? 'block' : 'none')};
-`;
+import cn from 'classnames';
 
 type SourceProps = Pick<HTMLSourceElement, 'src'>;
 
 const Source: React.FC<SourceProps> = ({ src }) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
-
-const ControlBtn = styled(Button)`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  svg {
-    fill: materialText;
-  }
-
-  &&,
-  &:active,
-  &:focus {
-    width: 20px;
-    height: 20px;
-    padding: 7;
-
-    ${({ disabled }) =>
-      disabled &&
-      css`
-        padding: 4;
-        svg {
-          fill: borderDark;
-          border-bottom: 1px solid;
-          border-bottom-color: borderLightest;
-          border-right: 1px solid;
-          border-right-color: borderLightest;
-        }
-      `}
-  }
-`;
-
-const Controls = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 2 0;
-`;
-
-const CountDownContainer = styled(Frame)`
-  display: flex;
-  padding: 6;
-  margin-bottom: 4;
-
-  box-shadow: in;
-  background-color: canvas;
-  height: 50px;
-
-  color: canvasText;
-`;
-
-const VideoFont = styled.span`
-  font-family: 'React95Video-Numbers';
-  text-transform: uppercase;
-`;
-
-const ResetFrame = styled(Frame)`
-  background-color: transparent;
-  box-shadow: none;
-`;
-
-const VideoRange = styled(Range)`
-  &::-webkit-slider-thumb {
-    height: 18px;
-    margin-top: -7px;
-    width: 10px;
-  }
-
-  &[value='0']::-webkit-slider-thumb {
-    margin-left: -2px;
-  }
-`;
 
 const PlayOrPause = ({ playing }: { playing: boolean }) =>
   playing ? <Pause /> : <Play />;
@@ -126,8 +49,7 @@ function parseCurrentTime(secs: number): string {
 export type VideoProps = {
   name?: string;
   src: string;
-  videoProps?: React.HTMLAttributes<HTMLVideoElement>;
-  style?: React.CSSProperties;
+  videoProps?: React.HTMLProps<HTMLVideoElement>;
 } & FrameProps;
 
 export type VideoRefs = {
@@ -140,7 +62,7 @@ export type VideoRefs = {
 };
 
 const VideoRenderer = (
-  { name, src, videoProps, style, ...props }: VideoProps,
+  { name, src, videoProps, ...props }: VideoProps,
   ref: React.Ref<VideoRefs>,
 ) => {
   const [playing, setPlaying] = React.useState(false);
@@ -220,53 +142,50 @@ const VideoRenderer = (
 
   return (
     <Frame
-      p={2}
-      {...(props as typeof Frame as object)}
-      style={{
-        width: !loadeddata ? 260 : undefined,
-        ...style,
-      }}
+      {...props}
+      padding="$2"
+      boxShadow="$out"
+      backgroundColor="$material"
       ref={wrapperRef}
     >
       <TitleBar icon={<Mplayer113 variant="16x16_4" />} title={title} />
-      <VideoTag {...videoProps} visible={loadeddata} ref={player}>
+      <video
+        className={styles.videoTag({ visible: loadeddata })}
+        {...videoProps}
+        ref={player}
+      >
         {paths.map(s => (
           <Source key={s} src={s} />
         ))}
-      </VideoTag>
-      {loadeddata && (
-        <Divider as="span" style={{ display: 'block', marginBottom: 2 }} />
-      )}
-      <ResetFrame maxWidth="250" mx="auto" mb={4}>
-        <CountDownContainer>
-          <ResetFrame display="flex" flexDirection="column" w="40%">
-            <VideoFont
+      </video>
+      {loadeddata && <span className={styles.divider} />}
+      <Frame maxWidth="250px" mx="auto" mb="$4">
+        <div className={styles.countDownContainer}>
+          <Frame display="flex" flexDirection="column" w="40%">
+            <div
+              className={styles.videoFont}
               style={{
                 marginTop: 'auto',
               }}
             >
               {player.current && parseCurrentTime(player.current.duration)}
-            </VideoFont>
+            </div>
 
-            <VideoFont style={{ height: 12 }}>
+            <div className={styles.videoFont} style={{ height: 12 }}>
               {!loadeddata && 'Openning'}
-            </VideoFont>
-          </ResetFrame>
-          <ResetFrame display="flex" flexDirection="column" w="40%">
-            <VideoFont
-              style={{
-                marginTop: 'auto',
-                fontSize: 22,
-              }}
-            >
+            </div>
+          </Frame>
+          <Frame display="flex" flexDirection="column" w="40%">
+            <div className={cn(styles.videoFont, styles.currentTime)}>
               {player.current && parseCurrentTime(player.current.currentTime)}
-            </VideoFont>
+            </div>
 
-            <VideoFont style={{ height: 12 }}>time</VideoFont>
-          </ResetFrame>
-        </CountDownContainer>
-        <Controls>
-          <ControlBtn
+            <div className={cn(styles.videoFont, styles.elapsedTime)}>time</div>
+          </Frame>
+        </div>
+        <div className={styles.controls}>
+          <Button
+            className={styles.controlBtn}
             disabled={!loadeddata}
             onClick={() => {
               if (!playing) {
@@ -286,8 +205,9 @@ const VideoRenderer = (
                 variant="32x32_4"
               />
             )}
-          </ControlBtn>
-          <ControlBtn
+          </Button>
+          <Button
+            className={styles.controlBtn}
             disabled={!loadeddata}
             onClick={() => {
               if (player.current) {
@@ -300,8 +220,9 @@ const VideoRenderer = (
             ref={stopRef}
           >
             <Stop />
-          </ControlBtn>
-          <ControlBtn
+          </Button>
+          <Button
+            className={styles.controlBtn}
             disabled={!loadeddata}
             onClick={() => {
               player?.current?.requestFullscreen();
@@ -309,9 +230,10 @@ const VideoRenderer = (
             ref={fullScreenRef}
           >
             <Fullscreen />
-          </ControlBtn>
+          </Button>
 
-          <VideoRange
+          <Range
+            className={styles.range}
             ref={progressRef}
             min="0"
             max="100"
@@ -334,12 +256,10 @@ const VideoRenderer = (
               }
             }}
           />
-        </Controls>
-      </ResetFrame>
+        </div>
+      </Frame>
     </Frame>
   );
 };
 
-const Video = React.forwardRef<VideoRefs, VideoProps>(VideoRenderer);
-
-export default Video;
+export const Video = React.forwardRef<VideoRefs, VideoProps>(VideoRenderer);

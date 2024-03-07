@@ -1,319 +1,64 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
-}
-
-.c6:disabled {
-  color: #868a8e;
-}
-
-.c6:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c1 {
-  color: #fefefe;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 2px;
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:first-child {
-  margin-right: 0;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c2 {
-  height: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: none;
-  background: #000e7a;
-}
-
-.c2 svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white,1.5px 0px white;
-  color: transparent;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  padding: 2px 2px 8px;
-  top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.c10 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 6px;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding: 0 6px 6px 6px;
-}
-
-.c11 .c5 {
-  margin-right: 6px;
-  min-width: 70px;
-}
-
-.c11 .c5:last-child {
-  margin-right: 0;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 3px;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-bottom-color: #868a8e;
-  box-shadow: 0 1px 0 0 #e6e6e6;
-}
-
-.c9 {
-  position: relative;
-  padding-left: 6px;
-  padding-right: 6px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c9 ul {
-  position: absolute;
-  left: 0;
-  color: #000000;
-}
-
 <div>
   <div
-    class="c0 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2 default"
-      color="headerText"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
-      <svg
-        height="32"
-        shape-rendering="crispEdges"
-        viewBox="0 -0.5 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 0h20M4 1h1m18 0h1M4 2h1m18 0h2M4 3h1m18 0h1m1 0h1M4 4h1m18 0h1m2 0h1M4 5h1m18 0h1m3 0h1M4 6h1m18 0h1M4 7h1M4 8h1M4 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1"
-          stroke="gray"
-        />
-        <path
-          d="M5 1h18M5 2h18M5 3h18M5 4h18m1 0h1M5 5h18m1 0h2M5 6h18M5 7h23M5 8h23M5 9h23M5 10h13m4 0h6M5 11h11m8 0h4M5 12h4m1 0h5m10 0h3M5 13h4m1 0h1m1 0h1m12 0h3M5 14h6m14 0h3M5 15h4m1 0h5m10 0h3M5 16h4m1 0h1m1 0h1m12 0h3M5 17h6m14 0h3M5 18h4m1 0h5m10 0h3M5 19h4m1 0h1m1 0h1m12 0h3M5 20h6m14 0h3M5 21h4m1 0h5m10 0h3M5 22h4m1 0h1m1 0h1m5 0h4m3 0h3M5 23h6m5 0h8m1 0h3M5 24h23M5 25h23M5 26h23M5 27h23M5 28h23M5 29h23"
-          stroke="#fff"
-        />
-        <path
-          d="M24 1h1m0 1h1m0 1h1m0 1h1m0 1h1m-5 1h6m-1 1h1m-1 1h1m-1 1h1m-12 1h4m7 0h1m-14 1h8m5 0h1M9 12h1m5 0h3m1 0h1m2 0h3m4 0h1M9 13h1m1 0h1m1 0h4m2 0h1m3 0h2m4 0h1m-19 1h5m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1m-15 1h1m1 0h8m4 0h1m-15 1h3m1 0h1m2 0h3m4 0h1m-15 1h2m2 0h1m3 0h2m4 0h1m-15 1h1m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1M9 21h1m5 0h1m1 0h8m4 0h1M9 22h1m1 0h1m1 0h5m4 0h3m4 0h1m-19 1h5m8 0h1m4 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 31h26"
-          stroke="#000"
-        />
-        <path
-          d="M24 3h1m0 1h1m0 1h1m1 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M5 30h24"
-          stroke="silver"
-        />
-        <path
-          d="M18 12h1m-2 1h2m-3 1h3M9 15h1m6 0h2m-9 1h1m1 0h1m1 0h2m-4 1h4"
-          stroke="red"
-        />
-        <path
-          d="M20 12h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="green"
-        />
-        <path
-          d="M16 16h1"
-          stroke="maroon"
-        />
-        <path
-          d="M18 17h1M9 18h1m7 0h2M9 19h1m1 0h1m1 0h2m1 0h3m-8 1h4m1 0h2"
-          stroke="#00f"
-        />
-        <path
-          d="M20 17h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="#ff0"
-        />
-        <path
-          d="M16 21h1"
-          stroke="navy"
-        />
-      </svg>
+      <svg test-file-stub />
       <div
-        class="c3 draggable"
+        class="TitleBar_title__1kpzw685"
       >
         file.bat
       </div>
-      <ul
-        class="c4"
+      <div
+        class="TitleBar_optionsBox__1kpzw680"
       >
-        <li
-          class="c5 c6 c7"
+        <button
+          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
         >
-          ?
-        </li>
-        <li
-          class="c5 c6 c7"
-        >
-          X
-        </li>
-      </ul>
+          <img
+            alt="close"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
     </div>
     <ul
-      class="c8"
+      class="Modal_menuWrapper__1txblt64"
     >
       <li
-        class="c9"
+        class="Modal_menuItem__1txblt65"
       >
         File
       </li>
       <li
-        class="c9"
+        class="Modal_menuItem__1txblt65"
       >
         Edit
       </li>
     </ul>
     <div
-      class="c10"
+      class="Modal_content__1txblt63"
     >
       Hello
     </div>
     <div
-      class="c11"
+      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__1txm3g81e: flex-end;"
     >
       <button
-        class="c5 c6"
+        class="Button_button__1bzq74l0"
         value="Ok"
       >
         Ok
       </button>
       <button
-        class="c5 c6"
+        class="Button_button__1bzq74l0"
         value="Cancel"
       >
         Cancel
@@ -324,271 +69,50 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 `;
 
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals center 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
-}
-
-.c6:disabled {
-  color: #868a8e;
-}
-
-.c6:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c1 {
-  color: #fefefe;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 2px;
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:first-child {
-  margin-right: 0;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c2 {
-  height: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: none;
-  background: #000e7a;
-}
-
-.c2 svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white,1.5px 0px white;
-  color: transparent;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  padding: 2px 2px 8px;
-  top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.c8 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 6px;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0 6px 6px 6px;
-}
-
-.c9 .c5 {
-  margin-right: 6px;
-  min-width: 70px;
-}
-
-.c9 .c5:last-child {
-  margin-right: 0;
-}
-
 <div>
   <div
-    class="c0 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2 default"
-      color="headerText"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
-      <svg
-        height="32"
-        shape-rendering="crispEdges"
-        viewBox="0 -0.5 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 0h20M4 1h1m18 0h1M4 2h1m18 0h2M4 3h1m18 0h1m1 0h1M4 4h1m18 0h1m2 0h1M4 5h1m18 0h1m3 0h1M4 6h1m18 0h1M4 7h1M4 8h1M4 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1"
-          stroke="gray"
-        />
-        <path
-          d="M5 1h18M5 2h18M5 3h18M5 4h18m1 0h1M5 5h18m1 0h2M5 6h18M5 7h23M5 8h23M5 9h23M5 10h13m4 0h6M5 11h11m8 0h4M5 12h4m1 0h5m10 0h3M5 13h4m1 0h1m1 0h1m12 0h3M5 14h6m14 0h3M5 15h4m1 0h5m10 0h3M5 16h4m1 0h1m1 0h1m12 0h3M5 17h6m14 0h3M5 18h4m1 0h5m10 0h3M5 19h4m1 0h1m1 0h1m12 0h3M5 20h6m14 0h3M5 21h4m1 0h5m10 0h3M5 22h4m1 0h1m1 0h1m5 0h4m3 0h3M5 23h6m5 0h8m1 0h3M5 24h23M5 25h23M5 26h23M5 27h23M5 28h23M5 29h23"
-          stroke="#fff"
-        />
-        <path
-          d="M24 1h1m0 1h1m0 1h1m0 1h1m0 1h1m-5 1h6m-1 1h1m-1 1h1m-1 1h1m-12 1h4m7 0h1m-14 1h8m5 0h1M9 12h1m5 0h3m1 0h1m2 0h3m4 0h1M9 13h1m1 0h1m1 0h4m2 0h1m3 0h2m4 0h1m-19 1h5m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1m-15 1h1m1 0h8m4 0h1m-15 1h3m1 0h1m2 0h3m4 0h1m-15 1h2m2 0h1m3 0h2m4 0h1m-15 1h1m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1M9 21h1m5 0h1m1 0h8m4 0h1M9 22h1m1 0h1m1 0h5m4 0h3m4 0h1m-19 1h5m8 0h1m4 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 31h26"
-          stroke="#000"
-        />
-        <path
-          d="M24 3h1m0 1h1m0 1h1m1 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M5 30h24"
-          stroke="silver"
-        />
-        <path
-          d="M18 12h1m-2 1h2m-3 1h3M9 15h1m6 0h2m-9 1h1m1 0h1m1 0h2m-4 1h4"
-          stroke="red"
-        />
-        <path
-          d="M20 12h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="green"
-        />
-        <path
-          d="M16 16h1"
-          stroke="maroon"
-        />
-        <path
-          d="M18 17h1M9 18h1m7 0h2M9 19h1m1 0h1m1 0h2m1 0h3m-8 1h4m1 0h2"
-          stroke="#00f"
-        />
-        <path
-          d="M20 17h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="#ff0"
-        />
-        <path
-          d="M16 21h1"
-          stroke="navy"
-        />
-      </svg>
+      <svg test-file-stub />
       <div
-        class="c3 draggable"
+        class="TitleBar_title__1kpzw685"
       >
         file.bat
       </div>
-      <ul
-        class="c4"
+      <div
+        class="TitleBar_optionsBox__1kpzw680"
       >
-        <li
-          class="c5 c6 c7"
+        <button
+          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
         >
-          ?
-        </li>
-        <li
-          class="c5 c6 c7"
-        >
-          X
-        </li>
-      </ul>
+          <img
+            alt="close"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
     </div>
     <div
-      class="c8"
+      class="Modal_content__1txblt63"
     >
       Hello
     </div>
     <div
-      class="c9"
+      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__1txm3g81e: center;"
     >
       <button
-        class="c5 c6"
+        class="Button_button__1bzq74l0"
         value="Ok"
       >
         Ok
       </button>
       <button
-        class="c5 c6"
+        class="Button_button__1bzq74l0"
         value="Cancel"
       >
         Cancel
@@ -599,271 +123,50 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 `;
 
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals flex-start 1`] = `
-.c6 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
-}
-
-.c6:disabled {
-  color: #868a8e;
-}
-
-.c6:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c6:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c1 {
-  color: #fefefe;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 2px;
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.c7:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c7:first-child {
-  margin-right: 0;
-}
-
-.c7:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c2 {
-  height: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: none;
-  background: #000e7a;
-}
-
-.c2 svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white,1.5px 0px white;
-  color: transparent;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  padding: 2px 2px 8px;
-  top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.c8 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 6px;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  padding: 0 6px 6px 6px;
-}
-
-.c9 .c5 {
-  margin-right: 6px;
-  min-width: 70px;
-}
-
-.c9 .c5:last-child {
-  margin-right: 0;
-}
-
 <div>
   <div
-    class="c0 react-draggable"
+    class="Modal_modalWrapper__1txblt60 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2 default"
-      color="headerText"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
-      <svg
-        height="32"
-        shape-rendering="crispEdges"
-        viewBox="0 -0.5 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 0h20M4 1h1m18 0h1M4 2h1m18 0h2M4 3h1m18 0h1m1 0h1M4 4h1m18 0h1m2 0h1M4 5h1m18 0h1m3 0h1M4 6h1m18 0h1M4 7h1M4 8h1M4 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1"
-          stroke="gray"
-        />
-        <path
-          d="M5 1h18M5 2h18M5 3h18M5 4h18m1 0h1M5 5h18m1 0h2M5 6h18M5 7h23M5 8h23M5 9h23M5 10h13m4 0h6M5 11h11m8 0h4M5 12h4m1 0h5m10 0h3M5 13h4m1 0h1m1 0h1m12 0h3M5 14h6m14 0h3M5 15h4m1 0h5m10 0h3M5 16h4m1 0h1m1 0h1m12 0h3M5 17h6m14 0h3M5 18h4m1 0h5m10 0h3M5 19h4m1 0h1m1 0h1m12 0h3M5 20h6m14 0h3M5 21h4m1 0h5m10 0h3M5 22h4m1 0h1m1 0h1m5 0h4m3 0h3M5 23h6m5 0h8m1 0h3M5 24h23M5 25h23M5 26h23M5 27h23M5 28h23M5 29h23"
-          stroke="#fff"
-        />
-        <path
-          d="M24 1h1m0 1h1m0 1h1m0 1h1m0 1h1m-5 1h6m-1 1h1m-1 1h1m-1 1h1m-12 1h4m7 0h1m-14 1h8m5 0h1M9 12h1m5 0h3m1 0h1m2 0h3m4 0h1M9 13h1m1 0h1m1 0h4m2 0h1m3 0h2m4 0h1m-19 1h5m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1m-15 1h1m1 0h8m4 0h1m-15 1h3m1 0h1m2 0h3m4 0h1m-15 1h2m2 0h1m3 0h2m4 0h1m-15 1h1m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1M9 21h1m5 0h1m1 0h8m4 0h1M9 22h1m1 0h1m1 0h5m4 0h3m4 0h1m-19 1h5m8 0h1m4 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 31h26"
-          stroke="#000"
-        />
-        <path
-          d="M24 3h1m0 1h1m0 1h1m1 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M5 30h24"
-          stroke="silver"
-        />
-        <path
-          d="M18 12h1m-2 1h2m-3 1h3M9 15h1m6 0h2m-9 1h1m1 0h1m1 0h2m-4 1h4"
-          stroke="red"
-        />
-        <path
-          d="M20 12h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="green"
-        />
-        <path
-          d="M16 16h1"
-          stroke="maroon"
-        />
-        <path
-          d="M18 17h1M9 18h1m7 0h2M9 19h1m1 0h1m1 0h2m1 0h3m-8 1h4m1 0h2"
-          stroke="#00f"
-        />
-        <path
-          d="M20 17h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="#ff0"
-        />
-        <path
-          d="M16 21h1"
-          stroke="navy"
-        />
-      </svg>
+      <svg test-file-stub />
       <div
-        class="c3 draggable"
+        class="TitleBar_title__1kpzw685"
       >
         file.bat
       </div>
-      <ul
-        class="c4"
+      <div
+        class="TitleBar_optionsBox__1kpzw680"
       >
-        <li
-          class="c5 c6 c7"
+        <button
+          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
         >
-          ?
-        </li>
-        <li
-          class="c5 c6 c7"
-        >
-          X
-        </li>
-      </ul>
+          <img
+            alt="close"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
     </div>
     <div
-      class="c8"
+      class="Modal_content__1txblt63"
     >
       Hello
     </div>
     <div
-      class="c9"
+      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__1txm3g81e: flex-start;"
     >
       <button
-        class="c5 c6"
+        class="Button_button__1bzq74l0"
         value="Ok"
       >
         Ok
       </button>
       <button
-        class="c5 c6"
+        class="Button_button__1bzq74l0"
         value="Cancel"
       >
         Cancel
@@ -874,234 +177,35 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 `;
 
 exports[`<Modal /> > Snapshots > should match snapshot with different activeWindow 1`] = `
-.c5 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
-}
-
-.c5:disabled {
-  color: #868a8e;
-}
-
-.c5:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c5:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c1 {
-  color: #c6c6c6;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 2px;
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.c6:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c6:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c2 {
-  height: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: none;
-  background: #7f787f;
-}
-
-.c2 svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white,1.5px 0px white;
-  color: transparent;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  padding: 2px 2px 8px;
-  top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
-  width: 300px;
-  height: 200px;
-}
-
-.c7 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 6px;
-}
-
 <div>
   <div
-    class="c0 react-draggable"
-    height="200"
-    style="transform: translate(0px,0px);"
-    width="300"
+    class="sprinkles_width__1txm3g81t sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
+    style="--width__1txm3g81s: 300; --height__1txm3g81y: 200; transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2 default"
-      color="headerNotActiveText"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
-      <svg
-        height="32"
-        shape-rendering="crispEdges"
-        viewBox="0 -0.5 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 0h20M4 1h1m18 0h1M4 2h1m18 0h2M4 3h1m18 0h1m1 0h1M4 4h1m18 0h1m2 0h1M4 5h1m18 0h1m3 0h1M4 6h1m18 0h1M4 7h1M4 8h1M4 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1"
-          stroke="gray"
-        />
-        <path
-          d="M5 1h18M5 2h18M5 3h18M5 4h18m1 0h1M5 5h18m1 0h2M5 6h18M5 7h23M5 8h23M5 9h23M5 10h13m4 0h6M5 11h11m8 0h4M5 12h4m1 0h5m10 0h3M5 13h4m1 0h1m1 0h1m12 0h3M5 14h6m14 0h3M5 15h4m1 0h5m10 0h3M5 16h4m1 0h1m1 0h1m12 0h3M5 17h6m14 0h3M5 18h4m1 0h5m10 0h3M5 19h4m1 0h1m1 0h1m12 0h3M5 20h6m14 0h3M5 21h4m1 0h5m10 0h3M5 22h4m1 0h1m1 0h1m5 0h4m3 0h3M5 23h6m5 0h8m1 0h3M5 24h23M5 25h23M5 26h23M5 27h23M5 28h23M5 29h23"
-          stroke="#fff"
-        />
-        <path
-          d="M24 1h1m0 1h1m0 1h1m0 1h1m0 1h1m-5 1h6m-1 1h1m-1 1h1m-1 1h1m-12 1h4m7 0h1m-14 1h8m5 0h1M9 12h1m5 0h3m1 0h1m2 0h3m4 0h1M9 13h1m1 0h1m1 0h4m2 0h1m3 0h2m4 0h1m-19 1h5m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1m-15 1h1m1 0h8m4 0h1m-15 1h3m1 0h1m2 0h3m4 0h1m-15 1h2m2 0h1m3 0h2m4 0h1m-15 1h1m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1M9 21h1m5 0h1m1 0h8m4 0h1M9 22h1m1 0h1m1 0h5m4 0h3m4 0h1m-19 1h5m8 0h1m4 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 31h26"
-          stroke="#000"
-        />
-        <path
-          d="M24 3h1m0 1h1m0 1h1m1 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M5 30h24"
-          stroke="silver"
-        />
-        <path
-          d="M18 12h1m-2 1h2m-3 1h3M9 15h1m6 0h2m-9 1h1m1 0h1m1 0h2m-4 1h4"
-          stroke="red"
-        />
-        <path
-          d="M20 12h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="green"
-        />
-        <path
-          d="M16 16h1"
-          stroke="maroon"
-        />
-        <path
-          d="M18 17h1M9 18h1m7 0h2M9 19h1m1 0h1m1 0h2m1 0h3m-8 1h4m1 0h2"
-          stroke="#00f"
-        />
-        <path
-          d="M20 17h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="#ff0"
-        />
-        <path
-          d="M16 21h1"
-          stroke="navy"
-        />
-      </svg>
+      <svg test-file-stub />
       <div
-        class="c3 draggable"
+        class="TitleBar_title__1kpzw685"
       >
         file.bat
       </div>
-      <ul
-        class="c4"
+      <div
+        class="TitleBar_optionsBox__1kpzw680"
       >
-        <li
-          class="c5 c6"
+        <button
+          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
         >
-          ?
-        </li>
-        <li
-          class="c5 c6"
-        >
-          X
-        </li>
-      </ul>
+          <img
+            alt="close"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
     </div>
     <div
-      class="c7"
+      class="Modal_content__1txblt63"
     >
       Hello
     </div>
@@ -1110,235 +214,35 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
 `;
 
 exports[`<Modal /> > Snapshots > should match snapshot with width and height props 1`] = `
-.c5 {
-  background-color: #c3c7cb;
-  padding: 7px 20px 5px;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 0px #000000;
-}
-
-.c5:disabled {
-  color: #868a8e;
-}
-
-.c5:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -0.5px -0.5px 0px 1px #868a8e, 1px 1px 0 1px #000000;
-}
-
-.c5:active {
-  padding: 8px 20px 4px;
-  outline: 1px dotted #000000;
-  outline-offset: -5px;
-  box-shadow: inset 0 0 0 1px #868a8e, 0 0 0 1px #000000;
-}
-
-.c1 {
-  color: #fefefe;
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c4 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 2px;
-  padding: 0;
-  width: 17px;
-  height: 14px;
-  min-width: 0;
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.c6:active {
-  padding: 1px 0 0 1px;
-  outline: none;
-}
-
-.c6:first-child {
-  margin-right: 0;
-}
-
-.c6:focus {
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset -1px -1px 0px 1px #868a8e;
-}
-
-.c2 {
-  height: 20px;
-  margin-bottom: 2px;
-  padding: 2px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: none;
-  background: #000e7a;
-}
-
-.c2 svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.c3 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  line-height: 1.4em;
-  margin: 0;
-  font-size: 1em;
-  text-shadow: 0.5px 0px white,1.5px 0px white;
-  color: transparent;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  padding: 2px 2px 8px;
-  top: 50px;
-  background-color: #c3c7cb;
-  box-shadow: inset 1px 1px 0px 1px #ffffff, inset 0 0 0 1px #868a8e, 1px 1px 0 1px #000000;
-  width: 300px;
-  height: 200px;
-  z-index: 1;
-}
-
-.c7 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 6px;
-}
-
 <div>
   <div
-    class="c0 react-draggable"
-    height="200"
-    style="transform: translate(0px,0px);"
-    width="300"
+    class="sprinkles_width__1txm3g81t sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
+    style="--width__1txm3g81s: 300; --height__1txm3g81y: 200; transform: translate(0px,0px);"
   >
     <div
-      class="c1 c2 default"
-      color="headerText"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
     >
-      <svg
-        height="32"
-        shape-rendering="crispEdges"
-        viewBox="0 -0.5 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 0h20M4 1h1m18 0h1M4 2h1m18 0h2M4 3h1m18 0h1m1 0h1M4 4h1m18 0h1m2 0h1M4 5h1m18 0h1m3 0h1M4 6h1m18 0h1M4 7h1M4 8h1M4 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1"
-          stroke="gray"
-        />
-        <path
-          d="M5 1h18M5 2h18M5 3h18M5 4h18m1 0h1M5 5h18m1 0h2M5 6h18M5 7h23M5 8h23M5 9h23M5 10h13m4 0h6M5 11h11m8 0h4M5 12h4m1 0h5m10 0h3M5 13h4m1 0h1m1 0h1m12 0h3M5 14h6m14 0h3M5 15h4m1 0h5m10 0h3M5 16h4m1 0h1m1 0h1m12 0h3M5 17h6m14 0h3M5 18h4m1 0h5m10 0h3M5 19h4m1 0h1m1 0h1m12 0h3M5 20h6m14 0h3M5 21h4m1 0h5m10 0h3M5 22h4m1 0h1m1 0h1m5 0h4m3 0h3M5 23h6m5 0h8m1 0h3M5 24h23M5 25h23M5 26h23M5 27h23M5 28h23M5 29h23"
-          stroke="#fff"
-        />
-        <path
-          d="M24 1h1m0 1h1m0 1h1m0 1h1m0 1h1m-5 1h6m-1 1h1m-1 1h1m-1 1h1m-12 1h4m7 0h1m-14 1h8m5 0h1M9 12h1m5 0h3m1 0h1m2 0h3m4 0h1M9 13h1m1 0h1m1 0h4m2 0h1m3 0h2m4 0h1m-19 1h5m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1m-15 1h1m1 0h8m4 0h1m-15 1h3m1 0h1m2 0h3m4 0h1m-15 1h2m2 0h1m3 0h2m4 0h1m-15 1h1m3 0h1m3 0h2m4 0h1m-15 1h1m2 0h4m1 0h2m4 0h1M9 21h1m5 0h1m1 0h8m4 0h1M9 22h1m1 0h1m1 0h5m4 0h3m4 0h1m-19 1h5m8 0h1m4 0h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 31h26"
-          stroke="#000"
-        />
-        <path
-          d="M24 3h1m0 1h1m0 1h1m1 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M5 30h24"
-          stroke="silver"
-        />
-        <path
-          d="M18 12h1m-2 1h2m-3 1h3M9 15h1m6 0h2m-9 1h1m1 0h1m1 0h2m-4 1h4"
-          stroke="red"
-        />
-        <path
-          d="M20 12h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="green"
-        />
-        <path
-          d="M16 16h1"
-          stroke="maroon"
-        />
-        <path
-          d="M18 17h1M9 18h1m7 0h2M9 19h1m1 0h1m1 0h2m1 0h3m-8 1h4m1 0h2"
-          stroke="#00f"
-        />
-        <path
-          d="M20 17h2m-2 1h3m-3 1h3m-1 1h1"
-          stroke="#ff0"
-        />
-        <path
-          d="M16 21h1"
-          stroke="navy"
-        />
-      </svg>
+      <svg test-file-stub />
       <div
-        class="c3 draggable"
+        class="TitleBar_title__1kpzw685"
       >
         file.bat
       </div>
-      <ul
-        class="c4"
+      <div
+        class="TitleBar_optionsBox__1kpzw680"
       >
-        <li
-          class="c5 c6"
+        <button
+          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
         >
-          ?
-        </li>
-        <li
-          class="c5 c6"
-        >
-          X
-        </li>
-      </ul>
+          <img
+            alt="close"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
     </div>
     <div
-      class="c7"
+      class="Modal_content__1txblt63"
     >
       Hello
     </div>

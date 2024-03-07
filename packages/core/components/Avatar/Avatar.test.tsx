@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 import { render, screen } from '../shared/test/utils';
-import Avatar from './Avatar';
+import { Avatar } from './Avatar';
 
 describe('<Avatar />', () => {
   describe('Snapshots', () => {
@@ -60,15 +60,6 @@ describe('<Avatar />', () => {
 
       expect(screen.getByText(/GG/i)).toHaveStyle({
         borderRadius: '50%',
-      });
-    });
-
-    it('should render avatar with size', () => {
-      render(<Avatar size={100}>GG</Avatar>);
-
-      expect(screen.getByText(/GG/i)).toHaveStyle({
-        width: '100px',
-        height: '100px',
       });
     });
   });

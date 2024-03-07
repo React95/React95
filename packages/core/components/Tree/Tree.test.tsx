@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { act, fireEvent, waitRender } from '../shared/test/utils';
-import Tree from './Tree';
+import { Tree } from './Tree';
 
 const { icons } = Tree;
 
@@ -32,7 +32,7 @@ describe('<Tree />', () => {
           {
             id: 1,
             label: 'baz',
-            iconName: icons.FILE_MEDIA,
+            icon: <icons.FILE_MEDIA variant="16x16_4" />,
           },
         ],
       },
