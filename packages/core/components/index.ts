@@ -20,6 +20,7 @@ import Tree from './Tree';
 import Tooltip from './Tooltip';
 import TitleBar from './TitleBar';
 import Video from './Video';
+import * as themes from './themes/all';
 
 export {
   Alert,
@@ -46,4 +47,5 @@ export {
   Tooltip,
   TitleBar,
   Video,
+  themes,
 };
