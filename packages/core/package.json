@@ -56,7 +56,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
+    "build": "yarn build:vite && yarn built:types",
+    "build:vite": "vite build",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./components --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./components --out-dir dist/cjs --extensions .ts,.tsx",

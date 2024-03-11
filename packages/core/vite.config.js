@@ -4,9 +4,30 @@ import { defineConfig } from 'vite';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { ImageLoader } from 'esbuild-vanilla-image-loader';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  build: { chunkSizeWarningLimit: 1600 },
+  build: {
+    chunkSizeWarningLimit: 1600,
+    lib: {
+      entry: 'components',
+      name: 'React95',
+      fileName: 'index',
+    },
+    rollupOptions: {
+      external: [
+        'react',
+        'react-is',
+        'react/jsx-runtime',
+        'react-dom',
+        '@react95/icons',
+      ],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDom',
+        },
+      },
+    },
+  },
   plugins: [
     vanillaExtractPlugin({
       identifiers: ({ filePath, hash }) => {
