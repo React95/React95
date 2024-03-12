@@ -59,11 +59,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
-    "build": "yarn build:vite && yarn built:types",
+    "build": "yarn build:vite",
     "build:vite": "vite build",
-    "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
-    "build:esm": "cross-env NODE_ENV=esm yarn babel ./components --out-dir dist/esm --extensions .ts,.tsx",
-    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./components --out-dir dist/cjs --extensions .ts,.tsx",
     "lint": "eslint --ext ts,tsx --quiet components",
     "postbuild:cjs": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/cjs -u 1",
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
