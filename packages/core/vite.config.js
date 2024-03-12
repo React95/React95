@@ -1,8 +1,10 @@
-import path from 'path';
-import { defineConfig } from 'vite';
-
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { ImageLoader } from 'esbuild-vanilla-image-loader';
+import path from 'path';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+
+import pkg from './package.json';
 
 export default defineConfig({
   build: {
@@ -10,14 +12,16 @@ export default defineConfig({
     lib: {
       entry: 'components',
       name: 'React95',
-      fileName: 'index',
+      formats: ['es', 'cjs'],
+      fileName: format => (format === 'es' ? 'esm/index.js' : 'cjs/index.js'),
     },
     rollupOptions: {
       external: [
+        ...Object.keys(pkg.dependencies || {}),
+        ...Object.keys(pkg.peerDependencies || {}),
         'react',
-        'react-is',
         'react/jsx-runtime',
-        'react-dom',
+        'rainbow-sprinkles',
         '@react95/icons',
       ],
       output: {
@@ -29,6 +33,11 @@ export default defineConfig({
     },
   },
   plugins: [
+    dts({
+      include: ['components'],
+      tsconfigPath: './tsconfig.production.json',
+      outDir: './dist/@types',
+    }),
     vanillaExtractPlugin({
       identifiers: ({ filePath, hash }) => {
         if (
