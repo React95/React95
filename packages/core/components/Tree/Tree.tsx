@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import Node, { icons, NodeProps, NodeRoot } from './Node';
+import { Node, icons, NodeProps, NodeRoot } from './Node';
 import { tree } from './Tree.css';
 import { Frame, FrameProps } from '../Frame/Frame';
 
