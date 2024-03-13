@@ -6,31 +6,64 @@ import dts from 'vite-plugin-dts';
 
 import pkg from './package.json';
 
+const assetFileNames = format => info => {
+  if (info.name.endsWith('.vanilla.css')) {
+    const [component] = info.name.split('.');
+    const firstLetter = component.at(0);
+
+    if (
+      firstLetter === firstLetter.toLowerCase() &&
+      firstLetter !== firstLetter.toUpperCase()
+    ) {
+      return `${format}/themes/[name].[ext]`;
+    }
+
+    return `${format}/${component}/[name].[ext]`;
+  }
+
+  return `${format}/[name].[ext]`;
+};
+
 export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1600,
     lib: {
       entry: 'components',
       name: 'React95',
-      formats: ['es', 'cjs'],
       fileName: format => (format === 'es' ? 'esm/index.js' : 'cjs/index.js'),
     },
     rollupOptions: {
       external: [
         ...Object.keys(pkg.dependencies || {}),
         ...Object.keys(pkg.peerDependencies || {}),
+        '@react95/icons',
+        '@vanilla-extract/dynamic',
+        '@vanilla-extract/recipes/createRuntimeFn',
+        'rainbow-sprinkles/createRuntimeFn',
         'react',
         'react/jsx-runtime',
-        'rainbow-sprinkles',
-        '@react95/icons',
       ],
-      output: {
-        globals: {
-          react: 'React',
-          'react-dom': 'ReactDom',
+      output: [
+        {
+          format: 'cjs',
+          assetFileNames: assetFileNames('cjs'),
+          entryFileNames: () => {
+            return 'cjs/[name].js';
+          },
+          preserveModules: true,
         },
-      },
+        {
+          format: 'es',
+          assetFileNames: assetFileNames('esm'),
+          entryFileNames: () => {
+            return 'esm/[name].js';
+          },
+          preserveModules: true,
+        },
+      ],
     },
+    minify: false,
+    cssCodeSplit: true,
   },
   plugins: [
     dts({
