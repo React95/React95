@@ -24,6 +24,10 @@ const assetFileNames = format => info => {
   return `${format}/[name].[ext]`;
 };
 
+const entryFileNames = format => () => {
+  return `${format}/[name].js`;
+};
+
 export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1600,
@@ -47,17 +51,13 @@ export default defineConfig({
         {
           format: 'cjs',
           assetFileNames: assetFileNames('cjs'),
-          entryFileNames: () => {
-            return 'cjs/[name].js';
-          },
+          entryFileNames: entryFileNames('cjs'),
           preserveModules: true,
         },
         {
           format: 'es',
           assetFileNames: assetFileNames('esm'),
-          entryFileNames: () => {
-            return 'esm/[name].js';
-          },
+          entryFileNames: entryFileNames('esm'),
           preserveModules: true,
         },
       ],
