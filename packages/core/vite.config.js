@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
 import pkg from './package.json';
+import { cssImportInject } from './vite-plugin-css-import-inject';
 
 const assetFileNames = format => info => {
   if (info.name.endsWith('.vanilla.css')) {
@@ -66,6 +67,7 @@ export default defineConfig({
     cssCodeSplit: true,
   },
   plugins: [
+    cssImportInject(),
     dts({
       include: ['components'],
       tsconfigPath: './tsconfig.production.json',
