@@ -3,7 +3,7 @@
 exports[`<TextArea /> > Snapshot > should match snapshot 1`] = `
 <div>
   <textarea
-    class="Input_input__taf7or0 Cursor_Cursor_Text__wge1m81"
+    class="Input_input__taf7or0 Cursor_Cursor_Text__22fi81"
   />
 </div>
 `;
