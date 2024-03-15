@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import * as React from 'react';
 
-import ModalContext, { Windows } from './ModalContext';
+import { ModalContext, Windows } from './ModalContext';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type ModalProviderProps = {};
@@ -47,9 +47,9 @@ const windowStackReducer: React.Reducer<WindowStack, WindowAction> = (
   }
 };
 
-const ModalProvider: React.FC<React.PropsWithChildren<ModalProviderProps>> = ({
-  children,
-}) => {
+export const ModalProvider: React.FC<
+  React.PropsWithChildren<ModalProviderProps>
+> = ({ children }) => {
   const [windows, dispatch] = React.useReducer(windowStackReducer, {});
   const [activeWindow, setActiveWindow] = React.useState<string>();
 
@@ -81,5 +81,3 @@ const ModalProvider: React.FC<React.PropsWithChildren<ModalProviderProps>> = ({
     </ModalContext.Provider>
   );
 };
-
-export default ModalProvider;

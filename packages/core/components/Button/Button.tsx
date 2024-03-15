@@ -1,9 +1,8 @@
 import React, { forwardRef } from 'react';
+import cn from 'classnames';
 
 import { button } from './Button.css';
-import Frame from '../Frame';
-import { FrameProps } from '../Frame/Frame';
-import cn from 'classnames';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
   FrameProps;

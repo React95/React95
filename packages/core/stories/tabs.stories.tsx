@@ -1,12 +1,9 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Checkbox from '../components/Checkbox';
-import Dropdown from '../components/Dropdown';
-import Fieldset from '../components/Fieldset';
-import Input from '../components/Input';
-import { Tab, Tabs } from '../components/Tabs';
-import { TabsProps } from '../components/Tabs/Tabs';
+import { Checkbox, Dropdown, Fieldset, Input } from '../components';
+import { Tab } from '../components/Tabs/Tab';
+import { Tabs, TabsProps } from '../components/Tabs/Tabs';
 
 export default {
   title: 'Tabs, Tab',

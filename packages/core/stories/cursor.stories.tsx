@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Frame } from '../components/Frame/Frame';
+import { Frame } from '../components';
 import { Cursor } from '../components/Cursor/Cursor.css';
 
 export default {

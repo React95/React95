@@ -1,8 +1,7 @@
 import * as React from 'react';
 
 import { avatar, imgStyle } from './Avatar.css';
-import Frame from '../Frame';
-import { FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 export interface AvatarProps
   extends Omit<

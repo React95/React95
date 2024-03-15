@@ -1,8 +1,8 @@
 import React, { forwardRef, useContext, useState } from 'react';
 
-import { ModalContext } from '../Modal';
-import Frame from '../Frame';
-import List from '../List';
+import { ModalContext } from '../Modal/ModalContext';
+import { Frame } from '../Frame/Frame';
+import { List } from '../List/List';
 
 import { Clock } from './Clock';
 import { WindowButton } from './WindowButton';

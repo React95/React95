@@ -4,9 +4,9 @@ import { describe, expect, it, vi } from 'vitest';
 
 import { act, fireEvent, render, waitRender } from '../shared/test/utils';
 
-import List from '../List';
-import { Modal } from '../Modal';
-import Tooltip from '../Tooltip';
+import { List } from '../List/List';
+import { Modal } from '../Modal/Modal';
+import { Tooltip } from '../Tooltip/Tooltip';
 
 import { Clock } from './Clock';
 import { TaskBar } from './TaskBar';

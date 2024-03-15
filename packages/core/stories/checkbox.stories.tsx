@@ -1,14 +1,14 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Checkbox from '../components/Checkbox';
-import { Frame } from '../components/Frame/Frame';
+import { Checkbox, CheckboxProps } from '../components/Checkbox/Checkbox';
+import { Frame } from '../components';
 
 export default {
   title: 'Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
-} as Meta<typeof Checkbox>;
+} as Meta<CheckboxProps>;
 
 export const All = {
   render: () => {
