@@ -11,7 +11,6 @@ import { Cursor } from './Cursor/Cursor.css';
 import { Dropdown } from './Dropdown/Dropdown';
 import { Fieldset } from './Fieldset/Fieldset';
 import { Frame } from './Frame/Frame';
-import * as GlobalStyle from './GlobalStyle/GlobalStyle.css';
 import { Input } from './Input/Input';
 import { List } from './List/List';
 import { ProgressBar } from './ProgressBar/ProgressBar';
@@ -23,7 +22,6 @@ import { Tree } from './Tree/Tree';
 import { Tooltip } from './Tooltip/Tooltip';
 import { TitleBar } from './TitleBar/TitleBar';
 import { Video } from './Video/Video';
-import * as themes from './themes/all';
 
 export {
   Alert,
@@ -34,7 +32,6 @@ export {
   Dropdown,
   Fieldset,
   Frame,
-  GlobalStyle,
   Input,
   List,
   Modal,
@@ -51,5 +48,4 @@ export {
   Tooltip,
   TitleBar,
   Video,
-  themes,
 };
