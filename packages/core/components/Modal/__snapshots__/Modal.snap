@@ -19,7 +19,7 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
@@ -87,7 +87,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
@@ -141,7 +141,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
@@ -195,7 +195,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with different activeWind
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
@@ -232,7 +232,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with width and height pro
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"

@@ -220,7 +220,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
@@ -286,7 +286,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
@@ -316,7 +316,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
         class="TitleBar_optionsBox__1kpzw680"
       >
         <button
-          class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
         >
           <img
             alt="close"
