@@ -58,12 +58,12 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
       class="TitleBar_optionsBox__1kpzw680"
     >
       <button
-        class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
       >
         ?
       </button>
       <button
-        class="TitleBar_option__1kpzw681 Button_button__1bzq74l0"
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
       >
         x
       </button>

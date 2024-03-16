@@ -20,7 +20,7 @@ const Option = React.forwardRef<HTMLButtonElement, FrameProps<'button'>>(
       {...rest}
       ref={ref}
       as="button"
-      className={cn(styles.option, button, rest.className)}
+      className={cn(button, styles.option, rest.className)}
     />
   ),
 );
