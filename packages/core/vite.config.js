@@ -33,7 +33,11 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1600,
     lib: {
-      entry: 'components',
+      entry: {
+        index: './components',
+        theme: './components/themes/all.ts',
+        GlobalStyle: './components/GlobalStyle',
+      },
       name: 'React95',
       fileName: format => (format === 'es' ? 'esm/index.js' : 'cjs/index.js'),
     },

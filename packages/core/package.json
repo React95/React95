@@ -3,6 +3,16 @@
   "version": "7.0.2",
   "description": "Windows 95 styleguide",
   "main": "./components",
+  "exports": {
+    ".": {
+      "import": "./esm",
+      "require": "./cjs"
+    },
+    "./themes/*": {
+      "import": "./esm/themes/*.css.js",
+      "require": "./cjs/themes/*.css.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/React95/React95.git",
