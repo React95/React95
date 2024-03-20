@@ -4,7 +4,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
 <div>
   <div
     class="sprinkles_padding__1txm3g82r sprinkles_boxShadow__1txm3g85z sprinkles_backgroundColor__1txm3g83p"
-    style="--padding__1txm3g82q: var(--space-2__1vn1wl25); --boxShadow__1txm3g85y: var(--shadows-out__1vn1wl219); --backgroundColor__1txm3g83o: var(--colors-material__1vn1wl211);"
+    style="--padding__1txm3g82q: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-out); --backgroundColor__1txm3g83o: var(--r95-color-material);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683"
@@ -28,7 +28,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
     </video>
     <div
       class="sprinkles_marginBottom__1txm3g82d sprinkles_marginLeft__1txm3g82l sprinkles_marginRight__1txm3g82n sprinkles_maxWidth__1txm3g81v"
-      style="--marginBottom__1txm3g82c: var(--space-4__1vn1wl27); --marginLeft__1txm3g82k: auto; --marginRight__1txm3g82m: auto; --maxWidth__1txm3g81u: 250px;"
+      style="--marginBottom__1txm3g82c: var(--r95-space-4); --marginLeft__1txm3g82k: auto; --marginRight__1txm3g82m: auto; --maxWidth__1txm3g81u: 250px;"
     >
       <div
         class="Video_countDownContainer__13gnpv04"
