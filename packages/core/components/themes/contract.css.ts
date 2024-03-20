@@ -1,12 +1,123 @@
-import { createThemeContract } from '@vanilla-extract/css';
+import { createGlobalThemeContract } from '@vanilla-extract/css';
 
-import { theme } from './baseTheme.css';
+const space = {
+  '0': '0px',
+  '1': '1px',
+  '2': '2px',
+  '3': '3px',
+  '4': '4px',
+  '5': '5px',
+  '6': '6px',
+  '7': '7px',
+  '8': '8px',
+  '9': '9px',
+  '10': '10px',
+  '11': '11px',
+  '12': '12px',
+  '13': '13px',
+  '14': '14px',
+  '15': '15px',
+  '16': '16px',
+  '17': '17px',
+  '18': '18px',
+  '19': '19px',
+  '20': '20px',
+};
 
-export const contract = createThemeContract({
-  ...theme,
-  shadows: {
-    out: '',
-    in: '',
-    input: '',
+const colors = {
+  anchor: '',
+  anchorVisited: '',
+  borderDark: '',
+  borderDarkest: '',
+  borderLight: '',
+  borderLighter: '',
+  borderLightest: '',
+  canvas: '',
+  canvasText: '',
+  headerBackground: '',
+  headerNotActiveBackground: '',
+  headerNotActiveText: '',
+  headerText: '',
+  material: '',
+  materialText: '',
+  materialTextDisabled: '',
+  materialTextDisabledShadow: '',
+  materialTextInvert: '',
+  progress: '',
+  inputBackground: '',
+  inputBackgroundDisabled: '',
+};
+
+export const zIndices = {
+  modal: '2',
+  tooltip: '3',
+  taskbar: '3',
+};
+
+export const theme = {
+  space,
+  colors,
+  zIndices,
+};
+
+export const contract = createGlobalThemeContract(
+  {
+    space: {
+      '0': 'space-0',
+      '1': 'space-1',
+      '2': 'space-2',
+      '3': 'space-3',
+      '4': 'space-4',
+      '5': 'space-5',
+      '6': 'space-6',
+      '7': 'space-7',
+      '8': 'space-8',
+      '9': 'space-9',
+      '10': 'space-10',
+      '11': 'space-11',
+      '12': 'space-12',
+      '13': 'space-13',
+      '14': 'space-14',
+      '15': 'space-15',
+      '16': 'space-16',
+      '17': 'space-17',
+      '18': 'space-18',
+      '19': 'space-19',
+      '20': 'space-20',
+    },
+    colors: {
+      anchor: 'color-anchor',
+      anchorVisited: 'color-anchorVisited',
+      borderDark: 'color-borderDark',
+      borderDarkest: 'color-borderDarkest',
+      borderLight: 'color-borderLight',
+      borderLighter: 'color-borderLighter',
+      borderLightest: 'color-borderLightest',
+      canvas: 'color-canvas',
+      canvasText: 'color-canvasText',
+      headerBackground: 'color-headerBackground',
+      headerNotActiveBackground: 'color-headerNotActiveBackground',
+      headerNotActiveText: 'color-headerNotActiveText',
+      headerText: 'color-headerText',
+      material: 'color-material',
+      materialText: 'color-materialText',
+      materialTextDisabled: 'color-materialTextDisabled',
+      materialTextDisabledShadow: 'color-materialTextDisabledShadow',
+      materialTextInvert: 'color-materialTextInvert',
+      progress: 'color-progress',
+      inputBackground: 'color-inputBackground',
+      inputBackgroundDisabled: 'color-inputBackgroundDisabled',
+    },
+    zIndices: {
+      modal: 'zIndex-modal',
+      tooltip: 'zIndex-tooltip',
+      taskbar: 'zIndex-taskbar',
+    },
+    shadows: {
+      out: 'shadow-out',
+      in: 'shadow-in',
+      input: 'shadow-input',
+    },
   },
-});
+  value => `r95-${value}`,
+);
