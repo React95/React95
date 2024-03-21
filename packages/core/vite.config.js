@@ -2,7 +2,6 @@ import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { ImageLoader } from 'esbuild-vanilla-image-loader';
 import path from 'path';
 import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
 
 import pkg from './package.json';
 import { cssImportInject } from './vite-plugin-css-import-inject';
@@ -72,11 +71,6 @@ export default defineConfig({
   },
   plugins: [
     cssImportInject(),
-    dts({
-      include: ['components'],
-      tsconfigPath: './tsconfig.production.json',
-      outDir: './dist/@types',
-    }),
     vanillaExtractPlugin({
       identifiers: ({ filePath, hash }) => {
         if (

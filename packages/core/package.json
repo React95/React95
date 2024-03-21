@@ -6,11 +6,16 @@
   "exports": {
     ".": {
       "import": "./esm",
-      "require": "./cjs"
+      "require": "./cjs",
+      "types": "./@types/index.d.ts"
     },
-    "./themes/*": {
+    "./themes/*.css": {
       "import": "./esm/themes/*.css.js",
       "require": "./cjs/themes/*.css.js"
+    },
+    "./GlobalStyle": {
+      "import": "./esm/GlobalStyle.css.js",
+      "require": "./cjs/GlobalStyle.css.js"
     }
   },
   "repository": {
@@ -64,14 +69,16 @@
     "rimraf": "^3.0.2",
     "storybook": "^7.6.17",
     "typescript": "5.3.3",
-    "vite": "^4.3.8",
-    "vite-plugin-dts": "^3.7.3"
+    "vite": "^4.3.8"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
-    "build": "yarn build:vite",
+    "build": "yarn build:vite && yarn build:types",
     "build:vite": "vite build",
+    "build:types": "yarn build:types:core && yarn build:types:themes",
+    "build:types:core": "yarn tsc -p ./tsconfig.core.json",
+    "build:types:themes": "yarn tsc -p ./tsconfig.themes.json",
     "lint": "eslint --ext ts,tsx --quiet components",
     "postbuild:cjs": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/cjs -u 1",
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
