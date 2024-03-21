@@ -10,9 +10,7 @@ import videoeot from './font/React95Video-Numbers.eot';
 import videottf from './font/React95Video-Numbers.ttf';
 import videowoff from './font/React95Video-Numbers.woff';
 import videowoff2 from './font/React95Video-Numbers.woff2';
-
-export const MSSansSerif = 'MS Sans Serif';
-export const R95VideoNumbers = 'React95Video-Numbers';
+import { MSSansSerif, R95VideoNumbers } from '../shared/font-names';
 
 globalFontFace(MSSansSerif, {
   src: `url('${ttf}') format('truetype')`,

@@ -1,8 +1,9 @@
 import { globalStyle, style } from '@vanilla-extract/css';
-import { recipe } from '@vanilla-extract/recipes';
-import { contract } from '../themes/contract.css';
-import { R95VideoNumbers } from '../GlobalStyle/GlobalStyle.css';
 import { calc } from '@vanilla-extract/css-utils';
+import { recipe } from '@vanilla-extract/recipes';
+
+import { R95VideoNumbers } from '../shared/font-names';
+import { contract } from '../themes/contract.css';
 
 export const videoTag = recipe({
   base: {
