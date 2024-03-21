@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-alpha.1](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.0...@react95/core@8.0.0-alpha.1) (2024-03-21)
+
+
+### Features
+
+* building with vite ([fee3d29](https://github.com/React95/React95/commit/fee3d29d33df141312b2d04db53b8ae38957f60e))
+* export themes ([8a02ed3](https://github.com/React95/React95/commit/8a02ed3c5b27c9e035537ecbfd331175c9b59b5b))
+
+
+
+
+
 # [8.0.0-alpha.0](https://github.com/React95/React95/compare/@react95/core@7.0.2...@react95/core@8.0.0-alpha.0) (2024-03-07)
 
 
