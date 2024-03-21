@@ -1,5 +1,5 @@
-import { createTheme } from '@vanilla-extract/css';
-import { theme, generateShadows } from './baseTheme.css';
+import { createGlobalTheme } from '@vanilla-extract/css';
+import { theme, generateShadows } from './baseTheme';
 import { contract } from './contract.css';
 
 const colors = {
@@ -26,7 +26,7 @@ const colors = {
   inputBackgroundDisabled: '#2fcecd',
 };
 
-export const vaporTeal = createTheme(contract, {
+createGlobalTheme(':root', contract, {
   ...theme,
   colors,
   shadows: generateShadows(colors),

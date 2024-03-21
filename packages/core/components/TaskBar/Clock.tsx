@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import Frame from '../Frame';
-import Tooltip from '../Tooltip';
+import { Frame } from '../Frame/Frame';
+import { Tooltip } from '../Tooltip/Tooltip';
 import { tooltip } from './TaskBar.css';
 
 export const Clock = () => {

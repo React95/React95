@@ -1,19 +1,19 @@
 import React from 'react';
 import '../../components/GlobalStyle/GlobalStyle.css';
-import * as themes from '../../components/themes/all';
+import '../../components/themes/all';
 
 const Frame = (Story, { globals }) => {
   const { selectedTheme } = globals;
 
-  const theme = themes[selectedTheme] || themes.win95;
-
   React.useEffect(() => {
-    document.body.classList.add(theme);
+    const themeStylesheets = Array.from(
+      document.querySelectorAll('style'),
+    ).filter(s => s.dataset?.file?.includes('themes'));
 
-    return () => {
-      document.body.classList.remove(theme);
-    };
-  }, [theme]);
+    themeStylesheets.forEach(s => {
+      s.disabled = !s.dataset.file?.includes(selectedTheme);
+    });
+  }, [selectedTheme]);
 
   return (
     <div style={{ padding: 10 }}>

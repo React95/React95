@@ -2,7 +2,7 @@ import { style, globalStyle } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
 import { contract } from '../themes/contract.css';
 
-import rightcaret from '../GlobalStyle/imgs/rightcaret.svg';
+import rightcaret from '../shared/imgs/rightcaret.svg';
 
 export const listItem = style({
   position: 'relative',

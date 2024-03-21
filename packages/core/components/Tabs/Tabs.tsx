@@ -1,10 +1,9 @@
 import React, { forwardRef } from 'react';
 import cn from 'classnames';
 
-import Frame from '../Frame';
 import { Tab, TabProps } from './Tab';
 import { navContainer, navbar } from './Tabs.css';
-import { FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 export type TabsProps = {
   defaultActiveTab?: string;

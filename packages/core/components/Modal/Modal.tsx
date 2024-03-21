@@ -3,10 +3,10 @@ import * as React from 'react';
 import Draggable from 'react-draggable';
 
 import { DraggableProps } from 'react-draggable';
-import Button from '../Button';
-import List from '../List';
-import TitleBar from '../TitleBar';
-import ModalContext from './ModalContext';
+import { Button } from '../Button/Button';
+import { List } from '../List/List';
+import { TitleBar } from '../TitleBar/TitleBar';
+import { ModalContext } from './ModalContext';
 import * as styles from './Modal.css';
 import { Frame, FrameProps } from '../Frame/Frame';
 

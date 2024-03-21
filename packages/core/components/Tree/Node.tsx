@@ -60,7 +60,7 @@ export type NodeProps = {
 
 export type NodeRootProps = Omit<NodeProps, 'children'>;
 
-const Node: React.FC<NodeProps> = ({
+export const Node: React.FC<NodeProps> = ({
   children = [],
   id,
   icon,
@@ -167,5 +167,3 @@ export const NodeRoot: React.FC<NodeRootProps> = ({
     </Frame>
   );
 };
-
-export default Node;

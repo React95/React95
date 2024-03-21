@@ -4,9 +4,9 @@ import { Mplayer113, User4 } from '@react95/icons';
 import * as styles from './Video.css';
 
 import { Frame, FrameProps } from '../Frame/Frame';
-import Button from '../Button';
-import Range from '../Range';
-import TitleBar from '../TitleBar';
+import { Button } from '../Button/Button';
+import { Range } from '../Range/Range';
+import { TitleBar } from '../TitleBar/TitleBar';
 import { Play, Pause, Stop, Fullscreen } from './buttons';
 import cn from 'classnames';
 

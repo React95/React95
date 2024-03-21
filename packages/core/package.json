@@ -3,6 +3,21 @@
   "version": "8.0.0-alpha.0",
   "description": "Windows 95 styleguide",
   "main": "./components",
+  "exports": {
+    ".": {
+      "import": "./esm",
+      "require": "./cjs",
+      "types": "./@types/index.d.ts"
+    },
+    "./themes/*.css": {
+      "import": "./esm/themes/*.css.js",
+      "require": "./cjs/themes/*.css.js"
+    },
+    "./GlobalStyle": {
+      "import": "./esm/GlobalStyle.js",
+      "require": "./cjs/GlobalStyle.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/React95/React95.git",
@@ -12,8 +27,11 @@
   "license": "MIT",
   "dependencies": {
     "@react95/icons": "^2.1.1",
+    "@vanilla-extract/dynamic": "^2.1.0",
+    "@vanilla-extract/recipes": "^0.5.1",
     "classnames": "^2.5.1",
     "nanoid": "^3.3.1",
+    "rainbow-sprinkles": "^0.17.1",
     "react-draggable": "^4.4.4"
   },
   "peerDependencies": {
@@ -56,10 +74,11 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
-    "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.production.json",
-    "build:esm": "cross-env NODE_ENV=esm yarn babel ./components --out-dir dist/esm --extensions .ts,.tsx",
-    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./components --out-dir dist/cjs --extensions .ts,.tsx",
+    "build": "yarn build:vite && yarn build:types",
+    "build:vite": "vite build",
+    "build:types": "yarn build:types:core && yarn build:types:themes",
+    "build:types:core": "yarn tsc -p ./tsconfig.core.json",
+    "build:types:themes": "yarn tsc -p ./tsconfig.themes.json",
     "lint": "eslint --ext ts,tsx --quiet components",
     "postbuild:cjs": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/cjs -u 1",
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",

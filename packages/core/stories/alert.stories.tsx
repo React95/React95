@@ -2,9 +2,7 @@ import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
 import { Alert, AlertType } from '../components/Alert/Alert';
-import Button from '../components/Button';
-import Checkbox from '../components/Checkbox';
-import Dropdown from '../components/Dropdown';
+import { Button, Checkbox, Dropdown } from '../components';
 
 export default {
   title: 'Alert',

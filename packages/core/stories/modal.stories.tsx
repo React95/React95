@@ -1,9 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Button from '../components/Button';
-import Frame from '../components/Frame';
-import List from '../components/List';
+import { Button, Frame, List } from '../components';
 import { Modal } from '../components/Modal/Modal';
 
 import { Computer, Mmsys113, Mshtml32534 } from '@react95/icons';

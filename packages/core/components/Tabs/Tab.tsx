@@ -1,8 +1,7 @@
 import React, { forwardRef } from 'react';
 
-import Frame from '../Frame';
 import { tab } from './Tabs.css';
-import { FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 export type TabProps = {
   activeTab?: string;

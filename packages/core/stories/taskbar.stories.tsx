@@ -2,9 +2,8 @@ import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
 import { ReaderClosed, WindowsExplorer } from '@react95/icons';
-import List from '../components/List';
-import { Modal } from '../components/Modal';
-import TaskBar from '../components/TaskBar';
+import { List, Modal } from '../components';
+import { TaskBar } from '../components/TaskBar/TaskBar';
 
 export default {
   title: 'TaskBar',

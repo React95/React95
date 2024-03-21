@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import * as React from 'react';
 
 import { Avatar, AvatarProps } from '../components/Avatar/Avatar';
-import Frame from '../components/Frame';
+import { Frame } from '../components';
 
 export default {
   title: 'Avatar',

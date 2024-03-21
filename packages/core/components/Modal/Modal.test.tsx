@@ -1,10 +1,10 @@
 import { Bat } from '@react95/icons';
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
-import List from '../List';
+import { List } from '../List/List';
 import { fireEvent, waitRender } from '../shared/test/utils';
 import { Modal } from './Modal';
-import ModalContext from './ModalContext';
+import { ModalContext } from './ModalContext';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {
