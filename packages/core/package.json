@@ -14,8 +14,8 @@
       "require": "./cjs/themes/*.css.js"
     },
     "./GlobalStyle": {
-      "import": "./esm/GlobalStyle.css.js",
-      "require": "./cjs/GlobalStyle.css.js"
+      "import": "./esm/GlobalStyle.js",
+      "require": "./cjs/GlobalStyle.js"
     }
   },
   "repository": {
