@@ -34,7 +34,7 @@ export default defineConfig({
     lib: {
       entry: {
         index: './components',
-        theme: './components/themes/all.ts',
+        themes: './components/themes/all.ts',
         GlobalStyle: './components/GlobalStyle',
       },
       name: 'React95',
