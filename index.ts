@@ -1,1 +1,3 @@
-export * as GlobalStyle from './GlobalStyle.css';
+import GlobalStyle from './GlobalStyle';
+
+export default GlobalStyle;
