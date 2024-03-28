@@ -31,7 +31,7 @@ export const ThemePanel = ({ api }) => {
     }
     const [previewFrame] = document.getElementsByTagName('iframe');
 
-    if (!previewFrame) {
+    if (!previewFrame || !previewFrame.contentWindow) {
       return;
     }
 
