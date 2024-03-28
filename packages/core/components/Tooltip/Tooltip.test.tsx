@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { act, fireEvent, render } from '../shared/test/utils';
-import Tooltip from './Tooltip';
+import { Tooltip } from './Tooltip';
 
 describe('<Tooltip />', () => {
   describe('Snapshot', () => {

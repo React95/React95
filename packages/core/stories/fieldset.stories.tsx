@@ -1,29 +1,29 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import styled from 'styled-components';
 
-import Checkbox from '../components/Checkbox';
-import Fieldset from '../components/Fieldset';
-
-const CheckboxList = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+import { Fieldset, FieldSetProps } from '../components/Fieldset/Fieldset';
+import { Frame, Checkbox } from '../components';
 
 export default {
   title: 'Fieldset',
   component: Fieldset,
   tags: ['autodocs'],
-} as Meta<typeof Fieldset>;
+} as Meta<FieldSetProps>;
 
 export const Simple = {
   render: () => (
-    <Fieldset legend="Connection Settings" style={{ width: '300px' }}>
-      <CheckboxList>
-        <Checkbox checked={false}>Disable Remote Keyboard & Pointer</Checkbox>
-        <Checkbox checked={false}>Disable Local Keyboard & Pointer</Checkbox>
-        <Checkbox checked>Remove Desktop Wallpaper</Checkbox>
-      </CheckboxList>
+    <Fieldset legend="Connection Settings" width="300px">
+      <Frame display="flex" flexDirection="column">
+        <Checkbox readOnly checked={false}>
+          Disable Remote Keyboard & Pointer
+        </Checkbox>
+        <Checkbox readOnly checked={false}>
+          Disable Local Keyboard & Pointer
+        </Checkbox>
+        <Checkbox readOnly checked>
+          Remove Desktop Wallpaper
+        </Checkbox>
+      </Frame>
     </Fieldset>
   ),
 

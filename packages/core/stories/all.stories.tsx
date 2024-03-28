@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import styled from '@xstyled/styled-components';
 import * as React from 'react';
 
 import { Alert, Button } from '../components';
@@ -25,17 +24,7 @@ import { Simple as SimpleTooltip } from './tooltip.stories';
 import { Simple as SimpleTree } from './tree.stories';
 import { FromURL } from './video.stories';
 
-const AllList = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  height: 620px;
-
-  > * {
-    margin-right: 10px;
-  }
-`;
+import * as styles from './all.stories.css';
 
 export default {
   title: 'All',
@@ -46,7 +35,7 @@ export const All = {
     const [openAlert, setOpenAlert] = React.useState(true);
 
     return (
-      <AllList>
+      <div className={styles.list}>
         <div>
           <Button onClick={() => setOpenAlert(true)}> Show Alert </Button>
         </div>
@@ -54,7 +43,7 @@ export const All = {
           <Alert
             title="Windows Networking"
             type="error"
-            closeAlert={() => {}}
+            onClose={() => {}}
             defaultPosition={{
               x: -130,
               y: -130,
@@ -71,7 +60,7 @@ export const All = {
         </div>
 
         <br />
-        <SimpleAvatar.render />
+        <SimpleAvatar.render {...SimpleAvatar.args} />
 
         <br />
         <AllCheckbox.render />
@@ -104,7 +93,7 @@ export const All = {
         </div>
 
         <br />
-        <SimpleProgressBar.render />
+        <SimpleProgressBar.render {...SimpleProgressBar.args} />
 
         <br />
         <SimpleRadioButton.render />
@@ -119,7 +108,7 @@ export const All = {
         <SimpleTree.render />
 
         <br />
-        <SimpleTooltip.render />
+        <SimpleTooltip.render {...SimpleTooltip.args} />
 
         <br />
         <FromURL.render />
@@ -132,7 +121,7 @@ export const All = {
 
         <br />
         <Complete.render />
-      </AllList>
+      </div>
     );
   },
 };

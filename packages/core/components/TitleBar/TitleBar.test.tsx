@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 
 import { waitRender } from '../shared/test/utils';
 
-import TitleBar from './TitleBar';
+import { TitleBar } from './TitleBar';
 
 describe('<TitleBar />', () => {
   describe('Snapshot', () => {

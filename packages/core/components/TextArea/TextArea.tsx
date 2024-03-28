@@ -1,56 +1,11 @@
-import React, { forwardRef } from 'react';
-import styled from '@xstyled/styled-components';
-import {
-  padding,
-  PaddingProps,
-  borders,
-  BorderProps,
-  shadow,
-  ShadowProps,
-} from 'styled-system';
-import Cursor from '../Cursor';
+import * as React from 'react';
+import { Frame, FrameProps } from '../Frame/Frame';
+import { input as textarea } from '../Input/Input.css';
 
-export type TextAreaProps = PaddingProps &
-  BorderProps &
-  ShadowProps &
-  React.HTMLProps<HTMLTextAreaElement>;
+export type TextAreaProps = Omit<FrameProps<'textarea'>, 'as'>;
 
-const TextAreaComponent = styled.textarea<TextAreaProps>`
-  outline: none;
-  border: none;
-  cursor: text;
-
-  padding: 3 3 5 3;
-
-  color: materialText;
-  background-color: inputBackground;
-
-  border-radius: 0;
-
-  border-top-width: 1;
-  border-top-style: 1;
-  border-top-color: borderDark;
-
-  border-right-width: 0;
-  border-bottom-width: 0;
-
-  border-left-width: 1;
-  border-left-style: 1;
-  border-left-color: borderDark;
-
-  box-shadow: input;
-
-  -webkit-appearance: none;
-
-  ${Cursor.Text};
-
-  ${padding}
-  ${borders}
-  ${shadow}
-`;
-
-const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
-  (props, ref) => <TextAreaComponent {...props} as="textarea" ref={ref} />,
+export const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
+  (rest, ref) => (
+    <Frame {...rest} ref={ref} className={textarea} as="textarea" />
+  ),
 );
-
-export default TextArea;

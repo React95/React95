@@ -1,13 +1,13 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import TextArea from '../components/TextArea';
+import { TextArea, TextAreaProps } from '../components/TextArea/TextArea';
 
 export default {
   title: 'TextArea',
   component: TextArea,
   tags: ['autodocs'],
-} as Meta<typeof TextArea>;
+} as Meta<TextAreaProps>;
 
 export const Simple = {
   render: () => {

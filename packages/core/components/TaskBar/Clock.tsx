@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import styled from '@xstyled/styled-components';
 
-import Frame from '../Frame';
-import Tooltip from '../Tooltip';
+import { Frame } from '../Frame/Frame';
+import { Tooltip } from '../Tooltip/Tooltip';
+import { tooltip } from './TaskBar.css';
 
-const StyledTooltip = styled(Tooltip)`
-  div:first-child {
-    right: 0;
-  }
-`;
-
-const Clock = () => {
+export const Clock = () => {
   const [timer, setTimer] = useState('');
 
   useEffect(() => {
@@ -30,19 +24,14 @@ const Clock = () => {
 
   return (
     <Frame
-      boxShadow="in"
-      bg="transparent"
-      px={6}
-      py={2}
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      boxShadow="$in"
+      px="$6"
+      py="$2"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
     >
-      <StyledTooltip>{timer}</StyledTooltip>
+      <Tooltip className={tooltip}>{timer}</Tooltip>
     </Frame>
   );
 };
-
-export default Clock;

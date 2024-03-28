@@ -1,4 +1,5 @@
 packages/explorer
 packages/icons/src/iconDemos.ts
 packages/icons/src/react
+packages/core/.storybook
 CHANGELOG.md

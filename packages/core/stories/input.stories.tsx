@@ -1,13 +1,13 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Input from '../components/Input/Input';
+import { Input, InputProps } from '../components/Input/Input';
 
 export default {
   title: 'Input',
   component: Input,
   tags: ['autodocs'],
-} as Meta<typeof Input>;
+} as Meta<InputProps>;
 
 export const Simple = {
   render: () => <Input />,

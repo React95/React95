@@ -16,7 +16,7 @@ export interface IModalContextProps {
   activeWindow?: string;
 }
 
-const ModalContext = createContext<IModalContextProps>({
+export const ModalContext = createContext<IModalContextProps>({
   windows: {},
   addWindows: () => {},
   removeWindow: () => {},
@@ -24,5 +24,3 @@ const ModalContext = createContext<IModalContextProps>({
   setActiveWindow: () => {},
   activeWindow: '',
 });
-
-export default ModalContext;

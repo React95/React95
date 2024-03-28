@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 import { render } from '../shared/test/utils';
-import Fieldset from './Fieldset';
+import { Fieldset } from './Fieldset';
 
 describe('<Fieldset />', () => {
   describe('Snapshots', () => {

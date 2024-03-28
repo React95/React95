@@ -1,18 +1,13 @@
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render } from '../shared/test/utils';
-import Alert from './Alert';
+import { Alert } from './Alert';
 
 describe('<Alert />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with error type', () => {
       const { container } = render(
-        <Alert
-          closeAlert={() => {}}
-          title="Error"
-          type="error"
-          message="Error"
-        />,
+        <Alert onClose={() => {}} title="Error" type="error" message="Error" />,
       );
       expect(container).toMatchSnapshot();
     });
@@ -20,7 +15,7 @@ describe('<Alert />', () => {
     it('should match snapshot with warning type', () => {
       const { container } = render(
         <Alert
-          closeAlert={() => {}}
+          onClose={() => {}}
           title="Warning"
           type="warning"
           message="Warning"
@@ -31,7 +26,7 @@ describe('<Alert />', () => {
 
     it('should match snapshot with info type', () => {
       const { container } = render(
-        <Alert closeAlert={() => {}} title="Info" type="info" message="Info" />,
+        <Alert onClose={() => {}} title="Info" type="info" message="Info" />,
       );
       expect(container).toMatchSnapshot();
     });
@@ -39,7 +34,7 @@ describe('<Alert />', () => {
     it('should match snapshot with question type', () => {
       const { container } = render(
         <Alert
-          closeAlert={() => {}}
+          onClose={() => {}}
           title="question"
           type="question"
           message="question"
@@ -49,20 +44,18 @@ describe('<Alert />', () => {
     });
   });
 
-  describe('closeAlert prop', () => {
-    it('should call closeAlert when modal "OK" button is pressed', () => {
-      const closeAlertMock = vi.fn();
-      const { getByText } = render(
-        <Alert
-          title="closeAlert"
-          message="closeAlert"
-          closeAlert={closeAlertMock}
-        />,
+  describe('onClose prop', () => {
+    it('should call onClose when modal "X" button is pressed', () => {
+      const onCloseMock = vi.fn();
+      const { getAllByRole } = render(
+        <Alert title="onClose" message="onClose" onClose={onCloseMock} />,
       );
 
-      fireEvent.click(getByText('X'));
+      const [x] = getAllByRole('button');
 
-      expect(closeAlertMock).toHaveBeenCalled();
+      fireEvent.click(x);
+
+      expect(onCloseMock).toHaveBeenCalled();
     });
   });
 });

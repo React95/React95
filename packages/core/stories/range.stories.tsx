@@ -1,13 +1,13 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Range from '../components/Range';
+import { Range, RangeProps } from '../components/Range/Range';
 
 export default {
   title: 'Range',
   component: Range,
   tags: ['autodocs'],
-} as Meta<typeof Range>;
+} as Meta<RangeProps>;
 
 export const Simple = {
   render: () => <Range style={{ width: 100 }} />,

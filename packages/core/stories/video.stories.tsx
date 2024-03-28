@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Video from '../components/Video';
+import { Video } from '../components/Video/Video';
 import EXPLORER_VIDEO from './EXPLORER.mp4';
 
 export default {
@@ -13,7 +13,7 @@ export default {
 export const FromURL = {
   render: () => (
     <Video
-      w="320"
+      w="320px"
       src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
       style={{
         marginBottom: 4,
@@ -30,7 +30,7 @@ export const FromURL = {
 };
 
 export const FromFile = {
-  render: () => <Video w="320" src={EXPLORER_VIDEO} name="Explorer" />,
+  render: () => <Video w="320px" src={EXPLORER_VIDEO} name="Explorer" />,
 
   parameters: {
     design: {

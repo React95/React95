@@ -1,69 +1,18 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`<Tabs /> > Snapshot > should match snapshot 1`] = `
-.c0 {
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c2 {
-  list-style: none;
-  padding: 3px 6px;
-  background-color: #c3c7cb;
-  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -3px 1px 0 -1px #ffffff, -2px 0 0 -1px #ffffff, 2px 1px 0 -1px #868a8e, 2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
-  margin-right: 2px;
-  margin-left: 2px;
-  margin-top: -2px;
-  margin-left: -2px;
-  margin-bottom: 1px;
-  box-shadow: inset 0 1px 0 0 #ffffff, -2px 1px 0 -1px #c3c7cb, -0.5px 3px 0 0.5px #c3c7cb, -2px 2px 0 0 #ffffff, -2px 0 0 -1px #ffffff, 1px 2px 0 0 #868a8e, 2px 0 0 -1px #000000, 2px 2px 0 0 #000000;
-}
-
-.c2:first-child {
-  margin-left: 4px;
-}
-
-.c2:first-child {
-  margin-left: 2px;
-}
-
-.c2 + li {
-  margin-left: 0;
-  box-shadow: inset 0 1px 0 0 #ffffff, 2px 1px 0 -1px #868a8e, 2px 0 0 -1px #000000, 3px 1px 0 -1px #000000;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  border: none;
-  box-shadow: none;
-  background-color: unset;
-}
-
-.c3 {
-  padding: 12px;
-  box-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-}
-
 <div>
   <ol
-    class="c0 c1"
+    class="Tabs_navbar__fyllcd0"
   >
     <li
-      class="c2"
+      class="Tabs_tab__fyllcd2 Tabs_tab_active_true__fyllcd3"
     >
       example
     </li>
   </ol>
   <div
-    class="c0 c3"
+    class="Tabs_navContainer__fyllcd1"
   >
     <p>
       Example text

@@ -2,7 +2,7 @@
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { act, fireEvent, waitRender } from '../shared/test/utils';
-import Video from './Video';
+import { Video } from './Video';
 
 const originalError = console.error;
 

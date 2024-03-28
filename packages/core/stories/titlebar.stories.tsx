@@ -1,17 +1,19 @@
 import { Doc } from '@react95/icons';
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
+import Close from '../components/Modal/close.svg';
+import Help from '../components/Modal/help.svg';
 
-import TitleBar from '../components/TitleBar';
+import { TitleBar, TitleBarProps } from '../components/TitleBar/TitleBar';
 
 export default {
   title: 'TitleBar',
   component: TitleBar,
   tags: ['autodocs'],
-} as Meta<typeof TitleBar>;
+} as Meta<TitleBarProps>;
 
 export const Simple = {
-  render: () => <TitleBar w={200} />,
+  render: () => <TitleBar width="200px" />,
 
   parameters: {
     design: {
@@ -21,7 +23,7 @@ export const Simple = {
 };
 
 export const Inactive = {
-  render: () => <TitleBar active={false} w={200} />,
+  render: () => <TitleBar active={false} width="200px" />,
 };
 
 export const Complete = {
@@ -31,11 +33,15 @@ export const Complete = {
       icon={<Doc variant="16x16_4" />}
       title="untitled - Paint"
       className="draggable"
-      w={200}
+      width="200px"
     >
       <TitleBar.OptionsBox>
-        <TitleBar.Option>?</TitleBar.Option>
-        <TitleBar.Option>X</TitleBar.Option>
+        <TitleBar.Option>
+          <img src={Help} alt="help" />
+        </TitleBar.Option>
+        <TitleBar.Option>
+          <img src={Close} alt="close" />
+        </TitleBar.Option>
       </TitleBar.OptionsBox>
     </TitleBar>
   ),

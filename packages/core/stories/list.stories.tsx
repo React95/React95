@@ -17,20 +17,20 @@ import {
   Settings,
   WindowsExplorer,
 } from '@react95/icons';
-import List from '../components/List';
+import { List, IListProps } from '../components/List/List';
 
 export default {
   title: 'List',
   component: List,
   subcomponents: { 'List.Item': List.Item, 'List.Divider': List.Divider },
   tags: ['autodocs'],
-} as Meta<typeof List>;
+} as Meta<IListProps>;
 
 export const WithIcons = {
   render: () => (
-    <List>
+    <List width={'200px'}>
       <List.Item icon={<FolderExe2 variant="32x32_4" />}>
-        <List>
+        <List width={'200px'}>
           <List.Item icon={<FolderExe variant="16x16_4" />}>
             Accessories
           </List.Item>
@@ -52,7 +52,7 @@ export const WithIcons = {
       </List.Item>
       <List.Item icon={<FolderFile variant="32x32_4" />}>Documents</List.Item>
       <List.Item icon={<Settings variant="32x32_4" />}>
-        <List>
+        <List width={'200px'}>
           <List.Item icon={<FolderSettings variant="16x16_4" />}>
             Control Panel
           </List.Item>
@@ -80,7 +80,7 @@ export const WithIcons = {
 
 export const Simple = {
   render: () => (
-    <List>
+    <List width={'200px'}>
       <List.Item>View</List.Item>
       <List.Divider />
       <List.Item>Customize this Folder...</List.Item>

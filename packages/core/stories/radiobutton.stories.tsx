@@ -1,19 +1,17 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
-import styled from 'styled-components';
 
-import RadioButton from '../components/RadioButton';
-
-const RadioButtonList = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+import {
+  RadioButton,
+  RadioButtonProps,
+} from '../components/RadioButton/RadioButton';
+import { Frame } from '../components';
 
 export default {
   title: 'RadioButton',
   component: RadioButton,
   tags: ['autodocs'],
-} as Meta<typeof RadioButton>;
+} as Meta<RadioButtonProps>;
 
 export const Simple = {
   render: () => {
@@ -23,7 +21,7 @@ export const Simple = {
       setSelectedOption(e.target.value);
 
     return (
-      <RadioButtonList>
+      <Frame display="flex" flexDirection="column">
         <RadioButton
           name="working"
           value="one"
@@ -49,7 +47,7 @@ export const Simple = {
         <RadioButton readOnly checked disabled value="five">
           Checked & Disabled
         </RadioButton>
-      </RadioButtonList>
+      </Frame>
     );
   },
 

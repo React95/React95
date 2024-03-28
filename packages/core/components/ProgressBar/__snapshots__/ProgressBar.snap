@@ -1,61 +1,24 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`<ProgressBar /> > Snapshots > should match snapshot 1`] = `
-.c0 {
-  width: 300px;
-  height: 20px;
-  position: relative;
-  text-align: center;
-}
-
-.c1 {
-  width: 300px;
-  height: 20px;
-  line-height: 20px;
-  border-left: 1px solid;
-  border-left-color: #868a8e;
-  border-top: 1px solid;
-  border-top-color: #868a8e;
-  background-color: #ffffff;
-  color: #000000;
-  box-shadow: inset -1px -1px 0 0 #c3c7cb, inset 1px 1px 0 0 #000000, 0.5px 0.5px 0 0.5px #ffffff;
-}
-
-.c2 {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.c3 {
-  width: 300px;
-  height: 17px;
-  line-height: 18px;
-  margin-left: 2px;
-  margin-top: 2px;
-  background-color: #000e7a;
-  color: #ffffff;
-}
-
 <div>
   <div
-    class="c0"
-    width="300"
+    class="sprinkles_width__1txm3g81t ProgressBar_wrapper__1drc6y70"
+    style="--width__1txm3g81s: 300px;"
   >
     <div
-      class="c1"
-      width="300"
+      class="sprinkles_width__1txm3g81t ProgressBar_whiteBar__1drc6y71"
+      style="--width__1txm3g81s: 300px;"
     >
       50%
     </div>
     <div
-      class="c2"
+      class="sprinkles_width__1txm3g81t ProgressBar_container__1drc6y72"
+      style="--width__1txm3g81s: 50%;"
     >
       <div
-        class="c3"
-        width="300"
+        class="sprinkles_width__1txm3g81t ProgressBar_progress__1drc6y73"
+        style="--width__1txm3g81s: 300px;"
       >
         50%
       </div>
