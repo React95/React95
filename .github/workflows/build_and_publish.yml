@@ -58,10 +58,12 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build storybook
+        if: github.ref == 'refs/heads/master'
         run: |
           yarn build:storybook
 
       - name: Deploy storybook
+        if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
