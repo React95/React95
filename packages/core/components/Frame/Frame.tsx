@@ -4,7 +4,7 @@ import React, {
   ForwardedRef,
   forwardRef,
 } from 'react';
-import { Sprinkles, sprinkles } from './sprinkles.css';
+import { Sprinkles, sprinkles } from './Frame.css';
 import cn from 'classnames';
 
 type FixedForwardRef = <T, P = object>(

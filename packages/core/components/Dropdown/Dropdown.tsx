@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { wrapper, select } from './Dropdown.css';
 import { Frame, FrameProps } from '../Frame/Frame';
-import { sprinkles } from '../Frame/sprinkles.css';
+import { sprinkles } from '../Frame/Frame.css';
 
 const defaultOptions = [
   '',
