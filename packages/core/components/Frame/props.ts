@@ -81,7 +81,7 @@ export const displayAndBoxModel = {
 
 export const colors = {
   backgroundColor: contract.colors,
-  colors: contract.colors,
+  color: contract.colors,
 } as const;
 
 export const background = {
