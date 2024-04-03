@@ -3,8 +3,8 @@
 exports[`<TaskBar /> > Snapshots > <Clock /> > should match snapshot 1`] = `
 <div>
   <div
-    class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
-    style="--paddingLeft__1txm3g836: var(--r95-space-6); --paddingRight__1txm3g838: var(--r95-space-6); --paddingTop__1txm3g83a: var(--r95-space-2); --paddingBottom__1txm3g82y: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-in); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
+    class="Frame_paddingLeft__iuzg8937 Frame_paddingRight__iuzg8939 Frame_paddingTop__iuzg893b Frame_paddingBottom__iuzg892z Frame_boxShadow__iuzg895z Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_alignItems__iuzg891n"
+    style="--paddingLeft__iuzg8936: var(--r95-space-6); --paddingRight__iuzg8938: var(--r95-space-6); --paddingTop__iuzg893a: var(--r95-space-2); --paddingBottom__iuzg892y: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-in); --display__iuzg890: flex; --justifyContent__iuzg891e: center; --alignItems__iuzg891m: center;"
   >
     <div
       class="Tooltip_wrapper__f5whxn1 TaskBar_tooltip__1ct83mo1"
@@ -75,8 +75,8 @@ exports[`<TaskBar /> > Snapshots > <WindowButton /> > should match snapshot with
 exports[`<TaskBar /> > Snapshots > should match snapshot 1`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z sprinkles_width__1txm3g81t sprinkles_position__1txm3g83d sprinkles_bottom__1txm3g83j sprinkles_left__1txm3g83l sprinkles_right__1txm3g83h sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_padding__1txm3g82r sprinkles_zIndex__1txm3g87d sprinkles_backgroundColor__1txm3g83p sprinkles_boxShadow__1txm3g85z"
-    style="--height__1txm3g81y: 28px; --width__1txm3g81s: 100%; --position__1txm3g83c: fixed; --bottom__1txm3g83i: 0px; --left__1txm3g83k: 0px; --right__1txm3g83g: 0px; --display__1txm3g80: flex; --justifyContent__1txm3g81e: space-between; --padding__1txm3g82q: var(--r95-space-2); --zIndex__1txm3g87c: var(--r95-zIndex-taskbar); --backgroundColor__1txm3g83o: var(--r95-color-material); --boxShadow__1txm3g85y: var(--r95-shadow-out);"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"
+    style="--height__iuzg891y: 28px; --width__iuzg891s: 100%; --position__iuzg893c: fixed; --bottom__iuzg893i: 0px; --left__iuzg893k: 0px; --right__iuzg893g: 0px; --display__iuzg890: flex; --justifyContent__iuzg891e: space-between; --padding__iuzg892q: var(--r95-space-2); --zIndex__iuzg897c: var(--r95-zIndex-taskbar); --backgroundColor__iuzg893o: var(--r95-color-material); --boxShadow__iuzg895y: var(--r95-shadow-out);"
   >
     <button
       class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_false__1ct83mo6 TaskBar_windowsButton_small_true__1ct83mo3"
@@ -91,12 +91,12 @@ exports[`<TaskBar /> > Snapshots > should match snapshot 1`] = `
       Start
     </button>
     <div
-      class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
-      style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--r95-space-2); --paddingLeft__1txm3g836: var(--r95-space-0); --display__1txm3g80: flex;"
+      class="Frame_width__iuzg891t Frame_marginLeft__iuzg892l Frame_paddingLeft__iuzg8937 Frame_display__iuzg891"
+      style="--width__iuzg891s: 100%; --marginLeft__iuzg892k: var(--r95-space-2); --paddingLeft__iuzg8936: var(--r95-space-0); --display__iuzg890: flex;"
     />
     <div
-      class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
-      style="--paddingLeft__1txm3g836: var(--r95-space-6); --paddingRight__1txm3g838: var(--r95-space-6); --paddingTop__1txm3g83a: var(--r95-space-2); --paddingBottom__1txm3g82y: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-in); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
+      class="Frame_paddingLeft__iuzg8937 Frame_paddingRight__iuzg8939 Frame_paddingTop__iuzg893b Frame_paddingBottom__iuzg892z Frame_boxShadow__iuzg895z Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_alignItems__iuzg891n"
+      style="--paddingLeft__iuzg8936: var(--r95-space-6); --paddingRight__iuzg8938: var(--r95-space-6); --paddingTop__iuzg893a: var(--r95-space-2); --paddingBottom__iuzg892y: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-in); --display__iuzg890: flex; --justifyContent__iuzg891e: center; --alignItems__iuzg891m: center;"
     >
       <div
         class="Tooltip_wrapper__f5whxn1 TaskBar_tooltip__1ct83mo1"
@@ -111,8 +111,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot 1`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 1`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z sprinkles_width__1txm3g81t sprinkles_position__1txm3g83d sprinkles_bottom__1txm3g83j sprinkles_left__1txm3g83l sprinkles_right__1txm3g83h sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_padding__1txm3g82r sprinkles_zIndex__1txm3g87d sprinkles_backgroundColor__1txm3g83p sprinkles_boxShadow__1txm3g85z"
-    style="--height__1txm3g81y: 28px; --width__1txm3g81s: 100%; --position__1txm3g83c: fixed; --bottom__1txm3g83i: 0px; --left__1txm3g83k: 0px; --right__1txm3g83g: 0px; --display__1txm3g80: flex; --justifyContent__1txm3g81e: space-between; --padding__1txm3g82q: var(--r95-space-2); --zIndex__1txm3g87c: var(--r95-zIndex-taskbar); --backgroundColor__1txm3g83o: var(--r95-color-material); --boxShadow__1txm3g85y: var(--r95-shadow-out);"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"
+    style="--height__iuzg891y: 28px; --width__iuzg891s: 100%; --position__iuzg893c: fixed; --bottom__iuzg893i: 0px; --left__iuzg893k: 0px; --right__iuzg893g: 0px; --display__iuzg890: flex; --justifyContent__iuzg891e: space-between; --padding__iuzg892q: var(--r95-space-2); --zIndex__iuzg897c: var(--r95-zIndex-taskbar); --backgroundColor__iuzg893o: var(--r95-color-material); --boxShadow__iuzg895y: var(--r95-shadow-out);"
   >
     <button
       class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_false__1ct83mo6 TaskBar_windowsButton_small_true__1ct83mo3"
@@ -127,12 +127,12 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 1`] = `
       Start
     </button>
     <div
-      class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
-      style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--r95-space-2); --paddingLeft__1txm3g836: var(--r95-space-0); --display__1txm3g80: flex;"
+      class="Frame_width__iuzg891t Frame_marginLeft__iuzg892l Frame_paddingLeft__iuzg8937 Frame_display__iuzg891"
+      style="--width__iuzg891s: 100%; --marginLeft__iuzg892k: var(--r95-space-2); --paddingLeft__iuzg8936: var(--r95-space-0); --display__iuzg890: flex;"
     />
     <div
-      class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
-      style="--paddingLeft__1txm3g836: var(--r95-space-6); --paddingRight__1txm3g838: var(--r95-space-6); --paddingTop__1txm3g83a: var(--r95-space-2); --paddingBottom__1txm3g82y: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-in); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
+      class="Frame_paddingLeft__iuzg8937 Frame_paddingRight__iuzg8939 Frame_paddingTop__iuzg893b Frame_paddingBottom__iuzg892z Frame_boxShadow__iuzg895z Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_alignItems__iuzg891n"
+      style="--paddingLeft__iuzg8936: var(--r95-space-6); --paddingRight__iuzg8938: var(--r95-space-6); --paddingTop__iuzg893a: var(--r95-space-2); --paddingBottom__iuzg892y: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-in); --display__iuzg890: flex; --justifyContent__iuzg891e: center; --alignItems__iuzg891m: center;"
     >
       <div
         class="Tooltip_wrapper__f5whxn1 TaskBar_tooltip__1ct83mo1"
@@ -147,12 +147,12 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 1`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z sprinkles_width__1txm3g81t sprinkles_position__1txm3g83d sprinkles_bottom__1txm3g83j sprinkles_left__1txm3g83l sprinkles_right__1txm3g83h sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_padding__1txm3g82r sprinkles_zIndex__1txm3g87d sprinkles_backgroundColor__1txm3g83p sprinkles_boxShadow__1txm3g85z"
-    style="--height__1txm3g81y: 28px; --width__1txm3g81s: 100%; --position__1txm3g83c: fixed; --bottom__1txm3g83i: 0px; --left__1txm3g83k: 0px; --right__1txm3g83g: 0px; --display__1txm3g80: flex; --justifyContent__1txm3g81e: space-between; --padding__1txm3g82q: var(--r95-space-2); --zIndex__1txm3g87c: var(--r95-zIndex-taskbar); --backgroundColor__1txm3g83o: var(--r95-color-material); --boxShadow__1txm3g85y: var(--r95-shadow-out);"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"
+    style="--height__iuzg891y: 28px; --width__iuzg891s: 100%; --position__iuzg893c: fixed; --bottom__iuzg893i: 0px; --left__iuzg893k: 0px; --right__iuzg893g: 0px; --display__iuzg890: flex; --justifyContent__iuzg891e: space-between; --padding__iuzg892q: var(--r95-space-2); --zIndex__iuzg897c: var(--r95-zIndex-taskbar); --backgroundColor__iuzg893o: var(--r95-color-material); --boxShadow__iuzg895y: var(--r95-shadow-out);"
   >
     <div
-      class="sprinkles_position__1txm3g83d sprinkles_bottom__1txm3g83j"
-      style="--position__1txm3g83c: absolute; --bottom__1txm3g83i: 28px;"
+      class="Frame_position__iuzg893d Frame_bottom__iuzg893j"
+      style="--position__iuzg893c: absolute; --bottom__iuzg893i: 28px;"
     >
       <ul
         class="List_list__1lxkvz42"
@@ -184,12 +184,12 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
       Start
     </button>
     <div
-      class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
-      style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--r95-space-2); --paddingLeft__1txm3g836: var(--r95-space-0); --display__1txm3g80: flex;"
+      class="Frame_width__iuzg891t Frame_marginLeft__iuzg892l Frame_paddingLeft__iuzg8937 Frame_display__iuzg891"
+      style="--width__iuzg891s: 100%; --marginLeft__iuzg892k: var(--r95-space-2); --paddingLeft__iuzg8936: var(--r95-space-0); --display__iuzg890: flex;"
     />
     <div
-      class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
-      style="--paddingLeft__1txm3g836: var(--r95-space-6); --paddingRight__1txm3g838: var(--r95-space-6); --paddingTop__1txm3g83a: var(--r95-space-2); --paddingBottom__1txm3g82y: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-in); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
+      class="Frame_paddingLeft__iuzg8937 Frame_paddingRight__iuzg8939 Frame_paddingTop__iuzg893b Frame_paddingBottom__iuzg892z Frame_boxShadow__iuzg895z Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_alignItems__iuzg891n"
+      style="--paddingLeft__iuzg8936: var(--r95-space-6); --paddingRight__iuzg8938: var(--r95-space-6); --paddingTop__iuzg893a: var(--r95-space-2); --paddingBottom__iuzg892y: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-in); --display__iuzg890: flex; --justifyContent__iuzg891e: center; --alignItems__iuzg891m: center;"
     >
       <div
         class="Tooltip_wrapper__f5whxn1 TaskBar_tooltip__1ct83mo1"
@@ -234,8 +234,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
     />
   </div>
   <div
-    class="sprinkles_height__1txm3g81z sprinkles_width__1txm3g81t sprinkles_position__1txm3g83d sprinkles_bottom__1txm3g83j sprinkles_left__1txm3g83l sprinkles_right__1txm3g83h sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_padding__1txm3g82r sprinkles_zIndex__1txm3g87d sprinkles_backgroundColor__1txm3g83p sprinkles_boxShadow__1txm3g85z"
-    style="--height__1txm3g81y: 28px; --width__1txm3g81s: 100%; --position__1txm3g83c: fixed; --bottom__1txm3g83i: 0px; --left__1txm3g83k: 0px; --right__1txm3g83g: 0px; --display__1txm3g80: flex; --justifyContent__1txm3g81e: space-between; --padding__1txm3g82q: var(--r95-space-2); --zIndex__1txm3g87c: var(--r95-zIndex-taskbar); --backgroundColor__1txm3g83o: var(--r95-color-material); --boxShadow__1txm3g85y: var(--r95-shadow-out);"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"
+    style="--height__iuzg891y: 28px; --width__iuzg891s: 100%; --position__iuzg893c: fixed; --bottom__iuzg893i: 0px; --left__iuzg893k: 0px; --right__iuzg893g: 0px; --display__iuzg890: flex; --justifyContent__iuzg891e: space-between; --padding__iuzg892q: var(--r95-space-2); --zIndex__iuzg897c: var(--r95-zIndex-taskbar); --backgroundColor__iuzg893o: var(--r95-color-material); --boxShadow__iuzg895y: var(--r95-shadow-out);"
   >
     <button
       class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_false__1ct83mo6 TaskBar_windowsButton_small_true__1ct83mo3"
@@ -250,12 +250,12 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
       Start
     </button>
     <div
-      class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
-      style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--r95-space-2); --paddingLeft__1txm3g836: var(--r95-space-0); --display__1txm3g80: flex;"
+      class="Frame_width__iuzg891t Frame_marginLeft__iuzg892l Frame_paddingLeft__iuzg8937 Frame_display__iuzg891"
+      style="--width__iuzg891s: 100%; --marginLeft__iuzg892k: var(--r95-space-2); --paddingLeft__iuzg8936: var(--r95-space-0); --display__iuzg890: flex;"
     />
     <div
-      class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
-      style="--paddingLeft__1txm3g836: var(--r95-space-6); --paddingRight__1txm3g838: var(--r95-space-6); --paddingTop__1txm3g83a: var(--r95-space-2); --paddingBottom__1txm3g82y: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-in); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
+      class="Frame_paddingLeft__iuzg8937 Frame_paddingRight__iuzg8939 Frame_paddingTop__iuzg893b Frame_paddingBottom__iuzg892z Frame_boxShadow__iuzg895z Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_alignItems__iuzg891n"
+      style="--paddingLeft__iuzg8936: var(--r95-space-6); --paddingRight__iuzg8938: var(--r95-space-6); --paddingTop__iuzg893a: var(--r95-space-2); --paddingBottom__iuzg892y: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-in); --display__iuzg890: flex; --justifyContent__iuzg891e: center; --alignItems__iuzg891m: center;"
     >
       <div
         class="Tooltip_wrapper__f5whxn1 TaskBar_tooltip__1ct83mo1"
@@ -330,8 +330,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     />
   </div>
   <div
-    class="sprinkles_height__1txm3g81z sprinkles_width__1txm3g81t sprinkles_position__1txm3g83d sprinkles_bottom__1txm3g83j sprinkles_left__1txm3g83l sprinkles_right__1txm3g83h sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_padding__1txm3g82r sprinkles_zIndex__1txm3g87d sprinkles_backgroundColor__1txm3g83p sprinkles_boxShadow__1txm3g85z"
-    style="--height__1txm3g81y: 28px; --width__1txm3g81s: 100%; --position__1txm3g83c: fixed; --bottom__1txm3g83i: 0px; --left__1txm3g83k: 0px; --right__1txm3g83g: 0px; --display__1txm3g80: flex; --justifyContent__1txm3g81e: space-between; --padding__1txm3g82q: var(--r95-space-2); --zIndex__1txm3g87c: var(--r95-zIndex-taskbar); --backgroundColor__1txm3g83o: var(--r95-color-material); --boxShadow__1txm3g85y: var(--r95-shadow-out);"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"
+    style="--height__iuzg891y: 28px; --width__iuzg891s: 100%; --position__iuzg893c: fixed; --bottom__iuzg893i: 0px; --left__iuzg893k: 0px; --right__iuzg893g: 0px; --display__iuzg890: flex; --justifyContent__iuzg891e: space-between; --padding__iuzg892q: var(--r95-space-2); --zIndex__iuzg897c: var(--r95-zIndex-taskbar); --backgroundColor__iuzg893o: var(--r95-color-material); --boxShadow__iuzg895y: var(--r95-shadow-out);"
   >
     <button
       class="TaskBar_windowsButton__1ct83mo2 TaskBar_windowsButton_active_false__1ct83mo6 TaskBar_windowsButton_small_true__1ct83mo3"
@@ -346,12 +346,12 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
       Start
     </button>
     <div
-      class="sprinkles_width__1txm3g81t sprinkles_marginLeft__1txm3g82l sprinkles_paddingLeft__1txm3g837 sprinkles_display__1txm3g81"
-      style="--width__1txm3g81s: 100%; --marginLeft__1txm3g82k: var(--r95-space-2); --paddingLeft__1txm3g836: var(--r95-space-0); --display__1txm3g80: flex;"
+      class="Frame_width__iuzg891t Frame_marginLeft__iuzg892l Frame_paddingLeft__iuzg8937 Frame_display__iuzg891"
+      style="--width__iuzg891s: 100%; --marginLeft__iuzg892k: var(--r95-space-2); --paddingLeft__iuzg8936: var(--r95-space-0); --display__iuzg890: flex;"
     />
     <div
-      class="sprinkles_paddingLeft__1txm3g837 sprinkles_paddingRight__1txm3g839 sprinkles_paddingTop__1txm3g83b sprinkles_paddingBottom__1txm3g82z sprinkles_boxShadow__1txm3g85z sprinkles_display__1txm3g81 sprinkles_justifyContent__1txm3g81f sprinkles_alignItems__1txm3g81n"
-      style="--paddingLeft__1txm3g836: var(--r95-space-6); --paddingRight__1txm3g838: var(--r95-space-6); --paddingTop__1txm3g83a: var(--r95-space-2); --paddingBottom__1txm3g82y: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-in); --display__1txm3g80: flex; --justifyContent__1txm3g81e: center; --alignItems__1txm3g81m: center;"
+      class="Frame_paddingLeft__iuzg8937 Frame_paddingRight__iuzg8939 Frame_paddingTop__iuzg893b Frame_paddingBottom__iuzg892z Frame_boxShadow__iuzg895z Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_alignItems__iuzg891n"
+      style="--paddingLeft__iuzg8936: var(--r95-space-6); --paddingRight__iuzg8938: var(--r95-space-6); --paddingTop__iuzg893a: var(--r95-space-2); --paddingBottom__iuzg892y: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-in); --display__iuzg890: flex; --justifyContent__iuzg891e: center; --alignItems__iuzg891m: center;"
     >
       <div
         class="Tooltip_wrapper__f5whxn1 TaskBar_tooltip__1ct83mo1"

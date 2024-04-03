@@ -3,8 +3,8 @@
 exports[`<Video /> > Snapshot > should match snapshot 1`] = `
 <div>
   <div
-    class="sprinkles_padding__1txm3g82r sprinkles_boxShadow__1txm3g85z sprinkles_backgroundColor__1txm3g83p"
-    style="--padding__1txm3g82q: var(--r95-space-2); --boxShadow__1txm3g85y: var(--r95-shadow-out); --backgroundColor__1txm3g83o: var(--r95-color-material);"
+    class="Frame_padding__iuzg892r Frame_boxShadow__iuzg895z Frame_backgroundColor__iuzg893p"
+    style="--padding__iuzg892q: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-out); --backgroundColor__iuzg893o: var(--r95-color-material);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683"
@@ -27,15 +27,15 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
       />
     </video>
     <div
-      class="sprinkles_marginBottom__1txm3g82d sprinkles_marginLeft__1txm3g82l sprinkles_marginRight__1txm3g82n sprinkles_maxWidth__1txm3g81v"
-      style="--marginBottom__1txm3g82c: var(--r95-space-4); --marginLeft__1txm3g82k: auto; --marginRight__1txm3g82m: auto; --maxWidth__1txm3g81u: 250px;"
+      class="Frame_marginBottom__iuzg892d Frame_marginLeft__iuzg892l Frame_marginRight__iuzg892n Frame_maxWidth__iuzg891v"
+      style="--marginBottom__iuzg892c: var(--r95-space-4); --marginLeft__iuzg892k: auto; --marginRight__iuzg892m: auto; --maxWidth__iuzg891u: 250px;"
     >
       <div
         class="Video_countDownContainer__13gnpv04"
       >
         <div
-          class="sprinkles_width__1txm3g81t sprinkles_display__1txm3g81 sprinkles_flexDirection__1txm3g815"
-          style="--width__1txm3g81s: 40%; --display__1txm3g80: flex; --flexDirection__1txm3g814: column;"
+          class="Frame_width__iuzg891t Frame_display__iuzg891 Frame_flexDirection__iuzg8915"
+          style="--width__iuzg891s: 40%; --display__iuzg890: flex; --flexDirection__iuzg8914: column;"
         >
           <div
             class="Video_videoFont__13gnpv05"
@@ -49,8 +49,8 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sprinkles_width__1txm3g81t sprinkles_display__1txm3g81 sprinkles_flexDirection__1txm3g815"
-          style="--width__1txm3g81s: 40%; --display__1txm3g80: flex; --flexDirection__1txm3g814: column;"
+          class="Frame_width__iuzg891t Frame_display__iuzg891 Frame_flexDirection__iuzg8915"
+          style="--width__iuzg891s: 40%; --display__iuzg890: flex; --flexDirection__iuzg8914: column;"
         >
           <div
             class="Video_videoFont__13gnpv05 Video_currentTime__13gnpv06"

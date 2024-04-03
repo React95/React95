@@ -3,8 +3,8 @@
 exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
-    style="--height__1txm3g81y: 120; transform: translate(362px, 284px)translate(0px,0px);"
+    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 react-draggable"
+    style="--height__iuzg891y: 120; transform: translate(362px, 284px)translate(0px,0px);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
@@ -50,8 +50,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
       </div>
     </div>
     <div
-      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
-      style="--justifyContent__1txm3g81e: center;"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__iuzg891e: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -67,8 +67,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
 exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
-    style="--height__1txm3g81y: 120; transform: translate(362px, 284px)translate(0px,0px);"
+    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 react-draggable"
+    style="--height__iuzg891y: 120; transform: translate(362px, 284px)translate(0px,0px);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
@@ -114,8 +114,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
       </div>
     </div>
     <div
-      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
-      style="--justifyContent__1txm3g81e: center;"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__iuzg891e: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -131,8 +131,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
 exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
-    style="--height__1txm3g81y: 120; transform: translate(362px, 284px)translate(0px,0px);"
+    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 react-draggable"
+    style="--height__iuzg891y: 120; transform: translate(362px, 284px)translate(0px,0px);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
@@ -178,8 +178,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
       </div>
     </div>
     <div
-      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
-      style="--justifyContent__1txm3g81e: center;"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__iuzg891e: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -195,8 +195,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
 exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
 <div>
   <div
-    class="sprinkles_height__1txm3g81z Modal_modalWrapper__1txblt60 react-draggable"
-    style="--height__1txm3g81y: 120; transform: translate(362px, 284px)translate(0px,0px);"
+    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 react-draggable"
+    style="--height__iuzg891y: 120; transform: translate(362px, 284px)translate(0px,0px);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
@@ -242,8 +242,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
       </div>
     </div>
     <div
-      class="sprinkles_justifyContent__1txm3g81f Modal_buttonWrapper__1txblt62"
-      style="--justifyContent__1txm3g81e: center;"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      style="--justifyContent__iuzg891e: center;"
     >
       <button
         class="Button_button__1bzq74l0"
