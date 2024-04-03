@@ -81,7 +81,7 @@ export const WithBoxShadowInOut = {
       boxShadow="$out"
       padding="$4"
     >
-      <Frame h="100%" bgColor="$material" boxShadow="$in" />
+      <Frame h="100%" bgColor="white" boxShadow="$in" />
     </Frame>
   ),
 
