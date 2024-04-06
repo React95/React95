@@ -40,10 +40,10 @@ export const cssImportInject = () => {
         }
 
         const cssVanillaExtractFile = files.find(f =>
-          f.endsWith(`${cssLookup}.css.js`),
+          f.endsWith(`/${cssLookup}.css.js`),
         );
         const cssFile = files.find(f =>
-          f.endsWith(`${cssLookup}.css.ts.vanilla.css`),
+          f.endsWith(`/${cssLookup}.css.ts.vanilla.css`),
         );
 
         if (cssFile && cssVanillaExtractFile) {
