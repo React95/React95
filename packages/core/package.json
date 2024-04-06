@@ -94,5 +94,12 @@
   },
   "sideEffects": [
     "**/*.{woff2,woff,ttf,eot}"
+  ],
+  "keywords": [
+    "React95",
+    "windows95",
+    "w95",
+    "nostalgic",
+    "design-system"
   ]
 }

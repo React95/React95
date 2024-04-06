@@ -29,6 +29,7 @@ export const windowsButton = recipe({
     maxWidth: '150px',
     border: 'none',
     outline: 'none',
+    color: contract.colors.materialText,
   },
   variants: {
     small: {

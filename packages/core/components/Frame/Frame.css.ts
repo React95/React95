@@ -12,6 +12,7 @@ import {
   text,
   zIndices,
 } from './props';
+import type { SprinklesFn } from 'rainbow-sprinkles/createRuntimeFn';
 
 const displayAndBoxModelAtomicProps = defineProperties({
   dynamicProperties: displayAndBoxModel,
@@ -90,7 +91,21 @@ const zIndicesAtomicProps = defineProperties({
   dynamicProperties: zIndices,
 });
 
-export const sprinkles = createRainbowSprinkles(
+export const sprinkles: SprinklesFn<
+  [
+    typeof colorsAtomicProps,
+    typeof shadowsAtomicProps,
+    typeof zIndicesAtomicProps,
+    typeof displayAndBoxModelAtomicProps,
+    typeof positioningAtomicProps,
+    typeof backgroundAtomicProps,
+    typeof bordersAtomicProps,
+    typeof borderRadiusAtomicProps,
+    typeof outlineAtomicProps,
+    typeof fontAtomicProps,
+    typeof textAtomicProps,
+  ]
+> = createRainbowSprinkles(
   colorsAtomicProps,
   shadowsAtomicProps,
   zIndicesAtomicProps,
