@@ -25,7 +25,7 @@ const assetFileNames = format => info => {
 };
 
 const entryFileNames = format => () => {
-  const ext = format === `esm` ? 'mjs' : 'js';
+  const ext = format === `esm` ? 'mjs' : 'cjs';
   return `${format}/[name].${ext}`;
 };
 
