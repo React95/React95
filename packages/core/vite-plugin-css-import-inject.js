@@ -23,7 +23,7 @@ export const cssImportInject = () => {
       for (const file of files) {
         // skip entry file (index.js)
         // and generated css files (*.css.ts.vanilla.css)
-        if (bundle[file].isEntry || !file.match(/.*\.css.m?js$/)) {
+        if (bundle[file].isEntry || !file.match(/.*\.css.[c,m]?js$/)) {
           continue;
         }
 
