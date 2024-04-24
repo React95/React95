@@ -3,18 +3,19 @@
   "version": "8.0.0-alpha.4",
   "description": "Windows 95 styleguide",
   "main": "./components",
+  "type": "module",
   "exports": {
     ".": {
+      "types": "./@types/index.d.ts",
       "import": "./esm",
-      "require": "./cjs",
-      "types": "./@types/index.d.ts"
+      "require": "./cjs"
     },
     "./themes/*.css": {
-      "import": "./esm/themes/*.css.js",
+      "import": "./esm/themes/*.css.mjs",
       "require": "./cjs/themes/*.css.js"
     },
     "./GlobalStyle": {
-      "import": "./esm/GlobalStyle.js",
+      "import": "./esm/GlobalStyle.mjs",
       "require": "./cjs/GlobalStyle.js"
     }
   },

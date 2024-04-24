@@ -25,7 +25,8 @@ const assetFileNames = format => info => {
 };
 
 const entryFileNames = format => () => {
-  return `${format}/[name].js`;
+  const ext = format === `esm` ? 'mjs' : 'js';
+  return `${format}/[name].${ext}`;
 };
 
 export default defineConfig({
