@@ -12,11 +12,11 @@
     },
     "./themes/*.css": {
       "import": "./esm/themes/*.css.mjs",
-      "require": "./cjs/themes/*.css.js"
+      "require": "./cjs/themes/*.css.cjs"
     },
     "./GlobalStyle": {
       "import": "./esm/GlobalStyle.mjs",
-      "require": "./cjs/GlobalStyle.js"
+      "require": "./cjs/GlobalStyle.cjs"
     }
   },
   "repository": {
