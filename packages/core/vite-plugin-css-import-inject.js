@@ -23,7 +23,7 @@ export const cssImportInject = () => {
       for (const file of files) {
         // skip entry file (index.js)
         // and generated css files (*.css.ts.vanilla.css)
-        if (bundle[file].isEntry || !file.endsWith('css.js')) {
+        if (bundle[file].isEntry || !file.match(/.*\.css.m?js$/)) {
           continue;
         }
 
@@ -39,9 +39,11 @@ export const cssImportInject = () => {
           cssLookup = component;
         }
 
-        const cssVanillaExtractFile = files.find(f =>
-          f.endsWith(`/${cssLookup}.css.js`),
-        );
+        const cssVanillaExtractFile = files.find(f => {
+          const size = f.substring(0, f.lastIndexOf('.')).length;
+
+          return f.endsWith(`/${cssLookup}.css`, size);
+        });
         const cssFile = files.find(f =>
           f.endsWith(`/${cssLookup}.css.ts.vanilla.css`),
         );
