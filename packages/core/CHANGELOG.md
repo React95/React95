@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-alpha.8](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.7...@react95/core@8.0.0-alpha.8) (2024-04-25)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 # [8.0.0-alpha.7](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.6...@react95/core@8.0.0-alpha.7) (2024-04-25)
 
 **Note:** Version bump only for package @react95/core
