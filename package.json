@@ -70,6 +70,7 @@
     }
   },
   "dependencies": {
+    "minimist": "^1.2.8",
     "webpack": "^5.73.0"
   },
   "stackblitz": {
