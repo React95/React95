@@ -6,11 +6,12 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./@types/index.d.ts",
+      "types": "./types/index.d.ts",
       "import": "./esm",
       "require": "./cjs"
     },
     "./themes/*.css": {
+      "types": "./types/themes/all.d.ts",
       "import": "./esm/themes/*.css.mjs",
       "require": "./cjs/themes/*.css.cjs"
     },
