@@ -85,7 +85,7 @@
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
     "prebuild": "rimraf ./dist",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types",
+    "prepublishOnly": "node ../../scripts/prepublish.js --types --moduleExtensions",
     "test": "vitest run --config=../../config/test/core.js"
   },
   "publishConfig": {
