@@ -32,7 +32,7 @@ const createPackageJson = () => {
     main: cjs,
     module: esm,
     private: false,
-    ...(args.types && { types: '@types/index.d.ts' }),
+    ...(args.types && { types: 'types/index.d.ts' }),
   };
 
   const buildPath = path.resolve(`${outDir}/package.json`);
