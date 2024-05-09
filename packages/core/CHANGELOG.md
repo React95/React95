@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-alpha.10](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.9...@react95/core@8.0.0-alpha.10) (2024-05-09)
+
+
+### Bug Fixes
+
+* **Tree:** update node margin left ([90d8072](https://github.com/React95/React95/commit/90d80722297725dba353a4affec71d5a5f207fec))
+
+
+
+
+
 # [8.0.0-alpha.9](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.8...@react95/core@8.0.0-alpha.9) (2024-04-25)
 
 **Note:** Version bump only for package @react95/core
