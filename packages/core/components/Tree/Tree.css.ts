@@ -10,7 +10,7 @@ export const tree = style(base);
 globalStyle(`${tree} ul`, { ...base, marginLeft: contract.space[6] });
 
 export const node = style({
-  marginLeft: contract.space[12],
+  marginLeft: contract.space[13],
   borderLeftWidth: 'thin',
   borderLeftStyle: 'dotted',
   borderLeftColor: contract.colors.borderDarkest,
