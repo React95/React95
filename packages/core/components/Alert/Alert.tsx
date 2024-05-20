@@ -1,4 +1,5 @@
 import React, { forwardRef, useEffect } from 'react';
+import type { FC } from 'react';
 import { User2, User3, User4, User5 } from '@react95/icons';
 import * as styles from './Alert.css';
 
@@ -8,7 +9,7 @@ import sound from './assets/chord.mp3';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
-const RenderImage: React.FC<{ option: string }> = ({ option }) => {
+const RenderImage: FC<{ option: string }> = ({ option }) => {
   switch (option) {
     case 'info':
       return <User5 width={32} height={32} variant="32x32_4" />;

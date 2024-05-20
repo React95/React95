@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import type { MouseEvent, HTMLProps } from 'react';
 
 import { tab } from './Tabs.css';
 import { Frame, FrameProps } from '../Frame/Frame';
@@ -7,8 +8,8 @@ export type TabProps = {
   activeTab?: string;
   title: string;
   disabled?: boolean;
-  onClick?(e: React.MouseEvent): void;
-} & React.HTMLProps<HTMLLIElement> &
+  onClick?(e: MouseEvent): void;
+} & HTMLProps<HTMLLIElement> &
   Omit<FrameProps<'li'>, 'as'>;
 
 export const Tab = forwardRef<HTMLLIElement, TabProps>(

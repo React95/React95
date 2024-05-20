@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import type { HTMLProps } from 'react';
 import cn from 'classnames';
 
 import { wrapper, select } from './Dropdown.css';
@@ -14,7 +15,7 @@ const defaultOptions = [
 
 export type DropdownProps = {
   options?: Array<string | number>;
-} & React.HTMLProps<HTMLSelectElement> &
+} & HTMLProps<HTMLSelectElement> &
   Omit<FrameProps<'select'>, 'as'>;
 
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(

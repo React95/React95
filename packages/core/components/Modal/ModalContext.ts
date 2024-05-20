@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { createContext } from 'react';
+import type { ReactElement } from 'react';
 
 export type Windows = {
-  icon?: React.ReactElement;
+  icon?: ReactElement;
   title: string;
   hasButton: boolean;
 };

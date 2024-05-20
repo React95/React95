@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
+import type {
+  ForwardRefRenderFunction,
+  ReactElement,
+  HTMLAttributes,
+  Ref,
+} from 'react';
 
 import { Frame, FrameProps } from '../Frame/Frame';
 
@@ -6,15 +12,17 @@ import * as styles from './TitleBar.css';
 import { button } from '../Button/Button.css';
 import cn from 'classnames';
 
-const OptionsBox = React.forwardRef<HTMLDivElement, FrameProps>((rest, ref) => (
-  <Frame
-    {...rest}
-    ref={ref}
-    className={cn(styles.optionsBox, rest.className)}
-  />
-));
+const OptionsBox = forwardRef<HTMLDivElement, FrameProps<'div'>>(
+  (rest, ref) => (
+    <Frame
+      {...rest}
+      ref={ref}
+      className={cn(styles.optionsBox, rest.className)}
+    />
+  ),
+);
 
-const Option = React.forwardRef<HTMLButtonElement, FrameProps<'button'>>(
+const Option = forwardRef<HTMLButtonElement, FrameProps<'button'>>(
   (rest, ref) => (
     <Frame
       {...rest}
@@ -26,10 +34,10 @@ const Option = React.forwardRef<HTMLButtonElement, FrameProps<'button'>>(
 );
 
 export interface TitleBarBackgroundProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
-    FrameProps {
+  extends Omit<HTMLAttributes<HTMLDivElement>, 'color'>,
+    FrameProps<'div'> {
   active?: boolean;
-  icon?: React.ReactElement;
+  icon?: ReactElement;
   title?: string;
 }
 
@@ -41,14 +49,14 @@ interface TitleBarOptions {
 export interface TitleBarProps
   extends TitleBarBackgroundProps,
     TitleBarOptions,
-    FrameProps {}
+    FrameProps<'div'> {}
 
-const TitleBarRenderer: React.ForwardRefRenderFunction<
+const TitleBarRenderer: ForwardRefRenderFunction<
   HTMLDivElement,
   TitleBarBackgroundProps
 > = (
   { children, title = 'UNKNOWN.EXE', icon, active = true, ...rest },
-  ref: React.Ref<HTMLDivElement>,
+  ref: Ref<HTMLDivElement>,
 ) => (
   <Frame
     {...rest}
@@ -63,7 +71,7 @@ const TitleBarRenderer: React.ForwardRefRenderFunction<
 );
 
 export const TitleBar = Object.assign(
-  React.forwardRef<HTMLDivElement, TitleBarBackgroundProps>(TitleBarRenderer),
+  forwardRef<HTMLDivElement, TitleBarBackgroundProps>(TitleBarRenderer),
   {
     Option,
     OptionsBox,

@@ -1,4 +1,11 @@
-import * as React from 'react';
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+} from 'react';
+import type { FC, Ref, HTMLProps } from 'react';
 import { Mplayer113, User4 } from '@react95/icons';
 
 import * as styles from './Video.css';
@@ -12,7 +19,7 @@ import cn from 'classnames';
 
 type SourceProps = Pick<HTMLSourceElement, 'src'>;
 
-const Source: React.FC<SourceProps> = ({ src }) => (
+const Source: FC<SourceProps> = ({ src }) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
 
@@ -49,32 +56,32 @@ function parseCurrentTime(secs: number): string {
 export type VideoProps = {
   name?: string;
   src: string;
-  videoProps?: React.HTMLProps<HTMLVideoElement>;
-} & FrameProps;
+  videoProps?: HTMLProps<HTMLVideoElement>;
+} & FrameProps<'div'>;
 
 export type VideoRefs = {
-  video: React.Ref<HTMLVideoElement>;
-  progress: React.Ref<HTMLInputElement>;
-  wrapper: React.Ref<HTMLDivElement>;
-  playpause: React.Ref<HTMLButtonElement>;
-  stop: React.Ref<HTMLButtonElement>;
-  fullScreen: React.Ref<HTMLButtonElement>;
+  video: Ref<HTMLVideoElement>;
+  progress: Ref<HTMLInputElement>;
+  wrapper: Ref<HTMLDivElement>;
+  playpause: Ref<HTMLButtonElement>;
+  stop: Ref<HTMLButtonElement>;
+  fullScreen: Ref<HTMLButtonElement>;
 };
 
 const VideoRenderer = (
   { name, src, videoProps, ...props }: VideoProps,
-  ref: React.Ref<VideoRefs>,
+  ref: Ref<VideoRefs>,
 ) => {
-  const [playing, setPlaying] = React.useState(false);
-  const [loadeddata, setLoadeddata] = React.useState(false);
-  const [progress, setProgress] = React.useState(0);
+  const [playing, setPlaying] = useState(false);
+  const [loadeddata, setLoadeddata] = useState(false);
+  const [progress, setProgress] = useState(0);
 
-  const player = React.useRef<HTMLVideoElement>(null);
-  const progressRef = React.useRef<HTMLInputElement>(null);
-  const wrapperRef = React.useRef<HTMLDivElement>(null);
-  const playPauseRef = React.useRef<HTMLButtonElement>(null);
-  const stopRef = React.useRef<HTMLButtonElement>(null);
-  const fullScreenRef = React.useRef<HTMLButtonElement>(null);
+  const player = useRef<HTMLVideoElement>(null);
+  const progressRef = useRef<HTMLInputElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const playPauseRef = useRef<HTMLButtonElement>(null);
+  const stopRef = useRef<HTMLButtonElement>(null);
+  const fullScreenRef = useRef<HTMLButtonElement>(null);
 
   const paths = arrayFy(src);
   const [pathname] = paths;
@@ -82,7 +89,7 @@ const VideoRenderer = (
   const normalizedName = name || pathname.replace(/^.*[\\/]/, '');
   const title = `${normalizedName}${!loadeddata ? ' (Opening)' : ''}`;
 
-  React.useImperativeHandle(ref, () => ({
+  useImperativeHandle(ref, () => ({
     get video() {
       return player;
     },
@@ -103,7 +110,7 @@ const VideoRenderer = (
     },
   }));
 
-  React.useEffect(() => {
+  useEffect(() => {
     player.current?.addEventListener(
       'ended',
       () => {
@@ -185,6 +192,7 @@ const VideoRenderer = (
         </div>
         <div className={styles.controls}>
           <Button
+            as="button"
             className={styles.controlBtn}
             disabled={!loadeddata}
             onClick={() => {
@@ -262,4 +270,4 @@ const VideoRenderer = (
   );
 };
 
-export const Video = React.forwardRef<VideoRefs, VideoProps>(VideoRenderer);
+export const Video = forwardRef<VideoRefs, VideoProps>(VideoRenderer);

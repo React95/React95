@@ -33,9 +33,9 @@ export default {
       defaultValue: '48px',
     },
   },
-} as Meta<AvatarProps>;
+} as Meta<AvatarProps<'div'>>;
 
-type Story = StoryObj<typeof Avatar>;
+type Story = StoryObj<AvatarProps<'div'>>;
 
 export const Simple = {
   render: (args: Story['args']) => <Avatar {...args} />,

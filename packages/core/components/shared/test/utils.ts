@@ -4,9 +4,10 @@ import {
   act,
   render,
 } from '@testing-library/react';
+import type { ReactElement } from 'react';
 
 const waitRender = async (
-  ui: React.ReactElement,
+  ui: ReactElement,
   options?: Omit<RenderOptions, 'queries'>,
 ): Promise<RenderResult> => {
   const { container, ...rest } = render(ui, options);

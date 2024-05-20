@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import type { CSSProperties, HTMLProps } from 'react';
 
 import * as styles from './Checkbox.css';
 
@@ -8,9 +9,9 @@ export type LabelProps = {
 export type CheckboxProps = {
   label?: string;
   children?: string;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 } & LabelProps &
-  React.HTMLProps<HTMLInputElement>;
+  HTMLProps<HTMLInputElement>;
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   ({ children, style, label, disabled = false, ...rest }, ref) => (

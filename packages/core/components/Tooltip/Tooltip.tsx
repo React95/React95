@@ -1,6 +1,8 @@
-import * as React from 'react';
-import { tip, wrapper } from './Tooltip.css';
+import React, { useState, forwardRef } from 'react';
+import type { HTMLAttributes, Ref } from 'react';
 import cn from 'classnames';
+
+import { tip, wrapper } from './Tooltip.css';
 
 function formatDate(date: Date): string {
   const monthNames = [
@@ -28,7 +30,7 @@ function formatDate(date: Date): string {
 export type TooltipProps = {
   text?: string;
   delay?: number;
-} & React.HTMLAttributes<HTMLDivElement>;
+} & HTMLAttributes<HTMLDivElement>;
 
 const TooltipRenderer = (
   {
@@ -37,10 +39,10 @@ const TooltipRenderer = (
     delay = 1000,
     ...rest
   }: TooltipProps,
-  ref: React.Ref<HTMLDivElement>,
+  ref: Ref<HTMLDivElement>,
 ) => {
-  const [show, setShow] = React.useState(false);
-  const [delayTimer, setDelayTimer] = React.useState(0);
+  const [show, setShow] = useState(false);
+  const [delayTimer, setDelayTimer] = useState(0);
 
   const handleEnter = () => {
     const timer = window.setTimeout(() => {
@@ -69,6 +71,6 @@ const TooltipRenderer = (
   );
 };
 
-export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
+export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(
   TooltipRenderer,
 );
