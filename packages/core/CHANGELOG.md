@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-alpha.11](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.10...@react95/core@8.0.0-alpha.11) (2024-05-21)
+
+
+### Features
+
+* better typings for `"as"` props ([3fe9a87](https://github.com/React95/React95/commit/3fe9a87c77601b62a9f51f45606d7487704e8765))
+
+
+
+
+
 # [8.0.0-alpha.10](https://github.com/React95/React95/compare/@react95/core@8.0.0-alpha.9...@react95/core@8.0.0-alpha.10) (2024-05-09)
 
 
