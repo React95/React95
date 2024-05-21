@@ -1,13 +1,20 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
+import type {
+  ElementType,
+  ReactElement,
+  ElementRef,
+  ForwardedRef,
+  ButtonHTMLAttributes,
+} from 'react';
 import cn from 'classnames';
 
 import { button } from './Button.css';
-import { Frame, FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps, fixedForwardRef } from '../Frame/Frame';
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
-  FrameProps;
+export type ButtonProps<TAs extends ElementType> =
+  ButtonHTMLAttributes<HTMLButtonElement> & FrameProps<TAs>;
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = fixedForwardRef<HTMLButtonElement, ButtonProps<'button'>>(
   (props, ref) => {
     return (
       <Frame
@@ -18,4 +25,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       />
     );
   },
-);
+) as <TAs extends ElementType = 'button'>(
+  props: ButtonProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

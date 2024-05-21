@@ -7,7 +7,7 @@ export default {
   title: 'Button',
   component: Button,
   tags: ['autodocs'],
-} as Meta<ButtonProps>;
+} as Meta<ButtonProps<'button'>>;
 
 export const Simple = {
   render: () => {

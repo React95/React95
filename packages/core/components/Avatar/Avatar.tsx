@@ -1,18 +1,24 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
+import type {
+  ElementType,
+  ReactElement,
+  ElementRef,
+  ForwardedRef,
+  ImgHTMLAttributes,
+} from 'react';
 
 import { avatar, imgStyle } from './Avatar.css';
 import { Frame, FrameProps } from '../Frame/Frame';
 
-export interface AvatarProps
-  extends Omit<
-      React.ImgHTMLAttributes<HTMLDivElement>,
-      'width' | 'color' | 'height'
-    >,
-    FrameProps {
-  circle?: boolean;
-}
+export type AvatarProps<TAs extends ElementType> = Omit<
+  ImgHTMLAttributes<HTMLDivElement>,
+  'width' | 'color' | 'height'
+> &
+  FrameProps<TAs> & {
+    circle?: boolean;
+  };
 
-export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+export const Avatar = forwardRef<HTMLDivElement, AvatarProps<'div'>>(
   (
     { src, srcSet, alt, circle, children, size = '48px', ...otherProps },
     ref,
@@ -25,4 +31,6 @@ export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
       )}
     </Frame>
   ),
-);
+) as <TAs extends ElementType = 'div'>(
+  props: AvatarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

@@ -10,9 +10,9 @@ export default {
   title: 'ProgressBar',
   component: ProgressBar,
   tags: ['autodocs'],
-} as Meta<ProgressBarProps>;
+} as Meta<ProgressBarProps<'div'>>;
 
-type Story = StoryObj<ProgressBarProps>;
+type Story = StoryObj<ProgressBarProps<'div'>>;
 
 export const Simple = {
   render: (args: Story['args']) => <ProgressBar {...args} />,

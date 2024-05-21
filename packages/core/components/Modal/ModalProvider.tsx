@@ -1,5 +1,6 @@
 import { nanoid } from 'nanoid';
-import * as React from 'react';
+import React, { useReducer, useState } from 'react';
+import type { FC, PropsWithChildren, Reducer } from 'react';
 
 import { ModalContext, Windows } from './ModalContext';
 
@@ -24,7 +25,7 @@ type WindowAction =
       id: string;
     };
 
-const windowStackReducer: React.Reducer<WindowStack, WindowAction> = (
+const windowStackReducer: Reducer<WindowStack, WindowAction> = (
   state,
   action,
 ) => {
@@ -47,11 +48,11 @@ const windowStackReducer: React.Reducer<WindowStack, WindowAction> = (
   }
 };
 
-export const ModalProvider: React.FC<
-  React.PropsWithChildren<ModalProviderProps>
-> = ({ children }) => {
-  const [windows, dispatch] = React.useReducer(windowStackReducer, {});
-  const [activeWindow, setActiveWindow] = React.useState<string>();
+export const ModalProvider: FC<PropsWithChildren<ModalProviderProps>> = ({
+  children,
+}) => {
+  const [windows, dispatch] = useReducer(windowStackReducer, {});
+  const [activeWindow, setActiveWindow] = useState<string>();
 
   const addWindows = (window: Windows) => {
     const id = nanoid();

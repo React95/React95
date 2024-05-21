@@ -39,9 +39,9 @@ export default {
       defaultValue: '$out',
     },
   },
-} as Meta<FrameProps>;
+} as Meta<FrameProps<'div'>>;
 
-type Story = StoryObj<FrameProps>;
+type Story = StoryObj<FrameProps<'div'>>;
 
 export const Simple: Story = {
   render: args => <Frame {...args} />,

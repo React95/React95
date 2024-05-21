@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState } from 'react';
+import type { FC, ReactElement, MouseEvent, KeyboardEvent } from 'react';
 
 import {
   Bat,
@@ -27,7 +28,7 @@ export const icons = {
   FILE_EXECUTABLE: BatExec,
 } as const;
 
-const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
+const NodeIcon: FC<{ hasChildren: boolean; isOpen: boolean }> = ({
   hasChildren,
   isOpen,
 }) => {
@@ -49,18 +50,15 @@ const NodeIcon: React.FC<{ hasChildren: boolean; isOpen: boolean }> = ({
 
 export type NodeProps = {
   label: string;
-  icon?: React.ReactElement;
+  icon?: ReactElement;
   id: number;
   children?: Array<NodeProps>;
-  onClick?(
-    event: React.MouseEvent | React.KeyboardEvent,
-    props: NodeProps,
-  ): void;
-} & Omit<FrameProps, 'id' | 'children'>;
+  onClick?(event: MouseEvent | KeyboardEvent, props: NodeProps): void;
+} & Omit<FrameProps<'li'>, 'id' | 'children'>;
 
 export type NodeRootProps = Omit<NodeProps, 'children'>;
 
-export const Node: React.FC<NodeProps> = ({
+export const Node: FC<NodeProps> = ({
   children = [],
   id,
   icon,
@@ -68,10 +66,10 @@ export const Node: React.FC<NodeProps> = ({
   onClick = () => {},
   ...rest
 }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const hasChildren = children.length > 0;
 
-  const onClickHandler = (event: React.MouseEvent | React.KeyboardEvent) => {
+  const onClickHandler = (event: MouseEvent | KeyboardEvent) => {
     onClick(event, {
       id,
       icon,
@@ -80,7 +78,7 @@ export const Node: React.FC<NodeProps> = ({
     });
   };
 
-  const onKeyDownHandler = (event: React.KeyboardEvent) => {
+  const onKeyDownHandler = (event: KeyboardEvent) => {
     if (event.key === ' ') {
       setIsOpen(!isOpen);
       onClickHandler(event);
@@ -123,14 +121,14 @@ export const Node: React.FC<NodeProps> = ({
   );
 };
 
-export const NodeRoot: React.FC<NodeRootProps> = ({
+export const NodeRoot: FC<NodeRootProps> = ({
   id,
   icon,
   label,
   onClick = () => {},
   ...rest
 }) => {
-  const onClickHandler = (event: React.MouseEvent | React.KeyboardEvent) => {
+  const onClickHandler = (event: MouseEvent | KeyboardEvent) => {
     onClick(event, {
       id,
       icon,
@@ -138,7 +136,7 @@ export const NodeRoot: React.FC<NodeRootProps> = ({
     });
   };
 
-  const onKeyDownHandler = (event: React.KeyboardEvent) => {
+  const onKeyDownHandler = (event: KeyboardEvent) => {
     if (event.key === ' ') {
       onClickHandler(event);
     }

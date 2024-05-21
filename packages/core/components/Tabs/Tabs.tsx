@@ -1,4 +1,5 @@
-import React, { forwardRef } from 'react';
+import React, { useState, forwardRef, Children } from 'react';
+import type { MouseEvent, ReactElement } from 'react';
 import cn from 'classnames';
 
 import { Tab, TabProps } from './Tab';
@@ -7,17 +8,17 @@ import { Frame, FrameProps } from '../Frame/Frame';
 
 export type TabsProps = {
   defaultActiveTab?: string;
-  children: React.ReactElement<TabProps> | Array<React.ReactElement<TabProps>>;
+  children: ReactElement<TabProps> | Array<ReactElement<TabProps>>;
 
-  onChange?(title: string, e: React.MouseEvent): void;
+  onChange?(title: string, e: MouseEvent): void;
 } & Omit<FrameProps<'ol'>, 'as'>;
 
 export const Tabs = forwardRef<HTMLOListElement, TabsProps>(
   ({ children, defaultActiveTab, onChange, ...rest }, ref) => {
-    const [firstTab] = React.Children.toArray(children) as Array<
-      React.ReactElement<TabProps>
+    const [firstTab] = Children.toArray(children) as Array<
+      ReactElement<TabProps>
     >;
-    const [activeTab, setActiveTab] = React.useState(
+    const [activeTab, setActiveTab] = useState(
       defaultActiveTab || firstTab.props.title,
     );
 
@@ -29,34 +30,31 @@ export const Tabs = forwardRef<HTMLOListElement, TabsProps>(
           as="ol"
           ref={ref}
         >
-          {React.Children.map(
-            children,
-            (child: React.ReactElement<TabProps>) => {
-              const { title, disabled } = child.props;
+          {Children.map(children, (child: ReactElement<TabProps>) => {
+            const { title, disabled } = child.props;
 
-              return (
-                <Tab
-                  key={title}
-                  {...child.props}
-                  activeTab={activeTab}
-                  onClick={e => {
-                    if (!disabled) {
-                      if (onChange) {
-                        onChange(title, e);
-                      }
-                      setActiveTab(title);
+            return (
+              <Tab
+                key={title}
+                {...child.props}
+                activeTab={activeTab}
+                onClick={e => {
+                  if (!disabled) {
+                    if (onChange) {
+                      onChange(title, e);
                     }
-                  }}
-                />
-              );
-            },
-          )}
+                    setActiveTab(title);
+                  }
+                }}
+              />
+            );
+          })}
         </Frame>
 
         <Frame className={navContainer} width={rest.width || rest.w}>
-          {React.Children.map(
+          {Children.map(
             children,
-            (child: React.ReactElement<TabProps>) =>
+            (child: ReactElement<TabProps>) =>
               child.props.title === activeTab && child.props.children,
           )}
         </Frame>

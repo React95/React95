@@ -1,4 +1,6 @@
 import React, { forwardRef } from 'react';
+import type { ForwardRefExoticComponent, RefAttributes } from 'react';
+
 import { Node, icons, NodeProps, NodeRoot } from './Node';
 import { tree } from './Tree.css';
 import { Frame, FrameProps } from '../Frame/Frame';
@@ -8,8 +10,8 @@ export type TreeProps = {
   root?: Omit<NodeProps, 'children'>;
 };
 
-type TreeComposition = React.ForwardRefExoticComponent<
-  TreeProps & React.RefAttributes<HTMLUListElement>
+type TreeComposition = ForwardRefExoticComponent<
+  TreeProps & RefAttributes<HTMLUListElement>
 > & {
   icons: typeof icons;
 } & Omit<FrameProps<'ul'>, 'as'>;

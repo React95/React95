@@ -1,4 +1,5 @@
 import React, { forwardRef, useContext, useState } from 'react';
+import type { ReactElement } from 'react';
 
 import { ModalContext } from '../Modal/ModalContext';
 import { Frame } from '../Frame/Frame';
@@ -10,7 +11,7 @@ import { Logo } from '@react95/icons';
 import { truncate } from './TaskBar.css';
 
 export type TaskBarProps = {
-  list?: React.ReactElement<typeof List>;
+  list?: ReactElement<typeof List>;
 };
 
 export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(

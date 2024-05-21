@@ -1,7 +1,8 @@
 import React, { forwardRef } from 'react';
+import type { InputHTMLAttributes } from 'react';
 import { field, icon, label, text } from './RadioButton.css';
 
-export type RadioButtonProps = React.InputHTMLAttributes<HTMLInputElement>;
+export type RadioButtonProps = InputHTMLAttributes<HTMLInputElement>;
 
 export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
   ({ children, disabled, ...props }, ref) => (

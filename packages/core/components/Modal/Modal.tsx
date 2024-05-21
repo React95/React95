@@ -1,4 +1,13 @@
-import * as React from 'react';
+import React, {
+  HTMLAttributes,
+  ReactElement,
+  Ref,
+  forwardRef,
+  useContext,
+  useEffect,
+  useState,
+  MouseEvent,
+} from 'react';
 
 import Draggable from 'react-draggable';
 
@@ -15,12 +24,12 @@ import help from './help.svg';
 
 export type ModalButtons = {
   value: string;
-  onClick(event: React.MouseEvent): void;
+  onClick(event: MouseEvent): void;
 };
 
 export type ModalMenu = {
   name: string;
-  list: React.ReactElement<typeof List>;
+  list: ReactElement<typeof List>;
 };
 
 export type ModalDefaultPosition = {
@@ -29,18 +38,18 @@ export type ModalDefaultPosition = {
 };
 
 export type ModalProps = {
-  icon?: React.ReactElement;
-  onClose(event: React.MouseEvent): void;
-  onHelp?(event: React.MouseEvent): void;
+  icon?: ReactElement;
+  onClose(event: MouseEvent): void;
+  onHelp?(event: MouseEvent): void;
   title: string;
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
   defaultPosition?: DraggableProps['defaultPosition'];
   positionOffset?: DraggableProps['positionOffset'];
   hasWindowButton?: boolean;
-  buttonsAlignment?: FrameProps['justifyContent'];
-} & Omit<FrameProps, 'as'> &
-  React.HTMLAttributes<HTMLDivElement>;
+  buttonsAlignment?: FrameProps<'div'>['justifyContent'];
+} & Omit<FrameProps<'div'>, 'as'> &
+  HTMLAttributes<HTMLDivElement>;
 
 const ModalRenderer = (
   {
@@ -59,7 +68,7 @@ const ModalRenderer = (
     width,
     ...rest
   }: ModalProps,
-  ref: React.Ref<HTMLDivElement>,
+  ref: Ref<HTMLDivElement>,
 ) => {
   const {
     addWindows,
@@ -67,12 +76,12 @@ const ModalRenderer = (
     updateWindow,
     setActiveWindow,
     activeWindow,
-  } = React.useContext(ModalContext);
-  const [id, setId] = React.useState<string | null>(null);
-  const [menuOpened, setMenuOpened] = React.useState('');
-  const [isActive, setIsActive] = React.useState(false);
+  } = useContext(ModalContext);
+  const [id, setId] = useState<string | null>(null);
+  const [menuOpened, setMenuOpened] = useState('');
+  const [isActive, setIsActive] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!id) {
       const newId = addWindows({ icon, title, hasButton });
       if (newId) {
@@ -83,14 +92,14 @@ const ModalRenderer = (
       updateWindow(id, { icon, title, hasButton });
     }
   }, [id, icon, title, hasButton]);
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       if (id) {
         removeWindow(id);
       }
     };
   }, [id]);
-  React.useEffect(() => setIsActive(id === activeWindow), [id, activeWindow]);
+  useEffect(() => setIsActive(id === activeWindow), [id, activeWindow]);
 
   return (
     <Draggable
@@ -168,9 +177,7 @@ const ModalRenderer = (
   );
 };
 
-export const Modal = React.forwardRef<HTMLDivElement, ModalProps>(
-  ModalRenderer,
-);
+export const Modal = forwardRef<HTMLDivElement, ModalProps>(ModalRenderer);
 
 Modal.displayName = 'Modal';
 

@@ -1,14 +1,20 @@
 import React, { forwardRef } from 'react';
+import type {
+  ElementType,
+  ReactElement,
+  ElementRef,
+  ForwardedRef,
+} from 'react';
 import cn from 'classnames';
 
 import { Frame, FrameProps } from '../Frame/Frame';
 import * as styles from './ProgressBar.css';
 
-export type ProgressBarProps = {
+export type ProgressBarProps<TAs extends ElementType> = {
   percent?: number;
-} & FrameProps;
+} & FrameProps<TAs>;
 
-export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(
+export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps<'div'>>(
   ({ width = '150px', percent = 0, ...rest }, ref) => (
     <Frame
       {...rest}
@@ -22,4 +28,6 @@ export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(
       </Frame>
     </Frame>
   ),
-);
+) as <TAs extends ElementType = 'div'>(
+  props: ProgressBarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;
