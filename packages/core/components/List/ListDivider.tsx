@@ -1,16 +1,13 @@
-import styled from '@xstyled/styled-components';
+import React, { forwardRef } from 'react';
 
-const Divider = styled.li`
-  height: 1px;
-  border-top: 1;
-  border-top-color: borderDark;
-  border-bottom: 1;
-  border-bottom-color: borderLightest;
+import { Frame, FrameProps } from '../Frame/Frame';
+import { divider } from './List.css';
+import cn from 'classnames';
 
-  width: 98%;
-  margin-left: 2;
-`;
+export type DividerProps = Omit<FrameProps<'li'>, 'as'>;
+
+export const Divider = forwardRef<HTMLLIElement, DividerProps>((rest, ref) => (
+  <Frame {...rest} ref={ref} className={cn(divider, rest.className)} as="li" />
+));
 
 Divider.displayName = 'List.Divider';
-
-export default Divider;

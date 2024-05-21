@@ -2,8 +2,12 @@ const path = require('path');
 const fs = require('fs-extra');
 
 const pkg = require(path.resolve('./package.json'));
-const includeTypesFolder = process.argv.find(arg => arg.includes('types'));
+const args = require('minimist')(process.argv.slice(2));
+
 const outDir = './dist';
+
+const cjs = args.moduleExtensions ? 'cjs/index.cjs' : 'cjs';
+const esm = args.moduleExtensions ? 'esm/index.mjs' : 'esm';
 
 const copyFile = file => {
   const buildPath = path.resolve(outDir, path.basename(file));
@@ -25,10 +29,10 @@ const createPackageJson = () => {
 
   const newPackageData = {
     ...packageDataOther,
-    main: './cjs',
-    module: './esm',
+    main: cjs,
+    module: esm,
     private: false,
-    ...(includeTypesFolder && { types: '@types' }),
+    ...(args.types && { types: 'types/index.d.ts' }),
   };
 
   const buildPath = path.resolve(`${outDir}/package.json`);
@@ -42,7 +46,8 @@ const run = () => {
   const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
 
   console.log(
-    `Created ${distFiles.map(file => file).join(', ')} in ${pkg.name
+    `Created ${distFiles.map(file => file).join(', ')} in ${
+      pkg.name
     }${outDir.replace('.', '')}`,
   );
 };

@@ -1,14 +1,15 @@
-import { User2, User3, User4, User5 } from '@react95/icons';
-import styled from '@xstyled/styled-components';
 import React, { forwardRef, useEffect } from 'react';
+import type { FC } from 'react';
+import { User2, User3, User4, User5 } from '@react95/icons';
+import * as styles from './Alert.css';
 
-import Modal, { ModalProps } from '../Modal/Modal';
+import { Modal, ModalProps } from '../Modal/Modal';
 
 import sound from './assets/chord.mp3';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
-const RenderImage: React.FC<{ option: string }> = ({ option }) => {
+const RenderImage: FC<{ option: string }> = ({ option }) => {
   switch (option) {
     case 'info':
       return <User5 width={32} height={32} variant="32x32_4" />;
@@ -22,30 +23,14 @@ const RenderImage: React.FC<{ option: string }> = ({ option }) => {
   }
 };
 
-const Message = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const IconWrapper = styled.div`
-  padding: 7 15 7 7;
-`;
-
-const Dialog = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export type AlertProps = Omit<ModalProps, 'closeModal'> & {
+export type AlertProps = ModalProps & {
   message: string;
-  closeAlert: ModalProps['closeModal'];
   hasSound?: boolean;
   type?: AlertType;
 };
 
-const Alert = forwardRef<HTMLDivElement, AlertProps>(
-  ({ type = 'error', message, closeAlert, hasSound, ...rest }, ref) => {
+export const Alert = forwardRef<HTMLDivElement, AlertProps>(
+  ({ type = 'error', message, hasSound, ...rest }, ref) => {
     if (hasSound) {
       useEffect(() => {
         const audio = new Audio(sound);
@@ -54,30 +39,21 @@ const Alert = forwardRef<HTMLDivElement, AlertProps>(
     }
 
     return (
-      <Modal
-        closeModal={closeAlert}
-        height="120"
-        hasWindowButton={false}
-        {...rest}
-        ref={ref}
-      >
-        <Dialog>
-          <IconWrapper>
+      <Modal height="120" hasWindowButton={false} {...rest} ref={ref}>
+        <div className={styles.dialog}>
+          <div className={styles.icon}>
             <RenderImage option={type} />
-          </IconWrapper>
-          <Message>{message}</Message>
-        </Dialog>
+          </div>
+          <div className={styles.message}>{message}</div>
+        </div>
       </Modal>
     );
   },
 );
 
-Alert.displayName = 'Alert';
-
 Alert.defaultProps = {
   type: 'error',
   buttons: [{ value: 'OK', onClick: () => {} }],
-  closeAlert: () => {},
   buttonsAlignment: 'center',
   positionOffset: {
     x:
@@ -87,9 +63,7 @@ Alert.defaultProps = {
     y:
       typeof window == 'undefined'
         ? 0
-        : Math.floor(window.innerHeight / 2) - 80,
+        : Math.floor(window.innerHeight / 2) - 100,
   },
   hasSound: false,
 };
-
-export default Alert;

@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.production.json",
+  "compilerOptions": {
+    "outDir": "dist/types/themes"
+  },
+  "files": ["./components/themes/all.ts"]
+}

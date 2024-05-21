@@ -1,25 +1,25 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Checkbox from '../components/Checkbox';
-import Dropdown from '../components/Dropdown';
-import Fieldset from '../components/Fieldset';
-import Input from '../components/Input';
-import { Tab, Tabs } from '../components/Tabs';
-import { TabsProps } from '../components/Tabs/Tabs';
+import { Checkbox, Dropdown, Fieldset, Input } from '../components';
+import { Tab } from '../components/Tabs/Tab';
+import { Tabs, TabsProps } from '../components/Tabs/Tabs';
 
 export default {
   title: 'Tabs, Tab',
   component: Tabs,
+  tags: ['autodocs'],
   subcomponents: { Tab },
 } as Meta<TabsProps>;
 
 export const Simple = {
   render: () => (
-    <Tabs style={{ width: 350 }} defaultActiveTab="Compatibility">
+    <Tabs width="350px" defaultActiveTab="Compatibility">
       <Tab title="General">
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
-          <Checkbox checked>Log on to Windows NT domain</Checkbox>
+          <Checkbox readOnly checked>
+            Log on to Windows NT domain
+          </Checkbox>
           <br />
           <p style={{ marginLeft: 22, marginTop: 4 }}>
             When you log on, your password will be verified in a Windows NT
@@ -50,7 +50,7 @@ export const Simple = {
         </p>
 
         <Fieldset legend="Compatibility mode" style={{ marginBottom: '1.6em' }}>
-          <Checkbox checked>
+          <Checkbox readOnly checked>
             Run this program in compatibility mode for:
           </Checkbox>
           <Dropdown style={{ width: 200 }} options={['Windows 95']} />

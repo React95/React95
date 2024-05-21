@@ -1,61 +1,36 @@
-import * as React from 'react';
-import styled, { css } from '@xstyled/styled-components';
-import Frame from '../Frame/Frame';
+import React, { forwardRef } from 'react';
+import type {
+  ElementType,
+  ReactElement,
+  ElementRef,
+  ForwardedRef,
+  ImgHTMLAttributes,
+} from 'react';
 
-export interface AvatarProps
-  extends Omit<
-    React.ImgHTMLAttributes<HTMLDivElement>,
-    'width' | 'color' | 'height'
-  > {
-  circle?: boolean;
-  size?: number;
-}
+import { avatar, imgStyle } from './Avatar.css';
+import { Frame, FrameProps } from '../Frame/Frame';
 
-const Image = styled.img`
-  max-width: 100%;
-`;
+export type AvatarProps<TAs extends ElementType> = Omit<
+  ImgHTMLAttributes<HTMLDivElement>,
+  'width' | 'color' | 'height'
+> &
+  FrameProps<TAs> & {
+    circle?: boolean;
+  };
 
-const StyledAvatar = styled(Frame)<AvatarProps>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: bold;
-  overflow: hidden;
-  margin-right: 1;
-  margin-bottom: 1;
-
-  box-shadow: unset;
-
-  ${({ circle, size = 48 }) => css`
-    border-radius: ${circle ? '50%' : 0};
-
-    width: ${size};
-    height: ${size};
-  `}
-
-  ${({ circle }) =>
-    circle
-      ? css`
-          border-style: solid;
-          border-width: 1;
-          border-top-color: borderDark;
-          border-right-color: borderLightest;
-          border-bottom-color: borderLightest;
-          border-left-color: borderDark;
-        `
-      : css`
-          box-shadow: in;
-          padding-left: 1;
-        `}
-`;
-
-const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
-  ({ src, srcSet, alt, circle, children, ...otherProps }, ref) => (
-    <StyledAvatar circle={circle} ref={ref} {...otherProps}>
-      {src || srcSet ? <Image src={src} srcSet={srcSet} alt={alt} /> : children}
-    </StyledAvatar>
+export const Avatar = forwardRef<HTMLDivElement, AvatarProps<'div'>>(
+  (
+    { src, srcSet, alt, circle, children, size = '48px', ...otherProps },
+    ref,
+  ) => (
+    <Frame className={avatar({ circle })} ref={ref} {...otherProps} size={size}>
+      {src || srcSet ? (
+        <img className={imgStyle} src={src} srcSet={srcSet} alt={alt} />
+      ) : (
+        children
+      )}
+    </Frame>
   ),
-);
-
-export default Avatar;
+) as <TAs extends ElementType = 'div'>(
+  props: AvatarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

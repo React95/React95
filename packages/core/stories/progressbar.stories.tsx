@@ -1,17 +1,25 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import * as React from 'react';
 
-import ProgressBar from '../components/ProgressBar';
+import {
+  ProgressBar,
+  ProgressBarProps,
+} from '../components/ProgressBar/ProgressBar';
 
 export default {
   title: 'ProgressBar',
   component: ProgressBar,
   tags: ['autodocs'],
-} as Meta<typeof ProgressBar>;
+} as Meta<ProgressBarProps<'div'>>;
+
+type Story = StoryObj<ProgressBarProps<'div'>>;
 
 export const Simple = {
-  render: () => <ProgressBar width={200} percent={49} />,
-
+  render: (args: Story['args']) => <ProgressBar {...args} />,
+  args: {
+    width: '200px',
+    percent: 49,
+  },
   parameters: {
     design: {
       type: 'figma',

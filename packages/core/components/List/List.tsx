@@ -1,44 +1,23 @@
-import styled, { th } from '@xstyled/styled-components';
+import React, { forwardRef } from 'react';
+import cn from 'classnames';
 
-import ListItem from './ListItem';
-import Divider from './ListDivider';
+import { ListItem } from './ListItem';
+import { Divider } from './ListDivider';
+import { Frame, FrameProps } from '../Frame/Frame';
+import { list } from './List.css';
 
-type ListProps = {
-  width?: number;
-};
+export type ListProps = Omit<FrameProps<'ul'>, 'as'>;
 
-const StyledList = styled.ul<ListProps>`
-  background-color: material;
-  padding: 5 20 6;
-  border: none;
+const ListRenderer = forwardRef<HTMLUListElement, ListProps>((rest, ref) => (
+  <Frame {...rest} ref={ref} className={cn(list, rest.className)} as="ul" />
+));
 
-  margin: 0;
-  padding: 2;
-  list-style: none;
-
-  box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
-    inset 0 0 0 1px ${th('colors.borderDark')},
-    1px 1px 0 1px ${th('colors.borderDarkest')};
-
-  ${({ width }) => `
-    width: ${width}px;
-  `};
-`;
-
-export type IListProps = typeof StyledList & {
+export type IListProps = typeof ListRenderer & {
   Item: typeof ListItem;
   Divider: typeof Divider;
 };
 
-const List: IListProps = Object.assign(StyledList, {
+export const List: IListProps = Object.assign(ListRenderer, {
   Item: ListItem,
   Divider: Divider,
 });
-
-List.displayName = 'List';
-
-List.defaultProps = {
-  width: 200,
-};
-
-export default List;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 import { fireEvent, render } from '../shared/test/utils';
-import Tab from './Tab';
-import Tabs from './Tabs';
+import { Tab } from './Tab';
+import { Tabs } from './Tabs';
 
 describe('<Tabs />', () => {
   function onClick() {}

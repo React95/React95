@@ -1,12 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist/@types",
+    "outDir": "dist/types",
     "jsx": "react",
     "declaration": true,
     "emitDeclarationOnly": true
   },
-  "include": ["components", "types", "../../types"],
+  "include": ["../../types"],
   "exclude": [
     "node_modules",
     "components/**/*test.tsx",

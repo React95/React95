@@ -1,43 +1,30 @@
-import styled, { th } from '@xstyled/styled-components';
+import React from 'react';
+import type {
+  ElementType,
+  ReactElement,
+  ElementRef,
+  ForwardedRef,
+  ButtonHTMLAttributes,
+} from 'react';
+import cn from 'classnames';
 
-const Button = styled.button`
-  background-color: material;
-  padding: 7 20 5;
-  border: none;
-  color: materialText;
+import { button } from './Button.css';
+import { Frame, FrameProps, fixedForwardRef } from '../Frame/Frame';
 
-  font-size: 12px;
+export type ButtonProps<TAs extends ElementType> =
+  ButtonHTMLAttributes<HTMLButtonElement> & FrameProps<TAs>;
 
-  box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
-    inset 0 0 0 1px ${th('colors.borderDark')},
-    1px 1px 0 0px ${th('colors.borderDarkest')};
-
-  &:disabled {
-    color: materialTextDisabled;
-  }
-
-  &:focus {
-    outline: ${th('space.1')}px dotted ${th('colors.materialText')};
-    outline-offset: -${th('space.5')}px;
-
-    box-shadow: inset 1px 1px 0px 1px ${th('colors.borderLightest')},
-      inset -0.5px -0.5px 0px 1px ${th('colors.borderDark')},
-      1px 1px 0 1px ${th('colors.borderDarkest')};
-  }
-
-  &:active {
-    padding: 8 20 4;
-
-    outline: ${th('space.1')}px dotted ${th('colors.borderDarkest')};
-    outline-offset: -${th('space.5')}px;
-
-    box-shadow: inset 0 0 0 1px ${th('colors.borderDark')},
-      0 0 0 1px ${th('colors.borderDarkest')};
-  }
-`;
-
-Button.defaultProps = {
-  children: 'Ok',
-};
-
-export default Button;
+export const Button = fixedForwardRef<HTMLButtonElement, ButtonProps<'button'>>(
+  (props, ref) => {
+    return (
+      <Frame
+        as="button"
+        {...props}
+        className={cn(button, props.className)}
+        ref={ref}
+      />
+    );
+  },
+) as <TAs extends ElementType = 'button'>(
+  props: ButtonProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

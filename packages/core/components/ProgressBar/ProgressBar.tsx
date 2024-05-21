@@ -1,77 +1,33 @@
 import React, { forwardRef } from 'react';
-import styled, { css, th } from '@xstyled/styled-components';
+import type {
+  ElementType,
+  ReactElement,
+  ElementRef,
+  ForwardedRef,
+} from 'react';
+import cn from 'classnames';
 
-export type ProgressBarProps = {
-  width?: number;
+import { Frame, FrameProps } from '../Frame/Frame';
+import * as styles from './ProgressBar.css';
+
+export type ProgressBarProps<TAs extends ElementType> = {
   percent?: number;
-};
+} & FrameProps<TAs>;
 
-const Wrapper = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
-  height: 20px;
-
-  position: relative;
-
-  text-align: center;
-`;
-
-const WhiteBar = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
-  height: 20px;
-  line-height: 20px;
-
-  border-left: 1;
-  border-left-color: borderDark;
-
-  border-top: 1;
-  border-top-color: borderDark;
-
-  background-color: inputBackground;
-  color: materialText;
-
-  ${css`
-    box-shadow: inset -1px -1px 0 0 ${th('colors.material')},
-      inset 1px 1px 0 0 ${th('colors.borderDarkest')},
-      0.5px 0.5px 0 0.5px ${th('colors.borderLightest')};
-  `}
-`;
-
-const Container = styled.div<Pick<ProgressBarProps, 'percent'>>`
-  width: ${({ percent }) => percent}%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  overflow: hidden;
-`;
-
-const Progress = styled.div<Pick<ProgressBarProps, 'width'>>`
-  width: ${({ width }) => width}px;
-  height: 17px;
-  line-height: 18px;
-
-  margin-left: 2;
-  margin-top: 2;
-
-  background-color: progress;
-  color: ${th('colors.materialTextInvert')};
-`;
-
-const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(
-  ({ width, percent, ...rest }, ref) => (
-    <Wrapper width={width} {...rest} ref={ref}>
-      <WhiteBar width={width}>{`${percent}%`}</WhiteBar>
-      <Container percent={percent}>
-        <Progress width={width}>{`${percent}%`}</Progress>
-      </Container>
-    </Wrapper>
+export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps<'div'>>(
+  ({ width = '150px', percent = 0, ...rest }, ref) => (
+    <Frame
+      {...rest}
+      width={width}
+      className={cn(styles.wrapper, rest.className)}
+      ref={ref}
+    >
+      <Frame className={styles.whiteBar} width={width}>{`${percent}%`}</Frame>
+      <Frame className={styles.container} width={`${percent}%`}>
+        <Frame className={styles.progress} width={width}>{`${percent}%`}</Frame>
+      </Frame>
+    </Frame>
   ),
-);
-
-ProgressBar.defaultProps = {
-  width: 150,
-  percent: 0,
-};
-
-export default ProgressBar;
+) as <TAs extends ElementType = 'div'>(
+  props: ProgressBarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

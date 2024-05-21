@@ -1,10 +1,10 @@
 import { Bat } from '@react95/icons';
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
-import List from '../List';
+import { List } from '../List/List';
 import { fireEvent, waitRender } from '../shared/test/utils';
-import Modal from './Modal';
-import ModalContext from './ModalContext';
+import { Modal } from './Modal';
+import { ModalContext } from './ModalContext';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {
@@ -13,7 +13,7 @@ describe('<Modal />', () => {
         <Modal
           icon={<Bat />}
           title="file.bat"
-          closeModal={() => {}}
+          onClose={() => {}}
           buttons={[
             { value: 'Ok', onClick: () => {} },
             { value: 'Cancel', onClick: () => {} },
@@ -48,7 +48,7 @@ describe('<Modal />', () => {
         <Modal
           icon={<Bat />}
           title="file.bat"
-          closeModal={() => {}}
+          onClose={() => {}}
           buttons={[
             { value: 'Ok', onClick: () => {} },
             { value: 'Cancel', onClick: () => {} },
@@ -66,7 +66,7 @@ describe('<Modal />', () => {
         <Modal
           icon={<Bat />}
           title="file.bat"
-          closeModal={() => {}}
+          onClose={() => {}}
           buttons={[
             { value: 'Ok', onClick: () => {} },
             { value: 'Cancel', onClick: () => {} },
@@ -86,7 +86,7 @@ describe('<Modal />', () => {
           title="file.bat"
           width="300"
           height="200"
-          closeModal={() => {}}
+          onClose={() => {}}
         >
           Hello
         </Modal>,
@@ -111,7 +111,7 @@ describe('<Modal />', () => {
             title="file.bat"
             width="300"
             height="200"
-            closeModal={() => {}}
+            onClose={() => {}}
           >
             Hello
           </Modal>
@@ -121,18 +121,18 @@ describe('<Modal />', () => {
     });
   });
 
-  describe('closeModal prop', () => {
-    it('should call closeModal when Modal close button is clicked', async () => {
-      const closeModalMock = vi.fn();
-      const { getByText } = await waitRender(
-        <Modal icon={<Bat />} title="file.bat" closeModal={closeModalMock}>
+  describe('onClose prop', () => {
+    it('should call onClose when Modal close button is clicked', async () => {
+      const onCloseMock = vi.fn();
+      const { getByRole } = await waitRender(
+        <Modal icon={<Bat />} title="file.bat" onClose={onCloseMock}>
           Hello
         </Modal>,
       );
 
-      fireEvent.click(getByText('X'));
+      fireEvent.click(getByRole('button'));
 
-      expect(closeModalMock).toHaveBeenCalled();
+      expect(onCloseMock).toHaveBeenCalled();
     });
   });
 
@@ -144,7 +144,7 @@ describe('<Modal />', () => {
           icon={<Bat />}
           title="file.bat"
           buttons={[{ value: buttonText, onClick: () => {} }]}
-          closeModal={() => {}}
+          onClose={() => {}}
         >
           Hello
         </Modal>,
@@ -163,7 +163,7 @@ describe('<Modal />', () => {
             { value: 'button 2', onClick: () => {} },
             { value: 'button 3', onClick: () => {} },
           ]}
-          closeModal={() => {}}
+          onClose={() => {}}
         >
           Hello
         </Modal>,
@@ -178,7 +178,7 @@ describe('<Modal />', () => {
         <Modal
           title="file.bat"
           buttons={[{ value: 'Ok', onClick: onClickMock }]}
-          closeModal={() => {}}
+          onClose={() => {}}
         >
           Hello
         </Modal>,
@@ -195,7 +195,7 @@ describe('<Modal />', () => {
       const { getByText } = await waitRender(
         <Modal
           title="file.bat"
-          closeModal={() => {}}
+          onClose={() => {}}
           menu={[
             {
               name: 'Menu Text',
@@ -217,7 +217,7 @@ describe('<Modal />', () => {
       const { getByText } = await waitRender(
         <Modal
           title="file.bat"
-          closeModal={() => {}}
+          onClose={() => {}}
           menu={[
             {
               name: 'Edit',

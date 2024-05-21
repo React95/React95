@@ -1,83 +1,19 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`<Avatar /> > Snapshots > should match snapshot 1`] = `
-.c0 {
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-weight: bold;
-  overflow: hidden;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  box-shadow: unset;
-  border-radius: 0;
-  width: 48px;
-  height: 48px;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
-  padding-left: 1px;
-}
-
 <div>
   <div
-    class="c0 c1"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0"
+    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
   />
 </div>
 `;
 
 exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with children 1`] = `
-.c0 {
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-weight: bold;
-  overflow: hidden;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  box-shadow: unset;
-  border-radius: 0;
-  width: 48px;
-  height: 48px;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
-  padding-left: 1px;
-}
-
 <div>
   <div
-    class="c0 c1"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0"
+    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
   >
     <p>
       GG
@@ -87,46 +23,10 @@ exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with c
 `;
 
 exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with children and circle 1`] = `
-.c0 {
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-weight: bold;
-  overflow: hidden;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  box-shadow: unset;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #868a8e;
-  border-right-color: #ffffff;
-  border-bottom-color: #ffffff;
-  border-left-color: #868a8e;
-}
-
 <div>
   <div
-    class="c0 c1"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0 Avatar_avatar_circle_true__vljy2n1"
+    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
   >
     <p>
       GG
@@ -136,50 +36,14 @@ exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with c
 `;
 
 exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with src and alt prop 1`] = `
-.c0 {
-  width: auto;
-  height: auto;
-  background-color: #c3c7cb;
-  --x-shadow: inset 0.5px 0.5px 0px 0.5px #ffffff, inset 0 0 0 1px #868a8e, 1px 0px 0 0px #000000, 0px 1px 0 0px #000000, 1px 1px 0 0px #000000;
-  box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow);
-}
-
-.c2 {
-  max-width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-weight: bold;
-  overflow: hidden;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  box-shadow: unset;
-  border-radius: 0;
-  width: 48px;
-  height: 48px;
-  box-shadow: inset 0px 0px 0px 0px, inset 1px 1px 0px 0px #868a8e, 0.5px 0.5px 0px 0.5px #ffffff;
-  padding-left: 1px;
-}
-
 <div>
   <div
-    class="c0 c1"
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0"
+    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
   >
     <img
       alt="React95 brand logo"
-      class="c2"
+      class="Avatar_imgStyle__vljy2n2"
       src="https://github.com/React95.png"
     />
   </div>

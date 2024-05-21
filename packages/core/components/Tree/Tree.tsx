@@ -1,29 +1,34 @@
 import React, { forwardRef } from 'react';
-import styled from 'styled-components';
-import Node, { icons, NodeProps } from './Node';
+import type { ForwardRefExoticComponent, RefAttributes } from 'react';
 
-const TreeParent = styled.ul`
-  padding: 0;
-`;
+import { Node, icons, NodeProps, NodeRoot } from './Node';
+import { tree } from './Tree.css';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 export type TreeProps = {
   data: Array<NodeProps>;
+  root?: Omit<NodeProps, 'children'>;
 };
 
-type TreeComposition = React.ForwardRefExoticComponent<
-  TreeProps & React.RefAttributes<HTMLUListElement>
+type TreeComposition = ForwardRefExoticComponent<
+  TreeProps & RefAttributes<HTMLUListElement>
 > & {
   icons: typeof icons;
-};
+} & Omit<FrameProps<'ul'>, 'as'>;
 
-const Tree = forwardRef<HTMLUListElement, TreeProps>(
-  ({ data, ...rest }, ref) => (
-    <TreeParent {...rest} ref={ref}>
-      {data.map(dataNode => (
-        <Node key={dataNode.id} {...dataNode} />
-      ))}
-    </TreeParent>
-  ),
+export const Tree = forwardRef<HTMLUListElement, TreeProps>(
+  ({ data, root, ...rest }, ref) => {
+    return (
+      <>
+        {root && <NodeRoot {...root} />}
+        <Frame {...rest} className={tree} as="ul" ref={ref}>
+          {data.map(dataNode => (
+            <Node key={dataNode.id} {...dataNode} />
+          ))}
+        </Frame>
+      </>
+    );
+  },
 ) as TreeComposition;
 
 Tree.defaultProps = {
@@ -31,5 +36,3 @@ Tree.defaultProps = {
 };
 
 Tree.icons = icons;
-
-export default Tree;

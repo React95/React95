@@ -1,9 +1,7 @@
 import { readdirSync } from 'fs';
-import { mergeConfig } from 'vite';
 
 export default {
   staticDirs: ['../components/GlobalStyle'],
-  // stories: [, '../stories/(?!all)*.stories.tsx'],
   stories: [
     '../stories/all.stories.tsx',
     ...readdirSync('./stories')
@@ -16,13 +14,13 @@ export default {
     {
       name: '@storybook/addon-essentials',
       options: {
+        controls: true,
         actions: false,
-        controls: false,
       },
     },
     '@storybook/addon-storysource',
+    './src/theme-changer',
     '@storybook/addon-designs',
-    './src/theme-changer/register',
   ],
   framework: {
     name: '@storybook/react-vite',
@@ -30,10 +28,5 @@ export default {
   },
   docs: {
     autodocs: 'tag',
-  },
-  viteFinal: async function viteFinal(config) {
-    return mergeConfig(config, {
-      build: { chunkSizeWarningLimit: 1600 },
-    });
   },
 };

@@ -3,35 +3,11 @@ import type { Meta } from '@storybook/react';
 import copy from 'copy-to-clipboard';
 import * as React from 'react';
 
-import { Frame } from '../components';
+import { Frame, Button } from '../components';
 
 import { icons } from '@react95/icons/src/iconDemos';
-import styled from '@xstyled/styled-components';
 
-const IconContainer = styled.button`
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  padding: 4;
-  min-width: 150px;
-  border: none;
-  background-color: transparent;
-
-  i,
-  :hover {
-    cursor: pointer;
-  }
-
-  i {
-    margin-bottom: 8;
-  }
-
-  :hover {
-    box-shadow: out;
-  }
-`;
+import * as styles from './icons.stories.css';
 
 export default {
   title: 'Icon',
@@ -65,7 +41,14 @@ export const All = {
     return (
       <div>
         <p>We have, currently, {icons.length} icons</p>
-        <Frame p={12} display="flex" flexWrap="wrap" gap="4">
+        <Frame
+          p="$12"
+          display="flex"
+          flexWrap="wrap"
+          gap="4px"
+          boxShadow="$out"
+          backgroundColor="$material"
+        >
           {icons.map(({ component: Component, componentName, variants }) => {
             return (
               <>
@@ -73,7 +56,13 @@ export const All = {
                   const [size] = variantName.split('x');
 
                   return (
-                    <IconContainer key={variantName}>
+                    <Button
+                      key={variantName}
+                      className={styles.btn}
+                      onClick={() =>
+                        copyToClipboard(componentName, variantName)
+                      }
+                    >
                       <Component
                         key={variantName}
                         style={{
@@ -84,14 +73,11 @@ export const All = {
                         }}
                         // eslint-disable-next-line
                         variant={variantName as any}
-                        onClick={() =>
-                          copyToClipboard(componentName, variantName)
-                        }
                       />
                       {componentName}
                       <br />
                       {variantName}
-                    </IconContainer>
+                    </Button>
                   );
                 })}
               </>

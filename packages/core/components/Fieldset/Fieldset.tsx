@@ -1,42 +1,18 @@
 import React, { forwardRef } from 'react';
-import styled, { th } from '@xstyled/styled-components';
-
-const Field = styled.fieldset`
-  border-top-style: groove;
-  border-top-width: 2;
-  border-top-color: borderLighter;
-
-  border-left-style: groove;
-  border-left-width: 2;
-  border-left-color: borderLighter;
-
-  border-bottom-style: solid;
-  border-bottom-width: 1;
-  border-bottom-color: borderDark;
-
-  border-right-style: solid;
-  border-right-width: 1;
-  border-right-color: borderDark;
-
-  box-shadow: 1px 1px 0 0 ${th('colors.borderLighter')};
-`;
-
-const Legend = styled.legend`
-  padding-left: 4px;
-  padding-right: 1px;
-`;
+import type { HTMLProps } from 'react';
+import * as styles from './Fieldset.css';
+import { Frame, FrameProps } from '../Frame/Frame';
 
 export type FieldSetProps = {
   legend?: string;
-} & React.HTMLAttributes<HTMLFieldSetElement>;
+} & HTMLProps<HTMLFieldSetElement> &
+  Omit<FrameProps<'fieldset'>, 'as'>;
 
-const Fieldset = forwardRef<HTMLFieldSetElement, FieldSetProps>(
+export const Fieldset = forwardRef<HTMLFieldSetElement, FieldSetProps>(
   ({ legend, children, ...rest }, ref) => (
-    <Field {...rest} ref={ref}>
-      {legend && <Legend>{legend}</Legend>}
+    <Frame {...rest} as="fieldset" ref={ref} className={styles.field}>
+      {legend && <legend className={styles.legend}>{legend}</legend>}
       {children}
-    </Field>
+    </Frame>
   ),
 );
-
-export default Fieldset;

@@ -1,13 +1,13 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import Dropdown from '../components/Dropdown';
+import { Dropdown, DropdownProps } from '../components/Dropdown/Dropdown';
 
 export default {
   title: 'Dropdown',
   component: Dropdown,
   tags: ['autodocs'],
-} as Meta<typeof Dropdown>;
+} as Meta<DropdownProps>;
 
 export const Simple = {
   render: () => <Dropdown />,
