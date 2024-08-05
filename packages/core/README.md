@@ -30,6 +30,19 @@ import '@react95/core/GlobalStyle';
 import '@react95/core/themes/win95.css';
 ```
 
+If it doesn't work, complete the import like this:
+
+```js
+import * as GlobalStyle from '@react95/core/GlobalStyle';
+import * as themes from '@react95/core/themes/win95.css';
+```
+
+And use them at least once somewhere. The easiest way to do this is by:
+
+```js
+console.log({ GlobalStyle }, { themes });
+```
+
 After setting, you can use any React95 component in your React application:
 
 ```js
@@ -40,7 +53,27 @@ export const MyApp = () => {
 };
 ```
 
-You can find a list of all available components on our [Storybook page](https://react95.github.io/React95/)
+You can find a list of all available components on our [Storybook page](https://react95.github.io/React95/).
+
+### About ```Modal```
+
+Since ```8.0.0``` the ```Modal``` component is managed with ```ModalContext```.
+So you should surround a group of Modals with a ```<ModalProvider>``` to make
+sure they are managed correctly. Example:
+
+```js
+import { ModalProvider, Modal } from '@react95/core';
+
+export const ModalExample = () => {
+  return <>
+      <ModalProvider>
+        <Modal title="Modal 1" />
+        <Modal title="Modal 2" />
+        ...
+      </ModalProvider>
+    </>;
+};
+```
 
 ### Next.JS
 
