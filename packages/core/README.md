@@ -42,22 +42,24 @@ export const MyApp = () => {
 
 You can find a list of all available components on our [Storybook page](https://react95.github.io/React95/).
 
-### About ```Modal```
+### About `Modal`
 
-The ```Modal``` component is managed with ```ModalContext```.
-To ensure they are managed correctly, surround one or a group of Modals with a ```<ModalProvider>```. Example:
+The `Modal` component is managed with `ModalContext`.
+To ensure they are managed correctly, surround one or a group of Modals with a `<ModalProvider>`. Example:
 
 ```js
 import { ModalProvider, Modal } from '@react95/core';
 
 export const ModalExample = () => {
-  return <>
+  return (
+    <>
       <ModalProvider>
         <Modal title="Modal 1" />
         <Modal title="Modal 2" />
         ...
       </ModalProvider>
-    </>;
+    </>
+  );
 };
 ```
 
