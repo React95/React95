@@ -57,9 +57,8 @@ You can find a list of all available components on our [Storybook page](https://
 
 ### About ```Modal```
 
-Since ```8.0.0``` the ```Modal``` component is managed with ```ModalContext```.
-So you should surround a group of Modals with a ```<ModalProvider>``` to make
-sure they are managed correctly. Example:
+The ```Modal``` component is managed with ```ModalContext```.
+To ensure they are managed correctly, surround one or a group of Modals with a ```<ModalProvider>```. Example:
 
 ```js
 import { ModalProvider, Modal } from '@react95/core';
