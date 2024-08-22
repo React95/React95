@@ -30,19 +30,6 @@ import '@react95/core/GlobalStyle';
 import '@react95/core/themes/win95.css';
 ```
 
-If it doesn't work, complete the import like this:
-
-```js
-import * as GlobalStyle from '@react95/core/GlobalStyle';
-import * as themes from '@react95/core/themes/win95.css';
-```
-
-And use them at least once somewhere. The easiest way to do this is by:
-
-```js
-console.log({ GlobalStyle }, { themes });
-```
-
 After setting, you can use any React95 component in your React application:
 
 ```js
