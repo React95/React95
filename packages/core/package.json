@@ -12,12 +12,12 @@
     },
     "./themes/*.css": {
       "types": "./types/themes/all.d.ts",
-      "import": "./esm/themes/*.css.mjs",
-      "require": "./cjs/themes/*.css.cjs"
+      "import": "./esm/themes/*.css.ts.vanilla.css",
+      "require": "./cjs/themes/*.css.ts.vanilla.css"
     },
     "./GlobalStyle": {
-      "import": "./esm/GlobalStyle.mjs",
-      "require": "./cjs/GlobalStyle.cjs"
+      "import": "./esm/GlobalStyle/GlobalStyle.css.ts.vanilla.css",
+      "require": "./cjs/GlobalStyle/GlobalStyle.css.ts.vanilla.css"
     }
   },
   "repository": {
