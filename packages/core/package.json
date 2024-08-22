@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
@@ -12,12 +12,12 @@
     },
     "./themes/*.css": {
       "types": "./types/themes/all.d.ts",
-      "import": "./esm/themes/*.css.mjs",
-      "require": "./cjs/themes/*.css.cjs"
+      "import": "./esm/themes/*.css.ts.vanilla.css",
+      "require": "./cjs/themes/*.css.ts.vanilla.css"
     },
     "./GlobalStyle": {
-      "import": "./esm/GlobalStyle.mjs",
-      "require": "./cjs/GlobalStyle.cjs"
+      "import": "./esm/GlobalStyle/GlobalStyle.css.ts.vanilla.css",
+      "require": "./cjs/GlobalStyle/GlobalStyle.css.ts.vanilla.css"
     }
   },
   "repository": {

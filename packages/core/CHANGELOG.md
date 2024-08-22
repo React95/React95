@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/React95/React95/compare/@react95/core@8.0.0...@react95/core@8.0.1) (2024-08-22)
+
+
+### Bug Fixes
+
+* **core:** replace import/require path to aim `css` file directly, instead of itsmodule ([a578b9b](https://github.com/React95/React95/commit/a578b9b195e2e37e95ea82e95824daa9923aae1c)), closes [#446](https://github.com/React95/React95/issues/446) [#445](https://github.com/React95/React95/issues/445)
+
+
+
+
+
 # [8.0.0](https://github.com/React95/React95/compare/@react95/core@7.0.2...@react95/core@8.0.0) (2024-05-21)
 
 
