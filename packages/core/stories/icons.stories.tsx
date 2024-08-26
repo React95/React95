@@ -51,7 +51,7 @@ export const All = {
         >
           {icons.map(({ component: Component, componentName, variants }) => {
             return (
-              <>
+              <React.Fragment key={componentName}>
                 {Object.entries(variants).map(([variantName]) => {
                   const [size] = variantName.split('x');
 
@@ -80,7 +80,7 @@ export const All = {
                     </Button>
                   );
                 })}
-              </>
+              </React.Fragment>
             );
           })}
         </Frame>
