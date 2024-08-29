@@ -30,7 +30,7 @@
     "build:types": "yarn tsc -b ./tsconfig.types.json",
     "lint": "eslint --ext ts,tsx --quiet src tests",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types --moduleExtensions",
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
     "test": "vitest run --config=../../config/test/clippy.js"
   },
   "bugs": {
