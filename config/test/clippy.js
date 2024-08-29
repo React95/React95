@@ -1,6 +1,3 @@
-import snapshotResolver from './snapshotResolver';
-import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
-
 export default {
   test: {
     testMatch: [
@@ -9,13 +6,7 @@ export default {
     ],
     name: 'clippy',
     globals: true,
-    resolveSnapshotPath: snapshotResolver.resolveSnapshotPath,
-    setupFiles: [
-      'babel-polyfill',
-      '@testing-library/jest-dom',
-      '../../config/setup/clippy.setup.js',
-    ],
+    setupFiles: ['../../config/setup/clippy.setup.js'],
     environment: 'happy-dom',
-    plugins: [vanillaExtractPlugin()],
   },
 };
