@@ -24,12 +24,13 @@
   },
   "scripts": {
     "prebuild": "rimraf ./dist",
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --copy-files",
-    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --copy-files",
-    "lint": "eslint --ext js,jsx --quiet src tests",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
+    "build:esm": "yarn tsc -b ./tsconfig.esm.json",
+    "build:cjs": "yarn tsc -b ./tsconfig.cjs.json",
+    "build:types": "yarn tsc -b ./tsconfig.types.json",
+    "lint": "eslint --ext ts,tsx --quiet src tests",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js",
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
     "test": "vitest run --config=../../config/test/clippy.js"
   },
   "bugs": {
@@ -41,8 +42,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "clippyjs": "^0.0.3",
-    "jquery": "^3.6.0",
+    "clippyts": "^1.0.4",
     "prop-types": "^15.8.1"
   },
   "peerDependencies": {

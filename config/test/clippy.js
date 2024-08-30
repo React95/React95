@@ -1,13 +1,12 @@
 export default {
   test: {
     testMatch: [
-      '<rootDir>/packages/clippy/**/*.test.js',
-      '<rootDir>/packages/clippy/**/*.test.jsx',
+      '<rootDir>/packages/clippy/**/*.test.ts',
+      '<rootDir>/packages/clippy/**/*.test.tsx',
     ],
     name: 'clippy',
-    setupFiles: [
-      '../../config/setup/clippy.setup.js',
-    ],
-    environment: "happy-dom",
-  }
+    globals: true,
+    setupFiles: ['../../config/setup/clippy.setup.js'],
+    environment: 'happy-dom',
+  },
 };

@@ -1,14 +1,29 @@
 import { vi } from 'vitest';
 
-vi.mock('clippyjs', () => {
+vi.mock('clippyts', () => {
   return {
     default: {
-      load: vi.fn((agentName, cb) => {
-        const show = vi.fn(() => { });
-        const hide = vi.fn(() => { });
+      load: vi.fn(({ name, successCb }) => {
+        const show = vi.fn(() => {});
+        const hide = vi.fn(() => {});
 
-        cb({ agentName, show, hide });
-      })
-    }
-  }
+        successCb({
+          show,
+          hide,
+          agentName: name,
+        });
+      }),
+    },
+  };
 });
+
+function removeStyles() {
+  const head = document.head;
+
+  if (head) {
+    head.innerHTML = '';
+  }
+}
+
+beforeEach(removeStyles);
+afterEach(removeStyles);

@@ -36,7 +36,7 @@
     "nx": "^17.2.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "vitest": "^0.33.0"
+    "vitest": "0.33.0"
   },
   "npmClient": "yarn",
   "workspaces": [
@@ -72,6 +72,9 @@
   "dependencies": {
     "minimist": "^1.2.8",
     "webpack": "^5.73.0"
+  },
+  "resolutions": {
+    "esbuild": "^0.23.1"
   },
   "stackblitz": {
     "startCommand": "cd packages/core && yarn storybook"
