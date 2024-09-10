@@ -18,6 +18,126 @@
     "./GlobalStyle": {
       "import": "./esm/GlobalStyle/GlobalStyle.css.ts.vanilla.css",
       "require": "./cjs/GlobalStyle/GlobalStyle.css.ts.vanilla.css"
+    },
+    "./Alert": {
+      "types": "./types/Alert/Alert.d.ts",
+      "import": "./esm/Alert/Alert.mjs",
+      "require": "./cjs/Alert/Alert.cjs"
+    },
+    "./Button": {
+      "types": "./types/Button/Button.d.ts",
+      "import": "./esm/Button/Button.mjs",
+      "require": "./cjs/Button/Button.cjs"
+    },
+    "./Checkbox": {
+      "types": "./types/Checkbox/Checkbox.d.ts",
+      "import": "./esm/Checkbox/Checkbox.mjs",
+      "require": "./cjs/Checkbox/Checkbox.cjs"
+    },
+    "./Cursor": {
+      "types": "./types/Cursor/Cursor.css.d.ts",
+      "import": "./esm/Cursor/Cursor.css.mjs",
+      "require": "./cjs/Cursor/Cursor.css.cjs"
+    },
+    "./Dropdown": {
+      "types": "./types/Dropdown/Dropdown.d.ts",
+      "import": "./esm/Dropdown/Dropdown.mjs",
+      "require": "./cjs/Dropdown/Dropdown.cjs"
+    },
+    "./Fieldset": {
+      "types": "./types/Fieldset/Fieldset.d.ts",
+      "import": "./esm/Fieldset/Fieldset.mjs",
+      "require": "./cjs/Fieldset/Fieldset.cjs"
+    },
+    "./Frame": {
+      "types": "./types/Frame/Frame.d.ts",
+      "import": "./esm/Frame/Frame.mjs",
+      "require": "./cjs/Frame/Frame.cjs"
+    },
+    "./Input": {
+      "types": "./types/Input/Input.d.ts",
+      "import": "./esm/Input/Input.mjs",
+      "require": "./cjs/Input/Input.cjs"
+    },
+    "./List": {
+      "types": "./types/List/List.d.ts",
+      "import": "./esm/List/List.mjs",
+      "require": "./cjs/List/List.cjs"
+    },
+    "./ListDivider": {
+      "types": "./types/ListDivider/ListDivider.d.ts",
+      "import": "./esm/ListDivider/ListDivider.mjs",
+      "require": "./cjs/ListDivider/ListDivider.cjs"
+    },
+    "./ListItem": {
+      "types": "./types/ListItem/ListItem.d.ts",
+      "import": "./esm/ListItem/ListItem.mjs",
+      "require": "./cjs/ListItem/ListItem.cjs"
+    },
+    "./Modal": {
+      "types": "./types/Modal/Modal.d.ts",
+      "import": "./esm/Modal/Modal.mjs",
+      "require": "./cjs/Modal/Modal.cjs"
+    },
+    "./ModalProvider": {
+      "types": "./types/Modal/ModalProvider.d.ts",
+      "import": "./esm/Modal/ModalProvider.mjs",
+      "require": "./cjs/Modal/ModalProvider.cjs"
+    },
+    "./ProgressBar": {
+      "types": "./types/ProgressBar/ProgressBar.d.ts",
+      "import": "./esm/ProgressBar/ProgressBar.mjs",
+      "require": "./cjs/ProgressBar/ProgressBar.cjs"
+    },
+    "./RadioButton": {
+      "types": "./types/RadioButton/RadioButton.d.ts",
+      "import": "./esm/RadioButton/RadioButton.mjs",
+      "require": "./cjs/RadioButton/RadioButton.cjs"
+    },
+    "./Range": {
+      "types": "./types/Range/Range.d.ts",
+      "import": "./esm/Range/Range.mjs",
+      "require": "./cjs/Range/Range.cjs"
+    },
+    "./Tabs": {
+      "types": "./types/Tabs/Tabs.d.ts",
+      "import": "./esm/Tabs/Tabs.mjs",
+      "require": "./cjs/Tabs/Tabs.cjs"
+    },
+    "./Tab": {
+      "types": "./types/Tabs/Tab.d.ts",
+      "import": "./esm/Tabs/Tab.mjs",
+      "require": "./cjs/Tabs/Tab.cjs"
+    },
+    "./TaskBar": {
+      "types": "./types/TaskBar/TaskBar.d.ts",
+      "import": "./esm/TaskBar/TaskBar.mjs",
+      "require": "./cjs/TaskBar/TaskBar.cjs"
+    },
+    "./TextArea": {
+      "types": "./types/TextArea/TextArea.d.ts",
+      "import": "./esm/TextArea/TextArea.mjs",
+      "require": "./cjs/TextArea/TextArea.cjs"
+    },
+    "./TitleBar": {
+      "types": "./types/TitleBar/TitleBar.d.ts",
+      "import": "./esm/TitleBar/TitleBar.mjs",
+      "require": "./cjs/TitleBar/TitleBar.cjs"
+    },
+    "./Tooltip": {
+      "types": "./types/Tooltip/Tooltip.d.ts",
+      "import": "./esm/Tooltip/Tooltip.mjs",
+      "require": "./cjs/Tooltip/Tooltip.cjs"
+    },
+    "./Tree": {
+      "types": "./types/Tree/Tree.d.ts",
+      "import": "./esm/Tree/Tree.mjs",
+      "require": "./cjs/Tree/Tree.cjs"
+    },
+    "./Video": {
+      "types": "./types/Video/Video.d.ts",
+      "import": "./esm/Video/Video.mjs",
+      "require": "./cjs/Video/Video.cjs"
     }
   },
   "repository": {
@@ -76,6 +196,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
+    "postbuild-storybook": "cp -r ../../node_modules/clippyts/dist/agents ./docs/assets",
     "build": "yarn build:vite && yarn build:types",
     "build:vite": "vite build",
     "build:types": "yarn build:types:core && yarn build:types:themes",
