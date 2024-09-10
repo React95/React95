@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/React95/React95/compare/@react95/core@8.0.3...@react95/core@8.1.0) (2024-09-04)
+
+
+### Features
+
+* exporting each component in `exports` field ([496f2ec](https://github.com/React95/React95/commit/496f2ec6b459391a56891327d39108c755a1984a))
+
+
+
+
+
+## [8.0.3](https://github.com/React95/React95/compare/@react95/core@8.0.2...@react95/core@8.0.3) (2024-08-30)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 ## [8.0.2](https://github.com/React95/React95/compare/@react95/core@8.0.1...@react95/core@8.0.2) (2024-08-23)
 
 **Note:** Version bump only for package @react95/core

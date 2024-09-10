@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/React95/React95/compare/@react95/clippy@1.0.13...@react95/clippy@2.0.0) (2024-08-30)
+
+
+### Features
+
+* **clippy:** move to TS ([e958cb8](https://github.com/React95/React95/commit/e958cb86e3b7260e04adf1f23287371af7320ab7))
+
+
+### BREAKING CHANGES
+
+* **clippy:** It should not break applications but we're adding types and better support for
+typescript so, adding it as breaking change.
+
+
+
+
+
 ## [1.0.13](https://github.com/React95/React95/compare/@react95/clippy@1.0.12...@react95/clippy@1.0.13) (2023-10-18)
 
 

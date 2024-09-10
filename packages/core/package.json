@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "8.0.2",
+  "version": "8.1.0",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
@@ -20,124 +20,124 @@
       "require": "./cjs/GlobalStyle/GlobalStyle.css.ts.vanilla.css"
     },
     "./Alert": {
-      "types": "./types/Alert/Alert.d.ts",
       "import": "./esm/Alert/Alert.mjs",
-      "require": "./cjs/Alert/Alert.cjs"
+      "require": "./cjs/Alert/Alert.cjs",
+      "types": "./types/Alert/Alert.d.ts"
     },
     "./Button": {
-      "types": "./types/Button/Button.d.ts",
       "import": "./esm/Button/Button.mjs",
-      "require": "./cjs/Button/Button.cjs"
+      "require": "./cjs/Button/Button.cjs",
+      "types": "./types/Button/Button.d.ts"
     },
     "./Checkbox": {
-      "types": "./types/Checkbox/Checkbox.d.ts",
       "import": "./esm/Checkbox/Checkbox.mjs",
-      "require": "./cjs/Checkbox/Checkbox.cjs"
+      "require": "./cjs/Checkbox/Checkbox.cjs",
+      "types": "./types/Checkbox/Checkbox.d.ts"
     },
     "./Cursor": {
-      "types": "./types/Cursor/Cursor.css.d.ts",
       "import": "./esm/Cursor/Cursor.css.mjs",
-      "require": "./cjs/Cursor/Cursor.css.cjs"
+      "require": "./cjs/Cursor/Cursor.css.cjs",
+      "types": "./types/Cursor/Cursor.css.d.ts"
     },
     "./Dropdown": {
-      "types": "./types/Dropdown/Dropdown.d.ts",
       "import": "./esm/Dropdown/Dropdown.mjs",
-      "require": "./cjs/Dropdown/Dropdown.cjs"
+      "require": "./cjs/Dropdown/Dropdown.cjs",
+      "types": "./types/Dropdown/Dropdown.d.ts"
     },
     "./Fieldset": {
-      "types": "./types/Fieldset/Fieldset.d.ts",
       "import": "./esm/Fieldset/Fieldset.mjs",
-      "require": "./cjs/Fieldset/Fieldset.cjs"
+      "require": "./cjs/Fieldset/Fieldset.cjs",
+      "types": "./types/Fieldset/Fieldset.d.ts"
     },
     "./Frame": {
-      "types": "./types/Frame/Frame.d.ts",
       "import": "./esm/Frame/Frame.mjs",
-      "require": "./cjs/Frame/Frame.cjs"
+      "require": "./cjs/Frame/Frame.cjs",
+      "types": "./types/Frame/Frame.d.ts"
     },
     "./Input": {
-      "types": "./types/Input/Input.d.ts",
       "import": "./esm/Input/Input.mjs",
-      "require": "./cjs/Input/Input.cjs"
+      "require": "./cjs/Input/Input.cjs",
+      "types": "./types/Input/Input.d.ts"
     },
     "./List": {
-      "types": "./types/List/List.d.ts",
       "import": "./esm/List/List.mjs",
-      "require": "./cjs/List/List.cjs"
+      "require": "./cjs/List/List.cjs",
+      "types": "./types/List/List.d.ts"
     },
     "./ListDivider": {
-      "types": "./types/ListDivider/ListDivider.d.ts",
       "import": "./esm/ListDivider/ListDivider.mjs",
-      "require": "./cjs/ListDivider/ListDivider.cjs"
+      "require": "./cjs/ListDivider/ListDivider.cjs",
+      "types": "./types/ListDivider/ListDivider.d.ts"
     },
     "./ListItem": {
-      "types": "./types/ListItem/ListItem.d.ts",
       "import": "./esm/ListItem/ListItem.mjs",
-      "require": "./cjs/ListItem/ListItem.cjs"
+      "require": "./cjs/ListItem/ListItem.cjs",
+      "types": "./types/ListItem/ListItem.d.ts"
     },
     "./Modal": {
-      "types": "./types/Modal/Modal.d.ts",
       "import": "./esm/Modal/Modal.mjs",
-      "require": "./cjs/Modal/Modal.cjs"
+      "require": "./cjs/Modal/Modal.cjs",
+      "types": "./types/Modal/Modal.d.ts"
     },
     "./ModalProvider": {
-      "types": "./types/Modal/ModalProvider.d.ts",
       "import": "./esm/Modal/ModalProvider.mjs",
-      "require": "./cjs/Modal/ModalProvider.cjs"
+      "require": "./cjs/Modal/ModalProvider.cjs",
+      "types": "./types/Modal/ModalProvider.d.ts"
     },
     "./ProgressBar": {
-      "types": "./types/ProgressBar/ProgressBar.d.ts",
       "import": "./esm/ProgressBar/ProgressBar.mjs",
-      "require": "./cjs/ProgressBar/ProgressBar.cjs"
+      "require": "./cjs/ProgressBar/ProgressBar.cjs",
+      "types": "./types/ProgressBar/ProgressBar.d.ts"
     },
     "./RadioButton": {
-      "types": "./types/RadioButton/RadioButton.d.ts",
       "import": "./esm/RadioButton/RadioButton.mjs",
-      "require": "./cjs/RadioButton/RadioButton.cjs"
+      "require": "./cjs/RadioButton/RadioButton.cjs",
+      "types": "./types/RadioButton/RadioButton.d.ts"
     },
     "./Range": {
-      "types": "./types/Range/Range.d.ts",
       "import": "./esm/Range/Range.mjs",
-      "require": "./cjs/Range/Range.cjs"
+      "require": "./cjs/Range/Range.cjs",
+      "types": "./types/Range/Range.d.ts"
     },
     "./Tabs": {
-      "types": "./types/Tabs/Tabs.d.ts",
       "import": "./esm/Tabs/Tabs.mjs",
-      "require": "./cjs/Tabs/Tabs.cjs"
+      "require": "./cjs/Tabs/Tabs.cjs",
+      "types": "./types/Tabs/Tabs.d.ts"
     },
     "./Tab": {
-      "types": "./types/Tabs/Tab.d.ts",
       "import": "./esm/Tabs/Tab.mjs",
-      "require": "./cjs/Tabs/Tab.cjs"
+      "require": "./cjs/Tabs/Tab.cjs",
+      "types": "./types/Tabs/Tab.d.ts"
     },
     "./TaskBar": {
-      "types": "./types/TaskBar/TaskBar.d.ts",
       "import": "./esm/TaskBar/TaskBar.mjs",
-      "require": "./cjs/TaskBar/TaskBar.cjs"
+      "require": "./cjs/TaskBar/TaskBar.cjs",
+      "types": "./types/TaskBar/TaskBar.d.ts"
     },
     "./TextArea": {
-      "types": "./types/TextArea/TextArea.d.ts",
       "import": "./esm/TextArea/TextArea.mjs",
-      "require": "./cjs/TextArea/TextArea.cjs"
+      "require": "./cjs/TextArea/TextArea.cjs",
+      "types": "./types/TextArea/TextArea.d.ts"
     },
     "./TitleBar": {
-      "types": "./types/TitleBar/TitleBar.d.ts",
       "import": "./esm/TitleBar/TitleBar.mjs",
-      "require": "./cjs/TitleBar/TitleBar.cjs"
+      "require": "./cjs/TitleBar/TitleBar.cjs",
+      "types": "./types/TitleBar/TitleBar.d.ts"
     },
     "./Tooltip": {
-      "types": "./types/Tooltip/Tooltip.d.ts",
       "import": "./esm/Tooltip/Tooltip.mjs",
-      "require": "./cjs/Tooltip/Tooltip.cjs"
+      "require": "./cjs/Tooltip/Tooltip.cjs",
+      "types": "./types/Tooltip/Tooltip.d.ts"
     },
     "./Tree": {
-      "types": "./types/Tree/Tree.d.ts",
       "import": "./esm/Tree/Tree.mjs",
-      "require": "./cjs/Tree/Tree.cjs"
+      "require": "./cjs/Tree/Tree.cjs",
+      "types": "./types/Tree/Tree.d.ts"
     },
     "./Video": {
-      "types": "./types/Video/Video.d.ts",
       "import": "./esm/Video/Video.mjs",
-      "require": "./cjs/Video/Video.cjs"
+      "require": "./cjs/Video/Video.cjs",
+      "types": "./types/Video/Video.d.ts"
     }
   },
   "repository": {
@@ -161,7 +161,7 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "@react95/clippy": "^1.0.13",
+    "@react95/clippy": "^2.0.0",
     "@storybook/addon-designs": "^7.0.9",
     "@storybook/addon-essentials": "^7.6.17",
     "@storybook/addon-storysource": "^7.6.17",
