@@ -196,6 +196,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
+    "postbuild-storybook": "cp -r ../../node_modules/clippyts/dist/agents ./docs/assets",
     "build": "yarn build:vite && yarn build:types",
     "build:vite": "vite build",
     "build:types": "yarn build:types:core && yarn build:types:themes",

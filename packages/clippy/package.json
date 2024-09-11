@@ -24,9 +24,9 @@
   },
   "scripts": {
     "prebuild": "rimraf ./dist",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:types",
-    "build:esm": "yarn tsc -b ./tsconfig.esm.json",
-    "build:cjs": "yarn tsc -b ./tsconfig.cjs.json",
+    "prebuild:vite": "rimraf ./dist",
+    "build": "yarn build:vite && yarn build:types",
+    "build:vite": "vite build",
     "build:types": "yarn tsc -b ./tsconfig.types.json",
     "lint": "eslint --ext ts,tsx --quiet src tests",
     "prepublish": "yarn build",
@@ -42,8 +42,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "clippyts": "^1.0.4",
-    "prop-types": "^15.8.1"
+    "clippyts": "^1.0.4"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"

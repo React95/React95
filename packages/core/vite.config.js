@@ -94,9 +94,4 @@ export default defineConfig({
       },
     }),
   ],
-  optimizeDeps: {
-    // clippyts will dynamically import agents and this is why we need to
-    // exclude it from the optimization
-    exclude: ['clippyts'],
-  },
 });
