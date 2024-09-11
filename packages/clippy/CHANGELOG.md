@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/React95/React95/compare/@react95/clippy@2.0.0...@react95/clippy@2.0.1) (2024-09-11)
+
+
+### Bug Fixes
+
+* **clippy:** building clippy with vite ([373e3e9](https://github.com/React95/React95/commit/373e3e9b476ca61facf756b7b9ddb9ded16721a7))
+
+
+
+
+
 # [2.0.0](https://github.com/React95/React95/compare/@react95/clippy@1.0.13...@react95/clippy@2.0.0) (2024-08-30)
 
 
