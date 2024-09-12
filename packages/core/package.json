@@ -6,9 +6,14 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./types/index.d.ts",
-      "import": "./esm",
-      "require": "./cjs"
+      "import": {
+        "types": "./types/index.d.ts",
+        "default": "./esm"
+      },
+      "require": {
+        "types": "./types/index.d.ts",
+        "default": "./cjs"
+      }
     },
     "./themes/*.css": {
       "types": "./types/themes/all.d.ts",
@@ -65,14 +70,14 @@
       "require": "./cjs/List/List.cjs"
     },
     "./ListDivider": {
-      "types": "./types/ListDivider/ListDivider.d.ts",
-      "import": "./esm/ListDivider/ListDivider.mjs",
-      "require": "./cjs/ListDivider/ListDivider.cjs"
+      "types": "./types/List/ListDivider.d.ts",
+      "import": "./esm/List/ListDivider.mjs",
+      "require": "./cjs/List/ListDivider.cjs"
     },
     "./ListItem": {
-      "types": "./types/ListItem/ListItem.d.ts",
-      "import": "./esm/ListItem/ListItem.mjs",
-      "require": "./cjs/ListItem/ListItem.cjs"
+      "types": "./types/List/ListItem.d.ts",
+      "import": "./esm/List/ListItem.mjs",
+      "require": "./cjs/List/ListItem.cjs"
     },
     "./Modal": {
       "types": "./types/Modal/Modal.d.ts",
