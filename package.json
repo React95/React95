@@ -30,13 +30,13 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.3",
-    "happy-dom": "^10.5.2",
+    "happy-dom": "^15.7.4",
     "husky": "^7.0.4",
     "lerna": "^8.0.1",
     "nx": "^17.2.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "vitest": "0.33.0"
+    "vitest": "^2.0.5"
   },
   "npmClient": "yarn",
   "workspaces": [
@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "@rollup/plugin-dynamic-import-vars": "^2.1.2",
+    "@vitest/coverage-istanbul": "0.33.0",
     "minimist": "^1.2.8",
     "webpack": "^5.73.0"
   },
