@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.2](https://github.com/React95/React95/compare/@react95/core@8.1.1...@react95/core@8.1.2) (2024-09-12)
+
+
+### Reverts
+
+* **core:** reverting exports order ([d7910be](https://github.com/React95/React95/commit/d7910be5ebb9291887c88a709a439af916f5000d))
+
+
+
+
+
 ## [8.1.1](https://github.com/React95/React95/compare/@react95/core@8.1.0...@react95/core@8.1.1) (2024-09-11)
 
 
