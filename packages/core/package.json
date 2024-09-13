@@ -167,13 +167,12 @@
   },
   "devDependencies": {
     "@react95/clippy": "^2.0.1",
-    "@storybook/addon-designs": "^7.0.9",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-storysource": "^7.6.17",
-    "@storybook/addons": "^7.6.17",
-    "@storybook/react": "^7.6.17",
-    "@storybook/react-vite": "^7.6.17",
-    "@storybook/react-webpack5": "^7.6.17",
+    "@storybook/addon-designs": "^8.0.3",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-storysource": "^8.3.0",
+    "@storybook/react": "^8.3.0",
+    "@storybook/react-vite": "^8.3.0",
+    "@storybook/react-webpack5": "^8.3.0",
     "@storybook/storybook-deployer": "^2.8.16",
     "@types/react-virtualized": "^9.21.20",
     "@vanilla-extract/css": "^1.14.0",
@@ -191,7 +190,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
-    "storybook": "^7.6.17",
+    "storybook": "^8.3.0",
     "typescript": "5.3.3",
     "vite": "^4.3.8"
   },
@@ -226,5 +225,9 @@
     "w95",
     "nostalgic",
     "design-system"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/React95/React95/issues"
+  },
+  "homepage": "https://github.com/React95/React95#readme"
 }

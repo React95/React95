@@ -15,10 +15,10 @@ const Frame = (Story, { globals }) => {
     if (process.env.NODE_ENV === 'development') {
       const themeStylesheets = Array.from(
         document.querySelectorAll('style'),
-      ).filter(s => s.dataset?.file?.includes('themes'));
+      ).filter(s => s.dataset?.viteDevId?.includes('themes'));
 
       themeStylesheets.forEach(s => {
-        s.disabled = !s.dataset.file?.includes(selectedTheme);
+        s.disabled = !s.dataset.viteDevId?.includes(selectedTheme);
       });
     } else {
       const themeClassName = `r95_theme_${selectedTheme}`;

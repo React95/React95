@@ -1,12 +1,14 @@
-import addons, { makeDecorator } from '@storybook/addons';
+import { addons } from '@storybook/manager-api';
+import { makeDecorator } from '@storybook/preview-api';
 
-export default makeDecorator({
+export const withClippy = makeDecorator({
   name: 'withClippy',
-  parameterName: 'code',
-  skipIfNoParametersOrOptions: true,
+  parameterName: 'clippy',
+  skipIfNoParametersOrOptions: false,
   wrapper: (getStory, context, { parameters }) => {
     const channel = addons.getChannel();
 
+    debugger;
     if (typeof parameters === 'object') {
       channel.emit('clippy/set_component', {
         code: parameters.code,
