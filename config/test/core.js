@@ -20,7 +20,6 @@ export default defineConfig({
     resolveSnapshotPath: snapshotResolver.resolveSnapshotPath,
     environment: 'happy-dom',
     setupFiles: [
-      'babel-polyfill',
       '@testing-library/jest-dom',
       '../../config/setup/core.setup.js',
     ],
