@@ -15,6 +15,7 @@
     "@nx/workspace": "17.2.8",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
+    "@vitest/coverage-istanbul": "^2.0.5",
     "all-contributors-cli": "^6.20.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
@@ -74,7 +75,6 @@
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/react-hooks": "^8.0.1",
-    "@vitest/coverage-istanbul": "0.33.0",
     "minimist": "^1.2.8",
     "rimraf": "^6.0.1",
     "webpack": "^5.73.0"
