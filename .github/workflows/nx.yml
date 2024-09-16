@@ -6,6 +6,7 @@ jobs:
     name: Nx Cloud Checker
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.1
     with:
+      node-version: 20.16
       number-of-agents: 3
       main-branch-name: master
       init-commands: |
@@ -20,3 +21,4 @@ jobs:
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.1
     with:
       number-of-agents: 3
+      node-version: 20.16
