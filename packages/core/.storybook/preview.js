@@ -2,7 +2,7 @@ import Frame from './decorators/Frame';
 
 import './preview.css';
 import { withModal } from './src/theme-changer/decorators';
-// import { withClippy } from './src/clippy-addon/clippy-addon';
+import { withClippy } from './src/clippy-addon/clippy-addon';
 
 export const globalTypes = {
   selectedTheme: {
@@ -12,9 +12,4 @@ export const globalTypes = {
   },
 };
 
-export const decorators = [
-  Frame,
-  withModal,
-  // not ready yet
-  // withClippy
-];
+export const decorators = [Frame, withModal, withClippy];

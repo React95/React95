@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  addons,
-  types,
-  useChannel,
-  useStorybookApi,
-} from '@storybook/manager-api';
 import clippy from 'clippyts';
-
-import { STORY_CHANGED } from '@storybook/core-events';
-
-const channel = addons.getChannel();
 
 let agent;
 const availableAgents = [
@@ -38,20 +28,9 @@ const talks = [
   "We're always learning and growing. Stay tuned for exciting updates!",
 ];
 
-const Clippy = () => {
-  const [state, setState] = React.useState({
-    pkg: 'core',
-    component: '',
-    code: '',
-    clippyButton: false,
-    showModal: false,
-  });
-  const api = useStorybookApi();
+const ClippyContext = React.createContext({ speak: () => {} });
 
-  const emit = useChannel({
-    [STORY_CHANGED]: (...args) => console.log(...args),
-  });
-
+export const ClippyProvider = ({ children, ...props }) => {
   React.useEffect(() => {
     const agentName =
       availableAgents[Math.floor(Math.random() * availableAgents.length)];
@@ -68,38 +47,27 @@ const Clippy = () => {
           const msg = talks[Math.floor(Math.random() * talks.length)];
           agent.speak(msg);
 
-          agent._el.addEventListener('click', speak);
+          agent._el.addEventListener('click', () => {
+            const msg = talks[Math.floor(Math.random() * talks.length)];
+
+            speak(msg, true);
+          });
         },
       });
     }
-
-    if (api.onStory) {
-      return api.onStory(() => setComponent(''));
-    }
   }, []);
 
-  const speak = () => {
-    const { component, code } = state;
+  const speak = (msg, animate = false) => {
+    agent.speak(msg);
 
-    if (component && code) {
-      agent.speak('Do you wanna see the code?');
+    if (animate) {
+      agent.animate();
     }
-
-    agent.animate();
   };
 
-  return null;
+  return (
+    <ClippyContext.Provider value={{ speak }}>
+      {children({ ...props, ...{ speak } })}
+    </ClippyContext.Provider>
+  );
 };
-
-const ADDON_ID = 'clippy';
-const PANEL_ID = `${ADDON_ID}/panel`;
-
-addons.register(ADDON_ID, api => {
-  addons.add(PANEL_ID, {
-    type: types.PANEL,
-    title: ADDON_ID,
-    render: ({ active }) => {
-      return <Clippy channel={addons.getChannel()} api={api} active={active} />;
-    },
-  });
-});

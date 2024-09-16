@@ -21,8 +21,7 @@ export default {
     },
     getAbsolutePath('@storybook/addon-storysource'),
     getAbsolutePath(__dirname, './src/theme-changer'),
-    // not ready yet
-    // getAbsolutePath(__dirname, './src/clippy-addon'),
+    getAbsolutePath(__dirname, './src/clippy-addon'),
     getAbsolutePath('@storybook/addon-designs'),
   ],
   framework: {
