@@ -1,0 +1,1 @@
+import{R as a}from"./index-ff614419.js";import{c as e}from"./index-a20f67f3.js";import{b as r}from"./Button.css-afb77755.js";import{f as m,F as s}from"./Frame-43ccd6dd.js";const n=m((t,o)=>a.createElement(s,{as:"button",...t,className:e(r,t.className),ref:o}));n.__docgenInfo={description:"",methods:[],displayName:"Button"};export{n as B};

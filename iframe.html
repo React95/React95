@@ -1,35 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--suppress HtmlUnknownTarget -->
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Storybook</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('./sb-common-assets/nunito-sans-regular.woff2') format('woff2');
+      }
 
-  <link rel="prefetch" href="./sb-common-assets/nunito-sans-regular.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="prefetch" href="./sb-common-assets/nunito-sans-italic.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="prefetch" href="./sb-common-assets/nunito-sans-bold.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="prefetch" href="./sb-common-assets/nunito-sans-bold-italic.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
+      @font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url('./sb-common-assets/nunito-sans-italic.woff2') format('woff2');
+      }
 
-  <script>
-    window.CONFIG_TYPE = 'PRODUCTION';
-    window.LOGLEVEL = 'debug';
-    window.FRAMEWORK_OPTIONS = {};
-    window.CHANNEL_OPTIONS = {};
-    window.FEATURES = {"warnOnLegacyHierarchySeparator":true,"buildStoriesJson":false,"storyStoreV7":true,"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":false};
-    window.STORIES = [{"titlePrefix":"","directory":"./stories","files":"all.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/all\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"alert.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/alert\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"avatar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/avatar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"button.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/button\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"checkbox.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/checkbox\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"cursor.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/cursor\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"dropdown.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/dropdown\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"fieldset.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/fieldset\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"frame.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/frame\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"icons.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/icons\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"input.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/input\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"list.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/list\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"modal.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/modal\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"progressbar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/progressbar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"radiobutton.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/radiobutton\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"range.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/range\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"tabs.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/tabs\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"taskbar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/taskbar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"textarea.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/textarea\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"titlebar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/titlebar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"tooltip.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/tooltip\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"tree.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/tree\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"video.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/video\\.stories\\.tsx)$"}];
-    window.DOCS_OPTIONS = {"defaultName":"Docs","autodocs":"tag"};
+      @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('./sb-common-assets/nunito-sans-bold.woff2') format('woff2');
+      }
 
-    
+      @font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url('./sb-common-assets/nunito-sans-bold-italic.woff2') format('woff2');
+      }
+    </style>
 
-    // We do this so that "module && module.hot" etc. in Storybook source code
-    // doesn't fail (it will simply be disabled)
-    window.module = undefined;
-    window.global = window;
-  </script>
-  <base target="_parent" />
+    <script>
+      window.CONFIG_TYPE = 'PRODUCTION';
+      window.LOGLEVEL = 'debug';
+      window.FRAMEWORK_OPTIONS = {};
+      window.CHANNEL_OPTIONS = {};
+      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true};
+      window.STORIES = [{"titlePrefix":"","directory":"./stories","files":"all.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/all\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"alert.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/alert\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"avatar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/avatar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"button.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/button\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"checkbox.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/checkbox\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"cursor.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/cursor\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"dropdown.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/dropdown\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"fieldset.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/fieldset\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"frame.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/frame\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"icons.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/icons\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"input.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/input\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"list.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/list\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"modal.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/modal\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"progressbar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/progressbar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"radiobutton.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/radiobutton\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"range.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/range\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"tabs.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/tabs\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"taskbar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/taskbar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"textarea.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/textarea\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"titlebar.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/titlebar\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"tooltip.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/tooltip\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"tree.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/tree\\.stories\\.tsx)$"},{"titlePrefix":"","directory":"./stories","files":"video.stories.tsx","importPathMatcher":"^\\.[\\\\/](?:stories\\/video\\.stories\\.tsx)$"}];
+      window.DOCS_OPTIONS = {"defaultName":"Docs","autodocs":"tag"};
+      window.TAGS_OPTIONS = {"dev-only":{"excludeFromDocsStories":true},"docs-only":{"excludeFromSidebar":true},"test-only":{"excludeFromSidebar":true,"excludeFromDocsStories":true}};
+
+      
+
+      // We do this so that "module && module.hot" etc. in Storybook source code
+      // doesn't fail (it will simply be disabled)
+      window.module = undefined;
+      window.global = window;
+    </script>
+    <base target="_parent" />
 
 <style>
   /* While we aren't showing the main block yet, but still preparing, we want everything the user
@@ -61,7 +89,8 @@
     box-sizing: border-box;
     margin: auto;
     padding: 1rem;
-    max-height: 100%; /* Hack for centering correctly in IE11 */
+    max-height: 100%;
+    /* Hack for centering correctly in IE11 */
   }
 
   /* Vertical centering fix for IE11 */
@@ -92,11 +121,34 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px;
-    font-family: 'Nunito Sans', -apple-system, '.SFNSText-Regular', 'San Francisco',
-      BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+
+    padding: 40px;
+    font-family:
+      'Nunito Sans',
+      -apple-system,
+      '.SFNSText-Regular',
+      'San Francisco',
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Helvetica Neue',
+      Helvetica,
+      Arial,
+      sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
+  }
+
+  @media (max-width: 700px) {
+    .sb-wrapper {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .sb-wrapper {
+      padding: 10px;
+    }
   }
 
   .sb-heading {
@@ -111,6 +163,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    box-sizing: border-box;
   }
 
   .sb-nopreview_main {
@@ -125,54 +178,133 @@
   }
 
   .sb-errordisplay {
-    border: 20px solid rgb(187, 49, 49);
-    background: #222;
-    color: #fff;
+    background: #f6f9fc;
+    color: black;
     z-index: 999999;
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    & ol {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    & h1 {
+      font-family: Nunito Sans;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      font-weight: normal;
+      margin: 0;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #ff4400;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+
+    & p,
+    & ol {
+      font-family: Nunito Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      margin: 0;
+    }
+
+    & li + li {
+      margin: 0;
+      padding: 0;
+      padding-top: 12px;
+    }
+
+    & a {
+      color: currentColor;
+    }
+  }
+
+  .sb-errordisplay_main {
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 64px rgba(0, 0, 0, 0.1);
+    gap: 24px;
   }
 
   .sb-errordisplay_code {
     padding: 10px;
-    background: #000;
-    color: #eee;
+    flex: 1;
+    background: #242424;
+    color: #c6c6c6;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    border-radius: 4px;
+
     font-family: 'Operator Mono', 'Fira Code Retina', 'Fira Code', 'FiraCode-Retina', 'Andale Mono',
       'Lucida Console', Consolas, Monaco, monospace;
+    margin: 0;
+    overflow: auto;
   }
 
   .sb-errordisplay pre {
     white-space: pre-wrap;
+    white-space: revert;
   }
 
   @-webkit-keyframes sb-rotate360 {
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
   }
+
   @keyframes sb-rotate360 {
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
   }
+
   @-webkit-keyframes sb-glow {
     0%,
     100% {
       opacity: 1;
     }
+
     50% {
       opacity: 0.4;
     }
   }
+
   @keyframes sb-glow {
     0%,
     100% {
       opacity: 1;
     }
+
     50% {
       opacity: 0.4;
     }
@@ -235,6 +367,7 @@
     height: 14px;
     width: 14px;
   }
+
   .sb-previewBlock_icon:last-child {
     margin-left: auto;
   }
@@ -256,23 +389,28 @@
     text-align: left;
     width: 100%;
   }
+
   .sb-argstableBlock th:first-of-type,
   .sb-argstableBlock td:first-of-type {
     padding-left: 20px;
   }
+
   .sb-argstableBlock th:nth-of-type(2),
   .sb-argstableBlock td:nth-of-type(2) {
     width: 35%;
   }
+
   .sb-argstableBlock th:nth-of-type(3),
   .sb-argstableBlock td:nth-of-type(3) {
     width: 15%;
   }
+
   .sb-argstableBlock th:last-of-type,
   .sb-argstableBlock td:last-of-type {
     width: 25%;
     padding-right: 20px;
   }
+
   .sb-argstableBlock th span,
   .sb-argstableBlock td span {
     -webkit-animation: sb-glow 1.5s ease-in-out infinite;
@@ -282,43 +420,55 @@
     box-shadow: none;
     color: transparent;
   }
+
   .sb-argstableBlock th {
     padding: 10px 15px;
   }
 
   .sb-argstableBlock-body {
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 1px, rgba(0, 0, 0, 0.065) 0 0 0 1px;
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0 1px 3px 1px,
+      rgba(0, 0, 0, 0.065) 0 0 0 1px;
   }
+
   .sb-argstableBlock-body tr {
     background: transparent;
     overflow: hidden;
   }
+
   .sb-argstableBlock-body tr:not(:first-child) {
     border-top: 1px solid #e6e6e6;
   }
+
   .sb-argstableBlock-body tr:first-child td:first-child {
     border-top-left-radius: 4px;
   }
+
   .sb-argstableBlock-body tr:first-child td:last-child {
     border-top-right-radius: 4px;
   }
+
   .sb-argstableBlock-body tr:last-child td:first-child {
     border-bottom-left-radius: 4px;
   }
+
   .sb-argstableBlock-body tr:last-child td:last-child {
     border-bottom-right-radius: 4px;
   }
+
   .sb-argstableBlock-body td {
     background: #fff;
     padding-bottom: 10px;
     padding-top: 10px;
     vertical-align: top;
   }
+
   .sb-argstableBlock-body td:not(:first-of-type) {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .sb-argstableBlock-body button {
     -webkit-animation: sb-glow 1.5s ease-in-out infinite;
     animation: sb-glow 1.5s ease-in-out infinite;
@@ -359,11 +509,11 @@
   }
 </script>
 
-  <script type="module" crossorigin src="./assets/iframe-4ca4f58c.js"></script>
-</head>
+    <script type="module" crossorigin src="./assets/iframe-e45e002b.js"></script>
+  </head>
 
-<body>
-  <div class="sb-preparing-story sb-wrapper">
+  <body>
+    <div class="sb-preparing-story sb-wrapper">
   <div class="sb-loader"></div>
 </div>
 
@@ -447,14 +597,45 @@
 </div>
 
 <div class="sb-errordisplay sb-wrapper">
-  <pre id="error-message" class="sb-heading"></pre>
-  <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>
+  <div class="sb-errordisplay_main">
+    <h1 id="error-message"></h1>
+    <p>
+      The component failed to render properly, likely due to a configuration issue in Storybook.
+      Here are some common causes and how you can address them:
+    </p>
+    <ol>
+      <li>
+        <strong>Missing Context/Providers</strong>: You can use decorators to supply specific
+        contexts or providers, which are sometimes necessary for components to render correctly. For
+        detailed instructions on using decorators, please visit the
+        <a href="https://storybook.js.org/docs/react/writing-stories/decorators"
+          >Decorators documentation</a
+        >.
+      </li>
+      <li>
+        <strong>Misconfigured Webpack or Vite</strong>: Verify that Storybook picks up all necessary
+        settings for loaders, plugins, and other relevant parameters. You can find step-by-step
+        guides for configuring
+        <a href="https://storybook.js.org/docs/builders/webpack">Webpack</a> or
+        <a href="https://storybook.js.org/docs/builders/vite">Vite</a>
+        with Storybook.
+      </li>
+      <li>
+        <strong>Missing Environment Variables</strong>: Your Storybook may require specific
+        environment variables to function as intended. You can set up custom environment variables
+        as outlined in the
+        <a href="https://storybook.js.org/docs/configure/environment-variables"
+          >Environment Variables documentation</a
+        >.
+      </li>
+    </ol>
+    <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>
+  </div>
 </div>
 
-  <div id="storybook-root"></div>
-  <div id="storybook-docs"></div>
-  
-  
-</body>
-
+    <div id="storybook-root"></div>
+    <div id="storybook-docs"></div>
+    
+    
+  </body>
 </html>
