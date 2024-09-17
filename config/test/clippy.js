@@ -4,5 +4,8 @@ export default {
     globals: true,
     setupFiles: ['../../config/setup/clippy.setup.js'],
     environment: 'happy-dom',
+    coverage: {
+      provider: 'istanbul',
+    },
   },
 };
