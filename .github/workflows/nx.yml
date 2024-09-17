@@ -7,6 +7,7 @@ jobs:
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.15.0
     with:
       node-version: 20
+      yarn-version: 1.22.19
       number-of-agents: 3
       main-branch-name: master
       init-commands: |
@@ -20,5 +21,6 @@ jobs:
     name: Nx Cloud - Agents
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.15.0
     with:
-      number-of-agents: 3
       node-version: 20
+      yarn-version: 1.22.19
+      number-of-agents: 3
