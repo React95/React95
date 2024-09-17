@@ -3,6 +3,7 @@ node_modules
 yarn-error.log
 
 dist
+coverage
 
 # storybook build
 packages/core/docs

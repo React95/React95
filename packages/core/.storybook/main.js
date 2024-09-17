@@ -1,3 +1,4 @@
+import { dirname, join } from 'path';
 import { readdirSync } from 'fs';
 
 export default {
@@ -18,15 +19,20 @@ export default {
         actions: false,
       },
     },
-    '@storybook/addon-storysource',
-    './src/theme-changer',
-    '@storybook/addon-designs',
+    getAbsolutePath('@storybook/addon-storysource'),
+    getAbsolutePath(__dirname, './src/theme-changer'),
+    getAbsolutePath(__dirname, './src/clippy-addon'),
+    getAbsolutePath('@storybook/addon-designs'),
   ],
   framework: {
-    name: '@storybook/react-vite',
+    name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
   docs: {
     autodocs: 'tag',
   },
 };
+
+function getAbsolutePath(...value) {
+  return dirname(require.resolve(join.apply(null, [...value, 'package.json'])));
+}

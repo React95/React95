@@ -1,8 +1,10 @@
+/// <reference types="vitest" />
 import { resolve } from 'path';
+import { defineConfig } from 'vite';
 import snapshotResolver from './snapshotResolver';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
-export default {
+export default defineConfig({
   test: {
     alias: [
       {
@@ -18,14 +20,23 @@ export default {
     resolveSnapshotPath: snapshotResolver.resolveSnapshotPath,
     environment: 'happy-dom',
     setupFiles: [
-      'babel-polyfill',
       '@testing-library/jest-dom',
       '../../config/setup/core.setup.js',
     ],
-    testMatch: [
-      '<root>/packages/core/**/*.test.ts',
-      '<root>/packages/core/**/*.test.tsx',
-    ],
+    coverage: {
+      all: false,
+      provider: 'istanbul',
+    },
+    onConsoleLog: log => {
+      // ignore react-draggable deprecation warning:
+      // Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+      //  at DraggableCore (React95/node_modules/react-draggable/build/cjs/DraggableCore.js:75:5)
+      //  at Draggable (React95/node_modules/react-draggable/build/cjs/Draggable.js:85:5)
+      //  at ModalRenderer (React95/packages/core/components/Modal/Modal.tsx:20:20)
+      const reactDraggableDeprecatedWarning = 'react-draggable';
+
+      return !log.includes(reactDraggableDeprecatedWarning);
+    },
   },
   plugins: [vanillaExtractPlugin()],
-};
+});
