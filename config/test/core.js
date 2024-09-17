@@ -24,6 +24,7 @@ export default defineConfig({
       '../../config/setup/core.setup.js',
     ],
     coverage: {
+      all: false,
       provider: 'istanbul',
     },
     onConsoleLog: log => {
