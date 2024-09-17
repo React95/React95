@@ -26,25 +26,35 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
         setModalWindows(prevModals => [...prevModals, window]);
       };
       const removeModal = (data: Pick<ModalWindow, 'id'>) => {
-        setModalWindows(prevModals =>
-          prevModals.filter(modal => modal.id !== data.id),
-        );
+        setModalWindows(prevModals => {
+          const filteredModals = prevModals.filter(
+            modal => modal.id !== data.id,
+          );
+
+          const lastModal = filteredModals.at(-1);
+
+          if (!activeWindow && lastModal) {
+            modals.emit(ModalEvents.ModalVisibilityChanged, {
+              id: lastModal?.id,
+            });
+          }
+
+          return filteredModals;
+        });
       };
 
-      const updateModal = (data: ModalWindow) => {
-        setModalWindows(prevModals =>
-          prevModals.map(modal => (modal.id === data.id ? data : modal)),
-        );
+      const updateVisibleModal = ({ id }: Pick<ModalWindow, 'id'>) => {
+        setActiveWindow(id);
       };
 
       modals.on(ModalEvents.AddModal, addModal);
       modals.on(ModalEvents.RemoveModal, removeModal);
-      modals.on(ModalEvents.UpdateModal, updateModal);
+      modals.on(ModalEvents.ModalVisibilityChanged, updateVisibleModal);
 
       return () => {
         modals.off(ModalEvents.AddModal, addModal);
         modals.off(ModalEvents.RemoveModal, removeModal);
-        modals.off(ModalEvents.UpdateModal, updateModal);
+        modals.off(ModalEvents.ModalVisibilityChanged, updateVisibleModal);
       };
     }, []);
 
@@ -96,7 +106,9 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
                   key={id}
                   icon={icon}
                   active={id === activeWindow}
-                  onClick={() => setActiveWindow(id)}
+                  onClick={() => {
+                    modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+                  }}
                   small={false}
                 >
                   <div className={truncate}>{title}</div>

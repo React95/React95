@@ -1,13 +1,13 @@
 import React, { forwardRef } from 'react';
 import type { ButtonHTMLAttributes } from 'react';
 
-import { Windows } from '../Modal/ModalContext';
+import { ModalWindow } from '../shared/events';
 import * as styles from './TaskBar.css';
 
 export type WindowButtonProps = {
   small?: boolean;
   active?: boolean;
-} & Pick<Windows, 'icon'> &
+} & Pick<ModalWindow, 'icon'> &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const WindowButton = forwardRef<HTMLButtonElement, WindowButtonProps>(

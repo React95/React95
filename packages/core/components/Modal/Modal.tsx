@@ -3,7 +3,6 @@ import React, {
   ReactElement,
   Ref,
   forwardRef,
-  useContext,
   useEffect,
   useState,
   MouseEvent,
@@ -15,12 +14,13 @@ import { DraggableProps } from 'react-draggable';
 import { Button } from '../Button/Button';
 import { List } from '../List/List';
 import { TitleBar } from '../TitleBar/TitleBar';
-import { ModalContext } from './ModalContext';
 import * as styles from './Modal.css';
 import { Frame, FrameProps } from '../Frame/Frame';
 
 import close from './close.svg';
 import help from './help.svg';
+import { ModalEvents, modals } from '../shared/events';
+import { nanoid } from 'nanoid';
 
 export type ModalButtons = {
   value: string;
@@ -70,43 +70,37 @@ const ModalRenderer = (
   }: ModalProps,
   ref: Ref<HTMLDivElement>,
 ) => {
-  const {
-    addWindows,
-    removeWindow,
-    updateWindow,
-    setActiveWindow,
-    activeWindow,
-  } = useContext(ModalContext);
-  const [id, setId] = useState<string | null>(null);
+  const [id] = useState<string>(nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    if (!id) {
-      const newId = addWindows({ icon, title, hasButton });
-      if (newId) {
-        setId(newId);
-        setActiveWindow(newId);
-      }
-    } else {
-      updateWindow(id, { icon, title, hasButton });
-    }
-  }, [id, icon, title, hasButton]);
-  useEffect(() => {
+    modals.emit(ModalEvents.AddModal, {
+      icon,
+      title,
+      id,
+      hasButton,
+    });
+
+    modals.on(ModalEvents.ModalVisibilityChanged, ({ id: activeId }) => {
+      setIsActive(activeId === id);
+    });
+
+    modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+
     return () => {
-      if (id) {
-        removeWindow(id);
-      }
+      modals.emit(ModalEvents.RemoveModal, { id });
     };
-  }, [id]);
-  useEffect(() => setIsActive(id === activeWindow), [id, activeWindow]);
+  }, []);
 
   return (
     <Draggable
       handle=".draggable"
       defaultPosition={defaultPosition}
       positionOffset={positionOffset}
-      onMouseDown={id ? () => setActiveWindow(id) : undefined}
+      onMouseDown={() => {
+        modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+      }}
     >
       <Frame
         {...rest}

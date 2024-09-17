@@ -84,11 +84,6 @@
       "import": "./esm/Modal/Modal.mjs",
       "require": "./cjs/Modal/Modal.cjs"
     },
-    "./ModalProvider": {
-      "types": "./types/Modal/ModalProvider.d.ts",
-      "import": "./esm/Modal/ModalProvider.mjs",
-      "require": "./cjs/Modal/ModalProvider.cjs"
-    },
     "./ProgressBar": {
       "types": "./types/ProgressBar/ProgressBar.d.ts",
       "import": "./esm/ProgressBar/ProgressBar.mjs",

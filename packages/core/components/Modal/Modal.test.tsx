@@ -4,7 +4,8 @@ import { describe, expect, it, vi } from 'vitest';
 import { List } from '../List/List';
 import { fireEvent, waitRender } from '../shared/test/utils';
 import { Modal } from './Modal';
-import { ModalContext } from './ModalContext';
+
+import { ModalEvents, modals } from '../shared/events';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {
@@ -90,32 +91,6 @@ describe('<Modal />', () => {
         >
           Hello
         </Modal>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot with different activeWindow', async () => {
-      const { container } = await waitRender(
-        <ModalContext.Provider
-          value={{
-            windows: {},
-            addWindows: () => {},
-            removeWindow: () => {},
-            setActiveWindow: () => {},
-            updateWindow: () => {},
-            activeWindow: '',
-          }}
-        >
-          <Modal
-            icon={<Bat />}
-            title="file.bat"
-            width="300"
-            height="200"
-            onClose={() => {}}
-          >
-            Hello
-          </Modal>
-        </ModalContext.Provider>,
       );
       expect(container).toMatchSnapshot();
     });
@@ -236,6 +211,45 @@ describe('<Modal />', () => {
       fireEvent.mouseDown(getByText('Edit'));
 
       expect(getByText('Edit').querySelector('li')?.textContent).toBe('Exit');
+    });
+  });
+
+  describe('Events', () => {
+    it('should emit events ', async () => {
+      modals.on = vi.fn();
+      modals.emit = vi.fn();
+
+      await waitRender(
+        <Modal icon={<Bat />} title="file.bat" onClose={() => {}}>
+          Hello
+        </Modal>,
+      );
+
+      expect(modals.emit).toHaveBeenCalledTimes(2);
+      expect(modals.emit).toHaveBeenNthCalledWith(
+        1,
+        ModalEvents.AddModal,
+        expect.objectContaining({
+          id: expect.anything(),
+          icon: expect.anything(),
+          title: 'file.bat',
+          hasButton: true,
+        }),
+      );
+
+      expect(modals.emit).toHaveBeenNthCalledWith(
+        2,
+        ModalEvents.ModalVisibilityChanged,
+        expect.objectContaining({
+          id: expect.anything(),
+        }),
+      );
+
+      expect(modals.on).toHaveBeenCalledTimes(1);
+      expect(modals.on).toHaveBeenCalledWith(
+        ModalEvents.ModalVisibilityChanged,
+        expect.any(Function),
+      );
     });
   });
 });

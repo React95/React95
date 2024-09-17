@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
-class Emitter<U extends string, T> {
-  private listeners: { [key: string]: Array<(data: T) => void> } = {};
+export class Emitter<U extends string, T> {
+  private listeners: { [key: string]: Array<(data: Partial<T>) => void> } = {};
 
   on(eventName: U, callback: (data: T) => void) {
     if (!this.listeners[eventName]) {
@@ -18,7 +18,7 @@ class Emitter<U extends string, T> {
     }
   }
 
-  emit(eventName: U, data: T) {
+  emit(eventName: U, data: Partial<T>) {
     if (this.listeners[eventName]) {
       this.listeners[eventName].forEach(callback => callback(data));
     }
@@ -28,7 +28,6 @@ class Emitter<U extends string, T> {
 export enum ModalEvents {
   AddModal = 'add-modal',
   RemoveModal = 'remove-modal',
-  UpdateModal = 'update-modal',
   ModalVisibilityChanged = 'modal-visibility-changed',
 }
 

@@ -3,11 +3,11 @@
 exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
@@ -71,11 +71,11 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals center 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
@@ -125,11 +125,11 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals flex-start 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
@@ -176,51 +176,14 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 </div>
 `;
 
-exports[`<Modal /> > Snapshots > should match snapshot with different activeWindow 1`] = `
-<div>
-  <div
-    class="Frame_width__iuzg891t Frame_height__iuzg891z Modal_modalWrapper__1txblt60 react-draggable"
-    style="--width__iuzg891s: 300; --height__iuzg891y: 200; transform: translate(0px,0px);"
-  >
-    <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
-    >
-      <svg test-file-stub />
-      <div
-        class="TitleBar_title__1kpzw685"
-      >
-        file.bat
-      </div>
-      <div
-        class="TitleBar_optionsBox__1kpzw680"
-      >
-        <button
-          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
-        >
-          <img
-            alt="close"
-            src="test-file-stub"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="Modal_content__1txblt63"
-    >
-      Hello
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<Modal /> > Snapshots > should match snapshot with width and height props 1`] = `
 <div>
   <div
-    class="Frame_width__iuzg891t Frame_height__iuzg891z Modal_modalWrapper__1txblt60 react-draggable"
+    class="Frame_width__iuzg891t Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
     style="--width__iuzg891s: 300; --height__iuzg891y: 200; transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div

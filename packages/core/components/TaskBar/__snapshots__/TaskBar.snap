@@ -204,11 +204,11 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
@@ -300,11 +300,11 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     />
   </div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 react-draggable"
     style="transform: translate(0px,0px);"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
