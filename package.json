@@ -15,12 +15,12 @@
     "@nx/workspace": "17.2.8",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
+    "@vitest/coverage-istanbul": "^2.0.5",
     "all-contributors-cli": "^6.20.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-modern-regexp": "0.0.6",
-    "babel-polyfill": "^6.26.0",
     "commitizen": "^4.2.4",
     "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
@@ -30,13 +30,13 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.3",
-    "happy-dom": "^10.5.2",
+    "happy-dom": "^15.7.4",
     "husky": "^7.0.4",
     "lerna": "^8.0.1",
-    "nx": "^17.2.8",
+    "nx": "^19.7.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "vitest": "0.33.0"
+    "vitest": "^2.0.5"
   },
   "npmClient": "yarn",
   "workspaces": [
@@ -71,7 +71,12 @@
   },
   "dependencies": {
     "@rollup/plugin-dynamic-import-vars": "^2.1.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/react-hooks": "^8.0.1",
     "minimist": "^1.2.8",
+    "rimraf": "^6.0.1",
     "webpack": "^5.73.0"
   },
   "resolutions": {

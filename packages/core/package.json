@@ -1,14 +1,19 @@
 {
   "name": "@react95/core",
-  "version": "8.1.2",
+  "version": "8.1.3",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
   "exports": {
     ".": {
-      "types": "./types/index.d.ts",
-      "import": "./esm",
-      "require": "./cjs"
+      "import": {
+        "types": "./types/index.d.ts",
+        "default": "./esm"
+      },
+      "require": {
+        "types": "./types/index.d.ts",
+        "default": "./cjs"
+      }
     },
     "./themes/*.css": {
       "types": "./types/themes/all.d.ts",
@@ -65,14 +70,14 @@
       "require": "./cjs/List/List.cjs"
     },
     "./ListDivider": {
-      "types": "./types/ListDivider/ListDivider.d.ts",
-      "import": "./esm/ListDivider/ListDivider.mjs",
-      "require": "./cjs/ListDivider/ListDivider.cjs"
+      "types": "./types/List/ListDivider.d.ts",
+      "import": "./esm/List/ListDivider.mjs",
+      "require": "./cjs/List/ListDivider.cjs"
     },
     "./ListItem": {
-      "types": "./types/ListItem/ListItem.d.ts",
-      "import": "./esm/ListItem/ListItem.mjs",
-      "require": "./cjs/ListItem/ListItem.cjs"
+      "types": "./types/List/ListItem.d.ts",
+      "import": "./esm/List/ListItem.mjs",
+      "require": "./cjs/List/ListItem.cjs"
     },
     "./Modal": {
       "types": "./types/Modal/Modal.d.ts",
@@ -161,25 +166,21 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "@react95/clippy": "^2.0.1",
-    "@storybook/addon-designs": "^7.0.9",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-storysource": "^7.6.17",
-    "@storybook/addons": "^7.6.17",
-    "@storybook/react": "^7.6.17",
-    "@storybook/react-vite": "^7.6.17",
-    "@storybook/react-webpack5": "^7.6.17",
+    "@react95/clippy": "^2.0.2",
+    "@storybook/addon-designs": "^8.0.3",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-storysource": "^8.3.0",
+    "@storybook/react": "^8.3.0",
+    "@storybook/react-vite": "^8.3.0",
+    "@storybook/react-webpack5": "^8.3.0",
     "@storybook/storybook-deployer": "^2.8.16",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/react-hooks": "^8.0.0",
     "@types/react-virtualized": "^9.21.20",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/css-utils": "^0.1.3",
     "@vanilla-extract/dynamic": "^2.1.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "@vanilla-extract/sprinkles": "^1.6.1",
-    "@vanilla-extract/vite-plugin": "^3.9.4",
+    "@vanilla-extract/vite-plugin": "^4.0.15",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
     "copy-to-clipboard": "^3.3.1",
     "copyfiles": "^2.4.1",
@@ -189,7 +190,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
-    "storybook": "^7.6.17",
+    "storybook": "^8.3.0",
     "typescript": "5.3.3",
     "vite": "^4.3.8"
   },
@@ -224,5 +225,9 @@
     "w95",
     "nostalgic",
     "design-system"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/React95/React95/issues"
+  },
+  "homepage": "https://github.com/React95/React95#readme"
 }
