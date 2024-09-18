@@ -1,6 +1,6 @@
 {
   "name": "@react95/clippy",
-  "version": "2.0.2",
+  "version": "2.0.3-alpha.0",
   "description": "Our old good friend Clippy as a React Hook!",
   "keywords": [
     "React95",
