@@ -1,4 +1,6 @@
-const AGENTS = {
+import { AgentType } from 'clippyts/dist/types';
+
+const AGENTS: Record<Uppercase<AgentType>, AgentType> = {
   BONZI: 'Bonzi',
   CLIPPY: 'Clippy',
   F1: 'F1',

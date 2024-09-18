@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.production.json",
+  "compilerOptions": {
+    "outDir": "./dist/types",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  }
+}

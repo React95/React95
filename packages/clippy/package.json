@@ -1,6 +1,6 @@
 {
   "name": "@react95/clippy",
-  "version": "1.0.13",
+  "version": "2.0.2",
   "description": "Our old good friend Clippy as a React Hook!",
   "keywords": [
     "React95",
@@ -24,26 +24,20 @@
   },
   "scripts": {
     "prebuild": "rimraf ./dist",
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --copy-files",
-    "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --copy-files",
-    "lint": "eslint --ext js,jsx --quiet src tests",
+    "prebuild:vite": "rimraf ./dist",
+    "build": "yarn build:vite && yarn build:types",
+    "build:vite": "vite build",
+    "build:types": "yarn tsc -b ./tsconfig.types.json",
+    "lint": "eslint --ext ts,tsx --quiet src tests",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js",
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
     "test": "vitest run --config=../../config/test/clippy.js"
   },
   "bugs": {
     "url": "https://github.com/React95/React95/issues"
   },
-  "devDependencies": {
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/react-hooks": "^8.0.0",
-    "rimraf": "^3.0.2"
-  },
   "dependencies": {
-    "clippyjs": "^0.0.3",
-    "jquery": "^3.6.0",
-    "prop-types": "^15.8.1"
+    "clippyts": "^1.0.4"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"

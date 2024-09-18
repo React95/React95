@@ -1,0 +1,8 @@
+{
+  "name": "@react95/storybook-theme-changer",
+  "version": "0.0.1",
+  "description": "React95 storybook theme changer",
+  "main": "./manager.js",
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "license": "MIT"
+}

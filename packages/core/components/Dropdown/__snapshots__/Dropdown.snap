@@ -12,12 +12,12 @@ exports[`<Dropdown /> > Snapshots > should match snapshot with options prop 1`] 
         value=""
       />
       <option
-        value="C:\\\\Windows"
+        value="C:\\Windows"
       >
         C:\\Windows
       </option>
       <option
-        value="C:\\\\Windows/System32"
+        value="C:\\Windows/System32"
       >
         C:\\Windows/System32
       </option>

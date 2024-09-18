@@ -56,11 +56,9 @@ describe('<Avatar />', () => {
     });
 
     it('should render avatar with circle', () => {
-      render(<Avatar circle>GG</Avatar>);
+      const { container } = render(<Avatar circle>GG</Avatar>);
 
-      expect(screen.getByText(/GG/i)).toHaveStyle({
-        borderRadius: '50%',
-      });
+      expect(container).toMatchSnapshot();
     });
   });
 });

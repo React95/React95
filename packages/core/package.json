@@ -1,23 +1,148 @@
 {
   "name": "@react95/core",
-  "version": "8.0.0-alpha.11",
+  "version": "8.1.3",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
   "exports": {
     ".": {
-      "types": "./types/index.d.ts",
-      "import": "./esm",
-      "require": "./cjs"
+      "import": {
+        "types": "./types/index.d.ts",
+        "default": "./esm"
+      },
+      "require": {
+        "types": "./types/index.d.ts",
+        "default": "./cjs"
+      }
     },
     "./themes/*.css": {
       "types": "./types/themes/all.d.ts",
-      "import": "./esm/themes/*.css.mjs",
-      "require": "./cjs/themes/*.css.cjs"
+      "import": "./esm/themes/*.css.ts.vanilla.css",
+      "require": "./cjs/themes/*.css.ts.vanilla.css"
     },
     "./GlobalStyle": {
-      "import": "./esm/GlobalStyle.mjs",
-      "require": "./cjs/GlobalStyle.cjs"
+      "import": "./esm/GlobalStyle/GlobalStyle.css.ts.vanilla.css",
+      "require": "./cjs/GlobalStyle/GlobalStyle.css.ts.vanilla.css"
+    },
+    "./Alert": {
+      "types": "./types/Alert/Alert.d.ts",
+      "import": "./esm/Alert/Alert.mjs",
+      "require": "./cjs/Alert/Alert.cjs"
+    },
+    "./Button": {
+      "types": "./types/Button/Button.d.ts",
+      "import": "./esm/Button/Button.mjs",
+      "require": "./cjs/Button/Button.cjs"
+    },
+    "./Checkbox": {
+      "types": "./types/Checkbox/Checkbox.d.ts",
+      "import": "./esm/Checkbox/Checkbox.mjs",
+      "require": "./cjs/Checkbox/Checkbox.cjs"
+    },
+    "./Cursor": {
+      "types": "./types/Cursor/Cursor.css.d.ts",
+      "import": "./esm/Cursor/Cursor.css.mjs",
+      "require": "./cjs/Cursor/Cursor.css.cjs"
+    },
+    "./Dropdown": {
+      "types": "./types/Dropdown/Dropdown.d.ts",
+      "import": "./esm/Dropdown/Dropdown.mjs",
+      "require": "./cjs/Dropdown/Dropdown.cjs"
+    },
+    "./Fieldset": {
+      "types": "./types/Fieldset/Fieldset.d.ts",
+      "import": "./esm/Fieldset/Fieldset.mjs",
+      "require": "./cjs/Fieldset/Fieldset.cjs"
+    },
+    "./Frame": {
+      "types": "./types/Frame/Frame.d.ts",
+      "import": "./esm/Frame/Frame.mjs",
+      "require": "./cjs/Frame/Frame.cjs"
+    },
+    "./Input": {
+      "types": "./types/Input/Input.d.ts",
+      "import": "./esm/Input/Input.mjs",
+      "require": "./cjs/Input/Input.cjs"
+    },
+    "./List": {
+      "types": "./types/List/List.d.ts",
+      "import": "./esm/List/List.mjs",
+      "require": "./cjs/List/List.cjs"
+    },
+    "./ListDivider": {
+      "types": "./types/List/ListDivider.d.ts",
+      "import": "./esm/List/ListDivider.mjs",
+      "require": "./cjs/List/ListDivider.cjs"
+    },
+    "./ListItem": {
+      "types": "./types/List/ListItem.d.ts",
+      "import": "./esm/List/ListItem.mjs",
+      "require": "./cjs/List/ListItem.cjs"
+    },
+    "./Modal": {
+      "types": "./types/Modal/Modal.d.ts",
+      "import": "./esm/Modal/Modal.mjs",
+      "require": "./cjs/Modal/Modal.cjs"
+    },
+    "./ModalProvider": {
+      "types": "./types/Modal/ModalProvider.d.ts",
+      "import": "./esm/Modal/ModalProvider.mjs",
+      "require": "./cjs/Modal/ModalProvider.cjs"
+    },
+    "./ProgressBar": {
+      "types": "./types/ProgressBar/ProgressBar.d.ts",
+      "import": "./esm/ProgressBar/ProgressBar.mjs",
+      "require": "./cjs/ProgressBar/ProgressBar.cjs"
+    },
+    "./RadioButton": {
+      "types": "./types/RadioButton/RadioButton.d.ts",
+      "import": "./esm/RadioButton/RadioButton.mjs",
+      "require": "./cjs/RadioButton/RadioButton.cjs"
+    },
+    "./Range": {
+      "types": "./types/Range/Range.d.ts",
+      "import": "./esm/Range/Range.mjs",
+      "require": "./cjs/Range/Range.cjs"
+    },
+    "./Tabs": {
+      "types": "./types/Tabs/Tabs.d.ts",
+      "import": "./esm/Tabs/Tabs.mjs",
+      "require": "./cjs/Tabs/Tabs.cjs"
+    },
+    "./Tab": {
+      "types": "./types/Tabs/Tab.d.ts",
+      "import": "./esm/Tabs/Tab.mjs",
+      "require": "./cjs/Tabs/Tab.cjs"
+    },
+    "./TaskBar": {
+      "types": "./types/TaskBar/TaskBar.d.ts",
+      "import": "./esm/TaskBar/TaskBar.mjs",
+      "require": "./cjs/TaskBar/TaskBar.cjs"
+    },
+    "./TextArea": {
+      "types": "./types/TextArea/TextArea.d.ts",
+      "import": "./esm/TextArea/TextArea.mjs",
+      "require": "./cjs/TextArea/TextArea.cjs"
+    },
+    "./TitleBar": {
+      "types": "./types/TitleBar/TitleBar.d.ts",
+      "import": "./esm/TitleBar/TitleBar.mjs",
+      "require": "./cjs/TitleBar/TitleBar.cjs"
+    },
+    "./Tooltip": {
+      "types": "./types/Tooltip/Tooltip.d.ts",
+      "import": "./esm/Tooltip/Tooltip.mjs",
+      "require": "./cjs/Tooltip/Tooltip.cjs"
+    },
+    "./Tree": {
+      "types": "./types/Tree/Tree.d.ts",
+      "import": "./esm/Tree/Tree.mjs",
+      "require": "./cjs/Tree/Tree.cjs"
+    },
+    "./Video": {
+      "types": "./types/Video/Video.d.ts",
+      "import": "./esm/Video/Video.mjs",
+      "require": "./cjs/Video/Video.cjs"
     }
   },
   "repository": {
@@ -41,25 +166,21 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "@react95/clippy": "^1.0.13",
-    "@storybook/addon-designs": "^7.0.9",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-storysource": "^7.6.17",
-    "@storybook/addons": "^7.6.17",
-    "@storybook/react": "^7.6.17",
-    "@storybook/react-vite": "^7.6.17",
-    "@storybook/react-webpack5": "^7.6.17",
+    "@react95/clippy": "^2.0.2",
+    "@storybook/addon-designs": "^8.0.3",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-storysource": "^8.3.0",
+    "@storybook/react": "^8.3.0",
+    "@storybook/react-vite": "^8.3.0",
+    "@storybook/react-webpack5": "^8.3.0",
     "@storybook/storybook-deployer": "^2.8.16",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/react-hooks": "^8.0.0",
     "@types/react-virtualized": "^9.21.20",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/css-utils": "^0.1.3",
     "@vanilla-extract/dynamic": "^2.1.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "@vanilla-extract/sprinkles": "^1.6.1",
-    "@vanilla-extract/vite-plugin": "^3.9.4",
+    "@vanilla-extract/vite-plugin": "^4.0.15",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
     "copy-to-clipboard": "^3.3.1",
     "copyfiles": "^2.4.1",
@@ -69,13 +190,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
-    "storybook": "^7.6.17",
+    "storybook": "^8.3.0",
     "typescript": "5.3.3",
     "vite": "^4.3.8"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs",
+    "postbuild-storybook": "cp -r ../../node_modules/clippyts/dist/agents ./docs/assets",
     "build": "yarn build:vite && yarn build:types",
     "build:vite": "vite build",
     "build:types": "yarn build:types:core && yarn build:types:themes",
@@ -103,5 +225,9 @@
     "w95",
     "nostalgic",
     "design-system"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/React95/React95/issues"
+  },
+  "homepage": "https://github.com/React95/React95#readme"
 }

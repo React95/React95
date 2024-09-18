@@ -45,4 +45,6 @@ const App = () => (
 ## API and Special thanks
 
 This package only exposes the brilliant job done in
-[clippyjs](https://github.com/pi0/clippyjs) project, which you can find all details you'll need.
+
+- [clippyjs](https://github.com/pi0/clippyjs) project, in which you can find all the details you'll need.
+- [clippyts](https://github.com/lizozom/clippyts) providing all types of it.

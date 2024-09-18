@@ -1,5 +1,4 @@
-import { ClippyProvider, useClippy } from '@react95/clippy';
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import copy from 'copy-to-clipboard';
 import * as React from 'react';
 
@@ -11,32 +10,18 @@ import * as styles from './icons.stories.css';
 
 export default {
   title: 'Icon',
-  decorators: [
-    Story => (
-      <ClippyProvider>
-        <Story />
-      </ClippyProvider>
-    ),
-  ],
 } as Meta;
 
-export const All = {
-  render: () => {
-    const [selectedIcon, setSelectedIcon] = React.useState('');
-    const { clippy } = useClippy();
+type Story = StoryObj<unknown>;
 
+export const All: Story = {
+  render: (_, { speak }) => {
     const copyToClipboard = (componentName: string, variantName: string) => {
       const text = `<${componentName} variant="${variantName}"/>`;
-      setSelectedIcon(text);
-
       copy(text);
-    };
 
-    React.useEffect(() => {
-      if (selectedIcon) {
-        clippy.speak('copied to clipboard!');
-      }
-    }, [clippy, selectedIcon]);
+      speak('Copied to clipboard!');
+    };
 
     return (
       <div>
@@ -51,7 +36,7 @@ export const All = {
         >
           {icons.map(({ component: Component, componentName, variants }) => {
             return (
-              <>
+              <React.Fragment key={componentName}>
                 {Object.entries(variants).map(([variantName]) => {
                   const [size] = variantName.split('x');
 
@@ -80,7 +65,7 @@ export const All = {
                     </Button>
                   );
                 })}
-              </>
+              </React.Fragment>
             );
           })}
         </Frame>

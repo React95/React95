@@ -49,3 +49,14 @@ exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with s
   </div>
 </div>
 `;
+
+exports[`<Avatar /> > value prop > should render avatar with circle 1`] = `
+<div>
+  <div
+    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0 Avatar_avatar_circle_true__vljy2n1"
+    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
+  >
+    GG
+  </div>
+</div>
+`;

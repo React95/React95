@@ -43,9 +43,15 @@ export const extractThemes = (frame: HTMLIFrameElement) => {
     );
     const extractedThemes = allStyleTagsArray
       // and each theme will have its file as data-attribute (data-file)
-      .filter(link => link.dataset?.file?.includes('themes') && link.sheet)
+      .filter(
+        link =>
+          link.dataset?.viteDevId?.includes('themes') &&
+          !link.dataset?.viteDevId?.includes('contract') &&
+          link.sheet,
+      )
       .map(link => {
-        const [name] = link.dataset?.file?.split('/').pop()?.split('.') || [];
+        const [name] =
+          link.dataset?.viteDevId?.split('/').pop()?.split('.') || [];
         const [themeObject] = getThemeContent({
           rules: link.sheet!.cssRules,
           availableThemes: [name],

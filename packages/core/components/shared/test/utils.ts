@@ -1,10 +1,5 @@
-import {
-  RenderOptions,
-  RenderResult,
-  act,
-  render,
-} from '@testing-library/react';
-import type { ReactElement } from 'react';
+import { RenderOptions, RenderResult, render } from '@testing-library/react';
+import { act, type ReactElement } from 'react';
 
 const waitRender = async (
   ui: ReactElement,
