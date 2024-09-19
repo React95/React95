@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
 import { ReaderClosed, WindowsExplorer } from '@react95/icons';
-import { List, Modal } from '../components';
+import { List, Modal, TitleBar } from '../components';
 import { TaskBar } from '../components/TaskBar/TaskBar';
 
 export default {
@@ -25,7 +25,9 @@ export const Simple = {
           <Modal
             icon={<WindowsExplorer variant="16x16_4" />}
             title="Windows Explorer"
-            onClose={closeFirst}
+            titleBarOptions={
+              <TitleBar.Close key="close" onClick={closeFirst} />
+            }
             width="300px"
             height="200px"
           />
@@ -33,12 +35,16 @@ export const Simple = {
 
         {second && (
           <Modal
-            defaultPosition={{ x: 50, y: 50 }}
+            dragOptions={{
+              defaultPosition: { x: 50, y: 50 },
+            }}
             width="300px"
             height="200px"
             icon={<ReaderClosed variant="16x16_4" />}
             title="Local Disk (C:)"
-            onClose={closeSecond}
+            titleBarOptions={
+              <TitleBar.Close key="close" onClick={closeSecond} />
+            }
           />
         )}
 
