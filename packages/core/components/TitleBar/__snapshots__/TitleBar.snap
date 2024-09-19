@@ -43,7 +43,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot 1`] = `
 </div>
 `;
 
-exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = `
+exports[`<TitleBar /> > Snapshot > should match snapshot with custom option 1`] = `
 <div>
   <div
     class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683"
@@ -66,6 +66,65 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with all Options 1`] = 
         class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
       >
         x
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TitleBar /> > Snapshot > should match snapshot with default options 1`] = `
+<div>
+  <div
+    class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683"
+  >
+    <svg test-file-stub />
+    <div
+      class="TitleBar_title__1kpzw685"
+    >
+      test.exe
+    </div>
+    <div
+      class="TitleBar_optionsBox__1kpzw680"
+    >
+      <button
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
+      >
+        <img
+          alt="help"
+          src="test-file-stub"
+        />
+      </button>
+      <button
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
+      >
+        <img
+          alt="maximize"
+          src="test-file-stub"
+        />
+      </button>
+      <button
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
+      >
+        <img
+          alt="minimize"
+          src="test-file-stub"
+        />
+      </button>
+      <button
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
+      >
+        <img
+          alt="restore"
+          src="test-file-stub"
+        />
+      </button>
+      <button
+        class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
+      >
+        <img
+          alt="close"
+          src="test-file-stub"
+        />
       </button>
     </div>
   </div>

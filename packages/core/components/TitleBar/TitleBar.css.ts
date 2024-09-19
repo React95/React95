@@ -64,11 +64,19 @@ export const titleBarBackground = recipe({
 globalStyle(`${titleBarBackground.classNames.base} svg`, {
   width: contract.space[16],
   height: contract.space[16],
-  marginRight: contract.space[4],
+  marginInlineEnd: contract.space[4],
+  flexShrink: 0,
+});
+
+globalStyle(`${option} svg`, {
+  width: contract.space[14],
+  height: contract.space[14],
+  marginInlineEnd: 'unset',
 });
 
 export const title = style({
   flexGrow: 1,
+  flexShrink: 0,
   lineHeight: '1.4em',
   margin: '0',
   fontSize: '1em',
