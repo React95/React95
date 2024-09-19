@@ -30,7 +30,10 @@ export type AlertProps = ModalProps & {
 };
 
 export const Alert = forwardRef<HTMLDivElement, AlertProps>(
-  ({ type = 'error', message, hasSound, ...rest }, ref) => {
+  (
+    { type = 'error', message, hasSound = false, dragOptions, ...rest },
+    ref,
+  ) => {
     if (hasSound) {
       useEffect(() => {
         const audio = new Audio(sound);
@@ -39,31 +42,34 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(
     }
 
     return (
-      <Modal height="120" hasWindowButton={false} {...rest} ref={ref}>
-        <div className={styles.dialog}>
+      <Modal
+        height="120"
+        dragOptions={{
+          defaultPosition: {
+            x:
+              typeof window == 'undefined'
+                ? 0
+                : Math.floor(window.innerWidth / 2) - 150,
+            y:
+              typeof window == 'undefined'
+                ? 0
+                : Math.floor(window.innerHeight / 2) - 100,
+          },
+          ...dragOptions,
+        }}
+        buttons={[{ value: 'OK', onClick: () => {} }]}
+        hasWindowButton={false}
+        buttonsAlignment={'center'}
+        {...rest}
+        ref={ref}
+      >
+        <Modal.Content className={styles.dialog}>
           <div className={styles.icon}>
             <RenderImage option={type} />
           </div>
           <div className={styles.message}>{message}</div>
-        </div>
+        </Modal.Content>
       </Modal>
     );
   },
 );
-
-Alert.defaultProps = {
-  type: 'error',
-  buttons: [{ value: 'OK', onClick: () => {} }],
-  buttonsAlignment: 'center',
-  positionOffset: {
-    x:
-      typeof window == 'undefined'
-        ? 0
-        : Math.floor(window.innerWidth / 2) - 150,
-    y:
-      typeof window == 'undefined'
-        ? 0
-        : Math.floor(window.innerHeight / 2) - 100,
-  },
-  hasSound: false,
-};

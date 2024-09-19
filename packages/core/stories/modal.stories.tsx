@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Button, Frame, List } from '../components';
+import { Button, List, TitleBar } from '../components';
 import { Modal } from '../components/Modal/Modal';
 
 import { Computer, Mmsys113, Mshtml32534 } from '@react95/icons';
@@ -26,18 +26,23 @@ export const Simple = {
         <Button onClick={handleOpenModal}>Trigger Modal</Button>
         {showModal && (
           <Modal
-            width="300px"
-            height="200px"
             icon={<Computer variant="16x16_4" />}
             title="Browse"
-            defaultPosition={{
-              x: 0,
-              y: 20,
+            dragOptions={{
+              defaultPosition: {
+                x: 0,
+                y: 20,
+              },
             }}
-            onClose={handleCloseModal}
-            onHelp={() => {
-              console.log('Help!');
-            }}
+            titleBarOptions={[
+              <TitleBar.Help
+                key="help"
+                onClick={() => {
+                  alert('Help!');
+                }}
+              />,
+              <TitleBar.Close key="close" onClick={handleCloseModal} />,
+            ]}
             buttons={[
               { value: 'Ok', onClick: handleButtonClick },
               { value: 'Cancel', onClick: handleButtonClick },
@@ -60,7 +65,16 @@ export const Simple = {
                 ),
               },
             ]}
-          />
+          >
+            <Modal.Content
+              width="300px"
+              height="160px"
+              boxShadow="$in"
+              bgColor="white"
+            >
+              Simple modal
+            </Modal.Content>
+          </Modal>
         )}
       </>
     );
@@ -96,15 +110,15 @@ export const Multiple = () => {
       <Button onClick={handleOpenSecondModal}>Trigger 2nd</Button>
       {showFirstModal && (
         <Modal
-          width="300px"
-          height="200px"
           icon={<Mmsys113 variant="32x32_4" />}
           title="First Modal"
-          defaultPosition={{
-            x: 0,
-            y: 20,
+          dragOptions={{
+            defaultPosition: {
+              x: 0,
+              y: 20,
+            },
           }}
-          onClose={handleCloseFirstModal}
+          titleBarOptions={<TitleBar.Close onClick={handleCloseFirstModal} />}
           buttons={[
             { value: 'Ok', onClick: handleButtonClick },
             { value: 'Cancel', onClick: handleButtonClick },
@@ -128,27 +142,32 @@ export const Multiple = () => {
             },
           ]}
         >
-          <Frame bg="white" boxShadow="$in" h="100%" w="100%" padding="0px 5px">
+          <Modal.Content
+            width="300px"
+            height="160px"
+            boxShadow="$in"
+            bgColor="white"
+          >
             <p>
               The active modal will be based on the order they render, most
               recently rendered will be the active component. On click of a
               non-active modal will fire an action to set that modal as the
               active one.
             </p>
-          </Frame>
+          </Modal.Content>
         </Modal>
       )}
       {showSecondModal && (
         <Modal
-          width="300px"
-          height="200px"
           icon={<Mshtml32534 variant="32x32_4" />}
           title="Second Modal"
-          defaultPosition={{
-            x: 250,
-            y: 100,
+          dragOptions={{
+            defaultPosition: {
+              x: 250,
+              y: 100,
+            },
           }}
-          onClose={handleCloseSecondModal}
+          titleBarOptions={<TitleBar.Close onClick={handleCloseSecondModal} />}
           buttons={[
             { value: 'Ok', onClick: handleButtonClick },
             { value: 'Cancel', onClick: handleButtonClick },
@@ -172,12 +191,17 @@ export const Multiple = () => {
             },
           ]}
         >
-          <Frame bg="white" boxShadow="$in" h="100%" w="100%" padding="0px 5px">
+          <Modal.Content
+            width="300px"
+            height="160px"
+            boxShadow="$in"
+            bgColor="white"
+          >
             <p>
-              Try playing with the modals. See which on is active, click and
+              Try playing with the modals. See which one is active, click and
               drag them. Understand their behavior.
             </p>
-          </Frame>
+          </Modal.Content>
         </Modal>
       )}
     </>

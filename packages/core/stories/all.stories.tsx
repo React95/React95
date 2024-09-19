@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Alert, Button } from '../components';
+import { Alert, Button, TitleBar } from '../components';
 
 import { Simple as SimpleAvatar } from './avatar.stories';
 import { Simple as SimpleButton } from './button.stories';
@@ -33,6 +33,7 @@ export default {
 export const All = {
   render: () => {
     const [openAlert, setOpenAlert] = React.useState(true);
+    const closeAlert = () => setOpenAlert(false);
 
     return (
       <div className={styles.list}>
@@ -43,13 +44,17 @@ export const All = {
           <Alert
             title="Windows Networking"
             type="error"
-            onClose={() => {}}
-            defaultPosition={{
-              x: -130,
-              y: -130,
+            dragOptions={{
+              defaultPosition: {
+                x: 130,
+                y: 130,
+              },
             }}
+            titleBarOptions={
+              <TitleBar.Close key="close" onClick={closeAlert} />
+            }
             message="The Windows password you typed is incorrect."
-            buttons={[{ value: 'OK', onClick: () => setOpenAlert(false) }]}
+            buttons={[{ value: 'OK', onClick: closeAlert }]}
           />
         )}
 

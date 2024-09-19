@@ -148,6 +148,7 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@neodrag/react": "^2.0.4",
     "@react95/icons": "^2.1.1",
     "@vanilla-extract/dynamic": "^2.1.0",
     "@vanilla-extract/recipes": "^0.5.1",

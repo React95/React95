@@ -6,6 +6,7 @@ import { fireEvent, waitRender } from '../shared/test/utils';
 import { Modal } from './Modal';
 
 import { ModalEvents, modals } from '../shared/events';
+import { TitleBar } from '../TitleBar/TitleBar';
 
 describe('<Modal />', () => {
   describe('Snapshots', () => {
@@ -14,7 +15,6 @@ describe('<Modal />', () => {
         <Modal
           icon={<Bat />}
           title="file.bat"
-          onClose={() => {}}
           buttons={[
             { value: 'Ok', onClick: () => {} },
             { value: 'Cancel', onClick: () => {} },
@@ -38,7 +38,7 @@ describe('<Modal />', () => {
             },
           ]}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
       expect(container).toMatchSnapshot();
@@ -49,14 +49,13 @@ describe('<Modal />', () => {
         <Modal
           icon={<Bat />}
           title="file.bat"
-          onClose={() => {}}
           buttons={[
             { value: 'Ok', onClick: () => {} },
             { value: 'Cancel', onClick: () => {} },
           ]}
           buttonsAlignment="center"
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
       expect(container).toMatchSnapshot();
@@ -67,51 +66,39 @@ describe('<Modal />', () => {
         <Modal
           icon={<Bat />}
           title="file.bat"
-          onClose={() => {}}
           buttons={[
             { value: 'Ok', onClick: () => {} },
             { value: 'Cancel', onClick: () => {} },
           ]}
           buttonsAlignment="flex-start"
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
       expect(container).toMatchSnapshot();
     });
 
-    it('should match snapshot with width and height props', async () => {
+    it('should match snapshot with titleBarOptions', async () => {
       const { container } = await waitRender(
         <Modal
           icon={<Bat />}
           title="file.bat"
-          width="300"
-          height="200"
-          onClose={() => {}}
+          titleBarOptions={[
+            <TitleBar.Help key="help" />,
+            <TitleBar.Maximize key="maximize" />,
+            <TitleBar.Minimize key="minimize" />,
+            <TitleBar.Restore key="restore" />,
+            <TitleBar.Close key="close" />,
+          ]}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
       expect(container).toMatchSnapshot();
     });
   });
 
-  describe('onClose prop', () => {
-    it('should call onClose when Modal close button is clicked', async () => {
-      const onCloseMock = vi.fn();
-      const { getByRole } = await waitRender(
-        <Modal icon={<Bat />} title="file.bat" onClose={onCloseMock}>
-          Hello
-        </Modal>,
-      );
-
-      fireEvent.click(getByRole('button'));
-
-      expect(onCloseMock).toHaveBeenCalled();
-    });
-  });
-
-  describe('Modal action buttons', () => {
+  describe('Action buttons', () => {
     it('should display button text correctly', async () => {
       const buttonText = 'button text';
       const { getByText } = await waitRender(
@@ -119,9 +106,8 @@ describe('<Modal />', () => {
           icon={<Bat />}
           title="file.bat"
           buttons={[{ value: buttonText, onClick: () => {} }]}
-          onClose={() => {}}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
 
@@ -138,9 +124,8 @@ describe('<Modal />', () => {
             { value: 'button 2', onClick: () => {} },
             { value: 'button 3', onClick: () => {} },
           ]}
-          onClose={() => {}}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
 
@@ -153,9 +138,8 @@ describe('<Modal />', () => {
         <Modal
           title="file.bat"
           buttons={[{ value: 'Ok', onClick: onClickMock }]}
-          onClose={() => {}}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
 
@@ -170,7 +154,6 @@ describe('<Modal />', () => {
       const { getByText } = await waitRender(
         <Modal
           title="file.bat"
-          onClose={() => {}}
           menu={[
             {
               name: 'Menu Text',
@@ -182,7 +165,7 @@ describe('<Modal />', () => {
             },
           ]}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
       expect(getByText('Menu Text')).toBeInTheDocument();
@@ -192,7 +175,6 @@ describe('<Modal />', () => {
       const { getByText } = await waitRender(
         <Modal
           title="file.bat"
-          onClose={() => {}}
           menu={[
             {
               name: 'Edit',
@@ -204,7 +186,7 @@ describe('<Modal />', () => {
             },
           ]}
         >
-          Hello
+          <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
 
@@ -219,11 +201,7 @@ describe('<Modal />', () => {
       modals.on = vi.fn();
       modals.emit = vi.fn();
 
-      await waitRender(
-        <Modal icon={<Bat />} title="file.bat" onClose={() => {}}>
-          Hello
-        </Modal>,
-      );
+      await waitRender(<Modal>Hello</Modal>);
 
       expect(modals.emit).toHaveBeenCalledTimes(2);
       expect(modals.emit).toHaveBeenNthCalledWith(
@@ -231,9 +209,6 @@ describe('<Modal />', () => {
         ModalEvents.AddModal,
         expect.objectContaining({
           id: expect.anything(),
-          icon: expect.anything(),
-          title: 'file.bat',
-          hasButton: true,
         }),
       );
 
