@@ -30,7 +30,6 @@ export const Complete = {
       active
       icon={<Doc variant="16x16_4" />}
       title="untitled - Paint"
-      className="draggable"
       width="300px"
     >
       <TitleBar.OptionsBox>
