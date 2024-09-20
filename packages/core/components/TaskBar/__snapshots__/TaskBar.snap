@@ -204,11 +204,11 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
-    style="transform: translate(0px,0px);"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
@@ -216,22 +216,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
       >
         file.bat
       </div>
-      <div
-        class="TitleBar_optionsBox__1kpzw680"
-      >
-        <button
-          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
-        >
-          <img
-            alt="close"
-            src="test-file-stub"
-          />
-        </button>
-      </div>
     </div>
-    <div
-      class="Modal_content__1txblt63"
-    />
   </div>
   <div
     class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"
@@ -270,8 +255,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
-    style="transform: translate(0px,0px);"
+    class="Modal_modalWrapper__1txblt60 neodrag"
+    style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
@@ -282,29 +267,14 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
       >
         Windows Explorer
       </div>
-      <div
-        class="TitleBar_optionsBox__1kpzw680"
-      >
-        <button
-          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
-        >
-          <img
-            alt="close"
-            src="test-file-stub"
-          />
-        </button>
-      </div>
     </div>
-    <div
-      class="Modal_content__1txblt63"
-    />
   </div>
   <div
-    class="Modal_modalWrapper__1txblt60 react-draggable"
-    style="transform: translate(0px,0px);"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
     >
       <svg test-file-stub />
       <div
@@ -312,22 +282,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
       >
         file.bat
       </div>
-      <div
-        class="TitleBar_optionsBox__1kpzw680"
-      >
-        <button
-          class="Button_button__1bzq74l0 TitleBar_option__1kpzw681"
-        >
-          <img
-            alt="close"
-            src="test-file-stub"
-          />
-        </button>
-      </div>
     </div>
-    <div
-      class="Modal_content__1txblt63"
-    />
   </div>
   <div
     class="Frame_height__iuzg891z Frame_width__iuzg891t Frame_position__iuzg893d Frame_bottom__iuzg893j Frame_left__iuzg893l Frame_right__iuzg893h Frame_display__iuzg891 Frame_justifyContent__iuzg891f Frame_padding__iuzg892r Frame_zIndex__iuzg897d Frame_backgroundColor__iuzg893p Frame_boxShadow__iuzg895z"

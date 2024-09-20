@@ -1,26 +1,26 @@
+import { nanoid } from 'nanoid';
 import React, {
   HTMLAttributes,
+  MouseEvent,
   ReactElement,
   Ref,
-  forwardRef,
-  useContext,
   useEffect,
+  useImperativeHandle,
+  useRef,
   useState,
-  MouseEvent,
 } from 'react';
 
-import Draggable from 'react-draggable';
+import { DragOptions, useDraggable } from '@neodrag/react';
 
-import { DraggableProps } from 'react-draggable';
 import { Button } from '../Button/Button';
+import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
-import { TitleBar } from '../TitleBar/TitleBar';
-import { ModalContext } from './ModalContext';
+import { TitleBar, TitleBarBackgroundProps } from '../TitleBar/TitleBar';
 import * as styles from './Modal.css';
-import { Frame, FrameProps } from '../Frame/Frame';
 
-import close from './close.svg';
-import help from './help.svg';
+import cn from 'classnames';
+import { useOnClickOutside } from 'usehooks-ts';
+import { ModalEvents, modals } from '../shared/events';
 
 export type ModalButtons = {
   value: string;
@@ -37,19 +37,31 @@ export type ModalDefaultPosition = {
   y: number;
 };
 
+type TitleBarOptions =
+  | typeof TitleBar.Close
+  | typeof TitleBar.Help
+  | typeof TitleBar.Maximize
+  | typeof TitleBar.Minimize
+  | typeof TitleBar.Restore;
+
 export type ModalProps = {
-  icon?: ReactElement;
-  onClose(event: MouseEvent): void;
-  onHelp?(event: MouseEvent): void;
-  title: string;
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
-  defaultPosition?: DraggableProps['defaultPosition'];
-  positionOffset?: DraggableProps['positionOffset'];
+  dragOptions?: Omit<DragOptions, 'handle'>;
   hasWindowButton?: boolean;
   buttonsAlignment?: FrameProps<'div'>['justifyContent'];
+  titleBarOptions?:
+    | ReactElement<TitleBarOptions>
+    | ReactElement<TitleBarOptions>[];
 } & Omit<FrameProps<'div'>, 'as'> &
-  HTMLAttributes<HTMLDivElement>;
+  HTMLAttributes<HTMLDivElement> &
+  Pick<TitleBarBackgroundProps, 'title' | 'icon'>;
+
+const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
+  (rest, ref) => (
+    <Frame {...rest} ref={ref} className={cn(styles.content, rest.className)} />
+  ),
+);
 
 const ModalRenderer = (
   {
@@ -57,138 +69,117 @@ const ModalRenderer = (
     buttons = [],
     buttonsAlignment = 'flex-end',
     children,
-    onClose = () => {},
-    onHelp,
-    defaultPosition = { x: 0, y: 0 },
-    positionOffset,
-    height,
     icon,
     menu = [],
     title,
-    width,
+    dragOptions,
+    titleBarOptions,
+    className,
     ...rest
   }: ModalProps,
-  ref: Ref<HTMLDivElement>,
+  ref: Ref<HTMLDivElement | null>,
 ) => {
-  const {
-    addWindows,
-    removeWindow,
-    updateWindow,
-    setActiveWindow,
-    activeWindow,
-  } = useContext(ModalContext);
-  const [id, setId] = useState<string | null>(null);
+  const [id] = useState<string>(nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
 
+  const draggableRef = useRef<HTMLDivElement>(null);
+  useDraggable(draggableRef, {
+    ...dragOptions,
+    handle: '.draggable',
+  });
+
+  const menuRef = useRef<HTMLUListElement>(null);
+  useOnClickOutside(menuRef, () => {
+    setMenuOpened('');
+  });
+
   useEffect(() => {
-    if (!id) {
-      const newId = addWindows({ icon, title, hasButton });
-      if (newId) {
-        setId(newId);
-        setActiveWindow(newId);
-      }
-    } else {
-      updateWindow(id, { icon, title, hasButton });
-    }
-  }, [id, icon, title, hasButton]);
-  useEffect(() => {
+    modals.emit(ModalEvents.AddModal, {
+      icon,
+      title,
+      id,
+      hasButton,
+    });
+
+    modals.on(ModalEvents.ModalVisibilityChanged, ({ id: activeId }) => {
+      setIsActive(activeId === id);
+    });
+
+    modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+
     return () => {
-      if (id) {
-        removeWindow(id);
-      }
+      modals.emit(ModalEvents.RemoveModal, { id });
     };
-  }, [id]);
-  useEffect(() => setIsActive(id === activeWindow), [id, activeWindow]);
+  }, []);
+
+  useImperativeHandle(ref, () => {
+    return draggableRef.current;
+  });
 
   return (
-    <Draggable
-      handle=".draggable"
-      defaultPosition={defaultPosition}
-      positionOffset={positionOffset}
-      onMouseDown={id ? () => setActiveWindow(id) : undefined}
+    <Frame
+      {...rest}
+      className={cn(styles.modalWrapper({ active: isActive }), className)}
+      ref={draggableRef}
+      onMouseDown={() => {
+        modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+      }}
     >
-      <Frame
-        {...rest}
-        width={width}
-        height={height}
-        className={styles.modalWrapper({ active: isActive })}
-        ref={ref}
+      <TitleBar
+        active={isActive}
+        icon={icon}
+        title={title}
+        className="draggable"
       >
-        <TitleBar
-          active={isActive}
-          icon={icon}
-          title={title}
-          className="draggable"
-        >
-          <TitleBar.OptionsBox>
-            {onHelp && (
-              <TitleBar.Option>
-                <img src={help} alt="help" onClick={onHelp} />
-              </TitleBar.Option>
-            )}
-
-            <TitleBar.Option onClick={onClose}>
-              <img src={close} alt="close" />
-            </TitleBar.Option>
-          </TitleBar.OptionsBox>
-        </TitleBar>
-
-        {menu && menu.length > 0 && (
-          <ul className={styles.menuWrapper}>
-            {menu.map(({ name, list }) => {
-              const active = menuOpened === name;
-              return (
-                <li
-                  key={name}
-                  onMouseDown={() => setMenuOpened(name)}
-                  className={styles.menuItem({ active })}
-                >
-                  {name}
-                  {active && list}
-                </li>
-              );
-            })}
-          </ul>
+        {titleBarOptions && (
+          <TitleBar.OptionsBox>{titleBarOptions}</TitleBar.OptionsBox>
         )}
+      </TitleBar>
 
-        <div className={styles.content} onClick={() => setMenuOpened('')}>
-          {children}
-        </div>
-
-        {buttons && buttons.length > 0 && (
-          <Frame
-            className={styles.buttonWrapper}
-            justifyContent={buttonsAlignment}
-          >
-            {buttons.map(button => (
-              <Button
-                key={button.value}
-                onClick={button.onClick}
-                value={button.value}
+      {menu && menu.length > 0 && (
+        <ul className={styles.menuWrapper} ref={menuRef}>
+          {menu.map(({ name, list }) => {
+            const active = menuOpened === name;
+            return (
+              <li
+                key={name}
+                onMouseDown={() => setMenuOpened(name)}
+                className={styles.menuItem({ active })}
               >
-                {button.value}
-              </Button>
-            ))}
-          </Frame>
-        )}
-      </Frame>
-    </Draggable>
+                {name}
+                {active && list}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
+      {children}
+
+      {buttons && buttons.length > 0 && (
+        <Frame
+          className={styles.buttonWrapper}
+          justifyContent={buttonsAlignment}
+        >
+          {buttons.map(button => (
+            <Button
+              key={button.value}
+              onClick={button.onClick}
+              value={button.value}
+            >
+              {button.value}
+            </Button>
+          ))}
+        </Frame>
+      )}
+    </Frame>
   );
 };
 
-export const Modal = forwardRef<HTMLDivElement, ModalProps>(ModalRenderer);
-
-Modal.displayName = 'Modal';
-
-Modal.defaultProps = {
-  icon: undefined,
-  title: 'Modal',
-  children: null,
-  defaultPosition: { x: 0, y: 0 },
-  buttons: [],
-  menu: [],
-  width: undefined,
-  height: undefined,
-  onClose: () => {},
-};
+export const Modal = Object.assign(
+  fixedForwardRef<HTMLDivElement, ModalProps>(ModalRenderer),
+  {
+    Content: ModalContent,
+  },
+) as ModalProps & typeof ModalRenderer & { Content: typeof ModalContent };

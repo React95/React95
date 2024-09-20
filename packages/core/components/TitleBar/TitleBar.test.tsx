@@ -21,12 +21,28 @@ describe('<TitleBar />', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('should match snapshot with all Options', async () => {
+    it('should match snapshot with custom option', async () => {
       const { container } = await waitRender(
         <TitleBar title="test.exe" icon={<Bat />} active>
           <TitleBar.OptionsBox>
             <TitleBar.Option>?</TitleBar.Option>
             <TitleBar.Option>x</TitleBar.Option>
+          </TitleBar.OptionsBox>
+        </TitleBar>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with default options', async () => {
+      const { container } = await waitRender(
+        <TitleBar title="test.exe" icon={<Bat />} active>
+          <TitleBar.OptionsBox>
+            <TitleBar.Help />
+            <TitleBar.Maximize />
+            <TitleBar.Minimize />
+            <TitleBar.Restore />
+            <TitleBar.Close />
           </TitleBar.OptionsBox>
         </TitleBar>,
       );

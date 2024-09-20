@@ -7,7 +7,7 @@ export const modalWrapper = recipe({
     display: 'flex',
     flexDirection: 'column',
     position: 'fixed',
-    padding: '2px 2px 8px',
+    padding: contract.space[2],
     top: '50px',
     backgroundColor: contract.colors.material,
     boxShadow: contract.shadows.out,
@@ -23,9 +23,9 @@ export const modalWrapper = recipe({
 
 export const buttonWrapper = style({
   display: 'flex',
-  gap: '6px',
+  gap: contract.space[6],
   flexDirection: 'row',
-  padding: '0 6px 6px 6px',
+  padding: contract.space[6],
 });
 
 globalStyle(`${buttonWrapper} button`, {
@@ -36,7 +36,9 @@ export const content = style({
   flexGrow: 1,
   display: 'flex',
   flexDirection: 'column',
-  padding: '6px',
+  padding: contract.space[6],
+  marginBlockStart: contract.space[4],
+  marginInlineEnd: contract.space[1],
 });
 
 export const menuWrapper = style({

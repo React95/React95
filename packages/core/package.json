@@ -84,11 +84,6 @@
       "import": "./esm/Modal/Modal.mjs",
       "require": "./cjs/Modal/Modal.cjs"
     },
-    "./ModalProvider": {
-      "types": "./types/Modal/ModalProvider.d.ts",
-      "import": "./esm/Modal/ModalProvider.mjs",
-      "require": "./cjs/Modal/ModalProvider.cjs"
-    },
     "./ProgressBar": {
       "types": "./types/ProgressBar/ProgressBar.d.ts",
       "import": "./esm/ProgressBar/ProgressBar.mjs",
@@ -153,13 +148,14 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@neodrag/react": "^2.0.4",
     "@react95/icons": "^2.1.1",
     "@vanilla-extract/dynamic": "^2.1.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "classnames": "^2.5.1",
     "nanoid": "^3.3.1",
     "rainbow-sprinkles": "^0.17.1",
-    "react-draggable": "^4.4.4"
+    "usehooks-ts": "^3.1.0"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",

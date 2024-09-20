@@ -7,38 +7,28 @@ describe('<Alert />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with error type', () => {
       const { container } = render(
-        <Alert onClose={() => {}} title="Error" type="error" message="Error" />,
+        <Alert title="Error" type="error" message="Error" />,
       );
       expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with warning type', () => {
       const { container } = render(
-        <Alert
-          onClose={() => {}}
-          title="Warning"
-          type="warning"
-          message="Warning"
-        />,
+        <Alert title="Warning" type="warning" message="Warning" />,
       );
       expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with info type', () => {
       const { container } = render(
-        <Alert onClose={() => {}} title="Info" type="info" message="Info" />,
+        <Alert title="Info" type="info" message="Info" />,
       );
       expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with question type', () => {
       const { container } = render(
-        <Alert
-          onClose={() => {}}
-          title="question"
-          type="question"
-          message="question"
-        />,
+        <Alert title="question" type="question" message="question" />,
       );
       expect(container).toMatchSnapshot();
     });
@@ -48,7 +38,11 @@ describe('<Alert />', () => {
     it('should call onClose when modal "X" button is pressed', () => {
       const onCloseMock = vi.fn();
       const { getAllByRole } = render(
-        <Alert title="onClose" message="onClose" onClose={onCloseMock} />,
+        <Alert
+          title="onClose"
+          message="onClose"
+          buttons={[{ value: 'Ok', onClick: onCloseMock }]}
+        />,
       );
 
       const [x] = getAllByRole('button');

@@ -1,6 +1,4 @@
 import { Modal } from './Modal/Modal';
-import { ModalContext } from './Modal/ModalContext';
-import { ModalProvider } from './Modal/ModalProvider';
 import { Tabs } from './Tabs/Tabs';
 import { Tab } from './Tabs/Tab';
 import { Alert } from './Alert/Alert';
@@ -35,8 +33,6 @@ export {
   Input,
   List,
   Modal,
-  ModalContext,
-  ModalProvider,
   ProgressBar,
   RadioButton,
   Range,

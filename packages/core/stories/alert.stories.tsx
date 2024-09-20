@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
 import { Alert, AlertType } from '../components/Alert/Alert';
-import { Button, Checkbox, Dropdown } from '../components';
+import { Button, Checkbox, Dropdown, TitleBar } from '../components';
 
 export default {
   title: 'Alert',
@@ -12,7 +12,7 @@ export default {
 
 export const Simple = {
   render: () => {
-    const [showAlert, toggleShowAlert] = React.useState(false);
+    const [showAlert, toggleShowAlert] = React.useState(true);
     const [withSound, toggleWithSound] = React.useState(false);
     const [type, setType] = React.useState<AlertType>('error');
 
@@ -43,7 +43,9 @@ export const Simple = {
             title="Windows Networking"
             type={type}
             message="The Windows password you typed is incorrect."
-            onClose={handleCloseAlert}
+            titleBarOptions={
+              <TitleBar.Close key="close" onClick={handleCloseAlert} />
+            }
             hasSound={withSound}
             buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
           />

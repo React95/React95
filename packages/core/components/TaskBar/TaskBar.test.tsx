@@ -1,6 +1,6 @@
 import { Bat, ReaderClosed, WindowsExplorer } from '@react95/icons';
 import React from 'react';
-import { describe, expect, it, vi } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { act, fireEvent, render, waitRender } from '../shared/test/utils';
 
@@ -86,7 +86,7 @@ describe('<TaskBar />', () => {
     it('should match snapshot with one Modal', async () => {
       const { container } = await waitRender(
         <>
-          <Modal icon={<Bat />} title="file.bat" onClose={() => {}} />
+          <Modal icon={<Bat />} title="file.bat" />
           <TaskBar />
         </>,
       );
@@ -101,12 +101,8 @@ describe('<TaskBar />', () => {
     it('should match snapshot with two Modals', async () => {
       const { container } = await waitRender(
         <>
-          <Modal
-            icon={<WindowsExplorer />}
-            title="Windows Explorer"
-            onClose={() => {}}
-          />
-          <Modal icon={<Bat />} title="file.bat" onClose={() => {}} />
+          <Modal icon={<WindowsExplorer />} title="Windows Explorer" />
+          <Modal icon={<Bat />} title="file.bat" />
           <TaskBar />
         </>,
       );
