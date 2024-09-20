@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/React95/React95/compare/@react95/core@8.1.3...@react95/core@9.0.0) (2024-09-20)
+
+
+### Features
+
+* adding modal events to TaskBar ([eada1a4](https://github.com/React95/React95/commit/eada1a47a177dde929ed2317ca49fedeaafeb8b9))
+* **modal:** drop Modal{Context|Provider} in order to use event emitter ([fb8c04f](https://github.com/React95/React95/commit/fb8c04f405717311c8278d54b977f89781e70c0a))
+* **modal:** revisit Modal ([023cb84](https://github.com/React95/React95/commit/023cb84b768aac3ffbf63a54024de9ce281a0706)), closes [#459](https://github.com/React95/React95/issues/459)
+* **Titlebar:** add default options ([ab0c199](https://github.com/React95/React95/commit/ab0c199fd732fd385a5e11521f5e4de7f284752f))
+
+
+### BREAKING CHANGES
+
+* **modal:** The API changed giving you more behave and style control over Modals. We also
+changed the library to handle the drag from `react-draggable` to `@neodrag/react`.
+* **modal:** This changes how we use Modal. The API is simpler. You don't need its Context
+anymore.
+
+
+
+
+
 ## [8.1.3](https://github.com/React95/React95/compare/@react95/core@8.1.2...@react95/core@8.1.3) (2024-09-17)
 
 **Note:** Version bump only for package @react95/core
