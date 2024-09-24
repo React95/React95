@@ -23,7 +23,7 @@ export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
     const { style, otherProps, className } = sprinkles(rest);
 
     return (
-      <Frame style={style} className={cn(wrapper, className)}>
+      <Frame style={style} className={cn(wrapper, className, otherProps.className)}>
         <select {...otherProps} className={cn(select)} ref={ref}>
           {options &&
             options.map(option => (
