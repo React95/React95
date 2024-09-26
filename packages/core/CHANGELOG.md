@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/React95/React95/compare/@react95/core@9.0.0...@react95/core@9.1.0) (2024-09-26)
+
+
+### Features
+
+* **resize dropdown:** this should make you able to resize the dropdown menu ([ab6c1da](https://github.com/React95/React95/commit/ab6c1da5fc0954a11d959f0c84bf950cd8bf54c1)), closes [#463](https://github.com/React95/React95/issues/463)
+
+
+
+
+
 # [9.0.0](https://github.com/React95/React95/compare/@react95/core@8.1.3...@react95/core@9.0.0) (2024-09-20)
 
 
