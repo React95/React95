@@ -5,7 +5,9 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -47,6 +49,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Decode base64 to PDF](https://base64.rafaelfranco.com/)
 - [Ideal Labs website](https://github.com/ideal-lab5/website)
 - [Henrique Specian's wedding website](https://github.com/henriquespecian/casamento-nextjs)
+- [Kitty's portfolio](https://hawwokitty.github.io/my-portfolio/)
 
 ## Contributors
 
