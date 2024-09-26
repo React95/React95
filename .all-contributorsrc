@@ -409,6 +409,17 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "hawwokitty",
+      "name": "Kitty",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157686600?v=4",
+      "profile": "https://github.com/hawwokitty",
+      "contributions": [
+        "bug",
+        "ideas",
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

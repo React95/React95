@@ -5,9 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -112,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/driemworks"><img src="https://avatars.githubusercontent.com/u/17711620?v=4?s=100" width="100px;" alt="Tony Riemer"/><br /><sub><b>Tony Riemer</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=driemworks" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/henriquespecian"><img src="https://avatars.githubusercontent.com/u/27703331?v=4?s=100" width="100px;" alt="Henrique Specian"/><br /><sub><b>Henrique Specian</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=henriquespecian" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/izwb003"><img src="https://avatars.githubusercontent.com/u/29999036?v=4?s=100" width="100px;" alt="Steven Song"/><br /><sub><b>Steven Song</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=izwb003" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hawwokitty"><img src="https://avatars.githubusercontent.com/u/157686600?v=4?s=100" width="100px;" alt="Kitty"/><br /><sub><b>Kitty</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Ahawwokitty" title="Bug reports">🐛</a> <a href="#ideas-hawwokitty" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/React95/React95/commits?author=hawwokitty" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
