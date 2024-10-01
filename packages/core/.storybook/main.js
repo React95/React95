@@ -19,13 +19,13 @@ export default {
         actions: false,
       },
     },
-    getAbsolutePath('@storybook/addon-storysource'),
-    getAbsolutePath(__dirname, './src/theme-changer'),
-    getAbsolutePath(__dirname, './src/clippy-addon'),
-    getAbsolutePath('@storybook/addon-designs'),
+    '@storybook/addon-storysource',
+    '@storybook/addon-designs',
+    getAbsolutePath(__dirname, 'src', 'theme-changer'),
+    getAbsolutePath(__dirname, 'src', 'clippy-addon'),
   ],
   framework: {
-    name: getAbsolutePath('@storybook/react-vite'),
+    name: '@storybook/react-vite',
     options: {},
   },
   docs: {
