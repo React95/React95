@@ -50343,11 +50343,11 @@ var wAe = K.div(
     borderRadius: e.appBorderRadius
   })
 ), EAe = /* @__PURE__ */ a(({ id: e, onClick: t, ...r }) => {
-  let { active: o, disabled: s, title: l } = r, c = (0, R0.useCallback)(
-    (p) => t?.(p, { id: e, active: o, disabled: s, title: l }),
-    [t, e, o, s, l]
+  let { active: o, disabled: s, title: l, href: c } = r, p = (0, R0.useCallback)(
+    (h) => t?.(h, { id: e, active: o, disabled: s, title: l, href: c }),
+    [t, e, o, s, l, c]
   );
-  return /* @__PURE__ */ R0.default.createElement(E3, { id: `list-item-${e}`, ...r, ...t && { onClick: c } });
+  return /* @__PURE__ */ R0.default.createElement(E3, { id: `list-item-${e}`, ...r, ...t && { onClick: p } });
 }, "Item"), x3 = /* @__PURE__ */ a(({ links: e, LinkWrapper: t, ...r }) => {
   let o = e.some((s) => s.icon);
   return /* @__PURE__ */ R0.default.createElement(wAe, { ...r }, e.map((s) => /* @__PURE__ */ R0.default.createElement(EAe, { key: s.id, isIndented: o,
@@ -53804,7 +53804,7 @@ Or();
 var ere = Z(ji(), 1), $o = Z(Qte(), 1);
 
 // src/manager-api/version.ts
-var Jte = "8.3.1";
+var Jte = "8.3.3";
 
 // src/manager-api/modules/versions.ts
 var { VERSIONCHECK: J$e } = Ae, Zte = (0, ere.default)(1)(() => {
