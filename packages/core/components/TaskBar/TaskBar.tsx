@@ -20,6 +20,7 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
     const [activeStart, toggleActiveStart] = useState(false);
     const [modalWindows, setModalWindows] = React.useState<ModalWindow[]>([]);
     const [activeWindow, setActiveWindow] = useState<string>();
+    // const [minimizedModals, setMinimizedModals] = useState<ModalWindow[]>([]);
 
     useEffect(() => {
       const addModal = (window: ModalWindow) => {
@@ -107,7 +108,13 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
                   icon={icon}
                   active={id === activeWindow}
                   onClick={() => {
-                    modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+                    if (id === activeWindow) {
+                      modals.emit(ModalEvents.MinimizeModal, { id });
+                      setActiveWindow('Minimize');
+                    } else {
+                      modals.emit(ModalEvents.RestoreModal, { id }); 
+                      modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+                    }
                   }}
                   small={false}
                 >

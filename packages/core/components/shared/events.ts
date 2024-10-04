@@ -29,6 +29,8 @@ export enum ModalEvents {
   AddModal = 'add-modal',
   RemoveModal = 'remove-modal',
   ModalVisibilityChanged = 'modal-visibility-changed',
+  MinimizeModal = 'minimize-modal', 
+  RestoreModal = 'restore-modal',
 }
 
 export interface ModalWindow {

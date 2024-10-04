@@ -82,6 +82,7 @@ const ModalRenderer = (
   const [id] = useState<string>(nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
+  const [isModalMinimizedState, setIsModalMinimizedState] = useState(false);
 
   const draggableRef = useRef<HTMLDivElement>(null);
   useDraggable(draggableRef, {
@@ -113,9 +114,33 @@ const ModalRenderer = (
     };
   }, []);
 
+  useEffect(() => {
+    modals.on(ModalEvents.MinimizeModal, ({ id: activeId }) => {
+      if (activeId === id) {
+        setIsModalMinimizedState(true);
+      }
+    });
+
+    modals.on(ModalEvents.RestoreModal, ({ id: activeId }) => {
+      if (activeId === id) {
+        setIsModalMinimizedState(false);
+      }
+    });
+
+    return () => {
+      modals.off(ModalEvents.MinimizeModal, () => {});
+      modals.off(ModalEvents.RestoreModal, () => {});
+    };
+  }, [id]);
+
   useImperativeHandle(ref, () => {
     return draggableRef.current;
   });
+
+  const handleMinimize = () => {
+    setIsModalMinimizedState(true);
+    modals.emit(ModalEvents.ModalVisibilityChanged, { title }); // just sets the active window to something that isnt the id
+  };
 
   return (
     <Frame
@@ -125,6 +150,7 @@ const ModalRenderer = (
       onMouseDown={() => {
         modals.emit(ModalEvents.ModalVisibilityChanged, { id });
       }}
+      style={{ display: isModalMinimizedState ? 'none' : 'block' }}
     >
       <TitleBar
         active={isActive}
@@ -133,7 +159,17 @@ const ModalRenderer = (
         className="draggable"
       >
         {titleBarOptions && (
-          <TitleBar.OptionsBox>{titleBarOptions}</TitleBar.OptionsBox>
+          <TitleBar.OptionsBox>
+            {Array.isArray(titleBarOptions) &&
+              titleBarOptions.map(item => {
+                if (item.key === 'minimize') {
+                  return React.cloneElement(item as React.ReactElement<any>, {
+                    onClick: handleMinimize,
+                  });
+                }
+                return item;
+              })}
+          </TitleBar.OptionsBox>
         )}
       </TitleBar>
 
