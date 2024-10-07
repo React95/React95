@@ -18,8 +18,17 @@ export const modalWrapper = recipe({
         zIndex: contract.zIndices.modal,
       },
     },
+    minimized: {
+      true: {
+        display: 'none',
+      },
+      false: {
+        display: 'block',
+      },
+    },
   },
 });
+
 
 export const buttonWrapper = style({
   display: 'flex',

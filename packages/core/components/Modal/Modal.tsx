@@ -82,7 +82,7 @@ const ModalRenderer = (
   const [id] = useState<string>(nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
-  const [isModalMinimizedState, setIsModalMinimizedState] = useState(false);
+  const [isModalMinimized, setIsModalMinimized] = useState(false);
 
   const draggableRef = useRef<HTMLDivElement>(null);
   useDraggable(draggableRef, {
@@ -117,13 +117,13 @@ const ModalRenderer = (
   useEffect(() => {
     modals.on(ModalEvents.MinimizeModal, ({ id: activeId }) => {
       if (activeId === id) {
-        setIsModalMinimizedState(true);
+        setIsModalMinimized(true);
       }
     });
 
     modals.on(ModalEvents.RestoreModal, ({ id: activeId }) => {
       if (activeId === id) {
-        setIsModalMinimizedState(false);
+        setIsModalMinimized(false);
       }
     });
 
@@ -138,19 +138,21 @@ const ModalRenderer = (
   });
 
   const handleMinimize = () => {
-    setIsModalMinimizedState(true);
+    setIsModalMinimized(true);
     modals.emit(ModalEvents.ModalVisibilityChanged, { title }); // just sets the active window to something that isnt the id
   };
 
   return (
     <Frame
       {...rest}
-      className={cn(styles.modalWrapper({ active: isActive }), className)}
+      className={cn(
+        styles.modalWrapper({ active: isActive, minimized: isModalMinimized }),
+        className,
+      )}
       ref={draggableRef}
       onMouseDown={() => {
         modals.emit(ModalEvents.ModalVisibilityChanged, { id });
       }}
-      style={{ display: isModalMinimizedState ? 'none' : 'block' }}
     >
       <TitleBar
         active={isActive}
@@ -160,15 +162,20 @@ const ModalRenderer = (
       >
         {titleBarOptions && (
           <TitleBar.OptionsBox>
-            {Array.isArray(titleBarOptions) &&
-              titleBarOptions.map(item => {
-                if (item.key === 'minimize') {
-                  return React.cloneElement(item as React.ReactElement<any>, {
-                    onClick: handleMinimize,
-                  });
-                }
-                return item;
-              })}
+            {Array.isArray(titleBarOptions)
+              ? titleBarOptions.map(item => {
+                  if (item.key === 'minimize') {
+                    return React.cloneElement(item as React.ReactElement<any>, {
+                      onClick: handleMinimize,
+                    });
+                  }
+                  return item;
+                })
+              : titleBarOptions && titleBarOptions.key === 'minimize'
+              ? React.cloneElement(titleBarOptions as React.ReactElement<any>, {
+                  onClick: handleMinimize,
+                })
+              : titleBarOptions}
           </TitleBar.OptionsBox>
         )}
       </TitleBar>
