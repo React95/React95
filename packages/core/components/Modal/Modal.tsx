@@ -63,6 +63,29 @@ const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   ),
 );
 
+const ModalMinimize = fixedForwardRef<HTMLButtonElement, any>((props, ref) => {
+  const [id, setId] = useState<string>("");
+
+  useEffect(() => {
+    const handleVisibilityChange = ({ id: activeId }: { id: string }) => {
+      setId(activeId); 
+    };
+
+    modals.on(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+
+    return () => {
+      modals.off(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+    };
+  }, []);
+
+  const handleMinimize = () => {
+    modals.emit(ModalEvents.MinimizeModal, { id });
+    modals.emit(ModalEvents.ModalVisibilityChanged, { id: 'no id' });
+  };
+
+  return <TitleBar.Minimize {...props} ref={ref} onClick={handleMinimize} />;
+});
+
 const ModalRenderer = (
   {
     hasWindowButton: hasButton = true,
@@ -137,11 +160,6 @@ const ModalRenderer = (
     return draggableRef.current;
   });
 
-  const handleMinimize = () => {
-    setIsModalMinimized(true);
-    modals.emit(ModalEvents.ModalVisibilityChanged, { title }); // just sets the active window to something that isnt the id
-  };
-
   return (
     <Frame
       {...rest}
@@ -161,22 +179,7 @@ const ModalRenderer = (
         className="draggable"
       >
         {titleBarOptions && (
-          <TitleBar.OptionsBox>
-            {Array.isArray(titleBarOptions)
-              ? titleBarOptions.map(item => {
-                  if (item.key === 'minimize') {
-                    return React.cloneElement(item as React.ReactElement<any>, {
-                      onClick: handleMinimize,
-                    });
-                  }
-                  return item;
-                })
-              : titleBarOptions && titleBarOptions.key === 'minimize'
-              ? React.cloneElement(titleBarOptions as React.ReactElement<any>, {
-                  onClick: handleMinimize,
-                })
-              : titleBarOptions}
-          </TitleBar.OptionsBox>
+          <TitleBar.OptionsBox>{titleBarOptions}</TitleBar.OptionsBox>
         )}
       </TitleBar>
 
@@ -224,5 +227,10 @@ export const Modal = Object.assign(
   fixedForwardRef<HTMLDivElement, ModalProps>(ModalRenderer),
   {
     Content: ModalContent,
+    Minimize: ModalMinimize,
   },
-) as ModalProps & typeof ModalRenderer & { Content: typeof ModalContent };
+) as ModalProps &
+  typeof ModalRenderer & {
+    Content: typeof ModalContent;
+    Minimize: typeof ModalMinimize;
+  };

@@ -26,7 +26,7 @@ export const Simple = {
             icon={<WindowsExplorer variant="16x16_4" />}
             title="Windows Explorer"
             titleBarOptions={[
-              <TitleBar.Minimize key="minimize" />,
+              <Modal.Minimize key="minimize" />,
               <TitleBar.Close key="close" onClick={closeFirst} />,
             ]}
             width="300px"
@@ -44,7 +44,7 @@ export const Simple = {
             icon={<ReaderClosed variant="16x16_4" />}
             title="Local Disk (C:)"
             titleBarOptions={[
-              <TitleBar.Minimize key="minimize" />,
+              <Modal.Minimize key="minimize" />,
               <TitleBar.Close key="close" onClick={closeSecond} />,
             ]}
           />
