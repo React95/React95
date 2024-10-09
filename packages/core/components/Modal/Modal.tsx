@@ -15,7 +15,7 @@ import { DragOptions, useDraggable } from '@neodrag/react';
 import { Button } from '../Button/Button';
 import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
-import { TitleBar, TitleBarBackgroundProps } from '../TitleBar/TitleBar';
+import { TitleBar, TitleBarBackgroundProps, OptionProps } from '../TitleBar/TitleBar';
 import * as styles from './Modal.css';
 
 import cn from 'classnames';
@@ -63,7 +63,7 @@ const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   ),
 );
 
-const ModalMinimize = fixedForwardRef<HTMLButtonElement, typeof TitleBar.Minimize>((props, ref) => {
+const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>((props, ref) => {
   const [id, setId] = useState<string>("");
 
   useEffect(() => {
