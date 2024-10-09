@@ -63,7 +63,7 @@ const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   ),
 );
 
-const ModalMinimize = fixedForwardRef<HTMLButtonElement, TitleBarOptions>((props, ref) => {
+const ModalMinimize = fixedForwardRef<HTMLButtonElement, typeof TitleBar.Minimize>((props, ref) => {
   const [id, setId] = useState<string>("");
 
   useEffect(() => {
