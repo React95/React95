@@ -20,7 +20,6 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
     const [activeStart, toggleActiveStart] = useState(false);
     const [modalWindows, setModalWindows] = React.useState<ModalWindow[]>([]);
     const [activeWindow, setActiveWindow] = useState<string>();
-    // const [minimizedModals, setMinimizedModals] = useState<ModalWindow[]>([]);
 
     useEffect(() => {
       const addModal = (window: ModalWindow) => {
