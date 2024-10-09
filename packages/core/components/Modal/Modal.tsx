@@ -15,7 +15,12 @@ import { DragOptions, useDraggable } from '@neodrag/react';
 import { Button } from '../Button/Button';
 import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
-import { TitleBar, TitleBarBackgroundProps, OptionProps } from '../TitleBar/TitleBar';
+import {
+  TitleBar,
+  TitleBarBackgroundProps,
+  OptionProps,
+  OptionReturnType,
+} from '../TitleBar/TitleBar';
 import * as styles from './Modal.css';
 
 import cn from 'classnames';
@@ -63,28 +68,30 @@ const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   ),
 );
 
-const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>((props, ref) => {
-  const [id, setId] = useState<string>("");
+const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
+  (props, ref) => {
+    const [id, setId] = useState<string>('');
 
-  useEffect(() => {
-    const handleVisibilityChange = ({ id: activeId }: { id: string }) => {
-      setId(activeId); 
+    useEffect(() => {
+      const handleVisibilityChange = ({ id: activeId }: { id: string }) => {
+        setId(activeId);
+      };
+
+      modals.on(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+
+      return () => {
+        modals.off(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+      };
+    }, []);
+
+    const handleMinimize = () => {
+      modals.emit(ModalEvents.MinimizeModal, { id });
+      modals.emit(ModalEvents.ModalVisibilityChanged, { id: 'no id' });
     };
 
-    modals.on(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
-
-    return () => {
-      modals.off(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
-    };
-  }, []);
-
-  const handleMinimize = () => {
-    modals.emit(ModalEvents.MinimizeModal, { id });
-    modals.emit(ModalEvents.ModalVisibilityChanged, { id: 'no id' });
-  };
-
-  return <TitleBar.Minimize {...props} ref={ref} onClick={handleMinimize} />;
-});
+    return <TitleBar.Minimize {...props} ref={ref} onClick={handleMinimize} />;
+  },
+) as OptionReturnType;
 
 const ModalRenderer = (
   {
