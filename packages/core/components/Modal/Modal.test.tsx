@@ -198,25 +198,23 @@ describe('<Modal />', () => {
 
   describe('Events', () => {
     it('should hide the modal when click on minimize', async () => {
-      const { getByTestId } = await waitRender(
+      const { getByTestId, queryByRole } = await waitRender(
         <Modal
           icon={<Bat />}
           title="file.bat"
           titleBarOptions={[
             <Modal.Minimize key="minimize" data-testid="minimize" />,
-            <TitleBar.Close key="close" />,
           ]}
         >
           <Modal.Content>Hello</Modal.Content>
         </Modal>,
       );
+
+      expect(queryByRole('dialog')).toBeInTheDocument();
+
       fireEvent.click(getByTestId('minimize'));
 
-      const modalWrapper = document.querySelector(
-        '.Modal_modalWrapper__1txblt60',
-      );
-      console.log(modalWrapper?.className);
-      expect(modalWrapper?.className).toContain('minimized_true');
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
 
     it('should emit events ', async () => {
