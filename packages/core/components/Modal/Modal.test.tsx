@@ -197,6 +197,28 @@ describe('<Modal />', () => {
   });
 
   describe('Events', () => {
+    it('should hide the modal when click on minimize', async () => {
+      const { getByTestId } = await waitRender(
+        <Modal
+          icon={<Bat />}
+          title="file.bat"
+          titleBarOptions={[
+            <Modal.Minimize key="minimize" data-testid="minimize" />,
+            <TitleBar.Close key="close" />,
+          ]}
+        >
+          <Modal.Content>Hello</Modal.Content>
+        </Modal>,
+      );
+      fireEvent.click(getByTestId('minimize'));
+
+      const modalWrapper = document.querySelector(
+        '.Modal_modalWrapper__1txblt60',
+      );
+      console.log(modalWrapper?.className);
+      expect(modalWrapper?.className).toContain('minimized_true');
+    });
+
     it('should emit events ', async () => {
       modals.on = vi.fn();
       modals.emit = vi.fn();
@@ -220,7 +242,7 @@ describe('<Modal />', () => {
         }),
       );
 
-      expect(modals.on).toHaveBeenCalledTimes(1);
+      expect(modals.on).toHaveBeenCalledTimes(3);
       expect(modals.on).toHaveBeenCalledWith(
         ModalEvents.ModalVisibilityChanged,
         expect.any(Function),

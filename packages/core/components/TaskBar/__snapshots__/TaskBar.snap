@@ -204,7 +204,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with list prop 2`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
@@ -255,7 +255,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
 exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 neodrag"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
@@ -270,7 +270,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     </div>
   </div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
