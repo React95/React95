@@ -3,7 +3,9 @@
 exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    aria-hidden="false"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
@@ -17,26 +19,26 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
       </div>
     </div>
     <ul
-      class="Modal_menuWrapper__1txblt64"
+      class="Modal_menuWrapper__1txblt66"
     >
       <li
-        class="Modal_menuItem__1txblt65"
+        class="Modal_menuItem__1txblt67"
       >
         File
       </li>
       <li
-        class="Modal_menuItem__1txblt65"
+        class="Modal_menuItem__1txblt67"
       >
         Edit
       </li>
     </ul>
     <div
-      class="Modal_content__1txblt63"
+      class="Modal_content__1txblt65"
     >
       Hello
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
       style="--justifyContent__iuzg891e: flex-end;"
     >
       <button
@@ -59,7 +61,9 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals center 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    aria-hidden="false"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
@@ -73,12 +77,12 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
       </div>
     </div>
     <div
-      class="Modal_content__1txblt63"
+      class="Modal_content__1txblt65"
     >
       Hello
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
       style="--justifyContent__iuzg891e: center;"
     >
       <button
@@ -101,7 +105,9 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop equals flex-start 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    aria-hidden="false"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
@@ -115,12 +121,12 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
       </div>
     </div>
     <div
-      class="Modal_content__1txblt63"
+      class="Modal_content__1txblt65"
     >
       Hello
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt62"
+      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
       style="--justifyContent__iuzg891e: flex-start;"
     >
       <button
@@ -143,7 +149,9 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
 exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] = `
 <div>
   <div
-    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 neodrag"
+    aria-hidden="false"
+    class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
@@ -201,7 +209,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
       </div>
     </div>
     <div
-      class="Modal_content__1txblt63"
+      class="Modal_content__1txblt65"
     >
       Hello
     </div>
