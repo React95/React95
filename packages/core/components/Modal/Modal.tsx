@@ -174,6 +174,8 @@ const ModalRenderer = (
         styles.modalWrapper({ active: isActive, minimized: isModalMinimized }),
         className,
       )}
+      role="dialog"
+      aria-hidden={isModalMinimized}
       ref={draggableRef}
       onMouseDown={() => {
         modals.emit(ModalEvents.ModalVisibilityChanged, { id });

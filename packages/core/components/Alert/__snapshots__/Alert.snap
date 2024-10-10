@@ -3,7 +3,9 @@
 exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
 <div>
   <div
+    aria-hidden="false"
     class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
@@ -51,7 +53,9 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
 exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
 <div>
   <div
+    aria-hidden="false"
     class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
@@ -99,7 +103,9 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
 exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = `
 <div>
   <div
+    aria-hidden="false"
     class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
@@ -147,7 +153,9 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
 exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
 <div>
   <div
+    aria-hidden="false"
     class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    role="dialog"
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
