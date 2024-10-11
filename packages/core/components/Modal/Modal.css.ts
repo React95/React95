@@ -23,12 +23,11 @@ export const modalWrapper = recipe({
         display: 'none',
       },
       false: {
-        display: 'block',
+        display: 'flex',
       },
     },
   },
 });
-
 
 export const buttonWrapper = style({
   display: 'flex',
