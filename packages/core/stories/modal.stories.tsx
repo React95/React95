@@ -1,10 +1,10 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Button, List, TitleBar } from '../components';
+import { Button, List, TitleBar, TaskBar } from '../components';
 import { Modal } from '../components/Modal/Modal';
 
-import { Computer, Mmsys113, Mshtml32534 } from '@react95/icons';
+import { Computer, Mmsys113, Mshtml32534, ReaderClosed, WindowsExplorer } from '@react95/icons';
 
 export default {
   title: 'Modal',
@@ -206,4 +206,75 @@ export const Multiple = () => {
       )}
     </>
   );
+};
+
+export const Minimize = {
+  render: () => {
+    const [first, toggleFirst] = React.useState(false);
+    const [second, toggleSecond] = React.useState(false);
+
+    const closeFirst = () => toggleFirst(false);
+    const closeSecond = () => toggleSecond(false);
+
+    return (
+      <>
+        {first && (
+          <Modal
+            icon={<WindowsExplorer variant="16x16_4" />}
+            title="Windows Explorer"
+            titleBarOptions={[
+              <Modal.Minimize key="minimize" />,
+              <TitleBar.Close key="close" onClick={closeFirst} />,
+            ]}
+            width="300px"
+            height="200px"
+          />
+        )}
+
+        {second && (
+          <Modal
+            dragOptions={{
+              defaultPosition: { x: 50, y: 50 },
+            }}
+            width="300px"
+            height="200px"
+            icon={<ReaderClosed variant="16x16_4" />}
+            title="Local Disk (C:)"
+            titleBarOptions={[
+              <Modal.Minimize key="minimize" />,
+              <TitleBar.Close key="close" onClick={closeSecond} />,
+            ]}
+          />
+        )}
+
+        <TaskBar
+          list={
+            <List>
+              <List.Item
+                icon={<ReaderClosed variant="32x32_4" />}
+                onClick={() => toggleSecond(true)}
+              >
+                Local Disk (C:)
+              </List.Item>
+              <List.Item
+                icon={<WindowsExplorer variant="32x32_4" />}
+                onClick={() => {
+                  toggleFirst(true);
+                }}
+              >
+                Windows Explorer
+              </List.Item>
+            </List>
+          }
+        />
+      </>
+    );
+  },
+
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A17',
+    },
+  },
 };
