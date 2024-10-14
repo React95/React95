@@ -107,7 +107,13 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
                   icon={icon}
                   active={id === activeWindow}
                   onClick={() => {
-                    modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+                    if (id === activeWindow) {
+                      modals.emit(ModalEvents.MinimizeModal, { id });
+                      setActiveWindow('Minimize');
+                    } else {
+                      modals.emit(ModalEvents.RestoreModal, { id });
+                      modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+                    }
                   }}
                   small={false}
                 >

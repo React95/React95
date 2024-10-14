@@ -58,6 +58,10 @@ const OptionsBox = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
 export type OptionProps<TAs extends ElementType> =
   ButtonHTMLAttributes<HTMLButtonElement> & FrameProps<TAs>;
 
+export type OptionReturnType = <TAs extends ElementType = 'button'>(
+  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;
+
 const Option = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (rest, ref) => (
     <Frame
@@ -94,41 +98,31 @@ const Help = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     return <DefaultOption {...props} kind="help" ref={ref} />;
   },
-) as <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
-) => ReactElement;
+) as OptionReturnType;
 
 const Close = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     return <DefaultOption {...props} kind="close" ref={ref} />;
   },
-) as <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
-) => ReactElement;
+) as OptionReturnType;
 
 const Maximize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     return <DefaultOption {...props} kind="maximize" ref={ref} />;
   },
-) as <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
-) => ReactElement;
+) as OptionReturnType;
 
 const Minimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     return <DefaultOption {...props} kind="minimize" ref={ref} />;
   },
-) as <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
-) => ReactElement;
+) as OptionReturnType;
 
 const Restore = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     return <DefaultOption {...props} kind="restore" ref={ref} />;
   },
-) as <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
-) => ReactElement;
+) as OptionReturnType;
 
 export interface TitleBarBackgroundProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'color'>,

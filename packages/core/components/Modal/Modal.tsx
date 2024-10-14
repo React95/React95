@@ -15,7 +15,12 @@ import { DragOptions, useDraggable } from '@neodrag/react';
 import { Button } from '../Button/Button';
 import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
-import { TitleBar, TitleBarBackgroundProps } from '../TitleBar/TitleBar';
+import {
+  TitleBar,
+  TitleBarBackgroundProps,
+  OptionProps,
+  OptionReturnType,
+} from '../TitleBar/TitleBar';
 import * as styles from './Modal.css';
 
 import cn from 'classnames';
@@ -63,6 +68,31 @@ const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   ),
 );
 
+const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
+  (props, ref) => {
+    const [id, setId] = useState<string>('');
+
+    useEffect(() => {
+      const handleVisibilityChange = ({ id: activeId }: { id: string }) => {
+        setId(activeId);
+      };
+
+      modals.on(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+
+      return () => {
+        modals.off(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+      };
+    }, []);
+
+    const handleMinimize = () => {
+      modals.emit(ModalEvents.MinimizeModal, { id });
+      modals.emit(ModalEvents.ModalVisibilityChanged, { id: 'no id' });
+    };
+
+    return <TitleBar.Minimize {...props} ref={ref} onClick={handleMinimize} />;
+  },
+) as OptionReturnType;
+
 const ModalRenderer = (
   {
     hasWindowButton: hasButton = true,
@@ -82,6 +112,7 @@ const ModalRenderer = (
   const [id] = useState<string>(nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
+  const [isModalMinimized, setIsModalMinimized] = useState(false);
 
   const draggableRef = useRef<HTMLDivElement>(null);
   useDraggable(draggableRef, {
@@ -113,6 +144,25 @@ const ModalRenderer = (
     };
   }, []);
 
+  useEffect(() => {
+    modals.on(ModalEvents.MinimizeModal, ({ id: activeId }) => {
+      if (activeId === id) {
+        setIsModalMinimized(true);
+      }
+    });
+
+    modals.on(ModalEvents.RestoreModal, ({ id: activeId }) => {
+      if (activeId === id) {
+        setIsModalMinimized(false);
+      }
+    });
+
+    return () => {
+      modals.off(ModalEvents.MinimizeModal, () => {});
+      modals.off(ModalEvents.RestoreModal, () => {});
+    };
+  }, [id]);
+
   useImperativeHandle(ref, () => {
     return draggableRef.current;
   });
@@ -120,7 +170,12 @@ const ModalRenderer = (
   return (
     <Frame
       {...rest}
-      className={cn(styles.modalWrapper({ active: isActive }), className)}
+      className={cn(
+        styles.modalWrapper({ active: isActive, minimized: isModalMinimized }),
+        className,
+      )}
+      role="dialog"
+      aria-hidden={isModalMinimized}
       ref={draggableRef}
       onMouseDown={() => {
         modals.emit(ModalEvents.ModalVisibilityChanged, { id });
@@ -181,5 +236,10 @@ export const Modal = Object.assign(
   fixedForwardRef<HTMLDivElement, ModalProps>(ModalRenderer),
   {
     Content: ModalContent,
+    Minimize: ModalMinimize,
   },
-) as ModalProps & typeof ModalRenderer & { Content: typeof ModalContent };
+) as ModalProps &
+  typeof ModalRenderer & {
+    Content: typeof ModalContent;
+    Minimize: typeof ModalMinimize;
+  };
