@@ -197,6 +197,26 @@ describe('<Modal />', () => {
   });
 
   describe('Events', () => {
+    it('should hide the modal when click on minimize', async () => {
+      const { getByTestId, queryByRole } = await waitRender(
+        <Modal
+          icon={<Bat />}
+          title="file.bat"
+          titleBarOptions={[
+            <Modal.Minimize key="minimize" data-testid="minimize" />,
+          ]}
+        >
+          <Modal.Content>Hello</Modal.Content>
+        </Modal>,
+      );
+
+      expect(queryByRole('dialog')).toBeInTheDocument();
+
+      fireEvent.click(getByTestId('minimize'));
+
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
+    });
+
     it('should emit events ', async () => {
       modals.on = vi.fn();
       modals.emit = vi.fn();
@@ -220,7 +240,7 @@ describe('<Modal />', () => {
         }),
       );
 
-      expect(modals.on).toHaveBeenCalledTimes(1);
+      expect(modals.on).toHaveBeenCalledTimes(3);
       expect(modals.on).toHaveBeenCalledWith(
         ModalEvents.ModalVisibilityChanged,
         expect.any(Function),

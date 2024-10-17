@@ -25,9 +25,9 @@ export const Simple = {
           <Modal
             icon={<WindowsExplorer variant="16x16_4" />}
             title="Windows Explorer"
-            titleBarOptions={
-              <TitleBar.Close key="close" onClick={closeFirst} />
-            }
+            titleBarOptions={[
+              <TitleBar.Close key="close" onClick={closeFirst} />,
+            ]}
             width="300px"
             height="200px"
           />
@@ -42,9 +42,9 @@ export const Simple = {
             height="200px"
             icon={<ReaderClosed variant="16x16_4" />}
             title="Local Disk (C:)"
-            titleBarOptions={
-              <TitleBar.Close key="close" onClick={closeSecond} />
-            }
+            titleBarOptions={[
+              <TitleBar.Close key="close" onClick={closeSecond} />,
+            ]}
           />
         )}
 

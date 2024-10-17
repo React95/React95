@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.2.0](https://github.com/React95/React95/compare/@react95/core@9.1.1...@react95/core@9.2.0) (2024-10-14)
+
+
+### Bug Fixes
+
+* **minimize feature fix:** the minimize feat broke the titlebaroptions if there was just one option ([64ad6d1](https://github.com/React95/React95/commit/64ad6d16ff7fa85dcb5bba7b6c272c22fe494367))
+* **minimize feature:** change type to OptionProps instead of TitleBar.Minimize ([da116a7](https://github.com/React95/React95/commit/da116a71242df88d26511fe8dc56947bae64a639))
+* **minimize modal feature:** changed it to be its own compound component ([3d36d59](https://github.com/React95/React95/commit/3d36d59c81a916d28b750e7c4631f2f6abc39b07))
+
+
+### Features
+
+* **a11y:** adding role `dialog` to modal and aria-hidden attribute ([ef38177](https://github.com/React95/React95/commit/ef38177ccda715f3f7e106559ac1361d7740888a))
+* **functional minimize button:** adding a minimize button to any modal now makes it functional ([c0026f9](https://github.com/React95/React95/commit/c0026f95da0ba0896caf720a40caccd07443dc28))
+
+
+
+
+
 ## [9.1.1](https://github.com/React95/React95/compare/@react95/core@9.1.0...@react95/core@9.1.1) (2024-10-01)
 
 **Note:** Version bump only for package @react95/core
