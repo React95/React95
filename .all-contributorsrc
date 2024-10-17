@@ -421,6 +421,15 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "cheatingthemichal",
+      "name": "Michal Hajlasz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52798998?v=4",
+      "profile": "https://github.com/cheatingthemichal",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
