@@ -15,7 +15,7 @@ export const listItem = style({
   color: contract.colors.materialText,
   selectors: {
     '&:hover': {
-      backgroundColor: contract.colors.headerBackground,
+      background: contract.colors.headerBackground,
       color: contract.colors.materialTextInvert,
     },
     '&:not(:has(svg))': {
