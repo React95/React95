@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.1](https://github.com/React95/React95/compare/@react95/core@9.2.0...@react95/core@9.2.1) (2024-11-28)
+
+
+### Bug Fixes
+
+* list item background color on hover ([d8254df](https://github.com/React95/React95/commit/d8254dffc40c893e439934b4c3dcf399635c78ba))
+
+
+
+
+
 # [9.2.0](https://github.com/React95/React95/compare/@react95/core@9.1.1...@react95/core@9.2.0) (2024-10-14)
 
 
