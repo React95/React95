@@ -1,1 +1,0 @@
-import{r,R as e}from"./index-9fa1aa67.js";import{F as o}from"./Frame-8a2a37ef.js";import{i as s}from"./Input.css-f9ede444.js";const m=r.forwardRef((t,a)=>e.createElement(o,{...t,ref:a,className:s,as:"input"}));m.__docgenInfo={description:"",methods:[],displayName:"Input"};export{m as I};
