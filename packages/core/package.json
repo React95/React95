@@ -29,6 +29,11 @@
       "import": "./esm/Alert/Alert.mjs",
       "require": "./cjs/Alert/Alert.cjs"
     },
+    "./Avatar": {
+      "types": "./types/Avatar/Avatar.d.ts",
+      "import": "./esm/Avatar/Avatar.mjs",
+      "require": "./cjs/Avatar/Avatar.cjs"
+    },
     "./Button": {
       "types": "./types/Button/Button.d.ts",
       "import": "./esm/Button/Button.mjs",
