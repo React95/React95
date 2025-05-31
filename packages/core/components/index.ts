@@ -20,6 +20,7 @@ import { Tree } from './Tree/Tree';
 import { Tooltip } from './Tooltip/Tooltip';
 import { TitleBar } from './TitleBar/TitleBar';
 import { Video } from './Video/Video';
+import { contract } from './themes/contract.css';
 
 export {
   Alert,
@@ -44,4 +45,5 @@ export {
   Tooltip,
   TitleBar,
   Video,
+  contract,
 };
