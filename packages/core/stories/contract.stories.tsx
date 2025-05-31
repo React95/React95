@@ -63,7 +63,7 @@ const treeNodes: TreeProps['data'] = [
     children: Object.entries(contract.shadows).map(([key, value], id) => ({
       id,
       label: `${key}: ${value}`,
-      icon: <Tree.icons.FILE_TEXT variant="16x16_4" />,
+      icon: <Copy variant="16x16_4" />,
       onClick: () => {
         copy(value);
       },
