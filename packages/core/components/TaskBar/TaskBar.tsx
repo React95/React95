@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect, useState } from 'react';
 import type { ReactElement } from 'react';
 
-import { Frame } from '../Frame/Frame';
+import { Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
 
 import { Clock } from './Clock';
@@ -12,10 +12,10 @@ import { ModalEvents, modals, ModalWindow } from '../shared/events';
 
 export type TaskBarProps = {
   list?: ReactElement<typeof List>;
-};
+} & FrameProps<'div'>;
 
 export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
-  ({ list }, ref) => {
+  ({ list, className }, ref) => {
     const [showList, toggleShowList] = useState(false);
     const [activeStart, toggleActiveStart] = useState(false);
     const [modalWindows, setModalWindows] = React.useState<ModalWindow[]>([]);
@@ -73,6 +73,7 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
         backgroundColor="$material"
         boxShadow="$out"
         ref={ref}
+        className={className}
       >
         {showList && (
           <Frame
