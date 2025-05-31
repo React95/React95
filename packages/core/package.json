@@ -20,6 +20,11 @@
       "import": "./esm/themes/*.css.ts.vanilla.css",
       "require": "./cjs/themes/*.css.ts.vanilla.css"
     },
+    "./contract": {
+      "types": "./types/themes/contract.d.ts",
+      "import": "./esm/themes/contract.css.mjs",
+      "require": "./cjs/themes/contract.css.cjs"
+    },
     "./GlobalStyle": {
       "import": "./esm/GlobalStyle/GlobalStyle.css.ts.vanilla.css",
       "require": "./cjs/GlobalStyle/GlobalStyle.css.ts.vanilla.css"
