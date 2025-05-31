@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react';
 import type { CSSProperties, HTMLProps } from 'react';
 
 import * as styles from './Checkbox.css';
+import cn from 'classnames';
 
 export type LabelProps = {
   disabled?: boolean;
@@ -14,8 +15,8 @@ export type CheckboxProps = {
   HTMLProps<HTMLInputElement>;
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ children, style, label, disabled = false, ...rest }, ref) => (
-    <label style={style} className={styles.label}>
+  ({ children, style, label, disabled = false, className, ...rest }, ref) => (
+    <label style={style} className={cn(styles.label, className)}>
       <input
         className={styles.field}
         type="checkbox"

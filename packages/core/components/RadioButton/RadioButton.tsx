@@ -1,12 +1,13 @@
 import React, { forwardRef } from 'react';
 import type { InputHTMLAttributes } from 'react';
 import { field, icon, label, text } from './RadioButton.css';
+import cn from 'classnames';
 
 export type RadioButtonProps = InputHTMLAttributes<HTMLInputElement>;
 
 export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
   ({ children, disabled, ...props }, ref) => (
-    <label className={label}>
+    <label className={cn(label, props.className)}>
       <input
         type="radio"
         disabled={disabled}

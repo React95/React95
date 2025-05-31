@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { MouseEvent, HTMLProps } from 'react';
+import cn from 'classnames';
 
 import { tab } from './Tabs.css';
 import { Frame, FrameProps } from '../Frame/Frame';
@@ -16,7 +17,7 @@ export const Tab = forwardRef<HTMLLIElement, TabProps>(
   ({ activeTab, title, ...rest }, ref) => (
     <Frame
       {...rest}
-      className={tab({ active: activeTab === title })}
+      className={cn(tab({ active: activeTab === title }), rest.className)}
       ref={ref}
       as="li"
     >

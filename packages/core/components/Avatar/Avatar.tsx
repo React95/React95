@@ -9,6 +9,7 @@ import type {
 
 import { avatar, imgStyle } from './Avatar.css';
 import { Frame, FrameProps } from '../Frame/Frame';
+import cn from 'classnames';
 
 export type AvatarProps<TAs extends ElementType> = Omit<
   ImgHTMLAttributes<HTMLDivElement>,
@@ -20,10 +21,24 @@ export type AvatarProps<TAs extends ElementType> = Omit<
 
 export const Avatar = forwardRef<HTMLDivElement, AvatarProps<'div'>>(
   (
-    { src, srcSet, alt, circle, children, size = '48px', ...otherProps },
+    {
+      src,
+      srcSet,
+      alt,
+      circle,
+      children,
+      size = '48px',
+      className,
+      ...otherProps
+    },
     ref,
   ) => (
-    <Frame className={avatar({ circle })} ref={ref} {...otherProps} size={size}>
+    <Frame
+      {...otherProps}
+      ref={ref}
+      size={size}
+      className={cn(avatar({ circle }), className)}
+    >
       {src || srcSet ? (
         <img className={imgStyle} src={src} srcSet={srcSet} alt={alt} />
       ) : (
