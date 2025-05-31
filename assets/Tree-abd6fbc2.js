@@ -1,0 +1,21 @@
+import{r as v,R as e}from"./index-9fa1aa67.js";import{c as d}from"./index-923230fa.js";import{ne as g,fy as w,bj as N,fl as h,b as P,fw as q,fA as A,bl as R,g2 as x,fX as O}from"./Write1-d677703f.js";import{c as z}from"./createRuntimeFn-62c9670f.esm-edc6fb2c.js";import{F as p}from"./Frame-8a2a37ef.js";var y="r95_z2881c0",_="r95_z2881c1",L="r95_z2881c2",b="r95_z2881c3",T="r95_z2881c4",S="r95_z2881c5",u=z({defaultClassName:"r95_z2881c6",variantClassNames:{hasChildren:{true:"r95_z2881c7",false:"r95_z2881c8"}},defaultVariants:{},compoundVariants:[]});const D={FILE_MEDIA:g,FILE_TEXT:w,FILE_UNKNOWN:N,FILE_FONT:h,FILE_PEN:P,FILE_SETTINGS:q,FILE_TEXT_SETTINGS:A,FILE_EXECUTABLE:R},k=({hasChildren:a,isOpen:n})=>a?n?e.createElement(x,{variant:"16x16_4","data-testid":"react95-default-icon-folder-open"}):e.createElement(O,{variant:"16x16_4","data-testid":"react95-default-icon-folder"}):e.createElement(N,{variant:"16x16_4","data-testid":"react95-default-icon-bat"}),f=({children:a=[],id:n,icon:r,label:i,onClick:o=()=>{},...c})=>{const[t,s]=v.useState(!1),m=a.length>0,E=l=>{o(l,{id:n,icon:r,label:i,children:a})},I=l=>{l.key===" "&&(s(!t),E(l))};return e.createElement(p,{as:"li",...c,className:d(_,c.className)},e.createElement("div",{className:b},m&&e.createElement("div",{className:S,onClick:()=>s(!t)},t?"-":"+"),e.createElement("div",{className:u({hasChildren:m})},r||e.createElement(k,{hasChildren:m,isOpen:t})),e.createElement("label",{className:T,tabIndex:0,onDoubleClick:()=>s(!t),onClick:E,onKeyDown:I},i)),m&&t&&e.createElement("ul",{className:y},a==null?void 0:a.map(l=>e.createElement(f,{key:l.id,...l}))))},F=({id:a,icon:n,label:r,onClick:i=()=>{},...o})=>{const c=s=>{i(s,{id:a,icon:n,label:r})},t=s=>{s.key===" "&&c(s)};return e.createElement(p,{...o,className:d(_,L)},e.createElement("div",{className:b},e.createElement("div",{className:d(u.classNames.base,u.classNames.variants.hasChildren.true)},n||e.createElement(k,{hasChildren:!1,isOpen:!0})),e.createElement("label",{className:T,tabIndex:0,onClick:c,onKeyDown:t},r)))};f.__docgenInfo={description:"",methods:[],displayName:"Node",props:{label:{required:!0,tsType:{name:"string"},description:""},icon:{required:!1,tsType:{name:"ReactElement"},description:""},id:{required:!0,tsType:{name:"number"},description:""},children:{required:!1,tsType:{name:"Array",elements:[{name:"intersection",raw:`{
+  label: string;
+  icon?: ReactElement;
+  id: number;
+  children?: Array<NodeProps>;
+  onClick?(event: MouseEvent | KeyboardEvent, props: NodeProps): void;
+} & Omit<FrameProps<'li'>, 'id' | 'children'>`,elements:[{name:"signature",type:"object",raw:`{
+  label: string;
+  icon?: ReactElement;
+  id: number;
+  children?: Array<NodeProps>;
+  onClick?(event: MouseEvent | KeyboardEvent, props: NodeProps): void;
+}`,signature:{properties:[{key:"label",value:{name:"string",required:!0}},{key:"icon",value:{name:"ReactElement",required:!1}},{key:"id",value:{name:"number",required:!0}},{key:"children",value:{name:"Array",elements:[{name:"NodeProps"}],raw:"Array<NodeProps>",required:!1}},{key:"onClick",value:{name:"void",required:!1}}]}},{name:"Omit",elements:[{name:"intersection",raw:`{
+  as?: TAs;
+} & DistributiveOmit<
+  ComponentPropsWithRef<ElementType extends TAs ? 'div' : TAs>,
+  'as'
+> &
+  Sprinkles`,elements:[{name:"signature",type:"object",raw:`{
+  as?: TAs;
+}`,signature:{properties:[{key:"as",value:{name:"literal",value:"'li'",required:!1}}]}},{name:"unknown"},{name:"Parameters[0]",raw:"Parameters<typeof sprinkles>[0]"}]},{name:"union",raw:"'id' | 'children'",elements:[{name:"literal",value:"'id'"},{name:"literal",value:"'children'"}]}],raw:"Omit<FrameProps<'li'>, 'id' | 'children'>"}]}],raw:"Array<NodeProps>"},description:"",defaultValue:{value:"[]",computed:!1}},onClick:{defaultValue:{value:"() => {}",computed:!1},required:!1}}};F.__docgenInfo={description:"",methods:[],displayName:"NodeRoot",props:{onClick:{defaultValue:{value:"() => {}",computed:!1},required:!1}}};const C=v.forwardRef(({data:a=[],root:n,...r},i)=>e.createElement(e.Fragment,null,n&&e.createElement(F,{...n}),e.createElement(p,{...r,className:d(y,r.className),as:"ul",ref:i},a.map(o=>e.createElement(f,{key:o.id,...o})))));C.icons=D;C.__docgenInfo={description:"",methods:[],displayName:"Tree",props:{data:{defaultValue:{value:"[]",computed:!1},required:!1}}};export{C as T};
