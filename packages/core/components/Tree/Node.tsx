@@ -86,7 +86,7 @@ export const Node: FC<NodeProps> = ({
   };
 
   return (
-    <Frame as="li" {...rest} className={styles.node}>
+    <Frame as="li" {...rest} className={cn(styles.node, rest.className)}>
       <div className={styles.nodeContent}>
         {hasChildren && (
           <div
