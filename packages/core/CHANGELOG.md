@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.1](https://github.com/React95/React95/compare/@react95/core@9.3.0...@react95/core@9.3.1) (2025-06-01)
+
+
+### Bug Fixes
+
+* correct types path for contract in package.json ([52ab0f3](https://github.com/React95/React95/commit/52ab0f3523ab90ee52b71a88d046104a4bdf497a))
+
+
+
+
+
 # [9.3.0](https://github.com/React95/React95/compare/@react95/core@9.2.2...@react95/core@9.3.0) (2025-05-31)
 
 
