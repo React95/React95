@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.3.0](https://github.com/React95/React95/compare/@react95/core@9.2.2...@react95/core@9.3.0) (2025-05-31)
+
+
+### Bug Fixes
+
+* add Avatar component support in package.json ([e9124f6](https://github.com/React95/React95/commit/e9124f6309db3d0374c13c73598001dc4e1d1851))
+* update icon for shadows in contract stories ([48da35b](https://github.com/React95/React95/commit/48da35b4142ca60b81c3244f7f587abc8dac734e))
+
+
+### Features
+
+* add contract export to package.json ([648794f](https://github.com/React95/React95/commit/648794f46237c4f86034d5a2b9601806b783faf2))
+* add contract import to index.ts ([d09f7b9](https://github.com/React95/React95/commit/d09f7b9d7337cadb41964ea57c48ac469631d96a))
+
+
+
+
+
 ## [9.2.2](https://github.com/React95/React95/compare/@react95/core@9.2.1...@react95/core@9.2.2) (2025-05-31)
 
 
