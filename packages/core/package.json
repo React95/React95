@@ -21,7 +21,7 @@
       "require": "./cjs/themes/*.css.ts.vanilla.css"
     },
     "./contract": {
-      "types": "./types/themes/contract.d.ts",
+      "types": "./types/themes/contract.css.d.ts",
       "import": "./esm/themes/contract.css.mjs",
       "require": "./cjs/themes/contract.css.cjs"
     },
