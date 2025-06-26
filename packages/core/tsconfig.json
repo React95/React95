@@ -2,7 +2,9 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "jsx": "react",
-    "types": ["@testing-library/jest-dom"]
+    "types": ["@testing-library/jest-dom"],
+    "moduleResolution": "bundler",
+    "module": "esnext"
   },
   "include": ["components", "stories", "types", "../../types"],
   "exclude": ["node_modules"]

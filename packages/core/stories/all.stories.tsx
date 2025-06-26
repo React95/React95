@@ -25,6 +25,7 @@ import { Simple as SimpleTree } from './tree.stories';
 import { FromURL } from './video.stories';
 
 import * as styles from './all.stories.css';
+import { position } from '@neodrag/react';
 
 export default {
   title: 'All',
@@ -44,12 +45,7 @@ export const All = {
           <Alert
             title="Windows Networking"
             type="error"
-            dragOptions={{
-              defaultPosition: {
-                x: 130,
-                y: 130,
-              },
-            }}
+            dragPlugins={[position({ default: { x: 130, y: 130 } })]}
             titleBarOptions={
               <TitleBar.Close key="close" onClick={closeAlert} />
             }

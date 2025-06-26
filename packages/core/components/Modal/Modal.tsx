@@ -10,16 +10,16 @@ import React, {
   useState,
 } from 'react';
 
-import { DragOptions, useDraggable } from '@neodrag/react';
+import { ControlFrom, controls, Plugin, useDraggable } from '@neodrag/react';
 
 import { Button } from '../Button/Button';
 import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
 import {
-  TitleBar,
-  TitleBarBackgroundProps,
   OptionProps,
   OptionReturnType,
+  TitleBar,
+  TitleBarBackgroundProps,
 } from '../TitleBar/TitleBar';
 import * as styles from './Modal.css';
 
@@ -52,7 +52,7 @@ type TitleBarOptions =
 export type ModalProps = {
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
-  dragOptions?: Omit<DragOptions, 'handle'>;
+  dragPlugins?: Plugin[];
   hasWindowButton?: boolean;
   buttonsAlignment?: FrameProps<'div'>['justifyContent'];
   titleBarOptions?:
@@ -102,7 +102,7 @@ const ModalRenderer = (
     icon,
     menu = [],
     title,
-    dragOptions,
+    dragPlugins: dragOptions,
     titleBarOptions,
     className,
     ...rest
@@ -115,10 +115,10 @@ const ModalRenderer = (
   const [isModalMinimized, setIsModalMinimized] = useState(false);
 
   const draggableRef = useRef<HTMLDivElement>(null);
-  useDraggable(draggableRef, {
-    ...dragOptions,
-    handle: '.draggable',
-  });
+  useDraggable(draggableRef, () => [
+    ...(dragOptions ?? []),
+    controls({ allow: ControlFrom.selector('draggable') }),
+  ]);
 
   const menuRef = useRef<HTMLUListElement>(null);
   useOnClickOutside(menuRef, () => {

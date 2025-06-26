@@ -4,6 +4,7 @@ import * as React from 'react';
 import { ReaderClosed, WindowsExplorer } from '@react95/icons';
 import { List, Modal, TitleBar } from '../components';
 import { TaskBar } from '../components/TaskBar/TaskBar';
+import { position } from '@neodrag/react';
 
 export default {
   title: 'TaskBar',
@@ -35,9 +36,7 @@ export const Simple = {
 
         {second && (
           <Modal
-            dragOptions={{
-              defaultPosition: { x: 50, y: 50 },
-            }}
+            dragPlugins={[position({ default: { x: 50, y: 50 } })]}
             width="300px"
             height="200px"
             icon={<ReaderClosed variant="16x16_4" />}
