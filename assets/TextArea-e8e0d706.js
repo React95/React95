@@ -1,0 +1,1 @@
+import{r,R as t}from"./index-9fa1aa67.js";import{c as o}from"./index-923230fa.js";import{F as s}from"./Frame-8a2a37ef.js";import{i as m}from"./Input.css-f9ede444.js";const c=r.forwardRef((a,e)=>t.createElement(s,{...a,ref:e,className:o(m,a.className),as:"textarea"}));c.__docgenInfo={description:"",methods:[],displayName:"TextArea"};export{c as T};
