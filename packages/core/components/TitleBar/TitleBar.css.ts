@@ -41,7 +41,6 @@ export const option = style({
 export const titleBarBackground = recipe({
   base: {
     height: contract.space[20],
-    marginBottom: contract.space[2],
     padding: contract.space[2],
     display: 'flex',
     boxShadow: 'none',
