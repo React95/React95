@@ -6,6 +6,7 @@ import * as styles from './Alert.css';
 import { Modal, ModalProps } from '../Modal/Modal';
 
 import sound from './assets/chord.mp3';
+import { position } from '@neodrag/react';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
@@ -31,7 +32,7 @@ export type AlertProps = ModalProps & {
 
 export const Alert = forwardRef<HTMLDivElement, AlertProps>(
   (
-    { type = 'error', message, hasSound = false, dragOptions, ...rest },
+    { type = 'error', message, hasSound = false, dragPlugins, ...rest },
     ref,
   ) => {
     if (hasSound) {
@@ -44,19 +45,21 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(
     return (
       <Modal
         height="120"
-        dragOptions={{
-          defaultPosition: {
-            x:
-              typeof window == 'undefined'
-                ? 0
-                : Math.floor(window.innerWidth / 2) - 150,
-            y:
-              typeof window == 'undefined'
-                ? 0
-                : Math.floor(window.innerHeight / 2) - 100,
-          },
-          ...dragOptions,
-        }}
+        dragPlugins={[
+          position({
+            default: {
+              x:
+                typeof window == 'undefined'
+                  ? 0
+                  : Math.floor(window.innerWidth / 2) - 150,
+              y:
+                typeof window == 'undefined'
+                  ? 0
+                  : Math.floor(window.innerHeight / 2) - 100,
+            },
+          }),
+          ...(dragPlugins ?? []),
+        ]}
         buttons={[{ value: 'OK', onClick: () => {} }]}
         hasWindowButton={false}
         buttonsAlignment={'center'}

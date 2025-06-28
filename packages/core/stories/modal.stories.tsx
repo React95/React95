@@ -13,6 +13,7 @@ import {
   ReaderClosed,
   WindowsExplorer,
 } from '@react95/icons';
+import { position } from '@neodrag/react';
 
 export default {
   title: 'Modal',
@@ -36,12 +37,7 @@ export const Simple = {
           <Modal
             icon={<Computer variant="16x16_4" />}
             title="Browse"
-            dragOptions={{
-              defaultPosition: {
-                x: 0,
-                y: 20,
-              },
-            }}
+            dragPlugins={[position({ default: { x: 0, y: 20 } })]}
             titleBarOptions={[
               <TitleBar.Help
                 key="help"
@@ -120,12 +116,7 @@ export const Multiple = () => {
         <Modal
           icon={<Mmsys113 variant="32x32_4" />}
           title="First Modal"
-          dragOptions={{
-            defaultPosition: {
-              x: 0,
-              y: 20,
-            },
-          }}
+          dragPlugins={[position({ default: { x: 0, y: 20 } })]}
           titleBarOptions={<TitleBar.Close onClick={handleCloseFirstModal} />}
           buttons={[
             { value: 'Ok', onClick: handleButtonClick },
@@ -169,12 +160,7 @@ export const Multiple = () => {
         <Modal
           icon={<Mshtml32534 variant="32x32_4" />}
           title="Second Modal"
-          dragOptions={{
-            defaultPosition: {
-              x: 250,
-              y: 100,
-            },
-          }}
+          dragPlugins={[position({ default: { x: 250, y: 100 } })]}
           titleBarOptions={<TitleBar.Close onClick={handleCloseSecondModal} />}
           buttons={[
             { value: 'Ok', onClick: handleButtonClick },
@@ -277,9 +263,7 @@ export const Minimize = {
 
         {second && (
           <Modal
-            dragOptions={{
-              defaultPosition: { x: 120, y: 120 },
-            }}
+            dragPlugins={[position({ default: { x: 120, y: 120 } })]}
             width="300px"
             height="220px"
             icon={<ReaderClosed variant="16x16_4" />}
