@@ -9,7 +9,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -59,7 +60,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -109,7 +111,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -159,7 +162,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
     style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
