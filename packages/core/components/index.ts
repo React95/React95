@@ -21,6 +21,7 @@ import { Tooltip } from './Tooltip/Tooltip';
 import { TitleBar } from './TitleBar/TitleBar';
 import { Video } from './Video/Video';
 import { contract } from './themes/contract.css';
+import * as tokens from './themes/tokens';
 
 export {
   Alert,
@@ -46,4 +47,5 @@ export {
   TitleBar,
   Video,
   contract,
+  tokens,
 };
