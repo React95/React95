@@ -3,8 +3,8 @@
 exports[`<Avatar /> > Snapshots > should match snapshot 1`] = `
 <div>
   <div
-    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0"
-    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
+    class="Frame_height-mobile__iuzg895x Frame_width-mobile__iuzg895f Avatar_avatar__vljy2n0"
+    style="--height-mobile__iuzg895u: 48px; --width-mobile__iuzg895c: 48px;"
   />
 </div>
 `;
@@ -12,8 +12,8 @@ exports[`<Avatar /> > Snapshots > should match snapshot 1`] = `
 exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with children 1`] = `
 <div>
   <div
-    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0"
-    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
+    class="Frame_height-mobile__iuzg895x Frame_width-mobile__iuzg895f Avatar_avatar__vljy2n0"
+    style="--height-mobile__iuzg895u: 48px; --width-mobile__iuzg895c: 48px;"
   >
     <p>
       GG
@@ -25,8 +25,8 @@ exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with c
 exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with children and circle 1`] = `
 <div>
   <div
-    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0 Avatar_avatar_circle_true__vljy2n1"
-    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
+    class="Frame_height-mobile__iuzg895x Frame_width-mobile__iuzg895f Avatar_avatar__vljy2n0 Avatar_avatar_circle_true__vljy2n1"
+    style="--height-mobile__iuzg895u: 48px; --width-mobile__iuzg895c: 48px;"
   >
     <p>
       GG
@@ -38,8 +38,8 @@ exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with c
 exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with src and alt prop 1`] = `
 <div>
   <div
-    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0"
-    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
+    class="Frame_height-mobile__iuzg895x Frame_width-mobile__iuzg895f Avatar_avatar__vljy2n0"
+    style="--height-mobile__iuzg895u: 48px; --width-mobile__iuzg895c: 48px;"
   >
     <img
       alt="React95 brand logo"
@@ -53,8 +53,8 @@ exports[`<Avatar /> > Snapshots > should match snapshot in default avatar with s
 exports[`<Avatar /> > value prop > should render avatar with circle 1`] = `
 <div>
   <div
-    class="Frame_height__iuzg891z Frame_width__iuzg891t Avatar_avatar__vljy2n0 Avatar_avatar_circle_true__vljy2n1"
-    style="--height__iuzg891y: 48px; --width__iuzg891s: 48px;"
+    class="Frame_height-mobile__iuzg895x Frame_width-mobile__iuzg895f Avatar_avatar__vljy2n0 Avatar_avatar_circle_true__vljy2n1"
+    style="--height-mobile__iuzg895u: 48px; --width-mobile__iuzg895c: 48px;"
   >
     GG
   </div>
