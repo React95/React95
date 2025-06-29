@@ -16,7 +16,7 @@
       }
     },
     "./themes/tokens/*": {
-      "types": "./types/themes/*.d.ts",
+      "types": "./types/themes/tokens/*.d.ts",
       "import": "./esm/themes/tokens/*.mjs",
       "require": "./cjs/themes/tokens/*.cjs"
     },
