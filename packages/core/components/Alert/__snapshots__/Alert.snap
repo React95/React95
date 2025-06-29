@@ -4,13 +4,13 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
 <div>
   <div
     aria-hidden="false"
-    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    class="Frame_height-mobile__iuzg895x Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
+    style="--height-mobile__iuzg895u: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -37,8 +37,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with error type 1`] = `
       </div>
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: center;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -55,13 +55,13 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
 <div>
   <div
     aria-hidden="false"
-    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    class="Frame_height-mobile__iuzg895x Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
+    style="--height-mobile__iuzg895u: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -88,8 +88,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with info type 1`] = `
       </div>
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: center;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -106,13 +106,13 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
 <div>
   <div
     aria-hidden="false"
-    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    class="Frame_height-mobile__iuzg895x Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
+    style="--height-mobile__iuzg895u: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -139,8 +139,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with question type 1`] = 
       </div>
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: center;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -157,13 +157,13 @@ exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
 <div>
   <div
     aria-hidden="false"
-    class="Frame_height__iuzg891z Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
+    class="Frame_height-mobile__iuzg895x Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="--height__iuzg891y: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
+    style="--height-mobile__iuzg895u: 120; transform: translate3d(362px, 284px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <div
         class="TitleBar_title__1kpzw685"
@@ -190,8 +190,8 @@ exports[`<Alert /> > Snapshots > should match snapshot with warning type 1`] = `
       </div>
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: center;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: center;"
     >
       <button
         class="Button_button__1bzq74l0"

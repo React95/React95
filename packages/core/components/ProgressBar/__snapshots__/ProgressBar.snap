@@ -3,22 +3,22 @@
 exports[`<ProgressBar /> > Snapshots > should match snapshot 1`] = `
 <div>
   <div
-    class="Frame_width__iuzg891t ProgressBar_wrapper__1drc6y70"
-    style="--width__iuzg891s: 300px;"
+    class="Frame_width-mobile__iuzg895f ProgressBar_wrapper__1drc6y70"
+    style="--width-mobile__iuzg895c: 300px;"
   >
     <div
-      class="Frame_width__iuzg891t ProgressBar_whiteBar__1drc6y71"
-      style="--width__iuzg891s: 300px;"
+      class="Frame_width-mobile__iuzg895f ProgressBar_whiteBar__1drc6y71"
+      style="--width-mobile__iuzg895c: 300px;"
     >
       50%
     </div>
     <div
-      class="Frame_width__iuzg891t ProgressBar_container__1drc6y72"
-      style="--width__iuzg891s: 50%;"
+      class="Frame_width-mobile__iuzg895f ProgressBar_container__1drc6y72"
+      style="--width-mobile__iuzg895c: 50%;"
     >
       <div
-        class="Frame_width__iuzg891t ProgressBar_progress__1drc6y73"
-        style="--width__iuzg891s: 300px;"
+        class="Frame_width-mobile__iuzg895f ProgressBar_progress__1drc6y73"
+        style="--width-mobile__iuzg895c: 300px;"
       >
         50%
       </div>

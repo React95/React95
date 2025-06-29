@@ -9,8 +9,8 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div
@@ -39,8 +39,8 @@ exports[`<Modal /> > Snapshots > should match snapshot 1`] = `
       Hello
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: flex-end;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: flex-end;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -68,8 +68,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div
@@ -84,8 +84,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
       Hello
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: center;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: center;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -113,8 +113,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div
@@ -129,8 +129,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with buttonsAligment prop
       Hello
     </div>
     <div
-      class="Frame_justifyContent__iuzg891f Modal_buttonWrapper__1txblt64"
-      style="--justifyContent__iuzg891e: flex-start;"
+      class="Frame_justifyContent-mobile__iuzg8949 Modal_buttonWrapper__1txblt64"
+      style="--justifyContent-mobile__iuzg8946: flex-start;"
     >
       <button
         class="Button_button__1bzq74l0"
@@ -158,8 +158,8 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
-      style="--marginBottom__iuzg892c: var(--r95-space-2);"
+      class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div

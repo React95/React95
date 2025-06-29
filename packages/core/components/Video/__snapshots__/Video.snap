@@ -3,8 +3,8 @@
 exports[`<Video /> > Snapshot > should match snapshot 1`] = `
 <div>
   <div
-    class="Frame_padding__iuzg892r Frame_boxShadow__iuzg895z Frame_backgroundColor__iuzg893p"
-    style="--padding__iuzg892q: var(--r95-space-2); --boxShadow__iuzg895y: var(--r95-shadow-out); --backgroundColor__iuzg893o: var(--r95-color-material);"
+    class="Frame_padding-mobile__iuzg8989 Frame_boxShadow__iuzg89cn Frame_backgroundColor__iuzg89ad"
+    style="--padding-mobile__iuzg8986: var(--r95-space-2); --boxShadow__iuzg89cm: var(--r95-shadow-out); --backgroundColor__iuzg89ac: var(--r95-color-material);"
   >
     <div
       class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683"
@@ -27,15 +27,15 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
       />
     </video>
     <div
-      class="Frame_marginBottom__iuzg892d Frame_marginLeft__iuzg892l Frame_marginRight__iuzg892n Frame_maxWidth__iuzg891v"
-      style="--marginBottom__iuzg892c: var(--r95-space-4); --marginLeft__iuzg892k: auto; --marginRight__iuzg892m: auto; --maxWidth__iuzg891u: 250px;"
+      class="Frame_marginBottom-mobile__iuzg8973 Frame_marginLeft-mobile__iuzg897r Frame_marginRight-mobile__iuzg897x Frame_maxWidth-mobile__iuzg895l"
+      style="--marginBottom-mobile__iuzg8970: var(--r95-space-4); --marginLeft-mobile__iuzg897o: auto; --marginRight-mobile__iuzg897u: auto; --maxWidth-mobile__iuzg895i: 250px;"
     >
       <div
         class="Video_countDownContainer__13gnpv04"
       >
         <div
-          class="Frame_width__iuzg891t Frame_display__iuzg891 Frame_flexDirection__iuzg8915"
-          style="--width__iuzg891s: 40%; --display__iuzg890: flex; --flexDirection__iuzg8914: column;"
+          class="Frame_width-mobile__iuzg895f Frame_display-mobile__iuzg893 Frame_flexDirection-mobile__iuzg893f"
+          style="--width-mobile__iuzg895c: 40%; --display-mobile__iuzg890: flex; --flexDirection-mobile__iuzg893c: column;"
         >
           <div
             class="Video_videoFont__13gnpv05"
@@ -49,8 +49,8 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="Frame_width__iuzg891t Frame_display__iuzg891 Frame_flexDirection__iuzg8915"
-          style="--width__iuzg891s: 40%; --display__iuzg890: flex; --flexDirection__iuzg8914: column;"
+          class="Frame_width-mobile__iuzg895f Frame_display-mobile__iuzg893 Frame_flexDirection-mobile__iuzg893f"
+          style="--width-mobile__iuzg895c: 40%; --display-mobile__iuzg890: flex; --flexDirection-mobile__iuzg893c: column;"
         >
           <div
             class="Video_videoFont__13gnpv05 Video_currentTime__13gnpv06"
