@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.5.0](https://github.com/React95/React95/compare/@react95/core@9.4.1...@react95/core@9.5.0) (2025-06-29)
+
+
+### Features
+
+* add responsive conditions to display and box model properties ([bb858d8](https://github.com/React95/React95/commit/bb858d8663b62c08d999a2951d5b88322d806e2e))
+
+
+
+
+
 ## [9.4.1](https://github.com/React95/React95/compare/@react95/core@9.4.0...@react95/core@9.4.1) (2025-06-29)
 
 **Note:** Version bump only for package @react95/core
