@@ -1,1 +1,0 @@
-import{r,R as s}from"./index-9fa1aa67.js";import{F as o}from"./Frame-8a2a37ef.js";import{c as t}from"./index-923230fa.js";var n="r95_1i4w9z20";const c=r.forwardRef((a,e)=>s.createElement(o,{...a,ref:e,className:t(n,a.className),as:"input",type:"range"}));c.__docgenInfo={description:"",methods:[],displayName:"Range"};export{c as R};
