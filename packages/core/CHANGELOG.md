@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.4.0](https://github.com/React95/React95/compare/@react95/core@9.3.2...@react95/core@9.4.0) (2025-06-29)
+
+
+### Bug Fixes
+
+* adjust margin and spacing for Modal and TitleBar components ([02cd091](https://github.com/React95/React95/commit/02cd091973a7816af07fe92a95194be90678bf02))
+* correct path for theme token types in package.json ([cf79fa2](https://github.com/React95/React95/commit/cf79fa2a46081b14b1bba34828907f0432800e73))
+
+
+### Features
+
+* Add new theme token files and update CSS theme files ([d1e68d1](https://github.com/React95/React95/commit/d1e68d16738b4a2d25260f734c0b8e641290b7d1))
+* add type definitions and import paths for theme token files ([616ec5f](https://github.com/React95/React95/commit/616ec5f86d359360bc2cb4318b54019a14336612))
+
+
+
+
+
 ## [9.3.2](https://github.com/React95/React95/compare/@react95/core@9.3.1...@react95/core@9.3.2) (2025-06-27)
 
 **Note:** Version bump only for package @react95/core
