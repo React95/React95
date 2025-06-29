@@ -8,6 +8,15 @@
     "windows95",
     "w95"
   ],
+  "files": [
+    "cjs",
+    "esm",
+    "png",
+    "svg",
+    "types",
+    "icons.css",
+    "!**/*.tsbuildinfo"
+  ],
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",
   "license": "MIT",
