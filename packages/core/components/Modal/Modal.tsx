@@ -186,6 +186,7 @@ const ModalRenderer = (
         icon={icon}
         title={title}
         className="draggable"
+        mb="$2"
       >
         {titleBarOptions && (
           <TitleBar.OptionsBox>{titleBarOptions}</TitleBar.OptionsBox>

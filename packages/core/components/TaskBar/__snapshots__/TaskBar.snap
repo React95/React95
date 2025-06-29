@@ -210,7 +210,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div
@@ -263,7 +264,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div
@@ -280,7 +282,8 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     style="transform: translate3d(0px, 0px, 0); touch-action: none;"
   >
     <div
-      class="TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      class="Frame_marginBottom__iuzg892d TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
+      style="--marginBottom__iuzg892c: var(--r95-space-2);"
     >
       <svg test-file-stub />
       <div
