@@ -1,12 +1,21 @@
 {
   "name": "@react95/icons",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "React95 icons gallery",
   "keywords": [
     "React95",
     "icons",
     "windows95",
     "w95"
+  ],
+  "files": [
+    "cjs",
+    "esm",
+    "png",
+    "svg",
+    "types",
+    "icons.css",
+    "!**/*.tsbuildinfo"
   ],
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://react95.github.io/React95/",

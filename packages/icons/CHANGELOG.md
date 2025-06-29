@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/React95/React95/compare/@react95/icons@2.1.1...@react95/icons@2.2.0) (2025-06-29)
+
+
+### Features
+
+* **icons:** add TypeScript declarations ([ca9bbfa](https://github.com/React95/React95/commit/ca9bbfa9a1366dee1100ad36195a7de414bbe4aa))
+* **icons:** update files field in package.json ([f995a18](https://github.com/React95/React95/commit/f995a189ef28886c5d7e206daddd7ce31bb1c60c))
+
+
+
+
+
 ## [2.1.1](https://github.com/React95/React95/compare/@react95/icons@2.1.0...@react95/icons@2.1.1) (2024-01-18)
 
 
