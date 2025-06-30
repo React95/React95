@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {
   Button,
-  Checkbox,
   contract,
-  Dropdown,
   Fieldset,
   Frame,
   Input,
@@ -25,7 +23,7 @@ import {
 } from '@react95/icons';
 import type { StoryObj } from '@storybook/react';
 
-import './contract.css';
+import './contract.stories.css';
 
 export default {
   title: 'Contract',
