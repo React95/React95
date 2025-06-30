@@ -23,7 +23,7 @@ import {
 } from '@react95/icons';
 import type { StoryObj } from '@storybook/react';
 
-import './contract.stories.css';
+import * as styles from './contract.stories.css';
 
 export default {
   title: 'Contract',
@@ -246,11 +246,11 @@ export const CustomTheme: Story = {
         </Frame>
 
         <Frame>
-          <p>
+          <p className={styles.paragraph}>
             You can create custom themes by extending existing ones or creating
             completely new token sets.
           </p>
-          <p>
+          <p className={styles.paragraph}>
             This example shows how to extend the Counter-Strike theme with
             custom colors.
           </p>
