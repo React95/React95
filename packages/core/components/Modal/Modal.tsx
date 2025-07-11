@@ -25,7 +25,7 @@ import * as styles from './Modal.css';
 
 import cn from 'classnames';
 import { useOnClickOutside } from 'usehooks-ts';
-import { ModalEvents, modals } from '../shared/events';
+import { ModalEvents, useModal } from '../shared/events';
 
 export type ModalButtons = {
   value: string;
@@ -50,6 +50,7 @@ type TitleBarOptions =
   | typeof TitleBar.Restore;
 
 export type ModalProps = {
+  id?: string;
   buttons?: Array<ModalButtons>;
   menu?: Array<ModalMenu>;
   dragOptions?: Omit<DragOptions, 'handle'>;
@@ -71,22 +72,24 @@ const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
 const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     const [id, setId] = useState<string>('');
+    const { minimize, focus, subscribe } = useModal();
 
     useEffect(() => {
       const handleVisibilityChange = ({ id: activeId }: { id: string }) => {
         setId(activeId);
       };
 
-      modals.on(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
+      const unsubscribe = subscribe(
+        ModalEvents.ModalVisibilityChanged,
+        handleVisibilityChange,
+      );
 
-      return () => {
-        modals.off(ModalEvents.ModalVisibilityChanged, handleVisibilityChange);
-      };
-    }, []);
+      return unsubscribe;
+    }, [subscribe]);
 
     const handleMinimize = () => {
-      modals.emit(ModalEvents.MinimizeModal, { id });
-      modals.emit(ModalEvents.ModalVisibilityChanged, { id: 'no id' });
+      minimize(id);
+      focus('no-id');
     };
 
     return <TitleBar.Minimize {...props} ref={ref} onClick={handleMinimize} />;
@@ -95,6 +98,7 @@ const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
 
 const ModalRenderer = (
   {
+    id: providedId,
     hasWindowButton: hasButton = true,
     buttons = [],
     buttonsAlignment = 'flex-end',
@@ -109,10 +113,11 @@ const ModalRenderer = (
   }: ModalProps,
   ref: Ref<HTMLDivElement | null>,
 ) => {
-  const [id] = useState<string>(nanoid());
+  const [id] = useState<string>(providedId || nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
   const [isModalMinimized, setIsModalMinimized] = useState(false);
+  const { add, remove, focus, subscribe } = useModal();
 
   const draggableRef = useRef<HTMLDivElement>(null);
   useDraggable(draggableRef, {
@@ -126,42 +131,52 @@ const ModalRenderer = (
   });
 
   useEffect(() => {
-    modals.emit(ModalEvents.AddModal, {
+    add({
       icon,
-      title,
+      title: title || '',
       id,
       hasButton,
     });
 
-    modals.on(ModalEvents.ModalVisibilityChanged, ({ id: activeId }) => {
-      setIsActive(activeId === id);
-    });
+    const unsubscribeVisibility = subscribe(
+      ModalEvents.ModalVisibilityChanged,
+      ({ id: activeId }) => {
+        setIsActive(activeId === id);
+      },
+    );
 
-    modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+    focus(id);
 
     return () => {
-      modals.emit(ModalEvents.RemoveModal, { id });
+      remove(id);
+      unsubscribeVisibility();
     };
-  }, []);
+  }, [id, icon, title, hasButton, providedId, add, remove, focus, subscribe]);
 
   useEffect(() => {
-    modals.on(ModalEvents.MinimizeModal, ({ id: activeId }) => {
-      if (activeId === id) {
-        setIsModalMinimized(true);
-      }
-    });
+    const unsubscribeMinimize = subscribe(
+      ModalEvents.MinimizeModal,
+      ({ id: activeId }) => {
+        if (activeId === id) {
+          setIsModalMinimized(true);
+        }
+      },
+    );
 
-    modals.on(ModalEvents.RestoreModal, ({ id: activeId }) => {
-      if (activeId === id) {
-        setIsModalMinimized(false);
-      }
-    });
+    const unsubscribeRestore = subscribe(
+      ModalEvents.RestoreModal,
+      ({ id: activeId }) => {
+        if (activeId === id) {
+          setIsModalMinimized(false);
+        }
+      },
+    );
 
     return () => {
-      modals.off(ModalEvents.MinimizeModal, () => {});
-      modals.off(ModalEvents.RestoreModal, () => {});
+      unsubscribeMinimize();
+      unsubscribeRestore();
     };
-  }, [id]);
+  }, [id, subscribe]);
 
   useImperativeHandle(ref, () => {
     return draggableRef.current;
@@ -178,7 +193,7 @@ const ModalRenderer = (
       aria-hidden={isModalMinimized}
       ref={draggableRef}
       onMouseDown={() => {
-        modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+        focus(id);
       }}
     >
       <TitleBar
