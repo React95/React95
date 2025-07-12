@@ -103,32 +103,56 @@ export const Simple = {
   },
 };
 
+const MODAL_IDS = {
+  first: 'first-modal',
+  second: 'second-modal',
+};
+
 export const Multiple = () => {
-  const { remove, minimize, restore, focus } = useModal();
+  const { remove, minimize, restore, focus, add } = useModal();
 
-  const handleCloseFirstModal = () => remove('first-modal');
-  const handleCloseSecondModal = () => remove('second-modal');
+  const handleCloseFirstModal = () => {
+    minimize(MODAL_IDS.first);
+    remove(MODAL_IDS.first);
+  };
+  const handleCloseSecondModal = () => {
+    minimize(MODAL_IDS.second);
+    remove(MODAL_IDS.second);
+  };
 
-  // Control handlers
+  // Handlers for first modal
   const handleMinimizeFirst = () => {
-    minimize('first-modal');
+    minimize(MODAL_IDS.first);
     focus('no-id');
   };
   const handleRestoreFirst = () => {
-    restore('first-modal');
-    focus('first-modal');
+    add({
+      id: MODAL_IDS.first,
+      title: 'First Modal',
+      icon: <Mmsys113 variant="32x32_4" />,
+      hasButton: true,
+    });
+    restore(MODAL_IDS.first);
+    focus(MODAL_IDS.first);
   };
-  const handleFocusFirst = () => focus('first-modal');
+  const handleFocusFirst = () => focus(MODAL_IDS.first);
 
+  // Handlers for second modal
   const handleMinimizeSecond = () => {
-    minimize('second-modal');
+    minimize(MODAL_IDS.second);
     focus('no-id');
   };
   const handleRestoreSecondModal = () => {
-    restore('second-modal');
-    focus('second-modal');
+    add({
+      id: MODAL_IDS.second,
+      title: 'Second Modal',
+      icon: <Mshtml32534 variant="32x32_4" />,
+      hasButton: true,
+    });
+    restore(MODAL_IDS.second);
+    focus(MODAL_IDS.second);
   };
-  const handleFocusSecond = () => focus('second-modal');
+  const handleFocusSecond = () => focus(MODAL_IDS.second);
 
   const handleButtonClick = (e: React.MouseEvent<HTMLLIElement>) =>
     alert(e.currentTarget.value);
@@ -136,13 +160,13 @@ export const Multiple = () => {
   return (
     <Frame>
       <TaskBar />
+
       <Frame display="flex" flexDirection="column" gap="8px">
-        <h4>Modal Controls:</h4>
         <Frame display="flex" gap="8px" flexWrap="wrap">
           <Button onClick={handleMinimizeFirst}>Minimize First</Button>
           <Button onClick={handleRestoreFirst}>Restore First</Button>
-          <Button onClick={handleFocusFirst}>Focus First</Button>
           <Button onClick={handleCloseFirstModal}>Close First</Button>
+          <Button onClick={handleFocusFirst}>Focus First</Button>
         </Frame>
         <Frame display="flex" gap="8px" flexWrap="wrap">
           <Button onClick={handleMinimizeSecond}>Minimize Second</Button>
@@ -204,9 +228,9 @@ export const Multiple = () => {
                 <code>focus(id)</code> - Bring to focus
               </li>
             </ul>
-            <p style={{ fontSize: '12px' }}>
+            <Frame as="p" fontSize="$12">
               Try the control buttons above or use the TaskBar below.
-            </p>
+            </Frame>
           </Frame>
         </Modal.Content>
       </Modal>
@@ -249,15 +273,15 @@ export const Multiple = () => {
           <Frame as="div" display="flex" flexDirection="column" gap="8px">
             <h4>Complete Modal Management</h4>
             <p>Key features demonstrated:</p>
-            <ul style={{ fontSize: '14px', margin: '8px 0' }}>
+            <Frame as="ul" fontSize="$14" marginY="$8">
               <li>No React state management needed</li>
               <li>Modals controlled by ID</li>
               <li>Automatic TaskBar integration</li>
               <li>Event-driven architecture</li>
-            </ul>
-            <p style={{ fontSize: '12px' }}>
+            </Frame>
+            <Frame as="p" fontSize="$12">
               Both modals can be controlled independently using their IDs.
-            </p>
+            </Frame>
           </Frame>
         </Modal.Content>
       </Modal>
