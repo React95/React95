@@ -9,14 +9,11 @@ import { Computer } from '@react95/icons';
 
 // Test component that uses useModal hook
 const TestModalController = () => {
-  const { add, remove, minimize, restore, focus, subscribe } = useModal();
+  const { remove, minimize, restore, focus, subscribe } = useModal();
   const [events, setEvents] = React.useState<string[]>([]);
 
   React.useEffect(() => {
     const unsubscribes = [
-      subscribe(ModalEvents.AddModal, ({ id, title }) => {
-        setEvents(prev => [...prev, `Added: ${title} (${id})`]);
-      }),
       subscribe(ModalEvents.RemoveModal, ({ id }) => {
         setEvents(prev => [...prev, `Removed: ${id}`]);
       }),
@@ -68,9 +65,39 @@ describe('Modal System Integration', () => {
   });
 
   describe('Modal registration and TaskBar integration', () => {
+    it('should trigger AddModal event when modal mounts', async () => {
+      // Spy on the modals emitter to verify add event is emitted
+      const { modals } = await import('./modal-controller');
+      const emitSpy = vi.spyOn(modals, 'emit');
+
+      render(
+        <Modal
+          id="event-test-modal"
+          icon={<Computer variant="16x16_4" />}
+          title="Event Test Modal"
+        >
+          <Modal.Content>Test Content</Modal.Content>
+        </Modal>,
+      );
+
+      await waitFor(() => {
+        expect(emitSpy).toHaveBeenCalledWith(
+          ModalEvents.AddModal,
+          expect.objectContaining({
+            id: 'event-test-modal',
+            title: 'Event Test Modal',
+            hasButton: true,
+          }),
+        );
+      });
+
+      emitSpy.mockRestore();
+    });
+
     it('should register modal with TaskBar when mounted', async () => {
-      const { getByText } = render(
+      const { getAllByText } = render(
         <>
+          <TaskBar />
           <Modal
             id="integration-modal"
             icon={<Computer variant="16x16_4" />}
@@ -78,12 +105,14 @@ describe('Modal System Integration', () => {
           >
             <Modal.Content>Test Content</Modal.Content>
           </Modal>
-          <TaskBar />
         </>,
       );
 
       await waitFor(() => {
-        expect(getByText('Integration Test')).toBeInTheDocument();
+        const modalElements = getAllByText('Integration Test');
+
+        // TaskBar button + Modal title
+        expect(modalElements).toHaveLength(2);
       });
     });
 
