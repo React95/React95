@@ -228,9 +228,7 @@ export const Multiple = () => {
                 <code>focus(id)</code> - Bring to focus
               </li>
             </ul>
-            <Frame as="p" fontSize="$12">
-              Try the control buttons above or use the TaskBar below.
-            </Frame>
+            <p>Try the control buttons above or use the TaskBar below.</p>
           </Frame>
         </Modal.Content>
       </Modal>
@@ -273,15 +271,13 @@ export const Multiple = () => {
           <Frame as="div" display="flex" flexDirection="column" gap="8px">
             <h4>Complete Modal Management</h4>
             <p>Key features demonstrated:</p>
-            <Frame as="ul" fontSize="$14" marginY="$8">
+            <Frame as="ul" marginY="$8">
               <li>No React state management needed</li>
               <li>Modals controlled by ID</li>
               <li>Automatic TaskBar integration</li>
               <li>Event-driven architecture</li>
             </Frame>
-            <Frame as="p" fontSize="$12">
-              Both modals can be controlled independently using their IDs.
-            </Frame>
+            <p>Both modals can be controlled independently using their IDs.</p>
           </Frame>
         </Modal.Content>
       </Modal>
