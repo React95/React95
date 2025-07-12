@@ -8,7 +8,7 @@ import { Clock } from './Clock';
 import { WindowButton } from './WindowButton';
 import { Logo } from '@react95/icons';
 import { truncate } from './TaskBar.css';
-import { ModalEvents, modals, ModalWindow } from '../shared/events';
+import { ModalEvents, ModalWindow, useModal } from '../shared/events';
 
 export type TaskBarProps = {
   list?: ReactElement<typeof List>;
@@ -20,11 +20,23 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
     const [activeStart, toggleActiveStart] = useState(false);
     const [modalWindows, setModalWindows] = React.useState<ModalWindow[]>([]);
     const [activeWindow, setActiveWindow] = useState<string>();
+    const { minimize, restore, focus, subscribe } = useModal();
 
     useEffect(() => {
       const addModal = (window: ModalWindow) => {
-        setModalWindows(prevModals => [...prevModals, window]);
+        if (!window.id) {
+          console.warn('Modal added without ID');
+          return;
+        }
+        setModalWindows(prevModals => {
+          // Prevent duplicates
+          if (prevModals.some(modal => modal.id === window.id)) {
+            return prevModals;
+          }
+          return [...prevModals, window];
+        });
       };
+
       const removeModal = (data: Pick<ModalWindow, 'id'>) => {
         setModalWindows(prevModals => {
           const filteredModals = prevModals.filter(
@@ -33,10 +45,8 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
 
           const lastModal = filteredModals.at(-1);
 
-          if (!activeWindow && lastModal) {
-            modals.emit(ModalEvents.ModalVisibilityChanged, {
-              id: lastModal?.id,
-            });
+          if (activeWindow === data.id && lastModal) {
+            focus(lastModal.id);
           }
 
           return filteredModals;
@@ -47,16 +57,19 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
         setActiveWindow(id);
       };
 
-      modals.on(ModalEvents.AddModal, addModal);
-      modals.on(ModalEvents.RemoveModal, removeModal);
-      modals.on(ModalEvents.ModalVisibilityChanged, updateVisibleModal);
+      const unsubscribeAdd = subscribe(ModalEvents.AddModal, addModal);
+      const unsubscribeRemove = subscribe(ModalEvents.RemoveModal, removeModal);
+      const unsubscribeVisibility = subscribe(
+        ModalEvents.ModalVisibilityChanged,
+        updateVisibleModal,
+      );
 
       return () => {
-        modals.off(ModalEvents.AddModal, addModal);
-        modals.off(ModalEvents.RemoveModal, removeModal);
-        modals.off(ModalEvents.ModalVisibilityChanged, updateVisibleModal);
+        unsubscribeAdd();
+        unsubscribeRemove();
+        unsubscribeVisibility();
       };
-    }, []);
+    }, [activeWindow, subscribe, focus]);
 
     return (
       <Frame
@@ -109,11 +122,11 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
                   active={id === activeWindow}
                   onClick={() => {
                     if (id === activeWindow) {
-                      modals.emit(ModalEvents.MinimizeModal, { id });
-                      setActiveWindow('Minimize');
+                      minimize(id);
+                      setActiveWindow(undefined);
                     } else {
-                      modals.emit(ModalEvents.RestoreModal, { id });
-                      modals.emit(ModalEvents.ModalVisibilityChanged, { id });
+                      restore(id);
+                      focus(id);
                     }
                   }}
                   small={false}

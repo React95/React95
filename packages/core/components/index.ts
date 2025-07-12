@@ -22,6 +22,7 @@ import { TitleBar } from './TitleBar/TitleBar';
 import { Video } from './Video/Video';
 import { contract } from './themes/contract.css';
 import * as tokens from './themes/tokens';
+import { ModalEvents, useModal } from './shared/events';
 
 export {
   Alert,
@@ -48,4 +49,6 @@ export {
   Video,
   contract,
   tokens,
+  ModalEvents,
+  useModal,
 };

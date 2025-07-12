@@ -1,7 +1,14 @@
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { Button, List, TitleBar, TaskBar, Frame } from '../components';
+import {
+  Button,
+  List,
+  TitleBar,
+  TaskBar,
+  Frame,
+  useModal,
+} from '../components';
 import { Modal } from '../components/Modal/Modal';
 
 import * as styles from './modal.stories.css';
@@ -96,123 +103,185 @@ export const Simple = {
   },
 };
 
-export const Multiple = () => {
-  const [showFirstModal, toggleShowFirstModal] = React.useState(false);
-  const [showSecondModal, toggleShowSecondModal] = React.useState(false);
+const MODAL_IDS = {
+  first: 'first-modal',
+  second: 'second-modal',
+};
 
-  const handleOpenBothModals = () => {
-    toggleShowFirstModal(true);
-    toggleShowSecondModal(true);
+export const Multiple = () => {
+  const { remove, minimize, restore, focus, add } = useModal();
+
+  const handleCloseFirstModal = () => {
+    minimize(MODAL_IDS.first);
+    remove(MODAL_IDS.first);
   };
-  const handleOpenFirstModal = () => toggleShowFirstModal(true);
-  const handleOpenSecondModal = () => toggleShowSecondModal(true);
-  const handleCloseFirstModal = () => toggleShowFirstModal(false);
-  const handleCloseSecondModal = () => toggleShowSecondModal(false);
+  const handleCloseSecondModal = () => {
+    minimize(MODAL_IDS.second);
+    remove(MODAL_IDS.second);
+  };
+
+  // Handlers for first modal
+  const handleMinimizeFirst = () => {
+    minimize(MODAL_IDS.first);
+    focus('no-id');
+  };
+  const handleRestoreFirst = () => {
+    add({
+      id: MODAL_IDS.first,
+      title: 'First Modal',
+      icon: <Mmsys113 variant="32x32_4" />,
+      hasButton: true,
+    });
+    restore(MODAL_IDS.first);
+    focus(MODAL_IDS.first);
+  };
+  const handleFocusFirst = () => focus(MODAL_IDS.first);
+
+  // Handlers for second modal
+  const handleMinimizeSecond = () => {
+    minimize(MODAL_IDS.second);
+    focus('no-id');
+  };
+  const handleRestoreSecondModal = () => {
+    add({
+      id: MODAL_IDS.second,
+      title: 'Second Modal',
+      icon: <Mshtml32534 variant="32x32_4" />,
+      hasButton: true,
+    });
+    restore(MODAL_IDS.second);
+    focus(MODAL_IDS.second);
+  };
+  const handleFocusSecond = () => focus(MODAL_IDS.second);
+
   const handleButtonClick = (e: React.MouseEvent<HTMLLIElement>) =>
     alert(e.currentTarget.value);
 
   return (
-    <>
-      <Button onClick={handleOpenBothModals}>Trigger Both</Button>
-      <Button onClick={handleOpenFirstModal}>Trigger 1st</Button>
-      <Button onClick={handleOpenSecondModal}>Trigger 2nd</Button>
-      {showFirstModal && (
-        <Modal
-          icon={<Mmsys113 variant="32x32_4" />}
-          title="First Modal"
-          dragOptions={{
-            defaultPosition: {
-              x: 0,
-              y: 20,
-            },
-          }}
-          titleBarOptions={<TitleBar.Close onClick={handleCloseFirstModal} />}
-          buttons={[
-            { value: 'Ok', onClick: handleButtonClick },
-            { value: 'Cancel', onClick: handleButtonClick },
-          ]}
-          menu={[
-            {
-              name: 'File',
-              list: (
-                <List width="200px">
-                  <List.Item onClick={handleCloseFirstModal}>Exit</List.Item>
-                </List>
-              ),
-            },
-            {
-              name: 'Edit',
-              list: (
-                <List width="200px">
-                  <List.Item>Copy</List.Item>
-                </List>
-              ),
-            },
-          ]}
-        >
-          <Modal.Content
-            width="300px"
-            height="160px"
-            boxShadow="$in"
-            bgColor="white"
-          >
+    <Frame>
+      <TaskBar />
+
+      <Frame display="flex" flexDirection="column" gap="8px">
+        <Frame display="flex" gap="8px" flexWrap="wrap">
+          <Button onClick={handleMinimizeFirst}>Minimize First</Button>
+          <Button onClick={handleRestoreFirst}>Restore First</Button>
+          <Button onClick={handleCloseFirstModal}>Close First</Button>
+          <Button onClick={handleFocusFirst}>Focus First</Button>
+        </Frame>
+        <Frame display="flex" gap="8px" flexWrap="wrap">
+          <Button onClick={handleMinimizeSecond}>Minimize Second</Button>
+          <Button onClick={handleRestoreSecondModal}>Restore Second</Button>
+          <Button onClick={handleCloseSecondModal}>Close Second</Button>
+          <Button onClick={handleFocusSecond}>Focus Second</Button>
+        </Frame>
+      </Frame>
+
+      <Modal
+        id="first-modal"
+        icon={<Mmsys113 variant="32x32_4" />}
+        title="First Modal"
+        dragOptions={{
+          defaultPosition: {
+            x: 50,
+            y: 100,
+          },
+        }}
+        titleBarOptions={<Modal.Minimize />}
+        buttons={[
+          { value: 'Ok', onClick: handleButtonClick },
+          { value: 'Cancel', onClick: handleButtonClick },
+        ]}
+        menu={[
+          {
+            name: 'File',
+            list: (
+              <List width="200px">
+                <List.Item onClick={handleCloseFirstModal}>Exit</List.Item>
+              </List>
+            ),
+          },
+          {
+            name: 'Edit',
+            list: (
+              <List width="200px">
+                <List.Item>Copy</List.Item>
+              </List>
+            ),
+          },
+        ]}
+      >
+        <Modal.Content width="350px" boxShadow="$in" bgColor="white" p="16px">
+          <Frame as="div" display="flex" flexDirection="column" gap="8px">
+            <h4>Modal Control</h4>
             <p>
-              The active modal will be based on the order they render, most
-              recently rendered will be the active component. On click of a
-              non-active modal will fire an action to set that modal as the
-              active one.
+              This modal is controlled entirely using the{' '}
+              <code>useModal()</code> hook:
             </p>
-          </Modal.Content>
-        </Modal>
-      )}
-      {showSecondModal && (
-        <Modal
-          icon={<Mshtml32534 variant="32x32_4" />}
-          title="Second Modal"
-          dragOptions={{
-            defaultPosition: {
-              x: 250,
-              y: 100,
-            },
-          }}
-          titleBarOptions={<TitleBar.Close onClick={handleCloseSecondModal} />}
-          buttons={[
-            { value: 'Ok', onClick: handleButtonClick },
-            { value: 'Cancel', onClick: handleButtonClick },
-          ]}
-          menu={[
-            {
-              name: 'File',
-              list: (
-                <List width="200px">
-                  <List.Item onClick={handleCloseSecondModal}>Exit</List.Item>
-                </List>
-              ),
-            },
-            {
-              name: 'Edit',
-              list: (
-                <List width="200px">
-                  <List.Item>Copy</List.Item>
-                </List>
-              ),
-            },
-          ]}
-        >
-          <Modal.Content
-            width="300px"
-            height="160px"
-            boxShadow="$in"
-            bgColor="white"
-          >
-            <p>
-              Try playing with the modals. See which one is active, click and
-              drag them. Understand their behavior.
-            </p>
-          </Modal.Content>
-        </Modal>
-      )}
-    </>
+            <ul style={{ fontSize: '14px', margin: '8px 0' }}>
+              <li>
+                <code>minimize(id)</code> - Minimize modal
+              </li>
+              <li>
+                <code>restore(id)</code> - Restore modal
+              </li>
+              <li>
+                <code>focus(id)</code> - Bring to focus
+              </li>
+            </ul>
+            <p>Try the control buttons above or use the TaskBar below.</p>
+          </Frame>
+        </Modal.Content>
+      </Modal>
+
+      <Modal
+        id="second-modal"
+        icon={<Mshtml32534 variant="32x32_4" />}
+        title="Second Modal"
+        dragOptions={{
+          defaultPosition: {
+            x: 200,
+            y: 150,
+          },
+        }}
+        titleBarOptions={<TitleBar.Close onClick={handleCloseSecondModal} />}
+        buttons={[
+          { value: 'Ok', onClick: handleButtonClick },
+          { value: 'Cancel', onClick: handleButtonClick },
+        ]}
+        menu={[
+          {
+            name: 'File',
+            list: (
+              <List width="200px">
+                <List.Item onClick={handleCloseSecondModal}>Exit</List.Item>
+              </List>
+            ),
+          },
+          {
+            name: 'Edit',
+            list: (
+              <List width="200px">
+                <List.Item>Copy</List.Item>
+              </List>
+            ),
+          },
+        ]}
+      >
+        <Modal.Content width="350px" boxShadow="$in" bgColor="white" p="16px">
+          <Frame as="div" display="flex" flexDirection="column" gap="8px">
+            <h4>Complete Modal Management</h4>
+            <p>Key features demonstrated:</p>
+            <Frame as="ul" marginY="$8">
+              <li>No React state management needed</li>
+              <li>Modals controlled by ID</li>
+              <li>Automatic TaskBar integration</li>
+              <li>Event-driven architecture</li>
+            </Frame>
+            <p>Both modals can be controlled independently using their IDs.</p>
+          </Frame>
+        </Modal.Content>
+      </Modal>
+    </Frame>
   );
 };
 
