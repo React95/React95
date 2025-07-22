@@ -430,6 +430,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "tschoerv",
+      "name": "tschoerv",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55516257?v=4",
+      "profile": "https://github.com/tschoerv",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "skipCi": true,
