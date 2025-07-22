@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.6.0](https://github.com/React95/React95/compare/@react95/core@9.5.2...@react95/core@9.6.0) (2025-07-22)
+
+
+### Features
+
+* add `useModal` hook for managing modal events ([c632d7e](https://github.com/React95/React95/commit/c632d7e475ac4a9c08862f4171433b1ce869e75c))
+* enhance TaskBar modal management ([f143d62](https://github.com/React95/React95/commit/f143d62d6f4ac7466867f6d21f72b512fc4f92de))
+* export `ModalEvents` and `useModal` from shared events ([74ad757](https://github.com/React95/React95/commit/74ad757b3aef9940005c051d8d2f14dc0a7d7d47))
+* implement Emitter class and modal controller ([c3ff54d](https://github.com/React95/React95/commit/c3ff54d472838b031006e87806dd1dbe595135e0))
+* integrate useModal for improved modal event handling ([e5a1853](https://github.com/React95/React95/commit/e5a18531cfad37a9cfae1ff8427ae5debbbf8075))
+
+
+
+
+
 ## [9.5.2](https://github.com/React95/React95/compare/@react95/core@9.5.1...@react95/core@9.5.2) (2025-06-30)
 
 **Note:** Version bump only for package @react95/core
