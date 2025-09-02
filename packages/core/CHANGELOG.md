@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.6.1](https://github.com/React95/React95/compare/@react95/core@9.6.0...@react95/core@9.6.1) (2025-09-02)
+
+
+### Bug Fixes
+
+* correct type definition for TitleBarBackgroundProps in ModalProps ([c14439f](https://github.com/React95/React95/commit/c14439fd027a3280fcc658bfd23d7f924a9a5244))
+* update TitleBar type to extend `as` prop ([6909883](https://github.com/React95/React95/commit/6909883c6888a928c6991b1414511f4f788b3dc6))
+
+
+
+
+
 # [9.6.0](https://github.com/React95/React95/compare/@react95/core@9.5.2...@react95/core@9.6.0) (2025-07-22)
 
 
