@@ -2,13 +2,13 @@ import { Doc, Star } from '@react95/icons';
 import type { Meta } from '@storybook/react';
 import * as React from 'react';
 
-import { TitleBar, TitleBarProps } from '../components/TitleBar/TitleBar';
+import { TitleBar } from '../components/TitleBar/TitleBar';
 
 export default {
   title: 'TitleBar',
   component: TitleBar,
   tags: ['autodocs'],
-} as Meta<TitleBarProps>;
+} as Meta;
 
 export const Simple = {
   render: () => <TitleBar width="200px" />,
