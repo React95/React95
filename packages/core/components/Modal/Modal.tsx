@@ -61,7 +61,7 @@ export type ModalProps = {
     | ReactElement<TitleBarOptions>[];
 } & Omit<FrameProps<'div'>, 'as'> &
   HTMLAttributes<HTMLDivElement> &
-  Pick<TitleBarBackgroundProps, 'title' | 'icon'>;
+  Pick<TitleBarBackgroundProps<'div'>, 'title' | 'icon'>;
 
 const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   (rest, ref) => (
@@ -248,14 +248,15 @@ const ModalRenderer = (
   );
 };
 
+type ModalComponent = typeof ModalRenderer & {
+  Content: typeof ModalContent;
+  Minimize: typeof ModalMinimize;
+};
+
 export const Modal = Object.assign(
   fixedForwardRef<HTMLDivElement, ModalProps>(ModalRenderer),
   {
     Content: ModalContent,
     Minimize: ModalMinimize,
   },
-) as ModalProps &
-  typeof ModalRenderer & {
-    Content: typeof ModalContent;
-    Minimize: typeof ModalMinimize;
-  };
+) as ModalComponent;
