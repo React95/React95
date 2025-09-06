@@ -83,3 +83,8 @@ export const title = style({
   color: 'transparent',
   letterSpacing: '1px',
 });
+
+export const optionImage = style({
+  // https://tailwindcss.com/docs/preflight#images-are-constrained
+  maxWidth: 'none',
+});
