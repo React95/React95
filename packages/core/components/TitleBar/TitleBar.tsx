@@ -85,7 +85,11 @@ const DefaultOption = fixedForwardRef<HTMLButtonElement, DefaultOptionProps>(
 
     return (
       <Option {...rest} ref={ref}>
-        <img src={optionType.src} alt={optionType.alt} />
+        <img
+          src={optionType.src}
+          alt={optionType.alt}
+          className={styles.optionImage}
+        />
       </Option>
     );
   },

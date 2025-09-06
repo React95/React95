@@ -175,6 +175,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
         >
           <img
             alt="help"
+            class="TitleBar_optionImage__1kpzw686"
             src="test-file-stub"
           />
         </button>
@@ -183,6 +184,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
         >
           <img
             alt="maximize"
+            class="TitleBar_optionImage__1kpzw686"
             src="test-file-stub"
           />
         </button>
@@ -191,6 +193,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
         >
           <img
             alt="minimize"
+            class="TitleBar_optionImage__1kpzw686"
             src="test-file-stub"
           />
         </button>
@@ -199,6 +202,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
         >
           <img
             alt="restore"
+            class="TitleBar_optionImage__1kpzw686"
             src="test-file-stub"
           />
         </button>
@@ -207,6 +211,7 @@ exports[`<Modal /> > Snapshots > should match snapshot with titleBarOptions 1`] 
         >
           <img
             alt="close"
+            class="TitleBar_optionImage__1kpzw686"
             src="test-file-stub"
           />
         </button>
