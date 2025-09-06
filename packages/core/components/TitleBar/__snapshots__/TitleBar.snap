@@ -91,6 +91,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with default options 1`
       >
         <img
           alt="help"
+          class="TitleBar_optionImage__1kpzw686"
           src="test-file-stub"
         />
       </button>
@@ -99,6 +100,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with default options 1`
       >
         <img
           alt="maximize"
+          class="TitleBar_optionImage__1kpzw686"
           src="test-file-stub"
         />
       </button>
@@ -107,6 +109,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with default options 1`
       >
         <img
           alt="minimize"
+          class="TitleBar_optionImage__1kpzw686"
           src="test-file-stub"
         />
       </button>
@@ -115,6 +118,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with default options 1`
       >
         <img
           alt="restore"
+          class="TitleBar_optionImage__1kpzw686"
           src="test-file-stub"
         />
       </button>
@@ -123,6 +127,7 @@ exports[`<TitleBar /> > Snapshot > should match snapshot with default options 1`
       >
         <img
           alt="close"
+          class="TitleBar_optionImage__1kpzw686"
           src="test-file-stub"
         />
       </button>
