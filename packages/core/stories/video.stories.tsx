@@ -15,9 +15,7 @@ export const FromURL = {
     <Video
       w="320px"
       src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-      style={{
-        marginBottom: 4,
-      }}
+      marginBottom="$4"
     />
   ),
 

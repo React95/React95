@@ -1,11 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react';
 import * as React from 'react';
 
 import { Frame, FrameProps } from '../components/Frame/Frame';
 import { contract } from '../components/themes/contract.css';
 
-const colorsKeys = Object.keys(contract.colors).map(color => `$${color}`);
-const shadowsKeys = Object.keys(contract.shadows).map(shadows => `$${shadows}`);
+const colorsKeys = Object.keys(contract.colors).map(
+  color => `$${color}`,
+) as string[];
+const shadowsKeys = Object.keys(contract.shadows).map(
+  shadows => `$${shadows}`,
+) as string[];
 
 export default {
   title: 'Frame',
@@ -54,12 +58,15 @@ Pass objects with breakpoint keys to make props responsive:
     bgColor: {
       options: colorsKeys,
       defaultValue: '$material',
+      control: { type: 'select' },
     },
     backgroundColor: {
       options: colorsKeys,
+      control: { type: 'select' },
     },
     color: {
       options: colorsKeys,
+      control: { type: 'select' },
     },
     w: {
       control: 'text',
@@ -99,11 +106,12 @@ Pass objects with breakpoint keys to make props responsive:
     boxShadow: {
       options: shadowsKeys,
       defaultValue: '$out',
+      control: { type: 'select' },
     },
   },
-} as Meta<FrameProps<'div'>>;
+};
 
-type Story = StoryObj<FrameProps<'div'>>;
+type Story = StoryObj<FrameProps>;
 
 export const Simple: Story = {
   render: args => <Frame {...args} />,

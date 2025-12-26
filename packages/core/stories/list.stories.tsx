@@ -17,14 +17,14 @@ import {
   Settings,
   WindowsExplorer,
 } from '@react95/icons';
-import { List, IListProps } from '../components/List/List';
+import { List, ListProps } from '../components/List/List';
 
 export default {
   title: 'List',
   component: List,
   subcomponents: { 'List.Item': List.Item, 'List.Divider': List.Divider },
   tags: ['autodocs'],
-} as Meta<IListProps>;
+} as Meta<ListProps>;
 
 export const WithIcons = {
   render: () => (
