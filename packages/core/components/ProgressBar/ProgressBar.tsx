@@ -7,12 +7,12 @@ import type {
 } from 'react';
 import cn from 'classnames';
 
-import { Frame, FrameProps } from '../Frame/Frame';
+import { Frame, FrameProps, Polymorphic } from '../Frame/Frame';
 import * as styles from './ProgressBar.css';
 
 export type ProgressBarProps<TAs extends ElementType> = {
   percent?: number;
-} & FrameProps<TAs>;
+} & Polymorphic<TAs, FrameProps>;
 
 export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps<'div'>>(
   ({ width = '150px', percent = 0, ...rest }, ref) => (

@@ -1,13 +1,35 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
+import type {
+  ElementRef,
+  ElementType,
+  ForwardedRef,
+  LiHTMLAttributes,
+  ReactElement,
+} from 'react';
 
-import { Frame, FrameProps } from '../Frame/Frame';
+import {
+  Frame,
+  FrameProps,
+  Polymorphic,
+  fixedForwardRef,
+} from '../Frame/Frame';
 import { divider } from './List.css';
 import cn from 'classnames';
 
-export type DividerProps = Omit<FrameProps<'li'>, 'as'>;
+export type DividerProps<TAs extends ElementType = 'li'> =
+  LiHTMLAttributes<HTMLLIElement> & Polymorphic<TAs, FrameProps>;
 
-export const Divider = forwardRef<HTMLLIElement, DividerProps>((rest, ref) => (
-  <Frame {...rest} ref={ref} className={cn(divider, rest.className)} as="li" />
-));
+const DividerComponent = fixedForwardRef<HTMLLIElement, DividerProps<'li'>>(
+  (rest, ref) => (
+    <Frame
+      {...rest}
+      ref={ref}
+      className={cn(divider, rest.className)}
+      as="li"
+    />
+  ),
+);
 
-Divider.displayName = 'List.Divider';
+export const Divider = DividerComponent as <TAs extends ElementType = 'li'>(
+  props: DividerProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

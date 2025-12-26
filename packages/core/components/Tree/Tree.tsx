@@ -1,5 +1,9 @@
 import React, { forwardRef } from 'react';
-import type { ForwardRefExoticComponent, RefAttributes } from 'react';
+import type {
+  ForwardRefExoticComponent,
+  HTMLAttributes,
+  RefAttributes,
+} from 'react';
 import cn from 'classnames';
 
 import { Node, icons, NodeProps, NodeRoot } from './Node';
@@ -9,13 +13,14 @@ import { Frame, FrameProps } from '../Frame/Frame';
 export type TreeProps = {
   data: Array<NodeProps>;
   root?: Omit<NodeProps, 'children'>;
-} & FrameProps<'ul'>;
+} & FrameProps &
+  HTMLAttributes<HTMLUListElement>;
 
 type TreeComposition = ForwardRefExoticComponent<
   TreeProps & RefAttributes<HTMLUListElement>
 > & {
   icons: typeof icons;
-} & Omit<FrameProps<'ul'>, 'as'>;
+} & Omit<FrameProps, 'as'>;
 
 export const Tree = forwardRef<HTMLUListElement, TreeProps>(
   ({ data = [], root, ...rest }, ref) => {

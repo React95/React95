@@ -1,30 +1,38 @@
 import React from 'react';
 import type {
-  ElementType,
-  ReactElement,
-  ElementRef,
-  ForwardedRef,
   ButtonHTMLAttributes,
+  ElementRef,
+  ElementType,
+  ForwardedRef,
+  ReactElement,
 } from 'react';
 import cn from 'classnames';
 
 import { button } from './Button.css';
-import { Frame, FrameProps, fixedForwardRef } from '../Frame/Frame';
+import {
+  Frame,
+  FrameProps,
+  Polymorphic,
+  fixedForwardRef,
+} from '../Frame/Frame';
 
-export type ButtonProps<TAs extends ElementType> =
-  ButtonHTMLAttributes<HTMLButtonElement> & FrameProps<TAs>;
+export type ButtonProps<TAs extends ElementType = 'button'> =
+  ButtonHTMLAttributes<HTMLButtonElement> & Polymorphic<TAs, FrameProps>;
 
-export const Button = fixedForwardRef<HTMLButtonElement, ButtonProps<'button'>>(
-  (props, ref) => {
-    return (
-      <Frame
-        as="button"
-        {...props}
-        className={cn(button, props.className)}
-        ref={ref}
-      />
-    );
-  },
-) as <TAs extends ElementType = 'button'>(
+const ButtonComponent = fixedForwardRef<
+  HTMLButtonElement,
+  ButtonProps<'button'>
+>((props, ref) => {
+  return (
+    <Frame
+      as="button"
+      {...props}
+      className={cn(button, props.className)}
+      ref={ref}
+    />
+  );
+});
+
+export const Button = ButtonComponent as <TAs extends ElementType = 'button'>(
   props: ButtonProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
 ) => ReactElement;
