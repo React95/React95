@@ -1,14 +1,32 @@
-import React, { forwardRef } from 'react';
+import { createElement, forwardRef } from 'react';
 import type {
-  ComponentPropsWithRef,
   ElementType,
   ForwardedRef,
   Ref,
   ReactNode,
   RefAttributes,
+  ReactElement,
+  PropsWithChildren,
+  ComponentPropsWithoutRef,
 } from 'react';
 import { Sprinkles, sprinkles } from './Frame.css';
 import cn from 'classnames';
+
+type As = ElementType;
+type Props = Record<string, unknown>;
+
+export type Polymorphic<E extends As, P = Props> = P &
+  PropsWithChildren<{
+    as?: E;
+  }> &
+  ComponentPropsWithoutRef<E>;
+
+type InferredElement<C extends ElementType> =
+  C extends keyof HTMLElementTagNameMap
+    ? HTMLElementTagNameMap[C]
+    : C extends keyof SVGElementTagNameMap
+    ? SVGElementTagNameMap[C]
+    : HTMLElement;
 
 type FixedForwardRef = <T, P = object>(
   render: (props: P, ref: Ref<T>) => ReactNode,
@@ -16,36 +34,30 @@ type FixedForwardRef = <T, P = object>(
 
 export const fixedForwardRef = forwardRef as FixedForwardRef;
 
-type DistributiveOmit<T, TOmitted extends PropertyKey> = T extends any
-  ? Omit<T, TOmitted>
-  : never;
+export type FrameProps = Sprinkles;
 
-export type FrameProps<TAs extends ElementType> = {
-  as?: TAs;
-} & DistributiveOmit<
-  ComponentPropsWithRef<ElementType extends TAs ? 'div' : TAs>,
-  'as'
-> &
-  Sprinkles;
-
-const FrameComponent = <TAs extends ElementType = 'div'>(
-  props: FrameProps<TAs>,
-  ref: ForwardedRef<any>,
+const FrameComponent = <TAs extends As>(
+  props: Polymorphic<TAs, FrameProps>,
+  ref: ForwardedRef<InferredElement<TAs>>,
 ) => {
   const { as, children, ...rest } = props;
-  const Component = as || 'div';
+  const tag = as || 'div';
   const { className, style, otherProps } = sprinkles(rest);
 
-  return (
-    <Component
-      {...otherProps}
-      style={{ ...style, ...otherProps.style }}
-      className={cn(className, otherProps.className)}
-      ref={ref}
-    >
-      {children}
-    </Component>
+  return createElement(
+    tag,
+    {
+      ...otherProps,
+      style: { ...style, ...otherProps.style },
+      className: cn(className, otherProps.className),
+      ref,
+    },
+    children,
   );
 };
 
-export const Frame = fixedForwardRef(FrameComponent);
+export const Frame = forwardRef(FrameComponent) as <E extends As>(
+  p: Polymorphic<E, FrameProps> & {
+    ref?: ForwardedRef<InferredElement<E>>;
+  },
+) => ReactElement | null;
