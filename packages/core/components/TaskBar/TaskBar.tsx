@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect, useState } from 'react';
-import type { ReactElement } from 'react';
+import type { HTMLAttributes, ReactElement } from 'react';
 
 import { Frame, FrameProps } from '../Frame/Frame';
 import { List } from '../List/List';
@@ -12,7 +12,8 @@ import { ModalEvents, ModalWindow, useModal } from '../shared/events';
 
 export type TaskBarProps = {
   list?: ReactElement<typeof List>;
-} & FrameProps<'div'>;
+} & HTMLAttributes<HTMLDivElement> &
+  FrameProps;
 
 export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
   ({ list, className }, ref) => {

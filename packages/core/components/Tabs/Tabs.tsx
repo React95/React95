@@ -1,5 +1,5 @@
 import React, { useState, forwardRef, Children } from 'react';
-import type { MouseEvent, ReactElement } from 'react';
+import type { MouseEvent, ReactElement, HTMLAttributes } from 'react';
 import cn from 'classnames';
 
 import { Tab, TabProps } from './Tab';
@@ -11,7 +11,8 @@ export type TabsProps = {
   children: ReactElement<TabProps> | Array<ReactElement<TabProps>>;
 
   onChange?(title: string, e: MouseEvent): void;
-} & Omit<FrameProps<'ol'>, 'as'>;
+} & HTMLAttributes<HTMLOListElement> &
+  Omit<FrameProps, 'as'>;
 
 export const Tabs = forwardRef<HTMLOListElement, TabsProps>(
   ({ children, defaultActiveTab, onChange, ...rest }, ref) => {

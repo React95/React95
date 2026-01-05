@@ -16,7 +16,7 @@ const defaultOptions = [
 export type DropdownProps = {
   options?: Array<string | number>;
 } & HTMLProps<HTMLSelectElement> &
-  Omit<FrameProps<'select'>, 'as'>;
+  Omit<FrameProps, 'as'>;
 
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
   ({ options = defaultOptions, ...rest }, ref) => {

@@ -1,5 +1,6 @@
 import { nanoid } from 'nanoid';
 import React, {
+  ForwardedRef,
   HTMLAttributes,
   MouseEvent,
   ReactElement,
@@ -55,15 +56,17 @@ export type ModalProps = {
   menu?: Array<ModalMenu>;
   dragOptions?: Omit<DragOptions, 'handle'>;
   hasWindowButton?: boolean;
-  buttonsAlignment?: FrameProps<'div'>['justifyContent'];
+  buttonsAlignment?: FrameProps['justifyContent'];
   titleBarOptions?:
     | ReactElement<TitleBarOptions>
     | ReactElement<TitleBarOptions>[];
-} & Omit<FrameProps<'div'>, 'as'> &
+} & Omit<FrameProps, 'as'> &
   HTMLAttributes<HTMLDivElement> &
-  Pick<TitleBarBackgroundProps<'div'>, 'title' | 'icon'>;
+  Pick<TitleBarBackgroundProps, 'title' | 'icon'>;
 
-const ModalContent = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
+type ModalContentProps = HTMLAttributes<HTMLDivElement> & FrameProps;
+
+const ModalContent = fixedForwardRef<HTMLDivElement, ModalContentProps>(
   (rest, ref) => (
     <Frame {...rest} ref={ref} className={cn(styles.content, rest.className)} />
   ),
@@ -248,7 +251,9 @@ const ModalRenderer = (
   );
 };
 
-type ModalComponent = typeof ModalRenderer & {
+type ModalComponent = ((
+  props: ModalProps & { ref?: ForwardedRef<HTMLDivElement> },
+) => ReactElement) & {
   Content: typeof ModalContent;
   Minimize: typeof ModalMinimize;
 };

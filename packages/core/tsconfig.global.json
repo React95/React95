@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.production.json",
+  "files": ["./components/GlobalStyle/index.ts"]
+}

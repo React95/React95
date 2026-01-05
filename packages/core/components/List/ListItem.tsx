@@ -1,21 +1,44 @@
-import React, { forwardRef } from 'react';
-import type { ReactElement, HtmlHTMLAttributes } from 'react';
+import React from 'react';
+import type {
+  ElementRef,
+  ElementType,
+  ForwardedRef,
+  LiHTMLAttributes,
+  ReactElement,
+} from 'react';
 import cn from 'classnames';
 
-import { Frame, FrameProps } from '../Frame/Frame';
+import {
+  Frame,
+  FrameProps,
+  Polymorphic,
+  fixedForwardRef,
+} from '../Frame/Frame';
 import { listItem } from './List.css';
 
-type ItemProps = Omit<FrameProps<'li'>, 'as'>;
+type ItemProps<TAs extends ElementType = 'li'> =
+  LiHTMLAttributes<HTMLLIElement> & Polymorphic<TAs, FrameProps>;
 
-const Item = forwardRef<HTMLLIElement, ItemProps>((rest, ref) => (
-  <Frame {...rest} ref={ref} className={cn(listItem, rest.className)} as="li" />
-));
+const ItemComponent = fixedForwardRef<HTMLLIElement, ItemProps<'li'>>(
+  (rest, ref) => (
+    <Frame
+      {...rest}
+      ref={ref}
+      className={cn(listItem, rest.className)}
+      as="li"
+    />
+  ),
+);
 
-export type ListItemProps = {
+const Item = ItemComponent as <TAs extends ElementType = 'li'>(
+  props: ItemProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;
+
+export type ListItemProps<TAs extends ElementType = 'li'> = {
   icon?: ReactElement;
-} & HtmlHTMLAttributes<HTMLLIElement>;
+} & ItemProps<TAs>;
 
-export const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
+const ListItemComponent = fixedForwardRef<HTMLLIElement, ListItemProps<'li'>>(
   ({ icon, children = [], ...rest }, ref) => (
     <Item {...rest} ref={ref}>
       {icon}
@@ -24,4 +47,6 @@ export const ListItem = forwardRef<HTMLLIElement, ListItemProps>(
   ),
 );
 
-ListItem.displayName = 'List.Item';
+export const ListItem = ListItemComponent as <TAs extends ElementType = 'li'>(
+  props: ListItemProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;

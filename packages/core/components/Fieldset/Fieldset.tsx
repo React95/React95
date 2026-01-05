@@ -7,7 +7,7 @@ import cn from 'classnames';
 export type FieldSetProps = {
   legend?: string;
 } & HTMLProps<HTMLFieldSetElement> &
-  Omit<FrameProps<'fieldset'>, 'as'>;
+  Omit<FrameProps, 'as'>;
 
 export const Fieldset = forwardRef<HTMLFieldSetElement, FieldSetProps>(
   ({ legend, children, className, ...rest }, ref) => (

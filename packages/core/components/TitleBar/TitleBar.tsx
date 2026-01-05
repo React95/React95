@@ -6,7 +6,6 @@ import type {
   ForwardedRef,
   HTMLAttributes,
   ReactElement,
-  Ref,
 } from 'react';
 import React from 'react';
 
@@ -16,7 +15,12 @@ import maximize from './maximize.svg';
 import minimize from './minimize.svg';
 import restore from './restore.svg';
 
-import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
+import {
+  fixedForwardRef,
+  Frame,
+  FrameProps,
+  Polymorphic,
+} from '../Frame/Frame';
 
 import { button } from '../Button/Button.css';
 import * as styles from './TitleBar.css';
@@ -44,7 +48,10 @@ const defaultOptions = {
   },
 };
 
-const OptionsBox = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
+type OptionsBoxProps<TAs extends ElementType = 'div'> =
+  HTMLAttributes<HTMLDivElement> & Polymorphic<TAs, FrameProps>;
+
+const OptionsBoxComponent = fixedForwardRef<HTMLDivElement, OptionsBoxProps>(
   (rest, ref) => (
     <Frame
       {...rest}
@@ -54,84 +61,108 @@ const OptionsBox = fixedForwardRef<HTMLDivElement, FrameProps<'div'>>(
   ),
 );
 
-export type OptionProps<TAs extends ElementType> =
-  ButtonHTMLAttributes<HTMLButtonElement> & FrameProps<TAs>;
+const OptionsBox = OptionsBoxComponent as <TAs extends ElementType = 'div'>(
+  props: OptionsBoxProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;
+
+export type OptionProps<TAs extends ElementType = 'button'> =
+  ButtonHTMLAttributes<HTMLButtonElement> & Polymorphic<TAs, FrameProps>;
 
 export type OptionReturnType = <TAs extends ElementType = 'button'>(
   props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
 ) => ReactElement;
 
-const Option = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
-  (rest, ref) => (
-    <Frame
-      as="button"
-      {...rest}
-      ref={ref}
-      className={cn(button, styles.option, rest.className)}
-    />
-  ),
-) as <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
-) => ReactElement;
+const OptionComponent = fixedForwardRef<
+  HTMLButtonElement,
+  OptionProps<'button'>
+>((rest, ref) => (
+  <Frame
+    as="button"
+    {...rest}
+    ref={ref}
+    className={cn(button, styles.option, rest.className)}
+  />
+));
+
+const Option = OptionComponent as OptionReturnType;
 
 type DefaultOptionProps<TAs extends ElementType = 'button'> = {
   kind: keyof typeof defaultOptions;
 } & OptionProps<TAs>;
 
-const DefaultOption = fixedForwardRef<HTMLButtonElement, DefaultOptionProps>(
-  (props, ref) => {
-    const { kind, ...rest } = props;
-    const optionType = defaultOptions[kind] || defaultOptions.help;
+const DefaultOptionComponent = fixedForwardRef<
+  HTMLButtonElement,
+  DefaultOptionProps
+>((props, ref) => {
+  const { kind, ...rest } = props;
+  const optionType = defaultOptions[kind] || defaultOptions.help;
 
-    return (
-      <Option {...rest} ref={ref}>
-        <img
-          src={optionType.src}
-          alt={optionType.alt}
-          className={styles.optionImage}
-        />
-      </Option>
-    );
-  },
-) as <TAs extends ElementType = 'button'>(
+  return (
+    <Option {...rest} ref={ref}>
+      <img
+        src={optionType.src}
+        alt={optionType.alt}
+        className={styles.optionImage}
+      />
+    </Option>
+  );
+});
+
+const DefaultOption = DefaultOptionComponent as <
+  TAs extends ElementType = 'button',
+>(
   props: DefaultOptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
 ) => ReactElement;
 
-const Help = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
+const HelpComponent = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
   (props, ref) => {
     return <DefaultOption {...props} kind="help" ref={ref} />;
   },
-) as OptionReturnType;
+);
 
-const Close = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
-  (props, ref) => {
-    return <DefaultOption {...props} kind="close" ref={ref} />;
-  },
-) as OptionReturnType;
+const Help = HelpComponent as OptionReturnType;
 
-const Maximize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
-  (props, ref) => {
-    return <DefaultOption {...props} kind="maximize" ref={ref} />;
-  },
-) as OptionReturnType;
+const CloseComponent = fixedForwardRef<
+  HTMLButtonElement,
+  OptionProps<'button'>
+>((props, ref) => {
+  return <DefaultOption {...props} kind="close" ref={ref} />;
+});
 
-const Minimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
-  (props, ref) => {
-    return <DefaultOption {...props} kind="minimize" ref={ref} />;
-  },
-) as OptionReturnType;
+const Close = CloseComponent as OptionReturnType;
 
-const Restore = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
-  (props, ref) => {
-    return <DefaultOption {...props} kind="restore" ref={ref} />;
-  },
-) as OptionReturnType;
+const MaximizeComponent = fixedForwardRef<
+  HTMLButtonElement,
+  OptionProps<'button'>
+>((props, ref) => {
+  return <DefaultOption {...props} kind="maximize" ref={ref} />;
+});
 
-export type TitleBarBackgroundProps<TAs extends ElementType> = Omit<
+const Maximize = MaximizeComponent as OptionReturnType;
+
+const MinimizeComponent = fixedForwardRef<
+  HTMLButtonElement,
+  OptionProps<'button'>
+>((props, ref) => {
+  return <DefaultOption {...props} kind="minimize" ref={ref} />;
+});
+
+const Minimize = MinimizeComponent as OptionReturnType;
+
+const RestoreComponent = fixedForwardRef<
+  HTMLButtonElement,
+  OptionProps<'button'>
+>((props, ref) => {
+  return <DefaultOption {...props} kind="restore" ref={ref} />;
+});
+
+const Restore = RestoreComponent as OptionReturnType;
+
+export type TitleBarBackgroundProps<TAs extends ElementType = 'div'> = Omit<
   HTMLAttributes<HTMLDivElement>,
   'color'
 > &
-  FrameProps<TAs> & {
+  Polymorphic<TAs, FrameProps> & {
     active?: boolean;
     icon?: ReactElement;
     title?: string;
@@ -150,16 +181,10 @@ interface TitleBarOptions {
   Restore: typeof Restore;
 }
 
-const TitleBarRenderer = <TAs extends ElementType = 'div'>(
-  {
-    children,
-    title = 'UNKNOWN.EXE',
-    icon,
-    active = true,
-    ...rest
-  }: TitleBarBackgroundProps<TAs>,
-  ref: Ref<ElementRef<TAs>>,
-) => (
+const TitleBarRenderer = fixedForwardRef<
+  HTMLDivElement,
+  TitleBarBackgroundProps
+>(({ children, title = 'UNKNOWN.EXE', icon, active = true, ...rest }, ref) => (
   <Frame
     {...rest}
     className={cn(styles.titleBarBackground({ active }), rest.className)}
@@ -170,7 +195,7 @@ const TitleBarRenderer = <TAs extends ElementType = 'div'>(
 
     {children}
   </Frame>
-);
+));
 
 type TitleBarComponent = <TAs extends ElementType = 'div'>(
   props: TitleBarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
@@ -178,7 +203,7 @@ type TitleBarComponent = <TAs extends ElementType = 'div'>(
 
 type TitleBarWithStatics = TitleBarComponent & TitleBarOptions;
 
-export const TitleBar = Object.assign(fixedForwardRef(TitleBarRenderer), {
+export const TitleBar = Object.assign(TitleBarRenderer, {
   Option,
   OptionsBox,
   Help,
