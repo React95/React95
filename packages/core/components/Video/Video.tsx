@@ -57,7 +57,7 @@ export type VideoProps = {
   name?: string;
   src: string;
   videoProps?: HTMLProps<HTMLVideoElement>;
-} & FrameProps<'div'>;
+} & FrameProps;
 
 export type VideoRefs = {
   video: Ref<HTMLVideoElement>;
@@ -192,7 +192,6 @@ const VideoRenderer = (
         </div>
         <div className={styles.controls}>
           <Button
-            as="button"
             className={styles.controlBtn}
             disabled={!loadeddata}
             onClick={() => {

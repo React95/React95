@@ -1,23 +1,44 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
+import type {
+  ElementRef,
+  ElementType,
+  ForwardedRef,
+  HTMLAttributes,
+  ReactElement,
+} from 'react';
 import cn from 'classnames';
 
 import { ListItem } from './ListItem';
 import { Divider } from './ListDivider';
-import { Frame, FrameProps } from '../Frame/Frame';
+import {
+  Frame,
+  FrameProps,
+  Polymorphic,
+  fixedForwardRef,
+} from '../Frame/Frame';
 import { list } from './List.css';
 
-export type ListProps = Omit<FrameProps<'ul'>, 'as'>;
+export type ListProps<TAs extends ElementType = 'ul'> =
+  HTMLAttributes<HTMLUListElement> & Polymorphic<TAs, FrameProps>;
 
-const ListRenderer = forwardRef<HTMLUListElement, ListProps>((rest, ref) => (
-  <Frame {...rest} ref={ref} className={cn(list, rest.className)} as="ul" />
-));
+const ListComponent = fixedForwardRef<HTMLUListElement, ListProps<'ul'>>(
+  (rest, ref) => (
+    <Frame {...rest} ref={ref} className={cn(list, rest.className)} as="ul" />
+  ),
+);
 
-export type IListProps = typeof ListRenderer & {
+type ListReturnType = <TAs extends ElementType = 'ul'>(
+  props: ListProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+) => ReactElement;
+
+interface ListStatics {
   Item: typeof ListItem;
   Divider: typeof Divider;
-};
+}
 
-export const List: IListProps = Object.assign(ListRenderer, {
+type ListWithStatics = ListReturnType & ListStatics;
+
+export const List = Object.assign(ListComponent, {
   Item: ListItem,
   Divider: Divider,
-});
+}) as ListWithStatics;

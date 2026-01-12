@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import type { FC, ReactElement, MouseEvent, KeyboardEvent } from 'react';
+import type {
+  FC,
+  ReactElement,
+  MouseEvent,
+  KeyboardEvent,
+  LiHTMLAttributes,
+} from 'react';
 
 import {
   Bat,
@@ -54,7 +60,8 @@ export type NodeProps = {
   id: number;
   children?: Array<NodeProps>;
   onClick?(event: MouseEvent | KeyboardEvent, props: NodeProps): void;
-} & Omit<FrameProps<'li'>, 'id' | 'children'>;
+} & Omit<FrameProps, 'id' | 'children'> &
+  Omit<LiHTMLAttributes<HTMLLIElement>, 'id' | 'children'>;
 
 export type NodeRootProps = Omit<NodeProps, 'children'>;
 

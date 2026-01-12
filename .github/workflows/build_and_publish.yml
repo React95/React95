@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies

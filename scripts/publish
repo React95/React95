@@ -10,7 +10,7 @@ then
   yarn lerna publish --yes
 elif [[ $BRANCH == "alpha" ]];
 then
-  yarn lerna publish --conventional-prerelease --yes --preid $BRANCH --dist-tag $BRANCH
+  yarn lerna publish --conventional-prerelease --yes --preid $BRANCH --dist-tag $BRANCH --loglevel=silly
 else
   echo "Nothing to publish on branch $BRANCH..."
 fi
