@@ -459,6 +459,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "BlackBearFTW",
+      "name": "Robin Mager",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62018777?v=4",
+      "profile": "https://github.com/BlackBearFTW",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
