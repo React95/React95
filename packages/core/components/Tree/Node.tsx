@@ -65,8 +65,10 @@ export type NodeProps = {
 
 export type NodeRootProps = Omit<NodeProps, 'children'>;
 
+const EMPTY_CHILDREN: Array<NodeProps> = [];
+
 export const Node: FC<NodeProps> = ({
-  children = [],
+  children = EMPTY_CHILDREN,
   id,
   icon,
   label,
