@@ -10,21 +10,26 @@ import { Computer } from '@react95/icons';
 // Test component that uses useModal hook
 const TestModalController = () => {
   const { remove, minimize, restore, focus, subscribe } = useModal();
-  const [events, setEvents] = React.useState<string[]>([]);
+  const [events, setEvents] = React.useState<Array<{ id: number; text: string }>>([]);
+  const eventCounter = React.useRef(0);
 
   React.useEffect(() => {
+    const addEvent = (text: string) => {
+      const id = ++eventCounter.current;
+      setEvents(prev => [...prev, { id, text }]);
+    };
     const unsubscribes = [
       subscribe(ModalEvents.RemoveModal, ({ id }) => {
-        setEvents(prev => [...prev, `Removed: ${id}`]);
+        addEvent(`Removed: ${id}`);
       }),
       subscribe(ModalEvents.MinimizeModal, ({ id }) => {
-        setEvents(prev => [...prev, `Minimized: ${id}`]);
+        addEvent(`Minimized: ${id}`);
       }),
       subscribe(ModalEvents.RestoreModal, ({ id }) => {
-        setEvents(prev => [...prev, `Restored: ${id}`]);
+        addEvent(`Restored: ${id}`);
       }),
       subscribe(ModalEvents.ModalVisibilityChanged, ({ id }) => {
-        setEvents(prev => [...prev, `Focus: ${id}`]);
+        addEvent(`Focus: ${id}`);
       }),
     ];
 
@@ -51,8 +56,8 @@ const TestModalController = () => {
         Focus Modal
       </button>
       <div data-testid="events-log">
-        {events.map((event, index) => (
-          <div key={index}>{event}</div>
+        {events.map(({ id, text }) => (
+          <div key={id}>{text}</div>
         ))}
       </div>
     </div>
