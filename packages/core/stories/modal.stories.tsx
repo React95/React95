@@ -337,9 +337,9 @@ const MinimizeDemo = () => {
             <Frame as="p" lineHeight="1.1rem">
               You can still use the{' '}
               <code className={styles.code}>{'<TitleBar.Minimize />'}</code>{' '}
-              component if you want to add the behavior yourself by handling
-              the click event and updating the state or props of your
-              component accordingly.
+              component if you want to add the behavior yourself by handling the
+              click event and updating the state or props of your component
+              accordingly.
             </Frame>
           </Modal.Content>
         </Modal>
@@ -361,15 +361,15 @@ const MinimizeDemo = () => {
         >
           <Modal.Content boxShadow="$in" bgColor="white">
             <Frame as="p" lineHeight="1.1rem">
-              The <code className={styles.code}>Modal.Minimize</code>{' '}
-              component is a utility component provided by the{' '}
+              The <code className={styles.code}>Modal.Minimize</code> component
+              is a utility component provided by the{' '}
               <code className={styles.code}>Modal</code> component. It allows
-              you to easily add minimize functionality to your modal. To use
-              it, simply add{' '}
-              <code className={styles.code}>{'<Modal.Minimize />'}</code> to
-              the <code className={styles.code}>titleBarOptions</code> prop of
-              the <code className={styles.code}>Modal</code> component. This
-              will add the minimize button to the title bar of your modal, and
+              you to easily add minimize functionality to your modal. To use it,
+              simply add{' '}
+              <code className={styles.code}>{'<Modal.Minimize />'}</code> to the{' '}
+              <code className={styles.code}>titleBarOptions</code> prop of the{' '}
+              <code className={styles.code}>Modal</code> component. This will
+              add the minimize button to the title bar of your modal, and
               clicking on it will minimize the modal.
             </Frame>
           </Modal.Content>

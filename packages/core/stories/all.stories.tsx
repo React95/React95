@@ -49,9 +49,7 @@ const AllDemo = () => {
               y: 130,
             },
           }}
-          titleBarOptions={
-            <TitleBar.Close key="close" onClick={closeAlert} />
-          }
+          titleBarOptions={<TitleBar.Close key="close" onClick={closeAlert} />}
           message="The Windows password you typed is incorrect."
           buttons={[{ value: 'OK', onClick: closeAlert }]}
         />

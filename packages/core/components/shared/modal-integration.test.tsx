@@ -10,7 +10,9 @@ import { Computer } from '@react95/icons';
 // Test component that uses useModal hook
 const TestModalController = () => {
   const { remove, minimize, restore, focus, subscribe } = useModal();
-  const [events, setEvents] = React.useState<Array<{ id: number; text: string }>>([]);
+  const [events, setEvents] = React.useState<
+    Array<{ id: number; text: string }>
+  >([]);
   const eventCounter = React.useRef(0);
 
   React.useEffect(() => {

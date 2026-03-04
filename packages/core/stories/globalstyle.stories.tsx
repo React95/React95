@@ -138,8 +138,8 @@ const UsageInstructionsDemo = ({
               options={availableThemes}
             />
             <p>
-              After selecting a theme, import it in your main file to apply
-              the styles.
+              After selecting a theme, import it in your main file to apply the
+              styles.
             </p>
             <Frame mt="$8" display="flex" gap="$4">
               <Input
@@ -196,8 +196,7 @@ export default App;`}
           <li>Always import GlobalStyle before any theme</li>
           <li>Only import GlobalStyle once in your application</li>
           <li>
-            GlobalStyle affects the entire document, not just React95
-            components
+            GlobalStyle affects the entire document, not just React95 components
           </li>
           <li>
             You can override specific styles if needed using CSS specificity
@@ -248,9 +247,7 @@ export const Overview: Story = {
 
           <Fieldset legend="Links" mt="$18">
             <p>
-              <a href="https://react95.io">
-                This is a normal link
-              </a>
+              <a href="https://react95.io">This is a normal link</a>
             </p>
             <Frame as="p" mt="$8">
               <a

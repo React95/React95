@@ -111,8 +111,8 @@ const BasicUsageDemo = () => {
               mounted.
             </p>
             <p>
-              The Modal component handles its own rendering - the useModal
-              hook provides programmatic control.
+              The Modal component handles its own rendering - the useModal hook
+              provides programmatic control.
             </p>
           </Frame>
         </Modal.Content>
@@ -524,12 +524,7 @@ const EventSubscriptionDemo = () => {
             },
           }}
         >
-          <Modal.Content
-            width="350px"
-            boxShadow="$in"
-            bgColor="white"
-            p="16px"
-          >
+          <Modal.Content width="350px" boxShadow="$in" bgColor="white" p="16px">
             <Frame as="div" display="flex" flexDirection="column" gap="8px">
               <h4>Event Subscription</h4>
               <p>This example demonstrates event subscription:</p>
