@@ -71,7 +71,7 @@ export const Simple = {
         <br />
         <br />
         <p>
-          Learn more about <a href="#">program compatibility.</a>
+          Learn more about <a href="https://react95.io">program compatibility.</a>
         </p>
       </Tab>
     </Tabs>

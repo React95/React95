@@ -13,43 +13,45 @@ export default {
   tags: ['autodocs'],
 } as Meta<RadioButtonProps>;
 
+const SimpleDemo = () => {
+  const [selectedOption, setSelectedOption] = React.useState('one');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setSelectedOption(e.target.value);
+
+  return (
+    <Frame display="flex" flexDirection="column">
+      <RadioButton
+        name="working"
+        value="one"
+        checked={selectedOption === 'one'}
+        onChange={handleChange}
+      >
+        Working
+      </RadioButton>
+      <RadioButton
+        name="working"
+        value="two"
+        checked={selectedOption === 'two'}
+        onChange={handleChange}
+      >
+        Working
+      </RadioButton>
+      <RadioButton readOnly checked value="three">
+        Checked
+      </RadioButton>
+      <RadioButton readOnly disabled value="four">
+        Disabled
+      </RadioButton>
+      <RadioButton readOnly checked disabled value="five">
+        Checked & Disabled
+      </RadioButton>
+    </Frame>
+  );
+};
+
 export const Simple = {
-  render: () => {
-    const [selectedOption, setSelectedOption] = React.useState('one');
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-      setSelectedOption(e.target.value);
-
-    return (
-      <Frame display="flex" flexDirection="column">
-        <RadioButton
-          name="working"
-          value="one"
-          checked={selectedOption === 'one'}
-          onChange={handleChange}
-        >
-          Working
-        </RadioButton>
-        <RadioButton
-          name="working"
-          value="two"
-          checked={selectedOption === 'two'}
-          onChange={handleChange}
-        >
-          Working
-        </RadioButton>
-        <RadioButton readOnly checked value="three">
-          Checked
-        </RadioButton>
-        <RadioButton readOnly disabled value="four">
-          Disabled
-        </RadioButton>
-        <RadioButton readOnly checked disabled value="five">
-          Checked & Disabled
-        </RadioButton>
-      </Frame>
-    );
-  },
+  render: () => <SimpleDemo />,
 
   parameters: {
     design: {

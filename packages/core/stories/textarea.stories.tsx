@@ -9,21 +9,23 @@ export default {
   tags: ['autodocs'],
 } as Meta<TextAreaProps>;
 
-export const Simple = {
-  render: () => {
-    const [text, setValue] = React.useState('');
+const SimpleDemo = () => {
+  const [text, setValue] = React.useState('');
 
-    return (
-      <TextArea
-        rows={10}
-        cols={50}
-        value={text}
-        onChange={({
-          target: { value },
-        }: React.ChangeEvent<HTMLTextAreaElement>) => setValue(value)}
-      />
-    );
-  },
+  return (
+    <TextArea
+      rows={10}
+      cols={50}
+      value={text}
+      onChange={({
+        target: { value },
+      }: React.ChangeEvent<HTMLTextAreaElement>) => setValue(value)}
+    />
+  );
+};
+
+export const Simple = {
+  render: () => <SimpleDemo />,
 
   parameters: {
     design: {
