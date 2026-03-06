@@ -10,37 +10,39 @@ export default {
   tags: ['autodocs'],
 } as Meta<CheckboxProps>;
 
+const AllDemo = () => {
+  const [checked, toggleChecked] = React.useState(true);
+
+  return (
+    <Frame display="flex" flexDirection="column">
+      <Checkbox
+        checked={checked}
+        onChange={() => {
+          toggleChecked(!checked);
+        }}
+      >
+        Working
+      </Checkbox>
+
+      <Checkbox readOnly checked>
+        Checked
+      </Checkbox>
+      <Checkbox readOnly checked={false}>
+        Unchecked
+      </Checkbox>
+      <Checkbox readOnly disabled>
+        Disabled
+      </Checkbox>
+
+      <Checkbox readOnly disabled checked>
+        Checked and Disabled
+      </Checkbox>
+    </Frame>
+  );
+};
+
 export const All = {
-  render: () => {
-    const [checked, toggleChecked] = React.useState(true);
-
-    return (
-      <Frame display="flex" flexDirection="column">
-        <Checkbox
-          checked={checked}
-          onChange={() => {
-            toggleChecked(!checked);
-          }}
-        >
-          Working
-        </Checkbox>
-
-        <Checkbox readOnly checked>
-          Checked
-        </Checkbox>
-        <Checkbox readOnly checked={false}>
-          Unchecked
-        </Checkbox>
-        <Checkbox readOnly disabled>
-          Disabled
-        </Checkbox>
-
-        <Checkbox readOnly disabled checked>
-          Checked and Disabled
-        </Checkbox>
-      </Frame>
-    );
-  },
+  render: () => <AllDemo />,
 
   parameters: {
     design: {
@@ -106,16 +108,18 @@ export const CheckedAndDisabled = {
   },
 };
 
-export const Working = {
-  render: () => {
-    const [checked, toggleChecked] = React.useState(true);
+const WorkingDemo = () => {
+  const [checked, toggleChecked] = React.useState(true);
 
-    return (
-      <Checkbox checked={checked} onChange={() => toggleChecked(!checked)}>
-        Working
-      </Checkbox>
-    );
-  },
+  return (
+    <Checkbox checked={checked} onChange={() => toggleChecked(!checked)}>
+      Working
+    </Checkbox>
+  );
+};
+
+export const Working = {
+  render: () => <WorkingDemo />,
 
   parameters: {
     design: {

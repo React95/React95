@@ -50,6 +50,9 @@ type TitleBarOptions =
   | typeof TitleBar.Minimize
   | typeof TitleBar.Restore;
 
+const EMPTY_BUTTONS: Array<ModalButtons> = [];
+const EMPTY_MENU: Array<ModalMenu> = [];
+
 export type ModalProps = {
   id?: string;
   buttons?: Array<ModalButtons>;
@@ -103,11 +106,11 @@ const ModalRenderer = (
   {
     id: providedId,
     hasWindowButton: hasButton = true,
-    buttons = [],
+    buttons = EMPTY_BUTTONS,
     buttonsAlignment = 'flex-end',
     children,
     icon,
-    menu = [],
+    menu = EMPTY_MENU,
     title,
     dragOptions,
     titleBarOptions,

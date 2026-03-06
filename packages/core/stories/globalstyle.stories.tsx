@@ -72,104 +72,107 @@ GlobalStyle works with all React95 themes. The styles automatically adapt to the
 
 type Story = StoryObj;
 
-export const UsageInstructions: Story = {
-  render: (_, { speak }) => {
-    const [__, copyToClipboard] = useCopyToClipboard();
-    const [selectedTheme, setSelectedTheme] = React.useState('win95');
+const UsageInstructionsDemo = ({
+  speak,
+}: {
+  speak: (message: string) => void;
+}) => {
+  const [__, copyToClipboard] = useCopyToClipboard();
+  const [selectedTheme, setSelectedTheme] = React.useState('win95');
 
-    return (
-      <Frame p="$20" maxWidth="800px">
-        <h1>How to Use GlobalStyle</h1>
+  return (
+    <Frame p="$20" maxWidth="800px">
+      <h1>How to Use GlobalStyle</h1>
 
-        <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
-          <h2>1. Installation</h2>
-          <p>
-            GlobalStyle is included with @react95/core. No separate installation
-            needed.
-          </p>
-        </Frame>
+      <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
+        <h2>1. Installation</h2>
+        <p>
+          GlobalStyle is included with @react95/core. No separate installation
+          needed.
+        </p>
+      </Frame>
 
-        <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
-          <h2>2. Import in Your App</h2>
-          <p>
-            Add this import to your main application file (usually App.js or
-            index.js):
-          </p>
+      <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
+        <h2>2. Import in Your App</h2>
+        <p>
+          Add this import to your main application file (usually App.js or
+          index.js):
+        </p>
 
-          <Frame display={'flex'} gap="$4">
-            <Input
-              w="100%"
-              fontFamily="monospace"
-              maxWidth={'300px'}
-              value="import '@react95/core/GlobalStyle';"
-            />
-            <Button
-              onClick={() => {
-                copyToClipboard("import '@react95/core/GlobalStyle';");
-
-                speak('Copied GlobalStyle import to clipboard!');
-              }}
-            >
-              Copy
-            </Button>
-          </Frame>
-        </Frame>
-
-        <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
-          <h2>3. Choose a Theme</h2>
-          <p>Import a theme after GlobalStyle to complete the setup:</p>
-
-          <Frame>
-            <Fieldset legend="Select Theme">
-              <p>
-                Choose a theme from the dropdown below. This will apply the
-                selected theme's styles globally.
-              </p>
-              <Dropdown
-                value={selectedTheme}
-                onChange={e => {
-                  const theme = (e.target as HTMLSelectElement).value;
-
-                  setSelectedTheme(theme);
-                }}
-                options={availableThemes}
-              />
-              <p>
-                After selecting a theme, import it in your main file to apply
-                the styles.
-              </p>
-              <Frame mt="$8" display="flex" gap="$4">
-                <Input
-                  fontFamily="monospace"
-                  w="100%"
-                  maxWidth={'300px'}
-                  value={`import '@react95/core/themes/${selectedTheme}.css';`}
-                />
-                <Button
-                  onClick={() => {
-                    copyToClipboard(
-                      `import '@react95/core/themes/${selectedTheme}.css';`,
-                    );
-
-                    speak(`Copied ${selectedTheme} theme import to clipboard!`);
-                  }}
-                >
-                  Copy
-                </Button>
-              </Frame>
-            </Fieldset>
-          </Frame>
-        </Frame>
-
-        <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
-          <h2>4. Complete Example</h2>
-          <TextArea
-            whiteSpace="pre-line"
-            rows={16}
-            cols={50}
+        <Frame display={'flex'} gap="$4">
+          <Input
+            w="100%"
             fontFamily="monospace"
+            maxWidth={'300px'}
+            value="import '@react95/core/GlobalStyle';"
+          />
+          <Button
+            onClick={() => {
+              copyToClipboard("import '@react95/core/GlobalStyle';");
+
+              speak('Copied GlobalStyle import to clipboard!');
+            }}
           >
-            {`// App.js
+            Copy
+          </Button>
+        </Frame>
+      </Frame>
+
+      <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
+        <h2>3. Choose a Theme</h2>
+        <p>Import a theme after GlobalStyle to complete the setup:</p>
+
+        <Frame>
+          <Fieldset legend="Select Theme">
+            <p>
+              Choose a theme from the dropdown below. This will apply the
+              selected theme's styles globally.
+            </p>
+            <Dropdown
+              value={selectedTheme}
+              onChange={e => {
+                const theme = (e.target as HTMLSelectElement).value;
+
+                setSelectedTheme(theme);
+              }}
+              options={availableThemes}
+            />
+            <p>
+              After selecting a theme, import it in your main file to apply the
+              styles.
+            </p>
+            <Frame mt="$8" display="flex" gap="$4">
+              <Input
+                fontFamily="monospace"
+                w="100%"
+                maxWidth={'300px'}
+                value={`import '@react95/core/themes/${selectedTheme}.css';`}
+              />
+              <Button
+                onClick={() => {
+                  copyToClipboard(
+                    `import '@react95/core/themes/${selectedTheme}.css';`,
+                  );
+
+                  speak(`Copied ${selectedTheme} theme import to clipboard!`);
+                }}
+              >
+                Copy
+              </Button>
+            </Frame>
+          </Fieldset>
+        </Frame>
+      </Frame>
+
+      <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
+        <h2>4. Complete Example</h2>
+        <TextArea
+          whiteSpace="pre-line"
+          rows={16}
+          cols={50}
+          fontFamily="monospace"
+        >
+          {`// App.js
 import '@react95/core/GlobalStyle';
 import '@react95/core/themes/win95.css';
 import { Button, Frame } from '@react95/core';
@@ -184,26 +187,28 @@ function App() {
 }
 
 export default App;`}
-          </TextArea>
-        </Frame>
+        </TextArea>
+      </Frame>
 
-        <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
-          <h2>5. Important Notes</h2>
-          <Frame as="ul" pl="$20">
-            <li>Always import GlobalStyle before any theme</li>
-            <li>Only import GlobalStyle once in your application</li>
-            <li>
-              GlobalStyle affects the entire document, not just React95
-              components
-            </li>
-            <li>
-              You can override specific styles if needed using CSS specificity
-            </li>
-          </Frame>
+      <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
+        <h2>5. Important Notes</h2>
+        <Frame as="ul" pl="$20">
+          <li>Always import GlobalStyle before any theme</li>
+          <li>Only import GlobalStyle once in your application</li>
+          <li>
+            GlobalStyle affects the entire document, not just React95 components
+          </li>
+          <li>
+            You can override specific styles if needed using CSS specificity
+          </li>
         </Frame>
       </Frame>
-    );
-  },
+    </Frame>
+  );
+};
+
+export const UsageInstructions: Story = {
+  render: (_, { speak }) => <UsageInstructionsDemo speak={speak} />,
   parameters: {
     docs: {
       description: {
@@ -242,14 +247,11 @@ export const Overview: Story = {
 
           <Fieldset legend="Links" mt="$18">
             <p>
-              <a href="#" onClick={e => e.preventDefault()}>
-                This is a normal link
-              </a>
+              <a href="https://react95.io">This is a normal link</a>
             </p>
             <Frame as="p" mt="$8">
               <a
-                href="#"
-                onClick={e => e.preventDefault()}
+                href="https://react95.io"
                 style={{ color: contract.colors.anchorVisited }}
               >
                 This simulates a visited link

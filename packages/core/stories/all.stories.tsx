@@ -30,103 +30,103 @@ export default {
   title: 'All',
 } as Meta;
 
-export const All = {
-  render: () => {
-    const [openAlert, setOpenAlert] = React.useState(true);
-    const closeAlert = () => setOpenAlert(false);
+const AllDemo = () => {
+  const [openAlert, setOpenAlert] = React.useState(true);
+  const closeAlert = () => setOpenAlert(false);
 
-    return (
-      <div className={styles.list}>
-        <div>
-          <Button onClick={() => setOpenAlert(true)}> Show Alert </Button>
-        </div>
-        {openAlert && (
-          <Alert
-            title="Windows Networking"
-            type="error"
-            dragOptions={{
-              defaultPosition: {
-                x: 130,
-                y: 130,
-              },
-            }}
-            titleBarOptions={
-              <TitleBar.Close key="close" onClick={closeAlert} />
-            }
-            message="The Windows password you typed is incorrect."
-            buttons={[{ value: 'OK', onClick: closeAlert }]}
-          />
-        )}
-
-        <br />
-
-        <div>
-          <SimpleButton.render />
-        </div>
-
-        <br />
-        <SimpleAvatar.render {...SimpleAvatar.args} />
-
-        <br />
-        <AllCheckbox.render />
-
-        <br />
-        <SimpleDropdown.render />
-
-        <br />
-        <SimpleFieldset.render />
-
-        <br />
-        <div>
-          <SimpleInput.render />
-        </div>
-
-        <br />
-        <br />
-
-        <div>
-          <SimpleTextArea.render />
-        </div>
-
-        <br />
-        <br />
-
-        <div>
-          <WithIcons.render />
-          <br />
-          <SimpleList.render />
-        </div>
-
-        <br />
-        <SimpleProgressBar.render {...SimpleProgressBar.args} />
-
-        <br />
-        <SimpleRadioButton.render />
-
-        <br />
-        <SimpleRange.render />
-
-        <br />
-        <SimpleTabs.render />
-
-        <br />
-        <SimpleTree.render />
-
-        <br />
-        <SimpleTooltip.render {...SimpleTooltip.args} />
-
-        <br />
-        <FromURL.render />
-
-        <br />
-        <SimpleTitleBar.render />
-
-        <br />
-        <Inactive.render />
-
-        <br />
-        <Complete.render />
+  return (
+    <div className={styles.list}>
+      <div>
+        <Button onClick={() => setOpenAlert(true)}> Show Alert </Button>
       </div>
-    );
-  },
+      {openAlert && (
+        <Alert
+          title="Windows Networking"
+          type="error"
+          dragOptions={{
+            defaultPosition: {
+              x: 130,
+              y: 130,
+            },
+          }}
+          titleBarOptions={<TitleBar.Close key="close" onClick={closeAlert} />}
+          message="The Windows password you typed is incorrect."
+          buttons={[{ value: 'OK', onClick: closeAlert }]}
+        />
+      )}
+
+      <br />
+
+      <div>
+        <SimpleButton.render />
+      </div>
+
+      <br />
+      <SimpleAvatar.render {...SimpleAvatar.args} />
+
+      <br />
+      <AllCheckbox.render />
+
+      <br />
+      <SimpleDropdown.render />
+
+      <br />
+      <SimpleFieldset.render />
+
+      <br />
+      <div>
+        <SimpleInput.render />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <SimpleTextArea.render />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <WithIcons.render />
+        <br />
+        <SimpleList.render />
+      </div>
+
+      <br />
+      <SimpleProgressBar.render {...SimpleProgressBar.args} />
+
+      <br />
+      <SimpleRadioButton.render />
+
+      <br />
+      <SimpleRange.render />
+
+      <br />
+      <SimpleTabs.render />
+
+      <br />
+      <SimpleTree.render />
+
+      <br />
+      <SimpleTooltip.render {...SimpleTooltip.args} />
+
+      <br />
+      <FromURL.render />
+
+      <br />
+      <SimpleTitleBar.render />
+
+      <br />
+      <Inactive.render />
+
+      <br />
+      <Complete.render />
+    </div>
+  );
+};
+
+export const All = {
+  render: () => <AllDemo />,
 };

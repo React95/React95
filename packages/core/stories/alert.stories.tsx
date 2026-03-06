@@ -10,49 +10,51 @@ export default {
   tags: ['autodocs'],
 } as Meta<typeof Alert>;
 
+const SimpleDemo = () => {
+  const [showAlert, toggleShowAlert] = React.useState(true);
+  const [withSound, toggleWithSound] = React.useState(false);
+  const [type, setType] = React.useState<AlertType>('error');
+
+  const handleOpenAlert = () => toggleShowAlert(true);
+  const handleCloseAlert = () => toggleShowAlert(false);
+  const onImageChange = (e: React.FormEvent<HTMLSelectElement>) => {
+    setType(e.currentTarget.value as AlertType);
+  };
+
+  return (
+    <>
+      <div style={{ marginBottom: 10 }}>
+        Alert Type:
+        <Dropdown
+          options={['error', 'info', 'question', 'warning']}
+          onChange={onImageChange}
+        />
+        <Checkbox
+          checked={withSound}
+          onChange={() => toggleWithSound(!withSound)}
+        >
+          sound
+        </Checkbox>
+      </div>
+      <Button onClick={handleOpenAlert}>Trigger Alert</Button>
+      {showAlert && (
+        <Alert
+          title="Windows Networking"
+          type={type}
+          message="The Windows password you typed is incorrect."
+          titleBarOptions={
+            <TitleBar.Close key="close" onClick={handleCloseAlert} />
+          }
+          hasSound={withSound}
+          buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
+        />
+      )}
+    </>
+  );
+};
+
 export const Simple = {
-  render: () => {
-    const [showAlert, toggleShowAlert] = React.useState(true);
-    const [withSound, toggleWithSound] = React.useState(false);
-    const [type, setType] = React.useState<AlertType>('error');
-
-    const handleOpenAlert = () => toggleShowAlert(true);
-    const handleCloseAlert = () => toggleShowAlert(false);
-    const onImageChange = (e: React.FormEvent<HTMLSelectElement>) => {
-      setType(e.currentTarget.value as AlertType);
-    };
-
-    return (
-      <>
-        <div style={{ marginBottom: 10 }}>
-          Alert Type:
-          <Dropdown
-            options={['error', 'info', 'question', 'warning']}
-            onChange={onImageChange}
-          />
-          <Checkbox
-            checked={withSound}
-            onChange={() => toggleWithSound(!withSound)}
-          >
-            sound
-          </Checkbox>
-        </div>
-        <Button onClick={handleOpenAlert}>Trigger Alert</Button>
-        {showAlert && (
-          <Alert
-            title="Windows Networking"
-            type={type}
-            message="The Windows password you typed is incorrect."
-            titleBarOptions={
-              <TitleBar.Close key="close" onClick={handleCloseAlert} />
-            }
-            hasSound={withSound}
-            buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
-          />
-        )}
-      </>
-    );
-  },
+  render: () => <SimpleDemo />,
 
   parameters: {
     design: {
