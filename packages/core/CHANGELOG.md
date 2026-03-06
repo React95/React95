@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.6.4](https://github.com/React95/React95/compare/@react95/core@9.6.3...@react95/core@9.6.4) (2026-03-06)
+
+
+### Bug Fixes
+
+* **Alert:** optimize sound playback effect ([29ad98a](https://github.com/React95/React95/commit/29ad98aa953f2b839b19a74e88fdd917e55c38dc))
+* **Modal:** use constants for empty buttons and menu ([e1f2eab](https://github.com/React95/React95/commit/e1f2eab6da637bc57a7ddb71464cafba0ed208e1))
+* **Node:** use constant for empty children array ([8cdf899](https://github.com/React95/React95/commit/8cdf899b01356b80bd2e7e91441fb6c1fac9cfad))
+
+
+
+
+
 ## [9.6.3](https://github.com/React95/React95/compare/@react95/core@9.6.2...@react95/core@9.6.3) (2026-01-12)
 
 **Note:** Version bump only for package @react95/core
