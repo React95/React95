@@ -104,7 +104,9 @@ const AllDemo = () => {
       <SimpleRange.render />
 
       <br />
-      <SimpleTabs.render />
+      <div className={styles.tabs}>
+        <SimpleTabs.render />
+      </div>
 
       <br />
       <SimpleTree.render />

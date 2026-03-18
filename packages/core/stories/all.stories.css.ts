@@ -1,5 +1,9 @@
 import { globalStyle, style } from '@vanilla-extract/css';
 
+export const tabs = style({
+  height: '400px',
+});
+
 export const list = style({
   display: 'flex',
   flexDirection: 'column',
