@@ -3,9 +3,7 @@ import path from 'path';
 
 const distPackageJsonPath = path.join(__dirname, '../dist/package.json');
 
-const packageJson = JSON.parse(
-  fs.readFileSync(distPackageJsonPath, 'utf8')
-);
+const packageJson = JSON.parse(fs.readFileSync(distPackageJsonPath, 'utf8'));
 
 packageJson.exports = {
   '.': {
@@ -20,6 +18,9 @@ packageJson.exports = {
   },
 };
 
-fs.writeFileSync(distPackageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
+fs.writeFileSync(
+  distPackageJsonPath,
+  JSON.stringify(packageJson, null, 2) + '\n',
+);
 
 console.log('✨ exports field added to dist/package.json');
