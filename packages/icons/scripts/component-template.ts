@@ -66,13 +66,13 @@ export interface ${componentPropsName} extends SVGProps<SVGSVGElement> {
   variant?: ${images.map(image => `'${image.variant}'`).join(' | ')};
 }
 
-export const ${componentName}: React.FC<${componentPropsName}> = ({
+export const ${componentName} = React.memo<${componentPropsName}>(({
   variant = '${images[0].variant}',
   ...rest
 }) => {
   const Svg = ${iconDataVariableName}[variant];
 
   return <Svg {...rest} />;
-};
+});
 `;
 };
