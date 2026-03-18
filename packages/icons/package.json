@@ -48,6 +48,7 @@
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
     "prepublishOnly": "node ../../scripts/prepublish.js --types",
+    "postprepublishOnly": "ts-node-script scripts/addExports.ts",
     "test": "vitest run --config=../../config/test/icons.js"
   },
   "devDependencies": {
