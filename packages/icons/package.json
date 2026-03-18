@@ -47,7 +47,8 @@
     "build:svg": "cp -r src/svg ./dist",
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types"
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
+    "test": "vitest run --config=../../config/test/icons.js"
   },
   "devDependencies": {
     "@svgr/core": "^8.1.0",
