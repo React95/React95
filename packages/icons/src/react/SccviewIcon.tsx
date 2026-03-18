@@ -16,11 +16,11 @@ export interface SccviewIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const SccviewIcon: React.FC<SccviewIconProps> = ({
+export const SccviewIcon = React.memo<SccviewIconProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = sccviewIconData[variant];
 
   return <Svg {...rest} />;
-};
+});

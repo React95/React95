@@ -14,11 +14,11 @@ export interface Twunk32TwunkIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Twunk32TwunkIcon: React.FC<Twunk32TwunkIconProps> = ({
+export const Twunk32TwunkIcon = React.memo<Twunk32TwunkIconProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = twunk32TwunkIconData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface AccessibilityProps extends SVGProps<SVGSVGElement> {
   variant?: '64x64_1';
 }
 
-export const Accessibility: React.FC<AccessibilityProps> = ({
+export const Accessibility = React.memo<AccessibilityProps>(({
   variant = '64x64_1',
   ...rest
 }) => {
   const Svg = accessibilityData[variant];
 
   return <Svg {...rest} />;
-};
+});

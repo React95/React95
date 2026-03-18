@@ -16,11 +16,11 @@ export interface D3PipesIdAppProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const D3PipesIdApp: React.FC<D3PipesIdAppProps> = ({
+export const D3PipesIdApp = React.memo<D3PipesIdAppProps>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = d3PipesIdAppData[variant];
 
   return <Svg {...rest} />;
-};
+});

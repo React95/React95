@@ -16,11 +16,11 @@ export interface Imgadmin214Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Imgadmin214: React.FC<Imgadmin214Props> = ({
+export const Imgadmin214 = React.memo<Imgadmin214Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = imgadmin214Data[variant];
 
   return <Svg {...rest} />;
-};
+});

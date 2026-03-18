@@ -14,11 +14,11 @@ export interface Imgscan10Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Imgscan10: React.FC<Imgscan10Props> = ({
+export const Imgscan10 = React.memo<Imgscan10Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = imgscan10Data[variant];
 
   return <Svg {...rest} />;
-};
+});

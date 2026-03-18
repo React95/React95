@@ -16,11 +16,11 @@ export interface TextchatProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Textchat: React.FC<TextchatProps> = ({
+export const Textchat = React.memo<TextchatProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = textchatData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface Mplayer115Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mplayer115: React.FC<Mplayer115Props> = ({
+export const Mplayer115 = React.memo<Mplayer115Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mplayer115Data[variant];
 
   return <Svg {...rest} />;
-};
+});

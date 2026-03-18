@@ -16,11 +16,11 @@ export interface Mshtml32548Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mshtml32548: React.FC<Mshtml32548Props> = ({
+export const Mshtml32548 = React.memo<Mshtml32548Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mshtml32548Data[variant];
 
   return <Svg {...rest} />;
-};
+});

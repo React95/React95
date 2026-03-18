@@ -16,11 +16,11 @@ export interface BatProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Bat: React.FC<BatProps> = ({
+export const Bat = React.memo<BatProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = batData[variant];
 
   return <Svg {...rest} />;
-};
+});

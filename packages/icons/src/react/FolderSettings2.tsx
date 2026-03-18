@@ -14,11 +14,11 @@ export interface FolderSettings2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const FolderSettings2: React.FC<FolderSettings2Props> = ({
+export const FolderSettings2 = React.memo<FolderSettings2Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = folderSettings2Data[variant];
 
   return <Svg {...rest} />;
-};
+});

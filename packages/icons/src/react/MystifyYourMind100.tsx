@@ -16,11 +16,11 @@ export interface MystifyYourMind100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MystifyYourMind100: React.FC<MystifyYourMind100Props> = ({
+export const MystifyYourMind100 = React.memo<MystifyYourMind100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mystifyYourMind100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

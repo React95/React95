@@ -16,11 +16,11 @@ export interface Main300Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Main300: React.FC<Main300Props> = ({
+export const Main300 = React.memo<Main300Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = main300Data[variant];
 
   return <Svg {...rest} />;
-};
+});

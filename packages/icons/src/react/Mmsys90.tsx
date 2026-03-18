@@ -14,11 +14,11 @@ export interface Mmsys90Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mmsys90: React.FC<Mmsys90Props> = ({
+export const Mmsys90 = React.memo<Mmsys90Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mmsys90Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface New16Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const New16: React.FC<New16Props> = ({
+export const New16 = React.memo<New16Props>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = new16Data[variant];
 
   return <Svg {...rest} />;
-};
+});

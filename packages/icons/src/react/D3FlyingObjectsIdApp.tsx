@@ -16,11 +16,11 @@ export interface D3FlyingObjectsIdAppProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const D3FlyingObjectsIdApp: React.FC<D3FlyingObjectsIdAppProps> = ({
+export const D3FlyingObjectsIdApp = React.memo<D3FlyingObjectsIdAppProps>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = d3FlyingObjectsIdAppData[variant];
 
   return <Svg {...rest} />;
-};
+});

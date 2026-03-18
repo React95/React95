@@ -14,11 +14,11 @@ export interface Systray220Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Systray220: React.FC<Systray220Props> = ({
+export const Systray220 = React.memo<Systray220Props>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = systray220Data[variant];
 
   return <Svg {...rest} />;
-};
+});

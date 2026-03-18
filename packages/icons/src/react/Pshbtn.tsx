@@ -14,11 +14,11 @@ export interface PshbtnProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Pshbtn: React.FC<PshbtnProps> = ({
+export const Pshbtn = React.memo<PshbtnProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = pshbtnData[variant];
 
   return <Svg {...rest} />;
-};
+});

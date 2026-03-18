@@ -16,11 +16,11 @@ export interface TreeProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Tree: React.FC<TreeProps> = ({
+export const Tree = React.memo<TreeProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = treeData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -18,11 +18,11 @@ export interface Jgdwmie101Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '32x32_8' | '16x16_4';
 }
 
-export const Jgdwmie101: React.FC<Jgdwmie101Props> = ({
+export const Jgdwmie101 = React.memo<Jgdwmie101Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = jgdwmie101Data[variant];
 
   return <Svg {...rest} />;
-};
+});

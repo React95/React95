@@ -16,11 +16,11 @@ export interface UnmuteProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Unmute: React.FC<UnmuteProps> = ({
+export const Unmute = React.memo<UnmuteProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = unmuteData[variant];
 
   return <Svg {...rest} />;
-};
+});

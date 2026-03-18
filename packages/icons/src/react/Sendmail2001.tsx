@@ -16,11 +16,11 @@ export interface Sendmail2001Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Sendmail2001: React.FC<Sendmail2001Props> = ({
+export const Sendmail2001 = React.memo<Sendmail2001Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = sendmail2001Data[variant];
 
   return <Svg {...rest} />;
-};
+});

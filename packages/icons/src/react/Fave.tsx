@@ -14,11 +14,11 @@ export interface FaveProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Fave: React.FC<FaveProps> = ({
+export const Fave = React.memo<FaveProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = faveData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface Drvspace7Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Drvspace7: React.FC<Drvspace7Props> = ({
+export const Drvspace7 = React.memo<Drvspace7Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = drvspace7Data[variant];
 
   return <Svg {...rest} />;
-};
+});

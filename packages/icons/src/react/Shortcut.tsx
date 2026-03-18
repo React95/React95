@@ -16,11 +16,11 @@ export interface ShortcutProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Shortcut: React.FC<ShortcutProps> = ({
+export const Shortcut = React.memo<ShortcutProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = shortcutData[variant];
 
   return <Svg {...rest} />;
-};
+});

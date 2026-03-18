@@ -14,11 +14,11 @@ export interface FontSmlProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const FontSml: React.FC<FontSmlProps> = ({
+export const FontSml = React.memo<FontSmlProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = fontSmlData[variant];
 
   return <Svg {...rest} />;
-};
+});

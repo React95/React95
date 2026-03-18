@@ -14,11 +14,11 @@ export interface LeftProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Left: React.FC<LeftProps> = ({
+export const Left = React.memo<LeftProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = leftData[variant];
 
   return <Svg {...rest} />;
-};
+});

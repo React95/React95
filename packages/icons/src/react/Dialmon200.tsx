@@ -14,11 +14,11 @@ export interface Dialmon200Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Dialmon200: React.FC<Dialmon200Props> = ({
+export const Dialmon200 = React.memo<Dialmon200Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = dialmon200Data[variant];
 
   return <Svg {...rest} />;
-};
+});

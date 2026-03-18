@@ -16,11 +16,11 @@ export interface Appwiz1500Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Appwiz1500: React.FC<Appwiz1500Props> = ({
+export const Appwiz1500 = React.memo<Appwiz1500Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = appwiz1500Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface ParaNumProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const ParaNum: React.FC<ParaNumProps> = ({
+export const ParaNum = React.memo<ParaNumProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = paraNumData[variant];
 
   return <Svg {...rest} />;
-};
+});

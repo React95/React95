@@ -14,11 +14,11 @@ export interface Computer5Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Computer5: React.FC<Computer5Props> = ({
+export const Computer5 = React.memo<Computer5Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = computer5Data[variant];
 
   return <Svg {...rest} />;
-};
+});

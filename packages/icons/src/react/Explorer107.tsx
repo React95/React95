@@ -14,11 +14,11 @@ export interface Explorer107Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Explorer107: React.FC<Explorer107Props> = ({
+export const Explorer107 = React.memo<Explorer107Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = explorer107Data[variant];
 
   return <Svg {...rest} />;
-};
+});

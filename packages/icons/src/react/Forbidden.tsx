@@ -16,11 +16,11 @@ export interface ForbiddenProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Forbidden: React.FC<ForbiddenProps> = ({
+export const Forbidden = React.memo<ForbiddenProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = forbiddenData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface Computer2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Computer2: React.FC<Computer2Props> = ({
+export const Computer2 = React.memo<Computer2Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = computer2Data[variant];
 
   return <Svg {...rest} />;
-};
+});

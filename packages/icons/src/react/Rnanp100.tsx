@@ -16,11 +16,11 @@ export interface Rnanp100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Rnanp100: React.FC<Rnanp100Props> = ({
+export const Rnanp100 = React.memo<Rnanp100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = rnanp100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

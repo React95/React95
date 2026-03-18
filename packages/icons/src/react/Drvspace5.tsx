@@ -16,11 +16,11 @@ export interface Drvspace5Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Drvspace5: React.FC<Drvspace5Props> = ({
+export const Drvspace5 = React.memo<Drvspace5Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = drvspace5Data[variant];
 
   return <Svg {...rest} />;
-};
+});

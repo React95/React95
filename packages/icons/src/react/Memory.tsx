@@ -16,11 +16,11 @@ export interface MemoryProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Memory: React.FC<MemoryProps> = ({
+export const Memory = React.memo<MemoryProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = memoryData[variant];
 
   return <Svg {...rest} />;
-};
+});

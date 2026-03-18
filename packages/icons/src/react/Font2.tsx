@@ -14,11 +14,11 @@ export interface Font2Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Font2: React.FC<Font2Props> = ({
+export const Font2 = React.memo<Font2Props>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = font2Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface Lst2iconProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Lst2icon: React.FC<Lst2iconProps> = ({
+export const Lst2icon = React.memo<Lst2iconProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = lst2iconData[variant];
 
   return <Svg {...rest} />;
-};
+});

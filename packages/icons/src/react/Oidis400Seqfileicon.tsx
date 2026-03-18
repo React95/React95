@@ -14,11 +14,11 @@ export interface Oidis400SeqfileiconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Oidis400Seqfileicon: React.FC<Oidis400SeqfileiconProps> = ({
+export const Oidis400Seqfileicon = React.memo<Oidis400SeqfileiconProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = oidis400SeqfileiconData[variant];
 
   return <Svg {...rest} />;
-};
+});

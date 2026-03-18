@@ -14,11 +14,11 @@ export interface CloseProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Close: React.FC<CloseProps> = ({
+export const Close = React.memo<CloseProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = closeData[variant];
 
   return <Svg {...rest} />;
-};
+});

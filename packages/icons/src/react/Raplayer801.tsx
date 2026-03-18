@@ -14,11 +14,11 @@ export interface Raplayer801Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Raplayer801: React.FC<Raplayer801Props> = ({
+export const Raplayer801 = React.memo<Raplayer801Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = raplayer801Data[variant];
 
   return <Svg {...rest} />;
-};
+});

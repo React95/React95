@@ -14,11 +14,11 @@ export interface Mshearts1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mshearts1: React.FC<Mshearts1Props> = ({
+export const Mshearts1 = React.memo<Mshearts1Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mshearts1Data[variant];
 
   return <Svg {...rest} />;
-};
+});

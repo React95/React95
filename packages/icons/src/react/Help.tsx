@@ -14,11 +14,11 @@ export interface HelpProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Help: React.FC<HelpProps> = ({
+export const Help = React.memo<HelpProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = helpData[variant];
 
   return <Svg {...rest} />;
-};
+});

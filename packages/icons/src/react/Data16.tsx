@@ -14,11 +14,11 @@ export interface Data16Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Data16: React.FC<Data16Props> = ({
+export const Data16 = React.memo<Data16Props>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = data16Data[variant];
 
   return <Svg {...rest} />;
-};
+});

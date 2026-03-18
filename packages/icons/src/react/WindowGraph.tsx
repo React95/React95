@@ -16,11 +16,11 @@ export interface WindowGraphProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const WindowGraph: React.FC<WindowGraphProps> = ({
+export const WindowGraph = React.memo<WindowGraphProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = windowGraphData[variant];
 
   return <Svg {...rest} />;
-};
+});

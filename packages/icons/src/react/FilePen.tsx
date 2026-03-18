@@ -16,11 +16,11 @@ export interface FilePenProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FilePen: React.FC<FilePenProps> = ({
+export const FilePen = React.memo<FilePenProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = filePenData[variant];
 
   return <Svg {...rest} />;
-};
+});

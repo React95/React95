@@ -16,11 +16,11 @@ export interface Main400Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Main400: React.FC<Main400Props> = ({
+export const Main400 = React.memo<Main400Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = main400Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface Explorer108Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Explorer108: React.FC<Explorer108Props> = ({
+export const Explorer108 = React.memo<Explorer108Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = explorer108Data[variant];
 
   return <Svg {...rest} />;
-};
+});

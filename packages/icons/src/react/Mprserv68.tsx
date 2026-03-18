@@ -14,11 +14,11 @@ export interface Mprserv68Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mprserv68: React.FC<Mprserv68Props> = ({
+export const Mprserv68 = React.memo<Mprserv68Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mprserv68Data[variant];
 
   return <Svg {...rest} />;
-};
+});

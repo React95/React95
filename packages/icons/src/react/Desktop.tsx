@@ -16,11 +16,11 @@ export interface DesktopProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Desktop: React.FC<DesktopProps> = ({
+export const Desktop = React.memo<DesktopProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = desktopData[variant];
 
   return <Svg {...rest} />;
-};
+});

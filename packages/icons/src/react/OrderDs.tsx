@@ -14,11 +14,11 @@ export interface OrderDsProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const OrderDs: React.FC<OrderDsProps> = ({
+export const OrderDs = React.memo<OrderDsProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = orderDsData[variant];
 
   return <Svg {...rest} />;
-};
+});

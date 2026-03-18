@@ -14,11 +14,11 @@ export interface Imgthumb10Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Imgthumb10: React.FC<Imgthumb10Props> = ({
+export const Imgthumb10 = React.memo<Imgthumb10Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = imgthumb10Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface Rnaui106Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Rnaui106: React.FC<Rnaui106Props> = ({
+export const Rnaui106 = React.memo<Rnaui106Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = rnaui106Data[variant];
 
   return <Svg {...rest} />;
-};
+});

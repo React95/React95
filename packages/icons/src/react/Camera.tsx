@@ -16,11 +16,11 @@ export interface CameraProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Camera: React.FC<CameraProps> = ({
+export const Camera = React.memo<CameraProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = cameraData[variant];
 
   return <Svg {...rest} />;
-};
+});

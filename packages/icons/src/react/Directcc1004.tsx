@@ -14,11 +14,11 @@ export interface Directcc1004Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Directcc1004: React.FC<Directcc1004Props> = ({
+export const Directcc1004 = React.memo<Directcc1004Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = directcc1004Data[variant];
 
   return <Svg {...rest} />;
-};
+});

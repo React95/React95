@@ -16,11 +16,11 @@ export interface Charmap1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Charmap1: React.FC<Charmap1Props> = ({
+export const Charmap1 = React.memo<Charmap1Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = charmap1Data[variant];
 
   return <Svg {...rest} />;
-};
+});

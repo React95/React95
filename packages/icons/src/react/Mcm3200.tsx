@@ -14,11 +14,11 @@ export interface Mcm3200Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mcm3200: React.FC<Mcm3200Props> = ({
+export const Mcm3200 = React.memo<Mcm3200Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mcm3200Data[variant];
 
   return <Svg {...rest} />;
-};
+});

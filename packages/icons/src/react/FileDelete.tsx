@@ -14,11 +14,11 @@ export interface FileDeleteProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const FileDelete: React.FC<FileDeleteProps> = ({
+export const FileDelete = React.memo<FileDeleteProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = fileDeleteData[variant];
 
   return <Svg {...rest} />;
-};
+});

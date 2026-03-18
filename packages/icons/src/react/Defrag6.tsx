@@ -16,11 +16,11 @@ export interface Defrag6Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Defrag6: React.FC<Defrag6Props> = ({
+export const Defrag6 = React.memo<Defrag6Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = defrag6Data[variant];
 
   return <Svg {...rest} />;
-};
+});

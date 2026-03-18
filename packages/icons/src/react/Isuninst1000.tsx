@@ -14,11 +14,11 @@ export interface Isuninst1000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Isuninst1000: React.FC<Isuninst1000Props> = ({
+export const Isuninst1000 = React.memo<Isuninst1000Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = isuninst1000Data[variant];
 
   return <Svg {...rest} />;
-};
+});

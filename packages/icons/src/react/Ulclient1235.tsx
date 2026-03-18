@@ -14,11 +14,11 @@ export interface Ulclient1235Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Ulclient1235: React.FC<Ulclient1235Props> = ({
+export const Ulclient1235 = React.memo<Ulclient1235Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = ulclient1235Data[variant];
 
   return <Svg {...rest} />;
-};
+});

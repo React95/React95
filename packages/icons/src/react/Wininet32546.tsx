@@ -16,11 +16,11 @@ export interface Wininet32546Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Wininet32546: React.FC<Wininet32546Props> = ({
+export const Wininet32546 = React.memo<Wininet32546Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = wininet32546Data[variant];
 
   return <Svg {...rest} />;
-};
+});

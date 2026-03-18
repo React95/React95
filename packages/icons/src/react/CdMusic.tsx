@@ -16,11 +16,11 @@ export interface CdMusicProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const CdMusic: React.FC<CdMusicProps> = ({
+export const CdMusic = React.memo<CdMusicProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = cdMusicData[variant];
 
   return <Svg {...rest} />;
-};
+});

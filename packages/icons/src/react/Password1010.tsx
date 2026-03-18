@@ -14,11 +14,11 @@ export interface Password1010Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Password1010: React.FC<Password1010Props> = ({
+export const Password1010 = React.memo<Password1010Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = password1010Data[variant];
 
   return <Svg {...rest} />;
-};
+});

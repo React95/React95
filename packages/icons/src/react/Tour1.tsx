@@ -14,11 +14,11 @@ export interface Tour1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Tour1: React.FC<Tour1Props> = ({
+export const Tour1 = React.memo<Tour1Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = tour1Data[variant];
 
   return <Svg {...rest} />;
-};
+});

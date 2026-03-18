@@ -14,11 +14,11 @@ export interface Powercfg205Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Powercfg205: React.FC<Powercfg205Props> = ({
+export const Powercfg205 = React.memo<Powercfg205Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = powercfg205Data[variant];
 
   return <Svg {...rest} />;
-};
+});

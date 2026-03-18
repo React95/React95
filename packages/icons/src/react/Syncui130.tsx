@@ -14,11 +14,11 @@ export interface Syncui130Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Syncui130: React.FC<Syncui130Props> = ({
+export const Syncui130 = React.memo<Syncui130Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = syncui130Data[variant];
 
   return <Svg {...rest} />;
-};
+});

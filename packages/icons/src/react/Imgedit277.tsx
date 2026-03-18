@@ -14,11 +14,11 @@ export interface Imgedit277Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Imgedit277: React.FC<Imgedit277Props> = ({
+export const Imgedit277 = React.memo<Imgedit277Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = imgedit277Data[variant];
 
   return <Svg {...rest} />;
-};
+});

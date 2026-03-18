@@ -14,11 +14,11 @@ export interface BoldProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Bold: React.FC<BoldProps> = ({
+export const Bold = React.memo<BoldProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = boldData[variant];
 
   return <Svg {...rest} />;
-};
+});

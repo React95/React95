@@ -16,11 +16,11 @@ export interface Main500Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Main500: React.FC<Main500Props> = ({
+export const Main500 = React.memo<Main500Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = main500Data[variant];
 
   return <Svg {...rest} />;
-};
+});

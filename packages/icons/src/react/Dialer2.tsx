@@ -14,11 +14,11 @@ export interface Dialer2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Dialer2: React.FC<Dialer2Props> = ({
+export const Dialer2 = React.memo<Dialer2Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = dialer2Data[variant];
 
   return <Svg {...rest} />;
-};
+});

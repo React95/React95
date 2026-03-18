@@ -14,11 +14,11 @@ export interface Msrating107Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Msrating107: React.FC<Msrating107Props> = ({
+export const Msrating107 = React.memo<Msrating107Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = msrating107Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface FileCorruptedProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const FileCorrupted: React.FC<FileCorruptedProps> = ({
+export const FileCorrupted = React.memo<FileCorruptedProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = fileCorruptedData[variant];
 
   return <Svg {...rest} />;
-};
+});

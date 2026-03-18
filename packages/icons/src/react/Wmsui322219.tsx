@@ -18,11 +18,11 @@ export interface Wmsui322219Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '32x32_1' | '16x16_4';
 }
 
-export const Wmsui322219: React.FC<Wmsui322219Props> = ({
+export const Wmsui322219 = React.memo<Wmsui322219Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = wmsui322219Data[variant];
 
   return <Svg {...rest} />;
-};
+});

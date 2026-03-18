@@ -14,11 +14,11 @@ export interface RecycleFilefolderProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const RecycleFilefolder: React.FC<RecycleFilefolderProps> = ({
+export const RecycleFilefolder = React.memo<RecycleFilefolderProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = recycleFilefolderData[variant];
 
   return <Svg {...rest} />;
-};
+});

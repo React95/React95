@@ -16,11 +16,11 @@ export interface Mkcompat900Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Mkcompat900: React.FC<Mkcompat900Props> = ({
+export const Mkcompat900 = React.memo<Mkcompat900Props>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = mkcompat900Data[variant];
 
   return <Svg {...rest} />;
-};
+});

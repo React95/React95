@@ -16,11 +16,11 @@ export interface Joy108Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Joy108: React.FC<Joy108Props> = ({
+export const Joy108 = React.memo<Joy108Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = joy108Data[variant];
 
   return <Svg {...rest} />;
-};
+});

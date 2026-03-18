@@ -16,11 +16,11 @@ export interface Awsnto3249Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Awsnto3249: React.FC<Awsnto3249Props> = ({
+export const Awsnto3249 = React.memo<Awsnto3249Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = awsnto3249Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface HelpBookProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const HelpBook: React.FC<HelpBookProps> = ({
+export const HelpBook = React.memo<HelpBookProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = helpBookData[variant];
 
   return <Svg {...rest} />;
-};
+});

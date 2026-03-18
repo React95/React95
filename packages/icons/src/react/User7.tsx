@@ -16,11 +16,11 @@ export interface User7Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const User7: React.FC<User7Props> = ({
+export const User7 = React.memo<User7Props>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = user7Data[variant];
 
   return <Svg {...rest} />;
-};
+});

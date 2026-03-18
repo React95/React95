@@ -16,11 +16,11 @@ export interface Systray303Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Systray303: React.FC<Systray303Props> = ({
+export const Systray303 = React.memo<Systray303Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = systray303Data[variant];
 
   return <Svg {...rest} />;
-};
+});

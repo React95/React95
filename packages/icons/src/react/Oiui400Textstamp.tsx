@@ -14,11 +14,11 @@ export interface Oiui400TextstampProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Oiui400Textstamp: React.FC<Oiui400TextstampProps> = ({
+export const Oiui400Textstamp = React.memo<Oiui400TextstampProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = oiui400TextstampData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface Swinst53000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Swinst53000: React.FC<Swinst53000Props> = ({
+export const Swinst53000 = React.memo<Swinst53000Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = swinst53000Data[variant];
 
   return <Svg {...rest} />;
-};
+});

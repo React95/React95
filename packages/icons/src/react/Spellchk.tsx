@@ -14,11 +14,11 @@ export interface SpellchkProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Spellchk: React.FC<SpellchkProps> = ({
+export const Spellchk = React.memo<SpellchkProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = spellchkData[variant];
 
   return <Svg {...rest} />;
-};
+});

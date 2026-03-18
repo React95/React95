@@ -16,11 +16,11 @@ export interface Rasapi32104Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Rasapi32104: React.FC<Rasapi32104Props> = ({
+export const Rasapi32104 = React.memo<Rasapi32104Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = rasapi32104Data[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface MediaVideoProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MediaVideo: React.FC<MediaVideoProps> = ({
+export const MediaVideo = React.memo<MediaVideoProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mediaVideoData[variant];
 
   return <Svg {...rest} />;
-};
+});

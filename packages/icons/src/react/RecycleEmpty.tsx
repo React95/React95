@@ -16,11 +16,11 @@ export interface RecycleEmptyProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const RecycleEmpty: React.FC<RecycleEmptyProps> = ({
+export const RecycleEmpty = React.memo<RecycleEmptyProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = recycleEmptyData[variant];
 
   return <Svg {...rest} />;
-};
+});

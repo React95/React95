@@ -20,11 +20,11 @@ export interface Faxcover108Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '32x32_1' | '16x16_4' | '16x16_1';
 }
 
-export const Faxcover108: React.FC<Faxcover108Props> = ({
+export const Faxcover108 = React.memo<Faxcover108Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = faxcover108Data[variant];
 
   return <Svg {...rest} />;
-};
+});

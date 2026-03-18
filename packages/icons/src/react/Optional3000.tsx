@@ -16,11 +16,11 @@ export interface Optional3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Optional3000: React.FC<Optional3000Props> = ({
+export const Optional3000 = React.memo<Optional3000Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = optional3000Data[variant];
 
   return <Svg {...rest} />;
-};
+});

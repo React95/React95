@@ -16,11 +16,11 @@ export interface Shscrap100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Shscrap100: React.FC<Shscrap100Props> = ({
+export const Shscrap100 = React.memo<Shscrap100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = shscrap100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

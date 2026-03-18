@@ -16,11 +16,11 @@ export interface Winhlp324001Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Winhlp324001: React.FC<Winhlp324001Props> = ({
+export const Winhlp324001 = React.memo<Winhlp324001Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = winhlp324001Data[variant];
 
   return <Svg {...rest} />;
-};
+});

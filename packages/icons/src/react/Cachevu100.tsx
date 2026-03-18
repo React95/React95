@@ -16,11 +16,11 @@ export interface Cachevu100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Cachevu100: React.FC<Cachevu100Props> = ({
+export const Cachevu100 = React.memo<Cachevu100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = cachevu100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

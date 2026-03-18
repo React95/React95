@@ -16,11 +16,11 @@ export interface KeyboardMouseProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const KeyboardMouse: React.FC<KeyboardMouseProps> = ({
+export const KeyboardMouse = React.memo<KeyboardMouseProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = keyboardMouseData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface Internat151Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Internat151: React.FC<Internat151Props> = ({
+export const Internat151 = React.memo<Internat151Props>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = internat151Data[variant];
 
   return <Svg {...rest} />;
-};
+});

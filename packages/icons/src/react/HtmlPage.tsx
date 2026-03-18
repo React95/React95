@@ -14,11 +14,11 @@ export interface HtmlPageProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_8';
 }
 
-export const HtmlPage: React.FC<HtmlPageProps> = ({
+export const HtmlPage = React.memo<HtmlPageProps>(({
   variant = '16x16_8',
   ...rest
 }) => {
   const Svg = htmlPageData[variant];
 
   return <Svg {...rest} />;
-};
+});

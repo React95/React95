@@ -14,11 +14,11 @@ export interface Url1103Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Url1103: React.FC<Url1103Props> = ({
+export const Url1103 = React.memo<Url1103Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = url1103Data[variant];
 
   return <Svg {...rest} />;
-};
+});

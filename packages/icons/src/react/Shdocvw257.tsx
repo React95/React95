@@ -24,11 +24,11 @@ export interface Shdocvw257Props extends SVGProps<SVGSVGElement> {
   variant?: '48x48_8' | '32x32_8' | '16x16_8' | '16x16_4' | '32x32_4' | '48x48_4';
 }
 
-export const Shdocvw257: React.FC<Shdocvw257Props> = ({
+export const Shdocvw257 = React.memo<Shdocvw257Props>(({
   variant = '48x48_8',
   ...rest
 }) => {
   const Svg = shdocvw257Data[variant];
 
   return <Svg {...rest} />;
-};
+});

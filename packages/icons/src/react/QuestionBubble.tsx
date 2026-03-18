@@ -14,11 +14,11 @@ export interface QuestionBubbleProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_32';
 }
 
-export const QuestionBubble: React.FC<QuestionBubbleProps> = ({
+export const QuestionBubble = React.memo<QuestionBubbleProps>(({
   variant = '32x32_32',
   ...rest
 }) => {
   const Svg = questionBubbleData[variant];
 
   return <Svg {...rest} />;
-};
+});

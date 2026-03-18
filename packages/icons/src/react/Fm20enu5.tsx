@@ -14,11 +14,11 @@ export interface Fm20enu5Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Fm20enu5: React.FC<Fm20enu5Props> = ({
+export const Fm20enu5 = React.memo<Fm20enu5Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = fm20enu5Data[variant];
 
   return <Svg {...rest} />;
-};
+});

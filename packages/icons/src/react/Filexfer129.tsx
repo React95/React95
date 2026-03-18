@@ -14,11 +14,11 @@ export interface Filexfer129Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Filexfer129: React.FC<Filexfer129Props> = ({
+export const Filexfer129 = React.memo<Filexfer129Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = filexfer129Data[variant];
 
   return <Svg {...rest} />;
-};
+});

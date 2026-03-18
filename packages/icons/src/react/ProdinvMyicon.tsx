@@ -16,11 +16,11 @@ export interface ProdinvMyiconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const ProdinvMyicon: React.FC<ProdinvMyiconProps> = ({
+export const ProdinvMyicon = React.memo<ProdinvMyiconProps>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = prodinvMyiconData[variant];
 
   return <Svg {...rest} />;
-};
+});

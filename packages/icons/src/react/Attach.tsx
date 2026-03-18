@@ -14,11 +14,11 @@ export interface AttachProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Attach: React.FC<AttachProps> = ({
+export const Attach = React.memo<AttachProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = attachData[variant];
 
   return <Svg {...rest} />;
-};
+});

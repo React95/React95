@@ -14,11 +14,11 @@ export interface ToupperProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Toupper: React.FC<ToupperProps> = ({
+export const Toupper = React.memo<ToupperProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = toupperData[variant];
 
   return <Svg {...rest} />;
-};
+});

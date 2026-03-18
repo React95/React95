@@ -16,11 +16,11 @@ export interface Msnsvc3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Msnsvc3000: React.FC<Msnsvc3000Props> = ({
+export const Msnsvc3000 = React.memo<Msnsvc3000Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = msnsvc3000Data[variant];
 
   return <Svg {...rest} />;
-};
+});

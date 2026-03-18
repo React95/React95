@@ -14,11 +14,11 @@ export interface Access226Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Access226: React.FC<Access226Props> = ({
+export const Access226 = React.memo<Access226Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = access226Data[variant];
 
   return <Svg {...rest} />;
-};
+});

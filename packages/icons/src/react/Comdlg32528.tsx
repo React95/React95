@@ -14,11 +14,11 @@ export interface Comdlg32528Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Comdlg32528: React.FC<Comdlg32528Props> = ({
+export const Comdlg32528 = React.memo<Comdlg32528Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = comdlg32528Data[variant];
 
   return <Svg {...rest} />;
-};
+});

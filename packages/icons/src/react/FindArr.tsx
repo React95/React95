@@ -14,11 +14,11 @@ export interface FindArrProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const FindArr: React.FC<FindArrProps> = ({
+export const FindArr = React.memo<FindArrProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = findArrData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface TimeProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Time: React.FC<TimeProps> = ({
+export const Time = React.memo<TimeProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = timeData[variant];
 
   return <Svg {...rest} />;
-};
+});

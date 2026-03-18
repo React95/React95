@@ -14,11 +14,11 @@ export interface InfoBubbleProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const InfoBubble: React.FC<InfoBubbleProps> = ({
+export const InfoBubble = React.memo<InfoBubbleProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = infoBubbleData[variant];
 
   return <Svg {...rest} />;
-};
+});

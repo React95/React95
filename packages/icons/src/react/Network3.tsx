@@ -16,11 +16,11 @@ export interface Network3Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Network3: React.FC<Network3Props> = ({
+export const Network3 = React.memo<Network3Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = network3Data[variant];
 
   return <Svg {...rest} />;
-};
+});

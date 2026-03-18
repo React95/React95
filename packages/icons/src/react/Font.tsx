@@ -14,11 +14,11 @@ export interface FontProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Font: React.FC<FontProps> = ({
+export const Font = React.memo<FontProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = fontData[variant];
 
   return <Svg {...rest} />;
-};
+});

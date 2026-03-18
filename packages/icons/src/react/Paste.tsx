@@ -14,11 +14,11 @@ export interface PasteProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Paste: React.FC<PasteProps> = ({
+export const Paste = React.memo<PasteProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = pasteData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface WindowAccessibilityProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const WindowAccessibility: React.FC<WindowAccessibilityProps> = ({
+export const WindowAccessibility = React.memo<WindowAccessibilityProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = windowAccessibilityData[variant];
 
   return <Svg {...rest} />;
-};
+});

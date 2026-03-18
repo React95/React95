@@ -14,11 +14,11 @@ export interface MessageProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Message: React.FC<MessageProps> = ({
+export const Message = React.memo<MessageProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = messageData[variant];
 
   return <Svg {...rest} />;
-};
+});

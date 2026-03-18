@@ -14,11 +14,11 @@ export interface McmEarthProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const McmEarth: React.FC<McmEarthProps> = ({
+export const McmEarth = React.memo<McmEarthProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mcmEarthData[variant];
 
   return <Svg {...rest} />;
-};
+});

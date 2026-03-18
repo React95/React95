@@ -14,11 +14,11 @@ export interface BillAddProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const BillAdd: React.FC<BillAddProps> = ({
+export const BillAdd = React.memo<BillAddProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = billAddData[variant];
 
   return <Svg {...rest} />;
-};
+});

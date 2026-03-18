@@ -14,11 +14,11 @@ export interface ListiconProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Listicon: React.FC<ListiconProps> = ({
+export const Listicon = React.memo<ListiconProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = listiconData[variant];
 
   return <Svg {...rest} />;
-};
+});

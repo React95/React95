@@ -16,11 +16,11 @@ export interface TimedateProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Timedate: React.FC<TimedateProps> = ({
+export const Timedate = React.memo<TimedateProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = timedateData[variant];
 
   return <Svg {...rest} />;
-};
+});

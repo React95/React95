@@ -16,11 +16,11 @@ export interface FolderPrintProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FolderPrint: React.FC<FolderPrintProps> = ({
+export const FolderPrint = React.memo<FolderPrintProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = folderPrintData[variant];
 
   return <Svg {...rest} />;
-};
+});

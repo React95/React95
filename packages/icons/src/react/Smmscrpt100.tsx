@@ -16,11 +16,11 @@ export interface Smmscrpt100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Smmscrpt100: React.FC<Smmscrpt100Props> = ({
+export const Smmscrpt100 = React.memo<Smmscrpt100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = smmscrpt100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

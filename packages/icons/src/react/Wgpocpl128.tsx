@@ -14,11 +14,11 @@ export interface Wgpocpl128Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Wgpocpl128: React.FC<Wgpocpl128Props> = ({
+export const Wgpocpl128 = React.memo<Wgpocpl128Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = wgpocpl128Data[variant];
 
   return <Svg {...rest} />;
-};
+});

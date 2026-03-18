@@ -14,11 +14,11 @@ export interface SvrworldProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Svrworld: React.FC<SvrworldProps> = ({
+export const Svrworld = React.memo<SvrworldProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = svrworldData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface Sndvol32300Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Sndvol32300: React.FC<Sndvol32300Props> = ({
+export const Sndvol32300 = React.memo<Sndvol32300Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = sndvol32300Data[variant];
 
   return <Svg {...rest} />;
-};
+});

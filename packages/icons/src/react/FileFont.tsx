@@ -16,11 +16,11 @@ export interface FileFontProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FileFont: React.FC<FileFontProps> = ({
+export const FileFont = React.memo<FileFontProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = fileFontData[variant];
 
   return <Svg {...rest} />;
-};
+});

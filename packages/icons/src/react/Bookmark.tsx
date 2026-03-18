@@ -16,11 +16,11 @@ export interface BookmarkProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Bookmark: React.FC<BookmarkProps> = ({
+export const Bookmark = React.memo<BookmarkProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = bookmarkData[variant];
 
   return <Svg {...rest} />;
-};
+});

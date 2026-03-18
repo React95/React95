@@ -14,11 +14,11 @@ export interface DetliconProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Detlicon: React.FC<DetliconProps> = ({
+export const Detlicon = React.memo<DetliconProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = detliconData[variant];
 
   return <Svg {...rest} />;
-};
+});

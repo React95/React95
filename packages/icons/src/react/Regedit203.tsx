@@ -14,11 +14,11 @@ export interface Regedit203Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Regedit203: React.FC<Regedit203Props> = ({
+export const Regedit203 = React.memo<Regedit203Props>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = regedit203Data[variant];
 
   return <Svg {...rest} />;
-};
+});

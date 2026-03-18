@@ -14,11 +14,11 @@ export interface Msnstart110Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Msnstart110: React.FC<Msnstart110Props> = ({
+export const Msnstart110 = React.memo<Msnstart110Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = msnstart110Data[variant];
 
   return <Svg {...rest} />;
-};
+});

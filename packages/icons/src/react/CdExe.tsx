@@ -14,11 +14,11 @@ export interface CdExeProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const CdExe: React.FC<CdExeProps> = ({
+export const CdExe = React.memo<CdExeProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = cdExeData[variant];
 
   return <Svg {...rest} />;
-};
+});

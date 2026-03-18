@@ -16,11 +16,11 @@ export interface Confcp120Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Confcp120: React.FC<Confcp120Props> = ({
+export const Confcp120 = React.memo<Confcp120Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = confcp120Data[variant];
 
   return <Svg {...rest} />;
-};
+});

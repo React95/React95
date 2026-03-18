@@ -16,11 +16,11 @@ export interface SignupProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Signup: React.FC<SignupProps> = ({
+export const Signup = React.memo<SignupProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = signupData[variant];
 
   return <Svg {...rest} />;
-};
+});

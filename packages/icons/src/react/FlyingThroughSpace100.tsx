@@ -16,11 +16,11 @@ export interface FlyingThroughSpace100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FlyingThroughSpace100: React.FC<FlyingThroughSpace100Props> = ({
+export const FlyingThroughSpace100 = React.memo<FlyingThroughSpace100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = flyingThroughSpace100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

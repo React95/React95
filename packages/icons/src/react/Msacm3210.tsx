@@ -14,11 +14,11 @@ export interface Msacm3210Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Msacm3210: React.FC<Msacm3210Props> = ({
+export const Msacm3210 = React.memo<Msacm3210Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = msacm3210Data[variant];
 
   return <Svg {...rest} />;
-};
+});

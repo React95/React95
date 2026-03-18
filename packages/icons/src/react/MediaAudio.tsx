@@ -16,11 +16,11 @@ export interface MediaAudioProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MediaAudio: React.FC<MediaAudioProps> = ({
+export const MediaAudio = React.memo<MediaAudioProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mediaAudioData[variant];
 
   return <Svg {...rest} />;
-};
+});

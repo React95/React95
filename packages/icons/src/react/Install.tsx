@@ -14,11 +14,11 @@ export interface InstallProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Install: React.FC<InstallProps> = ({
+export const Install = React.memo<InstallProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = installData[variant];
 
   return <Svg {...rest} />;
-};
+});

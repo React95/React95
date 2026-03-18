@@ -16,11 +16,11 @@ export interface Cdplayer107Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Cdplayer107: React.FC<Cdplayer107Props> = ({
+export const Cdplayer107 = React.memo<Cdplayer107Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = cdplayer107Data[variant];
 
   return <Svg {...rest} />;
-};
+});

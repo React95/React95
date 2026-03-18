@@ -16,11 +16,11 @@ export interface Icmui1200Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Icmui1200: React.FC<Icmui1200Props> = ({
+export const Icmui1200 = React.memo<Icmui1200Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = icmui1200Data[variant];
 
   return <Svg {...rest} />;
-};
+});

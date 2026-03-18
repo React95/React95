@@ -14,11 +14,11 @@ export interface Comctl32150Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1';
 }
 
-export const Comctl32150: React.FC<Comctl32150Props> = ({
+export const Comctl32150 = React.memo<Comctl32150Props>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = comctl32150Data[variant];
 
   return <Svg {...rest} />;
-};
+});

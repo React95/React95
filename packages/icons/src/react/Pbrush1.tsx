@@ -14,11 +14,11 @@ export interface Pbrush1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Pbrush1: React.FC<Pbrush1Props> = ({
+export const Pbrush1 = React.memo<Pbrush1Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = pbrush1Data[variant];
 
   return <Svg {...rest} />;
-};
+});

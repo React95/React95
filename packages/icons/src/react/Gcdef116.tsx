@@ -14,11 +14,11 @@ export interface Gcdef116Props extends SVGProps<SVGSVGElement> {
   variant?: '48x48_8';
 }
 
-export const Gcdef116: React.FC<Gcdef116Props> = ({
+export const Gcdef116 = React.memo<Gcdef116Props>(({
   variant = '48x48_8',
   ...rest
 }) => {
   const Svg = gcdef116Data[variant];
 
   return <Svg {...rest} />;
-};
+});

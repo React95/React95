@@ -14,11 +14,11 @@ export interface FontWidProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const FontWid: React.FC<FontWidProps> = ({
+export const FontWid = React.memo<FontWidProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = fontWidData[variant];
 
   return <Svg {...rest} />;
-};
+});

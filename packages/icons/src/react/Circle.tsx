@@ -14,11 +14,11 @@ export interface CircleProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Circle: React.FC<CircleProps> = ({
+export const Circle = React.memo<CircleProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = circleData[variant];
 
   return <Svg {...rest} />;
-};
+});

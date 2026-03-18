@@ -14,11 +14,11 @@ export interface Runonce106Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Runonce106: React.FC<Runonce106Props> = ({
+export const Runonce106 = React.memo<Runonce106Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = runonce106Data[variant];
 
   return <Svg {...rest} />;
-};
+});

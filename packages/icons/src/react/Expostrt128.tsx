@@ -16,11 +16,11 @@ export interface Expostrt128Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Expostrt128: React.FC<Expostrt128Props> = ({
+export const Expostrt128 = React.memo<Expostrt128Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = expostrt128Data[variant];
 
   return <Svg {...rest} />;
-};
+});

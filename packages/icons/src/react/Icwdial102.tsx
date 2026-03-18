@@ -14,11 +14,11 @@ export interface Icwdial102Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Icwdial102: React.FC<Icwdial102Props> = ({
+export const Icwdial102 = React.memo<Icwdial102Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = icwdial102Data[variant];
 
   return <Svg {...rest} />;
-};
+});

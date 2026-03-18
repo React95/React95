@@ -16,11 +16,11 @@ export interface Mmsys120Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mmsys120: React.FC<Mmsys120Props> = ({
+export const Mmsys120 = React.memo<Mmsys120Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mmsys120Data[variant];
 
   return <Svg {...rest} />;
-};
+});

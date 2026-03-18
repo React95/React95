@@ -16,11 +16,11 @@ export interface CalcScProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const CalcSc: React.FC<CalcScProps> = ({
+export const CalcSc = React.memo<CalcScProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = calcScData[variant];
 
   return <Svg {...rest} />;
-};
+});

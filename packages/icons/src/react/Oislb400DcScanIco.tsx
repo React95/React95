@@ -14,11 +14,11 @@ export interface Oislb400DcScanIcoProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Oislb400DcScanIco: React.FC<Oislb400DcScanIcoProps> = ({
+export const Oislb400DcScanIco = React.memo<Oislb400DcScanIcoProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = oislb400DcScanIcoData[variant];
 
   return <Svg {...rest} />;
-};
+});

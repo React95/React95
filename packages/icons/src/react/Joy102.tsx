@@ -24,11 +24,11 @@ export interface Joy102Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '48x48_4' | '16x16_4' | '32x32_8' | '48x48_8' | '16x16_8';
 }
 
-export const Joy102: React.FC<Joy102Props> = ({
+export const Joy102 = React.memo<Joy102Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = joy102Data[variant];
 
   return <Svg {...rest} />;
-};
+});

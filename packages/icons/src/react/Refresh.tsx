@@ -14,11 +14,11 @@ export interface RefreshProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Refresh: React.FC<RefreshProps> = ({
+export const Refresh = React.memo<RefreshProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = refreshData[variant];
 
   return <Svg {...rest} />;
-};
+});

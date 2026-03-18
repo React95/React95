@@ -16,11 +16,11 @@ export interface DialProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Dial: React.FC<DialProps> = ({
+export const Dial = React.memo<DialProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = dialData[variant];
 
   return <Svg {...rest} />;
-};
+});

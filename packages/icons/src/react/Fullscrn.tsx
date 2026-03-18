@@ -14,11 +14,11 @@ export interface FullscrnProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Fullscrn: React.FC<FullscrnProps> = ({
+export const Fullscrn = React.memo<FullscrnProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = fullscrnData[variant];
 
   return <Svg {...rest} />;
-};
+});

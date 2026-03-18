@@ -14,11 +14,11 @@ export interface BulbProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Bulb: React.FC<BulbProps> = ({
+export const Bulb = React.memo<BulbProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = bulbData[variant];
 
   return <Svg {...rest} />;
-};
+});

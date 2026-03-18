@@ -14,11 +14,11 @@ export interface SaveProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Save: React.FC<SaveProps> = ({
+export const Save = React.memo<SaveProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = saveData[variant];
 
   return <Svg {...rest} />;
-};
+});

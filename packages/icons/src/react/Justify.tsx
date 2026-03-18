@@ -14,11 +14,11 @@ export interface JustifyProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Justify: React.FC<JustifyProps> = ({
+export const Justify = React.memo<JustifyProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = justifyData[variant];
 
   return <Svg {...rest} />;
-};
+});

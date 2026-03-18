@@ -14,11 +14,11 @@ export interface UninstallProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Uninstall: React.FC<UninstallProps> = ({
+export const Uninstall = React.memo<UninstallProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = uninstallData[variant];
 
   return <Svg {...rest} />;
-};
+});

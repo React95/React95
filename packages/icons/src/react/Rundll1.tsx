@@ -16,11 +16,11 @@ export interface Rundll1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Rundll1: React.FC<Rundll1Props> = ({
+export const Rundll1 = React.memo<Rundll1Props>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = rundll1Data[variant];
 
   return <Svg {...rest} />;
-};
+});

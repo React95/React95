@@ -16,11 +16,11 @@ export interface Ccapi104Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Ccapi104: React.FC<Ccapi104Props> = ({
+export const Ccapi104 = React.memo<Ccapi104Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = ccapi104Data[variant];
 
   return <Svg {...rest} />;
-};
+});

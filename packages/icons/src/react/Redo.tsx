@@ -14,11 +14,11 @@ export interface RedoProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Redo: React.FC<RedoProps> = ({
+export const Redo = React.memo<RedoProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = redoData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface ReaderDisketCassetProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ReaderDisketCasset: React.FC<ReaderDisketCassetProps> = ({
+export const ReaderDisketCasset = React.memo<ReaderDisketCassetProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = readerDisketCassetData[variant];
 
   return <Svg {...rest} />;
-};
+});

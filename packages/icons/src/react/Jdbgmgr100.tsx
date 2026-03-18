@@ -14,11 +14,11 @@ export interface Jdbgmgr100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Jdbgmgr100: React.FC<Jdbgmgr100Props> = ({
+export const Jdbgmgr100 = React.memo<Jdbgmgr100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = jdbgmgr100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

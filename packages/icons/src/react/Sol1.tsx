@@ -16,11 +16,11 @@ export interface Sol1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Sol1: React.FC<Sol1Props> = ({
+export const Sol1 = React.memo<Sol1Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = sol1Data[variant];
 
   return <Svg {...rest} />;
-};
+});

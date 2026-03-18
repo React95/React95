@@ -16,11 +16,11 @@ export interface Progman40Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Progman40: React.FC<Progman40Props> = ({
+export const Progman40 = React.memo<Progman40Props>(({
   variant = '32x32_1',
   ...rest
 }) => {
   const Svg = progman40Data[variant];
 
   return <Svg {...rest} />;
-};
+});

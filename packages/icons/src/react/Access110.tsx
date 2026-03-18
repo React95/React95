@@ -16,11 +16,11 @@ export interface Access110Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Access110: React.FC<Access110Props> = ({
+export const Access110 = React.memo<Access110Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = access110Data[variant];
 
   return <Svg {...rest} />;
-};
+});

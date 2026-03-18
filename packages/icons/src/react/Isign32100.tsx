@@ -14,11 +14,11 @@ export interface Isign32100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Isign32100: React.FC<Isign32100Props> = ({
+export const Isign32100 = React.memo<Isign32100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = isign32100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

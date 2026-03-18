@@ -16,11 +16,11 @@ export interface Ulclient1002Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Ulclient1002: React.FC<Ulclient1002Props> = ({
+export const Ulclient1002 = React.memo<Ulclient1002Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = ulclient1002Data[variant];
 
   return <Svg {...rest} />;
-};
+});

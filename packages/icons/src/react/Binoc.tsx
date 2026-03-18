@@ -14,11 +14,11 @@ export interface BinocProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Binoc: React.FC<BinocProps> = ({
+export const Binoc = React.memo<BinocProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = binocData[variant];
 
   return <Svg {...rest} />;
-};
+});

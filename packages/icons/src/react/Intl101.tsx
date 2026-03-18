@@ -16,11 +16,11 @@ export interface Intl101Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Intl101: React.FC<Intl101Props> = ({
+export const Intl101 = React.memo<Intl101Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = intl101Data[variant];
 
   return <Svg {...rest} />;
-};
+});

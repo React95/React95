@@ -16,11 +16,11 @@ export interface ReaderSharedProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ReaderShared: React.FC<ReaderSharedProps> = ({
+export const ReaderShared = React.memo<ReaderSharedProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = readerSharedData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -16,11 +16,11 @@ export interface MediaCdProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MediaCd: React.FC<MediaCdProps> = ({
+export const MediaCd = React.memo<MediaCdProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mediaCdData[variant];
 
   return <Svg {...rest} />;
-};
+});

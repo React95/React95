@@ -16,11 +16,11 @@ export interface ReaderCdProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ReaderCd: React.FC<ReaderCdProps> = ({
+export const ReaderCd = React.memo<ReaderCdProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = readerCdData[variant];
 
   return <Svg {...rest} />;
-};
+});

@@ -14,11 +14,11 @@ export interface FileIconsProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const FileIcons: React.FC<FileIconsProps> = ({
+export const FileIcons = React.memo<FileIconsProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = fileIconsData[variant];
 
   return <Svg {...rest} />;
-};
+});

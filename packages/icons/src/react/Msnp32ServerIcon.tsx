@@ -16,11 +16,11 @@ export interface Msnp32ServerIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Msnp32ServerIcon: React.FC<Msnp32ServerIconProps> = ({
+export const Msnp32ServerIcon = React.memo<Msnp32ServerIconProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = msnp32ServerIconData[variant];
 
   return <Svg {...rest} />;
-};
+});

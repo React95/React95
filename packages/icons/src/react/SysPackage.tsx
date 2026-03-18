@@ -16,11 +16,11 @@ export interface SysPackageProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const SysPackage: React.FC<SysPackageProps> = ({
+export const SysPackage = React.memo<SysPackageProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = sysPackageData[variant];
 
   return <Svg {...rest} />;
-};
+});

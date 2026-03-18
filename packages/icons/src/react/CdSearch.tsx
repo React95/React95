@@ -14,11 +14,11 @@ export interface CdSearchProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const CdSearch: React.FC<CdSearchProps> = ({
+export const CdSearch = React.memo<CdSearchProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = cdSearchData[variant];
 
   return <Svg {...rest} />;
-};
+});

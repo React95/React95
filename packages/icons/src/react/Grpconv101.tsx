@@ -14,11 +14,11 @@ export interface Grpconv101Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Grpconv101: React.FC<Grpconv101Props> = ({
+export const Grpconv101 = React.memo<Grpconv101Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = grpconv101Data[variant];
 
   return <Svg {...rest} />;
-};
+});

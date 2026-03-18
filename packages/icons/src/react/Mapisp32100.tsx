@@ -14,11 +14,11 @@ export interface Mapisp32100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mapisp32100: React.FC<Mapisp32100Props> = ({
+export const Mapisp32100 = React.memo<Mapisp32100Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mapisp32100Data[variant];
 
   return <Svg {...rest} />;
-};
+});

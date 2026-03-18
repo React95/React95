@@ -14,11 +14,11 @@ export interface WebOpenProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const WebOpen: React.FC<WebOpenProps> = ({
+export const WebOpen = React.memo<WebOpenProps>(({
   variant = '16x16_4',
   ...rest
 }) => {
   const Svg = webOpenData[variant];
 
   return <Svg {...rest} />;
-};
+});

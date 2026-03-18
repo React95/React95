@@ -14,11 +14,11 @@ export interface Awfxex32115Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Awfxex32115: React.FC<Awfxex32115Props> = ({
+export const Awfxex32115 = React.memo<Awfxex32115Props>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = awfxex32115Data[variant];
 
   return <Svg {...rest} />;
-};
+});

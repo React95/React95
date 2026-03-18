@@ -16,11 +16,11 @@ export interface MuteProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mute: React.FC<MuteProps> = ({
+export const Mute = React.memo<MuteProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = muteData[variant];
 
   return <Svg {...rest} />;
-};
+});

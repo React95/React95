@@ -16,11 +16,11 @@ export interface MspaintProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mspaint: React.FC<MspaintProps> = ({
+export const Mspaint = React.memo<MspaintProps>(({
   variant = '32x32_4',
   ...rest
 }) => {
   const Svg = mspaintData[variant];
 
   return <Svg {...rest} />;
-};
+});
