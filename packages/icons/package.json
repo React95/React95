@@ -43,7 +43,7 @@
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
-    "build:css": "cp ./icons.css ./dist/icons.css && sed -i -e 's/src\\///g' dist/icons.css",
+    "build:css": "cp ./icons.css ./dist/icons.css && ts-node-script scripts/fixCss.ts",
     "build:svg": "cp -r src/svg ./dist",
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
