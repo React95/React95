@@ -22,6 +22,21 @@
   "license": "MIT",
   "main": "./src",
   "unpkg": "icons.css",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./icons.css": "./icons.css",
+    "./*": {
+      "types": "./src/react/*.tsx",
+      "default": "./src/react/*.tsx"
+    },
+    "./src/iconDemos": {
+      "types": "./src/iconDemos.ts",
+      "default": "./src/iconDemos.ts"
+    }
+  },
   "publishConfig": {
     "access": "public",
     "directory": "dist",
