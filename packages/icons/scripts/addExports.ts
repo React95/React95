@@ -11,6 +11,7 @@ packageJson.exports = {
     import: './esm/index.js',
     require: './cjs/index.js',
   },
+  './icons.css': './icons.css',
   './*': {
     types: './types/react/*.d.ts',
     import: './esm/react/*.js',
