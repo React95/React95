@@ -14,11 +14,14 @@ export interface Job116Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Job116 = React.memo<Job116Props>(({
+const Job116Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Job116Props) => {
   const Svg = job116Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Job116 = React.memo(Job116Component);
+Job116.displayName = 'Job116';

@@ -16,11 +16,14 @@ export interface WordpadProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Wordpad = React.memo<WordpadProps>(({
+const WordpadComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: WordpadProps) => {
   const Svg = wordpadData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Wordpad = React.memo(WordpadComponent);
+Wordpad.displayName = 'Wordpad';

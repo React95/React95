@@ -16,11 +16,14 @@ export interface Awschd32402Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Awschd32402 = React.memo<Awschd32402Props>(({
+const Awschd32402Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Awschd32402Props) => {
   const Svg = awschd32402Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Awschd32402 = React.memo(Awschd32402Component);
+Awschd32402.displayName = 'Awschd32402';

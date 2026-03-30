@@ -16,11 +16,14 @@ export interface BatExecProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const BatExec = React.memo<BatExecProps>(({
+const BatExecComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: BatExecProps) => {
   const Svg = batExecData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const BatExec = React.memo(BatExecComponent);
+BatExec.displayName = 'BatExec';

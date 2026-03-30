@@ -14,11 +14,14 @@ export interface Vvexe321Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Vvexe321 = React.memo<Vvexe321Props>(({
+const Vvexe321Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Vvexe321Props) => {
   const Svg = vvexe321Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Vvexe321 = React.memo(Vvexe321Component);
+Vvexe321.displayName = 'Vvexe321';

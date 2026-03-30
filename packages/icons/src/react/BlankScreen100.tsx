@@ -16,11 +16,14 @@ export interface BlankScreen100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const BlankScreen100 = React.memo<BlankScreen100Props>(({
+const BlankScreen100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: BlankScreen100Props) => {
   const Svg = blankScreen100Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const BlankScreen100 = React.memo(BlankScreen100Component);
+BlankScreen100.displayName = 'BlankScreen100';

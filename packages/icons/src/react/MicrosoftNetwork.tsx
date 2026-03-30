@@ -16,11 +16,14 @@ export interface MicrosoftNetworkProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MicrosoftNetwork = React.memo<MicrosoftNetworkProps>(({
+const MicrosoftNetworkComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: MicrosoftNetworkProps) => {
   const Svg = microsoftNetworkData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const MicrosoftNetwork = React.memo(MicrosoftNetworkComponent);
+MicrosoftNetwork.displayName = 'MicrosoftNetwork';

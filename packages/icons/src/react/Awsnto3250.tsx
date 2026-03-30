@@ -16,11 +16,14 @@ export interface Awsnto3250Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Awsnto3250 = React.memo<Awsnto3250Props>(({
+const Awsnto3250Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Awsnto3250Props) => {
   const Svg = awsnto3250Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Awsnto3250 = React.memo(Awsnto3250Component);
+Awsnto3250.displayName = 'Awsnto3250';

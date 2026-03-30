@@ -16,11 +16,14 @@ export interface FileTextSettingsProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FileTextSettings = React.memo<FileTextSettingsProps>(({
+const FileTextSettingsComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FileTextSettingsProps) => {
   const Svg = fileTextSettingsData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FileTextSettings = React.memo(FileTextSettingsComponent);
+FileTextSettings.displayName = 'FileTextSettings';

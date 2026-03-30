@@ -16,11 +16,14 @@ export interface PrinterCalendarProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const PrinterCalendar = React.memo<PrinterCalendarProps>(({
+const PrinterCalendarComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PrinterCalendarProps) => {
   const Svg = printerCalendarData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const PrinterCalendar = React.memo(PrinterCalendarComponent);
+PrinterCalendar.displayName = 'PrinterCalendar';

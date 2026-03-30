@@ -14,11 +14,14 @@ export interface AddrbookProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Addrbook = React.memo<AddrbookProps>(({
+const AddrbookComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: AddrbookProps) => {
   const Svg = addrbookData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Addrbook = React.memo(AddrbookComponent);
+Addrbook.displayName = 'Addrbook';

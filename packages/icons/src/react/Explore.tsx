@@ -14,11 +14,14 @@ export interface ExploreProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Explore = React.memo<ExploreProps>(({
+const ExploreComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ExploreProps) => {
   const Svg = exploreData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Explore = React.memo(ExploreComponent);
+Explore.displayName = 'Explore';

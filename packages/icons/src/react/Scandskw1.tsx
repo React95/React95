@@ -16,11 +16,14 @@ export interface Scandskw1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Scandskw1 = React.memo<Scandskw1Props>(({
+const Scandskw1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Scandskw1Props) => {
   const Svg = scandskw1Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Scandskw1 = React.memo(Scandskw1Component);
+Scandskw1.displayName = 'Scandskw1';

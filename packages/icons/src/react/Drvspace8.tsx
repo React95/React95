@@ -16,11 +16,14 @@ export interface Drvspace8Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Drvspace8 = React.memo<Drvspace8Props>(({
+const Drvspace8Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Drvspace8Props) => {
   const Svg = drvspace8Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Drvspace8 = React.memo(Drvspace8Component);
+Drvspace8.displayName = 'Drvspace8';

@@ -14,11 +14,14 @@ export interface ReaderCd2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const ReaderCd2 = React.memo<ReaderCd2Props>(({
+const ReaderCd2Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ReaderCd2Props) => {
   const Svg = readerCd2Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const ReaderCd2 = React.memo(ReaderCd2Component);
+ReaderCd2.displayName = 'ReaderCd2';

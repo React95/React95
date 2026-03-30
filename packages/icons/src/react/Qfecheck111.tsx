@@ -14,11 +14,14 @@ export interface Qfecheck111Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Qfecheck111 = React.memo<Qfecheck111Props>(({
+const Qfecheck111Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Qfecheck111Props) => {
   const Svg = qfecheck111Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Qfecheck111 = React.memo(Qfecheck111Component);
+Qfecheck111.displayName = 'Qfecheck111';

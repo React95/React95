@@ -16,11 +16,14 @@ export interface Coreui3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Coreui3000 = React.memo<Coreui3000Props>(({
+const Coreui3000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Coreui3000Props) => {
   const Svg = coreui3000Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Coreui3000 = React.memo(Coreui3000Component);
+Coreui3000.displayName = 'Coreui3000';

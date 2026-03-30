@@ -14,11 +14,14 @@ export interface UndoProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Undo = React.memo<UndoProps>(({
+const UndoComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: UndoProps) => {
   const Svg = undoData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Undo = React.memo(UndoComponent);
+Undo.displayName = 'Undo';

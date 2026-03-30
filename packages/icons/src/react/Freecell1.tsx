@@ -16,11 +16,14 @@ export interface Freecell1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Freecell1 = React.memo<Freecell1Props>(({
+const Freecell1Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: Freecell1Props) => {
   const Svg = freecell1Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Freecell1 = React.memo(Freecell1Component);
+Freecell1.displayName = 'Freecell1';

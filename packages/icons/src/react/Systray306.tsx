@@ -16,11 +16,14 @@ export interface Systray306Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4' | '32x32_4';
 }
 
-export const Systray306 = React.memo<Systray306Props>(({
+const Systray306Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Systray306Props) => {
   const Svg = systray306Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Systray306 = React.memo(Systray306Component);
+Systray306.displayName = 'Systray306';

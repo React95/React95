@@ -14,11 +14,14 @@ export interface FindDc2Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const FindDc2 = React.memo<FindDc2Props>(({
+const FindDc2Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: FindDc2Props) => {
   const Svg = findDc2Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FindDc2 = React.memo(FindDc2Component);
+FindDc2.displayName = 'FindDc2';

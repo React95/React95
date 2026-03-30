@@ -14,11 +14,14 @@ export interface LogViewProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const LogView = React.memo<LogViewProps>(({
+const LogViewComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: LogViewProps) => {
   const Svg = logViewData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const LogView = React.memo(LogViewComponent);
+LogView.displayName = 'LogView';

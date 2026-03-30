@@ -16,11 +16,14 @@ export interface Shdocvw259Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Shdocvw259 = React.memo<Shdocvw259Props>(({
+const Shdocvw259Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Shdocvw259Props) => {
   const Svg = shdocvw259Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Shdocvw259 = React.memo(Shdocvw259Component);
+Shdocvw259.displayName = 'Shdocvw259';

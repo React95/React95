@@ -16,11 +16,14 @@ export interface Winmine1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Winmine1 = React.memo<Winmine1Props>(({
+const Winmine1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Winmine1Props) => {
   const Svg = winmine1Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Winmine1 = React.memo(Winmine1Component);
+Winmine1.displayName = 'Winmine1';

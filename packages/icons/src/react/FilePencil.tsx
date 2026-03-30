@@ -14,11 +14,14 @@ export interface FilePencilProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const FilePencil = React.memo<FilePencilProps>(({
+const FilePencilComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FilePencilProps) => {
   const Svg = filePencilData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FilePencil = React.memo(FilePencilComponent);
+FilePencil.displayName = 'FilePencil';

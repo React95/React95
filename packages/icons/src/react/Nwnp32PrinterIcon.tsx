@@ -16,11 +16,14 @@ export interface Nwnp32PrinterIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Nwnp32PrinterIcon = React.memo<Nwnp32PrinterIconProps>(({
+const Nwnp32PrinterIconComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Nwnp32PrinterIconProps) => {
   const Svg = nwnp32PrinterIconData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Nwnp32PrinterIcon = React.memo(Nwnp32PrinterIconComponent);
+Nwnp32PrinterIcon.displayName = 'Nwnp32PrinterIcon';

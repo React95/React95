@@ -18,11 +18,14 @@ export interface Mapi32801Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4' | '48x48_4';
 }
 
-export const Mapi32801 = React.memo<Mapi32801Props>(({
+const Mapi32801Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mapi32801Props) => {
   const Svg = mapi32801Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Mapi32801 = React.memo(Mapi32801Component);
+Mapi32801.displayName = 'Mapi32801';

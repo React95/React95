@@ -14,11 +14,14 @@ export interface UnderlneProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Underlne = React.memo<UnderlneProps>(({
+const UnderlneComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: UnderlneProps) => {
   const Svg = underlneData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Underlne = React.memo(UnderlneComponent);
+Underlne.displayName = 'Underlne';

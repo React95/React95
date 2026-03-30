@@ -16,11 +16,14 @@ export interface Icwdial101Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '32x32_1';
 }
 
-export const Icwdial101 = React.memo<Icwdial101Props>(({
+const Icwdial101Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Icwdial101Props) => {
   const Svg = icwdial101Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Icwdial101 = React.memo(Icwdial101Component);
+Icwdial101.displayName = 'Icwdial101';

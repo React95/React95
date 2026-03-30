@@ -16,11 +16,14 @@ export interface Wab321011Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Wab321011 = React.memo<Wab321011Props>(({
+const Wab321011Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Wab321011Props) => {
   const Svg = wab321011Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Wab321011 = React.memo(Wab321011Component);
+Wab321011.displayName = 'Wab321011';

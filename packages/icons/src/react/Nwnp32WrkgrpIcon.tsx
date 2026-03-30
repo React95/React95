@@ -16,11 +16,14 @@ export interface Nwnp32WrkgrpIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Nwnp32WrkgrpIcon = React.memo<Nwnp32WrkgrpIconProps>(({
+const Nwnp32WrkgrpIconComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Nwnp32WrkgrpIconProps) => {
   const Svg = nwnp32WrkgrpIconData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Nwnp32WrkgrpIcon = React.memo(Nwnp32WrkgrpIconComponent);
+Nwnp32WrkgrpIcon.displayName = 'Nwnp32WrkgrpIcon';

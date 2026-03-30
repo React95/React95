@@ -16,11 +16,14 @@ export interface Quartz102Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Quartz102 = React.memo<Quartz102Props>(({
+const Quartz102Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Quartz102Props) => {
   const Svg = quartz102Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Quartz102 = React.memo(Quartz102Component);
+Quartz102.displayName = 'Quartz102';

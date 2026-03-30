@@ -14,11 +14,14 @@ export interface OpenProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Open = React.memo<OpenProps>(({
+const OpenComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: OpenProps) => {
   const Svg = openData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Open = React.memo(OpenComponent);
+Open.displayName = 'Open';

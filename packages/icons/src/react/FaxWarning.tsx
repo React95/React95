@@ -16,11 +16,14 @@ export interface FaxWarningProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FaxWarning = React.memo<FaxWarningProps>(({
+const FaxWarningComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FaxWarningProps) => {
   const Svg = faxWarningData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FaxWarning = React.memo(FaxWarningComponent);
+FaxWarning.displayName = 'FaxWarning';

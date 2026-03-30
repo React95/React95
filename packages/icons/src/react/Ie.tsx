@@ -14,11 +14,14 @@ export interface IeProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_8';
 }
 
-export const Ie = React.memo<IeProps>(({
+const IeComponent = ({
   variant = '16x16_8',
   ...rest
-}) => {
+}: IeProps) => {
   const Svg = ieData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Ie = React.memo(IeComponent);
+Ie.displayName = 'Ie';

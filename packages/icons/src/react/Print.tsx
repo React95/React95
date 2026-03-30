@@ -14,11 +14,14 @@ export interface PrintProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Print = React.memo<PrintProps>(({
+const PrintComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: PrintProps) => {
   const Svg = printData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Print = React.memo(PrintComponent);
+Print.displayName = 'Print';

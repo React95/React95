@@ -16,11 +16,14 @@ export interface BatWaitProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const BatWait = React.memo<BatWaitProps>(({
+const BatWaitComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: BatWaitProps) => {
   const Svg = batWaitData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const BatWait = React.memo(BatWaitComponent);
+BatWait.displayName = 'BatWait';

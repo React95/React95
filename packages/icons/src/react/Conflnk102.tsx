@@ -16,11 +16,14 @@ export interface Conflnk102Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Conflnk102 = React.memo<Conflnk102Props>(({
+const Conflnk102Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Conflnk102Props) => {
   const Svg = conflnk102Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Conflnk102 = React.memo(Conflnk102Component);
+Conflnk102.displayName = 'Conflnk102';

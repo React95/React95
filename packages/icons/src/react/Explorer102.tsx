@@ -16,11 +16,14 @@ export interface Explorer102Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Explorer102 = React.memo<Explorer102Props>(({
+const Explorer102Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Explorer102Props) => {
   const Svg = explorer102Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Explorer102 = React.memo(Explorer102Component);
+Explorer102.displayName = 'Explorer102';

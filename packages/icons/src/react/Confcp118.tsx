@@ -14,11 +14,14 @@ export interface Confcp118Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Confcp118 = React.memo<Confcp118Props>(({
+const Confcp118Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Confcp118Props) => {
   const Svg = confcp118Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Confcp118 = React.memo(Confcp118Component);
+Confcp118.displayName = 'Confcp118';

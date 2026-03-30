@@ -16,11 +16,14 @@ export interface Winfile2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Winfile2 = React.memo<Winfile2Props>(({
+const Winfile2Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: Winfile2Props) => {
   const Svg = winfile2Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Winfile2 = React.memo(Winfile2Component);
+Winfile2.displayName = 'Winfile2';

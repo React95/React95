@@ -14,11 +14,14 @@ export interface Faxcover140Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Faxcover140 = React.memo<Faxcover140Props>(({
+const Faxcover140Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Faxcover140Props) => {
   const Svg = faxcover140Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Faxcover140 = React.memo(Faxcover140Component);
+Faxcover140.displayName = 'Faxcover140';

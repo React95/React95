@@ -16,11 +16,14 @@ export interface FilePinProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FilePin = React.memo<FilePinProps>(({
+const FilePinComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FilePinProps) => {
   const Svg = filePinData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FilePin = React.memo(FilePinComponent);
+FilePin.displayName = 'FilePin';

@@ -14,11 +14,14 @@ export interface Format16Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Format16 = React.memo<Format16Props>(({
+const Format16Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Format16Props) => {
   const Svg = format16Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Format16 = React.memo(Format16Component);
+Format16.displayName = 'Format16';

@@ -16,11 +16,14 @@ export interface MsnsignIcoAppProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MsnsignIcoApp = React.memo<MsnsignIcoAppProps>(({
+const MsnsignIcoAppComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: MsnsignIcoAppProps) => {
   const Svg = msnsignIcoAppData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const MsnsignIcoApp = React.memo(MsnsignIcoAppComponent);
+MsnsignIcoApp.displayName = 'MsnsignIcoApp';

@@ -14,11 +14,14 @@ export interface McmPhoneProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const McmPhone = React.memo<McmPhoneProps>(({
+const McmPhoneComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: McmPhoneProps) => {
   const Svg = mcmPhoneData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const McmPhone = React.memo(McmPhoneComponent);
+McmPhone.displayName = 'McmPhone';

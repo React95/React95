@@ -16,11 +16,14 @@ export interface FlyingWindows100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FlyingWindows100 = React.memo<FlyingWindows100Props>(({
+const FlyingWindows100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FlyingWindows100Props) => {
   const Svg = flyingWindows100Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FlyingWindows100 = React.memo(FlyingWindows100Component);
+FlyingWindows100.displayName = 'FlyingWindows100';

@@ -14,11 +14,14 @@ export interface Person116Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Person116 = React.memo<Person116Props>(({
+const Person116Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Person116Props) => {
   const Svg = person116Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Person116 = React.memo(Person116Component);
+Person116.displayName = 'Person116';

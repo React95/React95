@@ -16,11 +16,14 @@ export interface Controls3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Controls3000 = React.memo<Controls3000Props>(({
+const Controls3000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Controls3000Props) => {
   const Svg = controls3000Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Controls3000 = React.memo(Controls3000Component);
+Controls3000.displayName = 'Controls3000';

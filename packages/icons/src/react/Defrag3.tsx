@@ -16,11 +16,14 @@ export interface Defrag3Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Defrag3 = React.memo<Defrag3Props>(({
+const Defrag3Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Defrag3Props) => {
   const Svg = defrag3Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Defrag3 = React.memo(Defrag3Component);
+Defrag3.displayName = 'Defrag3';

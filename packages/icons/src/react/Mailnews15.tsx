@@ -16,11 +16,14 @@ export interface Mailnews15Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mailnews15 = React.memo<Mailnews15Props>(({
+const Mailnews15Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mailnews15Props) => {
   const Svg = mailnews15Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Mailnews15 = React.memo(Mailnews15Component);
+Mailnews15.displayName = 'Mailnews15';

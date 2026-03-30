@@ -16,11 +16,14 @@ export interface User5Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const User5 = React.memo<User5Props>(({
+const User5Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: User5Props) => {
   const Svg = user5Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const User5 = React.memo(User5Component);
+User5.displayName = 'User5';

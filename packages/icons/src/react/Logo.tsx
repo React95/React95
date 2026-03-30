@@ -16,11 +16,14 @@ export interface LogoProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4' | '32x32_4';
 }
 
-export const Logo = React.memo<LogoProps>(({
+const LogoComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: LogoProps) => {
   const Svg = logoData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Logo = React.memo(LogoComponent);
+Logo.displayName = 'Logo';

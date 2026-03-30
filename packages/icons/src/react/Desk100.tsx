@@ -16,11 +16,14 @@ export interface Desk100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Desk100 = React.memo<Desk100Props>(({
+const Desk100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Desk100Props) => {
   const Svg = desk100Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Desk100 = React.memo(Desk100Component);
+Desk100.displayName = 'Desk100';

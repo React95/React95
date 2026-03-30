@@ -14,11 +14,14 @@ export interface DocGrisProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const DocGris = React.memo<DocGrisProps>(({
+const DocGrisComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: DocGrisProps) => {
   const Svg = docGrisData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const DocGris = React.memo(DocGrisComponent);
+DocGris.displayName = 'DocGris';

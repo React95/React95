@@ -14,11 +14,14 @@ export interface KeysProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Keys = React.memo<KeysProps>(({
+const KeysComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: KeysProps) => {
   const Svg = keysData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Keys = React.memo(KeysComponent);
+Keys.displayName = 'Keys';

@@ -14,11 +14,14 @@ export interface RightProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Right = React.memo<RightProps>(({
+const RightComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: RightProps) => {
   const Svg = rightData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Right = React.memo(RightComponent);
+Right.displayName = 'Right';

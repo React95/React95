@@ -14,11 +14,14 @@ export interface Tssoft3210Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Tssoft3210 = React.memo<Tssoft3210Props>(({
+const Tssoft3210Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Tssoft3210Props) => {
   const Svg = tssoft3210Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Tssoft3210 = React.memo(Tssoft3210Component);
+Tssoft3210.displayName = 'Tssoft3210';

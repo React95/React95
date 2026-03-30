@@ -22,11 +22,14 @@ export interface MsDosProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_32' | '24x24_32' | '32x32_32' | '48x48_32' | '128x128_32';
 }
 
-export const MsDos = React.memo<MsDosProps>(({
+const MsDosComponent = ({
   variant = '16x16_32',
   ...rest
-}) => {
+}: MsDosProps) => {
   const Svg = msDosData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const MsDos = React.memo(MsDosComponent);
+MsDos.displayName = 'MsDos';

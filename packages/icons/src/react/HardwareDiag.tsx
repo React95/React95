@@ -14,11 +14,14 @@ export interface HardwareDiagProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const HardwareDiag = React.memo<HardwareDiagProps>(({
+const HardwareDiagComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: HardwareDiagProps) => {
   const Svg = hardwareDiagData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const HardwareDiag = React.memo(HardwareDiagComponent);
+HardwareDiag.displayName = 'HardwareDiag';

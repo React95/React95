@@ -16,11 +16,14 @@ export interface CurvesAndColors100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const CurvesAndColors100 = React.memo<CurvesAndColors100Props>(({
+const CurvesAndColors100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: CurvesAndColors100Props) => {
   const Svg = curvesAndColors100Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const CurvesAndColors100 = React.memo(CurvesAndColors100Component);
+CurvesAndColors100.displayName = 'CurvesAndColors100';

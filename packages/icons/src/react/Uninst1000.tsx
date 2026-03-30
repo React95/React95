@@ -14,11 +14,14 @@ export interface Uninst1000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Uninst1000 = React.memo<Uninst1000Props>(({
+const Uninst1000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Uninst1000Props) => {
   const Svg = uninst1000Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Uninst1000 = React.memo(Uninst1000Component);
+Uninst1000.displayName = 'Uninst1000';

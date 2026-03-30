@@ -16,11 +16,14 @@ export interface PrinterDriveProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const PrinterDrive = React.memo<PrinterDriveProps>(({
+const PrinterDriveComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PrinterDriveProps) => {
   const Svg = printerDriveData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const PrinterDrive = React.memo(PrinterDriveComponent);
+PrinterDrive.displayName = 'PrinterDrive';

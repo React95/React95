@@ -14,11 +14,14 @@ export interface WebsrchProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Websrch = React.memo<WebsrchProps>(({
+const WebsrchComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: WebsrchProps) => {
   const Svg = websrchData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Websrch = React.memo(WebsrchComponent);
+Websrch.displayName = 'Websrch';

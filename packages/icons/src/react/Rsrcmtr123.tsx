@@ -14,11 +14,14 @@ export interface Rsrcmtr123Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Rsrcmtr123 = React.memo<Rsrcmtr123Props>(({
+const Rsrcmtr123Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Rsrcmtr123Props) => {
   const Svg = rsrcmtr123Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Rsrcmtr123 = React.memo(Rsrcmtr123Component);
+Rsrcmtr123.displayName = 'Rsrcmtr123';

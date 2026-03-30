@@ -16,11 +16,14 @@ export interface ScrollingMarquee100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ScrollingMarquee100 = React.memo<ScrollingMarquee100Props>(({
+const ScrollingMarquee100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ScrollingMarquee100Props) => {
   const Svg = scrollingMarquee100Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const ScrollingMarquee100 = React.memo(ScrollingMarquee100Component);
+ScrollingMarquee100.displayName = 'ScrollingMarquee100';

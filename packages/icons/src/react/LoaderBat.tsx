@@ -16,11 +16,14 @@ export interface LoaderBatProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const LoaderBat = React.memo<LoaderBatProps>(({
+const LoaderBatComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: LoaderBatProps) => {
   const Svg = loaderBatData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const LoaderBat = React.memo(LoaderBatComponent);
+LoaderBat.displayName = 'LoaderBat';

@@ -16,11 +16,14 @@ export interface PowerOnProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const PowerOn = React.memo<PowerOnProps>(({
+const PowerOnComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PowerOnProps) => {
   const Svg = powerOnData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const PowerOn = React.memo(PowerOnComponent);
+PowerOn.displayName = 'PowerOn';

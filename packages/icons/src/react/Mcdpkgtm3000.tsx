@@ -16,11 +16,14 @@ export interface Mcdpkgtm3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mcdpkgtm3000 = React.memo<Mcdpkgtm3000Props>(({
+const Mcdpkgtm3000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mcdpkgtm3000Props) => {
   const Svg = mcdpkgtm3000Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Mcdpkgtm3000 = React.memo(Mcdpkgtm3000Component);
+Mcdpkgtm3000.displayName = 'Mcdpkgtm3000';

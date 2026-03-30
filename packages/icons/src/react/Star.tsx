@@ -16,11 +16,14 @@ export interface StarProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Star = React.memo<StarProps>(({
+const StarComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: StarProps) => {
   const Svg = starData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Star = React.memo(StarComponent);
+Star.displayName = 'Star';

@@ -14,11 +14,14 @@ export interface EarthProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Earth = React.memo<EarthProps>(({
+const EarthComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: EarthProps) => {
   const Svg = earthData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Earth = React.memo(EarthComponent);
+Earth.displayName = 'Earth';

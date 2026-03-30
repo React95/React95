@@ -16,11 +16,14 @@ export interface GlobeProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Globe = React.memo<GlobeProps>(({
+const GlobeComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: GlobeProps) => {
   const Svg = globeData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Globe = React.memo(GlobeComponent);
+Globe.displayName = 'Globe';

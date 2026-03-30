@@ -16,11 +16,14 @@ export interface Sndrec3215Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Sndrec3215 = React.memo<Sndrec3215Props>(({
+const Sndrec3215Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Sndrec3215Props) => {
   const Svg = sndrec3215Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Sndrec3215 = React.memo(Sndrec3215Component);
+Sndrec3215.displayName = 'Sndrec3215';

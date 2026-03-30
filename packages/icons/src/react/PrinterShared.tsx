@@ -16,11 +16,14 @@ export interface PrinterSharedProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const PrinterShared = React.memo<PrinterSharedProps>(({
+const PrinterSharedComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PrinterSharedProps) => {
   const Svg = printerSharedData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const PrinterShared = React.memo(PrinterSharedComponent);
+PrinterShared.displayName = 'PrinterShared';

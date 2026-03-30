@@ -14,11 +14,14 @@ export interface WebTxfrProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const WebTxfr = React.memo<WebTxfrProps>(({
+const WebTxfrComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: WebTxfrProps) => {
   const Svg = webTxfrData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const WebTxfr = React.memo(WebTxfrComponent);
+WebTxfr.displayName = 'WebTxfr';

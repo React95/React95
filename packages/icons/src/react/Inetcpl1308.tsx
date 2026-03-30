@@ -14,11 +14,14 @@ export interface Inetcpl1308Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Inetcpl1308 = React.memo<Inetcpl1308Props>(({
+const Inetcpl1308Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Inetcpl1308Props) => {
   const Svg = inetcpl1308Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Inetcpl1308 = React.memo(Inetcpl1308Component);
+Inetcpl1308.displayName = 'Inetcpl1308';

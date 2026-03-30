@@ -14,11 +14,14 @@ export interface HelpPtrProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const HelpPtr = React.memo<HelpPtrProps>(({
+const HelpPtrComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: HelpPtrProps) => {
   const Svg = helpPtrData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const HelpPtr = React.memo(HelpPtrComponent);
+HelpPtr.displayName = 'HelpPtr';

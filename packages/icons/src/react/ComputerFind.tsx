@@ -16,11 +16,14 @@ export interface ComputerFindProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ComputerFind = React.memo<ComputerFindProps>(({
+const ComputerFindComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ComputerFindProps) => {
   const Svg = computerFindData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const ComputerFind = React.memo(ComputerFindComponent);
+ComputerFind.displayName = 'ComputerFind';

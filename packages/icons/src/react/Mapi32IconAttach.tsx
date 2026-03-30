@@ -14,11 +14,14 @@ export interface Mapi32IconAttachProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mapi32IconAttach = React.memo<Mapi32IconAttachProps>(({
+const Mapi32IconAttachComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mapi32IconAttachProps) => {
   const Svg = mapi32IconAttachData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Mapi32IconAttach = React.memo(Mapi32IconAttachComponent);
+Mapi32IconAttach.displayName = 'Mapi32IconAttach';

@@ -14,11 +14,14 @@ export interface DownloadProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Download = React.memo<DownloadProps>(({
+const DownloadComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: DownloadProps) => {
   const Svg = downloadData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Download = React.memo(DownloadComponent);
+Download.displayName = 'Download';

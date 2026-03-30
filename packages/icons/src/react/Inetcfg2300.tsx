@@ -14,11 +14,14 @@ export interface Inetcfg2300Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Inetcfg2300 = React.memo<Inetcfg2300Props>(({
+const Inetcfg2300Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Inetcfg2300Props) => {
   const Svg = inetcfg2300Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Inetcfg2300 = React.memo(Inetcfg2300Component);
+Inetcfg2300.displayName = 'Inetcfg2300';

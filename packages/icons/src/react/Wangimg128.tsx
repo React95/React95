@@ -16,11 +16,14 @@ export interface Wangimg128Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Wangimg128 = React.memo<Wangimg128Props>(({
+const Wangimg128Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Wangimg128Props) => {
   const Svg = wangimg128Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Wangimg128 = React.memo(Wangimg128Component);
+Wangimg128.displayName = 'Wangimg128';

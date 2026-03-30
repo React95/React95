@@ -14,11 +14,14 @@ export interface Sysedit1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Sysedit1 = React.memo<Sysedit1Props>(({
+const Sysedit1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Sysedit1Props) => {
   const Svg = sysedit1Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Sysedit1 = React.memo(Sysedit1Component);
+Sysedit1.displayName = 'Sysedit1';

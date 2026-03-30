@@ -16,11 +16,14 @@ export interface PackagerProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Packager = React.memo<PackagerProps>(({
+const PackagerComponent = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: PackagerProps) => {
   const Svg = packagerData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Packager = React.memo(PackagerComponent);
+Packager.displayName = 'Packager';

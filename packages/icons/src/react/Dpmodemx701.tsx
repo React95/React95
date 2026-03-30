@@ -16,11 +16,14 @@ export interface Dpmodemx701Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Dpmodemx701 = React.memo<Dpmodemx701Props>(({
+const Dpmodemx701Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Dpmodemx701Props) => {
   const Svg = dpmodemx701Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Dpmodemx701 = React.memo(Dpmodemx701Component);
+Dpmodemx701.displayName = 'Dpmodemx701';

@@ -16,11 +16,14 @@ export interface FilePickProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FilePick = React.memo<FilePickProps>(({
+const FilePickComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FilePickProps) => {
   const Svg = filePickData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FilePick = React.memo(FilePickComponent);
+FilePick.displayName = 'FilePick';

@@ -16,11 +16,14 @@ export interface IssueProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Issue = React.memo<IssueProps>(({
+const IssueComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: IssueProps) => {
   const Svg = issueData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Issue = React.memo(IssueComponent);
+Issue.displayName = 'Issue';

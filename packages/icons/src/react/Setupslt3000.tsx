@@ -16,11 +16,14 @@ export interface Setupslt3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Setupslt3000 = React.memo<Setupslt3000Props>(({
+const Setupslt3000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Setupslt3000Props) => {
   const Svg = setupslt3000Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Setupslt3000 = React.memo(Setupslt3000Component);
+Setupslt3000.displayName = 'Setupslt3000';

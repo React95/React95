@@ -16,11 +16,14 @@ export interface Mmsys113Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mmsys113 = React.memo<Mmsys113Props>(({
+const Mmsys113Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mmsys113Props) => {
   const Svg = mmsys113Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Mmsys113 = React.memo(Mmsys113Component);
+Mmsys113.displayName = 'Mmsys113';

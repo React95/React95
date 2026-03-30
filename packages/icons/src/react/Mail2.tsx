@@ -14,11 +14,14 @@ export interface Mail2Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Mail2 = React.memo<Mail2Props>(({
+const Mail2Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Mail2Props) => {
   const Svg = mail2Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Mail2 = React.memo(Mail2Component);
+Mail2.displayName = 'Mail2';

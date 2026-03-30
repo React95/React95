@@ -16,11 +16,14 @@ export interface Main200Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Main200 = React.memo<Main200Props>(({
+const Main200Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: Main200Props) => {
   const Svg = main200Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Main200 = React.memo(Main200Component);
+Main200.displayName = 'Main200';

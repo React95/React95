@@ -16,11 +16,14 @@ export interface PluginProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Plugin = React.memo<PluginProps>(({
+const PluginComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PluginProps) => {
   const Svg = pluginData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Plugin = React.memo(PluginComponent);
+Plugin.displayName = 'Plugin';

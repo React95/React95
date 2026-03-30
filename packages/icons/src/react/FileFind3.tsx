@@ -16,11 +16,14 @@ export interface FileFind3Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FileFind3 = React.memo<FileFind3Props>(({
+const FileFind3Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FileFind3Props) => {
   const Svg = fileFind3Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const FileFind3 = React.memo(FileFind3Component);
+FileFind3.displayName = 'FileFind3';

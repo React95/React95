@@ -16,11 +16,14 @@ export interface LockProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Lock = React.memo<LockProps>(({
+const LockComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: LockProps) => {
   const Svg = lockData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Lock = React.memo(LockComponent);
+Lock.displayName = 'Lock';

@@ -14,11 +14,14 @@ export interface Imgedit10Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Imgedit10 = React.memo<Imgedit10Props>(({
+const Imgedit10Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Imgedit10Props) => {
   const Svg = imgedit10Data[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Imgedit10 = React.memo(Imgedit10Component);
+Imgedit10.displayName = 'Imgedit10';

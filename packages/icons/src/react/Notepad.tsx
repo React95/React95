@@ -16,11 +16,14 @@ export interface NotepadProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4' | '32x32_4';
 }
 
-export const Notepad = React.memo<NotepadProps>(({
+const NotepadComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: NotepadProps) => {
   const Svg = notepadData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Notepad = React.memo(NotepadComponent);
+Notepad.displayName = 'Notepad';

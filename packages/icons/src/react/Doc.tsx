@@ -14,11 +14,14 @@ export interface DocProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Doc = React.memo<DocProps>(({
+const DocComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: DocProps) => {
   const Svg = docData[variant];
 
   return <Svg {...rest} />;
-});
+};
+
+export const Doc = React.memo(DocComponent);
+Doc.displayName = 'Doc';
