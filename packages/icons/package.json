@@ -62,8 +62,7 @@
     "build:svg": "cp -r src/svg ./dist",
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types",
-    "postprepublishOnly": "ts-node-script scripts/addExports.ts",
+    "prepublishOnly": "node ../../scripts/prepublish.js --types && ts-node-script scripts/addExports.ts",
     "test": "vitest run --config=../../config/test/icons.js"
   },
   "devDependencies": {
