@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.6.5](https://github.com/React95/React95/compare/@react95/core@9.6.4...@react95/core@9.6.5) (2026-04-01)
+
+**Note:** Version bump only for package @react95/core
+
+
+
+
+
 ## [9.6.4](https://github.com/React95/React95/compare/@react95/core@9.6.3...@react95/core@9.6.4) (2026-03-06)
 
 
