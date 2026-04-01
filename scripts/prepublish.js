@@ -6,8 +6,15 @@ const args = require('minimist')(process.argv.slice(2));
 
 const outDir = './dist';
 
-const cjs = args.moduleExtensions ? 'cjs/index.cjs' : 'cjs';
-const esm = args.moduleExtensions ? 'esm/index.mjs' : 'esm';
+function findIndexFile(dir) {
+  for (const ext of ['index.cjs', 'index.mjs', 'index.js']) {
+    if (fs.existsSync(path.resolve(outDir, dir, ext))) return `${dir}/${ext}`;
+  }
+  return dir;
+}
+
+const cjs = findIndexFile('cjs');
+const esm = findIndexFile('esm');
 
 const copyFile = file => {
   const buildPath = path.resolve(outDir, path.basename(file));
