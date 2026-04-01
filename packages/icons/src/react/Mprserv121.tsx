@@ -14,11 +14,14 @@ export interface Mprserv121Props extends SVGProps<SVGSVGElement> {
   variant?: '48x48_4';
 }
 
-export const Mprserv121: React.FC<Mprserv121Props> = ({
+const Mprserv121Component = ({
   variant = '48x48_4',
   ...rest
-}) => {
+}: Mprserv121Props) => {
   const Svg = mprserv121Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mprserv121 = React.memo(Mprserv121Component);
+Mprserv121.displayName = 'Mprserv121';

@@ -16,11 +16,14 @@ export interface RecycleFullProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const RecycleFull: React.FC<RecycleFullProps> = ({
+const RecycleFullComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: RecycleFullProps) => {
   const Svg = recycleFullData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const RecycleFull = React.memo(RecycleFullComponent);
+RecycleFull.displayName = 'RecycleFull';

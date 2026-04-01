@@ -16,11 +16,14 @@ export interface Diskcopy1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Diskcopy1: React.FC<Diskcopy1Props> = ({
+const Diskcopy1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Diskcopy1Props) => {
   const Svg = diskcopy1Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Diskcopy1 = React.memo(Diskcopy1Component);
+Diskcopy1.displayName = 'Diskcopy1';

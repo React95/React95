@@ -16,11 +16,14 @@ export interface Fte128Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Fte128: React.FC<Fte128Props> = ({
+const Fte128Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Fte128Props) => {
   const Svg = fte128Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Fte128 = React.memo(Fte128Component);
+Fte128.displayName = 'Fte128';

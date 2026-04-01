@@ -14,11 +14,14 @@ export interface PenProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Pen: React.FC<PenProps> = ({
+const PenComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: PenProps) => {
   const Svg = penData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Pen = React.memo(PenComponent);
+Pen.displayName = 'Pen';

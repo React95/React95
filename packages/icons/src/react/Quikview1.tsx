@@ -14,11 +14,14 @@ export interface Quikview1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Quikview1: React.FC<Quikview1Props> = ({
+const Quikview1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Quikview1Props) => {
   const Svg = quikview1Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Quikview1 = React.memo(Quikview1Component);
+Quikview1.displayName = 'Quikview1';

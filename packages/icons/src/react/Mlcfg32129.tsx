@@ -16,11 +16,14 @@ export interface Mlcfg32129Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mlcfg32129: React.FC<Mlcfg32129Props> = ({
+const Mlcfg32129Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mlcfg32129Props) => {
   const Svg = mlcfg32129Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mlcfg32129 = React.memo(Mlcfg32129Component);
+Mlcfg32129.displayName = 'Mlcfg32129';

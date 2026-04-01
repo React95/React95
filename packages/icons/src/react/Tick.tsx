@@ -14,11 +14,14 @@ export interface TickProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Tick: React.FC<TickProps> = ({
+const TickComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: TickProps) => {
   const Svg = tickData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Tick = React.memo(TickComponent);
+Tick.displayName = 'Tick';

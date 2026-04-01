@@ -16,11 +16,14 @@ export interface Winpopup2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Winpopup2: React.FC<Winpopup2Props> = ({
+const Winpopup2Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Winpopup2Props) => {
   const Svg = winpopup2Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Winpopup2 = React.memo(Winpopup2Component);
+Winpopup2.displayName = 'Winpopup2';

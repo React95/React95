@@ -14,11 +14,14 @@ export interface Systray305Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Systray305: React.FC<Systray305Props> = ({
+const Systray305Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Systray305Props) => {
   const Svg = systray305Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Systray305 = React.memo(Systray305Component);
+Systray305.displayName = 'Systray305';

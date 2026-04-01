@@ -18,11 +18,14 @@ export interface WindowsExplorerProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4' | '16x16_4';
 }
 
-export const WindowsExplorer: React.FC<WindowsExplorerProps> = ({
+const WindowsExplorerComponent = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: WindowsExplorerProps) => {
   const Svg = windowsExplorerData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const WindowsExplorer = React.memo(WindowsExplorerComponent);
+WindowsExplorer.displayName = 'WindowsExplorer';

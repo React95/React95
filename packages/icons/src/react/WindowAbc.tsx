@@ -16,11 +16,14 @@ export interface WindowAbcProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const WindowAbc: React.FC<WindowAbcProps> = ({
+const WindowAbcComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: WindowAbcProps) => {
   const Svg = windowAbcData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const WindowAbc = React.memo(WindowAbcComponent);
+WindowAbc.displayName = 'WindowAbc';

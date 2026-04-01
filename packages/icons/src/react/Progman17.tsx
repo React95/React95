@@ -16,11 +16,14 @@ export interface Progman17Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Progman17: React.FC<Progman17Props> = ({
+const Progman17Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: Progman17Props) => {
   const Svg = progman17Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Progman17 = React.memo(Progman17Component);
+Progman17.displayName = 'Progman17';

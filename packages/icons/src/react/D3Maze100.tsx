@@ -16,11 +16,14 @@ export interface D3Maze100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const D3Maze100: React.FC<D3Maze100Props> = ({
+const D3Maze100Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: D3Maze100Props) => {
   const Svg = d3Maze100Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const D3Maze100 = React.memo(D3Maze100Component);
+D3Maze100.displayName = 'D3Maze100';

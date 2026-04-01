@@ -14,11 +14,14 @@ export interface DeleteProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Delete: React.FC<DeleteProps> = ({
+const DeleteComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: DeleteProps) => {
   const Svg = deleteData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Delete = React.memo(DeleteComponent);
+Delete.displayName = 'Delete';

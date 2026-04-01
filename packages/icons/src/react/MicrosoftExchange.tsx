@@ -16,11 +16,14 @@ export interface MicrosoftExchangeProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MicrosoftExchange: React.FC<MicrosoftExchangeProps> = ({
+const MicrosoftExchangeComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: MicrosoftExchangeProps) => {
   const Svg = microsoftExchangeData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const MicrosoftExchange = React.memo(MicrosoftExchangeComponent);
+MicrosoftExchange.displayName = 'MicrosoftExchange';

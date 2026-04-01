@@ -16,11 +16,14 @@ export interface SettingsProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Settings: React.FC<SettingsProps> = ({
+const SettingsComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: SettingsProps) => {
   const Svg = settingsData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Settings = React.memo(SettingsComponent);
+Settings.displayName = 'Settings';

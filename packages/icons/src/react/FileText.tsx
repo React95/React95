@@ -16,11 +16,14 @@ export interface FileTextProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FileText: React.FC<FileTextProps> = ({
+const FileTextComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FileTextProps) => {
   const Svg = fileTextData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FileText = React.memo(FileTextComponent);
+FileText.displayName = 'FileText';

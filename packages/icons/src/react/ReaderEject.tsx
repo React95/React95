@@ -16,11 +16,14 @@ export interface ReaderEjectProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ReaderEject: React.FC<ReaderEjectProps> = ({
+const ReaderEjectComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ReaderEjectProps) => {
   const Svg = readerEjectData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const ReaderEject = React.memo(ReaderEjectComponent);
+ReaderEject.displayName = 'ReaderEject';

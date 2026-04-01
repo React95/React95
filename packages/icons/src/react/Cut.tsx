@@ -14,11 +14,14 @@ export interface CutProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Cut: React.FC<CutProps> = ({
+const CutComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: CutProps) => {
   const Svg = cutData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Cut = React.memo(CutComponent);
+Cut.displayName = 'Cut';

@@ -16,11 +16,14 @@ export interface Voxplay3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Voxplay3000: React.FC<Voxplay3000Props> = ({
+const Voxplay3000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Voxplay3000Props) => {
   const Svg = voxplay3000Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Voxplay3000 = React.memo(Voxplay3000Component);
+Voxplay3000.displayName = 'Voxplay3000';

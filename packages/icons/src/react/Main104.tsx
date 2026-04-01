@@ -14,11 +14,14 @@ export interface Main104Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Main104: React.FC<Main104Props> = ({
+const Main104Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Main104Props) => {
   const Svg = main104Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Main104 = React.memo(Main104Component);
+Main104.displayName = 'Main104';

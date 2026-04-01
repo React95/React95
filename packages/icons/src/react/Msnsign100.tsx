@@ -14,11 +14,14 @@ export interface Msnsign100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Msnsign100: React.FC<Msnsign100Props> = ({
+const Msnsign100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Msnsign100Props) => {
   const Svg = msnsign100Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Msnsign100 = React.memo(Msnsign100Component);
+Msnsign100.displayName = 'Msnsign100';

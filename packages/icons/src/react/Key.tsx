@@ -14,11 +14,14 @@ export interface KeyProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Key: React.FC<KeyProps> = ({
+const KeyComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: KeyProps) => {
   const Svg = keyData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Key = React.memo(KeyComponent);
+Key.displayName = 'Key';

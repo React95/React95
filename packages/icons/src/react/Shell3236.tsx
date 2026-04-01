@@ -16,11 +16,14 @@ export interface Shell3236Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Shell3236: React.FC<Shell3236Props> = ({
+const Shell3236Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Shell3236Props) => {
   const Svg = shell3236Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Shell3236 = React.memo(Shell3236Component);
+Shell3236.displayName = 'Shell3236';

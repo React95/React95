@@ -16,11 +16,14 @@ export interface D3FlowerBox100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const D3FlowerBox100: React.FC<D3FlowerBox100Props> = ({
+const D3FlowerBox100Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: D3FlowerBox100Props) => {
   const Svg = d3FlowerBox100Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const D3FlowerBox100 = React.memo(D3FlowerBox100Component);
+D3FlowerBox100.displayName = 'D3FlowerBox100';

@@ -14,11 +14,14 @@ export interface CopyProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Copy: React.FC<CopyProps> = ({
+const CopyComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: CopyProps) => {
   const Svg = copyData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Copy = React.memo(CopyComponent);
+Copy.displayName = 'Copy';

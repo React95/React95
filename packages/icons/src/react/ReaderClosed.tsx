@@ -16,11 +16,14 @@ export interface ReaderClosedProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ReaderClosed: React.FC<ReaderClosedProps> = ({
+const ReaderClosedComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ReaderClosedProps) => {
   const Svg = readerClosedData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const ReaderClosed = React.memo(ReaderClosedComponent);
+ReaderClosed.displayName = 'ReaderClosed';

@@ -14,11 +14,14 @@ export interface Access220Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Access220: React.FC<Access220Props> = ({
+const Access220Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Access220Props) => {
   const Svg = access220Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Access220 = React.memo(Access220Component);
+Access220.displayName = 'Access220';

@@ -14,11 +14,14 @@ export interface WebLinkProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const WebLink: React.FC<WebLinkProps> = ({
+const WebLinkComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: WebLinkProps) => {
   const Svg = webLinkData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const WebLink = React.memo(WebLinkComponent);
+WebLink.displayName = 'WebLink';

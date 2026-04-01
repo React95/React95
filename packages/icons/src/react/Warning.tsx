@@ -14,11 +14,14 @@ export interface WarningProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Warning: React.FC<WarningProps> = ({
+const WarningComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: WarningProps) => {
   const Svg = warningData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Warning = React.memo(WarningComponent);
+Warning.displayName = 'Warning';

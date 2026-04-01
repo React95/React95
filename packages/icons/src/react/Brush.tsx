@@ -14,11 +14,14 @@ export interface BrushProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Brush: React.FC<BrushProps> = ({
+const BrushComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: BrushProps) => {
   const Svg = brushData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Brush = React.memo(BrushComponent);
+Brush.displayName = 'Brush';

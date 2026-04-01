@@ -14,11 +14,14 @@ export interface Oiui400ImgstampProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Oiui400Imgstamp: React.FC<Oiui400ImgstampProps> = ({
+const Oiui400ImgstampComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Oiui400ImgstampProps) => {
   const Svg = oiui400ImgstampData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Oiui400Imgstamp = React.memo(Oiui400ImgstampComponent);
+Oiui400Imgstamp.displayName = 'Oiui400Imgstamp';

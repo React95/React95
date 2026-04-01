@@ -16,11 +16,14 @@ export interface Chatshow3000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Chatshow3000: React.FC<Chatshow3000Props> = ({
+const Chatshow3000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Chatshow3000Props) => {
   const Svg = chatshow3000Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Chatshow3000 = React.memo(Chatshow3000Component);
+Chatshow3000.displayName = 'Chatshow3000';

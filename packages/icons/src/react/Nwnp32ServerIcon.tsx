@@ -16,11 +16,14 @@ export interface Nwnp32ServerIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Nwnp32ServerIcon: React.FC<Nwnp32ServerIconProps> = ({
+const Nwnp32ServerIconComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Nwnp32ServerIconProps) => {
   const Svg = nwnp32ServerIconData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Nwnp32ServerIcon = React.memo(Nwnp32ServerIconComponent);
+Nwnp32ServerIcon.displayName = 'Nwnp32ServerIcon';

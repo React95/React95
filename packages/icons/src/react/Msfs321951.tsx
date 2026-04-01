@@ -14,11 +14,14 @@ export interface Msfs321951Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Msfs321951: React.FC<Msfs321951Props> = ({
+const Msfs321951Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Msfs321951Props) => {
   const Svg = msfs321951Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Msfs321951 = React.memo(Msfs321951Component);
+Msfs321951.displayName = 'Msfs321951';

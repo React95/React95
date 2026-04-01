@@ -16,11 +16,14 @@ export interface D3Text100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const D3Text100: React.FC<D3Text100Props> = ({
+const D3Text100Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: D3Text100Props) => {
   const Svg = d3Text100Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const D3Text100 = React.memo(D3Text100Component);
+D3Text100.displayName = 'D3Text100';

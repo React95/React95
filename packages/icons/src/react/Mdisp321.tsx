@@ -14,11 +14,14 @@ export interface Mdisp321Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mdisp321: React.FC<Mdisp321Props> = ({
+const Mdisp321Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mdisp321Props) => {
   const Svg = mdisp321Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mdisp321 = React.memo(Mdisp321Component);
+Mdisp321.displayName = 'Mdisp321';

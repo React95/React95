@@ -14,11 +14,14 @@ export interface ItalicProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Italic: React.FC<ItalicProps> = ({
+const ItalicComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: ItalicProps) => {
   const Svg = italicData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Italic = React.memo(ItalicComponent);
+Italic.displayName = 'Italic';

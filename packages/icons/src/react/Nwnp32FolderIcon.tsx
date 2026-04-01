@@ -16,11 +16,14 @@ export interface Nwnp32FolderIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Nwnp32FolderIcon: React.FC<Nwnp32FolderIconProps> = ({
+const Nwnp32FolderIconComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Nwnp32FolderIconProps) => {
   const Svg = nwnp32FolderIconData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Nwnp32FolderIcon = React.memo(Nwnp32FolderIconComponent);
+Nwnp32FolderIcon.displayName = 'Nwnp32FolderIcon';

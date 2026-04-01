@@ -16,11 +16,14 @@ export interface PrinterProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Printer: React.FC<PrinterProps> = ({
+const PrinterComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PrinterProps) => {
   const Svg = printerData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Printer = React.memo(PrinterComponent);
+Printer.displayName = 'Printer';

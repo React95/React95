@@ -14,11 +14,14 @@ export interface Taskman100Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Taskman100: React.FC<Taskman100Props> = ({
+const Taskman100Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Taskman100Props) => {
   const Svg = taskman100Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Taskman100 = React.memo(Taskman100Component);
+Taskman100.displayName = 'Taskman100';

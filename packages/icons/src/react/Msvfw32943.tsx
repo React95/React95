@@ -16,11 +16,14 @@ export interface Msvfw32943Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1' | '32x32_4';
 }
 
-export const Msvfw32943: React.FC<Msvfw32943Props> = ({
+const Msvfw32943Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: Msvfw32943Props) => {
   const Svg = msvfw32943Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Msvfw32943 = React.memo(Msvfw32943Component);
+Msvfw32943.displayName = 'Msvfw32943';

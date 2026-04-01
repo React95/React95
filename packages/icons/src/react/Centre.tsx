@@ -14,11 +14,14 @@ export interface CentreProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Centre: React.FC<CentreProps> = ({
+const CentreComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: CentreProps) => {
   const Svg = centreData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Centre = React.memo(CentreComponent);
+Centre.displayName = 'Centre';

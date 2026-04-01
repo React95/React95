@@ -16,11 +16,14 @@ export interface FolderFontProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FolderFont: React.FC<FolderFontProps> = ({
+const FolderFontComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FolderFontProps) => {
   const Svg = folderFontData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FolderFont = React.memo(FolderFontComponent);
+FolderFont.displayName = 'FolderFont';

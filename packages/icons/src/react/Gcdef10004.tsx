@@ -14,11 +14,14 @@ export interface Gcdef10004Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Gcdef10004: React.FC<Gcdef10004Props> = ({
+const Gcdef10004Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Gcdef10004Props) => {
   const Svg = gcdef10004Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Gcdef10004 = React.memo(Gcdef10004Component);
+Gcdef10004.displayName = 'Gcdef10004';

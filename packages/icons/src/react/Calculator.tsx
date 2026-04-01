@@ -16,11 +16,14 @@ export interface CalculatorProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Calculator: React.FC<CalculatorProps> = ({
+const CalculatorComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: CalculatorProps) => {
   const Svg = calculatorData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Calculator = React.memo(CalculatorComponent);
+Calculator.displayName = 'Calculator';

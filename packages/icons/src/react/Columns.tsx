@@ -14,11 +14,14 @@ export interface ColumnsProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Columns: React.FC<ColumnsProps> = ({
+const ColumnsComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: ColumnsProps) => {
   const Svg = columnsData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Columns = React.memo(ColumnsComponent);
+Columns.displayName = 'Columns';

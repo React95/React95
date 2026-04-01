@@ -16,11 +16,14 @@ export interface Netwatch101Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Netwatch101: React.FC<Netwatch101Props> = ({
+const Netwatch101Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Netwatch101Props) => {
   const Svg = netwatch101Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Netwatch101 = React.memo(Netwatch101Component);
+Netwatch101.displayName = 'Netwatch101';

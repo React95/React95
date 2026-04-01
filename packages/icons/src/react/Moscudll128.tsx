@@ -16,11 +16,14 @@ export interface Moscudll128Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Moscudll128: React.FC<Moscudll128Props> = ({
+const Moscudll128Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Moscudll128Props) => {
   const Svg = moscudll128Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Moscudll128 = React.memo(Moscudll128Component);
+Moscudll128.displayName = 'Moscudll128';

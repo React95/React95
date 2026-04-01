@@ -14,11 +14,14 @@ export interface Mshtml32545Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Mshtml32545: React.FC<Mshtml32545Props> = ({
+const Mshtml32545Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Mshtml32545Props) => {
   const Svg = mshtml32545Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mshtml32545 = React.memo(Mshtml32545Component);
+Mshtml32545.displayName = 'Mshtml32545';

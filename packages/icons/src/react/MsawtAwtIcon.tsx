@@ -16,11 +16,14 @@ export interface MsawtAwtIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const MsawtAwtIcon: React.FC<MsawtAwtIconProps> = ({
+const MsawtAwtIconComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: MsawtAwtIconProps) => {
   const Svg = msawtAwtIconData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const MsawtAwtIcon = React.memo(MsawtAwtIconComponent);
+MsawtAwtIcon.displayName = 'MsawtAwtIcon';

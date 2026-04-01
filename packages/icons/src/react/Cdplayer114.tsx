@@ -14,11 +14,14 @@ export interface Cdplayer114Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_1';
 }
 
-export const Cdplayer114: React.FC<Cdplayer114Props> = ({
+const Cdplayer114Component = ({
   variant = '32x32_1',
   ...rest
-}) => {
+}: Cdplayer114Props) => {
   const Svg = cdplayer114Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Cdplayer114 = React.memo(Cdplayer114Component);
+Cdplayer114.displayName = 'Cdplayer114';

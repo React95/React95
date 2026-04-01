@@ -14,11 +14,14 @@ export interface LrgIconProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const LrgIcon: React.FC<LrgIconProps> = ({
+const LrgIconComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: LrgIconProps) => {
   const Svg = lrgIconData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const LrgIcon = React.memo(LrgIconComponent);
+LrgIcon.displayName = 'LrgIcon';

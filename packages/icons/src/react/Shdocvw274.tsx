@@ -14,11 +14,14 @@ export interface Shdocvw274Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Shdocvw274: React.FC<Shdocvw274Props> = ({
+const Shdocvw274Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Shdocvw274Props) => {
   const Svg = shdocvw274Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Shdocvw274 = React.memo(Shdocvw274Component);
+Shdocvw274.displayName = 'Shdocvw274';

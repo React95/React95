@@ -14,11 +14,14 @@ export interface FileTransferProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const FileTransfer: React.FC<FileTransferProps> = ({
+const FileTransferComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FileTransferProps) => {
   const Svg = fileTransferData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FileTransfer = React.memo(FileTransferComponent);
+FileTransfer.displayName = 'FileTransfer';

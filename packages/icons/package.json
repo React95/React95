@@ -22,6 +22,21 @@
   "license": "MIT",
   "main": "./src",
   "unpkg": "icons.css",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./icons.css": "./icons.css",
+    "./*": {
+      "types": "./src/react/*.tsx",
+      "default": "./src/react/*.tsx"
+    },
+    "./src/iconDemos": {
+      "types": "./src/iconDemos.ts",
+      "default": "./src/iconDemos.ts"
+    }
+  },
   "publishConfig": {
     "access": "public",
     "directory": "dist",
@@ -43,11 +58,13 @@
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
-    "build:css": "cp ./icons.css ./dist/icons.css && sed -i -e 's/src\\///g' dist/icons.css",
+    "build:css": "cp ./icons.css ./dist/icons.css && ts-node-script scripts/fixCss.ts",
     "build:svg": "cp -r src/svg ./dist",
     "postbuild": "cp -r ./png ./dist/png",
     "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types"
+    "prepublishOnly": "node ../../scripts/prepublish.js --types",
+    "postprepublishOnly": "ts-node-script scripts/addExports.ts",
+    "test": "vitest run --config=../../config/test/icons.js"
   },
   "devDependencies": {
     "@svgr/core": "^8.1.0",

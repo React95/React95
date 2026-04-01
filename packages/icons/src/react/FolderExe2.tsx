@@ -16,11 +16,14 @@ export interface FolderExe2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FolderExe2: React.FC<FolderExe2Props> = ({
+const FolderExe2Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FolderExe2Props) => {
   const Svg = folderExe2Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FolderExe2 = React.memo(FolderExe2Component);
+FolderExe2.displayName = 'FolderExe2';

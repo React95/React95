@@ -14,11 +14,14 @@ export interface Lights101Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Lights101: React.FC<Lights101Props> = ({
+const Lights101Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Lights101Props) => {
   const Svg = lights101Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Lights101 = React.memo(Lights101Component);
+Lights101.displayName = 'Lights101';

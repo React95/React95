@@ -14,11 +14,14 @@ export interface Rnaapp111Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Rnaapp111: React.FC<Rnaapp111Props> = ({
+const Rnaapp111Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Rnaapp111Props) => {
   const Svg = rnaapp111Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Rnaapp111 = React.memo(Rnaapp111Component);
+Rnaapp111.displayName = 'Rnaapp111';

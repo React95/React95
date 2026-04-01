@@ -14,11 +14,14 @@ export interface NumPageProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const NumPage: React.FC<NumPageProps> = ({
+const NumPageComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: NumPageProps) => {
   const Svg = numPageData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const NumPage = React.memo(NumPageComponent);
+NumPage.displayName = 'NumPage';

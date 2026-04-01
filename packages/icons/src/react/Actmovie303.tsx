@@ -16,11 +16,14 @@ export interface Actmovie303Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Actmovie303: React.FC<Actmovie303Props> = ({
+const Actmovie303Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Actmovie303Props) => {
   const Svg = actmovie303Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Actmovie303 = React.memo(Actmovie303Component);
+Actmovie303.displayName = 'Actmovie303';

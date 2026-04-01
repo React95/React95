@@ -14,11 +14,14 @@ export interface TimerFontProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const TimerFont: React.FC<TimerFontProps> = ({
+const TimerFontComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: TimerFontProps) => {
   const Svg = timerFontData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const TimerFont = React.memo(TimerFontComponent);
+TimerFont.displayName = 'TimerFont';

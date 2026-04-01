@@ -14,11 +14,14 @@ export interface Inetcpl4432Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Inetcpl4432: React.FC<Inetcpl4432Props> = ({
+const Inetcpl4432Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Inetcpl4432Props) => {
   const Svg = inetcpl4432Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Inetcpl4432 = React.memo(Inetcpl4432Component);
+Inetcpl4432.displayName = 'Inetcpl4432';

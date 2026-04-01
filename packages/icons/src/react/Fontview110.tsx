@@ -16,11 +16,14 @@ export interface Fontview110Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Fontview110: React.FC<Fontview110Props> = ({
+const Fontview110Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Fontview110Props) => {
   const Svg = fontview110Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Fontview110 = React.memo(Fontview110Component);
+Fontview110.displayName = 'Fontview110';

@@ -14,11 +14,14 @@ export interface Mcm502Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Mcm502: React.FC<Mcm502Props> = ({
+const Mcm502Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Mcm502Props) => {
   const Svg = mcm502Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mcm502 = React.memo(Mcm502Component);
+Mcm502.displayName = 'Mcm502';

@@ -14,11 +14,14 @@ export interface BackProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Back: React.FC<BackProps> = ({
+const BackComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: BackProps) => {
   const Svg = backData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Back = React.memo(BackComponent);
+Back.displayName = 'Back';

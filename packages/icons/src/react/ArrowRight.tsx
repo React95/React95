@@ -14,11 +14,14 @@ export interface ArrowRightProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const ArrowRight: React.FC<ArrowRightProps> = ({
+const ArrowRightComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ArrowRightProps) => {
   const Svg = arrowRightData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const ArrowRight = React.memo(ArrowRightComponent);
+ArrowRight.displayName = 'ArrowRight';

@@ -16,11 +16,14 @@ export interface MicProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Mic: React.FC<MicProps> = ({
+const MicComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: MicProps) => {
   const Svg = micData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mic = React.memo(MicComponent);
+Mic.displayName = 'Mic';

@@ -16,11 +16,14 @@ export interface Amovie2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Amovie2: React.FC<Amovie2Props> = ({
+const Amovie2Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Amovie2Props) => {
   const Svg = amovie2Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Amovie2 = React.memo(Amovie2Component);
+Amovie2.displayName = 'Amovie2';

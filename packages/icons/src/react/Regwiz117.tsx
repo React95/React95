@@ -14,11 +14,14 @@ export interface Regwiz117Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Regwiz117: React.FC<Regwiz117Props> = ({
+const Regwiz117Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Regwiz117Props) => {
   const Svg = regwiz117Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Regwiz117 = React.memo(Regwiz117Component);
+Regwiz117.displayName = 'Regwiz117';

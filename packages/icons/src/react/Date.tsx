@@ -14,11 +14,14 @@ export interface DateProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Date: React.FC<DateProps> = ({
+const DateComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: DateProps) => {
   const Svg = dateData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Date = React.memo(DateComponent);
+Date.displayName = 'Date';

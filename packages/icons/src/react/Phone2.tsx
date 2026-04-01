@@ -16,11 +16,14 @@ export interface Phone2Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Phone2: React.FC<Phone2Props> = ({
+const Phone2Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Phone2Props) => {
   const Svg = phone2Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Phone2 = React.memo(Phone2Component);
+Phone2.displayName = 'Phone2';

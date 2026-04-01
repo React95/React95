@@ -16,11 +16,14 @@ export interface Isign32IcoAppProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Isign32IcoApp: React.FC<Isign32IcoAppProps> = ({
+const Isign32IcoAppComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Isign32IcoAppProps) => {
   const Svg = isign32IcoAppData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Isign32IcoApp = React.memo(Isign32IcoAppComponent);
+Isign32IcoApp.displayName = 'Isign32IcoApp';

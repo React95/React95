@@ -16,11 +16,14 @@ export interface FaxProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Fax: React.FC<FaxProps> = ({
+const FaxComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FaxProps) => {
   const Svg = faxData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Fax = React.memo(FaxComponent);
+Fax.displayName = 'Fax';

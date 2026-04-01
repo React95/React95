@@ -16,11 +16,14 @@ export interface FolderSharedProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FolderShared: React.FC<FolderSharedProps> = ({
+const FolderSharedComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FolderSharedProps) => {
   const Svg = folderSharedData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FolderShared = React.memo(FolderSharedComponent);
+FolderShared.displayName = 'FolderShared';

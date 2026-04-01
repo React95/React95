@@ -14,11 +14,14 @@ export interface MipacProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Mipac: React.FC<MipacProps> = ({
+const MipacComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: MipacProps) => {
   const Svg = mipacData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Mipac = React.memo(MipacComponent);
+Mipac.displayName = 'Mipac';

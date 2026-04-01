@@ -14,11 +14,14 @@ export interface Wintrust103Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Wintrust103: React.FC<Wintrust103Props> = ({
+const Wintrust103Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Wintrust103Props) => {
   const Svg = wintrust103Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Wintrust103 = React.memo(Wintrust103Component);
+Wintrust103.displayName = 'Wintrust103';

@@ -16,11 +16,14 @@ export interface FolderRenameProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const FolderRename: React.FC<FolderRenameProps> = ({
+const FolderRenameComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: FolderRenameProps) => {
   const Svg = folderRenameData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FolderRename = React.memo(FolderRenameComponent);
+FolderRename.displayName = 'FolderRename';

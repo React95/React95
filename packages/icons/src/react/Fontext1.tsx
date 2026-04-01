@@ -16,11 +16,14 @@ export interface Fontext1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Fontext1: React.FC<Fontext1Props> = ({
+const Fontext1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Fontext1Props) => {
   const Svg = fontext1Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Fontext1 = React.memo(Fontext1Component);
+Fontext1.displayName = 'Fontext1';

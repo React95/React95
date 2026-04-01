@@ -16,11 +16,14 @@ export interface PowerOffProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const PowerOff: React.FC<PowerOffProps> = ({
+const PowerOffComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PowerOffProps) => {
   const Svg = powerOffData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const PowerOff = React.memo(PowerOffComponent);
+PowerOff.displayName = 'PowerOff';

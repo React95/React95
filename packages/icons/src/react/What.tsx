@@ -14,11 +14,14 @@ export interface WhatProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const What: React.FC<WhatProps> = ({
+const WhatComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: WhatProps) => {
   const Svg = whatData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const What = React.memo(WhatComponent);
+What.displayName = 'What';

@@ -16,11 +16,14 @@ export interface Write1Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Write1: React.FC<Write1Props> = ({
+const Write1Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Write1Props) => {
   const Svg = write1Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Write1 = React.memo(Write1Component);
+Write1.displayName = 'Write1';

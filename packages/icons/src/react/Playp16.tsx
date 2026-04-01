@@ -14,11 +14,14 @@ export interface Playp16Props extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const Playp16: React.FC<Playp16Props> = ({
+const Playp16Component = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: Playp16Props) => {
   const Svg = playp16Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Playp16 = React.memo(Playp16Component);
+Playp16.displayName = 'Playp16';

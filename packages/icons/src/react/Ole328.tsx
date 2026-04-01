@@ -14,11 +14,14 @@ export interface Ole328Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Ole328: React.FC<Ole328Props> = ({
+const Ole328Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Ole328Props) => {
   const Svg = ole328Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Ole328 = React.memo(Ole328Component);
+Ole328.displayName = 'Ole328';

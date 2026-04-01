@@ -14,11 +14,14 @@ export interface Sysmon1000Props extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Sysmon1000: React.FC<Sysmon1000Props> = ({
+const Sysmon1000Component = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Sysmon1000Props) => {
   const Svg = sysmon1000Data[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Sysmon1000 = React.memo(Sysmon1000Component);
+Sysmon1000.displayName = 'Sysmon1000';

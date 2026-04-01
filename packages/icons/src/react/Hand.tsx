@@ -16,11 +16,14 @@ export interface HandProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Hand: React.FC<HandProps> = ({
+const HandComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: HandProps) => {
   const Svg = handData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Hand = React.memo(HandComponent);
+Hand.displayName = 'Hand';

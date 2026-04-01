@@ -14,11 +14,14 @@ export interface PhoneProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4';
 }
 
-export const Phone: React.FC<PhoneProps> = ({
+const PhoneComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: PhoneProps) => {
   const Svg = phoneData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Phone = React.memo(PhoneComponent);
+Phone.displayName = 'Phone';

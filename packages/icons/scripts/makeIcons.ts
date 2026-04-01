@@ -3,7 +3,8 @@ import ICO from 'icojs';
 import path from 'path';
 import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader';
 import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor';
-import { optimize } from 'svgo';
+import { Pixel, pixel } from 'pixel-perfect-svg/dist/pixel';
+import { Config, optimize } from 'svgo';
 
 import { getIconDataName, iconComponentTemplate } from './component-template';
 import { filterBlockedIcons } from './iconBlockList';
@@ -17,6 +18,33 @@ import {
   ICONS_FOLDER,
   SVG_FOLDER,
 } from './utils';
+
+const svgoConfig: Config = {
+  plugins: [
+    'preset-default',
+    'mergePaths',
+    {
+      name: 'convertPathData',
+      params: {
+        floatPrecision: 0,
+      },
+    },
+  ],
+};
+
+function quantizeFrame(frame: Pixel[][], step = 8): Pixel[][] {
+  const round = (v: number) => Math.round(v / step) * step;
+  return frame.map(row =>
+    row.map(px =>
+      pixel(
+        Math.min(255, round(px.r)),
+        Math.min(255, round(px.g)),
+        Math.min(255, round(px.b)),
+        px.a <= 0 ? 0 : px.a >= 250 ? 255 : Math.min(255, round(px.a)),
+      ),
+    ),
+  );
+}
 
 const getReactFileName = (name: string) => `${REACT_FOLDER}/${name}.tsx`;
 const getSVGFileName = (name: string) => `${SVG_FOLDER}/${name}.svg`;
@@ -173,12 +201,13 @@ async function toSVG(icons: IconsMap[]) {
             debug: str => str,
           });
 
+          const quantizedFrame = quantizeFrame(pixels[0]);
           const svg = await toSvgString({
-            frame: pixels[0],
+            frame: quantizedFrame,
             noMetadata: true,
           });
 
-          const { data: optimized } = optimize(svg);
+          const { data: optimized } = optimize(svg, svgoConfig);
 
           // Writing individual SVG files
           fs.writeFileSync(getSVGFileName(variant.id), optimized);

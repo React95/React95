@@ -16,11 +16,14 @@ export interface ReaderNosharedProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const ReaderNoshared: React.FC<ReaderNosharedProps> = ({
+const ReaderNosharedComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: ReaderNosharedProps) => {
   const Svg = readerNosharedData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const ReaderNoshared = React.memo(ReaderNosharedComponent);
+ReaderNoshared.displayName = 'ReaderNoshared';

@@ -16,11 +16,14 @@ export interface Msnp32FolderIconProps extends SVGProps<SVGSVGElement> {
   variant?: '32x32_4' | '16x16_4';
 }
 
-export const Msnp32FolderIcon: React.FC<Msnp32FolderIconProps> = ({
+const Msnp32FolderIconComponent = ({
   variant = '32x32_4',
   ...rest
-}) => {
+}: Msnp32FolderIconProps) => {
   const Svg = msnp32FolderIconData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const Msnp32FolderIcon = React.memo(Msnp32FolderIconComponent);
+Msnp32FolderIcon.displayName = 'Msnp32FolderIcon';

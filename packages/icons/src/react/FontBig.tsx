@@ -14,11 +14,14 @@ export interface FontBigProps extends SVGProps<SVGSVGElement> {
   variant?: '16x16_4';
 }
 
-export const FontBig: React.FC<FontBigProps> = ({
+const FontBigComponent = ({
   variant = '16x16_4',
   ...rest
-}) => {
+}: FontBigProps) => {
   const Svg = fontBigData[variant];
 
   return <Svg {...rest} />;
 };
+
+export const FontBig = React.memo(FontBigComponent);
+FontBig.displayName = 'FontBig';
