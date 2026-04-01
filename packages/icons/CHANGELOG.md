@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/React95/React95/compare/@react95/icons@2.3.0...@react95/icons@2.4.0) (2026-04-01)
+
+
+### Features
+
+* combine prepublishOnly scripts for streamlined execution ([bba8878](https://github.com/React95/React95/commit/bba88785d1ec06273a9335b5318bf97e1e057c5f))
+
+
+
+
+
 # [2.3.0](https://github.com/React95/React95/compare/@react95/icons@2.2.0...@react95/icons@2.3.0) (2026-04-01)
 
 

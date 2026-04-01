@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.7.0](https://github.com/React95/React95/compare/@react95/core@9.6.5...@react95/core@9.7.0) (2026-04-01)
+
+
+### Features
+
+* update module exports and prepublish script ([002f87f](https://github.com/React95/React95/commit/002f87f89978d602d40a659686b84e13f9f9527c))
+
+
+
+
+
 ## [9.6.5](https://github.com/React95/React95/compare/@react95/core@9.6.4...@react95/core@9.6.5) (2026-04-01)
 
 **Note:** Version bump only for package @react95/core
