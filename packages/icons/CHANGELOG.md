@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/React95/React95/compare/@react95/icons@2.2.0...@react95/icons@2.3.0) (2026-04-01)
+
+
+### Bug Fixes
+
+* update CSS build script to use ts-node for processing ([23a494a](https://github.com/React95/React95/commit/23a494a332d6c7e3e5415fad1d0ad55c99b551b1))
+
+
+### Features
+
+* add exports for icons.css in package.json ([f345691](https://github.com/React95/React95/commit/f345691e25741aff41951edc72e00da143d5dd39))
+* add icon testing setup and initial tests ([06dd673](https://github.com/React95/React95/commit/06dd6739c4316af69fbcc4aaefecf336a5491b85))
+* add script to generate exports field in dist/package.json ([7c20af1](https://github.com/React95/React95/commit/7c20af1afc168c88181db4da05287e687e208551))
+* enhance exports field in package.json for better module resolution ([cc24026](https://github.com/React95/React95/commit/cc24026297109b5297651739b196150f75a3be60))
+* enhance SVG optimization process in makeIcons ([7c4164f](https://github.com/React95/React95/commit/7c4164f7a553765cb4e3f0c952a04e9b62b8fc4c))
+* **icons:** optimize icon components with React.memo ([60413ec](https://github.com/React95/React95/commit/60413ec7c1c563a81dad6a6ff4e63bb3c73f25e9))
+* refactor icon components to use separate functional components ([98b2a82](https://github.com/React95/React95/commit/98b2a829387897cafd63c6269673ad0fd4ac67e8))
+* update SVG icons ([b3a00d1](https://github.com/React95/React95/commit/b3a00d162b831052008ec8d411e326c6d79c5e78))
+
+
+
+
+
 # [2.2.0](https://github.com/React95/React95/compare/@react95/icons@2.1.1...@react95/icons@2.2.0) (2025-06-29)
 
 
