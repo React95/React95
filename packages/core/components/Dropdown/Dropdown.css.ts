@@ -6,13 +6,13 @@ import caret from './imgs/downcaret.png';
 export const wrapper = style({
   position: 'relative',
   width: '200px',
-  height: contract.space[20],
+  height: contract.space[24],
 
   ':after': {
     display: 'flex',
     justifyContent: 'center',
-    width: contract.space[18],
-    height: contract.space[17],
+    width: contract.space[22],
+    height: contract.space[21],
     fontSize: '14px',
     lineHeight: 1.1,
     content: "''",
@@ -40,7 +40,7 @@ export const select = style({
   border: 'none',
   borderRadius: '0',
   width: '100%',
-  height: contract.space[20],
+  height: contract.space[24],
   padding: contract.space[3],
   color: contract.colors.materialText,
   backgroundColor: contract.colors.inputBackground,
