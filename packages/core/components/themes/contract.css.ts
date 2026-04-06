@@ -90,8 +90,6 @@ export const contract = createGlobalThemeContract(
       '20': 'space-20',
       '21': 'space-21',
       '22': 'space-22',
-      '23': 'space-23',
-      '24': 'space-24',
     },
     colors: {
       anchor: 'color-anchor',
