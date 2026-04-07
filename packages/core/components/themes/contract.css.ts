@@ -22,6 +22,10 @@ const space = {
   '18': '18px',
   '19': '19px',
   '20': '20px',
+  '21': '21px',
+  '22': '22px',
+  '23': '23px',
+  '24': '24px',
 };
 
 const colors = {
@@ -84,6 +88,8 @@ export const contract = createGlobalThemeContract(
       '18': 'space-18',
       '19': 'space-19',
       '20': 'space-20',
+      '21': 'space-21',
+      '22': 'space-22',
     },
     colors: {
       anchor: 'color-anchor',
