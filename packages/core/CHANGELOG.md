@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.1](https://github.com/React95/React95/compare/@react95/core@9.7.0...@react95/core@9.7.1) (2026-04-07)
+
+
+### Bug Fixes
+
+* **Dropdown:** apply review suggestions ([b2023da](https://github.com/React95/React95/commit/b2023daa14e9bd2ca741f9835226ae368b5dc679))
+
+
+
+
+
 # [9.7.0](https://github.com/React95/React95/compare/@react95/core@9.6.5...@react95/core@9.7.0) (2026-04-01)
 
 
