@@ -468,6 +468,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "chaesunbak",
+      "name": "chaesunbak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/152577867?v=4",
+      "profile": "https://chaesunbak.com/",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
