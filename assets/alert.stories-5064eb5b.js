@@ -1,0 +1,9 @@
+import{r as e}from"./index-9fa1aa67.js";import{A as m}from"./Alert-498bf9c9.js";import{B as h}from"./Button-4b96653d.js";import{C as w}from"./Checkbox-21fe22df.js";import{D as S}from"./Dropdown-02f35273.js";import{T as A}from"./TitleBar-ae0566b5.js";import"./Write1-d5371c35.js";/* empty css                             */import"./Modal-9e656852.js";import"./Frame-a5e28bb8.js";import"./index-923230fa.js";/* empty css                             */import"./createRuntimeFn-62c9670f.esm-edc6fb2c.js";import"./index-4fd03fd3.js";import"./Button.css-afb77755.js";/* empty css                                *//* empty css                                */const R={title:"Alert",component:m,tags:["autodocs"]},C=()=>{const[l,o]=e.useState(!0),[r,c]=e.useState(!1),[p,d]=e.useState("error"),g=()=>o(!0),n=()=>o(!1),u=f=>{d(f.currentTarget.value)};return e.createElement(e.Fragment,null,e.createElement("div",{style:{marginBottom:10}},"Alert Type:",e.createElement(S,{options:["error","info","question","warning"],onChange:u}),e.createElement(w,{checked:r,onChange:()=>c(!r)},"sound")),e.createElement(h,{onClick:g},"Trigger Alert"),l&&e.createElement(m,{title:"Windows Networking",type:p,message:"The Windows password you typed is incorrect.",titleBarOptions:e.createElement(A.Close,{key:"close",onClick:n}),hasSound:r,buttons:[{value:"OK",onClick:n}]}))},t={render:()=>e.createElement(C,null),parameters:{design:{type:"figma",url:"https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=0%3A1"}}};var i,s,a;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  render: () => <SimpleDemo />,
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=0%3A1'
+    }
+  }
+}`,...(a=(s=t.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const Z=["Simple"];export{t as Simple,Z as __namedExportsOrder,R as default};
