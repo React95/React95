@@ -1,12 +1,13 @@
 import React, { forwardRef } from 'react';
-import type {
-  ElementType,
-  ReactElement,
-  ForwardedRef,
-} from 'react';
+import type { ElementType, ReactElement, ForwardedRef } from 'react';
 import cn from 'classnames';
 
-import { Frame, FrameProps, InferredElement, Polymorphic } from '../Frame/Frame';
+import {
+  Frame,
+  FrameProps,
+  InferredElement,
+  Polymorphic,
+} from '../Frame/Frame';
 import * as styles from './ProgressBar.css';
 
 export type ProgressBarProps<TAs extends ElementType> = {

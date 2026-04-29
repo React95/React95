@@ -11,7 +11,6 @@ import { Clock } from './Clock';
 import { TaskBar } from './TaskBar';
 import { WindowButton } from './WindowButton';
 
-
 describe('<TaskBar />', () => {
   beforeAll(() => {
     // Windows 95 was released on August 24, 1995
@@ -20,7 +19,6 @@ describe('<TaskBar />', () => {
 
   afterAll(() => {
     vi.useRealTimers();
-
   });
 
   describe('Snapshots', () => {

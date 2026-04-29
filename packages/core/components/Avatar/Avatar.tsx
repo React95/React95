@@ -7,7 +7,12 @@ import type {
 } from 'react';
 
 import { avatar, imgStyle } from './Avatar.css';
-import { Frame, FrameProps, InferredElement, Polymorphic } from '../Frame/Frame';
+import {
+  Frame,
+  FrameProps,
+  InferredElement,
+  Polymorphic,
+} from '../Frame/Frame';
 import cn from 'classnames';
 
 export type AvatarProps<TAs extends ElementType> = Omit<
