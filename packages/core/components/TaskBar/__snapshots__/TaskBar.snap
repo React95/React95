@@ -207,7 +207,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with one Modal 1`] = `
     aria-hidden="false"
     class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="transform: translate3d(0px, 0px, 0); touch-action: none;"
+    style="translate: 0px 0px; touch-action: none;"
   >
     <div
       class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
@@ -261,7 +261,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     aria-hidden="false"
     class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="transform: translate3d(0px, 0px, 0); touch-action: none;"
+    style="translate: 0px 0px; touch-action: none;"
   >
     <div
       class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_false__1kpzw684 draggable"
@@ -279,7 +279,7 @@ exports[`<TaskBar /> > Snapshots > should match snapshot with two Modals 1`] = `
     aria-hidden="false"
     class="Modal_modalWrapper__1txblt60 Modal_modalWrapper_active_true__1txblt61 Modal_modalWrapper_minimized_false__1txblt63 neodrag"
     role="dialog"
-    style="transform: translate3d(0px, 0px, 0); touch-action: none;"
+    style="translate: 0px 0px; touch-action: none;"
   >
     <div
       class="Frame_marginBottom-mobile__iuzg8973 TitleBar_titleBarBackground__1kpzw682 TitleBar_titleBarBackground_active_true__1kpzw683 draggable"
