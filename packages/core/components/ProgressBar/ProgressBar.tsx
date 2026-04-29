@@ -2,12 +2,11 @@ import React, { forwardRef } from 'react';
 import type {
   ElementType,
   ReactElement,
-  ElementRef,
   ForwardedRef,
 } from 'react';
 import cn from 'classnames';
 
-import { Frame, FrameProps, Polymorphic } from '../Frame/Frame';
+import { Frame, FrameProps, InferredElement, Polymorphic } from '../Frame/Frame';
 import * as styles from './ProgressBar.css';
 
 export type ProgressBarProps<TAs extends ElementType> = {
@@ -29,5 +28,5 @@ export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps<'div'>>(
     </Frame>
   ),
 ) as <TAs extends ElementType = 'div'>(
-  props: ProgressBarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: ProgressBarProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;

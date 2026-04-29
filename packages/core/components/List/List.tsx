@@ -1,6 +1,5 @@
 import React from 'react';
 import type {
-  ElementRef,
   ElementType,
   ForwardedRef,
   HTMLAttributes,
@@ -13,6 +12,7 @@ import { Divider } from './ListDivider';
 import {
   Frame,
   FrameProps,
+  InferredElement,
   Polymorphic,
   fixedForwardRef,
 } from '../Frame/Frame';
@@ -28,7 +28,7 @@ const ListComponent = fixedForwardRef<HTMLUListElement, ListProps<'ul'>>(
 );
 
 type ListReturnType = <TAs extends ElementType = 'ul'>(
-  props: ListProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: ListProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
 interface ListStatics {

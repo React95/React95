@@ -24,7 +24,7 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
     const { minimize, restore, focus, subscribe } = useModal();
 
     useEffect(() => {
-      const addModal = (window: ModalWindow) => {
+      const addModal = (window: Partial<ModalWindow>) => {
         if (!window.id) {
           console.warn('Modal added without ID');
           return;
@@ -34,11 +34,11 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
           if (prevModals.some(modal => modal.id === window.id)) {
             return prevModals;
           }
-          return [...prevModals, window];
+          return [...prevModals, window as ModalWindow];
         });
       };
 
-      const removeModal = (data: Pick<ModalWindow, 'id'>) => {
+      const removeModal = (data: Pick<Partial<ModalWindow>, 'id'>) => {
         setModalWindows(prevModals => {
           const filteredModals = prevModals.filter(
             modal => modal.id !== data.id,
@@ -54,7 +54,7 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
         });
       };
 
-      const updateVisibleModal = ({ id }: Pick<ModalWindow, 'id'>) => {
+      const updateVisibleModal = ({ id }: Pick<Partial<ModalWindow>, 'id'>) => {
         setActiveWindow(id);
       };
 
@@ -74,6 +74,7 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
 
     return (
       <Frame
+        as="div"
         position="fixed"
         bottom="0px"
         left="0px"

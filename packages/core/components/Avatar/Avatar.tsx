@@ -2,13 +2,12 @@ import React, { forwardRef } from 'react';
 import type {
   ElementType,
   ReactElement,
-  ElementRef,
   ForwardedRef,
   ImgHTMLAttributes,
 } from 'react';
 
 import { avatar, imgStyle } from './Avatar.css';
-import { Frame, FrameProps, Polymorphic } from '../Frame/Frame';
+import { Frame, FrameProps, InferredElement, Polymorphic } from '../Frame/Frame';
 import cn from 'classnames';
 
 export type AvatarProps<TAs extends ElementType> = Omit<
@@ -47,5 +46,5 @@ export const Avatar = forwardRef<HTMLDivElement, AvatarProps<'div'>>(
     </Frame>
   ),
 ) as <TAs extends ElementType = 'div'>(
-  props: AvatarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: AvatarProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;

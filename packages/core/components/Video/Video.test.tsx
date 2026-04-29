@@ -1,6 +1,14 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
-import { describe, expect, it, vi } from 'vitest';
+import {
+  afterEach,
+  beforeAll,
+  beforeEach,
+  describe,
+  expect,
+  it,
+  vi,
+} from 'vitest';
 import { act, fireEvent, waitRender } from '../shared/test/utils';
 import { Video } from './Video';
 

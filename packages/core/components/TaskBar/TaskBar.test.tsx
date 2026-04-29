@@ -6,27 +6,21 @@ import { act, fireEvent, render, waitRender } from '../shared/test/utils';
 
 import { List } from '../List/List';
 import { Modal } from '../Modal/Modal';
-import { Tooltip } from '../Tooltip/Tooltip';
 
 import { Clock } from './Clock';
 import { TaskBar } from './TaskBar';
 import { WindowButton } from './WindowButton';
 
-const WINDOWS95_LAUNCH_DATE = '24 August 1995';
-
-const tooltipDefaultText = Tooltip.defaultProps?.text;
 
 describe('<TaskBar />', () => {
   beforeAll(() => {
+    // Windows 95 was released on August 24, 1995
     vi.useFakeTimers().setSystemTime(new Date('August 24, 1995 10:00:00'));
-
-    (Tooltip?.defaultProps || {}).text = WINDOWS95_LAUNCH_DATE;
   });
 
   afterAll(() => {
     vi.useRealTimers();
 
-    (Tooltip?.defaultProps || {}).text = tooltipDefaultText;
   });
 
   describe('Snapshots', () => {

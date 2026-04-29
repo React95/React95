@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import type {
   ButtonHTMLAttributes,
-  ElementRef,
   ElementType,
   ForwardedRef,
   HTMLAttributes,
@@ -19,6 +18,7 @@ import {
   fixedForwardRef,
   Frame,
   FrameProps,
+  InferredElement,
   Polymorphic,
 } from '../Frame/Frame';
 
@@ -62,14 +62,14 @@ const OptionsBoxComponent = fixedForwardRef<HTMLDivElement, OptionsBoxProps>(
 );
 
 const OptionsBox = OptionsBoxComponent as <TAs extends ElementType = 'div'>(
-  props: OptionsBoxProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: OptionsBoxProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
 export type OptionProps<TAs extends ElementType = 'button'> =
   ButtonHTMLAttributes<HTMLButtonElement> & Polymorphic<TAs, FrameProps>;
 
 export type OptionReturnType = <TAs extends ElementType = 'button'>(
-  props: OptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: OptionProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
 const OptionComponent = fixedForwardRef<
@@ -111,7 +111,7 @@ const DefaultOptionComponent = fixedForwardRef<
 const DefaultOption = DefaultOptionComponent as <
   TAs extends ElementType = 'button',
 >(
-  props: DefaultOptionProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: DefaultOptionProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
 const HelpComponent = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
@@ -198,7 +198,7 @@ const TitleBarRenderer = fixedForwardRef<
 ));
 
 type TitleBarComponent = <TAs extends ElementType = 'div'>(
-  props: TitleBarProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: TitleBarProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
 type TitleBarWithStatics = TitleBarComponent & TitleBarOptions;
