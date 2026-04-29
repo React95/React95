@@ -55,5 +55,6 @@
     "default": {
       "runner": "nx-cloud"
     }
-  }
+  },
+  "analytics": true
 }
