@@ -30,7 +30,7 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.3",
-    "happy-dom": "^15.7.4",
+    "happy-dom": "^20.9.0",
     "husky": "^7.0.4",
     "lerna": "^8.0.1",
     "nx": "22.7.1",
