@@ -6,12 +6,12 @@ jobs:
     name: Nx Cloud Checker
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.15.0
     with:
-      node-version: 20
+      node-version: 24
       yarn-version: 1.22.19
       number-of-agents: 3
       main-branch-name: master
       init-commands: |
-        yarn nx-cloud start-ci-run --stop-agents-after="build"
+        yarn nx-cloud start-ci-run --stop-agents-after="lint,test,build"
       parallel-commands: |
         yarn nx-cloud record -- yarn nx format:check
       parallel-commands-on-agents: |
@@ -21,6 +21,6 @@ jobs:
     name: Nx Cloud - Agents
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.15.0
     with:
-      node-version: 20
+      node-version: 24
       yarn-version: 1.22.19
       number-of-agents: 3
