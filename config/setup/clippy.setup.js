@@ -25,13 +25,3 @@ vi.mock('clippyjs/agents', () => {
     Rover: loader,
   };
 });
-
-function removeStyles() {
-  const head = document.head;
-  if (head) {
-    head.innerHTML = '';
-  }
-}
-
-beforeEach(removeStyles);
-afterEach(removeStyles);
