@@ -1,67 +1,58 @@
-import React, { FC, ReactNode, useEffect, useState } from 'react';
-import clippyts, { Agent } from 'clippyts';
-import clippyStyle from './style';
-import AGENTS from './agents';
-import { ClippyContext } from './ClippyContext';
-import { AgentType } from 'clippyts/dist/types';
-
-let clippyAgent: Agent;
+import React, { FC, ReactNode, useEffect, useRef, useState } from 'react';
+import { initAgent } from 'clippyjs';
+import * as agentLoaders from 'clippyjs/agents';
+import AGENTS, { AgentType } from './agents';
+import { ClippyAgent, ClippyContext } from './ClippyContext';
 
 export const ClippyProvider: FC<{
   agentName?: AgentType;
   children?: ReactNode;
 }> = ({ children, agentName = AGENTS.CLIPPY }) => {
-  const [clippy, setClippy] = useState<Agent>();
-
-  function byebye(agent: Agent, cb?: () => void) {
-    agent?.hide(false, () => {
-      if (cb) cb();
-    });
-  }
+  const [clippy, setClippy] = useState<ClippyAgent>();
+  const agentRef = useRef<ClippyAgent | null>(null);
 
   useEffect(() => {
-    const { head } = document;
-    const link = document.createElement('style');
+    let cancelled = false;
 
-    link.appendChild(document.createTextNode(clippyStyle));
-
-    head.appendChild(link);
-
-    return () =>
-      byebye(clippyAgent, () => {
-        head.removeChild(link);
-      });
-  }, []);
-
-  useEffect(() => {
-    function getAgent() {
-      clippyts.load({
-        name: agentName,
-        successCb: agent => {
-          agent.show(false);
-          setClippy(agent);
-          clippyAgent = agent;
-        },
-        failCb: error => {
-          console.error(error);
-          setClippy(undefined);
-        },
-      });
+    async function loadAgent() {
+      try {
+        const agent = await initAgent(agentLoaders[agentName]);
+        if (cancelled) {
+          agent.dispose();
+          return;
+        }
+        agentRef.current = agent;
+        agent.show(false);
+        setClippy(agent);
+      } catch (error) {
+        console.error(error);
+      }
     }
 
-    if (clippy) {
-      byebye(clippy, () => getAgent());
+    const prev = agentRef.current;
+    if (prev) {
+      prev.hide(false, () => {
+        prev.dispose();
+        if (!cancelled) loadAgent();
+      });
     } else {
-      getAgent();
+      loadAgent();
     }
+
+    return () => {
+      cancelled = true;
+    };
   }, [agentName]);
 
+  useEffect(() => {
+    return () => {
+      agentRef.current?.dispose();
+      agentRef.current = null;
+    };
+  }, []);
+
   return (
-    <ClippyContext.Provider
-      value={{
-        clippy,
-      }}
-    >
+    <ClippyContext.Provider value={{ clippy }}>
       {children}
     </ClippyContext.Provider>
   );
