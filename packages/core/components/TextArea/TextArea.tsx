@@ -1,4 +1,4 @@
-import React, { forwardRef, TextareaHTMLAttributes } from 'react';
+import { forwardRef, TextareaHTMLAttributes } from 'react';
 import cn from 'classnames';
 
 import { Frame, FrameProps } from '../Frame/Frame';

@@ -6,7 +6,6 @@ import type {
   HTMLAttributes,
   ReactElement,
 } from 'react';
-import React from 'react';
 
 import close from './close.svg';
 import help from './help.svg';

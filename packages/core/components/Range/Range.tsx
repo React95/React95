@@ -1,4 +1,4 @@
-import React, { forwardRef, InputHTMLAttributes } from 'react';
+import { forwardRef, InputHTMLAttributes } from 'react';
 import { Frame, FrameProps } from '../Frame/Frame';
 import { range } from './Range.css';
 import cn from 'classnames';

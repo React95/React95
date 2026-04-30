@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import type { MouseEvent, HTMLAttributes } from 'react';
 import cn from 'classnames';
 
