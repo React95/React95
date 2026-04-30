@@ -202,10 +202,7 @@ const VideoRenderer = (
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <User4
-                className={styles.loadingIcon}
-                variant="32x32_4"
-              />
+              <User4 className={styles.loadingIcon} variant="32x32_4" />
             )}
           </Button>
           <Button
