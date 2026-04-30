@@ -3,7 +3,8 @@
   "compilerOptions": {
     "allowJs": true,
     "outDir": "dist/types",
-    "jsx": "react",
+    "jsx": "react-jsx",
+    "noUnusedLocals": false,
     "incremental": true,
     "declaration": true,
     "emitDeclarationOnly": true,
