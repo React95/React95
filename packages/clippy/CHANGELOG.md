@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/React95/React95/compare/@react95/clippy@2.0.2...@react95/clippy@2.1.0) (2026-04-30)
+
+
+### Bug Fixes
+
+* update clippy dependency from clippyts to clippyjs ([fc1c69a](https://github.com/React95/React95/commit/fc1c69ac20d6f6cdb11cd540e4a624c79adde1f4))
+
+
+### Features
+
+* add clippyjs.d.ts to production TypeScript configuration ([6459869](https://github.com/React95/React95/commit/6459869fd91718eb1d48f3d0eaf9cfc261d35872))
+* migrate from clippyts to clippyjs for agent initialization ([31ac2e5](https://github.com/React95/React95/commit/31ac2e5be7a9833e5e4d9d97c600b4e86214d2e5))
+
+
+
+
+
 ## [2.0.2](https://github.com/React95/React95/compare/@react95/clippy@2.0.1...@react95/clippy@2.0.2) (2024-09-17)
 
 **Note:** Version bump only for package @react95/clippy
