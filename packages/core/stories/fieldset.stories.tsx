@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import * as React from 'react';
 
 import { Fieldset, FieldSetProps } from '../components/Fieldset/Fieldset';
 import { Frame, Checkbox } from '../components';
