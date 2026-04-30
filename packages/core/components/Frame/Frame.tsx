@@ -56,7 +56,7 @@ const FrameComponent = <TAs extends As>(
   );
 };
 
-export const Frame = forwardRef(FrameComponent) as <E extends As>(
+export const Frame = forwardRef(FrameComponent) as <E extends As = 'div'>(
   p: Polymorphic<E, FrameProps> & {
     ref?: ForwardedRef<InferredElement<E>>;
   },

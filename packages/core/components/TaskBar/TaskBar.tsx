@@ -74,7 +74,6 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
 
     return (
       <Frame
-        as="div"
         position="fixed"
         bottom="0px"
         left="0px"

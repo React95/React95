@@ -71,12 +71,7 @@ type ModalContentProps = HTMLAttributes<HTMLDivElement> & FrameProps;
 
 const ModalContent = fixedForwardRef<HTMLDivElement, ModalContentProps>(
   (rest, ref) => (
-    <Frame
-      as="div"
-      {...rest}
-      ref={ref}
-      className={cn(styles.content, rest.className)}
-    />
+    <Frame {...rest} ref={ref} className={cn(styles.content, rest.className)} />
   ),
 );
 
