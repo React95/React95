@@ -44,13 +44,26 @@ export const videoFont = style({
   textTransform: 'uppercase',
 });
 
+export const duration = style({
+  marginTop: 'auto',
+});
+
 export const currentTime = style({
   marginTop: 'auto',
   fontSize: 22,
 });
 
+export const openingText = style({
+  height: 12,
+});
+
 export const elapsedTime = style({
   height: contract.space[12],
+});
+
+export const loadingIcon = style({
+  borderRight: 'none',
+  borderBottom: 'none',
 });
 
 export const divider = style({
@@ -99,6 +112,8 @@ globalStyle(`${controlBtn}:disabled svg`, {
 });
 
 export const range = style({
+  width: '70%',
+  marginLeft: 20,
   selectors: {
     '&::-webkit-slider-thumb': {
       height: contract.space[18],
