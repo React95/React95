@@ -1,5 +1,6 @@
 import React from 'react';
-import clippy from 'clippyts';
+import { initAgent } from 'clippyjs';
+import * as agentLoaders from 'clippyjs/agents';
 
 let agent;
 const availableAgents = [
@@ -36,23 +37,21 @@ export const ClippyProvider = ({ children, ...props }) => {
       availableAgents[Math.floor(Math.random() * availableAgents.length)];
 
     if (!agent) {
-      clippy.load({
-        name: agentName,
-        successCb: loadedAgent => {
-          agent = loadedAgent;
+      const agentLoader = agentLoaders[agentName];
+      initAgent(agentLoader).then(loadedAgent => {
+        agent = loadedAgent;
 
-          agent.show();
-          agent.play('Wave');
+        agent.show(false);
+        agent.play('Wave');
 
+        const msg = talks[Math.floor(Math.random() * talks.length)];
+        agent.speak(msg);
+
+        agent._el.addEventListener('click', () => {
           const msg = talks[Math.floor(Math.random() * talks.length)];
-          agent.speak(msg);
 
-          agent._el.addEventListener('click', () => {
-            const msg = talks[Math.floor(Math.random() * talks.length)];
-
-            speak(msg, true);
-          });
-        },
+          speak(msg, true);
+        });
       });
     }
   }, []);

@@ -1,6 +1,5 @@
 import React from 'react';
 import type {
-  ElementRef,
   ElementType,
   ForwardedRef,
   LiHTMLAttributes,
@@ -10,6 +9,7 @@ import type {
 import {
   Frame,
   FrameProps,
+  InferredElement,
   Polymorphic,
   fixedForwardRef,
 } from '../Frame/Frame';
@@ -31,5 +31,5 @@ const DividerComponent = fixedForwardRef<HTMLLIElement, DividerProps<'li'>>(
 );
 
 export const Divider = DividerComponent as <TAs extends ElementType = 'li'>(
-  props: DividerProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: DividerProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;

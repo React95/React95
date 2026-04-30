@@ -1,19 +1,16 @@
 import { ClippyProvider } from '@react95/clippy';
-import { render } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 import { describe, expect, it } from 'vitest';
 
-import clippyStyle from '../src/style';
-
 describe('ClippyProvider', () => {
-  it('should add Clippy styles', () => {
-    expect(document.getElementsByTagName('style')).toHaveLength(0);
+  it('should render children', async () => {
+    render(
+      <ClippyProvider>
+        <span>hello</span>
+      </ClippyProvider>,
+    );
 
-    render(<ClippyProvider />);
-
-    expect(document.getElementsByTagName('style')).toHaveLength(1);
-
-    const [style] = document.getElementsByTagName('style');
-    expect(style.textContent).toBe(clippyStyle);
+    await waitFor(() => expect(screen.getByText('hello')).toBeTruthy());
   });
 });

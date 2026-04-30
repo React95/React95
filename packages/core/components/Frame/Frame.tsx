@@ -21,7 +21,7 @@ export type Polymorphic<E extends As, P = Props> = P &
   }> &
   ComponentPropsWithoutRef<E>;
 
-type InferredElement<C extends ElementType> =
+export type InferredElement<C extends ElementType> =
   C extends keyof HTMLElementTagNameMap
     ? HTMLElementTagNameMap[C]
     : C extends keyof SVGElementTagNameMap
@@ -56,7 +56,7 @@ const FrameComponent = <TAs extends As>(
   );
 };
 
-export const Frame = forwardRef(FrameComponent) as <E extends As>(
+export const Frame = forwardRef(FrameComponent) as <E extends As = 'div'>(
   p: Polymorphic<E, FrameProps> & {
     ref?: ForwardedRef<InferredElement<E>>;
   },

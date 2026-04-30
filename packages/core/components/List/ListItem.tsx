@@ -1,6 +1,5 @@
 import React from 'react';
 import type {
-  ElementRef,
   ElementType,
   ForwardedRef,
   LiHTMLAttributes,
@@ -11,6 +10,7 @@ import cn from 'classnames';
 import {
   Frame,
   FrameProps,
+  InferredElement,
   Polymorphic,
   fixedForwardRef,
 } from '../Frame/Frame';
@@ -31,7 +31,7 @@ const ItemComponent = fixedForwardRef<HTMLLIElement, ItemProps<'li'>>(
 );
 
 const Item = ItemComponent as <TAs extends ElementType = 'li'>(
-  props: ItemProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: ItemProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
 export type ListItemProps<TAs extends ElementType = 'li'> = {
@@ -48,5 +48,5 @@ const ListItemComponent = fixedForwardRef<HTMLLIElement, ListItemProps<'li'>>(
 );
 
 export const ListItem = ListItemComponent as <TAs extends ElementType = 'li'>(
-  props: ListItemProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: ListItemProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;

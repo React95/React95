@@ -1,30 +1,42 @@
 import { AGENTS, ClippyProvider, useClippy } from '@react95/clippy';
-import { renderHook } from '@testing-library/react';
-import clippyts from 'clippyts';
+import { renderHook, waitFor } from '@testing-library/react';
+import { initAgent } from 'clippyjs';
 import React from 'react';
 import { describe, expect, it } from 'vitest';
-
-const wrapper: React.FC<{
-  children?: React.ReactNode;
-}> = ({ children }) => <ClippyProvider>{children}</ClippyProvider>;
+import * as agentLoaders from 'clippyjs/agents';
 
 describe('useClippy', () => {
-  it('should get agent from ClippyContext', () => {
-    const agent = renderHook(() => useClippy(), { wrapper });
-    const clippy = agent.result.current.clippy;
+  it('should get agent from ClippyContext', async () => {
+    const wrapper: React.FC<{
+      children?: React.ReactNode;
+    }> = ({ children }) => <ClippyProvider>{children}</ClippyProvider>;
 
-    expect(clippy).toBeTruthy();
+    const agent = renderHook(() => useClippy(), { wrapper });
+
+    expect(agent.result.current.clippy).toBeUndefined();
+
+    await waitFor(() => {
+      expect(agent.result.current.clippy).toMatchObject({
+        show: expect.any(Function),
+        hide: expect.any(Function),
+        dispose: expect.any(Function),
+      });
+    });
   });
 
-  it('agent should be Clippy by default', () => {
+  it('agent should be Clippy by default', async () => {
+    const wrapper: React.FC<{
+      children?: React.ReactNode;
+    }> = ({ children }) => <ClippyProvider>{children}</ClippyProvider>;
+
     renderHook(() => useClippy(), { wrapper });
 
-    expect(clippyts.load).toHaveBeenCalledWith(
-      expect.objectContaining({ name: AGENTS.CLIPPY }),
-    );
+    await waitFor(() => {
+      expect(initAgent).toHaveBeenCalledWith(agentLoaders[AGENTS.CLIPPY]);
+    });
   });
 
-  it('agent should be different', () => {
+  it('agent should be different', async () => {
     const agentName = AGENTS.MERLIN;
 
     const wrapper: React.FC<{
@@ -35,8 +47,8 @@ describe('useClippy', () => {
 
     renderHook(() => useClippy(), { wrapper });
 
-    expect(clippyts.load).toHaveBeenCalledWith(
-      expect.objectContaining({ name: AGENTS.MERLIN }),
-    );
+    await waitFor(() => {
+      expect(initAgent).toHaveBeenCalledWith(agentLoaders[AGENTS.MERLIN]);
+    });
   });
 });

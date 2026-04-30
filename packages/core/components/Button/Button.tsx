@@ -1,7 +1,6 @@
 import React from 'react';
 import type {
   ButtonHTMLAttributes,
-  ElementRef,
   ElementType,
   ForwardedRef,
   ReactElement,
@@ -12,6 +11,7 @@ import { button } from './Button.css';
 import {
   Frame,
   FrameProps,
+  InferredElement,
   Polymorphic,
   fixedForwardRef,
 } from '../Frame/Frame';
@@ -34,5 +34,5 @@ const ButtonComponent = fixedForwardRef<
 });
 
 export const Button = ButtonComponent as <TAs extends ElementType = 'button'>(
-  props: ButtonProps<TAs> & { ref?: ForwardedRef<ElementRef<TAs>> },
+  props: ButtonProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;

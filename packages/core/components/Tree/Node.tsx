@@ -54,16 +54,20 @@ const NodeIcon: FC<{ hasChildren: boolean; isOpen: boolean }> = ({
   return <Folder variant="16x16_4" data-testid="react95-default-icon-folder" />;
 };
 
-export type NodeProps = {
+type NodeBaseProps = {
   label: string;
   icon?: ReactElement;
   id: number;
+} & Omit<FrameProps, 'id' | 'children'>;
+
+export type NodeProps = NodeBaseProps & {
   children?: Array<NodeProps>;
   onClick?(event: MouseEvent | KeyboardEvent, props: NodeProps): void;
-} & Omit<FrameProps, 'id' | 'children'> &
-  Omit<LiHTMLAttributes<HTMLLIElement>, 'id' | 'children'>;
+} & Omit<LiHTMLAttributes<HTMLLIElement>, 'id' | 'children'>;
 
-export type NodeRootProps = Omit<NodeProps, 'children'>;
+export type NodeRootProps = NodeBaseProps & {
+  onClick?(event: MouseEvent | KeyboardEvent, props: NodeRootProps): void;
+};
 
 const EMPTY_CHILDREN: Array<NodeProps> = [];
 

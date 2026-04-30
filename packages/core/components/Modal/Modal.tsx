@@ -81,13 +81,11 @@ const ModalMinimize = fixedForwardRef<HTMLButtonElement, OptionProps<'button'>>(
     const { minimize, focus, subscribe } = useModal();
 
     useEffect(() => {
-      const handleVisibilityChange = ({ id: activeId }: { id: string }) => {
-        setId(activeId);
-      };
-
       const unsubscribe = subscribe(
         ModalEvents.ModalVisibilityChanged,
-        handleVisibilityChange,
+        ({ id: activeId }) => {
+          setId(activeId || '');
+        },
       );
 
       return unsubscribe;
@@ -126,13 +124,13 @@ const ModalRenderer = (
   const { add, remove, focus, subscribe } = useModal();
 
   const draggableRef = useRef<HTMLDivElement>(null);
-  useDraggable(draggableRef, {
+  useDraggable(draggableRef as React.RefObject<HTMLElement>, {
     ...dragOptions,
     handle: '.draggable',
   });
 
   const menuRef = useRef<HTMLUListElement>(null);
-  useOnClickOutside(menuRef, () => {
+  useOnClickOutside(menuRef as React.RefObject<HTMLElement>, () => {
     setMenuOpened('');
   });
 
@@ -185,7 +183,7 @@ const ModalRenderer = (
   }, [id, subscribe]);
 
   useImperativeHandle(ref, () => {
-    return draggableRef.current;
+    return draggableRef.current as HTMLDivElement;
   });
 
   return (
