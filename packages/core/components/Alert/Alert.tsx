@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect } from 'react';
+import { forwardRef, useEffect } from 'react';
 import type { FC } from 'react';
 import { User2, User3, User4, User5 } from '@react95/icons';
 import * as styles from './Alert.css';

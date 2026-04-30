@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import type { CSSProperties, HTMLProps } from 'react';
 
 import * as styles from './Checkbox.css';

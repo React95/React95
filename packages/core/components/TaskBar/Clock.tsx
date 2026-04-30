@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Frame } from '../Frame/Frame';
 import { Tooltip } from '../Tooltip/Tooltip';
