@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { describe, expect, it, vi, beforeEach } from 'vitest';
 import { render, waitFor, fireEvent } from '@testing-library/react';
 import { Modal } from '../Modal/Modal';
@@ -10,12 +10,10 @@ import { Computer } from '@react95/icons';
 // Test component that uses useModal hook
 const TestModalController = () => {
   const { remove, minimize, restore, focus, subscribe } = useModal();
-  const [events, setEvents] = React.useState<
-    Array<{ id: number; text: string }>
-  >([]);
-  const eventCounter = React.useRef(0);
+  const [events, setEvents] = useState<Array<{ id: number; text: string }>>([]);
+  const eventCounter = useRef(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const addEvent = (text: string) => {
       const id = ++eventCounter.current;
       setEvents(prev => [...prev, { id, text }]);

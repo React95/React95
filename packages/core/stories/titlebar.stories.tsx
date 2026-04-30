@@ -1,6 +1,5 @@
 import { Doc, Star } from '@react95/icons';
 import type { Meta } from '@storybook/react';
-import * as React from 'react';
 
 import { TitleBar } from '../components/TitleBar/TitleBar';
 

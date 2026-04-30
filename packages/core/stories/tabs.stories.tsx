@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import * as React from 'react';
 
 import { Checkbox, Dropdown, Fieldset, Input } from '../components';
 import { Tab } from '../components/Tabs/Tab';

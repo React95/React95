@@ -38,12 +38,10 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           style="--width-mobile__iuzg895c: 40%; --display-mobile__iuzg890: flex; --flexDirection-mobile__iuzg893c: column;"
         >
           <div
-            class="Video_videoFont__13gnpv05"
-            style="margin-top: auto;"
+            class="Video_videoFont__13gnpv05 Video_duration__13gnpv06"
           />
           <div
-            class="Video_videoFont__13gnpv05"
-            style="height: 12px;"
+            class="Video_videoFont__13gnpv05 Video_openingText__13gnpv08"
           >
             Openning
           </div>
@@ -53,10 +51,10 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           style="--width-mobile__iuzg895c: 40%; --display-mobile__iuzg890: flex; --flexDirection-mobile__iuzg893c: column;"
         >
           <div
-            class="Video_videoFont__13gnpv05 Video_currentTime__13gnpv06"
+            class="Video_videoFont__13gnpv05 Video_currentTime__13gnpv07"
           />
           <div
-            class="Video_videoFont__13gnpv05 Video_elapsedTime__13gnpv07"
+            class="Video_videoFont__13gnpv05 Video_elapsedTime__13gnpv09"
           >
             time
           </div>
@@ -66,16 +64,16 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
         class="Video_controls__13gnpv03"
       >
         <button
-          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv09"
+          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv0c"
           disabled=""
         >
           <svg test-file-stub
-            style="border-right-width: initial; border-right-style: none; border-right-color: none; border-bottom-width: initial; border-bottom-style: none; border-bottom-color: none;"
+            classname="Video_loadingIcon__13gnpv0a"
             variant="32x32_4"
           />
         </button>
         <button
-          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv09"
+          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv0c"
           disabled=""
         >
           <svg
@@ -90,7 +88,7 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           </svg>
         </button>
         <button
-          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv09"
+          class="Button_button__1bzq74l0 Video_controlBtn__13gnpv0c"
           disabled=""
         >
           <svg
@@ -107,11 +105,10 @@ exports[`<Video /> > Snapshot > should match snapshot 1`] = `
           </svg>
         </button>
         <input
-          class="Range_range__1i4w9z20 Video_range__13gnpv0a"
+          class="Range_range__1i4w9z20 Video_range__13gnpv0d"
           max="100"
           min="0"
           step="1"
-          style="width: 70%; margin-left: 20px;"
           type="range"
           value="0"
         />

@@ -1,5 +1,4 @@
 import { Bat, ReaderClosed, WindowsExplorer } from '@react95/icons';
-import React from 'react';
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { act, fireEvent, render, waitRender } from '../shared/test/utils';

@@ -1,4 +1,3 @@
-import React from 'react';
 import type { HTMLAttributes } from 'react';
 
 const Fullscreen = (props: HTMLAttributes<SVGElement>) => (

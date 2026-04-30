@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import * as React from 'react';
 
 import { Video } from '../components/Video/Video';
 import EXPLORER_VIDEO from './EXPLORER.mp4';

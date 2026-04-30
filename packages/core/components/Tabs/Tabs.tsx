@@ -1,4 +1,4 @@
-import React, { useState, forwardRef, Children } from 'react';
+import { useState, forwardRef, Children } from 'react';
 import type { MouseEvent, ReactElement, HTMLAttributes } from 'react';
 import cn from 'classnames';
 
