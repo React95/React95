@@ -478,6 +478,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "matthewhaywood",
+      "name": "matthewhaywood",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62163327?v=4",
+      "profile": "https://github.com/matthewhaywood",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
