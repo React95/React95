@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import * as React from 'react';
 
 import { Range, RangeProps } from '../components/Range/Range';
 
