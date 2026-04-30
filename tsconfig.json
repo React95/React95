@@ -1,23 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2020",
+    "module": "ESNext",
+    "target": "ES2022",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "sourceMap": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
     "noUnusedLocals": true,
     "declaration": true,
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "incremental": false,
-    "skipDefaultLibCheck": true,
+    "isolatedModules": true,
     "skipLibCheck": true
   }
 }
