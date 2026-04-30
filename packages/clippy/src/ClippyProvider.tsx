@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useEffect, useRef, useState } from 'react';
+import { FC, ReactNode, useEffect, useRef, useState } from 'react';
 import { initAgent } from 'clippyjs';
 import * as agentLoaders from 'clippyjs/agents';
 import AGENTS, { AgentType } from './agents';
