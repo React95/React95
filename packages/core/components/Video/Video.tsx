@@ -5,7 +5,7 @@ import {
   forwardRef,
   useImperativeHandle,
 } from 'react';
-import type { FC, Ref, HTMLProps } from 'react';
+import type { Ref, HTMLProps } from 'react';
 import { Mplayer113, User4 } from '@react95/icons';
 
 import * as styles from './Video.css';
@@ -19,7 +19,7 @@ import cn from 'classnames';
 
 type SourceProps = Pick<HTMLSourceElement, 'src'>;
 
-const Source: FC<SourceProps> = ({ src }) => (
+const Source = ({ src }: SourceProps) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
 
