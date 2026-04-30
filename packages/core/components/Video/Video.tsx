@@ -169,16 +169,11 @@ const VideoRenderer = (
       <Frame maxWidth="250px" mx="auto" mb="$4">
         <div className={styles.countDownContainer}>
           <Frame display="flex" flexDirection="column" w="40%">
-            <div
-              className={styles.videoFont}
-              style={{
-                marginTop: 'auto',
-              }}
-            >
+            <div className={cn(styles.videoFont, styles.duration)}>
               {player.current && parseCurrentTime(player.current.duration)}
             </div>
 
-            <div className={styles.videoFont} style={{ height: 12 }}>
+            <div className={cn(styles.videoFont, styles.openingText)}>
               {!loadeddata && 'Openning'}
             </div>
           </Frame>
@@ -208,7 +203,7 @@ const VideoRenderer = (
               <PlayOrPause playing={playing} />
             ) : (
               <User4
-                style={{ borderRight: 'none', borderBottom: 'none' }}
+                className={styles.loadingIcon}
                 variant="32x32_4"
               />
             )}
@@ -246,10 +241,6 @@ const VideoRenderer = (
             max="100"
             step="1"
             value={progress}
-            style={{
-              width: '70%',
-              marginLeft: 20,
-            }}
             onChange={({ target }) => {
               const { current: video } = player;
 
