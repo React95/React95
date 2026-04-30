@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import type {
-  FC,
   ReactElement,
   MouseEvent,
   KeyboardEvent,
@@ -34,9 +33,12 @@ export const icons = {
   FILE_EXECUTABLE: BatExec,
 } as const;
 
-const NodeIcon: FC<{ hasChildren: boolean; isOpen: boolean }> = ({
+const NodeIcon = ({
   hasChildren,
   isOpen,
+}: {
+  hasChildren: boolean;
+  isOpen: boolean;
 }) => {
   if (!hasChildren) {
     return <Bat variant="16x16_4" data-testid="react95-default-icon-bat" />;
@@ -71,14 +73,14 @@ export type NodeRootProps = NodeBaseProps & {
 
 const EMPTY_CHILDREN: Array<NodeProps> = [];
 
-export const Node: FC<NodeProps> = ({
+export const Node = ({
   children = EMPTY_CHILDREN,
   id,
   icon,
   label,
   onClick = () => {},
   ...rest
-}) => {
+}: NodeProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const hasChildren = children.length > 0;
 
@@ -134,13 +136,13 @@ export const Node: FC<NodeProps> = ({
   );
 };
 
-export const NodeRoot: FC<NodeRootProps> = ({
+export const NodeRoot = ({
   id,
   icon,
   label,
   onClick = () => {},
   ...rest
-}) => {
+}: NodeRootProps) => {
   const onClickHandler = (event: MouseEvent | KeyboardEvent) => {
     onClick(event, {
       id,
