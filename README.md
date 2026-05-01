@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-48-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -121,6 +121,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://xqyet.dev"><img src="https://avatars.githubusercontent.com/u/112708953?v=4?s=100" width="100px;" alt="xqyet"/><br /><sub><b>xqyet</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=xqyet" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/BlackBearFTW"><img src="https://avatars.githubusercontent.com/u/62018777?v=4?s=100" width="100px;" alt="Robin Mager"/><br /><sub><b>Robin Mager</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3ABlackBearFTW" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://chaesunbak.com/"><img src="https://avatars.githubusercontent.com/u/152577867?v=4?s=100" width="100px;" alt="chaesunbak"/><br /><sub><b>chaesunbak</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=chaesunbak" title="Code">💻</a> <a href="https://github.com/React95/React95/issues?q=author%3Achaesunbak" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/matthewhaywood"><img src="https://avatars.githubusercontent.com/u/62163327?v=4?s=100" width="100px;" alt="matthewhaywood"/><br /><sub><b>matthewhaywood</b></sub></a><br /><a href="https://github.com/React95/React95/issues?q=author%3Amatthewhaywood" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
