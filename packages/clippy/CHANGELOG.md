@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/React95/React95/compare/@react95/clippy@2.1.0...@react95/clippy@2.1.1) (2026-05-01)
+
+**Note:** Version bump only for package @react95/clippy
+
+
+
+
+
 # [2.1.0](https://github.com/React95/React95/compare/@react95/clippy@2.0.2...@react95/clippy@2.1.0) (2026-04-30)
 
 

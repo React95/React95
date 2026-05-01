@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "9.7.2",
+  "version": "9.7.3",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
@@ -165,7 +165,7 @@
   "license": "MIT",
   "dependencies": {
     "@neodrag/react": "^2.3.1",
-    "@react95/icons": "^2.4.0",
+    "@react95/icons": "^2.4.1",
     "@vanilla-extract/dynamic": "^2.1.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "classnames": "^2.5.1",
@@ -178,7 +178,7 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "@react95/clippy": "^2.1.0",
+    "@react95/clippy": "^2.1.1",
     "@storybook/addon-designs": "^8.0.3",
     "@storybook/addon-essentials": "^8.3.0",
     "@storybook/addon-storysource": "^8.3.0",
