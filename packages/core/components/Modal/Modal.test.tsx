@@ -1,5 +1,4 @@
 import { Bat } from '@react95/icons';
-import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { List } from '../List/List';
 import { fireEvent, waitRender } from '../shared/test/utils';

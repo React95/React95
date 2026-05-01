@@ -23,6 +23,9 @@
     "lint": {
       "dependsOn": ["^lint"],
       "cache": true
+    },
+    "prepublishOnly": {
+      "dependsOn": ["build"]
     }
   },
   "targetDependencies": {

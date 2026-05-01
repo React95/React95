@@ -1,6 +1,5 @@
 import { ClippyProvider } from '@react95/clippy';
 import { render, screen, waitFor } from '@testing-library/react';
-import React from 'react';
 import { describe, expect, it } from 'vitest';
 
 describe('ClippyProvider', () => {

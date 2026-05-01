@@ -1,4 +1,3 @@
-import React from 'react';
 import type { HTMLAttributes } from 'react';
 
 const Pause = (props: HTMLAttributes<SVGElement>) => (

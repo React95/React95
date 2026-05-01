@@ -1,13 +1,16 @@
-import React, { FC, ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 import { initAgent } from 'clippyjs';
 import * as agentLoaders from 'clippyjs/agents';
 import AGENTS, { AgentType } from './agents';
 import { ClippyAgent, ClippyContext } from './ClippyContext';
 
-export const ClippyProvider: FC<{
+export const ClippyProvider = ({
+  children,
+  agentName = AGENTS.CLIPPY,
+}: {
   agentName?: AgentType;
   children?: ReactNode;
-}> = ({ children, agentName = AGENTS.CLIPPY }) => {
+}) => {
   const [clippy, setClippy] = useState<ClippyAgent>();
   const agentRef = useRef<ClippyAgent | null>(null);
 

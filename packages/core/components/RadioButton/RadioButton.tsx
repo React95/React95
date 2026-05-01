@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import type { InputHTMLAttributes } from 'react';
 import { field, icon, label, text } from './RadioButton.css';
 import cn from 'classnames';

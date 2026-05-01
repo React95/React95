@@ -1,11 +1,11 @@
-import React, {
+import {
   useEffect,
   useState,
   useRef,
   forwardRef,
   useImperativeHandle,
 } from 'react';
-import type { FC, Ref, HTMLProps } from 'react';
+import type { Ref, HTMLProps } from 'react';
 import { Mplayer113, User4 } from '@react95/icons';
 
 import * as styles from './Video.css';
@@ -19,7 +19,7 @@ import cn from 'classnames';
 
 type SourceProps = Pick<HTMLSourceElement, 'src'>;
 
-const Source: FC<SourceProps> = ({ src }) => (
+const Source = ({ src }: SourceProps) => (
   <source src={src} type={`video/${src.substring(src.length - 3)}`} />
 );
 
@@ -169,16 +169,11 @@ const VideoRenderer = (
       <Frame maxWidth="250px" mx="auto" mb="$4">
         <div className={styles.countDownContainer}>
           <Frame display="flex" flexDirection="column" w="40%">
-            <div
-              className={styles.videoFont}
-              style={{
-                marginTop: 'auto',
-              }}
-            >
+            <div className={cn(styles.videoFont, styles.duration)}>
               {player.current && parseCurrentTime(player.current.duration)}
             </div>
 
-            <div className={styles.videoFont} style={{ height: 12 }}>
+            <div className={cn(styles.videoFont, styles.openingText)}>
               {!loadeddata && 'Openning'}
             </div>
           </Frame>
@@ -207,10 +202,7 @@ const VideoRenderer = (
             {loadeddata ? (
               <PlayOrPause playing={playing} />
             ) : (
-              <User4
-                style={{ borderRight: 'none', borderBottom: 'none' }}
-                variant="32x32_4"
-              />
+              <User4 className={styles.loadingIcon} variant="32x32_4" />
             )}
           </Button>
           <Button
@@ -246,10 +238,6 @@ const VideoRenderer = (
             max="100"
             step="1"
             value={progress}
-            style={{
-              width: '70%',
-              marginLeft: 20,
-            }}
             onChange={({ target }) => {
               const { current: video } = player;
 
