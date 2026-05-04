@@ -65,6 +65,8 @@
     "projects": ["packages/*", "!@react95/explorer"],
     "version": {
       "conventionalCommits": true,
+      "preserveMatchingDependencyRanges": false,
+      "updateDependents": "auto",
       "ignorePatternsWhenDeterminingVersion": [
         "**/*.test.tsx",
         "**/*.md",
