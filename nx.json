@@ -59,5 +59,34 @@
       "runner": "nx-cloud"
     }
   },
-  "analytics": true
+  "analytics": true,
+  "release": {
+    "projectsRelationship": "independent",
+    "projects": ["packages/*", "!@react95/explorer"],
+    "version": {
+      "conventionalCommits": true,
+      "ignorePatternsWhenDeterminingVersion": [
+        "**/*.test.tsx",
+        "**/*.md",
+        "**/*.json",
+        "**/*.stories.*",
+        "**/.storybook/**"
+      ]
+    },
+    "changelog": {
+      "workspaceChangelog": false,
+      "projectChangelogs": {
+        "createRelease": "github",
+        "entryWhenNoChanges": false,
+        "renderOptions": {
+          "applyUsernameToAuthors": true
+        }
+      }
+    },
+    "git": {
+      "commit": true,
+      "commitMessage": "chore(release): publish :floppy_disk: :tada: [skip ci]",
+      "tag": true
+    }
+  }
 }
