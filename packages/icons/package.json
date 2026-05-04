@@ -38,6 +38,7 @@
     }
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "access": "public",
     "directory": "dist",
     "provenance": true
