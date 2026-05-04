@@ -50,7 +50,7 @@ jobs:
         run: |
           GH_TOKEN=${GH_TOKEN}
           NPM_TOKEN=${NPM_TOKEN}
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+          printf "registry=https://registry.npmjs.org\n//registry.npmjs.org/:_authToken=${NPM_TOKEN}\n" > ./.npmrc
           chmod +x ./scripts/publish
           ./scripts/publish
         env:
