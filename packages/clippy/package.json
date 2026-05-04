@@ -13,6 +13,7 @@
   "license": "MIT",
   "main": "index.js",
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "access": "public",
     "directory": "dist",
     "provenance": true
