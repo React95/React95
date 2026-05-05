@@ -48,14 +48,12 @@ jobs:
 
       - name: Publish
         run: |
-          GH_TOKEN=${GH_TOKEN}
-          NPM_TOKEN=${NPM_TOKEN}
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+          yarn config set registry https://registry.npmjs.org/
           chmod +x ./scripts/publish
           ./scripts/publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build storybook
         if: github.ref == 'refs/heads/master'
