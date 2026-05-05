@@ -10,7 +10,12 @@ then
   yarn nx release --yes
 elif [[ $BRANCH == "alpha" ]];
 then
-  yarn nx release --preid=alpha --yes
+  # `nx release` handles versioning, changelog and publishing in one step, but
+  # it always publishes with the default `latest` tag. Since alpha releases must
+  # use the `alpha` dist-tag to avoid overwriting `latest` on npm, we split the
+  # process: first run versioning + changelog with --skip-publish, then publish
+  # explicitly with --tag=alpha.
+  yarn nx release --preid=alpha --yes --skip-publish
   yarn nx release publish --tag=alpha
 else
   echo "Nothing to publish on branch $BRANCH..."
