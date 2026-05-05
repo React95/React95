@@ -1,3 +1,10 @@
+## 0.2.0-alpha.0 (2026-05-05)
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/clippy to 2.2.0-alpha.0
+- Updated @react95/core to 9.8.0-alpha.0
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
