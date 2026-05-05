@@ -224,7 +224,6 @@
     "test": "vitest run --config=../../config/test/core.js"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
     "access": "public",
     "directory": "dist",
     "provenance": true

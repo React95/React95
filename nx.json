@@ -26,6 +26,11 @@
     },
     "prepublishOnly": {
       "dependsOn": ["build"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "registry": "https://registry.npmjs.org/"
+      }
     }
   },
   "targetDependencies": {
