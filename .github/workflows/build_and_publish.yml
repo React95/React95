@@ -48,6 +48,7 @@ jobs:
 
       - name: Publish
         run: |
+          yarn config set registry https://registry.npmjs.org/
           chmod +x ./scripts/publish
           ./scripts/publish
         env:
