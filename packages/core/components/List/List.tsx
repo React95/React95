@@ -30,7 +30,7 @@ type ListReturnType = <TAs extends ElementType = 'ul'>(
   props: ListProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },
 ) => ReactElement;
 
-interface ListStatics {
+export interface ListStatics {
   Item: typeof ListItem;
   Divider: typeof Divider;
 }

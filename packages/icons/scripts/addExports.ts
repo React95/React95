@@ -1,9 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const distPackageJsonPath = path.join(__dirname, '../dist/package.json');
+const distPackageJsonPath = path.join(process.cwd(), 'dist/package.json');
 
 const packageJson = JSON.parse(fs.readFileSync(distPackageJsonPath, 'utf8'));
 
