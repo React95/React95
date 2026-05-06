@@ -6,6 +6,8 @@ on:
       - master
       - alpha
 
+permissions: read-all
+
 jobs:
   build_and_publish:
     permissions:

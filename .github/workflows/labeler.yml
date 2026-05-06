@@ -1,6 +1,8 @@
 name: Labeler
 on: [pull_request_target]
 
+permissions: read-all
+
 jobs:
   label:
 
