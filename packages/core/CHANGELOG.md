@@ -1,3 +1,18 @@
+## 9.8.0 (2026-05-06)
+
+### 🚀 Features
+
+- export ListStatics interface for better accessibility ([86bd64fd](https://github.com/React95/React95/commit/86bd64fd))
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/clippy to 2.2.0
+- Updated @react95/icons to 2.5.0
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
