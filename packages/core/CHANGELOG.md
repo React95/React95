@@ -1,18 +1,3 @@
-## 9.8.0-alpha.0 (2026-05-05)
-
-### 🚀 Features
-
-- export ListStatics interface for better accessibility ([c08a332f](https://github.com/React95/React95/commit/c08a332f))
-
-### 🧱 Updated Dependencies
-
-- Updated @react95/clippy to 2.2.0-alpha.0
-- Updated @react95/icons to 2.5.0-alpha.0
-
-### ❤️ Thank You
-
-- ggdaltoso @ggdaltoso
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
