@@ -5,14 +5,13 @@ permissions: read-all
 
 jobs:
   label:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
 
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GH_TOKEN }}"
-        sync-labels: true
+      - uses: actions/labeler@v4
+        with:
+          repo-token: '${{ secrets.GH_TOKEN }}'
+          sync-labels: true
