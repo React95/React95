@@ -15,7 +15,7 @@ then
   # use the `alpha` dist-tag to avoid overwriting `latest` on npm, we split the
   # process: first run versioning + changelog with --skip-publish, then publish
   # explicitly with --tag=alpha.
-  yarn nx release --preid=alpha --yes --skip-publish
+  yarn nx release --preid=alpha --skip-publish
   yarn nx release publish --tag=alpha
 else
   echo "Nothing to publish on branch $BRANCH..."
