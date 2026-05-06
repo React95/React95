@@ -1,17 +1,23 @@
 '@react95/clippy':
-  - packages/clippy/**/*
+  - changed-files:
+      - any-glob-to-any-file: 'packages/clippy/**/*'
 
 '@react95/core':
-  - packages/core/**/*
+  - changed-files:
+      - any-glob-to-any-file: 'packages/core/**/*'
 
 '@react95/cra-template':
-  - packages/cra-template/**/*
+  - changed-files:
+      - any-glob-to-any-file: 'packages/cra-template/**/*'
 
 '@react95/cra-template-typescript':
-  - packages/cra-template-typescript/**/*
+  - changed-files:
+      - any-glob-to-any-file: 'packages/cra-template-typescript/**/*'
 
 '@react95/design':
-  - packages/design/**/*
+  - changed-files:
+      - any-glob-to-any-file: 'packages/design/**/*'
 
 '@react95/icons':
-  - packages/icons/**/*
+  - changed-files:
+      - any-glob-to-any-file: 'packages/icons/**/*'
