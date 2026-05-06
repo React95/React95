@@ -1,9 +1,0 @@
-import{j as e}from"./jsx-runtime-e5910377.js";import{r as o}from"./index-66a3a5c2.js";import{A as p}from"./Alert-c737d951.js";import{B as x}from"./Button-ab59f6ae.js";import{C as w}from"./Checkbox-cc7f8bfd.js";import{D as j}from"./Dropdown-448d8450.js";import{T as S}from"./TitleBar-41e014c0.js";import"./Write1-229e0d0c.js";/* empty css                             */import"./Modal-9f9e7f41.js";import"./Frame-ad175eaa.js";import"./index-626ba1ae.js";/* empty css                             */import"./createRuntimeFn-62c9670f.esm-edc6fb2c.js";import"./index-a3deabcc.js";import"./Button.css-afb77755.js";/* empty css                                *//* empty css                                */const F={title:"Alert",component:p,tags:["autodocs"]},A=()=>{const[l,s]=o.useState(!0),[r,c]=o.useState(!1),[d,g]=o.useState("error"),u=()=>s(!0),i=()=>s(!1),h=f=>{g(f.currentTarget.value)};return e.jsxs(e.Fragment,{children:[e.jsxs("div",{style:{marginBottom:10},children:["Alert Type:",e.jsx(j,{options:["error","info","question","warning"],onChange:h}),e.jsx(w,{checked:r,onChange:()=>c(!r),children:"sound"})]}),e.jsx(x,{onClick:u,children:"Trigger Alert"}),l&&e.jsx(p,{title:"Windows Networking",type:d,message:"The Windows password you typed is incorrect.",titleBarOptions:e.jsx(S.Close,{onClick:i},"close"),hasSound:r,buttons:[{value:"OK",onClick:i}]})]})},t={render:()=>e.jsx(A,{}),parameters:{design:{type:"figma",url:"https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=0%3A1"}}};var n,a,m;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:`{
-  render: () => <SimpleDemo />,
-  parameters: {
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=0%3A1'
-    }
-  }
-}`,...(m=(a=t.parameters)==null?void 0:a.docs)==null?void 0:m.source}}};const z=["Simple"];export{t as Simple,z as __namedExportsOrder,F as default};
