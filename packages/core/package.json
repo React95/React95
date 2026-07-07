@@ -216,17 +216,25 @@
     "build:types:themes": "yarn tsc -p ./tsconfig.themes.json",
     "build:types:global": "yarn tsc -p ./tsconfig.global.json",
     "lint": "eslint --ext ts,tsx --quiet components",
+    "postbuild": "node ../../scripts/prepublish.js --types",
     "postbuild:cjs": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/cjs -u 1",
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
     "prebuild": "rimraf ./dist",
-    "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types",
     "test": "vitest run --config=../../config/test/core.js"
   },
   "publishConfig": {
     "access": "public",
     "directory": "dist",
     "provenance": true
+  },
+  "nx": {
+    "targets": {
+      "nx-release-publish": {
+        "options": {
+          "packageRoot": "{projectRoot}/dist"
+        }
+      }
+    }
   },
   "sideEffects": [
     "**/*.{woff2,woff,ttf,eot}"
