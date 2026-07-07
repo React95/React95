@@ -28,6 +28,7 @@
       "dependsOn": ["build"]
     },
     "nx-release-publish": {
+      "dependsOn": ["build"],
       "options": {
         "registry": "https://registry.npmjs.org/"
       }
