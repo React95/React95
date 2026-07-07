@@ -24,9 +24,6 @@
       "dependsOn": ["^lint"],
       "cache": true
     },
-    "prepublishOnly": {
-      "dependsOn": ["build"]
-    },
     "nx-release-publish": {
       "dependsOn": ["build"],
       "options": {
