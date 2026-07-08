@@ -1,3 +1,13 @@
+## 2.5.2 (2026-07-08)
+
+### 🩹 Fixes
+
+- **release:** resync dist package.json version before publish ([b34f6f6f](https://github.com/React95/React95/commit/b34f6f6f))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.5.1 (2026-07-08)
 
 ### 🩹 Fixes

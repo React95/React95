@@ -1,3 +1,18 @@
+## 9.8.2 (2026-07-08)
+
+### 🩹 Fixes
+
+- **release:** resync dist package.json version before publish ([b34f6f6f](https://github.com/React95/React95/commit/b34f6f6f))
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/clippy to 2.2.2
+- Updated @react95/icons to 2.5.2
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 9.8.1 (2026-07-08)
 
 ### 🩹 Fixes

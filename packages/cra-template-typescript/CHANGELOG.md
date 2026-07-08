@@ -1,3 +1,10 @@
+## 0.2.2 (2026-07-08)
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/clippy to 2.2.2
+- Updated @react95/core to 9.8.2
+
 ## 0.2.1 (2026-07-08)
 
 ### 🧱 Updated Dependencies
