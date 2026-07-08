@@ -24,8 +24,12 @@
       "dependsOn": ["^lint"],
       "cache": true
     },
-    "nx-release-publish": {
+    "sync-dist-version": {
       "dependsOn": ["build"],
+      "cache": false
+    },
+    "nx-release-publish": {
+      "dependsOn": ["sync-dist-version"],
       "options": {
         "registry": "https://registry.npmjs.org/"
       }

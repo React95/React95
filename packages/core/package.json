@@ -220,6 +220,7 @@
     "postbuild:cjs": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/cjs -u 1",
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
     "prebuild": "rimraf ./dist",
+    "sync-dist-version": "node ../../scripts/prepublish.js --types",
     "test": "vitest run --config=../../config/test/core.js"
   },
   "publishConfig": {

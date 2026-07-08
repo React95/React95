@@ -38,6 +38,7 @@
     "build:vite": "vite build",
     "build:types": "yarn tsc -b ./tsconfig.types.json",
     "postbuild": "node ../../scripts/prepublish.js --types",
+    "sync-dist-version": "node ../../scripts/prepublish.js --types",
     "lint": "eslint --ext ts,tsx --quiet src tests",
     "test": "vitest run --config=../../config/test/clippy.js"
   },
