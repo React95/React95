@@ -23,6 +23,7 @@
   "nx": {
     "targets": {
       "nx-release-publish": {
+        "executor": "@nx/js:release-publish",
         "options": {
           "packageRoot": "{projectRoot}/dist"
         }
