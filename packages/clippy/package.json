@@ -17,6 +17,15 @@
     "directory": "dist",
     "provenance": true
   },
+  "nx": {
+    "targets": {
+      "nx-release-publish": {
+        "options": {
+          "packageRoot": "{projectRoot}/dist"
+        }
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/React95/React95.git",
@@ -28,9 +37,8 @@
     "build": "yarn build:vite && yarn build:types",
     "build:vite": "vite build",
     "build:types": "yarn tsc -b ./tsconfig.types.json",
+    "postbuild": "node ../../scripts/prepublish.js --types",
     "lint": "eslint --ext ts,tsx --quiet src tests",
-    "prepublish": "yarn build",
-    "prepublishOnly": "node ../../scripts/prepublish.js --types",
     "test": "vitest run --config=../../config/test/clippy.js"
   },
   "bugs": {
