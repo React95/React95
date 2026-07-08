@@ -1,3 +1,18 @@
+## 9.8.3 (2026-07-08)
+
+### 🩹 Fixes
+
+- **release:** pin the publish executor for dist-published packages ([2140baf8](https://github.com/React95/React95/commit/2140baf8))
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/clippy to 2.2.3
+- Updated @react95/icons to 2.5.3
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 9.8.2 (2026-07-08)
 
 ### 🩹 Fixes

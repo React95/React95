@@ -1,3 +1,13 @@
+## 2.5.3 (2026-07-08)
+
+### 🩹 Fixes
+
+- **release:** pin the publish executor for dist-published packages ([2140baf8](https://github.com/React95/React95/commit/2140baf8))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.5.2 (2026-07-08)
 
 ### 🩹 Fixes
