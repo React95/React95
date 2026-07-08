@@ -1,3 +1,13 @@
+## 2.2.1 (2026-07-08)
+
+### 🩹 Fixes
+
+- **clippy:** publish the built package instead of the source tree ([1fc1cc0d](https://github.com/React95/React95/commit/1fc1cc0d))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 
 
 # Change Log

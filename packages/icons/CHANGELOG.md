@@ -1,3 +1,13 @@
+## 2.5.1 (2026-07-08)
+
+### 🩹 Fixes
+
+- **icons:** publish the built package instead of the source tree ([df7f050a](https://github.com/React95/React95/commit/df7f050a))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 
 
 # Change Log

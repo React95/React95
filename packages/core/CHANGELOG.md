@@ -1,3 +1,18 @@
+## 9.8.1 (2026-07-08)
+
+### 🩹 Fixes
+
+- **core:** publish the built package instead of the source tree ([41011805](https://github.com/React95/React95/commit/41011805))
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/clippy to 2.2.1
+- Updated @react95/icons to 2.5.1
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 9.8.0 (2026-05-06)
 
 ### 🚀 Features
