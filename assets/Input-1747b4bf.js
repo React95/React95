@@ -1,1 +1,0 @@
-import{j as s}from"./jsx-runtime-e5910377.js";import{r as a}from"./index-66a3a5c2.js";import{F as m}from"./Frame-ad175eaa.js";import{i as t}from"./Input.css-d0a177e5.js";import{c as p}from"./index-626ba1ae.js";const i=a.forwardRef((o,r)=>s.jsx(m,{...o,ref:r,className:p(t,o.className),as:"input"}));i.__docgenInfo={description:"",methods:[],displayName:"Input"};export{i as I};
