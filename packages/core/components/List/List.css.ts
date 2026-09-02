@@ -28,7 +28,7 @@ export const listItem = style({
       right: contract.space[8],
       content: "''",
       backgroundColor: contract.colors.materialText,
-      maskImage: `url('${rightcaret}')`,
+      maskImage: `url("${rightcaret}")`,
       maskPosition: 'center center',
       maskSize: `${contract.space[5]} ${contract.space[8]}`,
       maskRepeat: 'no-repeat',
