@@ -30,6 +30,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
+      # Keep this on a Node line that bundles npm >= 11.5.1, which is what trusted
+      # publishing needs. Node 24 has shipped it since 24.5.0 and npm only moves forward
+      # within a major, so tracking 24 satisfies it. Pinning an older Node would not.
       - uses: actions/setup-node@v7
         with:
           node-version: 24
@@ -61,16 +64,6 @@ jobs:
       - name: Build
         run: |
           yarn build
-
-      # Trusted publishing needs npm >= 11.5.1. Node 24 ships 11.19.0 today, but nx commits
-      # and tags before it publishes, so an unexpected downgrade should stop the job here
-      # rather than halfway through a release.
-      - name: Check npm supports trusted publishing
-        run: |
-          npx --yes semver -r '>=11.5.1' "$(npm --version)" >/dev/null || {
-            echo "npm $(npm --version) is too old for trusted publishing (need >= 11.5.1)" >&2
-            exit 1
-          }
 
       - name: Publish
         run: |
