@@ -1,3 +1,14 @@
+## 9.8.4 (2026-09-02)
+
+### 🩹 Fixes
+
+- **List:** restore missing submenu caret ([cdcd9823](https://github.com/React95/React95/commit/cdcd9823))
+- **Checkbox:** restore missing check icon ([61886cbb](https://github.com/React95/React95/commit/61886cbb))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 9.8.3 (2026-07-08)
 
 ### 🩹 Fixes
