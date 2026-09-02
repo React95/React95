@@ -48,6 +48,24 @@ jobs:
         run: |
           yarn build
 
+      # npm authenticates to the registry over OIDC (trusted publishing), so there is no
+      # NPM_TOKEN to rotate. Two things have to hold for the exchange to happen:
+      #
+      # 1. npm must be >= 11.5.1. Node 24 currently ships 11.19.0, but the job publishes
+      #    from master after commit and tag, so an unexpected downgrade should stop us
+      #    here rather than halfway through the release.
+      # 2. The runner .npmrc must not contain an auth line. setup-node's `registry-url`
+      #    writes `//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}` into it, and npm
+      #    reads that as "already authenticated" and never starts the OIDC exchange, which
+      #    surfaces as ENEEDAUTH. Drop the line and keep the registry.
+      - name: Prepare npm for trusted publishing
+        run: |
+          npx --yes semver -r '>=11.5.1' "$(npm --version)" >/dev/null || {
+            echo "npm $(npm --version) is too old for trusted publishing (need >= 11.5.1)" >&2
+            exit 1
+          }
+          sed -i '/_authToken/d' "$NPM_CONFIG_USERCONFIG"
+
       - name: Publish
         run: |
           yarn config set registry https://registry.npmjs.org/
@@ -55,7 +73,6 @@ jobs:
           ./scripts/publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build storybook
         if: github.ref == 'refs/heads/master'
