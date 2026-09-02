@@ -55,7 +55,7 @@ export const label = style({
 });
 
 globalStyle(`${field}:checked + ${icon}`, {
-  backgroundImage: `url('${check}')`,
+  backgroundImage: `url("${check}")`,
 });
 
 globalStyle(`${field}:focus ~ ${text}, ${field}:active ~ ${text}`, {
@@ -65,7 +65,7 @@ globalStyle(`${field}:focus ~ ${text}, ${field}:active ~ ${text}`, {
 });
 
 globalStyle(`${field}:checked:disabled + ${icon}`, {
-  backgroundImage: `url('${checkDisabled}')`,
+  backgroundImage: `url("${checkDisabled}")`,
   backgroundSize: '7px 7px, 1.9px 1.9px',
 });
 
