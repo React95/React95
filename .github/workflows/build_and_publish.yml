@@ -30,10 +30,27 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - uses: actions/setup-node@v6
+      # Keep this on a Node line that bundles npm >= 11.5.1, which is what trusted
+      # publishing needs. Node 24 has shipped it since 24.5.0 and npm only moves forward
+      # within a major, so tracking 24 satisfies it. Pinning an older Node would not.
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
+
+      # setup-node's `registry-url` writes `//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}`
+      # into the runner .npmrc, and that one line breaks both things this job needs.
+      #
+      # Installing: v6 hid the missing secret behind a dummy NODE_AUTH_TOKEN export. v7
+      # removed that, so yarn now hits an unresolved placeholder and fails with
+      # "Failed to replace env in config". That is what reverted the last v7 bump.
+      #
+      # Publishing: npm treats any auth line as "already authenticated" and never starts
+      # the OIDC exchange, so trusted publishing dies with ENEEDAUTH.
+      #
+      # Dropping the line before anything runs settles both. The registry stays.
+      - name: Clear placeholder npm auth line
+        run: sed -i '/_authToken/d' "$NPM_CONFIG_USERCONFIG"
 
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
@@ -55,7 +72,6 @@ jobs:
           ./scripts/publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build storybook
         if: github.ref == 'refs/heads/master'
