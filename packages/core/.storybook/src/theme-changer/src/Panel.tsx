@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStorybookState } from '@storybook/manager-api';
+import { useStorybookState } from 'storybook/manager-api';
 
 import './styles.css';
 import { extractThemes, injectThemes, ThemeObject } from './extractThemes';

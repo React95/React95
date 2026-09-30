@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 
 import { Frame, FrameProps } from '../components/Frame/Frame';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeDecorator } from '@storybook/preview-api';
+import { makeDecorator } from 'storybook/preview-api';
 import { ClippyProvider } from './Clippy';
 
 export const withClippy = makeDecorator({

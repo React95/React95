@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { Checkbox, Dropdown, Fieldset, Input } from '../components';
 import { Tab } from '../components/Tabs/Tab';

@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { Fieldset, FieldSetProps } from '../components/Fieldset/Fieldset';
 import { Frame, Checkbox } from '../components';

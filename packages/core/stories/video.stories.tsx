@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { Video } from '../components/Video/Video';
 import EXPLORER_VIDEO from './EXPLORER.mp4';

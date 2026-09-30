@@ -7,7 +7,17 @@ export const globalTypes = {
   selectedTheme: {
     name: 'Theme',
     description: 'Global theme for components',
-    defaultValue: 'win95',
+  },
+};
+
+export const initialGlobals = {
+  selectedTheme: 'win95',
+};
+
+export const parameters = {
+  docs: {
+    // replaces @storybook/addon-storysource, removed in Storybook 9
+    codePanel: true,
   },
 };
 

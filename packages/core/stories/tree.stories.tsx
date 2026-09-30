@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { Tree, TreeProps } from '../components/Tree/Tree';
 import { Explorer100 } from '@react95/icons';
