@@ -49,7 +49,9 @@ export const cssImportInject = () => {
         );
 
         if (cssFile && cssVanillaExtractFile) {
-          const cssBundleFile = bundle[cssFile];
+          // since Vite 5 (Rollup 4) the asset `name` includes the source
+          // directory, so only the file name is used (it sits next to `file`)
+          const cssFileName = path.basename(bundle[cssFile].fileName);
 
           const filePath = path.resolve('dist', file);
           const data = fs.readFileSync(filePath, {
@@ -58,8 +60,8 @@ export const cssImportInject = () => {
 
           const cssImport =
             option.format === 'es'
-              ? `import './${cssBundleFile.name}'`
-              : `require('./${cssBundleFile.name}')`;
+              ? `import './${cssFileName}'`
+              : `require('./${cssFileName}')`;
           fs.writeFileSync(filePath, `${cssImport};\n${data}`);
         }
       }

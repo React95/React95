@@ -20,7 +20,7 @@ import {
   Mspaint,
   Wangimg129,
 } from '@react95/icons';
-import type { StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react-vite';
 
 import * as styles from './contract.stories.css';
 

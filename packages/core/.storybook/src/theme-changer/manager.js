@@ -1,6 +1,6 @@
 import React from 'react';
-import { addons, types } from '@storybook/manager-api';
-import { AddonPanel } from '@storybook/components';
+import { addons, types } from 'storybook/manager-api';
+import { AddonPanel } from 'storybook/internal/components';
 import { ThemePanel } from './src/Panel';
 
 const ADDON_ID = 'Themes';

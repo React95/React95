@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { Frame } from '../components';
 import { Cursor } from '../components/Cursor/Cursor.css';

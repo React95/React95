@@ -1,5 +1,5 @@
 import { Doc, Star } from '@react95/icons';
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { TitleBar } from '../components/TitleBar/TitleBar';
 

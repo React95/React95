@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 
 import { Input, InputProps } from '../components/Input/Input';
 
@@ -14,7 +14,7 @@ export const Simple = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A10',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A10',
     },
   },
 };

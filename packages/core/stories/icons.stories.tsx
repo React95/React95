@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import copy from 'copy-to-clipboard';
 import * as React from 'react';
 
@@ -74,9 +74,11 @@ export const All: Story = {
   },
 
   parameters: {
+    // the JSX generated from ~1500 rendered icons is huge and freezes the UI
+    docs: { codePanel: false },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=4%3A35',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=4%3A35',
     },
   },
 };
