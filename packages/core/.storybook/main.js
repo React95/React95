@@ -2,6 +2,8 @@ import { readdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
+import { cssTsSideEffects } from './vite-plugin-css-ts-side-effects.js';
+
 function getAbsolutePath(value) {
   return dirname(fileURLToPath(import.meta.resolve(`${value}/package.json`)));
 }
@@ -29,4 +31,8 @@ export default {
   features: {
     actions: false,
   },
+  viteFinal: config => ({
+    ...config,
+    plugins: [...(config.plugins ?? []), cssTsSideEffects()],
+  }),
 };

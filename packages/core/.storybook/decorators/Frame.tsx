@@ -1,13 +1,9 @@
 import React from 'react';
 import type { Decorator } from '@storybook/react-vite';
 import { setElementVars } from '@vanilla-extract/dynamic';
-import * as GlobalStyle from '../../components/GlobalStyle/GlobalStyle.css';
+import '../../components/GlobalStyle/GlobalStyle.css';
 import { contract } from '../../components/themes/contract.css';
 import * as tokens from '../../components/themes/tokens';
-
-// Do not delete this line. This ensures GlobalStyle for being imported in
-// the prod build
-console.log({ GlobalStyle });
 
 type ThemeName = keyof typeof tokens;
 
