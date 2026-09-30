@@ -1,7 +1,7 @@
 import Frame from './decorators/Frame';
 
 import './preview.css';
-import { withClippy } from './src/clippy-addon/clippy-addon';
+import { withClippy } from './decorators/withClippy';
 
 export const globalTypes = {
   selectedTheme: {
