@@ -47,7 +47,7 @@ export const All = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
     },
   },
 };
@@ -62,7 +62,7 @@ export const Checked = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
     },
   },
 };
@@ -77,7 +77,7 @@ export const Unchecked = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
     },
   },
 };
@@ -88,7 +88,7 @@ export const Disabled = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
     },
   },
 };
@@ -103,7 +103,7 @@ export const CheckedAndDisabled = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
     },
   },
 };
@@ -124,7 +124,7 @@ export const Working = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
     },
   },
 };

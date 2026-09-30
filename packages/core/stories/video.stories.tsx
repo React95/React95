@@ -21,7 +21,7 @@ export const FromURL = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
     },
   },
 };
@@ -32,7 +32,7 @@ export const FromFile = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A21',
     },
   },
 };

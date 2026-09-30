@@ -56,7 +56,7 @@ export const Simple = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A14',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A14',
     },
   },
 };
