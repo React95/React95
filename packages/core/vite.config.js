@@ -8,17 +8,21 @@ import { cssImportInject } from './vite-plugin-css-import-inject';
 
 const assetFileNames = format => info => {
   if (info.name.endsWith('.vanilla.css')) {
-    const [component] = info.name.split('.');
+    // since Vite 5 (Rollup 4), both `info.name` and `[name]` include the
+    // source directory (e.g. `themes/win95.css.ts.vanilla.css`), so only the
+    // file name is used to keep the published paths flat
+    const fileName = path.basename(info.name);
+    const [component] = fileName.split('.');
     const firstLetter = component.at(0);
 
     if (
       firstLetter === firstLetter.toLowerCase() &&
       firstLetter !== firstLetter.toUpperCase()
     ) {
-      return `${format}/themes/[name].[ext]`;
+      return `${format}/themes/${fileName}`;
     }
 
-    return `${format}/${component}/[name].[ext]`;
+    return `${format}/${component}/${fileName}`;
   }
 
   return `${format}/[name].[ext]`;

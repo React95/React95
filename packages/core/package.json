@@ -204,7 +204,7 @@
     "rimraf": "^3.0.2",
     "storybook": "^8.3.0",
     "typescript": "5.3.3",
-    "vite": "^4.3.8"
+    "vite": "^5.4.0"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
