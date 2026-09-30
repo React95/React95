@@ -1,0 +1,1 @@
+import{j as n}from"./iframe-D3pw_3fI.js";import{c as m}from"./index-D7zGhaRM.js";import{b as a}from"./Button.css-ChH4GoWp.js";import{f as r,F as e}from"./Frame-CnwaD4vI.js";const t=r((o,s)=>n.jsx(e,{as:"button",...o,className:m(a,o.className),ref:s})),u=t;t.__docgenInfo={description:"",methods:[],displayName:"ButtonComponent"};export{u as B};
