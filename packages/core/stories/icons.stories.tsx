@@ -76,6 +76,9 @@ export const All: Story = {
   parameters: {
     // the JSX generated from ~1500 rendered icons is huge and freezes the UI
     docs: { codePanel: false },
+    clippy: {
+      phrases: ['Click any icon to copy its JSX to your clipboard.'],
+    },
     design: {
       type: 'figma',
       url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=4%3A35',

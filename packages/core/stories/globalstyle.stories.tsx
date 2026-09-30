@@ -19,6 +19,12 @@ export default {
   title: 'GlobalStyle',
   tags: ['autodocs'],
   parameters: {
+    clippy: {
+      phrases: [
+        'GlobalStyle brings the fonts and base styles. Import it once in your app.',
+        'Pick a theme and copy its import with a single click.',
+      ],
+    },
     docs: {
       description: {
         component: `
