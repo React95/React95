@@ -1,34 +1,27 @@
 import React from 'react';
+import type { Decorator } from '@storybook/react-vite';
+import { setElementVars } from '@vanilla-extract/dynamic';
 import * as GlobalStyle from '../../components/GlobalStyle/GlobalStyle.css';
-import * as themes from '../../components/themes/all';
+import { contract } from '../../components/themes/contract.css';
+import * as tokens from '../../components/themes/tokens';
 
-// Do not delete this line. This ensures theme + GlobalStyle for being
-// imported in the prod build
+// Do not delete this line. This ensures GlobalStyle for being imported in
+// the prod build
 console.log({ GlobalStyle });
 
-(global as any).themes = Object.keys(themes);
+type ThemeName = keyof typeof tokens;
 
-const Frame = (Story, { globals }) => {
-  const { selectedTheme } = globals;
+const Frame: Decorator = (Story, { globals }) => {
+  const selectedTheme = globals.selectedTheme as ThemeName;
 
   React.useEffect(() => {
-    if (process.env.NODE_ENV === 'development') {
-      const themeStylesheets = Array.from(
-        document.querySelectorAll('style'),
-      ).filter(s => s.dataset?.viteDevId?.includes('themes'));
-
-      themeStylesheets.forEach(s => {
-        s.disabled = !s.dataset.viteDevId?.includes(selectedTheme);
-      });
-    } else {
-      const themeClassName = `r95_theme_${selectedTheme}`;
-
-      document.body.classList.add(themeClassName);
-
-      return () => {
-        document.body.classList.remove(themeClassName);
-      };
-    }
+    // theme tokens are applied as inline CSS variables on `<html>`, so they
+    // win over any `:root` theme stylesheet a story may import
+    setElementVars(
+      document.documentElement,
+      contract,
+      tokens[selectedTheme] ?? tokens.win95,
+    );
   }, [selectedTheme]);
 
   return (
