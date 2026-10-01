@@ -1,0 +1,9 @@
+import{r as l,j as e}from"./iframe-CUQ9NVYA.js";/* empty css                                   */import{c as m}from"./index-BMynro7A.js";/* empty css                              */import{F as p}from"./Frame-CPG3G6Fk.js";import"./preload-helper-C1FmrZbK.js";var u="r95_1rnz0nz0",g="r95_1rnz0nz1",h="r95_1rnz0nz2",x="r95_1rnz0nz3";const r=l.forwardRef(({children:t,disabled:s,...n},o)=>e.jsxs("label",{className:m(h,n.className),children:[e.jsx("input",{type:"radio",disabled:s,className:x,ref:o,...n}),e.jsx("span",{className:u}),e.jsx("span",{className:g,children:t})]}));r.__docgenInfo={description:"",methods:[],displayName:"RadioButton"};const _={title:"RadioButton",component:r,tags:["autodocs"]},f=()=>{const[t,s]=l.useState("one"),n=o=>s(o.target.value);return e.jsxs(p,{display:"flex",flexDirection:"column",children:[e.jsx(r,{name:"working",value:"one",checked:t==="one",onChange:n,children:"Working"}),e.jsx(r,{name:"working",value:"two",checked:t==="two",onChange:n,children:"Working"}),e.jsx(r,{readOnly:!0,checked:!0,value:"three",children:"Checked"}),e.jsx(r,{readOnly:!0,disabled:!0,value:"four",children:"Disabled"}),e.jsx(r,{readOnly:!0,checked:!0,disabled:!0,value:"five",children:"Checked & Disabled"})]})},a={render:()=>e.jsx(f,{}),parameters:{design:{type:"figma",url:"https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A14"}}},y=["Simple"];var i,c,d;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  render: () => <SimpleDemo />,
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A14'
+    }
+  }
+}`,...(d=(c=a.parameters)==null?void 0:c.docs)==null?void 0:d.source}}};export{a as Simple,y as __namedExportsOrder,_ as default};

@@ -1,0 +1,1 @@
+import{r as a,j as r}from"./iframe-CUQ9NVYA.js";import{F as t}from"./Frame-CPG3G6Fk.js";import{i as m}from"./Input.css-LNWrk-Sy.js";import{c as p}from"./index-BMynro7A.js";const i=a.forwardRef((s,o)=>r.jsx(t,{...s,ref:o,className:p(m,s.className),as:"input"}));i.__docgenInfo={description:"",methods:[],displayName:"Input"};export{i as I};

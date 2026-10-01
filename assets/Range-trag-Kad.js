@@ -1,0 +1,1 @@
+import{r as s,j as o}from"./iframe-CUQ9NVYA.js";import{F as e}from"./Frame-CPG3G6Fk.js";/* empty css                             */import{c as m}from"./index-BMynro7A.js";var t="r95_1i4w9z20";const n=s.forwardRef((a,r)=>o.jsx(e,{...a,ref:r,className:m(t,a.className),as:"input",type:"range"}));n.__docgenInfo={description:"",methods:[],displayName:"Range"};export{n as R};

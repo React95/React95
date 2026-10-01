@@ -1,1 +1,0 @@
-import{r as s,j as o}from"./iframe-D3pw_3fI.js";import{c as e}from"./index-D7zGhaRM.js";import{F as t}from"./Frame-CnwaD4vI.js";import{i as m}from"./Input.css-LNWrk-Sy.js";const i=s.forwardRef((a,r)=>o.jsx(t,{...a,ref:r,className:e(m,a.className),as:"textarea"}));i.__docgenInfo={description:"",methods:[],displayName:"TextArea"};export{i as T};
