@@ -1,21 +1,31 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 
 import { TextArea, TextAreaProps } from '../components/TextArea/TextArea';
 
-export default {
+const meta = {
   title: 'TextArea',
   component: TextArea,
   tags: ['autodocs'],
+  args: {
+    rows: 10,
+    cols: 50,
+    placeholder: '',
+    disabled: false,
+    readOnly: false,
+  },
 } as Meta<TextAreaProps>;
 
-const SimpleDemo = () => {
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+const SimpleDemo = (props: TextAreaProps) => {
   const [text, setValue] = React.useState('');
 
   return (
     <TextArea
-      rows={10}
-      cols={50}
+      {...props}
       value={text}
       onChange={({
         target: { value },
@@ -24,8 +34,8 @@ const SimpleDemo = () => {
   );
 };
 
-export const Simple = {
-  render: () => <SimpleDemo />,
+export const Simple: Story = {
+  render: args => <SimpleDemo {...args} />,
 
   parameters: {
     design: {
