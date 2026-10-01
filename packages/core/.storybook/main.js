@@ -12,15 +12,16 @@ function getAbsolutePath(value) {
 // components declare. Most components also spread ~300 React DOM attributes;
 // the few that matter for a component (e.g. `placeholder` on Input) come from
 // its stories' `args`, which get a control inferred from their value.
-const propFilter = prop => {
+const propFilter = (prop, component) => {
   const files = [prop.parent, ...(prop.declarations ?? [])]
     .filter(Boolean)
     .map(({ fileName }) => fileName);
 
   // the Frame style props (~150, from sprinkles) come from a generated type
-  // with no source file; they are the same on every component
+  // with no source file. They are the same on every component built on Frame,
+  // so they only show up on Frame itself (see frame-arg-types.js)
   if (files.length === 0) {
-    return false;
+    return component.name === 'Frame';
   }
 
   // declared by one of our components, even through Omit/Pick (`ref`, the
