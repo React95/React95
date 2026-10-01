@@ -8,6 +8,30 @@ function getAbsolutePath(value) {
   return dirname(fileURLToPath(import.meta.resolve(`${value}/package.json`)));
 }
 
+// Which props show up in Controls and in the docs props table: the ones our
+// components declare. Most components also spread ~300 React DOM attributes;
+// the few that matter for a component (e.g. `placeholder` on Input) come from
+// its stories' `args`, which get a control inferred from their value.
+const propFilter = prop => {
+  const files = [prop.parent, ...(prop.declarations ?? [])]
+    .filter(Boolean)
+    .map(({ fileName }) => fileName);
+
+  // the Frame style props (~150, from sprinkles) come from a generated type
+  // with no source file; they are the same on every component
+  if (files.length === 0) {
+    return false;
+  }
+
+  // declared by one of our components, even through Omit/Pick (`ref` and the
+  // polymorphic `as` have no useful control)
+  if (files.some(file => !file.includes('node_modules'))) {
+    return !['ref', 'as'].includes(prop.name);
+  }
+
+  return prop.name === 'children';
+};
+
 export default {
   staticDirs: ['../components/GlobalStyle'],
   stories: [
@@ -26,6 +50,16 @@ export default {
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
+  },
+  typescript: {
+    // react-docgen (the default) can't resolve imported types, so components
+    // whose props come from React or Frame types showed no props at all
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      shouldRemoveUndefinedFromOptional: true,
+      propFilter,
+    },
   },
   features: {
     actions: false,
