@@ -28,6 +28,11 @@ import * as styles from './all.stories.css';
 
 export default {
   title: 'All',
+  parameters: {
+    controls: { disable: true },
+    docs: { codePanel: false },
+    design: { disable: true },
+  },
 } as Meta;
 
 const AllDemo = () => {
