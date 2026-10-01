@@ -1,16 +1,23 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Input, InputProps } from '../components/Input/Input';
 
-export default {
+const meta = {
   title: 'Input',
   component: Input,
   tags: ['autodocs'],
+  args: {
+    placeholder: '',
+    disabled: false,
+    readOnly: false,
+  },
 } as Meta<InputProps>;
 
-export const Simple = {
-  render: () => <Input />,
+export default meta;
 
+type Story = StoryObj<typeof meta>;
+
+export const Simple: Story = {
   parameters: {
     design: {
       type: 'figma',
