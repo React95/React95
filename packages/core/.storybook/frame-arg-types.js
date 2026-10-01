@@ -80,14 +80,21 @@ const responsiveNote =
   'Also takes responsive values like `{ mobile, tablet, desktop }`, which ' +
   "can't be edited here.";
 
+const codeNote = 'In code, it also takes any CSS value.';
+
 const describe = (...parts) => parts.filter(Boolean).join('\n\n');
 
-const styleArgType = (argType, { group, tokens }) => {
+// sizes (width, minHeight, ...) also use the space tokens, but those only go
+// up to `$22` (22px), so sizes keep a free text control
+const isSize = name => /^(width|height|min|max)/.test(name);
+
+// `name` is the CSS property, the shorthand's target for shorthands
+const styleArgType = (argType, name) => {
+  const { group, tokens } = styleProps.get(name);
   const table = { ...argType.table, category: categories[group] };
   const responsive = group === 'displayAndBoxModel' ? responsiveNote : '';
 
-  // space tokens ($0, $1, ...) or any CSS length
-  if (tokens === contract.space) {
+  if (tokens === contract.space && isSize(name)) {
     return {
       ...argType,
       table,
@@ -100,14 +107,14 @@ const styleArgType = (argType, { group, tokens }) => {
     };
   }
 
-  // colors, shadows and z-indices: pick one of the theme tokens
+  // spacing, colors, shadows and z-indices: pick one of the theme tokens
   if (typeof tokens === 'object') {
     return {
       ...argType,
       table,
       control: { type: 'select' },
       options: Object.keys(tokens).map(token => `$${token}`),
-      description: describe(argType.description, responsive),
+      description: describe(argType.description, codeNote, responsive),
     };
   }
 
@@ -127,12 +134,12 @@ export const organizeFrameStyleProps = ({ argTypes, component }) => {
   return Object.fromEntries(
     Object.entries(argTypes).map(([name, argType]) => {
       if (styleProps.has(name)) {
-        return [name, styleArgType(argType, styleProps.get(name))];
+        return [name, styleArgType(argType, name)];
       }
 
       if (shorthands[name]) {
         const targets = shorthands[name];
-        const target = styleArgType(argType, styleProps.get(targets[0]));
+        const target = styleArgType(argType, targets[0]);
         const names = targets.map(t => `\`${t}\``).join(' and ');
 
         return [
