@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import {
   Computer3,
@@ -18,16 +18,23 @@ import {
 } from '@react95/icons';
 import { List, ListProps } from '../components/List/List';
 
-export default {
+const meta = {
   title: 'List',
   component: List,
   subcomponents: { 'List.Item': List.Item, 'List.Divider': List.Divider },
   tags: ['autodocs'],
+  args: {
+    width: '200px',
+  },
 } as Meta<ListProps>;
 
-export const WithIcons = {
-  render: () => (
-    <List width={'200px'}>
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const WithIcons: Story = {
+  render: args => (
+    <List {...args}>
       <List.Item icon={<FolderExe2 variant="32x32_4" />}>
         <List width={'200px'}>
           <List.Item icon={<FolderExe variant="16x16_4" />}>
@@ -77,9 +84,9 @@ export const WithIcons = {
   },
 };
 
-export const Simple = {
-  render: () => (
-    <List width={'200px'}>
+export const Simple: Story = {
+  render: args => (
+    <List {...args}>
       <List.Item>View</List.Item>
       <List.Divider />
       <List.Item>Customize this Folder...</List.Item>
