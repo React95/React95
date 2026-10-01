@@ -1,22 +1,23 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Video } from '../components/Video/Video';
 import EXPLORER_VIDEO from './EXPLORER.mp4';
 
-export default {
+const meta = {
   title: 'Video',
   component: Video,
   tags: ['autodocs'],
 } as Meta<typeof Video>;
 
-export const FromURL = {
-  render: () => (
-    <Video
-      w="320px"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-      marginBottom="$4"
-    />
-  ),
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const FromURL: Story = {
+  args: {
+    src: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4',
+  },
+  render: args => <Video w="320px" marginBottom="$4" {...args} />,
 
   parameters: {
     design: {
@@ -26,8 +27,12 @@ export const FromURL = {
   },
 };
 
-export const FromFile = {
-  render: () => <Video w="320px" src={EXPLORER_VIDEO} name="Explorer" />,
+export const FromFile: Story = {
+  args: {
+    src: EXPLORER_VIDEO,
+    name: 'Explorer',
+  },
+  render: args => <Video w="320px" {...args} />,
 
   parameters: {
     design: {
