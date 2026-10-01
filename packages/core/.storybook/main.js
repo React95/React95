@@ -23,10 +23,10 @@ const propFilter = prop => {
     return false;
   }
 
-  // declared by one of our components, even through Omit/Pick (`ref` and the
-  // polymorphic `as` have no useful control)
+  // declared by one of our components, even through Omit/Pick (`ref`, the
+  // polymorphic `as` and `style` have no useful control)
   if (files.some(file => !file.includes('node_modules'))) {
-    return !['ref', 'as'].includes(prop.name);
+    return !['ref', 'as', 'style'].includes(prop.name);
   }
 
   return prop.name === 'children';
