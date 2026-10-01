@@ -29,6 +29,7 @@ export default {
   parameters: {
     controls: { disable: true },
     docs: { codePanel: false },
+    design: { disable: true },
     clippy: {
       phrases: [
         'Every component reads its colors and spacing from this theme contract.',
@@ -180,9 +181,6 @@ export const Theme: Story = {
         </Frame>
       </>
     );
-  },
-  parameters: {
-    design: { disable: true },
   },
 };
 
@@ -537,8 +535,5 @@ function App() {
         </Frame>
       </Frame>
     );
-  },
-  parameters: {
-    design: { disable: true },
   },
 };
