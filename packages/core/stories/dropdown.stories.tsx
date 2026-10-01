@@ -1,16 +1,27 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Dropdown, DropdownProps } from '../components/Dropdown/Dropdown';
 
-export default {
+const meta = {
   title: 'Dropdown',
   component: Dropdown,
   tags: ['autodocs'],
+  args: {
+    options: [
+      '',
+      'C:\\Documents and Settings',
+      'C:\\Documents and Settings\\Documents',
+      'iexplorer.exe',
+    ],
+    disabled: false,
+  },
 } as Meta<DropdownProps>;
 
-export const Simple = {
-  render: () => <Dropdown />,
+export default meta;
 
+type Story = StoryObj<typeof meta>;
+
+export const Simple: Story = {
   parameters: {
     design: {
       type: 'figma',
