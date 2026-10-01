@@ -60,6 +60,10 @@ export default {
       shouldExtractLiteralValuesFromEnum: true,
       shouldRemoveUndefinedFromOptional: true,
       propFilter,
+      // only our components need docgen. Otherwise it also goes through every
+      // .tsx Vite loads (~975 icons from @react95/icons, Clippy, decorators)
+      // and warns that each one is outside the TypeScript project
+      include: [join(import.meta.dirname, '../components/**/*.tsx')],
     },
   },
   features: {
