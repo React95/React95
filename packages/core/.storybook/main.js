@@ -29,6 +29,8 @@ export default {
   },
   features: {
     actions: false,
+    // no story has a `play` function yet, so the panel would always be empty
+    interactions: false,
   },
   viteFinal: config => ({
     ...config,
