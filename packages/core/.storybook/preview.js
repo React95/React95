@@ -1,6 +1,7 @@
 import Frame from './decorators/Frame';
 
 import './preview.css';
+import { markNonConfigurableProps } from './arg-types-enhancers';
 import { withClippy } from './decorators/withClippy';
 
 export const globalTypes = {
@@ -22,3 +23,5 @@ export const parameters = {
 };
 
 export const decorators = [Frame, withClippy];
+
+export const argTypesEnhancers = [markNonConfigurableProps];
