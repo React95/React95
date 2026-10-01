@@ -19,6 +19,8 @@ export default {
   title: 'GlobalStyle',
   tags: ['autodocs'],
   parameters: {
+    controls: { disable: true },
+    design: { disable: true },
     clippy: {
       phrases: [
         'GlobalStyle brings the fonts and base styles. Import it once in your app.',
@@ -26,6 +28,7 @@ export default {
       ],
     },
     docs: {
+      codePanel: false,
       description: {
         component: `
 The GlobalStyle component provides essential styling for React95 applications, including:
