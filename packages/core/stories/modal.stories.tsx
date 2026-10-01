@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 
 import {
@@ -9,7 +9,7 @@ import {
   Frame,
   useModal,
 } from '../components';
-import { Modal } from '../components/Modal/Modal';
+import { Modal, ModalProps } from '../components/Modal/Modal';
 
 import * as styles from './modal.stories.css';
 
@@ -21,13 +21,30 @@ import {
   WindowsExplorer,
 } from '@react95/icons';
 
-export default {
+const meta = {
   title: 'Modal',
   component: Modal,
   tags: ['autodocs'],
+  args: {
+    title: 'Browse',
+    hasWindowButton: true,
+    buttonsAlignment: 'flex-end',
+  },
+  argTypes: {
+    // inferred as `any`, as the title comes from the polymorphic TitleBar
+    title: { control: 'text' },
+    buttonsAlignment: {
+      control: 'select',
+      options: ['flex-start', 'center', 'flex-end', 'space-between'],
+    },
+  },
 } as Meta<typeof Modal>;
 
-const SimpleDemo = () => {
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+const SimpleDemo = (props: ModalProps) => {
   const [showModal, toggleShowModal] = React.useState(true);
 
   const handleOpenModal = () => toggleShowModal(true);
@@ -40,8 +57,8 @@ const SimpleDemo = () => {
       <Button onClick={handleOpenModal}>Trigger Modal</Button>
       {showModal && (
         <Modal
+          {...props}
           icon={<Computer variant="16x16_4" />}
-          title="Browse"
           dragOptions={{
             defaultPosition: {
               x: 0,
@@ -94,8 +111,8 @@ const SimpleDemo = () => {
   );
 };
 
-export const Simple = {
-  render: () => <SimpleDemo />,
+export const Simple: Story = {
+  render: args => <SimpleDemo {...args} />,
 
   parameters: {
     design: {
@@ -287,6 +304,9 @@ export const Multiple = () => {
   );
 };
 
+// a demo of several modals at once; the controls are on Simple
+Multiple.parameters = { controls: { disable: true } };
+
 const MinimizeDemo = () => {
   const [first, toggleFirst] = React.useState(true);
   const [second, toggleSecond] = React.useState(true);
@@ -379,10 +399,12 @@ const MinimizeDemo = () => {
   );
 };
 
-export const Minimize = {
+export const Minimize: Story = {
   render: () => <MinimizeDemo />,
 
   parameters: {
+    // a demo of minimizing to the TaskBar; the controls are on Simple
+    controls: { disable: true },
     design: {
       type: 'figma',
       url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A17',
