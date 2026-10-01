@@ -26,6 +26,16 @@ import * as styles from './contract.stories.css';
 
 export default {
   title: 'Contract',
+  parameters: {
+    controls: { disable: true },
+    docs: { codePanel: false },
+    clippy: {
+      phrases: [
+        'Every component reads its colors and spacing from this theme contract.',
+        'Want your own look? See Custom Theme to create one with createGlobalTheme.',
+      ],
+    },
+  },
 };
 
 const treeNodes: TreeProps['data'] = [
@@ -530,8 +540,5 @@ function App() {
   },
   parameters: {
     design: { disable: true },
-    controls: {
-      disable: true,
-    },
   },
 };
