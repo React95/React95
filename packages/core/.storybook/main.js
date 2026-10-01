@@ -22,7 +22,6 @@ export default {
     getAbsolutePath('@storybook/addon-docs'),
     getAbsolutePath('@storybook/addon-designs'),
     join(import.meta.dirname, 'src', 'theme-changer'),
-    join(import.meta.dirname, 'src', 'clippy-addon'),
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),

@@ -16,6 +16,7 @@
     "@nx/workspace": "22.7.1",
     "@swc-node/register": "^1.11.1",
     "@swc/core": "^1.15.33",
+    "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
     "@vitest/coverage-istanbul": "^2.0.5",
