@@ -111,7 +111,7 @@ const UsageInstructionsDemo = ({
         </p>
 
         <Frame display={'flex'} gap="$4">
-          <Input
+          <Input aria-label="GlobalStyle import statement"
             w="100%"
             fontFamily="monospace"
             maxWidth={'300px'}
@@ -139,7 +139,7 @@ const UsageInstructionsDemo = ({
               Choose a theme from the dropdown below. This will apply the
               selected theme's styles globally.
             </p>
-            <Dropdown
+            <Dropdown aria-label="Select theme"
               value={selectedTheme}
               onChange={e => {
                 const theme = (e.target as HTMLSelectElement).value;
@@ -153,7 +153,7 @@ const UsageInstructionsDemo = ({
               styles.
             </p>
             <Frame mt="$8" display="flex" gap="$4">
-              <Input
+              <Input aria-label="Theme import statement"
                 fontFamily="monospace"
                 w="100%"
                 maxWidth={'300px'}
@@ -177,7 +177,8 @@ const UsageInstructionsDemo = ({
 
       <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
         <h2>4. Complete Example</h2>
-        <TextArea
+     <TextArea
+  aria-label="Complete example code"
           whiteSpace="pre-line"
           rows={16}
           cols={50}
@@ -271,13 +272,15 @@ export const Overview: Story = {
           </Fieldset>
 
           <Fieldset legend="Scrollable Content" mt="$18">
-            <Frame
-              h="150px"
-              overflow="auto"
-              bgColor="$inputBackground"
-              p="$8"
-              boxShadow="$in"
-            >
+           <Frame
+  h="150px"
+  overflow="auto"
+  bgColor="$inputBackground"
+  p="$8"
+  boxShadow="$in"
+  tabIndex={0}
+  aria-label="Scrollable content demo"
+>
               <p>
                 This container demonstrates the custom scrollbar styling
                 provided by GlobalStyle. The scrollbars have a Windows 95
