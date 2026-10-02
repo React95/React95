@@ -48,6 +48,7 @@ export default {
   title: 'All',
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     docs: { codePanel: false },
     design: { disable: true },
   },

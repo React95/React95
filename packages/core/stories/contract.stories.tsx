@@ -28,6 +28,7 @@ export default {
   title: 'Contract',
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     docs: { codePanel: false },
     design: { disable: true },
     clippy: {

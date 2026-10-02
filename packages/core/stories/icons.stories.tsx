@@ -77,6 +77,7 @@ export const All: Story = {
     // the JSX generated from ~1500 rendered icons is huge and freezes the UI
     docs: { codePanel: false },
     controls: { disable: true },
+    interactions: { disable: true },
     clippy: {
       phrases: ['Click any icon to copy its JSX to your clipboard.'],
     },

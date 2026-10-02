@@ -20,6 +20,7 @@ export default {
   tags: ['autodocs'],
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     design: { disable: true },
     clippy: {
       phrases: [
