@@ -5,6 +5,13 @@ import { Cursor } from '../components/Cursor/Cursor.css';
 
 export default {
   title: 'Cursor',
+  parameters: {
+    controls: { disable: true },
+    docs: { codePanel: false },
+    clippy: {
+      phrases: ['Hover over each box to try that cursor. Very 1995!'],
+    },
+  },
 } as Meta<typeof Cursor>;
 
 export const Simple = {

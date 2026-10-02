@@ -2,15 +2,6 @@ import type { StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 
 import { Frame, FrameProps } from '../components/Frame/Frame';
-import { contract } from '../components/themes/contract.css';
-
-const colorsKeys = Object.keys(contract.colors).map(
-  color => `$${color}`,
-) as string[];
-const shadowsKeys = Object.keys(contract.shadows).map(
-  shadows => `$${shadows}`,
-) as string[];
-
 export default {
   title: 'Frame',
   component: Frame,
@@ -52,61 +43,6 @@ Pass objects with breakpoint keys to make props responsive:
 **Value Types:** Both design tokens (\`$4\`, \`$20\`) and CSS values (\`100%\`, \`200px\`) work in both single and responsive formats.
         `,
       },
-    },
-  },
-  argTypes: {
-    bgColor: {
-      options: colorsKeys,
-      defaultValue: '$material',
-      control: { type: 'select' },
-    },
-    backgroundColor: {
-      options: colorsKeys,
-      control: { type: 'select' },
-    },
-    color: {
-      options: colorsKeys,
-      control: { type: 'select' },
-    },
-    w: {
-      control: 'text',
-      description:
-        'Width. Supports responsive objects: { mobile: "100%", tablet: "50%" }',
-    },
-    width: {
-      control: 'text',
-      description:
-        'Width. Supports responsive objects: { mobile: "100%", tablet: "50%" }',
-    },
-    h: {
-      control: 'text',
-      description:
-        'Height. Supports responsive objects: { mobile: "100px", desktop: "200px" }',
-    },
-    height: {
-      control: 'text',
-      description:
-        'Height. Supports responsive objects: { mobile: "100px", desktop: "200px" }',
-    },
-    padding: {
-      control: 'text',
-      description:
-        'Padding. Supports responsive objects: { mobile: "$2", desktop: "$4" }',
-    },
-    margin: {
-      control: 'text',
-      description:
-        'Margin. Supports responsive objects: { mobile: "$2", desktop: "$4" }',
-    },
-    display: {
-      control: 'text',
-      description:
-        'Display type. Supports responsive objects: { mobile: "block", tablet: "flex" }',
-    },
-    boxShadow: {
-      options: shadowsKeys,
-      defaultValue: '$out',
-      control: { type: 'select' },
     },
   },
 };

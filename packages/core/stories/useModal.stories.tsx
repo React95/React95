@@ -22,7 +22,16 @@ import {
 const meta: Meta = {
   title: 'Hooks/useModal',
   parameters: {
+    controls: { disable: true },
+    design: { disable: true },
+    clippy: {
+      phrases: [
+        'Try minimizing a modal: it waits for you in the TaskBar.',
+        'useModal controls your modals without any React state.',
+      ],
+    },
     docs: {
+      codePanel: false,
       description: {
         component: `
 The \`useModal\` hook provides a programmatic API for controlling existing Modal components.

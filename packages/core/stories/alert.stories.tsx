@@ -1,51 +1,50 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 
-import { Alert, AlertType } from '../components/Alert/Alert';
-import { Button, Checkbox, Dropdown, TitleBar } from '../components';
+import { Alert, AlertProps } from '../components/Alert/Alert';
+import { Button, TitleBar } from '../components';
 
-export default {
+const meta = {
   title: 'Alert',
   component: Alert,
   tags: ['autodocs'],
+  args: {
+    title: 'Windows Networking',
+    type: 'error',
+    message: 'The Windows password you typed is incorrect.',
+    hasSound: false,
+    // Alert centers its buttons, unlike Modal
+    buttonsAlignment: 'center',
+  },
+  argTypes: {
+    // inferred as `any`, as the title comes from the polymorphic TitleBar
+    title: { control: 'text' },
+    buttonsAlignment: {
+      control: 'select',
+      options: ['flex-start', 'center', 'flex-end', 'space-between'],
+    },
+  },
 } as Meta<typeof Alert>;
 
-const SimpleDemo = () => {
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+const SimpleDemo = (props: AlertProps) => {
   const [showAlert, toggleShowAlert] = React.useState(true);
-  const [withSound, toggleWithSound] = React.useState(false);
-  const [type, setType] = React.useState<AlertType>('error');
 
   const handleOpenAlert = () => toggleShowAlert(true);
   const handleCloseAlert = () => toggleShowAlert(false);
-  const onImageChange = (e: React.FormEvent<HTMLSelectElement>) => {
-    setType(e.currentTarget.value as AlertType);
-  };
 
   return (
     <>
-      <div style={{ marginBottom: 10 }}>
-        Alert Type:
-        <Dropdown
-          options={['error', 'info', 'question', 'warning']}
-          onChange={onImageChange}
-        />
-        <Checkbox
-          checked={withSound}
-          onChange={() => toggleWithSound(!withSound)}
-        >
-          sound
-        </Checkbox>
-      </div>
       <Button onClick={handleOpenAlert}>Trigger Alert</Button>
       {showAlert && (
         <Alert
-          title="Windows Networking"
-          type={type}
-          message="The Windows password you typed is incorrect."
+          {...props}
           titleBarOptions={
             <TitleBar.Close key="close" onClick={handleCloseAlert} />
           }
-          hasSound={withSound}
           buttons={[{ value: 'OK', onClick: handleCloseAlert }]}
         />
       )}
@@ -53,8 +52,12 @@ const SimpleDemo = () => {
   );
 };
 
-export const Simple = {
-  render: () => <SimpleDemo />,
+export const Simple: Story = {
+  args: {
+    hasWindowButton: false,
+  },
+
+  render: args => <SimpleDemo {...args} />,
 
   parameters: {
     design: {

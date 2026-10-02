@@ -1,18 +1,25 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Button, ButtonProps } from '../components/Button/Button';
 
-export default {
+const meta = {
   title: 'Button',
   component: Button,
   tags: ['autodocs'],
+  args: {
+    children: 'Ok',
+    disabled: false,
+  },
+  argTypes: {
+    children: { control: 'text' },
+  },
 } as Meta<ButtonProps<'button'>>;
 
-export const Simple = {
-  render: () => {
-    return <Button>Ok</Button>;
-  },
+export default meta;
 
+type Story = StoryObj<typeof meta>;
+
+export const Simple: Story = {
   parameters: {
     design: {
       type: 'figma',

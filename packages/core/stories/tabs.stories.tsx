@@ -1,19 +1,33 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Checkbox, Dropdown, Fieldset, Input } from '../components';
 import { Tab } from '../components/Tabs/Tab';
 import { Tabs, TabsProps } from '../components/Tabs/Tabs';
 
-export default {
+const meta = {
   title: 'Tabs, Tab',
   component: Tabs,
   tags: ['autodocs'],
   subcomponents: { Tab },
+  args: {
+    defaultActiveTab: 'Compatibility',
+  },
+  argTypes: {
+    defaultActiveTab: {
+      control: 'select',
+      options: ['General', 'Compatibility'],
+    },
+  },
 } as Meta<TabsProps>;
 
-export const Simple = {
-  render: () => (
-    <Tabs width="350px" defaultActiveTab="Compatibility">
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Simple: Story = {
+  render: args => (
+    // `defaultActiveTab` is only read on mount, so a new value remounts Tabs
+    <Tabs key={args.defaultActiveTab} width="350px" {...args}>
       <Tab title="General">
         <Fieldset legend="Logon validation" style={{ marginBottom: '1em' }}>
           <Checkbox readOnly checked>

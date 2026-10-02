@@ -1,33 +1,56 @@
-import type { Meta } from '@storybook/react-vite';
+import { composeStories, type Meta } from '@storybook/react-vite';
 import * as React from 'react';
 
 import { Alert, Button, TitleBar } from '../components';
 
-import { Simple as SimpleAvatar } from './avatar.stories';
-import { Simple as SimpleButton } from './button.stories';
-import { All as AllCheckbox } from './checkbox.stories';
-import { Simple as SimpleDropdown } from './dropdown.stories';
-import { Simple as SimpleFieldset } from './fieldset.stories';
-import { Simple as SimpleInput } from './input.stories';
-import { Simple as SimpleList, WithIcons } from './list.stories';
-import { Simple as SimpleProgressBar } from './progressbar.stories';
-import { Simple as SimpleRadioButton } from './radiobutton.stories';
-import { Simple as SimpleRange } from './range.stories';
-import { Simple as SimpleTabs } from './tabs.stories';
-import { Simple as SimpleTextArea } from './textarea.stories';
-import {
-  Complete,
-  Inactive,
-  Simple as SimpleTitleBar,
-} from './titlebar.stories';
-import { Simple as SimpleTooltip } from './tooltip.stories';
-import { Simple as SimpleTree } from './tree.stories';
-import { FromURL } from './video.stories';
+import * as AvatarStories from './avatar.stories';
+import * as ButtonStories from './button.stories';
+import * as CheckboxStories from './checkbox.stories';
+import * as DropdownStories from './dropdown.stories';
+import * as FieldsetStories from './fieldset.stories';
+import * as InputStories from './input.stories';
+import * as ListStories from './list.stories';
+import * as ProgressBarStories from './progressbar.stories';
+import * as RadioButtonStories from './radiobutton.stories';
+import * as RangeStories from './range.stories';
+import * as TabsStories from './tabs.stories';
+import * as TextAreaStories from './textarea.stories';
+import * as TitleBarStories from './titlebar.stories';
+import * as TooltipStories from './tooltip.stories';
+import * as TreeStories from './tree.stories';
+import * as VideoStories from './video.stories';
 
 import * as styles from './all.stories.css';
 
+// each story renders with its args, whether or not it has a custom `render`
+const { Simple: SimpleAvatar } = composeStories(AvatarStories);
+const { Simple: SimpleButton } = composeStories(ButtonStories);
+const { All: AllCheckbox } = composeStories(CheckboxStories);
+const { Simple: SimpleDropdown } = composeStories(DropdownStories);
+const { Simple: SimpleFieldset } = composeStories(FieldsetStories);
+const { Simple: SimpleInput } = composeStories(InputStories);
+const { Simple: SimpleList, WithIcons } = composeStories(ListStories);
+const { Simple: SimpleProgressBar } = composeStories(ProgressBarStories);
+const { Simple: SimpleRadioButton } = composeStories(RadioButtonStories);
+const { Simple: SimpleRange } = composeStories(RangeStories);
+const { Simple: SimpleTabs } = composeStories(TabsStories);
+const { Simple: SimpleTextArea } = composeStories(TextAreaStories);
+const {
+  Simple: SimpleTitleBar,
+  Inactive,
+  Complete,
+} = composeStories(TitleBarStories);
+const { Simple: SimpleTooltip } = composeStories(TooltipStories);
+const { Simple: SimpleTree } = composeStories(TreeStories);
+const { FromURL } = composeStories(VideoStories);
+
 export default {
   title: 'All',
+  parameters: {
+    controls: { disable: true },
+    docs: { codePanel: false },
+    design: { disable: true },
+  },
 } as Meta;
 
 const AllDemo = () => {
@@ -58,73 +81,73 @@ const AllDemo = () => {
       <br />
 
       <div>
-        <SimpleButton.render />
+        <SimpleButton />
       </div>
 
       <br />
-      <SimpleAvatar.render {...SimpleAvatar.args} />
+      <SimpleAvatar />
 
       <br />
-      <AllCheckbox.render />
+      <AllCheckbox />
 
       <br />
-      <SimpleDropdown.render />
+      <SimpleDropdown />
 
       <br />
-      <SimpleFieldset.render />
+      <SimpleFieldset />
 
       <br />
       <div>
-        <SimpleInput.render />
-      </div>
-
-      <br />
-      <br />
-
-      <div>
-        <SimpleTextArea.render />
+        <SimpleInput />
       </div>
 
       <br />
       <br />
 
       <div>
-        <WithIcons.render />
+        <SimpleTextArea />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <WithIcons />
         <br />
-        <SimpleList.render />
+        <SimpleList />
       </div>
 
       <br />
-      <SimpleProgressBar.render {...SimpleProgressBar.args} />
+      <SimpleProgressBar />
 
       <br />
-      <SimpleRadioButton.render />
+      <SimpleRadioButton />
 
       <br />
-      <SimpleRange.render />
+      <SimpleRange />
 
       <br />
       <div className={styles.tabs}>
-        <SimpleTabs.render />
+        <SimpleTabs />
       </div>
 
       <br />
-      <SimpleTree.render />
+      <SimpleTree />
 
       <br />
-      <SimpleTooltip.render {...SimpleTooltip.args} />
+      <SimpleTooltip />
 
       <br />
-      <FromURL.render />
+      <FromURL />
 
       <br />
-      <SimpleTitleBar.render />
+      <SimpleTitleBar />
 
       <br />
-      <Inactive.render />
+      <Inactive />
 
       <br />
-      <Complete.render />
+      <Complete />
     </div>
   );
 };

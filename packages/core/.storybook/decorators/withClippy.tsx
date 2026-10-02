@@ -120,6 +120,32 @@ const Greeter = () => {
       fontSize: '12px',
     });
 
+    // clippyjs sizes the balloon with offsetWidth/offsetHeight, which round
+    // down. With MS Sans Serif a line can be a fraction of a pixel wider (e.g.
+    // 195.44px), so once the width is fixed its last word wraps to a line that
+    // wasn't measured and spills out of the balloon. This measures it again,
+    // rounding up.
+    const balloon = clippy._balloon;
+    const sizeBalloon = balloon.speak.bind(balloon);
+
+    balloon.speak = (complete: () => void, text: string, hold: boolean) => {
+      sizeBalloon(complete, text, hold);
+
+      const content = balloon._content;
+      const typed = content.textContent;
+
+      content.style.width = 'auto';
+      content.style.height = 'auto';
+      content.textContent = text;
+
+      const { width, height } = content.getBoundingClientRect();
+
+      content.style.width = `${Math.ceil(width)}px`;
+      content.style.height = `${Math.ceil(height)}px`;
+      content.textContent = typed;
+      balloon.reposition();
+    };
+
     clippy.play('Wave');
     say(clippy, pick(talks));
 
@@ -220,6 +246,9 @@ const StoryChange = ({
   phrases: StoryPhrases;
 }) => {
   React.useEffect(() => {
+    // mounting the provider's own root during a story render makes React warn
+    // about nested updates from render, so it happens after the story commits
+    mountClippy();
     onStoryChange(storyKey, phrases);
   }, [storyKey]);
 
@@ -232,8 +261,6 @@ const speak = (message: string) => {
 };
 
 export const withClippy: Decorator = (Story, context) => {
-  mountClippy();
-
   const { clippy, design } = context.parameters;
   const phrases: StoryPhrases = {
     configured: (clippy as { phrases?: string[] } | undefined)?.phrases ?? [],

@@ -1,14 +1,21 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 
 import { Checkbox, CheckboxProps } from '../components/Checkbox/Checkbox';
 import { Frame } from '../components';
 
-export default {
+const meta = {
   title: 'Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
+  argTypes: {
+    children: { control: 'text' },
+  },
 } as Meta<CheckboxProps>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
 
 const AllDemo = () => {
   const [checked, toggleChecked] = React.useState(true);
@@ -41,10 +48,12 @@ const AllDemo = () => {
   );
 };
 
-export const All = {
+export const All: Story = {
   render: () => <AllDemo />,
 
   parameters: {
+    // a demo of every state; each one also has its own story with controls
+    controls: { disable: true },
     design: {
       type: 'figma',
       url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=3%3A4',
@@ -52,12 +61,8 @@ export const All = {
   },
 };
 
-export const Checked = {
-  render: () => (
-    <Checkbox checked readOnly>
-      Checked
-    </Checkbox>
-  ),
+export const Checked: Story = {
+  args: { children: 'Checked', checked: true, readOnly: true },
 
   parameters: {
     design: {
@@ -67,12 +72,8 @@ export const Checked = {
   },
 };
 
-export const Unchecked = {
-  render: () => (
-    <Checkbox readOnly checked={false}>
-      Unchecked
-    </Checkbox>
-  ),
+export const Unchecked: Story = {
+  args: { children: 'Unchecked', checked: false, readOnly: true },
 
   parameters: {
     design: {
@@ -82,8 +83,8 @@ export const Unchecked = {
   },
 };
 
-export const Disabled = {
-  render: () => <Checkbox disabled>Disabled</Checkbox>,
+export const Disabled: Story = {
+  args: { children: 'Disabled', disabled: true },
 
   parameters: {
     design: {
@@ -93,12 +94,13 @@ export const Disabled = {
   },
 };
 
-export const CheckedAndDisabled = {
-  render: () => (
-    <Checkbox readOnly disabled checked>
-      Checked and Disabled
-    </Checkbox>
-  ),
+export const CheckedAndDisabled: Story = {
+  args: {
+    children: 'Checked and Disabled',
+    checked: true,
+    disabled: true,
+    readOnly: true,
+  },
 
   parameters: {
     design: {
@@ -108,18 +110,21 @@ export const CheckedAndDisabled = {
   },
 };
 
-const WorkingDemo = () => {
+const WorkingDemo = (props: CheckboxProps) => {
   const [checked, toggleChecked] = React.useState(true);
 
   return (
-    <Checkbox checked={checked} onChange={() => toggleChecked(!checked)}>
-      Working
-    </Checkbox>
+    <Checkbox
+      {...props}
+      checked={checked}
+      onChange={() => toggleChecked(!checked)}
+    />
   );
 };
 
-export const Working = {
-  render: () => <WorkingDemo />,
+export const Working: Story = {
+  args: { children: 'Working', disabled: false },
+  render: args => <WorkingDemo {...args} />,
 
   parameters: {
     design: {
