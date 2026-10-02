@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 /**
  * Clippy in Storybook
  *
@@ -31,6 +32,8 @@
  * - Talking from a story: the render function receives `speak` in its context,
  *   e.g. `render: (_, { speak }) => ...` and `speak('Copied to clipboard!')`.
  *   It is safe to call while the agent is still loading, and is always queued.
+ *
+ * Clippy is left out of the story tests (`vitest.config.mjs`).
  */
 import React from 'react';
 import { createRoot } from 'react-dom/client';
@@ -261,6 +264,12 @@ const speak = (message: string) => {
 };
 
 export const withClippy: Decorator = (Story, context) => {
+  // story tests (Vitest runs in `test` mode) don't need a random agent with
+  // timers and network requests
+  if (import.meta.env.MODE === 'test') {
+    return Story({ ...context, speak: () => {} });
+  }
+
   const { clippy, design } = context.parameters;
   const phrases: StoryPhrases = {
     configured: (clippy as { phrases?: string[] } | undefined)?.phrases ?? [],
