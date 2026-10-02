@@ -1,5 +1,9 @@
 import { join } from 'path';
-import { defineConfig, mergeConfig } from 'vitest/config';
+import {
+  coverageConfigDefaults,
+  defineConfig,
+  mergeConfig,
+} from 'vitest/config';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
 
 import viteConfig from './vite.config';
@@ -42,6 +46,8 @@ export default mergeConfig(
         // same provider as the unit tests, and only the lib's code counts
         provider: 'istanbul',
         include: ['components/**'],
+        // plus the helpers for the unit tests
+        exclude: [...coverageConfigDefaults.exclude, '**/test/**'],
       },
       browser: {
         enabled: true,
