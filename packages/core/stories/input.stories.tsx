@@ -18,6 +18,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Simple: Story = {
+  args: {
+    'aria-label': 'Sample text input',
+  },
   parameters: {
     design: {
       type: 'figma',
