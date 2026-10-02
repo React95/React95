@@ -10,6 +10,8 @@ import * as styles from './icons.stories.css';
 
 export default {
   title: 'Icon',
+  // the icons come from @react95/icons, which has its own tests
+  tags: ['!test'],
 } as Meta;
 
 type Story = StoryObj<unknown>;

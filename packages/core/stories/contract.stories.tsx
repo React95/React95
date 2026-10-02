@@ -26,6 +26,8 @@ import * as styles from './contract.stories.css';
 
 export default {
   title: 'Contract',
+  // documentation, built from components that have their own tests
+  tags: ['!test'],
   parameters: {
     controls: { disable: true },
     interactions: { disable: true },

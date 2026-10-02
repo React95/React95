@@ -50,6 +50,8 @@ const AllDemo = () => {
 
 export const All: Story = {
   render: () => <AllDemo />,
+  // each state is tested in its own story
+  tags: ['!test'],
 
   parameters: {
     // a demo of every state; each one also has its own story with controls
