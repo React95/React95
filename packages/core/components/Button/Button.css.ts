@@ -20,7 +20,7 @@ export const button = style({
   ':disabled': {
     color: contract.colors.materialTextDisabled,
   },
-  ':focus': {
+  ':focus-visible': {
     outline: `${contract.space[1]} dotted ${contract.colors.materialText}`,
     outlineOffset: calc.negate(contract.space[5]),
 

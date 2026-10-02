@@ -28,4 +28,15 @@ describe('<Button />', () => {
       expect(onClickMock).toHaveBeenCalled();
     });
   });
+
+  describe('keyboard focus', () => {
+    it('should allow the Button to receive focus', () => {
+      const { container } = render(<Button>ok</Button>);
+      const button = container.querySelector('button');
+
+      button?.focus();
+
+      expect(document.activeElement).toBe(button);
+    });
+  });
 });
