@@ -13,11 +13,11 @@ jobs:
       number-of-agents: 3
       main-branch-name: master
       init-commands: |
-        yarn nx-cloud start-ci-run --stop-agents-after="lint,test,build"
+        yarn nx-cloud start-ci-run --stop-agents-after="lint,test,build,test-storybook,build-storybook"
       parallel-commands: |
         yarn nx-cloud record -- yarn nx format:check
       parallel-commands-on-agents: |
-        yarn nx affected -t lint,test,build --parallel=3
+        yarn nx affected -t lint,test,build,test-storybook,build-storybook --parallel=3
 
   agents:
     name: Nx Cloud - Agents
@@ -26,3 +26,7 @@ jobs:
       node-version: 24
       yarn-version: 1.22.19
       number-of-agents: 3
+      # test-storybook runs the stories in Chromium (see packages/core/vitest.config.mjs)
+      install-commands: |
+        yarn install --frozen-lockfile
+        npx playwright install --with-deps chromium
