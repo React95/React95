@@ -23,6 +23,7 @@ const meta: Meta = {
   title: 'Hooks/useModal',
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     design: { disable: true },
     clippy: {
       phrases: [

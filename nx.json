@@ -24,6 +24,9 @@
       "dependsOn": ["^lint"],
       "cache": true
     },
+    "test-storybook": {
+      "cache": true
+    },
     "sync-dist-version": {
       "dependsOn": ["build"],
       "cache": false

@@ -46,8 +46,11 @@ const { FromURL } = composeStories(VideoStories);
 
 export default {
   title: 'All',
+  // a showcase of the other stories, which are already tested on their own
+  tags: ['!test'],
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     docs: { codePanel: false },
     design: { disable: true },
   },

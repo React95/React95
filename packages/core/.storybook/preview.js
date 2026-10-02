@@ -21,6 +21,11 @@ export const parameters = {
     // replaces @storybook/addon-storysource, removed in Storybook 9
     codePanel: true,
   },
+  a11y: {
+    // violations show up as warnings in the story tests and the Accessibility
+    // panel, without failing them. Switch to 'error' once they are fixed
+    test: 'todo',
+  },
 };
 
 export const decorators = [Frame, withClippy];

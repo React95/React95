@@ -46,6 +46,8 @@ export default {
   addons: [
     getAbsolutePath('@storybook/addon-docs'),
     getAbsolutePath('@storybook/addon-designs'),
+    getAbsolutePath('@storybook/addon-a11y'),
+    getAbsolutePath('@storybook/addon-vitest'),
     join(import.meta.dirname, 'src', 'theme-changer'),
   ],
   framework: {
@@ -68,8 +70,6 @@ export default {
   },
   features: {
     actions: false,
-    // no story has a `play` function yet, so the panel would always be empty
-    interactions: false,
   },
   viteFinal: config => ({
     ...config,

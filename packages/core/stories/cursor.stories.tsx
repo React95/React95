@@ -7,6 +7,7 @@ export default {
   title: 'Cursor',
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     docs: { codePanel: false },
     clippy: {
       phrases: ['Hover over each box to try that cursor. Very 1995!'],

@@ -17,9 +17,11 @@ const availableThemes = Object.keys(themes);
 
 export default {
   title: 'GlobalStyle',
-  tags: ['autodocs'],
+  // documentation, built from components that have their own tests
+  tags: ['autodocs', '!test'],
   parameters: {
     controls: { disable: true },
+    interactions: { disable: true },
     design: { disable: true },
     clippy: {
       phrases: [

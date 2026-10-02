@@ -218,7 +218,8 @@
     "postbuild:esm": "copyfiles ./components/**/*.{svg,png,eot,ttf,woff,woff2,mp3} ./dist/esm -u 1",
     "prebuild": "rimraf ./dist",
     "sync-dist-version": "node ../../scripts/prepublish.js --types",
-    "test": "vitest run --config=../../config/test/core.js"
+    "test": "vitest run --config=../../config/test/core.js",
+    "test-storybook": "vitest run --config=vitest.config.mjs"
   },
   "publishConfig": {
     "access": "public",
