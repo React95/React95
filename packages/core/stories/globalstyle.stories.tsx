@@ -177,7 +177,8 @@ const UsageInstructionsDemo = ({
 
       <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
         <h2>4. Complete Example</h2>
-        <Text Areaaria-label="Complete example code"
+     <TextArea
+  aria-label="Complete example code"
           whiteSpace="pre-line"
           rows={16}
           cols={50}
