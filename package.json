@@ -19,7 +19,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
-    "@vitest/coverage-istanbul": "^2.0.5",
+    "@vitest/coverage-istanbul": "^3.2.4",
     "all-contributors-cli": "^6.20.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
@@ -40,7 +40,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "typescript": "5.3.3",
-    "vitest": "^2.0.5"
+    "vitest": "^3.2.4"
   },
   "npmClient": "yarn",
   "workspaces": [
