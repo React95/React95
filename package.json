@@ -60,6 +60,7 @@
     "test": "yarn nx run-many --target=test --all --parallel --runner=local",
     "test:core": "yarn nx test @react95/core",
     "test:clippy": "yarn nx test @react95/clippy",
+    "test:storybook": "yarn nx test-storybook @react95/core",
     "lint:core": "yarn nx lint @react95/core",
     "lint:clippy": "yarn nx lint @react95/clippy",
     "lint:all": "yarn nx run-many --target=lint --all --parallel --runner=local",
