@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect } from 'storybook/test';
 
 import { Input, InputProps } from '../components/Input/Input';
 
@@ -18,6 +19,13 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Simple: Story = {
+  play: async ({ canvas, userEvent }) => {
+    const input = canvas.getByRole('textbox');
+
+    await userEvent.type(input, 'Hello, World!');
+
+    await expect(input).toHaveValue('Hello, World!');
+  },
   parameters: {
     design: {
       type: 'figma',
