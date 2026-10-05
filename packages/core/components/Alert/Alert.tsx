@@ -43,7 +43,14 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(
     useEffect(() => {
       if (!hasSound) return;
       const audio = new Audio(sound);
-      audio.play();
+      // browsers block sound until the user has interacted with the page, so
+      // an alert that opens on its own is just silent
+      audio.play().catch(() => {
+        console.warn(
+          "[React95] Alert: the browser blocked the alert's sound. Browsers " +
+            'only play sound after the user has interacted with the page.',
+        );
+      });
     }, [hasSound]);
 
     return (
