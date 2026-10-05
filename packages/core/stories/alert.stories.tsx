@@ -31,6 +31,14 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+// what assistive technologies call each type's icon
+const iconNames = {
+  error: 'Error',
+  info: 'Information',
+  question: 'Question',
+  warning: 'Warning',
+};
+
 const SimpleDemo = (props: AlertProps) => {
   const [showAlert, toggleShowAlert] = React.useState(true);
 
@@ -60,11 +68,14 @@ export const Simple: Story = {
 
   render: args => <SimpleDemo {...args} />,
   play: async ({ args, canvas, userEvent }) => {
-    // the alert starts open, with its title and message
+    // the alert starts open, with its title, message and the icon of its type
     const alert = canvas.getByRole('dialog');
 
     await expect(alert).toHaveTextContent(args.title as string);
     await expect(alert).toHaveTextContent(args.message);
+    await expect(
+      within(alert).getByRole('img', { name: iconNames[args.type!] }),
+    ).toBeVisible();
 
     // OK closes it (the story keeps it open or closed)
     await userEvent.click(within(alert).getByRole('button', { name: 'OK' }));
@@ -88,5 +99,35 @@ export const Simple: Story = {
       type: 'figma',
       url: 'https://www.figma.com/design/2cbigNitjcruBDZT12ixIq/React95-Design-Kit?node-id=0%3A1',
     },
+  },
+};
+
+export const Warning: Story = {
+  ...Simple,
+  args: {
+    ...Simple.args,
+    type: 'warning',
+    title: 'Recycle Bin',
+    message: 'Are you sure you want to delete these 3 items?',
+  },
+};
+
+export const Info: Story = {
+  ...Simple,
+  args: {
+    ...Simple.args,
+    type: 'info',
+    title: 'Disk Defragmenter',
+    message: 'Defragmentation of drive C is complete.',
+  },
+};
+
+export const Question: Story = {
+  ...Simple,
+  args: {
+    ...Simple.args,
+    type: 'question',
+    title: 'Notepad',
+    message: 'The text in the Untitled file has changed. Save the changes?',
   },
 };

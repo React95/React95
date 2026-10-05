@@ -8,18 +8,25 @@ import sound from './assets/chord.mp3';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
+const icons = {
+  error: { Icon: User4, label: 'Error' },
+  info: { Icon: User5, label: 'Information' },
+  question: { Icon: User3, label: 'Question' },
+  warning: { Icon: User2, label: 'Warning' },
+};
+
 const RenderImage = ({ option }: { option: string }) => {
-  switch (option) {
-    case 'info':
-      return <User5 width={32} height={32} variant="32x32_4" />;
-    case 'question':
-      return <User3 width={32} height={32} variant="32x32_4" />;
-    case 'warning':
-      return <User2 width={32} height={32} variant="32x32_4" />;
-    case 'error':
-    default:
-      return <User4 width={32} height={32} variant="32x32_4" />;
-  }
+  const { Icon, label } = icons[option as AlertType] ?? icons.error;
+
+  return (
+    <Icon
+      width={32}
+      height={32}
+      variant="32x32_4"
+      role="img"
+      aria-label={label}
+    />
+  );
 };
 
 export type AlertProps = ModalProps & {
