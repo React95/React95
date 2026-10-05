@@ -1,6 +1,11 @@
-import type { Meta } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect, within } from 'storybook/test';
+
+import * as React from 'react';
 
 import { Tree, TreeProps } from '../components/Tree/Tree';
+import { Frame } from '../components';
+import type { NodeProps } from '../components/Tree/Node';
 import { Explorer100 } from '@react95/icons';
 
 const { icons } = Tree;
@@ -30,7 +35,6 @@ const treeNodes: TreeProps = {
               id: 4,
               label: 'Weezer',
               icon: <icons.FILE_MEDIA variant="16x16_4" />,
-              onClick: () => alert('nice!'),
             },
             {
               id: 5,
@@ -82,8 +86,94 @@ export default {
   tags: ['autodocs'],
 } as Meta<typeof Tree>;
 
-export const Simple = {
-  render: () => <Tree {...treeNodes} root={root} />,
+// every node reports its clicks, like Explorer's status bar
+const withOnClick = (
+  nodes: Array<NodeProps>,
+  onClick: NonNullable<NodeProps['onClick']>,
+): Array<NodeProps> =>
+  nodes.map(node => ({
+    ...node,
+    onClick,
+    children: node.children && withOnClick(node.children, onClick),
+  }));
+
+const SimpleDemo = () => {
+  const [selected, setSelected] = React.useState<string>();
+  // `node` is optional only for the types: NodeProps' onClick is also
+  // typed as the <li>'s, which doesn't get it. Tree always passes it
+  const select = (_event: unknown, node?: { label: string }) =>
+    setSelected(node?.label);
+
+  return (
+    <>
+      <Tree
+        data={withOnClick(treeNodes.data, select)}
+        root={{ ...root, onClick: select }}
+      />
+      <Frame
+        role="status"
+        boxShadow="$out"
+        mt="$12"
+        p="$3"
+        bgColor="$material"
+        w="180px"
+      >
+        <Frame boxShadow="$in" px="$4" py="$2">
+          {selected ? `Selected: ${selected}` : 'Click a file or folder'}
+        </Frame>
+      </Frame>
+    </>
+  );
+};
+
+export const Simple: StoryObj<typeof Tree> = {
+  render: () => <SimpleDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const music = canvas.getByText('Music');
+    const folder = music.closest('li')!;
+    // the +/- next to the folder's own name (subfolders have one too)
+    const toggle = () => within(folder).getAllByText(/^[+-]$/)[0];
+
+    // folders start closed: their content isn't there
+    await expect(toggle()).toHaveTextContent('+');
+    await expect(folder).not.toHaveTextContent('Indie');
+
+    // double-clicking the name opens it
+    await userEvent.dblClick(music);
+
+    await expect(toggle()).toHaveTextContent('-');
+    await expect(folder).toHaveTextContent('Indie');
+    await expect(folder).not.toHaveTextContent('Weezer');
+
+    // subfolders open on their own
+    await userEvent.dblClick(canvas.getByText('Indie'));
+
+    await expect(folder).toHaveTextContent('Weezer');
+
+    // clicking a node calls its onClick with the node (the story shows its
+    // label in the status line)
+    await userEvent.click(canvas.getByText('Weezer'));
+
+    await expect(canvas.getByRole('status')).toHaveTextContent(
+      'Selected: Weezer',
+    );
+
+    // the - closes it
+    await userEvent.click(toggle());
+
+    await expect(toggle()).toHaveTextContent('+');
+    await expect(folder).not.toHaveTextContent('Indie');
+
+    // and with the keyboard, Space opens the focused folder (and, like a
+    // click, calls its onClick)
+    music.focus();
+    await userEvent.keyboard(' ');
+
+    await expect(folder).toHaveTextContent('Indie');
+    await expect(canvas.getByRole('status')).toHaveTextContent(
+      'Selected: Music',
+    );
+  },
 
   parameters: {
     design: {
