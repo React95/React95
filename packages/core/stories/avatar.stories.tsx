@@ -96,7 +96,7 @@ export const Letters: Story = {
     const square = canvas.getByText('SQ');
     const round = canvas.getByText('RO');
 
-    await expect(canvas.queryByRole('img')).not.toBeInTheDocument();
+    await expect(canvas.queryAllByRole('img')).toHaveLength(0);
     await expect(square).toHaveStyle({ width: '48px', height: '48px' });
     await expect(square).not.toHaveStyle({ borderRadius: '50%' });
     await expect(round).toHaveStyle({ width: '48px', height: '48px' });
