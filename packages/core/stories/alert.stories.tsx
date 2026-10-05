@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
-import { expect, within } from 'storybook/test';
+import { expect, spyOn, within } from 'storybook/test';
 
 import { Alert, AlertProps } from '../components/Alert/Alert';
 import { Button, TitleBar } from '../components';
@@ -39,8 +39,11 @@ const iconNames = {
   warning: 'Warning',
 };
 
-const SimpleDemo = (props: AlertProps) => {
-  const [showAlert, toggleShowAlert] = React.useState(true);
+const SimpleDemo = ({
+  defaultOpen = true,
+  ...props
+}: AlertProps & { defaultOpen?: boolean }) => {
+  const [showAlert, toggleShowAlert] = React.useState(defaultOpen);
 
   const handleOpenAlert = () => toggleShowAlert(true);
   const handleCloseAlert = () => toggleShowAlert(false);
@@ -129,5 +132,43 @@ export const Question: Story = {
     type: 'question',
     title: 'Notepad',
     message: 'The text in the Untitled file has changed. Save the changes?',
+  },
+};
+
+// browsers only play sound after a real click on the page, so this alert
+// starts closed: click "Trigger Alert" to hear it
+export const WithSound: Story = {
+  args: {
+    ...Simple.args,
+    hasSound: true,
+  },
+  render: args => <SimpleDemo {...args} defaultOpen={false} />,
+  // watches the chord without silencing it
+  beforeEach: () => {
+    const play = spyOn(HTMLMediaElement.prototype, 'play').mockName(
+      'audio.play',
+    );
+
+    return () => play.mockRestore();
+  },
+  play: async ({ canvas, userEvent }) => {
+    await expect(HTMLMediaElement.prototype.play).not.toHaveBeenCalled();
+
+    // opening the alert plays the chord
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Trigger Alert' }),
+    );
+
+    await expect(HTMLMediaElement.prototype.play).toHaveBeenCalledOnce();
+
+    // closed again, ready for a real click
+    await userEvent.click(
+      within(canvas.getByRole('dialog')).getByRole('button', { name: 'OK' }),
+    );
+  },
+  parameters: {
+    clippy: {
+      phrases: ['Click "Trigger Alert" to hear the Windows chord!'],
+    },
   },
 };
