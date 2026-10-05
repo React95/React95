@@ -4,9 +4,12 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
 <div>
   <ul
     class="Tree_tree__z2881c0"
+    role="tree"
   >
     <li
       class="Tree_node__z2881c1"
+      role="treeitem"
+      tabindex="0"
     >
       <div
         class="Tree_nodeContent__z2881c3"
@@ -21,7 +24,7 @@ exports[`<Tree /> > Snapshot > should match snapshot 1`] = `
         </div>
         <label
           class="Tree_label__z2881c4"
-          tabindex="0"
+          tabindex="-1"
         >
           foo
         </label>

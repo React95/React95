@@ -27,7 +27,13 @@ export const Tree = forwardRef<HTMLUListElement, TreeProps>(
     return (
       <>
         {root && <NodeRoot {...root} />}
-        <Frame {...rest} className={cn(tree, rest.className)} as="ul" ref={ref}>
+        <Frame
+          {...rest}
+          className={cn(tree, rest.className)}
+          as="ul"
+          role="tree"
+          ref={ref}
+        >
           {data.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
