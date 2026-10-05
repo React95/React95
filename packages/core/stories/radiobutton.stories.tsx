@@ -101,6 +101,7 @@ export const Playground: Story = {
     disabled: false,
     readOnly: true,
     name: 'option',
+    className: 'option',
   },
   play: async ({ args, canvas }) => {
     // the children name the radio button, and the other props reach the input
@@ -109,6 +110,12 @@ export const Playground: Story = {
     await expect(radio).not.toBeChecked();
     await expect(radio).toBeEnabled();
     await expect(radio).toHaveAttribute('name', args.name);
+
+    // `className` goes to the label only. On the input, it would replace the
+    // class that hides the native radio behind the Win95 one
+    await expect(radio.closest('label')).toHaveClass(args.className!);
+    await expect(radio).not.toHaveClass(args.className!);
+    await expect(radio).toHaveStyle({ opacity: '0' });
   },
   argTypes: {
     children: { control: 'text' },
