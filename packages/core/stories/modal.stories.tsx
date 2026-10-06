@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
+import { expect, spyOn, within } from 'storybook/test';
 
 import {
   Button,
@@ -49,8 +50,6 @@ const SimpleDemo = (props: ModalProps) => {
 
   const handleOpenModal = () => toggleShowModal(true);
   const handleCloseModal = () => toggleShowModal(false);
-  const handleButtonClick = (e: React.MouseEvent<HTMLLIElement>) =>
-    alert(e.currentTarget.value);
 
   return (
     <>
@@ -66,17 +65,12 @@ const SimpleDemo = (props: ModalProps) => {
             },
           }}
           titleBarOptions={[
-            <TitleBar.Help
-              key="help"
-              onClick={() => {
-                alert('Help!');
-              }}
-            />,
+            <TitleBar.Help key="help" onClick={() => console.log('Help')} />,
             <TitleBar.Close key="close" onClick={handleCloseModal} />,
           ]}
           buttons={[
-            { value: 'Ok', onClick: handleButtonClick },
-            { value: 'Cancel', onClick: handleButtonClick },
+            { value: 'Ok', onClick: () => console.log('Ok') },
+            { value: 'Cancel', onClick: () => console.log('Cancel') },
           ]}
           menu={[
             {
@@ -113,6 +107,66 @@ const SimpleDemo = (props: ModalProps) => {
 
 export const Simple: Story = {
   render: args => <SimpleDemo {...args} />,
+  // the demo's buttons log what was clicked; the spy still prints it
+  beforeEach: () => {
+    const log = spyOn(console, 'log').mockName('console.log');
+
+    return () => log.mockRestore();
+  },
+  play: async ({ args, canvas, userEvent }) => {
+    const modal = canvas.getByRole('dialog');
+
+    // the modal starts open, with its title and content
+    await expect(modal).toHaveTextContent(args.title as string);
+    await expect(modal).toHaveTextContent('Simple modal');
+
+    // its buttons and title bar options call their onClick
+    await userEvent.click(within(modal).getByRole('button', { name: 'Ok' }));
+
+    await expect(console.log).toHaveBeenLastCalledWith('Ok');
+
+    await userEvent.click(
+      within(modal).getByRole('button', { name: 'Cancel' }),
+    );
+
+    await expect(console.log).toHaveBeenLastCalledWith('Cancel');
+
+    await userEvent.click(within(modal).getByRole('button', { name: 'help' }));
+
+    await expect(console.log).toHaveBeenLastCalledWith('Help');
+
+    // a menu opens its list when pressed, one menu at a time
+    await expect(modal).not.toHaveTextContent('Exit');
+
+    await userEvent.click(within(modal).getByText('File'));
+
+    await expect(modal).toHaveTextContent('Exit');
+
+    await userEvent.click(within(modal).getByText('Edit'));
+
+    await expect(modal).toHaveTextContent('Copy');
+    await expect(modal).not.toHaveTextContent('Exit');
+
+    // and closes it when the press is outside the menu
+    await userEvent.click(within(modal).getByText('Simple modal'));
+
+    await expect(modal).not.toHaveTextContent('Copy');
+
+    // the menu's Exit closes the modal, and so does the title bar's close
+    await userEvent.click(within(modal).getByText('File'));
+    await userEvent.click(within(modal).getByText('Exit'));
+
+    await expect(canvas.queryAllByRole('dialog')).toHaveLength(0);
+
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Trigger Modal' }),
+    );
+    await userEvent.click(
+      within(canvas.getByRole('dialog')).getByRole('button', { name: 'close' }),
+    );
+
+    await expect(canvas.queryAllByRole('dialog')).toHaveLength(0);
+  },
 
   parameters: {
     design: {
