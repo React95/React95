@@ -12,7 +12,7 @@ const meta = {
     disabled: false,
     readOnly: false,
   },
-} as Meta<InputProps>;
+} satisfies Meta<InputProps>;
 
 export default meta;
 

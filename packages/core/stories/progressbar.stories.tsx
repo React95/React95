@@ -6,6 +6,8 @@ import {
   ProgressBarProps,
 } from '../components/ProgressBar/ProgressBar';
 
+// `as`, not `satisfies`: the polymorphic props make the type too complex
+// for TypeScript (TS2590)
 export default {
   title: 'ProgressBar',
   component: ProgressBar,

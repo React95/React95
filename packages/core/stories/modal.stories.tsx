@@ -41,7 +41,7 @@ const meta = {
       options: ['flex-start', 'center', 'flex-end', 'space-between'],
     },
   },
-} as Meta<typeof Modal>;
+} satisfies Meta<typeof Modal>;
 
 export default meta;
 

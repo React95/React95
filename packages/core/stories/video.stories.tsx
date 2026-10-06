@@ -8,7 +8,7 @@ const meta = {
   title: 'Video',
   component: Video,
   tags: ['autodocs'],
-} as Meta<typeof Video>;
+} satisfies Meta<typeof Video>;
 
 export default meta;
 

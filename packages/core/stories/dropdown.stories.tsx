@@ -16,7 +16,7 @@ const meta = {
     ],
     disabled: false,
   },
-} as Meta<DropdownProps>;
+} satisfies Meta<DropdownProps>;
 
 export default meta;
 

@@ -6,6 +6,8 @@ import { TitleBar } from '../components/TitleBar/TitleBar';
 import { contract } from '../components/themes/contract.css';
 import { themeColor } from '../.storybook/theme-color';
 
+// `as`, not `satisfies`: the polymorphic props make the type too complex
+// for TypeScript (TS2590)
 const meta = {
   title: 'TitleBar',
   component: TitleBar,

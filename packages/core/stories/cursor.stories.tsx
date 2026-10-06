@@ -13,7 +13,7 @@ export default {
       phrases: ['Hover over each box to try that cursor. Very 1995!'],
     },
   },
-} as Meta<typeof Cursor>;
+} satisfies Meta<typeof Cursor>;
 
 export const Simple = {
   render: () => (

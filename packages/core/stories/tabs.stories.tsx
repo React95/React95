@@ -5,6 +5,8 @@ import { Checkbox, Dropdown, Fieldset, Input } from '../components';
 import { Tab } from '../components/Tabs/Tab';
 import { Tabs, TabsProps } from '../components/Tabs/Tabs';
 
+// `as`, not `satisfies`: `children` is required, and the stories render the
+// tabs themselves instead of taking them as an arg
 const meta = {
   title: 'Tabs, Tab',
   component: Tabs,

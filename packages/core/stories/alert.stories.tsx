@@ -25,7 +25,7 @@ const meta = {
       options: ['flex-start', 'center', 'flex-end', 'space-between'],
     },
   },
-} as Meta<typeof Alert>;
+} satisfies Meta<typeof Alert>;
 
 export default meta;
 

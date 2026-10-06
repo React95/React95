@@ -79,7 +79,7 @@ GlobalStyle works with all React95 themes. The styles automatically adapt to the
       },
     },
   },
-} as Meta;
+} satisfies Meta;
 
 type Story = StoryObj;
 

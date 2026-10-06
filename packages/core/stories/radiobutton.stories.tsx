@@ -12,7 +12,7 @@ const meta = {
   title: 'RadioButton',
   component: RadioButton,
   tags: ['autodocs'],
-} as Meta<RadioButtonProps>;
+} satisfies Meta<RadioButtonProps>;
 
 export default meta;
 

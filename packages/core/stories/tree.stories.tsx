@@ -84,7 +84,7 @@ export default {
   title: 'Tree',
   component: Tree,
   tags: ['autodocs'],
-} as Meta<typeof Tree>;
+} satisfies Meta<typeof Tree>;
 
 // every node reports its clicks, like Explorer's status bar
 const withOnClick = (

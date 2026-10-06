@@ -20,6 +20,8 @@ import {
 import { List, ListProps } from '../components/List/List';
 import { hover, isRealPointer } from '../.storybook/pointer';
 
+// `as`, not `satisfies`: the polymorphic props make the type too complex
+// for TypeScript (TS2590)
 const meta = {
   title: 'List',
   component: List,

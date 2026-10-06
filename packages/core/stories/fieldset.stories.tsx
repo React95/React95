@@ -12,7 +12,7 @@ const meta = {
     legend: 'Connection Settings',
     disabled: false,
   },
-} as Meta<FieldSetProps>;
+} satisfies Meta<FieldSetProps>;
 
 export default meta;
 

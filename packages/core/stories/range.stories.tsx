@@ -13,7 +13,7 @@ const meta = {
     step: 1,
     disabled: false,
   },
-} as Meta<RangeProps>;
+} satisfies Meta<RangeProps>;
 
 export default meta;
 

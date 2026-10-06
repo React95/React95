@@ -12,7 +12,7 @@ const meta = {
   argTypes: {
     children: { control: 'text' },
   },
-} as Meta<CheckboxProps>;
+} satisfies Meta<CheckboxProps>;
 
 export default meta;
 

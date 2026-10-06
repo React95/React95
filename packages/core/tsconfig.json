@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
+    "declaration": false,
     "types": ["@testing-library/jest-dom"]
   },
   "include": ["components", "stories", "types", "../../types"],

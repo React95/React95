@@ -4,6 +4,8 @@ import { expect } from 'storybook/test';
 import { Avatar, AvatarProps } from '../components/Avatar/Avatar';
 import { Frame } from '../components';
 
+// `as`, not `satisfies`: the polymorphic props make the type too complex
+// for TypeScript (TS2590)
 export default {
   title: 'Avatar',
   component: Avatar,

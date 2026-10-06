@@ -15,7 +15,7 @@ const meta = {
     disabled: false,
     readOnly: false,
   },
-} as Meta<TextAreaProps>;
+} satisfies Meta<TextAreaProps>;
 
 export default meta;
 

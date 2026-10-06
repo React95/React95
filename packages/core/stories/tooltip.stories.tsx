@@ -12,7 +12,7 @@ export default {
       control: { type: 'number', step: 100 },
     },
   },
-} as Meta<TooltipProps>;
+} satisfies Meta<TooltipProps>;
 
 type Story = StoryObj<TooltipProps>;
 

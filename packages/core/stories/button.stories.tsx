@@ -3,6 +3,8 @@ import { expect, fn } from 'storybook/test';
 
 import { Button, ButtonProps } from '../components/Button/Button';
 
+// `as`, not `satisfies`: the polymorphic props make the type too complex
+// for TypeScript (TS2590)
 const meta = {
   title: 'Button',
   component: Button,

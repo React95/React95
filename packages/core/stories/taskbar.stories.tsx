@@ -10,7 +10,7 @@ export default {
   title: 'TaskBar',
   component: TaskBar,
   tags: ['autodocs'],
-} as Meta<typeof TaskBar>;
+} satisfies Meta<typeof TaskBar>;
 
 const SimpleDemo = () => {
   const [first, toggleFirst] = React.useState(false);
