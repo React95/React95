@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import type { HTMLAttributes, ReactElement } from 'react';
 
 import { Frame, FrameProps } from '../Frame/Frame';
@@ -20,6 +20,14 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
     const [showList, toggleShowList] = useState(false);
     const [activeStart, toggleActiveStart] = useState(false);
     const [modalWindows, setModalWindows] = React.useState<ModalWindow[]>([]);
+    // the same list, readable right away: removing a modal focuses the next
+    // one, which can't happen inside a state updater (that runs while React
+    // renders)
+    const modalWindowsRef = useRef<ModalWindow[]>([]);
+    const updateModalWindows = (windows: ModalWindow[]) => {
+      modalWindowsRef.current = windows;
+      setModalWindows(windows);
+    };
     const [activeWindow, setActiveWindow] = useState<string>();
     const { minimize, restore, focus, subscribe } = useModal();
 
@@ -29,31 +37,31 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
           console.warn('Modal added without ID');
           return;
         }
-        setModalWindows(prevModals => {
-          // a modal that's already there is updated in place (e.g. a new title)
-          if (prevModals.some(modal => modal.id === window.id)) {
-            return prevModals.map(modal =>
+        const modals = modalWindowsRef.current;
+
+        // a modal that's already there is updated in place (e.g. a new title)
+        if (modals.some(modal => modal.id === window.id)) {
+          updateModalWindows(
+            modals.map(modal =>
               modal.id === window.id ? { ...modal, ...window } : modal,
-            );
-          }
-          return [...prevModals, window as ModalWindow];
-        });
+            ),
+          );
+        } else {
+          updateModalWindows([...modals, window as ModalWindow]);
+        }
       };
 
       const removeModal = (data: Pick<Partial<ModalWindow>, 'id'>) => {
-        setModalWindows(prevModals => {
-          const filteredModals = prevModals.filter(
-            modal => modal.id !== data.id,
-          );
+        const filteredModals = modalWindowsRef.current.filter(
+          modal => modal.id !== data.id,
+        );
+        const lastModal = filteredModals.at(-1);
 
-          const lastModal = filteredModals.at(-1);
+        updateModalWindows(filteredModals);
 
-          if (activeWindow === data.id && lastModal) {
-            focus(lastModal.id);
-          }
-
-          return filteredModals;
-        });
+        if (activeWindow === data.id && lastModal) {
+          focus(lastModal.id);
+        }
       };
 
       const updateVisibleModal = ({ id }: Pick<Partial<ModalWindow>, 'id'>) => {
