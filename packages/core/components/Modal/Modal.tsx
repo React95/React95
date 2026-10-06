@@ -194,6 +194,8 @@ const ModalRenderer = (
         className,
       )}
       role="dialog"
+      // the open modals are a set, and the active one is its current item
+      aria-current={isActive || undefined}
       aria-hidden={isModalMinimized}
       ref={draggableRef}
       onMouseDown={() => {
