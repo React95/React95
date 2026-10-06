@@ -13,6 +13,8 @@ import {
 import { Modal, ModalProps } from '../components/Modal/Modal';
 
 import * as styles from './modal.stories.css';
+import { contract } from '../components/themes/contract.css';
+import { themeColor } from '../.storybook/theme-color';
 
 import {
   Computer,
@@ -181,7 +183,7 @@ const MODAL_IDS = {
   second: 'second-modal',
 };
 
-export const Multiple = () => {
+const MultipleDemo = () => {
   const { remove, minimize, restore, focus, add } = useModal();
 
   const handleCloseFirstModal = () => {
@@ -227,9 +229,6 @@ export const Multiple = () => {
   };
   const handleFocusSecond = () => focus(MODAL_IDS.second);
 
-  const handleButtonClick = (e: React.MouseEvent<HTMLLIElement>) =>
-    alert(e.currentTarget.value);
-
   return (
     <Frame>
       <TaskBar />
@@ -261,8 +260,8 @@ export const Multiple = () => {
         }}
         titleBarOptions={<Modal.Minimize />}
         buttons={[
-          { value: 'Ok', onClick: handleButtonClick },
-          { value: 'Cancel', onClick: handleButtonClick },
+          { value: 'Ok', onClick: () => console.log('Ok') },
+          { value: 'Cancel', onClick: () => console.log('Cancel') },
         ]}
         menu={[
           {
@@ -318,8 +317,8 @@ export const Multiple = () => {
         }}
         titleBarOptions={<TitleBar.Close onClick={handleCloseSecondModal} />}
         buttons={[
-          { value: 'Ok', onClick: handleButtonClick },
-          { value: 'Cancel', onClick: handleButtonClick },
+          { value: 'Ok', onClick: () => console.log('Ok') },
+          { value: 'Cancel', onClick: () => console.log('Cancel') },
         ]}
         menu={[
           {
@@ -358,8 +357,74 @@ export const Multiple = () => {
   );
 };
 
-// a demo of several modals at once; the controls are on Simple
-Multiple.parameters = { controls: { disable: true } };
+// the active modal is marked as the current one, and its title bar shows it
+const expectActive = async (modal: HTMLElement, active: boolean) => {
+  if (active) {
+    await expect(modal).toHaveAttribute('aria-current', 'true');
+  } else {
+    await expect(modal).not.toHaveAttribute('aria-current');
+  }
+
+  await expect(modal.querySelector('.draggable')).toHaveStyle({
+    backgroundColor: themeColor(
+      active
+        ? contract.colors.headerBackground
+        : contract.colors.headerNotActiveBackground,
+    ),
+  });
+};
+
+export const Multiple: Story = {
+  render: () => <MultipleDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const [first, second] = canvas.getAllByRole('dialog');
+    const taskBarButton = (title: string) =>
+      canvas.getByRole('button', { name: title });
+
+    // each modal gets a TaskBar button, and the last one to open is active
+    await expect(taskBarButton('First Modal')).toBeVisible();
+    await expect(taskBarButton('Second Modal')).toBeVisible();
+    await expectActive(first, false);
+    await expectActive(second, true);
+
+    // clicking a modal makes it the active one
+    await userEvent.click(within(first).getByText('Modal Control'));
+
+    await expectActive(first, true);
+    await expectActive(second, false);
+
+    // minimizing hides it, and its TaskBar button brings it back, active
+    await userEvent.click(
+      within(first).getByRole('button', { name: 'minimize' }),
+    );
+
+    await expect(first).not.toBeVisible();
+
+    await userEvent.click(taskBarButton('First Modal'));
+
+    await expect(first).toBeVisible();
+    await expectActive(first, true);
+
+    // the active modal's TaskBar button minimizes it
+    await userEvent.click(taskBarButton('First Modal'));
+
+    await expect(first).not.toBeVisible();
+
+    // closing a modal removes its TaskBar button
+    await userEvent.click(
+      within(second).getByRole('button', { name: 'close' }),
+    );
+
+    await expect(second).not.toBeVisible();
+    await expect(
+      canvas.queryAllByRole('button', { name: 'Second Modal' }),
+    ).toHaveLength(0);
+  },
+  parameters: {
+    // a demo of several modals at once; the controls are on Simple
+    controls: { disable: true },
+  },
+};
 
 const MinimizeDemo = () => {
   const [first, toggleFirst] = React.useState(true);
