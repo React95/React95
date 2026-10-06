@@ -188,7 +188,25 @@ export const BasicUsage: Story = {
 };
 
 const MinimizeRestoreDemo = () => {
-  const { remove, minimize, restore, focus, add } = useModal();
+  const { remove, minimize, restore, focus, add, toggle, subscribe } =
+    useModal();
+  const [isVisible, setIsVisible] = React.useState(true);
+
+  // follows the modal, so Toggle knows whether to minimize or restore it
+  React.useEffect(() => {
+    const unsubscribes = [
+      subscribe(ModalEvents.MinimizeModal, ({ id }) => {
+        if (id === 'minimize-modal') setIsVisible(false);
+      }),
+      subscribe(ModalEvents.RestoreModal, ({ id }) => {
+        if (id === 'minimize-modal') setIsVisible(true);
+      }),
+    ];
+
+    return () => unsubscribes.forEach(unsubscribe => unsubscribe());
+  }, [subscribe]);
+
+  const toggleModal = () => toggle('minimize-modal', isVisible);
 
   const closeModal = () => remove('minimize-modal');
 
@@ -222,6 +240,7 @@ const MinimizeRestoreDemo = () => {
       <Frame display="flex" gap="10px" flexWrap="wrap">
         <Button onClick={minimizeModal}>Minimize</Button>
         <Button onClick={restoreModal}>Restore</Button>
+        <Button onClick={toggleModal}>Toggle</Button>
         <Button onClick={closeModal}>Remove from TaskBar</Button>
         <Button onClick={addToTaskBar}>Add to TaskBar</Button>
         <Button onClick={removeFocus}>Remove Focus</Button>
@@ -281,8 +300,24 @@ export const MinimizeRestore: Story = {
     await control('Minimize');
 
     await expect(modal).not.toBeVisible();
+    // a minimized modal isn't the active one, even though the demo
+    // re-renders when it's minimized
+    await expectActive(modal, false);
 
     await control('Restore');
+
+    await expect(modal).toBeVisible();
+    await expectActive(modal, true);
+
+    // toggle(id, isActive) minimizes an open modal, and restores and focuses a
+    // minimized one
+    await control('Toggle');
+
+    await expect(modal).not.toBeVisible();
+
+    // with no modal active, so the focus can only come from toggle
+    await control('Remove Focus');
+    await control('Toggle');
 
     await expect(modal).toBeVisible();
     await expectActive(modal, true);
