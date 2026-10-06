@@ -4,20 +4,17 @@ import { Frame } from '../Frame/Frame';
 import { Tooltip } from '../Tooltip/Tooltip';
 import { tooltip } from './TaskBar.css';
 
+const formatTime = (date: Date) =>
+  [date.getHours(), date.getMinutes()]
+    .map(part => (part < 10 ? `0${part}` : part))
+    .join(':');
+
 export const Clock = () => {
-  const [timer, setTimer] = useState('');
+  const [timer, setTimer] = useState(() => formatTime(new Date()));
 
   useEffect(() => {
-    function checkTime(i: number) {
-      return i < 10 ? `0${i}` : i;
-    }
-
-    const interval = setInterval(() => {
-      const today = new Date();
-      const h = today.getHours();
-      const m = today.getMinutes();
-      setTimer(`${checkTime(h)}:${checkTime(m)}`);
-    });
+    // it shows minutes, so checking every second is enough
+    const interval = setInterval(() => setTimer(formatTime(new Date())), 1000);
 
     return () => clearInterval(interval);
   }, []);
