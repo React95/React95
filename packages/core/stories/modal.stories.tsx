@@ -463,9 +463,7 @@ const MinimizeDemo = () => {
           titleBarOptions={[
             <TitleBar.Minimize
               key="minimize"
-              onClick={() => {
-                alert("I'm in control");
-              }}
+              onClick={() => console.log("I'm in control")}
             />,
             <TitleBar.Close key="close" onClick={closeFirst} />,
           ]}
@@ -520,6 +518,53 @@ const MinimizeDemo = () => {
 
 export const Minimize: Story = {
   render: () => <MinimizeDemo />,
+  // the custom minimize logs; the spy still prints it
+  beforeEach: () => {
+    const log = spyOn(console, 'log').mockName('console.log');
+
+    return () => log.mockRestore();
+  },
+  play: async ({ canvas, userEvent }) => {
+    const [explorer, disk] = canvas.getAllByRole('dialog');
+    const taskBarButtons = (title: string) =>
+      canvas.queryAllByRole('button', { name: title });
+
+    // Modal.Minimize minimizes the modal to its TaskBar button
+    await userEvent.click(
+      within(disk).getByRole('button', { name: 'minimize' }),
+    );
+
+    await expect(disk).not.toBeVisible();
+
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Local Disk (C:)' }),
+    );
+
+    await expect(disk).toBeVisible();
+
+    // TitleBar.Minimize only calls its own onClick
+    await userEvent.click(
+      within(explorer).getByRole('button', { name: 'minimize' }),
+    );
+
+    await expect(console.log).toHaveBeenLastCalledWith("I'm in control");
+    await expect(explorer).toBeVisible();
+
+    // closing removes the modal, and its TaskBar button with it
+    await userEvent.click(
+      within(explorer).getByRole('button', { name: 'close' }),
+    );
+
+    await expect(explorer).not.toBeInTheDocument();
+    await expect(taskBarButtons('Windows Explorer')).toHaveLength(0);
+
+    // the Start menu opens it again
+    await userEvent.click(canvas.getByRole('button', { name: 'Start' }));
+    await userEvent.click(canvas.getByText('Windows Explorer'));
+
+    await expect(canvas.getAllByRole('dialog')).toHaveLength(2);
+    await expect(taskBarButtons('Windows Explorer')).toHaveLength(1);
+  },
 
   parameters: {
     // a demo of minimizing to the TaskBar; the controls are on Simple
