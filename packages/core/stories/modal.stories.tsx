@@ -405,12 +405,14 @@ export const Multiple: Story = {
     await expect(first).toBeVisible();
     await expectActive(first, true);
 
-    // the active modal's TaskBar button minimizes it
-    await userEvent.click(taskBarButton('First Modal'));
+    // closing the active modal removes its TaskBar button, and the last one
+    // left becomes active
+    await userEvent.click(
+      within(second).getByText('Complete Modal Management'),
+    );
 
-    await expect(first).not.toBeVisible();
+    await expectActive(second, true);
 
-    // closing a modal removes its TaskBar button
     await userEvent.click(
       within(second).getByRole('button', { name: 'close' }),
     );
@@ -419,6 +421,12 @@ export const Multiple: Story = {
     await expect(
       canvas.queryAllByRole('button', { name: 'Second Modal' }),
     ).toHaveLength(0);
+    await expectActive(first, true);
+
+    // the active modal's TaskBar button minimizes it
+    await userEvent.click(taskBarButton('First Modal'));
+
+    await expect(first).not.toBeVisible();
   },
   parameters: {
     // a demo of several modals at once; the controls are on Simple
