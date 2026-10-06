@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
+import { expect, within } from 'storybook/test';
 
 import {
   Button,
@@ -23,7 +24,6 @@ const meta: Meta = {
   title: 'Hooks/useModal',
   parameters: {
     controls: { disable: true },
-    interactions: { disable: true },
     design: { disable: true },
     clippy: {
       phrases: [
@@ -86,11 +86,33 @@ function MyComponent() {
 export default meta;
 type Story = StoryObj;
 
+type Canvas = Parameters<NonNullable<Story['play']>>[0]['canvas'];
+
+const taskBarButtons = (canvas: Canvas, title: string) =>
+  canvas.queryAllByRole('button', { name: title });
+
+// the active modal is marked as the current one
+const expectActive = async (modal: HTMLElement, active: boolean) => {
+  if (active) {
+    await expect(modal).toHaveAttribute('aria-current', 'true');
+  } else {
+    await expect(modal).not.toHaveAttribute('aria-current');
+  }
+};
+
 const BasicUsageDemo = () => {
-  const { remove } = useModal();
+  const { add, remove } = useModal();
 
   const closeModal = () => {
     remove('basic-modal');
+  };
+  const addToTaskBar = () => {
+    add({
+      id: 'basic-modal',
+      title: 'Basic Modal',
+      icon: <Computer variant="16x16_4" />,
+      hasButton: true,
+    });
   };
 
   return (
@@ -99,6 +121,7 @@ const BasicUsageDemo = () => {
 
       <Frame display="flex" gap="10px">
         <Button onClick={closeModal}>Remove from TaskBar</Button>
+        <Button onClick={addToTaskBar}>Add to TaskBar</Button>
       </Frame>
 
       <Modal
@@ -133,6 +156,27 @@ const BasicUsageDemo = () => {
 
 export const BasicUsage: Story = {
   render: () => <BasicUsageDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const modal = canvas.getByRole('dialog');
+
+    // a modal registers with the TaskBar when it mounts
+    await expect(taskBarButtons(canvas, 'Basic Modal')).toHaveLength(1);
+
+    // remove(id) takes it off the TaskBar, but the modal stays
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Remove from TaskBar' }),
+    );
+
+    await expect(taskBarButtons(canvas, 'Basic Modal')).toHaveLength(0);
+    await expect(modal).toBeVisible();
+
+    // and add(modal) puts it back
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Add to TaskBar' }),
+    );
+
+    await expect(taskBarButtons(canvas, 'Basic Modal')).toHaveLength(1);
+  },
   parameters: {
     docs: {
       description: {
@@ -226,6 +270,37 @@ const MinimizeRestoreDemo = () => {
 
 export const MinimizeRestore: Story = {
   render: () => <MinimizeRestoreDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const modal = canvas.getByRole('dialog');
+    const control = (name: string) =>
+      userEvent.click(canvas.getByRole('button', { name }));
+
+    await expectActive(modal, true);
+
+    // minimize(id) hides the modal, restore(id) brings it back
+    await control('Minimize');
+
+    await expect(modal).not.toBeVisible();
+
+    await control('Restore');
+
+    await expect(modal).toBeVisible();
+    await expectActive(modal, true);
+
+    // focus('no-id') leaves no modal active
+    await control('Remove Focus');
+
+    await expectActive(modal, false);
+
+    // remove(id) and add(modal) take it off and put it back on the TaskBar
+    await control('Remove from TaskBar');
+
+    await expect(taskBarButtons(canvas, 'Minimize Example')).toHaveLength(0);
+
+    await control('Add to TaskBar');
+
+    await expect(taskBarButtons(canvas, 'Minimize Example')).toHaveLength(1);
+  },
   parameters: {
     docs: {
       description: {
@@ -389,6 +464,49 @@ const MultipleModalsDemo = () => {
 
 export const MultipleModals: Story = {
   render: () => <MultipleModalsDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const [first, second, third] = canvas.getAllByRole('dialog');
+    // each modal has a row of controls, labelled "Modal 1:", "Modal 2:"…
+    const control = (modal: number, name: string) =>
+      userEvent.click(
+        within(canvas.getByText(`Modal ${modal}:`).parentElement!).getByRole(
+          'button',
+          { name },
+        ),
+      );
+
+    // focusing one modal leaves the others inactive
+    await control(2, 'Focus');
+
+    await expectActive(first, false);
+    await expectActive(second, true);
+    await expectActive(third, false);
+
+    // minimizing one doesn't touch the others
+    await control(1, 'Minimize');
+
+    await expect(first).not.toBeVisible();
+    await expect(second).toBeVisible();
+    await expect(third).toBeVisible();
+
+    await control(1, 'Restore');
+
+    await expect(first).toBeVisible();
+    await expectActive(first, true);
+    await expectActive(second, false);
+
+    // removing one takes it off the TaskBar; adding it back returns it
+    await control(3, 'Remove');
+
+    await expect(third).not.toBeVisible();
+    await expect(taskBarButtons(canvas, 'third-modal')).toHaveLength(0);
+    await expect(taskBarButtons(canvas, 'first-modal')).toHaveLength(1);
+
+    await control(3, 'Add');
+
+    await expect(third).toBeVisible();
+    await expect(taskBarButtons(canvas, 'third-modal')).toHaveLength(1);
+  },
   parameters: {
     docs: {
       description: {
@@ -592,6 +710,35 @@ const EventSubscriptionDemo = () => {
 
 export const EventSubscription: Story = {
   render: () => <EventSubscriptionDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const log = canvas.getByText('Event Log').nextElementSibling;
+    const control = (name: string) =>
+      userEvent.click(canvas.getByRole('button', { name }));
+
+    // each call emits its events, which subscribers receive
+    await control('Minimize');
+
+    await expect(log).toHaveTextContent('Minimized: event-modal');
+    await expect(log).toHaveTextContent('Focus changed: no-id');
+
+    await control('Restore');
+
+    await expect(log).toHaveTextContent('Restored: event-modal');
+    await expect(log).toHaveTextContent('Focus changed: event-modal');
+
+    await control('Remove');
+
+    await expect(log).toHaveTextContent('Removed: event-modal');
+
+    await control('Add');
+
+    await expect(log).toHaveTextContent('Added: Event Modal (event-modal)');
+
+    // and back on screen, for whoever opens the story
+    await control('Restore');
+
+    await expect(canvas.getByRole('dialog')).toBeVisible();
+  },
   parameters: {
     docs: {
       description: {
