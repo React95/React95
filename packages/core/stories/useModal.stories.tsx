@@ -102,6 +102,7 @@ const expectActive = async (modal: HTMLElement, active: boolean) => {
 
 const BasicUsageDemo = () => {
   const { add, remove } = useModal();
+  const [title, setTitle] = React.useState('Basic Modal');
 
   const closeModal = () => {
     remove('basic-modal');
@@ -109,11 +110,15 @@ const BasicUsageDemo = () => {
   const addToTaskBar = () => {
     add({
       id: 'basic-modal',
-      title: 'Basic Modal',
+      title,
       icon: <Computer variant="16x16_4" />,
       hasButton: true,
     });
   };
+  const rename = () =>
+    setTitle(current =>
+      current === 'Basic Modal' ? 'Renamed Modal' : 'Basic Modal',
+    );
 
   return (
     <Frame display="flex" flexDirection="column" gap="16px" p="20px">
@@ -122,12 +127,13 @@ const BasicUsageDemo = () => {
       <Frame display="flex" gap="10px">
         <Button onClick={closeModal}>Remove from TaskBar</Button>
         <Button onClick={addToTaskBar}>Add to TaskBar</Button>
+        <Button onClick={rename}>Rename</Button>
       </Frame>
 
       <Modal
         id="basic-modal"
         icon={<Computer variant="16x16_4" />}
-        title="Basic Modal"
+        title={title}
         titleBarOptions={<TitleBar.Close onClick={closeModal} />}
         dragOptions={{
           defaultPosition: {
@@ -176,6 +182,13 @@ export const BasicUsage: Story = {
     );
 
     await expect(taskBarButtons(canvas, 'Basic Modal')).toHaveLength(1);
+
+    // a new title renames its TaskBar button
+    await userEvent.click(canvas.getByRole('button', { name: 'Rename' }));
+
+    await expect(modal).toHaveTextContent('Renamed Modal');
+    await expect(taskBarButtons(canvas, 'Basic Modal')).toHaveLength(0);
+    await expect(taskBarButtons(canvas, 'Renamed Modal')).toHaveLength(1);
   },
   parameters: {
     docs: {
