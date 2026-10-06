@@ -134,13 +134,17 @@ const ModalRenderer = (
     setMenuOpened('');
   });
 
+  // what the TaskBar shows for this modal. Read through a ref, so a new
+  // `icon` element on every render doesn't register the modal again
+  const taskBarWindow = useRef({ icon, title: title || '', id, hasButton });
+
   useEffect(() => {
-    add({
-      icon,
-      title: title || '',
-      id,
-      hasButton,
-    });
+    taskBarWindow.current = { icon, title: title || '', id, hasButton };
+  });
+
+  // registered and focused when it mounts, unregistered when it unmounts
+  useEffect(() => {
+    add(taskBarWindow.current);
 
     const unsubscribeVisibility = subscribe(
       ModalEvents.ModalVisibilityChanged,
@@ -155,7 +159,20 @@ const ModalRenderer = (
       remove(id);
       unsubscribeVisibility();
     };
-  }, [id, icon, title, hasButton, providedId, add, remove, focus, subscribe]);
+  }, [id, add, remove, focus, subscribe]);
+
+  // a new title updates its TaskBar button, without taking the focus
+  const isFirstRender = useRef(true);
+
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+
+      return;
+    }
+
+    add(taskBarWindow.current);
+  }, [title, hasButton, add]);
 
   useEffect(() => {
     const unsubscribeMinimize = subscribe(

@@ -30,9 +30,11 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
           return;
         }
         setModalWindows(prevModals => {
-          // Prevent duplicates
+          // a modal that's already there is updated in place (e.g. a new title)
           if (prevModals.some(modal => modal.id === window.id)) {
-            return prevModals;
+            return prevModals.map(modal =>
+              modal.id === window.id ? { ...modal, ...window } : modal,
+            );
           }
           return [...prevModals, window as ModalWindow];
         });
