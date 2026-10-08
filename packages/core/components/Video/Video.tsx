@@ -138,10 +138,20 @@ const VideoRenderer = (
       false,
     );
 
+    // the button follows what the video actually does: a play() the browser
+    // blocks never gets to `playing`
     player.current?.addEventListener(
       'playing',
       () => {
         setPlaying(true);
+      },
+      false,
+    );
+
+    player.current?.addEventListener(
+      'pause',
+      () => {
+        setPlaying(false);
       },
       false,
     );
@@ -190,12 +200,18 @@ const VideoRenderer = (
             className={styles.controlBtn}
             disabled={!loadeddata}
             onClick={() => {
-              if (!playing) {
-                player.current?.play();
+              // asks the video, which is always up to date, unlike `playing`
+              if (player.current?.paused) {
+                player.current.play().catch(() => {
+                  console.warn(
+                    '[React95] Video: the browser blocked playback. Browsers ' +
+                      'only play videos with sound after the user has ' +
+                      'interacted with the page.',
+                  );
+                });
               } else {
                 player.current?.pause();
               }
-              setPlaying(!playing);
             }}
             ref={playPauseRef}
           >

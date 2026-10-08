@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect, within } from 'storybook/test';
 
 import {
   Computer3,
@@ -17,7 +18,10 @@ import {
   WindowsExplorer,
 } from '@react95/icons';
 import { List, ListProps } from '../components/List/List';
+import { hover, isRealPointer } from '../.storybook/pointer';
 
+// `as`, not `satisfies`: the polymorphic props make the type too complex
+// for TypeScript (TS2590)
 const meta = {
   title: 'List',
   component: List,
@@ -75,6 +79,33 @@ export const WithIcons: Story = {
       <List.Item icon={<Computer3 variant="32x32_4" />}>Shut Down...</List.Item>
     </List>
   ),
+  play: async ({ canvas, userEvent }) => {
+    const menu = canvas.getByRole('list');
+    const [programs, , settings] = within(menu).getAllByRole('listitem');
+    // submenus are hidden, so their lists aren't in the accessibility tree
+    const submenu = (item: HTMLElement) =>
+      within(item).getByRole('list', { hidden: true });
+
+    await expect(submenu(programs)).not.toBeVisible();
+    await expect(submenu(settings)).not.toBeVisible();
+
+    // hovering an item opens its submenu. That's CSS `:hover`, which only a
+    // real pointer triggers (see .storybook/pointer.ts)
+    await hover(programs, userEvent);
+
+    if (isRealPointer) {
+      await expect(submenu(programs)).toBeVisible();
+      await expect(submenu(settings)).not.toBeVisible();
+    }
+
+    // moving to another item closes the first submenu and opens its own
+    await hover(settings, userEvent);
+
+    if (isRealPointer) {
+      await expect(submenu(programs)).not.toBeVisible();
+      await expect(submenu(settings)).toBeVisible();
+    }
+  },
 
   parameters: {
     design: {
@@ -105,6 +136,30 @@ export const Simple: Story = {
       <List.Item>Properties</List.Item>
     </List>
   ),
+  play: async ({ canvas }) => {
+    const menu = canvas.getByRole('list');
+    const items = within(menu).getAllByRole('listitem');
+
+    // the items in order, with the dividers (empty items) between the groups
+    await expect(items.map(item => item.textContent)).toEqual([
+      'View',
+      '',
+      'Customize this Folder...',
+      '',
+      'Arrange Icons',
+      'Line Up Icons',
+      '',
+      'Refresh',
+      '',
+      'Paste',
+      'Paste Shortcut',
+      'Undo Copy',
+      '',
+      'New',
+      '',
+      'Properties',
+    ]);
+  },
 
   parameters: {
     design: {
