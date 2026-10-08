@@ -42,6 +42,46 @@ export const MyApp = () => {
 
 You can find a list of all available components on our [Storybook page](https://react95.github.io/React95/).
 
+### Customizing styles
+
+React95's CSS sits in the `react95` [cascade layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer),
+so your CSS wins over it without fighting specificity:
+
+```css
+/* every button gets your font, React95's or not */
+button {
+  font-family: 'Comic Sans MS';
+}
+```
+
+That includes CSS resets, like Tailwind's preflight or normalize.css: their
+`button { padding: 0 }` would undo React95's buttons. Put the reset in a layer
+that comes before React95's:
+
+```css
+@layer reset {
+  /* your reset */
+}
+```
+
+and declare the order of the layers before any CSS loads, in your HTML's
+`<head>`, since the browser keeps the first order it sees:
+
+```html
+<style>
+  @layer reset, react95;
+</style>
+```
+
+With Tailwind v4, whose CSS is in layers already, place `react95` between its
+preflight and its utilities:
+
+```html
+<style>
+  @layer theme, base, react95, components, utilities;
+</style>
+```
+
 ### Next.JS
 
 If you want to use React95 on a NextJS project, check the [NextJS template](https://github.com/React95/nextjs-template)

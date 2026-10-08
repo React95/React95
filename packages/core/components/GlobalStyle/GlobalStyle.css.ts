@@ -11,6 +11,7 @@ import videottf from './font/React95Video-Numbers.ttf';
 import videowoff from './font/React95Video-Numbers.woff';
 import videowoff2 from './font/React95Video-Numbers.woff2';
 import { MSSansSerif, R95VideoNumbers } from '../shared/font-names';
+import { inLayer, globals } from '../shared/layers.css';
 
 globalFontFace(MSSansSerif, {
   src: `url('${ttf}') format('truetype')`,
@@ -33,33 +34,51 @@ globalFontFace(R95VideoNumbers, {
   fontWeight: 'normal',
 });
 
-globalStyle('*, *::before, *::after', {
-  boxSizing: 'border-box',
-});
+globalStyle(
+  '*, *::before, *::after',
+  inLayer(globals, {
+    boxSizing: 'border-box',
+  }),
+);
 
-globalStyle('html', {
-  fontSize: '100%',
-});
+globalStyle(
+  'html',
+  inLayer(globals, {
+    fontSize: '100%',
+  }),
+);
 
-globalStyle('body', {
-  margin: 0,
-  padding: 0,
-  fontFamily: MSSansSerif,
-  fontSize: 12,
-  color: contract.colors.materialText,
-});
+globalStyle(
+  'body',
+  inLayer(globals, {
+    margin: 0,
+    padding: 0,
+    fontFamily: MSSansSerif,
+    fontSize: 12,
+    color: contract.colors.materialText,
+  }),
+);
 
-globalStyle('button, input, select, textarea', {
-  fontFamily: 'inherit',
-});
+globalStyle(
+  'button, input, select, textarea',
+  inLayer(globals, {
+    fontFamily: 'inherit',
+  }),
+);
 
-globalStyle('a', {
-  color: contract.colors.anchor,
-});
+globalStyle(
+  'a',
+  inLayer(globals, {
+    color: contract.colors.anchor,
+  }),
+);
 
-globalStyle('a:visited', {
-  color: contract.colors.anchorVisited,
-});
+globalStyle(
+  'a:visited',
+  inLayer(globals, {
+    color: contract.colors.anchorVisited,
+  }),
+);
 
 /* Scrollbar */
 
@@ -74,50 +93,71 @@ const triangles = {
   },
 };
 
-globalStyle('::-webkit-scrollbar', {
-  width: contract.space[17],
-  height: contract.space[17],
-});
+globalStyle(
+  '::-webkit-scrollbar',
+  inLayer(globals, {
+    width: contract.space[17],
+    height: contract.space[17],
+  }),
+);
 
-globalStyle('::-webkit-scrollbar-track', {
-  backgroundImage: [
-    `linear-gradient(45deg, ${contract.colors.material} 25%, transparent 25%, transparent 75%, ${contract.colors.material} 75%)`,
-    `linear-gradient(45deg, ${contract.colors.material} 25%, transparent 25%, transparent 75%, ${contract.colors.material} 75%)`,
-  ].join(','),
-  backgroundColor: contract.colors.borderLightest,
-  backgroundSize: `${contract.space[4]} ${contract.space[4]}`,
-  backgroundPosition: `0 0, ${contract.space[2]} ${contract.space[2]}`,
-});
+globalStyle(
+  '::-webkit-scrollbar-track',
+  inLayer(globals, {
+    backgroundImage: [
+      `linear-gradient(45deg, ${contract.colors.material} 25%, transparent 25%, transparent 75%, ${contract.colors.material} 75%)`,
+      `linear-gradient(45deg, ${contract.colors.material} 25%, transparent 25%, transparent 75%, ${contract.colors.material} 75%)`,
+    ].join(','),
+    backgroundColor: contract.colors.borderLightest,
+    backgroundSize: `${contract.space[4]} ${contract.space[4]}`,
+    backgroundPosition: `0 0, ${contract.space[2]} ${contract.space[2]}`,
+  }),
+);
 
-globalStyle('::-webkit-scrollbar-corner', {
-  backgroundColor: contract.colors.material,
-});
+globalStyle(
+  '::-webkit-scrollbar-corner',
+  inLayer(globals, {
+    backgroundColor: contract.colors.material,
+  }),
+);
 
 globalStyle(
   `::-webkit-scrollbar-button:horizontal:increment:start,
   ::-webkit-scrollbar-button:horizontal:decrement:end,
   ::-webkit-scrollbar-button:vertical:increment:start,
   ::-webkit-scrollbar-button:vertical:decrement:end`,
-  {
+  inLayer(globals, {
     display: 'none',
-  },
+  }),
 );
 
-globalStyle('::-webkit-scrollbar-button:horizontal:decrement', {
-  backgroundImage: triangles.horizontal.decrement,
-});
+globalStyle(
+  '::-webkit-scrollbar-button:horizontal:decrement',
+  inLayer(globals, {
+    backgroundImage: triangles.horizontal.decrement,
+  }),
+);
 
-globalStyle('::-webkit-scrollbar-button:horizontal:increment', {
-  backgroundImage: triangles.horizontal.increment,
-});
+globalStyle(
+  '::-webkit-scrollbar-button:horizontal:increment',
+  inLayer(globals, {
+    backgroundImage: triangles.horizontal.increment,
+  }),
+);
 
-globalStyle('::-webkit-scrollbar-button:vertical:decrement', {
-  backgroundImage: triangles.vertical.decrement,
-});
+globalStyle(
+  '::-webkit-scrollbar-button:vertical:decrement',
+  inLayer(globals, {
+    backgroundImage: triangles.vertical.decrement,
+  }),
+);
 
-globalStyle('::-webkit-scrollbar-button:vertical:increment', {
-  backgroundImage: triangles.vertical.increment,
-});
+globalStyle(
+  '::-webkit-scrollbar-button:vertical:increment',
+  inLayer(globals, {
+    backgroundImage: triangles.vertical.increment,
+  }),
+);
 
 const scrollbarBorderBase = createBorder({
   direction: 'extrude',
@@ -127,33 +167,39 @@ const scrollbarBorderBase = createBorder({
   innerTopLeft: contract.colors.borderLightest,
 });
 
-globalStyle('::-webkit-scrollbar-thumb', {
-  boxSizing: 'border-box',
-  display: 'inline-block',
-  background: contract.colors.material,
-  color: contract.colors.materialText,
-  ...scrollbarBorderBase,
-});
+globalStyle(
+  '::-webkit-scrollbar-thumb',
+  inLayer(globals, {
+    boxSizing: 'border-box',
+    display: 'inline-block',
+    background: contract.colors.material,
+    color: contract.colors.materialText,
+    ...scrollbarBorderBase,
+  }),
+);
 
-globalStyle('::-webkit-scrollbar-button', {
-  boxSizing: 'border-box',
-  background: contract.colors.material,
-  color: contract.colors.materialText,
-  display: 'block',
-  outlineOffset: calc.negate(contract.space[2]),
-  height: contract.space[17],
-  width: contract.space[17],
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: '80%',
-  backgroundPosition: '0 0',
-  ...scrollbarBorderBase,
-});
+globalStyle(
+  '::-webkit-scrollbar-button',
+  inLayer(globals, {
+    boxSizing: 'border-box',
+    background: contract.colors.material,
+    color: contract.colors.materialText,
+    display: 'block',
+    outlineOffset: calc.negate(contract.space[2]),
+    height: contract.space[17],
+    width: contract.space[17],
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '80%',
+    backgroundPosition: '0 0',
+    ...scrollbarBorderBase,
+  }),
+);
 
 globalStyle(
   `::-webkit-scrollbar-button:active,
   ::-webkit-scrollbar-button:active`,
-  {
+  inLayer(globals, {
     backgroundPosition: '0 1',
     ...scrollbarBorderBase,
-  },
+  }),
 );
