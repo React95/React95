@@ -2,23 +2,29 @@ import { globalStyle, style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 import { contract } from '../themes/contract.css';
 import { calc } from '@vanilla-extract/css-utils';
+import { inLayer, composed } from '../shared/layers.css';
 
-export const truncate = style({
-  overflow: 'hidden',
-  display: '-webkit-box',
-  WebkitLineClamp: '1',
-  WebkitBoxOrient: 'vertical',
-  textAlign: 'left',
-});
+export const truncate = style(
+  inLayer(composed, {
+    overflow: 'hidden',
+    display: '-webkit-box',
+    WebkitLineClamp: '1',
+    WebkitBoxOrient: 'vertical',
+    textAlign: 'left',
+  }),
+);
 
-export const tooltip = style({});
+export const tooltip = style(inLayer(composed, {}));
 
-globalStyle(`${tooltip} div:first-child`, {
-  right: 0,
-});
+globalStyle(
+  `${tooltip} div:first-child`,
+  inLayer(composed, {
+    right: 0,
+  }),
+);
 
 export const windowsButton = recipe({
-  base: {
+  base: inLayer(composed, {
     display: 'inline-flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
@@ -30,23 +36,23 @@ export const windowsButton = recipe({
     border: 'none',
     outline: 'none',
     color: contract.colors.materialText,
-  },
+  }),
   variants: {
     small: {
-      true: {
+      true: inLayer(composed, {
         paddingInline: contract.space[5],
-      },
-      false: {
+      }),
+      false: inLayer(composed, {
         width: '100%',
-      },
+      }),
     },
     active: {
-      true: {
+      true: inLayer(composed, {
         boxShadow: contract.shadows.in,
-      },
-      false: {
+      }),
+      false: inLayer(composed, {
         boxShadow: contract.shadows.out,
-      },
+      }),
     },
   },
   compoundVariants: [
@@ -55,32 +61,35 @@ export const windowsButton = recipe({
         active: true,
         small: true,
       },
-      style: {
+      style: inLayer(composed, {
         paddingTop: contract.space[4],
         paddingBottom: contract.space[0],
         outline: `${contract.space[1]} dotted ${contract.colors.borderDarkest}`,
         outlineOffset: calc.negate(contract.space[4]),
-      },
+      }),
     },
     {
       variants: {
         active: true,
         small: false,
       },
-      style: {
+      style: inLayer(composed, {
         backgroundColor: contract.colors.borderLighter,
-      },
+      }),
     },
   ],
 });
 
-export const icon = style({});
+export const icon = style(inLayer(composed, {}));
 
-globalStyle(`${icon} svg`, {
-  marginTop: contract.space[4],
-  marginRight: contract.space[4],
-  minWidth: contract.space[2],
-  width: contract.space[20],
-  height: contract.space[20],
-  shapeRendering: 'auto',
-});
+globalStyle(
+  `${icon} svg`,
+  inLayer(composed, {
+    marginTop: contract.space[4],
+    marginRight: contract.space[4],
+    minWidth: contract.space[2],
+    width: contract.space[20],
+    height: contract.space[20],
+    shapeRendering: 'auto',
+  }),
+);
