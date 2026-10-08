@@ -33,10 +33,6 @@ globalFontFace(R95VideoNumbers, {
   fontWeight: 'normal',
 });
 
-globalStyle('*', {
-  fontFamily: MSSansSerif,
-});
-
 globalStyle('*, *::before, *::after', {
   boxSizing: 'border-box',
 });
@@ -48,8 +44,13 @@ globalStyle('html', {
 globalStyle('body', {
   margin: 0,
   padding: 0,
+  fontFamily: MSSansSerif,
   fontSize: 12,
   color: contract.colors.materialText,
+});
+
+globalStyle('button, input, select, textarea', {
+  fontFamily: 'inherit',
 });
 
 globalStyle('a', {
