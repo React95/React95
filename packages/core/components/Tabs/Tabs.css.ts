@@ -45,7 +45,9 @@ export const tab = recipe({
         marginTop: calc.negate(contract.space[2]),
         marginLeft: calc.negate(contract.space[2]),
         marginBottom: contract.space[1],
-        '&:first-child': { marginLeft: contract.space[2] },
+        selectors: {
+          '&:first-child': { marginLeft: contract.space[2] },
+        },
         boxShadow: `inset 0 1px 0 0 ${contract.colors.borderLightest},
         -2px 1px 0 -1px ${contract.colors.material},
         -0.5px 3px 0 0.5px ${contract.colors.material},
