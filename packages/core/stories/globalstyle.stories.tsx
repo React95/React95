@@ -112,6 +112,7 @@ const UsageInstructionsDemo = ({
 
         <Frame display={'flex'} gap="$4">
           <Input
+            aria-label="GlobalStyle import statement"
             w="100%"
             fontFamily="monospace"
             maxWidth={'300px'}
@@ -140,6 +141,7 @@ const UsageInstructionsDemo = ({
               selected theme's styles globally.
             </p>
             <Dropdown
+              aria-label="Select theme"
               value={selectedTheme}
               onChange={e => {
                 const theme = (e.target as HTMLSelectElement).value;
@@ -154,6 +156,7 @@ const UsageInstructionsDemo = ({
             </p>
             <Frame mt="$8" display="flex" gap="$4">
               <Input
+                aria-label="Theme import statement"
                 fontFamily="monospace"
                 w="100%"
                 maxWidth={'300px'}
@@ -178,6 +181,7 @@ const UsageInstructionsDemo = ({
       <Frame boxShadow="$out" bgColor="$material" p="$16" mt="$16">
         <h2>4. Complete Example</h2>
         <TextArea
+          aria-label="Complete example code"
           whiteSpace="pre-line"
           rows={16}
           cols={50}
@@ -277,6 +281,8 @@ export const Overview: Story = {
               bgColor="$inputBackground"
               p="$8"
               boxShadow="$in"
+              tabIndex={0}
+              aria-label="Scrollable content demo"
             >
               <p>
                 This container demonstrates the custom scrollbar styling
