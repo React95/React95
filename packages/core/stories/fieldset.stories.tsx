@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect, within } from 'storybook/test';
 
 import { Fieldset, FieldSetProps } from '../components/Fieldset/Fieldset';
 import { Frame, Checkbox } from '../components';
@@ -11,7 +12,7 @@ const meta = {
     legend: 'Connection Settings',
     disabled: false,
   },
-} as Meta<FieldSetProps>;
+} satisfies Meta<FieldSetProps>;
 
 export default meta;
 
@@ -33,6 +34,12 @@ export const Simple: Story = {
       </Frame>
     </Fieldset>
   ),
+  play: async ({ canvas }) => {
+    // the legend names the fieldset only when it's rendered inside it
+    const fieldset = canvas.getByRole('group', { name: 'Connection Settings' });
+
+    await expect(within(fieldset).getAllByRole('checkbox')).toHaveLength(3);
+  },
 
   parameters: {
     design: {

@@ -39,6 +39,29 @@ describe('Emitter', () => {
     expect(callback2).toHaveBeenCalledWith({ lib: 'react95' });
   });
 
+  it('should keep calling the other listeners when one throws', () => {
+    const emitter = new Emitter();
+    const error = new Error('broken listener');
+    const consoleError = vi
+      .spyOn(console, 'error')
+      .mockImplementation(() => {});
+    const callback = vi.fn();
+
+    emitter.on('add', () => {
+      throw error;
+    });
+    emitter.on('add', callback);
+    emitter.emit('add', { lib: 'react95' });
+
+    expect(callback).toHaveBeenCalledWith({ lib: 'react95' });
+    expect(consoleError).toHaveBeenCalledWith(
+      'Error in event listener for add:',
+      error,
+    );
+
+    consoleError.mockRestore();
+  });
+
   it('should not throw an error when emitting an event with no listeners', () => {
     const emitter = new Emitter();
 

@@ -1,9 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect } from 'storybook/test';
 
 import { Checkbox, Dropdown, Fieldset, Input } from '../components';
 import { Tab } from '../components/Tabs/Tab';
 import { Tabs, TabsProps } from '../components/Tabs/Tabs';
 
+// `as`, not `satisfies`: `children` is required, and the stories render the
+// tabs themselves instead of taking them as an arg
 const meta = {
   title: 'Tabs, Tab',
   component: Tabs,
@@ -90,6 +93,27 @@ export const Simple: Story = {
       </Tab>
     </Tabs>
   ),
+  play: async ({ args, canvas, userEvent }) => {
+    // a fieldset only one of the tabs has, to tell which content is shown
+    const contentOf = {
+      General: 'Logon validation',
+      Compatibility: 'Compatibility mode',
+    };
+    const first = args.defaultActiveTab as keyof typeof contentOf;
+    const other = first === 'General' ? 'Compatibility' : 'General';
+    // the tabs are a list, and the active tab's content comes right after it
+    const content = canvas.getByRole('list').nextElementSibling;
+
+    // the tab from `defaultActiveTab` starts active, showing only its content
+    await expect(content).toHaveTextContent(contentOf[first]);
+    await expect(content).not.toHaveTextContent(contentOf[other]);
+
+    await userEvent.click(canvas.getByText(other));
+
+    // clicking another tab shows its content instead
+    await expect(content).toHaveTextContent(contentOf[other]);
+    await expect(content).not.toHaveTextContent(contentOf[first]);
+  },
 
   parameters: {
     design: {

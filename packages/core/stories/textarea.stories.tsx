@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
+import { expect } from 'storybook/test';
 
 import { TextArea, TextAreaProps } from '../components/TextArea/TextArea';
 
@@ -14,7 +15,7 @@ const meta = {
     disabled: false,
     readOnly: false,
   },
-} as Meta<TextAreaProps>;
+} satisfies Meta<TextAreaProps>;
 
 export default meta;
 
@@ -36,6 +37,13 @@ const SimpleDemo = (props: TextAreaProps) => {
 
 export const Simple: Story = {
   render: args => <SimpleDemo {...args} />,
+  play: async ({ canvas, userEvent }) => {
+    const textArea = canvas.getByRole('textbox');
+
+    await userEvent.type(textArea, 'Hello,{enter}World!');
+
+    await expect(textArea).toHaveValue('Hello,\nWorld!');
+  },
 
   parameters: {
     design: {

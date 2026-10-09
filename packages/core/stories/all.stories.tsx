@@ -54,7 +54,7 @@ export default {
     docs: { codePanel: false },
     design: { disable: true },
   },
-} as Meta;
+} satisfies Meta;
 
 const AllDemo = () => {
   const [openAlert, setOpenAlert] = React.useState(true);

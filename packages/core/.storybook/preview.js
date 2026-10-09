@@ -17,6 +17,10 @@ export const initialGlobals = {
 };
 
 export const parameters = {
+  options: {
+    // the showcase of every component first, then the rest as they are
+    storySort: { order: ['All'] },
+  },
   docs: {
     // replaces @storybook/addon-storysource, removed in Storybook 9
     codePanel: true,

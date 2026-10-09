@@ -8,18 +8,25 @@ import sound from './assets/chord.mp3';
 
 export type AlertType = 'error' | 'info' | 'question' | 'warning';
 
+const icons = {
+  error: { Icon: User4, label: 'Error' },
+  info: { Icon: User5, label: 'Information' },
+  question: { Icon: User3, label: 'Question' },
+  warning: { Icon: User2, label: 'Warning' },
+};
+
 const RenderImage = ({ option }: { option: string }) => {
-  switch (option) {
-    case 'info':
-      return <User5 width={32} height={32} variant="32x32_4" />;
-    case 'question':
-      return <User3 width={32} height={32} variant="32x32_4" />;
-    case 'warning':
-      return <User2 width={32} height={32} variant="32x32_4" />;
-    case 'error':
-    default:
-      return <User4 width={32} height={32} variant="32x32_4" />;
-  }
+  const { Icon, label } = icons[option as AlertType] ?? icons.error;
+
+  return (
+    <Icon
+      width={32}
+      height={32}
+      variant="32x32_4"
+      role="img"
+      aria-label={label}
+    />
+  );
 };
 
 export type AlertProps = ModalProps & {
@@ -36,7 +43,14 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(
     useEffect(() => {
       if (!hasSound) return;
       const audio = new Audio(sound);
-      audio.play();
+      // browsers block sound until the user has interacted with the page, so
+      // an alert that opens on its own is just silent
+      audio.play().catch(() => {
+        console.warn(
+          "[React95] Alert: the browser blocked the alert's sound. Browsers " +
+            'only play sound after the user has interacted with the page.',
+        );
+      });
     }, [hasSound]);
 
     return (

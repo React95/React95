@@ -12,7 +12,7 @@ export default {
   title: 'Icon',
   // the icons come from @react95/icons, which has its own tests
   tags: ['!test'],
-} as Meta;
+} satisfies Meta;
 
 type Story = StoryObj<unknown>;
 

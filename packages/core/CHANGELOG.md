@@ -1,3 +1,20 @@
+## 9.8.5 (2026-10-08)
+
+### 🩹 Fixes
+
+- **TaskBar:** focus the next window outside of the state update ([6a4b5389](https://github.com/React95/React95/commit/6a4b5389))
+- **Video:** don't throw when playback is blocked, and keep the play button in sync ([6c40b079](https://github.com/React95/React95/commit/6c40b079))
+- **TaskBar:** update the clock every second, and show the time right away ([dc120e99](https://github.com/React95/React95/commit/dc120e99))
+- **Modal:** register a modal once, so re-renders don't steal its focus ([99d3f2da](https://github.com/React95/React95/commit/99d3f2da))
+- **Modal:** mark the active modal with aria-current ([4af91882](https://github.com/React95/React95/commit/4af91882))
+- **Alert:** don't throw when the browser blocks the alert sound ([e5f9f563](https://github.com/React95/React95/commit/e5f9f563))
+- **Alert:** name the icon after the alert type ([b8cc39ef](https://github.com/React95/React95/commit/b8cc39ef))
+- **RadioButton:** keep the input's own class when a className is passed ([bcac2cf0](https://github.com/React95/React95/commit/bcac2cf0))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 9.8.4 (2026-09-02)
 
 ### 🩹 Fixes
