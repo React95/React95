@@ -129,17 +129,69 @@ const SimpleDemo = () => {
 export const Simple: StoryObj<typeof Tree> = {
   render: () => <SimpleDemo />,
   play: async ({ canvas, userEvent }) => {
-    const music = canvas.getByText('Music');
-    const folder = music.closest('li')!;
+    const music = canvas.getByRole('treeitem', { name: 'Music' });
+    const musicLabel = canvas.getByText('Music');
+    const applications = canvas.getByRole('treeitem', {
+      name: 'Applications',
+    });
+    const folder = music;
     // the +/- next to the folder's own name (subfolders have one too)
     const toggle = () => within(folder).getAllByText(/^[+-]$/)[0];
+
+    await expect(canvas.getByRole('tree')).toBeInTheDocument();
+    await expect(applications).toHaveAttribute('tabindex', '0');
+    await expect(music).toHaveAttribute('tabindex', '-1');
+
+    // Tab enters the tree at its first item, then the arrow keys move focus.
+    await userEvent.tab();
+    await expect(canvas.getByText('My Computer')).toHaveFocus();
+    await userEvent.tab();
+    await expect(applications).toHaveFocus();
+    await userEvent.keyboard('{ArrowDown}');
+    await expect(music).toHaveFocus();
+    await expect(music).toHaveAttribute('tabindex', '0');
+    await expect(applications).toHaveAttribute('tabindex', '-1');
+    await expect(getComputedStyle(musicLabel).borderTopStyle).toBe('dotted');
+    await userEvent.keyboard('{ArrowUp}');
+    await expect(applications).toHaveFocus();
+    await userEvent.keyboard('{ArrowDown}');
+    await expect(music).toHaveFocus();
+
+    // Right opens a folder, then moves into its children.
+    await userEvent.keyboard('{ArrowRight}');
+    await expect(music).toHaveAttribute('aria-expanded', 'true');
+    await userEvent.keyboard('{ArrowRight}');
+    const indie = canvas.getByRole('treeitem', { name: 'Indie' });
+    await expect(indie).toHaveFocus();
+    await userEvent.keyboard('{ArrowRight}');
+    await expect(indie).toHaveAttribute('aria-expanded', 'true');
+    await userEvent.keyboard('{ArrowRight}');
+    const weezer = canvas.getByRole('treeitem', { name: 'Weezer' });
+    await expect(weezer).toHaveFocus();
+    await userEvent.keyboard('{ArrowLeft}');
+    await expect(indie).toHaveFocus();
+    await userEvent.keyboard('{ArrowLeft}');
+    await expect(indie).toHaveAttribute('aria-expanded', 'false');
+    await userEvent.keyboard('{ArrowRight}');
+    await userEvent.keyboard('{ArrowRight}');
+    await expect(weezer).toHaveFocus();
+
+    // Collapsing with the mouse returns focus and the tab stop to the folder.
+    await userEvent.click(toggle());
+    await expect(music).toHaveFocus();
+    await expect(music).toHaveAttribute('tabindex', '0');
+    await expect(music).toHaveAttribute('aria-expanded', 'false');
+    await expect(folder).not.toHaveTextContent('Indie');
+    await expect(
+      canvas.getAllByRole('treeitem').filter(item => item.tabIndex === 0),
+    ).toHaveLength(1);
 
     // folders start closed: their content isn't there
     await expect(toggle()).toHaveTextContent('+');
     await expect(folder).not.toHaveTextContent('Indie');
 
     // double-clicking the name opens it
-    await userEvent.dblClick(music);
+    await userEvent.dblClick(musicLabel);
 
     await expect(toggle()).toHaveTextContent('-');
     await expect(folder).toHaveTextContent('Indie');

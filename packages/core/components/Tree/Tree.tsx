@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import { forwardRef, useEffect, useState } from 'react';
 import type {
   ForwardRefExoticComponent,
   HTMLAttributes,
@@ -16,6 +16,25 @@ export type TreeProps = {
 } & FrameProps &
   HTMLAttributes<HTMLUListElement>;
 
+const hasTreeItemKey = (data: Array<NodeProps>, key: string | null) => {
+  if (key === null) {
+    return false;
+  }
+
+  let nodes = data;
+
+  return key.split('.').every(index => {
+    const node = nodes[Number(index)];
+
+    if (!node) {
+      return false;
+    }
+
+    nodes = node.children ?? [];
+    return true;
+  });
+};
+
 type TreeComposition = ForwardRefExoticComponent<
   TreeProps & RefAttributes<HTMLUListElement>
 > & {
@@ -24,6 +43,21 @@ type TreeComposition = ForwardRefExoticComponent<
 
 export const Tree = forwardRef<HTMLUListElement, TreeProps>(
   ({ data = [], root, ...rest }, ref) => {
+    const [activeTreeItemKey, setActiveTreeItemKey] = useState<string | null>(
+      () => (data.length ? '0' : null),
+    );
+    const resolvedActiveTreeItemKey = hasTreeItemKey(data, activeTreeItemKey)
+      ? activeTreeItemKey
+      : data.length
+        ? '0'
+        : null;
+
+    useEffect(() => {
+      if (activeTreeItemKey !== resolvedActiveTreeItemKey) {
+        setActiveTreeItemKey(resolvedActiveTreeItemKey);
+      }
+    }, [activeTreeItemKey, data, resolvedActiveTreeItemKey]);
+
     return (
       <>
         {root && <NodeRoot {...root} />}
@@ -34,8 +68,14 @@ export const Tree = forwardRef<HTMLUListElement, TreeProps>(
           role="tree"
           ref={ref}
         >
-          {data.map(dataNode => (
-            <Node key={dataNode.id} {...dataNode} />
+          {data.map((dataNode, index) => (
+            <Node
+              key={dataNode.id}
+              {...dataNode}
+              treeItemKey={`${index}`}
+              activeTreeItemKey={resolvedActiveTreeItemKey}
+              onActiveTreeItemChange={setActiveTreeItemKey}
+            />
           ))}
         </Frame>
       </>

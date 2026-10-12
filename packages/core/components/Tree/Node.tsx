@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import type {
   ReactElement,
   MouseEvent,
@@ -73,7 +73,6 @@ export type NodeRootProps = NodeBaseProps & {
 };
 
 const EMPTY_CHILDREN: Array<NodeProps> = [];
-
 const TREE_ITEM_SELECTOR = '[role="treeitem"]';
 
 const getTreeItems = (item: HTMLLIElement) => {
@@ -84,15 +83,10 @@ const getTreeItems = (item: HTMLLIElement) => {
     : [];
 };
 
-const setActiveTreeItem = (item: HTMLLIElement) => {
-  getTreeItems(item).forEach(treeItem => {
-    treeItem.tabIndex = treeItem === item ? 0 : -1;
-  });
-};
-
-const focusTreeItem = (item: HTMLLIElement) => {
-  setActiveTreeItem(item);
-  item.focus();
+type TreeNodeProps = NodeProps & {
+  treeItemKey: string;
+  activeTreeItemKey: string | null;
+  onActiveTreeItemChange(key: string): void;
 };
 
 export const Node = ({
@@ -101,30 +95,22 @@ export const Node = ({
   icon,
   label,
   onClick = () => {},
+  treeItemKey,
+  activeTreeItemKey,
+  onActiveTreeItemChange,
   ...rest
-}: NodeProps) => {
+}: TreeNodeProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const nodeRef = useRef<HTMLLIElement>(null);
   const hasChildren = children.length > 0;
 
-  useEffect(() => {
-    const node = nodeRef.current;
-    const tree = node?.closest('[role="tree"]');
-
-    if (
-      node &&
-      tree &&
-      !tree.querySelector(`${TREE_ITEM_SELECTOR}[tabindex="0"]`)
-    ) {
-      node.tabIndex = 0;
-    }
-  }, []);
+  const focusNode = () => {
+    onActiveTreeItemChange(treeItemKey);
+    nodeRef.current?.focus();
+  };
 
   const onClickHandler = (event: MouseEvent | KeyboardEvent) => {
-    if (nodeRef.current) {
-      setActiveTreeItem(nodeRef.current);
-      nodeRef.current.focus();
-    }
+    focusNode();
 
     onClick(event, {
       id,
@@ -165,7 +151,7 @@ export const Node = ({
 
         if (nextNode) {
           event.preventDefault();
-          focusTreeItem(nextNode);
+          nextNode.focus();
         }
         break;
       }
@@ -174,7 +160,7 @@ export const Node = ({
 
         if (previousNode) {
           event.preventDefault();
-          focusTreeItem(previousNode);
+          previousNode.focus();
         }
         break;
       }
@@ -187,7 +173,7 @@ export const Node = ({
 
         if (!isOpen) {
           setIsOpen(true);
-          focusTreeItem(node);
+          focusNode();
           break;
         }
 
@@ -195,7 +181,7 @@ export const Node = ({
         const firstChild = group?.firstElementChild as HTMLLIElement | null;
 
         if (firstChild) {
-          focusTreeItem(firstChild);
+          firstChild.focus();
         }
         break;
       }
@@ -203,7 +189,7 @@ export const Node = ({
         if (isOpen) {
           event.preventDefault();
           setIsOpen(false);
-          focusTreeItem(node);
+          focusNode();
           break;
         }
 
@@ -213,7 +199,7 @@ export const Node = ({
 
         if (parentNode) {
           event.preventDefault();
-          focusTreeItem(parentNode);
+          parentNode.focus();
         }
         break;
       }
@@ -253,7 +239,7 @@ export const Node = ({
     event.stopPropagation();
 
     if (nodeRef.current) {
-      setActiveTreeItem(nodeRef.current);
+      onActiveTreeItemChange(treeItemKey);
     }
   };
 
@@ -264,7 +250,7 @@ export const Node = ({
       ref={nodeRef}
       role="treeitem"
       aria-expanded={hasChildren ? isOpen : undefined}
-      tabIndex={-1}
+      tabIndex={activeTreeItemKey === treeItemKey ? 0 : -1}
       className={cn(styles.node, rest.className)}
       onClick={event => {
         if (event.target === event.currentTarget) {
@@ -282,6 +268,7 @@ export const Node = ({
             aria-hidden="true"
             onClick={event => {
               event.stopPropagation();
+              focusNode();
               setIsOpen(!isOpen);
             }}
           >
@@ -298,8 +285,14 @@ export const Node = ({
       </div>
       {hasChildren && isOpen && (
         <ul className={styles.tree} role="group">
-          {children?.map(dataNode => (
-            <Node key={dataNode.id} {...dataNode} />
+          {children?.map((dataNode, index) => (
+            <Node
+              key={dataNode.id}
+              {...dataNode}
+              treeItemKey={`${treeItemKey}.${index}`}
+              activeTreeItemKey={activeTreeItemKey}
+              onActiveTreeItemChange={onActiveTreeItemChange}
+            />
           ))}
         </ul>
       )}
