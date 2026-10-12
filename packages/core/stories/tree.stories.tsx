@@ -174,7 +174,7 @@ export const Simple: StoryObj<typeof Tree> = {
     await expect(indie).toHaveAttribute('aria-expanded', 'false');
     await userEvent.keyboard('{ArrowRight}');
     await userEvent.keyboard('{ArrowRight}');
-    await expect(weezer).toHaveFocus();
+    await expect(canvas.getByRole('treeitem', { name: 'Weezer' })).toHaveFocus();
 
     // Collapsing with the mouse returns focus and the tab stop to the folder.
     await userEvent.click(toggle());
