@@ -11,5 +11,7 @@ createGlobalTheme('.contract-story', contract, {
     ...cs16.colors,
     material: 'thistle',
     headerBackground: 'tomato',
+    materialText: '#1a1a1a',
+    headerText: '#1a1a1a',
   },
 });
