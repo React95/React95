@@ -749,6 +749,8 @@ const EventSubscriptionDemo = () => {
             overflow="auto"
             backgroundColor="#fafafa"
             flexGrow={1}
+            tabIndex={0}
+            aria-label="Event log"
           />
         </Frame>
       </Frame>
@@ -759,9 +761,11 @@ const EventSubscriptionDemo = () => {
 export const EventSubscription: Story = {
   render: () => <EventSubscriptionDemo />,
   play: async ({ canvas, userEvent }) => {
-    const log = canvas.getByText('Event Log').nextElementSibling;
+    const log = canvas.getByLabelText('Event log');
     const control = (name: string) =>
       userEvent.click(canvas.getByRole('button', { name }));
+
+    await expect(log).toHaveAttribute('tabindex', '0');
 
     // each call emits its events, which subscribers receive
     await control('Minimize');
