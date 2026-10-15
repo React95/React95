@@ -36,9 +36,14 @@ const SimpleDemo = (props: TextAreaProps) => {
 };
 
 export const Simple: Story = {
+  args: {
+    'aria-label': 'Sample text area',
+  },
   render: args => <SimpleDemo {...args} />,
   play: async ({ canvas, userEvent }) => {
-    const textArea = canvas.getByRole('textbox');
+    const textArea = canvas.getByRole('textbox', {
+      name: 'Sample text area',
+    });
 
     await userEvent.type(textArea, 'Hello,{enter}World!');
 
