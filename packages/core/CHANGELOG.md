@@ -1,3 +1,26 @@
+# 10.0.0 (2026-10-15)
+
+### 🚀 Features
+
+- ⚠️  **core:** put the components' CSS in cascade layers ([aad22fbb](https://github.com/React95/React95/commit/aad22fbb))
+
+### 🩹 Fixes
+
+- **GlobalStyle:** let the body font reach every element, form controls included ([98262a66](https://github.com/React95/React95/commit/98262a66))
+
+### ⚠️  Breaking Changes
+
+- **core:** put the components' CSS in cascade layers  ([aad22fbb](https://github.com/React95/React95/commit/aad22fbb))
+  CSS resets outside of a layer, like Tailwind v3's
+  preflight or normalize.css, now win over React95's components (e.g.
+  `button { padding: 0 }` undoes Button's padding). Put the reset in a
+  layer and declare the order before React95's CSS loads, e.g. in the
+  HTML's <head>: `<style>@layer reset, react95;</style>`.
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 9.8.7 (2026-10-15)
 
 ### 🩹 Fixes
