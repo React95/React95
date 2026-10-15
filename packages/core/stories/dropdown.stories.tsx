@@ -25,6 +25,7 @@ type Story = StoryObj<typeof meta>;
 export const Simple: Story = {
   args: {
     name: 'path',
+    'aria-label': 'Sample dropdown',
   },
   play: async ({ args, canvas, userEvent }) => {
     const dropdown = canvas.getByRole('combobox');
