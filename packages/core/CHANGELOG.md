@@ -1,3 +1,13 @@
+## 9.8.6 (2026-10-15)
+
+### 🩹 Fixes
+
+- **storybook:** add aria-label to icon-only TitleBar link ([9db87243](https://github.com/React95/React95/commit/9db87243))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 9.8.5 (2026-10-08)
 
 ### 🩹 Fixes
