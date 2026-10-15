@@ -38,6 +38,9 @@ export const node = style({
       left: calc.negate(contract.space[1]),
       width: contract.space[15],
     },
+    '&:focus': {
+      outline: 'none',
+    },
   },
 });
 
@@ -63,6 +66,11 @@ export const label = style({
   padding: contract.space[1],
   selectors: {
     '&:focus': {
+      borderWidth: contract.space[1],
+      borderStyle: 'dotted',
+      padding: contract.space[0],
+    },
+    [`${node}:focus &`]: {
       borderWidth: contract.space[1],
       borderStyle: 'dotted',
       padding: contract.space[0],
