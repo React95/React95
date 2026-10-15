@@ -1,3 +1,14 @@
+## 9.8.7 (2026-10-15)
+
+### 🩹 Fixes
+
+- **core:** add accessible name to Range Simple story ([9598d794](https://github.com/React95/React95/commit/9598d794))
+- **core:** add accessible name to Dropdown Simple story ([c49821b0](https://github.com/React95/React95/commit/c49821b0))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 9.8.6 (2026-10-15)
 
 ### 🩹 Fixes
