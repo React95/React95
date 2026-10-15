@@ -1,6 +1,7 @@
 import { style } from '@vanilla-extract/css';
 import { contract } from '../themes/contract.css';
 import { calc } from '@vanilla-extract/css-utils';
+import { inLayer, components } from '../shared/layers.css';
 
 const track = {
   width: '100%',
@@ -41,17 +42,19 @@ const thumb = {
   appearance: 'none',
 } as const;
 
-export const range = style({
-  appearance: 'none',
-  width: '100%',
-  selectors: {
-    '&::hover,&::focus,&::active': { outline: 'none' },
-    '&::-webkit-slider-runnable-track': track,
-    '&::-moz-range-track': track,
-    '&::-webkit-slider-thumb': thumb,
-    '&::-moz-range-thumb': thumb,
-    '&:focus::-webkit-slider-runnable-track': {
-      backgroundColor: contract.colors.borderDarkest,
+export const range = style(
+  inLayer(components, {
+    appearance: 'none',
+    width: '100%',
+    selectors: {
+      '&::hover,&::focus,&::active': { outline: 'none' },
+      '&::-webkit-slider-runnable-track': track,
+      '&::-moz-range-track': track,
+      '&::-webkit-slider-thumb': thumb,
+      '&::-moz-range-thumb': thumb,
+      '&:focus::-webkit-slider-runnable-track': {
+        backgroundColor: contract.colors.borderDarkest,
+      },
     },
-  },
-});
+  }),
+);

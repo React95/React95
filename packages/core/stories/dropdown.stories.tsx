@@ -26,6 +26,7 @@ export const Simple: Story = {
   args: {
     name: 'path',
     'aria-label': 'Sample dropdown',
+    width: '250px',
   },
   play: async ({ args, canvas, userEvent }) => {
     const dropdown = canvas.getByRole('combobox');
@@ -36,7 +37,8 @@ export const Simple: Story = {
       canvas.getAllByRole('option').map(option => option.textContent),
     ).toEqual(options);
 
-    // the other props reach the select
+    // style props size the wrapper, the other props reach the select
+    await expect(dropdown.parentElement).toHaveStyle({ width: args.width });
     await expect(dropdown).toHaveAttribute('name', args.name);
     await expect(dropdown).toBeEnabled();
 

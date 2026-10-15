@@ -105,14 +105,28 @@ const AllDemo = () => {
       </div>
 
       <br />
+      <SimpleTitleBar />
+
       <br />
+      <Inactive />
+
+      <br />
+      <Complete />
 
       <div>
         <SimpleTextArea />
       </div>
 
       <br />
+      <SimpleTree />
       <br />
+      <SimpleRange />
+
+      <br />
+      <SimpleRadioButton />
+
+      <br />
+      <SimpleTooltip />
 
       <div>
         <WithIcons />
@@ -124,33 +138,12 @@ const AllDemo = () => {
       <SimpleProgressBar />
 
       <br />
-      <SimpleRadioButton />
-
-      <br />
-      <SimpleRange />
-
-      <br />
       <div className={styles.tabs}>
         <SimpleTabs />
       </div>
 
       <br />
-      <SimpleTree />
-
-      <br />
-      <SimpleTooltip />
-
-      <br />
       <FromURL />
-
-      <br />
-      <SimpleTitleBar />
-
-      <br />
-      <Inactive />
-
-      <br />
-      <Complete />
     </div>
   );
 };

@@ -1,10 +1,11 @@
 import { style } from '@vanilla-extract/css';
 import { Cursor } from '../Cursor/Cursor.css';
 import { contract } from '../themes/contract.css';
+import { inLayer, components } from '../shared/layers.css';
 
 export const input = style([
   Cursor.Text,
-  {
+  inLayer(components, {
     outline: 'none',
     border: 'none',
     paddingTop: contract.space[3],
@@ -24,5 +25,5 @@ export const input = style([
     borderLeftColor: contract.colors.borderDark,
     boxShadow: contract.shadows.input,
     WebkitAppearance: 'none',
-  },
+  }),
 ]);
