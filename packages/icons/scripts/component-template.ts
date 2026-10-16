@@ -2,8 +2,8 @@
 
 import fs from 'fs';
 import { transform } from '@svgr/core';
-import { IconData } from './utils';
-import { Options } from '@svgr/babel-preset';
+import type { IconData } from './utils';
+import type { Options } from '@svgr/babel-preset';
 
 export const getIconDataName = (name: string): string => {
   const lowercase = name.charAt(0).toLowerCase() + name.slice(1);

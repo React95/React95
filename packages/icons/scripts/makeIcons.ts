@@ -3,15 +3,15 @@ import ICO from 'icojs';
 import path from 'path';
 import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader';
 import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor';
-import { Pixel, pixel } from 'pixel-perfect-svg/dist/pixel';
-import { Config, optimize } from 'svgo';
+import { type Pixel, pixel } from 'pixel-perfect-svg/dist/pixel';
+import { type Config, optimize } from 'svgo';
 
 import { getIconDataName, iconComponentTemplate } from './component-template';
 import { filterBlockedIcons } from './iconBlockList';
 import {
   REACT_FOLDER,
   IMAGE_FOLDER,
-  IconData,
+  type IconData,
   ICON_DEMOS_FILE_PATH,
   ICONS_INDEX_FILE_PATH,
   CSS_FILE_PATH,
