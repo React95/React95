@@ -106,6 +106,9 @@ export const Playback: Story = {
     // the controls have no accessible name yet (#554), so they go by order
     const [playPause, stop] = canvas.getAllByRole('button');
 
+    // they're Buttons, with Video's padding over Button's
+    await expect(playPause).toHaveStyle({ padding: '7px' });
+
     // Play plays it, and the bar follows it
     await userEvent.click(playPause);
 

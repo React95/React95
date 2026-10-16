@@ -64,7 +64,11 @@ export const Complete: Story = {
   render: args => (
     <TitleBar {...args} icon={<Doc variant="16x16_4" />} width="300px">
       <TitleBar.OptionsBox>
-        <TitleBar.Option as="a" href="https://github.com/React95/React95">
+        <TitleBar.Option
+          as="a"
+          href="https://github.com/React95/React95"
+          aria-label="React95 on GitHub"
+        >
           <Star variant="16x16_4" />
         </TitleBar.Option>
         <TitleBar.Help />
@@ -89,10 +93,10 @@ export const Complete: Story = {
       ).toBeEnabled();
     }
 
-    // an option can also be a link (`as="a"`)
-    await expect(within(titleBar).getByRole('link')).toHaveAttribute(
-      'href',
-      'https://github.com/React95/React95',
-    );
+    // an option can also be a link (`as="a"`), and an icon-only link needs
+    // an accessible name
+    await expect(
+      within(titleBar).getByRole('link', { name: 'React95 on GitHub' }),
+    ).toHaveAttribute('href', 'https://github.com/React95/React95');
   },
 };

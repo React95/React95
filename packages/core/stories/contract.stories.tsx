@@ -120,7 +120,11 @@ export const Theme: Story = {
           <Frame as="p" fontWeight="bold" mt="$0">
             Contract Theme
           </Frame>
-          <Input w="240px" value="import { contract } from '@react95/core';" />
+          <Input
+            w="240px"
+            value="import { contract } from '@react95/core';"
+            aria-label="Import the contract"
+          />
           <Frame>
             <Tree
               data={treeNodes}
@@ -151,6 +155,7 @@ export const Theme: Story = {
           </Frame>
           <Fieldset legend="Code">
             <TextArea
+              aria-label="Contract usage code example"
               fontFamily="monospace"
               whiteSpace="pre-line"
               overflow="auto"
@@ -206,6 +211,7 @@ export const CodeExamples: Story = {
             Using Tokens in Components
           </Frame>
           <TextArea
+            aria-label="Code usage examples"
             fontFamily="monospace"
             whiteSpace="pre-line"
             overflow="auto"
@@ -271,6 +277,7 @@ export const CustomTheme: Story = {
             Step 1: Create Theme Tokens File
           </Frame>
           <TextArea
+            aria-label="Step 1 code: create theme tokens file"
             fontFamily="monospace"
             whiteSpace="pre-line"
             overflow="auto"
@@ -309,6 +316,7 @@ createGlobalTheme('.my-custom-theme', contract, {
             Step 2: Import and Apply
           </Frame>
           <TextArea
+            aria-label="Step 2 code: import and apply theme"
             fontFamily="monospace"
             whiteSpace="pre-line"
             overflow="auto"
@@ -354,6 +362,7 @@ function App() {
             <Tab title="Custom Theme">
               <Fieldset legend="Code">
                 <TextArea
+                  aria-label="Custom theme code"
                   rows={15}
                   width={'100%'}
                   fontFamily="monospace"
@@ -371,6 +380,8 @@ createGlobalTheme('.contract-story', contract, {
     ...cs16.colors,
     material: 'thistle',
     headerBackground: 'tomato',
+    materialText: '#1a1a1a',
+    headerText: '#1a1a1a',
   },
 });
 `}
@@ -399,7 +410,10 @@ createGlobalTheme('.contract-story', contract, {
 
                       <Frame display="flex" gap="$8">
                         <Button>Custom</Button>
-                        <Input placeholder="Counter-Strike input" />
+                        <Input
+                          placeholder="Counter-Strike input"
+                          aria-label="Example input"
+                        />
                       </Frame>
                     </Frame>
                   </Frame>
@@ -414,6 +428,7 @@ createGlobalTheme('.contract-story', contract, {
             Advanced: Creating Your Own Token Set
           </Frame>
           <TextArea
+            aria-label="Custom theme tokens code example"
             fontFamily="monospace"
             whiteSpace="pre-line"
             overflow="auto"
@@ -466,6 +481,7 @@ createGlobalTheme('.my-brand-theme', contract, myCustomTokens);`}
             Theme Switching
           </Frame>
           <TextArea
+            aria-label="Theme switching code example"
             fontFamily="monospace"
             whiteSpace="pre-line"
             overflow="auto"

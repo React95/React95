@@ -978,13 +978,6 @@
   display: inline-block;
 }
 
-.Confcp107_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Confcp107_32x32_4.svg);
-  display: inline-block;
-}
-
 .Confcp107_16x16_4 {
   width: 16px;
   height: 16px;
@@ -992,24 +985,10 @@
   display: inline-block;
 }
 
-.Confcp108_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Confcp108_32x32_4.svg);
-  display: inline-block;
-}
-
 .Confcp108_16x16_4 {
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Confcp108_16x16_4.svg);
-  display: inline-block;
-}
-
-.Confcp109_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Confcp109_32x32_4.svg);
   display: inline-block;
 }
 
@@ -1052,13 +1031,6 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Confcp118_32x32_4.svg);
-  display: inline-block;
-}
-
-.Confcp120_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Confcp120_32x32_4.svg);
   display: inline-block;
 }
 
@@ -1409,13 +1381,6 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Dial_32x32_4.svg);
-  display: inline-block;
-}
-
-.Dial_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/Dial_16x16_4.svg);
   display: inline-block;
 }
 
@@ -1958,13 +1923,6 @@
   display: inline-block;
 }
 
-.FileFind3_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/FileFind3_16x16_4.svg);
-  display: inline-block;
-}
-
 .FileFont_32x32_4 {
   width: 32px;
   height: 32px;
@@ -2025,13 +1983,6 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/FilePick_32x32_4.svg);
-  display: inline-block;
-}
-
-.FilePick_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/FilePick_16x16_4.svg);
   display: inline-block;
 }
 
@@ -3260,6 +3211,62 @@
   display: inline-block;
 }
 
+.Icwconn1200_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Icwconn1200_32x32_4.svg);
+  display: inline-block;
+}
+
+.Icwconn1200_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Icwconn1200_16x16_4.svg);
+  display: inline-block;
+}
+
+.Icwconn1200_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Icwconn1200_48x48_4.svg);
+  display: inline-block;
+}
+
+.Icwconn1200_32x32_8 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Icwconn1200_32x32_8.svg);
+  display: inline-block;
+}
+
+.Icwconn1200_48x48_8 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Icwconn1200_48x48_8.svg);
+  display: inline-block;
+}
+
+.Icwconn1200_16x16_8 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Icwconn1200_16x16_8.svg);
+  display: inline-block;
+}
+
+.Icwconn1202_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Icwconn1202_32x32_4.svg);
+  display: inline-block;
+}
+
+.Icwconn1202_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Icwconn1202_16x16_4.svg);
+  display: inline-block;
+}
+
 .Icwdial101_32x32_4 {
   width: 32px;
   height: 32px;
@@ -3285,6 +3292,209 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Ie_16x16_8.svg);
+  display: inline-block;
+}
+
+.Ie_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Ie_32x32_4.svg);
+  display: inline-block;
+}
+
+.Ie_32x32_8 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Ie_32x32_8.svg);
+  display: inline-block;
+}
+
+.Ie_48x48_8 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Ie_48x48_8.svg);
+  display: inline-block;
+}
+
+.Ie_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Ie_16x16_4.svg);
+  display: inline-block;
+}
+
+.Ie_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Ie_48x48_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32528_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32528_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32528_32x32_8 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32528_32x32_8.svg);
+  display: inline-block;
+}
+
+.Iexplore32528_48x48_8 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Iexplore32528_48x48_8.svg);
+  display: inline-block;
+}
+
+.Iexplore32528_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32528_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32528_16x16_8 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32528_16x16_8.svg);
+  display: inline-block;
+}
+
+.Iexplore32528_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Iexplore32528_48x48_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32529_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32529_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32529_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32529_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32529_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Iexplore32529_48x48_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32529_32x32_8 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32529_32x32_8.svg);
+  display: inline-block;
+}
+
+.Iexplore32529_16x16_8 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32529_16x16_8.svg);
+  display: inline-block;
+}
+
+.Iexplore32529_48x48_8 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Iexplore32529_48x48_8.svg);
+  display: inline-block;
+}
+
+.Iexplore32537_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32537_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32537_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32537_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32542_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32542_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32542_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32542_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32548_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32548_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32548_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32548_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32549_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32549_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32549_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32549_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32550_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32550_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32550_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32550_16x16_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32554_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Iexplore32554_32x32_4.svg);
+  display: inline-block;
+}
+
+.Iexplore32554_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Iexplore32554_16x16_4.svg);
   display: inline-block;
 }
 
@@ -3764,13 +3974,6 @@
   display: inline-block;
 }
 
-.Joy108_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Joy108_32x32_4.svg);
-  display: inline-block;
-}
-
 .Joy108_16x16_4 {
   width: 16px;
   height: 16px;
@@ -3803,13 +4006,6 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/KeyboardMouse_32x32_4.svg);
-  display: inline-block;
-}
-
-.KeyboardMouse_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/KeyboardMouse_16x16_4.svg);
   display: inline-block;
 }
 
@@ -4030,24 +4226,10 @@
   display: inline-block;
 }
 
-.Mailnews17_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Mailnews17_32x32_4.svg);
-  display: inline-block;
-}
-
 .Mailnews17_16x16_4 {
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Mailnews17_16x16_4.svg);
-  display: inline-block;
-}
-
-.Mailnews18_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Mailnews18_32x32_4.svg);
   display: inline-block;
 }
 
@@ -4870,31 +5052,10 @@
   display: inline-block;
 }
 
-.Mmsys122_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Mmsys122_32x32_4.svg);
-  display: inline-block;
-}
-
-.Mmsys122_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/Mmsys122_16x16_4.svg);
-  display: inline-block;
-}
-
 .Mmsys123_32x32_4 {
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Mmsys123_32x32_4.svg);
-  display: inline-block;
-}
-
-.Mmsys124_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Mmsys124_32x32_4.svg);
   display: inline-block;
 }
 
@@ -5311,13 +5472,6 @@
   display: inline-block;
 }
 
-.Mshtml32538_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/Mshtml32538_16x16_4.svg);
-  display: inline-block;
-}
-
 .Mshtml32539_32x32_4 {
   width: 32px;
   height: 32px;
@@ -5364,13 +5518,6 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Mshtml32542_16x16_4.svg);
-  display: inline-block;
-}
-
-.Mshtml32543_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Mshtml32543_32x32_4.svg);
   display: inline-block;
 }
 
@@ -7838,6 +7985,13 @@
   display: inline-block;
 }
 
+.Runonce106_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Runonce106_16x16_4.svg);
+  display: inline-block;
+}
+
 .Save_16x16_4 {
   width: 16px;
   height: 16px;
@@ -7912,6 +8066,20 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Settings_16x16_4.svg);
+  display: inline-block;
+}
+
+.SetupPhoneicon_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/SetupPhoneicon_32x32_4.svg);
+  display: inline-block;
+}
+
+.SetupPhoneicon_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/SetupPhoneicon_16x16_4.svg);
   display: inline-block;
 }
 
@@ -8059,13 +8227,6 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Shdocvw272_16x16_4.svg);
-  display: inline-block;
-}
-
-.Shdocvw273_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Shdocvw273_32x32_4.svg);
   display: inline-block;
 }
 
@@ -10155,13 +10316,6 @@
   display: inline-block;
 }
 
-.WindowAbc_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/WindowAbc_16x16_4.svg);
-  display: inline-block;
-}
-
 .WindowAccessibility_32x32_4 {
   width: 32px;
   height: 32px;
@@ -10180,13 +10334,6 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/WindowGraph_32x32_4.svg);
-  display: inline-block;
-}
-
-.WindowGraph_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/WindowGraph_16x16_4.svg);
   display: inline-block;
 }
 

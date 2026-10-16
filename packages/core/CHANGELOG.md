@@ -1,3 +1,59 @@
+## 10.0.2 (2026-10-16)
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/icons to 2.6.0
+
+## 10.0.1 (2026-10-16)
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/icons to 2.5.4
+
+# 10.0.0 (2026-10-15)
+
+### 🚀 Features
+
+- ⚠️  **core:** put the components' CSS in cascade layers ([aad22fbb](https://github.com/React95/React95/commit/aad22fbb))
+
+### 🩹 Fixes
+
+- **GlobalStyle:** let the body font reach every element, form controls included ([98262a66](https://github.com/React95/React95/commit/98262a66))
+
+### ⚠️  Breaking Changes
+
+- **core:** put the components' CSS in cascade layers  ([aad22fbb](https://github.com/React95/React95/commit/aad22fbb))
+  CSS resets outside of a layer, like Tailwind v3's
+  preflight or normalize.css, now win over React95's components (e.g.
+  `button { padding: 0 }` undoes Button's padding). Put the reset in a
+  layer and declare the order before React95's CSS loads, e.g. in the
+  HTML's <head>: `<style>@layer reset, react95;</style>`.
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
+## 9.8.7 (2026-10-15)
+
+### 🩹 Fixes
+
+- **core:** add accessible name to Range Simple story ([9598d794](https://github.com/React95/React95/commit/9598d794))
+- **core:** add accessible name to Dropdown Simple story ([c49821b0](https://github.com/React95/React95/commit/c49821b0))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
+## 9.8.6 (2026-10-15)
+
+### 🩹 Fixes
+
+- **storybook:** add aria-label to icon-only TitleBar link ([9db87243](https://github.com/React95/React95/commit/9db87243))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 9.8.5 (2026-10-08)
 
 ### 🩹 Fixes
