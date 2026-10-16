@@ -132,7 +132,7 @@ async function toReact(icons: IconsMap[]) {
     );
   });
 
-  fs.writeFileSync(ICONS_INDEX_FILE_PATH, indexFileReExports.join('\n'));
+  fs.writeFileSync(ICONS_INDEX_FILE_PATH, indexFileReExports.join('\n') + '\n');
 }
 
 async function toCSS(icons: IconsMap[]) {
