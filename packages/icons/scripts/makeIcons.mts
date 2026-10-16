@@ -1,23 +1,26 @@
+import decodeIco from 'decode-ico';
 import fs from 'fs';
 import ICO from 'icojs';
 import path from 'path';
-import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader';
-import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor';
-import { Pixel, pixel } from 'pixel-perfect-svg/dist/pixel';
-import { Config, optimize } from 'svgo';
+import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader.js';
+import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor.js';
+import { type Pixel, pixel } from 'pixel-perfect-svg/dist/pixel.js';
+import { type Config, optimize } from 'svgo';
 
-import { getIconDataName, iconComponentTemplate } from './component-template';
-import { filterBlockedIcons } from './iconBlockList';
+import {
+  getIconDataName,
+  iconComponentTemplate,
+} from './component-template.mts';
 import {
   REACT_FOLDER,
   IMAGE_FOLDER,
-  IconData,
+  type IconData,
   ICON_DEMOS_FILE_PATH,
   ICONS_INDEX_FILE_PATH,
   CSS_FILE_PATH,
   ICONS_FOLDER,
   SVG_FOLDER,
-} from './utils';
+} from './utils.mts';
 
 const svgoConfig: Config = {
   plugins: [
@@ -75,7 +78,11 @@ async function extractPNGFromIco(fileName: string) {
   /** Used to avoid adding the same icon variant multiple times */
   const addedVariants: string[] = [];
   const parsedIcon = await ICO.parse(iconsBuffer, 'image/png');
+  // icojs decodes with decode-ico too, so both lists share the same order
+  const pixels = decodeIco(iconsBuffer);
   const iconVariants: IconData[] = parsedIcon
+    // Remove variants without a single visible pixel
+    .filter((_, i) => pixels[i].data.some((value, j) => j % 4 === 3 && value))
     .map(image => {
       const variant = `${image.width}x${image.height}_${image.bpp}`;
       const imageId = `${iconName}_${variant}`;
@@ -99,9 +106,7 @@ async function extractPNGFromIco(fileName: string) {
       }
       addedVariants.push(icon.id);
       return true;
-    })
-    // Remove icons marked as not rendering anything
-    .filter(filterBlockedIcons);
+    });
 
   return {
     name: iconName,
@@ -127,7 +132,7 @@ async function toReact(icons: IconsMap[]) {
     );
   });
 
-  fs.writeFileSync(ICONS_INDEX_FILE_PATH, indexFileReExports.join('\n'));
+  fs.writeFileSync(ICONS_INDEX_FILE_PATH, indexFileReExports.join('\n') + '\n');
 }
 
 async function toCSS(icons: IconsMap[]) {
@@ -223,7 +228,14 @@ export async function makeIcons() {
   fs.mkdirSync(IMAGE_FOLDER);
 
   const files = fs.readdirSync(ICONS_FOLDER);
-  const icons = await Promise.all(files.map(extractPNGFromIco));
+  const icons = (await Promise.all(files.map(extractPNGFromIco))).filter(
+    icon => {
+      if (icon.variants.length === 0) {
+        console.log(`👻 Skipping ${icon.name}, all its variants are blank`);
+      }
+      return icon.variants.length > 0;
+    },
+  );
 
   await toPNG(icons);
   await toSVG(icons);

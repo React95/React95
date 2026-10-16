@@ -471,9 +471,7 @@ import { mmsys118Data, Mmsys118 } from './react/Mmsys118';
 import { mmsys119Data, Mmsys119 } from './react/Mmsys119';
 import { mmsys120Data, Mmsys120 } from './react/Mmsys120';
 import { mmsys121Data, Mmsys121 } from './react/Mmsys121';
-import { mmsys122Data, Mmsys122 } from './react/Mmsys122';
 import { mmsys123Data, Mmsys123 } from './react/Mmsys123';
-import { mmsys124Data, Mmsys124 } from './react/Mmsys124';
 import { mmsys90Data, Mmsys90 } from './react/Mmsys90';
 import { mmsys99Data, Mmsys99 } from './react/Mmsys99';
 import { moscudll128Data, Moscudll128 } from './react/Moscudll128';
@@ -3341,19 +3339,9 @@ export const icons = [
     variants: mmsys121Data,
   },
   {
-    componentName: "Mmsys122",
-    component: Mmsys122,
-    variants: mmsys122Data,
-  },
-  {
     componentName: "Mmsys123",
     component: Mmsys123,
     variants: mmsys123Data,
-  },
-  {
-    componentName: "Mmsys124",
-    component: Mmsys124,
-    variants: mmsys124Data,
   },
   {
     componentName: "Mmsys90",

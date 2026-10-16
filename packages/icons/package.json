@@ -52,16 +52,16 @@
   },
   "scripts": {
     "precopy": "mkdir -p dist/src/png",
-    "process-icons": "ts-node-script scripts/processIcons.ts",
+    "process-icons": "node scripts/processIcons.mts",
     "prebuild": "rimraf ./dist",
     "build": "yarn build:cjs && yarn build:esm && yarn build:types && yarn build:css && yarn build:svg",
     "build:types": "cross-env NODE_ENV=production tsc -p ./tsconfig.json",
     "build:esm": "cross-env NODE_ENV=esm yarn babel ./src --out-dir dist/esm --extensions .ts,.tsx",
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
-    "build:css": "cp ./icons.css ./dist/icons.css && ts-node-script scripts/fixCss.ts",
+    "build:css": "cp ./icons.css ./dist/icons.css && node scripts/fixCss.mts",
     "build:svg": "cp -r src/svg ./dist",
-    "postbuild": "cp -r ./png ./dist/png && node ../../scripts/prepublish.js --types && ts-node-script scripts/addExports.ts",
-    "sync-dist-version": "cp -r ./png ./dist/png && node ../../scripts/prepublish.js --types && ts-node-script scripts/addExports.ts",
+    "postbuild": "cp -r ./png ./dist/png && node ../../scripts/prepublish.js --types && node scripts/addExports.mts",
+    "sync-dist-version": "cp -r ./png ./dist/png && node ../../scripts/prepublish.js --types && node scripts/addExports.mts",
     "test": "vitest run --config=../../config/test/icons.js"
   },
   "nx": {
@@ -77,10 +77,10 @@
   "devDependencies": {
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
+    "decode-ico": "^0.4.0",
     "icojs": "^0.16.1",
     "pixel-perfect-svg": "^0.1.0",
     "svgo": "^3.2.0",
-    "ts-node": "^10.7.0",
     "typescript": "5.3.3"
   }
 }
