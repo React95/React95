@@ -231,7 +231,7 @@ export async function makeIcons() {
   const icons = (await Promise.all(files.map(extractPNGFromIco))).filter(
     icon => {
       if (icon.variants.length === 0) {
-        console.log(`🫥 Skipping ${icon.name}, all its variants are blank`);
+        console.log(`👻 Skipping ${icon.name}, all its variants are blank`);
       }
       return icon.variants.length > 0;
     },
