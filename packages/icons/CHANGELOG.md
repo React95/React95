@@ -1,3 +1,16 @@
+## 2.5.4 (2026-10-16)
+
+### 🩹 Fixes
+
+- **icons:** end the generated index with a newline ([06cce041](https://github.com/React95/React95/commit/06cce041))
+- **icons:** remove the Mmsys122 and Mmsys124 icons ([85d1e75b](https://github.com/React95/React95/commit/85d1e75b))
+- **icons:** stop shipping blank icon variants ([f664586d](https://github.com/React95/React95/commit/f664586d))
+- **icons:** run the icon scripts with Node instead of ts-node ([2094e633](https://github.com/React95/React95/commit/2094e633))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.5.3 (2026-07-08)
 
 ### 🩹 Fixes
