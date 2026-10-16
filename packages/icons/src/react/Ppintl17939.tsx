@@ -1,0 +1,29 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Ppintl17939_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M5 1h2M3 2h2m2 0h1M1 3h2m4 0h1M0 4h1m7 0h1M0 5h1m7 0h1m6 0h2M1 6h1m7 0h1m4 0h1m2 0h2M1 7h1m7 0h1m4 0h1m4 0h2m1 0h2M2 8h1m4 0h2m4 0h1m7 0h1m2 0h1M2 9h1m2 0h2m6 0h1m7 0h1m2 0h1M3 10h2m7 0h1m7 0h1m4 0h1M9 11h4m7 0h2m3 0h1M7 12h2m4 0h2m4 0h1m2 0h1m3 0h1M4 13h3m8 0h2m2 0h1m2 0h1m3 0h1M1 14h3m8 0h3m2 0h2m4 0h1m3 0h1M0 15h1m8 0h3m11 0h1m3 0h1M0 16h1m5 0h3m4 0h4m7 0h1m3 0h1M1 17h1m3 0h1m5 0h2m4 0h1m6 0h1m3 0h1M1 18h1m3 0h1m4 0h1m5 0h1m8 0h1m3 0h1M2 19h1m3 0h1m2 0h1m4 0h1m10 0h1m3 0h1M2 20h1m3 0h1m2 0h1m8 0h1m7 0h1m3 0h1M3 21h1m3 0h1m1 0h1m7 0h2m7 0h1m3 0h1M3 22h1m3 0h1m2 0h1m4 0h3m5 0h3m5 0h1M4 23h1m3 0h1m2 0h5m5 0h2m8 0h1M4 24h1m3 0h1m9 0h3m7 0h3M5 25h1m3 0h1m5 0h3m8 0h2M5 26h1m3 0h1m2 0h3m8 0h3M6 27h1m3 0h2m8 0h3M6 28h1m11 0h2M7 29h1m7 0h3M7 30h1m4 0h3m-7 1h4" /><path stroke="#fff" d="M5 2h2M3 3h4M1 4h4m1 0h2M1 5h2m4 0h1M2 6h1m4 0h2m6 0h2M2 7h2m1 0h4m6 0h4M3 8h4m7 0h2m1 0h4m2 0h1M3 9h2m9 0h1m4 0h2m-8 1h2m4 0h1m-7 1h4m1 0h2M9 12h3m3 0h4M7 13h2m8 0h2m2 0h1M4 14h3m14 0h1M1 15h3m8 0h5m3 0h3M1 16h1m7 0h4m4 0h4m1 0h1M2 17h1m4 0h4m7 0h1m2 0h3M2 18h1m3 0h4m7 0h5m1 0h1M3 19h1m3 0h2m7 0h4m2 0h3M3 20h1m3 0h2m10 0h6M4 21h1m3 0h1m10 0h7M4 22h1m3 0h1m9 0h5M5 23h1m3 0h1m6 0h5M5 24h1m3 0h9M6 25h1m3 0h5m-9 1h1m3 0h2m-5 1h1m-1 1h1m0 1h1m-1 1h1" /><path stroke="purple" d="M5 4h1M3 5h4M3 6h4M4 7h1" /><path stroke="gray" d="M0 6h1m20 1h1M1 8h1m7 0h1m12 0h1M7 9h1m14 0h1M2 10h1m2 0h1m15 0h1m-10 2h1m7 0h2m-9 1h2m5 0h1m-6 1h2m2 0h2m1 0h1m-6 1h3m1 1h1m1 0h1M0 17h1m5 0h1m12 0h2m1 1h1m1 0h1M1 19h1m18 0h2m3 1h1M2 21h1m0 2h1m0 2h1m0 2h1m0 2h1m0 2h1" /><path stroke="navy" d="M16 8h1m-2 1h4m-4 1h4m-2 1h1" /><path stroke="silver" d="M23 9h1m-2 1h3m-3 1h3m-2 1h3M9 13h4m10 0h3M7 14h5m12 0h3M4 15h5m15 0h3M2 16h4m19 0h3M3 17h2m20 0h3M3 18h2m21 0h3M4 19h2m9 0h1m10 0h3M4 20h2m21 0h3M5 21h2m20 0h3M5 22h2m2 0h1m16 0h5M6 23h2m2 0h1m12 0h8M6 24h2m13 0h7M7 25h2m9 0h8M7 26h2m6 0h8M8 27h2m2 0h8M8 28h10m-9 1h6m-6 1h3" /><path stroke="green" d="M13 17h4m-4 1h3" /><path stroke="#00f" d="M11 18h2m-3 1h4m-4 1h3m-3 1h1" /><path stroke="#f0f" d="M13 20h5m-7 1h6m-6 1h4" /></svg>;
+const Ppintl17939_32x32_1 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M5 1h2M3 2h2m2 0h1M1 3h2m4 0h1M0 4h1m4 0h1m2 0h1M0 5h1m2 0h4m1 0h1m6 0h2M0 6h2m1 0h4m2 0h1m4 0h1m2 0h2M1 7h1m2 0h1m4 0h1m4 0h1m4 0h5M1 8h2m4 0h3m3 0h1m2 0h1m4 0h2m1 0h1M2 9h1m2 0h3m5 0h1m1 0h4m2 0h4M2 10h4m6 0h1m2 0h4m1 0h6M9 11h4m4 0h1m2 0h6M7 12h2m3 0h3m4 0h8M4 13h3m2 0h8m2 0h2m1 0h5M1 14h3m3 0h14m1 0h6M0 15h1m3 0h8m5 0h3m3 0h5M0 16h1m1 0h7m4 0h4m4 0h1m1 0h6M0 17h2m1 0h4m4 0h7m1 0h2m3 0h5M1 18h1m1 0h3m4 0h7m5 0h1m1 0h6M1 19h2m1 0h3m2 0h7m4 0h2m3 0h5M2 20h1m1 0h3m2 0h10m6 0h6M2 21h2m1 0h3m1 0h10m7 0h5M3 22h1m1 0h3m1 0h9m5 0h9M3 23h2m1 0h3m1 0h6m5 0h11M4 24h1m1 0h3m9 0h13M4 25h2m1 0h3m5 0h13M5 26h1m1 0h3m2 0h14M5 27h2m1 0h15M6 28h1m1 0h12M6 29h2m1 0h9M7 30h1m1 0h6m-8 1h5" /><path stroke="#fff" d="M5 2h2M3 3h4M1 4h4m1 0h2M1 5h2m4 0h1M2 6h1m4 0h2m6 0h2M2 7h2m1 0h4m6 0h4M3 8h4m7 0h2m1 0h4m2 0h1M3 9h2m9 0h1m4 0h2m-8 1h2m4 0h1m-7 1h4m1 0h2M9 12h3m3 0h4M7 13h2m8 0h2m2 0h1M4 14h3m14 0h1M1 15h3m8 0h5m3 0h3M1 16h1m7 0h4m4 0h4m1 0h1M2 17h1m4 0h4m7 0h1m2 0h3M2 18h1m3 0h4m7 0h5m1 0h1M3 19h1m3 0h2m7 0h4m2 0h3M3 20h1m3 0h2m10 0h6M4 21h1m3 0h1m10 0h7M4 22h1m3 0h1m9 0h5M5 23h1m3 0h1m6 0h5M5 24h1m3 0h9M6 25h1m3 0h5m-9 1h1m3 0h2m-5 1h1m-1 1h1m0 1h1m-1 1h1" /></svg>;
+
+export const ppintl17939Data = {
+  '32x32_4': Ppintl17939_32x32_4,
+  '32x32_1': Ppintl17939_32x32_1
+};
+
+export interface Ppintl17939Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4' | '32x32_1';
+}
+
+const Ppintl17939Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Ppintl17939Props) => {
+  const Svg = ppintl17939Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Ppintl17939 = React.memo(Ppintl17939Component);
+Ppintl17939.displayName = 'Ppintl17939';

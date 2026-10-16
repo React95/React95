@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Wrdart321232_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#fff" d="M0 0h32M0 1h32M0 2h32M0 3h32M0 4h12m8 0h12M0 5h10m12 0h10M0 6h8m16 0h8M0 7h6m20 0h6M0 8h5m8 0h6m8 0h5M0 9h4m7 0h10m7 0h4M0 10h3m6 0h14m6 0h3M0 11h3m5 0h16m5 0h3M0 12h2m6 0h16m6 0h2M0 13h2m5 0h18m5 0h2M0 14h1m6 0h18m6 0h1M0 15h1m5 0h20m5 0h1M0 16h1m5 0h20m5 0h1M0 17h1m5 0h20m5 0h1M0 18h1m5 0h20m5 0h1M0 19h32M0 20h32M0 21h32M0 22h32M0 23h32M0 24h32M0 25h32M0 26h32M0 27h32M0 28h32M0 29h32M0 30h32M0 31h32" /><path stroke="#000" d="M12 4h8M10 5h12M8 6h16M6 7h20M5 8h8m6 0h8M4 9h7m10 0h7M3 10h6m14 0h6M3 11h5m16 0h5M2 12h6m16 0h6M2 13h5m18 0h5M1 14h6m18 0h6M1 15h5m20 0h5M1 16h5m20 0h5M1 17h5m20 0h5M1 18h5m20 0h5" /></svg>;
+
+export const wrdart321232Data = {
+  '32x32_4': Wrdart321232_32x32_4
+};
+
+export interface Wrdart321232Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Wrdart321232Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Wrdart321232Props) => {
+  const Svg = wrdart321232Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Wrdart321232 = React.memo(Wrdart321232Component);
+Wrdart321232.displayName = 'Wrdart321232';
