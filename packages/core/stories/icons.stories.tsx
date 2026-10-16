@@ -4,6 +4,7 @@ import * as React from 'react';
 
 import { Frame, Button } from '../components';
 
+import type * as Icons from '@react95/icons';
 import { icons } from '@react95/icons/src/iconDemos';
 
 import * as styles from './icons.stories.css';
@@ -99,7 +100,23 @@ export const All: Story = {
   parameters,
 };
 
-const internetExplorer4 = [
+// typed with the package exports, so a renamed or removed icon fails tsc
+type IconName = keyof typeof Icons;
+
+const groupStory = (name: string, names: IconName[]): Story => ({
+  name,
+  render: (_, { speak }) => (
+    <IconGrid
+      icons={icons.filter(({ componentName }) =>
+        names.includes(componentName as IconName),
+      )}
+      speak={speak}
+    />
+  ),
+  parameters,
+});
+
+const internetExplorer4: IconName[] = [
   'Icwconn1200',
   'Icwconn1202',
   'Ie',
@@ -115,15 +132,7 @@ const internetExplorer4 = [
   'SetupPhoneicon',
 ];
 
-export const InternetExplorer4: Story = {
-  name: 'Internet Explorer 4',
-  render: (_, { speak }) => (
-    <IconGrid
-      icons={icons.filter(({ componentName }) =>
-        internetExplorer4.includes(componentName),
-      )}
-      speak={speak}
-    />
-  ),
-  parameters,
-};
+export const InternetExplorer4 = groupStory(
+  'Internet Explorer 4',
+  internetExplorer4,
+);
