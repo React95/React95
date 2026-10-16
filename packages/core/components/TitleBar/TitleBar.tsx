@@ -165,6 +165,7 @@ export type TitleBarBackgroundProps<TAs extends ElementType = 'div'> = Omit<
     active?: boolean;
     icon?: ReactElement;
     title?: string;
+    titleId?: string;
   };
 
 export type TitleBarProps<TAs extends ElementType = 'div'> =
@@ -183,18 +184,25 @@ interface TitleBarOptions {
 const TitleBarRenderer = fixedForwardRef<
   HTMLDivElement,
   TitleBarBackgroundProps
->(({ children, title = 'UNKNOWN.EXE', icon, active = true, ...rest }, ref) => (
-  <Frame
-    {...rest}
-    className={cn(styles.titleBarBackground({ active }), rest.className)}
-    ref={ref}
-  >
-    {icon && icon}
-    <div className={styles.title}>{title}</div>
+>(
+  (
+    { children, title = 'UNKNOWN.EXE', icon, active = true, titleId, ...rest },
+    ref,
+  ) => (
+    <Frame
+      {...rest}
+      className={cn(styles.titleBarBackground({ active }), rest.className)}
+      ref={ref}
+    >
+      {icon && icon}
+      <div className={styles.title} id={titleId}>
+        {title}
+      </div>
 
-    {children}
-  </Frame>
-));
+      {children}
+    </Frame>
+  ),
+);
 
 type TitleBarComponent = <TAs extends ElementType = 'div'>(
   props: TitleBarProps<TAs> & { ref?: ForwardedRef<InferredElement<TAs>> },

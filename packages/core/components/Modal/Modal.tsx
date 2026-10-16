@@ -6,6 +6,7 @@ import React, {
   ReactElement,
   Ref,
   useEffect,
+  useId,
   useImperativeHandle,
   useRef,
   useState,
@@ -113,11 +114,13 @@ const ModalRenderer = (
     dragOptions,
     titleBarOptions,
     className,
+    'aria-labelledby': labelledBy,
     ...rest
   }: ModalProps,
   ref: Ref<HTMLDivElement | null>,
 ) => {
   const [id] = useState<string>(providedId || nanoid());
+  const titleId = useId();
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
   const [isModalMinimized, setIsModalMinimized] = useState(false);
@@ -213,6 +216,8 @@ const ModalRenderer = (
       role="dialog"
       // the open modals are a set, and the active one is its current item
       aria-current={isActive || undefined}
+      // the title bar names the dialog, unless the caller names it explicitly
+      aria-labelledby={labelledBy ?? titleId}
       aria-hidden={isModalMinimized}
       ref={draggableRef}
       onMouseDown={() => {
@@ -223,6 +228,7 @@ const ModalRenderer = (
         active={isActive}
         icon={icon}
         title={title}
+        titleId={titleId}
         className="draggable"
         mb="$2"
       >
