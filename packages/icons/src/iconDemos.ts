@@ -325,9 +325,21 @@ import { helpPtrData, HelpPtr } from './react/HelpPtr';
 import { htmlPageData, HtmlPage } from './react/HtmlPage';
 import { icmui1200Data, Icmui1200 } from './react/Icmui1200';
 import { icmui1201Data, Icmui1201 } from './react/Icmui1201';
+import { icwconn1200Data, Icwconn1200 } from './react/Icwconn1200';
+import { icwconn1201Data, Icwconn1201 } from './react/Icwconn1201';
+import { icwconn1202Data, Icwconn1202 } from './react/Icwconn1202';
 import { icwdial101Data, Icwdial101 } from './react/Icwdial101';
 import { icwdial102Data, Icwdial102 } from './react/Icwdial102';
 import { ieData, Ie } from './react/Ie';
+import { ie41006Data, Ie41006 } from './react/Ie41006';
+import { iexplore32528Data, Iexplore32528 } from './react/Iexplore32528';
+import { iexplore32529Data, Iexplore32529 } from './react/Iexplore32529';
+import { iexplore32537Data, Iexplore32537 } from './react/Iexplore32537';
+import { iexplore32542Data, Iexplore32542 } from './react/Iexplore32542';
+import { iexplore32548Data, Iexplore32548 } from './react/Iexplore32548';
+import { iexplore32549Data, Iexplore32549 } from './react/Iexplore32549';
+import { iexplore32550Data, Iexplore32550 } from './react/Iexplore32550';
+import { iexplore32554Data, Iexplore32554 } from './react/Iexplore32554';
 import { imgadmin214Data, Imgadmin214 } from './react/Imgadmin214';
 import { imgedit10Data, Imgedit10 } from './react/Imgedit10';
 import { imgedit277Data, Imgedit277 } from './react/Imgedit277';
@@ -735,6 +747,7 @@ import { sccviewIconData, SccviewIcon } from './react/SccviewIcon';
 import { scrollingMarquee100Data, ScrollingMarquee100 } from './react/ScrollingMarquee100';
 import { sendmail2001Data, Sendmail2001 } from './react/Sendmail2001';
 import { settingsData, Settings } from './react/Settings';
+import { setupPhoneiconData, SetupPhoneicon } from './react/SetupPhoneicon';
 import { setupslt3000Data, Setupslt3000 } from './react/Setupslt3000';
 import { shdocvw256Data, Shdocvw256 } from './react/Shdocvw256';
 import { shdocvw257Data, Shdocvw257 } from './react/Shdocvw257';
@@ -2609,6 +2622,21 @@ export const icons = [
     variants: icmui1201Data,
   },
   {
+    componentName: "Icwconn1200",
+    component: Icwconn1200,
+    variants: icwconn1200Data,
+  },
+  {
+    componentName: "Icwconn1201",
+    component: Icwconn1201,
+    variants: icwconn1201Data,
+  },
+  {
+    componentName: "Icwconn1202",
+    component: Icwconn1202,
+    variants: icwconn1202Data,
+  },
+  {
     componentName: "Icwdial101",
     component: Icwdial101,
     variants: icwdial101Data,
@@ -2622,6 +2650,51 @@ export const icons = [
     componentName: "Ie",
     component: Ie,
     variants: ieData,
+  },
+  {
+    componentName: "Ie41006",
+    component: Ie41006,
+    variants: ie41006Data,
+  },
+  {
+    componentName: "Iexplore32528",
+    component: Iexplore32528,
+    variants: iexplore32528Data,
+  },
+  {
+    componentName: "Iexplore32529",
+    component: Iexplore32529,
+    variants: iexplore32529Data,
+  },
+  {
+    componentName: "Iexplore32537",
+    component: Iexplore32537,
+    variants: iexplore32537Data,
+  },
+  {
+    componentName: "Iexplore32542",
+    component: Iexplore32542,
+    variants: iexplore32542Data,
+  },
+  {
+    componentName: "Iexplore32548",
+    component: Iexplore32548,
+    variants: iexplore32548Data,
+  },
+  {
+    componentName: "Iexplore32549",
+    component: Iexplore32549,
+    variants: iexplore32549Data,
+  },
+  {
+    componentName: "Iexplore32550",
+    component: Iexplore32550,
+    variants: iexplore32550Data,
+  },
+  {
+    componentName: "Iexplore32554",
+    component: Iexplore32554,
+    variants: iexplore32554Data,
   },
   {
     componentName: "Imgadmin214",
@@ -4657,6 +4730,11 @@ export const icons = [
     componentName: "Settings",
     component: Settings,
     variants: settingsData,
+  },
+  {
+    componentName: "SetupPhoneicon",
+    component: SetupPhoneicon,
+    variants: setupPhoneiconData,
   },
   {
     componentName: "Setupslt3000",
