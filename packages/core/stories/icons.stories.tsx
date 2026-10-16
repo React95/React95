@@ -13,6 +13,8 @@ export default {
   title: 'Icon',
   // the icons come from @react95/icons, which has its own tests
   tags: ['!test'],
+  // axe takes seconds on ~1800 buttons and freezes the UI, so it runs on demand
+  globals: { a11y: { manual: true } },
 } satisfies Meta;
 
 type Story = StoryObj<unknown>;
