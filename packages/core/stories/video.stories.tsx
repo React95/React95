@@ -103,13 +103,15 @@ export const Playback: Story = {
 
     const video = canvasElement.querySelector('video')!;
     const progress = canvas.getByRole('slider');
-    // the controls have no accessible name yet (#554), so they go by order
-    const [playPause, stop] = canvas.getAllByRole('button');
+    const playPause = canvas.getByRole('button', { name: 'Play' });
+    const stop = canvas.getByRole('button', { name: 'Stop' });
 
     // Play plays it, and the bar follows it
     await userEvent.click(playPause);
 
     await waitFor(() => expect(video).toHaveProperty('paused', false));
+    // while it plays, the button is labeled Pause
+    await waitFor(() => expect(playPause).toHaveAccessibleName('Pause'));
     await waitFor(() => expect(progress).not.toHaveValue('0'), {
       timeout: 3000,
     });
