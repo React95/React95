@@ -1,4 +1,4 @@
-import { globalStyle, style } from '@vanilla-extract/css';
+import { createVar, globalStyle, style } from '@vanilla-extract/css';
 import { contract } from '../themes/contract.css';
 import { recipe } from '@vanilla-extract/recipes';
 import { inLayer, composed } from '../shared/layers.css';
@@ -43,6 +43,9 @@ export const option = style(
   }),
 );
 
+// set by the bar for each state, read by the title's shadows
+const titleColor = createVar();
+
 export const titleBarBackground = recipe({
   base: inLayer(composed, {
     height: contract.space[20],
@@ -56,10 +59,12 @@ export const titleBarBackground = recipe({
       true: inLayer(composed, {
         background: contract.colors.headerBackground,
         color: contract.colors.headerText,
+        vars: { [titleColor]: contract.colors.headerText },
       }),
       false: inLayer(composed, {
         background: contract.colors.headerNotActiveBackground,
         color: contract.colors.headerNotActiveText,
+        vars: { [titleColor]: contract.colors.headerNotActiveText },
       }),
     },
   },
@@ -91,7 +96,8 @@ export const title = style(
     lineHeight: '1.4em',
     margin: '0',
     fontSize: '1em',
-    textShadow: '0.5px 0px white, 1.5px 0px white',
+    // the shadows draw the letters, so they use the bar's text color
+    textShadow: `0.5px 0px ${titleColor}, 1.5px 0px ${titleColor}`,
     color: 'transparent',
     letterSpacing: '1px',
   }),
