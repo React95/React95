@@ -98,3 +98,32 @@ export const All: Story = {
   render: (_, { speak }) => <IconGrid icons={icons} speak={speak} />,
   parameters,
 };
+
+const internetExplorer4 = [
+  'Icwconn1200',
+  'Icwconn1201',
+  'Icwconn1202',
+  'Ie41006',
+  'Iexplore32528',
+  'Iexplore32529',
+  'Iexplore32537',
+  'Iexplore32542',
+  'Iexplore32548',
+  'Iexplore32549',
+  'Iexplore32550',
+  'Iexplore32554',
+  'SetupPhoneicon',
+];
+
+export const InternetExplorer4: Story = {
+  name: 'Internet Explorer 4',
+  render: (_, { speak }) => (
+    <IconGrid
+      icons={icons.filter(({ componentName }) =>
+        internetExplorer4.includes(componentName),
+      )}
+      speak={speak}
+    />
+  ),
+  parameters,
+};
