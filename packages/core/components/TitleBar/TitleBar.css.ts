@@ -91,8 +91,10 @@ export const title = style(
     lineHeight: '1.4em',
     margin: '0',
     fontSize: '1em',
-    textShadow: '0.5px 0px white, 1.5px 0px white',
-    color: 'transparent',
+    // currentColor follows the headerText / headerNotActiveText tokens set on
+    // the title bar (inherited here), so the faux-bold Windows 95 treatment
+    // keeps working in every theme instead of always rendering white.
+    textShadow: '0.5px 0px currentColor, 1.5px 0px currentColor',
     letterSpacing: '1px',
   }),
 );

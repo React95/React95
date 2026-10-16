@@ -749,6 +749,8 @@ const EventSubscriptionDemo = () => {
             overflow="auto"
             backgroundColor="#fafafa"
             flexGrow={1}
+            tabIndex={0}
+            aria-label="Event log"
           />
         </Frame>
       </Frame>
