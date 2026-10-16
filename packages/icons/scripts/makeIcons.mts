@@ -206,7 +206,11 @@ async function toSVG(icons: IconsMap[]) {
             debug: str => str,
           });
 
-          const quantizedFrame = quantizeFrame(pixels[0]);
+          // Palette icons (up to 8bpp) have few colors already, and rounding
+          // them only shifts the colors. Truecolor icons are quantized to
+          // keep their number of paths, and so their size, down.
+          const quantizedFrame =
+            variant.bpp > 8 ? quantizeFrame(pixels[0]) : pixels[0];
           const svg = await toSvgString({
             frame: quantizedFrame,
             noMetadata: true,
