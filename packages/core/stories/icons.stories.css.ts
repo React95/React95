@@ -10,7 +10,7 @@ export const btn = style([
     alignItems: 'center',
     justifyContent: 'center',
     gap: '4px',
-    minWidth: '150px',
+    minWidth: '110px',
     boxShadow: 'none',
     selectors: {
       '&:hover': {
