@@ -101,9 +101,8 @@ export const All: Story = {
 
 const internetExplorer4 = [
   'Icwconn1200',
-  'Icwconn1201',
   'Icwconn1202',
-  'Ie41006',
+  'Ie',
   'Iexplore32528',
   'Iexplore32529',
   'Iexplore32537',
@@ -112,6 +111,7 @@ const internetExplorer4 = [
   'Iexplore32549',
   'Iexplore32550',
   'Iexplore32554',
+  'Runonce106',
   'SetupPhoneicon',
 ];
 
