@@ -3253,48 +3253,6 @@
   display: inline-block;
 }
 
-.Icwconn1201_32x32_4 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Icwconn1201_32x32_4.svg);
-  display: inline-block;
-}
-
-.Icwconn1201_32x32_8 {
-  width: 32px;
-  height: 32px;
-  background-image: url(./src/svg/Icwconn1201_32x32_8.svg);
-  display: inline-block;
-}
-
-.Icwconn1201_48x48_8 {
-  width: 48px;
-  height: 48px;
-  background-image: url(./src/svg/Icwconn1201_48x48_8.svg);
-  display: inline-block;
-}
-
-.Icwconn1201_16x16_4 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/Icwconn1201_16x16_4.svg);
-  display: inline-block;
-}
-
-.Icwconn1201_16x16_8 {
-  width: 16px;
-  height: 16px;
-  background-image: url(./src/svg/Icwconn1201_16x16_8.svg);
-  display: inline-block;
-}
-
-.Icwconn1201_48x48_4 {
-  width: 48px;
-  height: 48px;
-  background-image: url(./src/svg/Icwconn1201_48x48_4.svg);
-  display: inline-block;
-}
-
 .Icwconn1202_32x32_4 {
   width: 32px;
   height: 32px;
@@ -3337,17 +3295,38 @@
   display: inline-block;
 }
 
-.Ie41006_32x32_4 {
+.Ie_32x32_4 {
   width: 32px;
   height: 32px;
-  background-image: url(./src/svg/Ie41006_32x32_4.svg);
+  background-image: url(./src/svg/Ie_32x32_4.svg);
   display: inline-block;
 }
 
-.Ie41006_16x16_4 {
+.Ie_32x32_8 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Ie_32x32_8.svg);
+  display: inline-block;
+}
+
+.Ie_48x48_8 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Ie_48x48_8.svg);
+  display: inline-block;
+}
+
+.Ie_16x16_4 {
   width: 16px;
   height: 16px;
-  background-image: url(./src/svg/Ie41006_16x16_4.svg);
+  background-image: url(./src/svg/Ie_16x16_4.svg);
+  display: inline-block;
+}
+
+.Ie_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Ie_48x48_4.svg);
   display: inline-block;
 }
 
@@ -8003,6 +7982,13 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Runonce106_32x32_4.svg);
+  display: inline-block;
+}
+
+.Runonce106_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Runonce106_16x16_4.svg);
   display: inline-block;
 }
 

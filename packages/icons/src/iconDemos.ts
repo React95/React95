@@ -326,12 +326,10 @@ import { htmlPageData, HtmlPage } from './react/HtmlPage';
 import { icmui1200Data, Icmui1200 } from './react/Icmui1200';
 import { icmui1201Data, Icmui1201 } from './react/Icmui1201';
 import { icwconn1200Data, Icwconn1200 } from './react/Icwconn1200';
-import { icwconn1201Data, Icwconn1201 } from './react/Icwconn1201';
 import { icwconn1202Data, Icwconn1202 } from './react/Icwconn1202';
 import { icwdial101Data, Icwdial101 } from './react/Icwdial101';
 import { icwdial102Data, Icwdial102 } from './react/Icwdial102';
 import { ieData, Ie } from './react/Ie';
-import { ie41006Data, Ie41006 } from './react/Ie41006';
 import { iexplore32528Data, Iexplore32528 } from './react/Iexplore32528';
 import { iexplore32529Data, Iexplore32529 } from './react/Iexplore32529';
 import { iexplore32537Data, Iexplore32537 } from './react/Iexplore32537';
@@ -2627,11 +2625,6 @@ export const icons = [
     variants: icwconn1200Data,
   },
   {
-    componentName: "Icwconn1201",
-    component: Icwconn1201,
-    variants: icwconn1201Data,
-  },
-  {
     componentName: "Icwconn1202",
     component: Icwconn1202,
     variants: icwconn1202Data,
@@ -2650,11 +2643,6 @@ export const icons = [
     componentName: "Ie",
     component: Ie,
     variants: ieData,
-  },
-  {
-    componentName: "Ie41006",
-    component: Ie41006,
-    variants: ie41006Data,
   },
   {
     componentName: "Iexplore32528",
