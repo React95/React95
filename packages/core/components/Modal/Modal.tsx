@@ -62,7 +62,8 @@ export type ModalProps = {
   hasWindowButton?: boolean;
   buttonsAlignment?: FrameProps['justifyContent'];
   titleBarOptions?:
-    ReactElement<TitleBarOptions> | ReactElement<TitleBarOptions>[];
+    | ReactElement<TitleBarOptions>
+    | ReactElement<TitleBarOptions>[];
 } & Omit<FrameProps, 'as'> &
   HTMLAttributes<HTMLDivElement> &
   Pick<TitleBarBackgroundProps, 'title' | 'icon'>;
