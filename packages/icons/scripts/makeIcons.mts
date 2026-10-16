@@ -1,13 +1,16 @@
 import fs from 'fs';
 import ICO from 'icojs';
 import path from 'path';
-import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader';
-import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor';
-import { type Pixel, pixel } from 'pixel-perfect-svg/dist/pixel';
+import { loadPixels } from 'pixel-perfect-svg/dist/imageLoader.js';
+import { toSvgString } from 'pixel-perfect-svg/dist/imageProcessor.js';
+import { type Pixel, pixel } from 'pixel-perfect-svg/dist/pixel.js';
 import { type Config, optimize } from 'svgo';
 
-import { getIconDataName, iconComponentTemplate } from './component-template';
-import { filterBlockedIcons } from './iconBlockList';
+import {
+  getIconDataName,
+  iconComponentTemplate,
+} from './component-template.mts';
+import { filterBlockedIcons } from './iconBlockList.mts';
 import {
   REACT_FOLDER,
   IMAGE_FOLDER,
@@ -17,7 +20,7 @@ import {
   CSS_FILE_PATH,
   ICONS_FOLDER,
   SVG_FOLDER,
-} from './utils';
+} from './utils.mts';
 
 const svgoConfig: Config = {
   plugins: [

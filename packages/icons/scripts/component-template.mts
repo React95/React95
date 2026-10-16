@@ -2,7 +2,7 @@
 
 import fs from 'fs';
 import { transform } from '@svgr/core';
-import type { IconData } from './utils';
+import type { IconData } from './utils.mts';
 import type { Options } from '@svgr/babel-preset';
 
 export const getIconDataName = (name: string): string => {

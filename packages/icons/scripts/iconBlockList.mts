@@ -1,4 +1,4 @@
-import type { IconData } from './utils';
+import type { IconData } from './utils.mts';
 
 /** This list includes all icons seen as not including any visual output */
 const iconBlockedIds = [

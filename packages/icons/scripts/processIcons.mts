@@ -1,4 +1,4 @@
-import { makeIcons } from './makeIcons';
+import { makeIcons } from './makeIcons.mts';
 import {
   REACT_FOLDER,
   IMAGE_FOLDER,
@@ -6,8 +6,8 @@ import {
   ICONS_INDEX_FILE_PATH,
   CSS_FILE_PATH,
   SVG_FOLDER,
-} from './utils';
-import { deleteFolder } from './utils';
+} from './utils.mts';
+import { deleteFolder } from './utils.mts';
 
 deleteFolder('dist');
 deleteFolder(REACT_FOLDER);
