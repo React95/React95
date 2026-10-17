@@ -1,5 +1,5 @@
-import { useState, forwardRef } from 'react';
-import type { HTMLAttributes, Ref } from 'react';
+import { useId, useRef, useState, forwardRef } from 'react';
+import type { HTMLAttributes, KeyboardEvent, Ref } from 'react';
 import cn from 'classnames';
 
 import { tip, wrapper } from './Tooltip.css';
@@ -42,19 +42,25 @@ const TooltipRenderer = (
   ref: Ref<HTMLDivElement>,
 ) => {
   const [show, setShow] = useState(false);
-  const [delayTimer, setDelayTimer] = useState(0);
+  const delayTimer = useRef(0);
+  const tooltipId = useId();
 
   const handleEnter = () => {
-    const timer = window.setTimeout(() => {
+    window.clearTimeout(delayTimer.current);
+    delayTimer.current = window.setTimeout(() => {
       setShow(true);
     }, delay);
-
-    setDelayTimer(timer);
   };
 
   const handleLeave = () => {
-    clearTimeout(delayTimer);
+    window.clearTimeout(delayTimer.current);
     setShow(false);
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Escape') {
+      handleLeave();
+    }
   };
 
   return (
@@ -63,9 +69,18 @@ const TooltipRenderer = (
       className={cn(wrapper, rest.className)}
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
+      onFocus={handleEnter}
+      onBlur={handleLeave}
+      onKeyDown={handleKeyDown}
+      tabIndex={rest.tabIndex ?? 0}
+      aria-describedby={show ? tooltipId : undefined}
       ref={ref}
     >
-      {show && <div className={tip}>{text}</div>}
+      {show && (
+        <div id={tooltipId} role="tooltip" className={tip}>
+          {text}
+        </div>
+      )}
       {children}
     </div>
   );

@@ -57,7 +57,7 @@ export const Simple: Story = {
   },
   play: async ({ args, canvas, userEvent }) => {
     const target = canvas.getByText('Hover me');
-    const tooltip = target.parentElement;
+    const tooltip = target.parentElement as HTMLElement;
     const delay = args.delay!;
     const text = args.text!;
 
@@ -80,6 +80,35 @@ export const Simple: Story = {
     await userEvent.hover(target);
     await userEvent.unhover(target);
     await new Promise(resolve => setTimeout(resolve, delay * 1.5));
+
+    await expect(tooltip).not.toHaveTextContent(text);
+
+    // focusing the target shows the tip too, after the same `delay`
+    tooltip.focus();
+
+    await expect(tooltip).not.toHaveTextContent(text);
+    await waitFor(
+      () => expect(canvas.getByRole('tooltip')).toHaveTextContent(text),
+      { timeout: delay * 2 },
+    );
+
+    // the tip has its role, and the target points to it
+    const tip = canvas.getByRole('tooltip');
+    await expect(tooltip).toHaveAttribute('aria-describedby', tip.id);
+
+    // Esc hides it
+    await userEvent.keyboard('{Escape}');
+
+    await expect(tooltip).not.toHaveTextContent(text);
+
+    // blurring hides it too
+    tooltip.blur(); // Esc left the focus on the target
+    tooltip.focus();
+    await waitFor(
+      () => expect(canvas.getByRole('tooltip')).toHaveTextContent(text),
+      { timeout: delay * 2 },
+    );
+    tooltip.blur();
 
     await expect(tooltip).not.toHaveTextContent(text);
   },
