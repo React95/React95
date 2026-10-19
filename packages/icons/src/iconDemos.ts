@@ -76,6 +76,11 @@ import { cachevu100Data, Cachevu100 } from './react/Cachevu100';
 import { calcScData, CalcSc } from './react/CalcSc';
 import { calculatorData, Calculator } from './react/Calculator';
 import { cameraData, Camera } from './react/Camera';
+import { cb32102Data, Cb32102 } from './react/Cb32102';
+import { cb32104Data, Cb32104 } from './react/Cb32104';
+import { cb32106Data, Cb32106 } from './react/Cb32106';
+import { cb32107Data, Cb32107 } from './react/Cb32107';
+import { cb32108Data, Cb32108 } from './react/Cb32108';
 import { ccapi104Data, Ccapi104 } from './react/Ccapi104';
 import { ccapi105Data, Ccapi105 } from './react/Ccapi105';
 import { ccapi106Data, Ccapi106 } from './react/Ccapi106';
@@ -110,6 +115,27 @@ import { computer3Data, Computer3 } from './react/Computer3';
 import { computer4Data, Computer4 } from './react/Computer4';
 import { computer5Data, Computer5 } from './react/Computer5';
 import { computerFindData, ComputerFind } from './react/ComputerFind';
+import { conf100Data, Conf100 } from './react/Conf100';
+import { conf135Data, Conf135 } from './react/Conf135';
+import { conf150Data, Conf150 } from './react/Conf150';
+import { conf153Data, Conf153 } from './react/Conf153';
+import { conf155Data, Conf155 } from './react/Conf155';
+import { conf156Data, Conf156 } from './react/Conf156';
+import { conf157Data, Conf157 } from './react/Conf157';
+import { conf603Data, Conf603 } from './react/Conf603';
+import { conf604Data, Conf604 } from './react/Conf604';
+import { conf605Data, Conf605 } from './react/Conf605';
+import { conf606Data, Conf606 } from './react/Conf606';
+import { conf607Data, Conf607 } from './react/Conf607';
+import { conf608Data, Conf608 } from './react/Conf608';
+import { conf609Data, Conf609 } from './react/Conf609';
+import { conf610Data, Conf610 } from './react/Conf610';
+import { conf611Data, Conf611 } from './react/Conf611';
+import { conf612Data, Conf612 } from './react/Conf612';
+import { conf613Data, Conf613 } from './react/Conf613';
+import { conf614Data, Conf614 } from './react/Conf614';
+import { conf615Data, Conf615 } from './react/Conf615';
+import { conf8500Data, Conf8500 } from './react/Conf8500';
 import { confcp102Data, Confcp102 } from './react/Confcp102';
 import { confcp107Data, Confcp107 } from './react/Confcp107';
 import { confcp108Data, Confcp108 } from './react/Confcp108';
@@ -510,6 +536,7 @@ import { mmsys121Data, Mmsys121 } from './react/Mmsys121';
 import { mmsys123Data, Mmsys123 } from './react/Mmsys123';
 import { mmsys90Data, Mmsys90 } from './react/Mmsys90';
 import { mmsys99Data, Mmsys99 } from './react/Mmsys99';
+import { mnmshco1202Data, Mnmshco1202 } from './react/Mnmshco1202';
 import { moscudll128Data, Moscudll128 } from './react/Moscudll128';
 import { mplayer10Data, Mplayer10 } from './react/Mplayer10';
 import { mplayer11Data, Mplayer11 } from './react/Mplayer11';
@@ -991,6 +1018,13 @@ import { wangimg128Data, Wangimg128 } from './react/Wangimg128';
 import { wangimg129Data, Wangimg129 } from './react/Wangimg129';
 import { wangimg130Data, Wangimg130 } from './react/Wangimg130';
 import { warningData, Warning } from './react/Warning';
+import { wb32105Data, Wb32105 } from './react/Wb32105';
+import { wb32108Data, Wb32108 } from './react/Wb32108';
+import { wb32109Data, Wb32109 } from './react/Wb32109';
+import { wb32110Data, Wb32110 } from './react/Wb32110';
+import { wb32111Data, Wb32111 } from './react/Wb32111';
+import { wb32112Data, Wb32112 } from './react/Wb32112';
+import { wb32113Data, Wb32113 } from './react/Wb32113';
 import { webLinkData, WebLink } from './react/WebLink';
 import { webOpenData, WebOpen } from './react/WebOpen';
 import { webTxfrData, WebTxfr } from './react/WebTxfr';
@@ -1488,6 +1522,31 @@ export const icons = [
     variants: cameraData,
   },
   {
+    componentName: "Cb32102",
+    component: Cb32102,
+    variants: cb32102Data,
+  },
+  {
+    componentName: "Cb32104",
+    component: Cb32104,
+    variants: cb32104Data,
+  },
+  {
+    componentName: "Cb32106",
+    component: Cb32106,
+    variants: cb32106Data,
+  },
+  {
+    componentName: "Cb32107",
+    component: Cb32107,
+    variants: cb32107Data,
+  },
+  {
+    componentName: "Cb32108",
+    component: Cb32108,
+    variants: cb32108Data,
+  },
+  {
     componentName: "Ccapi104",
     component: Ccapi104,
     variants: ccapi104Data,
@@ -1656,6 +1715,111 @@ export const icons = [
     componentName: "ComputerFind",
     component: ComputerFind,
     variants: computerFindData,
+  },
+  {
+    componentName: "Conf100",
+    component: Conf100,
+    variants: conf100Data,
+  },
+  {
+    componentName: "Conf135",
+    component: Conf135,
+    variants: conf135Data,
+  },
+  {
+    componentName: "Conf150",
+    component: Conf150,
+    variants: conf150Data,
+  },
+  {
+    componentName: "Conf153",
+    component: Conf153,
+    variants: conf153Data,
+  },
+  {
+    componentName: "Conf155",
+    component: Conf155,
+    variants: conf155Data,
+  },
+  {
+    componentName: "Conf156",
+    component: Conf156,
+    variants: conf156Data,
+  },
+  {
+    componentName: "Conf157",
+    component: Conf157,
+    variants: conf157Data,
+  },
+  {
+    componentName: "Conf603",
+    component: Conf603,
+    variants: conf603Data,
+  },
+  {
+    componentName: "Conf604",
+    component: Conf604,
+    variants: conf604Data,
+  },
+  {
+    componentName: "Conf605",
+    component: Conf605,
+    variants: conf605Data,
+  },
+  {
+    componentName: "Conf606",
+    component: Conf606,
+    variants: conf606Data,
+  },
+  {
+    componentName: "Conf607",
+    component: Conf607,
+    variants: conf607Data,
+  },
+  {
+    componentName: "Conf608",
+    component: Conf608,
+    variants: conf608Data,
+  },
+  {
+    componentName: "Conf609",
+    component: Conf609,
+    variants: conf609Data,
+  },
+  {
+    componentName: "Conf610",
+    component: Conf610,
+    variants: conf610Data,
+  },
+  {
+    componentName: "Conf611",
+    component: Conf611,
+    variants: conf611Data,
+  },
+  {
+    componentName: "Conf612",
+    component: Conf612,
+    variants: conf612Data,
+  },
+  {
+    componentName: "Conf613",
+    component: Conf613,
+    variants: conf613Data,
+  },
+  {
+    componentName: "Conf614",
+    component: Conf614,
+    variants: conf614Data,
+  },
+  {
+    componentName: "Conf615",
+    component: Conf615,
+    variants: conf615Data,
+  },
+  {
+    componentName: "Conf8500",
+    component: Conf8500,
+    variants: conf8500Data,
   },
   {
     componentName: "Confcp102",
@@ -3656,6 +3820,11 @@ export const icons = [
     componentName: "Mmsys99",
     component: Mmsys99,
     variants: mmsys99Data,
+  },
+  {
+    componentName: "Mnmshco1202",
+    component: Mnmshco1202,
+    variants: mnmshco1202Data,
   },
   {
     componentName: "Moscudll128",
@@ -6061,6 +6230,41 @@ export const icons = [
     componentName: "Warning",
     component: Warning,
     variants: warningData,
+  },
+  {
+    componentName: "Wb32105",
+    component: Wb32105,
+    variants: wb32105Data,
+  },
+  {
+    componentName: "Wb32108",
+    component: Wb32108,
+    variants: wb32108Data,
+  },
+  {
+    componentName: "Wb32109",
+    component: Wb32109,
+    variants: wb32109Data,
+  },
+  {
+    componentName: "Wb32110",
+    component: Wb32110,
+    variants: wb32110Data,
+  },
+  {
+    componentName: "Wb32111",
+    component: Wb32111,
+    variants: wb32111Data,
+  },
+  {
+    componentName: "Wb32112",
+    component: Wb32112,
+    variants: wb32112Data,
+  },
+  {
+    componentName: "Wb32113",
+    component: Wb32113,
+    variants: wb32113Data,
   },
   {
     componentName: "WebLink",

@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Cb32104_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M11 4h14M11 5h1m-1 1h1m13 0h1M11 7h1m13 0h1M11 8h1m13 0h1M11 9h1m13 0h1m-15 1h1m3 0h9m1 0h5m-19 1h1m-1 1h1m3 0h11m-15 1h1m-1 1h1m3 0h11m-15 1h1m-1 1h1m3 0h11m-15 1h1m-1 1h1m3 0h11m-15 1h1m-1 1h1m3 0h11m-15 1h1m-1 1h1m3 0h11m-15 1h1m-1 1h1m-1 1h1m-1 1h1" /><path stroke="#fff" d="M12 5h13M12 6h13M12 7h13M12 8h13m1 0h1M12 9h13m1 0h2m-16 1h3m9 0h1m-13 1h17m-17 1h3m11 0h3m-17 1h17m-17 1h3m11 0h3m-17 1h17m-17 1h3m11 0h3m-17 1h17m-17 1h3m11 0h3m-17 1h17m-17 1h3m11 0h3m-17 1h17m-17 1h3m11 0h3m-17 1h17m-17 1h17m-17 1h17" /><path stroke="#000" d="M25 5h1m0 1h1m0 1h1m0 1h1m0 1h1m0 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-20 1h20" /><path stroke="silver" d="M26 7h1m0 1h1m0 1h1m0 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-18 1h18" /><path stroke="maroon" d="M1 8h1m1 0h1m1 0h4m-8 3h1m1 0h1m1 0h4m-8 3h1m1 0h1m1 0h4m-8 3h1m1 0h1m1 0h4m-8 3h1m1 0h1m1 0h4m-8 3h1m1 0h1m1 0h4" /></svg>;
+
+export const cb32104Data = {
+  '32x32_4': Cb32104_32x32_4
+};
+
+export interface Cb32104Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Cb32104Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Cb32104Props) => {
+  const Svg = cb32104Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Cb32104 = React.memo(Cb32104Component);
+Cb32104.displayName = 'Cb32104';
