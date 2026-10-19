@@ -60,8 +60,8 @@
     "build:cjs": "cross-env NODE_ENV=cjs yarn babel ./src --out-dir dist/cjs --extensions .ts,.tsx",
     "build:css": "cp ./icons.css ./dist/icons.css && node scripts/fixCss.mts",
     "build:svg": "cp -r src/svg ./dist",
-    "postbuild": "cp -r ./png ./dist/png && node ../../scripts/prepublish.js --types && node scripts/addExports.mts",
-    "sync-dist-version": "cp -r ./png ./dist/png && node ../../scripts/prepublish.js --types && node scripts/addExports.mts",
+    "postbuild": "cp -r ./png ./dist/ && node ../../scripts/prepublish.js --types && node scripts/addExports.mts",
+    "sync-dist-version": "cp -r ./png ./dist/ && node ../../scripts/prepublish.js --types && node scripts/addExports.mts",
     "test": "vitest run --config=../../config/test/icons.js"
   },
   "nx": {
