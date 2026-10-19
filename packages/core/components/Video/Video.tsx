@@ -199,6 +199,7 @@ const VideoRenderer = (
           <Button
             className={styles.controlBtn}
             disabled={!loadeddata}
+            aria-label={playing ? 'Pause' : 'Play'}
             onClick={() => {
               // asks the video, which is always up to date, unlike `playing`
               if (player.current?.paused) {
@@ -224,6 +225,7 @@ const VideoRenderer = (
           <Button
             className={styles.controlBtn}
             disabled={!loadeddata}
+            aria-label="Stop"
             onClick={() => {
               if (player.current) {
                 player.current.pause();
@@ -239,6 +241,7 @@ const VideoRenderer = (
           <Button
             className={styles.controlBtn}
             disabled={!loadeddata}
+            aria-label="Fullscreen"
             onClick={() => {
               player?.current?.requestFullscreen();
             }}
@@ -254,6 +257,7 @@ const VideoRenderer = (
             max="100"
             step="1"
             value={progress}
+            aria-label="Progress"
             onChange={({ target }) => {
               const { current: video } = player;
 
