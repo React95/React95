@@ -256,3 +256,42 @@ const office95: IconName[] = [
 ];
 
 export const Office95 = groupStory('Office 95', office95);
+
+const netMeeting: IconName[] = [
+  'Cb32102',
+  'Cb32104',
+  'Cb32106',
+  'Cb32107',
+  'Cb32108',
+  'Conf100',
+  'Conf135',
+  'Conf150',
+  'Conf153',
+  'Conf155',
+  'Conf156',
+  'Conf157',
+  'Conf603',
+  'Conf604',
+  'Conf605',
+  'Conf606',
+  'Conf607',
+  'Conf608',
+  'Conf609',
+  'Conf610',
+  'Conf611',
+  'Conf612',
+  'Conf613',
+  'Conf614',
+  'Conf615',
+  'Conf8500',
+  'Mnmshco1202',
+  'Wb32105',
+  'Wb32108',
+  'Wb32109',
+  'Wb32110',
+  'Wb32111',
+  'Wb32112',
+  'Wb32113',
+];
+
+export const NetMeeting = groupStory('NetMeeting', netMeeting);
