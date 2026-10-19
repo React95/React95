@@ -1,3 +1,13 @@
+## 2.7.0 (2026-10-19)
+
+### 🚀 Features
+
+- **icons:** add Office 95 icons ([b9387b32](https://github.com/React95/React95/commit/b9387b32))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.6.0 (2026-10-16)
 
 ### 🚀 Features
