@@ -1,3 +1,14 @@
+## 10.0.3 (2026-10-19)
+
+### 🩹 Fixes
+
+- **storybook:** find Video Playback controls by accessible name, assert Pause label ([306d7be5](https://github.com/React95/React95/commit/306d7be5))
+- **video:** add accessible names to controls and progress slider ([191b120d](https://github.com/React95/React95/commit/191b120d))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 10.0.2 (2026-10-16)
 
 ### 🧱 Updated Dependencies
