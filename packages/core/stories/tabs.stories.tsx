@@ -42,7 +42,10 @@ export const Simple: Story = {
             domain.
           </p>
           <p style={{ marginBottom: 4, marginLeft: 22 }}>Windows NT domain:</p>
-          <Input style={{ width: 180, marginLeft: 22 }} />
+          <Input
+            style={{ width: 180, marginLeft: 22 }}
+            aria-label="Windows NT domain"
+          />
         </Fieldset>
 
         <Fieldset legend="Network logon options">
@@ -69,7 +72,11 @@ export const Simple: Story = {
           <Checkbox readOnly checked>
             Run this program in compatibility mode for:
           </Checkbox>
-          <Dropdown style={{ width: 200 }} options={['Windows 95']} />
+          <Dropdown
+            style={{ width: 200 }}
+            options={['Windows 95']}
+            aria-label="Run this program in compatibility mode for"
+          />
         </Fieldset>
 
         <Fieldset legend="Display Settings">
