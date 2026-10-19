@@ -487,6 +487,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "nakul4n",
+      "name": "Nakul K",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86528335?v=4",
+      "profile": "https://github.com/nakul4n",
+      "contributions": [
+        "a11y"
+      ]
     }
   ],
   "skipCi": true,
