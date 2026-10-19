@@ -14,6 +14,7 @@ const meta = {
     placeholder: '',
     disabled: false,
     readOnly: false,
+    'aria-label': 'Message',
   },
 } satisfies Meta<TextAreaProps>;
 
