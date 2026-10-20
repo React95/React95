@@ -803,6 +803,41 @@
   display: inline-block;
 }
 
+.Cb32102_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cb32102_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cb32104_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cb32104_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cb32106_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cb32106_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cb32107_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cb32107_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cb32108_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cb32108_32x32_4.svg);
+  display: inline-block;
+}
+
 .Ccapi104_32x32_4 {
   width: 32px;
   height: 32px;
@@ -1122,6 +1157,195 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/ComputerFind_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf100_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Conf100_32x32_4.svg);
+  display: inline-block;
+}
+
+.Conf100_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf100_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf135_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Conf135_32x32_4.svg);
+  display: inline-block;
+}
+
+.Conf135_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf135_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf150_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf150_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf153_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Conf153_32x32_4.svg);
+  display: inline-block;
+}
+
+.Conf153_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf153_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf155_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Conf155_32x32_4.svg);
+  display: inline-block;
+}
+
+.Conf155_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf155_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf156_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Conf156_32x32_4.svg);
+  display: inline-block;
+}
+
+.Conf156_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf156_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf157_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Conf157_32x32_4.svg);
+  display: inline-block;
+}
+
+.Conf157_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf157_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf603_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf603_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf604_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf604_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf605_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf605_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf606_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf606_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf607_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf607_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf608_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf608_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf609_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf609_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf610_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf610_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf611_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf611_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf612_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf612_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf613_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf613_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf614_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf614_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf615_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf615_16x16_4.svg);
+  display: inline-block;
+}
+
+.Conf8500_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Conf8500_16x16_4.svg);
   display: inline-block;
 }
 
@@ -5588,6 +5812,20 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Mmsys99_16x16_4.svg);
+  display: inline-block;
+}
+
+.Mnmshco1202_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Mnmshco1202_32x32_4.svg);
+  display: inline-block;
+}
+
+.Mnmshco1202_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Mnmshco1202_16x16_4.svg);
   display: inline-block;
 }
 
@@ -11433,6 +11671,62 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Warning_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32105_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32105_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32105_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wb32105_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wb32108_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32108_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32109_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32109_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32110_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32110_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32111_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32111_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32112_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32112_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wb32113_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wb32113_32x32_4.svg);
   display: inline-block;
 }
 

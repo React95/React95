@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Conf8500_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#000" d="M7 0h4M5 1h2m4 0h2M4 2h1m8 0h1M4 3h1M0 4h12m2 0h1M0 5h1m10 0h1m2 0h1M0 6h1m10 0h1m2 0h1M0 7h1m10 0h1m2 0h1M0 8h1m10 0h1M0 9h1m10 0h1m1 0h1M0 10h1m10 0h2M0 11h1m10 0h1M0 12h1m10 0h1M0 13h12" /><path stroke="gray" d="M7 1h1M5 3h1M3 5h1M2 8h8m-8 2h8" /><path stroke="teal" d="M8 1h1M5 2h1m5 0h1M6 3h1m4 0h1m1 1h1" /><path stroke="green" d="M9 1h2M6 2h2m2 0h1m1 0h1m-1 1h1m-1 5h1" /><path stroke="#00f" d="M8 2h2M7 3h1m1 0h2m2 0h1m-2 1h1m-1 1h1m-1 1h1m-1 1h2m-2 2h1" /><path stroke="navy" d="M8 3h1M1 5h1m2 0h7m2 0h1M1 6h10m2 0h1m-1 2h1" /><path stroke="#fff" d="M2 5h1M1 7h10M1 8h1m8 0h1M1 9h10M1 10h1m8 0h1M1 11h10M1 12h10" /></svg>;
+
+export const conf8500Data = {
+  '16x16_4': Conf8500_16x16_4
+};
+
+export interface Conf8500Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '16x16_4';
+}
+
+const Conf8500Component = ({
+  variant = '16x16_4',
+  ...rest
+}: Conf8500Props) => {
+  const Svg = conf8500Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Conf8500 = React.memo(Conf8500Component);
+Conf8500.displayName = 'Conf8500';
