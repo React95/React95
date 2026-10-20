@@ -1,3 +1,17 @@
+## 2.8.0 (2026-10-20)
+
+### 🚀 Features
+
+- **icons:** add NetMeeting icons ([033fe01c](https://github.com/React95/React95/commit/033fe01c))
+
+### 🩹 Fixes
+
+- **icons:** stop shipping every PNG twice ([09ca19b8](https://github.com/React95/React95/commit/09ca19b8))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.7.0 (2026-10-19)
 
 ### 🚀 Features

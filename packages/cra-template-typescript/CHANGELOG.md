@@ -1,3 +1,9 @@
+## 0.2.13 (2026-10-20)
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/core to 10.0.5
+
 ## 0.2.12 (2026-10-19)
 
 ### 🧱 Updated Dependencies
