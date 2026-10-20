@@ -26,12 +26,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-// the two shadows that draw the title, as the browser reports them
-const letterShadows = (token: string) => {
-  const color = themeColor(token);
-
-  return `${color} 0.5px 0px 0px, ${color} 1.5px 0px 0px`;
-};
+// the shadow that draws the faux-bold title, as the browser reports it
+const letterShadow = (token: string) => `${themeColor(token)} 1px 0px 0px`;
 
 export const Simple: Story = {
   render: args => <TitleBar width="200px" {...args} />,
@@ -44,10 +40,10 @@ export const Simple: Story = {
       color: themeColor(contract.colors.headerText),
     });
 
-    // the text stays transparent and the shadows draw the letters
+    // the title takes the bar's color and draws a 1px shadow in it
     await expect(canvas.getByText(args.title)).toHaveStyle({
-      color: 'rgba(0, 0, 0, 0)',
-      textShadow: letterShadows(contract.colors.headerText),
+      color: themeColor(contract.colors.headerText),
+      textShadow: letterShadow(contract.colors.headerText),
     });
   },
 
@@ -72,7 +68,8 @@ export const Inactive: Story = {
 
     // same for the inactive token
     await expect(canvas.getByText(args.title)).toHaveStyle({
-      textShadow: letterShadows(contract.colors.headerNotActiveText),
+      color: themeColor(contract.colors.headerNotActiveText),
+      textShadow: letterShadow(contract.colors.headerNotActiveText),
     });
   },
 };
