@@ -205,6 +205,8 @@ const ModalRenderer = (
 
   return (
     <Frame
+      // the title names the dialog, unless the caller names it otherwise
+      aria-label={title}
       {...rest}
       className={cn(
         styles.modalWrapper({ active: isActive, minimized: isModalMinimized }),
