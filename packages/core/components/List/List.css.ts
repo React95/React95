@@ -16,9 +16,12 @@ export const listItem = style(
     paddingInline: contract.space[6],
     color: contract.colors.materialText,
     selectors: {
-      '&:hover': {
+      // the focused item and the one whose submenu is open are highlighted
+      // like the hovered one
+      '&:hover, &:focus, &[aria-expanded="true"]': {
         background: contract.colors.headerBackground,
         color: contract.colors.materialTextInvert,
+        outline: 'none',
       },
       '&:not(:has(svg))': {
         paddingInlineStart: '26px',
@@ -35,9 +38,10 @@ export const listItem = style(
         maskSize: `${contract.space[5]} ${contract.space[8]}`,
         maskRepeat: 'no-repeat',
       },
-      '&:has(ul):hover:after': {
-        backgroundColor: contract.colors.materialTextInvert,
-      },
+      '&:has(ul):hover:after, &:has(ul):focus:after, &[aria-expanded="true"]:after':
+        {
+          backgroundColor: contract.colors.materialTextInvert,
+        },
     },
   }),
 );
@@ -62,8 +66,9 @@ globalStyle(
   }),
 );
 
+// a submenu opens on hover, or from the keyboard (→, Enter or Space)
 globalStyle(
-  `${listItem}:has(ul):hover > ul`,
+  `${listItem}:has(ul):hover > ul, ${listItem}[aria-expanded="true"] > ul`,
   inLayer(components, {
     display: 'block',
   }),
