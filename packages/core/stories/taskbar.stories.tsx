@@ -88,7 +88,7 @@ export const Simple: StoryObj<typeof TaskBar> = {
   play: async ({ canvas, userEvent }) => {
     const start = canvas.getByRole('button', { name: 'Start' });
     const taskBar = start.parentElement!;
-    const menus = () => within(taskBar).queryAllByRole('list');
+    const menus = () => within(taskBar).queryAllByRole('menu');
     const windowButtons = () =>
       within(taskBar)
         .getAllByRole('button')
