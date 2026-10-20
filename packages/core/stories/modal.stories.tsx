@@ -119,7 +119,7 @@ export const Simple: Story = {
     const modal = canvas.getByRole('dialog');
 
     // the modal starts open, with its title and content
-    await expect(modal).toHaveTextContent(args.title as string);
+    await expect(modal).toHaveAccessibleName(args.title as string);
     await expect(modal).toHaveTextContent('Simple modal');
 
     // its buttons and title bar options call their onClick
