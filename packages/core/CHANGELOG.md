@@ -1,3 +1,13 @@
+## 10.0.6 (2026-10-20)
+
+### 🩹 Fixes
+
+- **modal:** name the dialog after its title ([f405a7fc](https://github.com/React95/React95/commit/f405a7fc))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 10.0.5 (2026-10-20)
 
 ### 🧱 Updated Dependencies
