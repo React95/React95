@@ -173,6 +173,31 @@ export const Simple: StoryObj<typeof Tree> = {
     await expect(canvas.getByRole('status')).toHaveTextContent(
       'Selected: Music',
     );
+
+    // the tree follows the WAI-ARIA treeview pattern: tree/treeitem roles,
+    // aria-expanded on folders, and a single tab stop for the whole tree
+    const tree = canvas.getByRole('tree');
+    const treeitems = () => within(tree).getAllByRole('treeitem');
+    const tabbable = () => treeitems().find(item => item.tabIndex === 0);
+    await expect(folder).toHaveAttribute('role', 'treeitem');
+    await expect(folder).toHaveAttribute('aria-expanded', 'true');
+    await expect(treeitems().filter(item => item.tabIndex === 0)).toHaveLength(
+      1,
+    );
+
+    // ArrowLeft closes the focused folder, ArrowRight opens it again
+    folder.focus();
+    await userEvent.keyboard('{ArrowLeft}');
+    await expect(folder).toHaveAttribute('aria-expanded', 'false');
+    await userEvent.keyboard('{ArrowRight}');
+    await expect(folder).toHaveAttribute('aria-expanded', 'true');
+
+    // ArrowDown moves focus (and the single tab stop) to the next visible
+    // node, ArrowUp moves back
+    await userEvent.keyboard('{ArrowDown}');
+    await expect(tabbable()).toHaveTextContent('Indie');
+    await userEvent.keyboard('{ArrowUp}');
+    await expect(tabbable()).toHaveTextContent('Music');
   },
 
   parameters: {

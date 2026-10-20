@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useContext, useEffect, useId, useState } from 'react';
 import type {
   ReactElement,
+  ReactNode,
   MouseEvent,
   KeyboardEvent,
   LiHTMLAttributes,
@@ -20,6 +21,7 @@ import {
 } from '@react95/icons';
 import * as styles from './Tree.css';
 import { Frame, FrameProps } from '../Frame/Frame';
+import { TreeNavContext } from './TreeNav';
 import cn from 'classnames';
 
 export const icons = {
@@ -69,7 +71,9 @@ export type NodeProps = NodeBaseProps & {
 
 export type NodeRootProps = NodeBaseProps & {
   onClick?(event: MouseEvent | KeyboardEvent, props: NodeRootProps): void;
-};
+  /** the tree's nodes, rendered in the root's group */
+  children?: ReactNode;
+} & Omit<LiHTMLAttributes<HTMLLIElement>, 'id' | 'children'>;
 
 const EMPTY_CHILDREN: Array<NodeProps> = [];
 
@@ -83,6 +87,11 @@ export const Node = ({
 }: NodeProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const hasChildren = children.length > 0;
+  const nav = useContext(TreeNavContext);
+  // node ids aren't guaranteed unique (and the same Node can appear in
+  // several trees), so keyboard navigation tracks instances by this id;
+  // it only lands in data-uid, so the raw useId value is fine
+  const uid = useId();
 
   const onClickHandler = (event: MouseEvent | KeyboardEvent) => {
     onClick(event, {
@@ -93,15 +102,29 @@ export const Node = ({
     });
   };
 
-  const onKeyDownHandler = (event: KeyboardEvent) => {
-    if (event.key === ' ') {
-      setIsOpen(!isOpen);
-      onClickHandler(event);
-    }
-  };
+  // expose this node to the tree's keyboard navigation (toggling folders
+  // and keyboard activation live on the tree root, per the WAI-ARIA
+  // treeview pattern)
+  useEffect(() => {
+    nav?.register(uid, {
+      toggle: hasChildren ? () => setIsOpen(open => !open) : null,
+      activate: event => onClickHandler(event),
+    });
+    return () => {
+      nav?.unregister(uid);
+    };
+  }, [nav, uid, hasChildren, icon, label, children, onClick]);
 
   return (
-    <Frame as="li" {...rest} className={cn(styles.node, rest.className)}>
+    <Frame
+      as="li"
+      {...rest}
+      role="treeitem"
+      aria-expanded={hasChildren ? isOpen : undefined}
+      data-uid={uid}
+      tabIndex={nav ? (nav.tabbableUid === uid ? 0 : -1) : 0}
+      className={cn(styles.node, rest.className)}
+    >
       <div className={styles.nodeContent}>
         {hasChildren && (
           <div
@@ -117,16 +140,14 @@ export const Node = ({
         </div>
         <label
           className={styles.label}
-          tabIndex={0}
           onDoubleClick={() => setIsOpen(!isOpen)}
           onClick={onClickHandler}
-          onKeyDown={onKeyDownHandler}
         >
           {label}
         </label>
       </div>
       {hasChildren && isOpen && (
-        <ul className={styles.tree}>
+        <ul className={styles.tree} role="group">
           {children?.map(dataNode => (
             <Node key={dataNode.id} {...dataNode} />
           ))}
@@ -141,8 +162,15 @@ export const NodeRoot = ({
   icon,
   label,
   onClick = () => {},
+  children,
   ...rest
 }: NodeRootProps) => {
+  const nav = useContext(TreeNavContext);
+  // like Node, the root gets a stable id for the tree's keyboard
+  // navigation. It is always expanded and never collapses, so its toggle
+  // stays null; Enter/Space run its onClick through activate
+  const uid = useId();
+
   const onClickHandler = (event: MouseEvent | KeyboardEvent) => {
     onClick(event, {
       id,
@@ -151,14 +179,26 @@ export const NodeRoot = ({
     });
   };
 
-  const onKeyDownHandler = (event: KeyboardEvent) => {
-    if (event.key === ' ') {
-      onClickHandler(event);
-    }
-  };
+  useEffect(() => {
+    nav?.register(uid, {
+      toggle: null,
+      activate: event => onClickHandler(event),
+    });
+    return () => {
+      nav?.unregister(uid);
+    };
+  }, [nav, uid, icon, label, onClick]);
 
   return (
-    <Frame {...rest} className={cn(styles.node, styles.nodeRoot)}>
+    <Frame
+      as="li"
+      {...rest}
+      role="treeitem"
+      aria-expanded="true"
+      data-uid={uid}
+      tabIndex={nav ? (nav.tabbableUid === uid ? 0 : -1) : 0}
+      className={cn(styles.nodeRoot, rest.className)}
+    >
       <div className={styles.nodeContent}>
         <div
           className={cn(
@@ -168,15 +208,11 @@ export const NodeRoot = ({
         >
           {icon || <NodeIcon hasChildren={false} isOpen={true} />}
         </div>
-        <label
-          className={styles.label}
-          tabIndex={0}
-          onClick={onClickHandler}
-          onKeyDown={onKeyDownHandler}
-        >
+        <label className={styles.label} onClick={onClickHandler}>
           {label}
         </label>
       </div>
+      {children}
     </Frame>
   );
 };
