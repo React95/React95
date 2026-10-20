@@ -108,8 +108,8 @@ export const Simple: Story = {
     };
     const first = args.defaultActiveTab as keyof typeof contentOf;
     const other = first === 'General' ? 'Compatibility' : 'General';
-    // the tabs are a list, and the active tab's content comes right after it
-    const content = canvas.getByRole('list').nextElementSibling;
+    // the tabs are a tablist, and the active tab's content comes right after it
+    const content = canvas.getByRole('tablist').nextElementSibling;
 
     // the tab from `defaultActiveTab` starts active, showing only its content
     await expect(content).toHaveTextContent(contentOf[first]);
@@ -120,6 +120,23 @@ export const Simple: Story = {
     // clicking another tab shows its content instead
     await expect(content).toHaveTextContent(contentOf[other]);
     await expect(content).not.toHaveTextContent(contentOf[first]);
+
+    // the tablist follows the WAI-ARIA tabs pattern
+    const selectedTab = () => canvas.getByRole('tab', { selected: true });
+    await expect(selectedTab()).toHaveTextContent(other);
+    await expect(selectedTab()).toHaveAttribute('tabindex', '0');
+    await expect(
+      canvas.getByRole('tabpanel'),
+    ).toHaveAttribute('aria-labelledby', selectedTab().id);
+
+    // keyboard: focusing the selected tab and pressing ArrowLeft moves to
+    // (and selects) the previous tab, switching the shown content
+    selectedTab().focus();
+    await userEvent.keyboard('{ArrowLeft}');
+
+    await expect(selectedTab()).toHaveTextContent(first);
+    await expect(content).toHaveTextContent(contentOf[first]);
+    await expect(content).not.toHaveTextContent(contentOf[other]);
   },
 
   parameters: {

@@ -42,6 +42,10 @@ export const tab = recipe({
       '&:first-child': {
         marginLeft: contract.space[4],
       },
+      // the focused tab gets the dotted outline, like Button does
+      '&:focus': {
+        outline: `${contract.space[1]} dotted ${contract.colors.materialText}`,
+      },
     },
   }),
   variants: {
