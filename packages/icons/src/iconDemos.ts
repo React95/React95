@@ -277,6 +277,31 @@ import { fontview110Data, Fontview110 } from './react/Fontview110';
 import { fontview111Data, Fontview111 } from './react/Fontview111';
 import { forbiddenData, Forbidden } from './react/Forbidden';
 import { format16Data, Format16 } from './react/Format16';
+import { fp20tdo128Data, Fp20tdo128 } from './react/Fp20tdo128';
+import { fpeditor128Data, Fpeditor128 } from './react/Fpeditor128';
+import { fpeditor129Data, Fpeditor129 } from './react/Fpeditor129';
+import { fpeditor130Data, Fpeditor130 } from './react/Fpeditor130';
+import { fpexplor128Data, Fpexplor128 } from './react/Fpexplor128';
+import { fpexplor163Data, Fpexplor163 } from './react/Fpexplor163';
+import { fpexplor164Data, Fpexplor164 } from './react/Fpexplor164';
+import { fpexplor165Data, Fpexplor165 } from './react/Fpexplor165';
+import { fpexplor166Data, Fpexplor166 } from './react/Fpexplor166';
+import { fpexplor234Data, Fpexplor234 } from './react/Fpexplor234';
+import { fpexplor235Data, Fpexplor235 } from './react/Fpexplor235';
+import { fpexplor236Data, Fpexplor236 } from './react/Fpexplor236';
+import { fpexplor237Data, Fpexplor237 } from './react/Fpexplor237';
+import { fpexplor238Data, Fpexplor238 } from './react/Fpexplor238';
+import { fpexplor247Data, Fpexplor247 } from './react/Fpexplor247';
+import { fpexplor261Data, Fpexplor261 } from './react/Fpexplor261';
+import { fpexplor264Data, Fpexplor264 } from './react/Fpexplor264';
+import { fpexplor265Data, Fpexplor265 } from './react/Fpexplor265';
+import { fphtmsw1144Data, Fphtmsw1144 } from './react/Fphtmsw1144';
+import { fphtmsw154Data, Fphtmsw154 } from './react/Fphtmsw154';
+import { fphtmsw156Data, Fphtmsw156 } from './react/Fphtmsw156';
+import { fpidcwiz128Data, Fpidcwiz128 } from './react/Fpidcwiz128';
+import { fpserver128Data, Fpserver128 } from './react/Fpserver128';
+import { fpsrvwin128Data, Fpsrvwin128 } from './react/Fpsrvwin128';
+import { fpuninst128Data, Fpuninst128 } from './react/Fpuninst128';
 import { freecell1Data, Freecell1 } from './react/Freecell1';
 import { fte128Data, Fte128 } from './react/Fte128';
 import { fullscrnData, Fullscrn } from './react/Fullscrn';
@@ -640,6 +665,7 @@ import { nwnp32FolderIconData, Nwnp32FolderIcon } from './react/Nwnp32FolderIcon
 import { nwnp32PrinterIconData, Nwnp32PrinterIcon } from './react/Nwnp32PrinterIcon';
 import { nwnp32ServerIconData, Nwnp32ServerIcon } from './react/Nwnp32ServerIcon';
 import { nwnp32WrkgrpIconData, Nwnp32WrkgrpIcon } from './react/Nwnp32WrkgrpIcon';
+import { objed129Data, Objed129 } from './react/Objed129';
 import { oidis400SeqfileiconData, Oidis400Seqfileicon } from './react/Oidis400Seqfileicon';
 import { oislb400DcScanIcoData, Oislb400DcScanIco } from './react/Oislb400DcScanIco';
 import { oiui400ImgstampData, Oiui400Imgstamp } from './react/Oiui400Imgstamp';
@@ -966,6 +992,7 @@ import { systray304Data, Systray304 } from './react/Systray304';
 import { systray305Data, Systray305 } from './react/Systray305';
 import { systray306Data, Systray306 } from './react/Systray306';
 import { taskman100Data, Taskman100 } from './react/Taskman100';
+import { tcptest128Data, Tcptest128 } from './react/Tcptest128';
 import { textchatData, Textchat } from './react/Textchat';
 import { textchat2Data, Textchat2 } from './react/Textchat2';
 import { tickData, Tick } from './react/Tick';
@@ -2525,6 +2552,131 @@ export const icons = [
     componentName: "Format16",
     component: Format16,
     variants: format16Data,
+  },
+  {
+    componentName: "Fp20tdo128",
+    component: Fp20tdo128,
+    variants: fp20tdo128Data,
+  },
+  {
+    componentName: "Fpeditor128",
+    component: Fpeditor128,
+    variants: fpeditor128Data,
+  },
+  {
+    componentName: "Fpeditor129",
+    component: Fpeditor129,
+    variants: fpeditor129Data,
+  },
+  {
+    componentName: "Fpeditor130",
+    component: Fpeditor130,
+    variants: fpeditor130Data,
+  },
+  {
+    componentName: "Fpexplor128",
+    component: Fpexplor128,
+    variants: fpexplor128Data,
+  },
+  {
+    componentName: "Fpexplor163",
+    component: Fpexplor163,
+    variants: fpexplor163Data,
+  },
+  {
+    componentName: "Fpexplor164",
+    component: Fpexplor164,
+    variants: fpexplor164Data,
+  },
+  {
+    componentName: "Fpexplor165",
+    component: Fpexplor165,
+    variants: fpexplor165Data,
+  },
+  {
+    componentName: "Fpexplor166",
+    component: Fpexplor166,
+    variants: fpexplor166Data,
+  },
+  {
+    componentName: "Fpexplor234",
+    component: Fpexplor234,
+    variants: fpexplor234Data,
+  },
+  {
+    componentName: "Fpexplor235",
+    component: Fpexplor235,
+    variants: fpexplor235Data,
+  },
+  {
+    componentName: "Fpexplor236",
+    component: Fpexplor236,
+    variants: fpexplor236Data,
+  },
+  {
+    componentName: "Fpexplor237",
+    component: Fpexplor237,
+    variants: fpexplor237Data,
+  },
+  {
+    componentName: "Fpexplor238",
+    component: Fpexplor238,
+    variants: fpexplor238Data,
+  },
+  {
+    componentName: "Fpexplor247",
+    component: Fpexplor247,
+    variants: fpexplor247Data,
+  },
+  {
+    componentName: "Fpexplor261",
+    component: Fpexplor261,
+    variants: fpexplor261Data,
+  },
+  {
+    componentName: "Fpexplor264",
+    component: Fpexplor264,
+    variants: fpexplor264Data,
+  },
+  {
+    componentName: "Fpexplor265",
+    component: Fpexplor265,
+    variants: fpexplor265Data,
+  },
+  {
+    componentName: "Fphtmsw1144",
+    component: Fphtmsw1144,
+    variants: fphtmsw1144Data,
+  },
+  {
+    componentName: "Fphtmsw154",
+    component: Fphtmsw154,
+    variants: fphtmsw154Data,
+  },
+  {
+    componentName: "Fphtmsw156",
+    component: Fphtmsw156,
+    variants: fphtmsw156Data,
+  },
+  {
+    componentName: "Fpidcwiz128",
+    component: Fpidcwiz128,
+    variants: fpidcwiz128Data,
+  },
+  {
+    componentName: "Fpserver128",
+    component: Fpserver128,
+    variants: fpserver128Data,
+  },
+  {
+    componentName: "Fpsrvwin128",
+    component: Fpsrvwin128,
+    variants: fpsrvwin128Data,
+  },
+  {
+    componentName: "Fpuninst128",
+    component: Fpuninst128,
+    variants: fpuninst128Data,
   },
   {
     componentName: "Freecell1",
@@ -4342,6 +4494,11 @@ export const icons = [
     variants: nwnp32WrkgrpIconData,
   },
   {
+    componentName: "Objed129",
+    component: Objed129,
+    variants: objed129Data,
+  },
+  {
     componentName: "Oidis400Seqfileicon",
     component: Oidis400Seqfileicon,
     variants: oidis400SeqfileiconData,
@@ -5970,6 +6127,11 @@ export const icons = [
     componentName: "Taskman100",
     component: Taskman100,
     variants: taskman100Data,
+  },
+  {
+    componentName: "Tcptest128",
+    component: Tcptest128,
+    variants: tcptest128Data,
   },
   {
     componentName: "Textchat",

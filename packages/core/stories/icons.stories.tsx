@@ -295,3 +295,35 @@ const netMeeting: IconName[] = [
 ];
 
 export const NetMeeting = groupStory('NetMeeting', netMeeting);
+
+const frontPage: IconName[] = [
+  'Fp20tdo128',
+  'Fpeditor128',
+  'Fpeditor129',
+  'Fpeditor130',
+  'Fpexplor128',
+  'Fpexplor163',
+  'Fpexplor164',
+  'Fpexplor165',
+  'Fpexplor166',
+  'Fpexplor234',
+  'Fpexplor235',
+  'Fpexplor236',
+  'Fpexplor237',
+  'Fpexplor238',
+  'Fpexplor247',
+  'Fpexplor261',
+  'Fpexplor264',
+  'Fpexplor265',
+  'Fphtmsw154',
+  'Fphtmsw156',
+  'Fphtmsw1144',
+  'Fpidcwiz128',
+  'Fpserver128',
+  'Fpsrvwin128',
+  'Fpuninst128',
+  'Objed129',
+  'Tcptest128',
+];
+
+export const FrontPage = groupStory('FrontPage', frontPage);
