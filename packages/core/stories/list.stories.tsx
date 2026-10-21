@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { expect, within } from 'storybook/test';
+import { expect, fn, within } from 'storybook/test';
 
 import {
   Computer3,
@@ -80,14 +80,73 @@ export const WithIcons: Story = {
     </List>
   ),
   play: async ({ canvas, userEvent }) => {
-    const menu = canvas.getByRole('list');
-    const [programs, , settings] = within(menu).getAllByRole('listitem');
-    // submenus are hidden, so their lists aren't in the accessibility tree
+    const menu = canvas.getByRole('menu');
+    const items = within(menu).getAllByRole('menuitem');
+    const [programs, documents, settings] = items;
+    const shutDown = items[items.length - 1];
+    // submenus are hidden, so their menus aren't in the accessibility tree
     const submenu = (item: HTMLElement) =>
-      within(item).getByRole('list', { hidden: true });
+      within(item).getByRole('menu', { hidden: true });
 
     await expect(submenu(programs)).not.toBeVisible();
     await expect(submenu(settings)).not.toBeVisible();
+
+    // the items that open a submenu say so
+    await expect(programs).toHaveAttribute('aria-haspopup', 'menu');
+    await expect(programs).toHaveAttribute('aria-expanded', 'false');
+    await expect(documents).not.toHaveAttribute('aria-haspopup');
+
+    // the whole menu is a single tab stop, on its first item
+    await userEvent.tab();
+    await expect(programs).toHaveFocus();
+    await expect(items.filter(item => item.tabIndex === 0)).toEqual([programs]);
+
+    // ↑/↓ move between the items, wrapping around; Home/End jump to the ends
+    await userEvent.keyboard('{ArrowDown}');
+    await expect(documents).toHaveFocus();
+    await userEvent.keyboard('{ArrowUp}{ArrowUp}');
+    await expect(shutDown).toHaveFocus();
+    await userEvent.keyboard('{Home}');
+    await expect(programs).toHaveFocus();
+    await userEvent.keyboard('{End}');
+    await expect(shutDown).toHaveFocus();
+    await userEvent.keyboard('{Home}');
+
+    // → opens the submenu and moves into it
+    await userEvent.keyboard('{ArrowRight}');
+    await expect(programs).toHaveAttribute('aria-expanded', 'true');
+    await expect(submenu(programs)).toBeVisible();
+
+    const programItems = within(submenu(programs)).getAllByRole('menuitem');
+    await expect(programItems[0]).toHaveFocus();
+
+    // the submenu's items are reached with the arrows, not with Tab
+    await expect(programItems.every(item => item.tabIndex === -1)).toBe(true);
+    await userEvent.keyboard('{ArrowUp}');
+    await expect(programItems[programItems.length - 1]).toHaveFocus();
+
+    // ← closes it and goes back to its item
+    await userEvent.keyboard('{ArrowLeft}');
+    await expect(programs).toHaveFocus();
+    await expect(programs).toHaveAttribute('aria-expanded', 'false');
+    await expect(submenu(programs)).not.toBeVisible();
+
+    // Enter opens it too, and Esc closes it
+    await userEvent.keyboard('{Enter}');
+    await expect(programItems[0]).toHaveFocus();
+    await userEvent.keyboard('{Escape}');
+    await expect(programs).toHaveFocus();
+    await expect(submenu(programs)).not.toBeVisible();
+
+    // the tab stop follows the focus, so Tab leaves the menu in one step
+    await userEvent.keyboard('{ArrowDown}');
+    await expect(items.filter(item => item.tabIndex === 0)).toEqual([
+      documents,
+    ]);
+    await userEvent.tab();
+    await expect(menu).not.toContainElement(
+      document.activeElement as HTMLElement,
+    );
 
     // hovering an item opens its submenu. That's CSS `:hover`, which only a
     // real pointer triggers (see .storybook/pointer.ts)
@@ -136,29 +195,53 @@ export const Simple: Story = {
       <List.Item>Properties</List.Item>
     </List>
   ),
-  play: async ({ canvas }) => {
-    const menu = canvas.getByRole('list');
-    const items = within(menu).getAllByRole('listitem');
+  args: {
+    onClick: fn(),
+  },
+  play: async ({ args, canvas, userEvent }) => {
+    const menu = canvas.getByRole('menu');
+    const entries = Array.from(menu.children).map(entry =>
+      entry.getAttribute('role') === 'separator' ? '---' : entry.textContent,
+    );
 
-    // the items in order, with the dividers (empty items) between the groups
-    await expect(items.map(item => item.textContent)).toEqual([
+    // the items in order, with the dividers between the groups
+    await expect(entries).toEqual([
       'View',
-      '',
+      '---',
       'Customize this Folder...',
-      '',
+      '---',
       'Arrange Icons',
       'Line Up Icons',
-      '',
+      '---',
       'Refresh',
-      '',
+      '---',
       'Paste',
       'Paste Shortcut',
       'Undo Copy',
-      '',
+      '---',
       'New',
-      '',
+      '---',
       'Properties',
     ]);
+
+    // ↓ skips the dividers
+    await userEvent.tab();
+    await userEvent.keyboard('{ArrowDown}');
+    await expect(
+      canvas.getByRole('menuitem', { name: 'Customize this Folder...' }),
+    ).toHaveFocus();
+
+    // Enter and Space click the focused item, like the mouse does
+    const onClick = args.onClick as unknown as ReturnType<typeof fn>;
+    const clicked = () =>
+      (onClick.mock.lastCall?.[0].target as HTMLElement).textContent;
+
+    await userEvent.keyboard('{Enter}');
+    await expect(onClick).toHaveBeenCalledTimes(1);
+    await expect(clicked()).toBe('Customize this Folder...');
+    await userEvent.keyboard('{ArrowDown} ');
+    await expect(onClick).toHaveBeenCalledTimes(2);
+    await expect(clicked()).toBe('Arrange Icons');
   },
 
   parameters: {
