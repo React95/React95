@@ -91,8 +91,8 @@ export const title = style(
     lineHeight: '1.4em',
     margin: '0',
     fontSize: '1em',
-    textShadow: '0.5px 0px white, 1.5px 0px white',
-    color: 'transparent',
+    // the text and a 1px shadow draw the faux-bold title, in the bar's color
+    textShadow: '1px 0px currentColor',
     letterSpacing: '1px',
   }),
 );
