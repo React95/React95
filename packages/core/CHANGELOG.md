@@ -1,3 +1,13 @@
+## 10.2.0 (2026-11-09)
+
+### 🚀 Features
+
+- **core:** implement WAI-ARIA tabs pattern for Tabs ([623a68a4](https://github.com/React95/React95/commit/623a68a4))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 10.1.0 (2026-11-09)
 
 ### 🚀 Features
