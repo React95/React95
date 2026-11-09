@@ -1,3 +1,13 @@
+## 10.1.0 (2026-11-09)
+
+### 🚀 Features
+
+- **core:** make Tooltip keyboard-accessible per the WAI-ARIA tooltip pattern ([8cb17b6d](https://github.com/React95/React95/commit/8cb17b6d))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 10.0.8 (2026-11-09)
 
 ### 🩹 Fixes
