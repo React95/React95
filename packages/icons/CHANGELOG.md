@@ -1,3 +1,13 @@
+## 2.9.0 (2026-11-09)
+
+### 🚀 Features
+
+- **icons:** add FrontPage icons ([b6d02cae](https://github.com/React95/React95/commit/b6d02cae))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.8.0 (2026-10-20)
 
 ### 🚀 Features
