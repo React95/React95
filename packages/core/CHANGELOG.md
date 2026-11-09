@@ -1,3 +1,14 @@
+## 10.0.8 (2026-11-09)
+
+### 🩹 Fixes
+
+- **core:** draw the TitleBar title with a single text shadow ([99ffcd62](https://github.com/React95/React95/commit/99ffcd62))
+- **core:** TitleBar title follows headerText and headerNotActiveText ([#580](https://github.com/React95/React95/issues/580))
+
+### ❤️ Thank You
+
+- Exalt24 @Exalt24
+
 ## 10.0.7 (2026-11-09)
 
 ### 🧱 Updated Dependencies
