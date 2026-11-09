@@ -496,6 +496,15 @@
       "contributions": [
         "a11y"
       ]
+    },
+    {
+      "login": "Exalt24",
+      "name": "Daniel Alexis Cruz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123055372?v=4",
+      "profile": "https://dacruz.vercel.app",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
