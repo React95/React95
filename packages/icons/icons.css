@@ -985,6 +985,20 @@
   display: inline-block;
 }
 
+.Cmpagent223_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cmpagent223_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cmpagent223_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Cmpagent223_16x16_4.svg);
+  display: inline-block;
+}
+
 .Columns_16x16_4 {
   width: 16px;
   height: 16px;
@@ -1080,6 +1094,132 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Comdlg32539_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext203_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext203_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext203_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext203_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext204_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext204_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext204_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext204_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext205_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext205_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext205_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext205_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext206_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext206_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext206_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext206_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext207_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext207_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext207_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext207_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext208_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext208_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext208_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext208_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext209_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext209_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext209_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext209_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext210_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext210_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext210_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext210_16x16_4.svg);
+  display: inline-block;
+}
+
+.Compext211_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Compext211_32x32_4.svg);
+  display: inline-block;
+}
+
+.Compext211_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Compext211_16x16_4.svg);
   display: inline-block;
 }
 
@@ -7453,6 +7593,13 @@
   display: inline-block;
 }
 
+.NocompSmall_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/NocompSmall_32x32_4.svg);
+  display: inline-block;
+}
+
 .Notepad_16x16_4 {
   width: 16px;
   height: 16px;
@@ -7751,6 +7898,27 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Phone2_16x16_4.svg);
+  display: inline-block;
+}
+
+.PinballIcon1_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/PinballIcon1_32x32_4.svg);
+  display: inline-block;
+}
+
+.PinballIcon1_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/PinballIcon1_16x16_4.svg);
+  display: inline-block;
+}
+
+.PinballIcon1_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/PinballIcon1_48x48_4.svg);
   display: inline-block;
 }
 
@@ -12476,6 +12644,34 @@
   width: 48px;
   height: 48px;
   background-image: url(./src/svg/Winword7_48x48_8.svg);
+  display: inline-block;
+}
+
+.Wmconfig128_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wmconfig128_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wmconfig128_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wmconfig128_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wmconfig130_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wmconfig130_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wmconfig130_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wmconfig130_16x16_4.svg);
   display: inline-block;
 }
 

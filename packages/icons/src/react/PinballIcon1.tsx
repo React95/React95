@@ -1,0 +1,31 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const PinballIcon1_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M12 0h7M9 1h3m7 0h3M7 2h2m4 0h6m3 0h2M6 3h1m3 0h12m2 0h1M5 4h1m2 0h6m4 0h6m1 0h2M4 5h1m2 0h5m8 0h5m2 0h1M3 6h1m2 0h7m9 0h6M2 7h1m2 0h5m2 0h3m8 0h2m2 0h2M2 8h1m1 0h4m6 0h2m7 0h2m3 0h1M1 9h1m2 0h3m8 0h2m7 0h1m3 0h2M1 10h1m1 0h4m8 0h2m7 0h1m4 0h1M1 11h1m1 0h4m8 0h2m7 0h1m4 0h1M0 12h1m2 0h4m8 0h2m7 0h1m4 0h2M0 13h1m1 0h5m8 0h2m7 0h1m5 0h1M0 14h1m1 0h6m6 0h2m8 0h1m5 0h1M0 15h1m1 0h8m2 0h3m8 0h2m5 0h1M0 16h1m1 0h11m10 0h1m6 0h1M0 17h1m1 0h9m11 0h2m6 0h1M0 18h1m1 0h10m8 0h3m6 0h2M1 19h1m1 0h11m4 0h3m8 0h1M1 20h1m1 0h16m10 0h1M1 21h1m1 0h8m17 0h2M2 22h1m1 0h5m19 0h1M2 23h1m1 0h4m19 0h2M2 24h1m1 0h3m19 0h2M3 25h4m18 0h2M5 26h2m17 0h2M6 27h2m15 0h2M7 28h3m11 0h3M9 29h4m5 0h4m-10 1h7" /><path stroke="#fff" d="M12 1h7M9 2h3m7 0h2M7 3h2M6 4h1M5 5h1M4 6h1M3 7h1M3 8h1M2 9h1m6 0h4M2 10h1m5 0h6M2 11h1m5 0h6M1 12h1m6 0h6M1 13h1m7 0h4M1 14h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1" /><path stroke="silver" d="M12 2h1m8 0h1M9 3h1m12 0h2M7 4h1m16 0h1M6 5h1m18 0h2M5 6h1M4 7h1m5 0h2m13 0h2M8 8h6m11 0h3M3 9h1m3 0h2m4 0h2m10 0h3M7 10h1m6 0h1m10 0h4M7 11h1m6 0h1m10 0h4M2 12h1m4 0h1m6 0h1m10 0h4M7 13h2m4 0h2m10 0h5M8 14h6m11 0h5m-20 1h2m13 0h5m-6 1h6m-6 1h6m-7 1h6M2 19h1m18 0h8M2 20h1m16 0h10M2 21h1m8 0h17M3 22h1m5 0h19M3 23h1m4 0h19M3 24h1m3 0h19M7 25h18M7 26h17M8 27h15m-13 1h11m-8 1h5" /><path stroke="#000" d="M14 4h4m-6 1h8m-7 1h9m6 0h1M15 7h8m6 0h1M16 8h7m6 0h1M17 9h7m6 0h1m-14 1h7m6 0h1m-14 1h7m6 0h1m-14 1h7m7 0h1m-15 1h7m7 0h1m-16 1h8m7 0h1m-17 1h8m8 0h1m-19 1h10m8 0h1m-21 1h11m9 0h1m-20 1h8m11 0h1m-18 1h4m12 0h1m-1 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-2 1h1M4 26h1m21 0h1M5 27h1m19 0h1M6 28h1m17 0h1M7 29h2m13 0h2M9 30h3m7 0h3m-10 1h7" /></svg>;
+const PinballIcon1_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="gray" d="M5 0h6M3 1h2m6 0h2M2 2h1m3 0h5M1 3h1m2 0h3m3 0h4M1 4h1m1 0h2m2 0h1m3 0h3M0 5h1m2 0h1m4 0h1m4 0h2M0 6h1m1 0h2m4 0h1m5 0h1M0 7h1m1 0h2m4 0h1m5 0h1M0 8h1m1 0h3m2 0h1m6 0h1M0 9h1m1 0h5m6 0h2M0 10h1m1 0h4m7 0h1M1 11h1m1 0h2m7 0h2M1 12h1m1 0h1m7 0h2M3 13h3m3 0h3m-7 1h5" /><path stroke="#fff" d="M5 1h5M3 2h2M2 3h1M2 4h1M1 5h1m3 0h2M1 6h1m2 0h4M1 7h1m3 0h2M1 8h1M1 9h1m-1 1h1m0 1h1" /><path stroke="silver" d="M10 1h1M5 2h1m5 0h2M3 3h1m1 1h2M2 5h1m1 0h1m2 0h1m4 0h1m-1 1h2M4 7h1m2 0h1m4 0h2M5 8h2m4 0h3m-4 1h3m-7 1h7m-8 1h7M2 12h1m1 0h7m-5 1h3" /><path stroke="#000" d="M13 2h1M7 3h3m4 0h1M8 4h3m3 0h1M9 5h3m3 0h1M9 6h3m3 0h1M9 7h3m3 0h1M8 8h3m4 0h1M7 9h3m5 0h1m-2 1h1m-1 1h1m-2 1h1M2 13h1m9 0h1M3 14h2m5 0h2m-7 1h5" /></svg>;
+const PinballIcon1_48x48_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" shapeRendering="crispEdges" viewBox="0 -0.5 48 48" {...props}><path stroke="gray" d="M19 0h9M15 1h4m9 0h4M13 2h2m5 0h7m5 0h2M11 3h2m3 0h16m2 0h2M10 4h1m3 0h20m2 0h1M8 5h2m2 0h24m1 0h2M7 6h1m3 0h10m7 0h9m2 0h1M6 7h1m2 0h10m11 0h9m1 0h1M5 8h1m2 0h9m15 0h8m1 0h1M5 9h1m1 0h9m17 0h8m1 0h1M4 10h1m2 0h13m14 0h3m2 0h3m1 0h1M3 11h1m2 0h8m5 0h3m13 0h2m3 0h4M3 12h1m1 0h7m9 0h2m12 0h3m4 0h2M2 13h1m2 0h6m11 0h2m12 0h2m4 0h3M2 14h1m1 0h7m11 0h2m12 0h3m4 0h2M1 15h1m2 0h6m13 0h2m12 0h2m4 0h3M1 16h1m1 0h7m13 0h2m12 0h2m5 0h2M1 17h1m1 0h7m13 0h2m12 0h2m5 0h2M1 18h1m1 0h7m13 0h2m12 0h2m5 0h2M0 19h1m2 0h7m13 0h2m12 0h2m5 0h3M0 20h1m1 0h9m11 0h2m13 0h2m6 0h2M0 21h1m1 0h9m11 0h2m13 0h2m6 0h2M0 22h1m1 0h10m9 0h2m14 0h2m6 0h2M0 23h1m1 0h12m5 0h3m14 0h3m6 0h2M0 24h1m1 0h18m15 0h3m7 0h2M0 25h1m1 0h12m21 0h2m8 0h2M0 26h1m1 0h13m19 0h3m8 0h2M0 27h1m1 0h14m17 0h3m8 0h3M1 28h1m1 0h14m15 0h3m9 0h2M1 29h1m1 0h16m11 0h4m10 0h2M1 30h1m1 0h18m7 0h5m11 0h2M1 31h1m1 0h28m12 0h3M2 32h1m1 0h25m14 0h2M2 33h1m1 0h12m26 0h3M3 34h1m1 0h9m28 0h2M3 35h1m1 0h8m28 0h3M4 36h1m1 0h6m28 0h3M5 37h1m1 0h4m29 0h2M5 38h1m1 0h4m28 0h3M6 39h1m1 0h3m27 0h3M7 40h1m1 0h3m24 0h4M8 41h1m1 0h2m23 0h4M9 42h5m19 0h4m-26 1h5m15 0h5m-23 1h7m7 0h7m-19 1h17m-13 1h9" /><path stroke="#fff" d="M19 1h9M15 2h4m9 0h3M13 3h2m-4 1h2m-3 1h1M8 6h2M7 7h1M6 8h1M6 9h1m-2 1h1m-2 1h1m-1 1h1m-2 1h1m10 0h5M3 14h1m9 0h7M2 15h1m9 0h9M2 16h1m9 0h9M2 17h1m9 0h9M2 18h1m9 0h9M1 19h1m10 0h9M1 20h1m11 0h7M1 21h1m12 0h5M1 22h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1" /><path stroke="silver" d="M19 2h1m7 0h1m3 0h1M15 3h1m16 0h2M13 4h1m20 0h2M11 5h1m24 0h1M10 6h1m26 0h2M8 7h1m30 0h1M7 8h1m32 0h1m0 1h1M6 10h1m30 0h2m3 0h1M5 11h1m8 0h5m18 0h3m-28 1h9m17 0h4M4 13h1m6 0h3m5 0h3m16 0h4m-31 1h2m7 0h2m17 0h4M3 15h1m6 0h2m9 0h2m16 0h4m-33 1h2m9 0h2m16 0h5m-34 1h2m9 0h2m16 0h5m-34 1h2m9 0h2m16 0h5M2 19h1m7 0h2m9 0h2m16 0h5m-33 1h2m7 0h2m17 0h6m-34 1h3m5 0h3m17 0h6m-33 1h9m18 0h6m-31 1h5m20 0h6m-7 1h7m-8 1h8m-8 1h8m-9 1h8M2 28h1m32 0h9M2 29h1m31 0h10M2 30h1m30 0h11M2 31h1m28 0h12M3 32h1m25 0h14M3 33h1m12 0h26M4 34h1m9 0h28M4 35h1m8 0h28M5 36h1m6 0h28M6 37h1m4 0h29M6 38h1m4 0h28M7 39h1m3 0h27M8 40h1m3 0h24M9 41h1m2 0h23m-21 1h19m-17 1h15m-11 1h7" /><path stroke="#000" d="M21 6h7m-9 1h11M17 8h15M16 9h17m-13 1h14m-12 1h13m9 0h1m-22 1h12m9 0h1m-21 1h12m9 0h1m-22 1h12m9 0h1m-21 1h12m9 0h1m-22 1h12m9 0h1m-22 1h12m9 0h1m-22 1h12m9 0h1m-22 1h12m10 0h1m-24 1h13m10 0h1m-24 1h13m10 0h1m-25 1h14m10 0h1m-26 1h14m11 0h1m-28 1h15m12 0h1m-34 1h21m12 0h1m-33 1h19m13 0h1m-32 1h17m14 0h1m-31 1h15m14 0h1m-28 1h11m16 0h1m-26 1h7m18 0h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-2 1h1m-1 1h1m-2 1h1m-2 1h1m-2 1h1m-3 1h2m-29 1h1m25 0h1m-26 1h2m21 0h2m-23 1h2m17 0h2m-19 1h4m9 0h4m-13 1h9" /></svg>;
+
+export const pinballIcon1Data = {
+  '32x32_4': PinballIcon1_32x32_4,
+  '16x16_4': PinballIcon1_16x16_4,
+  '48x48_4': PinballIcon1_48x48_4
+};
+
+export interface PinballIcon1Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4' | '16x16_4' | '48x48_4';
+}
+
+const PinballIcon1Component = ({
+  variant = '32x32_4',
+  ...rest
+}: PinballIcon1Props) => {
+  const Svg = pinballIcon1Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const PinballIcon1 = React.memo(PinballIcon1Component);
+PinballIcon1.displayName = 'PinballIcon1';

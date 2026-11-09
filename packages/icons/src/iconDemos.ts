@@ -95,6 +95,7 @@ import { charmap1Data, Charmap1 } from './react/Charmap1';
 import { chatshow3000Data, Chatshow3000 } from './react/Chatshow3000';
 import { circleData, Circle } from './react/Circle';
 import { closeData, Close } from './react/Close';
+import { cmpagent223Data, Cmpagent223 } from './react/Cmpagent223';
 import { columnsData, Columns } from './react/Columns';
 import { comctl32150Data, Comctl32150 } from './react/Comctl32150';
 import { comdlg32528Data, Comdlg32528 } from './react/Comdlg32528';
@@ -109,6 +110,15 @@ import { comdlg32536Data, Comdlg32536 } from './react/Comdlg32536';
 import { comdlg32537Data, Comdlg32537 } from './react/Comdlg32537';
 import { comdlg32538Data, Comdlg32538 } from './react/Comdlg32538';
 import { comdlg32539Data, Comdlg32539 } from './react/Comdlg32539';
+import { compext203Data, Compext203 } from './react/Compext203';
+import { compext204Data, Compext204 } from './react/Compext204';
+import { compext205Data, Compext205 } from './react/Compext205';
+import { compext206Data, Compext206 } from './react/Compext206';
+import { compext207Data, Compext207 } from './react/Compext207';
+import { compext208Data, Compext208 } from './react/Compext208';
+import { compext209Data, Compext209 } from './react/Compext209';
+import { compext210Data, Compext210 } from './react/Compext210';
+import { compext211Data, Compext211 } from './react/Compext211';
 import { computerData, Computer } from './react/Computer';
 import { computer2Data, Computer2 } from './react/Computer2';
 import { computer3Data, Computer3 } from './react/Computer3';
@@ -657,6 +667,7 @@ import { network2Data, Network2 } from './react/Network2';
 import { network3Data, Network3 } from './react/Network3';
 import { newData, New } from './react/New';
 import { new16Data, New16 } from './react/New16';
+import { nocompSmallData, NocompSmall } from './react/NocompSmall';
 import { notepadData, Notepad } from './react/Notepad';
 import { notepad1Data, Notepad1 } from './react/Notepad1';
 import { notepad2Data, Notepad2 } from './react/Notepad2';
@@ -688,6 +699,7 @@ import { penData, Pen } from './react/Pen';
 import { person116Data, Person116 } from './react/Person116';
 import { phoneData, Phone } from './react/Phone';
 import { phone2Data, Phone2 } from './react/Phone2';
+import { pinballIcon1Data, PinballIcon1 } from './react/PinballIcon1';
 import { playd16Data, Playd16 } from './react/Playd16';
 import { playp16Data, Playp16 } from './react/Playp16';
 import { pluginData, Plugin } from './react/Plugin';
@@ -1082,6 +1094,8 @@ import { winword4Data, Winword4 } from './react/Winword4';
 import { winword5Data, Winword5 } from './react/Winword5';
 import { winword6Data, Winword6 } from './react/Winword6';
 import { winword7Data, Winword7 } from './react/Winword7';
+import { wmconfig128Data, Wmconfig128 } from './react/Wmconfig128';
+import { wmconfig130Data, Wmconfig130 } from './react/Wmconfig130';
 import { wmsui321000Data, Wmsui321000 } from './react/Wmsui321000';
 import { wmsui321001Data, Wmsui321001 } from './react/Wmsui321001';
 import { wmsui321306Data, Wmsui321306 } from './react/Wmsui321306';
@@ -1644,6 +1658,11 @@ export const icons = [
     variants: closeData,
   },
   {
+    componentName: "Cmpagent223",
+    component: Cmpagent223,
+    variants: cmpagent223Data,
+  },
+  {
     componentName: "Columns",
     component: Columns,
     variants: columnsData,
@@ -1712,6 +1731,51 @@ export const icons = [
     componentName: "Comdlg32539",
     component: Comdlg32539,
     variants: comdlg32539Data,
+  },
+  {
+    componentName: "Compext203",
+    component: Compext203,
+    variants: compext203Data,
+  },
+  {
+    componentName: "Compext204",
+    component: Compext204,
+    variants: compext204Data,
+  },
+  {
+    componentName: "Compext205",
+    component: Compext205,
+    variants: compext205Data,
+  },
+  {
+    componentName: "Compext206",
+    component: Compext206,
+    variants: compext206Data,
+  },
+  {
+    componentName: "Compext207",
+    component: Compext207,
+    variants: compext207Data,
+  },
+  {
+    componentName: "Compext208",
+    component: Compext208,
+    variants: compext208Data,
+  },
+  {
+    componentName: "Compext209",
+    component: Compext209,
+    variants: compext209Data,
+  },
+  {
+    componentName: "Compext210",
+    component: Compext210,
+    variants: compext210Data,
+  },
+  {
+    componentName: "Compext211",
+    component: Compext211,
+    variants: compext211Data,
   },
   {
     componentName: "Computer",
@@ -4454,6 +4518,11 @@ export const icons = [
     variants: new16Data,
   },
   {
+    componentName: "NocompSmall",
+    component: NocompSmall,
+    variants: nocompSmallData,
+  },
+  {
     componentName: "Notepad",
     component: Notepad,
     variants: notepadData,
@@ -4607,6 +4676,11 @@ export const icons = [
     componentName: "Phone2",
     component: Phone2,
     variants: phone2Data,
+  },
+  {
+    componentName: "PinballIcon1",
+    component: PinballIcon1,
+    variants: pinballIcon1Data,
   },
   {
     componentName: "Playd16",
@@ -6577,6 +6651,16 @@ export const icons = [
     componentName: "Winword7",
     component: Winword7,
     variants: winword7Data,
+  },
+  {
+    componentName: "Wmconfig128",
+    component: Wmconfig128,
+    variants: wmconfig128Data,
+  },
+  {
+    componentName: "Wmconfig130",
+    component: Wmconfig130,
+    variants: wmconfig130Data,
   },
   {
     componentName: "Wmsui321000",
