@@ -125,9 +125,10 @@ export const Simple: Story = {
     const selectedTab = () => canvas.getByRole('tab', { selected: true });
     await expect(selectedTab()).toHaveTextContent(other);
     await expect(selectedTab()).toHaveAttribute('tabindex', '0');
-    await expect(
-      canvas.getByRole('tabpanel'),
-    ).toHaveAttribute('aria-labelledby', selectedTab().id);
+    await expect(canvas.getByRole('tabpanel')).toHaveAttribute(
+      'aria-labelledby',
+      selectedTab().id,
+    );
 
     // keyboard: focusing the selected tab and pressing ArrowLeft moves to
     // (and selects) the previous tab, switching the shown content
