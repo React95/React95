@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Fpexplor236_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M4 0h6m6 0h1M3 1h1m6 0h1m4 0h1M2 2h1m8 0h4m4 0h4M1 3h1m11 0h1m8 0h2M1 4h1m10 0h1M1 5h1m2 0h8M1 6h1m2 0h1m5 0h1M1 7h1m2 0h1m1 0h20M1 8h1m2 0h1m1 0h1M1 9h1m2 0h2m19 0h1M1 10h1m2 0h2m19 0h1M1 11h1m2 0h1m19 0h1M1 12h1m1 0h1m11 0h17M1 13h1m1 0h1m11 0h1m15 0h1M1 14h2m12 0h1m15 0h1M1 15h2m12 0h1m15 0h1M1 16h15m3 0h1m1 0h1m9 0h1m-17 1h1m2 0h1m1 0h2m1 0h1m7 0h1m-17 1h1m6 0h1m8 0h1m-17 1h1m2 0h1m1 0h2m9 0h1m-17 1h1m2 0h3m10 0h1m-17 1h1m4 0h2m9 0h1m-17 1h1m5 0h2m8 0h1m-17 1h1m8 0h1m6 0h1m-17 1h1m15 0h1m-17 1h1m15 0h1m-17 1h1m15 0h1m-17 1h1m15 0h1m-17 1h1m15 0h1m-17 1h1m15 0h1m-17 1h17" /><path stroke="#ff0" d="M4 1h1m1 0h1m1 0h1M3 2h1m1 0h1m1 0h1m1 0h1M2 3h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m7 0h1M3 4h1m1 0h1m1 0h1m1 0h1m1 0h1m9 0h1M2 5h1m0 1h1M2 7h1m0 1h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M2 9h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M3 10h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M2 11h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M5 12h1m1 0h1m1 0h1m1 0h1m1 0h1M2 13h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M3 14h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M4 15h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m4 3h1m2 5h1" /><path stroke="#fff" d="M5 1h1m1 0h1m1 0h1m6 0h1m-2 1h3m-4 1h5M2 4h1m10 0h3m1 0h3m-8 1h3m1 0h1m1 0h3M2 6h1m8 0h3m1 0h1m1 0h1m1 0h3M2 8h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M7 9h1m-6 1h1m3 0h1m-2 1h1m-4 1h1m1 0h1m11 1h15m-15 1h1m9 0h1m3 0h1M3 15h1m12 0h1m1 0h1m1 0h2m1 0h2m1 0h5m-15 1h1m1 0h1m4 0h1m2 0h1m3 0h1m-15 1h1m7 0h1m1 0h5m-15 1h1m1 0h1m7 0h1m3 0h1m-15 1h1m7 0h1m1 0h5m-15 1h1m6 0h1m2 0h1m3 0h1m-15 1h1m1 0h1m4 0h2m1 0h5m-15 1h1m2 0h1m6 0h1m3 0h1m-15 1h1m2 0h1m6 0h5m-15 1h1m9 0h1m3 0h1m-15 1h15m-15 1h1m13 0h1m-15 1h15m-15 1h1m13 0h1m-15 1h15" /><path stroke="#000" d="M17 1h1m0 1h1m0 1h1m0 1h1m4 0h2m2 0h1m-3 1h1m2 0h1m-9 1h2m4 0h1m1 0h1m-5 1h3m1 0h2m-5 1h1m3 0h1m-6 1h1m1 0h1m1 0h1m-5 1h1m2 0h1m-5 1h1m-6 5h1m1 0h1M2 17h13m7 0h1m-3 1h2m1 0h1m-2 1h2m-3 1h2m-4 1h1m2 0h1m-3 1h1m2 0h1m-9 9h17" /><path stroke="silver" d="M4 2h1m1 0h1m1 0h1m1 0h1M3 3h1m1 0h1m1 0h1m1 0h1m1 0h1m9 0h1M4 4h1m1 0h1m1 0h1m1 0h1M3 5h1m1 1h5M3 7h1m1 0h1M5 8h1m20 0h1M3 9h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M8 10h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M3 11h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M6 12h1m1 0h1m1 0h1m1 0h1m1 0h1M5 13h1m1 0h1m1 0h1m1 0h1m1 0h1M4 14h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M5 15h1m1 0h1m1 0h1m1 0h1m1 0h1m5 2h1m-1 2h1m0 4h2m1 0h1" /><path stroke="maroon" d="M24 3h5m-7 1h3m-4 1h4" /><path stroke="navy" d="M16 4h1m-2 1h1m1 0h1m-4 1h1m1 0h1m1 0h1m-2 8h9m3 0h1m-13 1h1m7 0h1m-9 1h1m7 0h1m1 0h3m-13 1h1m7 0h1m-9 1h1m7 0h1m1 0h1m-11 1h1m7 0h1m-9 1h1m7 0h1m1 0h3m-13 1h1m7 0h1m-9 1h1m7 0h1m1 0h3m-13 1h1m7 0h1m-9 1h9m3 0h1m-13 2h3m6 0h4m-13 2h7m5 0h1" /><path stroke="red" d="M27 4h2m-1 1h2m-1 1h1m-1 1h1m-2 1h3m-2 1h1m-3 5h2m-1 4h2m-3 6h2m-9 2h6m-2 2h5" /><path stroke="#0ff" d="M19 15h1m2 0h1m1 1h1m-1 2h1m-1 2h1m-7 2h1m5 0h1m-7 1h1" /></svg>;
+
+export const fpexplor236Data = {
+  '32x32_4': Fpexplor236_32x32_4
+};
+
+export interface Fpexplor236Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Fpexplor236Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Fpexplor236Props) => {
+  const Svg = fpexplor236Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Fpexplor236 = React.memo(Fpexplor236Component);
+Fpexplor236.displayName = 'Fpexplor236';
