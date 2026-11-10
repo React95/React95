@@ -1,3 +1,13 @@
+## 10.4.0 (2026-11-10)
+
+### 🚀 Features
+
+- **core:** keyboard navigation for List menus and submenus ([#566](https://github.com/React95/React95/issues/566))
+
+### ❤️ Thank You
+
+- Saisinare
+
 ## 10.3.0 (2026-11-10)
 
 ### 🚀 Features
