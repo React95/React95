@@ -12,6 +12,7 @@ import React, {
 } from 'react';
 
 import { DragOptions, useDraggable } from '@neodrag/react';
+import { assignInlineVars } from '@vanilla-extract/dynamic';
 
 import { Button } from '../Button/Button';
 import { fixedForwardRef, Frame, FrameProps } from '../Frame/Frame';
@@ -27,6 +28,7 @@ import * as styles from './Modal.css';
 import cn from 'classnames';
 import { useOnClickOutside } from 'usehooks-ts';
 import { ModalEvents, useModal } from '../shared/events';
+import { modalStackIndex } from '../shared/modal-controller';
 
 export type ModalButtons = {
   value: string;
@@ -113,6 +115,7 @@ const ModalRenderer = (
     dragOptions,
     titleBarOptions,
     className,
+    style,
     ...rest
   }: ModalProps,
   ref: Ref<HTMLDivElement | null>,
@@ -120,6 +123,7 @@ const ModalRenderer = (
   const [id] = useState<string>(providedId || nanoid());
   const [menuOpened, setMenuOpened] = useState('');
   const [isActive, setIsActive] = useState(false);
+  const [stackIndex, setStackIndex] = useState(0);
   const [isModalMinimized, setIsModalMinimized] = useState(false);
   const { add, remove, focus, subscribe } = useModal();
 
@@ -142,7 +146,8 @@ const ModalRenderer = (
     taskBarWindow.current = { icon, title: title || '', id, hasButton };
   });
 
-  // registered and focused when it mounts, unregistered when it unmounts
+  // registered and focused when it mounts, unregistered when it unmounts.
+  // Focusing any modal can change this one's place in the stacking order
   useEffect(() => {
     add(taskBarWindow.current);
 
@@ -150,6 +155,7 @@ const ModalRenderer = (
       ModalEvents.ModalVisibilityChanged,
       ({ id: activeId }) => {
         setIsActive(activeId === id);
+        setStackIndex(Math.max(modalStackIndex(id), 0));
       },
     );
 
@@ -209,9 +215,14 @@ const ModalRenderer = (
       aria-label={title}
       {...rest}
       className={cn(
-        styles.modalWrapper({ active: isActive, minimized: isModalMinimized }),
+        styles.modalWrapper({ minimized: isModalMinimized }),
         className,
       )}
+      // a `zIndex` in the caller's style still wins over the stacking order
+      style={{
+        ...assignInlineVars({ [styles.stackIndex]: String(stackIndex) }),
+        ...style,
+      }}
       role="dialog"
       // the open modals are a set, and the active one is its current item
       aria-current={isActive || undefined}
