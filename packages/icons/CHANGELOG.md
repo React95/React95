@@ -1,3 +1,13 @@
+## 2.10.0 (2026-11-10)
+
+### 🚀 Features
+
+- **icons:** add Plus! icons ([1f078aa1](https://github.com/React95/React95/commit/1f078aa1))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.9.0 (2026-11-09)
 
 ### 🚀 Features
