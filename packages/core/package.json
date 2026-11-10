@@ -174,8 +174,8 @@
     "usehooks-ts": "^3.1.0"
   },
   "peerDependencies": {
-    "react": ">= 16.8.0",
-    "react-dom": ">= 16.8.0"
+    "react": ">= 18",
+    "react-dom": ">= 18"
   },
   "devDependencies": {
     "@react95/clippy": "^2.2.3",
