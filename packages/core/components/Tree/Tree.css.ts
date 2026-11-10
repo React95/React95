@@ -13,6 +13,12 @@ globalStyle(
   inLayer(components, { ...base, marginLeft: contract.space[6] }),
 );
 
+export const rootGroup = style(inLayer(components, base));
+
+// `${tree} ul` indents nested groups; the root's group is exempt so its
+// nodes keep the positioning they had as direct children of the tree
+globalStyle(`${tree} ul.${rootGroup}`, inLayer(components, { marginLeft: 0 }));
+
 export const node = style(
   inLayer(components, {
     marginLeft: contract.space[13],
@@ -23,6 +29,11 @@ export const node = style(
     selectors: {
       '&:last-child': {
         borderLeftColor: 'transparent',
+      },
+      // the focus lands on the `li` (roving tabindex): hide its default
+      // outline, the label below draws the dotted one instead
+      '&:focus': {
+        outline: 'none',
       },
       '&:before': {
         position: 'absolute',
@@ -56,6 +67,10 @@ export const nodeRoot = style(
       '&:before': {
         content: 'unset',
       },
+      // like `node`: the label draws the dotted focus indicator instead
+      '&:focus': {
+        outline: 'none',
+      },
     },
   }),
 );
@@ -73,10 +88,15 @@ export const label = style(
     outline: 'none',
     padding: contract.space[1],
     selectors: {
-      '&:focus': {
-        borderWidth: contract.space[1],
-        borderStyle: 'dotted',
-        padding: contract.space[0],
+      // the focus lands on the `li` (roving tabindex), so the label draws
+      // the dotted focus indicator when its node is focused — the old
+      // `label:focus` style, moved up to the node; same dotted style as
+      // Tabs
+      [`${node}:focus > ${nodeContent} > &`]: {
+        outline: `${contract.space[1]} dotted ${contract.colors.materialText}`,
+      },
+      [`${nodeRoot}:focus > ${nodeContent} > &`]: {
+        outline: `${contract.space[1]} dotted ${contract.colors.materialText}`,
       },
     },
   }),
