@@ -1,3 +1,13 @@
+## 10.3.0 (2026-11-10)
+
+### 🚀 Features
+
+- **core:** implement WAI-ARIA treeview pattern for Tree ([fd0dd965](https://github.com/React95/React95/commit/fd0dd965))
+
+### ❤️ Thank You
+
+- Muhamad Raza Haider
+
 ## 10.2.0 (2026-11-09)
 
 ### 🚀 Features
