@@ -505,6 +505,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lDavidSantiago",
+      "name": "David Santiago Velasco Triana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100979957?v=4",
+      "profile": "https://ldavidsantiago.me",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,
