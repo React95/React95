@@ -1,3 +1,13 @@
+## 10.4.2 (2026-11-10)
+
+### 🩹 Fixes
+
+- **core:** now stack modals in order they were focused ([17658c05](https://github.com/React95/React95/commit/17658c05))
+
+### ❤️ Thank You
+
+- lDavidSantiago
+
 ## 10.4.1 (2026-11-10)
 
 ### 🧱 Updated Dependencies

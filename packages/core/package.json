@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "10.4.1",
+  "version": "10.4.2",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
