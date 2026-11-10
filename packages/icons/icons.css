@@ -565,6 +565,48 @@
   display: inline-block;
 }
 
+.BilladdIconamex_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/BilladdIconamex_32x32_4.svg);
+  display: inline-block;
+}
+
+.BilladdIcondiscover_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/BilladdIcondiscover_32x32_4.svg);
+  display: inline-block;
+}
+
+.BilladdIcongeneric_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/BilladdIcongeneric_32x32_4.svg);
+  display: inline-block;
+}
+
+.BilladdIconjcb_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/BilladdIconjcb_32x32_4.svg);
+  display: inline-block;
+}
+
+.BilladdIconmc_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/BilladdIconmc_32x32_4.svg);
+  display: inline-block;
+}
+
+.BilladdIconvisa_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/BilladdIconvisa_32x32_4.svg);
+  display: inline-block;
+}
+
 .Binder1263_32x32_4 {
   width: 32px;
   height: 32px;
@@ -877,6 +919,13 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Ccapi106_16x16_4.svg);
+  display: inline-block;
+}
+
+.Ccdialer104_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Ccdialer104_32x32_4.svg);
   display: inline-block;
 }
 
@@ -6249,6 +6298,27 @@
   display: inline-block;
 }
 
+.Moscp500_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moscp500_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moscp500_32x32_1 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moscp500_32x32_1.svg);
+  display: inline-block;
+}
+
+.Moscp500_32x16_1 {
+  width: 32px;
+  height: 16px;
+  background-image: url(./src/svg/Moscp500_32x16_1.svg);
+  display: inline-block;
+}
+
 .Moscudll128_32x32_4 {
   width: 32px;
   height: 32px;
@@ -11118,6 +11188,41 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Signup_16x16_4.svg);
+  display: inline-block;
+}
+
+.Signup1100_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Signup1100_32x32_4.svg);
+  display: inline-block;
+}
+
+.Signup1100_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Signup1100_16x16_4.svg);
+  display: inline-block;
+}
+
+.Signup1101_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Signup1101_32x32_4.svg);
+  display: inline-block;
+}
+
+.Signup1402_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Signup1402_32x32_4.svg);
+  display: inline-block;
+}
+
+.Signup1403_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Signup1403_32x32_4.svg);
   display: inline-block;
 }
 
