@@ -381,3 +381,38 @@ const onlineServices: IconName[] = [
 ];
 
 export const OnlineServices = groupStory('Online Services', onlineServices);
+
+const accessories: IconName[] = [
+  'Hticons101',
+  'Hticons102',
+  'Hticons103',
+  'Hticons104',
+  'Hticons105',
+  'Hticons106',
+  'Hticons107',
+  'Hticons108',
+  'Hticons109',
+  'Hticons110',
+  'Hticons111',
+  'Hticons112',
+  'Hticons113',
+  'Hticons114',
+  'Hticons115',
+  'Hticons116',
+  'Hypertrm100',
+  'Mlset32101',
+  'Mlset32102',
+  'Mplayer2110',
+  'Mspaint114',
+  'Mspaint115',
+  'Mspaint116',
+  'Mspaint117',
+  'Mspaint3',
+  'ScanpstScanpstIcon',
+  'Wmsui323911',
+  'Wordpad128',
+  'Wordpad154',
+  'Wordpad155',
+];
+
+export const Accessories = groupStory('Accessories', accessories);
