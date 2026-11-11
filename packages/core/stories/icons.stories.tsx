@@ -346,3 +346,23 @@ const plus: IconName[] = [
 ];
 
 export const Plus = groupStory('Plus!', plus);
+
+const microsoftNetwork: IconName[] = [
+  'BilladdIconamex',
+  'BilladdIcondiscover',
+  'BilladdIcongeneric',
+  'BilladdIconjcb',
+  'BilladdIconmc',
+  'BilladdIconvisa',
+  'Ccdialer104',
+  'Moscp500',
+  'Signup1100',
+  'Signup1101',
+  'Signup1402',
+  'Signup1403',
+];
+
+export const MicrosoftNetwork = groupStory(
+  'The Microsoft Network',
+  microsoftNetwork,
+);

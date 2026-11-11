@@ -1,3 +1,13 @@
+## 2.11.0 (2026-11-11)
+
+### 🚀 Features
+
+- **icons:** add The Microsoft Network icons ([798a785b](https://github.com/React95/React95/commit/798a785b))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.10.0 (2026-11-10)
 
 ### 🚀 Features

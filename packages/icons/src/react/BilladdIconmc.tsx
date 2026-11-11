@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const BilladdIconmc_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M3 7h26M2 8h1m26 0h1M2 9h1m26 0h1M2 10h1m26 0h1M2 11h1m26 0h1M2 12h1m26 0h1M2 13h1m26 0h1M2 14h1m26 0h1M2 15h1m26 0h1M2 16h1m26 0h1M2 17h1m26 0h1M2 18h1m26 0h1M2 19h1m26 0h1M2 20h1m26 0h1M2 21h1m26 0h1M2 22h1m26 0h1M2 23h1m26 0h1M2 24h1m26 0h1M3 25h26" /><path stroke="#fff" d="M3 8h26M3 9h6m5 0h5m5 0h5M3 10h4m9 0h1m9 0h3M3 11h3m21 0h2M3 12h2m22 0h2M3 13h2m23 0h1M3 14h1m3 0h1m3 0h1m16 0h1M3 15h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h3m1 0h3m1 0h3m2 0h1M3 16h1m3 0h1m1 0h2m1 0h1m1 0h1m2 0h6m5 0h1M3 17h1m2 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m1 0h3m2 0h1M3 18h1m24 0h1M3 19h2m23 0h1M3 20h2m22 0h2M3 21h3m21 0h2M3 22h4m9 0h1m9 0h3M3 23h6m5 0h5m5 0h5M3 24h26" /><path stroke="red" d="M9 9h5m5 0h1m1 0h1m1 0h1M7 10h9m2 0h1m1 0h1m1 0h1m1 0h1M6 11h10m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M5 12h10m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M5 13h15m1 0h1m1 0h1m1 0h1m1 0h1M4 14h3m1 0h3m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M4 15h2m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m8 0h1M4 16h3m1 0h1m2 0h1m1 0h1m2 0h1m7 0h1m1 0h1M4 17h2m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m7 0h1M4 18h11m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M5 19h15m1 0h1m1 0h1m1 0h1m1 0h1M5 20h10m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M6 21h14m1 0h1m1 0h1m1 0h1M7 22h9m2 0h1m1 0h1m1 0h1m1 0h1M9 23h5m5 0h1m1 0h1m1 0h1" /><path stroke="#ff0" d="M20 9h1m1 0h1m-6 1h1m1 0h1m1 0h1m1 0h1m1 0h1m-10 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-12 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-6 1h1m1 0h1m1 0h1m1 0h1m-12 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-6 1h1m3 0h1m-12 1h1m7 0h1m1 0h1m1 0h1m-6 1h1m3 0h1m-12 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-8 1h1m1 0h1m1 0h1m1 0h1m-12 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-6 1h1m1 0h1m1 0h1m1 0h1m-10 1h1m1 0h1m1 0h1m1 0h1m1 0h1m-6 1h1m1 0h1" /></svg>;
+
+export const billaddIconmcData = {
+  '32x32_4': BilladdIconmc_32x32_4
+};
+
+export interface BilladdIconmcProps extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const BilladdIconmcComponent = ({
+  variant = '32x32_4',
+  ...rest
+}: BilladdIconmcProps) => {
+  const Svg = billaddIconmcData[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const BilladdIconmc = React.memo(BilladdIconmcComponent);
+BilladdIconmc.displayName = 'BilladdIconmc';
