@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Mlset32102_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M22 3h2m-3 1h1m2 0h2m-6 1h1m5 0h2M12 6h4m3 0h1m8 0h2M10 7h2m4 0h3m11 0h1M8 8h2m4 0h2m1 0h1M7 9h1m4 0h2m2 0h2M6 10h1m4 0h1m6 0h2M5 11h1m4 0h1m9 0h2m6 0h2M4 12h1m4 0h1m12 0h2m6 0h1M3 13h1m4 0h1m4 0h1m10 0h2m2 0h3M2 14h1m4 0h1m5 0h1m1 0h1m10 0h5M1 15h1m4 0h1m4 0h1m3 0h1m1 0h1m6 0h7M0 16h1m4 0h1m5 0h1m1 0h1m3 0h1m4 0h9M0 17h1m3 0h1m4 0h1m3 0h1m1 0h1m5 0h10M0 18h2m2 0h1m6 0h1m3 0h1m4 0h11M0 19h1m1 0h3m8 0h1m5 0h12M4 20h1m13 0h12m-13 1h11M6 22h2m8 0h10M8 23h2m6 0h8m-14 1h2m4 0h6m-10 1h2m2 0h4m-6 1h4" /><path stroke="#fff" d="M22 4h2m-3 1h5m-6 1h8M12 7h1m6 0h11M10 8h1m7 0h12M8 9h1m5 0h1m3 0h11M7 10h1m4 0h1m7 0h8M6 11h1m4 0h1m10 0h5M5 12h1m4 0h1m2 0h2m9 0h2M4 13h1m4 0h1m5 0h2M3 14h1m4 0h1m2 0h2m4 0h2M2 15h1m4 0h1m5 0h2M1 16h3m2 0h1m2 0h2m4 0h2M1 17h1m3 0h1m5 0h2m-8 1h3m5 0h2M5 19h1m2 0h2m-5 1h1m4 0h2m-7 1h1m6 0h2m0 1h2" /><path stroke="silver" d="M13 7h3m-5 1h3m2 0h1M9 9h3m3 0h1m-8 1h3m2 0h5M7 11h3m2 0h8M6 12h3m2 0h2m2 0h7m5 0h3M5 13h3m2 0h3m4 0h7m2 0h2M4 14h3m2 0h2m3 0h1m4 0h7M3 15h3m2 0h3m5 0h1m2 0h5M4 16h1m2 0h2m3 0h1m5 0h4M2 17h2m2 0h3m5 0h1m2 0h4M2 18h2m4 0h3m5 0h4M6 19h2m2 0h3m2 0h4M1 20h1m4 0h4m2 0h6M6 21h6m2 0h3m-9 1h6M2 23h1m7 0h6M1 24h1m10 0h4m-2 1h2" /><path stroke="#000" d="M31 7h1m-2 1h1m-2 1h1m-2 1h1m-2 1h1m-2 1h1m-13 1h1m16 0h1m-16 1h1m14 0h1m-20 1h1m5 0h1m12 0h1m-18 1h1m16 0h1m-22 1h1m5 0h1m14 0h1m-20 1h1m18 0h1M1 19h1m12 0h1m16 0h1M0 20h1m1 0h2m26 0h1M1 21h1m2 0h1m23 0h2M2 22h1m2 0h1m20 0h2M1 23h1m1 0h1m2 0h2m16 0h2M0 24h1m1 0h1m5 0h2m12 0h2M1 25h1m8 0h2m8 0h2m-10 1h2m4 0h2m-6 1h4" /></svg>;
+
+export const mlset32102Data = {
+  '32x32_4': Mlset32102_32x32_4
+};
+
+export interface Mlset32102Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Mlset32102Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Mlset32102Props) => {
+  const Svg = mlset32102Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Mlset32102 = React.memo(Mlset32102Component);
+Mlset32102.displayName = 'Mlset32102';

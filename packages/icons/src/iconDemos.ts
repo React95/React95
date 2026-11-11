@@ -579,6 +579,8 @@ import { microsoftNetworkData, MicrosoftNetwork } from './react/MicrosoftNetwork
 import { mipacData, Mipac } from './react/Mipac';
 import { mkcompat900Data, Mkcompat900 } from './react/Mkcompat900';
 import { mlcfg32129Data, Mlcfg32129 } from './react/Mlcfg32129';
+import { mlset32101Data, Mlset32101 } from './react/Mlset32101';
+import { mlset32102Data, Mlset32102 } from './react/Mlset32102';
 import { mmsys100Data, Mmsys100 } from './react/Mmsys100';
 import { mmsys101Data, Mmsys101 } from './react/Mmsys101';
 import { mmsys102Data, Mmsys102 } from './react/Mmsys102';
@@ -907,6 +909,7 @@ import { rundll1Data, Rundll1 } from './react/Rundll1';
 import { runonce106Data, Runonce106 } from './react/Runonce106';
 import { saveData, Save } from './react/Save';
 import { scandskw1Data, Scandskw1 } from './react/Scandskw1';
+import { scanpstScanpstIconData, ScanpstScanpstIcon } from './react/ScanpstScanpstIcon';
 import { sccviewIconData, SccviewIcon } from './react/SccviewIcon';
 import { scrollingMarquee100Data, ScrollingMarquee100 } from './react/ScrollingMarquee100';
 import { sendmail2001Data, Sendmail2001 } from './react/Sendmail2001';
@@ -4125,6 +4128,16 @@ export const icons = [
     variants: mlcfg32129Data,
   },
   {
+    componentName: "Mlset32101",
+    component: Mlset32101,
+    variants: mlset32101Data,
+  },
+  {
+    componentName: "Mlset32102",
+    component: Mlset32102,
+    variants: mlset32102Data,
+  },
+  {
     componentName: "Mmsys100",
     component: Mmsys100,
     variants: mmsys100Data,
@@ -5763,6 +5776,11 @@ export const icons = [
     componentName: "Scandskw1",
     component: Scandskw1,
     variants: scandskw1Data,
+  },
+  {
+    componentName: "ScanpstScanpstIcon",
+    component: ScanpstScanpstIcon,
+    variants: scanpstScanpstIconData,
   },
   {
     componentName: "SccviewIcon",

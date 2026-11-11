@@ -6151,6 +6151,20 @@
   display: inline-block;
 }
 
+.Mlset32101_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Mlset32101_32x32_4.svg);
+  display: inline-block;
+}
+
+.Mlset32102_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Mlset32102_32x32_4.svg);
+  display: inline-block;
+}
+
 .Mmsys100_32x32_4 {
   width: 32px;
   height: 32px;
@@ -10197,6 +10211,20 @@
   display: inline-block;
 }
 
+.ScanpstScanpstIcon_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/ScanpstScanpstIcon_32x32_4.svg);
+  display: inline-block;
+}
+
+.ScanpstScanpstIcon_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/ScanpstScanpstIcon_16x16_4.svg);
+  display: inline-block;
+}
+
 .SccviewIcon_32x32_4 {
   width: 32px;
   height: 32px;
@@ -13190,6 +13218,13 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Wmsui323911_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wmsui323911_48x48_4 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Wmsui323911_48x48_4.svg);
   display: inline-block;
 }
 
