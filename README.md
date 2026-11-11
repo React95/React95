@@ -49,6 +49,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Kitty's portfolio](https://hawwokitty.github.io/my-portfolio/)
 - [Michal Hajlasz's website with Synth and Visualizer](https://michalh.vercel.app/)
 - [Xqyet's personal website](https://xqyet.dev/)
+- [Playground 95](https://playground-95.vercel.app/)
 
 ## Contributors
 
