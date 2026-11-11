@@ -4,6 +4,11 @@ import './preview.css';
 import { markNonConfigurableProps } from './arg-types-enhancers';
 import { organizeFrameStyleProps } from './frame-arg-types';
 import { withClippy } from './decorators/withClippy';
+import { title, titleBarBackground } from '../components/TitleBar/TitleBar.css';
+
+// an inactive window's title is grey on grey, like in Windows 95. WCAG
+// exempts inactive components from the contrast minimum
+const inactiveTitle = `.${titleBarBackground.classNames.variants.active.false} .${title}`;
 
 export const globalTypes = {
   selectedTheme: {
@@ -26,9 +31,11 @@ export const parameters = {
     codePanel: true,
   },
   a11y: {
-    // violations show up as warnings in the story tests and the Accessibility
-    // panel, without failing them. Switch to 'error' once they are fixed
-    test: 'todo',
+    // violations fail the story tests
+    test: 'error',
+    config: {
+      rules: [{ id: 'color-contrast', selector: `*:not(${inactiveTitle})` }],
+    },
   },
 };
 
