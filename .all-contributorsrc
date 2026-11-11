@@ -533,6 +533,16 @@
         "code",
         "a11y"
       ]
+    },
+    {
+      "login": "rootsiemen",
+      "name": "Muhamad Raza Haider",
+      "avatar_url": "https://avatars.githubusercontent.com/u/261476514?v=4",
+      "profile": "https://github.com/rootsiemen",
+      "contributions": [
+        "code",
+        "a11y"
+      ]
     }
   ],
   "skipCi": true,
