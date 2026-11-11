@@ -19,8 +19,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Simple: Story = {
+  args: {
+    'aria-label': 'Sample text input',
+  },
   play: async ({ canvas, userEvent }) => {
-    const input = canvas.getByRole('textbox');
+    const input = canvas.getByRole('textbox', { name: 'Sample text input' });
 
     await userEvent.type(input, 'Hello, World!');
 
