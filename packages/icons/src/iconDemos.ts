@@ -16,6 +16,12 @@ import { accessibilityData, Accessibility } from './react/Accessibility';
 import { actmovie303Data, Actmovie303 } from './react/Actmovie303';
 import { addrbookData, Addrbook } from './react/Addrbook';
 import { amovie2Data, Amovie2 } from './react/Amovie2';
+import { aol30ca300Data, Aol30ca300 } from './react/Aol30ca300';
+import { aol30uk300Data, Aol30uk300 } from './react/Aol30uk300';
+import { aol30us300Data, Aol30us300 } from './react/Aol30us300';
+import { aolsetup704Data, Aolsetup704 } from './react/Aolsetup704';
+import { aolsetup707Data, Aolsetup707 } from './react/Aolsetup707';
+import { aolsetup709Data, Aolsetup709 } from './react/Aolsetup709';
 import { appwiz1500Data, Appwiz1500 } from './react/Appwiz1500';
 import { appwiz1501Data, Appwiz1501 } from './react/Appwiz1501';
 import { appwiz1502Data, Appwiz1502 } from './react/Appwiz1502';
@@ -166,6 +172,9 @@ import { conflnk103Data, Conflnk103 } from './react/Conflnk103';
 import { controls3000Data, Controls3000 } from './react/Controls3000';
 import { copyData, Copy } from './react/Copy';
 import { coreui3000Data, Coreui3000 } from './react/Coreui3000';
+import { cs3kit103Data, Cs3kit103 } from './react/Cs3kit103';
+import { cssetup0Data, Cssetup0 } from './react/Cssetup0';
+import { cssetup1Data, Cssetup1 } from './react/Cssetup1';
 import { curvesAndColors100Data, CurvesAndColors100 } from './react/CurvesAndColors100';
 import { cutData, Cut } from './react/Cut';
 import { d3FlowerBox100Data, D3FlowerBox100 } from './react/D3FlowerBox100';
@@ -703,6 +712,7 @@ import { password1000Data, Password1000 } from './react/Password1000';
 import { password1010Data, Password1010 } from './react/Password1010';
 import { pasteData, Paste } from './react/Paste';
 import { pbrush1Data, Pbrush1 } from './react/Pbrush1';
+import { pcvkit108Data, Pcvkit108 } from './react/Pcvkit108';
 import { penData, Pen } from './react/Pen';
 import { person116Data, Person116 } from './react/Person116';
 import { phoneData, Phone } from './react/Phone';
@@ -1273,6 +1283,36 @@ export const icons = [
     componentName: "Amovie2",
     component: Amovie2,
     variants: amovie2Data,
+  },
+  {
+    componentName: "Aol30ca300",
+    component: Aol30ca300,
+    variants: aol30ca300Data,
+  },
+  {
+    componentName: "Aol30uk300",
+    component: Aol30uk300,
+    variants: aol30uk300Data,
+  },
+  {
+    componentName: "Aol30us300",
+    component: Aol30us300,
+    variants: aol30us300Data,
+  },
+  {
+    componentName: "Aolsetup704",
+    component: Aolsetup704,
+    variants: aolsetup704Data,
+  },
+  {
+    componentName: "Aolsetup707",
+    component: Aolsetup707,
+    variants: aolsetup707Data,
+  },
+  {
+    componentName: "Aolsetup709",
+    component: Aolsetup709,
+    variants: aolsetup709Data,
   },
   {
     componentName: "Appwiz1500",
@@ -2023,6 +2063,21 @@ export const icons = [
     componentName: "Coreui3000",
     component: Coreui3000,
     variants: coreui3000Data,
+  },
+  {
+    componentName: "Cs3kit103",
+    component: Cs3kit103,
+    variants: cs3kit103Data,
+  },
+  {
+    componentName: "Cssetup0",
+    component: Cssetup0,
+    variants: cssetup0Data,
+  },
+  {
+    componentName: "Cssetup1",
+    component: Cssetup1,
+    variants: cssetup1Data,
   },
   {
     componentName: "CurvesAndColors100",
@@ -4708,6 +4763,11 @@ export const icons = [
     componentName: "Pbrush1",
     component: Pbrush1,
     variants: pbrush1Data,
+  },
+  {
+    componentName: "Pcvkit108",
+    component: Pcvkit108,
+    variants: pcvkit108Data,
   },
   {
     componentName: "Pen",

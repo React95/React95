@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Cs3kit103_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M10 0h18M9 1h1m17 0h1M8 2h1m17 0h2M7 3h1m18 0h2M7 4h1m2 0h14m2 0h2M7 5h1m18 0h2M7 6h1m18 0h2M7 7h1m18 0h2M7 8h1m18 0h2M7 9h1m18 0h2M4 10h1m2 0h1m18 0h2M3 11h1m4 0h5m13 0h2M2 12h1m4 0h1m18 0h2M1 13h1m2 0h1m2 0h1m18 0h2M0 14h1m2 0h1m4 0h5m13 0h2M0 15h1m1 0h1m3 0h2m18 0h2M0 16h2m1 0h5m6 0h2m10 0h2m1 0h2M0 17h3m11 0h8m3 0h2m1 0h2M1 18h2m24 0h2m1 0h1m-17 1h14m1 0h2m-3 1h3m-17 1h2m12 0h3m-17 1h2m1 0h9m2 0h3m-17 1h2m12 0h3M2 24h1m5 0h1m5 0h2m12 0h3M2 25h1m5 0h1m5 0h2m12 0h2M2 26h1m5 0h1m3 0h1m1 0h1m8 0h6M2 27h1m5 0h1m2 0h1M2 28h1m5 0h1m1 0h1m-9 1h1m5 0h2m-8 1h1m5 0h1" /><path stroke="silver" d="M10 1h16M9 3h17M9 4h1m15 0h1M9 5h1m15 0h1M9 6h1m15 0h1M9 7h1m15 0h1M9 8h1m15 0h1M9 9h1m15 0h1m-1 1h1m-1 1h1M4 12h1m7 0h1m12 0h1M3 13h1m1 0h1m6 0h1m12 0h1M2 14h1m1 0h3m18 0h1M1 15h1m1 0h3m2 0h1m5 0h2m9 0h1M2 16h1m5 0h2m6 0h6m3 0h1M9 17h1m20 0h1m-2 1h1m-2 1h1m-15 1h2m-4 1h1m3 0h12m-17 1h2m3 0h1m9 0h2m-18 1h3m13 0h2M9 24h4m3 0h1m8 0h3M9 25h4m11 0h4M9 26h3m-3 1h2m-2 1h1m-7 2h5" /><path stroke="#fff" d="M26 1h1M9 2h17M8 3h1M8 4h1m15 0h1M8 5h1m15 0h1M8 6h1m15 0h1M8 7h1m15 0h1M8 8h1m15 0h1M8 9h1m15 0h1m-1 1h1M4 11h1m19 0h1M3 12h1m4 0h4m12 0h1M2 13h1m5 0h4m12 0h1M1 14h1m22 0h1M9 15h3m4 0h9m-15 1h1m-8 1h5m-5 1h5m8 2h12M3 24h5m12 0h1M3 25h5m-5 1h5m8 0h7M3 27h5m-5 1h5m-5 1h5m15 1h2" /><path stroke="#000" d="M28 1h1m-1 1h1m-1 1h1m-1 1h1M10 5h13m5 0h1M10 6h1m17 0h1M10 7h1m17 0h1M10 8h1m17 0h1M4 9h2m4 0h1m17 0h1M3 10h1m1 0h1m2 0h5m15 0h1M2 11h1m2 0h1m1 0h1m5 0h1m14 0h1M1 12h1m3 0h2m6 0h1m14 0h1M0 13h1m5 0h1m6 0h1m14 0h1M7 14h1m5 0h2m13 0h1m-17 1h2m14 0h1m-18 1h1m1 0h1m14 0h1M8 17h1m1 0h1m2 0h1m13 0h1m3 0h1M8 18h2m3 0h14m4 0h1M8 19h1m4 0h1m17 0h1m-19 1h1m17 0h1m-19 1h1m17 0h1m-19 1h1m17 0h1m-19 1h1m2 0h10m5 0h1m-19 1h1m3 0h3m1 0h4m6 0h1m-19 1h1m2 0h8m6 0h1m-18 1h1m1 0h1m13 0h1m-18 1h17m-18 1h1m-2 1h1m10 0h8M9 30h1m10 0h3m2 0h4M2 31h7m10 0h9" /><path stroke="navy" d="M23 5h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-10 1h1m8 0h1m-10 1h1m8 0h1m-9 1h9m-12 2h1m-2 1h2m-3 1h3M2 19h1m6 0h4M2 20h1m5 0h4M2 21h1m5 0h3m-9 1h1m5 0h2m-8 1h1m5 0h1" /><path stroke="#00f" d="M11 6h12M11 7h1m1 0h10M11 8h1m1 0h10M11 9h12m-10 1h10m-9 1h9m-8 1h8m-8 1h8M3 19h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5" /><path stroke="#0ff" d="M12 7h1m-1 1h1" /><path stroke="#0f0" d="M22 16h3" /><path stroke="green" d="M22 17h3" /><path stroke="maroon" d="M12 20h1m-2 1h1m-2 1h1m-2 1h1" /></svg>;
+
+export const cs3kit103Data = {
+  '32x32_4': Cs3kit103_32x32_4
+};
+
+export interface Cs3kit103Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Cs3kit103Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Cs3kit103Props) => {
+  const Svg = cs3kit103Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Cs3kit103 = React.memo(Cs3kit103Component);
+Cs3kit103.displayName = 'Cs3kit103';

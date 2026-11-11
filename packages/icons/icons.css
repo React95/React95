@@ -145,6 +145,48 @@
   display: inline-block;
 }
 
+.Aol30ca300_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Aol30ca300_32x32_4.svg);
+  display: inline-block;
+}
+
+.Aol30uk300_32x32_8 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Aol30uk300_32x32_8.svg);
+  display: inline-block;
+}
+
+.Aol30us300_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Aol30us300_32x32_4.svg);
+  display: inline-block;
+}
+
+.Aolsetup704_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Aolsetup704_32x32_4.svg);
+  display: inline-block;
+}
+
+.Aolsetup707_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Aolsetup707_32x32_4.svg);
+  display: inline-block;
+}
+
+.Aolsetup709_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Aolsetup709_32x32_4.svg);
+  display: inline-block;
+}
+
 .Appwiz1500_32x32_4 {
   width: 32px;
   height: 32px;
@@ -1675,6 +1717,41 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Coreui3000_16x16_4.svg);
+  display: inline-block;
+}
+
+.Cs3kit103_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cs3kit103_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cssetup0_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cssetup0_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cssetup0_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Cssetup0_16x16_4.svg);
+  display: inline-block;
+}
+
+.Cssetup1_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cssetup1_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cssetup1_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Cssetup1_16x16_4.svg);
   display: inline-block;
 }
 
@@ -7933,6 +8010,13 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Pbrush1_32x32_4.svg);
+  display: inline-block;
+}
+
+.Pcvkit108_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Pcvkit108_32x32_4.svg);
   display: inline-block;
 }
 
