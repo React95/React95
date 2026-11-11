@@ -366,3 +366,18 @@ export const MicrosoftNetwork = groupStory(
   'The Microsoft Network',
   microsoftNetwork,
 );
+
+const onlineServices: IconName[] = [
+  'Aol30ca300',
+  'Aol30uk300',
+  'Aol30us300',
+  'Aolsetup704',
+  'Aolsetup707',
+  'Aolsetup709',
+  'Cs3kit103',
+  'Cssetup0',
+  'Cssetup1',
+  'Pcvkit108',
+];
+
+export const OnlineServices = groupStory('Online Services', onlineServices);
