@@ -609,6 +609,7 @@ export * from './react/Mmsys99';
 export * from './react/Mnmshco1202';
 export * from './react/Moscp500';
 export * from './react/Moscudll128';
+export * from './react/Mplayer2110';
 export * from './react/Mplayer10';
 export * from './react/Mplayer11';
 export * from './react/Mplayer12';

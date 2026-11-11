@@ -609,6 +609,7 @@ import { mmsys99Data, Mmsys99 } from './react/Mmsys99';
 import { mnmshco1202Data, Mnmshco1202 } from './react/Mnmshco1202';
 import { moscp500Data, Moscp500 } from './react/Moscp500';
 import { moscudll128Data, Moscudll128 } from './react/Moscudll128';
+import { mplayer2110Data, Mplayer2110 } from './react/Mplayer2110';
 import { mplayer10Data, Mplayer10 } from './react/Mplayer10';
 import { mplayer11Data, Mplayer11 } from './react/Mplayer11';
 import { mplayer12Data, Mplayer12 } from './react/Mplayer12';
@@ -4276,6 +4277,11 @@ export const icons = [
     componentName: "Moscudll128",
     component: Moscudll128,
     variants: moscudll128Data,
+  },
+  {
+    componentName: "Mplayer2110",
+    component: Mplayer2110,
+    variants: mplayer2110Data,
   },
   {
     componentName: "Mplayer10",
