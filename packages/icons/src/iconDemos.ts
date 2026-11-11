@@ -425,7 +425,24 @@ import { hardwareDiagData, HardwareDiag } from './react/HardwareDiag';
 import { helpData, Help } from './react/Help';
 import { helpBookData, HelpBook } from './react/HelpBook';
 import { helpPtrData, HelpPtr } from './react/HelpPtr';
+import { hticons101Data, Hticons101 } from './react/Hticons101';
+import { hticons102Data, Hticons102 } from './react/Hticons102';
+import { hticons103Data, Hticons103 } from './react/Hticons103';
+import { hticons104Data, Hticons104 } from './react/Hticons104';
+import { hticons105Data, Hticons105 } from './react/Hticons105';
+import { hticons106Data, Hticons106 } from './react/Hticons106';
+import { hticons107Data, Hticons107 } from './react/Hticons107';
+import { hticons108Data, Hticons108 } from './react/Hticons108';
+import { hticons109Data, Hticons109 } from './react/Hticons109';
+import { hticons110Data, Hticons110 } from './react/Hticons110';
+import { hticons111Data, Hticons111 } from './react/Hticons111';
+import { hticons112Data, Hticons112 } from './react/Hticons112';
+import { hticons113Data, Hticons113 } from './react/Hticons113';
+import { hticons114Data, Hticons114 } from './react/Hticons114';
+import { hticons115Data, Hticons115 } from './react/Hticons115';
+import { hticons116Data, Hticons116 } from './react/Hticons116';
 import { htmlPageData, HtmlPage } from './react/HtmlPage';
+import { hypertrm100Data, Hypertrm100 } from './react/Hypertrm100';
 import { icmui1200Data, Icmui1200 } from './react/Icmui1200';
 import { icmui1201Data, Icmui1201 } from './react/Icmui1201';
 import { icwconn1200Data, Icwconn1200 } from './react/Icwconn1200';
@@ -667,6 +684,11 @@ import { msow6Data, Msow6 } from './react/Msow6';
 import { msow8Data, Msow8 } from './react/Msow8';
 import { msow9Data, Msow9 } from './react/Msow9';
 import { mspaintData, Mspaint } from './react/Mspaint';
+import { mspaint114Data, Mspaint114 } from './react/Mspaint114';
+import { mspaint115Data, Mspaint115 } from './react/Mspaint115';
+import { mspaint116Data, Mspaint116 } from './react/Mspaint116';
+import { mspaint117Data, Mspaint117 } from './react/Mspaint117';
+import { mspaint3Data, Mspaint3 } from './react/Mspaint3';
 import { msrating102Data, Msrating102 } from './react/Msrating102';
 import { msrating103Data, Msrating103 } from './react/Msrating103';
 import { msrating104Data, Msrating104 } from './react/Msrating104';
@@ -1146,6 +1168,9 @@ import { wmsui325087Data, Wmsui325087 } from './react/Wmsui325087';
 import { wmsui325900Data, Wmsui325900 } from './react/Wmsui325900';
 import { wmsui325901Data, Wmsui325901 } from './react/Wmsui325901';
 import { wordpadData, Wordpad } from './react/Wordpad';
+import { wordpad128Data, Wordpad128 } from './react/Wordpad128';
+import { wordpad154Data, Wordpad154 } from './react/Wordpad154';
+import { wordpad155Data, Wordpad155 } from './react/Wordpad155';
 import { wrdart32100Data, Wrdart32100 } from './react/Wrdart32100';
 import { wrdart321200Data, Wrdart321200 } from './react/Wrdart321200';
 import { wrdart321201Data, Wrdart321201 } from './react/Wrdart321201';
@@ -3330,9 +3355,94 @@ export const icons = [
     variants: helpPtrData,
   },
   {
+    componentName: "Hticons101",
+    component: Hticons101,
+    variants: hticons101Data,
+  },
+  {
+    componentName: "Hticons102",
+    component: Hticons102,
+    variants: hticons102Data,
+  },
+  {
+    componentName: "Hticons103",
+    component: Hticons103,
+    variants: hticons103Data,
+  },
+  {
+    componentName: "Hticons104",
+    component: Hticons104,
+    variants: hticons104Data,
+  },
+  {
+    componentName: "Hticons105",
+    component: Hticons105,
+    variants: hticons105Data,
+  },
+  {
+    componentName: "Hticons106",
+    component: Hticons106,
+    variants: hticons106Data,
+  },
+  {
+    componentName: "Hticons107",
+    component: Hticons107,
+    variants: hticons107Data,
+  },
+  {
+    componentName: "Hticons108",
+    component: Hticons108,
+    variants: hticons108Data,
+  },
+  {
+    componentName: "Hticons109",
+    component: Hticons109,
+    variants: hticons109Data,
+  },
+  {
+    componentName: "Hticons110",
+    component: Hticons110,
+    variants: hticons110Data,
+  },
+  {
+    componentName: "Hticons111",
+    component: Hticons111,
+    variants: hticons111Data,
+  },
+  {
+    componentName: "Hticons112",
+    component: Hticons112,
+    variants: hticons112Data,
+  },
+  {
+    componentName: "Hticons113",
+    component: Hticons113,
+    variants: hticons113Data,
+  },
+  {
+    componentName: "Hticons114",
+    component: Hticons114,
+    variants: hticons114Data,
+  },
+  {
+    componentName: "Hticons115",
+    component: Hticons115,
+    variants: hticons115Data,
+  },
+  {
+    componentName: "Hticons116",
+    component: Hticons116,
+    variants: hticons116Data,
+  },
+  {
     componentName: "HtmlPage",
     component: HtmlPage,
     variants: htmlPageData,
+  },
+  {
+    componentName: "Hypertrm100",
+    component: Hypertrm100,
+    variants: hypertrm100Data,
   },
   {
     componentName: "Icmui1200",
@@ -4538,6 +4648,31 @@ export const icons = [
     componentName: "Mspaint",
     component: Mspaint,
     variants: mspaintData,
+  },
+  {
+    componentName: "Mspaint114",
+    component: Mspaint114,
+    variants: mspaint114Data,
+  },
+  {
+    componentName: "Mspaint115",
+    component: Mspaint115,
+    variants: mspaint115Data,
+  },
+  {
+    componentName: "Mspaint116",
+    component: Mspaint116,
+    variants: mspaint116Data,
+  },
+  {
+    componentName: "Mspaint117",
+    component: Mspaint117,
+    variants: mspaint117Data,
+  },
+  {
+    componentName: "Mspaint3",
+    component: Mspaint3,
+    variants: mspaint3Data,
   },
   {
     componentName: "Msrating102",
@@ -6933,6 +7068,21 @@ export const icons = [
     componentName: "Wordpad",
     component: Wordpad,
     variants: wordpadData,
+  },
+  {
+    componentName: "Wordpad128",
+    component: Wordpad128,
+    variants: wordpad128Data,
+  },
+  {
+    componentName: "Wordpad154",
+    component: Wordpad154,
+    variants: wordpad154Data,
+  },
+  {
+    componentName: "Wordpad155",
+    component: Wordpad155,
+    variants: wordpad155Data,
   },
   {
     componentName: "Wrdart32100",

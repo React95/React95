@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Hticons108_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M20 0h6m-8 1h2m6 0h2M16 2h2m10 0h1M14 3h2m13 0h1M12 4h2m16 0h1M10 5h2m17 0h1M8 6h2m16 0h1m1 0h1M6 7h2m17 0h1m1 0h1m1 0h1M5 8h1m1 0h1m14 0h1m1 0h1m1 0h1m1 0h1M4 9h1m1 0h1m1 0h1m12 0h1m1 0h1m1 0h1m1 0h1m1 0h1M4 10h4m1 0h1m8 0h1m1 0h1m1 0h1m1 0h2m2 0h1M4 11h1m1 0h1m1 0h1m6 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1M4 12h6m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m6 0h1M4 13h1m1 0h2m2 0h2m3 0h1m1 0h1m1 0h1m9 0h1M4 14h2m2 0h2m4 0h1m1 0h2m10 0h1M2 15h2m2 0h2m7 0h1m5 0h1m1 0h1m5 0h1M0 16h2m3 0h1m8 0h1M0 17h1m4 0h1m9 0h3m9 0h1M0 18h1m4 0h1m8 0h1m1 0h1m7 0h1M0 19h1m4 0h1m9 0h1M0 20h1m4 0h1m8 0h1M0 21h1m4 0h1m9 0h1M0 22h1m4 0h1m8 0h1M0 23h1m4 0h1m-6 1h1m4 0h1m9 0h1m14 0h1M0 25h1m14 0h1m12 0h3m-16 1h1m10 0h5m-16 1h1m7 0h7m-6 1h4M4 29h1m18 0h3M3 30h1m19 0h1" /><path stroke="#fff" d="M20 1h6m-8 1h7m1 0h1M16 3h7m1 0h2M14 4h7m1 0h2M12 5h7m1 0h2M10 6h7m1 0h2M9 7h6m1 0h2m-7 1h2m1 0h2m-4 1h2m-8 5h2m2 0h1m-7 1h2m3 0h1m1 0h1M2 16h3m1 0h1m1 0h1m1 0h1M1 17h3m2 0h2m1 0h1m1 0h1M1 18h3m2 0h1m1 0h1m-8 1h3m2 0h2m1 0h1m1 0h1M1 20h3m2 0h1m1 0h1m-8 1h3m2 0h2m1 0h1m7 0h2M1 22h3m2 0h1m1 0h1m10 0h2M1 23h3m2 0h1m4 0h1m9 0h1M1 24h1m8 0h1m1 0h1m3 0h1M7 25h1m1 0h1m7 0h2M2 26h1m1 0h1m1 0h1m1 0h1m10 0h2M3 27h1m1 0h1m15 0h2" /><path stroke="silver" d="M25 2h1m1 0h1m-5 1h1m2 0h3m-8 1h1m2 0h6M19 5h1m2 0h7M17 6h1m2 0h6m1 0h1m1 0h1M8 7h1m6 0h1m2 0h7m1 0h1m1 0h1M6 8h1m6 0h1m2 0h6m1 0h1m1 0h1m1 0h1m1 0h1M5 9h1m8 0h7m1 0h1m1 0h1m1 0h1m1 0h1m-16 1h5m1 0h1m1 0h1m1 0h1m5 0h1M5 11h1m7 0h2m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-19 1h2m3 0h1m1 0h1m1 0h1m9 0h1M5 13h1m2 0h2m4 0h1m1 0h1m1 0h1m9 0h1m-17 1h1m2 0h1m13 0h1m-16 1h1m-3 1h1m2 0h1M4 17h1m9 0h1M4 18h1m10 0h1m1 0h1m2 0h1m1 0h1m-9 1h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1M4 20h1m7 0h1m2 0h1m2 0h1m1 0h1m1 0h1m2 0h1m-15 1h2m1 0h1m6 0h1m2 0h1M4 22h1m4 0h2m4 0h1m7 0h1M4 23h1m2 0h2m3 0h1m1 0h1m7 0h1m7 0h1M2 24h2m2 0h1m2 0h1m1 0h1m16 0h2M1 25h1m2 0h1m3 0h1m1 0h1m5 0h1m9 0h2M3 26h1m1 0h1m1 0h1m8 0h1m1 0h1m5 0h2M2 27h1m1 0h1m1 0h1m9 0h3m1 0h1m-3 1h3m1 0h2m-4 1h3m-1 1h1" /><path stroke="#000" d="M30 5h1m-1 1h1m-1 1h1M8 8h3m19 0h1M7 9h1m1 0h3m18 0h1M8 10h1m1 0h3m17 0h1M7 11h1m1 0h4m17 0h1m-18 1h1m8 0h2m6 0h1m-18 1h1m6 0h1m9 0h1m-18 1h1m4 0h1m11 0h1m-18 1h1m2 0h2m4 0h1m7 0h1m-18 1h1m2 0h2m3 0h1m1 0h1m6 0h1m-18 1h1m4 0h3m2 0h2m1 0h1m-14 1h1m11 0h1m1 0h1m-15 1h1m13 0h1m3 0h1m-19 1h1m13 0h1m3 0h1m-19 1h1m14 0h4m-21 1h3m16 0h1M9 23h2m2 0h1m1 0h2m11 0h2m1 0h1M4 24h1m2 0h2m4 0h2m2 0h2m7 0h2m3 0h1M2 25h2m1 0h2m4 0h2m6 0h2m3 0h2m5 0h1M0 26h2m7 0h2m10 0h3m7 0h1M1 27h1m5 0h2m21 0h2M2 28h5m9 0h2m10 0h2M3 29h1m14 0h2m6 0h2M4 30h2m14 0h2m2 0h2m-4 1h2" /><path stroke="maroon" d="M26 10h2m-4 1h2m1 0h1m-4 1h1m2 0h1m-1 1h1m-1 1h1" /><path stroke="red" d="M26 11h1m-2 1h2m-2 1h2m-8 14h1m1 1h1" /><path stroke="#ff0" d="M12 13h1m-2 1h1m9 0h4M8 15h1m1 0h1m1 0h1m6 0h2m3 0h3M7 16h1m1 0h1m1 0h1m7 0h2m1 0h1m2 0h4M8 17h1m1 0h1m10 0h2m5 0h2M7 18h1m1 0h1m2 0h1m6 0h1m3 0h1m2 0h1m1 0h3M8 19h1m1 0h1m7 0h1m5 0h2m3 0h2M7 20h1m1 0h1m7 0h1m5 0h2M8 21h1m1 0h1m8 0h1m2 0h2M7 22h1m9 0h2m2 0h2m-6 1h4m-2 1h3m-1 1h1" /><path stroke="olive" d="M21 13h4m-6 1h2m4 0h2m-9 1h1m8 0h2m-11 1h1m5 0h1m4 0h1m-5 1h1m4 0h1m-13 1h1m2 0h1m9 0h1m-15 1h1m2 0h1m1 0h1m5 0h1m-13 1h1m2 0h1m1 0h1m4 0h1m1 0h3m-15 1h1m3 0h1m4 0h3m-12 1h1m7 0h6m-7 1h5m-6 1h4m-4 1h2" /><path stroke="#00f" d="M12 17h1m-3 1h2m0 1h1m-3 1h2" /><path stroke="purple" d="M4 19h1m-1 2h1" /><path stroke="green" d="M17 26h1" /></svg>;
+
+export const hticons108Data = {
+  '32x32_4': Hticons108_32x32_4
+};
+
+export interface Hticons108Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Hticons108Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Hticons108Props) => {
+  const Svg = hticons108Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Hticons108 = React.memo(Hticons108Component);
+Hticons108.displayName = 'Hticons108';

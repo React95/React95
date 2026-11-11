@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Hticons116_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="red" d="M7 0h3M6 1h1m3 0h2M6 2h1m5 0h1M6 3h1m6 0h1M6 4h1m7 0h1M7 5h1m7 0h1M7 6h1m0 1h1M8 8h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m0 1h1m0 1h1m0 1h1m0 1h1m0 1h1m2 9h1m1 1h1" /><path stroke="#00f" d="M22 0h3m-5 1h2m3 0h1m-7 1h1m5 0h1m-8 1h1m6 0h1m-9 1h1m7 0h1M16 5h1m7 0h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-11 1h1m-3 2h1m-1 1h1m7 0h1M7 18h1m7 0h1m-9 1h1m6 0h1m-9 1h1m6 0h1m-8 1h1m5 0h1m-7 1h1m4 0h1m-6 1h1m2 0h2m-4 1h2" /><path stroke="maroon" d="M14 6h4m-5 1h2m2 0h2m-5 1h3m1 0h1m-4 1h4m-4 1h2m-2 1h1m-2 2h2m-5 1h1m3 0h1m-5 1h2m1 0h1m1 0h1m-6 2h4m-3 1h3" /><path stroke="#fff" d="M15 7h2m0 1h1m0 3h2m-3 10h2m0 1h2m0 1h1m-6 1h1m0 1h2m0 1h2m0 1h2" /><path stroke="#000" d="M11 8h3m-4 1h1m2 0h2m-5 1h3m1 0h1m2 0h4M9 11h1m1 0h4m1 0h2m2 0h1M9 12h1m1 0h4m1 0h5m-11 1h1m1 0h2m2 0h4m-4 1h3m-2 1h1m4 0h1m-2 1h1m1 0h1m-6 1h3m2 0h2m1 0h1m-2 1h1m1 0h1m-1 1h1m3 0h1m-5 1h1m3 0h1m-4 1h4m-2 1h1m-15 1h1m11 0h2m1 0h1m-15 1h2m7 0h2m3 0h1m-13 1h2m3 0h2m5 0h1m-11 1h3m7 0h1m-2 1h2m-16 1h2m10 0h2m-12 1h2m6 0h2m-8 1h2m2 0h2m-4 1h2" /><path stroke="green" d="M19 8h3M5 9h4m14 0h4M3 10h2m22 0h2M2 11h1m26 0h1M1 12h1m28 0h1M2 13h1m26 0h1M3 14h2m22 0h2M5 15h5m0 1h4m1 0h3m-1 10h1" /><path stroke="olive" d="M21 13h4m-6 1h2m4 0h2m-9 1h1m8 0h2m-11 1h1m5 0h1m4 0h1m-5 1h1m4 0h1m-13 1h1m2 0h1m9 0h1m-15 1h1m2 0h1m1 0h1m5 0h1m-13 1h1m2 0h1m1 0h1m4 0h1m1 0h3m-15 1h1m3 0h1m4 0h3m-12 1h1m7 0h6m-7 1h5m-6 1h4m-4 1h2" /><path stroke="#ff0" d="M21 14h4m-6 1h2m3 0h3m-8 1h2m1 0h1m2 0h4m-8 1h2m5 0h2m-11 1h1m3 0h1m2 0h1m1 0h3m-13 1h1m5 0h2m3 0h2m-14 1h1m5 0h2m-6 1h1m2 0h2m-7 1h2m2 0h2m-6 1h4m-2 1h3m-1 1h1" /><path stroke="gray" d="M21 15h1m1 0h1m3 2h1m-4 1h1m-10 6h1m14 0h1m-16 1h1m12 0h3m-16 1h1m10 0h5m-16 1h1m7 0h7m-6 1h4m-5 1h3m-3 1h1" /><path stroke="silver" d="M20 18h1m1 0h1m-4 1h1m1 0h1m1 0h1m2 0h1m-9 1h1m1 0h1m1 0h1m2 0h1m-5 1h1m2 0h1m-2 1h1m-2 1h1m7 0h1m-3 1h2m-14 1h1m9 0h2m-12 1h1m1 0h1m5 0h2m-10 1h3m1 0h1m-3 1h3m1 0h2m-4 1h3m-1 1h1" /></svg>;
+
+export const hticons116Data = {
+  '32x32_4': Hticons116_32x32_4
+};
+
+export interface Hticons116Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Hticons116Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Hticons116Props) => {
+  const Svg = hticons116Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Hticons116 = React.memo(Hticons116Component);
+Hticons116.displayName = 'Hticons116';
