@@ -61,6 +61,12 @@ import { batExecData, BatExec } from './react/BatExec';
 import { batExec2Data, BatExec2 } from './react/BatExec2';
 import { batWaitData, BatWait } from './react/BatWait';
 import { billAddData, BillAdd } from './react/BillAdd';
+import { billaddIconamexData, BilladdIconamex } from './react/BilladdIconamex';
+import { billaddIcondiscoverData, BilladdIcondiscover } from './react/BilladdIcondiscover';
+import { billaddIcongenericData, BilladdIcongeneric } from './react/BilladdIcongeneric';
+import { billaddIconjcbData, BilladdIconjcb } from './react/BilladdIconjcb';
+import { billaddIconmcData, BilladdIconmc } from './react/BilladdIconmc';
+import { billaddIconvisaData, BilladdIconvisa } from './react/BilladdIconvisa';
 import { binder1263Data, Binder1263 } from './react/Binder1263';
 import { binder1264Data, Binder1264 } from './react/Binder1264';
 import { binder1265Data, Binder1265 } from './react/Binder1265';
@@ -84,6 +90,7 @@ import { cb32108Data, Cb32108 } from './react/Cb32108';
 import { ccapi104Data, Ccapi104 } from './react/Ccapi104';
 import { ccapi105Data, Ccapi105 } from './react/Ccapi105';
 import { ccapi106Data, Ccapi106 } from './react/Ccapi106';
+import { ccdialer104Data, Ccdialer104 } from './react/Ccdialer104';
 import { cdExeData, CdExe } from './react/CdExe';
 import { cdMusicData, CdMusic } from './react/CdMusic';
 import { cdSearchData, CdSearch } from './react/CdSearch';
@@ -572,6 +579,7 @@ import { mmsys123Data, Mmsys123 } from './react/Mmsys123';
 import { mmsys90Data, Mmsys90 } from './react/Mmsys90';
 import { mmsys99Data, Mmsys99 } from './react/Mmsys99';
 import { mnmshco1202Data, Mnmshco1202 } from './react/Mnmshco1202';
+import { moscp500Data, Moscp500 } from './react/Moscp500';
 import { moscudll128Data, Moscudll128 } from './react/Moscudll128';
 import { mplayer10Data, Mplayer10 } from './react/Mplayer10';
 import { mplayer11Data, Mplayer11 } from './react/Mplayer11';
@@ -960,6 +968,10 @@ import { shortcutData, Shortcut } from './react/Shortcut';
 import { shortcut2Data, Shortcut2 } from './react/Shortcut2';
 import { shscrap100Data, Shscrap100 } from './react/Shscrap100';
 import { signupData, Signup } from './react/Signup';
+import { signup1100Data, Signup1100 } from './react/Signup1100';
+import { signup1101Data, Signup1101 } from './react/Signup1101';
+import { signup1402Data, Signup1402 } from './react/Signup1402';
+import { signup1403Data, Signup1403 } from './react/Signup1403';
 import { smmscrpt100Data, Smmscrpt100 } from './react/Smmscrpt100';
 import { sndrec3210Data, Sndrec3210 } from './react/Sndrec3210';
 import { sndrec3215Data, Sndrec3215 } from './react/Sndrec3215';
@@ -1488,6 +1500,36 @@ export const icons = [
     variants: billAddData,
   },
   {
+    componentName: "BilladdIconamex",
+    component: BilladdIconamex,
+    variants: billaddIconamexData,
+  },
+  {
+    componentName: "BilladdIcondiscover",
+    component: BilladdIcondiscover,
+    variants: billaddIcondiscoverData,
+  },
+  {
+    componentName: "BilladdIcongeneric",
+    component: BilladdIcongeneric,
+    variants: billaddIcongenericData,
+  },
+  {
+    componentName: "BilladdIconjcb",
+    component: BilladdIconjcb,
+    variants: billaddIconjcbData,
+  },
+  {
+    componentName: "BilladdIconmc",
+    component: BilladdIconmc,
+    variants: billaddIconmcData,
+  },
+  {
+    componentName: "BilladdIconvisa",
+    component: BilladdIconvisa,
+    variants: billaddIconvisaData,
+  },
+  {
     componentName: "Binder1263",
     component: Binder1263,
     variants: binder1263Data,
@@ -1601,6 +1643,11 @@ export const icons = [
     componentName: "Ccapi106",
     component: Ccapi106,
     variants: ccapi106Data,
+  },
+  {
+    componentName: "Ccdialer104",
+    component: Ccdialer104,
+    variants: ccdialer104Data,
   },
   {
     componentName: "CdExe",
@@ -4043,6 +4090,11 @@ export const icons = [
     variants: mnmshco1202Data,
   },
   {
+    componentName: "Moscp500",
+    component: Moscp500,
+    variants: moscp500Data,
+  },
+  {
     componentName: "Moscudll128",
     component: Moscudll128,
     variants: moscudll128Data,
@@ -5981,6 +6033,26 @@ export const icons = [
     componentName: "Signup",
     component: Signup,
     variants: signupData,
+  },
+  {
+    componentName: "Signup1100",
+    component: Signup1100,
+    variants: signup1100Data,
+  },
+  {
+    componentName: "Signup1101",
+    component: Signup1101,
+    variants: signup1101Data,
+  },
+  {
+    componentName: "Signup1402",
+    component: Signup1402,
+    variants: signup1402Data,
+  },
+  {
+    componentName: "Signup1403",
+    component: Signup1403,
+    variants: signup1403Data,
   },
   {
     componentName: "Smmscrpt100",
