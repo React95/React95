@@ -61,6 +61,12 @@ import { batExecData, BatExec } from './react/BatExec';
 import { batExec2Data, BatExec2 } from './react/BatExec2';
 import { batWaitData, BatWait } from './react/BatWait';
 import { billAddData, BillAdd } from './react/BillAdd';
+import { billaddIconamexData, BilladdIconamex } from './react/BilladdIconamex';
+import { billaddIcondiscoverData, BilladdIcondiscover } from './react/BilladdIcondiscover';
+import { billaddIcongenericData, BilladdIcongeneric } from './react/BilladdIcongeneric';
+import { billaddIconjcbData, BilladdIconjcb } from './react/BilladdIconjcb';
+import { billaddIconmcData, BilladdIconmc } from './react/BilladdIconmc';
+import { billaddIconvisaData, BilladdIconvisa } from './react/BilladdIconvisa';
 import { binder1263Data, Binder1263 } from './react/Binder1263';
 import { binder1264Data, Binder1264 } from './react/Binder1264';
 import { binder1265Data, Binder1265 } from './react/Binder1265';
@@ -84,6 +90,7 @@ import { cb32108Data, Cb32108 } from './react/Cb32108';
 import { ccapi104Data, Ccapi104 } from './react/Ccapi104';
 import { ccapi105Data, Ccapi105 } from './react/Ccapi105';
 import { ccapi106Data, Ccapi106 } from './react/Ccapi106';
+import { ccdialer104Data, Ccdialer104 } from './react/Ccdialer104';
 import { cdExeData, CdExe } from './react/CdExe';
 import { cdMusicData, CdMusic } from './react/CdMusic';
 import { cdSearchData, CdSearch } from './react/CdSearch';
@@ -95,6 +102,7 @@ import { charmap1Data, Charmap1 } from './react/Charmap1';
 import { chatshow3000Data, Chatshow3000 } from './react/Chatshow3000';
 import { circleData, Circle } from './react/Circle';
 import { closeData, Close } from './react/Close';
+import { cmpagent223Data, Cmpagent223 } from './react/Cmpagent223';
 import { columnsData, Columns } from './react/Columns';
 import { comctl32150Data, Comctl32150 } from './react/Comctl32150';
 import { comdlg32528Data, Comdlg32528 } from './react/Comdlg32528';
@@ -109,6 +117,15 @@ import { comdlg32536Data, Comdlg32536 } from './react/Comdlg32536';
 import { comdlg32537Data, Comdlg32537 } from './react/Comdlg32537';
 import { comdlg32538Data, Comdlg32538 } from './react/Comdlg32538';
 import { comdlg32539Data, Comdlg32539 } from './react/Comdlg32539';
+import { compext203Data, Compext203 } from './react/Compext203';
+import { compext204Data, Compext204 } from './react/Compext204';
+import { compext205Data, Compext205 } from './react/Compext205';
+import { compext206Data, Compext206 } from './react/Compext206';
+import { compext207Data, Compext207 } from './react/Compext207';
+import { compext208Data, Compext208 } from './react/Compext208';
+import { compext209Data, Compext209 } from './react/Compext209';
+import { compext210Data, Compext210 } from './react/Compext210';
+import { compext211Data, Compext211 } from './react/Compext211';
 import { computerData, Computer } from './react/Computer';
 import { computer2Data, Computer2 } from './react/Computer2';
 import { computer3Data, Computer3 } from './react/Computer3';
@@ -562,6 +579,7 @@ import { mmsys123Data, Mmsys123 } from './react/Mmsys123';
 import { mmsys90Data, Mmsys90 } from './react/Mmsys90';
 import { mmsys99Data, Mmsys99 } from './react/Mmsys99';
 import { mnmshco1202Data, Mnmshco1202 } from './react/Mnmshco1202';
+import { moscp500Data, Moscp500 } from './react/Moscp500';
 import { moscudll128Data, Moscudll128 } from './react/Moscudll128';
 import { mplayer10Data, Mplayer10 } from './react/Mplayer10';
 import { mplayer11Data, Mplayer11 } from './react/Mplayer11';
@@ -657,6 +675,7 @@ import { network2Data, Network2 } from './react/Network2';
 import { network3Data, Network3 } from './react/Network3';
 import { newData, New } from './react/New';
 import { new16Data, New16 } from './react/New16';
+import { nocompSmallData, NocompSmall } from './react/NocompSmall';
 import { notepadData, Notepad } from './react/Notepad';
 import { notepad1Data, Notepad1 } from './react/Notepad1';
 import { notepad2Data, Notepad2 } from './react/Notepad2';
@@ -688,6 +707,7 @@ import { penData, Pen } from './react/Pen';
 import { person116Data, Person116 } from './react/Person116';
 import { phoneData, Phone } from './react/Phone';
 import { phone2Data, Phone2 } from './react/Phone2';
+import { pinballIcon1Data, PinballIcon1 } from './react/PinballIcon1';
 import { playd16Data, Playd16 } from './react/Playd16';
 import { playp16Data, Playp16 } from './react/Playp16';
 import { pluginData, Plugin } from './react/Plugin';
@@ -948,6 +968,10 @@ import { shortcutData, Shortcut } from './react/Shortcut';
 import { shortcut2Data, Shortcut2 } from './react/Shortcut2';
 import { shscrap100Data, Shscrap100 } from './react/Shscrap100';
 import { signupData, Signup } from './react/Signup';
+import { signup1100Data, Signup1100 } from './react/Signup1100';
+import { signup1101Data, Signup1101 } from './react/Signup1101';
+import { signup1402Data, Signup1402 } from './react/Signup1402';
+import { signup1403Data, Signup1403 } from './react/Signup1403';
 import { smmscrpt100Data, Smmscrpt100 } from './react/Smmscrpt100';
 import { sndrec3210Data, Sndrec3210 } from './react/Sndrec3210';
 import { sndrec3215Data, Sndrec3215 } from './react/Sndrec3215';
@@ -1082,6 +1106,8 @@ import { winword4Data, Winword4 } from './react/Winword4';
 import { winword5Data, Winword5 } from './react/Winword5';
 import { winword6Data, Winword6 } from './react/Winword6';
 import { winword7Data, Winword7 } from './react/Winword7';
+import { wmconfig128Data, Wmconfig128 } from './react/Wmconfig128';
+import { wmconfig130Data, Wmconfig130 } from './react/Wmconfig130';
 import { wmsui321000Data, Wmsui321000 } from './react/Wmsui321000';
 import { wmsui321001Data, Wmsui321001 } from './react/Wmsui321001';
 import { wmsui321306Data, Wmsui321306 } from './react/Wmsui321306';
@@ -1474,6 +1500,36 @@ export const icons = [
     variants: billAddData,
   },
   {
+    componentName: "BilladdIconamex",
+    component: BilladdIconamex,
+    variants: billaddIconamexData,
+  },
+  {
+    componentName: "BilladdIcondiscover",
+    component: BilladdIcondiscover,
+    variants: billaddIcondiscoverData,
+  },
+  {
+    componentName: "BilladdIcongeneric",
+    component: BilladdIcongeneric,
+    variants: billaddIcongenericData,
+  },
+  {
+    componentName: "BilladdIconjcb",
+    component: BilladdIconjcb,
+    variants: billaddIconjcbData,
+  },
+  {
+    componentName: "BilladdIconmc",
+    component: BilladdIconmc,
+    variants: billaddIconmcData,
+  },
+  {
+    componentName: "BilladdIconvisa",
+    component: BilladdIconvisa,
+    variants: billaddIconvisaData,
+  },
+  {
     componentName: "Binder1263",
     component: Binder1263,
     variants: binder1263Data,
@@ -1589,6 +1645,11 @@ export const icons = [
     variants: ccapi106Data,
   },
   {
+    componentName: "Ccdialer104",
+    component: Ccdialer104,
+    variants: ccdialer104Data,
+  },
+  {
     componentName: "CdExe",
     component: CdExe,
     variants: cdExeData,
@@ -1642,6 +1703,11 @@ export const icons = [
     componentName: "Close",
     component: Close,
     variants: closeData,
+  },
+  {
+    componentName: "Cmpagent223",
+    component: Cmpagent223,
+    variants: cmpagent223Data,
   },
   {
     componentName: "Columns",
@@ -1712,6 +1778,51 @@ export const icons = [
     componentName: "Comdlg32539",
     component: Comdlg32539,
     variants: comdlg32539Data,
+  },
+  {
+    componentName: "Compext203",
+    component: Compext203,
+    variants: compext203Data,
+  },
+  {
+    componentName: "Compext204",
+    component: Compext204,
+    variants: compext204Data,
+  },
+  {
+    componentName: "Compext205",
+    component: Compext205,
+    variants: compext205Data,
+  },
+  {
+    componentName: "Compext206",
+    component: Compext206,
+    variants: compext206Data,
+  },
+  {
+    componentName: "Compext207",
+    component: Compext207,
+    variants: compext207Data,
+  },
+  {
+    componentName: "Compext208",
+    component: Compext208,
+    variants: compext208Data,
+  },
+  {
+    componentName: "Compext209",
+    component: Compext209,
+    variants: compext209Data,
+  },
+  {
+    componentName: "Compext210",
+    component: Compext210,
+    variants: compext210Data,
+  },
+  {
+    componentName: "Compext211",
+    component: Compext211,
+    variants: compext211Data,
   },
   {
     componentName: "Computer",
@@ -3979,6 +4090,11 @@ export const icons = [
     variants: mnmshco1202Data,
   },
   {
+    componentName: "Moscp500",
+    component: Moscp500,
+    variants: moscp500Data,
+  },
+  {
     componentName: "Moscudll128",
     component: Moscudll128,
     variants: moscudll128Data,
@@ -4454,6 +4570,11 @@ export const icons = [
     variants: new16Data,
   },
   {
+    componentName: "NocompSmall",
+    component: NocompSmall,
+    variants: nocompSmallData,
+  },
+  {
     componentName: "Notepad",
     component: Notepad,
     variants: notepadData,
@@ -4607,6 +4728,11 @@ export const icons = [
     componentName: "Phone2",
     component: Phone2,
     variants: phone2Data,
+  },
+  {
+    componentName: "PinballIcon1",
+    component: PinballIcon1,
+    variants: pinballIcon1Data,
   },
   {
     componentName: "Playd16",
@@ -5909,6 +6035,26 @@ export const icons = [
     variants: signupData,
   },
   {
+    componentName: "Signup1100",
+    component: Signup1100,
+    variants: signup1100Data,
+  },
+  {
+    componentName: "Signup1101",
+    component: Signup1101,
+    variants: signup1101Data,
+  },
+  {
+    componentName: "Signup1402",
+    component: Signup1402,
+    variants: signup1402Data,
+  },
+  {
+    componentName: "Signup1403",
+    component: Signup1403,
+    variants: signup1403Data,
+  },
+  {
     componentName: "Smmscrpt100",
     component: Smmscrpt100,
     variants: smmscrpt100Data,
@@ -6577,6 +6723,16 @@ export const icons = [
     componentName: "Winword7",
     component: Winword7,
     variants: winword7Data,
+  },
+  {
+    componentName: "Wmconfig128",
+    component: Wmconfig128,
+    variants: wmconfig128Data,
+  },
+  {
+    componentName: "Wmconfig130",
+    component: Wmconfig130,
+    variants: wmconfig130Data,
   },
   {
     componentName: "Wmsui321000",

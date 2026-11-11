@@ -1,7 +1,15 @@
-import { globalStyle, style } from '@vanilla-extract/css';
+import {
+  createVar,
+  fallbackVar,
+  globalStyle,
+  style,
+} from '@vanilla-extract/css';
 import { contract } from '../themes/contract.css';
 import { recipe } from '@vanilla-extract/recipes';
 import { inLayer, components } from '../shared/layers.css';
+
+// the modal's place in the stacking order, so the last one focused is on top
+export const stackIndex = createVar();
 
 export const modalWrapper = recipe({
   base: inLayer(components, {
@@ -12,13 +20,12 @@ export const modalWrapper = recipe({
     top: '50px',
     backgroundColor: contract.colors.material,
     boxShadow: contract.shadows.out,
+    zIndex: `calc(${contract.zIndices.modal} + ${fallbackVar(
+      stackIndex,
+      '0',
+    )})`,
   }),
   variants: {
-    active: {
-      true: inLayer(components, {
-        zIndex: contract.zIndices.modal,
-      }),
-    },
     minimized: {
       true: inLayer(components, {
         display: 'none',
