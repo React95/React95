@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-52-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-54-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -49,6 +49,7 @@ If you'd like to help us out with the project, we welcome contributions of all t
 - [Kitty's portfolio](https://hawwokitty.github.io/my-portfolio/)
 - [Michal Hajlasz's website with Synth and Visualizer](https://michalh.vercel.app/)
 - [Xqyet's personal website](https://xqyet.dev/)
+- [Playground 95](https://playground-95.vercel.app/)
 
 ## Contributors
 
@@ -125,6 +126,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nakul4n"><img src="https://avatars.githubusercontent.com/u/86528335?v=4&size=100" width="100px" height="100px" alt="Nakul K"/><br /><sub><b>Nakul K</b></sub></a><br /><a href="#a11y-nakul4n" title="Accessibility">️️️️♿️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://dacruz.vercel.app"><img src="https://avatars.githubusercontent.com/u/123055372?v=4&size=100" width="100px" height="100px" alt="Daniel Alexis Cruz"/><br /><sub><b>Daniel Alexis Cruz</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=Exalt24" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://ldavidsantiago.me"><img src="https://avatars.githubusercontent.com/u/100979957?v=4&size=100" width="100px" height="100px" alt="David Santiago Velasco Triana"/><br /><sub><b>David Santiago Velasco Triana</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=lDavidSantiago" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://paaarth.tech/"><img src="https://avatars.githubusercontent.com/u/80417759?v=4&size=100" width="100px" height="100px" alt="pawrx0"/><br /><sub><b>pawrx0</b></sub></a><br /><a href="#a11y-parthchilwerwar" title="Accessibility">️️️️♿️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Saisinare"><img src="https://avatars.githubusercontent.com/u/104475954?v=4&size=100" width="100px" height="100px" alt="Sai Sinare"/><br /><sub><b>Sai Sinare</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=Saisinare" title="Code">💻</a> <a href="#a11y-Saisinare" title="Accessibility">️️️️♿️</a></td>
     </tr>
   </tbody>

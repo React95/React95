@@ -21,6 +21,7 @@ export type DividerProps<TAs extends ElementType = 'li'> =
 const DividerComponent = fixedForwardRef<HTMLLIElement, DividerProps<'li'>>(
   (rest, ref) => (
     <Frame
+      role="separator"
       {...rest}
       ref={ref}
       className={cn(divider, rest.className)}

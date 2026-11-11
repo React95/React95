@@ -327,3 +327,42 @@ const frontPage: IconName[] = [
 ];
 
 export const FrontPage = groupStory('FrontPage', frontPage);
+
+const plus: IconName[] = [
+  'Cmpagent223',
+  'Compext203',
+  'Compext204',
+  'Compext205',
+  'Compext206',
+  'Compext207',
+  'Compext208',
+  'Compext209',
+  'Compext210',
+  'Compext211',
+  'NocompSmall',
+  'PinballIcon1',
+  'Wmconfig128',
+  'Wmconfig130',
+];
+
+export const Plus = groupStory('Plus!', plus);
+
+const microsoftNetwork: IconName[] = [
+  'BilladdIconamex',
+  'BilladdIcondiscover',
+  'BilladdIcongeneric',
+  'BilladdIconjcb',
+  'BilladdIconmc',
+  'BilladdIconvisa',
+  'Ccdialer104',
+  'Moscp500',
+  'Signup1100',
+  'Signup1101',
+  'Signup1402',
+  'Signup1403',
+];
+
+export const MicrosoftNetwork = groupStory(
+  'The Microsoft Network',
+  microsoftNetwork,
+);

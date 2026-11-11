@@ -374,6 +374,13 @@ const expectActive = async (modal: HTMLElement, active: boolean) => {
   });
 };
 
+// the last modal focused is drawn over the others
+const expectOnTop = async (top: HTMLElement, below: HTMLElement) => {
+  const zIndex = (modal: HTMLElement) => Number(getComputedStyle(modal).zIndex);
+
+  await expect(zIndex(top)).toBeGreaterThan(zIndex(below));
+};
+
 export const Multiple: Story = {
   render: () => <MultipleDemo />,
   play: async ({ canvas, userEvent }) => {
@@ -386,12 +393,14 @@ export const Multiple: Story = {
     await expect(taskBarButton('Second Modal')).toBeVisible();
     await expectActive(first, false);
     await expectActive(second, true);
+    await expectOnTop(second, first);
 
-    // clicking a modal makes it the active one
+    // clicking a modal makes it the active one, on top of the others
     await userEvent.click(within(first).getByText('Modal Control'));
 
     await expectActive(first, true);
     await expectActive(second, false);
+    await expectOnTop(first, second);
 
     // minimizing hides it, and its TaskBar button brings it back, active
     await userEvent.click(
@@ -399,6 +408,8 @@ export const Multiple: Story = {
     );
 
     await expect(first).not.toBeVisible();
+    // with no modal active, the one minimized last stays on top
+    await expectOnTop(first, second);
 
     await userEvent.click(taskBarButton('First Modal'));
 
@@ -430,6 +441,61 @@ export const Multiple: Story = {
   },
   parameters: {
     // a demo of several modals at once; the controls are on Simple
+    controls: { disable: true },
+  },
+};
+
+const stackingWindows = ['Window A', 'Window B', 'Window C'];
+
+const StackingDemo = () => (
+  <>
+    {stackingWindows.map((title, index) => (
+      <Modal
+        key={title}
+        icon={<Computer variant="16x16_4" />}
+        title={title}
+        dragOptions={{
+          defaultPosition: { x: 40 + index * 60, y: index * 60 },
+        }}
+      >
+        <Modal.Content width="250px" height="150px" bgColor="white">
+          {title}
+        </Modal.Content>
+      </Modal>
+    ))}
+  </>
+);
+
+// the modal drawn at a point of the screen, the one the user sees there
+const modalAt = (x: number, y: number) =>
+  document.elementFromPoint(x, y)?.closest('[role="dialog"]');
+
+export const Stacking: Story = {
+  render: () => <StackingDemo />,
+  play: async ({ canvas, userEvent }) => {
+    const [a, b, c] = canvas.getAllByRole('dialog');
+    const titleBar = (modal: HTMLElement) =>
+      modal.querySelector('.draggable') as HTMLElement;
+
+    // opened in order, so the last one is on top of the other two
+    const allOverlap = c.getBoundingClientRect();
+
+    await expect(modalAt(allOverlap.left + 5, allOverlap.top + 5)).toBe(c);
+
+    // focusing B and then A puts them back on top, in that order: from the
+    // back, C, B, A
+    await userEvent.click(titleBar(b));
+    await userEvent.click(titleBar(a));
+
+    await expect(modalAt(allOverlap.left + 5, allOverlap.top + 5)).toBe(a);
+
+    // where only B and C overlap, B was focused last, so it's drawn over C
+    // even though C comes after it in the page
+    const onlyBAndC = b.getBoundingClientRect();
+
+    await expect(modalAt(onlyBAndC.right - 5, onlyBAndC.bottom - 5)).toBe(b);
+  },
+  parameters: {
     controls: { disable: true },
   },
 };

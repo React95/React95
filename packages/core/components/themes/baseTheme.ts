@@ -50,10 +50,12 @@ const colors = {
 
 type IColors = typeof colors;
 
+// the modals stack from `modal` up, one level per open modal, so the
+// tooltips and the TaskBar stay well above them
 export const zIndices = {
   modal: '2',
-  tooltip: '3',
-  taskbar: '3',
+  tooltip: '1000',
+  taskbar: '1000',
 };
 
 export const generateShadows = (colors: IColors) => {
