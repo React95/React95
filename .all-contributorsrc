@@ -514,6 +514,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "parthchilwerwar",
+      "name": "pawrx0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80417759?v=4",
+      "profile": "https://paaarth.tech/",
+      "contributions": [
+        "a11y"
+      ]
     }
   ],
   "skipCi": true,
