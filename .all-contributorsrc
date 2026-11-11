@@ -523,6 +523,16 @@
       "contributions": [
         "a11y"
       ]
+    },
+    {
+      "login": "Saisinare",
+      "name": "Sai Sinare",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104475954?v=4",
+      "profile": "https://github.com/Saisinare",
+      "contributions": [
+        "code",
+        "a11y"
+      ]
     }
   ],
   "skipCi": true,
