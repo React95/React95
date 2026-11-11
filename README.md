@@ -5,7 +5,7 @@
 [![OSAwards](https://img.shields.io/badge/osawards-Fun%20side%20project%20of%20the%20year-brightgreen.svg)](https://twitter.com/ReactAmsterdam/status/1116707269956251648)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-55-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-56-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![React95 - Publish workflow](https://github.com/React95/React95/workflows/React95%20-%20Publish%20workflow/badge.svg)](https://github.com/React95/React95/actions)
@@ -130,6 +130,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://paaarth.tech/"><img src="https://avatars.githubusercontent.com/u/80417759?v=4&size=100" width="100px" height="100px" alt="pawrx0"/><br /><sub><b>pawrx0</b></sub></a><br /><a href="#a11y-parthchilwerwar" title="Accessibility">️️️️♿️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Saisinare"><img src="https://avatars.githubusercontent.com/u/104475954?v=4&size=100" width="100px" height="100px" alt="Sai Sinare"/><br /><sub><b>Sai Sinare</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=Saisinare" title="Code">💻</a> <a href="#a11y-Saisinare" title="Accessibility">️️️️♿️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/rootsiemen"><img src="https://avatars.githubusercontent.com/u/261476514?v=4&size=100" width="100px" height="100px" alt="Muhamad Raza Haider"/><br /><sub><b>Muhamad Raza Haider</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=rootsiemen" title="Code">💻</a> <a href="#a11y-rootsiemen" title="Accessibility">️️️️♿️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://lassedtu.github.io/"><img src="https://avatars.githubusercontent.com/u/110904744?v=4&size=100" width="100px" height="100px" alt="Lasse"/><br /><sub><b>Lasse</b></sub></a><br /><a href="https://github.com/React95/React95/commits?author=lassedtu" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
