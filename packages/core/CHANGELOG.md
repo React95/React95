@@ -1,3 +1,17 @@
+## 10.4.3 (2026-11-11)
+
+### 🩹 Fixes
+
+- **core:** require React 18, which useId needs ([d1c4e56c](https://github.com/React95/React95/commit/d1c4e56c))
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/icons to 2.11.0
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 10.4.2 (2026-11-10)
 
 ### 🩹 Fixes

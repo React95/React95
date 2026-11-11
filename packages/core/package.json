@@ -1,6 +1,6 @@
 {
   "name": "@react95/core",
-  "version": "10.4.2",
+  "version": "10.4.3",
   "description": "Windows 95 styleguide",
   "main": "./components",
   "type": "module",
@@ -165,7 +165,7 @@
   "license": "MIT",
   "dependencies": {
     "@neodrag/react": "^2.3.1",
-    "@react95/icons": "^2.10.0",
+    "@react95/icons": "^2.11.0",
     "@vanilla-extract/dynamic": "^2.1.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "classnames": "^2.5.1",
