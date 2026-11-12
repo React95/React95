@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Moricons62_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M0 0h32M0 1h32M0 2h32M0 3h32M0 4h32M0 5h32M0 6h8m2 0h5m5 0h1m1 0h10M0 7h6m5 0h3m11 0h7M0 8h5m6 0h3m13 0h5M0 9h4m8 0h1m16 0h3M0 10h3m9 0h1m17 0h2M0 11h3m27 0h2M0 12h2m29 0h1M0 13h2m29 0h1M0 14h1m30 0h1M0 15h1m30 0h1M0 16h1m30 0h1M0 17h1m29 0h2M0 18h1m29 0h2M0 19h2m11 0h1m16 0h2M0 20h2m11 0h2m7 0h1m7 0h2M0 21h2m5 0h1m5 0h2m7 0h2m5 0h3M0 22h3m4 0h2m4 0h3m5 0h3m5 0h3M0 23h3m3 0h3m3 0h5m4 0h4m3 0h4M0 24h4m2 0h4m2 0h6m3 0h4m2 0h5M0 25h32M0 26h32M0 27h32M0 28h32M0 29h32M0 30h32M0 31h32" /><path stroke="#fff" d="M8 6h2m7 0h1m1 0h1m1 0h1M4 24h2m4 0h2m6 0h3m4 0h2" /><path stroke="#00f" d="M15 6h2M9 7h1m4 0h1m4 0h5M5 8h2m1 0h2m8 0h8M7 9h4m6 0h9M7 10h3m7 0h8M7 11h3m9 0h7M7 12h3m5 0h11M7 13h1m6 0h9m1 0h2M8 14h1m5 0h6m2 0h1m2 0h1M9 15h3m5 0h3m7 0h1M9 16h3m5 0h2m7 0h1m-17 1h2m5 0h2m6 0h3m-18 1h2m6 0h1m6 0h4m-19 1h1m7 0h1m6 0h1m1 0h1m-18 1h1m18 0h1" /><path stroke="teal" d="M18 6h1M6 7h3m1 0h1m4 0h4m5 0h1M7 8h1m2 0h1m3 0h4m8 0h1M4 9h3m4 0h1m1 0h4m9 0h3M3 10h4m3 0h2m1 0h4m8 0h5M3 11h4m3 0h9m7 0h4M2 12h5m3 0h5m11 0h5M2 13h5m1 0h6m9 0h1m2 0h5M1 14h7m1 0h5m6 0h2m1 0h2m1 0h5M1 15h8m3 0h5m3 0h7m1 0h3M1 16h8m3 0h5m2 0h7m1 0h4M1 17h9m2 0h5m2 0h6m3 0h2M1 18h9m2 0h6m1 0h6m4 0h1M2 19h8m1 0h2m1 0h4m1 0h6m1 0h1m1 0h2M2 20h8m1 0h2m2 0h7m1 0h6M2 21h5m1 0h5m2 0h7m2 0h5M3 22h4m2 0h4m3 0h5m3 0h5M3 23h3m3 0h3m5 0h4m4 0h3" /></svg>;
+
+export const moricons62Data = {
+  '32x32_4': Moricons62_32x32_4
+};
+
+export interface Moricons62Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Moricons62Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Moricons62Props) => {
+  const Svg = moricons62Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Moricons62 = React.memo(Moricons62Component);
+Moricons62.displayName = 'Moricons62';

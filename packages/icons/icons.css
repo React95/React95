@@ -1034,6 +1034,34 @@
   display: inline-block;
 }
 
+.Channelscreensaver100_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Channelscreensaver100_32x32_4.svg);
+  display: inline-block;
+}
+
+.Channelscreensaver100_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Channelscreensaver100_16x16_4.svg);
+  display: inline-block;
+}
+
+.Channelscreensaver257_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Channelscreensaver257_32x32_4.svg);
+  display: inline-block;
+}
+
+.Channelscreensaver257_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Channelscreensaver257_16x16_4.svg);
+  display: inline-block;
+}
+
 .Charmap1_32x32_4 {
   width: 32px;
   height: 32px;
@@ -1724,6 +1752,13 @@
   width: 32px;
   height: 32px;
   background-image: url(./src/svg/Cs3kit103_32x32_4.svg);
+  display: inline-block;
+}
+
+.Cscript1_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Cscript1_32x32_4.svg);
   display: inline-block;
 }
 
@@ -4457,6 +4492,27 @@
   display: inline-block;
 }
 
+.Hh101_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Hh101_32x32_4.svg);
+  display: inline-block;
+}
+
+.Hh101_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Hh101_16x16_4.svg);
+  display: inline-block;
+}
+
+.Hh101_48x48_8 {
+  width: 48px;
+  height: 48px;
+  background-image: url(./src/svg/Hh101_48x48_8.svg);
+  display: inline-block;
+}
+
 .Hticons101_32x32_4 {
   width: 32px;
   height: 32px;
@@ -6505,6 +6561,727 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Mnmshco1202_16x16_4.svg);
+  display: inline-block;
+}
+
+.Moricons10_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons10_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons100_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons100_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons101_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons101_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons102_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons102_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons103_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons103_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons104_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons104_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons105_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons105_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons106_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons106_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons11_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons11_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons12_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons12_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons13_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons13_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons14_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons14_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons15_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons15_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons16_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons16_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons17_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons17_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons18_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons18_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons19_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons19_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons2_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons2_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons20_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons20_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons21_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons21_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons22_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons22_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons23_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons23_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons24_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons24_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons25_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons25_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons26_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons26_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons27_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons27_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons28_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons28_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons29_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons29_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons3_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons3_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons30_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons30_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons31_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons31_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons32_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons32_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons34_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons34_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons35_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons35_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons36_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons36_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons37_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons37_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons38_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons38_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons39_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons39_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons4_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons4_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons40_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons40_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons41_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons41_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons42_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons42_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons43_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons43_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons44_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons44_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons45_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons45_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons46_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons46_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons47_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons47_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons48_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons48_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons49_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons49_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons5_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons5_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons50_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons50_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons51_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons51_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons52_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons52_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons53_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons53_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons54_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons54_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons55_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons55_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons56_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons56_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons57_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons57_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons58_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons58_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons59_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons59_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons6_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons6_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons60_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons60_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons61_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons61_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons62_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons62_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons63_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons63_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons64_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons64_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons65_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons65_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons66_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons66_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons67_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons67_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons68_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons68_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons69_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons69_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons7_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons7_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons70_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons70_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons71_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons71_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons72_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons72_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons73_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons73_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons74_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons74_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons75_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons75_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons76_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons76_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons77_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons77_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons78_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons78_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons79_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons79_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons8_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons8_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons80_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons80_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons81_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons81_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons82_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons82_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons83_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons83_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons84_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons84_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons85_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons85_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons86_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons86_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons87_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons87_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons88_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons88_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons89_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons89_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons9_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons9_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons90_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons90_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons91_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons91_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons92_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons92_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons93_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons93_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons94_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons94_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons95_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons95_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons96_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons96_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons97_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons97_32x32_4.svg);
+  display: inline-block;
+}
+
+.Moricons98_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Moricons98_32x32_4.svg);
   display: inline-block;
 }
 
@@ -11982,6 +12759,20 @@
   display: inline-block;
 }
 
+.TelnetTelnet_32x32_1 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/TelnetTelnet_32x32_1.svg);
+  display: inline-block;
+}
+
+.TelnetTelnet_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/TelnetTelnet_32x32_4.svg);
+  display: inline-block;
+}
+
 .Textchat_32x32_4 {
   width: 32px;
   height: 32px;
@@ -12805,6 +13596,13 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Wininet32546_16x16_4.svg);
+  display: inline-block;
+}
+
+.Winipcfg503_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Winipcfg503_32x32_4.svg);
   display: inline-block;
 }
 
@@ -13848,5 +14646,61 @@
   width: 16px;
   height: 16px;
   background-image: url(./src/svg/Write1_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wscript1_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wscript1_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wscript1_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wscript1_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wscript100_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wscript100_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wscript100_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wscript100_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wscript101_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wscript101_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wscript101_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wscript101_16x16_4.svg);
+  display: inline-block;
+}
+
+.Wscript102_32x32_4 {
+  width: 32px;
+  height: 32px;
+  background-image: url(./src/svg/Wscript102_32x32_4.svg);
+  display: inline-block;
+}
+
+.Wscript102_16x16_4 {
+  width: 16px;
+  height: 16px;
+  background-image: url(./src/svg/Wscript102_16x16_4.svg);
   display: inline-block;
 }
