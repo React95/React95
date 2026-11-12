@@ -106,6 +106,40 @@ export const Simple: StoryObj<typeof TaskBar> = {
 
     await expect(menus()).toHaveLength(0);
 
+    // Start is a menu button: Enter opens the menu on its first item, and Esc
+    // closes it and gives the focus back to Start
+    await expect(start).toHaveAttribute('aria-haspopup', 'menu');
+    await expect(start).toHaveAttribute('aria-expanded', 'false');
+
+    start.focus();
+    await userEvent.keyboard('{Enter}');
+
+    await expect(start).toHaveAttribute('aria-expanded', 'true');
+    await expect(within(menus()[0]).getAllByRole('menuitem')[0]).toHaveFocus();
+
+    await userEvent.keyboard('{Escape}');
+
+    await expect(menus()).toHaveLength(0);
+    await expect(start).toHaveAttribute('aria-expanded', 'false');
+    await expect(start).toHaveFocus();
+
+    // ↓ opens it on its first item, ↑ on its last
+    await userEvent.keyboard('{ArrowDown}');
+
+    await expect(within(menus()[0]).getAllByRole('menuitem')[0]).toHaveFocus();
+
+    await userEvent.keyboard('{Escape}{ArrowUp}');
+
+    await expect(
+      within(menus()[0]).getAllByRole('menuitem').at(-1),
+    ).toHaveFocus();
+
+    // Tab leaves the menu and closes it
+    await userEvent.tab();
+
+    await expect(menus()).toHaveLength(0);
+    await expect(start).toHaveAttribute('aria-expanded', 'false');
+
     // choosing an item closes the menu, and the window it opens gets a button
     await userEvent.click(start);
     await userEvent.click(within(menus()[0]).getByText('Local Disk (C:)'));
