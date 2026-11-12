@@ -95,6 +95,12 @@ export const Simple: StoryObj<typeof TaskBar> = {
         .filter(button => button !== start)
         .map(button => button.textContent);
 
+    // A focused Start button has the same dotted outline as the active one.
+    start.focus();
+    await expect(start).toHaveFocus();
+    await expect(getComputedStyle(start).outlineStyle).toBe('dotted');
+    await expect(getComputedStyle(start).outlineWidth).toBe('1px');
+
     // Start opens and closes its menu
     await expect(menus()).toHaveLength(0);
 
@@ -121,6 +127,15 @@ export const Simple: StoryObj<typeof TaskBar> = {
       'Local Disk (C:)',
       'Windows Explorer',
     ]);
+
+    // Window buttons also keep a visible focus indicator.
+    const windowButton = within(taskBar).getByRole('button', {
+      name: 'Windows Explorer',
+    });
+    windowButton.focus();
+    await expect(windowButton).toHaveFocus();
+    await expect(getComputedStyle(windowButton).outlineStyle).toBe('dotted');
+    await expect(getComputedStyle(windowButton).outlineWidth).toBe('1px');
 
     // the clock shows the time (either side of a minute change)...
     const before = new Date();
