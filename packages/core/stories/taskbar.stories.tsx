@@ -95,6 +95,13 @@ export const Simple: StoryObj<typeof TaskBar> = {
         .filter(button => button !== start)
         .map(button => button.textContent);
 
+    start.focus();
+    await expect(start).toHaveFocus();
+    await expect(start).toHaveStyle({
+      outlineStyle: 'dotted',
+      outlineWidth: '1px',
+    });
+
     // Start opens and closes its menu
     await expect(menus()).toHaveLength(0);
 
