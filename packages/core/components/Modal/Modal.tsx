@@ -205,6 +205,52 @@ const ModalRenderer = (
     };
   }, [id, subscribe]);
 
+  // the element in the modal that had the focus last, given back to it when
+  // the modal is given the focus
+  const lastFocused = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const modal = draggableRef.current;
+
+    if (!modal) return;
+
+    const remember = (event: FocusEvent) => {
+      lastFocused.current = event.target as HTMLElement;
+    };
+
+    modal.addEventListener('focusin', remember);
+
+    return () => modal.removeEventListener('focusin', remember);
+  }, []);
+
+  // the TaskBar gives the focus to the window its button activates. A
+  // minimized modal is hidden, so it can only take the focus once it's shown
+  const focusPending = useRef(false);
+  const [focusRequest, setFocusRequest] = useState(0);
+
+  useEffect(
+    () =>
+      subscribe(ModalEvents.FocusModal, ({ id: focusedId }) => {
+        if (focusedId === id) {
+          focusPending.current = true;
+          setFocusRequest(request => request + 1);
+        }
+      }),
+    [id, subscribe],
+  );
+
+  useEffect(() => {
+    const modal = draggableRef.current;
+
+    if (!focusPending.current || isModalMinimized || !modal) return;
+
+    focusPending.current = false;
+
+    const last = lastFocused.current;
+
+    (last && last.isConnected && modal.contains(last) ? last : modal).focus();
+  }, [focusRequest, isModalMinimized]);
+
   useImperativeHandle(ref, () => {
     return draggableRef.current as HTMLDivElement;
   });
@@ -213,6 +259,8 @@ const ModalRenderer = (
     <Frame
       // the title names the dialog, unless the caller names it otherwise
       aria-label={title}
+      // it can take the focus itself, for when nothing in it can
+      tabIndex={-1}
       {...rest}
       className={cn(
         styles.modalWrapper({ minimized: isModalMinimized }),
