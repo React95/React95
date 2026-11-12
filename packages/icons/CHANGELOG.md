@@ -1,3 +1,16 @@
+## 2.12.0 (2026-11-12)
+
+### 🚀 Features
+
+- **icons:** add a Windows Media Player icon ([77f761f7](https://github.com/React95/React95/commit/77f761f7))
+- **icons:** add Windows Messaging icons ([9c0e6d13](https://github.com/React95/React95/commit/9c0e6d13))
+- **icons:** add Accessories icons ([d014f785](https://github.com/React95/React95/commit/d014f785))
+- **icons:** add Online Services icons ([c8c25891](https://github.com/React95/React95/commit/c8c25891))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.11.0 (2026-11-11)
 
 ### 🚀 Features
