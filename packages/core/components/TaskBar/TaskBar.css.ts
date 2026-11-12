@@ -36,6 +36,12 @@ export const windowsButton = recipe({
     border: 'none',
     outline: 'none',
     color: contract.colors.materialText,
+    selectors: {
+      '&:focus': {
+        outline: `${contract.space[1]} dotted ${contract.colors.borderDarkest}`,
+        outlineOffset: calc.negate(contract.space[4]),
+      },
+    },
   }),
   variants: {
     small: {
