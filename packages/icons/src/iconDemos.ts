@@ -104,6 +104,8 @@ import { cdplayer107Data, Cdplayer107 } from './react/Cdplayer107';
 import { cdplayer110Data, Cdplayer110 } from './react/Cdplayer110';
 import { cdplayer114Data, Cdplayer114 } from './react/Cdplayer114';
 import { centreData, Centre } from './react/Centre';
+import { channelscreensaver100Data, Channelscreensaver100 } from './react/Channelscreensaver100';
+import { channelscreensaver257Data, Channelscreensaver257 } from './react/Channelscreensaver257';
 import { charmap1Data, Charmap1 } from './react/Charmap1';
 import { chatshow3000Data, Chatshow3000 } from './react/Chatshow3000';
 import { circleData, Circle } from './react/Circle';
@@ -173,6 +175,7 @@ import { controls3000Data, Controls3000 } from './react/Controls3000';
 import { copyData, Copy } from './react/Copy';
 import { coreui3000Data, Coreui3000 } from './react/Coreui3000';
 import { cs3kit103Data, Cs3kit103 } from './react/Cs3kit103';
+import { cscript1Data, Cscript1 } from './react/Cscript1';
 import { cssetup0Data, Cssetup0 } from './react/Cssetup0';
 import { cssetup1Data, Cssetup1 } from './react/Cssetup1';
 import { curvesAndColors100Data, CurvesAndColors100 } from './react/CurvesAndColors100';
@@ -425,6 +428,7 @@ import { hardwareDiagData, HardwareDiag } from './react/HardwareDiag';
 import { helpData, Help } from './react/Help';
 import { helpBookData, HelpBook } from './react/HelpBook';
 import { helpPtrData, HelpPtr } from './react/HelpPtr';
+import { hh101Data, Hh101 } from './react/Hh101';
 import { hticons101Data, Hticons101 } from './react/Hticons101';
 import { hticons102Data, Hticons102 } from './react/Hticons102';
 import { hticons103Data, Hticons103 } from './react/Hticons103';
@@ -607,6 +611,109 @@ import { mmsys123Data, Mmsys123 } from './react/Mmsys123';
 import { mmsys90Data, Mmsys90 } from './react/Mmsys90';
 import { mmsys99Data, Mmsys99 } from './react/Mmsys99';
 import { mnmshco1202Data, Mnmshco1202 } from './react/Mnmshco1202';
+import { moricons10Data, Moricons10 } from './react/Moricons10';
+import { moricons100Data, Moricons100 } from './react/Moricons100';
+import { moricons101Data, Moricons101 } from './react/Moricons101';
+import { moricons102Data, Moricons102 } from './react/Moricons102';
+import { moricons103Data, Moricons103 } from './react/Moricons103';
+import { moricons104Data, Moricons104 } from './react/Moricons104';
+import { moricons105Data, Moricons105 } from './react/Moricons105';
+import { moricons106Data, Moricons106 } from './react/Moricons106';
+import { moricons11Data, Moricons11 } from './react/Moricons11';
+import { moricons12Data, Moricons12 } from './react/Moricons12';
+import { moricons13Data, Moricons13 } from './react/Moricons13';
+import { moricons14Data, Moricons14 } from './react/Moricons14';
+import { moricons15Data, Moricons15 } from './react/Moricons15';
+import { moricons16Data, Moricons16 } from './react/Moricons16';
+import { moricons17Data, Moricons17 } from './react/Moricons17';
+import { moricons18Data, Moricons18 } from './react/Moricons18';
+import { moricons19Data, Moricons19 } from './react/Moricons19';
+import { moricons2Data, Moricons2 } from './react/Moricons2';
+import { moricons20Data, Moricons20 } from './react/Moricons20';
+import { moricons21Data, Moricons21 } from './react/Moricons21';
+import { moricons22Data, Moricons22 } from './react/Moricons22';
+import { moricons23Data, Moricons23 } from './react/Moricons23';
+import { moricons24Data, Moricons24 } from './react/Moricons24';
+import { moricons25Data, Moricons25 } from './react/Moricons25';
+import { moricons26Data, Moricons26 } from './react/Moricons26';
+import { moricons27Data, Moricons27 } from './react/Moricons27';
+import { moricons28Data, Moricons28 } from './react/Moricons28';
+import { moricons29Data, Moricons29 } from './react/Moricons29';
+import { moricons3Data, Moricons3 } from './react/Moricons3';
+import { moricons30Data, Moricons30 } from './react/Moricons30';
+import { moricons31Data, Moricons31 } from './react/Moricons31';
+import { moricons32Data, Moricons32 } from './react/Moricons32';
+import { moricons34Data, Moricons34 } from './react/Moricons34';
+import { moricons35Data, Moricons35 } from './react/Moricons35';
+import { moricons36Data, Moricons36 } from './react/Moricons36';
+import { moricons37Data, Moricons37 } from './react/Moricons37';
+import { moricons38Data, Moricons38 } from './react/Moricons38';
+import { moricons39Data, Moricons39 } from './react/Moricons39';
+import { moricons4Data, Moricons4 } from './react/Moricons4';
+import { moricons40Data, Moricons40 } from './react/Moricons40';
+import { moricons41Data, Moricons41 } from './react/Moricons41';
+import { moricons42Data, Moricons42 } from './react/Moricons42';
+import { moricons43Data, Moricons43 } from './react/Moricons43';
+import { moricons44Data, Moricons44 } from './react/Moricons44';
+import { moricons45Data, Moricons45 } from './react/Moricons45';
+import { moricons46Data, Moricons46 } from './react/Moricons46';
+import { moricons47Data, Moricons47 } from './react/Moricons47';
+import { moricons48Data, Moricons48 } from './react/Moricons48';
+import { moricons49Data, Moricons49 } from './react/Moricons49';
+import { moricons5Data, Moricons5 } from './react/Moricons5';
+import { moricons50Data, Moricons50 } from './react/Moricons50';
+import { moricons51Data, Moricons51 } from './react/Moricons51';
+import { moricons52Data, Moricons52 } from './react/Moricons52';
+import { moricons53Data, Moricons53 } from './react/Moricons53';
+import { moricons54Data, Moricons54 } from './react/Moricons54';
+import { moricons55Data, Moricons55 } from './react/Moricons55';
+import { moricons56Data, Moricons56 } from './react/Moricons56';
+import { moricons57Data, Moricons57 } from './react/Moricons57';
+import { moricons58Data, Moricons58 } from './react/Moricons58';
+import { moricons59Data, Moricons59 } from './react/Moricons59';
+import { moricons6Data, Moricons6 } from './react/Moricons6';
+import { moricons60Data, Moricons60 } from './react/Moricons60';
+import { moricons61Data, Moricons61 } from './react/Moricons61';
+import { moricons62Data, Moricons62 } from './react/Moricons62';
+import { moricons63Data, Moricons63 } from './react/Moricons63';
+import { moricons64Data, Moricons64 } from './react/Moricons64';
+import { moricons65Data, Moricons65 } from './react/Moricons65';
+import { moricons66Data, Moricons66 } from './react/Moricons66';
+import { moricons67Data, Moricons67 } from './react/Moricons67';
+import { moricons68Data, Moricons68 } from './react/Moricons68';
+import { moricons69Data, Moricons69 } from './react/Moricons69';
+import { moricons7Data, Moricons7 } from './react/Moricons7';
+import { moricons70Data, Moricons70 } from './react/Moricons70';
+import { moricons71Data, Moricons71 } from './react/Moricons71';
+import { moricons72Data, Moricons72 } from './react/Moricons72';
+import { moricons73Data, Moricons73 } from './react/Moricons73';
+import { moricons74Data, Moricons74 } from './react/Moricons74';
+import { moricons75Data, Moricons75 } from './react/Moricons75';
+import { moricons76Data, Moricons76 } from './react/Moricons76';
+import { moricons77Data, Moricons77 } from './react/Moricons77';
+import { moricons78Data, Moricons78 } from './react/Moricons78';
+import { moricons79Data, Moricons79 } from './react/Moricons79';
+import { moricons8Data, Moricons8 } from './react/Moricons8';
+import { moricons80Data, Moricons80 } from './react/Moricons80';
+import { moricons81Data, Moricons81 } from './react/Moricons81';
+import { moricons82Data, Moricons82 } from './react/Moricons82';
+import { moricons83Data, Moricons83 } from './react/Moricons83';
+import { moricons84Data, Moricons84 } from './react/Moricons84';
+import { moricons85Data, Moricons85 } from './react/Moricons85';
+import { moricons86Data, Moricons86 } from './react/Moricons86';
+import { moricons87Data, Moricons87 } from './react/Moricons87';
+import { moricons88Data, Moricons88 } from './react/Moricons88';
+import { moricons89Data, Moricons89 } from './react/Moricons89';
+import { moricons9Data, Moricons9 } from './react/Moricons9';
+import { moricons90Data, Moricons90 } from './react/Moricons90';
+import { moricons91Data, Moricons91 } from './react/Moricons91';
+import { moricons92Data, Moricons92 } from './react/Moricons92';
+import { moricons93Data, Moricons93 } from './react/Moricons93';
+import { moricons94Data, Moricons94 } from './react/Moricons94';
+import { moricons95Data, Moricons95 } from './react/Moricons95';
+import { moricons96Data, Moricons96 } from './react/Moricons96';
+import { moricons97Data, Moricons97 } from './react/Moricons97';
+import { moricons98Data, Moricons98 } from './react/Moricons98';
 import { moscp500Data, Moscp500 } from './react/Moscp500';
 import { moscudll128Data, Moscudll128 } from './react/Moscudll128';
 import { mplayer2110Data, Mplayer2110 } from './react/Mplayer2110';
@@ -1053,6 +1160,7 @@ import { systray305Data, Systray305 } from './react/Systray305';
 import { systray306Data, Systray306 } from './react/Systray306';
 import { taskman100Data, Taskman100 } from './react/Taskman100';
 import { tcptest128Data, Tcptest128 } from './react/Tcptest128';
+import { telnetTelnetData, TelnetTelnet } from './react/TelnetTelnet';
 import { textchatData, Textchat } from './react/Textchat';
 import { textchat2Data, Textchat2 } from './react/Textchat2';
 import { tickData, Tick } from './react/Tick';
@@ -1130,6 +1238,7 @@ import { winhlp324000Data, Winhlp324000 } from './react/Winhlp324000';
 import { winhlp324001Data, Winhlp324001 } from './react/Winhlp324001';
 import { winhlp324002Data, Winhlp324002 } from './react/Winhlp324002';
 import { wininet32546Data, Wininet32546 } from './react/Wininet32546';
+import { winipcfg503Data, Winipcfg503 } from './react/Winipcfg503';
 import { winmine1Data, Winmine1 } from './react/Winmine1';
 import { winpopup1Data, Winpopup1 } from './react/Winpopup1';
 import { winpopup2Data, Winpopup2 } from './react/Winpopup2';
@@ -1221,6 +1330,10 @@ import { wrdart321245Data, Wrdart321245 } from './react/Wrdart321245';
 import { wrdart321246Data, Wrdart321246 } from './react/Wrdart321246';
 import { wrdart321247Data, Wrdart321247 } from './react/Wrdart321247';
 import { write1Data, Write1 } from './react/Write1';
+import { wscript1Data, Wscript1 } from './react/Wscript1';
+import { wscript100Data, Wscript100 } from './react/Wscript100';
+import { wscript101Data, Wscript101 } from './react/Wscript101';
+import { wscript102Data, Wscript102 } from './react/Wscript102';
 
 export const icons = [
     {
@@ -1754,6 +1867,16 @@ export const icons = [
     variants: centreData,
   },
   {
+    componentName: "Channelscreensaver100",
+    component: Channelscreensaver100,
+    variants: channelscreensaver100Data,
+  },
+  {
+    componentName: "Channelscreensaver257",
+    component: Channelscreensaver257,
+    variants: channelscreensaver257Data,
+  },
+  {
     componentName: "Charmap1",
     component: Charmap1,
     variants: charmap1Data,
@@ -2097,6 +2220,11 @@ export const icons = [
     componentName: "Cs3kit103",
     component: Cs3kit103,
     variants: cs3kit103Data,
+  },
+  {
+    componentName: "Cscript1",
+    component: Cscript1,
+    variants: cscript1Data,
   },
   {
     componentName: "Cssetup0",
@@ -3359,6 +3487,11 @@ export const icons = [
     variants: helpPtrData,
   },
   {
+    componentName: "Hh101",
+    component: Hh101,
+    variants: hh101Data,
+  },
+  {
     componentName: "Hticons101",
     component: Hticons101,
     variants: hticons101Data,
@@ -4267,6 +4400,521 @@ export const icons = [
     componentName: "Mnmshco1202",
     component: Mnmshco1202,
     variants: mnmshco1202Data,
+  },
+  {
+    componentName: "Moricons10",
+    component: Moricons10,
+    variants: moricons10Data,
+  },
+  {
+    componentName: "Moricons100",
+    component: Moricons100,
+    variants: moricons100Data,
+  },
+  {
+    componentName: "Moricons101",
+    component: Moricons101,
+    variants: moricons101Data,
+  },
+  {
+    componentName: "Moricons102",
+    component: Moricons102,
+    variants: moricons102Data,
+  },
+  {
+    componentName: "Moricons103",
+    component: Moricons103,
+    variants: moricons103Data,
+  },
+  {
+    componentName: "Moricons104",
+    component: Moricons104,
+    variants: moricons104Data,
+  },
+  {
+    componentName: "Moricons105",
+    component: Moricons105,
+    variants: moricons105Data,
+  },
+  {
+    componentName: "Moricons106",
+    component: Moricons106,
+    variants: moricons106Data,
+  },
+  {
+    componentName: "Moricons11",
+    component: Moricons11,
+    variants: moricons11Data,
+  },
+  {
+    componentName: "Moricons12",
+    component: Moricons12,
+    variants: moricons12Data,
+  },
+  {
+    componentName: "Moricons13",
+    component: Moricons13,
+    variants: moricons13Data,
+  },
+  {
+    componentName: "Moricons14",
+    component: Moricons14,
+    variants: moricons14Data,
+  },
+  {
+    componentName: "Moricons15",
+    component: Moricons15,
+    variants: moricons15Data,
+  },
+  {
+    componentName: "Moricons16",
+    component: Moricons16,
+    variants: moricons16Data,
+  },
+  {
+    componentName: "Moricons17",
+    component: Moricons17,
+    variants: moricons17Data,
+  },
+  {
+    componentName: "Moricons18",
+    component: Moricons18,
+    variants: moricons18Data,
+  },
+  {
+    componentName: "Moricons19",
+    component: Moricons19,
+    variants: moricons19Data,
+  },
+  {
+    componentName: "Moricons2",
+    component: Moricons2,
+    variants: moricons2Data,
+  },
+  {
+    componentName: "Moricons20",
+    component: Moricons20,
+    variants: moricons20Data,
+  },
+  {
+    componentName: "Moricons21",
+    component: Moricons21,
+    variants: moricons21Data,
+  },
+  {
+    componentName: "Moricons22",
+    component: Moricons22,
+    variants: moricons22Data,
+  },
+  {
+    componentName: "Moricons23",
+    component: Moricons23,
+    variants: moricons23Data,
+  },
+  {
+    componentName: "Moricons24",
+    component: Moricons24,
+    variants: moricons24Data,
+  },
+  {
+    componentName: "Moricons25",
+    component: Moricons25,
+    variants: moricons25Data,
+  },
+  {
+    componentName: "Moricons26",
+    component: Moricons26,
+    variants: moricons26Data,
+  },
+  {
+    componentName: "Moricons27",
+    component: Moricons27,
+    variants: moricons27Data,
+  },
+  {
+    componentName: "Moricons28",
+    component: Moricons28,
+    variants: moricons28Data,
+  },
+  {
+    componentName: "Moricons29",
+    component: Moricons29,
+    variants: moricons29Data,
+  },
+  {
+    componentName: "Moricons3",
+    component: Moricons3,
+    variants: moricons3Data,
+  },
+  {
+    componentName: "Moricons30",
+    component: Moricons30,
+    variants: moricons30Data,
+  },
+  {
+    componentName: "Moricons31",
+    component: Moricons31,
+    variants: moricons31Data,
+  },
+  {
+    componentName: "Moricons32",
+    component: Moricons32,
+    variants: moricons32Data,
+  },
+  {
+    componentName: "Moricons34",
+    component: Moricons34,
+    variants: moricons34Data,
+  },
+  {
+    componentName: "Moricons35",
+    component: Moricons35,
+    variants: moricons35Data,
+  },
+  {
+    componentName: "Moricons36",
+    component: Moricons36,
+    variants: moricons36Data,
+  },
+  {
+    componentName: "Moricons37",
+    component: Moricons37,
+    variants: moricons37Data,
+  },
+  {
+    componentName: "Moricons38",
+    component: Moricons38,
+    variants: moricons38Data,
+  },
+  {
+    componentName: "Moricons39",
+    component: Moricons39,
+    variants: moricons39Data,
+  },
+  {
+    componentName: "Moricons4",
+    component: Moricons4,
+    variants: moricons4Data,
+  },
+  {
+    componentName: "Moricons40",
+    component: Moricons40,
+    variants: moricons40Data,
+  },
+  {
+    componentName: "Moricons41",
+    component: Moricons41,
+    variants: moricons41Data,
+  },
+  {
+    componentName: "Moricons42",
+    component: Moricons42,
+    variants: moricons42Data,
+  },
+  {
+    componentName: "Moricons43",
+    component: Moricons43,
+    variants: moricons43Data,
+  },
+  {
+    componentName: "Moricons44",
+    component: Moricons44,
+    variants: moricons44Data,
+  },
+  {
+    componentName: "Moricons45",
+    component: Moricons45,
+    variants: moricons45Data,
+  },
+  {
+    componentName: "Moricons46",
+    component: Moricons46,
+    variants: moricons46Data,
+  },
+  {
+    componentName: "Moricons47",
+    component: Moricons47,
+    variants: moricons47Data,
+  },
+  {
+    componentName: "Moricons48",
+    component: Moricons48,
+    variants: moricons48Data,
+  },
+  {
+    componentName: "Moricons49",
+    component: Moricons49,
+    variants: moricons49Data,
+  },
+  {
+    componentName: "Moricons5",
+    component: Moricons5,
+    variants: moricons5Data,
+  },
+  {
+    componentName: "Moricons50",
+    component: Moricons50,
+    variants: moricons50Data,
+  },
+  {
+    componentName: "Moricons51",
+    component: Moricons51,
+    variants: moricons51Data,
+  },
+  {
+    componentName: "Moricons52",
+    component: Moricons52,
+    variants: moricons52Data,
+  },
+  {
+    componentName: "Moricons53",
+    component: Moricons53,
+    variants: moricons53Data,
+  },
+  {
+    componentName: "Moricons54",
+    component: Moricons54,
+    variants: moricons54Data,
+  },
+  {
+    componentName: "Moricons55",
+    component: Moricons55,
+    variants: moricons55Data,
+  },
+  {
+    componentName: "Moricons56",
+    component: Moricons56,
+    variants: moricons56Data,
+  },
+  {
+    componentName: "Moricons57",
+    component: Moricons57,
+    variants: moricons57Data,
+  },
+  {
+    componentName: "Moricons58",
+    component: Moricons58,
+    variants: moricons58Data,
+  },
+  {
+    componentName: "Moricons59",
+    component: Moricons59,
+    variants: moricons59Data,
+  },
+  {
+    componentName: "Moricons6",
+    component: Moricons6,
+    variants: moricons6Data,
+  },
+  {
+    componentName: "Moricons60",
+    component: Moricons60,
+    variants: moricons60Data,
+  },
+  {
+    componentName: "Moricons61",
+    component: Moricons61,
+    variants: moricons61Data,
+  },
+  {
+    componentName: "Moricons62",
+    component: Moricons62,
+    variants: moricons62Data,
+  },
+  {
+    componentName: "Moricons63",
+    component: Moricons63,
+    variants: moricons63Data,
+  },
+  {
+    componentName: "Moricons64",
+    component: Moricons64,
+    variants: moricons64Data,
+  },
+  {
+    componentName: "Moricons65",
+    component: Moricons65,
+    variants: moricons65Data,
+  },
+  {
+    componentName: "Moricons66",
+    component: Moricons66,
+    variants: moricons66Data,
+  },
+  {
+    componentName: "Moricons67",
+    component: Moricons67,
+    variants: moricons67Data,
+  },
+  {
+    componentName: "Moricons68",
+    component: Moricons68,
+    variants: moricons68Data,
+  },
+  {
+    componentName: "Moricons69",
+    component: Moricons69,
+    variants: moricons69Data,
+  },
+  {
+    componentName: "Moricons7",
+    component: Moricons7,
+    variants: moricons7Data,
+  },
+  {
+    componentName: "Moricons70",
+    component: Moricons70,
+    variants: moricons70Data,
+  },
+  {
+    componentName: "Moricons71",
+    component: Moricons71,
+    variants: moricons71Data,
+  },
+  {
+    componentName: "Moricons72",
+    component: Moricons72,
+    variants: moricons72Data,
+  },
+  {
+    componentName: "Moricons73",
+    component: Moricons73,
+    variants: moricons73Data,
+  },
+  {
+    componentName: "Moricons74",
+    component: Moricons74,
+    variants: moricons74Data,
+  },
+  {
+    componentName: "Moricons75",
+    component: Moricons75,
+    variants: moricons75Data,
+  },
+  {
+    componentName: "Moricons76",
+    component: Moricons76,
+    variants: moricons76Data,
+  },
+  {
+    componentName: "Moricons77",
+    component: Moricons77,
+    variants: moricons77Data,
+  },
+  {
+    componentName: "Moricons78",
+    component: Moricons78,
+    variants: moricons78Data,
+  },
+  {
+    componentName: "Moricons79",
+    component: Moricons79,
+    variants: moricons79Data,
+  },
+  {
+    componentName: "Moricons8",
+    component: Moricons8,
+    variants: moricons8Data,
+  },
+  {
+    componentName: "Moricons80",
+    component: Moricons80,
+    variants: moricons80Data,
+  },
+  {
+    componentName: "Moricons81",
+    component: Moricons81,
+    variants: moricons81Data,
+  },
+  {
+    componentName: "Moricons82",
+    component: Moricons82,
+    variants: moricons82Data,
+  },
+  {
+    componentName: "Moricons83",
+    component: Moricons83,
+    variants: moricons83Data,
+  },
+  {
+    componentName: "Moricons84",
+    component: Moricons84,
+    variants: moricons84Data,
+  },
+  {
+    componentName: "Moricons85",
+    component: Moricons85,
+    variants: moricons85Data,
+  },
+  {
+    componentName: "Moricons86",
+    component: Moricons86,
+    variants: moricons86Data,
+  },
+  {
+    componentName: "Moricons87",
+    component: Moricons87,
+    variants: moricons87Data,
+  },
+  {
+    componentName: "Moricons88",
+    component: Moricons88,
+    variants: moricons88Data,
+  },
+  {
+    componentName: "Moricons89",
+    component: Moricons89,
+    variants: moricons89Data,
+  },
+  {
+    componentName: "Moricons9",
+    component: Moricons9,
+    variants: moricons9Data,
+  },
+  {
+    componentName: "Moricons90",
+    component: Moricons90,
+    variants: moricons90Data,
+  },
+  {
+    componentName: "Moricons91",
+    component: Moricons91,
+    variants: moricons91Data,
+  },
+  {
+    componentName: "Moricons92",
+    component: Moricons92,
+    variants: moricons92Data,
+  },
+  {
+    componentName: "Moricons93",
+    component: Moricons93,
+    variants: moricons93Data,
+  },
+  {
+    componentName: "Moricons94",
+    component: Moricons94,
+    variants: moricons94Data,
+  },
+  {
+    componentName: "Moricons95",
+    component: Moricons95,
+    variants: moricons95Data,
+  },
+  {
+    componentName: "Moricons96",
+    component: Moricons96,
+    variants: moricons96Data,
+  },
+  {
+    componentName: "Moricons97",
+    component: Moricons97,
+    variants: moricons97Data,
+  },
+  {
+    componentName: "Moricons98",
+    component: Moricons98,
+    variants: moricons98Data,
   },
   {
     componentName: "Moscp500",
@@ -6499,6 +7147,11 @@ export const icons = [
     variants: tcptest128Data,
   },
   {
+    componentName: "TelnetTelnet",
+    component: TelnetTelnet,
+    variants: telnetTelnetData,
+  },
+  {
     componentName: "Textchat",
     component: Textchat,
     variants: textchatData,
@@ -6882,6 +7535,11 @@ export const icons = [
     componentName: "Wininet32546",
     component: Wininet32546,
     variants: wininet32546Data,
+  },
+  {
+    componentName: "Winipcfg503",
+    component: Winipcfg503,
+    variants: winipcfg503Data,
   },
   {
     componentName: "Winmine1",
@@ -7337,5 +7995,25 @@ export const icons = [
     componentName: "Write1",
     component: Write1,
     variants: write1Data,
+  },
+  {
+    componentName: "Wscript1",
+    component: Wscript1,
+    variants: wscript1Data,
+  },
+  {
+    componentName: "Wscript100",
+    component: Wscript100,
+    variants: wscript100Data,
+  },
+  {
+    componentName: "Wscript101",
+    component: Wscript101,
+    variants: wscript101Data,
+  },
+  {
+    componentName: "Wscript102",
+    component: Wscript102,
+    variants: wscript102Data,
   },
 ]
