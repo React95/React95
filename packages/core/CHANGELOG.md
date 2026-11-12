@@ -1,3 +1,13 @@
+## 10.4.4 (2026-11-12)
+
+### 🩹 Fixes
+
+- **core:** make the TaskBar's Start menu usable from the keyboard ([85a20cb8](https://github.com/React95/React95/commit/85a20cb8))
+
+### ❤️ Thank You
+
+- parthchilwerwar @parthchilwerwar
+
 ## 10.4.3 (2026-11-11)
 
 ### 🩹 Fixes
