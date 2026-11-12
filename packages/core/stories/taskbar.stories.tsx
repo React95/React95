@@ -122,6 +122,18 @@ export const Simple: StoryObj<typeof TaskBar> = {
       'Windows Explorer',
     ]);
 
+    // buttons show a dotted focus outline when focused
+    start.focus();
+    await expect(start).toHaveFocus();
+    await expect(start).toHaveStyle({ outlineStyle: 'dotted' });
+
+    const diskButton = within(taskBar).getByRole('button', {
+      name: 'Local Disk (C:)',
+    });
+    diskButton.focus();
+    await expect(diskButton).toHaveFocus();
+    await expect(diskButton).toHaveStyle({ outlineStyle: 'dotted' });
+
     // the clock shows the time (either side of a minute change)...
     const before = new Date();
     const clock = await waitFor(() =>
