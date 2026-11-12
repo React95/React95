@@ -1,0 +1,1 @@
+import{r as n}from"./iframe-B9_iyyAy.js";const a=n.createContext(null),o=n.createContext(null),r='[role^="menuitem"]',m=e=>Array.from(e.children).filter(t=>t instanceof HTMLElement&&t.matches(r)&&t.getAttribute("aria-disabled")!=="true"),u=e=>Array.from(e.children).find(t=>t instanceof HTMLElement&&t.getAttribute("role")==="menu");export{a as L,r as M,o as S,m,u as s};
