@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Inetcpl4447_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="gray" d="M9 0h3M8 1h1m3 0h2M7 2h1M5 3h2M3 4h2m1 0h1M1 5h2m4 0h2M0 6h1m8 0h2m2 0h2M0 7h1m10 0h4M0 8h1m8 0h6M0 9h1m6 0h8M0 10h2m5 0h6M1 11h3m3 0h4m2 0h1M4 12h2m1 0h2m2 0h2m-7 1h1m2 0h2m-4 1h2" /><path stroke="#fff" d="M9 1h3M8 2h6M7 3h6M5 4h1m1 0h5M3 5h1m5 0h2M1 6h2M1 7h1m1 0h2M1 8h1m3 0h2M1 9h1" /><path stroke="#000" d="M14 2h2m-3 1h1m-2 1h1m-2 1h1m1 0h2m-4 1h1m3 0h1m-1 1h1m-1 1h1m-1 1h1m-3 1h2m-4 1h2m1 0h1M1 12h1m7 0h2m2 0h2M2 13h2m3 0h2m2 0h2m-9 1h2m3 0h2m-5 1h3" /><path stroke="silver" d="M4 5h3m5 0h1M3 6h1m2 0h3m3 0h1M2 7h1m2 0h1m2 0h3M2 8h3m2 0h2M2 9h5m-5 1h5m-3 1h3m-5 1h2m2 0h1m-3 1h2m0 1h1" /><path stroke="#0f0" d="M4 6h2" /><path stroke="red" d="M6 7h2" /></svg>;
+
+export const inetcpl4447Data = {
+  '16x16_4': Inetcpl4447_16x16_4
+};
+
+export interface Inetcpl4447Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '16x16_4';
+}
+
+const Inetcpl4447Component = ({
+  variant = '16x16_4',
+  ...rest
+}: Inetcpl4447Props) => {
+  const Svg = inetcpl4447Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Inetcpl4447 = React.memo(Inetcpl4447Component);
+Inetcpl4447.displayName = 'Inetcpl4447';

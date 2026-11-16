@@ -1,0 +1,29 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const HhctrlIconcdrom_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M12 0h8M9 1h3m8 0h3M7 2h2m14 0h2M6 3h1m18 0h1M5 4h1m20 0h1M4 5h1m22 0h1M3 6h1m24 0h1M2 7h1m26 0h1M2 8h1m26 0h1M1 9h1m28 0h1M1 10h1m28 0h1M0 11h1m30 0h1M0 12h1m30 0h1M0 13h1m13 0h4m13 0h1M0 14h1m12 0h1m4 0h1m12 0h1M0 15h1m12 0h1m4 0h1m12 0h1M0 16h1m12 0h1m4 0h1m12 0h1M0 17h1m12 0h1m4 0h1m12 0h1M0 18h1m13 0h4m13 0h1M0 19h1m30 0h1M0 20h1m30 0h1M1 21h1m28 0h1M1 22h1m28 0h1M2 23h1m26 0h1M2 24h1m26 0h1M3 25h1m24 0h1M4 26h1m22 0h1M5 27h1m20 0h1M6 28h1m18 0h1M7 29h2m14 0h2M9 30h3m8 0h3m-11 1h8" /><path stroke="#0f0" d="M12 1h2m-2 1h2m-2 1h2m-2 1h2m-1 1h1m-1 1h1m-1 1h1m-1 1h2m-2 1h2m-1 1h1M1 11h2m11 0h1M1 12h5m-1 1h4m14 5h4m-1 1h5m-14 1h1m11 0h2m-14 1h1m-1 1h2m-2 1h2m-1 1h1m-1 1h1m-1 1h1m-1 1h2m-2 1h2m-2 1h2m-2 1h2" /><path stroke="#bfbf00" d="M14 1h2m-2 1h2m-2 1h2m-2 1h2m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M1 13h4m1 1h6m8 3h6m1 1h4m-15 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h2m-2 1h2m-2 1h2m-2 1h2" /><path stroke="gray" d="M16 1h1M9 2h1m6 0h1M8 3h1m7 0h1m-7 1h1m5 0h1M9 5h1m4 0h1m1 0h1m-6 1h1m4 0h1m-7 1h1m5 0h1m10 0h1M12 8h1m3 0h1m9 0h1m1 0h1M11 9h1m4 0h1m8 0h1m1 0h1m1 0h1m-17 1h1m2 0h1m7 0h1m1 0h1m1 0h1m-17 1h1m3 0h1m6 0h1m1 0h1m1 0h1m1 0h1m-16 1h5m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-19 1h2m4 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-18 1h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-19 1h1m6 0h12M1 16h12m6 0h1M1 17h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1M2 18h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m4 0h2M1 19h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h5M2 20h1m1 0h1m1 0h1m1 0h1m6 0h1m3 0h1M3 21h1m1 0h1m1 0h1m7 0h1m2 0h1M2 22h1m1 0h1m1 0h1m8 0h1m4 0h1M3 23h1m1 0h1m9 0h1m3 0h1M4 24h1m10 0h1m5 0h1m-7 1h1m4 0h1m-6 1h1m1 0h1m4 0h1m-8 1h1m5 0h1m-7 1h1m7 0h1m-9 1h1m6 0h1m-8 1h1" /><path stroke="silver" d="M17 1h3M10 2h2m5 0h3m1 0h2M10 3h2m5 0h4m1 0h1M11 4h1m5 0h3m1 0h1M11 5h2m4 0h4M4 6h2m6 0h1m1 0h1m2 0h3m1 0h1m4 0h2M3 7h4m5 0h1m1 0h1m2 0h2m1 0h1m4 0h2m1 0h1M4 8h4m9 0h3m4 0h2m1 0h1M6 9h3m8 0h2m4 0h2m1 0h1m1 0h1M8 10h2m7 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1M9 11h2m6 0h2m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-20 1h1m8 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-10 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-10 1h1m1 0h1m1 0h1m1 0h1m1 0h1M2 17h1m1 0h1m1 0h1m1 0h1m1 0h1M1 18h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M2 19h1m1 0h1m1 0h1m1 0h1m1 0h2m8 0h1M1 20h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h2m6 0h2M2 21h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m7 0h2M3 22h1m1 0h1m1 0h2m4 0h2m8 0h3M4 23h1m1 0h2m4 0h3m9 0h4M3 24h1m1 0h2m4 0h1m1 0h2m2 0h1m1 0h1m5 0h4M4 25h2m4 0h1m1 0h3m2 0h1m1 0h1m6 0h2m-17 1h4m4 0h2m-11 1h1m1 0h3m5 0h1M9 28h1m1 0h4m5 0h2M9 29h2m1 0h3m5 0h2m-10 1h3" /><path stroke="#fff" d="M20 2h1m0 1h1m1 0h2m-5 1h1m1 0h4m-5 1h6m-7 1h1m1 0h4m-7 1h1m1 0h4m-5 1h4m-5 1h4m-5 1h1m1 0h2m-3 1h2m-2 1h1m-8 7h1m-2 1h2m-3 1h2m1 0h1m-5 1h4m-5 1h4m-5 1h4m1 0h1m-7 1h4m1 0h1m-7 1h6m-5 1h4m1 0h1m-5 1h2m1 0h1m0 1h1" /><path stroke="#00bfbf" d="M7 3h1M6 4h3M5 5h4M6 6h4M7 7h3M8 8h3M9 9h2m-1 1h2m-1 1h1m0 1h1m6 7h1m0 1h1m-1 1h2m-1 1h2m-2 1h3m-2 1h3m-3 1h4m-3 1h4m-4 1h3m-2 1h1" /><path stroke="#00f" d="M9 3h1M9 4h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m4 7h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1m0 1h1m-1 1h1" /><path stroke="#0ff" d="M3 8h1M2 9h4m-2 1h4m-1 1h2m1 1h1m10 7h1m1 1h2m-1 1h4m-2 1h4m-2 1h1" /><path stroke="#ff0" d="M2 10h2m-1 1h4m-1 1h4m-1 1h3m8 5h3m-1 1h4m-1 1h4m-1 1h2" /><path stroke="#f0f" d="M1 14h5m-4 1h1m1 0h1m1 0h1m1 0h1m1 0h1m10 1h1m1 0h1m1 0h1m1 0h1m1 0h1m-4 1h5" /><path stroke="#bf00bf" d="M1 15h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m8 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1" /></svg>;
+const HhctrlIconcdrom_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#000" d="M5 0h6M3 1h2m6 0h2M2 2h1m10 0h1M1 3h1m12 0h1M1 4h1m12 0h1M0 5h1m14 0h1M0 6h1m6 0h2m6 0h1M0 7h1m5 0h1m2 0h1m5 0h1M0 8h1m5 0h1m2 0h1m5 0h1M0 9h1m6 0h2m6 0h1M0 10h1m14 0h1M1 11h1m12 0h1M1 12h2m11 0h1M2 13h1m10 0h1M3 14h2m6 0h2m-8 1h6" /><path stroke="silver" d="M5 1h1m3 0h2M9 2h2M2 3h1m6 0h2m1 0h2M3 4h1m5 0h1m1 0h1m1 0h1M4 5h1m4 0h2m1 0h1m1 0h1M6 6h1m2 0h1m1 0h1m1 0h1m-4 1h1m1 0h1m1 0h1M1 8h1m1 0h1m1 0h1M2 9h1m1 0h1m4 0h1m-9 1h1m1 0h1m1 0h2m4 0h1M2 11h1m1 0h1m1 0h1m5 0h1M3 12h1m1 0h2m6 0h1m-9 1h2m-2 1h2m3 0h1" /><path stroke="#0f0" d="M6 1h1M1 5h3M3 6h2m6 3h2m-1 1h3m-6 4h1" /><path stroke="olive" d="M7 1h1M7 2h1M7 3h1m0 9h1m-1 1h1m-1 1h1" /><path stroke="gray" d="M8 1h1M8 2h1M8 3h1M8 4h1m3 0h1M8 5h1m2 0h1m1 0h1m-4 1h1m1 0h1m1 0h1m-4 1h1m1 0h1M2 8h1m1 0h1M1 9h1m1 0h1m1 0h2m-5 1h1m1 0h1m2 0h1m-5 1h1m3 0h1m-1 1h1m-1 1h1m-1 1h1" /><path stroke="teal" d="M3 2h1M3 3h2M2 4h1m1 0h2M5 5h1m4 5h1m-1 1h2m1 0h1m-3 1h2m-1 1h1" /><path stroke="#00f" d="M4 2h2M5 3h1m0 1h1M6 5h1m2 5h1m-1 1h1m0 1h1m-1 1h2" /><path stroke="green" d="M6 2h1M6 3h1m0 1h1M7 5h1M1 6h2m2 0h1m4 3h1m2 0h2m-7 1h1m-1 1h1m0 1h1m-1 1h1" /><path stroke="#fff" d="M11 2h2m-2 1h1m-2 1h1m-6 7h1m-2 1h1m-2 1h2" /><path stroke="purple" d="M1 7h2m10 1h2" /><path stroke="maroon" d="M3 7h3m4 1h3" /></svg>;
+
+export const hhctrlIconcdromData = {
+  '32x32_4': HhctrlIconcdrom_32x32_4,
+  '16x16_4': HhctrlIconcdrom_16x16_4
+};
+
+export interface HhctrlIconcdromProps extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4' | '16x16_4';
+}
+
+const HhctrlIconcdromComponent = ({
+  variant = '32x32_4',
+  ...rest
+}: HhctrlIconcdromProps) => {
+  const Svg = hhctrlIconcdromData[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const HhctrlIconcdrom = React.memo(HhctrlIconcdromComponent);
+HhctrlIconcdrom.displayName = 'HhctrlIconcdrom';

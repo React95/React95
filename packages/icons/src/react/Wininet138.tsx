@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Wininet138_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#000" d="M5 0h5M3 1h2m5 0h2M2 2h1m9 0h1M1 3h1m11 0h1M1 4h1m11 0h1M0 5h1m13 0h1M0 6h1m13 0h1M0 7h1m13 0h1M0 8h1m13 0h1M0 9h1m13 0h1M1 10h1m11 0h1M1 11h1m11 0h1M2 12h1m9 0h1M3 13h2m5 0h2m-7 1h5" /><path stroke="green" d="M5 1h5M3 2h9M2 3h11M2 4h8m1 0h2M1 5h8m3 0h2M1 6h7m3 0h3M1 7h2m2 0h2m3 0h4M1 8h2m6 0h5M1 9h3m4 0h6M2 10h3m2 0h6M2 11h11M3 12h9m-7 1h5" /><path stroke="gray" d="M13 2h1m0 1h1m-1 1h1m-1 6h1m-1 1h1m-2 1h1M2 13h1m9 0h1M3 14h2m5 0h2" /><path stroke="#fff" d="M10 4h1M9 5h3M8 6h3M3 7h2m2 0h3M3 8h6M4 9h4m-3 1h2" /></svg>;
+
+export const wininet138Data = {
+  '16x16_4': Wininet138_16x16_4
+};
+
+export interface Wininet138Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '16x16_4';
+}
+
+const Wininet138Component = ({
+  variant = '16x16_4',
+  ...rest
+}: Wininet138Props) => {
+  const Svg = wininet138Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Wininet138 = React.memo(Wininet138Component);
+Wininet138.displayName = 'Wininet138';

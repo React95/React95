@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Mstask401_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="gray" d="M0 0h14M0 1h1M0 2h1M0 3h13M0 4h1m11 0h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1m-1 1h1m-1 1h5" /><path stroke="navy" d="M1 1h12M1 2h8" /><path stroke="#000" d="M13 1h1m-4 1h1m1 0h2m-1 1h1m-1 1h1m-1 1h1M0 12h5" /><path stroke="silver" d="M9 2h1m1 0h1M1 4h1M1 5h1M1 6h1M1 7h1M1 8h1M1 9h1m-1 1h1" /><path stroke="#fff" d="M2 4h10M2 5h6M2 6h4M2 7h4M2 8h3m2 0h2m3 0h2M2 9h3m3 0h2m1 0h2M2 10h3m4 0h3m-4 1h2m1 0h2m-6 1h2m3 0h2" /><path stroke="red" d="M8 5h5M6 6h9M6 7h9M5 8h2m2 0h3m2 0h2M5 9h3m2 0h1m2 0h3M5 10h4m3 0h4M5 11h3m2 0h1m2 0h3M5 12h2m2 0h3m2 0h2M6 13h9m-9 1h9m-7 1h5" /></svg>;
+
+export const mstask401Data = {
+  '16x16_4': Mstask401_16x16_4
+};
+
+export interface Mstask401Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '16x16_4';
+}
+
+const Mstask401Component = ({
+  variant = '16x16_4',
+  ...rest
+}: Mstask401Props) => {
+  const Svg = mstask401Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Mstask401 = React.memo(Mstask401Component);
+Mstask401.displayName = 'Mstask401';

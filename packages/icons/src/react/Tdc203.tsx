@@ -1,0 +1,29 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Tdc203_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#fff" d="M0 0h15m2 0h15M0 1h15m2 0h15M0 2h15m2 0h15M0 3h14m4 0h14M0 4h13m6 0h13M0 5h13m1 0h4m1 0h13M0 6h32M0 7h15m2 0h15M0 8h14m4 0h14M0 9h14m4 0h14M0 10h15m2 0h15M0 11h15m2 0h15M0 12h15m2 0h15M0 13h15m2 0h15M0 14h1m30 0h1M0 15h1m1 0h28m1 0h1M0 16h1m1 0h1m8 0h2m4 0h5m5 0h3m1 0h1M0 17h1m1 0h1m9 0h1m5 0h3m7 0h2m1 0h1M0 18h1m1 0h4m6 0h1m7 0h1m8 0h1m1 0h1M0 19h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h3m2 0h1m1 0h1M0 20h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h6m1 0h1M0 21h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h6m1 0h1M0 22h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h6m1 0h1M0 23h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h6m1 0h1M0 24h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h6m1 0h1M0 25h1m1 0h4m3 0h4m3 0h1m3 0h1m3 0h2m2 0h2m1 0h1M0 26h1m1 0h4m3 0h4m7 0h1m8 0h1m1 0h1M0 27h1m1 0h4m3 0h4m7 0h2m7 0h1m1 0h1M0 28h1m1 0h5m2 0h5m5 0h4m5 0h2m1 0h1M0 29h1m1 0h28m1 0h1M0 30h1m30 0h1M0 31h32" /><path stroke="#000" d="M15 0h2m-2 1h2m-2 1h2m-3 1h4m-5 1h6m-6 1h1m4 0h1m-4 2h2m-3 1h4m-4 1h4m-3 1h2m-2 1h2m-2 1h2m-2 1h2M1 14h30M1 15h1m28 0h1M1 16h1m28 0h1M1 17h1m28 0h1M1 18h1m28 0h1M1 19h1m28 0h1M1 20h1m28 0h1M1 21h1m28 0h1M1 22h1m28 0h1M1 23h1m28 0h1M1 24h1m28 0h1M1 25h1m28 0h1M1 26h1m28 0h1M1 27h1m28 0h1M1 28h1m28 0h1M1 29h1m28 0h1M1 30h30" /><path stroke="red" d="M3 16h8m2 0h4m5 0h5M3 17h8m2 0h5m3 0h7M6 18h2m5 0h2m2 0h2m2 0h2m3 0h2M6 19h2m5 0h2m2 0h2m2 0h2M6 20h2m5 0h2m2 0h2m2 0h2M6 21h2m5 0h2m2 0h2m2 0h2M6 22h2m5 0h2m2 0h2m2 0h2M6 23h2m5 0h2m2 0h2m2 0h2M6 24h2m5 0h2m2 0h2m2 0h2M6 25h2m5 0h2m2 0h2m2 0h2m3 0h2M6 26h2m5 0h6m2 0h7M6 27h2m5 0h5m4 0h5" /><path stroke="gray" d="M11 17h1m-4 1h4m3 0h2m2 0h1m3 0h3m2 0h1M8 19h1m6 0h1m3 0h1m3 0h1m3 0h2M8 20h1m6 0h1m3 0h1m3 0h1M8 21h1m6 0h1m3 0h1m3 0h1M8 22h1m6 0h1m3 0h1m3 0h1M8 23h1m6 0h1m3 0h1m3 0h1M8 24h1m6 0h1m3 0h1m3 0h1M8 25h1m6 0h1m3 0h1m3 0h1M8 26h1m10 0h1m8 0h1M8 27h1m9 0h2m7 0h2M7 28h2m5 0h5m4 0h5" /></svg>;
+const Tdc203_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="#fff" d="M0 0h16M0 1h7m2 0h7M0 2h7m2 0h7M0 3h7m2 0h7M0 4h7m2 0h7M0 5h16m-1 1h1M1 7h13m1 0h1M1 8h1m3 0h1m2 0h3m1 0h2m1 0h1M1 9h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M1 10h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1M1 11h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1M1 12h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M1 13h2m1 0h2m2 0h3m1 0h2m1 0h1M1 14h13m1 0h1m-1 1h1" /><path stroke="#000" d="M7 1h2M7 2h2M7 3h2M7 4h2M0 6h15M0 7h1m13 0h1M0 8h1m13 0h1M0 9h1m13 0h1M0 10h1m13 0h1M0 11h1m13 0h1M0 12h1m13 0h1M0 13h1m13 0h1M0 14h1m13 0h1M0 15h15" /></svg>;
+
+export const tdc203Data = {
+  '32x32_4': Tdc203_32x32_4,
+  '16x16_4': Tdc203_16x16_4
+};
+
+export interface Tdc203Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4' | '16x16_4';
+}
+
+const Tdc203Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Tdc203Props) => {
+  const Svg = tdc203Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Tdc203 = React.memo(Tdc203Component);
+Tdc203.displayName = 'Tdc203';
