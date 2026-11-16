@@ -1,3 +1,13 @@
+## 2.13.0 (2026-11-16)
+
+### 🚀 Features
+
+- **icons:** add Windows folder icons ([e9d78ba1](https://github.com/React95/React95/commit/e9d78ba1))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.12.0 (2026-11-12)
 
 ### 🚀 Features

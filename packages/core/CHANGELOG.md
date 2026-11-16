@@ -1,3 +1,9 @@
+## 10.4.6 (2026-11-16)
+
+### 🧱 Updated Dependencies
+
+- Updated @react95/icons to 2.13.0
+
 ## 10.4.5 (2026-11-12)
 
 ### 🧱 Updated Dependencies
