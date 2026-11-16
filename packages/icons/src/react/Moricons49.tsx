@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Moricons49_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="red" d="M0 0h20m7 0h5M0 1h19m7 0h6M0 2h18m7 0h7M0 3h18m6 0h8M0 4h13m10 0h9M0 5h11m14 0h7M0 6h9m17 0h6M0 7h8m19 0h5M0 8h7m7 0h5m9 0h4M0 9h6m8 0h7m7 0h4M0 10h6m7 0h9m7 0h3M0 11h6m7 0h9m7 0h3M0 12h6m8 0h8m7 0h3M0 13h6m10 0h16M0 14h7m12 0h13M0 15h8m13 0h11M0 16h9m14 0h9M0 17h10m14 0h8M0 18h13m12 0h7M0 19h16m9 0h7M0 20h3m7 0h8m8 0h6M0 21h3m7 0h8m8 0h6M0 22h3m7 0h8m8 0h6M0 23h4m7 0h6m9 0h6M0 24h4m21 0h7M0 25h5m19 0h8M0 26h6m17 0h9M0 27h7m14 0h11M0 28h10m6 0h16M0 29h9m6 0h17M0 30h8m6 0h18M0 31h7m6 0h19" /><path stroke="#fff" d="M20 0h7m-8 1h7m-8 1h7m-7 1h6M13 4h10M11 5h14M9 6h17M8 7h19M7 8h7m5 0h9M6 9h8m7 0h7M6 10h7m9 0h7M6 11h7m9 0h7M6 12h8m8 0h7M6 13h10m-9 1h12M8 15h13M9 16h14m-13 1h14m-11 1h12m-9 1h9M3 20h7m8 0h8M3 21h7m8 0h8M3 22h7m8 0h8M4 23h7m6 0h9M4 24h21M5 25h19M6 26h17M7 27h14m-11 1h6m-7 1h6m-7 1h6m-7 1h6" /></svg>;
+
+export const moricons49Data = {
+  '32x32_4': Moricons49_32x32_4
+};
+
+export interface Moricons49Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Moricons49Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Moricons49Props) => {
+  const Svg = moricons49Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Moricons49 = React.memo(Moricons49Component);
+Moricons49.displayName = 'Moricons49';

@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Moricons36_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="navy" d="M0 0h30m1 0h1M0 1h29m1 0h2M0 2h28m1 0h2M0 3h27m1 0h2m1 0h1M0 4h26m1 0h2m1 0h2M0 5h25m1 0h2m1 0h2M0 6h15m3 0h4m4 0h1m1 0h2m1 0h1M0 7h15m10 0h1m1 0h2m1 0h2M0 8h18m4 0h3m1 0h2m1 0h2M0 9h14m4 0h4m4 0h1m1 0h2m1 0h1M0 10h12m13 0h1m1 0h2m1 0h2M0 11h12m2 0h4m4 0h3m1 0h2m1 0h2M0 12h14m4 0h4m4 0h1m1 0h2m1 0h1M0 13h10m15 0h1m1 0h2m1 0h2M0 14h10m4 0h4m4 0h3m1 0h2m1 0h2M0 15h8m2 0h4m4 0h4m4 0h1m1 0h2m1 0h1M0 16h8m17 0h1m1 0h2m1 0h2M0 17h10m4 0h4m4 0h3m1 0h2m1 0h2M0 18h6m4 0h4m4 0h4m4 0h1m1 0h2m1 0h1M0 19h4m21 0h1m1 0h2m1 0h2M0 20h4m2 0h4m4 0h2m1 0h1m5 0h2m1 0h2m1 0h2M0 21h9m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h1M0 22h11m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2M0 23h10m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2M0 24h12m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h1M0 25h11m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2M0 26h13m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2M0 27h12m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h1M0 28h14m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2M0 29h13m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2M0 30h15m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h1M0 31h14m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2m1 0h2" /><path stroke="#0ff" d="M30 0h1m-2 1h1m-2 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m2 0h1m-5 1h1m2 0h1m-5 1h1m2 0h1m-20 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-20 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-20 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-17 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-20 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-17 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-17 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-17 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-17 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-14 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-17 1h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-14 1h1m2 0h1m2 0h1m2 0h1m2 0h1" /><path stroke="#fff" d="M15 6h3m4 0h3m-7 1h4m-8 2h4m4 0h3m-13 1h2m4 0h4m-8 2h4m4 0h3m-15 1h4m4 0h4M8 15h2m4 0h4m4 0h3m-15 1h4m4 0h4M6 18h4m4 0h4m4 0h3M4 19h2m4 0h4m4 0h4M9 21h1m0 2h1m0 2h1m0 2h1m0 2h1m0 2h1" /><path stroke="gray" d="M25 6h1M15 7h3m4 0h3m-7 1h4m3 1h1m-12 1h4m4 0h3m-13 1h2m4 0h4m3 1h1m-12 1h4m4 0h3m-15 1h4m4 0h4m3 1h1M8 16h2m4 0h4m4 0h3m-15 1h4m4 0h4m3 1h1M6 19h4m4 0h4m4 0h3M4 20h2m5 0h2m5 0h1m1 0h2" /></svg>;
+
+export const moricons36Data = {
+  '32x32_4': Moricons36_32x32_4
+};
+
+export interface Moricons36Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Moricons36Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Moricons36Props) => {
+  const Svg = moricons36Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Moricons36 = React.memo(Moricons36Component);
+Moricons36.displayName = 'Moricons36';

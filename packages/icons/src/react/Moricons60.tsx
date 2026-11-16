@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Moricons60_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M9 3h23M8 4h24M7 5h8m7 0h10M6 6h8m8 0h10M5 7h9m8 0h2m7 0h1M4 8h10m8 0h1m8 0h1M3 9h9m10 0h1m8 0h1M2 10h9m7 0h1m3 0h1m8 0h1M1 11h5m11 0h2m3 0h1m8 0h1M0 12h5m12 0h2m3 0h1m8 0h1M0 13h5m12 0h2m12 0h1M0 14h5m12 0h2m8 0h1m3 0h1M0 15h5m12 0h2m7 0h2m3 0h1M0 16h5m12 0h2m7 0h2m3 0h1M0 17h3m14 0h2m7 0h2m3 0h1M0 18h2m7 0h1m7 0h2m7 0h2m3 0h1M0 19h2m6 0h2m7 0h2m7 0h2m3 0h1M0 20h2m6 0h2m7 0h2m7 0h2m3 0h1M0 21h2m6 0h2m7 0h2m7 0h2m2 0h2M0 22h2m6 0h2m7 0h2m7 0h2m1 0h3M0 23h2m6 0h3m6 0h3m6 0h5M0 24h2m6 0h3m6 0h3m6 0h4M0 25h2m6 0h3m6 0h3m6 0h3M0 26h28M0 27h27M0 28h26" /><path stroke="silver" d="M15 5h7m-8 1h7m3 1h7m-8 1h7M6 11h5m-6 1h6" /><path stroke="maroon" d="M21 6h1m-2 1h2m-2 1h2m8 0h1M20 9h2m7 0h2m-11 1h2m7 0h2m-11 1h2m7 0h2m-11 1h2m7 0h2m-11 1h1m8 0h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h1" /><path stroke="red" d="M14 7h6m-6 1h6m-1 1h1m3 0h6m-10 1h1m3 0h6m-10 1h1m3 0h6m-10 1h1m3 0h6M5 13h6m8 0h1m8 0h1M5 14h6m8 0h1m8 0h1M5 15h6m8 0h1m8 0h1M5 16h6m8 0h1m8 0h1m-19 1h1m8 0h1m8 0h1m-19 1h1m8 0h1m8 0h1m-19 1h1m8 0h1m8 0h1m-19 1h1m8 0h1m8 0h1m-19 1h1m8 0h1m8 0h1m-19 1h1m8 0h1m8 0h1" /><path stroke="#0ff" d="M12 9h7m-8 1h7m3 3h7m-8 1h7M3 17h7m-8 1h7" /><path stroke="#00f" d="M11 11h6m-6 1h6m-6 1h6m-6 1h6m-6 1h6m3 0h6m-15 1h6m3 0h6m-15 1h6m3 0h6m-15 1h6m3 0h6M2 19h6m3 0h6m3 0h6M2 20h6m3 0h6m3 0h6M2 21h6m3 0h6m3 0h6M2 22h6m3 0h6m3 0h6M2 23h6m3 0h6m3 0h6M2 24h6m3 0h6m3 0h6M2 25h6m3 0h6m3 0h6" /></svg>;
+
+export const moricons60Data = {
+  '32x32_4': Moricons60_32x32_4
+};
+
+export interface Moricons60Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Moricons60Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Moricons60Props) => {
+  const Svg = moricons60Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Moricons60 = React.memo(Moricons60Component);
+Moricons60.displayName = 'Moricons60';
