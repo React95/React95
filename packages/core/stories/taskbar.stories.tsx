@@ -181,6 +181,26 @@ export const Simple: StoryObj<typeof TaskBar> = {
   },
 };
 
+// the props the TaskBar doesn't use itself reach the bar, and a Frame prop
+// takes the place of the bar's own value (its position is fixed otherwise)
+export const Positioned: StoryObj<typeof TaskBar> = {
+  args: {
+    id: 'taskbar',
+    className: 'taskbar',
+    position: 'absolute',
+    style: { opacity: 0.8 },
+  },
+  render: args => <TaskBar {...args} />,
+  play: async ({ args, canvas }) => {
+    const taskBar = canvas.getByRole('button', { name: 'Start' })
+      .parentElement!;
+
+    await expect(taskBar).toHaveAttribute('id', args.id);
+    await expect(taskBar).toHaveClass(args.className!);
+    await expect(taskBar).toHaveStyle({ opacity: '0.8', position: 'absolute' });
+  },
+};
+
 // a moment with single digits everywhere: 9:07 on 5 January 2026
 const morning = new Date(2026, 0, 5, 9, 7);
 
