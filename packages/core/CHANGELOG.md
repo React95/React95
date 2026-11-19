@@ -1,3 +1,13 @@
+## 10.4.7 (2026-11-19)
+
+### 🩹 Fixes
+
+- **taskbar:** show a dotted outline on focused buttons ([eb63e4c5](https://github.com/React95/React95/commit/eb63e4c5))
+
+### ❤️ Thank You
+
+- Filipe Oliveira Cardoso @Filipcardos
+
 ## 10.4.6 (2026-11-16)
 
 ### 🧱 Updated Dependencies
