@@ -552,6 +552,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Filipcardos",
+      "name": "Filipe Oliveira Cardoso",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142547555?v=4",
+      "profile": "https://filipe-cardoso.vercel.app/",
+      "contributions": [
+        "code",
+        "a11y"
+      ]
     }
   ],
   "skipCi": true,
