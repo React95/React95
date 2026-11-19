@@ -1,0 +1,29 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Cryptui3413_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="green" d="M3 0h25M3 1h1m2 0h1m18 0h3M3 2h1m6 0h4m3 0h4m3 0h1m2 0h1M3 3h1m23 0h1M3 4h1m23 0h1M3 5h1m1 0h1m21 0h1M3 6h1m1 0h1m19 0h1m1 0h1M3 7h1m1 0h1m19 0h1m1 0h1M3 8h1m21 0h1m1 0h1M3 9h1m23 0h1M3 10h1m23 0h1M3 11h1m1 0h1m21 0h1M3 12h1m1 0h1m19 0h1m1 0h1M3 13h1m1 0h1m19 0h1m1 0h1M3 14h1m21 0h1m1 0h1M3 15h1m23 0h1M3 16h1m23 0h1M3 17h1m1 0h1m21 0h1M3 18h1m1 0h1m19 0h1m1 0h1M3 19h1m1 0h1m19 0h1m1 0h1M3 20h1m21 0h1m1 0h1M3 21h1m23 0h1M3 22h1m23 0h1M3 23h1m1 0h1m21 0h1M3 24h1m1 0h1m19 0h1m1 0h1M3 25h1m1 0h1m19 0h1m1 0h1M3 26h1m21 0h1m1 0h1M3 27h1m23 0h1M3 28h2m1 0h1m3 0h4m3 0h4m6 0h1M3 29h4m19 0h2M3 30h25" /><path stroke="gray" d="M4 1h1m2 0h1m6 0h1m6 0h1m2 0h1m1 1h1M4 4h1m11 1h1m9 0h1M15 6h1m1 0h1m-4 1h1m1 0h1m1 0h1m-6 1h1m1 0h1m1 0h1m-4 1h1m1 0h1M4 10h1m10 0h2m9 1h1M4 16h1m21 1h1M4 22h1m21 1h1m-1 5h1M7 29h1m6 0h1m6 0h1m2 0h1" /><path stroke="silver" d="M5 1h1m3 0h5m2 0h5m2 0h1M4 2h1m1 0h1m1 0h1m6 0h1m6 0h1m2 0h1M5 3h20m1 0h1M6 4h1m17 0h2M4 5h1m1 0h1m7 0h1m2 0h1m6 0h1M4 6h1m1 0h1m6 0h1m4 0h1m5 0h1m1 0h1M4 7h1m1 0h1m17 0h1m1 0h1M4 8h1m1 0h1m17 0h1m1 0h1M5 9h2m6 0h1m4 0h1m5 0h1m1 0h1M6 10h1m7 0h1m2 0h1m6 0h2M4 11h1m1 0h1m17 0h1M4 12h1m1 0h1m17 0h1m1 0h1M4 13h1m1 0h1m17 0h1m1 0h1M4 14h1m1 0h1m17 0h1m1 0h1M5 15h2m17 0h1m1 0h1M6 16h1m17 0h2M4 17h1m1 0h1m17 0h1M4 18h1m1 0h1m17 0h1m1 0h1M4 19h1m1 0h1m17 0h1m1 0h1M4 20h1m1 0h1m17 0h1m1 0h1M5 21h2m17 0h1m1 0h1M6 22h1m17 0h2M4 23h1m1 0h1m17 0h1M4 24h1m1 0h1m17 0h1m1 0h1M4 25h1m1 0h1m17 0h1m1 0h1M4 26h1m1 0h1m17 0h1m1 0h1M5 27h20m1 0h1M5 28h1m2 0h1m6 0h1m6 0h1m1 0h1M9 29h5m2 0h5m2 0h1m1 0h1" /><path stroke="#fff" d="M8 1h1m6 0h1m6 0h1M5 2h1m1 0h1m1 0h1m4 0h1m1 0h1m4 0h1m1 0h1M4 3h1m20 0h1M5 4h1m2 0h7m1 0h4m1 0h2m3 0h1M7 5h3m1 0h3m4 0h6m1 0h1M7 6h6m6 0h5M7 7h6m6 0h4M5 8h1m1 0h1m1 0h4m7 0h4M4 9h1m2 0h3m1 0h2m6 0h5m1 0h1M5 10h1m1 0h7m4 0h6m2 0h1M7 11h17m1 0h1M7 12h8m1 0h6m1 0h1M7 13h1m1 0h2m1 0h1m7 0h4M5 14h1m1 0h4m1 0h4m1 0h3m1 0h3M4 15h1m2 0h4m1 0h1m7 0h4m1 0h1M5 16h1m1 0h6m1 0h10m2 0h1M7 17h4m1 0h1m7 0h2m1 0h1m1 0h1M7 18h12m1 0h4M7 19h1m1 0h2m1 0h1m7 0h4M5 20h1m1 0h3m1 0h5m1 0h7M4 21h1m2 0h4m1 0h1m7 0h2m1 0h1m1 0h1M5 22h1m1 0h6m1 0h10m2 0h1M7 23h4m1 0h1m8 0h3m1 0h1M7 24h1m1 0h15M7 25h17M5 26h1m2 0h4m1 0h5m1 0h3m1 0h1M4 27h1m20 0h1M7 28h1m1 0h1m4 0h1m1 0h1m4 0h1m1 0h1m1 0h1M8 29h1m6 0h1m6 0h1" /><path stroke="#000" d="M28 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M4 31h25" /><path stroke="#ff0" d="M7 4h1m7 0h1m4 0h1m2 0h1M10 5h1m12 2h1M8 8h1m10 0h1M10 9h1m4 3h1m6 0h1M8 13h1m2 1h1m4 0h1m3 0h1m-8 2h1m8 1h1m-4 1h1M8 19h1m1 1h1m5 0h1m5 1h1m-10 1h1m6 1h1M8 24h1m-2 2h1m4 0h1m5 0h1m3 0h1" /><path stroke="olive" d="M15 5h1m-2 1h1m1 0h1m-4 1h1m1 0h1m1 0h1m-4 1h1m1 0h1m1 0h1m-4 1h1m1 0h1" /><path stroke="navy" d="M11 13h1m1 0h7m-9 2h1m1 0h7m-9 2h1m1 0h7m-9 2h1m1 0h7m-9 2h1m1 0h7m-9 2h1m1 0h7" /></svg>;
+const Cryptui3413_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="green" d="M1 0h13M1 1h1m11 0h1M1 2h1m11 0h1M1 3h1m11 0h1M1 4h1m11 0h1M1 5h1m11 0h1M1 6h1m11 0h1M1 7h1m11 0h1M1 8h1m11 0h1M1 9h1m11 0h1M1 10h1m11 0h1M1 11h1m11 0h1M1 12h1m11 0h1M1 13h1m11 0h1M1 14h13" /><path stroke="gray" d="M2 1h1m2 0h1m3 0h1m2 0h1M7 4h1M2 5h1m9 0h1M2 9h1m9 0h1M2 13h1m2 0h1m3 0h1m2 0h1" /><path stroke="silver" d="M3 1h2m1 0h3m1 0h2M2 2h1m9 0h1M2 3h1m3 0h1m1 0h1m3 0h1M2 4h1m9 0h1M6 5h1m1 0h1M2 6h1m9 0h1M2 7h1m9 0h1M2 8h1m9 0h1M2 10h1m9 0h1M2 11h1m9 0h1M2 12h1m9 0h1M3 13h2m1 0h3m1 0h2" /><path stroke="#000" d="M14 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1M2 15h13" /><path stroke="#fff" d="M3 2h2m1 0h2m1 0h2M3 3h3m3 0h3M4 4h2m4 0h2M3 5h2m4 0h3M3 6h8M3 7h1m1 0h1m5 0h1M3 8h2m1 0h3m1 0h2M3 9h1m1 0h1m-2 1h8m-9 1h1m1 0h1m5 0h1m-8 1h3m1 0h3" /><path stroke="#ff0" d="M5 2h1m2 0h1m2 0h1M3 4h1m5 0h1M5 5h1m5 1h1M5 8h1m3 0h1m1 1h1m-9 1h1m-1 2h1m3 0h1m3 0h1" /><path stroke="olive" d="M7 3h1M6 4h1m1 0h1M7 5h1" /><path stroke="navy" d="M4 7h1m1 0h5M4 9h1m1 0h5m-7 2h1m1 0h5" /></svg>;
+
+export const cryptui3413Data = {
+  '32x32_4': Cryptui3413_32x32_4,
+  '16x16_4': Cryptui3413_16x16_4
+};
+
+export interface Cryptui3413Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4' | '16x16_4';
+}
+
+const Cryptui3413Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Cryptui3413Props) => {
+  const Svg = cryptui3413Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Cryptui3413 = React.memo(Cryptui3413Component);
+Cryptui3413.displayName = 'Cryptui3413';
