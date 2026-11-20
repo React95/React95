@@ -24,6 +24,8 @@ export const modalWrapper = recipe({
       stackIndex,
       '0',
     )})`,
+    // its active title bar already shows that the modal has the focus
+    outline: 'none',
   }),
   variants: {
     minimized: {

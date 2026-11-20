@@ -162,14 +162,44 @@ export const Simple: StoryObj<typeof TaskBar> = {
       'Windows Explorer',
     ]);
 
+    const windowButton = (name: string) =>
+      within(taskBar).getByRole('button', { name });
+
     // Window buttons also keep a visible focus indicator.
-    const windowButton = within(taskBar).getByRole('button', {
-      name: 'Windows Explorer',
-    });
-    windowButton.focus();
-    await expect(windowButton).toHaveFocus();
-    await expect(getComputedStyle(windowButton).outlineStyle).toBe('dotted');
-    await expect(getComputedStyle(windowButton).outlineWidth).toBe('1px');
+    const explorerButton = windowButton('Windows Explorer');
+    explorerButton.focus();
+    await expect(explorerButton).toHaveFocus();
+    await expect(getComputedStyle(explorerButton).outlineStyle).toBe('dotted');
+    await expect(getComputedStyle(explorerButton).outlineWidth).toBe('1px');
+
+    // a window's button gives the focus to the window it activates...
+    const localDisk = canvas.getByRole('dialog', { name: 'Local Disk (C:)' });
+    const explorer = canvas.getByRole('dialog', { name: 'Windows Explorer' });
+
+    await userEvent.click(windowButton('Local Disk (C:)'));
+
+    await expect(localDisk).toHaveFocus();
+
+    // ...and minimizing the window leaves the focus on its button, not on the
+    // hidden window
+    await userEvent.click(windowButton('Local Disk (C:)'));
+
+    await expect(localDisk).not.toBeVisible();
+    await expect(windowButton('Local Disk (C:)')).toHaveFocus();
+
+    // a window gets back the element that had the focus in it last, and the
+    // keyboard works too
+    const closeExplorer = within(explorer).getByRole('button');
+
+    closeExplorer.focus();
+    await userEvent.click(windowButton('Local Disk (C:)'));
+
+    await expect(localDisk).toHaveFocus();
+
+    windowButton('Windows Explorer').focus();
+    await userEvent.keyboard('{Enter}');
+
+    await expect(closeExplorer).toHaveFocus();
 
     // the clock shows the time (either side of a minute change)...
     const before = new Date();
