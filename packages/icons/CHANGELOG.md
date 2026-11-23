@@ -1,3 +1,13 @@
+## 2.14.0 (2026-11-23)
+
+### 🚀 Features
+
+- **icons:** add Internet Explorer 4 system icons ([896029e3](https://github.com/React95/React95/commit/896029e3))
+
+### ❤️ Thank You
+
+- ggdaltoso @ggdaltoso
+
 ## 2.13.0 (2026-11-16)
 
 ### 🚀 Features
