@@ -17,7 +17,7 @@ export type TaskBarProps = {
   FrameProps;
 
 export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
-  ({ list, className }, ref) => {
+  ({ list, className, ...rest }, ref) => {
     const [showList, toggleShowList] = useState(false);
     const [activeStart, toggleActiveStart] = useState(false);
     const { windows, activeWindow, toggleWindow } = useModalWindows();
@@ -72,6 +72,7 @@ export const TaskBar = forwardRef<HTMLDivElement, TaskBarProps>(
         zIndex="$taskbar"
         backgroundColor="$material"
         boxShadow="$out"
+        {...rest}
         ref={ref}
         className={className}
       >
