@@ -245,6 +245,8 @@ import { defrag8Data, Defrag8 } from './react/Defrag8';
 import { defrag9Data, Defrag9 } from './react/Defrag9';
 import { deleteData, Delete } from './react/Delete';
 import { desk100Data, Desk100 } from './react/Desk100';
+import { deskcp1641Data, Deskcp1641 } from './react/Deskcp1641';
+import { deskcp1642Data, Deskcp1642 } from './react/Deskcp1642';
 import { desktopData, Desktop } from './react/Desktop';
 import { detliconData, Detlicon } from './react/Detlicon';
 import { dialData, Dial } from './react/Dial';
@@ -569,9 +571,11 @@ import { inetcplc1322Data, Inetcplc1322 } from './react/Inetcplc1322';
 import { inetcplc4432Data, Inetcplc4432 } from './react/Inetcplc4432';
 import { inetcplc4490Data, Inetcplc4490 } from './react/Inetcplc4490';
 import { infoBubbleData, InfoBubble } from './react/InfoBubble';
+import { infrared100Data, Infrared100 } from './react/Infrared100';
 import { installData, Install } from './react/Install';
 import { internat151Data, Internat151 } from './react/Internat151';
 import { intl101Data, Intl101 } from './react/Intl101';
+import { iosclass3Data, Iosclass3 } from './react/Iosclass3';
 import { isign32100Data, Isign32100 } from './react/Isign32100';
 import { isign324001Data, Isign324001 } from './react/Isign324001';
 import { isign32IcoAppData, Isign32IcoApp } from './react/Isign32IcoApp';
@@ -706,6 +710,11 @@ import { mobsync3135Data, Mobsync3135 } from './react/Mobsync3135';
 import { mobsync3136Data, Mobsync3136 } from './react/Mobsync3136';
 import { mobsync3137Data, Mobsync3137 } from './react/Mobsync3137';
 import { mobsync3147Data, Mobsync3147 } from './react/Mobsync3147';
+import { modem1000Data, Modem1000 } from './react/Modem1000';
+import { modem1001Data, Modem1001 } from './react/Modem1001';
+import { modemui700Data, Modemui700 } from './react/Modemui700';
+import { modemui702Data, Modemui702 } from './react/Modemui702';
+import { modemui703Data, Modemui703 } from './react/Modemui703';
 import { moricons10Data, Moricons10 } from './react/Moricons10';
 import { moricons100Data, Moricons100 } from './react/Moricons100';
 import { moricons101Data, Moricons101 } from './react/Moricons101';
@@ -831,6 +840,9 @@ import { mprserv121Data, Mprserv121 } from './react/Mprserv121';
 import { mprserv68Data, Mprserv68 } from './react/Mprserv68';
 import { msDosData, MsDos } from './react/MsDos';
 import { msacm3210Data, Msacm3210 } from './react/Msacm3210';
+import { msacm11Data, Msacm11 } from './react/Msacm11';
+import { msacm12Data, Msacm12 } from './react/Msacm12';
+import { msacm13Data, Msacm13 } from './react/Msacm13';
 import { msawtAwtIconData, MsawtAwtIcon } from './react/MsawtAwtIcon';
 import { msfs321951Data, Msfs321951 } from './react/Msfs321951';
 import { mshearts1Data, Mshearts1 } from './react/Mshearts1';
@@ -899,6 +911,7 @@ import { mspaint115Data, Mspaint115 } from './react/Mspaint115';
 import { mspaint116Data, Mspaint116 } from './react/Mspaint116';
 import { mspaint117Data, Mspaint117 } from './react/Mspaint117';
 import { mspaint3Data, Mspaint3 } from './react/Mspaint3';
+import { msprint100Data, Msprint100 } from './react/Msprint100';
 import { msrating102Data, Msrating102 } from './react/Msrating102';
 import { msrating103Data, Msrating103 } from './react/Msrating103';
 import { msrating104Data, Msrating104 } from './react/Msrating104';
@@ -923,6 +936,7 @@ import { msxml128Data, Msxml128 } from './react/Msxml128';
 import { msxml129Data, Msxml129 } from './react/Msxml129';
 import { muteData, Mute } from './react/Mute';
 import { mystifyYourMind100Data, MystifyYourMind100 } from './react/MystifyYourMind100';
+import { netcpl100Data, Netcpl100 } from './react/Netcpl100';
 import { netwatch101Data, Netwatch101 } from './react/Netwatch101';
 import { networkData, Network } from './react/Network';
 import { network2Data, Network2 } from './react/Network2';
@@ -942,6 +956,9 @@ import { objed129Data, Objed129 } from './react/Objed129';
 import { occache100Data, Occache100 } from './react/Occache100';
 import { occache110Data, Occache110 } from './react/Occache110';
 import { occache111Data, Occache111 } from './react/Occache111';
+import { odbcint1439Data, Odbcint1439 } from './react/Odbcint1439';
+import { odbcint8706Data, Odbcint8706 } from './react/Odbcint8706';
+import { odbcint8707Data, Odbcint8707 } from './react/Odbcint8707';
 import { oidis400SeqfileiconData, Oidis400Seqfileicon } from './react/Oidis400Seqfileicon';
 import { oislb400DcScanIcoData, Oislb400DcScanIco } from './react/Oislb400DcScanIco';
 import { oiui400ImgstampData, Oiui400Imgstamp } from './react/Oiui400Imgstamp';
@@ -965,11 +982,53 @@ import { penData, Pen } from './react/Pen';
 import { person116Data, Person116 } from './react/Person116';
 import { phoneData, Phone } from './react/Phone';
 import { phone2Data, Phone2 } from './react/Phone2';
+import { pifmgr10Data, Pifmgr10 } from './react/Pifmgr10';
+import { pifmgr11Data, Pifmgr11 } from './react/Pifmgr11';
+import { pifmgr12Data, Pifmgr12 } from './react/Pifmgr12';
+import { pifmgr13Data, Pifmgr13 } from './react/Pifmgr13';
+import { pifmgr14Data, Pifmgr14 } from './react/Pifmgr14';
+import { pifmgr15Data, Pifmgr15 } from './react/Pifmgr15';
+import { pifmgr16Data, Pifmgr16 } from './react/Pifmgr16';
+import { pifmgr17Data, Pifmgr17 } from './react/Pifmgr17';
+import { pifmgr18Data, Pifmgr18 } from './react/Pifmgr18';
+import { pifmgr19Data, Pifmgr19 } from './react/Pifmgr19';
+import { pifmgr2Data, Pifmgr2 } from './react/Pifmgr2';
+import { pifmgr20Data, Pifmgr20 } from './react/Pifmgr20';
+import { pifmgr21Data, Pifmgr21 } from './react/Pifmgr21';
+import { pifmgr22Data, Pifmgr22 } from './react/Pifmgr22';
+import { pifmgr23Data, Pifmgr23 } from './react/Pifmgr23';
+import { pifmgr24Data, Pifmgr24 } from './react/Pifmgr24';
+import { pifmgr25Data, Pifmgr25 } from './react/Pifmgr25';
+import { pifmgr26Data, Pifmgr26 } from './react/Pifmgr26';
+import { pifmgr27Data, Pifmgr27 } from './react/Pifmgr27';
+import { pifmgr28Data, Pifmgr28 } from './react/Pifmgr28';
+import { pifmgr29Data, Pifmgr29 } from './react/Pifmgr29';
+import { pifmgr3Data, Pifmgr3 } from './react/Pifmgr3';
+import { pifmgr30Data, Pifmgr30 } from './react/Pifmgr30';
+import { pifmgr31Data, Pifmgr31 } from './react/Pifmgr31';
+import { pifmgr32Data, Pifmgr32 } from './react/Pifmgr32';
+import { pifmgr33Data, Pifmgr33 } from './react/Pifmgr33';
+import { pifmgr34Data, Pifmgr34 } from './react/Pifmgr34';
+import { pifmgr35Data, Pifmgr35 } from './react/Pifmgr35';
+import { pifmgr36Data, Pifmgr36 } from './react/Pifmgr36';
+import { pifmgr37Data, Pifmgr37 } from './react/Pifmgr37';
+import { pifmgr38Data, Pifmgr38 } from './react/Pifmgr38';
+import { pifmgr4Data, Pifmgr4 } from './react/Pifmgr4';
+import { pifmgr5Data, Pifmgr5 } from './react/Pifmgr5';
+import { pifmgr6Data, Pifmgr6 } from './react/Pifmgr6';
+import { pifmgr7Data, Pifmgr7 } from './react/Pifmgr7';
+import { pifmgr8Data, Pifmgr8 } from './react/Pifmgr8';
+import { pifmgr9Data, Pifmgr9 } from './react/Pifmgr9';
 import { pinballIcon1Data, PinballIcon1 } from './react/PinballIcon1';
 import { playd16Data, Playd16 } from './react/Playd16';
 import { playp16Data, Playp16 } from './react/Playp16';
 import { pluginData, Plugin } from './react/Plugin';
 import { plugin2Data, Plugin2 } from './react/Plugin2';
+import { plustab101Data, Plustab101 } from './react/Plustab101';
+import { plustab102Data, Plustab102 } from './react/Plustab102';
+import { plustab103Data, Plustab103 } from './react/Plustab103';
+import { plustab104Data, Plustab104 } from './react/Plustab104';
+import { plustab107Data, Plustab107 } from './react/Plustab107';
 import { powerOffData, PowerOff } from './react/PowerOff';
 import { powerOnData, PowerOn } from './react/PowerOn';
 import { powercfg205Data, Powercfg205 } from './react/Powercfg205';
@@ -1140,8 +1199,26 @@ import { scrobj101Data, Scrobj101 } from './react/Scrobj101';
 import { scrollingMarquee100Data, ScrollingMarquee100 } from './react/ScrollingMarquee100';
 import { sendmail2001Data, Sendmail2001 } from './react/Sendmail2001';
 import { settingsData, Settings } from './react/Settings';
+import { setup4501Data, Setup4501 } from './react/Setup4501';
+import { setup4502Data, Setup4502 } from './react/Setup4502';
 import { setupPhoneiconData, SetupPhoneicon } from './react/SetupPhoneicon';
 import { setupslt3000Data, Setupslt3000 } from './react/Setupslt3000';
+import { setupx1Data, Setupx1 } from './react/Setupx1';
+import { setupx10Data, Setupx10 } from './react/Setupx10';
+import { setupx117Data, Setupx117 } from './react/Setupx117';
+import { setupx118Data, Setupx118 } from './react/Setupx118';
+import { setupx119Data, Setupx119 } from './react/Setupx119';
+import { setupx120Data, Setupx120 } from './react/Setupx120';
+import { setupx151Data, Setupx151 } from './react/Setupx151';
+import { setupx18Data, Setupx18 } from './react/Setupx18';
+import { setupx19Data, Setupx19 } from './react/Setupx19';
+import { setupx5Data, Setupx5 } from './react/Setupx5';
+import { setupx51Data, Setupx51 } from './react/Setupx51';
+import { setupx52Data, Setupx52 } from './react/Setupx52';
+import { setupx53Data, Setupx53 } from './react/Setupx53';
+import { setupx6Data, Setupx6 } from './react/Setupx6';
+import { setupx8Data, Setupx8 } from './react/Setupx8';
+import { setupx9Data, Setupx9 } from './react/Setupx9';
 import { shd401lc4Data, Shd401lc4 } from './react/Shd401lc4';
 import { shdoc401200Data, Shdoc401200 } from './react/Shdoc401200';
 import { shdoc4015Data, Shdoc4015 } from './react/Shdoc4015';
@@ -1247,6 +1324,8 @@ import { shell326Data, Shell326 } from './react/Shell326';
 import { shell327Data, Shell327 } from './react/Shell327';
 import { shell328Data, Shell328 } from './react/Shell328';
 import { shell329Data, Shell329 } from './react/Shell329';
+import { shell432Data, Shell432 } from './react/Shell432';
+import { shell433Data, Shell433 } from './react/Shell433';
 import { shortcutData, Shortcut } from './react/Shortcut';
 import { shortcut2Data, Shortcut2 } from './react/Shortcut2';
 import { shscrap100Data, Shscrap100 } from './react/Shscrap100';
@@ -1284,6 +1363,19 @@ import { syncui131Data, Syncui131 } from './react/Syncui131';
 import { syncui132Data, Syncui132 } from './react/Syncui132';
 import { syncui135Data, Syncui135 } from './react/Syncui135';
 import { sysPackageData, SysPackage } from './react/SysPackage';
+import { sysdm102Data, Sysdm102 } from './react/Sysdm102';
+import { sysdm159Data, Sysdm159 } from './react/Sysdm159';
+import { sysdm160Data, Sysdm160 } from './react/Sysdm160';
+import { sysdm164Data, Sysdm164 } from './react/Sysdm164';
+import { sysdm172Data, Sysdm172 } from './react/Sysdm172';
+import { sysdm173Data, Sysdm173 } from './react/Sysdm173';
+import { sysdm174Data, Sysdm174 } from './react/Sysdm174';
+import { sysdm175Data, Sysdm175 } from './react/Sysdm175';
+import { sysdm185Data, Sysdm185 } from './react/Sysdm185';
+import { sysdm52Data, Sysdm52 } from './react/Sysdm52';
+import { sysdm600Data, Sysdm600 } from './react/Sysdm600';
+import { sysdm601Data, Sysdm601 } from './react/Sysdm601';
+import { sysdm602Data, Sysdm602 } from './react/Sysdm602';
 import { sysedit1Data, Sysedit1 } from './react/Sysedit1';
 import { sysedit2Data, Sysedit2 } from './react/Sysedit2';
 import { sysmon1000Data, Sysmon1000 } from './react/Sysmon1000';
@@ -1298,6 +1390,9 @@ import { systray303Data, Systray303 } from './react/Systray303';
 import { systray304Data, Systray304 } from './react/Systray304';
 import { systray305Data, Systray305 } from './react/Systray305';
 import { systray306Data, Systray306 } from './react/Systray306';
+import { tapiCallcardData, TapiCallcard } from './react/TapiCallcard';
+import { tapiTapilineData, TapiTapiline } from './react/TapiTapiline';
+import { tapiTapiphoneData, TapiTapiphone } from './react/TapiTapiphone';
 import { taskman100Data, Taskman100 } from './react/Taskman100';
 import { tcptest128Data, Tcptest128 } from './react/Tcptest128';
 import { tdc203Data, Tdc203 } from './react/Tdc203';
@@ -1341,6 +1436,14 @@ import { user4Data, User4 } from './react/User4';
 import { user5Data, User5 } from './react/User5';
 import { user6Data, User6 } from './react/User6';
 import { user7Data, User7 } from './react/User7';
+import { vbrun3001201Data, Vbrun3001201 } from './react/Vbrun3001201';
+import { vbrun3001202Data, Vbrun3001202 } from './react/Vbrun3001202';
+import { vbrun3001203Data, Vbrun3001203 } from './react/Vbrun3001203';
+import { vga32512Data, Vga32512 } from './react/Vga32512';
+import { vga32513Data, Vga32513 } from './react/Vga32513';
+import { vga32514Data, Vga32514 } from './react/Vga32514';
+import { vga32515Data, Vga32515 } from './react/Vga32515';
+import { vga32516Data, Vga32516 } from './react/Vga32516';
 import { voxplay3000Data, Voxplay3000 } from './react/Voxplay3000';
 import { vvexe321Data, Vvexe321 } from './react/Vvexe321';
 import { wab321010Data, Wab321010 } from './react/Wab321010';
@@ -2723,6 +2826,16 @@ export const icons = [
     componentName: "Desk100",
     component: Desk100,
     variants: desk100Data,
+  },
+  {
+    componentName: "Deskcp1641",
+    component: Deskcp1641,
+    variants: deskcp1641Data,
+  },
+  {
+    componentName: "Deskcp1642",
+    component: Deskcp1642,
+    variants: deskcp1642Data,
   },
   {
     componentName: "Desktop",
@@ -4345,6 +4458,11 @@ export const icons = [
     variants: infoBubbleData,
   },
   {
+    componentName: "Infrared100",
+    component: Infrared100,
+    variants: infrared100Data,
+  },
+  {
     componentName: "Install",
     component: Install,
     variants: installData,
@@ -4358,6 +4476,11 @@ export const icons = [
     componentName: "Intl101",
     component: Intl101,
     variants: intl101Data,
+  },
+  {
+    componentName: "Iosclass3",
+    component: Iosclass3,
+    variants: iosclass3Data,
   },
   {
     componentName: "Isign32100",
@@ -5030,6 +5153,31 @@ export const icons = [
     variants: mobsync3147Data,
   },
   {
+    componentName: "Modem1000",
+    component: Modem1000,
+    variants: modem1000Data,
+  },
+  {
+    componentName: "Modem1001",
+    component: Modem1001,
+    variants: modem1001Data,
+  },
+  {
+    componentName: "Modemui700",
+    component: Modemui700,
+    variants: modemui700Data,
+  },
+  {
+    componentName: "Modemui702",
+    component: Modemui702,
+    variants: modemui702Data,
+  },
+  {
+    componentName: "Modemui703",
+    component: Modemui703,
+    variants: modemui703Data,
+  },
+  {
     componentName: "Moricons10",
     component: Moricons10,
     variants: moricons10Data,
@@ -5655,6 +5803,21 @@ export const icons = [
     variants: msacm3210Data,
   },
   {
+    componentName: "Msacm11",
+    component: Msacm11,
+    variants: msacm11Data,
+  },
+  {
+    componentName: "Msacm12",
+    component: Msacm12,
+    variants: msacm12Data,
+  },
+  {
+    componentName: "Msacm13",
+    component: Msacm13,
+    variants: msacm13Data,
+  },
+  {
     componentName: "MsawtAwtIcon",
     component: MsawtAwtIcon,
     variants: msawtAwtIconData,
@@ -5995,6 +6158,11 @@ export const icons = [
     variants: mspaint3Data,
   },
   {
+    componentName: "Msprint100",
+    component: Msprint100,
+    variants: msprint100Data,
+  },
+  {
     componentName: "Msrating102",
     component: Msrating102,
     variants: msrating102Data,
@@ -6115,6 +6283,11 @@ export const icons = [
     variants: mystifyYourMind100Data,
   },
   {
+    componentName: "Netcpl100",
+    component: Netcpl100,
+    variants: netcpl100Data,
+  },
+  {
     componentName: "Netwatch101",
     component: Netwatch101,
     variants: netwatch101Data,
@@ -6208,6 +6381,21 @@ export const icons = [
     componentName: "Occache111",
     component: Occache111,
     variants: occache111Data,
+  },
+  {
+    componentName: "Odbcint1439",
+    component: Odbcint1439,
+    variants: odbcint1439Data,
+  },
+  {
+    componentName: "Odbcint8706",
+    component: Odbcint8706,
+    variants: odbcint8706Data,
+  },
+  {
+    componentName: "Odbcint8707",
+    component: Odbcint8707,
+    variants: odbcint8707Data,
   },
   {
     componentName: "Oidis400Seqfileicon",
@@ -6325,6 +6513,191 @@ export const icons = [
     variants: phone2Data,
   },
   {
+    componentName: "Pifmgr10",
+    component: Pifmgr10,
+    variants: pifmgr10Data,
+  },
+  {
+    componentName: "Pifmgr11",
+    component: Pifmgr11,
+    variants: pifmgr11Data,
+  },
+  {
+    componentName: "Pifmgr12",
+    component: Pifmgr12,
+    variants: pifmgr12Data,
+  },
+  {
+    componentName: "Pifmgr13",
+    component: Pifmgr13,
+    variants: pifmgr13Data,
+  },
+  {
+    componentName: "Pifmgr14",
+    component: Pifmgr14,
+    variants: pifmgr14Data,
+  },
+  {
+    componentName: "Pifmgr15",
+    component: Pifmgr15,
+    variants: pifmgr15Data,
+  },
+  {
+    componentName: "Pifmgr16",
+    component: Pifmgr16,
+    variants: pifmgr16Data,
+  },
+  {
+    componentName: "Pifmgr17",
+    component: Pifmgr17,
+    variants: pifmgr17Data,
+  },
+  {
+    componentName: "Pifmgr18",
+    component: Pifmgr18,
+    variants: pifmgr18Data,
+  },
+  {
+    componentName: "Pifmgr19",
+    component: Pifmgr19,
+    variants: pifmgr19Data,
+  },
+  {
+    componentName: "Pifmgr2",
+    component: Pifmgr2,
+    variants: pifmgr2Data,
+  },
+  {
+    componentName: "Pifmgr20",
+    component: Pifmgr20,
+    variants: pifmgr20Data,
+  },
+  {
+    componentName: "Pifmgr21",
+    component: Pifmgr21,
+    variants: pifmgr21Data,
+  },
+  {
+    componentName: "Pifmgr22",
+    component: Pifmgr22,
+    variants: pifmgr22Data,
+  },
+  {
+    componentName: "Pifmgr23",
+    component: Pifmgr23,
+    variants: pifmgr23Data,
+  },
+  {
+    componentName: "Pifmgr24",
+    component: Pifmgr24,
+    variants: pifmgr24Data,
+  },
+  {
+    componentName: "Pifmgr25",
+    component: Pifmgr25,
+    variants: pifmgr25Data,
+  },
+  {
+    componentName: "Pifmgr26",
+    component: Pifmgr26,
+    variants: pifmgr26Data,
+  },
+  {
+    componentName: "Pifmgr27",
+    component: Pifmgr27,
+    variants: pifmgr27Data,
+  },
+  {
+    componentName: "Pifmgr28",
+    component: Pifmgr28,
+    variants: pifmgr28Data,
+  },
+  {
+    componentName: "Pifmgr29",
+    component: Pifmgr29,
+    variants: pifmgr29Data,
+  },
+  {
+    componentName: "Pifmgr3",
+    component: Pifmgr3,
+    variants: pifmgr3Data,
+  },
+  {
+    componentName: "Pifmgr30",
+    component: Pifmgr30,
+    variants: pifmgr30Data,
+  },
+  {
+    componentName: "Pifmgr31",
+    component: Pifmgr31,
+    variants: pifmgr31Data,
+  },
+  {
+    componentName: "Pifmgr32",
+    component: Pifmgr32,
+    variants: pifmgr32Data,
+  },
+  {
+    componentName: "Pifmgr33",
+    component: Pifmgr33,
+    variants: pifmgr33Data,
+  },
+  {
+    componentName: "Pifmgr34",
+    component: Pifmgr34,
+    variants: pifmgr34Data,
+  },
+  {
+    componentName: "Pifmgr35",
+    component: Pifmgr35,
+    variants: pifmgr35Data,
+  },
+  {
+    componentName: "Pifmgr36",
+    component: Pifmgr36,
+    variants: pifmgr36Data,
+  },
+  {
+    componentName: "Pifmgr37",
+    component: Pifmgr37,
+    variants: pifmgr37Data,
+  },
+  {
+    componentName: "Pifmgr38",
+    component: Pifmgr38,
+    variants: pifmgr38Data,
+  },
+  {
+    componentName: "Pifmgr4",
+    component: Pifmgr4,
+    variants: pifmgr4Data,
+  },
+  {
+    componentName: "Pifmgr5",
+    component: Pifmgr5,
+    variants: pifmgr5Data,
+  },
+  {
+    componentName: "Pifmgr6",
+    component: Pifmgr6,
+    variants: pifmgr6Data,
+  },
+  {
+    componentName: "Pifmgr7",
+    component: Pifmgr7,
+    variants: pifmgr7Data,
+  },
+  {
+    componentName: "Pifmgr8",
+    component: Pifmgr8,
+    variants: pifmgr8Data,
+  },
+  {
+    componentName: "Pifmgr9",
+    component: Pifmgr9,
+    variants: pifmgr9Data,
+  },
+  {
     componentName: "PinballIcon1",
     component: PinballIcon1,
     variants: pinballIcon1Data,
@@ -6348,6 +6721,31 @@ export const icons = [
     componentName: "Plugin2",
     component: Plugin2,
     variants: plugin2Data,
+  },
+  {
+    componentName: "Plustab101",
+    component: Plustab101,
+    variants: plustab101Data,
+  },
+  {
+    componentName: "Plustab102",
+    component: Plustab102,
+    variants: plustab102Data,
+  },
+  {
+    componentName: "Plustab103",
+    component: Plustab103,
+    variants: plustab103Data,
+  },
+  {
+    componentName: "Plustab104",
+    component: Plustab104,
+    variants: plustab104Data,
+  },
+  {
+    componentName: "Plustab107",
+    component: Plustab107,
+    variants: plustab107Data,
   },
   {
     componentName: "PowerOff",
@@ -7200,6 +7598,16 @@ export const icons = [
     variants: settingsData,
   },
   {
+    componentName: "Setup4501",
+    component: Setup4501,
+    variants: setup4501Data,
+  },
+  {
+    componentName: "Setup4502",
+    component: Setup4502,
+    variants: setup4502Data,
+  },
+  {
     componentName: "SetupPhoneicon",
     component: SetupPhoneicon,
     variants: setupPhoneiconData,
@@ -7208,6 +7616,86 @@ export const icons = [
     componentName: "Setupslt3000",
     component: Setupslt3000,
     variants: setupslt3000Data,
+  },
+  {
+    componentName: "Setupx1",
+    component: Setupx1,
+    variants: setupx1Data,
+  },
+  {
+    componentName: "Setupx10",
+    component: Setupx10,
+    variants: setupx10Data,
+  },
+  {
+    componentName: "Setupx117",
+    component: Setupx117,
+    variants: setupx117Data,
+  },
+  {
+    componentName: "Setupx118",
+    component: Setupx118,
+    variants: setupx118Data,
+  },
+  {
+    componentName: "Setupx119",
+    component: Setupx119,
+    variants: setupx119Data,
+  },
+  {
+    componentName: "Setupx120",
+    component: Setupx120,
+    variants: setupx120Data,
+  },
+  {
+    componentName: "Setupx151",
+    component: Setupx151,
+    variants: setupx151Data,
+  },
+  {
+    componentName: "Setupx18",
+    component: Setupx18,
+    variants: setupx18Data,
+  },
+  {
+    componentName: "Setupx19",
+    component: Setupx19,
+    variants: setupx19Data,
+  },
+  {
+    componentName: "Setupx5",
+    component: Setupx5,
+    variants: setupx5Data,
+  },
+  {
+    componentName: "Setupx51",
+    component: Setupx51,
+    variants: setupx51Data,
+  },
+  {
+    componentName: "Setupx52",
+    component: Setupx52,
+    variants: setupx52Data,
+  },
+  {
+    componentName: "Setupx53",
+    component: Setupx53,
+    variants: setupx53Data,
+  },
+  {
+    componentName: "Setupx6",
+    component: Setupx6,
+    variants: setupx6Data,
+  },
+  {
+    componentName: "Setupx8",
+    component: Setupx8,
+    variants: setupx8Data,
+  },
+  {
+    componentName: "Setupx9",
+    component: Setupx9,
+    variants: setupx9Data,
   },
   {
     componentName: "Shd401lc4",
@@ -7735,6 +8223,16 @@ export const icons = [
     variants: shell329Data,
   },
   {
+    componentName: "Shell432",
+    component: Shell432,
+    variants: shell432Data,
+  },
+  {
+    componentName: "Shell433",
+    component: Shell433,
+    variants: shell433Data,
+  },
+  {
     componentName: "Shortcut",
     component: Shortcut,
     variants: shortcutData,
@@ -7920,6 +8418,71 @@ export const icons = [
     variants: sysPackageData,
   },
   {
+    componentName: "Sysdm102",
+    component: Sysdm102,
+    variants: sysdm102Data,
+  },
+  {
+    componentName: "Sysdm159",
+    component: Sysdm159,
+    variants: sysdm159Data,
+  },
+  {
+    componentName: "Sysdm160",
+    component: Sysdm160,
+    variants: sysdm160Data,
+  },
+  {
+    componentName: "Sysdm164",
+    component: Sysdm164,
+    variants: sysdm164Data,
+  },
+  {
+    componentName: "Sysdm172",
+    component: Sysdm172,
+    variants: sysdm172Data,
+  },
+  {
+    componentName: "Sysdm173",
+    component: Sysdm173,
+    variants: sysdm173Data,
+  },
+  {
+    componentName: "Sysdm174",
+    component: Sysdm174,
+    variants: sysdm174Data,
+  },
+  {
+    componentName: "Sysdm175",
+    component: Sysdm175,
+    variants: sysdm175Data,
+  },
+  {
+    componentName: "Sysdm185",
+    component: Sysdm185,
+    variants: sysdm185Data,
+  },
+  {
+    componentName: "Sysdm52",
+    component: Sysdm52,
+    variants: sysdm52Data,
+  },
+  {
+    componentName: "Sysdm600",
+    component: Sysdm600,
+    variants: sysdm600Data,
+  },
+  {
+    componentName: "Sysdm601",
+    component: Sysdm601,
+    variants: sysdm601Data,
+  },
+  {
+    componentName: "Sysdm602",
+    component: Sysdm602,
+    variants: sysdm602Data,
+  },
+  {
     componentName: "Sysedit1",
     component: Sysedit1,
     variants: sysedit1Data,
@@ -7988,6 +8551,21 @@ export const icons = [
     componentName: "Systray306",
     component: Systray306,
     variants: systray306Data,
+  },
+  {
+    componentName: "TapiCallcard",
+    component: TapiCallcard,
+    variants: tapiCallcardData,
+  },
+  {
+    componentName: "TapiTapiline",
+    component: TapiTapiline,
+    variants: tapiTapilineData,
+  },
+  {
+    componentName: "TapiTapiphone",
+    component: TapiTapiphone,
+    variants: tapiTapiphoneData,
   },
   {
     componentName: "Taskman100",
@@ -8203,6 +8781,46 @@ export const icons = [
     componentName: "User7",
     component: User7,
     variants: user7Data,
+  },
+  {
+    componentName: "Vbrun3001201",
+    component: Vbrun3001201,
+    variants: vbrun3001201Data,
+  },
+  {
+    componentName: "Vbrun3001202",
+    component: Vbrun3001202,
+    variants: vbrun3001202Data,
+  },
+  {
+    componentName: "Vbrun3001203",
+    component: Vbrun3001203,
+    variants: vbrun3001203Data,
+  },
+  {
+    componentName: "Vga32512",
+    component: Vga32512,
+    variants: vga32512Data,
+  },
+  {
+    componentName: "Vga32513",
+    component: Vga32513,
+    variants: vga32513Data,
+  },
+  {
+    componentName: "Vga32514",
+    component: Vga32514,
+    variants: vga32514Data,
+  },
+  {
+    componentName: "Vga32515",
+    component: Vga32515,
+    variants: vga32515Data,
+  },
+  {
+    componentName: "Vga32516",
+    component: Vga32516,
+    variants: vga32516Data,
   },
   {
     componentName: "Voxplay3000",

@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Pifmgr4_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#000" d="M15 0h1m-2 1h1m1 0h1m-4 1h1m3 0h1m-6 1h1m5 0h1m-8 1h1m2 0h1m3 0h1m-9 1h1m2 0h1m1 0h1m3 0h1M9 6h1m2 0h1m1 0h1m1 0h1m2 0h1M8 7h1m2 0h1m1 0h1m3 0h1m2 0h1M7 8h1m2 0h1m1 0h1m3 0h1m4 0h1M6 9h1m2 0h1m1 0h1m3 0h1m6 0h1M5 10h1m2 0h1m1 0h1m3 0h1m8 0h2M4 11h1m2 0h1m1 0h1m3 0h1m11 0h2M3 12h1m2 0h1m1 0h1m3 0h1m14 0h1M2 13h1m2 0h1m1 0h1m3 0h1m3 0h1m9 0h1m2 0h1M1 14h1m4 0h1m3 0h1m3 0h1m1 0h1m7 0h1m1 0h1m2 0h1M2 15h1m4 0h1m1 0h1m3 0h1m1 0h1m1 0h1m5 0h1m1 0h1m1 0h1m2 0h1M1 16h3m4 0h1m3 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1M1 17h1m2 0h1m6 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1M1 18h2m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1M1 19h1m1 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1M1 20h1m2 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1M1 21h2m2 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1M3 22h1m2 0h1m2 0h1m6 0h1m1 0h1m1 0h1m1 0h1m2 0h1M2 23h1m1 0h1m2 0h1m2 0h2m3 0h1m1 0h1m1 0h1m1 0h1m2 0h1M1 24h1m3 0h1m3 0h1m2 0h1m3 0h1m1 0h1m1 0h1m2 0h1M1 25h3m2 0h2m2 0h1m2 0h1m3 0h1m1 0h1m2 0h1M4 26h2m2 0h2m1 0h2m1 0h1m3 0h1m2 0h1M6 27h2m2 0h1m2 0h1m1 0h1m4 0h1M8 28h2m1 0h2m1 0h1m1 0h1m2 0h1m-10 1h1m2 0h4m1 0h1m-8 1h3m2 0h2m-4 1h3" /><path stroke="#fff" d="M15 1h1m-2 1h3m-4 1h5m-6 1h2m1 0h3m-7 1h2m1 0h1m1 0h3m-9 1h2m1 0h1m1 0h1m1 0h2M9 7h2m1 0h1m1 0h3m1 0h2M8 8h2m3 0h3m1 0h4M7 9h2m3 0h3m1 0h3m2 0h1M6 10h2m3 0h1m1 0h1m1 0h3m4 0h1M5 11h2m3 0h1m1 0h1m1 0h3m6 0h2M4 12h2m1 0h1m1 0h3m1 0h4m3 0h1m3 0h3M3 13h2m1 0h1m1 0h3m1 0h3m1 0h2m2 0h1m2 0h2m1 0h2M2 14h4m1 0h3m1 0h3m1 0h1m1 0h2m3 0h2m1 0h1m1 0h2M3 15h4m1 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h1M4 16h4m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1M3 17h1m1 0h6m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M6 18h4m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M2 19h1m4 0h4m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M3 20h1m1 0h1m2 0h4m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M6 21h1m2 0h4m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M7 22h1m2 0h6m1 0h1m1 0h1m1 0h1M3 23h1m1 0h1m6 0h3m1 0h1m1 0h1m1 0h1M4 24h1m1 0h1m6 0h3m1 0h1m1 0h1M8 25h1m5 0h3m1 0h1m-4 1h3m-2 1h1" /><path stroke="gray" d="M11 8h1m-2 1h1m8 0h2M9 10h1m2 0h1m5 0h1m1 0h2M8 11h1m2 0h1m5 0h2m3 0h1m-6 1h1m1 0h1m1 0h3m-6 1h1m3 0h1m-3 1h2m-2 1h1m8 2h1m-2 1h1m-2 1h1M2 20h1m23 0h1M3 21h1m21 0h1M5 22h1m18 0h1M8 23h1m14 0h1M3 24h1m7 0h1m10 0h1M5 25h1m6 0h1m8 0h1M7 26h1m12 0h1M9 27h1m2 0h1m1 0h1m4 0h1m-5 1h1m2 0h1m-7 1h1m4 0h1m-3 1h1m-3 1h1" /><path stroke="silver" d="M19 10h1m-1 1h3m-4 1h1m0 1h1m1 0h1m-3 1h1m9 1h1m-1 1h1M2 17h1m25 0h1M3 18h2m22 0h1M4 19h2m20 0h1M6 20h1m18 0h1M4 21h1m2 0h1m16 0h1M4 22h1m3 0h1m14 0h1M6 23h1m2 0h1m12 0h1M2 24h1m4 0h2m1 0h1m10 0h1M4 25h1m4 0h1m1 0h1m8 0h1M6 26h1m3 0h1m2 0h1m5 0h1M8 27h1m2 0h1m5 0h2m-9 1h1m2 0h1m3 0h1m-7 1h1m2 1h1" /></svg>;
+
+export const pifmgr4Data = {
+  '32x32_4': Pifmgr4_32x32_4
+};
+
+export interface Pifmgr4Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Pifmgr4Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Pifmgr4Props) => {
+  const Svg = pifmgr4Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Pifmgr4 = React.memo(Pifmgr4Component);
+Pifmgr4.displayName = 'Pifmgr4';
