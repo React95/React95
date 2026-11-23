@@ -147,3 +147,24 @@ export const Simple: Story = {
     },
   },
 };
+
+// with no `defaultActiveTab`, the first tab that isn't disabled starts active
+export const DisabledFirstTab: Story = {
+  render: () => (
+    <Tabs>
+      <Tab title="General" disabled>
+        Logon validation
+      </Tab>
+      <Tab title="Compatibility">Compatibility mode</Tab>
+    </Tabs>
+  ),
+  play: async ({ canvas }) => {
+    const content = canvas.getByRole('tablist').nextElementSibling;
+
+    await expect(canvas.getByRole('tab', { selected: true })).toHaveTextContent(
+      'Compatibility',
+    );
+    await expect(content).toHaveTextContent('Compatibility mode');
+    await expect(content).not.toHaveTextContent('Logon validation');
+  },
+};

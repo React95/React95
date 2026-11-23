@@ -23,8 +23,10 @@ export const Tabs = forwardRef<HTMLOListElement, TabsProps>(
   ({ children, defaultActiveTab, onChange, ...rest }, ref) => {
     const tabs = Children.toArray(children) as Array<ReactElement<TabProps>>;
     const [firstTab] = tabs;
+    // a disabled tab can't be selected, so it isn't the one to start on
     const [activeTab, setActiveTab] = useState(
-      defaultActiveTab || firstTab.props.title,
+      defaultActiveTab ||
+        (tabs.find(tab => !tab.props.disabled) ?? firstTab).props.title,
     );
 
     // ids wiring each tab to the shared tabpanel
