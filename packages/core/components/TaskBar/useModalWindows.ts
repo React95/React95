@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { ModalEvents, ModalWindow, useModal } from '../shared/events';
+import { ModalEvents, ModalWindow, modals, useModal } from '../shared/events';
 
 /**
  * The TaskBar's windows: the modals that registered with it, and which one is
@@ -71,7 +71,7 @@ export const useModalWindows = () => {
   }, [subscribe, focus]);
 
   // a window's TaskBar button minimizes it when it's the active one, and
-  // restores and focuses it otherwise
+  // restores and focuses it otherwise, moving the keyboard focus into it
   const toggleWindow = (id: string) => {
     if (id === activeWindowRef.current) {
       minimize(id);
@@ -80,6 +80,7 @@ export const useModalWindows = () => {
     } else {
       restore(id);
       focus(id);
+      modals.emit(ModalEvents.FocusModal, { id });
     }
   };
 
