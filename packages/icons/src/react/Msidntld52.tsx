@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Msidntld52_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="olive" d="M4 0h6M3 1h1m1 0h1m1 0h1m1 0h2M2 2h2m2 0h1m3 0h1M1 3h1m1 0h1m1 0h1M1 4h2m1 0h1M1 5h1m1 0h1M1 6h1m1 0h1M1 7h2m1 0h1M0 8h1m1 0h1m1 0h1M0 9h1m2 0h1m-4 1h1m20 2h1m-2 2h1m1 0h1m3 0h1m2 0h1m-19 1h1m1 0h1m5 0h1m-10 1h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-18 1h1m1 0h1m5 0h1m1 0h1m-12 1h1m12 0h1m1 0h1M9 19h1m1 0h1m14 0h1M8 20h1m1 0h1m3 0h1m12 0h1M7 21h1m1 0h1m1 0h1m16 0h1M8 22h1m1 0h1m1 0h1m14 0h1M9 23h1m1 0h1m16 0h1M8 24h1m1 0h1m1 0h1m14 0h1M8 26h1m-2 1h1m1 0h1m-2 1h1m0 1h1" /><path stroke="gray" d="M15 0h1m11 0h2m0 1h1M19 2h1m9 0h1M18 3h1m10 0h1M18 4h1m10 0h1M18 5h1m10 0h1M18 6h1m10 0h1M18 7h1m10 0h1M18 8h1m10 0h1m-1 1h1M2 10h2m25 0h1m-13 2h2m9 0h1m-2 2h1m0 1h1m1 0h1m-1 1h1m-16 1h1m13 0h1m-15 1h1m-1 2h1m-1 1h1m-7 5h2m-1 1h1m13 0h1m-15 1h2m11 0h1m-14 1h1" /><path stroke="silver" d="M16 0h11m1 1h1M15 2h1m2 0h1M8 3h1m6 0h2m8 0h1M7 4h1m7 0h2m9 0h1M6 5h1m1 0h1m1 0h1m4 0h2M5 6h1m1 0h1m7 0h2M6 7h1m1 0h2m5 0h2m9 0h1M6 8h1m8 0h2m3 0h1m1 0h1m2 0h1M5 9h1m1 0h1m8 0h1m1 0h1M6 10h1m1 0h1m8 0h1m10 0h1m-14 1h1m0 1h1m5 0h3m4 0h1m-13 1h2m1 0h1m5 0h1m1 0h2m-18 2h1m1 0h1m5 0h2m2 0h1m1 0h1m-16 1h1m1 0h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-20 1h1m1 0h1m7 0h1m7 0h1m1 0h1m-20 1h1m-4 1h1m1 0h1m2 0h2m-8 1h1m1 0h1m1 0h3m7 0h2M8 21h1m1 0h1m1 0h3m7 0h3M9 22h1m1 0h1m1 0h1m9 0h2m-15 1h1m1 0h1m8 0h5M7 24h1m1 0h1m1 0h1m1 0h1m9 0h3M7 25h2m13 0h4M6 26h2m17 0h1M6 27h1m1 0h1m16 0h2M7 28h1m1 0h1m14 0h2m-2 1h1" /><path stroke="#ff0" d="M4 1h1m1 0h1m1 0h1M4 2h2M2 3h1m1 0h1M3 4h1M2 6h1m0 1h1M1 8h1m1 0h1M1 9h2m-2 1h1" /><path stroke="navy" d="M14 1h1m-1 1h1m12 0h1M14 3h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m0 1h1m11 2h1m2 2h1m-15 2h1m14 0h1m-1 1h1" /><path stroke="#fff" d="M15 1h13M16 2h2m10 0h1M7 3h1m1 0h1m7 0h1m10 0h1M6 4h1m1 0h1m8 0h1m3 0h1m6 0h1M2 5h1m2 0h1m1 0h1m1 0h1m7 0h1m2 0h1m1 0h1m5 0h1M6 6h1m1 0h1m8 0h1m3 0h1m6 0h1M7 7h1m9 0h1m10 0h1M17 8h1m10 0h1M6 9h1m10 0h1m10 0h1M5 10h1m1 0h1m10 0h10m-9 3h1m1 0h5m1 0h1m-10 2h1m3 0h2m1 0h1m1 0h1m1 0h1" /><path stroke="#000" d="M7 2h3m10 0h7M6 3h1m3 0h1M5 4h1m4 0h1M4 5h1m6 0h1M4 6h1m5 0h1M5 7h1m4 0h1M5 8h1m1 0h3M4 9h1m3 0h1m6 0h1m0 1h1M6 11h9m1 0h13M4 12h12m4 0h1m5 0h1M3 13h14M2 14h18m1 0h1m1 0h3M2 15h9m4 0h3M1 16h9m5 0h1m1 0h1M1 17h9m4 0h1m3 0h1m3 0h6M1 18h9m2 0h3m5 0h2m6 0h1M1 19h7m4 0h1m2 0h1m4 0h3m5 0h1M1 20h6m13 0h1m2 0h2m4 0h1M1 21h6m9 0h1m4 0h1m3 0h1m3 0h1M2 22h6m6 0h2m5 0h2m2 0h1m3 0h1M3 23h6m5 0h1m5 0h1m5 0h1m2 0h1M3 24h4m7 0h1m6 0h1m4 0h1m2 0h1M4 25h3m2 0h5m7 0h1m4 0h1m1 0h1M5 26h1m5 0h1m10 0h3m1 0h2M4 27h2m5 0h1m11 0h1m3 0h1M3 28h1m2 0h1m5 0h1m9 0h1m5 0h2M2 29h1m4 0h2m2 0h1m1 0h1m7 0h1m8 0h1M2 30h3m4 0h2m2 0h2m5 0h1m9 0h1M5 31h8m8 0h9" /><path stroke="#0ff" d="M19 3h6m1 0h1m-8 1h2m1 0h4m-7 1h1m1 0h1m1 0h4m-8 1h2m1 0h5m-8 1h7m-7 1h1m1 0h1m1 0h2m1 0h1" /><path stroke="#00f" d="M27 3h1M9 4h1M4 28h2m-3 1h4m5 0h1m-8 1h4m2 0h2" /><path stroke="teal" d="M27 4h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-9 1h9" /><path stroke="maroon" d="M9 6h1m9 6h1m5 0h1m2 2h1m-7 4h1m1 0h1m1 0h2m-5 1h3m1 0h1m-3 1h2m1 0h1m-3 1h2m-2 1h1m1 0h1m-16 1h1m13 0h1m-6 1h1m5 0h1m-2 1h1" /><path stroke="purple" d="M4 10h1m4 0h1m-9 1h1m2 0h2m-5 1h3m26 1h1" /><path stroke="#f0f" d="M2 11h2" /><path stroke="green" d="M26 28h2m-5 1h1m1 0h3m1 0h1m-8 1h4m2 0h2" /><path stroke="#0f0" d="M22 29h1m5 0h1m-8 1h1m4 0h2" /></svg>;
+
+export const msidntld52Data = {
+  '32x32_4': Msidntld52_32x32_4
+};
+
+export interface Msidntld52Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Msidntld52Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Msidntld52Props) => {
+  const Svg = msidntld52Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Msidntld52 = React.memo(Msidntld52Component);
+Msidntld52.displayName = 'Msidntld52';

@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Wininet105_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="maroon" d="M18 12h9m-14 1h15m-16 1h10m2 0h4m-16 1h9m4 0h4m-18 1h4m2 0h4m4 0h4m-18 1h3m4 0h4m2 0h6m-19 1h3m4 0h12m-20 1h5m2 0h13m-20 1h15m2 0h2m-19 1h3m2 0h9m4 0h1m-19 1h2m4 0h2m2 0h4m-14 1h2m4 0h1m4 0h4m2 0h1m-18 1h3m2 0h2m4 0h6m-17 1h8m2 0h7m-16 1h15m-14 1h13m-12 1h9" /><path stroke="#000" d="M22 14h2m-3 1h4m-10 1h2m4 0h4m-11 1h4m4 0h2m-10 1h4m-3 1h2m8 1h2m-14 1h2m9 0h4m-16 1h4m2 0h2m4 0h4m-16 1h4m1 0h4m4 0h2m-14 1h2m2 0h4m-3 1h2" /></svg>;
+
+export const wininet105Data = {
+  '32x32_4': Wininet105_32x32_4
+};
+
+export interface Wininet105Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Wininet105Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Wininet105Props) => {
+  const Svg = wininet105Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Wininet105 = React.memo(Wininet105Component);
+Wininet105.displayName = 'Wininet105';

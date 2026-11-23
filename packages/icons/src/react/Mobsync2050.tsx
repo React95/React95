@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Mobsync2050_16x16_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" shapeRendering="crispEdges" viewBox="0 -0.5 16 16" {...props}><path stroke="gray" d="M2 0h5M1 1h1M0 2h1M0 3h1M0 4h1m8 0h3M0 5h1m11 0h2M0 6h1m10 0h1m2 0h1M1 7h1m6 0h1m4 0h2m-2 1h2M4 9h3m1 0h1m3 0h1M3 10h1m2 0h4m1 0h1m1 0h1M2 11h1m3 0h1m1 0h3m-9 1h3m2 0h1m3 0h2m-8 1h2m2 0h2m-4 1h2" /><path stroke="#fff" d="M2 1h5M1 2h2m3 0h2M1 3h7M1 4h1m4 0h2M1 5h2m3 0h2M1 6h2m4 0h1M2 7h5m0 2h1m-3 2h1m1 0h1m-2 1h1m1 0h1" /><path stroke="#000" d="M7 1h1m0 1h1M8 3h1M8 4h1M8 5h1M8 6h1M7 7h1m7 0h1M2 8h5m8 0h1m-2 1h1m-1 1h1m-2 1h1m-1 1h1M3 13h2m6 0h2m-8 1h2m2 0h2m-4 1h2" /><path stroke="silver" d="M3 2h1M2 4h1m0 1h1m5 0h3m0 1h2M7 8h1m5 1h1M4 10h2m4 0h1m1 0h1M3 11h2m6 0h2m-8 1h1m3 0h2m-4 1h2" /><path stroke="#00f" d="M4 2h2M3 4h3M4 5h2M3 6h4m3 1h2M9 8h4m-2 1h1" /><path stroke="navy" d="M9 6h2M9 7h1m2 0h1M8 8h1m0 1h2" /></svg>;
+
+export const mobsync2050Data = {
+  '16x16_4': Mobsync2050_16x16_4
+};
+
+export interface Mobsync2050Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '16x16_4';
+}
+
+const Mobsync2050Component = ({
+  variant = '16x16_4',
+  ...rest
+}: Mobsync2050Props) => {
+  const Svg = mobsync2050Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Mobsync2050 = React.memo(Mobsync2050Component);
+Mobsync2050.displayName = 'Mobsync2050';

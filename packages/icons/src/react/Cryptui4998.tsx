@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Cryptui4998_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="olive" d="M12 0h8m-8 1h8M10 2h3m5 0h2M10 3h2m6 0h2M8 4h2m1 0h1m6 0h4M8 5h2m8 0h4M8 6h2m10 0h2M8 7h2m10 0h2M8 8h2m10 0h2M8 9h2m10 0h2M8 10h2m2 0h10m2 0h2M8 11h2m2 0h10m2 0h2M6 12h20M6 13h20M4 14h2m18 0h2M4 15h2m18 0h2M4 16h2m18 0h2M4 17h2m18 0h2M4 18h2m2 0h14m2 0h2M4 19h2m2 0h14m2 0h2M4 20h2m18 0h2M4 21h2m18 0h2M4 22h2m2 0h14m2 0h2M4 23h2m2 0h14m2 0h2M4 24h2m18 0h2M4 25h2m18 0h2M4 26h22M4 27h22" /><path stroke="silver" d="M13 2h1m-2 1h2m-4 1h1m-1 1h2m10 13h2m-2 1h2m-2 3h2m-2 1h2" /><path stroke="#000" d="M14 2h4m2 0h2m-8 1h4m2 0h2M12 4h2m8 0h2M12 5h2m8 0h2M10 6h2m10 0h2M10 7h2m10 0h2M10 8h2m10 0h2M10 9h2m10 0h2m-14 1h2m10 0h2m-14 1h2m10 0h2m2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2m-2 1h2M4 28h22M4 29h22" /><path stroke="#ff0" d="M8 16h16M8 17h16M8 20h16M8 21h16M8 24h16M8 25h16" /></svg>;
+
+export const cryptui4998Data = {
+  '32x32_4': Cryptui4998_32x32_4
+};
+
+export interface Cryptui4998Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Cryptui4998Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Cryptui4998Props) => {
+  const Svg = cryptui4998Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Cryptui4998 = React.memo(Cryptui4998Component);
+Cryptui4998.displayName = 'Cryptui4998';
