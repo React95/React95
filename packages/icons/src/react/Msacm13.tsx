@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Msacm13_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="#ff0" d="M14 0h2m-3 1h4m-4 1h2m-2 1h2m-3 1h3m-2 1h2m-2 1h2" /><path stroke="gray" d="M23 0h2m3 0h1M0 1h1m24 0h1M3 2h3m22 1h1m-1 1h1m0 1h2m0 1h1m-2 12h1m-2 1h1m-3 1h2m-3 1h1m-4 1h1m-2 1h1m-7 1h1m3 0h2m-5 1h3" /><path stroke="#000" d="M26 1h3M1 2h2m12 0h2m7 0h5M1 3h2m12 0h2m5 0h4M1 4h2m12 0h1m4 0h5M2 5h2m5 0h4m2 0h8M2 6h3m1 0h7m2 0h7M3 7h17M4 8h5m1 0h10m-9 1h8m-8 1h8m-7 1h6m-6 1h6m3 1h5m-14 1h1m3 0h2m3 0h6m-6 1h6m-6 1h1m2 0h2M7 17h2m14 0h3M7 18h3m13 0h2M6 19h4m14 0h1M6 20h4m12 0h1M5 21h4m14 0h1M5 22h3m16 0h1M4 23h3m-3 1h3m16 0h1m3 0h1M4 25h3m17 0h1m1 0h1M4 26h3m18 0h1M4 27h2m14 0h4m1 0h1m1 0h4M4 28h2m16 0h1m2 0h1m2 0h1m-8 1h1m3 0h1m3 0h1M5 30h1m14 0h11M2 31h2" /><path stroke="red" d="M12 13h6m1 0h2m-11 1h2m6 0h3M9 15h4m3 0h5M8 16h5m3 0h5M9 17h4m3 0h3m-9 1h1" /><path stroke="#0f0" d="M13 14h3m-3 2h3m-3 1h3" /><path stroke="#f0f" d="M13 15h3" /><path stroke="#00f" d="M22 19h2m-1 1h2m-1 1h2m-1 1h1M4 29h2m-4 1h3m-4 1h1" /></svg>;
+
+export const msacm13Data = {
+  '32x32_4': Msacm13_32x32_4
+};
+
+export interface Msacm13Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Msacm13Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Msacm13Props) => {
+  const Svg = msacm13Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Msacm13 = React.memo(Msacm13Component);
+Msacm13.displayName = 'Msacm13';

@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Pifmgr28_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="gray" d="M6 0h1M6 1h1m0 1h1m0 1h1M3 4h1m5 0h1M2 5h1m7 0h1M1 6h1m9 0h1M1 7h1m10 0h1m0 1h1m0 1h1m0 1h1M4 11h1m11 0h1M0 12h1m4 0h1m9 0h1m1 0h1M0 13h1m13 0h1m3 0h1M0 14h1m12 0h1m5 0h1M0 15h1m19 0h1M1 16h1m7 0h1m11 0h1M2 17h1m7 0h1m11 0h1m0 1h1m-7 1h2m0 1h2m0 1h2" /><path stroke="#000" d="M7 0h1m0 1h1M5 2h2m2 0h1M4 3h4m2 0h1M4 4h4m3 0h1M4 5h3m5 0h1M5 6h1m7 0h1M5 7h1m4 0h2m2 0h1M1 8h1m3 0h2m2 0h4m2 0h1M1 9h2m1 0h9m3 0h1M1 10h7m1 0h3m5 0h1M1 11h3m1 0h2m3 0h1m7 0h1M2 12h2m2 0h1m3 0h1m8 0h1M3 13h1m2 0h1m3 0h2m8 0h1M3 14h1m2 0h2m1 0h4m8 0h1M3 15h2m1 0h7m9 0h1M3 16h6m1 0h2m11 0h1M3 17h3m1 0h2m2 0h1m12 0h1M3 18h3m2 0h1m15 0h1M4 19h2m-1 1h1m0 5h3m14 0h3M5 26h5m12 0h5M4 27h3m1 0h3m10 0h3m1 0h3M1 28h5m1 0h1m1 0h14m1 0h1m1 0h6M4 29h3m1 0h3m10 0h3m1 0h3M5 30h5m12 0h5M6 31h3m14 0h3" /><path stroke="#ff0" d="M7 1h1m1 2h1m1 2h1m1 2h1m1 2h1m1 2h1m1 2h1m1 2h1m1 2h1M1 24h1" /><path stroke="#fff" d="M8 2h1M8 4h1m1 0h1M3 5h1m3 0h3M2 6h1m1 0h1m1 0h5m1 0h1M3 7h2m1 0h4M4 8h1m2 0h2m5 0h1m-2 1h1m-6 1h1m3 0h3m1 0h1M7 11h1m1 0h1m1 0h5M1 12h1m6 0h2m1 0h4m3 0h1M1 13h2m1 0h1m4 0h1m2 0h2M1 14h2m1 0h1m15 0h1M1 15h2m2 0h1m-4 1h1m19 0h1M6 17h1m-1 1h2m1 0h1m-4 1h2m6 0h2m-7 1h1m4 0h4M7 21h3m4 0h6m-5 2h2M7 27h1m16 0h1M6 28h1m1 0h1m14 0h1m1 0h1M7 29h1m16 0h1" /><path stroke="silver" d="M3 6h1M2 7h1M2 8h2M3 9h1m4 2h1m-5 1h1m2 0h1m-3 1h1m1 0h2m-4 1h1m2 0h1m0 3h1m6 2h1m-9 1h1m9 0h1M6 21h1m13 0h1" /><path stroke="maroon" d="M10 18h7m-9 1h2m1 0h1m1 0h1m-8 1h2m3 0h1m1 0h1M2 21h4m5 0h1m1 0h1M1 22h1m21 0h3M1 23h1m24 0h2M0 24h1m5 0h3m14 0h3m2 0h2M0 25h1m4 0h1m3 0h1m12 0h1m3 0h1m3 0h1M0 26h1m3 0h1m5 0h1m10 0h1m5 0h1m3 0h1M0 27h4m7 0h10m7 0h4" /><path stroke="red" d="M10 19h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1M2 22h21M2 23h13m2 0h9M2 24h4m3 0h14m3 0h2M1 25h4m5 0h12m5 0h3M1 26h3m7 0h10m7 0h3" /></svg>;
+
+export const pifmgr28Data = {
+  '32x32_4': Pifmgr28_32x32_4
+};
+
+export interface Pifmgr28Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Pifmgr28Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Pifmgr28Props) => {
+  const Svg = pifmgr28Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Pifmgr28 = React.memo(Pifmgr28Component);
+Pifmgr28.displayName = 'Pifmgr28';

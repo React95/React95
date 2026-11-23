@@ -1,0 +1,27 @@
+import React from 'react';
+import type { SVGProps } from "react";
+
+const Pifmgr18_32x32_4 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" shapeRendering="crispEdges" viewBox="0 -0.5 32 32" {...props}><path stroke="maroon" d="M12 0h4m-5 1h1m3 0h2m-6 1h1m3 0h2m-6 1h1m1 0h4" /><path stroke="#000" d="M16 0h1m0 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-2 1h1m-1 1h1m-2 1h1m-2 1h2m-2 1h1" /><path stroke="red" d="M12 1h1m1 0h1m-2 1h2" /><path stroke="#f0f" d="M13 1h1m-2 1h1m-1 1h1" /><path stroke="gray" d="M11 4h2m2 0h2m-6 1h1m3 0h2m-6 1h1m3 0h2m-5 21h1m-1 1h1m0 1h1m-1 1h1" /><path stroke="silver" d="M13 4h2m-1 1h1m-3 1h3m0 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-3 1h2m-1 1h2m-2 1h2" /><path stroke="#fff" d="M12 5h2m-1 2h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 2h1m-1 1h1m0 1h1" /><path stroke="olive" d="M11 7h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m4 0h1m-6 1h1m3 0h2" /><path stroke="#ff0" d="M12 7h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1m1 0h1m-3 1h1" /></svg>;
+
+export const pifmgr18Data = {
+  '32x32_4': Pifmgr18_32x32_4
+};
+
+export interface Pifmgr18Props extends SVGProps<SVGSVGElement> {
+  /**
+   * Icon variant to use.
+   **/
+  variant?: '32x32_4';
+}
+
+const Pifmgr18Component = ({
+  variant = '32x32_4',
+  ...rest
+}: Pifmgr18Props) => {
+  const Svg = pifmgr18Data[variant];
+
+  return <Svg {...rest} />;
+};
+
+export const Pifmgr18 = React.memo(Pifmgr18Component);
+Pifmgr18.displayName = 'Pifmgr18';
