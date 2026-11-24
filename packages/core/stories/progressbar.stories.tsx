@@ -21,9 +21,15 @@ export const Simple: Story = {
   args: {
     width: '200px',
     percent: 49,
+    // a progressbar needs an accessible name
+    'aria-label': 'Copying files',
   },
   play: async ({ args, canvas }) => {
     const percent = args.percent ?? 0;
+
+    await expect(
+      canvas.getByRole('progressbar', { name: 'Copying files' }),
+    ).toHaveAttribute('aria-valuenow', String(percent));
 
     // the label is drawn twice: over the empty bar and over the blue part
     const [emptyLabel, filledLabel] = canvas.getAllByText(`${percent}%`);

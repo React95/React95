@@ -17,6 +17,10 @@ export type ProgressBarProps<TAs extends ElementType> = {
 export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps<'div'>>(
   ({ width = '150px', percent = 0, ...rest }, ref) => (
     <Frame
+      role="progressbar"
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={percent}
       {...rest}
       width={width}
       className={cn(styles.wrapper, rest.className)}
