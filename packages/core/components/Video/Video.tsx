@@ -14,13 +14,14 @@ import { Frame, FrameProps } from '../Frame/Frame';
 import { Button } from '../Button/Button';
 import { Range } from '../Range/Range';
 import { TitleBar } from '../TitleBar/TitleBar';
+import { getSourceType } from './sourceType';
 import { Play, Pause, Stop, Fullscreen } from './buttons';
 import cn from 'classnames';
 
 type SourceProps = Pick<HTMLSourceElement, 'src'>;
 
 const Source = ({ src }: SourceProps) => (
-  <source src={src} type={`video/${src.substring(src.length - 3)}`} />
+  <source src={src} type={getSourceType(src)} />
 );
 
 const PlayOrPause = ({ playing }: { playing: boolean }) =>
