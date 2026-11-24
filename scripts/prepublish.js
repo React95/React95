@@ -31,6 +31,7 @@ const createPackageJson = () => {
     'lint-staged': lintStaged,
     release,
     config,
+    type,
     ...packageDataOther
   } = pkg;
 
